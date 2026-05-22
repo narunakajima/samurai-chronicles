@@ -30,7 +30,7 @@ SCOPES = [
 
 SECRETS_DIR = Path.home() / ".claude" / "secrets"
 YT_CLIENT_SECRETS = SECRETS_DIR / "yt_client_secrets.json"
-YT_TOKEN = SECRETS_DIR / "yt_token.json"
+YT_TOKEN = SECRETS_DIR / "yt_token_sc.json"
 
 BASE_DIR = Path(__file__).parent
 DRIVE_BASE = (
@@ -54,7 +54,7 @@ def get_youtube_client():
                 print(f"❌ 認証ファイルが見つかりません: {YT_CLIENT_SECRETS}")
                 sys.exit(1)
             flow = InstalledAppFlow.from_client_secrets_file(str(YT_CLIENT_SECRETS), SCOPES)
-            creds = flow.run_local_server(port=0)
+            creds = flow.run_local_server(port=0, prompt="select_account consent")
         YT_TOKEN.parent.mkdir(parents=True, exist_ok=True)
         YT_TOKEN.write_text(creds.to_json())
     return build("youtube", "v3", credentials=creds)

@@ -1,6 +1,6 @@
 # /sc-new — Samurai Chronicles 新エピソード生成
 
-topics_queue.json から次のトピックを選び、制作確認書まで一気に生成するコマンド。
+topics_queue.json から次のトピックを選び、動画生成まで一気に進めるコマンド。
 
 ## 定数
 
@@ -146,28 +146,167 @@ Commanding presence. Carries a European arquebus as well as a katana.
 
 ---
 
-## STEP 4 — 素材を自動生成する（並行実行）
+## STEP 4 — 制作確認書とBGMを並行して準備する
 
-以下を順番に実行する：
+制作確認書の生成とBGMダウンロードを**同時に**バックグラウンドで実行する。
+
+### 制作確認書（Claudeが直接生成）
+
+画面に内容を表示せず、バックグラウンドで以下を実行してデスクトップに保存する：
+
+1. エピソードJSONの全シーンを日本語に翻訳する
+2. 全ナレーションのファクトチェックを行う
+3. 以下のフォーマットで `ep{NNN}_制作確認書.txt` を組み立ててデスクトップに保存する
+
+**制作確認書フォーマット:**
+```
+================================================================
+  Samurai Chronicles EP{NNN} 制作確認書
+  生成日: {YYYY-MM-DD}
+================================================================
+
+【エピソード概要】
+----------------------------------------
+エピソードID  : ep{NNN}
+タイトル      : {episode_title}
+YouTube タイトル: {youtube_title}
+総シーン数    : {total_scenes}
+Shorts シーン : S{shorts_highlight_scene:02d}
+BGM           : ❌ 未選択
+
+▼ YouTube 説明文（英語）
+{youtube_description}
+
+▼ タグ
+{youtube_tags をカンマ区切り}
+
+================================================================
+【各シーンのナレーション】
+================================================================
+
+▶ S{id:02d}  [{type}]  キャラクター: {character_ref or —}  想定尺: {duration_seconds}秒
+
+  【EN】
+  {narration}
+
+  【JA】
+  {日本語訳}
+
+----------------------------------------
+... （全シーン繰り返し）
+
+================================================================
+【ファクトチェック結果】
+================================================================
+
+【✅ 確認済み・正確な情報】
+...
+
+【⚠️ 注意・議論あり】
+...
+
+【❌ 誤り・修正が必要】
+...
+
+【総評】
+...
+
+================================================================
+【確認・承認】
+----------------------------------------
+□ 内容確認完了
+□ ファクトチェック問題なし
+□ BGM選択完了
+□ 動画生成GO
+
+備考:
+
+================================================================
+```
+
+**Google Drive への保存はこの時点では行わない。**
+
+---
+
+### BGM（Freesoundから3曲）
+
+エピソードのムード（タイトル・シーン構成・感情トーン）から2〜3語の英語クエリを3本生成し、ダウンロードする。
+
+**クエリ生成ルール:**
+- 必ず短く（2〜3語）
+- 楽器・音楽系キーワードに絞る（orchestral, strings, taiko, shamisen, cinematic, epicなど）
+- 環境音系（forest, rain, nature, ambience など）は禁止
 
 ```bash
-python3 sc_tts_gen.py --episode ep{NNN}       # ナレーション音声生成
-python3 sc_image_gen.py --episode ep{NNN}     # 本編用画像生成（16:9）
-python3 sc_image_gen.py --episode ep{NNN} --shorts  # Shorts用画像生成（9:16）
-FREESOUND_API_KEY=$FREESOUND_API_KEY python3 /Users/claude/.claude/scripts/freesound_download.py "<Q1>" "<Q2>" "<Q3>" "$HOME/Desktop/"  # BGMダウンロード
+FREESOUND_API_KEY=$FREESOUND_API_KEY python3 /Users/claude/.claude/scripts/freesound_download.py \
+  "<Q1>" "<Q2>" "<Q3>" \
+  "$HOME/Desktop/" \
+  --round 0
+```
+
+**部分失敗時（一部スロットが0件・404）:** 失敗したスロットのみ `--start-slot <N>` で別クエリに差し替えて補完する。全スロット再実行は禁止。ダウンロード完了時点でデスクトップに必ず3曲揃っていること。
+
+**CC BY の曲が含まれる場合:** ダウンロード完了時に帰属クレジットをメモしておく。
+
+---
+
+### 完了報告
+
+制作確認書・BGMの両方が完了したら、ユーザーに報告する：
+
+```
+制作確認書とBGM候補の準備ができました。
+
+📄 ep{NNN}_制作確認書.txt — デスクトップに保存済み
+🎵 BGM候補 3曲 — デスクトップに保存済み
+  1. {ファイル名}（{尺}s）[{ライセンス}]
+  2. {ファイル名}（{尺}s）[{ライセンス}]
+  3. {ファイル名}（{尺}s）[{ライセンス}]
+
+確認書を読んで、BGMは1曲だけ残して2曲削除してください。
+両方OKなら教えてください。修正があればお知らせください。
 ```
 
 ---
 
-## STEP 5 — 制作確認書を生成してユーザーに確認してもらう
+### 確認・修正ループ
+
+ユーザーの回答に応じて対応する：
+
+- **確認書に修正あり** → 該当箇所を修正してデスクトップのファイルを上書き保存。再確認を求める。
+- **BGMをやり直したい** → デスクトップの候補3曲を削除し、`--round` を1増やして再ダウンロード。
+- **両方OK** → STEP 4b へ進む
+
+---
+
+## STEP 4b — Google Driveへ移動
+
+両方OKが取れたら、デスクトップのファイルをGoogle Driveエピソードフォルダへ移動する：
 
 ```bash
-python3 sc_review_gen.py --episode ep{NNN}
+DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}"
+mkdir -p "$DRIVE/audio"
+
+# 制作確認書を移動
+mv "$HOME/Desktop/ep{NNN}_制作確認書.txt" "$DRIVE/"
+
+# BGM（残った1曲）をリネームして移動
+mv "$HOME/Desktop/BGM_candidate_*.mp3" "$DRIVE/audio/ep{NNN}-BGM.mp3"
 ```
 
-確認書はデスクトップと Google Drive エピソードフォルダの両方に保存される。
+移動完了を報告する。
 
-ユーザーが確認書を見てOKを出したら次へ進む。修正があれば対応してから再生成する。
+---
+
+## STEP 5 — 素材を自動生成する
+
+以下を実行する：
+
+```bash
+python3 sc_tts_gen.py --episode ep{NNN}                    # ナレーション音声生成
+python3 sc_image_gen.py --episode ep{NNN}                  # 本編用画像生成（16:9）
+python3 sc_image_gen.py --episode ep{NNN} --shorts         # Shorts用画像生成（9:16）
+```
 
 ---
 

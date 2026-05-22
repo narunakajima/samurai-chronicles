@@ -17,10 +17,10 @@ import os
 import sys
 from datetime import date
 from pathlib import Path
-from google import genai
+import anthropic
 
-API_KEY = os.environ.get("GEMINI_API_KEY", "")
-TEXT_MODEL = "gemini-2.5-flash"
+API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+TEXT_MODEL = "claude-sonnet-4-6"
 
 BASE_DIR = Path(__file__).parent
 DRIVE_BASE = (
@@ -32,24 +32,29 @@ DRIVE_BASE = (
 )
 
 
+def _call(client, prompt: str) -> str:
+    """Claude APIを呼び出してテキストを返す。"""
+    message = client.messages.create(
+        model=TEXT_MODEL,
+        max_tokens=1024,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return message.content[0].text.strip()
+
+
 def translate_to_japanese(client, text: str) -> str:
     """英語ナレーションを日本語に翻訳する。"""
     prompt = (
-        "以下の英語のナレーションを自然な日本語に翻訳してください。"
-        "歴史ドキュメンタリーのナレーションとして適切なトーンにしてください。"
-        "翻訳文のみ返してください。\n\n"
+        "以下の英語のナレーションを自然な日本語に翻訳してください。\n"
+        "歴史ドキュメンタリーのナレーションとして適切なトーンにしてください。\n"
+        "【重要】翻訳文だけを出力してください。解説・検討・注釈・代替案・評価コメントは一切不要です。\n\n"
         f"{text}"
     )
-    response = client.models.generate_content(
-        model=TEXT_MODEL,
-        contents=prompt,
-    )
-    return response.text.strip()
+    return _call(client, prompt)
 
 
 def factcheck_episode(client, ep: dict) -> str:
     """エピソード全体のファクトチェックを実行する。"""
-    # 全ナレーションをまとめてファクトチェック
     all_narration = "\n".join(
         f"S{s['scene_id']:02d}: {s['narration']}" for s in ep["scenes"]
     )
@@ -67,16 +72,12 @@ def factcheck_episode(client, ep: dict) -> str:
         "【総評】\n"
         "（全体的な歴史的正確性についての一言コメント）"
     )
-    response = client.models.generate_content(
-        model=TEXT_MODEL,
-        contents=prompt,
-    )
-    return response.text.strip()
+    return _call(client, prompt)
 
 
 def run(episode_id: str):
     if not API_KEY:
-        print("❌ GEMINI_API_KEY が設定されていません")
+        print("❌ ANTHROPIC_API_KEY が設定されていません")
         sys.exit(1)
 
     ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
@@ -90,7 +91,7 @@ def run(episode_id: str):
     audio_dir = DRIVE_BASE / episode_id / "audio"
     bgm_file = audio_dir / f"{episode_id}-BGM.mp3"
 
-    client = genai.Client(api_key=API_KEY)
+    client = anthropic.Anthropic(api_key=API_KEY)
 
     print(f"\n{'━'*60}")
     print(f"  {episode_id} — 制作確認書生成")
