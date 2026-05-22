@@ -1,0 +1,4 @@
+{
+  "skipDangerousModePermissionPrompt": true,
+  "allowedTools": ["Bash", "Read", "Edit", "Write"]
+}

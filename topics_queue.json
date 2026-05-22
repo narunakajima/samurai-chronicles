@@ -1,0 +1,245 @@
+{
+  "queue": [
+    {
+      "episode_id": "ep001",
+      "status": "in_production",
+      "title": "Miyamoto Musashi vs Sasaki Kojiro: The Real Duel",
+      "era": "Edo",
+      "priority": "A"
+    },
+    {
+      "episode_id": "ep002",
+      "status": "pending",
+      "title": "The Honnoji Incident: Oda Nobunaga's Betrayal",
+      "era": "Sengoku",
+      "priority": "A",
+      "notes": "Akechi Mitsuhide surrounds Honno-ji temple with 10,000 soldiers. June 21, 1582. Teased in ep001 outro."
+    },
+    {
+      "episode_id": "ep003",
+      "status": "pending",
+      "title": "Tokugawa Ieyasu: How a Hostage Became a Shogun",
+      "era": "Sengoku/Edo",
+      "priority": "A",
+      "notes": "Held hostage as a child, became Japan's ultimate unifier. The ultimate long game."
+    },
+    {
+      "episode_id": "ep004",
+      "status": "pending",
+      "title": "The Battle of Sekigahara: One Day That Decided Japan",
+      "era": "Sengoku",
+      "priority": "A",
+      "notes": "October 21, 1600. 160,000 troops. The decisive battle that created 250 years of Tokugawa rule."
+    },
+    {
+      "episode_id": "ep005",
+      "status": "pending",
+      "title": "Tomoe Gozen: Japan's Greatest Female Warrior",
+      "era": "Heian/Kamakura",
+      "priority": "A",
+      "notes": "Rare female samurai. Historical debates about her fate. Strong hook potential."
+    },
+    {
+      "episode_id": "ep006",
+      "status": "pending",
+      "title": "The 47 Ronin: Japan's Most Famous Act of Loyalty",
+      "era": "Edo",
+      "priority": "A",
+      "notes": "47 masterless samurai avenge their lord 2 years after his forced seppuku. 1703."
+    },
+    {
+      "episode_id": "ep007",
+      "status": "pending",
+      "title": "Oda Nobunaga: The Demon King Who Almost United Japan",
+      "era": "Sengoku",
+      "priority": "A",
+      "notes": "The most radical warlord. Destroyed Buddhist monasteries, embraced firearms, upended feudal order."
+    },
+    {
+      "episode_id": "ep008",
+      "status": "pending",
+      "title": "The Ninja: Separating Myth from History",
+      "era": "Sengoku",
+      "priority": "A",
+      "notes": "What ninja actually were vs. pop culture myth. Iga and Koga clans. Historical espionage."
+    },
+    {
+      "episode_id": "ep009",
+      "status": "pending",
+      "title": "Toyotomi Hideyoshi: From Sandal-Bearer to Ruler of Japan",
+      "era": "Sengoku",
+      "priority": "A",
+      "notes": "Born a peasant, became supreme ruler. The most dramatic rise in Japanese history."
+    },
+    {
+      "episode_id": "ep010",
+      "status": "pending",
+      "title": "The Siege of Osaka: The Fall of the Toyotomi",
+      "era": "Sengoku/Edo",
+      "priority": "A",
+      "notes": "1614-1615. Tokugawa eliminates the last Toyotomi heir. End of the Sengoku era."
+    },
+    {
+      "episode_id": "ep011",
+      "status": "pending",
+      "title": "The Way of the Samurai: Bushido's True Origins",
+      "era": "Edo",
+      "priority": "B",
+      "notes": "Bushido as a concept was mostly invented in the Edo period — not medieval. Interesting revisionism angle."
+    },
+    {
+      "episode_id": "ep012",
+      "status": "pending",
+      "title": "Takeda Shingen vs Uesugi Kenshin: The Eternal Rivals",
+      "era": "Sengoku",
+      "priority": "A",
+      "notes": "Five battles of Kawanakajima. Famous rivals with a grudging respect. Rich drama."
+    },
+    {
+      "episode_id": "ep013",
+      "status": "pending",
+      "title": "The Battle of Nagashino: The Day Firearms Changed Japan",
+      "era": "Sengoku",
+      "priority": "A",
+      "notes": "1575. Nobunaga's volley fire destroys Takeda cavalry. Technological turning point."
+    },
+    {
+      "episode_id": "ep014",
+      "status": "pending",
+      "title": "Seppuku: The Truth Behind Japan's Ritual Suicide",
+      "era": "All eras",
+      "priority": "B",
+      "notes": "History, ritual, meaning. Why it existed and what it meant culturally. Sensitive but compelling."
+    },
+    {
+      "episode_id": "ep015",
+      "status": "pending",
+      "title": "Date Masamune: The One-Eyed Dragon of the North",
+      "era": "Sengoku",
+      "priority": "B",
+      "notes": "Aggressive warlord of Sendai domain. Lost one eye to smallpox. Ambitious but born too late."
+    },
+    {
+      "episode_id": "ep016",
+      "status": "pending",
+      "title": "The Shimabara Rebellion: Japan's Last Samurai Battle",
+      "era": "Edo",
+      "priority": "B",
+      "notes": "1637-1638. Christian peasants vs. the shogunate. 37,000 defenders vs. 120,000 shogunate troops."
+    },
+    {
+      "episode_id": "ep017",
+      "status": "pending",
+      "title": "Maeda Toshiie: The Spear Master Who Challenged Nobunaga",
+      "era": "Sengoku",
+      "priority": "B",
+      "notes": "One of Nobunaga's top generals. Famous spear fighter. Complicated loyalty."
+    },
+    {
+      "episode_id": "ep018",
+      "status": "pending",
+      "title": "The Black Ships: When Commodore Perry Broke Japan Open",
+      "era": "Bakumatsu",
+      "priority": "A",
+      "notes": "1853. Four steam warships force Japan to end 250 years of isolation. Triggers samurai era's end."
+    },
+    {
+      "episode_id": "ep019",
+      "status": "pending",
+      "title": "The Last Samurai: Saigo Takamori and the Satsuma Rebellion",
+      "era": "Meiji",
+      "priority": "A",
+      "notes": "1877. Final armed samurai uprising. The real story behind the Tom Cruise movie."
+    },
+    {
+      "episode_id": "ep020",
+      "status": "pending",
+      "title": "Women of the Warring States: The Wives Behind the Warlords",
+      "era": "Sengoku",
+      "priority": "B",
+      "notes": "Oichi, Nene, Lady Tsukiyama. Political marriages, tragedy, survival. Female perspective on Sengoku."
+    },
+    {
+      "episode_id": "ep021",
+      "status": "pending",
+      "title": "The Book of Five Rings: Musashi's Philosophy Explained",
+      "era": "Edo",
+      "priority": "B",
+      "notes": "Deep dive into Go Rin No Sho — strategy, void, water, fire. Companion to ep001."
+    },
+    {
+      "episode_id": "ep022",
+      "status": "pending",
+      "title": "Uesugi Kenshin: The Buddhist Warlord Who Never Lost",
+      "era": "Sengoku",
+      "priority": "B",
+      "notes": "Famous for personal religious discipline. Claimed to fight for justice, not conquest. Complex character."
+    },
+    {
+      "episode_id": "ep023",
+      "status": "pending",
+      "title": "The Siege of Hara Castle: 37,000 vs. 120,000",
+      "era": "Edo",
+      "priority": "B",
+      "notes": "Final act of Shimabara Rebellion. Siegecraft, desperation, and massacre. Visual/dramatic potential."
+    },
+    {
+      "episode_id": "ep024",
+      "status": "pending",
+      "title": "Sanada Yukimura: Japan's Greatest Loser",
+      "era": "Sengoku",
+      "priority": "A",
+      "notes": "Brilliant tactician on the losing side. Died at Osaka, age ~49. Revered despite defeat. Great hook."
+    },
+    {
+      "episode_id": "ep025",
+      "status": "pending",
+      "title": "The Ronin: Life Without a Master in Feudal Japan",
+      "era": "Edo",
+      "priority": "B",
+      "notes": "Social phenomenon of masterless samurai. Poverty, stigma, and survival. Contextual explainer."
+    },
+    {
+      "episode_id": "ep026",
+      "status": "pending",
+      "title": "Katana: The Science and Soul of Japan's Sacred Sword",
+      "era": "All eras",
+      "priority": "B",
+      "notes": "Metallurgy, folding technique, tamahagane steel. Separating myth from craft."
+    },
+    {
+      "episode_id": "ep027",
+      "status": "pending",
+      "title": "The Mongol Invasions: When Japan Was Nearly Conquered",
+      "era": "Kamakura",
+      "priority": "A",
+      "notes": "1274 and 1281. Kublai Khan's massive fleets. The kamikaze (divine winds) that saved Japan."
+    },
+    {
+      "episode_id": "ep028",
+      "status": "pending",
+      "title": "Hattori Hanzo: The Real Ninja Behind the Legend",
+      "era": "Sengoku",
+      "priority": "A",
+      "notes": "The historical Hattori Hanzo was Tokugawa Ieyasu's head of secret service. Very different from fiction."
+    },
+    {
+      "episode_id": "ep029",
+      "status": "pending",
+      "title": "Yoshitsune: The Tragic Hero of the Genpei War",
+      "era": "Heian",
+      "priority": "A",
+      "notes": "12th century. Military genius betrayed by his own brother Yoritomo. Iconic tragic arc."
+    },
+    {
+      "episode_id": "ep030",
+      "status": "pending",
+      "title": "The Rise of the Shogunate: How Warriors Took Power from the Emperor",
+      "era": "Kamakura",
+      "priority": "B",
+      "notes": "How Minamoto no Yoritomo created the first shogunate in 1192. Structural explainer. Good early episode."
+    }
+  ],
+  "last_updated": "2026-05-22",
+  "total_topics": 30
+}
