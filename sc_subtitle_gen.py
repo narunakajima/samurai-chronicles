@@ -40,21 +40,38 @@ def split_sentences(text: str) -> list:
     return [p.strip() for p in parts if p.strip()]
 
 
-def wrap_line(text: str, max_chars: int = 50) -> str:
-    """1行が長い場合、単語境界で折り返す（最大2行）。"""
-    if len(text) <= max_chars:
-        return text
+def chunk_sentence(text: str, max_chars: int = 42) -> list:
+    """文を「最大2行・1行あたりmax_chars文字」のチャンクリストに分割する。
+    1チャンクが2行を超える場合は次のチャンクへ繰り越す。"""
     words = text.split()
+    chunks = []
     line1, line2 = [], []
-    for w in words:
-        if len(" ".join(line1 + [w])) <= max_chars:
-            line1.append(w)
+
+    for word in words:
+        if not line1:
+            line1.append(word)
+        elif len(" ".join(line1 + [word])) <= max_chars:
+            line1.append(word)
+        elif not line2:
+            line2.append(word)
+        elif len(" ".join(line2 + [word])) <= max_chars:
+            line2.append(word)
         else:
-            line2.append(w)
-    result = " ".join(line1)
-    if line2:
-        result += "\n" + " ".join(line2)
-    return result
+            # 2行が埋まったのでチャンク確定
+            chunk = " ".join(line1)
+            if line2:
+                chunk += "\n" + " ".join(line2)
+            chunks.append(chunk)
+            line1 = [word]
+            line2 = []
+
+    if line1:
+        chunk = " ".join(line1)
+        if line2:
+            chunk += "\n" + " ".join(line2)
+        chunks.append(chunk)
+
+    return chunks if chunks else [text]
 
 
 def probe_duration(path: Path) -> float:
@@ -132,25 +149,31 @@ def run(episode_id: str):
         if not sentences:
             continue
 
-        # 語数比率でタイムスタンプを按分
+        # 語数比率でタイムスタンプを按分（チャンク単位）
         word_counts = [len(s.split()) for s in sentences]
         total_words = sum(word_counts)
 
         cursor = scene_start
-        for j, (sentence, wc) in enumerate(zip(sentences, word_counts)):
+        entry_count = 0
+        for sentence, wc in zip(sentences, word_counts):
             ratio = wc / total_words if total_words > 0 else 1 / len(sentences)
-            duration = narr_dur * ratio
-            start = cursor
-            end = cursor + duration
-            cursor = end
+            sentence_dur = narr_dur * ratio
+            chunks = chunk_sentence(sentence)
+            chunk_dur = sentence_dur / len(chunks)
 
-            srt_lines.append(str(idx))
-            srt_lines.append(f"{seconds_to_srt(start)} --> {seconds_to_srt(end)}")
-            srt_lines.append(wrap_line(sentence))
-            srt_lines.append("")
-            idx += 1
+            for chunk in chunks:
+                start = cursor
+                end = cursor + chunk_dur
+                cursor = end
 
-        print(f"  S{scene['scene_id']:02d}: {len(sentences)}文 / {seconds_to_srt(scene_start)} → {seconds_to_srt(cursor)}")
+                srt_lines.append(str(idx))
+                srt_lines.append(f"{seconds_to_srt(start)} --> {seconds_to_srt(end)}")
+                srt_lines.append(chunk)
+                srt_lines.append("")
+                idx += 1
+                entry_count += 1
+
+        print(f"  S{scene['scene_id']:02d}: {entry_count}エントリ / {seconds_to_srt(scene_start)} → {seconds_to_srt(cursor)}")
 
     srt_content = "\n".join(srt_lines)
     out_path = out_dir / f"{episode_id}.srt"
