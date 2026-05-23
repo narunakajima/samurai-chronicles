@@ -162,8 +162,11 @@ def run(episode_id: str):
 
     # Shorts
     print("\n【Shorts】")
+    shorts_description = (
+        f"▶ Full episode: https://youtu.be/{main_id}\n\n{description}"
+    )
     shorts_id = upload_video(youtube, shorts_video,
-                             f"{title} #Shorts", description, tags + ["shorts"])
+                             f"{title} #Shorts", shorts_description, tags + ["shorts"])
 
     print(f"\n{'━'*60}")
     print(f"  ✓ アップロード完了（公開）")
