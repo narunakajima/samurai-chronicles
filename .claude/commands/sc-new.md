@@ -52,11 +52,13 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 
 選ばれたトピックをもとに、以下を含む完全なエピソードJSONを生成する。
 
+**JSONの内容は画面に出力しない。** 生成後すぐにファイルへ保存する。
+
 ### 生成ルール
 
 **ナレーション（各シーン）:**
 - BBC/Netflix歴史ドキュメンタリー調の英語
-- 1シーン約150〜200語
+- 1シーン約80〜100語（約15〜18秒の読み上げ尺）
 - 各シーンで次シーンへの引きを作る
 - hook → setup → rising_action → climax → falling_action → insight → teaser → outro の構成
 
@@ -152,7 +154,7 @@ Commanding presence. Carries a European arquebus as well as a katana.
 
 ### 制作確認書（Claudeが直接生成）
 
-画面に内容を表示せず、バックグラウンドで以下を実行してデスクトップに保存する：
+**制作確認書の内容は画面に一切出力しない。** バックグラウンドで以下を実行してデスクトップに保存する：
 
 1. エピソードJSONの全シーンを日本語に翻訳する
 2. 全ナレーションのファクトチェックを行う

@@ -1,0 +1,192 @@
+{
+  "episode_id": "ep004",
+  "episode_title": "The Battle of Sekigahara: One Day That Decided Japan",
+  "youtube_title": "The Battle That Decided Japan's Fate | Sekigahara 1600",
+  "youtube_description": "On October 21, 1600, 160,000 samurai met on a fog-covered plain in central Japan. By noon, the battle was over — and Japan's next 265 years had been decided. This is the story of the most consequential six hours in Japanese history.\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n📚 References:\n1. Turnbull, Stephen. Battles of the Samurai. Arms and Armour Press, 1987.\n2. Berry, Mary Elizabeth. Hideyoshi. Harvard University Press, 1982.\n3. Birt, Michael P. \"Samurai in Passage.\" Journal of Japanese Studies, 1985.\n\n#Sekigahara #BattleOfSekigahara #SamuraiHistory #JapaneseHistory #Sengoku #TokugawaIeyasu #SamuraiChronicles",
+  "youtube_tags": ["Battle of Sekigahara", "Sekigahara", "Samurai", "Japanese History", "Sengoku Period", "Tokugawa Ieyasu", "Ishida Mitsunari", "Japan history", "documentary", "samurai chronicles"],
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "thumbnail_prompt": "Sweeping panoramic view of a massive samurai battle at dawn in a wide valley, two enormous armies of tens of thousands clashing across fog-covered rice fields, hundreds of banners and spears filling the frame, golden dawn light piercing through smoke and mist, the full epic scale of Sekigahara captured in a dramatic cinematic wide shot",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 20,
+      "narration": "October 21, 1600. A valley in central Japan, before dawn. One hundred and sixty thousand men stand in the fog, barely able to see twenty paces ahead. East and West. Two visions of Japan's future. When the mist clears, one side will cease to exist. The battle will last six hours. Its outcome will last two hundred and sixty-five years. This is Sekigahara.",
+      "image_prompt": "Pre-dawn darkness over a wide mountain valley, two massive armies barely visible as silhouettes through thick white fog, thousands of torches and lanterns creating ghostly halos of light, an eerie silence before catastrophe, the scale almost incomprehensible",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 20,
+      "narration": "Two years earlier, Toyotomi Hideyoshi had died, leaving a five-year-old heir and no plan. His council of five regents — the most powerful lords in Japan — was supposed to govern together. Instead, they immediately began positioning for dominance. At the centre of the conflict: Tokugawa Ieyasu, the most powerful lord, and Ishida Mitsunari, Hideyoshi's fiercely loyal administrator. One wanted power. The other wanted to stop him.",
+      "image_prompt": "An opulent Japanese castle council chamber, five powerful lords in formal robes seated around a low table, tension visible in their postures, a painted gold screen behind them, the atmosphere of a political powder keg about to ignite",
+      "ken_burns": "pan_right",
+      "character_ref": "ieyasu"
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 20,
+      "narration": "Ishida Mitsunari was brilliant, incorruptible, and almost universally disliked. He had served Hideyoshi with total dedication — keeping meticulous records, managing logistics, enforcing rules. But his rigid perfectionism made enemies of the very generals whose swords he needed. When he tried to have Ieyasu arrested in 1600, seven of those generals sided against him. The Western Army was born fractured.",
+      "image_prompt": "A severe-looking Japanese official in formal court robes standing rigidly in a castle corridor, advisors surrounding him looking tense, the expression of a man certain he is right and frustrated that others cannot see it, a stack of administrative scrolls beside him",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari"
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 20,
+      "narration": "By autumn 1600, Japan had split. The Western Army — nominally defending the Toyotomi heir — gathered under Mitsunari at Osaka. The Eastern Army marched under Ieyasu. The deciding factor would not be numbers — both sides fielded roughly equal forces. It would be loyalty. And in the Sengoku age, loyalty was always for sale.",
+      "image_prompt": "A map of feudal Japan rendered as a painted screen, red and blue markers showing the positions of Eastern and Western armies, arrows indicating movements converging on a central point in the mountains of Mino province, the geography of a nation at war with itself",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 20,
+      "narration": "The Western Army seized the strategic initiative first. Mitsunari's forces occupied the high ground around the Sekigahara valley — a narrow corridor between mountain ranges on the road between east and west Japan. Whoever controlled Sekigahara controlled the country. The Western generals took the hills. They built defensive positions. On paper, they had the stronger hand.",
+      "image_prompt": "Western army generals in full battle armor surveying a mountain valley from a forested ridge, pointing out defensive positions below, banners of the Toyotomi loyalty rising behind them, the narrow valley stretching away into morning mist, a commanding strategic position",
+      "ken_burns": "pan_right",
+      "character_ref": "mitsunari"
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 20,
+      "narration": "Ieyasu's Eastern Army arrived at Sekigahara on the evening of October 20th, exhausted from a forced march through rain. Ieyasu studied the terrain and knew he was at a disadvantage. The Western forces held higher ground on three sides. A frontal assault would be costly. But Ieyasu had a weapon the terrain could not neutralise: months of secret correspondence. Betrayal, carefully prepared.",
+      "image_prompt": "Eastern army camp at night in heavy rain, soldiers huddled under makeshift shelters, campfires struggling against the downpour, a commanding general studying a battle map by lantern light inside a campaign tent, the strain of eve-of-battle tension",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu"
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 20,
+      "narration": "Among the Western generals, one man was not what he appeared. Kobayakawa Hideaki commanded fifteen thousand troops on a hill called Matsuo-yama — a position that dominated the entire battlefield. He was twenty years old, impulsive, and deeply uncertain. Ieyasu had contacted him weeks before and received a private assurance. But assurances from anxious young men are fragile things.",
+      "image_prompt": "A young Japanese general in ornate armor standing on a hilltop at night, looking down at the vast dark valley below where both armies camp, his expression uncertain and conflicted, moonlight illuminating his face, his senior retainers watching him anxiously from behind",
+      "ken_burns": "static",
+      "character_ref": "kobayakawa"
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 20,
+      "narration": "Dawn broke cold and thick with fog. Neither army could see the other. For two hours, both sides waited in eerie silence. Then, around eight in the morning, the fog began to thin. The armies came into view simultaneously — and the guns opened. Arquebus volleys crackled across the valley. Arrows flew. The Battle of Sekigahara had begun.",
+      "image_prompt": "Dawn at Sekigahara valley, thick white fog slowly dissolving to reveal two enormous armies facing each other across a wide plain, the first puffs of arquebus smoke rising as shots are fired, the moment of revelation as the scale of the confrontation becomes visible",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 20,
+      "narration": "The fighting was immediate and ferocious. Eastern general Fukushima Masanori crashed into the Western forces of Ukita Hideie in the valley centre. Both sides suffered. The Western flanks held their positions. For two hours, the battle was inconclusive. Mitsunari watched from his headquarters on a hill. The plan was working — if Kobayakawa stayed loyal.",
+      "image_prompt": "Close-quarters samurai combat in a valley battlefield, two armies clashing with spears and swords, armored warriors fighting hand to hand, battle banners falling and rising in the chaos, smoke from arquebuses drifting across the field, the desperate intensity of close battle",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari"
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 20,
+      "narration": "On Matsuo-yama hill, Kobayakawa Hideaki did not move. His fifteen thousand troops sat motionless while the battle raged below. Minutes passed. Then an hour. Mitsunari's generals began to send frantic messengers: attack the Eastern flank. Kobayakawa ignored them. Ieyasu, watching from his command post, grew impatient. He made a decision that took extraordinary nerve.",
+      "image_prompt": "A young general on horseback on a forested hilltop, frozen in indecision, watching the battle below through gaps in the trees, frantic messengers arriving on exhausted horses, his troops standing motionless in full battle formation waiting for an order that does not come",
+      "ken_burns": "pan_right",
+      "character_ref": "kobayakawa"
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "Ieyasu ordered his arquebusiers to fire warning shots directly at Kobayakawa's position. A threat. Move now, or be treated as an enemy. It was a calculated gamble — if Kobayakawa took offence and charged the Eastern Army instead, the battle was lost. Kobayakawa hesitated for one final moment. Then he drew his sword and pointed it down the hill. Fifteen thousand men began to run.",
+      "image_prompt": "A young general on horseback dramatically raising his sword and pointing downhill, his entire massive force surging forward in a thunderous charge down the hillside, flags and weapons catching the morning light, the decisive moment of betrayal that will change Japanese history",
+      "ken_burns": "zoom_in",
+      "character_ref": "kobayakawa"
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "Kobayakawa's troops smashed into the Western Army's flank. The impact was catastrophic. Then the domino fell. Wakisaka Yasuharu. Ogawa Suketada. Akaza Naomasa. General after general who had made secret promises to Ieyasu turned their weapons on their own allies. The Western Army, already under pressure from the front, was now being destroyed from within.",
+      "image_prompt": "Chaos on the battlefield as multiple forces suddenly change direction, Western army soldiers attacked from their own flanks and rear simultaneously, battle banners switching sides, the horrifying confusion of being betrayed mid-battle, the collapse spreading across the field like a wave",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "Mitsunari watched his army disintegrate from his command hill. Nothing could be done. The Western formations broke. Soldiers fled into the surrounding mountains. Commanders abandoned their positions. In under an hour, an army of one hundred thousand had ceased to function. Mitsunari himself fled — on foot, alone, into the forest. The battle was over by noon.",
+      "image_prompt": "Western army in full collapse, soldiers streaming away from the battlefield in every direction across the valley, discarded weapons and armour littering the field, a lone figure in general's armour running toward a forested hillside, the panorama of total military defeat",
+      "ken_burns": "zoom_out",
+      "character_ref": "mitsunari"
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 20,
+      "narration": "Ishida Mitsunari hid in a peasant's hut for three days, disguised as a commoner. He was betrayed — fittingly — by a man he had once insulted. Captured, he was paraded through the streets of Kyoto and publicly executed on November 6th, sixteen days after the battle. He refused to eat food offered before his death, saying he needed to keep his strength to die with dignity. Even at the end, he was meticulous.",
+      "image_prompt": "A disgraced Japanese general being led through the streets of Kyoto in tattered clothes, crowds watching from both sides, his posture still dignified despite capture, autumn leaves falling, the final public humiliation of a man who believed he was fighting for justice",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari"
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 20,
+      "narration": "Ieyasu's victory was total but measured. He did not rampage. He calculated. Eighty-seven daimyo lost their domains entirely. Others were reduced, relocated, or stripped of coastal territories. New lords — loyal to Tokugawa — were placed at strategic positions across the country. In three months, Ieyasu had redrawn the map of Japan. The process was so thorough it would last for centuries.",
+      "image_prompt": "A commanding Japanese warlord seated before a massive table covered in domain maps and official documents, advisors presenting scrolls for his seal, the systematic and methodical redistribution of an entire nation's power, calm authority in the aftermath of overwhelming victory",
+      "ken_burns": "static",
+      "character_ref": "ieyasu"
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 20,
+      "narration": "Not all Western lords were destroyed. Those who surrendered quickly, or whose defection had been secured in advance, were spared or lightly punished. The Shimazu clan of Kyushu fought their way out of the encirclement and escaped — Ieyasu chose not to pursue them. Practical politics, not revenge, governed everything. Japan needed to function. Ieyasu needed it to function under him.",
+      "image_prompt": "Samurai warriors fighting in a disciplined rear-guard formation retreating through mountain passes, their distinctive circular clan banners marking them as Shimazu of Kyushu, the controlled withdrawal of a proud clan that refused to be destroyed, fog in the mountain passes",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "falling_action",
+      "duration_seconds": 20,
+      "narration": "One question remained unresolved. Osaka Castle still stood. Inside, Toyotomi Hideyori — now seven years old — was technically Ieyasu's ward. Ieyasu had sworn to Hideyoshi to protect him. He kept that oath — for fifteen years. Osaka Castle would become the last act, the final necessary violence, that completed what Sekigahara had begun. But that is another story.",
+      "image_prompt": "The vast and magnificent Osaka Castle seen from a distance across a wide moat, its white towers gleaming in autumn sunlight, flags of the Toyotomi clan flying from the battlements, an imposing fortress that still stands as the last obstacle to complete dominion",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 20,
+      "narration": "Sekigahara was decided before it was fought. The real battle was the months of letters, promises, and bribes that preceded October 21st. Ieyasu did not win on the battlefield. He won in the negotiating rooms, in the private messengers, in the patient accumulation of commitments from men who would switch sides when the moment came. The fighting lasted six hours. The preparation took years.",
+      "image_prompt": "A quiet study room in a Japanese castle at night, a strategic mastermind writing secret letters by candlelight, maps and intelligence reports spread around him, the contrast between this solitary quiet work and the massive violence it would eventually produce",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu"
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 20,
+      "narration": "Today, the Sekigahara battlefield is a quiet plain in Gifu Prefecture. Visitors walk among rice fields where one hundred and sixty thousand men once fought. Monuments mark the positions of each commander. The site where Kobayakawa hesitated before his charge still draws pilgrims debating whether he was a traitor or a pragmatist. A single morning in 1600, still being argued about today.",
+      "image_prompt": "Modern peaceful rice fields in a wide valley, small historical monuments and marker stones visible among the crops, a clear autumn day, the ordinary tranquility of a place where something enormous once happened, distant mountains framing the scene exactly as they did in 1600",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 20,
+      "narration": "Sekigahara closed the Sengoku period — a century of war that had torn Japan apart. What followed was Pax Tokugawa: two and a half centuries of enforced peace, controlled trade, and frozen social hierarchy. Japan turned inward. The samurai traded swords for brushes. The world outside moved on without them. Until one morning in 1853, when four black ships appeared in Edo Bay and everything changed again. That story is next.",
+      "image_prompt": "Split image composition: on the left, the chaos and violence of Sekigahara battlefield; on the right, the peaceful prosperity of Edo-period Japan with orderly streets and Mt. Fuji in the background, the dramatic contrast between war and the long peace it created",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    }
+  ]
+}

@@ -87,6 +87,15 @@ def upload_video(youtube, video_path: Path, title: str, description: str,
     return video_id
 
 
+def upload_thumbnail(youtube, video_id: str, thumbnail_path: Path):
+    print(f"  サムネイルアップロード中: {thumbnail_path.name} ...")
+    youtube.thumbnails().set(
+        videoId=video_id,
+        media_body=MediaFileUpload(str(thumbnail_path), mimetype="image/png"),
+    ).execute()
+    print(f"  ✓ サムネイル完了")
+
+
 def upload_caption(youtube, video_id: str, srt_path: Path):
     print(f"  字幕アップロード中: {srt_path.name} ...")
     youtube.captions().insert(
@@ -117,6 +126,7 @@ def run(episode_id: str):
     main_video = out_dir / f"Samurai Chronicles {episode_id}.mp4"
     shorts_video = out_dir / f"{episode_id}_shorts.mp4"
     srt_file = out_dir / f"{episode_id}.srt"
+    thumbnail_file = DRIVE_BASE / episode_id / f"{episode_id}_thumbnail.png"
 
     title = ep["youtube_title"]
     description = ep["youtube_description"]
@@ -140,6 +150,13 @@ def run(episode_id: str):
         upload_caption(youtube, main_id, srt_file)
     else:
         print(f"  ⚠️  字幕ファイルなし（スキップ）")
+    if thumbnail_file.exists():
+        try:
+            upload_thumbnail(youtube, main_id, thumbnail_file)
+        except Exception as e:
+            print(f"  ⚠️  サムネイルスキップ（YouTube Studioで手動設定してください）: {e}")
+    else:
+        print(f"  ⚠️  サムネイルなし（スキップ）: {thumbnail_file.name}")
 
     time.sleep(2)
 

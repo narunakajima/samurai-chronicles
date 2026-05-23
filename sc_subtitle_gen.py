@@ -7,11 +7,12 @@ sc_subtitle_gen.py — Samurai Chronicles 字幕(SRT)生成スクリプト
 
 タイムスタンプの計算:
   イントロ(5s) + シーンオフセット + ナレーション遅延(0.5s) = 字幕開始
-  字幕終了 = 開始 + ナレーション音声長
+  ナレーションを文単位に分割し、語数比率でタイムスタンプを按分する。
 """
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -30,6 +31,30 @@ INTRO_DURATION = 5.0
 NARR_DELAY = 0.5
 NARR_TAIL = 1.0
 CROSSFADE_DURATION = 0.8
+
+
+def split_sentences(text: str) -> list:
+    """ナレーションを文単位に分割する。"""
+    # ピリオド・感嘆符・疑問符の後ろで分割
+    parts = re.split(r'(?<=[.!?])\s+', text.strip())
+    return [p.strip() for p in parts if p.strip()]
+
+
+def wrap_line(text: str, max_chars: int = 50) -> str:
+    """1行が長い場合、単語境界で折り返す（最大2行）。"""
+    if len(text) <= max_chars:
+        return text
+    words = text.split()
+    line1, line2 = [], []
+    for w in words:
+        if len(" ".join(line1 + [w])) <= max_chars:
+            line1.append(w)
+        else:
+            line2.append(w)
+    result = " ".join(line1)
+    if line2:
+        result += "\n" + " ".join(line2)
+    return result
 
 
 def probe_duration(path: Path) -> float:
@@ -100,18 +125,32 @@ def run(episode_id: str):
         if narr_dur <= 0:
             continue
 
-        start = INTRO_DURATION + scene_offsets[i] + NARR_DELAY
-        end = start + narr_dur
-
+        scene_start = INTRO_DURATION + scene_offsets[i] + NARR_DELAY
         text = scene["narration"].strip()
+        sentences = split_sentences(text)
 
-        srt_lines.append(str(idx))
-        srt_lines.append(f"{seconds_to_srt(start)} --> {seconds_to_srt(end)}")
-        srt_lines.append(text)
-        srt_lines.append("")
+        if not sentences:
+            continue
 
-        print(f"  S{scene['scene_id']:02d}: {seconds_to_srt(start)} → {seconds_to_srt(end)}")
-        idx += 1
+        # 語数比率でタイムスタンプを按分
+        word_counts = [len(s.split()) for s in sentences]
+        total_words = sum(word_counts)
+
+        cursor = scene_start
+        for j, (sentence, wc) in enumerate(zip(sentences, word_counts)):
+            ratio = wc / total_words if total_words > 0 else 1 / len(sentences)
+            duration = narr_dur * ratio
+            start = cursor
+            end = cursor + duration
+            cursor = end
+
+            srt_lines.append(str(idx))
+            srt_lines.append(f"{seconds_to_srt(start)} --> {seconds_to_srt(end)}")
+            srt_lines.append(wrap_line(sentence))
+            srt_lines.append("")
+            idx += 1
+
+        print(f"  S{scene['scene_id']:02d}: {len(sentences)}文 / {seconds_to_srt(scene_start)} → {seconds_to_srt(cursor)}")
 
     srt_content = "\n".join(srt_lines)
     out_path = out_dir / f"{episode_id}.srt"

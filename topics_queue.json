@@ -17,7 +17,7 @@
     },
     {
       "episode_id": "ep003",
-      "status": "pending",
+      "status": "in_production",
       "title": "Tokugawa Ieyasu: How a Hostage Became a Shogun",
       "era": "Sengoku/Edo",
       "priority": "A",
@@ -25,7 +25,7 @@
     },
     {
       "episode_id": "ep004",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Battle of Sekigahara: One Day That Decided Japan",
       "era": "Sengoku",
       "priority": "A",
@@ -240,6 +240,6 @@
       "notes": "How Minamoto no Yoritomo created the first shogunate in 1192. Structural explainer. Good early episode."
     }
   ],
-  "last_updated": "2026-05-22",
+  "last_updated": "2026-05-23",
   "total_topics": 30
 }
