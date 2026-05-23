@@ -34,7 +34,7 @@ OKが取れたら `topics_queue.json` の `queue` に追記し、`total_topics` 
 
 ---
 
-`status: "pending"` のうち最も若い `episode_id` を1件提案する。
+`status: "pending"` のうち**配列の先頭（最初に現れるもの）**を1件提案する。（episode_id の番号順ではなく、配列の並び順で決まる）
 
 表示フォーマット：
 ```
