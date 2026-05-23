@@ -139,14 +139,48 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
         ep = json.load(f)
 
     if shorts:
-        # Shorts用シーンのみ（均等分散）
+        # Shorts用シーンを内容重視で選択（8枚）
+        # 1. shorts_highlight_scene を必ず含む
+        # 2. 劇的なシーンタイプを優先
+        # 3. 残りを等間隔で補完
         all_scenes = ep["scenes"]
-        n = min(8, len(all_scenes))
-        indices = [round(i * (len(all_scenes) - 1) / (n - 1)) for i in range(n)]
-        scenes = [all_scenes[i] for i in indices]
+        highlight_id = ep.get("shorts_highlight_scene")
+        selected_ids = set()
+
+        # highlight シーンを確保
+        if highlight_id:
+            selected_ids.add(highlight_id)
+
+        # タイプ優先度順に追加
+        priority_types = ["hook", "climax", "teaser", "insight", "falling_action", "outro", "rising_action", "setup"]
+        for ptype in priority_types:
+            if len(selected_ids) >= 8:
+                break
+            for s in all_scenes:
+                if len(selected_ids) >= 8:
+                    break
+                if s["type"] == ptype and s["scene_id"] not in selected_ids:
+                    selected_ids.add(s["scene_id"])
+
+        # それでも8枚に足りない場合は等間隔で補完
+        if len(selected_ids) < 8:
+            n_fill = 8 - len(selected_ids)
+            remaining = [s for s in all_scenes if s["scene_id"] not in selected_ids]
+            step = max(1, len(remaining) // n_fill)
+            for i in range(0, len(remaining), step):
+                if len(selected_ids) >= 8:
+                    break
+                selected_ids.add(remaining[i]["scene_id"])
+
+        # scene_id 順にソート
+        scenes = sorted([s for s in all_scenes if s["scene_id"] in selected_ids], key=lambda s: s["scene_id"])
         out_dir = DRIVE_BASE / episode_id / "images_shorts"
         gen_func = generate_one_image_portrait
         label = "Shorts縦長(9:16)"
+        # 再生成時に旧ファイルが残らないよう既存PNGをクリア
+        if out_dir.exists():
+            for f in out_dir.glob("S*.png"):
+                f.unlink()
     else:
         scenes = ep["scenes"]
         if scene_filter:

@@ -503,11 +503,29 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
     with tempfile.TemporaryDirectory() as tmp_str:
         tmp = Path(tmp_str)
 
-        # ── Shorts 用クリップ（イントロ + マルチシーン + アウトロ）──
-        n_s = min(SHORTS_SCENE_COUNT, len(scenes))
-        s_indices = [round(i * (len(scenes) - 1) / (n_s - 1)) for i in range(n_s)]
-        selected = [scenes[i] for i in s_indices]
-        print(f"\n--- Shorts クリップ生成 (イントロ + {n_s}シーン×{SHORTS_CLIP_DURATION}s + アウトロ) ---")
+        # ── Shorts 用シーン選択（内容重視・highlight必須）──
+        selected_ids = set()
+        if shorts_scene_id:
+            selected_ids.add(shorts_scene_id)
+        priority_types = ["hook", "climax", "teaser", "insight", "falling_action", "outro", "rising_action", "setup"]
+        for ptype in priority_types:
+            if len(selected_ids) >= SHORTS_SCENE_COUNT:
+                break
+            for s in scenes:
+                if len(selected_ids) >= SHORTS_SCENE_COUNT:
+                    break
+                if s["type"] == ptype and s["scene_id"] not in selected_ids:
+                    selected_ids.add(s["scene_id"])
+        if len(selected_ids) < SHORTS_SCENE_COUNT:
+            n_fill = SHORTS_SCENE_COUNT - len(selected_ids)
+            remaining = [s for s in scenes if s["scene_id"] not in selected_ids]
+            step = max(1, len(remaining) // n_fill)
+            for i in range(0, len(remaining), step):
+                if len(selected_ids) >= SHORTS_SCENE_COUNT:
+                    break
+                selected_ids.add(remaining[i]["scene_id"])
+        selected = sorted([s for s in scenes if s["scene_id"] in selected_ids], key=lambda s: s["scene_id"])
+        print(f"\n--- Shorts クリップ生成 ({len(selected)}シーン×{SHORTS_CLIP_DURATION}s + アウトロ) ---")
         print(f"  使用シーン: {[s['scene_id'] for s in selected]}")
 
         s_clips = []
@@ -525,9 +543,6 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
             s_clips.append(out_clip)
 
         if s_clips:
-            s_intro = tmp / "s_intro.mp4"
-            make_intro_clip(s_intro, landscape=False)
-
             s_main = tmp / "s_main.mp4"
             s_durs = [SHORTS_CLIP_DURATION] * len(s_clips)
             crossfade_concat_n(s_clips, s_durs, s_main)
@@ -537,15 +552,16 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
             make_outro_clip(s_outro, landscape=False, shorts=True)
 
             s_video = tmp / "s_video.mp4"
-            concat_video_clips([s_intro, s_main, s_outro], s_video)
+            # イントロはループ時に違和感が出るためアウトロのみ付与
+            concat_video_clips([s_main, s_outro], s_video)
 
-            s_total_dur = INTRO_DURATION + s_main_dur + OUTRO_SHORTS_DURATION
+            s_total_dur = s_main_dur + OUTRO_SHORTS_DURATION
             shorts_audio = tmp / "s_audio.aac"
             # ハイライトシーンのナレーション + BGM
             highlight = next((s for s in scenes if s["scene_id"] == shorts_scene_id), None)
             narr_scenes = [highlight] if highlight else []
             build_audio_track(narr_scenes, audio_dir, s_total_dur, bgm_path,
-                              shorts_audio, [0.0], intro_dur=INTRO_DURATION)
+                              shorts_audio, [0.0], intro_dur=0.0)
 
             shorts_output = out_dir / f"{episode_id}_shorts.mp4"
             run_cmd(

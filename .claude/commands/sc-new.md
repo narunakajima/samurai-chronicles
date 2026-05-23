@@ -146,9 +146,9 @@ Commanding presence. Carries a European arquebus as well as a katana.
 
 ---
 
-## STEP 4 — 制作確認書とBGMを並行して準備する
+## STEP 4 — 制作確認書・サムネイル・BGMを並行して準備する
 
-制作確認書の生成とBGMダウンロードを**同時に**バックグラウンドで実行する。
+制作確認書の生成・サムネイル画像生成・BGMダウンロードを**同時に**バックグラウンドで実行する。
 
 ### 制作確認書（Claudeが直接生成）
 
@@ -228,6 +228,39 @@ BGM           : ❌ 未選択
 
 ---
 
+### サムネイル画像（Claudeが直接生成）
+
+エピソードJSONの `thumbnail_prompt` にテキストオーバーレイ指示を加えてGeminiで生成し、デスクトップに保存する。
+
+**テキストオーバーレイ指示（プロンプトに追記）:**
+```
+Bold text overlay at the top in large white block letters with dark drop shadow: "{EPISODE_TITLE_SHORT}".
+Smaller text at the bottom in white: "{SUBTITLE}".
+Text must be clearly legible, sharp, and properly spelled.
+Modern cinematic concept art style, dramatic lighting, film production illustration quality. 16:9 aspect ratio, 1280x720.
+```
+
+- `EPISODE_TITLE_SHORT`: エピソードタイトルを短く大文字で（例: "THE HONNOJI INCIDENT"）
+- `SUBTITLE`: サブコピー（例: "Japan's Greatest Betrayal"）
+
+**生成コード:**
+```python
+from google import genai
+from google.genai import types
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+response = client.models.generate_content(
+    model="gemini-3.1-flash-image-preview",
+    contents=full_prompt,
+    config=types.GenerateContentConfig(response_modalities=["IMAGE"]),
+)
+# inline_data から PNG をデスクトップに保存
+# 保存先: ~/Desktop/ep{NNN}_thumbnail.png
+```
+
+**Google Drive への保存はこの時点では行わない。**
+
+---
+
 ### BGM（Freesoundから3曲）
 
 エピソードのムード（タイトル・シーン構成・感情トーン）から2〜3語の英語クエリを3本生成し、ダウンロードする。
@@ -252,19 +285,20 @@ FREESOUND_API_KEY=$FREESOUND_API_KEY python3 /Users/claude/.claude/scripts/frees
 
 ### 完了報告
 
-制作確認書・BGMの両方が完了したら、ユーザーに報告する：
+3つすべてが完了したら、ユーザーに報告する：
 
 ```
-制作確認書とBGM候補の準備ができました。
+制作確認書・サムネイル・BGM候補の準備ができました。
 
 📄 ep{NNN}_制作確認書.txt — デスクトップに保存済み
+🖼️ ep{NNN}_thumbnail.png — デスクトップに保存済み
 🎵 BGM候補 3曲 — デスクトップに保存済み
   1. {ファイル名}（{尺}s）[{ライセンス}]
   2. {ファイル名}（{尺}s）[{ライセンス}]
   3. {ファイル名}（{尺}s）[{ライセンス}]
 
-確認書を読んで、BGMは1曲だけ残して2曲削除してください。
-両方OKなら教えてください。修正があればお知らせください。
+確認書を読んで、サムネイルを確認し、BGMは1曲だけ残して2曲削除してください。
+すべてOKなら教えてください。修正があればお知らせください。
 ```
 
 ---
@@ -274,14 +308,15 @@ FREESOUND_API_KEY=$FREESOUND_API_KEY python3 /Users/claude/.claude/scripts/frees
 ユーザーの回答に応じて対応する：
 
 - **確認書に修正あり** → 該当箇所を修正してデスクトップのファイルを上書き保存。再確認を求める。
+- **サムネイルをやり直したい** → デスクトップの `ep{NNN}_thumbnail.png` を削除して再生成。
 - **BGMをやり直したい** → デスクトップの候補3曲を削除し、`--round` を1増やして再ダウンロード。
-- **両方OK** → STEP 4b へ進む
+- **すべてOK** → STEP 4b へ進む
 
 ---
 
 ## STEP 4b — Google Driveへ移動
 
-両方OKが取れたら、デスクトップのファイルをGoogle Driveエピソードフォルダへ移動する：
+すべてOKが取れたら、デスクトップのファイルをGoogle Driveエピソードフォルダへ移動する：
 
 ```bash
 DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}"
@@ -289,6 +324,9 @@ mkdir -p "$DRIVE/audio"
 
 # 制作確認書を移動
 mv "$HOME/Desktop/ep{NNN}_制作確認書.txt" "$DRIVE/"
+
+# サムネイルを移動
+mv "$HOME/Desktop/ep{NNN}_thumbnail.png" "$DRIVE/"
 
 # BGM（残った1曲）をリネームして移動
 mv "$HOME/Desktop/BGM_candidate_*.mp3" "$DRIVE/audio/ep{NNN}-BGM.mp3"
