@@ -56,6 +56,25 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 
 ### 生成ルール
 
+**YouTube タイトルの型（CTR最大化）:**
+
+海外歴史チャンネルで再生数が取れるタイトルには共通の型がある。必ずいずれかの型に当てはめること。
+
+- 型A: `"The [Adjective] [Person] Who [Did Something Shocking]"`
+- 型B: `"Why [Famous Person] Really [Did Something]"`
+- 型C: `"The Real Reason [Famous Event] Happened"`
+- 型D: `"The [Event] That Changed Japan Forever"`
+
+× 避ける: `"The History of Miyamoto Musashi"`（説明的すぎる）
+○ 良い: 裏切り・転落・奇跡・復讐など「人間ドラマ」としてフックを作る
+
+シリーズ構成の場合はタイトル末尾に統一表記する:
+```
+例: "The Betrayal at Honnoji | Sengoku's Most Brutal Betrayals #1"
+```
+
+---
+
 **ナレーション（各シーン）:**
 - BBC/Netflix歴史ドキュメンタリー調の英語
 - 1シーン約80〜100語（約15〜18秒の読み上げ尺）
@@ -77,7 +96,9 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 - 新キャラクターが必要な場合はメモしておく
 
 **shorts_highlight_scene:**
-- 最も劇的・視覚的に強いシーンのID（クライマックス付近）
+- クライマックス**直前**のシーンを選ぶ（緊張が最高潮に達した瞬間）
+- 「この後どうなる？」と思わせる引きを作り、本編への誘導フックにする
+- climax シーンそのものではなく、その1〜2シーン前が理想
 
 ### JSONフォーマット
 
@@ -88,6 +109,8 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
   "youtube_title": "...",
   "youtube_description": "...",
   "youtube_tags": [...],
+  "series_name": null,
+  "series_number": null,
   "total_scenes": 20,
   "shorts_highlight_scene": N,
   "thumbnail_prompt": "...",
@@ -116,12 +139,21 @@ https://www.youtube.com/@Samurai-Chronicles-JP
 
 🌐 Official site: https://samurai-chronicles.com
 
+🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.
+
 📚 References:
 1. {参考文献1}
 2. {参考文献2}
 3. {参考文献3}
 
 #{tag1} #{tag2} ...
+```
+
+シリーズ構成の場合は References の前に以下を追加する:
+```
+📺 Series: {series_name}
+  #{series_number - 1} → {前エピソードタイトル（あれば）}
+  #{series_number + 1} → Coming soon
 ```
 
 **禁止:** 「AI」「AI-generated」などAI関連の文言は一切含めない。
