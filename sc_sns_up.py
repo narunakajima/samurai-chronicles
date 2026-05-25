@@ -26,7 +26,6 @@ from googleapiclient.http import MediaFileUpload
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube.force-ssl",
-    "https://www.googleapis.com/auth/youtube.readonly",
 ]
 
 SAMURAI_CHANNEL_ID = "UCN1-TUxX_2UumGm3OKpmncg"  # Samurai Chronicles チャンネルID
@@ -182,8 +181,13 @@ def run(episode_id: str):
 
     # Shorts
     print("\n【Shorts】")
+    hook_lines = ep.get("shorts_hook_lines", [])
+    hook_text = "\n".join(hook_lines) if hook_lines else ep.get("episode_title", "")
     shorts_description = (
-        f"▶ Full episode: https://youtu.be/{main_id}\n\n{description}"
+        f"{hook_text}\n\n"
+        f"▶ Full episode: https://youtu.be/{main_id}\n\n"
+        f"** Subscribe for new episodes every day:\n"
+        f"https://www.youtube.com/@Samurai-Chronicles-JP"
     )
     shorts_id = upload_video(youtube, shorts_video,
                              f"{title} #Shorts", shorts_description, tags + ["shorts"])
