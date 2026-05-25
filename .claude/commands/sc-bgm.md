@@ -6,7 +6,7 @@
 
 - エピソードフォルダ: `~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/`
 - デスクトップ: `~/Desktop/`
-- スクリプト: `$HOME/.claude/scripts/freesound_download.py`
+- スクリプト: `$HOME/lamp-whisper/freesound_download.py`
 
 ## 手順
 
@@ -42,7 +42,7 @@ forest, rain, nature, field recording, ambience, birdsong, wind, wave, cricket �
 ラウンド変数を `ROUND=0` で初期化し、以下を実行する:
 
 ```bash
-FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/.claude/scripts/freesound_download.py \
+FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
   "<Q1>" "<Q2>" "<Q3>" \
   "$HOME/Desktop/" \
   --round $ROUND

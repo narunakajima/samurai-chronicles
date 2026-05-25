@@ -9,7 +9,7 @@ BGM候補3曲のダウンロードと制作確認書の生成を同時に行い�
 - エピソードフォルダ: `~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/`
 - デスクトップ: `~/Desktop/`
 - スクリプト（確認書）: `$HOME/samurai-chronicles/sc_review_gen.py`
-- スクリプト（BGM）: `$HOME/.claude/scripts/freesound_download.py`
+- スクリプト（BGM）: `$HOME/lamp-whisper/freesound_download.py`
 
 ## 手順
 
@@ -36,7 +36,7 @@ BGM候補3曲のダウンロードと制作確認書の生成を同時に行い�
 **A) BGM候補3曲をデスクトップにダウンロード:**
 ```bash
 ROUND=0
-FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/.claude/scripts/freesound_download.py \
+FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
   "<Q1>" "<Q2>" "<Q3>" \
   "$HOME/Desktop/" \
   --round $ROUND

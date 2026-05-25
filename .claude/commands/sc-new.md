@@ -331,7 +331,7 @@ response = client.models.generate_content(
 - 環境音系（forest, rain, nature, ambience など）は禁止
 
 ```bash
-FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/.claude/scripts/freesound_download.py \
+FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
   "<Q1>" "<Q2>" "<Q3>" \
   "$HOME/Desktop/" \
   --round 0
