@@ -1,0 +1,217 @@
+{
+  "episode_id": "ep006",
+  "episode_title": "The General Japan Could Never Forget",
+  "youtube_title": "Japan's Greatest Warrior Was Destroyed By His Own Brother | Minamoto no Yoshitsune",
+  "youtube_description": "He delivered the greatest naval victory in Japanese history. Three months later, his own brother declared him a traitor. The most celebrated warrior of medieval Japan died alone in the far north — betrayed by the man he made supreme.\n\n⏱️ Chapters:\n0:00 Introduction\n0:16 He won Japan's greatest naval...\n0:36 The year was 1159. Japan was\n1:26 The boy grew up at Kurama\n2:19 In 1174, a young man now\n3:11 In 1180, Yoshitsune's older...\n4:05 The Genpei War's decisive...\n5:03 In early 1185, Yoshitsune...\n6:05 On April 25th, 1185, the two\n7:09 Yoshitsune returned to Kyoto...\n8:10 Yoritomo's response was swift...\n8:55 Yoshitsune fled with a...\n9:43 Lord Fujiwara no Hidehira...\n10:45 On June 15, 1189, Yasuhira's...\n11:48 The soldiers later said they...\n12:46 The Japanese have a phrase for\n13:42 The legend of Yoshitsune did not\n14:40 Eight centuries have not...\n15:35 Yoritomo had gotten what he...\n16:28 The story of Yoshitsune is the\n17:12 Minamoto no Yoshitsune died...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Helen Craig McCullough, \"Yoshitsune: A Fifteenth-Century Japanese Chronicle\" (Stanford University Press, 1966)\n2. Ivan Morris, \"The Nobility of Failure: Tragic Heroes in the History of Japan\" (Holt, Rinehart and Winston, 1975)\n3. The Tale of the Heike (Heike Monogatari, 13th century) — primary source\n\n🎵 Music: A Piano and Choir Journey by Matio888 (freesound.org) — CC BY 4.0\n\n#MinamotoYoshitsune #GenpeiWar #SamuraiHistory #JapaneseHistory #HeianPeriod #JapanHistory",
+  "youtube_tags": [
+    "Minamoto Yoshitsune",
+    "Genpei War",
+    "samurai history",
+    "Japanese history",
+    "medieval Japan",
+    "Battle of Dan-no-ura",
+    "Benkei",
+    "Yoritomo",
+    "Heian period",
+    "Kamakura shogunate",
+    "Japan history",
+    "samurai chronicles",
+    "feudal Japan",
+    "tragic hero",
+    "Japanese warrior"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "shorts_hook_lines": [
+    "HE WON EVERY BATTLE.",
+    "HIS REWARD: A DEATH WARRANT.",
+    "Japan's most tragic hero."
+  ],
+  "teaser_narration": "His army was gone. His allies had all abandoned him. In a doorway at Koromogawa, one giant warrior stood against hundreds — holding them off as his lord prepared to die. Who was the man Benkei died standing for?",
+  "shorts_narration": "He defeated the entire Taira clan in three legendary battles. His brother rewarded him with a death warrant. Japan's most brilliant general — hunted, betrayed, and broken. This is Minamoto no Yoshitsune.",
+  "thumbnail_prompt": "Minamoto no Yoshitsune in lacquered black armor standing at the bow of a warship during the Battle of Dan-no-ura, dramatic low angle, burning enemy ships in the background, sea spray and smoke, fierce determined expression, golden afternoon light cutting through battle haze, crimson and gold banners streaming, the scale of the naval battle visible across the water",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 15,
+      "narration": "He won Japan's greatest naval battle — then became a fugitive. The man who ordered his death had shared his blood. Who destroys their own greatest general — and why does Japan still weep for him?",
+      "image_prompt": "Lone samurai figure silhouetted against a vast grey northern sky at dusk, kneeling on frozen ground at a remote northern outpost, katana laid before him, distant mountains lost in mist, the absolute stillness of a man at the end of everything, haunting and deeply melancholic",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshitsune"
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 22,
+      "narration": "The year was 1159. Japan was tearing itself apart. Two warrior clans — the Taira and the Minamoto — were fighting for control of the imperial court. When a Minamoto leader launched a failed coup and was killed, his youngest son — a baby boy — was taken by the victorious Taira. His life was spared on one condition: he would be sent to a monastery and never become a warrior. His name was Ushiwakamaru. History would know him as Yoshitsune.",
+      "image_prompt": "A Heian-period Japanese nobleman's residence in winter, dark and smoky in the aftermath of conflict, a Taira warrior in red lacquered armor holding a swaddled infant carefully, other warriors standing in background, the contrast between violence and the fragile child, candlelight flickering against paper screens",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 22,
+      "narration": "The boy grew up at Kurama temple, north of Kyoto, among the priests and cedar forests. But he did not become a monk. According to legend, he trained secretly in the mountains — with forest spirits, with wandering warriors, with anyone willing to teach him. He was small for his age, almost delicate in appearance, with an extraordinary quickness that made larger opponents seem slow. In those years of hidden training, he became something frightening: a swordsman of absolute precision who moved like no one had ever moved before.",
+      "image_prompt": "A young boy — slight, quick-eyed, intensely focused — practicing sword forms alone in a moonlit cedar forest above Kurama temple, ancient trees towering around him, mist rising from the valley far below, the blue-white light of the moon catching the blade, absolute solitude and fierce concentration",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshitsune"
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 22,
+      "narration": "In 1174, a young man now called Yoshitsune crossed paths on the Gojo Bridge in Kyoto with a giant warrior monk named Musashibō Benkei — who was collecting swords from passers-by by force. Yoshitsune was the 999th man he encountered. What happened next became legend: the tiny youth defeated the enormous warrior in moments. Benkei, bound by honor, swore his loyalty forever. From that day, they were inseparable — the most unlikely pair in Japanese history, and the most devoted.",
+      "image_prompt": "Gojo Bridge at night in Heian-period Kyoto — a massive warrior monk Benkei looming over the bridge with a long naginata, facing a small, almost boyish figure in simple robes who stands completely unafraid, torch light reflecting on the river below, cherry blossoms drifting past, the enormous size difference between the two figures making the confrontation almost absurd",
+      "ken_burns": "zoom_in",
+      "character_ref": "benkei"
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 22,
+      "narration": "In 1180, Yoshitsune's older brother Minamoto no Yoritomo raised the banner of rebellion from his stronghold in Kamakura. Yoshitsune traveled east to join him — the first time the brothers had ever met. Yoritomo was cautious, political, calculating. Yoshitsune was everything he was not: impulsive, charismatic, and already spoken of with awe by every warrior who had seen him fight. Yoritomo gave his brother command of the Minamoto armies. It was the decision that would win him everything — and ultimately destroy them both.",
+      "image_prompt": "A formal meeting in the great hall of Kamakura — the imposing, heavyset Yoritomo seated in a position of authority in formal armor, studying the smaller, younger Yoshitsune who kneels before him with barely concealed energy and impatience, retainers observing from both sides, lantern light, the political tension of two very different men meeting for the first time as brothers",
+      "ken_burns": "pan_left",
+      "character_ref": "yoritomo"
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 22,
+      "narration": "The Genpei War's decisive turn came in 1184 at Ichi-no-Tani. The Taira had fortified a coastal position that seemed impregnable — cliffs to the rear, the sea in front. Yoshitsune studied the terrain and made a decision experienced commanders considered suicidal: he led a cavalry charge down the near-vertical cliff face behind the Taira position. The horses slid and scrambled down the impossible slope. The Taira, attacked from behind by what should have been impossible, collapsed in terror. It was the kind of battlefield improvisation that would define his entire career.",
+      "image_prompt": "Dramatic moment of cavalry charging down a near-vertical cliff face at dawn — horses and armored warriors sliding and scrambling down steep forested terrain, sea visible far below, the Taira camp visible at the bottom, dust and chaos, Yoshitsune at the front urging the charge with fierce exhilaration, an act of inspired madness that is somehow working",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshitsune"
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 22,
+      "narration": "In early 1185, Yoshitsune struck again at Yashima. The Taira had retreated to a fortified camp on an island, believing themselves safe. Yoshitsune crossed the sea in a fierce storm — most captains refused the crossing as suicidal — arrived before dawn, and launched an assault the Taira hadn't imagined possible. The battle became famous for one unforgettable moment: when a Taira warrior held out a fan on a boat as a target, a Minamoto archer split it from a moving ship. It was theatre as much as war. Yoshitsune understood both.",
+      "image_prompt": "A Minamoto archer standing in the bow of a storm-rocked warship, drawing a massive bow with perfect stillness amid the chaos of battle, distant Taira vessel visible across choppy water with a small fan mounted on its prow, dawn light breaking through storm clouds, other warriors watching in absolute silence as the arrow is released",
+      "ken_burns": "pan_right",
+      "character_ref": "yoshitsune"
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 22,
+      "narration": "On April 25th, 1185, the two fleets met at Dan-no-ura in the straits between Honshu and Kyushu — the largest naval battle Japan had ever seen. Yoshitsune ordered his archers to target the Taira helmsmen and oarsmen rather than their warriors. Without steerage, the Taira ships spun helplessly. The battle turned completely. The Taira clan — noblewomen, children, the child Emperor himself — walked into the sea rather than surrender. The Genpei War was over. An eight-year-old Emperor drowned in his grandmother's arms, and Japan would never be the same.",
+      "image_prompt": "The catastrophic final moments of Dan-no-ura — dozens of warships in chaos across a wide strait, some burning, Taira noblewomen in court robes stepping into the grey sea with absolute composure and dignity, the child Emperor held by his grandmother, Minamoto ships pressing in from all sides, the scale of the historical moment overwhelming, smoke and morning light",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 22,
+      "narration": "Yoshitsune returned to Kyoto as the most celebrated warrior in Japan. Songs were written about him. Crowds lined the roads to see him pass. He had done the impossible in months — the complete destruction of the Taira. He sent word to Yoritomo, expecting celebration. What came back was silence — and then something worse. Yoritomo had received reports that Yoshitsune had accepted an imperial appointment without permission. In Kamakura, the man who should have been celebrating was doing something else entirely: calculating how dangerous a beloved brother truly was.",
+      "image_prompt": "Yoshitsune riding through the streets of Kyoto in full ceremonial armor, crowds pressing forward to catch a glimpse, flowers thrown, faces of pure adoration from the people — but in the upper corner of the frame, a dark messenger hawk visible against the sky, carrying something from Kamakura, the joy of the moment already contaminated by what is coming",
+      "ken_burns": "pan_right",
+      "character_ref": "yoshitsune"
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 22,
+      "narration": "Yoritomo's response was swift and absolute. He declared his own brother a traitor. He sent assassins. He posted rewards. He pressured every lord in Japan to refuse Yoshitsune shelter. The accusations were legally thin — accepting an imperial title without permission, releasing certain prisoners — but Yoritomo didn't need a strong case. He needed a dead brother. Because Yoshitsune, beloved by the people and commanding the loyalty of every warrior who had fought under him, was a threat to the political order Yoritomo was building. A Shogunate could not survive a rival this popular.",
+      "image_prompt": "Yoritomo seated alone in a dark war council chamber at night, a scroll laid before him bearing Yoshitsune's name, his face utterly cold and composed — not angry, merely determined, the expression of a man making a purely political calculation, one candle flame casting half his face in shadow, retainers waiting at a respectful distance for the order",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo"
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 22,
+      "narration": "Yoshitsune fled with a handful of loyal followers — Benkei among them. They traveled in disguise across Japan, a fugitive party led by the country's most famous warrior. Every lord they approached had to weigh loyalty against survival. One by one, allies turned them away. They attempted to sail west to raise a new army; a storm scattered the fleet. They turned north — toward the remote territories of the Fujiwara clan at Hiraizumi, who had offered protection. It was the longest retreat of Yoshitsune's life, and it would only end one way.",
+      "image_prompt": "A small group of travelers in the disguise of wandering monks moving through a mountain snowstorm, the tallest figure clearly Benkei even in monk's robes, a smaller figure leading the group with quiet urgency, dark pine forest on either side, the road icy and treacherous, the absolute vulnerability of men once celebrated now fleeing for their lives",
+      "ken_burns": "pan_left",
+      "character_ref": "benkei"
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 22,
+      "narration": "Lord Fujiwara no Hidehira welcomed Yoshitsune at Hiraizumi — the one domain where Yoritomo's power was still uncertain. For nearly two years, Yoshitsune lived in a kind of frozen peace, protected by an old man who admired him genuinely. But in 1187, Hidehira died. His dying words to his son Yasuhira were clear: protect Yoshitsune at all costs. Yasuhira listened respectfully. Then Yoritomo's letters arrived — threatening war if Yoshitsune was not surrendered. A decision was made. The old man's final wish lasted less than two years.",
+      "image_prompt": "An elderly lord Fujiwara no Hidehira on his deathbed in a grand northern palace, frail hands gripping Yasuhira's arm with desperate urgency, Yoshitsune visible standing respectfully in the doorway — caught between gratitude and helplessness, the room full of the quiet weight of a dying man's last instruction that everyone in the room already knows will be broken",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 22,
+      "narration": "On June 15, 1189, Yasuhira's forces surrounded Yoshitsune's residence at Koromogawa. Yoshitsune had perhaps fifty men against hundreds. It should have been over in moments. But in the gateway of the compound stood Benkei — grievously wounded, bristling with arrows, barely standing. He held his ground through arrow after arrow, refusing to fall, holding the enemy at bay while inside, his lord prepared to die with honor. The soldiers said later they had been afraid to approach. A man who will not fall is more frightening than any number of men who can.",
+      "image_prompt": "Benkei standing alone in a narrow gateway — an enormous figure bristling with arrows, body pierced in a dozen places, yet still upright, still gripping his weapon, staring down a mass of armored soldiers who have stopped advancing, the supernatural stillness of a dying man who refuses to acknowledge death, winter light, total silence on both sides",
+      "ken_burns": "zoom_in",
+      "character_ref": "benkei"
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 22,
+      "narration": "The soldiers later said they were afraid to approach even after Benkei had fallen — because he died standing. His body remained upright, supported by the arrows that had pierced him. Only when they finally touched him did he fall. Inside the compound, Yoshitsune had killed his wife and children to spare them capture, then composed himself and committed seppuku. He was thirty-one years old. The most brilliant military mind of his age died alone in a northern outpost — betrayed by the brother he had made supreme ruler of Japan.",
+      "image_prompt": "A silent, still courtyard after the battle — Benkei's massive figure finally fallen, arrows surrounding him where he stood, the compound gate open, soldiers pausing at the entrance unable to fully enter, the sense of something sacred having just occurred, pale winter light over everything, absolute stillness after violence",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 22,
+      "narration": "The Japanese have a phrase for what they felt about Yoshitsune: hangan biiki — sympathy for the lieutenant. A cultural reflex toward the talented and loyal person destroyed by the powerful and jealous. Yoshitsune embodied every quality the warrior tradition claimed to honor: brilliance, loyalty, physical courage, absolute devotion to his lord. That the lord destroyed him made the tragedy complete — and immortal. In a culture where defeat and loyalty are often more celebrated than victory and power, Yoshitsune became the perfect tragic hero.",
+      "image_prompt": "A traditional Japanese woodblock print style illustration — Yoshitsune depicted as a classical tragic hero, elegant and melancholic, surrounded by imagery of cherry blossoms falling, a crowd of ordinary Heian-period people watching with expressions of grief and reverence, the timeless quality of a figure already becoming myth while still alive",
+      "ken_burns": "pan_right",
+      "character_ref": "yoshitsune"
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 22,
+      "narration": "The legend of Yoshitsune did not end at Koromogawa. Within a century of his death, stories circulated that he had not really died — that Benkei had died in his place and Yoshitsune had escaped north, across the sea to the Asian continent. The most extraordinary version claimed he eventually became Genghis Khan, who would conquer half the known world. The theory has no historical support whatsoever. But the fact that Japanese people preferred to believe their greatest hero had survived — in any form — says everything about how deeply he was mourned.",
+      "image_prompt": "A split composition — left side shows Yoshitsune's final moments at Koromogawa in the snowy north of Japan, right side shows the vast Mongolian steppe and a distant figure on horseback surveying an empire, the two images connected by the sea that lies between them, the boundary between history and legend made visual",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 22,
+      "narration": "Eight centuries have not diminished Yoshitsune's hold on Japan. He appears in the oldest kabuki plays, in novels, in manga, in anime, in video games. Every generation reimagines him: the boy who trained in the mountains, the commander who crossed the sea in a storm, the warrior whose greatest friend died standing in a doorway. Yoritomo built the Kamakura Shogunate and ruled Japan. But it is Yoshitsune that Japan remembers — evidence that what a culture chooses to grieve reveals more about its values than what it chooses to celebrate.",
+      "image_prompt": "A montage of Yoshitsune's image across Japanese art history — an ancient painted scroll in one corner, a kabuki theater mask, a woodblock print, and the suggestion of a modern manga panel — all depicting the same iconic small figure with the same melancholy grace, the unbroken thread of memory across eight hundred years",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "teaser",
+      "duration_seconds": 22,
+      "narration": "Yoritomo had gotten what he wanted. His brother was dead. Japan was his. He established the Kamakura Shogunate in 1192 — Japan's first military government — and seven centuries of samurai rule began. The age that Yoshitsune's genius had made possible was the age that erased him from official history. But Yoritomo's own dynasty did not last long. His sons were weak; his line ended within two generations. The generals he had empowered were already asking the question that would define the next three hundred years: what did it actually take to hold power in Japan?",
+      "image_prompt": "Yoritomo seated in formal ceremony as the first Shogun of Japan in his great hall at Kamakura, receiving the submission of lords from across the country, the scale and formality of the moment — the beginning of something new — but his face showing none of the satisfaction one might expect, only the vigilance of a man who knows how fragile power truly is",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoritomo"
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 20,
+      "narration": "The story of Yoshitsune is the story of what samurai culture could not contain: a warrior too brilliant, too beloved, too genuinely heroic for the political world he served. Every generation of Japanese history would produce someone like him — a talent that made the powerful uncomfortable, a loyalty that made destruction necessary. The next chapter in this story takes us forward three hundred years, to the age of the great warlords — when the lesson of Yoshitsune, about the terrible cost of being too good at what you do, would play out again on an even vaster stage.",
+      "image_prompt": "A sweeping panoramic view of Japan across the centuries — ancient temples giving way to castle towers on the horizon, the landscape of a country moving through time, cherry blossoms falling in the foreground, the sense of the next great era just beyond the horizon, history as a river with no end",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 22,
+      "narration": "Minamoto no Yoshitsune died at thirty-one, alone in the far north — a fugitive from the man he had made supreme. He had never been defeated in battle. He had never betrayed anyone. He had simply been too brilliant, too beloved, and too dangerous to be allowed to live. Japan did not forget him. Japan cannot forget him. Subscribe for a new episode every day — the next story, from the age of the great warlords, begins soon.",
+      "image_prompt": "The northern landscape of Hiraizumi in late spring — the ruins of where Yoshitsune's final compound once stood, surrounded by ancient cedar trees now grown enormous, cherry blossoms blooming over the site, absolute peace and beauty in a place that was once the site of Japan's greatest tragedy, the camera slowly pulling back as the light fades",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ]
+}

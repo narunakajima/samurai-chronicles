@@ -40,7 +40,7 @@
 
     {
       "episode_id": "ep005",
-      "status": "pending",
+      "status": "in_production",
       "title": "Toyotomi Hideyoshi: From Sandal-Bearer to Ruler of Japan",
       "era": "Sengoku",
       "priority": "A",
@@ -50,7 +50,7 @@
     },
     {
       "episode_id": "ep006",
-      "status": "pending",
+      "status": "in_production",
       "title": "Yoshitsune: The Tragic Hero of the Genpei War",
       "era": "Heian",
       "priority": "A",
@@ -898,6 +898,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-05-23",
+  "last_updated": "2026-05-24",
   "total_topics": 90
 }

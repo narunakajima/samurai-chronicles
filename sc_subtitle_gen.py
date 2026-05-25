@@ -32,6 +32,11 @@ NARR_DELAY = 0.5
 NARR_TAIL = 1.0
 CROSSFADE_DURATION = 0.8
 
+# テイザーイントロ設定（sc_video_gen.py と同値）
+TEASER_CLIP_DUR = 2.5
+TEASER_XFADE = 0.3
+TEASER_MAX_CLIPS = 5
+
 
 def split_sentences(text: str) -> list:
     """ナレーションを文単位に分割する。"""
@@ -113,6 +118,22 @@ def run(episode_id: str):
     print(f"  {episode_id} — 字幕生成")
     print(f"{'━'*60}\n")
 
+    # テイザー尺を計算（S00_teaser.wav がある場合）
+    import math as _math
+    teaser_wav = audio_dir / "S00_teaser.wav"
+    teaser_dur = 0.0
+    if teaser_wav.exists():
+        teaser_narr_dur = probe_duration(teaser_wav)
+        n_clips = _math.ceil((teaser_narr_dur - TEASER_XFADE) / (TEASER_CLIP_DUR - TEASER_XFADE))
+        n_clips = min(max(n_clips, 3), TEASER_MAX_CLIPS)
+        teaser_dur = (TEASER_CLIP_DUR - TEASER_XFADE) * (n_clips - 1) + TEASER_CLIP_DUR
+        print(f"  テイザー検出: {teaser_dur:.1f}s（S00_teaser.wav）")
+    else:
+        print(f"  テイザーなし（S00_teaser.wav 未検出）")
+
+    # 字幕オフセット = テイザー + チャンネルイントロ
+    pre_scene_offset = teaser_dur + INTRO_DURATION
+
     # シーン尺とオフセットを計算
     scene_durations = []
     narr_durations = []
@@ -142,7 +163,7 @@ def run(episode_id: str):
         if narr_dur <= 0:
             continue
 
-        scene_start = INTRO_DURATION + scene_offsets[i] + NARR_DELAY
+        scene_start = pre_scene_offset + scene_offsets[i] + NARR_DELAY
         text = scene["narration"].strip()
         sentences = split_sentences(text)
 

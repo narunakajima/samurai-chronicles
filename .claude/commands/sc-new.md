@@ -81,6 +81,14 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 - 各シーンで次シーンへの引きを作る
 - hook → setup → rising_action → climax → falling_action → insight → teaser → outro の構成
 
+**Hook シーン（scene_id: 1, type: "hook"）の特別ルール:**
+- 必ず3文以内、合計40語以内
+- 1文目: 衝撃の結論 or 問いかけ（10語以内、数字を含めると効果的）
+- 2文目: 矛盾・謎・意外性（好奇心を刺激する）
+- 3文目: 「続きを見れば分かる」という約束（疑問文推奨）
+- "Today"、"In this video"、"Let me tell you" で始めない
+- 例: "He fought 61 duels. He never lost once. But his greatest weapon wasn't his sword."
+
 **画像プロンプト（image_prompt）:**
 - 英語、具体的なシーン描写
 - "Modern cinematic concept art style, dramatic lighting, film production illustration quality" のトーンを前提（BASE_CONTEXTが自動付与されるため重複不要）
@@ -100,6 +108,22 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 - 「この後どうなる？」と思わせる引きを作り、本編への誘導フックにする
 - climax シーンそのものではなく、その1〜2シーン前が理想
 
+**teaser_narration（本編トレイラーイントロ・冒頭30秒）:**
+- 本編の最初に流れる「映画の予告編」スタイルのナレーション
+- 合計30〜45語（約10〜15秒の読み上げ尺）
+- 必ずクライマックスの瞬間から始める（視聴者を結末の直前に放り込む）
+- 構成: 時・場所・状況（衝撃の一文）→ 矛盾・謎 → 「なぜそうなったのか？」への橋渡し
+- 最後は必ず疑問形または「But who was this man?」「The answer lies here.」型で本編へ誘導
+- 例（ep001）: "He stood alone on a windswept cliff — 61 duels behind him, not a single defeat. But in this moment, facing death, he carried no sword. Just a piece of wood. What kind of man walks into his final battle unarmed — and wins?"
+
+**shorts_narration（Shorts専用トレイラーナレーション）:**
+- 映画トレイラーのナレーター調。速く、力強く、間を削る
+- 合計25〜35語以内（約10〜13秒の読み上げ尺）
+- 構成: 数字/衝撃の事実 → 矛盾/謎 → クライマックスの断片 → 余韻を残す一言
+- 必ず数字か固有名詞で始める（"61 duels." "One night." "Three hours." など）
+- 本編全体の「予告編」として、最後に人物名または問いかけで締める
+- 例（ep001）: "61 duels. Zero defeats. In Japan's most legendary battle, he didn't even bring a sword. He arrived three hours late — holding a wooden oar. And he still won. This is Miyamoto Musashi."
+
 ### JSONフォーマット
 
 ```json
@@ -113,6 +137,8 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
   "series_number": null,
   "total_scenes": 20,
   "shorts_highlight_scene": N,
+  "teaser_narration": "...",
+  "shorts_narration": "...",
   "thumbnail_prompt": "...",
   "scenes": [
     {
@@ -366,6 +392,18 @@ mv "$HOME/Desktop/ep{NNN}_thumbnail.png" "$DRIVE/"
 mv "$HOME/Desktop/BGM_candidate_*.mp3" "$DRIVE/audio/ep{NNN}-BGM.mp3"
 ```
 
+**CC BY クレジット自動注入:**
+BGM移動後、対応する `.credit.txt` が存在する場合（CC BY曲）は ep.json の `youtube_description` にクレジットを自動追記する：
+
+```bash
+CREDIT=$(ls "$HOME/Desktop/BGM_candidate_"*.credit.txt 2>/dev/null | head -1)
+if [ -n "$CREDIT" ]; then
+  python3 /Users/claude/samurai-chronicles/sc_inject_bgm_credit.py \
+    --episode ep{NNN} --credit-file "$CREDIT"
+  rm "$CREDIT"
+fi
+```
+
 移動完了を報告する。
 
 ---
@@ -375,7 +413,9 @@ mv "$HOME/Desktop/BGM_candidate_*.mp3" "$DRIVE/audio/ep{NNN}-BGM.mp3"
 以下を実行する：
 
 ```bash
-python3 sc_tts_gen.py --episode ep{NNN}                    # ナレーション音声生成
+python3 sc_tts_gen.py --episode ep{NNN}                    # ナレーション音声生成（本編用・シーンタイプ別感情トーン）
+python3 sc_tts_gen.py --episode ep{NNN} --teaser           # トレイラーイントロTTS生成（S00_teaser.wav）
+python3 sc_tts_gen.py --episode ep{NNN} --shorts           # Shorts専用TTS生成（S00_shorts.wav）
 python3 sc_image_gen.py --episode ep{NNN}                  # 本編用画像生成（16:9）
 python3 sc_image_gen.py --episode ep{NNN} --shorts         # Shorts用画像生成（9:16）
 ```
