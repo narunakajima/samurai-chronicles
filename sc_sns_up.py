@@ -199,11 +199,64 @@ def run(episode_id: str):
     print(f"{'━'*60}\n")
 
 
+def fix_shorts_description(episode_id: str, shorts_id: str, main_id: str):
+    """既存ShortsのURLを新フォーマットの説明文に更新する"""
+    ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
+    if not ep_json.exists():
+        print(f"❌ エピソードJSONが見つかりません: {ep_json}")
+        sys.exit(1)
+
+    with open(ep_json, encoding="utf-8") as f:
+        ep = json.load(f)
+
+    hook_lines = ep.get("shorts_hook_lines", [])
+    hook_text = "\n".join(hook_lines) if hook_lines else ep.get("episode_title", "")
+    new_description = (
+        f"{hook_text}\n\n"
+        f"▶ Full episode: https://youtu.be/{main_id}\n\n"
+        f"** Subscribe for new episodes every day:\n"
+        f"https://www.youtube.com/@Samurai-Chronicles-JP"
+    )
+
+    print(f"\n{'━'*60}")
+    print(f"  Shorts説明文を更新: {shorts_id}")
+    print(f"{'━'*60}")
+    print(new_description)
+    print(f"{'━'*60}\n")
+
+    youtube = get_youtube_client()
+
+    # 現在のスニペットを取得
+    resp = youtube.videos().list(part="snippet", id=shorts_id).execute()
+    if not resp.get("items"):
+        print(f"❌ 動画が見つかりません: {shorts_id}")
+        sys.exit(1)
+    snippet = resp["items"][0]["snippet"]
+    snippet["description"] = new_description
+
+    youtube.videos().update(
+        part="snippet",
+        body={"id": shorts_id, "snippet": snippet},
+    ).execute()
+
+    print(f"  ✓ 説明文を更新しました: https://youtube.com/shorts/{shorts_id}")
+
+
 def cli():
     parser = argparse.ArgumentParser(description="Samurai Chronicles YouTube アップロード")
-    parser.add_argument("--episode", required=True, help="エピソードID（例: ep001）")
+    parser.add_argument("--episode", required=False, help="エピソードID（例: ep001）")
+    parser.add_argument("--fix-shorts", metavar="SHORTS_ID", help="既存ShortsのIDを指定して説明文を修正")
+    parser.add_argument("--main-id", metavar="MAIN_ID", help="--fix-shorts と組み合わせて使う本編のビデオID")
     args = parser.parse_args()
-    run(args.episode)
+
+    if args.fix_shorts:
+        if not args.episode or not args.main_id:
+            parser.error("--fix-shorts には --episode と --main-id も必要です")
+        fix_shorts_description(args.episode, args.fix_shorts, args.main_id)
+    elif args.episode:
+        run(args.episode)
+    else:
+        parser.error("--episode または --fix-shorts を指定してください")
 
 
 if __name__ == "__main__":
