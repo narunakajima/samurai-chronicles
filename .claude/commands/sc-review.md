@@ -8,8 +8,8 @@ BGM候補3曲のダウンロードと制作確認書の生成を同時に行い�
 
 - エピソードフォルダ: `~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/`
 - デスクトップ: `~/Desktop/`
-- スクリプト（確認書）: `/Users/claude/samurai-chronicles/sc_review_gen.py`
-- スクリプト（BGM）: `/Users/claude/.claude/scripts/freesound_download.py`
+- スクリプト（確認書）: `$HOME/samurai-chronicles/sc_review_gen.py`
+- スクリプト（BGM）: `$HOME/.claude/scripts/freesound_download.py`
 
 ## 手順
 
@@ -20,7 +20,7 @@ BGM候補3曲のダウンロードと制作確認書の生成を同時に行い�
 
 ### STEP 2 — エピソードJSONを読んでBGMクエリを準備する
 
-`/Users/claude/samurai-chronicles/episodes/ep{NNN}.json` を読み込む。
+`$HOME/samurai-chronicles/episodes/ep{NNN}.json` を読み込む。
 
 以下を抽出してBGMムードを把握し、**2〜3語の英語クエリを3本** 生成する:
 - `episode_title`
@@ -36,7 +36,7 @@ BGM候補3曲のダウンロードと制作確認書の生成を同時に行い�
 **A) BGM候補3曲をデスクトップにダウンロード:**
 ```bash
 ROUND=0
-FREESOUND_API_KEY=$FREESOUND_API_KEY python3 /Users/claude/.claude/scripts/freesound_download.py \
+FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/.claude/scripts/freesound_download.py \
   "<Q1>" "<Q2>" "<Q3>" \
   "$HOME/Desktop/" \
   --round $ROUND
@@ -45,7 +45,7 @@ FREESOUND_API_KEY=$FREESOUND_API_KEY python3 /Users/claude/.claude/scripts/frees
 
 **B) 制作確認書を生成:**
 ```bash
-python3 /Users/claude/samurai-chronicles/sc_review_gen.py --episode ep{NNN}
+python3 $HOME/samurai-chronicles/sc_review_gen.py --episode ep{NNN}
 ```
 
 両方が完了したらユーザーに通知する:
@@ -99,7 +99,7 @@ echo "Moved: $DEST"
 ユーザーが「はい」「OK」「GO」などを返したら:
 
 ```bash
-python3 /Users/claude/samurai-chronicles/sc_video_gen.py --episode ep{NNN}
+python3 $HOME/samurai-chronicles/sc_video_gen.py --episode ep{NNN}
 ```
 
 ## エラー対応

@@ -6,7 +6,7 @@
 
 - エピソードフォルダ: `~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/`
 - デスクトップ: `~/Desktop/`
-- スクリプト: `/Users/claude/.claude/scripts/freesound_download.py`
+- スクリプト: `$HOME/.claude/scripts/freesound_download.py`
 
 ## 手順
 
@@ -18,7 +18,7 @@
 
 ### STEP 2 — エピソードJSONを読んでムードを把握する
 
-`/Users/claude/samurai-chronicles/episodes/ep{NNN}.json` を読み込む。
+`$HOME/samurai-chronicles/episodes/ep{NNN}.json` を読み込む。
 
 以下を抽出してBGMのムードを決める:
 - `episode_title`（エピソードのテーマ）
@@ -42,7 +42,7 @@ forest, rain, nature, field recording, ambience, birdsong, wind, wave, cricket �
 ラウンド変数を `ROUND=0` で初期化し、以下を実行する:
 
 ```bash
-FREESOUND_API_KEY=$FREESOUND_API_KEY python3 /Users/claude/.claude/scripts/freesound_download.py \
+FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/.claude/scripts/freesound_download.py \
   "<Q1>" "<Q2>" "<Q3>" \
   "$HOME/Desktop/" \
   --round $ROUND
@@ -84,5 +84,5 @@ echo "Moved: $DEST"
 ## エラー対応
 
 - `FREESOUND_API_KEY` が空の場合: 「settings.json に FREESOUND_API_KEY が設定されていません」と伝えて終了する
-- エピソードJSONが見つからない場合: `/Users/claude/samurai-chronicles/episodes/` のファイル一覧を表示する
+- エピソードJSONが見つからない場合: `$HOME/samurai-chronicles/episodes/` のファイル一覧を表示する
 - Freesound 検索結果が 0 件の場合: クエリを英語でシンプルにして再試行する

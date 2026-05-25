@@ -19,7 +19,7 @@ Lamps Whisper と同じ認証ファイルを使用:
 ## STEP 2 — アップロード実行
 
 ```bash
-python3 /Users/claude/samurai-chronicles/sc_sns_up.py --episode ep{NNN}
+python3 $HOME/samurai-chronicles/sc_sns_up.py --episode ep{NNN}
 ```
 
 アップロード内容:

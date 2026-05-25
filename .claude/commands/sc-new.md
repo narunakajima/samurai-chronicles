@@ -4,8 +4,8 @@ topics_queue.json から次のトピックを選び、動画生成まで一気�
 
 ## 定数
 
-- エピソードJSON: `/Users/claude/samurai-chronicles/episodes/`
-- トピックキュー: `/Users/claude/samurai-chronicles/topics_queue.json`
+- エピソードJSON: `$HOME/samurai-chronicles/episodes/`
+- トピックキュー: `$HOME/samurai-chronicles/topics_queue.json`
 - Google Drive: `~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/`
 
 ---
@@ -190,7 +190,7 @@ https://www.youtube.com/@Samurai-Chronicles-JP
 
 ```bash
 # episodes/ に保存
-/Users/claude/samurai-chronicles/episodes/ep{NNN}.json
+$HOME/samurai-chronicles/episodes/ep{NNN}.json
 ```
 
 該当エピソードの `status` を `"pending"` → `"in_production"` に変更して保存。
@@ -331,7 +331,7 @@ response = client.models.generate_content(
 - 環境音系（forest, rain, nature, ambience など）は禁止
 
 ```bash
-FREESOUND_API_KEY=$FREESOUND_API_KEY python3 /Users/claude/.claude/scripts/freesound_download.py \
+FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/.claude/scripts/freesound_download.py \
   "<Q1>" "<Q2>" "<Q3>" \
   "$HOME/Desktop/" \
   --round 0
@@ -398,7 +398,7 @@ BGM移動後、対応する `.credit.txt` が存在する場合（CC BY曲）は
 ```bash
 CREDIT=$(ls "$HOME/Desktop/BGM_candidate_"*.credit.txt 2>/dev/null | head -1)
 if [ -n "$CREDIT" ]; then
-  python3 /Users/claude/samurai-chronicles/sc_inject_bgm_credit.py \
+  python3 $HOME/samurai-chronicles/sc_inject_bgm_credit.py \
     --episode ep{NNN} --credit-file "$CREDIT"
   rm "$CREDIT"
 fi
