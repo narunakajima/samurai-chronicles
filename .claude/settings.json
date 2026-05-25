@@ -1,4 +1,9 @@
 {
   "skipDangerousModePermissionPrompt": true,
-  "allowedTools": ["Bash", "Read", "Edit", "Write"]
+  "allowedTools": ["Bash", "Read", "Edit", "Write"],
+  "permissions": {
+    "allow": [
+      "ffprobe *"
+    ]
+  }
 }

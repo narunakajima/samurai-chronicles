@@ -26,7 +26,10 @@ from googleapiclient.http import MediaFileUpload
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube.force-ssl",
+    "https://www.googleapis.com/auth/youtube.readonly",
 ]
+
+SAMURAI_CHANNEL_ID = "UCN1-TUxX_2UumGm3OKpmncg"  # Samurai Chronicles チャンネルID
 
 SECRETS_DIR = Path.home() / ".claude" / "secrets"
 YT_CLIENT_SECRETS = SECRETS_DIR / "yt_client_secrets.json"
@@ -54,10 +57,27 @@ def get_youtube_client():
                 print(f"❌ 認証ファイルが見つかりません: {YT_CLIENT_SECRETS}")
                 sys.exit(1)
             flow = InstalledAppFlow.from_client_secrets_file(str(YT_CLIENT_SECRETS), SCOPES)
-            creds = flow.run_local_server(port=0, prompt="select_account consent")
+            creds = flow.run_local_server(port=8081, prompt="select_account consent")
         YT_TOKEN.parent.mkdir(parents=True, exist_ok=True)
         YT_TOKEN.write_text(creds.to_json())
-    return build("youtube", "v3", credentials=creds)
+    youtube = build("youtube", "v3", credentials=creds)
+
+    # チャンネル確認（誤チャンネルアップロード防止）
+    ch_resp = youtube.channels().list(part="snippet", mine=True).execute()
+    ch_items = ch_resp.get("items", [])
+    if ch_items:
+        ch_id = ch_items[0]["id"]
+        ch_name = ch_items[0]["snippet"]["title"]
+        print(f"  認証チャンネル: {ch_name} ({ch_id})")
+        if ch_id != SAMURAI_CHANNEL_ID:
+            print(f"  ❌ エラー: Samurai Chronicles チャンネルではありません！")
+            print(f"  rm ~/.claude/secrets/yt_token_sc.json で再認証してください。")
+            YT_TOKEN.unlink(missing_ok=True)
+            sys.exit(1)
+    else:
+        print("  警告: チャンネル情報を取得できませんでした。")
+
+    return youtube
 
 
 def upload_video(youtube, video_path: Path, title: str, description: str,
