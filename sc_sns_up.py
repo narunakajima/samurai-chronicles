@@ -199,8 +199,10 @@ def run(episode_id: str):
     print(f"{'━'*60}\n")
 
 
-def fix_shorts_description(episode_id: str, shorts_id: str, main_id: str):
-    """既存ShortsのURLを新フォーマットの説明文に更新する"""
+def fix_shorts_description(episode_id: str, shorts_id: str):
+    """既存ShortsのURLを新フォーマットの説明文に更新する（本編IDは自動取得）"""
+    import re
+
     ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
     if not ep_json.exists():
         print(f"❌ エピソードJSONが見つかりません: {ep_json}")
@@ -208,6 +210,24 @@ def fix_shorts_description(episode_id: str, shorts_id: str, main_id: str):
 
     with open(ep_json, encoding="utf-8") as f:
         ep = json.load(f)
+
+    youtube = get_youtube_client()
+
+    # 現在のShortsの説明文から本編IDを自動取得
+    resp = youtube.videos().list(part="snippet", id=shorts_id).execute()
+    if not resp.get("items"):
+        print(f"❌ 動画が見つかりません: {shorts_id}")
+        sys.exit(1)
+    snippet = resp["items"][0]["snippet"]
+    current_desc = snippet["description"]
+
+    match = re.search(r"youtu\.be/([A-Za-z0-9_-]{11})", current_desc)
+    if not match:
+        print(f"❌ 現在の説明文から本編IDを取得できませんでした")
+        print(current_desc[:200])
+        sys.exit(1)
+    main_id = match.group(1)
+    print(f"  本編ID（自動取得）: {main_id}")
 
     hook_lines = ep.get("shorts_hook_lines", [])
     hook_text = "\n".join(hook_lines) if hook_lines else ep.get("episode_title", "")
@@ -224,16 +244,7 @@ def fix_shorts_description(episode_id: str, shorts_id: str, main_id: str):
     print(new_description)
     print(f"{'━'*60}\n")
 
-    youtube = get_youtube_client()
-
-    # 現在のスニペットを取得
-    resp = youtube.videos().list(part="snippet", id=shorts_id).execute()
-    if not resp.get("items"):
-        print(f"❌ 動画が見つかりません: {shorts_id}")
-        sys.exit(1)
-    snippet = resp["items"][0]["snippet"]
     snippet["description"] = new_description
-
     youtube.videos().update(
         part="snippet",
         body={"id": shorts_id, "snippet": snippet},
@@ -245,14 +256,13 @@ def fix_shorts_description(episode_id: str, shorts_id: str, main_id: str):
 def cli():
     parser = argparse.ArgumentParser(description="Samurai Chronicles YouTube アップロード")
     parser.add_argument("--episode", required=False, help="エピソードID（例: ep001）")
-    parser.add_argument("--fix-shorts", metavar="SHORTS_ID", help="既存ShortsのIDを指定して説明文を修正")
-    parser.add_argument("--main-id", metavar="MAIN_ID", help="--fix-shorts と組み合わせて使う本編のビデオID")
+    parser.add_argument("--fix-shorts", metavar="SHORTS_ID", help="既存ShortsのIDを指定して説明文を修正（本編IDは自動取得）")
     args = parser.parse_args()
 
     if args.fix_shorts:
-        if not args.episode or not args.main_id:
-            parser.error("--fix-shorts には --episode と --main-id も必要です")
-        fix_shorts_description(args.episode, args.fix_shorts, args.main_id)
+        if not args.episode:
+            parser.error("--fix-shorts には --episode も必要です")
+        fix_shorts_description(args.episode, args.fix_shorts)
     elif args.episode:
         run(args.episode)
     else:
