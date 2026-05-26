@@ -3,7 +3,23 @@
   "episode_title": "The Honnoji Incident: Oda Nobunaga's Betrayal",
   "youtube_title": "The Night Japan's Most Powerful Warlord Was Betrayed: The Honnoji Incident",
   "youtube_description": "On the night of June 21, 1582, the man who had nearly conquered all of Japan was surrounded by his own general's troops inside a Kyoto temple. With no escape and no army, Oda Nobunaga faced his final hours. This is the true story of Japan's most shocking betrayal — and the question history still cannot answer: why did Akechi Mitsuhide do it?\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n📚 References:\n1. Jeroen Lamers, \"Japonius Tyrannus: The Japanese Warlord Oda Nobunaga Reconsidered\" (2000) — Hotei Publishing\n2. Michael Cooper, \"They Came to Japan: An Anthology of European Reports on Japan, 1543–1640\" (1965) — University of California Press\n3. Nobunaga Ko Ki (Chronicle of Lord Nobunaga), compiled by Ota Gyuichi, c. 1610 — primary Japanese source\n\n#OdaNobunaga #HonnojiIncident #samurai #japanesehistory #sengokuperiod #japan #history #AkechiMitsuhide",
-  "youtube_tags": ["oda nobunaga", "honnoji incident", "akechi mitsuhide", "sengoku period", "japanese history", "samurai betrayal", "feudal japan", "japan history", "nobunaga death", "honnoji temple", "japanese warlord", "sengoku jidai", "samurai", "japan", "history"],
+  "youtube_tags": [
+    "oda nobunaga",
+    "honnoji incident",
+    "akechi mitsuhide",
+    "sengoku period",
+    "japanese history",
+    "samurai betrayal",
+    "feudal japan",
+    "japan history",
+    "nobunaga death",
+    "honnoji temple",
+    "japanese warlord",
+    "sengoku jidai",
+    "samurai",
+    "japan",
+    "history"
+  ],
   "total_scenes": 20,
   "shorts_highlight_scene": 12,
   "thumbnail_prompt": "Dramatic close-up of Oda Nobunaga's face lit by orange firelight, intense piercing eyes showing calm resolve, traditional black armor with golden mon crest, flames and smoke visible behind him, dark temple interior, shadows of enemy soldiers silhouetted through paper screens, high contrast red and black cinematic composition",
@@ -11,7 +27,7 @@
     {
       "scene_id": 1,
       "type": "hook",
-      "duration_seconds": 20,
+      "duration_seconds": 10,
       "narration": "It was just after midnight. Inside a modest temple in Kyoto, the most powerful man in Japan was asleep with fewer than thirty attendants. Outside, thirteen thousand soldiers had quietly surrounded every gate. They wore the crest of a trusted general — a man who had served faithfully for twenty years. By the time the sound of marching feet broke the night air, there was no escape. The man who had crushed armies, burned monasteries, and bent a nation to his will would be dead before morning. This is the story of the Honnoji Incident — the greatest betrayal in samurai history.",
       "image_prompt": "Nighttime aerial view of a traditional Japanese temple complex in Kyoto surrounded by thousands of soldiers carrying torches, encircling walls in darkness, soft lamplight visible inside the main hall, smoke beginning to rise at the edges, deep blue-black sky with a sliver of moon, tense and ominous atmosphere",
       "ken_burns": "zoom_in",
@@ -20,7 +36,7 @@
     {
       "scene_id": 2,
       "type": "setup",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "To understand why this night mattered, we must understand the world Oda Nobunaga had built. Japan in 1582 had endured over a century of civil war — the Sengoku period, the Age of Warring States. Dozens of warlords had fought ceaselessly for dominance, burning cities, slaughtering peasants, and tearing apart the old order. The Emperor sat in Kyoto, powerless and half-forgotten. The shogunate had collapsed. Into this chaos, one man had risen with terrifying speed. Not through patience or negotiation — but through an entirely new kind of ruthlessness.",
       "image_prompt": "Wide panoramic view of war-torn Sengoku Japan countryside, multiple castle keeps visible on distant hills, smoke rising from burning villages in the valley, armies moving across the landscape in different directions, illustrated like a historical map come to life, muted earthen tones with flashes of fire",
       "ken_burns": "pan_right",
@@ -29,7 +45,7 @@
     {
       "scene_id": 3,
       "type": "setup",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "Oda Nobunaga was born in 1534, the son of a minor lord in Owari Province. As a young man he earned the nickname Owari no Outsuke — the Fool of Owari — for his eccentric behavior: wearing short sleeves, eating while walking, treating peasants as equals, challenging every tradition of samurai decorum. His own father died without naming him heir. Retainers mocked him. But when a rival clan marched twenty-five thousand troops toward his castle in 1560, Nobunaga did not retreat. With fewer than three thousand men, in the middle of a thunderstorm, he attacked. And he won. Japan had never seen anything like him.",
       "image_prompt": "Young Nobunaga standing defiantly in rain and wind on a hillside, short-sleeved kimono soaked, fists clenched, looking up at dark storm clouds, small war camp behind him with minimal troops, lightning illuminating his fierce angular face, dramatic low-angle perspective",
       "ken_burns": "zoom_in",
@@ -38,7 +54,7 @@
     {
       "scene_id": 4,
       "type": "setup",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "Over the next two decades, Nobunaga rewrote the rules of warfare. He was the first Japanese commander to deploy firearms on a mass scale — at the Battle of Nagashino in 1575, his organized volley fire shattered the legendary Takeda cavalry in minutes. He dismantled Buddhist monasteries that had become military powers, burning the mountain fortress of Enryaku-ji to the ground with everyone inside. He abolished the guild monopolies that choked commerce. He welcomed Jesuit missionaries and European technology. He built roads, conducted land surveys, and began standardizing weights and measures. He was simultaneously medieval warlord and proto-modernizer — and he terrified everyone around him.",
       "image_prompt": "Nobunaga standing on a high castle rampart overlooking his domain, wearing polished black lacquered armor with golden crest, holding a European arquebus in one hand and a command fan in the other, Azuchi Castle towers visible behind him, servants and generals bowing in the background, golden late-afternoon light",
       "ken_burns": "pan_right",
@@ -47,7 +63,7 @@
     {
       "scene_id": 5,
       "type": "setup",
-      "duration_seconds": 20,
+      "duration_seconds": 10,
       "narration": "By 1582, Nobunaga controlled roughly a third of Japan — the heartland, including Kyoto, the ancient capital. He had already destroyed his two greatest rivals, the Takeda and the Ikko-ikki Buddhist leagues. The Mori clan to the west was under siege. The remaining warlords in the north and east were outmatched or subdued. Historians estimate he was two to three years from total unification of Japan. He had even begun hinting at a new political title — something beyond shogun, something no Japanese ruler had ever held. The man who called himself the enemy of Buddha was about to become the master of heaven.",
       "image_prompt": "Illustrated map of Japan with Nobunaga's territory highlighted in deep red covering the central heartland, arrows showing expansion directions, enemy territories grayed out at the edges, Kyoto marked with a golden marker in the center, the image stylized as an ancient ink-washed battle map",
       "ken_burns": "zoom_in",
@@ -56,7 +72,7 @@
     {
       "scene_id": 6,
       "type": "rising_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "Among his most trusted generals was Akechi Mitsuhide. Where Nobunaga was impulsive and confrontational, Mitsuhide was cultivated and precise. He was unusually well-educated — a poet, a student of Confucian classics, a master of the tea ceremony. He served as Nobunaga's liaison to the imperial court and to the aristocracy, performing the delicate diplomatic work that Nobunaga himself had no patience for. He was also a formidable battlefield commander who had pacified the Tamba region through a combination of military skill and careful politics. In Nobunaga's hierarchy, he ranked among the inner circle. He had no obvious reason to rebel.",
       "image_prompt": "Akechi Mitsuhide in formal court robes sitting at a low writing desk composing a poem by candlelight, refined aristocratic face with high forehead and calm measured eyes, brush in hand, scrolls stacked nearby, soft warm interior lamplight, the face of a thoughtful scholar-general",
       "ken_burns": "pan_right",
@@ -65,7 +81,7 @@
     {
       "scene_id": 7,
       "type": "rising_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "Yet something had been building in Mitsuhide for years. Those who served Nobunaga lived under constant threat of explosive, humiliating punishment. Nobunaga was known to berate his generals in public, to mock their failures in front of their men. One account describes him seizing Mitsuhide by the head and slamming him against a pillar. Another records a cruel incident in which Mitsuhide's mother was used as a hostage during negotiations — and was subsequently executed when Nobunaga's terms were broken. Whether these accounts are precisely true is debated by historians, but the pattern was clear: Nobunaga used humiliation as a management tool. And Mitsuhide was a proud man.",
       "image_prompt": "Mitsuhide kneeling before Nobunaga in a castle audience hall, head bowed low in formal supplication, Nobunaga standing above him with an imperious posture pointing a command fan dismissively, other retainers watching from the sides with averted eyes, tense and airless atmosphere, cold blue-gray light",
       "ken_burns": "zoom_in",
@@ -74,7 +90,7 @@
     {
       "scene_id": 8,
       "type": "rising_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "In May 1582, the final trigger arrived. Nobunaga ordered Mitsuhide to give up his home domain of Tamba — the territory he had personally conquered and governed for years — and redeploy to assist the general Toyotomi Hideyoshi in the western campaign against the Mori clan. It was not unusual for Nobunaga to reassign fiefs. But for Mitsuhide, losing Tamba meant losing everything he had built: his political base, his relationships, his identity as a lord. He would arrive in the west as a subordinate to Hideyoshi — a man of peasant birth, decades his social inferior. The order was a deliberate demotion. Mitsuhide began to plan.",
       "image_prompt": "Close-up of Mitsuhide's hands holding an official scroll bearing Nobunaga's seal, knuckles white with tension, a map of Tamba province visible on the floor beside him, firelight casting sharp shadows across his face which shows barely contained emotion, moment of private anguish",
       "ken_burns": "zoom_in",
@@ -83,7 +99,7 @@
     {
       "scene_id": 9,
       "type": "rising_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "June 20th, 1582. Nobunaga arrived in Kyoto to prepare for his western march. He was traveling light — deliberately so. He had only a small personal guard, confident that Kyoto was peaceful and his enemies distant. He took up lodging at the Honnoji, a temple compound in the heart of the city, attended by fewer than thirty servants and attendants. Meanwhile, Mitsuhide had been given a plausible military reason to be near Kyoto with his full army of thirteen thousand troops. He was supposedly en route west to support the campaign. On the evening of June 20th, he gathered his officers. His words, according to the chronicles, were brief and absolute: 'The enemy awaits at Honnoji.'",
       "image_prompt": "Mitsuhide on horseback in the darkness of a forest road, his army stretching behind him among the trees, torchlight catching the crest on his armor, leaning forward in the saddle to address gathered officers on foot, map unrolled across a portable field desk, faces grim and determined in the torchlight",
       "ken_burns": "pan_right",
@@ -92,7 +108,7 @@
     {
       "scene_id": 10,
       "type": "rising_action",
-      "duration_seconds": 20,
+      "duration_seconds": 10,
       "narration": "The officers had no idea what he meant. The enemy was days to the west. But discipline held. Mitsuhide's army turned toward Kyoto, marching quietly through the night, closing all roads leading into the city, sending mounted patrols ahead to prevent any messenger from escaping. By two o'clock in the morning on June 21st, all gates of the Honnoji were surrounded. None of Nobunaga's thirty attendants had heard a sound. Thirteen thousand men had moved in silence through the streets of Japan's greatest city. When the sun rose, there would be no rescue and no retreat.",
       "image_prompt": "Bird's-eye view of dark Kyoto streets at night, a river of torch-bearing soldiers moving silently through narrow lanes toward a temple compound at center, every road blocked by mounted patrols, the city completely unaware, the temple windows still showing the warm glow of interior lamplight, stillness before violence",
       "ken_burns": "zoom_in",
@@ -101,7 +117,7 @@
     {
       "scene_id": 11,
       "type": "climax",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "The attack began before dawn. A servant at the temple gate heard the sound of iron on cobblestone and opened the gate a crack. He was cut down instantly. The shouting started. Inside the main hall, Nobunaga was woken by the noise and emerged to find his compound already breached. His first reaction, according to the account written by his page Mori Ranmaru, was not panic. He stepped onto the veranda, took in the sight of thousands of soldiers filling his courtyard, and turned calmly back inside. 'This is rebellion,' he reportedly said. Then he picked up a bow.",
       "image_prompt": "Nobunaga standing in the open doorway of the Honnoji main hall in his night robes, backlit by warm interior light, facing a courtyard packed with armed soldiers, his expression calm and imperious even in this moment, his hand reaching for a bow leaning against the doorframe, a sea of enemy torches and spear tips stretching to the walls",
       "ken_burns": "zoom_in",
@@ -110,7 +126,7 @@
     {
       "scene_id": 12,
       "type": "climax",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "What followed was a last stand told in fragments. Nobunaga fought personally — first with the bow until his arm was wounded, then with a spear. His thirty attendants formed a ring around him, dying one by one as the thousands outside poured through every entrance. Contemporary sources describe him fighting with extraordinary calm — giving orders even as the building burned around him, directing the evacuation of women and servants. When it was clear that all was lost, Nobunaga withdrew to an inner chamber. He pulled the screens shut. What happened next was witnessed by no one from the outside. When soldiers finally broke through, the chamber was in flames. Oda Nobunaga's body was never found.",
       "image_prompt": "Interior of the burning Honnoji main hall, Nobunaga standing alone in the smoke-filled room with a broken spear, walls aflame around him, enemy soldiers visible as dark shapes pressing through shoji screens, his face completely composed — the face of a man who has accepted his fate, embers and ash falling like snow",
       "ken_burns": "zoom_in",
@@ -119,7 +135,7 @@
     {
       "scene_id": 13,
       "type": "climax",
-      "duration_seconds": 20,
+      "duration_seconds": 10,
       "narration": "Historians believe Nobunaga performed seppuku — ritual self-disembowelment — and that his attendants cremated the body to prevent it from being taken as a trophy. Others have suggested he died fighting. The mystery of the missing body haunted Japanese history for generations. Mitsuhide had moved swiftly to the adjacent Nijo Palace, where Nobunaga's son Nobutada was also lodging, and killed him too. By sunrise, both Nobunaga and his heir were dead, and Akechi Mitsuhide controlled Kyoto. In a single night, the man who was weeks from unifying Japan had been erased from the world.",
       "image_prompt": "The smoldering ruins of Honnoji at dawn, blackened timber beams collapsed, gray ash and smoke still rising in the pale morning light, Akechi soldiers standing guard at the perimeter, a lone crow perched on a broken gate post, the devastation quiet and complete in the early morning stillness",
       "ken_burns": "pan_right",
@@ -128,7 +144,7 @@
     {
       "scene_id": 14,
       "type": "falling_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "Mitsuhide was now the most powerful man in Japan. He moved quickly to consolidate control — visiting the imperial palace, distributing rewards to local lords, sending messengers to the great daimyo asking for recognition. But the great lords did not respond as expected. They were not hostile. They were calculating. The same aristocratic court that Mitsuhide had cultivated for years offered polite formalities and no commitments. Loyalty in the Sengoku era was not sentimental. It followed power. And everyone was waiting to see who would provide it.",
       "image_prompt": "Mitsuhide seated in formal black court robes in a grand reception hall, facing a row of aristocratic advisors and courtiers who bow respectfully but keep their expressions carefully neutral, a row of empty seats visible where expected allied lords have not arrived, the room half full, tension hiding beneath ceremony",
       "ken_burns": "pan_right",
@@ -137,7 +153,7 @@
     {
       "scene_id": 15,
       "type": "falling_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "The answer came from the west with terrifying speed. Toyotomi Hideyoshi, the peasant general, received word of Nobunaga's death within hours through a lightning courier network. He was deep in the Mori campaign, but he acted with stunning decisiveness. He forged a rapid peace treaty with the Mori clan — surrendering some gains but ending the war instantly — and then turned his entire army around. Over the next eleven days, Hideyoshi covered nearly two hundred and sixty kilometers in the summer heat, a march that military historians still marvel at. On July 2nd, 1582, just thirteen days after the Honnoji Incident, he met Mitsuhide's army on the plains of Yamazaki.",
       "image_prompt": "Hideyoshi's army in full march, tens of thousands of soldiers moving along a dusty summer road at brutal pace, banners flying, dust clouds rising, faces set with determination, the sun blazing overhead, the sense of an unstoppable momentum, a river ford visible ahead being crossed without slowing",
       "ken_burns": "pan_right",
@@ -146,7 +162,7 @@
     {
       "scene_id": 16,
       "type": "falling_action",
-      "duration_seconds": 20,
+      "duration_seconds": 10,
       "narration": "The Battle of Yamazaki lasted less than two hours. Mitsuhide's forces were outnumbered, exhausted from political maneuvering rather than rested for battle, and held the wrong ground. Hideyoshi's veterans, fresh from a ceasefire, struck with overwhelming force. Mitsuhide's army collapsed. He fled with a small bodyguard into the mountains north of Kyoto. Three days later, he was killed — according to most accounts, by a farmers' spear-wielding mob during the chaos of flight, cut down in a bamboo grove. He had been the master of Japan for exactly thirteen days. History remembers him as the Thirteen-Day Shogun.",
       "image_prompt": "Mitsuhide alone in a dark bamboo forest at night, his fine armor torn and muddied, moving cautiously on foot without retinue, shadows closing in around him, a look of exhausted desperation replacing the earlier composure, the bamboo stalks closing around him like walls, the sounds of distant pursuit",
       "ken_burns": "zoom_in",
@@ -155,7 +171,7 @@
     {
       "scene_id": 17,
       "type": "insight",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "The Honnoji Incident is one of the most debated events in Japanese history — not because what happened is unclear, but because the question of why remains genuinely open. Personal humiliation? Rational calculation? A desperate bid for survival against a lord who had signaled he might eliminate him? Or something more ambitious — a genuine belief that he could seize the moment and rule Japan himself? Japanese historians have proposed all of these, and none has settled the matter definitively. What is certain is that Mitsuhide had access to everything required: timing, proximity, and thousands of loyal troops. Whether the motivation was rage or strategy, the execution was precise.",
       "image_prompt": "Split composition showing Mitsuhide at a writing desk by candlelight on one side, and Nobunaga laughing dismissively in a crowded audience hall on the other, a symbolic crack of darkness dividing them down the middle of the image, the contrast between private pain and public dominance, illustrated in deep shadow and firelight tones",
       "ken_burns": "static",
@@ -164,7 +180,7 @@
     {
       "scene_id": 18,
       "type": "insight",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "The consequences of a single night echoed for centuries. Nobunaga's unfinished project of national unification was inherited by Hideyoshi — a man who would never have risen to supreme power had his master lived. Hideyoshi went on to unify Japan, then launch disastrous invasions of Korea, then die leaving an unstable succession — a chain of events that led directly to the rise of Tokugawa Ieyasu and two hundred and fifty years of Tokugawa rule. Every political arrangement Japan inhabited until the modern era traces its origin, in some way, to the fire at Honnoji. One betrayal. One missing body. Everything changed.",
       "image_prompt": "Visual timeline flowing like a river: the ruins of Honnoji at left, then flowing into Hideyoshi's golden castle on a mountaintop, then the massive battle of Sekigahara with its thousands of troops, then the serene gates of Edo castle in the snow, history flowing from one moment of violence like branches from a single broken trunk, illustrated in flowing ink-wash style",
       "ken_burns": "pan_right",
@@ -173,7 +189,7 @@
     {
       "scene_id": 19,
       "type": "teaser",
-      "duration_seconds": 18,
+      "duration_seconds": 10,
       "narration": "With Nobunaga dead, it fell to the man who had avenged him to complete the dream. Toyotomi Hideyoshi had been born a peasant with no family name, no formal rank, and no right to rule anything. He had worked his way into Nobunaga's household as a sandal-bearer. Twenty years later, he stood over the ruins of his master's enemies, the undisputed ruler of a united Japan. In our next episode: the most extraordinary rise in Japanese history.",
       "image_prompt": "Silhouette of Hideyoshi standing victorious on a battlefield at sunset, armor gleaming, arms raised, troops cheering below him, the sun blazing red and gold behind him, a humble sandal visible at the corner of the frame as a symbolic detail, the image of impossible triumph",
       "ken_burns": "zoom_in",
@@ -182,7 +198,7 @@
     {
       "scene_id": 20,
       "type": "outro",
-      "duration_seconds": 18,
+      "duration_seconds": 10,
       "narration": "The Honnoji Incident happened in a single night. But it was built over twenty years of loyalty, ambition, humiliation, and fear. Akechi Mitsuhide made his choice in the dark, and Japan was never the same. If you found this story as gripping as we did — subscribe for a new episode every day. History's most extraordinary stories are just getting started.",
       "image_prompt": "The Samurai Chronicles logo emerging through smoke and embers above a stylized illustration of the burning Honnoji temple, golden and red tones, dramatic and cinematic, clean composition for end card with space for subscribe button overlay",
       "ken_burns": "zoom_out",
