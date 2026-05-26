@@ -82,7 +82,9 @@ TEASER_XFADE    = 0.3     # 速めのクロスフェード（映画的テンポ�
 TEASER_MAX_CLIPS = 12     # テイザーに使う最大シーン数（ナレーション尺に合わせる）
 
 # ── Ken Burns パラメータ ─────────────────────────────────
-KB_ZOOM_FACTOR = 1.15   # zoom_in/out の最大倍率（尺が長いほどゆっくり動く）
+KB_ZOOM_FACTOR = 1.40   # zoom_in/out の最大倍率（上限キャップ）
+KB_ZOOM_SPEED  = 0.0006 # 固定ズーム速度 [倍率/frame]（25fps で約9%/15s）
+                         # → 短シーンも長シーンも同じ速度感、長シーンはキャップで止まる
 
 # ── キャラクター表示名マッピング ──────────────────────────
 CHAR_DISPLAY_NAMES = {
@@ -283,42 +285,31 @@ def concat_video_clips(clips: list, dst: Path):
 
 
 def infer_zoom_anchor(image_prompt: str, character_ref: str = None) -> tuple:
-    """image_prompt のキーワードからズーム焦点 (px, py) を推定する。
-    px/py は 0.0〜1.0（左上=0,0 / 右下=1,1）。
+    """image_prompt のキーワードからズーム焦点と推奨エフェクトを推定する。
+
+    ルール:
+      - 両端に2人（left + right 両方検出）→ pan_zoom_out_lr / rl をランダム選択
+      - それ以外（1人・3人以上・人物なし）→ 中央 zoom_in
+
+    戻り値: (px, py, effect_override)
+      px/py         : ズーム焦点 0.0〜1.0（左上=0,0 / 右下=1,1）
+      effect_override: None（JSON のエフェクトを使用）or "pan_zoom_out_lr/rl"
     """
     text = (image_prompt or "").lower()
 
-    # ── 左右判定 ──
     left_hits  = any(w in text for w in ["on the left", "left side", "left of frame",
                                           "left foreground", "left corner", "left third"])
     right_hits = any(w in text for w in ["on the right", "right side", "right of frame",
                                           "right foreground", "right corner", "right third"])
-    if left_hits and not right_hits:
-        px = 0.3
-    elif right_hits and not left_hits:
-        px = 0.7
-    elif "left" in text and "right" not in text:
-        px = 0.38
-    elif "right" in text and "left" not in text:
-        px = 0.62
-    else:
-        px = 0.5
 
-    # ── 上下判定 ──
-    top_hits    = any(w in text for w in ["upper", "top of", "overhead", "above", "sky", "horizon"])
-    bottom_hits = any(w in text for w in ["lower", "bottom", "ground", "floor", "foreground"])
-    if top_hits and not bottom_hits:
-        py = 0.38
-    elif bottom_hits and not top_hits:
-        py = 0.62
-    else:
-        py = 0.5
+    # 両端2人構図 → パン＋ズームアウト（方向はランダム）
+    if left_hits and right_hits:
+        import random
+        effect = random.choice(["pan_zoom_out_lr", "pan_zoom_out_rl"])
+        return (0.5, 0.5, effect)
 
-    # キャラクターがいる場合は顔寄り（やや上）に補正
-    if character_ref:
-        py = max(0.25, py - 0.08)
-
-    return (round(px, 3), round(py, 3))
+    # それ以外はすべて中央ズームイン
+    return (0.5, 0.5, None)
 
 
 def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape: bool = True,
@@ -346,20 +337,23 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
 
     px, py = anchor
 
+    # 固定速度ズーム: KB_ZOOM_SPEED [倍率/frame]、上限は KB_ZOOM_FACTOR
+    zoom_step = KB_ZOOM_SPEED
+    z_end = round(min(1.0 + zoom_step * total_frames, z), 6)   # zoom_in の到達倍率
+    z_start = round(min(1.0 + zoom_step * total_frames, z), 6) # zoom_out の開始倍率
+
     if effect == "zoom_in":
-        zoom_step = round((z - 1.0) / total_frames, 6)
         vf = (
             f"{prescale},"
-            f"zoompan=z='min(1+{zoom_step}*on,{z})'"
+            f"zoompan=z='min(1+{zoom_step}*on,{z_end})'"
             f":x='{px}*(iw-iw/zoom)':y='{py}*(ih-ih/zoom)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
         )
     elif effect == "zoom_out":
-        zoom_step = round((z - 1.0) / total_frames, 6)
         vf = (
             f"{prescale},"
-            f"zoompan=z='max({z}-{zoom_step}*on,1)'"
+            f"zoompan=z='max({z_start}-{zoom_step}*on,1)'"
             f":x='{px}*(iw-iw/zoom)':y='{py}*(ih-ih/zoom)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
@@ -379,6 +373,31 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
             f"zoompan=z='{z}'"
             f":x='iw/2-(iw/zoom/2)+({buf_w}-{buf_w}/{z})/2*(1-on/{total_frames})'"
             f":y='ih/2-(ih/zoom/2)'"
+            f":d={total_frames}:s={w}x{h}:fps={FPS},"
+            f"setsar=1,format=yuv420p"
+        )
+    elif effect in ("pan_zoom_out_lr", "pan_zoom_out_rl"):
+        # フェーズ1（60%）: 1.40倍で片側→反対側へパン
+        # フェーズ2（40%）: パン先の位置からズームアウト→全体表示
+        pf = int(total_frames * 0.6)           # パン終了フレーム
+        zf = max(total_frames - pf, 1)         # ズームアウトフレーム数
+        z_step_dn = round((z - 1.0) / zf, 6)
+        pan_range = round(buf_w * (1 - 1 / z), 4)  # z倍時の最大パン量
+
+        # z: パン中は固定(z)、ズームアウト中は線形減少→1.0
+        z_expr = (f"if(lt(on\\,{pf})\\,"
+                  f"{z}\\,"
+                  f"max({z}-{z_step_dn}*(on-{pf})\\,1))")
+        if effect == "pan_zoom_out_lr":
+            # 左側スタート → 右側パン → 右端固定でズームアウト
+            x_expr = f"if(lt(on\\,{pf})\\,{pan_range}*on/{pf}\\,iw-iw/zoom)"
+        else:
+            # 右側スタート → 左側パン → 左端固定でズームアウト
+            x_expr = f"if(lt(on\\,{pf})\\,{pan_range}*(1-on/{pf})\\,0)"
+        vf = (
+            f"{prescale},"
+            f"zoompan=z='{z_expr}'"
+            f":x='{x_expr}':y='ih/2-(ih/zoom/2)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
         )
@@ -1055,9 +1074,10 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 seen_chars.add(char_ref)
                 overlay_vf = _char_name_overlay(char_ref, visible_dur=4.0)
 
-            anchor = infer_zoom_anchor(scene.get("image_prompt", ""), char_ref)
-            make_ken_burns(img, out_clip, dur, effect,
-                           landscape=True, overlay_vf=overlay_vf, anchor=anchor)
+            px, py, effect_override = infer_zoom_anchor(scene.get("image_prompt", ""), char_ref)
+            actual_effect = effect_override if effect_override else effect
+            make_ken_burns(img, out_clip, dur, actual_effect,
+                           landscape=True, overlay_vf=overlay_vf, anchor=(px, py))
             clip_paths.append((out_clip, dur))
 
         if not clip_paths:
