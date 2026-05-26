@@ -339,7 +339,14 @@ FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_downlo
 
 **部分失敗時（一部スロットが0件・404）:** 失敗したスロットのみ `--start-slot <N>` で別クエリに差し替えて補完する。全スロット再実行は禁止。ダウンロード完了時点でデスクトップに必ず3曲揃っていること。
 
-**CC BY の曲が含まれる場合:** ダウンロード完了時に帰属クレジットをメモしておく。
+ダウンロード完了後、`.credit.txt` ファイルをデスクトップから退避させて mp3 だけ残す：
+
+```bash
+mkdir -p /tmp/sc_bgm_credits
+mv "$HOME/Desktop/BGM_candidate_"*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null || true
+```
+
+これによりデスクトップには mp3 が3件のみ表示される。
 
 ---
 
@@ -369,7 +376,7 @@ FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_downlo
 
 - **確認書に修正あり** → 該当箇所を修正してデスクトップのファイルを上書き保存。再確認を求める。
 - **サムネイルをやり直したい** → デスクトップの `ep{NNN}_thumbnail.png` を削除して再生成。
-- **BGMをやり直したい** → デスクトップの候補3曲を削除し、`--round` を1増やして再ダウンロード。
+- **BGMをやり直したい** → デスクトップの候補3曲と `/tmp/sc_bgm_credits/` 内の credit.txt を削除し、`--round` を1増やして再ダウンロード。
 - **すべてOK** → STEP 4b へ進む
 
 ---
@@ -388,20 +395,20 @@ mv "$HOME/Desktop/ep{NNN}_制作確認書.txt" "$DRIVE/"
 # サムネイルを移動
 mv "$HOME/Desktop/ep{NNN}_thumbnail.png" "$DRIVE/"
 
-# BGM（残った1曲）をリネームして移動
-mv "$HOME/Desktop/BGM_candidate_*.mp3" "$DRIVE/audio/ep{NNN}-BGM.mp3"
-```
+# BGM（残った1曲）をリネームして移動し、対応する credit.txt も同時に処理
+BGM_FILE=$(ls "$HOME/Desktop/BGM_candidate_"*.mp3 2>/dev/null | head -1)
+BGM_STEM=$(basename "$BGM_FILE" .mp3)
+mv "$BGM_FILE" "$DRIVE/audio/ep{NNN}-BGM.mp3"
 
-**CC BY クレジット自動注入:**
-BGM移動後、対応する `.credit.txt` が存在する場合（CC BY曲）は ep.json の `youtube_description` にクレジットを自動追記する：
-
-```bash
-CREDIT=$(ls "$HOME/Desktop/BGM_candidate_"*.credit.txt 2>/dev/null | head -1)
-if [ -n "$CREDIT" ]; then
+# 対応する credit.txt を /tmp から取得してクレジット注入
+CREDIT="/tmp/sc_bgm_credits/${BGM_STEM}.credit.txt"
+if [ -f "$CREDIT" ]; then
   python3 $HOME/samurai-chronicles/sc_inject_bgm_credit.py \
     --episode ep{NNN} --credit-file "$CREDIT"
-  rm "$CREDIT"
 fi
+
+# /tmp の残 credit.txt をすべて削除
+rm -f /tmp/sc_bgm_credits/BGM_candidate_*.credit.txt
 ```
 
 移動完了を報告する。
