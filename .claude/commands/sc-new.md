@@ -327,8 +327,11 @@ response = client.models.generate_content(
 
 **クエリ生成ルール:**
 - 必ず短く（2〜3語）
-- 楽器・音楽系キーワードに絞る（orchestral, strings, taiko, shamisen, cinematic, epicなど）
-- 環境音系（forest, rain, nature, ambience など）は禁止
+- **必ず `orchestral` または `epic` または `cinematic` のいずれかを含める**
+- トーン修飾語（組み合わせて使う）: dramatic, heroic, dark, powerful, epic, tense, triumphant
+- 楽器補強（単体では使わない）: strings, brass, choir, taiko, percussion
+- 良い例: `"epic orchestral"` / `"dramatic cinematic strings"` / `"dark orchestral taiko"` / `"heroic brass orchestra"`
+- **禁止キーワード:** shamisen 単体, piano 単体, ambient, meditation, acoustic, folk, traditional, nature, forest, rain, calm, relaxing, light
 
 ```bash
 FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
