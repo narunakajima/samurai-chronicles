@@ -284,13 +284,18 @@ def concat_video_clips(clips: list, dst: Path):
     )
 
 
-def infer_zoom_anchor(image_prompt: str, character_ref: str = None) -> tuple:
-    """image_prompt のキーワードからズーム焦点と推奨エフェクトを推定する。
+def infer_zoom_anchor(image_prompt: str, character_ref: str = None,
+                      zoom_anchor: dict = None) -> tuple:
+    """ズーム焦点座標と推奨エフェクトを返す。
 
-    ルール:
+    優先順位:
+      1. zoom_anchor（JSON に Claude が画像を見て書き込んだ精確な座標）がある場合はそれを使用
+      2. なければ image_prompt のキーワードからフォールバック推測
+
+    エフェクト決定ルール:
       - 両端に2人（left + right 両方検出）→ pan_zoom_out_lr / rl をランダム選択
-      - 1人（character_ref あり）→ image_prompt の位置キーワードで焦点を推測して zoom_in
-      - 人物なし・3人以上（character_ref なし）→ 中央から zoom_out（1.40x → 1.0x）
+      - 1人（character_ref あり）→ zoom_in（焦点は zoom_anchor or テキスト推測）
+      - 人物なし・3人以上（character_ref なし）→ zoom_out（中央、1.40x → 1.0x）
 
     戻り値: (px, py, effect_override)
       px/py         : ズーム焦点 0.0〜1.0（左上=0,0 / 右下=1,1）
@@ -309,15 +314,19 @@ def infer_zoom_anchor(image_prompt: str, character_ref: str = None) -> tuple:
         effect = random.choice(["pan_zoom_out_lr", "pan_zoom_out_rl"])
         return (0.5, 0.5, effect)
 
-    # 1人構図（character_ref あり）→ 位置推測してズームイン
+    # 1人構図（character_ref あり）→ ズームイン
     if character_ref:
-        if left_hits:
-            px = 0.25
+        if zoom_anchor:
+            # Claude が画像を見て書き込んだ精確な座標を使用
+            px = float(zoom_anchor.get("x", 0.5))
+            py = float(zoom_anchor.get("y", 0.5))
+        elif left_hits:
+            px, py = 0.25, 0.5
         elif right_hits:
-            px = 0.75
+            px, py = 0.75, 0.5
         else:
-            px = 0.5
-        return (px, 0.5, "zoom_in")
+            px, py = 0.5, 0.5
+        return (px, py, "zoom_in")
 
     # 人物なし・3人以上 → 中央からズームアウト
     return (0.5, 0.5, "zoom_out")
@@ -1087,7 +1096,9 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 seen_chars.add(char_ref)
                 overlay_vf = _char_name_overlay(char_ref, visible_dur=4.0)
 
-            px, py, effect_override = infer_zoom_anchor(scene.get("image_prompt", ""), char_ref)
+            zoom_anchor = scene.get("zoom_anchor")  # Claude が画像を見て書き込んだ焦点座標
+            px, py, effect_override = infer_zoom_anchor(
+                scene.get("image_prompt", ""), char_ref, zoom_anchor)
             actual_effect = effect_override if effect_override else effect
             make_ken_burns(img, out_clip, dur, actual_effect,
                            landscape=True, overlay_vf=overlay_vf, anchor=(px, py))

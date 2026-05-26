@@ -433,6 +433,50 @@ python3 sc_image_gen.py --episode ep{NNN} --shorts         # Shorts用画像生�
 
 ---
 
+## STEP 5b — シーン画像解析・zoom_anchor 書き込み
+
+画像生成完了後、Claude が各シーン画像を直接 Read ツールで読み込み、ズーム焦点座標を判定して
+ep{NNN}.json に書き込む。**Gemini API は使わない。Claude のビジョンで直接判断する。**
+
+### 対象シーン（zoom_anchor を書き込む）
+
+- `character_ref` が設定されているシーン（1人構図）
+- かつ、image_prompt に "on the left"/"on the right" 系キーワードが **両方** 含まれない（2人構図でない）こと
+
+その他のシーン（character_ref なし、または2人構図）はスキップ（zoom_anchor は null のまま）。
+
+### 手順
+
+1. Google Drive の `images/` フォルダから S{id:02d}.png を Read ツールで読み込む
+2. 画像内の主被写体の重心を判断し、正規化座標で記録：
+   - `x`: 0.0=画面左端、0.5=中央、1.0=右端
+   - `y`: 0.0=画面上端、0.5=中央、1.0=下端
+   - 人物の「顔〜胸」あたりの重心を焦点にする（足元や背景ではなく）
+3. ep{NNN}.json の該当シーンに `"zoom_anchor": {"x": ..., "y": ...}` を書き込む
+
+### 例
+
+```json
+{
+  "scene_id": 3,
+  "character_ref": "musashi",
+  "zoom_anchor": {"x": 0.38, "y": 0.42},
+  ...
+}
+```
+
+### 完了報告
+
+```
+zoom_anchor 書き込み完了:
+  S01 (musashi): x=0.50, y=0.45
+  S03 (musashi): x=0.38, y=0.42
+  ...
+  スキップ: S02, S08, S11 ...（character_ref なし or 2人構図）
+```
+
+---
+
 ## STEP 6 — 動画・字幕を生成する
 
 ```bash
