@@ -582,7 +582,7 @@ def make_teaser_clip(scenes: list, img_dir: Path, tmp: Path, narr_dur: float,
 
     # クリップ数 = ナレーション尺に合わせて動的計算
     n_clips = _math.ceil((narr_dur - TEASER_XFADE) / (TEASER_CLIP_DUR - TEASER_XFADE))
-    n_clips = min(max(n_clips, 3), TEASER_MAX_CLIPS)
+    n_clips = max(n_clips, 3)  # 上限なし：ナレーション尺に合わせてクリップ数を決定
 
     # 優先度順に劇的なシーンを選択（climax → falling_action → rising_action → setup）
     teaser_scene_ids = []

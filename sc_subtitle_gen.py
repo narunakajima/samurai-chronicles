@@ -55,7 +55,8 @@ def chunk_sentence(text: str, max_chars: int = 42) -> list:
     for word in words:
         if not line1:
             line1.append(word)
-        elif len(" ".join(line1 + [word])) <= max_chars:
+        elif not line2 and len(" ".join(line1 + [word])) <= max_chars:
+            # line2 が空の間だけ line1 に追加（line2 に内容があれば line1 に戻らない）
             line1.append(word)
         elif not line2:
             line2.append(word)
@@ -125,7 +126,7 @@ def run(episode_id: str):
     if teaser_wav.exists():
         teaser_narr_dur = probe_duration(teaser_wav)
         n_clips = _math.ceil((teaser_narr_dur - TEASER_XFADE) / (TEASER_CLIP_DUR - TEASER_XFADE))
-        n_clips = min(max(n_clips, 3), TEASER_MAX_CLIPS)
+        n_clips = max(n_clips, 3)  # 上限なし（sc_video_gen.py と同じ動作）
         teaser_dur = (TEASER_CLIP_DUR - TEASER_XFADE) * (n_clips - 1) + TEASER_CLIP_DUR
         print(f"  テイザー検出: {teaser_dur:.1f}s（S00_teaser.wav）")
     else:
