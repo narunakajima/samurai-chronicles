@@ -81,22 +81,8 @@ TEASER_CLIP_DUR = 2.5     # テイザー1クリップ秒数
 TEASER_XFADE    = 0.3     # 速めのクロスフェード（映画的テンポ感）
 TEASER_MAX_CLIPS = 12     # テイザーに使う最大シーン数（ナレーション尺に合わせる）
 
-# ── シーン内動的分割設定 ──────────────────────────────────
-SCENE_SUB_DUR    = 18.0   # サブクリップ1枚の秒数
-SCENE_SUB_XFADE  = 0.5    # サブクリップ間クロスフェード秒数
-SCENE_MOTION_MIN = 20.0   # この尺を超えるシーンをサブクリップ分割する
-
-# 基本エフェクトを起点とした循環テーブル
-_EFFECT_ROTATION = {
-    "zoom_in":   ["zoom_in",  "pan_right", "zoom_out", "pan_left"],
-    "zoom_out":  ["zoom_out", "pan_left",  "zoom_in",  "pan_right"],
-    "pan_right": ["pan_right","zoom_in",   "pan_left", "zoom_out"],
-    "pan_left":  ["pan_left", "zoom_out",  "pan_right","zoom_in"],
-    "static":    ["zoom_in",  "pan_right", "zoom_out", "pan_left"],
-}
-
 # ── Ken Burns パラメータ ─────────────────────────────────
-KB_ZOOM_FACTOR = 1.06   # zoom_in/out の最大倍率
+KB_ZOOM_FACTOR = 1.15   # zoom_in/out の最大倍率（尺が長いほどゆっくり動く）
 
 # ── キャラクター表示名マッピング ──────────────────────────
 CHAR_DISPLAY_NAMES = {
@@ -296,12 +282,52 @@ def concat_video_clips(clips: list, dst: Path):
     )
 
 
+def infer_zoom_anchor(image_prompt: str, character_ref: str = None) -> tuple:
+    """image_prompt のキーワードからズーム焦点 (px, py) を推定する。
+    px/py は 0.0〜1.0（左上=0,0 / 右下=1,1）。
+    """
+    text = (image_prompt or "").lower()
+
+    # ── 左右判定 ──
+    left_hits  = any(w in text for w in ["on the left", "left side", "left of frame",
+                                          "left foreground", "left corner", "left third"])
+    right_hits = any(w in text for w in ["on the right", "right side", "right of frame",
+                                          "right foreground", "right corner", "right third"])
+    if left_hits and not right_hits:
+        px = 0.3
+    elif right_hits and not left_hits:
+        px = 0.7
+    elif "left" in text and "right" not in text:
+        px = 0.38
+    elif "right" in text and "left" not in text:
+        px = 0.62
+    else:
+        px = 0.5
+
+    # ── 上下判定 ──
+    top_hits    = any(w in text for w in ["upper", "top of", "overhead", "above", "sky", "horizon"])
+    bottom_hits = any(w in text for w in ["lower", "bottom", "ground", "floor", "foreground"])
+    if top_hits and not bottom_hits:
+        py = 0.38
+    elif bottom_hits and not top_hits:
+        py = 0.62
+    else:
+        py = 0.5
+
+    # キャラクターがいる場合は顔寄り（やや上）に補正
+    if character_ref:
+        py = max(0.25, py - 0.08)
+
+    return (round(px, 3), round(py, 3))
+
+
 def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape: bool = True,
-                   overlay_vf: str = ""):
+                   overlay_vf: str = "", anchor: tuple = (0.5, 0.5)):
     """画像に Ken Burns エフェクトを適用して動画クリップを生成する。
 
     effect: "zoom_in" | "zoom_out" | "pan_right" | "pan_left" | "static"
     landscape: True=1920x1080, False=1080x1920 (Shorts)
+    anchor: (px, py) ズーム焦点（0.0〜1.0）。zoom_in/zoom_out で有効。
     """
     w, h = (OUTPUT_W, OUTPUT_H) if landscape else (SHORTS_W, SHORTS_H)
     res = f"{w}:{h}"
@@ -318,12 +344,14 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
     else:
         prescale = f"scale={buf_w}:{buf_h}:flags=lanczos"
 
+    px, py = anchor
+
     if effect == "zoom_in":
         zoom_step = round((z - 1.0) / total_frames, 6)
         vf = (
             f"{prescale},"
             f"zoompan=z='min(1+{zoom_step}*on,{z})'"
-            f":x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+            f":x='{px}*(iw-iw/zoom)':y='{py}*(ih-ih/zoom)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
         )
@@ -332,7 +360,7 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
         vf = (
             f"{prescale},"
             f"zoompan=z='max({z}-{zoom_step}*on,1)'"
-            f":x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+            f":x='{px}*(iw-iw/zoom)':y='{py}*(ih-ih/zoom)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
         )
@@ -381,41 +409,6 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
     )
 
 
-def make_scene_with_motion(src: Path, dst: Path, duration: float, effect: str,
-                           landscape: bool, overlay_vf: str, tmp: Path,
-                           scene_idx: int = 0):
-    """長いシーンを複数のサブクリップに分割してエフェクトを循環させる。
-
-    SCENE_MOTION_MIN 秒以下のシーンは make_ken_burns を直接呼ぶ。
-    それ以上は SCENE_SUB_DUR 秒ごとに分割し SCENE_SUB_XFADE でクロスフェード。
-    オーバーレイ（キャラクター名など）は最初のサブクリップのみに付与する。
-    """
-    import math as _math
-
-    if duration <= SCENE_MOTION_MIN:
-        make_ken_burns(src, dst, duration, effect, landscape, overlay_vf)
-        return
-
-    rotation = _EFFECT_ROTATION.get(effect, _EFFECT_ROTATION["zoom_in"])
-
-    # サブクリップ数と各尺を計算
-    # total = n * sub_dur - (n-1) * xfade  →  sub_dur = (total + (n-1)*xfade) / n
-    n_subs = max(2, _math.ceil(
-        (duration + SCENE_SUB_XFADE) / (SCENE_SUB_DUR + SCENE_SUB_XFADE)
-    ))
-    sub_dur = (duration + (n_subs - 1) * SCENE_SUB_XFADE) / n_subs
-
-    sub_clips, sub_durs = [], []
-    for i in range(n_subs):
-        sub_effect = rotation[i % len(rotation)]
-        sub_dst = tmp / f"sc{scene_idx:02d}_sub{i:02d}.mp4"
-        ov = overlay_vf if i == 0 else ""   # オーバーレイは先頭のみ
-        make_ken_burns(src, sub_dst, sub_dur, sub_effect, landscape, ov)
-        sub_clips.append(sub_dst)
-        sub_durs.append(sub_dur)
-
-    crossfade_concat_n(sub_clips, sub_durs, dst, xfade_dur=SCENE_SUB_XFADE)
-    print(f"    → {n_subs}サブクリップ ({sub_dur:.1f}s × {n_subs}, xfade={SCENE_SUB_XFADE}s)")
 
 
 # ── Shorts v4 ヘルパー ──────────────────────────────────
@@ -1062,9 +1055,9 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 seen_chars.add(char_ref)
                 overlay_vf = _char_name_overlay(char_ref, visible_dur=4.0)
 
-            make_scene_with_motion(img, out_clip, dur, effect,
-                                   landscape=True, overlay_vf=overlay_vf,
-                                   tmp=tmp, scene_idx=sid)
+            anchor = infer_zoom_anchor(scene.get("image_prompt", ""), char_ref)
+            make_ken_burns(img, out_clip, dur, effect,
+                           landscape=True, overlay_vf=overlay_vf, anchor=anchor)
             clip_paths.append((out_clip, dur))
 
         if not clip_paths:
