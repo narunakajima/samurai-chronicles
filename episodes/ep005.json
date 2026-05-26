@@ -35,7 +35,7 @@
     {
       "scene_id": 1,
       "type": "hook",
-      "duration_seconds": 15,
+      "duration_seconds": 10,
       "narration": "Born a peasant, he died the ruler of Japan. He never received a samurai name by birth — yet no warrior of his age commanded more power or more fear. How does a sandal-bearer conquer an empire?",
       "image_prompt": "Toyotomi Hideyoshi in ornate golden armor standing at the peak of Osaka Castle, viewed from dramatically below, small but commanding figure silhouetted against a vast stormy sky, Japan stretching to the horizon below him, expression of absolute authority, golden evening light",
       "ken_burns": "zoom_in",
@@ -44,7 +44,7 @@
     {
       "scene_id": 2,
       "type": "setup",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "The year was 1537. The place: Nakamura village, Owari Province — the same restless province that had produced Oda Nobunaga just four years earlier. But where Nobunaga was born into a minor noble house, the boy named Hiyoshimaru entered the world with nothing. His father was a peasant foot soldier who died when the boy was still young. His mother remarried a man who resented the child's ambitions. In a Japan locked in a century of civil war — where birth determined destiny — Hiyoshimaru refused to accept his.",
       "image_prompt": "A small, impoverished Japanese village in the 1540s, thatched-roof huts surrounded by rice paddies, misty mountains in the distance, a young boy standing barefoot at the edge of the village looking toward the horizon, overcast sky suggesting hardship and longing, muted earthy tones",
       "ken_burns": "pan_right",
@@ -53,7 +53,7 @@
     {
       "scene_id": 3,
       "type": "setup",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "As a teenager, Hiyoshimaru left home carrying almost nothing — a small amount of coin and an almost reckless determination to become something. He drifted through several warlords' domains, working odd jobs, learning to survive by wit rather than strength. He was small, slight, and distinctive-looking — contemporaries compared him to a monkey, with narrow features and large, restless eyes. But those eyes missed nothing. He was always watching, always learning — studying how power worked from the very bottom of its structure.",
       "image_prompt": "A young Hideyoshi — small, wiry, with distinctive narrow face and alert fox-like eyes — walking alone down a dusty feudal road at dusk, carrying a modest bundle on his back, a distant castle silhouetted against the fading sky, the posture of someone who does not know where he is going but refuses to stop",
       "ken_burns": "pan_left",
@@ -62,7 +62,7 @@
     {
       "scene_id": 4,
       "type": "setup",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "Around 1558, Hiyoshimaru found his way into the household of Oda Nobunaga — the most ambitious and most dangerous warlord in Japan. His first role was deliberately humiliating: warming Nobunaga's sandals against his own body before his master put them on each morning. But Hiyoshimaru — who would take the name Tokichiro, and eventually Hideyoshi — was not bothered. He studied Nobunaga obsessively: how he made decisions, what he valued, what made him trust a man. Every moment in that position was an education.",
       "image_prompt": "Interior of Oda Nobunaga's castle hall — a young Hideyoshi kneeling before the tall, imposing Nobunaga in a position of utter subservience, but Hideyoshi's eyes are watchful and calculating, quietly studying his master's every movement, other retainers visible in background, firelight casting dramatic shadows",
       "ken_burns": "zoom_in",
@@ -71,7 +71,7 @@
     {
       "scene_id": 5,
       "type": "rising_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "His first real test came quickly. Nobunaga ordered the repair of Kiyosu Castle in an impossibly short time. Where other commanders had struggled to organize workers or keep costs under control, Hiyoshimaru delivered — on schedule, under budget, with the workforce genuinely motivated. Nobunaga noticed. He began assigning the young man larger responsibilities — then military command. A man who could make a workforce follow him with enthusiasm, Nobunaga understood, could do the same with soldiers. The sandal-bearer's transformation had begun.",
       "image_prompt": "A massive construction site at a Japanese castle, workers swarming like ants under torchlight, scaffolding covering stone walls, a small energetic figure directing operations with enthusiasm and precision, other foremen watching in disbelief at the speed of progress, lanterns burning through the night",
       "ken_burns": "pan_right",
@@ -80,7 +80,7 @@
     {
       "scene_id": 6,
       "type": "rising_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "The pivotal test came in 1566 at Inabayama — the mountain fortress of Nobunaga's rival, the Saito clan. The castle seemed impregnable. Hiyoshimaru proposed a plan of such audacity it was almost absurd: he would lead a small team secretly into enemy territory, recruit local sympathizers, and repair a section of the castle's outer walls in a single night — opening a path for Nobunaga's forces to advance. Impossibly, it worked. Inabayama fell. Nobunaga renamed it Gifu, and his most unusual retainer received his first real reward.",
       "image_prompt": "Night scene — a small group of men in dark clothing moving silently through mountain forest, Inabayama fortress visible against a moonlit sky above them, Hideyoshi at the front crouching and gesturing directions, tension and stealth in every posture, silver moonlight filtering through trees",
       "ken_burns": "zoom_in",
@@ -89,7 +89,7 @@
     {
       "scene_id": 7,
       "type": "rising_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "Through the 1570s, Hideyoshi — now married to the formidable Nene, a woman who would outlive him by decades and become one of Japan's most respected figures — rose steadily through Nobunaga's ranks. He was given command of Nagahama Castle on Lake Biwa, his first domain. He proved to be not just a capable general but a beloved administrator, genuinely liked by the people of his territory. Where other warlords ruled through fear alone, Hideyoshi understood the extraordinary power of being genuinely liked.",
       "image_prompt": "Hideyoshi and Nene — a strong, composed, dignified woman — standing in the courtyard of Nagahama Castle, surrounded by loyal retainers who clearly respect both of them, evening light on the waters of Lake Biwa in the background, a scene of unexpected domestic warmth and trust amid the war",
       "ken_burns": "zoom_out",
@@ -98,7 +98,7 @@
     {
       "scene_id": 8,
       "type": "rising_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "By 1582, Hideyoshi commanded Nobunaga's western campaign — a grinding war against the powerful Mori clan. At the siege of Takamatsu Castle, he produced one of military history's most creative solutions. The castle sat in a low valley. Rather than assault its walls directly and lose thousands of men, Hideyoshi diverted nearby rivers, constructing massive earthen dams in under two weeks. The valley flooded entirely. Takamatsu became an island. Its garrison watched helplessly as their supplies ran out, and surrender became the only option.",
       "image_prompt": "Wide dramatic view of a flooded valley — Takamatsu Castle surrounded entirely by muddy floodwater stretching to the horizon, earthen dams visible at the edges, Hideyoshi watching from high ground with his strategists, figures on the castle walls watching in disbelief, grey stormy sky overhead",
       "ken_burns": "zoom_in",
@@ -107,7 +107,7 @@
     {
       "scene_id": 9,
       "type": "rising_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "It was June 1582. The surrender of Takamatsu was nearly complete when a hard-riding messenger arrived at Hideyoshi's camp — sweating, barely coherent. Nobunaga was dead. Akechi Mitsuhide, one of his most trusted generals, had surrounded Nobunaga's lodgings at Honnoji temple in Kyoto and set them ablaze. The most powerful man in Japan was gone. Every lord in the country was already calculating — who would fill the void? And what would Hideyoshi, stranded two hundred kilometers away with a surrendering army, do next?",
       "image_prompt": "Inside Hideyoshi's military command tent at dawn — a breathless messenger kneeling before Hideyoshi with devastating news, Hideyoshi's face caught in a moment of controlled shock and rapid calculation simultaneously, maps and war documents spread before him, other officers frozen watching their commander's reaction, a candle flame barely flickering in the tense stillness",
       "ken_burns": "zoom_in",
@@ -116,7 +116,7 @@
     {
       "scene_id": 10,
       "type": "climax",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "What Hideyoshi did next became legend. Within hours, he had secretly negotiated a truce with the Mori clan — concealing Nobunaga's death from them long enough to disengage — and turned his entire army around. Twenty thousand men, their supply trains and equipment, reversed direction and began marching east at a pace that seemed physically impossible. Two hundred kilometers in ten days. Through rain, through exhaustion, through grief. They called it the Chugoku-gaeshi — the Great Return. Hideyoshi pushed them harder than any commander had the right to.",
       "image_prompt": "A vast army of twenty thousand samurai and foot soldiers moving in a tremendous column through rain and morning mist, banners streaming, exhausted figures pushing through mud and fatigue, Hideyoshi riding at the very front on horseback urging them onward, mountains behind them and Kyoto unseen ahead, a sense of epic desperate urgency",
       "ken_burns": "pan_right",
@@ -125,7 +125,7 @@
     {
       "scene_id": 11,
       "type": "climax",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "On July 2nd, 1582 — just thirteen days after the Honnoji Incident — Hideyoshi's forces met Akechi Mitsuhide's army at the Battle of Yamazaki. The battle was swift and decisive. Mitsuhide's men, exhausted and demoralized, crumbled under the assault. Mitsuhide fled the field. Within days, he would be killed by peasants with bamboo spears — a humiliating end for the man who had toppled a god. In a single devastating week, Hideyoshi had transformed himself from a general into the most dangerous man in Japan.",
       "image_prompt": "The Battle of Yamazaki at dawn — two vast armies clashing on rain-soaked terrain at the foot of a forested mountain, smoke rising from arquebus fire, Hideyoshi watching from a commanding rise as his forces sweep through the enemy, chaos and decisive momentum captured in a single frozen moment",
       "ken_burns": "zoom_in",
@@ -134,7 +134,7 @@
     {
       "scene_id": 12,
       "type": "falling_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "With Nobunaga dead, the question of succession became immediately lethal. Nobunaga's generals gathered at Kiyosu Castle to decide Japan's future. Hideyoshi arrived with momentum, gold, and a carefully constructed narrative — positioning himself as Nobunaga's true avenger and the guardian of Nobunaga's infant grandson. His most dangerous rival was Shibata Katsuie, an elder general of unimpeachable samurai credentials — everything Hideyoshi was not. The political maneuvering at Kiyosu was a masterclass in controlled aggression. The clash between them was inevitable. Japan was not large enough for both.",
       "image_prompt": "The Kiyosu Conference — several powerful lords in formal armor seated in a grand castle hall, political tension visible in every rigid posture, Hideyoshi speaking with calm authority at one side while other powerful men watch with guarded expressions, a child-heir barely visible in the center of the arrangement, candlelight and shadows",
       "ken_burns": "zoom_in",
@@ -143,7 +143,7 @@
     {
       "scene_id": 13,
       "type": "falling_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "In the spring of 1583, the two forces met at the Battle of Shizugatake. Hideyoshi moved with his trademark speed — arriving before Katsuie expected him, striking before the enemy could form a proper defense. His forces swept through Katsuie's positions with overwhelming momentum. Katsuie retreated to his castle at Kitanosho. When it became clear there was no escape, he set fire to the castle himself — dying alongside his wife, Lady Oichi, Nobunaga's own sister. Japan now had only one master.",
       "image_prompt": "The siege of Kitanosho Castle — the fortress burning against a winter night sky, orange flames reflecting on snow-covered mountain terrain, samurai fighting in the foreground, a figure visible at a high window of the burning tower as escape becomes impossible, dramatic crimson and black composition",
       "ken_burns": "zoom_out",
@@ -152,7 +152,7 @@
     {
       "scene_id": 14,
       "type": "falling_action",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "By 1585, Hideyoshi controlled Japan. But he faced a remarkable obstacle: as a man of peasant birth, he could never claim the title of Shogun — that was constitutionally reserved for those of Minamoto samurai blood. So he did something unprecedented. He arranged for the Emperor to adopt him into the ancient Fujiwara noble clan and received the title of Kampaku — Imperial Regent — the highest civilian office in the land. A peasant, born without a name worth keeping, now ruled an empire through imperial court rank.",
       "image_prompt": "An imperial court ceremony in the Emperor's palace — Hideyoshi kneeling in magnificent formal court robes instead of armor, receiving an official appointment scroll from court nobles, surrounded by the ancient ritual of the highest Japanese court, gold leaf screens, crimson and white ceremonial colors, an expression of triumph beneath the required solemnity",
       "ken_burns": "zoom_out",
@@ -161,7 +161,7 @@
     {
       "scene_id": 15,
       "type": "insight",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "And yet the man who charmed his way to the summit of Japan carried a shadow that grew darker with power. He expelled Christian missionaries when their influence threatened his control. He ordered the crucifixion of twenty-six Christians in Nagasaki in 1597. Most shockingly, he turned on his own nephew and designated heir, Toyotomi Hidetsugu — forcing him to commit seppuku on fabricated charges, then ordering the execution of Hidetsugu's entire family, including women and children, to eliminate any rival bloodline. Power had not merely changed Hideyoshi. It had consumed him.",
       "image_prompt": "Hideyoshi seated in formal judgment in a shadowy audience chamber, his face cold and impassive, issuing an order that contradicts everything he built his reputation upon, attendants frozen with fear around him, a dark shadow literally falling across his face dividing light from darkness, the room heavy with dread",
       "ken_burns": "zoom_in",
@@ -170,7 +170,7 @@
     {
       "scene_id": 16,
       "type": "insight",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "In 1593, after years of believing he would leave no male heir, a son was born: Toyotomi Hideyori. From that moment, something fundamental shifted in Hideyoshi. The strategic genius became a desperate father. Every decision in his final years was shaped by a single obsession — how to protect this child and ensure the Toyotomi name would survive him. He built institutions, extracted loyalty oaths, rearranged the entire architecture of Japanese government. But the men he trusted most were already quietly calculating their own futures.",
       "image_prompt": "An older Hideyoshi, visibly aged but with transformed tenderness, holding the infant Toyotomi Hideyori in his arms in a private chamber of Fushimi Castle, the political mask completely dropped, a desperate loving father visible beneath the ruler, warm lamplight, the quiet fragility of the moment contrasting with everything he has built",
       "ken_burns": "pan_right",
@@ -179,7 +179,7 @@
     {
       "scene_id": 17,
       "type": "insight",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "The Korean invasions — launched in 1592 and again in 1597 — remain the most contested chapter of Hideyoshi's story. His stated ambition was to conquer Ming China, using Korea as a land bridge. Historians still debate the real motivation: megalomania, a need to give Japan's restless warriors something to fight now that domestic conquest was complete, or simply the unchecked delusion of a man who had never been told no. The invasions devastated the Korean peninsula, achieved nothing, and drained Japan's military and wealth. Hideyoshi died before facing the consequences.",
       "image_prompt": "A vast Japanese invasion fleet crossing a grey sea toward the Korean coast, hundreds of ships with red and gold banners, samurai warriors crowding the decks, storm clouds gathering on the horizon suggesting catastrophe ahead, the sheer scale of the military gamble made visible",
       "ken_burns": "pan_left",
@@ -188,7 +188,7 @@
     {
       "scene_id": 18,
       "type": "teaser",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "In the summer of 1598, Hideyoshi lay dying at Fushimi Castle. He was sixty-one years old and knew he would not live to see his son come of age. He summoned his five most powerful lords to his bedside — among them Tokugawa Ieyasu — and wept openly. He begged them to protect Hideyori. Each man swore an oath. Ieyasu swore with particular intensity and sincerity. Two years later, Ieyasu would begin his own campaign for supremacy. Everything Hideyoshi had built would start to come apart.",
       "image_prompt": "Hideyoshi on his deathbed at Fushimi Castle, frail and aged beyond his years, surrounded by five powerful armored lords including the massive impassive figure of Tokugawa Ieyasu, Hideyoshi's hands outstretched in desperate appeal, tears visible on his sunken cheeks, a single infant toy in the corner of the room, candlelight barely holding back the darkness",
       "ken_burns": "zoom_in",
@@ -197,7 +197,7 @@
     {
       "scene_id": 19,
       "type": "teaser",
-      "duration_seconds": 20,
+      "duration_seconds": 10,
       "narration": "The fall of the Toyotomi came in 1615, seventeen years after Hideyoshi's death, at the Siege of Osaka. Hideyori — the son for whom his father had reshaped an empire — was forced to take his own life as Osaka Castle burned around him. The Toyotomi name was extinguished entirely. And Tokugawa Ieyasu — the man who had wept at Hideyoshi's bedside and sworn his loyalty — became the undisputed ruler of Japan, founding a dynasty that would endure for two hundred and fifty years. The peasant's dream died with his son.",
       "image_prompt": "Osaka Castle burning in the night, the great tower consumed by flames against a black sky, silhouettes of samurai fighting in the foreground, the scale of the disaster overwhelming, a sense of a dynasty being erased from history, smoke rising toward stars that do not care",
       "ken_burns": "zoom_out",
@@ -206,7 +206,7 @@
     {
       "scene_id": 20,
       "type": "outro",
-      "duration_seconds": 22,
+      "duration_seconds": 10,
       "narration": "Toyotomi Hideyoshi remains one of the most extraordinary figures in all of human history — a man who remade himself so completely that the boy from Nakamura village became almost unrecognizable in the ruler of Japan. Brilliant and charming, ruthless and desperate, beloved and feared: he contained contradictions no simple story can hold. If you want to understand Japan — what it was, what it became, and why — you must understand Hideyoshi. Subscribe for a new episode every day. The next story begins soon.",
       "image_prompt": "A sweeping panoramic view of Japan's ancient landscape at dawn — mountains, rivers, and castle towers emerging from morning mist, the country at a moment of hard-won peace, the camera slowly pulling back as if from history itself, warm golden light breaking over the horizon, a sense of legacy stretching forward into time",
       "ken_burns": "pan_right",

@@ -55,6 +55,7 @@ CROSSFADE_DURATION = 0.8   # シーン間クロスフェード秒数
 # ── 音声設定 ────────────────────────────────────────────
 NARR_DELAY = 0.5      # ナレーション開始前の余白（秒）
 NARR_TAIL = 1.0       # ナレーション終了後の余白（秒）
+MIN_CLIP_FLOOR = 5.0  # 音声ありシーンの最低クリップ尺（秒）
 BGM_VOLUME = 0.12     # BGM音量（0〜1）
 BGM_FADE_IN = 5       # BGMフェードイン秒数
 BGM_FADE_OUT = 6      # BGMフェードアウト秒数
@@ -78,7 +79,7 @@ DIN_FONT = str(Path("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf")
 # ── 本編 Teaser イントロ設定 ──────────────────────────────
 TEASER_CLIP_DUR = 2.5     # テイザー1クリップ秒数
 TEASER_XFADE    = 0.3     # 速めのクロスフェード（映画的テンポ感）
-TEASER_MAX_CLIPS = 5      # テイザーに使う最大シーン数
+TEASER_MAX_CLIPS = 12     # テイザーに使う最大シーン数（ナレーション尺に合わせる）
 
 # ── Ken Burns パラメータ ─────────────────────────────────
 KB_ZOOM_FACTOR = 1.06   # zoom_in/out の最大倍率
@@ -825,11 +826,11 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
     scene_durations = []
     for scene in scenes:
         sid = scene["scene_id"]
-        min_dur = float(scene.get("duration_seconds", 20))
+        min_dur = float(scene.get("duration_seconds", 10))
         wav = audio_dir / f"S{sid:02d}.wav"
         if wav.exists():
             narr_dur = probe_audio_duration(wav)
-            clip_dur = max(min_dur, narr_dur + NARR_DELAY + NARR_TAIL)
+            clip_dur = max(MIN_CLIP_FLOOR, narr_dur + NARR_DELAY + NARR_TAIL)
         else:
             clip_dur = min_dur
             narr_dur = 0.0

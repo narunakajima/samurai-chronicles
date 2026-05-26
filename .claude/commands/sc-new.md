@@ -144,7 +144,7 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
     {
       "scene_id": 1,
       "type": "hook",
-      "duration_seconds": 20,
+      "duration_seconds": 10,
       "narration": "...",
       "image_prompt": "...",
       "ken_burns": "zoom_in",

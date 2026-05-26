@@ -30,12 +30,13 @@ DRIVE_BASE = (
 INTRO_DURATION = 5.0
 NARR_DELAY = 0.5
 NARR_TAIL = 1.0
+MIN_CLIP_FLOOR = 5.0
 CROSSFADE_DURATION = 0.8
 
 # テイザーイントロ設定（sc_video_gen.py と同値）
 TEASER_CLIP_DUR = 2.5
 TEASER_XFADE = 0.3
-TEASER_MAX_CLIPS = 5
+TEASER_MAX_CLIPS = 12
 
 
 def split_sentences(text: str) -> list:
@@ -139,13 +140,14 @@ def run(episode_id: str):
     narr_durations = []
     for scene in scenes:
         sid = scene["scene_id"]
-        min_dur = float(scene.get("duration_seconds", 20))
+        min_dur = float(scene.get("duration_seconds", 10))
         wav = audio_dir / f"S{sid:02d}.wav"
         if wav.exists():
             narr_dur = probe_duration(wav)
+            clip_dur = max(MIN_CLIP_FLOOR, narr_dur + NARR_DELAY + NARR_TAIL)
         else:
             narr_dur = 0.0
-        clip_dur = max(min_dur, narr_dur + NARR_DELAY + NARR_TAIL)
+            clip_dur = min_dur
         scene_durations.append(round(clip_dur, 3))
         narr_durations.append(narr_dur)
 
