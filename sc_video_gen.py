@@ -460,9 +460,11 @@ def shorts_hook_text_filter(lines: list) -> str:
         fs, y = configs[i]
         safe = text.replace("'", "").replace('"', "").replace(":", "\\:")
         bw = 9 if i == 0 else (7 if i == 1 else 4)
+        sh = 6 if i == 0 else (5 if i == 1 else 3)
         parts.append(
             f"drawtext=fontfile={DIN_FONT}:text='{safe}'"
             f":fontsize={fs}:fontcolor=white:borderw={bw}:bordercolor=black"
+            f":shadowx={sh}:shadowy={sh}:shadowcolor=black@0.75"
             f":x=(w-text_w)/2:y={y}"
         )
     return ",".join(parts)
@@ -492,6 +494,7 @@ def shorts_caption_for_clip(narration: str, audio_dur: float, clip_idx: int) -> 
             f":text='{word}'"
             f":fontsize=120:fontcolor=white"
             f":borderw=7:bordercolor=black"
+            f":shadowx=4:shadowy=4:shadowcolor=black@0.75"
             f":x=(w-text_w)/2:y=(h-text_h)/2"
             f":enable='between(t,{local_start},{local_end})'"
         )
