@@ -81,6 +81,20 @@ TEASER_CLIP_DUR = 2.5     # テイザー1クリップ秒数
 TEASER_XFADE    = 0.3     # 速めのクロスフェード（映画的テンポ感）
 TEASER_MAX_CLIPS = 12     # テイザーに使う最大シーン数（ナレーション尺に合わせる）
 
+# ── シーン内動的分割設定 ──────────────────────────────────
+SCENE_SUB_DUR    = 18.0   # サブクリップ1枚の秒数
+SCENE_SUB_XFADE  = 0.5    # サブクリップ間クロスフェード秒数
+SCENE_MOTION_MIN = 20.0   # この尺を超えるシーンをサブクリップ分割する
+
+# 基本エフェクトを起点とした循環テーブル
+_EFFECT_ROTATION = {
+    "zoom_in":   ["zoom_in",  "pan_right", "zoom_out", "pan_left"],
+    "zoom_out":  ["zoom_out", "pan_left",  "zoom_in",  "pan_right"],
+    "pan_right": ["pan_right","zoom_in",   "pan_left", "zoom_out"],
+    "pan_left":  ["pan_left", "zoom_out",  "pan_right","zoom_in"],
+    "static":    ["zoom_in",  "pan_right", "zoom_out", "pan_left"],
+}
+
 # ── Ken Burns パラメータ ─────────────────────────────────
 KB_ZOOM_FACTOR = 1.06   # zoom_in/out の最大倍率
 
@@ -365,6 +379,43 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
         ],
         f"KB {effect} S{src.stem[1:]} ({duration:.1f}s)",
     )
+
+
+def make_scene_with_motion(src: Path, dst: Path, duration: float, effect: str,
+                           landscape: bool, overlay_vf: str, tmp: Path,
+                           scene_idx: int = 0):
+    """長いシーンを複数のサブクリップに分割してエフェクトを循環させる。
+
+    SCENE_MOTION_MIN 秒以下のシーンは make_ken_burns を直接呼ぶ。
+    それ以上は SCENE_SUB_DUR 秒ごとに分割し SCENE_SUB_XFADE でクロスフェード。
+    オーバーレイ（キャラクター名など）は最初のサブクリップのみに付与する。
+    """
+    import math as _math
+
+    if duration <= SCENE_MOTION_MIN:
+        make_ken_burns(src, dst, duration, effect, landscape, overlay_vf)
+        return
+
+    rotation = _EFFECT_ROTATION.get(effect, _EFFECT_ROTATION["zoom_in"])
+
+    # サブクリップ数と各尺を計算
+    # total = n * sub_dur - (n-1) * xfade  →  sub_dur = (total + (n-1)*xfade) / n
+    n_subs = max(2, _math.ceil(
+        (duration + SCENE_SUB_XFADE) / (SCENE_SUB_DUR + SCENE_SUB_XFADE)
+    ))
+    sub_dur = (duration + (n_subs - 1) * SCENE_SUB_XFADE) / n_subs
+
+    sub_clips, sub_durs = [], []
+    for i in range(n_subs):
+        sub_effect = rotation[i % len(rotation)]
+        sub_dst = tmp / f"sc{scene_idx:02d}_sub{i:02d}.mp4"
+        ov = overlay_vf if i == 0 else ""   # オーバーレイは先頭のみ
+        make_ken_burns(src, sub_dst, sub_dur, sub_effect, landscape, ov)
+        sub_clips.append(sub_dst)
+        sub_durs.append(sub_dur)
+
+    crossfade_concat_n(sub_clips, sub_durs, dst, xfade_dur=SCENE_SUB_XFADE)
+    print(f"    → {n_subs}サブクリップ ({sub_dur:.1f}s × {n_subs}, xfade={SCENE_SUB_XFADE}s)")
 
 
 # ── Shorts v4 ヘルパー ──────────────────────────────────
@@ -656,9 +707,9 @@ def make_teaser_clip(scenes: list, img_dir: Path, tmp: Path, narr_dur: float,
 
 # ── 既存ヘルパー ─────────────────────────────────────────
 
-def crossfade_concat_n(clips: list, durations: list, dst: Path):
-    """N個のクリップをクロスフェードで結合する。"""
-    d = CROSSFADE_DURATION
+def crossfade_concat_n(clips: list, durations: list, dst: Path, xfade_dur: float = None):
+    """N個のクリップをクロスフェードで結合する。xfade_dur 未指定時は CROSSFADE_DURATION を使用。"""
+    d = xfade_dur if xfade_dur is not None else CROSSFADE_DURATION
     n = len(clips)
 
     # クロスフェードのオフセット計算
@@ -1011,7 +1062,9 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 seen_chars.add(char_ref)
                 overlay_vf = _char_name_overlay(char_ref, visible_dur=4.0)
 
-            make_ken_burns(img, out_clip, dur, effect, landscape=True, overlay_vf=overlay_vf)
+            make_scene_with_motion(img, out_clip, dur, effect,
+                                   landscape=True, overlay_vf=overlay_vf,
+                                   tmp=tmp, scene_idx=sid)
             clip_paths.append((out_clip, dur))
 
         if not clip_paths:

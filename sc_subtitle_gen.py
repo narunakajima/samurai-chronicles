@@ -46,6 +46,65 @@ def split_sentences(text: str) -> list:
     return [p.strip() for p in parts if p.strip()]
 
 
+def detect_sentence_timestamps(wav_path: Path, sentences: list, total_dur: float) -> list:
+    """WAV の無音検出で各文の (start, end) を推定する。
+
+    silence_end（無音が明けた時刻）= 次の文の開始点として利用する。
+    無音が不足する場合は語数比率フォールバックを返す。
+
+    戻り値: [(sent_start, sent_end), ...] ― シーン音声開始からの秒数
+    """
+    n = len(sentences)
+    word_counts = [len(s.split()) for s in sentences]
+    total_words = sum(word_counts) or 1
+
+    def ratio_fallback() -> list:
+        result, cursor = [], 0.0
+        for wc in word_counts:
+            dur = total_dur * wc / total_words
+            result.append((cursor, cursor + dur))
+            cursor += dur
+        return result
+
+    if n <= 1:
+        return [(0.0, total_dur)]
+
+    # silencedetect: -35dB, 最小100ms（TTS文間の息継ぎを検出）
+    r = subprocess.run(
+        ["ffmpeg", "-i", str(wav_path),
+         "-af", "silencedetect=n=-35dB:d=0.10",
+         "-f", "null", "-"],
+        capture_output=True, text=True,
+    )
+
+    # silence_end = 無音明け = 次の文が始まる時刻
+    silence_ends = []
+    for line in r.stderr.splitlines():
+        m = re.search(r"silence_end: ([\d.]+)", line)
+        if m:
+            t = float(m.group(1))
+            if 0.05 < t < total_dur - 0.05:
+                silence_ends.append(t)
+
+    # n-1 個の境界が必要。不足なら語数比率にフォールバック
+    if len(silence_ends) < n - 1:
+        return ratio_fallback()
+
+    # 語数比率の期待境界に最近傍の silence_end を割り当て
+    available = list(silence_ends)
+    boundaries = [0.0]
+    acc_words = 0
+    for i in range(n - 1):
+        acc_words += word_counts[i]
+        expected = total_dur * acc_words / total_words
+        best = min(available, key=lambda t: abs(t - expected))
+        boundaries.append(best)
+        available.remove(best)
+    boundaries.append(total_dur)
+
+    return [(boundaries[i], boundaries[i + 1]) for i in range(n)]
+
+
 def chunk_sentence(text: str, max_chars: int = 42) -> list:
     """文を「最大2行・1行あたりmax_chars文字」のチャンクリストに分割する。
     1チャンクが2行を超える場合は次のチャンクへ繰り越す。"""
@@ -173,22 +232,23 @@ def run(episode_id: str):
         if not sentences:
             continue
 
-        # 語数比率でタイムスタンプを按分（チャンク単位）
-        word_counts = [len(s.split()) for s in sentences]
-        total_words = sum(word_counts)
+        # 無音検出で各文の実際のタイムスタンプを取得（失敗時は語数比率フォールバック）
+        wav = audio_dir / f"S{scene['scene_id']:02d}.wav"
+        sent_timestamps = detect_sentence_timestamps(wav, sentences, narr_dur)
 
-        cursor = scene_start
         entry_count = 0
-        for sentence, wc in zip(sentences, word_counts):
-            ratio = wc / total_words if total_words > 0 else 1 / len(sentences)
-            sentence_dur = narr_dur * ratio
+        last_cursor = scene_start
+        for sentence, (sent_start, sent_end) in zip(sentences, sent_timestamps):
+            sent_dur = sent_end - sent_start
             chunks = chunk_sentence(sentence)
-            chunk_dur = sentence_dur / len(chunks)
+            chunk_dur = sent_dur / len(chunks) if chunks else sent_dur
+            cursor = scene_start + sent_start
 
             for chunk in chunks:
                 start = cursor
                 end = cursor + chunk_dur
                 cursor = end
+                last_cursor = end
 
                 srt_lines.append(str(idx))
                 srt_lines.append(f"{seconds_to_srt(start)} --> {seconds_to_srt(end)}")
@@ -197,7 +257,7 @@ def run(episode_id: str):
                 idx += 1
                 entry_count += 1
 
-        print(f"  S{scene['scene_id']:02d}: {entry_count}エントリ / {seconds_to_srt(scene_start)} → {seconds_to_srt(cursor)}")
+        print(f"  S{scene['scene_id']:02d}: {entry_count}エントリ / {seconds_to_srt(scene_start)} → {seconds_to_srt(last_cursor)}")
 
     srt_content = "\n".join(srt_lines)
     out_path = out_dir / f"{episode_id}.srt"
