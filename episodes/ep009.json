@@ -1,0 +1,200 @@
+{
+  "episode_id": "ep009",
+  "episode_title": "Sanada Yukimura: Japan's Greatest Loser",
+  "youtube_title": "The Warrior Who Lost Everything — And Became Japan's Greatest Samurai",
+  "youtube_description": "Five hundred men. Fifty thousand enemies. Sanada Yukimura charged straight at the shogun's flag — and Tokugawa Ieyasu fled. He lost the battle. He died that day. So why does Japan still call him its greatest samurai, four hundred years later?\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. Osaka 1615: The Last Battle of the Samurai. Osprey Publishing, 2006.\n2. Sanada Museum (真田宝物館), Matsushiro, Nagano Prefecture.\n3. Kuwata Tadachika. Sanada Yukimura (真田幸村). Jinbutsu Oraisha, 1966.\n\n\n🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0\n#SanadaYukimura #SengokuPeriod #OsakaCastle #SamuraiHistory #JapaneseHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Sanada Yukimura",
+    "Sengoku period",
+    "Osaka Castle",
+    "Battle of Tennoji",
+    "Tokugawa Ieyasu",
+    "samurai history",
+    "Japanese history",
+    "Osaka Campaign",
+    "Sanada clan",
+    "samurai warrior",
+    "Japan history documentary",
+    "Samurai Chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 19,
+  "shorts_highlight_scene": 13,
+  "teaser_narration": "Tennoji, June 1615. Five hundred against fifty thousand. Sanada Yukimura charged to Ieyasu's own flag — and the shogun fled. This story ends in defeat. So why does Japan still call Yukimura its greatest samurai?",
+  "shorts_narration": "June 1615. Five hundred men. Fifty thousand enemies. He charged straight to the shogun's flag — Ieyasu fled. Sanada Yukimura lost everything. Japan never forgot him.",
+  "thumbnail_prompt": "Sanada Yukimura in brilliant crimson lacquered armor, the iconic six-coin crest on his helmet, standing defiantly before the blazing walls of Osaka Castle. He faces the viewer with fierce, fearless eyes. Below, the vast Tokugawa army stretches across the plains. Smoke billows dramatically. Crimson and gold dominate the palette. Extreme dramatic lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Five hundred men. Fifty thousand enemies. He charged anyway — straight at the shogun himself. What kind of warrior fights a battle he knows he cannot win?",
+      "image_prompt": "Sanada Yukimura in crimson armor leading a tiny force of red-armored samurai in a desperate charge across a chaotic battlefield. Smoke and fire everywhere. Thousands of enemy banners on the horizon. Low camera angle, dramatic upward shot, silhouetted against a burning sky.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_yukimura"
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "Sanada Yukimura was born in 1567, the second son of Sanada Masayuki — a warlord of the mountainous Shinano Province. The Sanada family was small, caught between giants: the Uesugi, the Takeda, and the rising power of the Tokugawa. To survive, they learned to be clever. And they would become famous for it.",
+      "image_prompt": "A panoramic view of rugged mountain terrain of Shinano Province in feudal Japan, snow-capped peaks in the background. A small but proud castle sits on a hilltop. Morning mist in the valleys. Peaceful but strategically isolated.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "His father, Masayuki, was a military genius — a man who twice repelled Tokugawa Ieyasu's army at Ueda Castle with a fraction of the defenders. Young Yukimura studied under this master of defense. He learned that walls and wit could defeat numbers. But he also inherited something more dangerous: a deep, unshakeable loyalty to the Toyotomi clan.",
+      "image_prompt": "A stern, middle-aged samurai lord (Sanada Masayuki) at a war table inside a castle, pointing at a tactical map of Ueda Castle defenses. Young Yukimura stands respectfully at his side, watching intently. Candlelit interior, serious mood.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "At the age of seventeen, Yukimura was sent to Kyoto as a political hostage — first to Uesugi Kagekatsu, then to the supreme ruler Toyotomi Hideyoshi himself. It was common practice: a son given in pledge of a family's loyalty. But for Yukimura, it became something more. He lived in Hideyoshi's grand court, absorbed his culture, and came to revere the man who had unified Japan.",
+      "image_prompt": "A young samurai (Yukimura, teenage, in formal attire) kneeling respectfully in the opulent golden halls of Toyotomi Hideyoshi's castle. Hideyoshi's silhouette visible at the far end. Gold leaf screens, ornate architecture. The contrast between young provincial warrior and dazzling imperial splendor.",
+      "ken_burns": "pan_left",
+      "character_ref": "sanada_yukimura"
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "When Hideyoshi died in 1598, he left behind a five-year-old heir — Toyotomi Hideyori — and a power vacuum that consumed Japan. The great lords chose sides. Yukimura's father Masayuki chose the Toyotomi. His elder brother Nobuyuki, however, sided with Tokugawa Ieyasu. The Sanada family — father against son, brother against brother — was split down the middle.",
+      "image_prompt": "Two samurai brothers standing on opposite sides of a great hall, separated by a dramatic shaft of light. One dressed in Tokugawa dark colors, one in Sanada crimson. Their expressions are conflicted but resolute. A symbolic divide — a family torn apart by war.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "At the Battle of Sekigahara in 1600, Yukimura fought for the western — Toyotomi — side. The battle lasted a single day. The Tokugawa won. Japan fell under Ieyasu's iron grip. Yukimura and his father were captured. The sentence was death. But Yukimura's brother Nobuyuki pleaded for their lives — and Ieyasu, calculating as ever, chose to show mercy. Exile instead of execution.",
+      "image_prompt": "Yukimura kneeling, bound, before Tokugawa officers after the Battle of Sekigahara. Smoke still rises on the horizon. His expression is stoic, unbroken. Soldiers with Tokugawa banners surround him. A quiet, powerful moment of defeat.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_yukimura"
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Yukimura was sent to Kudoyama — a remote village in the mountains of Kii Province — under strict surveillance. He was forty-three years old, his best fighting years apparently behind him. He lived simply, tended a small garden, and watched Japan settle into the Tokugawa peace. For fourteen years, the world seemed to forget him. But Yukimura never forgot his oath to the Toyotomi.",
+      "image_prompt": "An aging samurai warrior (Yukimura in his forties, still dignified, now in simple farmer's robes) sitting outside a modest mountain cottage, gazing at distant mountains. A small garden surrounds him. Still and melancholy, yet with an undimmed intensity in his eyes.",
+      "ken_burns": "pan_right",
+      "character_ref": "sanada_yukimura"
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Then, in 1614, Toyotomi Hideyori — now grown and ruling Osaka Castle — made a fatal mistake. He rang the bell of Hoko-ji Temple, and its inscription appeared to curse the Tokugawa name. Ieyasu used it as a pretext for war. The Toyotomi called for allies. From his mountain exile, Yukimura heard the summons. At forty-eight years old, he escaped Kudoyama and rode south to Osaka.",
+      "image_prompt": "Yukimura in crimson armor riding urgently through a mountain forest at night, torch-lit. His face is set with purpose and rekindled fire. Mist swirls around the horses. The dramatic beginning of a final chapter.",
+      "ken_burns": "pan_left",
+      "character_ref": "sanada_yukimura"
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Yukimura arrived at Osaka Castle to a hero's welcome. Tens of thousands of ronin and Toyotomi loyalists had gathered. He was given command of the castle's southern defenses — the most vulnerable approach. And there, he designed something that would astonish the military world: the Sanada-maru, a massive crescent-shaped earthwork fortress attached to the castle walls, bristling with guns and archers.",
+      "image_prompt": "An aerial architectural view of the Sanada-maru, a dramatic crescent-shaped earthwork fortification attached to the walls of Osaka Castle. Sanada crimson banners fly from every turret. Engineers and soldiers work to complete it. Osaka Castle towers behind. A masterwork of defensive military architecture.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "The Winter Siege began in November 1614. Two hundred thousand Tokugawa troops surrounded Osaka. Wave after wave threw themselves against Yukimura's Sanada-maru. Each assault was repelled with devastating fire. The name Sanada spread fear through the enemy ranks. One Tokugawa general reportedly said that facing the Sanada-maru was like attacking a tiger's den. The castle held.",
+      "image_prompt": "Intense battle at the Sanada-maru. Waves of Tokugawa soldiers are being repelled by fierce defenders behind the earthwork walls. Musket smoke, arrows, chaos. Sanada crimson banners stand firm above the carnage. Dramatic wide battle panorama, cinematic scale.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "Ieyasu could not break the castle by force. So he negotiated a ceasefire — and used it to destroy the moat and fill in the outer defenses. When spring came in 1615, Osaka Castle stood exposed. The Toyotomi demanded the Sanada-maru be rebuilt. Ieyasu responded by marching two hundred thousand men on Osaka again. The Summer Siege had begun. This time, there would be no ceasefire.",
+      "image_prompt": "Tokugawa engineers filling in the great moats of Osaka Castle under a winter truce, while Toyotomi soldiers watch helplessly from the walls above. A sense of betrayal and dawning horror. The castle slowly losing its defenses. Pale, wintry light.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "Yukimura proposed a bold counter-strategy: take the fight outside the walls, launch surprise raids, force the Tokugawa to fight on multiple fronts. But the Toyotomi commanders were cautious, divided, paralyzed by fear. They chose to defend. Yukimura watched his last chance of victory being squandered by hesitation. He knew now that Osaka Castle would fall. And he made his decision.",
+      "image_prompt": "Yukimura standing at a war council table, gesturing urgently at a battle map. Other commanders sit in reluctant, fearful silence. He is animated, passionate — the only one willing to fight. Candles cast long shadows. A moment of frustrated command.",
+      "ken_burns": "pan_right",
+      "character_ref": "sanada_yukimura"
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "On the morning of June 3rd, 1615 — the Battle of Tennoji — Yukimura stood at the head of just five hundred men, clad in his legendary crimson armor, the six-coin crest gleaming on his helmet. Across the plain, two hundred thousand Tokugawa soldiers waited. He surveyed the impossible odds with calm, clear eyes. Then he turned to his men. And gave the order to charge.",
+      "image_prompt": "Close-up of Sanada Yukimura's face inside his crimson helmet, expression calm and resolute. His eyes burn with absolute determination. Behind him, five hundred red-armored warriors stand ready. Ahead, barely visible through battle smoke, the vast Tokugawa army stretches to the horizon. A single breath before the storm.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_yukimura"
+    },
+    {
+      "scene_id": 14,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "Yukimura's five hundred men tore through the Tokugawa lines like a crimson blade. Three times they charged — three times they broke the enemy formation. He drove straight toward Ieyasu's command position itself. Tokugawa Ieyasu — the most powerful man in Japan — reportedly drew his sword and prepared to take his own life. His generals begged him to flee. The shogun ran.",
+      "image_prompt": "Yukimura's crimson-armored cavalry crashing through Tokugawa ranks in a furious charge. Bodies and banners scatter. In the distance, Tokugawa Ieyasu's gold palanquin can be seen retreating in panic. Extreme chaos and movement. Spectacular, cinematic battle composition.",
+      "ken_burns": "pan_left",
+      "character_ref": "sanada_yukimura"
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "But numbers cannot be defied forever. Yukimura's force was spent. He was fifty years old and had charged through three grueling assaults. He dismounted near Yasui Shrine and sat beneath a pine tree, unable to continue. A Tokugawa samurai named Nishio Nizaemon found him there and, not recognizing the great warrior at first, asked his name. Yukimura told him — quietly, with dignity. And was cut down.",
+      "image_prompt": "Yukimura seated exhausted beneath a great pine tree, his crimson armor battered and blood-stained, eyes still open, looking calmly at the approaching enemy soldier. Dappled light through pine needles. Smoke in the distance. A final, dignified stillness before the end.",
+      "ken_burns": "zoom_out",
+      "character_ref": "sanada_yukimura"
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "Osaka Castle burned that same day. The Toyotomi line was extinguished. Tokugawa's rule over Japan was absolute, and would last two and a half centuries. By every measure of history, Sanada Yukimura lost. He lost his father's cause. He lost the battle. He lost his life. And yet — within years of his death, the enemy was calling him the greatest warrior in Japan.",
+      "image_prompt": "Osaka Castle engulfed in fire and smoke at sunset, its towers collapsing into the inferno. In the foreground, a single crimson fallen banner bearing the Sanada six-coin crest. A moment of total loss — and strange, indelible glory.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "Why? Because Yukimura embodied something the Japanese have always cherished above victory: the beauty of complete commitment, of giving everything for a cause even knowing it is lost. He is the spirit of the samurai stripped to its essence — not the winner's cunning, but the warrior's soul. Four centuries later, his crimson armor still defines the image of the ideal samurai, across film, anime, and art.",
+      "image_prompt": "A stylized montage of Sanada Yukimura's image across time — a traditional woodblock print of him charging, then a modern statue in his armor, then a manga-style illustration. Each interpretation captures the same crimson warrior with the same burning spirit. The endurance of a legend.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — another brilliant mind who unified Japan, not through force alone, but through cunning, patience, and ruthless reinvention. The peasant who became Japan's supreme ruler: Toyotomi Hideyoshi.",
+      "image_prompt": "Toyotomi Hideyoshi as a young man — lean, sharp-faced, with quick intelligent eyes — wearing simple clothing, standing at the gate of a great castle he does not yet own. Looking up at it with hungry, calculating ambition. Warm golden light of dawn.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If Yukimura's story moved you, subscribe to Samurai Chronicles for a new episode every day. And tell us in the comments: who do you think was the greatest samurai of all? We'll see you in the next battle.",
+      "image_prompt": "The Samurai Chronicles channel logo centered in the frame — a stylized mon crest — surrounded by subtle Japanese ink-brush art motifs. Clean, branded, cinematic channel end card aesthetic. Dark background with gold accent lines.",
+      "ken_burns": "static",
+      "character_ref": null
+    }
+  ]
+}

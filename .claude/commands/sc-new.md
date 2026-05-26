@@ -332,6 +332,7 @@ response = client.models.generate_content(
 - 楽器補強（単体では使わない）: strings, brass, choir, taiko, percussion
 - 良い例: `"epic orchestral"` / `"dramatic cinematic strings"` / `"dark orchestral taiko"` / `"heroic brass orchestra"`
 - **禁止キーワード:** shamisen 単体, piano 単体, ambient, meditation, acoustic, folk, traditional, nature, forest, rain, calm, relaxing, light
+- ユーザーから別スタイルの指定があっても、このルールを優先する（別プロジェクト「ランプのひとりごと」と混同しないこと）
 
 ```bash
 FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \

@@ -60,7 +60,7 @@
     },
     {
       "episode_id": "ep007",
-      "status": "pending",
+      "status": "in_production",
       "title": "Date Masamune: The One-Eyed Dragon of the North",
       "era": "Sengoku",
       "priority": "B",
@@ -70,7 +70,7 @@
     },
     {
       "episode_id": "ep008",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Last Samurai: Saigo Takamori and the Satsuma Rebellion",
       "era": "Meiji",
       "priority": "A",
@@ -80,7 +80,7 @@
     },
     {
       "episode_id": "ep009",
-      "status": "pending",
+      "status": "in_production",
       "title": "Sanada Yukimura: Japan's Greatest Loser",
       "era": "Sengoku",
       "priority": "A",
