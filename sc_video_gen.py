@@ -289,11 +289,12 @@ def infer_zoom_anchor(image_prompt: str, character_ref: str = None) -> tuple:
 
     ルール:
       - 両端に2人（left + right 両方検出）→ pan_zoom_out_lr / rl をランダム選択
-      - それ以外（1人・3人以上・人物なし）→ 中央 zoom_in
+      - 1人（character_ref あり）→ image_prompt の位置キーワードで焦点を推測して zoom_in
+      - 人物なし・3人以上（character_ref なし）→ 中央から zoom_out（1.40x → 1.0x）
 
     戻り値: (px, py, effect_override)
       px/py         : ズーム焦点 0.0〜1.0（左上=0,0 / 右下=1,1）
-      effect_override: None（JSON のエフェクトを使用）or "pan_zoom_out_lr/rl"
+      effect_override: "zoom_in" | "zoom_out" | "pan_zoom_out_lr" | "pan_zoom_out_rl"
     """
     text = (image_prompt or "").lower()
 
@@ -308,8 +309,18 @@ def infer_zoom_anchor(image_prompt: str, character_ref: str = None) -> tuple:
         effect = random.choice(["pan_zoom_out_lr", "pan_zoom_out_rl"])
         return (0.5, 0.5, effect)
 
-    # それ以外はすべて中央ズームイン
-    return (0.5, 0.5, None)
+    # 1人構図（character_ref あり）→ 位置推測してズームイン
+    if character_ref:
+        if left_hits:
+            px = 0.25
+        elif right_hits:
+            px = 0.75
+        else:
+            px = 0.5
+        return (px, 0.5, "zoom_in")
+
+    # 人物なし・3人以上 → 中央からズームアウト
+    return (0.5, 0.5, "zoom_out")
 
 
 def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape: bool = True,
@@ -340,7 +351,9 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
     # 固定速度ズーム: KB_ZOOM_SPEED [倍率/frame]、上限は KB_ZOOM_FACTOR
     zoom_step = KB_ZOOM_SPEED
     z_end = round(min(1.0 + zoom_step * total_frames, z), 6)   # zoom_in の到達倍率
-    z_start = round(min(1.0 + zoom_step * total_frames, z), 6) # zoom_out の開始倍率
+
+    # zoom_out: 常に KB_ZOOM_FACTOR(1.40x)スタート → クリップ尺内に1.0xまで完全に戻す
+    z_step_dn = round((z - 1.0) / max(total_frames, 1), 8)     # zoom_out の速度（比例）
 
     if effect == "zoom_in":
         vf = (
@@ -353,7 +366,7 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
     elif effect == "zoom_out":
         vf = (
             f"{prescale},"
-            f"zoompan=z='max({z_start}-{zoom_step}*on,1)'"
+            f"zoompan=z='max({z}-{z_step_dn}*on,1)'"
             f":x='{px}*(iw-iw/zoom)':y='{py}*(ih-ih/zoom)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
