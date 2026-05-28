@@ -22,7 +22,11 @@
   ],
   "total_scenes": 20,
   "shorts_highlight_scene": 9,
-  "shorts_hook_lines": ["61 DUELS.", "ZERO DEFEATS.", "His weapon was his mind."],
+  "shorts_hook_lines": [
+    "61 DUELS.",
+    "ZERO DEFEATS.",
+    "His weapon was his mind."
+  ],
   "thumbnail_prompt": "Close-up dramatic illustration of Miyamoto Musashi raising a wooden sword overhead, fierce determined eyes, simple dark kimono, wild hair, golden dawn light behind him, silhouette of an opponent visible in the distance across water, misty island setting, high contrast red and black tones, cinematic composition",
   "scenes": [
     {
@@ -205,5 +209,6 @@
       "ken_burns": "static",
       "character_ref": null
     }
-  ]
+  ],
+  "youtube_url": "https://youtu.be/kZN4msDx9Tg"
 }
