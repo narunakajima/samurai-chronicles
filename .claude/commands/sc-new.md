@@ -533,13 +533,7 @@ ep{NNN}.json に書き込む。**Gemini API は使わない。Claude のビジ�
 
 ### 完了報告
 
-```
-zoom_anchor 書き込み完了:
-  S01 (musashi): x=0.50, y=0.45
-  S03 (musashi): x=0.38, y=0.42
-  ...
-  スキップ: S02, S08, S11 ...（character_ref なし or 2人構図）
-```
+zoom_anchor の処理結果は**画面に表示しない**。サイレントに実行して完了後は次のステップへ進む。
 
 ---
 

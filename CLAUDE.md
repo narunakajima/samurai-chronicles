@@ -98,6 +98,20 @@ ep011→ep012 のような「テイザーとキューの不一致」を自動検
 
 ---
 
+## マシン判定ルール
+
+git操作（pull / push / status など）の前に必ず `hostname` でマシンを確認する。
+
+| hostname | マシン |
+|---|---|
+| `naru-iMac.local` | iMac |
+| それ以外 | MacBook（または別端末） |
+
+ユーザーが「このマシンは〇〇です」と教えてくれた場合はその情報を優先する。
+iPhone等のリモート接続からの操作でも、Claude Codeが動いているのはiMacなので `hostname` は `naru-iMac.local` になる。
+
+---
+
 ## コーディング規約
 
 - Python 3.11+、外部ライブラリは最小限
