@@ -37,7 +37,6 @@
       "person": "ieyasu",
       "angle": "military"
     },
-
     {
       "episode_id": "ep005",
       "status": "in_production",
@@ -90,7 +89,7 @@
     },
     {
       "episode_id": "ep010",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Samurai Who Never Lost: Musashi's 60 Undefeated Duels",
       "era": "Edo",
       "priority": "A",
@@ -100,7 +99,7 @@
     },
     {
       "episode_id": "ep011",
-      "status": "pending",
+      "status": "in_production",
       "title": "Oda Nobunaga: The Demon King Who Almost United Japan",
       "era": "Sengoku",
       "priority": "A",
@@ -110,18 +109,17 @@
     },
     {
       "episode_id": "ep012",
-      "status": "pending",
-      "title": "The Samurai Who Waited 50 Years to Rule Japan",
-      "era": "Sengoku/Edo",
+      "status": "in_production",
+      "title": "The Thirteen Days That Won Japan: Hideyoshi's Perfect Power Play",
+      "era": "Sengoku",
       "priority": "A",
-      "person": "ieyasu",
-      "angle": "character",
-      "notes": "Patience and strategic restraint. Served Imagawa, Nobunaga, outlived Hideyoshi. 3rd appearance."
+      "person": "hideyoshi",
+      "angle": "key_event",
+      "notes": "13 days: Honnoji news → conceal from Mori → Chugoku Gaeshi → Yamazaki → Kiyosu Conference. ep005 overview との重複を避けた絞り込み角度。"
     },
-
     {
       "episode_id": "ep013",
-      "status": "pending",
+      "status": "published",
       "title": "The Book of Five Rings: Musashi's Philosophy Explained",
       "era": "Edo",
       "priority": "B",
@@ -131,7 +129,7 @@
     },
     {
       "episode_id": "ep014",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Battle of Nagashino: The Day Firearms Changed Japan",
       "era": "Sengoku",
       "priority": "A",
@@ -152,12 +150,12 @@
     {
       "episode_id": "ep016",
       "status": "pending",
-      "title": "From Peasant to Supreme Ruler: Toyotomi Hideyoshi's Impossible Rise",
-      "era": "Sengoku",
+      "title": "The Samurai Who Waited 50 Years to Rule Japan",
+      "era": "Sengoku/Edo",
       "priority": "A",
-      "person": "hideyoshi",
-      "angle": "overview",
-      "notes": "Narrative deep-dive into the rise. More cinematic than ep005 overview."
+      "person": "ieyasu",
+      "angle": "character",
+      "notes": "Patience and strategic restraint. Served Imagawa, Nobunaga, outlived Hideyoshi."
     },
     {
       "episode_id": "ep017",
@@ -172,12 +170,12 @@
     {
       "episode_id": "ep018",
       "status": "pending",
-      "title": "The Boy Who Became a Warlord at 17: Date Masamune's Rise to Power",
+      "title": "The Year Masamune Became Unstoppable: A Warlord at 17",
       "era": "Sengoku",
       "priority": "A",
       "person": "date_masamune",
       "angle": "character",
-      "notes": "Rapid military expansion, ruthlessness that shocked even peers."
+      "notes": "ep007 overview との差別化：17歳での覚醒・心理的転換に絞る。生涯overview ではなく青年期の人格形成。"
     },
     {
       "episode_id": "ep019",
@@ -212,12 +210,12 @@
     {
       "episode_id": "ep022",
       "status": "pending",
-      "title": "The Massacres Oda Nobunaga's Allies Tried to Forget",
+      "title": "The Night Nobunaga Burned Mount Hiei: Japan's Most Controversial Massacre",
       "era": "Sengoku",
       "priority": "A",
       "person": "nobunaga",
-      "angle": "character",
-      "notes": "Mt. Hiei, Nagashima, Echizen. The strategic logic behind extreme violence."
+      "angle": "key_event",
+      "notes": "Enryakuji massacre 1571。ep011 overview・ep026 character との重複回避。特定事件に絞る。"
     },
     {
       "episode_id": "ep023",
@@ -269,7 +267,6 @@
       "angle": "death",
       "notes": "Deathbed letters, paranoid final acts, the question of Hideyori's fate."
     },
-
     {
       "episode_id": "ep028",
       "status": "pending",
@@ -438,7 +435,7 @@
       "priority": "B",
       "person": "honda_tadakatsu",
       "angle": "military",
-      "notes": "Anegawa, Mikatagahara, Sekigahara. Tactics of an invincible general."
+      "notes": "ep042 overview との差別化：特定の戦闘（三方ヶ原・関ヶ原など）に絞った軍事分析。生涯概要は扱わない。"
     },
     {
       "episode_id": "ep045",
@@ -640,7 +637,6 @@
       "angle": "character",
       "notes": "Killed Nobunaga's favourite page, was exiled — then returned and became his closest general."
     },
-
     {
       "episode_id": "ep065",
       "status": "pending",
@@ -898,6 +894,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-05-24",
+  "last_updated": "2026-05-28",
   "total_topics": 90
 }

@@ -1,0 +1,267 @@
+{
+  "episode_id": "ep011",
+  "episode_title": "Oda Nobunaga: The Demon King Who Almost United Japan",
+  "youtube_title": "The 'Demon King' Who Shattered Medieval Japan — And Vanished Without a Trace",
+  "youtube_description": "He burned monasteries, executed nobles, and smashed a thousand years of tradition. Oda Nobunaga came closer to unifying Japan than anyone before him — then vanished in flames, his body never found.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 One morning in 1582, the man\n0:53 Oda Nobunaga was born in 1534\n1:38 In 1560, Nobunaga faced his...\n2:33 Okehazama transformed...\n3:25 Nobunaga was the first...\n4:22 Japan's great Buddhist...\n5:31 The decisive test came in 1575,\n6:28 Nobunaga's vision extended...\n7:22 By 1582, Nobunaga controlled...\n8:15 One of Nobunaga's finest...\n9:17 The night of June 20th, 1582.\n10:02 Nobunaga fought. With thirty...\n10:40 When Mitsuhide's soldiers...\n11:29 Akechi Mitsuhide now held...\n12:18 Toyotomi Hideyoshi marched...\n13:15 Even in death, Nobunaga's...\n14:09 What if Nobunaga had survived...\n15:07 His enemies called him the Demon\n16:02 Next time on Samurai...\n16:28 If Nobunaga's story gripped...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Jeroen Lamers. Japonius Tyrannus: The Japanese Warlord Oda Nobunaga Reconsidered. Hotei Publishing, 2000.\n2. Mary Elizabeth Berry. Hideyoshi. Harvard University Press, 1982.\n3. George Elison and Bardwell L. Smith (eds.). Warlords, Artists, and Commoners: Japan in the Sixteenth Century. University of Hawaii Press, 1981.\n\n\n🎵 Music: Epic Soundtrack for Video Game Adventures by Matio888 (freesound.org) — CC BY 4.0\n#OdaNobunaga #SengokuPeriod #HonnojiIncident #SamuraiHistory #JapaneseHistory #DemonKing #AkechiMitsuhide #SamuraiChronicles",
+  "youtube_tags": [
+    "Oda Nobunaga",
+    "Sengoku period",
+    "Honnoji Incident",
+    "Akechi Mitsuhide",
+    "Battle of Nagashino",
+    "Japanese warlord",
+    "samurai history",
+    "Japanese history",
+    "feudal Japan",
+    "demon king",
+    "unification of Japan",
+    "Toyotomi Hideyoshi",
+    "Japan history documentary",
+    "Samurai Chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Kyoto, June 1582. The man who had nearly unified all of Japan woke to find his own general's army surrounding his temple. 'Is this treachery or madness?' The answer came in flames. His body was never found. How did the Demon King come so close?",
+  "shorts_narration": "Twenty years. One warlord. He burned Japan's holiest mountain, rewrote the rules of war, and nearly conquered everything. Then his own general struck. His body was never found. Oda Nobunaga — the Demon King.",
+  "thumbnail_prompt": "Oda Nobunaga in black lacquered armor standing on the highest tower of Azuchi Castle, a burning Japanese landscape visible below. His expression radiates cold, absolute ambition — the face of a man who has decided the old world must end. Dramatic orange firelight illuminating him from below against a dark sky.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "One morning in 1582, the man closest to unifying Japan woke to find his own general's army surrounding him. He asked one question: 'Is this treachery — or madness?' His temple burned to the ground. His body was never found.",
+      "image_prompt": "Interior of Honnoji Temple at night, corridors lit by flickering torch light, arrows suddenly piercing the shoji screens. Shadows of hundreds of soldiers visible through the paper walls. A sense of absolute shock — the most powerful man in Japan caught completely off guard. Dramatic, tense, cinematic.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "Oda Nobunaga was born in 1534 in Owari province, the son of a minor warlord. As a young man, he was known as the 'Fool of Owari' — wandering the streets eating, dressed carelessly, acting with no apparent dignity. His own father died worried about him. But what looked like madness was something else entirely: Nobunaga was already watching, calculating, and waiting for his moment. The fool's eyes were always cold and sharp.",
+      "image_prompt": "Young Oda Nobunaga, early 20s, walking through a provincial Japanese town in a deliberately disheveled state — partly armored, eating food while walking, hair loose. Center of frame. His eyes, however, are unnervingly sharp and calculating, completely at odds with his casual posture. Townspeople watch him, uncertain. The paradox of genius disguised as folly.",
+      "ken_burns": "pan_right",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "In 1560, Nobunaga faced his defining test. Imagawa Yoshimoto — one of Japan's most powerful lords — marched on Owari with an army of twenty-five thousand men. Nobunaga had roughly two thousand. Every advisor said to surrender or retreat. Instead, Nobunaga studied weather reports, waited for a violent thunderstorm to break, then led a lightning raid directly into the enemy camp. Yoshimoto was dead before he knew what had happened. The Fool of Owari was finished. The Demon King had arrived.",
+      "image_prompt": "Oda Nobunaga on horseback at the center of a charging force during a violent rainstorm — leading a cavalry charge through sheets of rain and lightning at Okehazama. His sword raised, expression fierce and completely without fear. Rain-soaked, mud-splattered, utterly alive. A leader born for exactly this moment of controlled violence.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Okehazama transformed Nobunaga from a provincial lord into a national force. Through relentless military and diplomatic campaigns, he expanded his territory across central Japan. In 1568, he entered Kyoto and installed a puppet shogun. Five years later, he discarded even that pretense — expelling the last Ashikaga shogun in 1573, ending a dynasty that had ruled Japan for over two centuries. Nobunaga had no interest in inheriting the old order. He intended to replace it entirely.",
+      "image_prompt": "Oda Nobunaga on horseback leading a formal procession through the ancient gates of Kyoto, watched by silent crowds. His black armor gleams. The city's ancient temples and palaces are visible behind him. He rides with the casual authority of a man who has already decided what comes next. Japan's old order watching its own ending arrive.",
+      "ken_burns": "pan_right",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Nobunaga was the first Japanese warlord to grasp what European firearms could truly do. Portuguese traders had brought matchlock arquebuses to Japan in the 1540s, but other lords treated them as novelties. Nobunaga saw a weapon that could destroy traditional samurai warfare. He ordered mass production of thousands of guns, built specialist infantry units to use them, and developed new tactics around their power. The sword that had defined Japanese combat for centuries was about to meet something that did not care about honor or lineage.",
+      "image_prompt": "A large workshop in Nobunaga's territory producing hundreds of matchlock arquebuses — craftsmen working by firelight, rows of finished weapons being inspected by samurai commanders. On a table, a European-style schematic of the gun alongside Japanese calligraphy notes. The industrial scale of a new kind of warfare being born.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Japan's great Buddhist monasteries were not merely religious institutions — they were political powers, military forces, and landowners who had defied central authority for generations. In 1571, Nobunaga ordered the complete destruction of Enryakuji, the great temple complex on Mount Hiei near Kyoto. He surrounded the mountain and burned everything — monasteries, shrines, and the villages on its slopes. Thousands died. The message was unambiguous: no institution, sacred or secular, was beyond his reach. No one challenged him again on religious grounds.",
+      "image_prompt": "Oda Nobunaga standing on a hillside to the right of frame, silhouetted against the massive conflagration of Mount Hiei — dozens of temple buildings burning simultaneously, fire climbing the ancient cedars. His posture is utterly still, watching. No triumph, no horror — only the cold satisfaction of a problem permanently solved.",
+      "ken_burns": "pan_left",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "The decisive test came in 1575, at the Battle of Nagashino. The Takeda clan — legendary for the finest cavalry in Japan — attacked with thousands of mounted samurai. Nobunaga deployed three thousand arquebusiers behind wooden palisades in rotating firing lines: one rank shooting while two others reloaded in sequence, creating unbroken fire. The Takeda cavalry charged again and again into an unceasing wall of lead. By the end of the afternoon, the greatest mounted force in Japan had been effectively destroyed. The age of cavalry was over.",
+      "image_prompt": "The Battle of Nagashino — rows of arquebusiers firing in disciplined rotating volleys from behind wooden palisades. Through the smoke, the Takeda cavalry charges heroically into the gunfire, horses and riders falling in waves. The clash of old Japan and new Japan rendered in smoke, fire, and falling men. An entire era ending in a single afternoon.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Nobunaga's vision extended beyond conquest. At Azuchi, on the shores of Lake Biwa, he built the most advanced castle Japan had ever seen — seven stories of stone and gold, its walls covered in painted dragons and celestial beings. But its true significance was symbolic. He abolished the road tolls that had strangled trade for generations. He established free markets. He welcomed Christian missionaries and their foreign knowledge. Nobunaga was not just conquering Japan. He was building something that had never existed before.",
+      "image_prompt": "Azuchi Castle rising from the shores of Lake Biwa — a towering seven-story structure of unprecedented scale, its upper levels covered in gold and brilliant painted designs visible even from the water. Oda Nobunaga stands at the center of the highest gallery, surveying the lake and mountains. A castle that is both fortress and declaration of a new world.",
+      "ken_burns": "pan_right",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "By 1582, Nobunaga controlled roughly a third of Japan and had broken every significant rival in central Honshu. His generals were closing the remaining gaps: Toyotomi Hideyoshi pushing west, Shibata Katsuie pressing north. Nobunaga himself rarely fought anymore — he directed, planned, and delegated with the cold efficiency of a man who had turned war into an administrative function. He was not merely winning battles. He was dismantling the entire feudal structure that had defined Japan for five hundred years. The end was in sight.",
+      "image_prompt": "Oda Nobunaga seated before a vast map of Japan at a war council table, center of frame, pointing to distant provinces. His generals listen intently. The map shows most of central Japan already under his control — red markers covering the heartland, a few remaining holdouts on the edges. The face of a man who can see the finish line.",
+      "ken_burns": "zoom_out",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "One of Nobunaga's finest generals was Akechi Mitsuhide — educated, meticulous, devoted to protocol and tradition. For years he served loyally. But Nobunaga's treatment of Mitsuhide was volatile: public mockery, sudden removal from commands, humiliations in front of other lords. In June 1582, Mitsuhide was ordered to march his forces west to reinforce Hideyoshi's campaign. Instead, he addressed his assembled army with thirteen simple words: 'The enemy awaits at Honnoji.' He turned thirteen thousand soldiers east — toward Kyoto. Toward Nobunaga.",
+      "image_prompt": "Akechi Mitsuhide on horseback at the center of a vast assembled army on a misty road, addressing his troops. His expression is one of terrifying resolve — the decision already made, the point of no return crossed. Thousands of soldiers face him, silent. A moment of absolute, irreversible commitment to the most dangerous act in Japan.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "The night of June 20th, 1582. Nobunaga was staying at Honnoji Temple in Kyoto with a personal guard of perhaps thirty men — a fraction of his usual forces, which were deployed across Japan. He had no reason to expect danger this deep inside his own territory. Before dawn, thirteen thousand soldiers surrounded the temple walls. When arrows began falling into the compound, a retainer rushed to wake Nobunaga. He rose, looked at the chaos, and asked his famous question: 'Is this treachery — or madness?' Both answers were equally fatal.",
+      "image_prompt": "Oda Nobunaga standing in the Honnoji Temple courtyard at night, center of frame, clad in a sleeping robe with a naginata gripped in both hands — just awoken, assessing the situation with absolute calm as the sounds of thousands of soldiers surround the walls. Arrows are already visible, embedded in the wood around him. The most powerful man in Japan, cornered.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "Nobunaga fought. With thirty men against thousands, he took up a spear and held the main courtyard as long as he could. When the outer rooms caught fire, he retreated deeper into the temple, wounded in the arm by an arrow. Witnesses later reported seeing him playing a flute as the flames rose around him — some accounts say he withdrew to an inner room and chose to die by his own hand rather than be taken alive. The temple burned to the ground. Morning came. The smoke cleared.",
+      "image_prompt": "Oda Nobunaga in the burning interior of Honnoji, to the left of frame, making a final stand with a spear as fire engulfs the corridors around him. He is bleeding, surrounded, but his expression shows no fear — only the cold defiance of a man who will not kneel. Golden fire and smoke fill the frame. Japan's most fearsome warlord facing his final moment.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "When Mitsuhide's soldiers searched the ruins of Honnoji, they found bones, weapons, and personal effects — but nothing that could be definitively identified as Nobunaga's remains. No body. No death verified. The theories multiplied immediately: that he had escaped through a hidden passage; that loyal retainers had hidden his ashes; that he had staged his own disappearance. History records his death as fact. But the man who had shaken Japan to its foundations left behind — nothing. Just smoke, ash, and four centuries of questions.",
+      "image_prompt": "The smoking ruins of Honnoji Temple at dawn — charred timbers, collapsed walls, the remnants of a great fire reduced to smoldering ash. Soldiers search through the debris methodically, finding scattered artifacts but no body. The emptiness is almost surreal. The place where Japan's most powerful man died — but left no trace. Morning light illuminates the void.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "Akechi Mitsuhide now held Kyoto, the imperial court, and the greatest prize in Japan. He sent messengers to the major warlords seeking recognition and alliance. He waited for the political world to reorganize itself around his victory. It did not. The other lords calculated in silence. Some prepared for war. And far to the west, the fastest calculator of all had already received the news and made his decision. Toyotomi Hideyoshi broke off his campaign, turned his army around, and began force-marching east at impossible speed.",
+      "image_prompt": "Akechi Mitsuhide seated alone in the great reception hall of Kyoto, center of frame, on Nobunaga's former seat of power. The hall is grand but eerily empty — no allies have arrived, no lords have pledged loyalty. His expression shows the first signs of doubt behind the composure of a man realizing the world has not reacted as he expected. Power claimed but not yet confirmed.",
+      "ken_burns": "pan_left",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "Toyotomi Hideyoshi marched three hundred kilometers in under five days — a feat of military logistics that astonished everyone. He reached the outskirts of Kyoto before Mitsuhide could consolidate his position. At the Battle of Yamazaki, Mitsuhide's forces collapsed in hours. Fleeing north afterward, Mitsuhide was reportedly attacked and killed by bandits — an inglorious end for the man who had briefly held all of Japan in his hands. His thirteen days of power were over. In Japanese history, the phrase 'thirteen days' became synonymous with the shortest reign imaginable.",
+      "image_prompt": "Toyotomi Hideyoshi on horseback to the right of frame, leading a vast army at speed through a mountain road — an army that has been marching for days without rest, dust-covered and determined. His expression is fierce and focused: a man racing against time, knowing that speed itself is the deciding weapon. The mountains of central Japan stretch behind him.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "Even in death, Nobunaga's work could not be undone. He had abolished the road tolls strangling Japanese commerce. He had broken the military power of the Buddhist monasteries forever. He had introduced firearms as a permanent feature of Japanese warfare. He had ended the Ashikaga shogunate and the entire system of fragmented warlord rule that had defined Japan for two centuries. The unified Japan that followed — under Hideyoshi, then Tokugawa Ieyasu — was built directly on the foundations that Nobunaga had destroyed and replaced. His successors inherited a country he had already remade.",
+      "image_prompt": "A sweeping aerial view of Japan in the late Sengoku period — roads alive with merchants and travelers now that tolls have been abolished, bustling market towns, a nation beginning to function as a single economic entity. In the distance, Azuchi Castle on Lake Biwa — the physical symbol of the new order. A country being rebuilt from the ground up, seen from above.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "What if Nobunaga had survived Honnoji? Historians have debated this endlessly. He showed none of the political patience that Tokugawa Ieyasu would use to stabilize Japan for two and a half centuries. His Japan might have been more commercially aggressive, more open to Western trade and Christianity, possibly more expansionist toward Korea and China — documents suggest he was already planning foreign campaigns. Nobunaga's Japan was the road not taken, and arguably the most consequential fork in Japanese history. The Tokugawa peace that followed was, in many ways, a reaction against everything he represented.",
+      "image_prompt": "Oda Nobunaga standing at the window of Azuchi Castle, center of frame, gazing at a map of East Asia spread before him — Japan, Korea, China all visible. His expression is contemplative, visionary — a mind already moving beyond the borders of his country. Behind him, the sun sets over Lake Biwa. The last light of an unrealized future.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "His enemies called him the Demon King of the Sixth Heaven — a Buddhist reference to the lord of destruction and desire. Nobunaga apparently embraced the title, stamping official documents with the phrase 'rule the realm by force.' And yet the same man who burned Enryakuji also protected Christian missionaries, commissioned extraordinary artwork, and built a castle of unprecedented beauty. Nobunaga was simultaneously destroyer and builder — and four centuries later, Japan is still living in the political, commercial, and military world that he tore down and rebuilt from nothing.",
+      "image_prompt": "A dramatic split tableau: on the left, the burning ruins of a Buddhist monastery — smoke rising from ancient stones. On the right of frame, the golden interior of Azuchi Castle — paintings, lacquerwork, extraordinary beauty. Both images of Oda Nobunaga. The same man who burned and built. Two faces of the Demon King, held in permanent tension.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — the man who inherited Nobunaga's unfinished dream and carried it further than anyone imagined possible. Born a peasant with no family name, he died the undisputed ruler of all Japan. Toyotomi Hideyoshi: the most unlikely conqueror in history.",
+      "image_prompt": "Toyotomi Hideyoshi in golden ceremonial armor, seated on a throne in Osaka Castle's great hall, surrounded by bowing lords from all corners of Japan. His face — famously described as resembling a monkey, but radiating absolute authority. A man of impossible origins at the summit of all power. The inheritor of the Demon King's broken world.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If Nobunaga's story gripped you, subscribe to Samurai Chronicles for a new episode every day. Drop a comment: if the Demon King had survived Honnoji, would Japan have become a completely different country? We'll see you in the next battle.",
+      "image_prompt": "The Samurai Chronicles channel logo centered in frame — a stylized mon crest — surrounded by subtle Japanese ink-brush art motifs. Clean, branded, cinematic channel end card aesthetic. Dark background with gold accent lines.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ]
+}

@@ -456,6 +456,31 @@ fi
 rm -f /tmp/sc_bgm_credits/BGM_candidate_*.credit.txt
 ```
 
+credit.txt が存在した場合（CC BY）は、制作確認書の BGM 欄を更新する：
+- BGM タイトル・作者名
+- Freesound URL（`https://freesound.org/s/{SOUND_ID}/`）
+- ライセンス（CC BY 4.0）
+- 概要欄に貼るクレジットテキスト（`🎵 Music: ... by ... (freesound.org) — CC BY 4.0`）
+
+BGM が CC0 の場合は「CC0 — クレジット不要」と記載。
+
+**更新後の BGM 欄フォーマット（CC BY の場合）:**
+```
+BGM           : ✅ {タイトル} by {作者名}
+  Freesound URL : https://freesound.org/s/{SOUND_ID}/
+  ライセンス    : CC BY 4.0
+  概要欄クレジット: 🎵 Music: {タイトル} by {作者名} (freesound.org) — CC BY 4.0
+```
+
+**更新後の BGM 欄フォーマット（CC0 の場合）:**
+```
+BGM           : ✅ {タイトル} by {作者名}
+  Freesound URL : https://freesound.org/s/{SOUND_ID}/
+  ライセンス    : CC0（クレジット不要）
+```
+
+Freesound の SOUND_ID は BGM ファイル名（`BGM_candidate_XX_{SOUND_ID}_...mp3`）から取得する。
+
 移動完了を報告する。
 
 ---

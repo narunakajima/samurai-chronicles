@@ -1,0 +1,250 @@
+{
+  "episode_id": "ep012",
+  "episode_title": "The Thirteen Days That Won Japan: Hideyoshi's Perfect Power Play",
+  "youtube_title": "13 Days: How One General Turned His Lord's Murder Into a Dynasty",
+  "youtube_description": "On June 21st, 1582, the most powerful man in Japan was murdered. Thirteen days later, his killer was dead — and a sandal-bearer's son had seized control of everything. This is the most extraordinary 13 days in Japanese history.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 On June 21st, 1582, Japan's most\n0:50 To understand what Hideyoshi...\n1:39 Meanwhile, in Kyoto, Oda...\n2:21 Before dawn on June 21st, Akechi\n3:13 Honnoji burned before dawn....\n4:11 The news traveled west by relay\n5:08 What Hideyoshi did in the next\n5:46 By midday on June 22nd —\n6:26 The Chugoku Gaeshi — the Great\n7:05 Day five. Day seven. The army\n7:50 In Kyoto, Akechi Mitsuhide...\n8:35 On July 1st — Day 10\n9:16 The Battle of Yamazaki was...\n10:03 Mitsuhide fled north into the...\n10:57 Hideyoshi did not rest....\n11:49 What made those thirteen days...\n12:41 Consider what Mitsuhide did...\n13:31 Those thirteen days did not just\n14:21 Next time on Samurai...\n15:00 If these thirteen days...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Berry, Mary Elizabeth. \"Hideyoshi.\" Harvard University Press, 1982.\n2. Lamers, Jeroen P. \"Japonius Tyrannus.\" Hotei Publishing, 2000.\n3. Turnbull, Stephen. \"Battles of the Samurai.\" Arms and Armour Press, 1987.\n\n#ToyotomiHideyoshi #ChugokuGaeshi #BattleOfYamazaki #HonnojiIncident #SengokuPeriod #JapaneseHistory #SamuraiHistory #SamuraiChronicles #AkechiMitsuhide #JapaneseUnification",
+  "youtube_tags": [
+    "Toyotomi Hideyoshi",
+    "Chugoku Gaeshi",
+    "Battle of Yamazaki",
+    "Honnoji Incident",
+    "Sengoku period",
+    "Japanese history",
+    "samurai",
+    "Akechi Mitsuhide",
+    "Japanese unification",
+    "Samurai Chronicles",
+    "history documentary",
+    "Takamatsu Castle",
+    "Kiyosu Conference",
+    "13 days",
+    "military march"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "June 21st, 1582. The most powerful man in Japan was dead — murdered by his own general. Two hundred kilometers away, his greatest commander received the news in silence. Thirteen days later, the killer was gone. And the sandal-bearer's son owned Japan. How?",
+  "shorts_narration": "June 21st, 1582. Japan's ruler is murdered. Two hundred kilometers away, one general hears the news — and makes a decision that takes eleven seconds to describe and thirteen days to execute. This is how Toyotomi Hideyoshi won Japan.",
+  "thumbnail_prompt": "Split dramatic composition: on the left, flames consuming Honnoji Temple at night, orange and red inferno against black sky. On the right, Toyotomi Hideyoshi on horseback at dawn, golden armor, leading a massive army through mountain roads with determined fury. A bold diagonal of light separates the two halves. The visual contrast of destruction and unstoppable momentum. Cinematic widescreen format.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "On June 21st, 1582, Japan's most powerful warlord was murdered. Thirteen days later, his killer was dead — and a peasant's son had taken everything. What happened in those thirteen days changed Japan forever.",
+      "image_prompt": "A single burning torch falling in slow motion against pure darkness, the flame trailing behind it, about to ignite something unseen below. Abstract, symbolic — the moment before everything changes. Deep black background with a single arc of fire.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 20,
+      "narration": "To understand what Hideyoshi did, you must first understand where he was. In June 1582, he was at the height of his military power — four hundred kilometers west of Kyoto, commanding the siege of Takamatsu Castle. He had engineered a masterpiece: redirecting rivers to flood the castle's surrounding fields, turning it into an island fortress, slowly starving the garrison into surrender. Victory was within days. The western campaign was nearly complete. Everything was going exactly according to plan.",
+      "image_prompt": "Aerial view of Takamatsu Castle surrounded by deliberately flooded fields — a fortress island on an artificial lake, water reflecting the morning sky. Hideyoshi's command camp visible on the surrounding hillside. The scene of systematic, patient military genius at its peak. A moment of calm before catastrophe.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 20,
+      "narration": "Meanwhile, in Kyoto, Oda Nobunaga was preparing to join the western campaign. He had stopped at Honnoji Temple for the night, accompanied by only a small personal guard. His generals were scattered across Japan. His armies were days away. Nobunaga, who had survived twenty years of constant warfare through ruthless calculation, had made one catastrophic miscalculation: he had trusted Akechi Mitsuhide.",
+      "image_prompt": "Night view of Honnoji Temple in Kyoto, peaceful and still, paper lanterns casting warm light on the temple courtyard. Guards pace lazily at the gates. Inside the main hall, shadows move behind shoji screens. The calm is absolute. The surrounding city is dark and quiet. Nothing suggests that history is about to detonate.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 20,
+      "narration": "Before dawn on June 21st, Akechi Mitsuhide reversed his army. His men had been marching to reinforce the western campaign. He turned them around and pointed them at Kyoto. His reason has never been definitively established — humiliation, ambition, a secret order from another faction. His words that night were recorded as: 'The enemy is at Honnoji.' His soldiers did not yet know who the enemy was. They would understand when they arrived.",
+      "image_prompt": "Akechi Mitsuhide on horseback in the pre-dawn darkness, arm raised, turning a column of marching soldiers off the main road with a single decisive gesture. His face is unreadable — closed, cold, resolved. Pine trees line the mountain road on both sides. A crescent moon hangs above. The moment of irrevocable decision, rendered in near-total darkness.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 20,
+      "narration": "Honnoji burned before dawn. Nobunaga's small guard fought and died. Nobunaga himself — surrounded, the temple on fire — reportedly said simply: 'It cannot be helped.' He died in the flames. The man who had dismantled the old order of Japan, crushed the Buddhist militant movements, and come closer to national unification than anyone in a century, was gone between midnight and sunrise. Mitsuhide's soldiers stood in the ruins. He held Kyoto. He held fifty thousand men. He had thirteen days.",
+      "image_prompt": "Honnoji Temple fully ablaze at dawn, walls of fire consuming the wooden structures, smoke column rising black and massive against a grey morning sky. Mitsuhide's soldiers in dark armor stand in formation watching the inferno, faces illuminated orange by the flames. The city of Kyoto visible in the background, still sleeping. A moment of terrible, world-changing finality.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 20,
+      "narration": "The news traveled west by relay rider. A message that would reshape Japan passed through mountain checkpoints, across river crossings, down dirt roads cut through cedar forests — each rider pushing his horse to exhaustion before handing off to the next. At Takamatsu, Hideyoshi received the message in his command tent. He read it. He told no one. The soldiers outside continued their siege work. The flooded fields around Takamatsu reflected the morning sky. Inside, Hideyoshi sat absolutely still.",
+      "image_prompt": "Interior of Hideyoshi's command tent at Takamatsu: a single oil lamp on a low table, maps spread around it. Hideyoshi sits alone, holding an unrolled message scroll, reading. His face is in shadow. Through the tent opening, dawn light on the flooded siege plain. The weight of the information visible only in the stillness of his posture.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "What Hideyoshi did in the next two hours was the act of a man thinking at a speed no one around him could match. First: seal the information. If the Mori clan learned that Nobunaga was dead, they would immediately break the ceasefire and attack — and Hideyoshi's army would be destroyed between two enemies. Second: negotiate surrender immediately, before word could spread. He sent peace terms to the Takamatsu commander that were generous enough to be accepted within hours. The Mori never knew what had happened in Kyoto.",
+      "image_prompt": "Hideyoshi in his command tent, now surrounded by three trusted advisors, speaking in low, rapid, controlled tones. His expression has transformed — cold calculation, absolute focus. One advisor writes urgently on a scroll. Another stands ready to carry a message. Outside the tent, the army is completely unaware that the world has changed. The contrast between the crisis inside and the calm outside is total.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "By midday on June 22nd — one day after Nobunaga's death — Takamatsu had surrendered. Then Hideyoshi did something extraordinary: he revealed to his commanders, for the first time, what had actually happened in Kyoto. Before the shock had fully registered on their faces, he gave a single order. The army would march east. Two hundred kilometers. Under twelve days. The soldiers had spent weeks in a siege camp. They were about to cover the length of western Japan in summer heat. No one questioned the order.",
+      "image_prompt": "Hideyoshi standing before his assembled field commanders in the open air at Takamatsu, the flooded siege plain behind him. His arm points east, toward distant mountains. The commanders stare at him — expressions of shock giving way to grim resolution. The army visible in formation behind the commanders, tens of thousands of men waiting for the order that will send them racing across Japan.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "The Chugoku Gaeshi — the Great Return — began on June 22nd. Thirty thousand men turned their backs on the western sea and began moving east through the mountain passes of the Chugoku range. The pace Hideyoshi demanded was inhuman: twenty-five to thirty kilometers per day, in summer heat, on unpaved mountain roads, carrying weapons and armor. Villages along the route were requisitioned for food, water, and horses. Soldiers who collapsed were carried. Those who could not be carried were left. The army did not stop.",
+      "image_prompt": "Hideyoshi's army moving through a narrow mountain pass at night, torches held aloft — an endless river of fire snaking through dark mountain roads between cedar forests. Soldiers march with grim faces, visibly exhausted but keeping pace. Supply carts groan on the rough road. The mountains are steep and dark on both sides. A river glitters silver far below in the valley. The sense of terrible, unstoppable momentum.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "Day five. Day seven. The army moved with a focus that observers would later describe as almost supernatural. Hideyoshi rode at the front, pushing his horse as hard as any other. He sent ahead riders to commandeer fresh horses at each town. He organized supply trains so that food and water met the column at pre-arranged points. He was solving, in real time, a logistics problem that would have broken most commanders before it began. The men followed because they understood — consciously or not — that they were watching something extraordinary.",
+      "image_prompt": "Hideyoshi on horseback at the head of his marching column, Day 7, his golden armor now dusty and trail-worn. He rides with the focused intensity of a man who has not slept properly in days. Behind him, the column stretches over a mountain ridgeline. Dawn light illuminating the procession from the side — long shadows, golden light catching armor and banners. The landscape opens into wider foothills; Kyoto is closer. The pace has not slackened.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "In Kyoto, Akechi Mitsuhide was not idle. He spent the thirteen days attempting to build alliances — dispatching messengers to other warlords, seeking recognition as Nobunaga's legitimate successor. Almost none responded. The great lords of Japan were watching. One by one, Mitsuhide's messengers returned empty-handed. He held fifty thousand men and the capital — but he held them alone. He had thirteen days. He had spent eleven of them waiting for help that wasn't coming.",
+      "image_prompt": "Akechi Mitsuhide in the grand audience hall of Kyoto's Nijo Castle, now his headquarters. He sits formally, the picture of calm authority — but the hall is emptier than it should be. A kneeling messenger delivers news clearly unwelcome. Mitsuhide's expression remains controlled, but the tightness around his eyes betrays growing isolation. Late afternoon light through the castle's high windows. The silence of a man beginning to understand that he is alone.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "On July 1st — Day 10 — Hideyoshi's army arrived at Amagasaki, near Osaka Bay. They had covered nearly two hundred kilometers in ten days. Reinforcements from other Oda commanders met them: Niwa Nagahide, Ikeda Tsuneoki, thousands of additional men. Word was spreading through Japan. Nobunaga was dead. Hideyoshi was moving to avenge him. The army that had left Takamatsu at thirty thousand swelled. By the time it moved toward Yamazaki on July 2nd, it numbered over forty thousand.",
+      "image_prompt": "The shores of Osaka Bay at dawn: Hideyoshi's army encamped in vast numbers on the coastal plain, campfires stretching to the horizon. Fresh reinforcements continue to arrive, their banners visible at the edges of the camp. Hideyoshi stands on a slight rise, looking east toward Kyoto visible on the horizon. His officers gather for final planning. The bay glitters silver behind them. The army is at maximum strength, ready.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 20,
+      "narration": "The Battle of Yamazaki was fought on July 2nd, 1582, at the narrowing between the Yodo River and the forested slopes of Mount Tennōzan. Mitsuhide had positioned his forces on the high ground, hoping terrain would compensate for inferior numbers. Hideyoshi attacked with everything — units that had just completed one of the longest forced marches in Japanese military history. The battle lasted less than an hour. Mitsuhide's lines broke. His army dissolved.",
+      "image_prompt": "The Battle of Yamazaki in its decisive final phase: Hideyoshi's forces in black and gold overwhelm Mitsuhide's collapsing positions on the wooded slopes of Mount Tennōzan. The sun sets behind the mountain, casting the battle in deep orange and shadow. Mitsuhide's banner falls. Hideyoshi's golden gourd standard advances. Soldiers stream in both directions — attackers pressing forward, defenders breaking and fleeing. The decisive moment of an entire era.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 20,
+      "narration": "Mitsuhide fled north into the forests. Three days later, he was dead — killed, according to tradition, by a band of armed peasants with bamboo spears while attempting to reach his home castle at Sakamoto. The man who had held Kyoto and commanded fifty thousand men died in a roadside ambush, unrecognized, alone in the dark. He had held power for thirteen days. History gave him a name that lasted far longer: Jusan-nichiten Kanpaku — the Thirteen-Day Lord.",
+      "image_prompt": "A dark forest road north of Kyoto, night. Akechi Mitsuhide alone on foot, armor discarded, moving through deep shadow between cedar trees. The glow of the Yamazaki battlefield visible in the distance behind him. His face is expressionless — the face of a man who already understands what has happened. The forest is silent except for his footsteps. He does not yet know what waits in the darkness ahead.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 20,
+      "narration": "Hideyoshi did not rest. Within four days of Yamazaki, he convened the Kiyosu Conference — a meeting of Nobunaga's senior commanders to determine succession. He arrived with a candidate already prepared, alliances already secured, and a clarity of purpose that left his rivals — older men, men of higher birth — unable to match his speed. The conference lasted one day. Hideyoshi had controlled the outcome before it began. In the space of thirteen days, the sandal-bearer had positioned himself as the heir to the most powerful empire in Japan.",
+      "image_prompt": "Interior of Kiyosu Castle's formal council chamber: Nobunaga's senior commanders seated around a low table covered in succession documents. Hideyoshi sits at the center, calm, completely in command. Shibata Katsuie visibly hostile on the left, others uncertain. The room is tense with the unspoken reality that one man has already decided what will happen. Candlelight from iron floor lanterns. Political theater at its most precise.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 20,
+      "narration": "What made those thirteen days decisive was not just speed — it was the clarity of Hideyoshi's thinking under conditions that would have paralyzed most men. Each decision flowed from the one before with perfect logic: conceal the news, negotiate the ceasefire, march east, secure reinforcements, fight before Mitsuhide could consolidate, convene the conference before rivals could organize. There was no wasted step. No hesitation. He had looked at the most chaotic moment in Japan's recent history and seen it as a straight line.",
+      "image_prompt": "Hideyoshi alone in a simple room in Kiyosu Castle the night after the conference. He sits by a window looking out at the moonlit courtyard, expression contemplative. A single candle illuminates maps and documents on the table beside him. The exhaustion of thirteen days is visible in his face. But the eyes are already calculating the future. A man who has just won everything, deciding what to do with it.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 20,
+      "narration": "Consider what Mitsuhide did with the same thirteen days: he waited for allies who never came, held a capital that gave him no leverage, and allowed Hideyoshi to control the narrative. The betrayer of Nobunaga never understood that killing a man and inheriting his power are entirely separate problems. Hideyoshi understood both simultaneously — from the moment he read the message in his tent at Takamatsu. One man had a sword and a capital. The other had a plan. The plan won.",
+      "image_prompt": "Split-panel composition: on the left, Mitsuhide in his emptying headquarters, isolated, waiting. On the right, Hideyoshi in motion — on horseback, directing, building momentum. Both framed at the same moment in time. The visual contrast between stasis and kinetic energy, between isolation and force multiplication. Two men with thirteen days, making entirely different use of them.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 20,
+      "narration": "Those thirteen days did not just end a betrayal — they launched a dynasty. The speed and decisiveness with which Hideyoshi avenged Nobunaga created a narrative almost impossible to challenge: he was Nobunaga's true heir, the man who had acted when no one else could. Rivals who might have contested the succession found themselves outmaneuvered before they had finished calculating their options. The thirteen days were Hideyoshi's greatest act of political communication. Everything that followed — the Kanpaku title, the unification, the supreme power — rested on this foundation.",
+      "image_prompt": "Hideyoshi entering the gates of Kyoto at the head of his army, reclaiming the city. Citizens line the streets watching in silence. His golden armor catches the afternoon sun. Above the city gate, where Mitsuhide's banners flew just days before, Hideyoshi's golden gourd standard now hangs. The ancient imperial capital framed as a prize won not by birth, but by thirteen days of flawless execution.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles — we return to Japan's greatest swordsman. After sixty-one duels without a single defeat, Miyamoto Musashi spent his final years not fighting, but writing. Alone in a mountain cave weeks before his death, he composed The Book of Five Rings — a philosophy of strategy that still shapes martial arts, business, and warfare five hundred years later. What secrets did the undefeated warrior need to leave behind?",
+      "image_prompt": "Miyamoto Musashi in his late 60s, sitting cross-legged in the dim interior of Reigando Cave, writing by the light of a single oil lamp. Brush in hand, ink scroll before him. His face is aged but utterly serene. Through the cave mouth, moonlight falls on mountain mist. Stacks of completed scroll pages surround him.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 12,
+      "narration": "If these thirteen days gripped you — the speed, the calculation, the perfect execution under impossible pressure — subscribe to Samurai Chronicles for a new episode every day. Drop a comment: could Hideyoshi have pulled this off without the element of surprise? We'll see you in the next battle.",
+      "image_prompt": "Samurai Chronicles channel end card: Hideyoshi's golden gourd clan symbol centered against deep black background with subtle Japanese wave patterns. Clean, cinematic, dramatic lighting from above.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ]
+}

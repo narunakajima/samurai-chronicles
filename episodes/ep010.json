@@ -1,0 +1,209 @@
+{
+  "episode_id": "ep010",
+  "episode_title": "Musashi's 61 Duels: The Making of a Legend",
+  "youtube_title": "The Day One Samurai Destroyed Japan's Most Powerful Sword School — Alone",
+  "youtube_description": "Seventy men waited in the dark. Archers hid in the trees. They had come to kill one samurai. Miyamoto Musashi arrived three hours late — and walked away alone. This is the story of how he won 61 duels without a single defeat.\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 Sixty-one duels. Not a single...\n0:38 Miyamoto Musashi was born in...\n1:20 His first duel came at age\n2:01 Over the next decade, Musashi...\n2:38 In 1604, Musashi arrived in...\n3:20 The head of the Yoshioka school,\n4:06 The Yoshioka clan could not...\n4:54 The Yoshioka clan was now...\n5:42 Musashi arrived before dawn —...\n6:16 The Yoshioka warriors fought...\n6:51 The fall of the Yoshioka school\n7:31 Through his thirties, Musashi...\n8:11 In 1612, he fought his most\n8:50 After Ganryujima, Musashi...\n9:27 In his final years, Musashi...\n10:08 In 1645, just weeks before his\n11:03 What made Musashi unbeatable?...\n11:50 Musashi died in 1645 at the\n12:34 Next time on Samurai...\n12:57 If Musashi's story inspired...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Kenji Tokitsu. Miyamoto Musashi: His Life and Writings. Shambhala, 2004.\n2. Miyamoto Musashi. The Book of Five Rings (Go Rin No Sho), c. 1645.\n3. William Scott Wilson. The Lone Samurai: The Life of Miyamoto Musashi. Kodansha, 2004.\n\n\n🎵 Music: SunixMuz - Dark Castle (Opening, trailer, epic music, Free CCBY) by SunixMuz (freesound.org) — CC BY 4.0\n#MiyamotoMusashi #SengokuPeriod #SamuraiHistory #JapaneseHistory #Yoshioka #BookOfFiveRings #SamuraiChronicles",
+  "youtube_tags": [
+    "Miyamoto Musashi",
+    "samurai duels",
+    "Yoshioka school",
+    "Book of Five Rings",
+    "Japanese swordsmanship",
+    "Edo period",
+    "samurai history",
+    "Japanese history",
+    "undefeated samurai",
+    "kenjutsu",
+    "Japan history documentary",
+    "Samurai Chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "Dawn, 1604. Seventy men — archers, assassins, and the heir of Japan's greatest sword school — waited in the dark. One man was coming. Miyamoto Musashi. How does a single samurai walk into a massacre — and leave as the only one standing?",
+  "shorts_narration": "Seventy men. Archers. The entire Yoshioka sword school. They came to kill one samurai. Musashi arrived three hours late. He left alone. 61 duels. Zero defeats. This is Miyamoto Musashi.",
+  "thumbnail_prompt": "Miyamoto Musashi standing alone in a misty dawn forest clearing, two swords drawn, facing a vast shadowy army of samurai warriors surrounding him from all sides. His expression is utterly calm and focused. Dramatic backlit silhouette with golden dawn light breaking through the trees behind him. Overwhelming yet serene.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Sixty-one duels. Not a single defeat. But the greatest test wasn't one man — it was seventy. How do you beat an army alone?",
+      "image_prompt": "Miyamoto Musashi in worn travel clothes, both swords drawn, standing perfectly still in a misty forest clearing at dawn. Dozens of armed silhouettes surround him from every direction. Extreme tension. Low angle, dramatic lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "Miyamoto Musashi was born in 1584 in Harima Province — a time of war, when Japan's great warlords were tearing the country apart. His father, Shinmen Munisai, was a renowned martial artist. Musashi grew up watching men train, fight, and die. By the time he was a teenager, he had already made a decision: he would dedicate his entire life to understanding the way of the sword.",
+      "image_prompt": "A young boy (Musashi, around 10 years old) watching his stern warrior father train with a sword in a rural Japanese courtyard. The boy's eyes are intense, absorbing every movement. Late afternoon light, mountains in the background. A child already marked by destiny.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "His first duel came at age thirteen. A traveling warrior named Arima Kihei posted a challenge in the village — an open invitation for any who dared to fight. Young Musashi accepted. The adults tried to stop him. He fought anyway — and won, beating the experienced warrior to the ground with a wooden stick. It was the first of sixty-one. He was barely a teenager.",
+      "image_prompt": "A fierce teenage boy (Musashi, 13) standing over a fallen adult warrior in a dusty village road. The boy clutches a rough wooden staff. Shocked villagers watch from the sides. Musashi's expression shows no triumph — only cold focus. Japan's greatest warrior career has just begun.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Over the next decade, Musashi wandered Japan as a musha shugyō — a warrior on a pilgrimage of self-improvement through combat. He challenged and defeated samurai after samurai, developing a philosophy as sharp as his blade: that true mastery means winning before the fight even begins. Strategy. Psychology. Timing. These were his real weapons.",
+      "image_prompt": "Musashi as a young adult, traveling alone on a mountain road in feudal Japan, two swords at his hip, a worn travel cloak. He walks with absolute self-contained confidence. The road stretches toward distant misty mountains. A lone figure shaping himself through an endless journey.",
+      "ken_burns": "pan_left",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "In 1604, Musashi arrived in Kyoto — the cultural capital of Japan, and home to the most prestigious sword school in the country: the Yoshioka clan. They had served as sword instructors to the Ashikaga shoguns for generations. Their reputation was without equal. Musashi challenged them directly, by name, in public. It was either supreme confidence — or madness.",
+      "image_prompt": "Musashi standing before the grand gates of the Yoshioka sword school in Kyoto, a formal challenge letter in his hand. The school's impressive emblem is carved above the gate. Students watch from the walls. The scene radiates tension — a lone wanderer challenging an institution.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "The head of the Yoshioka school, Yoshioka Seijuro, accepted. They met at Rendaiji temple at dawn. Musashi arrived late — deliberately. He knew that making his opponent wait would corrode focus and breed anger. Seijuro was furious by the time Musashi appeared. The duel lasted seconds. Musashi struck once, crippling Seijuro's sword arm. The school's master was defeated. But this was only the beginning.",
+      "image_prompt": "A split image composition: on the left, Yoshioka Seijuro waiting tensely at a misty temple dawn, his expression darkening with fury. On the right side of frame, Musashi finally arriving with unsettling calm. The contrast between agitation and serenity. The outcome already decided.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "The Yoshioka clan could not accept such humiliation. Seijuro's younger brother, Denshichiro, demanded a rematch to restore the family's honor. Musashi agreed. They met at Sanjusangendo temple. Again, Musashi arrived late, deliberately disrupting his opponent's composure. Again, the duel was swift and decisive. Denshichiro was killed. Two of Japan's greatest sword masters, defeated by the same wandering ronin.",
+      "image_prompt": "Musashi in a single fluid motion, striking Yoshioka Denshichiro at Sanjusangendo temple. The moment of impact — Denshichiro falling. Temple pillars stretch into the background. Musashi already stepping back, perfectly composed. Swift, inevitable, devastating.",
+      "ken_burns": "pan_right",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "The Yoshioka clan was now leaderless, disgraced, and consumed by revenge. They declared one final challenge: a duel at Ichijoji, at dawn. But this time, there would be no duel. They brought seventy armed men — swordsmen, archers hidden in the trees, assassins. The nominal opponent was Yoshioka Matashichiro, a child. The real plan was simple: surround Musashi and kill him before he could strike.",
+      "image_prompt": "Night scene: dozens of Yoshioka warriors silently taking up positions around a field at Ichijoji, hiding behind trees and rocks. Archers climb into trees. At the center, a young boy (Matashichiro) stands as a figurehead. A trap being meticulously laid. Moonlight, cold tension.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "Musashi arrived before dawn — three hours early this time. He had studied the trap. He knew exactly where the archers were positioned. And he knew that the only way to end the Yoshioka clan forever was to kill the child heir. He charged without hesitation. He cut down Matashichiro before the ambush could close, then turned to face the warriors flooding in from all sides.",
+      "image_prompt": "Musashi charging through early morning mist at Ichijoji, both swords drawn, cutting through the chaos. Archers' arrows fly. Warriors close in from all directions. Musashi is a single point of absolute decisive motion in the center of a storm. Fire, smoke, desperate battle.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "The Yoshioka warriors fought with fury and numbers. But Musashi had broken their plan the moment he killed Matashichiro — the heir was gone, the school's future extinguished. Without leadership or purpose, the attack fractured. Musashi cut through the confusion, wounding and killing, until the survivors scattered into the forest. He walked away alone. The Yoshioka school, centuries old, ceased to exist that morning.",
+      "image_prompt": "Dawn breaking over the field at Ichijoji. Musashi stands alone among the fallen, both swords lowered. Wounded Yoshioka warriors flee into the treeline. The morning light is cold and clear. An entire sword dynasty ended in minutes. Solitary, absolute, historic.",
+      "ken_burns": "zoom_out",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "The fall of the Yoshioka school sent a shockwave through Japan's martial world. Musashi, still in his early twenties, had dismantled the most prestigious sword tradition in the country. His name spread from Kyoto to Edo. Masters who once ignored him now sought him out — some to learn, some to test themselves. He accepted challenges from all of them. He lost none.",
+      "image_prompt": "A bustling Edo-period crossroads where news spreads by word of mouth. Samurai whisper to each other, gesturing animatedly. A woodblock print of Musashi's silhouette is being posted on a notice board. His legend is spreading like fire. Crowded, dramatic street scene.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Through his thirties, Musashi continued to refine his signature technique: Niten Ichi-ryū — the school of two heavens as one. Fighting with a long sword in one hand and a short sword in the other was considered unorthodox, even dishonorable by some. Musashi cared nothing for convention. He cared only for what worked. His two-sword style became feared across Japan.",
+      "image_prompt": "Musashi in a training stance, both swords extended — long katana and shorter wakizashi — in the iconic Niten Ichi-ryu dual-sword posture. Dramatic backlit silhouette in a misty training ground. The posture radiates absolute mastery. Both weapons perfectly balanced.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 13,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "In 1612, he fought his most famous duel — against the spear-master Sasaki Kojiro on the island of Ganryujima. As we explored in our previous episode, Musashi arrived deliberately late, carved a wooden sword from an oar on the boat, and killed Kojiro with a single strike. That duel marked the peak of his fighting career. He was twenty-eight years old. And he had won sixty-one duels without a single defeat.",
+      "image_prompt": "Musashi on a small boat crossing to Ganryujima island at dawn, roughly carving a wooden bokken from a boat oar with his knife. The sea is still, the sky turning gold. A figure of absolute purposeful calm on the way to his most legendary duel. Iconic, timeless composition.",
+      "ken_burns": "pan_left",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 14,
+      "type": "climax",
+      "duration_seconds": 15,
+      "narration": "After Ganryujima, Musashi made a decision that surprised everyone: he stopped dueling. Not because he feared defeat — but because he realized the endless cycle of challenge and combat had taken him as far as it could. True mastery, he concluded, had nothing to do with killing. It was about understanding the nature of conflict itself. He put away his swords and picked up a brush.",
+      "image_prompt": "Musashi sitting in quiet meditation in a sparse room, two swords laid aside, a brush in his hand over an ink painting. Outside the window, cherry blossoms fall. His expression is peaceful, settled — a warrior who has transcended war. The greatest transition of his life.",
+      "ken_burns": "zoom_out",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "In his final years, Musashi retreated to Reigando Cave on Kyushu island. He had served lords, fought battles, and built a legacy in combat. Now he meditated, painted, and wrote. He produced extraordinary ink paintings and sculptures — works of art that reveal the same stillness and precision that made him lethal in combat. The sword and the brush, he said, were the same path.",
+      "image_prompt": "Musashi in his later years, seated inside a cave entrance overlooking a dramatic mountainous landscape. An ink brush in hand, a nearly finished painting beside him. His face is deeply lined but serene. Behind him, the darkness of the cave. Before him, the vast world he has transcended.",
+      "ken_burns": "pan_right",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "In 1645, just weeks before his death, Musashi completed his masterwork: The Book of Five Rings — Go Rin No Sho. It was not a manual of sword technique. It was a philosophy of strategy, applicable to any form of conflict. Earth, Water, Fire, Wind, Void. Win by reading the ground. Win by adapting. Win by disrupting. Win by knowing your enemy's rhythm. And ultimately — win by emptying your mind of all attachment to winning.",
+      "image_prompt": "A close-up of aged hands carefully writing on a scroll — the final pages of The Book of Five Rings. Ink characters flow from a brush with deliberate precision. A single candle illuminates the cave. This is the last great act of Japan's greatest warrior: writing down everything he has learned about life.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "What made Musashi unbeatable? Not strength — many stronger men fell to him. Not speed — he often arrived late. The answer was simpler and stranger: Musashi had no fear of death, no attachment to victory, and no investment in his opponent's opinion of him. He studied conflict the way a scientist studies nature. Every duel was a problem to be solved before it began. By the time the fight started, it was already over.",
+      "image_prompt": "A stylized split image: on the left, Musashi in his fighting prime — swords raised, eyes burning with focus. On the right, Musashi in old age — brush in hand, face serene, the same eyes now looking inward. Two expressions of the same absolute mastery. The warrior and the sage are one.",
+      "ken_burns": "zoom_out",
+      "character_ref": "musashi"
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "Musashi died in 1645 at the age of sixty-one. He never lost a duel. He never commanded an army or ruled a province. He left behind no great fortune. What he left behind was a way of thinking — about conflict, about mastery, about the relationship between action and stillness — that has influenced martial artists, business strategists, and philosophers for four centuries and counting.",
+      "image_prompt": "A Japanese museum display case containing a replica of The Book of Five Rings, Musashi's famous self-portrait, and his two swords. Visitors of various ages stand silently before it, reflected in the glass. Four centuries of reverence, condensed into a single quiet moment.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — the man who almost unified Japan a generation before Tokugawa. He burned monasteries, executed nobles, and rewrote every rule of power. Oda Nobunaga: the Demon King.",
+      "image_prompt": "Oda Nobunaga in black lacquered armor, standing on a castle parapet overlooking a burning city at night. His expression is coldly exhilarated. Fire reflects in his eyes. A figure of absolute transformative power — and absolute destruction.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If Musashi's story inspired you, subscribe to Samurai Chronicles for a new episode every day. Drop a comment below: which of Musashi's sixty-one duels do you want us to cover in depth? We'll see you in the next battle.",
+      "image_prompt": "The Samurai Chronicles channel logo centered in the frame — a stylized mon crest — surrounded by subtle Japanese ink-brush art motifs. Clean, branded, cinematic channel end card aesthetic. Dark background with gold accent lines.",
+      "ken_burns": "static",
+      "character_ref": null
+    }
+  ]
+}
