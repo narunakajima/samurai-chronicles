@@ -321,9 +321,13 @@ response = client.models.generate_content(
 
 ---
 
-### BGM（Freesoundから3曲）
+### BGM（Freesound 2曲 + ライブラリ 2曲 = 計4曲）
 
-エピソードのムード（タイトル・シーン構成・感情トーン）から2〜3語の英語クエリを3本生成し、ダウンロードする。
+Freesound から2曲ダウンロードし、`bgm_library.json` からエピソードの雰囲気に合う2曲を選んでデスクトップにコピー。計4曲からユーザーが選ぶ。
+
+#### ① Freesound から2曲ダウンロード
+
+エピソードのムード（タイトル・シーン構成・感情トーン）から2〜3語の英語クエリを2本生成し、ダウンロードする。
 
 **クエリ生成ルール:**
 - 必ず短く（2〜3語）
@@ -332,25 +336,41 @@ response = client.models.generate_content(
 - 楽器補強（単体では使わない）: strings, brass, choir, taiko, percussion
 - 良い例: `"epic orchestral"` / `"dramatic cinematic strings"` / `"dark orchestral taiko"` / `"heroic brass orchestra"`
 - **禁止キーワード:** shamisen 単体, piano 単体, ambient, meditation, acoustic, folk, traditional, nature, forest, rain, calm, relaxing, light
-- ユーザーから別スタイルの指定があっても、このルールを優先する（別プロジェクト「ランプのひとりごと」と混同しないこと）
 
 ```bash
 FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
-  "<Q1>" "<Q2>" "<Q3>" \
+  "<Q1>" "<Q2>" \
   "$HOME/Desktop/" \
   --round 0
 ```
 
-**部分失敗時（一部スロットが0件・404）:** 失敗したスロットのみ `--start-slot <N>` で別クエリに差し替えて補完する。全スロット再実行は禁止。ダウンロード完了時点でデスクトップに必ず3曲揃っていること。
-
-ダウンロード完了後、`.credit.txt` ファイルをデスクトップから退避させて mp3 だけ残す：
+**部分失敗時（一部スロットが0件・404）:** 失敗したスロットのみ `--start-slot <N>` で別クエリに差し替えて補完する。ダウンロード完了後、`.credit.txt` を退避：
 
 ```bash
 mkdir -p /tmp/sc_bgm_credits
 mv "$HOME/Desktop/BGM_candidate_"*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null || true
 ```
 
-これによりデスクトップには mp3 が3件のみ表示される。
+#### ② ライブラリから2曲選択
+
+`bgm_library.json` を読み込み、エピソードのタイトル・ナレーション・シーン構成（climax/rising_action の多さ、トーン）を考慮して タグが合致する上位2件を選ぶ。
+
+選んだ2件をデスクトップにコピー（試聴用の一時コピー。選択後は削除）：
+
+```bash
+DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles"
+cp "$DRIVE/<path1>" "$HOME/Desktop/BGM_library_01_<name>.mp3"
+cp "$DRIVE/<path2>" "$HOME/Desktop/BGM_library_02_<name>.mp3"
+# CC BY の場合は credit.txt も /tmp/sc_bgm_credits/ に保存しておく
+```
+
+デスクトップには合計4曲が並ぶ：
+```
+BGM_candidate_01_xxx.mp3   ← Freesound 新規
+BGM_candidate_02_xxx.mp3   ← Freesound 新規
+BGM_library_01_xxx.mp3     ← ライブラリ
+BGM_library_02_xxx.mp3     ← ライブラリ
+```
 
 ---
 
@@ -368,7 +388,7 @@ mv "$HOME/Desktop/BGM_candidate_"*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null |
   2. {ファイル名}（{尺}s）[{ライセンス}]
   3. {ファイル名}（{尺}s）[{ライセンス}]
 
-確認書を読んで、サムネイルを確認し、BGMは1曲だけ残して2曲削除してください。
+確認書を読んで、サムネイルを確認し、BGMは1曲だけ残して3曲削除してください。
 すべてOKなら教えてください。修正があればお知らせください。
 ```
 
@@ -380,7 +400,7 @@ mv "$HOME/Desktop/BGM_candidate_"*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null |
 
 - **確認書に修正あり** → 該当箇所を修正してデスクトップのファイルを上書き保存。再確認を求める。
 - **サムネイルをやり直したい** → デスクトップの `ep{NNN}_thumbnail.png` を削除して再生成。
-- **BGMをやり直したい** → デスクトップの候補3曲と `/tmp/sc_bgm_credits/` 内の credit.txt を削除し、`--round` を1増やして再ダウンロード。
+- **BGMをやり直したい** → デスクトップの4曲と `/tmp/sc_bgm_credits/` 内の credit.txt を削除し、`--round` を1増やして再ダウンロード＋ライブラリ再選択。
 - **すべてOK** → STEP 4b へ進む
 
 ---
@@ -399,16 +419,35 @@ mv "$HOME/Desktop/ep{NNN}_制作確認書.txt" "$DRIVE/"
 # サムネイルを移動
 mv "$HOME/Desktop/ep{NNN}_thumbnail.png" "$DRIVE/"
 
-# BGM（残った1曲）をリネームして移動し、対応する credit.txt も同時に処理
-BGM_FILE=$(ls "$HOME/Desktop/BGM_candidate_"*.mp3 2>/dev/null | head -1)
-BGM_STEM=$(basename "$BGM_FILE" .mp3)
-mv "$BGM_FILE" "$DRIVE/audio/ep{NNN}-BGM.mp3"
+# 残ったBGM1曲を判定: Freesound新規 or ライブラリ
+CHOSEN=$(ls "$HOME/Desktop/BGM_candidate_"*.mp3 "$HOME/Desktop/BGM_library_"*.mp3 2>/dev/null | head -1)
+CHOSEN_STEM=$(basename "$CHOSEN" .mp3)
 
-# 対応する credit.txt を /tmp から取得してクレジット注入
-CREDIT="/tmp/sc_bgm_credits/${BGM_STEM}.credit.txt"
-if [ -f "$CREDIT" ]; then
-  python3 $HOME/samurai-chronicles/sc_inject_bgm_credit.py \
-    --episode ep{NNN} --credit-file "$CREDIT"
+if [[ "$CHOSEN" == *"BGM_candidate_"* ]]; then
+  # Freesound新規: エピソードフォルダに移動
+  mv "$CHOSEN" "$DRIVE/audio/ep{NNN}-BGM.mp3"
+  # bgm_library.json に新規エントリを追加
+  python3 $HOME/samurai-chronicles/sc_bgm_library.py \
+    --add --episode ep{NNN} --file "$DRIVE/audio/ep{NNN}-BGM.mp3" \
+    --stem "$CHOSEN_STEM"
+  # クレジット注入（CC BY の場合）
+  CREDIT="/tmp/sc_bgm_credits/${CHOSEN_STEM}.credit.txt"
+  if [ -f "$CREDIT" ]; then
+    python3 $HOME/samurai-chronicles/sc_inject_bgm_credit.py \
+      --episode ep{NNN} --credit-file "$CREDIT"
+  fi
+else
+  # ライブラリ既存曲: episode JSON に bgm_source を記録、ファイルは移動しない
+  python3 $HOME/samurai-chronicles/sc_bgm_library.py \
+    --use-library --episode ep{NNN} --stem "$CHOSEN_STEM"
+  # ライブラリ曲の試聴コピーを削除
+  rm -f "$CHOSEN"
+  # クレジット注入（CC BY の場合）
+  CREDIT="/tmp/sc_bgm_credits/${CHOSEN_STEM}.credit.txt"
+  if [ -f "$CREDIT" ]; then
+    python3 $HOME/samurai-chronicles/sc_inject_bgm_credit.py \
+      --episode ep{NNN} --credit-file "$CREDIT"
+  fi
 fi
 
 # /tmp の残 credit.txt をすべて削除

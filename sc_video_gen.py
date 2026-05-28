@@ -897,6 +897,11 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
     audio_dir = DRIVE_BASE / episode_id / "audio"
     bgm_path = audio_dir / f"{episode_id}-BGM.mp3"
 
+    # ライブラリBGM参照（bgm_source フィールドがあり、ローカルBGMがない場合）
+    if not bgm_path.exists() and ep.get("bgm_source"):
+        bgm_path = DRIVE_BASE / ep["bgm_source"]
+        print(f"  BGM: ライブラリ参照 → {ep['bgm_source']}")
+
     if out_dir is None:
         out_dir = DRIVE_BASE / episode_id / "output"
     out_dir.mkdir(parents=True, exist_ok=True)
