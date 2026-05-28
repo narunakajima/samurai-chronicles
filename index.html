@@ -266,35 +266,46 @@
     .episode-thumb {
       width: 100%;
       aspect-ratio: 16 / 9;
+      background: #111;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       overflow: hidden;
     }
-    .episode-thumb.t1 { background: linear-gradient(135deg, #1c0505 0%, #4a0000 50%, #1a1a1a 100%); }
-    .episode-thumb.t2 { background: linear-gradient(135deg, #1a0a00 0%, #3d1500 50%, #1a1a1a 100%); }
-    .episode-thumb.t3 { background: linear-gradient(135deg, #0a0a1c 0%, #00003d 50%, #1a1a1a 100%); }
-    .episode-thumb.t4 { background: linear-gradient(135deg, #0f0a00 0%, #3d2600 50%, #1a1a1a 100%); }
+    .episode-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      filter: brightness(0.92);
+    }
+    .episode-card:hover .episode-thumb img {
+      transform: scale(1.04);
+      filter: brightness(1);
+    }
+    /* サムネイルなし時のフォールバック */
     .episode-thumb-num {
       font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: clamp(1.8rem, 5vw, 2.6rem);
-      color: rgba(201, 168, 76, 0.18);
+      color: rgba(201, 168, 76, 0.25);
       letter-spacing: 0.1em;
       user-select: none;
-      transition: color 0.3s ease;
     }
-    .episode-card:hover .episode-thumb-num { color: rgba(201, 168, 76, 0.35); }
+    /* ホバー時の再生アイコン */
     .episode-thumb::after {
       content: '▶';
       position: absolute;
-      font-size: 1.4rem;
-      color: rgba(201, 168, 76, 0.35);
+      font-size: 1.6rem;
+      color: rgba(255, 255, 255, 0);
       transition: color 0.3s ease, transform 0.3s ease;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.8);
+      pointer-events: none;
     }
     .episode-card:hover .episode-thumb::after {
-      color: rgba(201, 168, 76, 0.75);
+      color: rgba(255, 255, 255, 0.9);
       transform: scale(1.15);
     }
     .episode-info { padding: 16px; }
@@ -527,115 +538,115 @@
       <h2 class="section-heading reveal reveal-delay-1">Latest Stories</h2>
       <div class="episodes-grid">
 
-        <a class="episode-card reveal" href="https://youtu.be/kZN4msDx9Tg" target="_blank" rel="noopener">
-          <div class="episode-thumb t1"><span class="episode-thumb-num">001</span></div>
+        <a class="episode-card reveal" href="https://youtu.be/rJiO7I-llw4" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/rJiO7I-llw4/mqdefault.jpg" alt="Why Japan's Greatest Cavalry Charged Straight Into 3,000 Guns" loading="lazy"></div>
           <div class="episode-info">
-            <p class="episode-num">EPISODE 001</p>
-            <p class="episode-title">The Deadliest Duel in Japanese History: Musashi vs Kojiro</p>
+            <p class="episode-num">EPISODE 014</p>
+            <p class="episode-title">Why Japan's Greatest Cavalry Charged Straight Into 3,000 Guns</p>
           </div>
         </a>
 
-        <a class="episode-card reveal reveal-delay-2" href="https://youtu.be/TyxdaK8mu_E" target="_blank" rel="noopener">
-          <div class="episode-thumb t2"><span class="episode-thumb-num">002</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 002</p>
-            <p class="episode-title">The Night Japan's Most Powerful Warlord Was Betrayed: The Honnoji Incident</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-3" href="https://youtu.be/pje6shzYYZU" target="_blank" rel="noopener">
-          <div class="episode-thumb t3"><span class="episode-thumb-num">003</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 003</p>
-            <p class="episode-title">The Boy Hostage Who Became Japan's Shogun | Tokugawa Ieyasu</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-4" href="https://youtu.be/pjgU_IK0fJU" target="_blank" rel="noopener">
-          <div class="episode-thumb t4"><span class="episode-thumb-num">004</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 004</p>
-            <p class="episode-title">The Battle That Decided Japan's Fate | Sekigahara 1600</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal" href="https://youtu.be/AD1QPvfZZqU" target="_blank" rel="noopener">
-          <div class="episode-thumb t1"><span class="episode-thumb-num">005</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 005</p>
-            <p class="episode-title">The Sandal-Bearer Who Became Ruler of Japan: Toyotomi Hideyoshi</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-2" href="https://youtu.be/SMYdQA_vH-g" target="_blank" rel="noopener">
-          <div class="episode-thumb t2"><span class="episode-thumb-num">006</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 006</p>
-            <p class="episode-title">Japan's Greatest Warrior Was Destroyed By His Own Brother | Minamoto no Yoshitsune</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-3" href="https://youtu.be/ghHOBmFQvs8" target="_blank" rel="noopener">
-          <div class="episode-thumb t3"><span class="episode-thumb-num">007</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 007</p>
-            <p class="episode-title">The One-Eyed Dragon Who Conquered Japan at 20 — Then Lost It All</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-4" href="https://youtu.be/CvdXyK2J6x4" target="_blank" rel="noopener">
-          <div class="episode-thumb t4"><span class="episode-thumb-num">008</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 008</p>
-            <p class="episode-title">Why Japan's Greatest Hero Declared War on the Revolution He Created</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal" href="https://youtu.be/2tO6djVL0q8" target="_blank" rel="noopener">
-          <div class="episode-thumb t1"><span class="episode-thumb-num">009</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 009</p>
-            <p class="episode-title">The Warrior Who Lost Everything — And Became Japan's Greatest Samurai</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-2" href="https://youtu.be/Xmr8tkRIHYY" target="_blank" rel="noopener">
-          <div class="episode-thumb t2"><span class="episode-thumb-num">010</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 010</p>
-            <p class="episode-title">The Day One Samurai Destroyed Japan's Most Powerful Sword School — Alone</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-3" href="https://youtu.be/xZQmj0i14oc" target="_blank" rel="noopener">
-          <div class="episode-thumb t3"><span class="episode-thumb-num">011</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 011</p>
-            <p class="episode-title">The 'Demon King' Who Shattered Medieval Japan — And Vanished Without a Trace</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-4" href="https://youtu.be/VFzHiWmeHJE" target="_blank" rel="noopener">
-          <div class="episode-thumb t4"><span class="episode-thumb-num">012</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 012</p>
-            <p class="episode-title">13 Days: How One General Turned His Lord's Murder Into a Dynasty</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal" href="https://youtu.be/lMFgM4Q8yx4" target="_blank" rel="noopener">
-          <div class="episode-thumb t1"><span class="episode-thumb-num">013</span></div>
+        <a class="episode-card reveal reveal-delay-2" href="https://youtu.be/lMFgM4Q8yx4" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/lMFgM4Q8yx4/mqdefault.jpg" alt="Why Miyamoto Musashi's Final Weapon Was a Brush, Not a Sword" loading="lazy"></div>
           <div class="episode-info">
             <p class="episode-num">EPISODE 013</p>
             <p class="episode-title">Why Miyamoto Musashi's Final Weapon Was a Brush, Not a Sword</p>
           </div>
         </a>
 
-        <a class="episode-card reveal reveal-delay-2" href="https://youtu.be/rJiO7I-llw4" target="_blank" rel="noopener">
-          <div class="episode-thumb t2"><span class="episode-thumb-num">014</span></div>
+        <a class="episode-card reveal reveal-delay-3" href="https://youtu.be/VFzHiWmeHJE" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/VFzHiWmeHJE/mqdefault.jpg" alt="13 Days: How One General Turned His Lord's Murder Into a Dynasty" loading="lazy"></div>
           <div class="episode-info">
-            <p class="episode-num">EPISODE 014</p>
-            <p class="episode-title">Why Japan's Greatest Cavalry Charged Straight Into 3,000 Guns</p>
+            <p class="episode-num">EPISODE 012</p>
+            <p class="episode-title">13 Days: How One General Turned His Lord's Murder Into a Dynasty</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal reveal-delay-4" href="https://youtu.be/xZQmj0i14oc" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/xZQmj0i14oc/mqdefault.jpg" alt="The 'Demon King' Who Shattered Medieval Japan — And Vanished Without a Trace" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 011</p>
+            <p class="episode-title">The 'Demon King' Who Shattered Medieval Japan — And Vanished Without a Trace</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal" href="https://youtu.be/Xmr8tkRIHYY" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/Xmr8tkRIHYY/mqdefault.jpg" alt="The Day One Samurai Destroyed Japan's Most Powerful Sword School — Alone" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 010</p>
+            <p class="episode-title">The Day One Samurai Destroyed Japan's Most Powerful Sword School — Alone</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal reveal-delay-2" href="https://youtu.be/2tO6djVL0q8" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/2tO6djVL0q8/mqdefault.jpg" alt="The Warrior Who Lost Everything — And Became Japan's Greatest Samurai" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 009</p>
+            <p class="episode-title">The Warrior Who Lost Everything — And Became Japan's Greatest Samurai</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal reveal-delay-3" href="https://youtu.be/CvdXyK2J6x4" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/CvdXyK2J6x4/mqdefault.jpg" alt="Why Japan's Greatest Hero Declared War on the Revolution He Created" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 008</p>
+            <p class="episode-title">Why Japan's Greatest Hero Declared War on the Revolution He Created</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal reveal-delay-4" href="https://youtu.be/ghHOBmFQvs8" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/ghHOBmFQvs8/mqdefault.jpg" alt="The One-Eyed Dragon Who Conquered Japan at 20 — Then Lost It All" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 007</p>
+            <p class="episode-title">The One-Eyed Dragon Who Conquered Japan at 20 — Then Lost It All</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal" href="https://youtu.be/SMYdQA_vH-g" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/SMYdQA_vH-g/mqdefault.jpg" alt="Japan's Greatest Warrior Was Destroyed By His Own Brother | Minamoto no Yoshitsune" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 006</p>
+            <p class="episode-title">Japan's Greatest Warrior Was Destroyed By His Own Brother | Minamoto no Yoshitsune</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal reveal-delay-2" href="https://youtu.be/AD1QPvfZZqU" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/AD1QPvfZZqU/mqdefault.jpg" alt="The Sandal-Bearer Who Became Ruler of Japan: Toyotomi Hideyoshi" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 005</p>
+            <p class="episode-title">The Sandal-Bearer Who Became Ruler of Japan: Toyotomi Hideyoshi</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal reveal-delay-3" href="https://youtu.be/pjgU_IK0fJU" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/pjgU_IK0fJU/mqdefault.jpg" alt="The Battle That Decided Japan's Fate | Sekigahara 1600" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 004</p>
+            <p class="episode-title">The Battle That Decided Japan's Fate | Sekigahara 1600</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal reveal-delay-4" href="https://youtu.be/pje6shzYYZU" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/pje6shzYYZU/mqdefault.jpg" alt="The Boy Hostage Who Became Japan's Shogun | Tokugawa Ieyasu" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 003</p>
+            <p class="episode-title">The Boy Hostage Who Became Japan's Shogun | Tokugawa Ieyasu</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal" href="https://youtu.be/TyxdaK8mu_E" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/TyxdaK8mu_E/mqdefault.jpg" alt="The Night Japan's Most Powerful Warlord Was Betrayed: The Honnoji Incident" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 002</p>
+            <p class="episode-title">The Night Japan's Most Powerful Warlord Was Betrayed: The Honnoji Incident</p>
+          </div>
+        </a>
+
+        <a class="episode-card reveal reveal-delay-2" href="https://youtu.be/kZN4msDx9Tg" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/kZN4msDx9Tg/mqdefault.jpg" alt="The Deadliest Duel in Japanese History: Musashi vs Kojiro" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE 001</p>
+            <p class="episode-title">The Deadliest Duel in Japanese History: Musashi vs Kojiro</p>
           </div>
         </a>
       </div>

@@ -20,8 +20,6 @@ EPISODES_DIR = BASE_DIR / "episodes"
 OUTPUT_HTML = BASE_DIR / "index.html"
 CHANNEL_URL = "https://www.youtube.com/@Samurai-Chronicles-JP"
 
-THUMB_CLASSES = ["t1", "t2", "t3", "t4"]
-
 EPISODE_IDS = [
     "ep001", "ep002", "ep003", "ep004", "ep005", "ep006", "ep007",
     "ep008", "ep009", "ep010", "ep011", "ep012", "ep013", "ep014",
@@ -40,23 +38,39 @@ def load_episodes() -> list[dict]:
             print(f"  ⚠️  {ep_id}.json が読み込めませんでした（スキップ）")
             continue
         episodes.append(d)
+    # 最新エピソードを先頭に
+    episodes.reverse()
     return episodes
+
+
+def _video_id(ep: dict) -> str:
+    """youtube_url から video ID を取り出す。"""
+    url = ep.get("youtube_url", "")
+    if "youtu.be/" in url:
+        return url.split("youtu.be/")[-1].strip()
+    if "watch?v=" in url:
+        return url.split("watch?v=")[-1].split("&")[0].strip()
+    return ""
 
 
 def episode_cards_html(episodes: list[dict]) -> str:
     lines = []
     for i, ep in enumerate(episodes):
         ep_id = ep.get("episode_id", "")
-        num_str = ep_id.replace("ep", "").lstrip("0") or "0"
         num_padded = ep_id.replace("ep", "")  # "001"
         title = ep.get("youtube_title") or ep.get("episode_title", "Coming Soon")
         url = ep.get("youtube_url") or CHANNEL_URL
-        thumb_cls = THUMB_CLASSES[i % len(THUMB_CLASSES)]
         delay_cls = f" reveal-delay-{(i % 4) + 1}" if (i % 4) != 0 else ""
+
+        vid_id = _video_id(ep)
+        if vid_id:
+            thumb_html = f'<img src="https://img.youtube.com/vi/{vid_id}/mqdefault.jpg" alt="{title}" loading="lazy">'
+        else:
+            thumb_html = f'<span class="episode-thumb-num">{num_padded}</span>'
 
         lines.append(f"""
         <a class="episode-card reveal{delay_cls}" href="{url}" target="_blank" rel="noopener">
-          <div class="episode-thumb {thumb_cls}"><span class="episode-thumb-num">{num_padded}</span></div>
+          <div class="episode-thumb">{thumb_html}</div>
           <div class="episode-info">
             <p class="episode-num">EPISODE {num_padded}</p>
             <p class="episode-title">{title}</p>
@@ -342,35 +356,46 @@ def build():
     .episode-thumb {{
       width: 100%;
       aspect-ratio: 16 / 9;
+      background: #111;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
       overflow: hidden;
     }}
-    .episode-thumb.t1 {{ background: linear-gradient(135deg, #1c0505 0%, #4a0000 50%, #1a1a1a 100%); }}
-    .episode-thumb.t2 {{ background: linear-gradient(135deg, #1a0a00 0%, #3d1500 50%, #1a1a1a 100%); }}
-    .episode-thumb.t3 {{ background: linear-gradient(135deg, #0a0a1c 0%, #00003d 50%, #1a1a1a 100%); }}
-    .episode-thumb.t4 {{ background: linear-gradient(135deg, #0f0a00 0%, #3d2600 50%, #1a1a1a 100%); }}
+    .episode-thumb img {{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      filter: brightness(0.92);
+    }}
+    .episode-card:hover .episode-thumb img {{
+      transform: scale(1.04);
+      filter: brightness(1);
+    }}
+    /* サムネイルなし時のフォールバック */
     .episode-thumb-num {{
       font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: clamp(1.8rem, 5vw, 2.6rem);
-      color: rgba(201, 168, 76, 0.18);
+      color: rgba(201, 168, 76, 0.25);
       letter-spacing: 0.1em;
       user-select: none;
-      transition: color 0.3s ease;
     }}
-    .episode-card:hover .episode-thumb-num {{ color: rgba(201, 168, 76, 0.35); }}
+    /* ホバー時の再生アイコン */
     .episode-thumb::after {{
       content: '▶';
       position: absolute;
-      font-size: 1.4rem;
-      color: rgba(201, 168, 76, 0.35);
+      font-size: 1.6rem;
+      color: rgba(255, 255, 255, 0);
       transition: color 0.3s ease, transform 0.3s ease;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.8);
+      pointer-events: none;
     }}
     .episode-card:hover .episode-thumb::after {{
-      color: rgba(201, 168, 76, 0.75);
+      color: rgba(255, 255, 255, 0.9);
       transform: scale(1.15);
     }}
     .episode-info {{ padding: 16px; }}
