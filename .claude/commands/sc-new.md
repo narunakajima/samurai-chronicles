@@ -553,6 +553,9 @@ ep{NNN} の制作が完了しました。
   - ep{NNN}_shorts.mp4
   - ep{NNN}.srt
 
-次のステップ:
-  /sc-upload  # YouTube アップロード（本編・Shorts・字幕・即時公開）
+動画を確認してから /sc-upload でアップロードしてください。
 ```
+
+**⚠️ 重要:** STEP 6 完了後はここで必ず停止する。
+`sc_sns_up.py` の自動実行・`/sc-upload` の自動呼び出しは絶対に行わない。
+アップロードはユーザーが明示的に `/sc-upload` を実行した時のみ行う。
