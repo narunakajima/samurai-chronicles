@@ -2,7 +2,7 @@
   "episode_id": "ep008",
   "episode_title": "The Last Samurai: Saigo Takamori and the Satsuma Rebellion",
   "youtube_title": "Why Japan's Greatest Hero Declared War on the Revolution He Created",
-  "youtube_description": "He helped overthrow the last shogunate. He helped build the new Japan. Then he raised an army against it. Saigo Takamori is the most beloved and most paradoxical figure in Japanese history — and his final rebellion is one of the most extraordinary last stands ever fought.\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Mark Ravina, \"The Last Samurai: The Life and Battles of Saigo Takamori\" (2004) — Wiley\n2. Ivan Morris, \"The Nobility of Failure\" (1975) — Holt, Rinehart and Winston\n3. Marius Jansen, \"The Making of Modern Japan\" (2000) — Harvard University Press\n\n#samurai #japanesehistory #saigotakamori #japan #history #meiji #satsuma #thelastsamurai",
+  "youtube_description": "He helped overthrow the last shogunate. He helped build the new Japan. Then he raised an army against it. Saigo Takamori is the most beloved and most paradoxical figure in Japanese history — and his final rebellion is one of the most extraordinary last stands ever fought.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 He helped overthrow the last...\n0:44 The year is 1868 — the\n1:37 Saigo Takamori is born in 1828\n2:29 Before Saigo can change...\n3:22 By the 1860s, Saigo has returned\n4:18 In the new Meiji government,...\n5:12 The Meiji government's...\n6:08 In 1873, the crisis arrives....\n7:08 When the Meiji government...\n8:09 Saigo founds a network of...\n9:08 In February 1877, Saigo...\n10:06 The first objective is...\n11:01 The decisive battle of the...\n12:03 From Tabaruzaka, the retreat...\n13:13 On September 24, 1877, the...\n14:18 The question Japan has asked for\n15:11 The irony of Saigo Takamori is\n16:07 Outside Japan, Saigo Takamori...\n17:04 Saigo Takamori chose to die for\n17:56 History is made by winners. But\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Mark Ravina, \"The Last Samurai: The Life and Battles of Saigo Takamori\" (2004) — Wiley\n2. Ivan Morris, \"The Nobility of Failure\" (1975) — Holt, Rinehart and Winston\n3. Marius Jansen, \"The Making of Modern Japan\" (2000) — Harvard University Press\n\n#samurai #japanesehistory #saigotakamori #japan #history #meiji #satsuma #thelastsamurai",
   "youtube_tags": [
     "saigo takamori",
     "last samurai",
@@ -35,7 +35,7 @@
     {
       "scene_id": 1,
       "type": "hook",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "He helped overthrow the last shogunate. Then he raised an army against the government he built. Who was the man Japan calls its greatest samurai — and why did he choose to die?",
       "image_prompt": "Saigo Takamori silhouetted against a grey dawn sky on the slopes of Shiroyama, massive and alone, facing toward a vast encircling army below, katana at his side, absolute stillness before the final charge",
       "ken_burns": "zoom_in",
@@ -44,7 +44,7 @@
     {
       "scene_id": 2,
       "type": "setup",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "The year is 1868 — the year Japan's centuries-old feudal order finally collapses. The Tokugawa shogunate, which has ruled for over two hundred and sixty years, is swept away in a revolution that many believed impossible. The emperor is restored to power. The age of the samurai, it seems, is over. Among the men who made this revolution possible stands one figure above all others: a warrior from the southern domain of Satsuma who fought to build a new Japan — and who will one day take up arms to destroy it.",
       "image_prompt": "The imperial army marching into Edo in 1868, massive columns of soldiers with banners of the chrysanthemum crest, the old Tokugawa castle in the background, the dawn of a new era visible in the rising sun over the city",
       "ken_burns": "pan_right",
@@ -53,7 +53,7 @@
     {
       "scene_id": 3,
       "type": "setup",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "Saigo Takamori is born in 1828 in Kagoshima, the heart of the Satsuma domain. He is not a great lord — he comes from the lower ranks of the samurai class, the son of a minor official. But from his earliest years, he stands out. Physically he is enormous — unusually tall and broad for a Japanese man of his time. And morally he is relentless: driven by a ferocious sense of duty and an absolute belief that the samurai code is not merely tradition but truth. Japan has never produced a man quite like him.",
       "image_prompt": "Young Saigo Takamori in a rural Kagoshima village, an unusually large boy even at a young age, practicing sword forms in a courtyard with intense concentration, the volcanic landscape of Sakurajima visible in the background across the bay",
       "ken_burns": "zoom_in",
@@ -62,7 +62,7 @@
     {
       "scene_id": 4,
       "type": "rising_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "Before Saigo can change Japan, Japan nearly breaks him. Twice exiled to remote island outposts by his own Satsuma domain — once to Amami Oshima, once to an even more isolated island to the south — he spends years in forced obscurity. He marries a local woman, works in fishing, and nearly disappears from history entirely. But the domain always calls him back. Whatever his superiors thought of his politics, they could not find another man of equal ability, equal loyalty, or equal force of character. Some men simply cannot be permanently discarded.",
       "image_prompt": "Saigo Takamori on the remote island of Amami Oshima, fishing on a weathered boat in tropical waters, looking toward the distant horizon with the expression of a man waiting, the lush island greenery contrasting with his inner exile",
       "ken_burns": "pan_left",
@@ -71,7 +71,7 @@
     {
       "scene_id": 5,
       "type": "rising_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "By the 1860s, Saigo has returned to the center of power in Satsuma. He forms an alliance with his childhood friend and eventual rival, Okubo Toshimichi — together the two most capable men in the domain. While Okubo works through diplomacy and administration, Saigo commands armies. He leads Satsuma forces through the Boshin War — the military campaign that overthrows the Tokugawa shogunate and restores imperial rule. His troops are decisive at every engagement. His reputation is unmatched. By any measure, he is one of the three men who made the Meiji Restoration possible.",
       "image_prompt": "Saigo Takamori commanding Satsuma troops during the Boshin War, his enormous frame visible above his men as he directs the battle, soldiers in mixed Western and traditional armor pressing forward, the heat of battle around him",
       "ken_burns": "zoom_in",
@@ -80,7 +80,7 @@
     {
       "scene_id": 6,
       "type": "rising_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "In the new Meiji government, Saigo is given extraordinary authority. He becomes commander of the imperial guard and one of the most powerful men in Japan. But the government moves fast — embracing Western technology, abolishing the samurai class, replacing feudal domains with prefectures, and conscripting ordinary farmers into a modern army. For the bureaucrats and modernizers around him, this is progress. For Saigo, who believes the samurai code is the moral foundation of Japan itself, it begins to feel like the systematic destruction of everything he fought to protect.",
       "image_prompt": "The collision of old and new Japan — a steam locomotive passing before ancient castle walls, Western-suited officials alongside traditional samurai, the Meiji transformation made visual in a single panoramic scene",
       "ken_burns": "pan_right",
@@ -89,7 +89,7 @@
     {
       "scene_id": 7,
       "type": "rising_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "The Meiji government's transformation is staggering in its speed. Within years, samurai are forbidden to carry swords. The feudal stipends that sustained warrior families for generations are abolished with a single policy. Men who fought and bled in the Restoration find themselves stripped of status and income overnight. Saigo watches with mounting despair. He does not oppose modernization — he believes Japan must grow strong. But he fears a Japan that builds railways and telegraph lines while dismantling the moral architecture that made Japanese civilization worth defending in the first place.",
       "image_prompt": "Former samurai in civilian clothes watching as their swords are collected and catalogued by Meiji officials, proud men reduced to spectators of their own obsolescence, the weight of centuries ending visible in their expressions",
       "ken_burns": "zoom_out",
@@ -98,7 +98,7 @@
     {
       "scene_id": 8,
       "type": "rising_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "In 1873, the crisis arrives. Saigo proposes sending himself to Korea as ambassador — knowing the mission is likely to end in his death. His reasoning is calculated: if Korea executes Japan's ambassador, Japan gains the moral justification to respond militarily, and Japan's disaffected samurai class gains a purpose. His colleagues in the government see it differently — reckless provocation that would plunge Japan into a war it cannot yet afford. The debate splits the council in half. It is the most consequential argument in the history of the new Japan, and it is about to end everything.",
       "image_prompt": "The Meiji government council chamber in 1873, fierce debate visible in the faces of officials seated around a long table, Saigo's massive presence dominating one end, Okubo's cold calculation visible at the other, two visions of Japan's future in open conflict",
       "ken_burns": "zoom_in",
@@ -107,7 +107,7 @@
     {
       "scene_id": 9,
       "type": "rising_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "When the Meiji government votes against his Korea mission, Saigo resigns. He does not fight the decision. He does not plot. He simply leaves Tokyo and returns to Kagoshima — farming, hunting with his dogs, living quietly among old friends. But the men who served under him follow. Thousands of former samurai, stripped of income and purpose, gravitate toward the one man who still embodies what they were. In Kagoshima, without seeking it, Saigo becomes the center of a growing force. He has stepped back from power. Power has refused to leave him alone.",
       "image_prompt": "Saigo Takamori walking through the rural landscape of Kagoshima with his large dogs, the volcanic silhouette of Sakurajima across the bay, former samurai followers quietly gathering in his wake, a man at peace who is also the center of something about to ignite",
       "ken_burns": "pan_right",
@@ -116,7 +116,7 @@
     {
       "scene_id": 10,
       "type": "rising_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "Saigo founds a network of private schools — the Shigakko — where thousands of young men study military discipline alongside the old samurai values. By 1876, the schools have enrolled tens of thousands of students across Kagoshima. The Meiji government watches with alarm. Tokyo sends agents to spy on the schools, and secretly orders the transfer of weapons from Kagoshima's armories before they can fall into rebel hands. When Saigo's students discover the agents' mission and attack the armories themselves, the confrontation is small but irreversible. The spark has been struck. The fire cannot be unlit.",
       "image_prompt": "Young men in the Shigakko drilling in military formation with traditional weapons, intensity and discipline in every movement, Saigo Takamori watching approvingly from a distance, the energy of thousands of men with a purpose and no outlet",
       "ken_burns": "zoom_in",
@@ -125,7 +125,7 @@
     {
       "scene_id": 11,
       "type": "falling_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "In February 1877, Saigo Takamori picks up his sword for the last time. Whether he truly wanted war or whether his students' actions left him no choice, historians still debate. What is beyond doubt is what happens next. Fifteen thousand Satsuma samurai — among the finest warriors Japan has ever produced — march north through cold winter rain toward Kumamoto. They carry their katana and their rifles and their centuries of pride. They are marching against the government that Saigo himself helped create. Every man among them knows it. And not one turns back.",
       "image_prompt": "Fifteen thousand Satsuma samurai marching in columns through winter rain, banners streaming, katana and rifles carried together, Saigo Takamori at their head — enormous, resolute, already knowing the mathematics of what he is doing, the most magnificent and doomed army Japan ever fielded",
       "ken_burns": "pan_left",
@@ -134,7 +134,7 @@
     {
       "scene_id": 12,
       "type": "falling_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "The first objective is Kumamoto Castle — a massive fortification in central Kyushu, garrisoned by imperial troops. Saigo's men expect a quick siege. They do not get one. The imperial commander holds the castle through weeks of assault, waiting for relief from the north. Saigo's forces surround and bombard it, attempting to starve the garrison out. But the new Meiji army is already moving — trainloads of conscripted soldiers with modern rifles and artillery, pouring south from Tokyo faster than anyone anticipated. The ancient siege tactics that once decided Japanese wars are meeting something they were never designed to defeat.",
       "image_prompt": "Kumamoto Castle besieged — the massive fortification standing firm against Satsuma attackers, smoke rising from cannon fire, the castle's black walls and white plaster defiant against the assault, the sense of a siege that is going wrong for the attackers",
       "ken_burns": "zoom_out",
@@ -143,7 +143,7 @@
     {
       "scene_id": 13,
       "type": "falling_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "The decisive battle of the Satsuma Rebellion is fought not at a famous castle but on a hillside mountain road: the Battle of Tabaruzaka. For eleven days, Saigo's samurai hold a narrow mountain pass against the advancing imperial army. The fighting is brutal — sword charges through mud and rain, hand-to-hand combat on slopes too steep for formation tactics. The samurai inflict enormous casualties. But they cannot hold forever. Imperial reinforcements are inexhaustible. At Tabaruzaka, the rebellion reaches its highest point, sustains its greatest losses, and begins the slow, irreversible descent toward its end.",
       "image_prompt": "The Battle of Tabaruzaka — samurai charging through mud and rain on steep mountain slopes, the narrow pass choked with fighting men, sword and rifle fire in the grey mist, the ferocity of men who know they are fighting a losing battle but refuse to lose it quickly",
       "ken_burns": "zoom_in",
@@ -152,7 +152,7 @@
     {
       "scene_id": 14,
       "type": "falling_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "From Tabaruzaka, the retreat begins. Saigo's army — once fifteen thousand strong — falls back across Kyushu in fighting withdrawal, contesting every position with ferocity. They are not routed. They fight with extraordinary discipline. But the mathematics are brutal: a conscript army supplied by steamship and railway cannot be stopped by courage alone. Saigo moves south, then further south. His army shrinks with each engagement — thousands, then hundreds. By the time he reaches Kagoshima in September, he commands fewer than five hundred men. The city that sent fifteen thousand warriors north seven months ago receives five hundred survivors.",
       "image_prompt": "The long retreat across Kyushu — Saigo's diminishing army moving through autumn landscapes, the roads behind them marked with the aftermath of fighting withdrawals, the massive figure of Saigo still upright and commanding at the head of an army that grows smaller with every passing week",
       "ken_burns": "pan_right",
@@ -161,7 +161,7 @@
     {
       "scene_id": 15,
       "type": "falling_action",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "On September 24, 1877, the imperial army encircles Shiroyama — a small forested hill above Kagoshima — where Saigo and his final five hundred men have taken position. Thirty thousand imperial soldiers surround the hill. Naval gunships in the harbor train their guns on the slopes. In the predawn darkness, the final assault begins. Saigo is wounded almost immediately. He is carried forward by loyal retainers through the chaos of the last charge. Somewhere on that hillside, before the sun fully rises, he dies. The manner of his death — battle wound or ritual seppuku — is still debated. The fact of it is not.",
       "image_prompt": "Shiroyama at dawn — the small forested hill surrounded by thirty thousand imperial soldiers, naval ships in the harbor below, the final five hundred making their last charge down the slopes into the encircling army, the predawn sky just beginning to lighten over Kagoshima Bay",
       "ken_burns": "zoom_out",
@@ -170,7 +170,7 @@
     {
       "scene_id": 16,
       "type": "insight",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "The question Japan has asked for a hundred and fifty years: what was Saigo Takamori really fighting for? He knew, by 1877, that he could not win. He knew five hundred men could not defeat thirty thousand. There is a concept in Japanese — the beautiful, purposeful sacrifice, a death so honorable it becomes its own kind of victory. Saigo did not fight the Satsuma Rebellion to overthrow the Meiji government. He fought it to prove that the samurai spirit cannot be abolished by legislation — it can only be outlived. And in choosing how he died, he ensured it never would be.",
       "image_prompt": "A contemplative image of Saigo Takamori in meditation, the weight of his decision visible in his stillness, cherry blossoms falling around him — the Japanese aesthetic of beautiful impermanence surrounding the man who chose to embody it",
       "ken_burns": "zoom_in",
@@ -179,7 +179,7 @@
     {
       "scene_id": 17,
       "type": "insight",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "The irony of Saigo Takamori is that his rebellion made him more beloved, not less. Within years of his death, the Meiji government he fought against formally pardoned him. His statue was erected in Ueno Park in Tokyo in 1898 — placed there by the government whose army had killed him. He is remembered not as a rebel but as Japan's most complete man: a warrior, a statesman, a loyalist, and finally a willing sacrifice. His story shaped the Japanese ideal of the samurai for the generations that followed. Japan forgave him because Japan recognized itself in him.",
       "image_prompt": "The Saigo Takamori statue in Ueno Park, Tokyo — the massive bronze figure in casual kimono with his dogs, ordinary citizens passing below, the monument to a man the government killed and then immortalized, the great paradox of Japanese memory made physical",
       "ken_burns": "pan_left",
@@ -188,7 +188,7 @@
     {
       "scene_id": 18,
       "type": "insight",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "Outside Japan, Saigo Takamori is best known through a Hollywood film that carries his spirit but not his name. 'The Last Samurai' borrows his rebellion, his battle against modernization, and his final charge — but changes nearly every detail. In Japan, his memory runs far deeper. He is studied in schools, celebrated in museums, depicted in countless manga and television dramas. His home city of Kagoshima honors him still. Whatever Japan has become — and it has become extraordinary — it has never entirely released the image of the great bear-like warrior who refused to let go of what Japan was.",
       "image_prompt": "A collage of Saigo Takamori's legacy — his image in a Meiji-era woodblock print, a museum display, the poster for a television historical drama, and the Ueno statue — the unbroken thread of a man who died in 1877 and has never stopped being present in Japanese culture",
       "ken_burns": "zoom_in",
@@ -197,7 +197,7 @@
     {
       "scene_id": 19,
       "type": "teaser",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "Saigo Takamori chose to die for a lost cause. But he was not the first samurai to earn undying fame precisely by losing. Three centuries before Shiroyama, another warrior fought his greatest battle on the wrong side of history — outnumbered, outflanked, and fully aware he could not win. He was called Japan's greatest loser. His name was Sanada Yukimura. He fought in the final conflict of the Sengoku era, came within moments of killing the most powerful warlord in Japan, and died on a battlefield that closed an entire age. That story is next.",
       "image_prompt": "Sanada Yukimura in his iconic red armor on a dramatic battlefield, the vast scale of Osaka Castle visible in the background, the final conflict of the Sengoku era about to begin, the energy of a warrior who knows he cannot win but will make the attempt legendary",
       "ken_burns": "pan_right",
@@ -206,7 +206,7 @@
     {
       "scene_id": 20,
       "type": "outro",
-      "duration_seconds": 10,
+      "duration_seconds": 20,
       "narration": "History is made by winners. But it is remembered through men like Saigo Takamori — warriors who chose principle over survival, and whose defeats became more enduring than most men's victories. If this story moved you, subscribe to Samurai Chronicles for a new episode every day. Every episode uncovers a different face of Japan's warrior past — the brilliant, the brutal, and the unforgettable. Leave a comment below: do you think Saigo made the right choice in 1877? Could he have found another path? We read every response. We will see you in the next episode.",
       "image_prompt": "The slopes of Shiroyama today — a quiet forested hill above Kagoshima, with a small memorial where Saigo fell, morning light through ancient trees, the bay and Sakurajima visible below, the absolute peace of a place where something enormous once ended",
       "ken_burns": "zoom_out",
