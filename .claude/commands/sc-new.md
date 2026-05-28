@@ -338,9 +338,10 @@ Freesound から2曲ダウンロードし、`bgm_library.json` からエピソ�
 - **禁止キーワード:** shamisen 単体, piano 単体, ambient, meditation, acoustic, folk, traditional, nature, forest, rain, calm, relaxing, light
 
 ```bash
+mkdir -p "$HOME/Desktop/BGM"
 FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
   "<Q1>" "<Q2>" \
-  "$HOME/Desktop/" \
+  "$HOME/Desktop/BGM/" \
   --round 0
 ```
 
@@ -348,23 +349,23 @@ FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_downlo
 
 ```bash
 mkdir -p /tmp/sc_bgm_credits
-mv "$HOME/Desktop/BGM_candidate_"*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null || true
+mv "$HOME/Desktop/BGM/BGM_candidate_"*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null || true
 ```
 
 #### ② ライブラリから2曲選択
 
-`bgm_library.json` を読み込み、エピソードのタイトル・ナレーション・シーン構成（climax/rising_action の多さ、トーン）を考慮して タグが合致する上位2件を選ぶ。
+`bgm_library.json` を読み込み、エピソードのタイトル・ナレーション・シーン構成（climax/rising_action の多さ、トーン）を考慮してタグが合致する上位2件を選ぶ。
 
-選んだ2件をデスクトップにコピー（試聴用の一時コピー。選択後は削除）：
+選んだ2件を `~/Desktop/BGM/` にコピー（試聴用の一時コピー。選択後は削除）：
 
 ```bash
 DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles"
-cp "$DRIVE/<path1>" "$HOME/Desktop/BGM_library_01_<name>.mp3"
-cp "$DRIVE/<path2>" "$HOME/Desktop/BGM_library_02_<name>.mp3"
+cp "$DRIVE/<path1>" "$HOME/Desktop/BGM/BGM_library_01_<name>.mp3"
+cp "$DRIVE/<path2>" "$HOME/Desktop/BGM/BGM_library_02_<name>.mp3"
 # CC BY の場合は credit.txt も /tmp/sc_bgm_credits/ に保存しておく
 ```
 
-デスクトップには合計4曲が並ぶ：
+`~/Desktop/BGM/` に合計4曲が並ぶ：
 ```
 BGM_candidate_01_xxx.mp3   ← Freesound 新規
 BGM_candidate_02_xxx.mp3   ← Freesound 新規
@@ -420,7 +421,7 @@ mv "$HOME/Desktop/ep{NNN}_制作確認書.txt" "$DRIVE/"
 mv "$HOME/Desktop/ep{NNN}_thumbnail.png" "$DRIVE/"
 
 # 残ったBGM1曲を判定: Freesound新規 or ライブラリ
-CHOSEN=$(ls "$HOME/Desktop/BGM_candidate_"*.mp3 "$HOME/Desktop/BGM_library_"*.mp3 2>/dev/null | head -1)
+CHOSEN=$(ls "$HOME/Desktop/BGM/BGM_candidate_"*.mp3 "$HOME/Desktop/BGM/BGM_library_"*.mp3 2>/dev/null | head -1)
 CHOSEN_STEM=$(basename "$CHOSEN" .mp3)
 
 if [[ "$CHOSEN" == *"BGM_candidate_"* ]]; then
@@ -442,6 +443,7 @@ else
     --use-library --episode ep{NNN} --stem "$CHOSEN_STEM"
   # ライブラリ曲の試聴コピーを削除
   rm -f "$CHOSEN"
+  rmdir "$HOME/Desktop/BGM" 2>/dev/null || true
   # クレジット注入（CC BY の場合）
   CREDIT="/tmp/sc_bgm_credits/${CHOSEN_STEM}.credit.txt"
   if [ -f "$CREDIT" ]; then
