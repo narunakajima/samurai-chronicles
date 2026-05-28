@@ -198,6 +198,16 @@ def run(episode_id: str):
     print(f"  Shorts: https://youtu.be/{shorts_id}")
     print(f"{'━'*60}\n")
 
+    # キャラクタープレイリスト自動更新
+    print(f"{'━'*60}")
+    print(f"  プレイリスト処理")
+    print(f"{'━'*60}")
+    try:
+        from sc_playlist_manager import update_playlists
+        update_playlists(youtube, episode_id, main_id, ep)
+    except Exception as e:
+        print(f"  ⚠️  プレイリスト処理でエラー（アップロード自体は成功）: {e}")
+
 
 def fix_shorts_description(episode_id: str, shorts_id: str):
     """既存ShortsのURLを新フォーマットの説明文に更新する（本編IDは自動取得）"""
