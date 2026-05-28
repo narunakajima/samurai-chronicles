@@ -1,4 +1,80 @@
-<!DOCTYPE html>
+"""
+sc_build_site.py — episode JSON から index.html を自動生成
+
+使い方:
+  python3 sc_build_site.py
+
+episodes/*.json を読み込んで index.html を上書き生成する。
+各エピソードの youtube_url が設定されていれば個別リンク、
+未設定の場合はチャンネルトップにフォールバック。
+
+/sc-upload 後に自動実行されることを想定。
+"""
+
+import json
+import sys
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+EPISODES_DIR = BASE_DIR / "episodes"
+OUTPUT_HTML = BASE_DIR / "index.html"
+CHANNEL_URL = "https://www.youtube.com/@Samurai-Chronicles-JP"
+
+THUMB_CLASSES = ["t1", "t2", "t3", "t4"]
+
+EPISODE_IDS = [
+    "ep001", "ep002", "ep003", "ep004", "ep005", "ep006", "ep007",
+    "ep008", "ep009", "ep010", "ep011", "ep012", "ep013", "ep014",
+]
+
+
+def load_episodes() -> list[dict]:
+    episodes = []
+    for ep_id in EPISODE_IDS:
+        p = EPISODES_DIR / f"{ep_id}.json"
+        if not p.exists() or p.stat().st_size == 0:
+            continue
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            print(f"  ⚠️  {ep_id}.json が読み込めませんでした（スキップ）")
+            continue
+        episodes.append(d)
+    return episodes
+
+
+def episode_cards_html(episodes: list[dict]) -> str:
+    lines = []
+    for i, ep in enumerate(episodes):
+        ep_id = ep.get("episode_id", "")
+        num_str = ep_id.replace("ep", "").lstrip("0") or "0"
+        num_padded = ep_id.replace("ep", "")  # "001"
+        title = ep.get("youtube_title") or ep.get("episode_title", "Coming Soon")
+        url = ep.get("youtube_url") or CHANNEL_URL
+        thumb_cls = THUMB_CLASSES[i % len(THUMB_CLASSES)]
+        delay_cls = f" reveal-delay-{(i % 4) + 1}" if (i % 4) != 0 else ""
+
+        lines.append(f"""
+        <a class="episode-card reveal{delay_cls}" href="{url}" target="_blank" rel="noopener">
+          <div class="episode-thumb {thumb_cls}"><span class="episode-thumb-num">{num_padded}</span></div>
+          <div class="episode-info">
+            <p class="episode-num">EPISODE {num_padded}</p>
+            <p class="episode-title">{title}</p>
+          </div>
+        </a>""")
+    return "\n".join(lines)
+
+
+def build():
+    episodes = load_episodes()
+    if not episodes:
+        print("❌ エピソードが見つかりませんでした")
+        sys.exit(1)
+
+    ep_count = len(episodes)
+    cards_html = episode_cards_html(episodes)
+
+    html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,13 +88,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after {
+    *, *::before, *::after {{
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }
+    }}
 
-    :root {
+    :root {{
       --crimson: #8B0000;
       --crimson-dark: #5c0000;
       --crimson-light: #a80000;
@@ -29,31 +105,31 @@
       --black-soft: #222222;
       --white: #f5f0e8;
       --white-dim: #c8bfb0;
-    }
+    }}
 
-    html { scroll-behavior: smooth; }
+    html {{ scroll-behavior: smooth; }}
 
-    body {
+    body {{
       background-color: var(--black);
       color: var(--white);
       font-family: 'EB Garamond', serif;
       overflow-x: hidden;
-    }
+    }}
 
     /* ─── SCROLL ANIMATION ─── */
-    .reveal {
+    .reveal {{
       opacity: 0;
       transform: translateY(28px);
       transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-    .reveal-delay-4 { transition-delay: 0.4s; }
+    }}
+    .reveal.visible {{ opacity: 1; transform: translateY(0); }}
+    .reveal-delay-1 {{ transition-delay: 0.1s; }}
+    .reveal-delay-2 {{ transition-delay: 0.2s; }}
+    .reveal-delay-3 {{ transition-delay: 0.3s; }}
+    .reveal-delay-4 {{ transition-delay: 0.4s; }}
 
     /* ─── HERO ─── */
-    .hero {
+    .hero {{
       min-height: 100svh;
       display: flex;
       flex-direction: column;
@@ -66,8 +142,8 @@
         radial-gradient(ellipse at 50% 0%, rgba(139, 0, 0, 0.35) 0%, transparent 65%),
         radial-gradient(ellipse at 50% 100%, rgba(0, 0, 0, 0.8) 0%, transparent 60%),
         var(--black);
-    }
-    .hero::before {
+    }}
+    .hero::before {{
       content: '';
       position: absolute;
       inset: 0;
@@ -76,8 +152,8 @@
         rgba(139, 0, 0, 0.03) 60px, rgba(139, 0, 0, 0.03) 61px
       );
       pointer-events: none;
-    }
-    .hero-logo {
+    }}
+    .hero-logo {{
       width: min(220px, 55vw);
       height: min(220px, 55vw);
       border-radius: 50%;
@@ -90,36 +166,36 @@
       animation: fadeInDown 1s ease both;
       position: relative;
       z-index: 1;
-    }
-    .hero-logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .hero-tagline {
+    }}
+    .hero-logo img {{ width: 100%; height: 100%; object-fit: cover; display: block; }}
+    .hero-tagline {{
       margin-top: 40px;
       animation: fadeInUp 1s 0.25s ease both;
       position: relative;
       z-index: 1;
-    }
-    .hero-tagline p {
+    }}
+    .hero-tagline p {{
       font-family: 'Cinzel', serif;
       font-weight: 400;
       font-size: clamp(1rem, 4vw, 1.35rem);
       letter-spacing: 0.05em;
       color: var(--white-dim);
       line-height: 1.7;
-    }
-    .hero-tagline p em { font-style: normal; color: var(--gold); }
-    .gold-rule {
+    }}
+    .hero-tagline p em {{ font-style: normal; color: var(--gold); }}
+    .gold-rule {{
       width: 80px;
       height: 1px;
       background: linear-gradient(to right, transparent, var(--gold), transparent);
       margin: 28px auto;
-    }
-    .hero-cta {
+    }}
+    .hero-cta {{
       margin-top: 0;
       animation: fadeInUp 1s 0.45s ease both;
       position: relative;
       z-index: 1;
-    }
-    .btn-primary {
+    }}
+    .btn-primary {{
       display: inline-block;
       padding: 16px 36px;
       background: var(--crimson);
@@ -133,39 +209,39 @@
       border-radius: 2px;
       transition: all 0.3s ease;
       box-shadow: 0 4px 20px rgba(139, 0, 0, 0.4);
-    }
-    .btn-primary:hover {
+    }}
+    .btn-primary:hover {{
       background: var(--crimson-light);
       border-color: var(--gold);
       color: var(--gold-light);
       box-shadow: 0 6px 30px rgba(139, 0, 0, 0.6);
       transform: translateY(-2px);
-    }
+    }}
 
     /* ─── STATS STRIP ─── */
-    .stats-strip {
+    .stats-strip {{
       background: var(--crimson-dark);
       border-top: 1px solid rgba(201, 168, 76, 0.25);
       border-bottom: 1px solid rgba(201, 168, 76, 0.25);
       padding: 28px 24px;
-    }
-    .stats-inner {
+    }}
+    .stats-inner {{
       max-width: 860px;
       margin: 0 auto;
       display: flex;
       justify-content: center;
       gap: clamp(32px, 8vw, 80px);
       flex-wrap: wrap;
-    }
-    .stat-item { text-align: center; }
-    .stat-num {
+    }}
+    .stat-item {{ text-align: center; }}
+    .stat-num {{
       font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: clamp(1.6rem, 5vw, 2.2rem);
       color: var(--gold);
       line-height: 1;
-    }
-    .stat-label {
+    }}
+    .stat-label {{
       font-family: 'Cinzel', serif;
       font-size: 0.6rem;
       letter-spacing: 0.2em;
@@ -173,12 +249,12 @@
       opacity: 0.75;
       margin-top: 6px;
       text-transform: uppercase;
-    }
+    }}
 
     /* ─── SECTION BASE ─── */
-    section { padding: 80px 24px; }
-    .section-inner { max-width: 860px; margin: 0 auto; }
-    .section-label {
+    section {{ padding: 80px 24px; }}
+    .section-inner {{ max-width: 860px; margin: 0 auto; }}
+    .section-label {{
       font-family: 'Cinzel', serif;
       font-size: 0.65rem;
       letter-spacing: 0.3em;
@@ -186,8 +262,8 @@
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 16px;
-    }
-    .section-heading {
+    }}
+    .section-heading {{
       font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: clamp(1.4rem, 5vw, 2rem);
@@ -195,61 +271,61 @@
       letter-spacing: 0.06em;
       color: var(--white);
       margin-bottom: 40px;
-    }
+    }}
 
     /* ─── ABOUT ─── */
-    .about {
+    .about {{
       background: var(--black-soft);
       border-top: 1px solid rgba(201, 168, 76, 0.15);
       border-bottom: 1px solid rgba(201, 168, 76, 0.15);
-    }
-    .about-text {
+    }}
+    .about-text {{
       text-align: center;
       font-size: clamp(1rem, 3vw, 1.15rem);
       line-height: 2;
       color: var(--white-dim);
       max-width: 600px;
       margin: 0 auto 40px;
-    }
-    .about-text strong { color: var(--gold); font-weight: 500; font-style: italic; }
-    .about-pillars {
+    }}
+    .about-text strong {{ color: var(--gold); font-weight: 500; font-style: italic; }}
+    .about-pillars {{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 20px;
       max-width: 720px;
       margin: 0 auto;
-    }
-    .pillar {
+    }}
+    .pillar {{
       text-align: center;
       padding: 24px 16px;
       border: 1px solid rgba(201, 168, 76, 0.2);
       border-radius: 3px;
       background: rgba(139, 0, 0, 0.06);
-    }
-    .pillar-icon { font-size: 1.8rem; margin-bottom: 12px; }
-    .pillar-label {
+    }}
+    .pillar-icon {{ font-size: 1.8rem; margin-bottom: 12px; }}
+    .pillar-label {{
       font-family: 'Cinzel', serif;
       font-size: 0.7rem;
       letter-spacing: 0.2em;
       color: var(--gold);
       text-transform: uppercase;
-    }
-    .pillar-desc {
+    }}
+    .pillar-desc {{
       font-size: 0.85rem;
       color: var(--white-dim);
       line-height: 1.6;
       margin-top: 8px;
       opacity: 0.8;
-    }
+    }}
 
     /* ─── EPISODES ─── */
-    .episodes { background: var(--black); }
-    .episodes-grid {
+    .episodes {{ background: var(--black); }}
+    .episodes-grid {{
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 20px;
-    }
-    .episode-card {
+    }}
+    .episode-card {{
       display: block;
       text-decoration: none;
       background: var(--black-soft);
@@ -257,13 +333,13 @@
       border-radius: 3px;
       overflow: hidden;
       transition: all 0.3s ease;
-    }
-    .episode-card:hover {
+    }}
+    .episode-card:hover {{
       border-color: rgba(201, 168, 76, 0.5);
       transform: translateY(-4px);
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-    }
-    .episode-thumb {
+    }}
+    .episode-thumb {{
       width: 100%;
       aspect-ratio: 16 / 9;
       display: flex;
@@ -271,12 +347,12 @@
       justify-content: center;
       position: relative;
       overflow: hidden;
-    }
-    .episode-thumb.t1 { background: linear-gradient(135deg, #1c0505 0%, #4a0000 50%, #1a1a1a 100%); }
-    .episode-thumb.t2 { background: linear-gradient(135deg, #1a0a00 0%, #3d1500 50%, #1a1a1a 100%); }
-    .episode-thumb.t3 { background: linear-gradient(135deg, #0a0a1c 0%, #00003d 50%, #1a1a1a 100%); }
-    .episode-thumb.t4 { background: linear-gradient(135deg, #0f0a00 0%, #3d2600 50%, #1a1a1a 100%); }
-    .episode-thumb-num {
+    }}
+    .episode-thumb.t1 {{ background: linear-gradient(135deg, #1c0505 0%, #4a0000 50%, #1a1a1a 100%); }}
+    .episode-thumb.t2 {{ background: linear-gradient(135deg, #1a0a00 0%, #3d1500 50%, #1a1a1a 100%); }}
+    .episode-thumb.t3 {{ background: linear-gradient(135deg, #0a0a1c 0%, #00003d 50%, #1a1a1a 100%); }}
+    .episode-thumb.t4 {{ background: linear-gradient(135deg, #0f0a00 0%, #3d2600 50%, #1a1a1a 100%); }}
+    .episode-thumb-num {{
       font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: clamp(1.8rem, 5vw, 2.6rem);
@@ -284,41 +360,41 @@
       letter-spacing: 0.1em;
       user-select: none;
       transition: color 0.3s ease;
-    }
-    .episode-card:hover .episode-thumb-num { color: rgba(201, 168, 76, 0.35); }
-    .episode-thumb::after {
+    }}
+    .episode-card:hover .episode-thumb-num {{ color: rgba(201, 168, 76, 0.35); }}
+    .episode-thumb::after {{
       content: '▶';
       position: absolute;
       font-size: 1.4rem;
       color: rgba(201, 168, 76, 0.35);
       transition: color 0.3s ease, transform 0.3s ease;
-    }
-    .episode-card:hover .episode-thumb::after {
+    }}
+    .episode-card:hover .episode-thumb::after {{
       color: rgba(201, 168, 76, 0.75);
       transform: scale(1.15);
-    }
-    .episode-info { padding: 16px; }
-    .episode-num {
+    }}
+    .episode-info {{ padding: 16px; }}
+    .episode-num {{
       font-family: 'Cinzel', serif;
       font-size: 0.6rem;
       letter-spacing: 0.2em;
       color: var(--gold-dim);
       margin-bottom: 6px;
-    }
-    .episode-title {
+    }}
+    .episode-title {{
       font-family: 'EB Garamond', serif;
       font-size: 0.95rem;
       color: var(--white-dim);
       line-height: 1.5;
-    }
+    }}
 
     /* ─── FOLLOW SECTION ─── */
-    .follow {
+    .follow {{
       background: var(--black-soft);
       border-top: 1px solid rgba(201, 168, 76, 0.15);
       border-bottom: 1px solid rgba(201, 168, 76, 0.15);
-    }
-    .follow-box {
+    }}
+    .follow-box {{
       max-width: 520px;
       margin: 0 auto;
       border: 1px solid rgba(201, 168, 76, 0.25);
@@ -327,8 +403,8 @@
       background: rgba(139, 0, 0, 0.05);
       backdrop-filter: blur(4px);
       position: relative;
-    }
-    .follow-box-label {
+    }}
+    .follow-box-label {{
       font-family: 'Cinzel', serif;
       font-size: 0.62rem;
       letter-spacing: 0.25em;
@@ -339,17 +415,17 @@
       left: 24px;
       background: var(--black-soft);
       padding: 0 10px;
-    }
-    .follow-intro {
+    }}
+    .follow-intro {{
       text-align: center;
       font-size: clamp(0.9rem, 2.8vw, 1rem);
       line-height: 1.9;
       color: var(--white-dim);
       opacity: 0.85;
       margin-bottom: 28px;
-    }
-    .sns-list { display: flex; flex-direction: column; gap: 12px; }
-    .sns-link {
+    }}
+    .sns-list {{ display: flex; flex-direction: column; gap: 12px; }}
+    .sns-link {{
       display: flex;
       align-items: center;
       gap: 16px;
@@ -360,22 +436,22 @@
       color: var(--white-dim);
       text-decoration: none;
       transition: all 0.3s ease;
-    }
-    .sns-link:hover {
+    }}
+    .sns-link:hover {{
       background: rgba(139, 0, 0, 0.15);
       border-color: rgba(201, 168, 76, 0.5);
       color: var(--white);
       transform: translateY(-2px);
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-    }
-    .sns-icon { width: 24px; height: 24px; flex-shrink: 0; opacity: 0.85; }
-    .sns-name {
+    }}
+    .sns-icon {{ width: 24px; height: 24px; flex-shrink: 0; opacity: 0.85; }}
+    .sns-name {{
       font-family: 'Cinzel', serif;
       font-weight: 600;
       font-size: 0.85rem;
       letter-spacing: 0.15em;
-    }
-    .sns-badge {
+    }}
+    .sns-badge {{
       font-family: 'Cinzel', serif;
       font-size: 0.58rem;
       letter-spacing: 0.15em;
@@ -385,31 +461,31 @@
       padding: 3px 8px;
       border-radius: 2px;
       text-transform: uppercase;
-    }
+    }}
 
     /* ─── FOOTER ─── */
-    footer {
+    footer {{
       background: #111;
       border-top: 1px solid rgba(201, 168, 76, 0.2);
       padding: 40px 24px;
       text-align: center;
-    }
-    .footer-logo-text {
+    }}
+    .footer-logo-text {{
       font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: 1.1rem;
       letter-spacing: 0.12em;
       color: var(--gold);
       margin-bottom: 16px;
-    }
-    .footer-links {
+    }}
+    .footer-links {{
       display: flex;
       justify-content: center;
       gap: 24px;
       margin-bottom: 24px;
       flex-wrap: wrap;
-    }
-    .footer-link {
+    }}
+    .footer-link {{
       display: flex;
       align-items: center;
       gap: 8px;
@@ -418,36 +494,36 @@
       font-size: 0.85rem;
       letter-spacing: 0.05em;
       transition: color 0.2s ease;
-    }
-    .footer-link:hover { color: var(--gold); }
-    .footer-link svg { width: 18px; height: 18px; flex-shrink: 0; }
-    .footer-copy {
+    }}
+    .footer-link:hover {{ color: var(--gold); }}
+    .footer-link svg {{ width: 18px; height: 18px; flex-shrink: 0; }}
+    .footer-copy {{
       font-family: 'Cinzel', serif;
       font-size: 0.65rem;
       letter-spacing: 0.2em;
       color: var(--white-dim);
       opacity: 0.45;
-    }
+    }}
 
     /* ─── ANIMATIONS ─── */
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+    @keyframes fadeInDown {{
+      from {{ opacity: 0; transform: translateY(-24px); }}
+      to   {{ opacity: 1; transform: translateY(0); }}
+    }}
+    @keyframes fadeInUp {{
+      from {{ opacity: 0; transform: translateY(24px); }}
+      to   {{ opacity: 1; transform: translateY(0); }}
+    }}
 
     /* ─── RESPONSIVE ─── */
-    @media (max-width: 480px) {
-      .episodes-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-      section { padding: 60px 20px; }
-      .follow-box { padding: 32px 20px 24px; }
-    }
-    @media (max-width: 320px) {
-      .episodes-grid { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 480px) {{
+      .episodes-grid {{ grid-template-columns: 1fr 1fr; gap: 12px; }}
+      section {{ padding: 60px 20px; }}
+      .follow-box {{ padding: 32px 20px 24px; }}
+    }}
+    @media (max-width: 320px) {{
+      .episodes-grid {{ grid-template-columns: 1fr; }}
+    }}
   </style>
 </head>
 <body>
@@ -464,7 +540,7 @@
       <div class="gold-rule"></div>
     </div>
     <div class="hero-cta">
-      <a class="btn-primary" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
+      <a class="btn-primary" href="{CHANNEL_URL}" target="_blank" rel="noopener">
         Watch on YouTube &rarr;
       </a>
     </div>
@@ -474,7 +550,7 @@
   <div class="stats-strip reveal">
     <div class="stats-inner">
       <div class="stat-item">
-        <p class="stat-num">14</p>
+        <p class="stat-num">{ep_count}</p>
         <p class="stat-label">Episodes</p>
       </div>
       <div class="stat-item">
@@ -526,118 +602,7 @@
       <p class="section-label reveal">Episodes</p>
       <h2 class="section-heading reveal reveal-delay-1">Latest Stories</h2>
       <div class="episodes-grid">
-
-        <a class="episode-card reveal" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t1"><span class="episode-thumb-num">001</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 001</p>
-            <p class="episode-title">The Deadliest Duel in Japanese History: Musashi vs Kojiro</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-2" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t2"><span class="episode-thumb-num">002</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 002</p>
-            <p class="episode-title">The Night Japan's Most Powerful Warlord Was Betrayed: The Honnoji Incident</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-3" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t3"><span class="episode-thumb-num">003</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 003</p>
-            <p class="episode-title">The Boy Hostage Who Became Japan's Shogun | Tokugawa Ieyasu</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-4" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t4"><span class="episode-thumb-num">004</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 004</p>
-            <p class="episode-title">The Battle That Decided Japan's Fate | Sekigahara 1600</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t1"><span class="episode-thumb-num">005</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 005</p>
-            <p class="episode-title">The Sandal-Bearer Who Became Ruler of Japan: Toyotomi Hideyoshi</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-2" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t2"><span class="episode-thumb-num">006</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 006</p>
-            <p class="episode-title">Japan's Greatest Warrior Was Destroyed By His Own Brother | Minamoto no Yoshitsune</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-3" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t3"><span class="episode-thumb-num">007</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 007</p>
-            <p class="episode-title">The One-Eyed Dragon Who Conquered Japan at 20 — Then Lost It All</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-4" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t4"><span class="episode-thumb-num">008</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 008</p>
-            <p class="episode-title">Why Japan's Greatest Hero Declared War on the Revolution He Created</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t1"><span class="episode-thumb-num">009</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 009</p>
-            <p class="episode-title">The Warrior Who Lost Everything — And Became Japan's Greatest Samurai</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-2" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t2"><span class="episode-thumb-num">010</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 010</p>
-            <p class="episode-title">The Day One Samurai Destroyed Japan's Most Powerful Sword School — Alone</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-3" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t3"><span class="episode-thumb-num">011</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 011</p>
-            <p class="episode-title">The 'Demon King' Who Shattered Medieval Japan — And Vanished Without a Trace</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-4" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t4"><span class="episode-thumb-num">012</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 012</p>
-            <p class="episode-title">13 Days: How One General Turned His Lord's Murder Into a Dynasty</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t1"><span class="episode-thumb-num">013</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 013</p>
-            <p class="episode-title">Why Miyamoto Musashi's Final Weapon Was a Brush, Not a Sword</p>
-          </div>
-        </a>
-
-        <a class="episode-card reveal reveal-delay-2" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
-          <div class="episode-thumb t2"><span class="episode-thumb-num">014</span></div>
-          <div class="episode-info">
-            <p class="episode-num">EPISODE 014</p>
-            <p class="episode-title">Why Japan's Greatest Cavalry Charged Straight Into 3,000 Guns</p>
-          </div>
-        </a>
+{cards_html}
       </div>
     </div>
   </section>
@@ -654,7 +619,7 @@
           Subscribe so you never miss a story.
         </p>
         <div class="sns-list">
-          <a class="sns-link" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
+          <a class="sns-link" href="{CHANNEL_URL}" target="_blank" rel="noopener">
             <svg class="sns-icon" viewBox="0 0 24 24" fill="currentColor">
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
@@ -670,7 +635,7 @@
   <footer>
     <p class="footer-logo-text">SAMURAI CHRONICLES</p>
     <div class="footer-links">
-      <a class="footer-link" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">
+      <a class="footer-link" href="{CHANNEL_URL}" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor">
           <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
         </svg>
@@ -683,16 +648,23 @@
   </footer>
 
   <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
+    const observer = new IntersectionObserver((entries) => {{
+      entries.forEach(entry => {{
+        if (entry.isIntersecting) {{
           entry.target.classList.add('visible');
           observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        }}
+      }});
+    }}, {{ threshold: 0.1, rootMargin: '0px 0px -40px 0px' }});
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 
 </body>
-</html>
+</html>"""
+
+    OUTPUT_HTML.write_text(html, encoding="utf-8")
+    print(f"  ✓ index.html を生成しました（エピソード数: {ep_count}）")
+
+
+if __name__ == "__main__":
+    build()

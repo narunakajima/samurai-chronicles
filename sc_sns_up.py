@@ -192,6 +192,13 @@ def run(episode_id: str):
     shorts_id = upload_video(youtube, shorts_video,
                              f"{title} #Shorts", shorts_description, tags + ["shorts"])
 
+    # youtube_url / shorts_url を ep.json に書き戻す
+    ep["youtube_url"] = f"https://youtu.be/{main_id}"
+    ep["shorts_url"] = f"https://youtu.be/{shorts_id}"
+    with open(ep_json, "w", encoding="utf-8") as f:
+        json.dump(ep, f, ensure_ascii=False, indent=2)
+    print(f"  ✓ ep.json に youtube_url / shorts_url を保存しました")
+
     print(f"\n{'━'*60}")
     print(f"  ✓ アップロード完了（公開）")
     print(f"  本編:   https://youtu.be/{main_id}")
@@ -207,6 +214,16 @@ def run(episode_id: str):
         update_playlists(youtube, episode_id, main_id, ep)
     except Exception as e:
         print(f"  ⚠️  プレイリスト処理でエラー（アップロード自体は成功）: {e}")
+
+    # index.html 再ビルド
+    print(f"{'━'*60}")
+    print(f"  サイト再ビルド")
+    print(f"{'━'*60}")
+    try:
+        from sc_build_site import build as build_site
+        build_site()
+    except Exception as e:
+        print(f"  ⚠️  サイトビルドでエラー（アップロード自体は成功）: {e}")
 
 
 def fix_shorts_description(episode_id: str, shorts_id: str):
