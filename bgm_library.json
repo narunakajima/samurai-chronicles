@@ -5,8 +5,13 @@
     "duration": 62,
     "license": "CC0",
     "credit": null,
-    "tags": ["orchestral", "cinematic"],
-    "used_in": ["ep001"]
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep001"
+    ]
   },
   {
     "id": "ep002-BGM",
@@ -14,8 +19,13 @@
     "duration": 39,
     "license": "CC0",
     "credit": null,
-    "tags": ["orchestral", "cinematic"],
-    "used_in": ["ep002"]
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep002"
+    ]
   },
   {
     "id": "ep003-BGM",
@@ -23,8 +33,14 @@
     "duration": 180,
     "license": "CC0",
     "credit": null,
-    "tags": ["orchestral", "epic", "dramatic"],
-    "used_in": ["ep003"]
+    "tags": [
+      "orchestral",
+      "epic",
+      "dramatic"
+    ],
+    "used_in": [
+      "ep003"
+    ]
   },
   {
     "id": "ep004-BGM",
@@ -32,8 +48,13 @@
     "duration": 126,
     "license": "CC0",
     "credit": null,
-    "tags": ["orchestral", "dramatic"],
-    "used_in": ["ep004"]
+    "tags": [
+      "orchestral",
+      "dramatic"
+    ],
+    "used_in": [
+      "ep004"
+    ]
   },
   {
     "id": "ep005-BGM",
@@ -41,8 +62,13 @@
     "duration": 45,
     "license": "CC0",
     "credit": null,
-    "tags": ["orchestral", "cinematic"],
-    "used_in": ["ep005"]
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep005"
+    ]
   },
   {
     "id": "ep006-BGM",
@@ -50,8 +76,15 @@
     "duration": 129,
     "license": "CC BY",
     "credit": "🎵 Music: A Piano and Choir Journey by Matio888 (freesound.org) — CC BY 4.0",
-    "tags": ["orchestral", "choir", "dramatic", "emotional"],
-    "used_in": ["ep006"]
+    "tags": [
+      "orchestral",
+      "choir",
+      "dramatic",
+      "emotional"
+    ],
+    "used_in": [
+      "ep006"
+    ]
   },
   {
     "id": "ep008-BGM",
@@ -59,8 +92,13 @@
     "duration": 60,
     "license": "CC0",
     "credit": null,
-    "tags": ["orchestral", "epic"],
-    "used_in": ["ep008"]
+    "tags": [
+      "orchestral",
+      "epic"
+    ],
+    "used_in": [
+      "ep008"
+    ]
   },
   {
     "id": "ep009-BGM",
@@ -68,7 +106,15 @@
     "duration": 151,
     "license": "CC BY",
     "credit": "🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0",
-    "tags": ["orchestral", "epic", "heroic", "medieval"],
-    "used_in": ["ep009"]
+    "tags": [
+      "orchestral",
+      "epic",
+      "heroic",
+      "medieval"
+    ],
+    "used_in": [
+      "ep009",
+      "ep014"
+    ]
   }
 ]

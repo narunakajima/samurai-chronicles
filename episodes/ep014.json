@@ -2,7 +2,7 @@
   "episode_id": "ep014",
   "episode_title": "The Battle of Nagashino",
   "youtube_title": "Why Japan's Greatest Cavalry Charged Straight Into 3,000 Guns",
-  "youtube_description": "Three thousand arquebuses. One afternoon. The Takeda cavalry — Japan's most feared — charged directly into them. Six hours later, the most powerful clan in central Japan was broken forever. This is the Battle of Nagashino.\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"Nagashino 1575: Slaughter at the Barricades.\" Osprey Publishing, 2000.\n2. Berry, Mary Elizabeth. \"Hideyoshi.\" Harvard University Press, 1982.\n3. Lamers, Jeroen. \"Japonius Tyrannus: The Japanese Warlord Oda Nobunaga Reconsidered.\" Hotei Publishing, 2000.\n\n#BattleOfNagashino #OdaNobunaga #TakedaKatsuyori #SengokuPeriod #JapaneseHistory #SamuraiHistory #SamuraiChronicles #JapanHistory #Sengoku #Nagashino",
+  "youtube_description": "Three thousand arquebuses. One afternoon. The Takeda cavalry — Japan's most feared — charged directly into them. Six hours later, the most powerful clan in central Japan was broken forever. This is the Battle of Nagashino.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 Three thousand arquebuses....\n0:47 In 1573, Takeda Shingen died —\n1:40 Oda Nobunaga had been...\n2:24 In May 1575, Katsuyori...\n3:10 The message was carried by a\n4:05 Nobunaga moved. He covered...\n4:47 The tactical innovation at...\n5:38 On the night of May 20th,\n6:22 Dawn broke on May 21, 1575.\n7:07 They charged. The first...\n7:42 The battle lasted six hours. By\n8:18 Katsuyori retreated north and...\n9:05 Modern historians have...\n9:51 For Nobunaga, Nagashino was a...\n10:42 Torii Suneemon was executed on a\n11:35 The lesson of Nagashino is not\n12:23 Why did Katsuyori charge when...\n13:15 Nagashino did not end the age\n14:07 Next time on Samurai...\n14:46 If the clash of guns and\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"Nagashino 1575: Slaughter at the Barricades.\" Osprey Publishing, 2000.\n2. Berry, Mary Elizabeth. \"Hideyoshi.\" Harvard University Press, 1982.\n3. Lamers, Jeroen. \"Japonius Tyrannus: The Japanese Warlord Oda Nobunaga Reconsidered.\" Hotei Publishing, 2000.\n\n\n🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0\n#BattleOfNagashino #OdaNobunaga #TakedaKatsuyori #SengokuPeriod #JapaneseHistory #SamuraiHistory #SamuraiChronicles #JapanHistory #Sengoku #Nagashino",
   "youtube_tags": [
     "Battle of Nagashino",
     "Oda Nobunaga",
@@ -46,7 +46,10 @@
       "image_prompt": "Takeda Katsuyori in his early 30s, seated on horseback in red lacquered Takeda armor, surveying his assembled cavalry from a high position overlooking a mountain valley. His expression is determined but carries a shadow of self-doubt — the face of a man with something to prove. Behind him, rows of red-armored cavalry stretch to the horizon. The legacy of his father is visible in the scale of the army, and the pressure of that legacy is visible in his face.",
       "ken_burns": "zoom_in",
       "character_ref": "katsuyori",
-      "zoom_anchor": null
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.32
+      }
     },
     {
       "scene_id": 3,
@@ -56,7 +59,10 @@
       "image_prompt": "Oda Nobunaga in his late 30s, standing in a weapons storehouse surrounded by rows of arquebuses racked on wooden stands, holding one up and inspecting it with intense, calculating eyes. His black lacquered armor catches the torchlight. Beside him, a European-style arquebus alongside Japanese versions — evidence of his study of foreign technology. The expression of a man who sees further than his contemporaries. Torchlight, deep shadows.",
       "ken_burns": "zoom_in",
       "character_ref": "nobunaga",
-      "zoom_anchor": null
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.28
+      }
     },
     {
       "scene_id": 4,
@@ -86,7 +92,10 @@
       "image_prompt": "Oda Nobunaga on horseback leading a vast column of troops across open terrain at speed, dust rising from thousands of marching feet. His black armor at the head of the column, arm pointing forward — the image of forward momentum. Behind him, the column stretches to the horizon: infantry, cavalry, supply wagons. The urgency is in every line of the composition. Dawn light, long shadows across the road.",
       "ken_burns": "pan_right",
       "character_ref": "nobunaga",
-      "zoom_anchor": null
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.25
+      }
     },
     {
       "scene_id": 7,
@@ -96,7 +105,10 @@
       "image_prompt": "Diagram-style cinematic illustration: three lines of arquebusiers behind a wooden palisade, each line in a different stage — front line firing, middle line in the act of reloading, back line standing ready. Arrows and movement lines show the rotation sequence. Nobunaga stands to the side overseeing the drill, pointing. The visual clarity of a tactical innovation being explained. Clean composition, dramatic side lighting.",
       "ken_burns": "zoom_in",
       "character_ref": "nobunaga",
-      "zoom_anchor": null
+      "zoom_anchor": {
+        "x": 0.12,
+        "y": 0.35
+      }
     },
     {
       "scene_id": 8,
@@ -146,7 +158,10 @@
       "image_prompt": "Takeda Katsuyori in his early 40s, alone on a mountain path in winter, surrounded by only a handful of remaining retainers — the remnant of a great army reduced to a small escort. His red armor is battered, his bearing broken. Snow on the mountain peaks behind him. The expression of a man who has lost everything and knows it. The contrast with his earlier commanding portrait is the story of seven years' collapse.",
       "ken_burns": "zoom_in",
       "character_ref": "katsuyori",
-      "zoom_anchor": null
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.32
+      }
     },
     {
       "scene_id": 13,
@@ -166,7 +181,10 @@
       "image_prompt": "Oda Nobunaga studying a map of Japan in his command headquarters at Azuchi Castle: a vast table map with territories marked, his hand tracing westward routes of conquest. His expression is forward-looking, calculating — already past Nagashino, already planning the next campaign. Around him, advisors and messengers. The map shows the territories gained and the territories remaining. The face of a man who sees the whole board.",
       "ken_burns": "zoom_in",
       "character_ref": "nobunaga",
-      "zoom_anchor": null
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.32
+      }
     },
     {
       "scene_id": 15,
@@ -196,7 +214,10 @@
       "image_prompt": "Close portrait of Takeda Katsuyori at dawn on the morning of the battle, alone outside his command tent. He looks out over the empty field toward the Oda palisade. His expression holds both resolution and a deep awareness of what he is ordering. Behind him, the ghost-image of his father Takeda Shingen in full armor — the shadow of legacy that defines every decision. First light of dawn, cold and blue.",
       "ken_burns": "zoom_in",
       "character_ref": "katsuyori",
-      "zoom_anchor": null
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.32
+      }
     },
     {
       "scene_id": 18,
@@ -216,7 +237,10 @@
       "image_prompt": "Osaka Castle under siege in winter: the massive stone fortress rising above a frozen moat, its white walls stark against a grey sky. Surrounding it at a distance, Tokugawa siege lines stretch in every direction — tens of thousands of troops, artillery positions, siege engines. The fortress looks impregnable. The siege looks unstoppable. Tokugawa Ieyasu on horseback in the foreground, surveying the castle with cold patience — the face of a man who has waited his entire life for this moment.",
       "ken_burns": "zoom_out",
       "character_ref": "ieyasu",
-      "zoom_anchor": null
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.4
+      }
     },
     {
       "scene_id": 20,
@@ -228,5 +252,6 @@
       "character_ref": null,
       "zoom_anchor": null
     }
-  ]
+  ],
+  "bgm_source": "ep009/audio/ep009-BGM.mp3"
 }
