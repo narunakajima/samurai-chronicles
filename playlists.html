@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlists | Samurai Chronicles</title>
+  <meta name="description" content="Browse Samurai Chronicles by character — curated playlists for every legendary warrior.">
+  <meta property="og:title" content="Playlists | Samurai Chronicles">
+  <meta property="og:description" content="Browse Samurai Chronicles by character — curated playlists for every legendary warrior.">
+  <meta property="og:image" content="LOGO.PNG">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --crimson: #8B0000; --crimson-dark: #5c0000; --crimson-light: #a80000;
+      --gold: #C9A84C; --gold-light: #e0c068; --gold-dim: #9a7a38;
+      --black: #1a1a1a; --black-soft: #222222;
+      --white: #f5f0e8; --white-dim: #c8bfb0;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--black); color: var(--white); font-family: 'EB Garamond', serif; overflow-x: hidden; }
+
+    /* ── reveal ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+
+    /* ── NAV ── */
+    .site-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(26,26,26,.95); backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201,168,76,.2);
+      padding: 0 24px; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'Cinzel', serif; font-weight: 700; font-size: .85rem;
+      letter-spacing: .15em; color: var(--gold); text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-link {
+      font-family: 'Cinzel', serif; font-size: .65rem; letter-spacing: .2em;
+      color: var(--white-dim); text-decoration: none; text-transform: uppercase;
+      transition: color .2s;
+    }
+    .nav-link:hover, .nav-link.active { color: var(--gold); }
+
+    /* ── section base ── */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 900px; margin: 0 auto; }
+    .section-label {
+      font-family: 'Cinzel', serif; font-size: .65rem; letter-spacing: .3em;
+      color: var(--gold); text-transform: uppercase; text-align: center; margin-bottom: 14px;
+    }
+    .section-heading {
+      font-family: 'Cinzel', serif; font-weight: 700;
+      font-size: clamp(1.4rem, 5vw, 2rem); text-align: center;
+      letter-spacing: .06em; color: var(--white); margin-bottom: 40px;
+    }
+    .gold-rule {
+      width: 80px; height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      margin: 24px auto;
+    }
+
+    /* ── button ── */
+    .btn-primary {
+      display: inline-block; padding: 14px 32px;
+      background: var(--crimson); border: 1px solid rgba(201,168,76,.5);
+      color: var(--white); font-family: 'Cinzel', serif; font-weight: 600;
+      font-size: .85rem; letter-spacing: .12em; text-decoration: none;
+      border-radius: 2px; transition: all .3s; box-shadow: 0 4px 20px rgba(139,0,0,.4);
+    }
+    .btn-primary:hover {
+      background: var(--crimson-light); border-color: var(--gold);
+      color: var(--gold-light); transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(139,0,0,.6);
+    }
+    .btn-outline {
+      display: inline-block; padding: 12px 28px;
+      border: 1px solid rgba(201,168,76,.5); color: var(--gold);
+      font-family: 'Cinzel', serif; font-size: .8rem; letter-spacing: .12em;
+      text-decoration: none; border-radius: 2px; transition: all .3s;
+    }
+    .btn-outline:hover { background: rgba(201,168,76,.08); border-color: var(--gold); }
+
+    /* ── stats strip ── */
+    .stats-strip {
+      background: var(--crimson-dark);
+      border-top: 1px solid rgba(201,168,76,.25); border-bottom: 1px solid rgba(201,168,76,.25);
+      padding: 28px 24px;
+    }
+    .stats-inner {
+      max-width: 860px; margin: 0 auto;
+      display: flex; justify-content: center; gap: clamp(32px,8vw,80px); flex-wrap: wrap;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: 'Cinzel', serif; font-weight: 700;
+      font-size: clamp(1.6rem,5vw,2.2rem); color: var(--gold); line-height: 1;
+    }
+    .stat-label {
+      font-family: 'Cinzel', serif; font-size: .6rem; letter-spacing: .2em;
+      color: var(--white-dim); opacity: .75; margin-top: 6px; text-transform: uppercase;
+    }
+
+    /* ── episode card ── */
+    .episodes-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 20px;
+    }
+    .episode-card {
+      display: block; text-decoration: none;
+      background: var(--black-soft); border: 1px solid rgba(201,168,76,.2);
+      border-radius: 3px; overflow: hidden; transition: all .3s;
+    }
+    .episode-card:hover {
+      border-color: rgba(201,168,76,.5); transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,.5);
+    }
+    .episode-thumb {
+      width: 100%; aspect-ratio: 16/9; background: #111;
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .episode-thumb img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform .4s, filter .4s; filter: brightness(.92);
+    }
+    .episode-card:hover .episode-thumb img { transform: scale(1.04); filter: brightness(1); }
+    .episode-thumb-num {
+      font-family: 'Cinzel', serif; font-weight: 700;
+      font-size: clamp(1.8rem,5vw,2.6rem); color: rgba(201,168,76,.25); letter-spacing: .1em;
+    }
+    .episode-thumb::after {
+      content: '▶'; position: absolute; font-size: 1.6rem;
+      color: rgba(255,255,255,0); transition: color .3s, transform .3s;
+      text-shadow: 0 2px 12px rgba(0,0,0,.8); pointer-events: none;
+    }
+    .episode-card:hover .episode-thumb::after { color: rgba(255,255,255,.9); transform: scale(1.15); }
+    .episode-info { padding: 14px 16px; }
+    .episode-num {
+      font-family: 'Cinzel', serif; font-size: .58rem; letter-spacing: .2em;
+      color: var(--gold-dim); margin-bottom: 6px;
+    }
+    .episode-title { font-size: .9rem; color: var(--white-dim); line-height: 1.5; }
+
+    /* ── footer ── */
+    footer {
+      background: #111; border-top: 1px solid rgba(201,168,76,.2);
+      padding: 40px 24px; text-align: center;
+    }
+    .footer-logo { font-family: 'Cinzel', serif; font-weight: 700; font-size: 1rem; letter-spacing: .12em; color: var(--gold); margin-bottom: 16px; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 20px; flex-wrap: wrap; }
+    .footer-link { color: var(--white-dim); text-decoration: none; font-size: .85rem; transition: color .2s; }
+    .footer-link:hover { color: var(--gold); }
+    .footer-copy { font-family: 'Cinzel', serif; font-size: .62rem; letter-spacing: .18em; color: var(--white-dim); opacity: .4; }
+
+    /* ── responsive ── */
+    @media (max-width: 480px) {
+      .episodes-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      section { padding: 60px 20px; }
+    }
+    @media (max-width: 320px) { .episodes-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">SAMURAI CHRONICLES</a>
+    <div class="nav-links"><a class="nav-link" href="index.html">TOP</a><a class="nav-link" href="episodes.html">EPISODES</a><a class="nav-link active" href="playlists.html">PLAYLISTS</a></div>
+  </nav>
+
+  <section style="padding-top:60px;">
+    <div class="section-inner">
+      <p class="section-label reveal">By Character</p>
+      <h1 class="section-heading reveal reveal-delay-1" style="font-size:clamp(1.4rem,5vw,2rem);">Follow Every Warrior</h1>
+      <p class="reveal reveal-delay-2" style="text-align:center;color:var(--white-dim);line-height:1.9;margin-bottom:48px;max-width:520px;margin-left:auto;margin-right:auto;">
+        Each playlist follows one legendary figure across every episode they appear in.<br>Watch their full story from beginning to end.
+      </p>
+      <div class="episodes-grid">
+        <a class="episode-card reveal" href="https://www.youtube.com/playlist?list=PLOa8YFQho_cExtNgn3Y2xntExoUh24iMR" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/TyxdaK8mu_E/mqdefault.jpg" alt="Oda Nobunaga" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">5 EPISODES</p>
+            <p class="episode-title" style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.05em;">Oda Nobunaga</p>
+          </div>
+        </a>
+        <a class="episode-card reveal reveal-delay-2" href="https://www.youtube.com/playlist?list=PLOa8YFQho_cGFp_hBmaiYtCJELKoI-R_l" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/pje6shzYYZU/mqdefault.jpg" alt="Tokugawa Ieyasu" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">5 EPISODES</p>
+            <p class="episode-title" style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.05em;">Tokugawa Ieyasu</p>
+          </div>
+        </a>
+        <a class="episode-card reveal reveal-delay-3" href="https://www.youtube.com/playlist?list=PLOa8YFQho_cGd07tquHvwbCJ2ZFnAqPFc" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/kZN4msDx9Tg/mqdefault.jpg" alt="Miyamoto Musashi" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">4 EPISODES</p>
+            <p class="episode-title" style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.05em;">Miyamoto Musashi</p>
+          </div>
+        </a>
+        <a class="episode-card reveal reveal-delay-4" href="https://www.youtube.com/playlist?list=PLOa8YFQho_cFTfyP3gyqwe6gmgbdKW86x" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/AD1QPvfZZqU/mqdefault.jpg" alt="Toyotomi Hideyoshi" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">4 EPISODES</p>
+            <p class="episode-title" style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.05em;">Toyotomi Hideyoshi</p>
+          </div>
+        </a>
+        <a class="episode-card reveal" href="https://www.youtube.com/playlist?list=PLOa8YFQho_cFH6SSVEbpRl9KHm9Lp34rT" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/TyxdaK8mu_E/mqdefault.jpg" alt="Akechi Mitsuhide" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">3 EPISODES</p>
+            <p class="episode-title" style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.05em;">Akechi Mitsuhide</p>
+          </div>
+        </a>
+        <a class="episode-card reveal reveal-delay-2" href="https://www.youtube.com/playlist?list=PLOa8YFQho_cEtMHkcqqatMZwl7mxaGjta" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/SMYdQA_vH-g/mqdefault.jpg" alt="Minamoto Yoshitsune" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">3 EPISODES</p>
+            <p class="episode-title" style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.05em;">Minamoto Yoshitsune</p>
+          </div>
+        </a>
+        <a class="episode-card reveal reveal-delay-3" href="https://www.youtube.com/playlist?list=PLOa8YFQho_cETINHm6TBoIbTlABG8gNbb" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/CvdXyK2J6x4/mqdefault.jpg" alt="Sanada Yukimura" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">3 EPISODES</p>
+            <p class="episode-title" style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.05em;">Sanada Yukimura</p>
+          </div>
+        </a>
+        <a class="episode-card reveal reveal-delay-4" href="https://www.youtube.com/playlist?list=PLOa8YFQho_cFUyqKdg0LkVEbjj8h_NDUq" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/SMYdQA_vH-g/mqdefault.jpg" alt="Musashibo Benkei" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">2 EPISODES</p>
+            <p class="episode-title" style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.05em;">Musashibo Benkei</p>
+          </div>
+        </a>
+        <a class="episode-card reveal" href="https://www.youtube.com/playlist?list=PLOa8YFQho_cEFBNTipQub87HsjtuHrf10" target="_blank" rel="noopener">
+          <div class="episode-thumb"><img src="https://img.youtube.com/vi/SMYdQA_vH-g/mqdefault.jpg" alt="Minamoto Yoritomo" loading="lazy"></div>
+          <div class="episode-info">
+            <p class="episode-num">2 EPISODES</p>
+            <p class="episode-title" style="font-family:'Cinzel',serif;font-size:.85rem;letter-spacing:.05em;">Minamoto Yoritomo</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-logo">SAMURAI CHRONICLES</p>
+    <div class="footer-links">
+      <a class="footer-link" href="https://www.youtube.com/@Samurai-Chronicles-JP" target="_blank" rel="noopener">YouTube</a>
+      <a class="footer-link" href="episodes.html">Episodes</a>
+      <a class="footer-link" href="playlists.html">Playlists</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Samurai Chronicles. All rights reserved.</p>
+  </footer>
+  <script>
+    const obs = new IntersectionObserver(es => {
+      es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
