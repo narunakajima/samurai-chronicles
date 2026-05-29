@@ -49,7 +49,7 @@
   },
   "ieyasu": {
     "display_name": "Tokugawa Ieyasu",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cGFp_hBmaiYtCJELKoI-R_l",
     "episodes": [
       {
         "episode_id": "ep003",
@@ -66,6 +66,10 @@
       {
         "episode_id": "ep015",
         "video_id": "x5O8-0h9aH4"
+      },
+      {
+        "episode_id": "ep016",
+        "video_id": "2XLSdO_vOTM"
       }
     ]
   },
@@ -91,11 +95,15 @@
   },
   "hideyoshi": {
     "display_name": "Toyotomi Hideyoshi",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cFTfyP3gyqwe6gmgbdKW86x",
     "episodes": [
       {
         "episode_id": "ep005",
         "video_id": "AD1QPvfZZqU"
+      },
+      {
+        "episode_id": "ep016",
+        "video_id": "2XLSdO_vOTM"
       }
     ]
   },
@@ -111,11 +119,15 @@
   },
   "yoshitsune": {
     "display_name": "Minamoto Yoshitsune",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cEtMHkcqqatMZwl7mxaGjta",
     "episodes": [
       {
         "episode_id": "ep006",
         "video_id": "SMYdQA_vH-g"
+      },
+      {
+        "episode_id": "ep016",
+        "video_id": "2XLSdO_vOTM"
       }
     ]
   },
