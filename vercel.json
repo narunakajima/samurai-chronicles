@@ -1,3 +1,7 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/episodes", "destination": "/episodes.html" },
+    { "source": "/playlists", "destination": "/playlists.html" }
+  ]
 }
