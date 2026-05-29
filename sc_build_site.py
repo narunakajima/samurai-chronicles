@@ -395,6 +395,7 @@ def build_index(episodes: list[dict], playlists: list[dict]):
       </div>
       <div class="reveal" style="text-align:center;margin-top:40px;">
         <a class="btn-outline" href="/episodes">View All Episodes &rarr;</a>
+        <a class="btn-outline" href="/playlists">View Playlists &rarr;</a>
       </div>
     </div>
   </section>
