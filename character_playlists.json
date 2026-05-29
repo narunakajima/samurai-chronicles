@@ -5,7 +5,7 @@
     "episodes": [
       {
         "episode_id": "ep001",
-        "video_id": null
+        "video_id": "kZN4msDx9Tg"
       }
     ]
   },
@@ -15,7 +15,7 @@
     "episodes": [
       {
         "episode_id": "ep001",
-        "video_id": null
+        "video_id": "kZN4msDx9Tg"
       }
     ]
   },
@@ -25,11 +25,11 @@
     "episodes": [
       {
         "episode_id": "ep002",
-        "video_id": null
+        "video_id": "TyxdaK8mu_E"
       },
       {
         "episode_id": "ep005",
-        "video_id": null
+        "video_id": "AD1QPvfZZqU"
       },
       {
         "episode_id": "ep014",
@@ -43,7 +43,7 @@
     "episodes": [
       {
         "episode_id": "ep002",
-        "video_id": null
+        "video_id": "TyxdaK8mu_E"
       }
     ]
   },
@@ -53,11 +53,11 @@
     "episodes": [
       {
         "episode_id": "ep003",
-        "video_id": null
+        "video_id": "pje6shzYYZU"
       },
       {
         "episode_id": "ep004",
-        "video_id": null
+        "video_id": "pjgU_IK0fJU"
       },
       {
         "episode_id": "ep014",
@@ -75,7 +75,7 @@
     "episodes": [
       {
         "episode_id": "ep004",
-        "video_id": null
+        "video_id": "pjgU_IK0fJU"
       }
     ]
   },
@@ -85,7 +85,7 @@
     "episodes": [
       {
         "episode_id": "ep004",
-        "video_id": null
+        "video_id": "pjgU_IK0fJU"
       }
     ]
   },
@@ -95,7 +95,7 @@
     "episodes": [
       {
         "episode_id": "ep005",
-        "video_id": null
+        "video_id": "AD1QPvfZZqU"
       }
     ]
   },
@@ -105,7 +105,7 @@
     "episodes": [
       {
         "episode_id": "ep006",
-        "video_id": null
+        "video_id": "SMYdQA_vH-g"
       }
     ]
   },
@@ -115,7 +115,7 @@
     "episodes": [
       {
         "episode_id": "ep006",
-        "video_id": null
+        "video_id": "SMYdQA_vH-g"
       }
     ]
   },
@@ -125,17 +125,7 @@
     "episodes": [
       {
         "episode_id": "ep006",
-        "video_id": null
-      }
-    ]
-  },
-  "yukimura": {
-    "display_name": "Sanada Yukimura",
-    "playlist_id": null,
-    "episodes": [
-      {
-        "episode_id": "ep008",
-        "video_id": null
+        "video_id": "SMYdQA_vH-g"
       }
     ]
   },
@@ -145,7 +135,7 @@
     "episodes": [
       {
         "episode_id": "ep008",
-        "video_id": null
+        "video_id": "CvdXyK2J6x4"
       }
     ]
   },
@@ -153,6 +143,10 @@
     "display_name": "Sanada Yukimura",
     "playlist_id": "PLOa8YFQho_cETINHm6TBoIbTlABG8gNbb",
     "episodes": [
+      {
+        "episode_id": "ep008",
+        "video_id": "CvdXyK2J6x4"
+      },
       {
         "episode_id": "ep009",
         "video_id": "2tO6djVL0q8"

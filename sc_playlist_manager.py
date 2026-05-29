@@ -169,7 +169,18 @@ def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
                 _add_to_playlist(youtube, playlist_id, video_id)
                 print(f"  {display_name}: プレイリストに追加 ({appearances}回目)")
             else:
-                print(f"  ⚠️  {display_name}: playlist_id 未登録。手動で設定してください")
+                # playlist_id が未登録（過去のアップロード漏れ）→ 今から作成してバックフィル
+                print(f"  {display_name}: playlist_id 未登録 → プレイリストを新規作成してバックフィル")
+                playlist_id = _create_playlist(youtube, display_name)
+                char_data["playlist_id"] = playlist_id
+                added = 0
+                for entry in char_data["episodes"]:
+                    if entry["video_id"]:
+                        _add_to_playlist(youtube, playlist_id, entry["video_id"])
+                        added += 1
+                    else:
+                        print(f"     ⚠️  {entry['episode_id']}: video_id 未登録のためスキップ")
+                print(f"     ✓ {added}本を追加（バックフィル完了）")
 
     if updated:
         _save_data(data)
