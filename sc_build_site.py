@@ -27,6 +27,20 @@ CHANNEL_URL = "https://www.youtube.com/@Samurai-Chronicles-JP"
 # データ読み込み
 # ──────────────────────────────────────────────
 
+def is_published(ep: dict) -> bool:
+    """scheduled_at が現在時刻より過去なら公開済みとみなす（JST=UTC+9）。"""
+    s = ep.get("scheduled_at", "")
+    if not s:
+        return True
+    try:
+        from datetime import timedelta
+        dt_jst = datetime.strptime(s[:16], "%Y-%m-%d %H:%M")
+        dt_utc = dt_jst.replace(tzinfo=timezone.utc) - timedelta(hours=9)
+        return datetime.now(timezone.utc) >= dt_utc
+    except Exception:
+        return True
+
+
 def load_episodes() -> list[dict]:
     eps = []
     for p in sorted(EPISODES_DIR.glob("ep[0-9]*.json")):
@@ -36,8 +50,11 @@ def load_episodes() -> list[dict]:
             d = json.loads(p.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             continue
-        if d.get("youtube_title") or d.get("episode_title"):
-            eps.append(d)
+        if not (d.get("youtube_title") or d.get("episode_title")):
+            continue
+        if not is_published(d):
+            continue
+        eps.append(d)
     eps.reverse()  # 最新順
     return eps
 
@@ -66,26 +83,11 @@ def video_id(ep: dict) -> str:
     return m.group(1) if m else ""
 
 
-def is_published(ep: dict) -> bool:
-    """scheduled_at が現在時刻より過去なら公開済みとみなす（JST=UTC+9）。"""
-    s = ep.get("scheduled_at", "")
-    if not s:
-        return True
-    try:
-        # "2026-05-31 03:00" → JST として解釈
-        dt_jst = datetime.strptime(s[:16], "%Y-%m-%d %H:%M")
-        dt_utc = dt_jst.replace(tzinfo=timezone.utc) - __import__('datetime').timedelta(hours=9)
-        return datetime.now(timezone.utc) >= dt_utc
-    except Exception:
-        return True
-
-
 def thumb_html(ep: dict, fallback: str) -> str:
-    """公開済みなら YouTube サムネイル img タグ、未公開ならフォールバック span。"""
-    if is_published(ep):
-        vid = video_id(ep)
-        if vid:
-            return f'<img src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" alt="" loading="lazy">'
+    """YouTube サムネイル img タグ（video_id がなければフォールバック span）。"""
+    vid = video_id(ep)
+    if vid:
+        return f'<img src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" alt="" loading="lazy">'
     return f'<span class="episode-thumb-num">{fallback}</span>'
 
 
@@ -319,11 +321,8 @@ def build_index(episodes: list[dict], playlists: list[dict]):
     ep_num = latest.get("episode_id", "").replace("ep", "").lstrip("0") or "?"
     ep_title = latest.get("youtube_title") or latest.get("episode_title", "")
     ep_url = latest.get("youtube_url") or CHANNEL_URL
-    if is_published(latest):
-        vid = video_id(latest)
-        thumb = f'<img src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" alt="{ep_title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">' if vid else f'<span class="episode-thumb-num" style="font-size:clamp(2rem,8vw,4rem);">SOON</span>'
-    else:
-        thumb = f'<span class="episode-thumb-num" style="font-size:clamp(2rem,8vw,4rem);">SOON</span>'
+    vid = video_id(latest)
+    thumb = f'<img src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" alt="{ep_title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">' if vid else f'<span class="episode-thumb-num" style="font-size:clamp(2rem,8vw,4rem);">{ep_num}</span>'
 
     # 次の3件
     recent_cards = ""
