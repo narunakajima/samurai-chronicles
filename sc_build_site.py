@@ -393,7 +393,7 @@ def build_index(episodes: list[dict], playlists: list[dict]):
       <h3 class="reveal" style="font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.25em;color:var(--white-dim);text-align:center;text-transform:uppercase;margin-bottom:24px;opacity:.7;">Recent Episodes</h3>
       <div class="episodes-grid" style="grid-template-columns:repeat(3,1fr);">{recent_cards}
       </div>
-      <div class="reveal" style="text-align:center;margin-top:40px;">
+      <div class="reveal" style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:40px;">
         <a class="btn-outline" href="/episodes">View All Episodes &rarr;</a>
         <a class="btn-outline" href="/playlists">View Playlists &rarr;</a>
       </div>
