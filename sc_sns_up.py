@@ -15,7 +15,9 @@ import argparse
 import json
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -79,9 +81,52 @@ def get_youtube_client():
     return youtube
 
 
+def parse_publish_at(publish_at_str: str) -> str:
+    """
+    公開日時文字列を RFC 3339（UTC）に変換して返す。
+    入力例:
+      "2026-06-01 20:00"    → JST として解釈
+      "2026-06-01 20:00 JST"
+      "2026-06-01 11:00 UTC"
+    """
+    JST = ZoneInfo("Asia/Tokyo")
+    s = publish_at_str.strip()
+
+    # タイムゾーン指定の分離
+    if s.upper().endswith("UTC"):
+        tz = timezone.utc
+        s = s[:-3].strip()
+    else:
+        # JST（デフォルト）
+        if s.upper().endswith("JST"):
+            s = s[:-3].strip()
+        tz = JST
+
+    # パース
+    for fmt in ("%Y-%m-%d %H:%M", "%Y/%m/%d %H:%M", "%Y-%m-%dT%H:%M"):
+        try:
+            dt_naive = datetime.strptime(s, fmt)
+            break
+        except ValueError:
+            continue
+    else:
+        raise ValueError(f"日時フォーマットが解析できません: {publish_at_str!r}\n"
+                         "例: '2026-06-01 20:00' (JST) または '2026-06-01 11:00 UTC'")
+
+    dt_aware = dt_naive.replace(tzinfo=tz)
+    return dt_aware.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 def upload_video(youtube, video_path: Path, title: str, description: str,
-                 tags: list) -> str:
-    print(f"  アップロード中: {video_path.name} ...")
+                 tags: list, publish_at: str | None = None) -> str:
+    if publish_at:
+        publish_at_rfc = parse_publish_at(publish_at)
+        status_body = {"privacyStatus": "private", "publishAt": publish_at_rfc}
+        print(f"  アップロード中（予約公開: {publish_at}）: {video_path.name} ...")
+    else:
+        status_body = {"privacyStatus": "public"}
+        print(f"  アップロード中: {video_path.name} ...")
+
     req = youtube.videos().insert(
         part="snippet,status",
         body={
@@ -92,7 +137,7 @@ def upload_video(youtube, video_path: Path, title: str, description: str,
                 "categoryId": "27",  # Education
                 "defaultLanguage": "en",
             },
-            "status": {"privacyStatus": "public"},
+            "status": status_body,
         },
         media_body=MediaFileUpload(str(video_path), chunksize=-1, resumable=True),
     )
@@ -102,7 +147,10 @@ def upload_video(youtube, video_path: Path, title: str, description: str,
         if status:
             print(f"  {int(status.progress() * 100)}%", end="\r")
     video_id = response["id"]
-    print(f"  ✓ 完了: https://youtu.be/{video_id}")
+    if publish_at:
+        print(f"  ✓ 完了（予約公開: {publish_at}）: https://youtu.be/{video_id}")
+    else:
+        print(f"  ✓ 完了（即時公開）: https://youtu.be/{video_id}")
     return video_id
 
 
@@ -132,7 +180,7 @@ def upload_caption(youtube, video_id: str, srt_path: Path):
     print(f"  ✓ 字幕完了")
 
 
-def run(episode_id: str):
+def run(episode_id: str, publish_at: str | None = None):
     ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
     if not ep_json.exists():
         print(f"❌ エピソードJSONが見つかりません: {ep_json}")
@@ -164,7 +212,7 @@ def run(episode_id: str):
 
     # 本編
     print("【本編】")
-    main_id = upload_video(youtube, main_video, title, description, tags)
+    main_id = upload_video(youtube, main_video, title, description, tags, publish_at)
     if srt_file.exists():
         upload_caption(youtube, main_id, srt_file)
     else:
@@ -190,7 +238,8 @@ def run(episode_id: str):
         f"https://www.youtube.com/@Samurai-Chronicles-JP"
     )
     shorts_id = upload_video(youtube, shorts_video,
-                             f"{title} #Shorts", shorts_description, tags + ["shorts"])
+                             f"{title} #Shorts", shorts_description, tags + ["shorts"],
+                             publish_at)
 
     # youtube_url / shorts_url を ep.json に書き戻す
     ep["youtube_url"] = f"https://youtu.be/{main_id}"
@@ -199,8 +248,9 @@ def run(episode_id: str):
         json.dump(ep, f, ensure_ascii=False, indent=2)
     print(f"  ✓ ep.json に youtube_url / shorts_url を保存しました")
 
+    status_label = f"予約公開: {publish_at}" if publish_at else "即時公開"
     print(f"\n{'━'*60}")
-    print(f"  ✓ アップロード完了（公開）")
+    print(f"  ✓ アップロード完了（{status_label}）")
     print(f"  本編:   https://youtu.be/{main_id}")
     print(f"  Shorts: https://youtu.be/{shorts_id}")
     print(f"{'━'*60}\n")
@@ -283,6 +333,8 @@ def fix_shorts_description(episode_id: str, shorts_id: str):
 def cli():
     parser = argparse.ArgumentParser(description="Samurai Chronicles YouTube アップロード")
     parser.add_argument("--episode", required=False, help="エピソードID（例: ep001）")
+    parser.add_argument("--publish-at", metavar="DATETIME",
+                        help="予約公開日時（JST）例: '2026-06-01 20:00' / 省略時は即時公開")
     parser.add_argument("--fix-shorts", metavar="SHORTS_ID", help="既存ShortsのIDを指定して説明文を修正（本編IDは自動取得）")
     args = parser.parse_args()
 
@@ -291,7 +343,7 @@ def cli():
             parser.error("--fix-shorts には --episode も必要です")
         fix_shorts_description(args.episode, args.fix_shorts)
     elif args.episode:
-        run(args.episode)
+        run(args.episode, publish_at=args.publish_at)
     else:
         parser.error("--episode または --fix-shorts を指定してください")
 
