@@ -1,11 +1,23 @@
 {
   "musashi": {
     "display_name": "Miyamoto Musashi",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cGd07tquHvwbCJ2ZFnAqPFc",
     "episodes": [
       {
         "episode_id": "ep001",
         "video_id": "kZN4msDx9Tg"
+      },
+      {
+        "episode_id": "ep010",
+        "video_id": "Xmr8tkRIHYY"
+      },
+      {
+        "episode_id": "ep012",
+        "video_id": "VFzHiWmeHJE"
+      },
+      {
+        "episode_id": "ep013",
+        "video_id": "lMFgM4Q8yx4"
       }
     ]
   },
@@ -32,6 +44,14 @@
         "video_id": "AD1QPvfZZqU"
       },
       {
+        "episode_id": "ep011",
+        "video_id": "xZQmj0i14oc"
+      },
+      {
+        "episode_id": "ep013",
+        "video_id": "lMFgM4Q8yx4"
+      },
+      {
         "episode_id": "ep014",
         "video_id": "rJiO7I-llw4"
       }
@@ -39,11 +59,19 @@
   },
   "mitsuhide": {
     "display_name": "Akechi Mitsuhide",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cFH6SSVEbpRl9KHm9Lp34rT",
     "episodes": [
       {
         "episode_id": "ep002",
         "video_id": "TyxdaK8mu_E"
+      },
+      {
+        "episode_id": "ep011",
+        "video_id": "xZQmj0i14oc"
+      },
+      {
+        "episode_id": "ep012",
+        "video_id": "VFzHiWmeHJE"
       }
     ]
   },
@@ -100,6 +128,14 @@
       {
         "episode_id": "ep005",
         "video_id": "AD1QPvfZZqU"
+      },
+      {
+        "episode_id": "ep011",
+        "video_id": "xZQmj0i14oc"
+      },
+      {
+        "episode_id": "ep012",
+        "video_id": "VFzHiWmeHJE"
       },
       {
         "episode_id": "ep016",
