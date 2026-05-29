@@ -293,7 +293,7 @@ def build_index(episodes: list[dict], playlists: list[dict]):
 
     # 新着エピソードカード
     vid = video_id(latest)
-    thumb = f'<img src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" alt="{latest.get("youtube_title","")}" loading="lazy">' if vid else '<span class="episode-thumb-num">NEW</span>'
+    thumb = f'<img src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" alt="{latest.get("youtube_title","")}" loading="lazy" onerror="this.style.display=\'none\'">' if vid else '<span class="episode-thumb-num">NEW</span>'
     ep_url = latest.get("youtube_url") or CHANNEL_URL
     ep_num = latest.get("episode_id", "").replace("ep", "").lstrip("0") or "?"
     ep_title = latest.get("youtube_title") or latest.get("episode_title", "")
@@ -302,9 +302,10 @@ def build_index(episodes: list[dict], playlists: list[dict]):
     recent_cards = ""
     for i, ep in enumerate(episodes[1:4]):
         v = video_id(ep)
-        t = f'<img src="https://img.youtube.com/vi/{v}/mqdefault.jpg" alt="" loading="lazy">' if v else f'<span class="episode-thumb-num">{ep.get("episode_id","").replace("ep","")}</span>'
+        ep_n = ep.get("episode_id","").replace("ep","")
+        t = f'<img src="https://img.youtube.com/vi/{v}/mqdefault.jpg" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling&&(this.nextElementSibling.style.display=\'flex\')"><span class="episode-thumb-num" style="display:none">{ep_n}</span>' if v else f'<span class="episode-thumb-num">{ep_n}</span>'
         u = ep.get("youtube_url") or CHANNEL_URL
-        n = ep.get("episode_id", "").replace("ep", "")
+        n = ep_n
         tl = ep.get("youtube_title") or ep.get("episode_title", "")
         delay = f" reveal-delay-{i+1}"
         recent_cards += f"""
@@ -439,9 +440,9 @@ def build_episodes(episodes: list[dict]):
     cards = ""
     for i, ep in enumerate(episodes):
         v = video_id(ep)
-        thumb = f'<img src="https://img.youtube.com/vi/{v}/mqdefault.jpg" alt="" loading="lazy">' if v else f'<span class="episode-thumb-num">{ep.get("episode_id","").replace("ep","")}</span>'
-        url = ep.get("youtube_url") or CHANNEL_URL
         num = ep.get("episode_id", "").replace("ep", "")
+        thumb = f'<img src="https://img.youtube.com/vi/{v}/mqdefault.jpg" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling&&(this.nextElementSibling.style.display=\'flex\')"><span class="episode-thumb-num" style="display:none">{num}</span>' if v else f'<span class="episode-thumb-num">{num}</span>'
+        url = ep.get("youtube_url") or CHANNEL_URL
         title = ep.get("youtube_title") or ep.get("episode_title", "")
         delay = f" reveal-delay-{(i % 4) + 1}" if (i % 4) != 0 else ""
         cards += f"""
@@ -488,7 +489,8 @@ def build_playlists(playlists: list[dict]):
         ep_count = len(eps)
         # サムネイル: 最初の動画のサムネ
         first_vid = next((e["video_id"] for e in eps if e.get("video_id")), None)
-        thumb = f'<img src="https://img.youtube.com/vi/{first_vid}/mqdefault.jpg" alt="{pl["display_name"]}" loading="lazy">' if first_vid else f'<span class="episode-thumb-num" style="font-size:1rem;letter-spacing:.05em;">{pl["display_name"].split()[0].upper()}</span>'
+        char_abbr = pl["display_name"].split()[0].upper()
+        thumb = f'<img src="https://img.youtube.com/vi/{first_vid}/mqdefault.jpg" alt="{pl["display_name"]}" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling&&(this.nextElementSibling.style.display=\'flex\')"><span class="episode-thumb-num" style="display:none;font-size:1rem;letter-spacing:.05em;">{char_abbr}</span>' if first_vid else f'<span class="episode-thumb-num" style="font-size:1rem;letter-spacing:.05em;">{char_abbr}</span>'
         delay = f" reveal-delay-{(i % 4) + 1}" if (i % 4) != 0 else ""
         cards += f"""
         <a class="episode-card reveal{delay}" href="{pl_url}" target="_blank" rel="noopener">
