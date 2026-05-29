@@ -1,0 +1,266 @@
+{
+  "episode_id": "ep015",
+  "episode_title": "The Siege of Osaka",
+  "youtube_title": "The Last Castle: How Japan's Greatest Dynasty Fell in One Summer",
+  "youtube_description": "Osaka Castle was the most impregnable fortress in Japan. Toyotomi Hideyori had ninety thousand men, an undefeated legend defending his walls, and the gold of his father's dynasty at his back. He was twenty-two years old — and he had already lost.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 Osaka Castle fell in a single\n0:40 In 1603, three years after his\n1:30 Ieyasu moved with calculated...\n2:20 Inside Osaka Castle, Hideyori...\n3:15 The pretext arrived in the form\n4:15 In the winter of 1614, Tokugawa\n5:10 Among the thousands who came to\n6:03 The Sanada-maru was a...\n6:58 Unable to break through...\n8:00 Hideyori walked the walls and...\n8:57 In the summer of 1615, Ieyasu\n9:42 Sanada Yukimura did not fight to\n10:27 Surrounded, exhausted, and...\n11:27 Inside the burning castle,...\n12:24 In the days that followed,...\n13:29 The Siege of Osaka was not\n14:34 Tokugawa Ieyasu died just one...\n15:38 Sanada Yukimura never became...\n16:37 Next time on Samurai...\n17:05 If the fall of the samurai\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"Osaka 1615: The Last Battle of the Samurai.\" Osprey Publishing, 2006.\n2. Berry, Mary Elizabeth. \"Hideyoshi.\" Harvard University Press, 1982.\n3. Sadler, A.L. \"The Maker of Modern Japan: The Life of Shogun Tokugawa Ieyasu.\" Tuttle Publishing, 2011.\n\n#SiegeOfOsaka #SamuraiHistory #TokugawaIeyasu #SanadaYukimura #ToyotomiHideyori #JapaneseHistory #SengokuPeriod #OsakaCastle #BattleOfTennoji #SamuraiDocumentary",
+  "youtube_tags": [
+    "Siege of Osaka",
+    "Osaka Castle",
+    "Toyotomi Hideyori",
+    "Tokugawa Ieyasu",
+    "Sanada Yukimura",
+    "samurai",
+    "Japanese history",
+    "feudal Japan",
+    "Sengoku period",
+    "Edo period",
+    "Battle of Tennoji",
+    "samurai documentary",
+    "Japan history",
+    "Toyotomi clan",
+    "Tokugawa shogunate"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "teaser_narration": "Osaka Castle — Japan's most impregnable fortress — fell in a single afternoon. The heir inside was twenty-two years old. The warlord outside had been waiting fifty years for this moment. How does the mightiest dynasty in Japan simply disappear?",
+  "shorts_narration": "One castle. One summer. Ninety thousand defenders — and it fell in a single afternoon. Japan's most powerful dynasty, erased in weeks. Could anyone have stopped Ieyasu? This is the Siege of Osaka.",
+  "thumbnail_prompt": "Osaka Castle engulfed in towering flames at night, massive white stone walls and towers consumed by orange fire, black smoke billowing against a dark sky, a lone samurai in brilliant red armor silhouetted in the foreground facing the inferno, dramatic backlighting, wide cinematic composition, scale and devastation emphasized.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 12,
+      "narration": "Osaka Castle fell in a single afternoon. The mightiest dynasty in Japan — gone within one generation. How did Hideyoshi's clan destroy itself before it could even begin?",
+      "image_prompt": "Osaka Castle engulfed in flames against a crimson sky, massive stone walls crumbling, silhouettes of fleeing figures in the foreground, smoke billowing upward, cinematic wide shot emphasizing the scale of the destruction.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 35,
+      "narration": "In 1603, three years after his decisive victory at Sekigahara, Tokugawa Ieyasu was appointed Shogun by the Emperor — the first man to hold that title in over a century. But the prize was not fully secure. In Osaka Castle, Toyotomi Hideyori — the teenage son of the late Hideyoshi — still commanded the loyalty of thousands of samurai, sitting atop a mountain of gold left by his father. Ieyasu had won the war. But Hideyori's very existence was a challenge to everything he was trying to build.",
+      "image_prompt": "Edo period map of Japan showing Osaka and Edo marked with glowing points of light, two heraldic crests facing each other — the Tokugawa triple hollyhock and the Toyotomi paulownia — dramatic lighting suggesting tension between two power centers, dark atmospheric background.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 35,
+      "narration": "Ieyasu moved with calculated patience. In 1605, just two years after becoming Shogun, he abdicated in favor of his son Hidetada. The message was unmistakable: the Tokugawa line would rule in perpetuity. The Shogunate was not a reward for merit — it was a family inheritance. Hideyori, watching from Osaka, understood the implication. His father had been the most powerful man in Japan. He himself was being written out of history without a single battle. The question was no longer whether conflict would come — only when Ieyasu would manufacture a reason.",
+      "image_prompt": "Tokugawa Ieyasu in formal black court robes seated on an elevated dais in an Edo period reception hall, seen from a low angle that emphasizes his authority, face calm and calculating, rows of kneeling attendants stretching behind him, shafts of light from high windows illuminating his composed expression.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "Inside Osaka Castle, Hideyori grew into a young man of remarkable bearing — handsome, educated, beloved by those who served him. Ronin samurai from across Japan, masterless warriors left adrift by Ieyasu's political purges, found their way to Osaka and pledged their swords to the Toyotomi heir. By 1614, the castle's garrison had swelled to nearly ninety thousand men. Ieyasu watched this gathering of veterans and outcasts with cold recognition. An army was assembling itself around a boy who had never commanded one. He would not wait indefinitely.",
+      "image_prompt": "Toyotomi Hideyori as a young man in gold-and-black lacquered armor standing at the top of Osaka Castle's keep, gazing outward with an expression of earnest pride, below him a courtyard filled with armed samurai pledging loyalty, banners of many clans visible, golden light from above.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "The pretext arrived in the form of a bell. In 1614, the great temple bell of Hoko-ji in Kyoto was finally completed — a gift funded by Hideyori. The dedication inscription read \"Kokka anko\" — May the state be peaceful and prosperous. Ieyasu's advisors declared it a hidden curse: the characters for \"Ie\" and \"yasu,\" the two halves of Ieyasu's own name, were split apart in the text — a prayer, they claimed, for his destruction. It was almost certainly a fabrication. But it was all Ieyasu needed. The siege of Osaka had its justification.",
+      "image_prompt": "A massive ancient bronze temple bell hanging in a dim Kyoto temple interior, close-up of Japanese characters carved into its surface, a single shaft of light illuminating the inscription, atmosphere of ominous political significance, incense smoke drifting through the frame.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "In the winter of 1614, Tokugawa Ieyasu mobilized the largest army Japan had seen since Sekigahara. Two hundred thousand soldiers advanced on Osaka from multiple directions, encircling the great castle in a ring of steel and fire. Cannons — including heavy artillery purchased from the Dutch and English — bombarded the outer towers day and night. The sound, witnesses recorded, could be heard for thirty miles. Inside the walls, Hideyori's defenders were outnumbered nearly two to one. But Osaka Castle was not simply a fortress. It was the greatest military construction in Japanese history.",
+      "image_prompt": "Vast Tokugawa army encamped around Osaka Castle in winter, tens of thousands of soldiers in formation across snow-covered plains, artillery pieces being positioned, smoke rising from cannon fire in the distance, the castle's white towers visible against a grey overcast sky, scale overwhelming.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "Among the thousands who came to fight for the Toyotomi, one man stood apart. Sanada Yukimura — son of a legendary strategist, veteran of a dozen campaigns — arrived at Osaka having spent fourteen years in exile, his reputation as one of Japan's finest tacticians intact. The defenders welcomed him as a gift from the gods. Yukimura took one look at the castle's southwestern flank, identified its critical vulnerability, and immediately set about solving it. He would build something Ieyasu's generals had never encountered. He called it the Sanada-maru.",
+      "image_prompt": "Sanada Yukimura in brilliant crimson lacquered armor standing on the walls of Osaka Castle, surveying the surrounding terrain with fierce focused intensity, the six-coin crest visible on his helmet, a war fan held open in one hand, autumn light behind him, his posture radiating confident command.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_yukimura",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "The Sanada-maru was a masterpiece of defensive engineering — a semi-circular barbican fort extending from the main walls, bristling with gunmen and archers, positioned to create devastating crossfire against any assault on the castle's most exposed side. When Tokugawa forces attacked in November 1614, Yukimura's guns cut them down in waves. Thousands of Tokugawa soldiers died against that single outwork, unable to advance, unable to retreat. Among the surviving veterans, word spread quickly: the red demon of Osaka could not be taken by force. Ieyasu would need to find another way.",
+      "image_prompt": "The Sanada-maru fort under direct assault from Tokugawa forces, arquebusiers firing through gun ports in dense smoke, attacking soldiers falling in the foreground, Yukimura visible at the top directing defenders with absolute authority, chaos and smoke of battle filling the frame.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_yukimura",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "Unable to break through Osaka's defenses by force, Ieyasu changed tactics. He opened peace negotiations, offering Hideyori favorable terms — a withdrawal of Tokugawa forces in exchange for the filling of the outer moat. Hideyori and his mother Yodo-dono accepted. But once Ieyasu's engineers began working, they did not stop at the outer moat. Methodically, systematically, they filled the second moat. Then the third. When Hideyori's advisors protested, the work was already done. What had taken generations to dig was gone in weeks. Osaka Castle, impregnable for decades, now stood almost naked.",
+      "image_prompt": "Tokugawa engineers and laborers filling the defensive moats around Osaka Castle, wooden bridges being demolished, workers moving earth in coordinated teams, samurai commanders observing as the water channels disappear under dirt and fill, the castle walls increasingly exposed.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "Hideyori walked the walls and understood what had been done to him. The moats his father had commissioned — the water defenses that had made Osaka the most formidable castle in Asia — were gone. Ieyasu had achieved without a single battle what three months of bombardment had failed to accomplish. Hideyori's advisors urged him to seek a political solution, to submit, to negotiate further. Yukimura told him plainly: there would be no more negotiation. Ieyasu had stripped the castle bare without destroying it. The Summer Campaign was already inevitable.",
+      "image_prompt": "Toyotomi Hideyori standing at the edge of what was once Osaka Castle's inner moat, now filled with earth and rubble, his gold-and-black armor catching grey light, his expression a mixture of disbelief and dawning dread, advisors gathered behind him in urgent hushed conference.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 35,
+      "narration": "In the summer of 1615, Ieyasu came back. This time, there was no siege, no encirclement, no diplomatic pretext. The Tokugawa army crossed the Yamato River and advanced directly on Osaka from multiple directions. With the moats gone, the castle's defensive depth had collapsed. Hideyori's army — still nearly ninety thousand strong — moved out to meet them on the open plain at Tennoji. June 3rd, 1615. It would be the last major battle of Japan's age of civil war. And everyone who fought that day knew it.",
+      "image_prompt": "Wide aerial view of two massive armies converging on the plains outside Osaka Castle at dawn, thousands of banners and spearpoints glinting in early light, smoke from arquebuses rising in long lines, the castle visible in the background, the scale and finality of the confrontation overwhelming.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 35,
+      "narration": "Sanada Yukimura did not fight to survive. He fought to make history. Commanding the Toyotomi vanguard in blazing red armor, he led a charge directly into the heart of Ieyasu's command position — cutting through unit after unit, pushing so deep into enemy lines that, for a terrifying moment, Ieyasu himself was forced to flee. Witnesses recorded that the old Shogun turned his horse and rode for his life. Yukimura had come within a hundred yards of ending the Tokugawa dynasty with a single sword stroke. But there were simply too many of them.",
+      "image_prompt": "Sanada Yukimura in crimson armor charging on horseback at the head of a desperate cavalry formation through smoke and chaos, his katana raised high, enemy soldiers scattering before him, dust and fire filling the battlefield, his forward momentum unstoppable and doomed simultaneously.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_yukimura",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 35,
+      "narration": "Surrounded, exhausted, and bleeding from multiple wounds, Yukimura finally stopped. He sat down beneath a pine tree on the edge of the battlefield. When a Tokugawa soldier found him there, Yukimura reportedly said: \"I am tired. Take my head.\" He died as he had fought — without surrender, without retreat, without compromise. The Toyotomi line would not survive him long. With Yukimura gone, the defense of Osaka Castle collapsed. By nightfall, Ieyasu's forces had breached the outer gates. The fire that consumed the castle could be seen from thirty miles away.",
+      "image_prompt": "Sanada Yukimura seated beneath a pine tree on a smoke-covered battlefield at dusk, his crimson armor battered and bloodied, posture still dignified in final exhaustion, enemy soldiers surrounding him at a respectful distance, the last golden light of day filtering through drifting smoke.",
+      "ken_burns": "zoom_out",
+      "character_ref": "sanada_yukimura",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 35,
+      "narration": "Inside the burning castle, Toyotomi Hideyori faced the end with his mother Yodo-dono at his side. He was twenty-two years old. He had never commanded an army in the field, never left Osaka's walls without escort, never been given the chance to be the man his father had hoped to make him. They retreated to the innermost keep as the fire spread. When Ieyasu's messengers arrived offering terms of surrender, Yodo-dono refused. On June 4th, 1615, mother and son died together as the castle burned. The Toyotomi clan — the dynasty that had unified Japan — was extinguished.",
+      "image_prompt": "Osaka Castle's main keep engulfed in roaring fire at night, the enormous tower burning from within, flames reflected in the remaining moat water below, sparks and embers rising against total darkness, the silhouette of the collapsing structure suggesting the finality of an era ending.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 35,
+      "narration": "In the days that followed, Ieyasu moved with clinical precision to eliminate every remaining trace of Toyotomi power. The castle's surviving defenders were hunted down. Hideyori's young son — Ieyasu's own great-grandchild by marriage — was executed to prevent any future claim to succession. The stones of Osaka Castle were dismantled and repurposed for new Tokugawa fortifications. Hideyoshi's legacy — the man who had risen from a peasant sandal-carrier to ruler of Japan — was methodically and completely erased. Japan now had one master, one dynasty, one future. It would remain that way for two and a half centuries.",
+      "image_prompt": "Tokugawa soldiers dismantling the ruins of Osaka Castle in the aftermath, workers removing carved stones and timbers under supervision of mounted commanders, the Tokugawa triple hollyhock banner raised over rubble where the Toyotomi paulownia crest once flew, grey dawn light, methodical destruction.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 35,
+      "narration": "The Siege of Osaka was not simply a military victory. It was the final punctuation mark on a century of warfare that had consumed Japan since 1467. Every major warlord who might have challenged Tokugawa supremacy was now dead, defeated, or submissive. The political architecture Ieyasu had spent his entire life constructing was now uncontested. The Edo period — two hundred and fifty years of enforced peace, rigid hierarchy, and extraordinary cultural flourishing — began the morning the fires at Osaka went out. Whether the destruction of the Toyotomi was necessary or merely ruthless remains a question historians still argue.",
+      "image_prompt": "Split composition: left half shows the smoldering ruins of Osaka Castle in 1615 under a smoke-darkened sky; right half shows a peaceful prosperous Edo-period city street decades later with merchants, artisans, and samurai coexisting in orderly calm, the contrast between destruction and the peace it created.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 35,
+      "narration": "Tokugawa Ieyasu died just one year after the fall of Osaka, in April 1616, at the age of seventy-three. He had outlasted every rival, survived every reversal, and outlived the age itself. Where Nobunaga had conquered by force and Hideyoshi by charisma, Ieyasu conquered by patience — waiting, absorbing setbacks, positioning himself for the inevitable moment. The Shogunate he built would pass through fourteen generations without interruption. No other political system in Japanese history lasted as long or brought as complete a peace. His was not the most dramatic life in the Sengoku period. It was simply the most successful.",
+      "image_prompt": "Tokugawa Ieyasu in ceremonial armor seated in formal authority in his final years at Sunpu Castle, an elderly but still commanding figure, his expression one of deep composed satisfaction, attendants at respectful distance behind him, the symbols of Tokugawa power arranged around him, warm light from a single direction.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 35,
+      "narration": "Sanada Yukimura never became Shogun. He never ruled a domain. He had no political power, no strategic initiative, no realistic chance of changing the outcome at Osaka. And yet his name endures in Japanese memory more vividly than most of the men who won. The samurai ideal — loyalty unto death, courage in the face of impossible odds, the willingness to die beautifully rather than survive dishonorably — found its perfect expression in a losing charge across a summer battlefield. Defeat, in Japan's warrior tradition, has its own kind of immortality. Yukimura understood this. He chose it.",
+      "image_prompt": "A traditional ukiyo-e style woodblock print of Sanada Yukimura — idealized, heroic — mounted on a rearing black horse in full crimson armor, the image displayed as a framed artwork in a later Edo-period interior, suggesting legendary status that outlasted the man himself.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_yukimura",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles: before Sekigahara, before the Shogunate, before Osaka — Tokugawa Ieyasu spent fifty years as a hostage, a vassal, and a subordinate before he became the man who outlasted them all. The patient warlord's journey begins.",
+      "image_prompt": "Tokugawa Ieyasu as a young man in simple unadorned armor standing alone at a crossroads in a misty mountain landscape, face set with quiet determined resolve, early dawn light suggesting the beginning of a very long story, the road ahead disappearing into fog.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 14,
+      "narration": "If the fall of the samurai age speaks to you, subscribe and join us for every new episode. Osaka burned in 1615. The embers, it turns out, have never quite gone cold.",
+      "image_prompt": "Aerial view of Osaka Castle as it appears today — restored and gleaming white against a blue sky — surrounded by the modern city, cherry blossoms in bloom around the reconstructed moat, the enduring symbol of Japan's warrior past standing amid the present, golden afternoon light.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_source": "ep003/audio/ep003-BGM.mp3"
+}
