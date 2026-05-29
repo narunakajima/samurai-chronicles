@@ -2,11 +2,13 @@
 sc_sns_up.py — Samurai Chronicles YouTube アップロード
 
 使い方:
-  python3 sc_sns_up.py --episode ep001
+  python3 sc_sns_up.py --episode ep001              # 次の空き 03:00 JST に自動予約
+  python3 sc_sns_up.py --episode ep001 --now        # 即時公開
+  python3 sc_sns_up.py --episode ep001 --publish-at "2026-06-01 20:00"  # 日時指定
 
-アップロード内容:
-  1. 本編動画（タイトル・説明文・タグ・字幕）
-  2. Shorts動画（タイトル末尾に #Shorts を付加）
+デフォルト動作:
+  毎日 03:00 JST に1本ずつ公開。
+  すでに予約済みのエピソードがある場合は翌日以降の空きスロットを自動割り当て。
 
 認証: ~/.claude/secrets/yt_client_secrets.json（Lamps Whisper と共用）
 """
@@ -15,8 +17,9 @@ import argparse
 import json
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from typing import Optional
 from zoneinfo import ZoneInfo
 
 from google.auth.transport.requests import Request
@@ -81,6 +84,45 @@ def get_youtube_client():
     return youtube
 
 
+JST = ZoneInfo("Asia/Tokyo")
+PUBLISH_HOUR_JST = 3  # 毎日 03:00 JST に公開
+
+
+def find_next_publish_slot() -> str:
+    """
+    次の空き 03:00 JST スロットを返す（"YYYY-MM-DD HH:MM" JST 形式）。
+
+    - episodes/*.json の scheduled_at を読んで使用済み日付を収集
+    - 今日の 03:00 JST が未来 → 今日を候補に、過去 → 明日を候補に
+    - 使用済み日付を避けて最初の空き日を返す
+    """
+    now_jst = datetime.now(JST)
+
+    # 使用済みスロット（date）を収集
+    used_dates: set = set()
+    for ep_file in (BASE_DIR / "episodes").glob("ep*.json"):
+        if ep_file.stat().st_size == 0:
+            continue
+        try:
+            ep = json.loads(ep_file.read_text(encoding="utf-8"))
+            raw = ep.get("scheduled_at", "")
+            if raw:
+                used_dates.add(datetime.strptime(raw[:10], "%Y-%m-%d").date())
+        except (json.JSONDecodeError, ValueError):
+            continue
+
+    # 最初の候補: 今日の 03:00 JST
+    candidate = now_jst.replace(hour=PUBLISH_HOUR_JST, minute=0, second=0, microsecond=0)
+    if candidate <= now_jst:
+        candidate += timedelta(days=1)
+
+    # 使用済みを避けながら空きを探す
+    while candidate.date() in used_dates:
+        candidate += timedelta(days=1)
+
+    return candidate.strftime("%Y-%m-%d %H:%M")
+
+
 def parse_publish_at(publish_at_str: str) -> str:
     """
     公開日時文字列を RFC 3339（UTC）に変換して返す。
@@ -89,7 +131,6 @@ def parse_publish_at(publish_at_str: str) -> str:
       "2026-06-01 20:00 JST"
       "2026-06-01 11:00 UTC"
     """
-    JST = ZoneInfo("Asia/Tokyo")
     s = publish_at_str.strip()
 
     # タイムゾーン指定の分離
@@ -100,7 +141,7 @@ def parse_publish_at(publish_at_str: str) -> str:
         # JST（デフォルト）
         if s.upper().endswith("JST"):
             s = s[:-3].strip()
-        tz = JST
+        tz = ZoneInfo("Asia/Tokyo")
 
     # パース
     for fmt in ("%Y-%m-%d %H:%M", "%Y/%m/%d %H:%M", "%Y-%m-%dT%H:%M"):
@@ -118,7 +159,7 @@ def parse_publish_at(publish_at_str: str) -> str:
 
 
 def upload_video(youtube, video_path: Path, title: str, description: str,
-                 tags: list, publish_at: str | None = None) -> str:
+                 tags: list, publish_at: Optional[str] = None) -> str:
     if publish_at:
         publish_at_rfc = parse_publish_at(publish_at)
         status_body = {"privacyStatus": "private", "publishAt": publish_at_rfc}
@@ -180,7 +221,7 @@ def upload_caption(youtube, video_id: str, srt_path: Path):
     print(f"  ✓ 字幕完了")
 
 
-def run(episode_id: str, publish_at: str | None = None):
+def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = False):
     ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
     if not ep_json.exists():
         print(f"❌ エピソードJSONが見つかりません: {ep_json}")
@@ -199,8 +240,18 @@ def run(episode_id: str, publish_at: str | None = None):
     description = ep["youtube_description"]
     tags = ep.get("youtube_tags", [])
 
+    # 公開日時の決定
+    if publish_now:
+        publish_at = None  # 即時公開
+        publish_label = "即時公開"
+    elif publish_at:
+        publish_label = f"予約公開: {publish_at} JST"
+    else:
+        publish_at = find_next_publish_slot()
+        publish_label = f"予約公開: {publish_at} JST（自動）"
+
     print(f"\n{'━'*60}")
-    print(f"  {episode_id} — YouTube アップロード")
+    print(f"  {episode_id} — YouTube アップロード（{publish_label}）")
     print(f"{'━'*60}\n")
 
     for path, label in [(main_video, "本編"), (shorts_video, "Shorts")]:
@@ -241,16 +292,16 @@ def run(episode_id: str, publish_at: str | None = None):
                              f"{title} #Shorts", shorts_description, tags + ["shorts"],
                              publish_at)
 
-    # youtube_url / shorts_url を ep.json に書き戻す
+    # youtube_url / shorts_url / scheduled_at を ep.json に書き戻す
     ep["youtube_url"] = f"https://youtu.be/{main_id}"
     ep["shorts_url"] = f"https://youtu.be/{shorts_id}"
+    ep["scheduled_at"] = publish_at if publish_at else ""
     with open(ep_json, "w", encoding="utf-8") as f:
         json.dump(ep, f, ensure_ascii=False, indent=2)
-    print(f"  ✓ ep.json に youtube_url / shorts_url を保存しました")
+    print(f"  ✓ ep.json に youtube_url / shorts_url / scheduled_at を保存しました")
 
-    status_label = f"予約公開: {publish_at}" if publish_at else "即時公開"
     print(f"\n{'━'*60}")
-    print(f"  ✓ アップロード完了（{status_label}）")
+    print(f"  ✓ アップロード完了（{publish_label}）")
     print(f"  本編:   https://youtu.be/{main_id}")
     print(f"  Shorts: https://youtu.be/{shorts_id}")
     print(f"{'━'*60}\n")
@@ -334,7 +385,9 @@ def cli():
     parser = argparse.ArgumentParser(description="Samurai Chronicles YouTube アップロード")
     parser.add_argument("--episode", required=False, help="エピソードID（例: ep001）")
     parser.add_argument("--publish-at", metavar="DATETIME",
-                        help="予約公開日時（JST）例: '2026-06-01 20:00' / 省略時は即時公開")
+                        help="予約公開日時（JST）例: '2026-06-01 20:00' / 省略時は翌 03:00 JST に自動予約")
+    parser.add_argument("--now", action="store_true",
+                        help="即時公開（03:00 JST 自動予約をスキップ）")
     parser.add_argument("--fix-shorts", metavar="SHORTS_ID", help="既存ShortsのIDを指定して説明文を修正（本編IDは自動取得）")
     args = parser.parse_args()
 
@@ -343,7 +396,7 @@ def cli():
             parser.error("--fix-shorts には --episode も必要です")
         fix_shorts_description(args.episode, args.fix_shorts)
     elif args.episode:
-        run(args.episode, publish_at=args.publish_at)
+        run(args.episode, publish_at=args.publish_at, publish_now=args.now)
     else:
         parser.error("--episode または --fix-shorts を指定してください")
 
