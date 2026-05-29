@@ -265,14 +265,14 @@ REVEAL_JS = """
 
 
 def nav_html(active: str) -> str:
-    links = [("index.html", "Top"), ("episodes.html", "Episodes"), ("playlists.html", "Playlists")]
+    links = [("/", "Top"), ("/episodes", "Episodes"), ("/playlists", "Playlists")]
     items = ""
     for href, label in links:
         cls = ' class="nav-link active"' if label.lower() == active else ' class="nav-link"'
         items += f'<a{cls} href="{href}">{label.upper()}</a>'
     return f"""
   <nav class="site-nav">
-    <a class="nav-logo" href="index.html">SAMURAI CHRONICLES</a>
+    <a class="nav-logo" href="/">SAMURAI CHRONICLES</a>
     <div class="nav-links">{items}</div>
   </nav>"""
 
@@ -283,8 +283,8 @@ def footer_html() -> str:
     <p class="footer-logo">SAMURAI CHRONICLES</p>
     <div class="footer-links">
       <a class="footer-link" href="{CHANNEL_URL}" target="_blank" rel="noopener">YouTube</a>
-      <a class="footer-link" href="episodes.html">Episodes</a>
-      <a class="footer-link" href="playlists.html">Playlists</a>
+      <a class="footer-link" href="/episodes">Episodes</a>
+      <a class="footer-link" href="/playlists">Playlists</a>
     </div>
     <p class="footer-copy">&copy; 2026 Samurai Chronicles. All rights reserved.</p>
   </footer>"""
@@ -363,7 +363,7 @@ def build_index(episodes: list[dict], playlists: list[dict]):
     </div>
     <div style="margin-top:8px;animation:fadeInUp 1s .45s ease both;display:flex;gap:16px;flex-wrap:wrap;justify-content:center;">
       <a class="btn-primary" href="{CHANNEL_URL}" target="_blank" rel="noopener">Watch on YouTube &rarr;</a>
-      <a class="btn-outline" href="episodes.html">All Episodes</a>
+      <a class="btn-outline" href="/episodes">All Episodes</a>
     </div>
   </section>
 
@@ -395,7 +395,7 @@ def build_index(episodes: list[dict], playlists: list[dict]):
       <div class="episodes-grid" style="grid-template-columns:repeat(3,1fr);">{recent_cards}
       </div>
       <div class="reveal" style="text-align:center;margin-top:40px;">
-        <a class="btn-outline" href="episodes.html">View All Episodes &rarr;</a>
+        <a class="btn-outline" href="/episodes">View All Episodes &rarr;</a>
       </div>
     </div>
   </section>
