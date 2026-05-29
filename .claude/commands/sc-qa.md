@@ -24,12 +24,13 @@ IMAGES_DIR = ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイ�
 
 ## STEP 2 — 画像 × ナレーション 整合性チェック
 
-`IMAGES_DIR` の `S01.png`〜`S{N}.png` を Read ツールで読み込み、
-各シーン画像をナレーション・image_prompt と照合する。
+**⚠️ 絶対ルール：ナレーション変更は提案しない。修正手段は画像の再生成のみ。**
 
-確認する観点:
-- 画像の内容がナレーションの文脈と合っているか
-- 登場人物・時代・場所の視覚的ミスマッチ（例: ヨーロッパ風の城、異なる武将の装備）
+`IMAGES_DIR` の `S01.png`〜`S{N}.png` を Read ツールで読み込み、
+各シーン画像を image_prompt と照合する。
+
+確認する観点（すべて「画像の問題」として扱う）:
+- 画像が image_prompt の指示と大きく乖離している（被写体・構図・時代設定）
 - AI 特有の不自然さで目立つもの（崩れた文字、異様な手・顔）
 - 冒頭と終盤で同じキャラクターの同じ構図が被っていないか（reveal 演出の破綻）
 
@@ -55,7 +56,9 @@ IMAGES_DIR = ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイ�
 WARNING がある場合はユーザーに確認：
 ```
 [A] 画像を再生成して修正（zoom_anchor も再判定）
-[B] 問題は許容してそのまま
+[B] 許容してそのまま
 ```
+
+ナレーション変更の選択肢は絶対に提示しない。
 
 問題がなければ「✅ 全シーン問題なし」と報告して終了。
