@@ -145,11 +145,15 @@
   },
   "benkei": {
     "display_name": "Musashibo Benkei",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cFUyqKdg0LkVEbjj8h_NDUq",
     "episodes": [
       {
         "episode_id": "ep006",
         "video_id": "SMYdQA_vH-g"
+      },
+      {
+        "episode_id": "ep017",
+        "video_id": "qoodETrDhSg"
       }
     ]
   },
@@ -164,16 +168,24 @@
       {
         "episode_id": "ep016",
         "video_id": "2XLSdO_vOTM"
+      },
+      {
+        "episode_id": "ep017",
+        "video_id": "qoodETrDhSg"
       }
     ]
   },
   "yoritomo": {
     "display_name": "Minamoto Yoritomo",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cEFBNTipQub87HsjtuHrf10",
     "episodes": [
       {
         "episode_id": "ep006",
         "video_id": "SMYdQA_vH-g"
+      },
+      {
+        "episode_id": "ep017",
+        "video_id": "qoodETrDhSg"
       }
     ]
   },
@@ -222,6 +234,16 @@
       {
         "episode_id": "ep015",
         "video_id": "x5O8-0h9aH4"
+      }
+    ]
+  },
+  "date_masamune": {
+    "display_name": "Date Masamune",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep017",
+        "video_id": "qoodETrDhSg"
       }
     ]
   }
