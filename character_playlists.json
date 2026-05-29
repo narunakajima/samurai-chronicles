@@ -62,6 +62,10 @@
       {
         "episode_id": "ep014",
         "video_id": "rJiO7I-llw4"
+      },
+      {
+        "episode_id": "ep015",
+        "video_id": "x5O8-0h9aH4"
       }
     ]
   },
@@ -147,11 +151,15 @@
   },
   "sanada_yukimura": {
     "display_name": "Sanada Yukimura",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cETINHm6TBoIbTlABG8gNbb",
     "episodes": [
       {
         "episode_id": "ep009",
         "video_id": null
+      },
+      {
+        "episode_id": "ep015",
+        "video_id": "x5O8-0h9aH4"
       }
     ]
   },
@@ -162,6 +170,16 @@
       {
         "episode_id": "ep014",
         "video_id": "rJiO7I-llw4"
+      }
+    ]
+  },
+  "hideyori": {
+    "display_name": "Hideyori",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep015",
+        "video_id": "x5O8-0h9aH4"
       }
     ]
   }

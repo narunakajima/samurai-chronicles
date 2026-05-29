@@ -262,5 +262,8 @@
       "zoom_anchor": null
     }
   ],
-  "bgm_source": "ep003/audio/ep003-BGM.mp3"
+  "bgm_source": "ep003/audio/ep003-BGM.mp3",
+  "youtube_url": "https://youtu.be/x5O8-0h9aH4",
+  "shorts_url": "https://youtu.be/rRgXtflhT_s",
+  "scheduled_at": "2026-05-30 03:00"
 }
