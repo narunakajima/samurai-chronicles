@@ -29,7 +29,7 @@
       },
       {
         "episode_id": "ep005",
-        "video_id": null
+        "video_id": "AD1QPvfZZqU"
       },
       {
         "episode_id": "ep014",
@@ -49,15 +49,15 @@
   },
   "ieyasu": {
     "display_name": "Tokugawa Ieyasu",
-    "playlist_id": null,
+    "playlist_id": "PL7wbMuJx_ZWtwVRVx0s6ggRLycZQPsWP7",
     "episodes": [
       {
         "episode_id": "ep003",
-        "video_id": null
+        "video_id": "pje6shzYYZU"
       },
       {
         "episode_id": "ep004",
-        "video_id": null
+        "video_id": "pjgU_IK0fJU"
       },
       {
         "episode_id": "ep014",
@@ -66,6 +66,10 @@
       {
         "episode_id": "ep015",
         "video_id": "x5O8-0h9aH4"
+      },
+      {
+        "episode_id": "ep016",
+        "video_id": "2XLSdO_vOTM"
       }
     ]
   },
@@ -75,7 +79,7 @@
     "episodes": [
       {
         "episode_id": "ep004",
-        "video_id": null
+        "video_id": "pjgU_IK0fJU"
       }
     ]
   },
@@ -85,17 +89,21 @@
     "episodes": [
       {
         "episode_id": "ep004",
-        "video_id": null
+        "video_id": "pjgU_IK0fJU"
       }
     ]
   },
   "hideyoshi": {
     "display_name": "Toyotomi Hideyoshi",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cFTfyP3gyqwe6gmgbdKW86x",
     "episodes": [
       {
         "episode_id": "ep005",
-        "video_id": null
+        "video_id": "AD1QPvfZZqU"
+      },
+      {
+        "episode_id": "ep016",
+        "video_id": "2XLSdO_vOTM"
       }
     ]
   },
@@ -105,17 +113,21 @@
     "episodes": [
       {
         "episode_id": "ep006",
-        "video_id": null
+        "video_id": "SMYdQA_vH-g"
       }
     ]
   },
   "yoshitsune": {
     "display_name": "Minamoto Yoshitsune",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cEtMHkcqqatMZwl7mxaGjta",
     "episodes": [
       {
         "episode_id": "ep006",
-        "video_id": null
+        "video_id": "SMYdQA_vH-g"
+      },
+      {
+        "episode_id": "ep016",
+        "video_id": "2XLSdO_vOTM"
       }
     ]
   },
@@ -125,7 +137,7 @@
     "episodes": [
       {
         "episode_id": "ep006",
-        "video_id": null
+        "video_id": "SMYdQA_vH-g"
       }
     ]
   },

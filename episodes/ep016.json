@@ -1,0 +1,275 @@
+{
+  "episode_id": "ep016",
+  "episode_title": "The Patient Warlord",
+  "youtube_title": "The Warlord Who Waited 50 Years to Rule Japan",
+  "youtube_description": "He spent his childhood as a hostage, his manhood as a vassal, and sixty years watching more powerful men destroy themselves. When he finally became Shogun, every rival he had ever feared was already dead. This is the story of Tokugawa Ieyasu — the most patient man in Japanese history.\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 He became Shogun at sixty —\n0:43 In 1543, Tokugawa Ieyasu was...\n1:31 At the age of six, Takechiyo\n2:24 In 1547, Takechiyo was...\n3:18 On a stormy afternoon in 1560,\n4:18 In 1562, Ieyasu concluded the...\n5:26 While serving Nobunaga,...\n6:19 In 1573, Ieyasu faced the one\n7:13 The most terrible price came in\n8:02 In 1582, Ieyasu was in Sakai\n9:04 After Honnoji, Ieyasu moved...\n10:04 In 1586, Tokugawa Ieyasu...\n11:00 Edo in 1590 was little more\n12:01 When Toyotomi Hideyoshi died...\n12:55 On October 21st, 1600, at the\n13:47 In 1603, the Emperor...\n14:47 What made Ieyasu different...\n15:43 The cost, of course, was...\n16:43 Next time on Samurai...\n17:07 If the patience of a lifetime\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Sadler, A.L. \"The Maker of Modern Japan: The Life of Shogun Tokugawa Ieyasu.\" Tuttle Publishing, 2011.\n2. Totman, Conrad. \"Tokugawa Ieyasu: Shogun.\" Heian International, 1983.\n3. Turnbull, Stephen. \"Tokugawa Ieyasu.\" Osprey Publishing, 2012.\n\n\n🎵 Music: A Piano and Choir Journey by Matio888 (freesound.org) — CC BY 4.0\n#TokugawaIeyasu #SamuraiHistory #JapaneseHistory #SengokuPeriod #EdoPeriod #Shogun #Sekigahara #SamuraiDocumentary #FeudalJapan #Patience",
+  "youtube_tags": [
+    "Tokugawa Ieyasu",
+    "samurai history",
+    "Japanese history",
+    "Sengoku period",
+    "Edo period",
+    "Shogun",
+    "Battle of Sekigahara",
+    "samurai documentary",
+    "feudal Japan",
+    "Tokugawa shogunate",
+    "Oda Nobunaga",
+    "Toyotomi Hideyoshi",
+    "Mikawa",
+    "Imagawa clan",
+    "Honnoji"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 14,
+  "teaser_narration": "He spent his childhood as a hostage, his manhood as a vassal, and sixty years watching more powerful men destroy themselves. When he finally became Shogun, every rival he had ever feared was already dead. How does a man outlast an entire age?",
+  "shorts_narration": "Fifty years a hostage. A vassal. A subordinate. He outlived Nobunaga. He outlived Hideyoshi. He outlived them all. At sixty — finally Shogun. This is Tokugawa Ieyasu.",
+  "thumbnail_prompt": "Tokugawa Ieyasu as an elderly Shogun seated on an ornate golden throne in absolute composed authority, his weathered face carrying deep satisfaction, behind him a misty panorama of shadows representing his past — a child in chains, warriors clashing at Sekigahara, the ruins of Honnoji — fifty years of patience condensed into one commanding presence, dramatic lighting from above.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 12,
+      "narration": "He became Shogun at sixty — the oldest first-time ruler in Japanese history. Every rival he had ever feared was already dead. Was it genius? Or fifty years of patience that no one else was willing to endure?",
+      "image_prompt": "Tokugawa Ieyasu as an elderly warlord seated on a throne of absolute authority, his face composed and deeply weathered, behind him a vast panorama of a unified Japan at peace, dramatic golden light from above emphasizing his achievement, wide cinematic composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 35,
+      "narration": "In 1543, Tokugawa Ieyasu was born Matsudaira Takechiyo in Okazaki Castle, in the small province of Mikawa. The Matsudaira were a minor clan, caught between two giants: the Oda to the west and the Imagawa to the east. His father, Matsudaira Hirotada, died when Takechiyo was just six years old, leaving his son as the fragile heir to a fragile house. In the politics of sixteenth-century Japan, a fatherless boy in a weak clan was not a future lord. He was a bargaining chip. And everyone around him knew it.",
+      "image_prompt": "A young Japanese boy of about six years old in simple dark kimono standing alone at the gate of a small castle in Mikawa province, his expression solemn and older than his years, misty mountains in the background, the castle modest compared to the great fortresses of the era, early morning light.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "At the age of six, Takechiyo was sent as a diplomatic hostage — a common practice in an age when alliances were bought with children. He never arrived. Oda forces intercepted his escort party and carried him to Nagoya, where he spent three years in the household of Oda Nobuhide, Nobunaga's father. He was not mistreated. He was, in effect, a guest held against his father's behavior. Three years in the enemy's house, learning how a more powerful lord lived. The lessons were not wasted. They were stored, carefully, for later.",
+      "image_prompt": "A young Japanese boy of about seven years old in simple clothing seated formally in a large Oda clan reception hall, surrounded by unfamiliar warriors and attendants, his expression watchful and contained rather than frightened, afternoon light through shoji screens casting long shadows across the tatami floor.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "In 1547, Takechiyo was delivered to Sunpu — the seat of Imagawa Yoshimoto, one of the most powerful warlords in eastern Japan. He would remain there for twelve years. Under the tutelage of the brilliant monk-strategist Sessai Choro, he received an education in military tactics, political philosophy, and the management of men that few samurai of his era could equal. He was a hostage, yes. But he was also a student. By the time he left, at seventeen, he had spent his entire childhood studying power from inside a cage. He knew exactly what he was looking at.",
+      "image_prompt": "A teenage Japanese boy of about fourteen studying military texts and scrolls by lamplight in a scholar's chamber at Sunpu Castle, the Imagawa clan's mon visible on a banner behind him, a monk advisor seated across from him pointing to a strategic map, focused and attentive expression, warm candlelight.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "On a stormy afternoon in 1560, everything changed. At the Battle of Okehazama, Oda Nobunaga launched a surprise attack on Imagawa Yoshimoto's massive army and killed the Imagawa lord himself. The most powerful patron Takechiyo had ever known was gone in an afternoon. The Imagawa alliance collapsed. And Takechiyo, seventeen years old, was suddenly free — or as free as a minor lord in a war-torn land could be. He renamed himself Tokugawa Ieyasu, claimed descent from the ancient Minamoto line, and began returning to Okazaki. For the first time in his life, he was going home.",
+      "image_prompt": "A young Japanese warrior in his late teens on horseback riding through rain toward the distant outline of Okazaki Castle, his posture combining freedom with determined resolve, lightning in the dark storm clouds behind him, the first time he rides without guards or obligation, cinematic wide shot.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "In 1562, Ieyasu concluded the Kiyosu Alliance with Oda Nobunaga — a partnership that would define the next two decades of his life. The arrangement was not between equals. Nobunaga was ambitious, expanding, transforming warfare itself. Ieyasu was useful: a steady, reliable commander who could hold Nobunaga's eastern flank. He fought at Nobunaga's direction, ceded political credit, absorbed losses that Nobunaga could not spare. For twenty years, he was the indispensable ally who never threatened to become the dominant partner. He watched, learned, and waited. That restraint was not weakness. It was calculation.",
+      "image_prompt": "Oda Nobunaga and a younger Tokugawa Ieyasu facing each other across a low table during a formal alliance meeting at Kiyosu Castle, Nobunaga commanding and imperious on the left, Ieyasu composed and attentive on the right, both in formal armor, attendants kneeling along the walls.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "While serving Nobunaga, Ieyasu was simultaneously consolidating his own base in Mikawa. The province was inflamed by the Ikko-ikki — armed Buddhist peasant leagues who defied feudal authority and had defeated armies larger than Ieyasu's. Some of his most trusted retainers were Ikko-ikki members. The war lasted two years and tore families apart. When it ended, Ieyasu had broken the movement's power and emerged with what he needed most: an army of men who had followed him into fire and come through the other side. His domain, at last, was genuinely his.",
+      "image_prompt": "Tokugawa Ieyasu in his early twenties in battle-worn armor standing before a burning Ikko-ikki temple fortress in Mikawa, his small but disciplined army arrayed behind him in formation, smoke rising against an orange sky, his expression resolute rather than triumphant, the weight of victory apparent.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "In 1573, Ieyasu faced the one man who might have ended his story early. Takeda Shingen — commanding perhaps the finest cavalry army in Japan — was marching westward when Ieyasu, badly outnumbered, left his castle to confront him at Mikatagahara. The result was catastrophe. His army shattered, Ieyasu fled back to Hamamatsu Castle barely ahead of the Takeda advance. He later had a portrait painted to capture the shame of that moment — a reminder he carried for the rest of his life. He would not fight on unfavorable ground again.",
+      "image_prompt": "Tokugawa Ieyasu on horseback retreating alone through a dark and chaotic battlefield at night, his armor damaged, his face showing rare panic and shame, the bodies of his defeated soldiers visible in the foreground, Takeda banners visible in pursuit behind him, snow beginning to fall.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 35,
+      "narration": "The most terrible price came in 1579. Oda Nobunaga demanded that Ieyasu execute his own wife and eldest son. Lady Tsukiyama and Nobuyasu had allegedly conspired with the Takeda — the alliance's greatest enemy. The evidence was thin. The real reason was political: Nobunaga wanted to test Ieyasu's loyalty and remove a potential threat. Ieyasu obeyed. Lady Tsukiyama was killed. Nobuyasu was forced to commit suicide at twenty-one years old. The man who would one day rule Japan first paid for that future with the people he loved most.",
+      "image_prompt": "Tokugawa Ieyasu in his mid-thirties standing alone in a darkened inner chamber, head bowed in profound grief, his hands clasped, an unopened letter of condemnation from Nobunaga on the floor before him, a single lamp casting harsh shadows, the weight of an impossible decision visible in every line of his body.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "In 1582, Ieyasu was in Sakai when word arrived that Oda Nobunaga was dead — assassinated at Honnoji by his own general Akechi Mitsuhide. The news came with a warning: Mitsuhide's army was hunting Nobunaga's allies. Ieyasu was trapped, far from his domain, with only a small personal guard. What followed was a desperate flight through the Iga mountains, aided by local guides and Hattori Hanzo's shinobi network. He survived. Once home, he did not mourn Nobunaga publicly. He did not celebrate either. He began calculating.",
+      "image_prompt": "Tokugawa Ieyasu and a small group of retainers moving urgently through a dark forested mountain pass in Iga province at night, torchlight flickering, ninja guides visible as shadowy figures leading the way, Ieyasu's face set with concentrated determination, the urgency of escape against the silence of the forest.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "After Honnoji, Ieyasu moved to claim territory in Kai and Shinano left ungoverned by Nobunaga's death. But a new power was rising faster than anyone expected. Toyotomi Hideyoshi had already avenged his lord and was consolidating Japan at breathtaking speed. When conflict came at the Battle of Komaki-Nagakute in 1584, Ieyasu scored a tactical victory — killing two of Hideyoshi's finest generals and stalling his advance. But he could read the tide. Hideyoshi was absorbing Japan. The only question was whether Ieyasu would join willingly or be destroyed.",
+      "image_prompt": "Tokugawa Ieyasu in his early forties in campaign armor studying a tactical map in his field headquarters after the Battle of Komaki-Nagakute, his commanders gathered around him in tense conference, his expression showing clear-eyed assessment rather than triumphalism, knowing the larger strategic situation favors Hideyoshi.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 35,
+      "narration": "In 1586, Tokugawa Ieyasu traveled to Osaka and knelt before Toyotomi Hideyoshi. No battlefield defeat had forced him there. No siege had broken his walls. He chose submission — a calculation so cold it bordered on art. In exchange for loyalty and abandoned independence, he received security and time. Hideyoshi, who understood talent, gave him the entire Kanto region in 1590 — moving him from the political center, ostensibly a promotion, practically an exile. Ieyasu took his army to the mudflats of Edo and began building. He was forty-seven years old. He was nowhere near finished.",
+      "image_prompt": "Tokugawa Ieyasu in formal armor kneeling in deliberate submission before Toyotomi Hideyoshi in his magnificent Osaka Castle audience chamber, Hideyoshi seated high on a raised dais in golden robes looking satisfied, Ieyasu's posture controlled and dignified even in submission, the political theater of the moment fully understood by both men.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "Edo in 1590 was little more than a fishing village surrounded by swamp. Hideyoshi had intended the relocation as neutralization — removing Ieyasu from the political center by burying him in undeveloped wilderness. Instead, Ieyasu launched what may be the greatest infrastructure project in samurai history. He drained the swamps, diverted rivers, built roads and port facilities, and settled his retainers across the region. While the Toyotomi court glittered in Osaka, Ieyasu was quietly building something that would outlast any palace. A foundation. A future. Exactly what he always built — quietly, deliberately, for later.",
+      "image_prompt": "Tokugawa Ieyasu in his late forties overseeing a massive construction project at the future site of Edo Castle, workers draining swamps and laying foundations, engineers and advisors surrounding him with plans, the modest beginnings of what will become a great city visible in the cleared marshland, purposeful energy in every figure.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "rising_action",
+      "duration_seconds": 35,
+      "narration": "When Toyotomi Hideyoshi died in September 1598, he left behind a five-year-old heir and five regents sworn to protect him. Ieyasu was one of them — and also, immediately, the most dangerous. Within months, he began making strategic marriage alliances explicitly forbidden by Hideyoshi's deathbed compact. His rivals accused him of betrayal. His allies rallied to him. Japan was dividing itself, slowly and then all at once, into two camps. Ieyasu did not cause the conflict that was coming. He simply made certain that when it arrived, he would be ready.",
+      "image_prompt": "Tokugawa Ieyasu in his mid-50s at a night meeting with daimyo allies in Edo, maps and alliance documents spread across a low table, torchlight catching the calculating intensity in his eyes, outside the paper screens the shadows of warriors standing guard, the architecture of a coalition being built in secret.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "climax",
+      "duration_seconds": 35,
+      "narration": "On October 21st, 1600, at the crossroads of Sekigahara, the two halves of Japan collided. The Western coalition faced Ieyasu's Eastern forces across a fog-covered valley. The battle lasted six hours. It turned not on tactics alone but on betrayal: Kobayakawa Hideaki's sudden defection collapsed the Western flank and triggered a general rout. When the killing was done, eighty thousand men lay dead or scattered across the field. Tokugawa Ieyasu, fifty-seven years old, had won. After a lifetime of waiting, calculating, and absorbing, the moment he had prepared for had finally arrived.",
+      "image_prompt": "Tokugawa Ieyasu on horseback at the edge of the Sekigahara battlefield, his standard — the golden fan and triple hollyhock — raised against a clearing dawn sky, the scale of the victory visible in the vast smoke-covered plain below him, his posture one of absolute controlled authority, the culmination of a lifetime's strategy.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 35,
+      "narration": "In 1603, the Emperor appointed Tokugawa Ieyasu Shogun of Japan. He was fifty-nine years old. The boy who had been sent as a hostage at six — who had kneeled before two more powerful lords, who had executed his own wife and son, who had watched Nobunaga burn and Hideyoshi conquer — had simply outlasted them both. Two years later, he abdicated in favor of his son Hidetada, making the hereditary nature of Tokugawa power unmistakable. The waiting was done. The dynasty was established. Japan would not see another civil war for two and a half centuries.",
+      "image_prompt": "Tokugawa Ieyasu at age fifty-nine in full ceremonial Shogun regalia in the formal audience chamber of Edo Castle, his posture radiating absolute settled authority, court officials arrayed below him in deep formal bow, golden light from high windows falling on the Tokugawa hollyhock crest displayed throughout the hall.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 35,
+      "narration": "What made Ieyasu different was not speed or brilliance. Nobunaga was the visionary. Hideyoshi was the genius. Ieyasu was the survivor — the man who understood that in a long enough game, the most dangerous weapon is not a sword but a calendar. He absorbed defeats. He accepted humiliations. He swallowed grief. He spent decades making himself indispensable to men who would never have made him their equal. And when they were gone — by assassination, by ambition, by the chaos they themselves created — he was simply still there. Waiting. Building. Ready.",
+      "image_prompt": "A philosophical triptych composition: on the left, Oda Nobunaga's dramatic figure consumed by flames representing Honnoji; in the center, Toyotomi Hideyoshi's golden regalia crumbling to dust; on the right, Tokugawa Ieyasu standing calm and immovable, the only figure still standing, time itself flowing around his patience.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 35,
+      "narration": "The cost, of course, was extraordinary. A childhood without freedom. A manhood defined by service to men he had to pretend to follow. A wife he ordered killed. A son he watched die. And yet — when historians examine what Ieyasu actually built, the accounting shifts. The Edo period he created lasted two hundred and fifty years. It brought literacy, urbanization, and a long peace to a population that had known only war for a century. Perhaps no generation suffers quite as much for the next as the one that finally ends the fighting. Ieyasu understood this. He paid the price willingly.",
+      "image_prompt": "Tokugawa Ieyasu in old age seated alone in a simple garden at Sunpu Castle, surrounded by the quiet of an established peace, cherry blossoms falling around him, his weathered face carrying both profound satisfaction and the weight of all he sacrificed, warm afternoon light, a deeply contemplative and human moment.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles: four hundred years before Ieyasu, another warrior blazed across Japan's battlefields and was destroyed by the very brother who used him. The betrayal that shattered Japan's greatest hero begins.",
+      "image_prompt": "Minamoto no Yoshitsune in black and white lacquered armor standing alone on a wooden bridge at dusk, his slight figure radiating coiled energy and barely concealed melancholy, a distant mountain castle visible behind him, the tension of a man who has won every battle but is losing the war that matters most.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 14,
+      "narration": "If the patience of a lifetime speaks to you, subscribe and stay with us for every new episode. Ieyasu waited fifty years. You only have to wait until tomorrow.",
+      "image_prompt": "Aerial view of the Imperial Palace in modern Tokyo — built on the site of Tokugawa Ieyasu's Edo Castle — surrounded by the vast modern city, cherry blossoms in bloom along the moat, the enduring physical legacy of the patient warlord's foundation still at the center of Japan four centuries later.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_source": "ep006/audio/ep006-BGM.mp3",
+  "youtube_url": "https://youtu.be/2XLSdO_vOTM",
+  "shorts_url": "https://youtu.be/VTh3k5mv2Ck",
+  "scheduled_at": "2026-05-31 03:00"
+}
