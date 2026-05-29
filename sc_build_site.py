@@ -15,6 +15,7 @@ sc_build_site.py — Samurai Chronicles 公式サイト生成
 import json
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
@@ -63,6 +64,29 @@ def video_id(ep: dict) -> str:
     url = ep.get("youtube_url", "")
     m = re.search(r"(?:youtu\.be/|v=)([A-Za-z0-9_-]{11})", url)
     return m.group(1) if m else ""
+
+
+def is_published(ep: dict) -> bool:
+    """scheduled_at が現在時刻より過去なら公開済みとみなす（JST=UTC+9）。"""
+    s = ep.get("scheduled_at", "")
+    if not s:
+        return True
+    try:
+        # "2026-05-31 03:00" → JST として解釈
+        dt_jst = datetime.strptime(s[:16], "%Y-%m-%d %H:%M")
+        dt_utc = dt_jst.replace(tzinfo=timezone.utc) - __import__('datetime').timedelta(hours=9)
+        return datetime.now(timezone.utc) >= dt_utc
+    except Exception:
+        return True
+
+
+def thumb_html(ep: dict, fallback: str) -> str:
+    """公開済みなら YouTube サムネイル img タグ、未公開ならフォールバック span。"""
+    if is_published(ep):
+        vid = video_id(ep)
+        if vid:
+            return f'<img src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" alt="" loading="lazy">'
+    return f'<span class="episode-thumb-num">{fallback}</span>'
 
 
 # ──────────────────────────────────────────────
@@ -292,27 +316,28 @@ def build_index(episodes: list[dict], playlists: list[dict]):
     pl_count = len(playlists)
 
     # 新着エピソードカード
-    vid = video_id(latest)
-    thumb = f'<img src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" alt="{latest.get("youtube_title","")}" loading="lazy" onerror="this.style.display=\'none\'">' if vid else '<span class="episode-thumb-num">NEW</span>'
-    ep_url = latest.get("youtube_url") or CHANNEL_URL
     ep_num = latest.get("episode_id", "").replace("ep", "").lstrip("0") or "?"
     ep_title = latest.get("youtube_title") or latest.get("episode_title", "")
+    ep_url = latest.get("youtube_url") or CHANNEL_URL
+    if is_published(latest):
+        vid = video_id(latest)
+        thumb = f'<img src="https://img.youtube.com/vi/{vid}/mqdefault.jpg" alt="{ep_title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">' if vid else f'<span class="episode-thumb-num" style="font-size:clamp(2rem,8vw,4rem);">SOON</span>'
+    else:
+        thumb = f'<span class="episode-thumb-num" style="font-size:clamp(2rem,8vw,4rem);">SOON</span>'
 
     # 次の3件
     recent_cards = ""
     for i, ep in enumerate(episodes[1:4]):
-        v = video_id(ep)
         ep_n = ep.get("episode_id","").replace("ep","")
-        t = f'<img src="https://img.youtube.com/vi/{v}/mqdefault.jpg" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling&&(this.nextElementSibling.style.display=\'flex\')"><span class="episode-thumb-num" style="display:none">{ep_n}</span>' if v else f'<span class="episode-thumb-num">{ep_n}</span>'
+        t = thumb_html(ep, ep_n)
         u = ep.get("youtube_url") or CHANNEL_URL
-        n = ep_n
         tl = ep.get("youtube_title") or ep.get("episode_title", "")
         delay = f" reveal-delay-{i+1}"
         recent_cards += f"""
         <a class="episode-card reveal{delay}" href="{u}" target="_blank" rel="noopener">
           <div class="episode-thumb">{t}</div>
           <div class="episode-info">
-            <p class="episode-num">EPISODE {n}</p>
+            <p class="episode-num">EPISODE {ep_n}</p>
             <p class="episode-title">{tl}</p>
           </div>
         </a>"""
@@ -439,9 +464,8 @@ def build_index(episodes: list[dict], playlists: list[dict]):
 def build_episodes(episodes: list[dict]):
     cards = ""
     for i, ep in enumerate(episodes):
-        v = video_id(ep)
         num = ep.get("episode_id", "").replace("ep", "")
-        thumb = f'<img src="https://img.youtube.com/vi/{v}/mqdefault.jpg" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling&&(this.nextElementSibling.style.display=\'flex\')"><span class="episode-thumb-num" style="display:none">{num}</span>' if v else f'<span class="episode-thumb-num">{num}</span>'
+        thumb = thumb_html(ep, num)
         url = ep.get("youtube_url") or CHANNEL_URL
         title = ep.get("youtube_title") or ep.get("episode_title", "")
         delay = f" reveal-delay-{(i % 4) + 1}" if (i % 4) != 0 else ""
@@ -490,7 +514,7 @@ def build_playlists(playlists: list[dict]):
         # サムネイル: 最初の動画のサムネ
         first_vid = next((e["video_id"] for e in eps if e.get("video_id")), None)
         char_abbr = pl["display_name"].split()[0].upper()
-        thumb = f'<img src="https://img.youtube.com/vi/{first_vid}/mqdefault.jpg" alt="{pl["display_name"]}" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling&&(this.nextElementSibling.style.display=\'flex\')"><span class="episode-thumb-num" style="display:none;font-size:1rem;letter-spacing:.05em;">{char_abbr}</span>' if first_vid else f'<span class="episode-thumb-num" style="font-size:1rem;letter-spacing:.05em;">{char_abbr}</span>'
+        thumb = f'<img src="https://img.youtube.com/vi/{first_vid}/mqdefault.jpg" alt="{pl["display_name"]}" loading="lazy">' if first_vid else f'<span class="episode-thumb-num" style="font-size:1rem;letter-spacing:.05em;">{char_abbr}</span>'
         delay = f" reveal-delay-{(i % 4) + 1}" if (i % 4) != 0 else ""
         cards += f"""
         <a class="episode-card reveal{delay}" href="{pl_url}" target="_blank" rel="noopener">
