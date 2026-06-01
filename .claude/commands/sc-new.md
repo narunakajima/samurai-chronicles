@@ -516,11 +516,9 @@ CHOSEN=$(ls "$HOME/Desktop/BGM/BGM_candidate_"*.mp3 "$HOME/Desktop/BGM/BGM_libra
 CHOSEN_STEM=$(basename "$CHOSEN" .mp3)
 
 if [[ "$CHOSEN" == *"BGM_candidate_"* ]]; then
-  # Freesound新規: エピソードフォルダに移動
-  mv "$CHOSEN" "$DRIVE/audio/ep{NNN}-BGM.mp3"
-  # bgm_library.json に新規エントリを追加
+  # Freesound新規: BGM/フォルダに移動（sc_bgm_library.py --add が自動移動）
   python3 $HOME/samurai-chronicles/sc_bgm_library.py \
-    --add --episode ep{NNN} --file "$DRIVE/audio/ep{NNN}-BGM.mp3" \
+    --add --episode ep{NNN} --file "$CHOSEN" \
     --stem "$CHOSEN_STEM"
   # クレジット注入（CC BY の場合）
   CREDIT="/tmp/sc_bgm_credits/${CHOSEN_STEM}.credit.txt"

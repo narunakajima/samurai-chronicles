@@ -897,10 +897,21 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
     audio_dir = DRIVE_BASE / episode_id / "audio"
     bgm_path = DRIVE_BASE / "BGM" / f"{episode_id}-BGM.mp3"
 
-    # ライブラリBGM参照（bgm_source フィールドがあり、BGM/フォルダにない場合）
+    # フォールバック1: episode JSON の bgm_source フィールド
     if not bgm_path.exists() and ep.get("bgm_source"):
         bgm_path = DRIVE_BASE / ep["bgm_source"]
-        print(f"  BGM: ライブラリ参照 → {ep['bgm_source']}")
+        print(f"  BGM: ライブラリ参照（bgm_source）→ {ep['bgm_source']}")
+
+    # フォールバック2: bgm_library.json の used_in を検索
+    if not bgm_path.exists():
+        lib_json = Path(__file__).parent / "bgm_library.json"
+        if lib_json.exists():
+            lib = json.loads(lib_json.read_text())
+            for entry in lib:
+                if episode_id in entry.get("used_in", []):
+                    bgm_path = DRIVE_BASE / entry["path"]
+                    print(f"  BGM: ライブラリ参照（bgm_library.json）→ {entry['path']}")
+                    break
 
     if out_dir is None:
         out_dir = DRIVE_BASE / episode_id / "output"
