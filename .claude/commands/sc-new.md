@@ -534,7 +534,7 @@ else
     --use-library --episode ep{NNN} --stem "$CHOSEN_STEM"
   # ライブラリ曲の試聴コピーを削除
   rm -f "$CHOSEN"
-  rmdir "$HOME/Desktop/BGM" 2>/dev/null || true
+  rm -rf "$HOME/Desktop/BGM" 2>/dev/null || true
   # クレジット注入（CC BY の場合）
   CREDIT="/tmp/sc_bgm_credits/${CHOSEN_STEM}.credit.txt"
   if [ -f "$CREDIT" ]; then

@@ -1,0 +1,231 @@
+{
+  "episode_id": "ep020",
+  "episode_title": "The Sanada Ten Braves: Fact, Fiction, and Japan's Greatest Ninja Squad",
+  "youtube_title": "The Ninja Squad That Never Existed — Yet Made a Samurai Immortal | EP020",
+  "youtube_description": "Ten warriors. Not one historical document proves they existed. Yet for four hundred years, Japan has told their story — and built a legend around the samurai general they served. The mystery of the Sanada Ten Braves.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 Ten warriors. Not one...\n0:43 To understand the Sanada Ten...\n1:28 The Osaka Campaign was the final\n2:15 Defeated generals rarely...\n2:58 The Sanada Ten Braves first...\n3:46 The most famous of the Ten\n4:38 Close behind Sasuke in fame is\n5:30 The other eight braves are less\n6:19 Here is the problem...\n7:02 But history is rarely so clean.\n7:45 The Edo period had powerful...\n8:43 There is also the specific...\n9:41 The Sanada Ten Braves entered...\n10:31 What does it mean that Japan's\n11:26 There is one final twist to\n12:21 Japan is not unique in this.\n13:13 Sarutobi Sasuke is not real....\n13:58 Sanada Yukimura died on a June\n14:43 Next time on Samurai...\n15:11 If the legend of the Sanada\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. Ninja: The True Story of Japan's Secret Warrior Cult. Firebird Books, 1991.\n2. Lamers, Jeroen P. Japonius Tyrannus: The Japanese Warlord Oda Nobunaga Reconsidered. Hotei Publishing, 2000.\n3. Clements, Jonathan. A Brief History of the Samurai. Running Press, 2010.\n\n#SanadaTenBraves #Ninja #SanadaYukimura #SamuraiChronicles #JapaneseHistory",
+  "youtube_tags": [
+    "Sanada Ten Braves",
+    "Ninja",
+    "Sanada Yukimura",
+    "Sarutobi Sasuke",
+    "Samurai Chronicles",
+    "Japanese History",
+    "Sengoku Period",
+    "Osaka Campaign",
+    "Japan Ninja",
+    "Samurai Legend"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "Ten warriors rode with Japan's greatest samurai into his final battle. None of them appear in any historical document. Yet four hundred years later, every Japanese child knows their names. Were the Sanada Ten Braves real — and does the answer even matter?",
+  "shorts_narration": "Ten ninja. One legendary samurai. Not one historical document proves they existed. But Japan has told their story for four hundred years. Why? The Sanada Ten Braves.",
+  "thumbnail_prompt": "A dramatic group of ten shadowed ninja figures in dark battle attire arranged in a dynamic formation in a misty moonlit forest, the central figure slightly taller and more commanding, Sanada clan six-coin crest visible on a banner behind them. Atmosphere of mystery, power, and legend. Low-angle view looking up at the group against a night sky with scattered stars and drifting smoke.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Ten warriors. Not one historical document proves they existed. Yet Japan has told their story for four hundred years — and built its greatest samurai legend around them.",
+      "image_prompt": "Ten dark silhouettes of ninja warriors standing on a misty hilltop at night, arranged in a dramatic V-formation, the six-coin Sanada clan banner flying behind them in the wind. The figures are faceless, shadowed, mythic. Moonlight cuts through drifting cloud. The atmosphere is legendary and mysterious.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "To understand the Sanada Ten Braves, you first need to understand Sanada Yukimura — the man they were invented to serve. By the time of the Osaka Campaign in 1614, Yukimura was already a legend. He had fought on the losing side at Sekigahara, survived years of exile in the mountains of Kii province, and emerged as the one general the Tokugawa shogunate genuinely feared. When Toyotomi Hideyori called for warriors to defend Osaka Castle, Yukimura answered.",
+      "image_prompt": "Sanada Yukimura in his iconic red lacquered armor with deer-antler helmet and six-coin crest, standing before the walls of Osaka Castle at dusk. His posture is commanding and defiant. Castle torches blaze behind him. Warriors gather in the distance. A man who has already chosen his fate.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_yukimura",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "The Osaka Campaign was the final confrontation between the Tokugawa clan and the remnants of Toyotomi power. Two hundred thousand Tokugawa troops surrounded Osaka Castle. Inside, Yukimura commanded the defense with a ferocity that stunned even his enemies. His tactical genius and the crimson tide of his soldiers became the stuff of battlefield poetry. When he finally died in the summer siege of 1615, cutting down enemy soldiers until he could stand no more, he was mourned even by the men who killed him.",
+      "image_prompt": "Wide panoramic view of Osaka Castle under siege, 1615. Tokugawa armies surrounding the castle on all sides like a vast dark ocean. Smoke rising from multiple points. Inside the castle walls, the red banners of Sanada Yukimura's troops form a distinctive crimson cluster at the front gate. Dramatic storm light.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "Defeated generals rarely become national heroes in their own lifetime. But Japan has always had a special affection for the noble loser — the warrior who fights with everything and falls with dignity. Yukimura fit this archetype perfectly. And in the century after his death, storytellers, novelists, and playwrights of the Edo period did what storytellers have always done: they gave their hero a legendary retinue worthy of his legend.",
+      "image_prompt": "An Edo period storytelling scene — a crowded theater in old Edo city, lanterns glowing, a packed audience of merchants and townspeople watching a kabuki performance on stage depicting a heroic red-armored samurai. The audience is rapt and emotional. The atmosphere captures the cultural hunger for heroic stories of defeated warriors.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "The Sanada Ten Braves first appear in Edo period popular fiction — novels and plays composed a century or more after the events they describe. The concept is simple and irresistible: ten extraordinary warriors, each with a unique skill, sworn to Sanada Yukimura's service. Part bodyguard, part spy network, part myth. The group's membership varied across different tellings, but certain names recurred so consistently that they became fixed in the national imagination.",
+      "image_prompt": "A dramatic artistic illustration in the style of Edo period woodblock prints, showing ten distinctive warrior figures arranged in a grid — each with a different weapon, costume, and posture. Stylized, iconic, theatrical. Bold compositions suggesting superhuman abilities. The six-coin Sanada crest appears in the corner.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "The most famous of the Ten Braves is Sarutobi Sasuke — a name that became synonymous with Japanese ninja. According to legend, Sasuke was an orphan raised in the mountains by tanuki spirits, trained in ninjutsu among the trees, capable of leaping between branches like a monkey. His name literally means 'monkey-leaping Sasuke.' He was said to be invisible, untraceable, unstoppable. He appears in countless novels, films, manga, and anime. He is also almost certainly entirely fictional.",
+      "image_prompt": "Sarutobi Sasuke, a young athletic ninja in dark clothing, mid-leap between two massive cedar trees on a misty mountain slope, arms outstretched, a kunai blade in one hand. His face is sharp and determined. The forest below is vast and ancient. The movement captures supernatural agility and freedom.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sarutobi_sasuke",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Close behind Sasuke in fame is Kirigakure Saizo — 'Saizo of the Mist.' Where Sasuke was acrobatic and bold, Saizo was cold, precise, and relentlessly loyal. Legend describes him as a master of disguise and poison who could vanish into fog at will. Together, Sasuke and Saizo form the iconic core of the Ten Braves — two warriors whose contrasting personalities made them irresistible to storytellers. Their rivalry and brotherhood became a template for Japanese action fiction that persists to this day.",
+      "image_prompt": "Two ninja figures in a dramatic standoff pose in a fog-filled forest at night — on the left, Sarutobi Sasuke in an athletic ready stance, eyes bright with energy. On the right, Kirigakure Saizo, lean and still as stone, wrapped in dark mist, a kunai raised to chest height. Their opposing personalities visible in their posture alone. The Sanada six-coin crest on both their garments.",
+      "ken_burns": "static",
+      "character_ref": "sarutobi_sasuke"
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "The other eight braves are less famous but no less colorful. There is Miyoshi Seikai, the giant monk who wielded a cross-shaped staff. Kakei Juzo, the master of firearms and explosives. Yuri Kamanosuke, the wind-controlling acrobat. Each was given a specific supernatural specialty, a distinctive weapon, a dramatic backstory. Together they form a team that reads like a committee's answer to the question: what would the perfect ninja squad look like? The answer: exactly this.",
+      "image_prompt": "A gathering of eight distinctive warrior figures in a torchlit mountain temple, each clearly differentiated — a giant monk with a massive staff, a figure with firearms at his belt, a lithe acrobat in mid-stretch, an older warrior with scrolls. The Sanada six-coin banner hangs above. The scene captures the variety and theatricality of the legendary squad.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "Here is the problem historians face: not one of the Ten Braves appears in any contemporary document from the Sengoku or early Edo period. No battle record, no retainer list, no correspondence mentions their names. The earliest sources describing them as a group date from well over a century after Yukimura's death. For mainstream academic historians, this settles the matter: the Sanada Ten Braves are Edo period fiction, invented to satisfy a public hungry for heroic stories of the losing side.",
+      "image_prompt": "A Japanese historian in a modern archive setting surrounded by ancient scrolls and documents, holding a magnifying glass over an Edo period text. The scholar's expression is focused and analytical. Behind him, shelves of historical documents. The scene contrasts the romantic legend with the cold reality of historical investigation.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "But history is rarely so clean. Some researchers have found tantalizing fragments. A retainer named 'Sasuke' does appear in a handful of records associated with the Sanada clan — though with no ninja abilities and no connection to the legendary exploits. The name 'Saizo' appears in some regional documents from Iga province, the historical homeland of ninja. These traces are too thin to confirm the legends. But they are enough to keep the question alive: was there a real Sarutobi Sasuke somewhere at the root of the myth?",
+      "image_prompt": "An ancient Japanese document in sepia tones, partially unrolled, showing handwritten kanji text. A scholar's hand points to a specific line of text. The document is clearly aged and fragile. The mood is one of quiet scholarly discovery — a single name that might change everything, or mean nothing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "The Edo period had powerful reasons to create legends like the Sanada Ten Braves. Under Tokugawa rule, the warrior class was officially at peace — and deeply anxious about what that meant. The samurai code was being written and codified precisely because actual samurai warfare was over. In this context, stories of heroic warriors fighting impossible odds served a psychological function: they kept alive the idea that the samurai spirit was real, potent, and worth passing down. Yukimura, who had defied the Tokugawa and died for it, was the perfect vehicle.",
+      "image_prompt": "A peaceful Edo period street scene — samurai merchants and townspeople going about daily life, none in battle dress. In the background, a bookshop with illustrated covers of heroic warrior stories visible through the window. The contrast between mundane peace and the hunger for heroic narrative. Evening light, lanterns beginning to glow.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "There is also the specific genius of the Ten Braves as a narrative structure. A lone hero is compelling. But a hero with ten extraordinary companions is irresistible — because the audience can choose their favorite. Sasuke for those who loved acrobatics. Saizo for those drawn to cold precision. The giant monk for those who wanted pure power. This multiplicity of identification points is exactly why the Ten Braves survived in popular culture when other Sengoku legends faded. Everyone found someone to love in the group.",
+      "image_prompt": "A vibrant modern illustration of the Sanada Ten Braves reimagined in manga style — dynamic, colorful, each character with a distinctive design and expression. Action lines radiate outward. The six-coin Sanada crest glows at center. The image captures how the legend has been continuously reinvented for new generations.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "The Sanada Ten Braves entered the modern era as a franchise before the word existed. Meiji period novelists expanded their adventures. Taisho era films brought them to the screen. Postwar manga and anime gave them new visual identities for each generation. Video games made players choose to be Sarutobi Sasuke or Kirigakure Saizo. By the 21st century, the Ten Braves had appeared in more media than most historical figures with actual documentary evidence. Fiction, repeated long enough and loved deeply enough, achieves its own kind of truth.",
+      "image_prompt": "A montage-style image showing the evolution of the Sanada Ten Braves across media — a Meiji era novel cover, a black-and-white film still, a 1970s anime poster, a modern video game screenshot, all layered with the six-coin Sanada crest as a constant. The progression through Japanese artistic styles across a century.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "What does it mean that Japan's most famous ninja squad almost certainly never existed? It means that the Japanese people needed them to exist — and chose to create them. Every culture does this. The stories a society tells about its warriors reveal what that society values. The Sanada Ten Braves are defined by absolute loyalty, individual excellence in service of a greater cause, and willingness to die for someone who has already lost. These are not the values of winners. They are the values of a people who have learned to find beauty in noble defeat.",
+      "image_prompt": "Sanada Yukimura in his red armor standing on a high castle wall at sunset, overlooking a vast enemy army below. Behind him, ten shadowed figures in ninja garb stand at guard — their faces unseen, their presence absolute. The scene captures the essence of the legend: one great commander and ten devoted shadows. Magnificent and melancholy.",
+      "ken_burns": "zoom_out",
+      "character_ref": "sanada_yukimura",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "There is one final twist to the Sanada Ten Braves story. Some historians have noted that scattered regional documents from Sanada family domains contain names bearing resemblance to those of the legendary Ten Braves — a retainer called 'Sasuke,' a name close to 'Saizo' in Iga province records. These fragments are thin and inconclusive. But they are enough to keep the question alive: was there a real person somewhere at the root of each myth? Perhaps some of the Ten Braves were real, exaggerated into legend. Perhaps they were entirely invented. Perhaps the truth sits in the uncomfortable middle ground between fact and story.",
+      "image_prompt": "Two contrasting images side by side — on the left, a dramatic illustration of Sarutobi Sasuke leaping through the air in full ninja action. On the right, a dry academic document with a name circled in faded ink. The juxtaposition of living legend and historical ambiguity. Neither fully real, neither fully false.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Japan is not unique in this. Every culture has its legendary warrior squads — the Musketeers, the Knights of the Round Table, the Spartan 300. What makes the Sanada Ten Braves distinctive is the precision of their legend: ten specific individuals, ten specific skills, ten specific names that have never changed across four centuries of retelling. That kind of precision suggests either a very good original story — or a very good original storyteller who knew exactly what they were doing. We will never know which.",
+      "image_prompt": "A global montage of legendary warrior groups through history — Knights of the Round Table in stained glass style, the Three Musketeers in a French illustration, and at center the Sanada Ten Braves. All rendered in their respective artistic traditions. The universality of humanity's need for legendary squads united by one visual.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Sarutobi Sasuke is not real. Kirigakure Saizo is not real. But the question they make us ask — what do we need from our heroes, and what do we need them to have been? — is entirely real. The Sanada Ten Braves tell us that a great story, told with conviction and passed down with love, can outlast any document. They have been alive for four hundred years. They will be alive four hundred years from now. By any meaningful measure, that is a longer life than most historical figures manage.",
+      "image_prompt": "Sarutobi Sasuke alone on a misty mountain peak at dawn, silhouetted against a vast sky. His posture is relaxed and contemplative rather than combat-ready — a legendary figure at rest, looking out at a world that has been telling his story for four centuries. The mood is timeless and quietly triumphant.",
+      "ken_burns": "zoom_out",
+      "character_ref": "sarutobi_sasuke",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Sanada Yukimura died on a June morning in 1615, cut down after hours of fighting. He was fifty years old. His last words, according to tradition, were spoken to the enemy general who finally stopped him: 'There are no more men in Japan.' Whether he said it or not, it is the kind of thing a legend says. And perhaps that is the deeper truth the Ten Braves carry: that some men become so great that the world invents worthy companions for them. Yukimura earned his myths.",
+      "image_prompt": "Sanada Yukimura in his red armor on a battlefield at dawn, standing alone amid fallen soldiers, sword raised for a final charge. His helmet's deer antlers catch the morning light. His face is serene and resolved — a man at peace with his fate. The enemy forces are visible in the background, advancing. A moment of mythic last stand.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_yukimura",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles — they called him the God of War. Uesugi Kenshin fought over a hundred battles and lost almost none of them. He gave rice to his starving enemies. He prayed before every battle. And he may have been Japan's most terrifying warrior precisely because of it.",
+      "image_prompt": "Uesugi Kenshin, a powerfully built Japanese warlord in his 40s, in distinctive white-and-black lacquered battle armor with a Buddhist prayer cloth draped over his helmet, standing on a snowy battlefield. His expression is preternaturally calm — the stillness of a man who has made peace with violence. Mountain peaks in the background, snow falling.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If the legend of the Sanada Ten Braves made you think differently about history and myth, subscribe for new episodes every day. The line between what happened and what we need to believe happened — that is where Japan's greatest stories live.",
+      "image_prompt": "The Samurai Chronicles channel logo against a deep black background with subtle crimson and gold Japanese design elements, a katana silhouette. Clean, cinematic, professional.",
+      "ken_burns": "static",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "ep003/audio/ep003-BGM.mp3",
+  "youtube_url": "https://youtu.be/dnq70SeCiBY",
+  "shorts_url": "https://youtu.be/WDgj86k31Og",
+  "scheduled_at": "2026-06-04 03:00"
+}

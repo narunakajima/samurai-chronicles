@@ -199,7 +199,7 @@
     },
     {
       "episode_id": "ep021",
-      "status": "pending",
+      "status": "in_production",
       "title": "Uesugi Kenshin: The Buddhist Warlord Who Never Lost",
       "era": "Sengoku",
       "priority": "B",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-05-30",
+  "last_updated": "2026-05-31",
   "total_topics": 87
 }

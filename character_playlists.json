@@ -23,11 +23,15 @@
   },
   "kojiro": {
     "display_name": "Sasaki Kojiro",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cFyb267jkKTGid4T_-L0BLL",
     "episodes": [
       {
         "episode_id": "ep001",
         "video_id": "kZN4msDx9Tg"
+      },
+      {
+        "episode_id": "ep021",
+        "video_id": "ybQBCcJMrgo"
       }
     ]
   },
@@ -54,6 +58,10 @@
       {
         "episode_id": "ep014",
         "video_id": "rJiO7I-llw4"
+      },
+      {
+        "episode_id": "ep021",
+        "video_id": "ybQBCcJMrgo"
       }
     ]
   },
@@ -145,7 +153,7 @@
   },
   "benkei": {
     "display_name": "Musashibo Benkei",
-    "playlist_id": "PLOa8YFQho_cFUyqKdg0LkVEbjj8h_NDUq",
+    "playlist_id": "PLOa8YFQho_cEDRoT9pmcaF-_kvrhI9Jl9",
     "episodes": [
       {
         "episode_id": "ep006",
@@ -177,7 +185,7 @@
   },
   "yoritomo": {
     "display_name": "Minamoto Yoritomo",
-    "playlist_id": "PLOa8YFQho_cEFBNTipQub87HsjtuHrf10",
+    "playlist_id": "PLOa8YFQho_cFEUxrPlN1kE_00imcvLoN5",
     "episodes": [
       {
         "episode_id": "ep006",
@@ -214,6 +222,10 @@
       {
         "episode_id": "ep015",
         "video_id": "x5O8-0h9aH4"
+      },
+      {
+        "episode_id": "ep020",
+        "video_id": "r_ufysNlqlY"
       }
     ]
   },
@@ -239,11 +251,71 @@
   },
   "date_masamune": {
     "display_name": "Date Masamune",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cFSn6mM-62jpAR9hjVes75W",
     "episodes": [
       {
         "episode_id": "ep017",
         "video_id": "qoodETrDhSg"
+      }
+    ]
+  },
+  "aigana": {
+    "display_name": "Aigana",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep019",
+        "video_id": "ZPmQNASo0M0"
+      }
+    ]
+  },
+  "gessho": {
+    "display_name": "Gessho",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep019",
+        "video_id": "ZPmQNASo0M0"
+      }
+    ]
+  },
+  "saigo_takamori": {
+    "display_name": "Saigo Takamori",
+    "playlist_id": "PLOa8YFQho_cEv5XWOcjYec799dw7mvv-W",
+    "episodes": [
+      {
+        "episode_id": "ep019",
+        "video_id": "ZPmQNASo0M0"
+      }
+    ]
+  },
+  "sarutobi_sasuke": {
+    "display_name": "Sarutobi Sasuke",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep020",
+        "video_id": "r_ufysNlqlY"
+      }
+    ]
+  },
+  "kenshin": {
+    "display_name": "Uesugi Kenshin",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep021",
+        "video_id": "ybQBCcJMrgo"
+      }
+    ]
+  },
+  "shingen": {
+    "display_name": "Takeda Shingen",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep021",
+        "video_id": "ybQBCcJMrgo"
       }
     ]
   }

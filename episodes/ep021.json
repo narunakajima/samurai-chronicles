@@ -1,0 +1,247 @@
+{
+  "episode_id": "ep021",
+  "episode_title": "The Buddhist Warlord Who Never Lost: Uesugi Kenshin",
+  "youtube_title": "Why Japan's God of War Refused to Conquer Japan | EP021",
+  "youtube_description": "Zero. That is the number of battles Uesugi Kenshin lost. He was the most feared warrior in Japan. He could have conquered everything. He chose not to — and the reason reveals something extraordinary about the samurai code.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 Zero. That is the number of\n0:43 Uesugi Kenshin was born Nagao...\n1:27 What set Kenshin apart from...\n2:12 Echigo was not a wealthy...\n3:03 Then came Takeda Shingen. The...\n3:53 Between 1553 and 1564,...\n4:44 The most famous story of their\n5:34 The fourth battle of...\n6:25 At dawn, the morning fog on\n7:09 Kenshin himself, in white...\n7:50 The Fourth Battle of...\n8:34 After Kawanakajima, Kenshin's...\n9:16 In 1577, Kenshin fought his last\n9:59 In the winter of 1577 and\n10:41 On April 19, 1578, Uesugi...\n11:25 Oda Nobunaga received the...\n12:13 But the deeper question about...\n13:02 Uesugi Kenshin is buried in...\n14:05 Next time on Samurai...\n14:31 If the story of Uesugi Kenshin\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. The Samurai: A Military History. Osprey Publishing, 1977.\n2. Sato, Hiroaki. Legends of the Samurai. Overlook Press, 1995.\n3. Sansom, George. A History of Japan: 1334–1615. Stanford University Press, 1961.\n\n#UesugiKenshin #GodOfWar #SengokuPeriod #SamuraiChronicles #JapaneseHistory",
+  "youtube_tags": [
+    "Uesugi Kenshin",
+    "God of War",
+    "Sengoku Period",
+    "Kawanakajima",
+    "Takeda Shingen",
+    "Samurai Chronicles",
+    "Japanese History",
+    "Dragon of Echigo",
+    "Samurai",
+    "Japan History"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "On the bloodiest field in samurai history, two generals faced each other for the only time. One swung his sword. The other blocked with a war fan. Neither man died. This was Kawanakajima — and the man holding the sword never lost another battle. Who was Japan's God of War?",
+  "shorts_narration": "Zero losses. Over a hundred battles. He sent salt to starving enemies. He could have conquered Japan. He chose not to. This is Uesugi Kenshin — the God of War who fought for something greater than victory.",
+  "thumbnail_prompt": "Uesugi Kenshin, a powerfully built Japanese warlord in his 40s, wearing distinctive white Buddhist robes and a white hood over his armor, holding a war fan (tessen) raised in one hand. His face radiates absolute calm combined with iron resolve — a warrior at total peace. Misty mountain battlefield behind him, the Dragon of Echigo banner visible. The juxtaposition of Buddhist serenity and martial power defines the image.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Zero. That is the number of battles Uesugi Kenshin lost. He sent rice to starving enemies. And the one man who could have conquered Japan chose not to.",
+      "image_prompt": "Uesugi Kenshin standing alone on a misty mountain pass after a battle, white-robed over black armor, holding a war fan. Defeated enemy soldiers bow around him on the fog-covered ground. He looks not triumphant but contemplative, almost sorrowful. The Dragon of Echigo banner flies behind him. The scene evokes power restrained by principle.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.57,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "Uesugi Kenshin was born Nagao Kagetora in 1530, in Echigo Province on Japan's northwestern coast — a land of deep snow, steep mountains, and fierce independence. His childhood was turbulent: sent to a Zen temple at age seven, raised among monks while his family tore itself apart in factional warfare. By nineteen, he had taken control of Echigo. By twenty-five, neighboring warlords already feared his name. He was not yet the God of War. He was still becoming him.",
+      "image_prompt": "A young Uesugi Kenshin, early 20s, in simple samurai attire standing at the gates of a Buddhist mountain temple in winter. Snow covers the temple grounds. His expression combines youthful determination with an unusual gravity. Behind him, the vast snowy mountains of Echigo Province stretch into cloud. The solitude and severity of his upbringing visible in his bearing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "What set Kenshin apart from every other warlord of the Sengoku period was not merely his military ability — it was his religion. He was a devoted follower of Bishamonten, the Buddhist God of War, and believed himself to be an avatar of that deity. He took a vow of celibacy and never married. He fasted before major battles. He carried a sacred bell and prayer beads onto the battlefield. His soldiers did not just fight for him — they believed they were fighting for something divine.",
+      "image_prompt": "Uesugi Kenshin seated in meditation inside a dimly lit Buddhist temple, white robes, eyes half-closed, a string of prayer beads in his large hands. Before him, an altar with the image of Bishamonten — the armored Buddhist God of War. Incense smoke rises. The scene captures the paradox at Kenshin's core: a man of absolute violence and absolute faith occupying the same body.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "Echigo was not a wealthy province by Sengoku standards — no gold mines, no major ports, no great plains for rice. What it had was Kenshin. Under his rule, the province became prosperous and unified at a time when unity was nearly impossible. His laws were strict and enforced. His taxation was fair. His soldiers were paid reliably. Other warlords gathered power by being feared. Kenshin gathered it by being trusted — which, in sixteenth-century Japan, was far rarer.",
+      "image_prompt": "A prosperous village in Echigo Province in winter, thatched rooftops under snow, farmers and merchants going about peaceful daily life. In the background, the Uesugi castle complex rises on a hill, its banners visible. The scene conveys order and well-being — a deliberate contrast to the chaos of the Sengoku period elsewhere in Japan.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Then came Takeda Shingen. The warlord of Kai Province to the south was everything Kenshin was and everything he was not — brilliant, ruthless, strategic, married, a father of heirs, and aggressively expansionist. Where Kenshin fought for principle, Shingen fought for territory. Where Kenshin looked inward toward religion, Shingen looked outward toward conquest. Their domains shared a border. Conflict was inevitable. And when it came, it produced the most famous rivalry in all of samurai history.",
+      "image_prompt": "Takeda Shingen seated in a commanding war council, wearing his distinctive dark lacquered armor with a crimson fur cloak over his shoulders. He studies a military map spread on a low table, flanked by generals. His face is broad, calculating, and forceful — a man who views the world as a game to be won. Red and white Takeda clan banners behind him.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Between 1553 and 1564, Kenshin and Shingen fought five inconclusive battles on the plain of Kawanakajima, a flat river valley where their territories met. Each time, they maneuvered, clashed, and withdrew — neither able to destroy the other. Military historians still debate the strategies. But what Kawanakajima produced, more than any tactical outcome, was legend. Two generals so perfectly matched that their war became a work of art. Japan fell in love with both of them simultaneously.",
+      "image_prompt": "Panoramic view of the Kawanakajima plain in autumn, two vast armies facing each other across a river, banners of the Dragon (Uesugi) and the tiger wind fire mountain (Takeda) visible on opposite sides. Morning mist rises from the Chikuma River between them. The scene captures the epic scale and tactical precision of the most famous military rivalry in samurai history.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "The most famous story of their rivalry involves not a battle but a gift. When the Hojo and Imagawa clans imposed a trade embargo on Shingen's landlocked territory, cutting off the salt supply his people needed to survive, Kenshin — his sworn enemy — sent salt to Kai Province. His message: 'I fight with swords, not rice and salt.' He would not starve civilians to win a war. Shingen reportedly said on his deathbed that Kenshin was the most noble man he had ever known. Japan has never forgotten either of them for this moment.",
+      "image_prompt": "A line of Uesugi clan merchants leading horses loaded with large sacks of salt descending a mountain road in winter, heading toward Takeda territory. They carry the Dragon of Echigo banner. Uesugi soldiers escort them peacefully. The scene is quiet and dignified — an act of honor in a dishonest age. Snow falls softly.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "The fourth battle of Kawanakajima in 1561 was different from the others. Shingen executed a plan called the 'Woodpecker Strategy' — dividing his force to flush Kenshin from the mountains like a woodpecker driving insects from a tree. Kenshin anticipated it. In the pre-dawn darkness of September 10th, he moved his entire army silently across the Chikuma River, positioning himself not where Shingen expected but directly in front of Shingen's exposed main camp. The trap became the counter-trap.",
+      "image_prompt": "Uesugi army crossing the Chikuma River in complete silence before dawn, thousands of soldiers wading through the dark water in disciplined formation, torches doused, armor carefully muffled. The Dragon of Echigo banner carried low. On the far bank, the lights of Shingen's camp are visible. The atmosphere is electric with controlled tension — a perfect ambush in motion.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "At dawn, the morning fog on Kawanakajima began to lift. Shingen's generals looked up and saw, where they expected nothing, the full force of Kenshin's army bearing down on them. The Battle of the Fourth Kawanakajima had become something no one had planned — a direct, close-range collision between the two greatest armies of the age, with both generals present, within sight of each other. Nothing in samurai history would ever look quite like what happened next.",
+      "image_prompt": "Dawn over the Kawanakajima battlefield — morning fog lifting to reveal Kenshin's full army charging forward in red and white, the Dragon banner at the front. Shingen's generals in the foreground turning in alarm at the approaching force. The light is golden and dramatic. The two commanders' banners are visible simultaneously for the first time on the same battlefield. The decisive moment arrives.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "Kenshin himself, in white Buddhist robes over his armor, broke through the Takeda lines and reached Shingen's command position. He raised his sword and struck directly at Shingen's head. Shingen blocked with his iron war fan — the tessen — deflecting the blow. Three times Kenshin struck. Three times Shingen blocked. A Takeda spearman finally drove Kenshin's horse back. The two greatest generals in Japan had faced each other with their own hands. Neither would ever be so close again.",
+      "image_prompt": "The legendary confrontation: on the left, Uesugi Kenshin in white robes over black armor on horseback, sword raised mid-strike, face fierce and focused. On the right, Takeda Shingen in dark crimson armor seated in his command position, iron war fan raised to deflect the blow, expression grimly resolute. Chaos of battle swirls around them. The moment is frozen in legendary clarity.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kenshin"
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "The Fourth Battle of Kawanakajima was the bloodiest engagement of the Sengoku period. Both sides lost roughly a third of their forces. Shingen's beloved younger brother was killed. Two of Kenshin's most senior generals fell. When the smoke cleared, both armies withdrew. Both commanders claimed victory. Military historians still cannot agree who won. What they agree on is this: it was the most perfectly matched battle in the history of samurai warfare, and neither man ever repeated it.",
+      "image_prompt": "The aftermath of Kawanakajima — late afternoon light over a devastated battlefield. Both armies have withdrawn, leaving the plain covered with fallen soldiers from both sides, Uesugi and Takeda banners side by side in the mud. A single surviving soldier kneels among the dead in the center of the frame, head bowed. The scale of the mutual destruction is visible in every direction.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "After Kawanakajima, Kenshin's world continued to expand. He accepted the title of Kanto Kanrei — the military administrator of the Kanto region — and launched repeated campaigns into the east, though he never permanently occupied the territories he won. He helped refugees and petitioners who came to Echigo seeking his protection. His reputation as a righteous warrior attracted people from across Japan — not as subjects, but as believers in something he embodied.",
+      "image_prompt": "Uesugi Kenshin receiving a delegation of refugees and petitioners in the courtyard of Kasugayama Castle in Echigo. Common people — farmers, merchants, displaced samurai — kneel before him. Kenshin stands listening, his expression calm and attentive rather than lordly. His advisors stand behind him. The scene captures his unusual relationship with those under his protection.",
+      "ken_burns": "pan_right",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "In 1577, Kenshin fought his last great battle at Tedorigawa, routing the forces of Oda Nobunaga — the warlord who had already unified much of Japan — in a stunning defeat that proved the Dragon of Echigo had lost none of his edge. Nobunaga's commanders retreated in disorder. The message was unmistakable: Kenshin was still the most dangerous man in Japan. And now, for the first time, his ambitions were turning toward Nobunaga directly.",
+      "image_prompt": "The Battle of Tedorigawa — Uesugi cavalry sweeping across a river ford, driving Oda Nobunaga's infantry into retreat in the failing afternoon light. The Uesugi Dragon banner surges forward through river spray. Oda soldiers flee in the background. The scene captures a crushing, decisive victory — the last battlefield masterpiece of Kenshin's life.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "In the winter of 1577 and into 1578, Kenshin assembled the largest army of his career. He was marching on Nobunaga. Historians who have studied the campaign plans believe he had a realistic chance of defeating the Oda forces and changing the course of Japanese history. He was forty-nine years old, in apparent good health, commanding the finest military machine he had ever built. The campaign that might have changed everything was within reach.",
+      "image_prompt": "Kasugayama Castle in winter, 1578 — the Uesugi war council in full session. Uesugi Kenshin at the center of a large military map, surrounded by generals. Banners and weapons line the walls. The atmosphere is purposeful, even excited — the largest campaign of his career is being planned. Through the window, snow falls on Echigo.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "On April 19, 1578, Uesugi Kenshin was found collapsed near the latrine of Kasugayama Castle. He died without regaining consciousness four days later. The cause was most likely esophageal cancer or a massive stroke. He was forty-nine years old. He died without a battlefield wound, without a worthy enemy's hand, without a last message. His army, assembled for the greatest campaign of his life, stood down. The invasion of Nobunaga's domains never happened.",
+      "image_prompt": "Kasugayama Castle in spring — a single Dragon of Echigo banner hanging still in windless air. Through the open gate, Kenshin's generals and soldiers stand in shocked, silent assembly. Some kneel. The cherry blossoms that have just begun to bloom outside the walls feel wrong against the grief inside. The campaign that would have changed Japan stands cancelled.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Oda Nobunaga received the news of Kenshin's death and reportedly said: 'Now there is no one left to fear. The realm is mine.' He had survived the one general who might have stopped him. Within four years, Nobunaga would control most of Japan. Within four more, he would be dead — betrayed at Honnoji. Whether Kenshin would have changed that outcome, we will never know. But every Japanese historian has asked the question: what if the Dragon of Echigo had lived?",
+      "image_prompt": "Oda Nobunaga receiving the message of Kenshin's death in his headquarters. He holds the letter, expression shifting from habitual calculation to visible, profound relief — a rare crack in his famous composure. His advisors watch him carefully. Outside the window, the Oda domain stretches toward a horizon that suddenly seems unobstructed. The moment Japan's future changed direction.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "But the deeper question about Kenshin is not whether he could have conquered Japan. It is why he never tried when he clearly could have. He held the Kanto region repeatedly and gave it back. He defeated enemies and released them. He possessed, by most expert accounts, the military capacity to dominate the country — and consistently chose not to use it for permanent conquest. His stated principle was gi — righteousness. He fought to correct injustice and uphold order, not to accumulate power for its own sake.",
+      "image_prompt": "Uesugi Kenshin alone on a mountain peak above the clouds at sunset, looking out over an endless landscape. He holds his war fan loosely at his side. His expression is profoundly contemplative — a man who has seen everything and chosen a narrower path deliberately. The vastness before him could have been his. It is not. The choice defines him.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Uesugi Kenshin is buried in Yonezawa, in the domain he left to his adopted sons. Japan built shrines to him. His memory is kept alive in Niigata Prefecture with festivals and statues. He appears in countless novels, games, manga, and dramas — always as the noble warrior who fought for something beyond winning. Five hundred years after his death, the question he embodied still has no simple answer: is there honor in being capable of total conquest and choosing not to pursue it? Kenshin said yes. Japan believed him.",
+      "image_prompt": "A shrine to Uesugi Kenshin in present-day Yonezawa City — a beautifully maintained Shinto-style shrine complex with cherry blossoms in full bloom. Visitors and worshippers walk in peaceful reverence. A large stone statue of Kenshin in his white-robed armor stands at the entrance. The juxtaposition of the fierce warrior and this serene memorial captures his enduring legacy.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles — before Musashi, there was Kojiro. The most technically perfect swordsman Japan ever trained. Some say he was destined to lose. Others say he was robbed. The real story of Sasaki Kojiro — next episode.",
+      "image_prompt": "Sasaki Kojiro, a tall elegant Japanese swordsman in his late 20s in dark blue hakama, holding his distinctive nodachi long sword in a raised stance — the Tsubame Gaeshi (Swallow Return) pose. His face is refined and supremely confident. Cherry blossoms fall around him on a misty riverside. The image captures his legendary technical beauty — a swordsman at the absolute peak of his art.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kojiro",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If the story of Uesugi Kenshin — the warrior who chose principle over power — stayed with you, subscribe for new episodes every day. Japan's greatest stories are never just about who won.",
+      "image_prompt": "The Samurai Chronicles channel logo against a deep black background with subtle crimson and gold Japanese design elements. Clean, cinematic, professional.",
+      "ken_burns": "static",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "ep004/audio/ep004-BGM.mp3",
+  "youtube_url": "https://youtu.be/ybQBCcJMrgo",
+  "shorts_url": "https://youtu.be/fzJ_WFOxfnQ",
+  "scheduled_at": "2026-06-05 03:00"
+}
