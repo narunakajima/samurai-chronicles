@@ -18,6 +18,10 @@
       {
         "episode_id": "ep013",
         "video_id": "lMFgM4Q8yx4"
+      },
+      {
+        "episode_id": "ep022",
+        "video_id": "w2CFUIda7qM"
       }
     ]
   },
@@ -32,6 +36,10 @@
       {
         "episode_id": "ep021",
         "video_id": "ybQBCcJMrgo"
+      },
+      {
+        "episode_id": "ep022",
+        "video_id": "w2CFUIda7qM"
       }
     ]
   },
@@ -80,6 +88,10 @@
       {
         "episode_id": "ep012",
         "video_id": "VFzHiWmeHJE"
+      },
+      {
+        "episode_id": "ep022",
+        "video_id": "w2CFUIda7qM"
       }
     ]
   },
@@ -253,6 +265,14 @@
     "display_name": "Date Masamune",
     "playlist_id": "PLOa8YFQho_cFSn6mM-62jpAR9hjVes75W",
     "episodes": [
+      {
+        "episode_id": "ep018",
+        "video_id": "d2Mf5Vgy2jM"
+      },
+      {
+        "episode_id": "ep007",
+        "video_id": "ghHOBmFQvs8"
+      },
       {
         "episode_id": "ep017",
         "video_id": "qoodETrDhSg"
