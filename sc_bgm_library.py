@@ -67,11 +67,14 @@ def cmd_add(episode_id: str, bgm_file: Path, stem: str):
     """Freesound 新規BGMをライブラリに追加し、used_in を記録する。"""
     library = _load_library()
 
-    # 相対パス（DRIVE_BASE からの）
-    try:
-        rel_path = str(bgm_file.relative_to(DRIVE_BASE))
-    except ValueError:
-        rel_path = str(bgm_file)
+    # BGM/フォルダに移動してDRIVE_BASE相対パスを記録
+    bgm_folder = DRIVE_BASE / "BGM"
+    bgm_folder.mkdir(exist_ok=True)
+    dst = bgm_folder / f"{episode_id}-BGM.mp3"
+    import shutil
+    shutil.move(str(bgm_file), str(dst))
+    rel_path = f"BGM/{episode_id}-BGM.mp3"
+    print(f"  ✓ Drive BGM/ に移動: {dst.name}")
 
     # 重複チェック（同パスが既にある場合は used_in のみ更新）
     existing = next((e for e in library if e["path"] == rel_path), None)

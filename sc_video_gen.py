@@ -895,9 +895,9 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
     img_dir = DRIVE_BASE / episode_id / "images"
     img_dir_shorts = DRIVE_BASE / episode_id / "images_shorts"
     audio_dir = DRIVE_BASE / episode_id / "audio"
-    bgm_path = audio_dir / f"{episode_id}-BGM.mp3"
+    bgm_path = DRIVE_BASE / "BGM" / f"{episode_id}-BGM.mp3"
 
-    # ライブラリBGM参照（bgm_source フィールドがあり、ローカルBGMがない場合）
+    # ライブラリBGM参照（bgm_source フィールドがあり、BGM/フォルダにない場合）
     if not bgm_path.exists() and ep.get("bgm_source"):
         bgm_path = DRIVE_BASE / ep["bgm_source"]
         print(f"  BGM: ライブラリ参照 → {ep['bgm_source']}")
@@ -1078,6 +1078,49 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
         outro_clip = tmp / "outro.mp4"
         make_intro_clip(intro_clip, landscape=True)
         make_outro_clip(outro_clip, landscape=True, shorts=False)
+
+        # ── Step 2.5: 素材ファイル一括確認 ──────────────────
+        print(f"\n--- Step 2.5: 素材ファイル確認 ---")
+        missing = []
+
+        # 画像ファイル（16:9）
+        for scene in scenes:
+            sid = scene["scene_id"]
+            img = img_dir / f"S{sid:02d}.png"
+            if not img.exists():
+                missing.append((f"images/S{sid:02d}.png", "sc_image_gen.py --episode " + episode_id))
+
+        # 音声ファイル（ナレーション）
+        for scene in scenes:
+            sid = scene["scene_id"]
+            wav = audio_dir / f"S{sid:02d}.wav"
+            if not wav.exists():
+                missing.append((f"audio/S{sid:02d}.wav", "sc_tts_gen.py --episode " + episode_id))
+
+        # BGM
+        if not bgm_path.exists():
+            missing.append((f"audio/{bgm_path.name}", "BGMを設定してください（sc_bgm_library.py）"))
+
+        # テイザー音声（teaser_narration がある場合は必須）
+        teaser_narration = ep.get("teaser_narration", "")
+        teaser_wav_path = audio_dir / "S00_teaser.wav"
+        if teaser_narration and not teaser_wav_path.exists():
+            missing.append(("audio/S00_teaser.wav", "sc_tts_gen.py --episode " + episode_id + " --teaser"))
+
+        # Shorts音声（shorts_narration がある場合は必須）
+        shorts_narration_check = ep.get("shorts_narration", "")
+        shorts_wav_path = audio_dir / "S00_shorts.wav"
+        if shorts_narration_check and not shorts_wav_path.exists():
+            missing.append(("audio/S00_shorts.wav", "sc_tts_gen.py --episode " + episode_id + " --shorts"))
+
+        if missing:
+            print(f"❌ 以下の素材ファイルが見つかりません（{len(missing)}件）:")
+            for fname, cmd in missing:
+                print(f"     {fname}")
+                print(f"       → {cmd}")
+            sys.exit(1)
+
+        print(f"  ✓ 画像 {len(scenes)}枚 / 音声 {len(scenes)}本 / BGM / teaser・shorts音声 — すべて確認")
 
         # ── Step 3: 各シーン Ken Burns クリップ生成 ────────
         print(f"\n--- Step 3: Ken Burns クリップ生成 ({len(scenes)}シーン) ---")
