@@ -70,6 +70,10 @@
       {
         "episode_id": "ep021",
         "video_id": "ybQBCcJMrgo"
+      },
+      {
+        "episode_id": "ep023",
+        "video_id": "THJvirjCvOY"
       }
     ]
   },
@@ -92,6 +96,10 @@
       {
         "episode_id": "ep022",
         "video_id": "w2CFUIda7qM"
+      },
+      {
+        "episode_id": "ep023",
+        "video_id": "THJvirjCvOY"
       }
     ]
   },
@@ -123,11 +131,15 @@
   },
   "mitsunari": {
     "display_name": "Ishida Mitsunari",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cH3k8-exPtbhjfH-hkPTaV5",
     "episodes": [
       {
         "episode_id": "ep004",
         "video_id": "pjgU_IK0fJU"
+      },
+      {
+        "episode_id": "ep023",
+        "video_id": "THJvirjCvOY"
       }
     ]
   },

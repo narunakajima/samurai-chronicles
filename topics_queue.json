@@ -219,7 +219,7 @@
     },
     {
       "episode_id": "ep023",
-      "status": "pending",
+      "status": "in_production",
       "title": "Why Akechi Mitsuhide Really Betrayed Nobunaga",
       "era": "Sengoku",
       "priority": "A",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-01",
+  "last_updated": "2026-06-02",
   "total_topics": 87
 }

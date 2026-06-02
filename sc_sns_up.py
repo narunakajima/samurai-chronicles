@@ -92,10 +92,14 @@ def find_next_publish_slot() -> str:
     """
     次の空き 03:00 JST スロットを返す（"YYYY-MM-DD HH:MM" JST 形式）。
 
+    配信曜日: 火〜土（月・日はスキップ）
     - episodes/*.json の scheduled_at を読んで使用済み日付を収集
     - 今日の 03:00 JST が未来 → 今日を候補に、過去 → 明日を候補に
-    - 使用済み日付を避けて最初の空き日を返す
+    - 月・日 および 使用済み日付を避けて最初の空き日を返す
     """
+    # 配信可能な曜日: 火(1), 水(2), 木(3), 金(4), 土(5)
+    PUBLISH_WEEKDAYS = {1, 2, 3, 4, 5}  # 0=月, 6=日 はスキップ
+
     now_jst = datetime.now(JST)
 
     # 使用済みスロット（date）を収集
@@ -116,8 +120,8 @@ def find_next_publish_slot() -> str:
     if candidate <= now_jst:
         candidate += timedelta(days=1)
 
-    # 使用済みを避けながら空きを探す
-    while candidate.date() in used_dates:
+    # 配信曜日 かつ 使用済みでない日を探す
+    while (candidate.weekday() not in PUBLISH_WEEKDAYS) or (candidate.date() in used_dates):
         candidate += timedelta(days=1)
 
     return candidate.strftime("%Y-%m-%d %H:%M")
