@@ -3,6 +3,8 @@
   "allowedTools": ["Bash", "Read", "Edit", "Write"],
   "permissions": {
     "allow": [
+      "Bash(python3 *)",
+      "Bash(python3)",
       "ffprobe *"
     ]
   }
