@@ -14,6 +14,7 @@ import argparse
 import json
 import sys
 import time
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
@@ -96,6 +97,30 @@ def _add_to_playlist(youtube, playlist_id: str, video_id: str):
     time.sleep(0.5)  # API レート制限対策
 
 
+def _load_episode_json(episode_id: str):
+    """episodes/{episode_id}.json を読み込む。なければ None。"""
+    p = BASE_DIR / "episodes" / f"{episode_id}.json"
+    if not p.exists():
+        return None
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def _is_published(ep: dict) -> bool:
+    """scheduled_at が現在時刻より過去なら公開済み（JST=UTC+9）。"""
+    s = ep.get("scheduled_at", "")
+    if not s:
+        return True
+    try:
+        dt_jst = datetime.strptime(s[:16], "%Y-%m-%d %H:%M")
+        dt_utc = dt_jst.replace(tzinfo=timezone.utc) - timedelta(hours=9)
+        return datetime.now(timezone.utc) >= dt_utc
+    except Exception:
+        return True
+
+
 def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
     """
     アップロード後に呼び出す。エピソードのキャラクターを処理してプレイリストを更新。
@@ -106,6 +131,12 @@ def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
         video_id:   アップロードした本編動画の YouTube ID
         ep:         エピソード JSON の dict
     """
+    # 公開前の動画はプレイリストに追加しない
+    if not _is_published(ep):
+        scheduled = ep.get("scheduled_at", "未設定")
+        print(f"  ⏳ {episode_id} は予約公開中（{scheduled}）のためプレイリスト処理スキップ")
+        return
+
     chars = set()
     for scene in ep.get("scenes", []):
         char = scene.get("character_ref")
@@ -150,16 +181,20 @@ def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
             print(f"  {display_name}: 初登場（記録のみ）")
 
         elif appearances == 2:
-            # プレイリスト作成 → 出演済み全エピソードを追加
+            # プレイリスト作成 → 出演済み全エピソードを追加（公開済みのみ）
             playlist_id = _create_playlist(youtube, display_name)
             char_data["playlist_id"] = playlist_id
             added = 0
             for entry in char_data["episodes"]:
-                if entry["video_id"]:
-                    _add_to_playlist(youtube, playlist_id, entry["video_id"])
-                    added += 1
-                else:
+                if not entry["video_id"]:
                     print(f"     ⚠️  {entry['episode_id']}: video_id 未登録のためスキップ")
+                    continue
+                ep_data = _load_episode_json(entry["episode_id"])
+                if ep_data and not _is_published(ep_data):
+                    print(f"     ⏳ {entry['episode_id']}: 予約公開中のためスキップ")
+                    continue
+                _add_to_playlist(youtube, playlist_id, entry["video_id"])
+                added += 1
             print(f"     ✓ {added}本を追加")
 
         else:
@@ -175,11 +210,15 @@ def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
                 char_data["playlist_id"] = playlist_id
                 added = 0
                 for entry in char_data["episodes"]:
-                    if entry["video_id"]:
-                        _add_to_playlist(youtube, playlist_id, entry["video_id"])
-                        added += 1
-                    else:
+                    if not entry["video_id"]:
                         print(f"     ⚠️  {entry['episode_id']}: video_id 未登録のためスキップ")
+                        continue
+                    ep_data = _load_episode_json(entry["episode_id"])
+                    if ep_data and not _is_published(ep_data):
+                        print(f"     ⏳ {entry['episode_id']}: 予約公開中のためスキップ")
+                        continue
+                    _add_to_playlist(youtube, playlist_id, entry["video_id"])
+                    added += 1
                 print(f"     ✓ {added}本を追加（バックフィル完了）")
 
     if updated:
