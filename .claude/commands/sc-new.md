@@ -369,7 +369,9 @@ Text must be clearly legible, sharp, and properly spelled.
 Modern cinematic concept art style, dramatic lighting, film production illustration quality. 16:9 aspect ratio, 1280x720.
 ```
 
-- `EPISODE_TITLE_SHORT`: エピソードタイトルを短く大文字で（例: "THE HONNOJI INCIDENT"）
+- `EPISODE_TITLE_SHORT`: エピソードの**肩書き・ドラマチックな形容**を大文字で（例: "THE GOD OF WAR" / "THE EXILE" / "THE WRONG SIDE"）
+  - ❌ 避ける: 人物名そのまま（"ISHIDA MITSUNARI" / "SASAKI KOJIRO"）
+  - ✅ 良い例: "THE GOD OF WAR"（上杉謙信）/ "THE EXILE"（西郷隆盛）/ "THE WRONG SIDE"（石田三成）
 - `SUBTITLE`: サブコピー（例: "Japan's Greatest Betrayal"）
 
 **生成コード:**

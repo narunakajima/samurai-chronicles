@@ -229,7 +229,7 @@
     },
     {
       "episode_id": "ep024",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Loyal Bureaucrat Who Started a War: Ishida Mitsunari's Last Stand",
       "era": "Sengoku",
       "priority": "A",
@@ -239,7 +239,7 @@
     },
     {
       "episode_id": "ep025",
-      "status": "pending",
+      "status": "in_production",
       "title": "Takeda Shingen vs Uesugi Kenshin: The Eternal Rivals",
       "era": "Sengoku",
       "priority": "A",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-02",
+  "last_updated": "2026-06-03",
   "total_topics": 87
 }

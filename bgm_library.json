@@ -123,5 +123,34 @@
       "ep009",
       "ep014"
     ]
+  },
+  {
+    "id": "ep024-BGM",
+    "path": "BGM/ep024-BGM.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "epic",
+      "heroic",
+      "orchestral",
+      "dramatic"
+    ],
+    "used_in": [
+      "ep024"
+    ]
+  },
+  {
+    "id": "ep025-BGM",
+    "path": "BGM/ep025-BGM.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral"
+    ],
+    "used_in": [
+      "ep025"
+    ]
   }
 ]

@@ -18,16 +18,28 @@
       {
         "episode_id": "ep013",
         "video_id": "lMFgM4Q8yx4"
+      },
+      {
+        "episode_id": "ep022",
+        "video_id": "w2CFUIda7qM"
       }
     ]
   },
   "kojiro": {
     "display_name": "Sasaki Kojiro",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cFyb267jkKTGid4T_-L0BLL",
     "episodes": [
       {
         "episode_id": "ep001",
         "video_id": "kZN4msDx9Tg"
+      },
+      {
+        "episode_id": "ep021",
+        "video_id": "ybQBCcJMrgo"
+      },
+      {
+        "episode_id": "ep022",
+        "video_id": "w2CFUIda7qM"
       }
     ]
   },
@@ -54,6 +66,14 @@
       {
         "episode_id": "ep014",
         "video_id": "rJiO7I-llw4"
+      },
+      {
+        "episode_id": "ep021",
+        "video_id": "ybQBCcJMrgo"
+      },
+      {
+        "episode_id": "ep023",
+        "video_id": "THJvirjCvOY"
       }
     ]
   },
@@ -72,6 +92,14 @@
       {
         "episode_id": "ep012",
         "video_id": "VFzHiWmeHJE"
+      },
+      {
+        "episode_id": "ep022",
+        "video_id": "w2CFUIda7qM"
+      },
+      {
+        "episode_id": "ep023",
+        "video_id": "THJvirjCvOY"
       }
     ]
   },
@@ -98,16 +126,28 @@
       {
         "episode_id": "ep016",
         "video_id": "2XLSdO_vOTM"
+      },
+      {
+        "episode_id": "ep024",
+        "video_id": "TemJZxs-Dm4"
       }
     ]
   },
   "mitsunari": {
     "display_name": "Ishida Mitsunari",
-    "playlist_id": null,
+    "playlist_id": "PLOa8YFQho_cH3k8-exPtbhjfH-hkPTaV5",
     "episodes": [
       {
         "episode_id": "ep004",
         "video_id": "pjgU_IK0fJU"
+      },
+      {
+        "episode_id": "ep023",
+        "video_id": "THJvirjCvOY"
+      },
+      {
+        "episode_id": "ep024",
+        "video_id": "TemJZxs-Dm4"
       }
     ]
   },
@@ -145,7 +185,7 @@
   },
   "benkei": {
     "display_name": "Musashibo Benkei",
-    "playlist_id": "PLOa8YFQho_cFUyqKdg0LkVEbjj8h_NDUq",
+    "playlist_id": "PLOa8YFQho_cEDRoT9pmcaF-_kvrhI9Jl9",
     "episodes": [
       {
         "episode_id": "ep006",
@@ -177,7 +217,7 @@
   },
   "yoritomo": {
     "display_name": "Minamoto Yoritomo",
-    "playlist_id": "PLOa8YFQho_cEFBNTipQub87HsjtuHrf10",
+    "playlist_id": "PLOa8YFQho_cFEUxrPlN1kE_00imcvLoN5",
     "episodes": [
       {
         "episode_id": "ep006",
@@ -186,6 +226,20 @@
       {
         "episode_id": "ep017",
         "video_id": "qoodETrDhSg"
+      },
+      {
+        "episode_id": "ep025",
+        "video_id": "Y4lXH4vJOqQ"
+      }
+    ]
+  },
+  "saigo": {
+    "display_name": "Saigo Takamori",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep008",
+        "video_id": "CvdXyK2J6x4"
       }
     ]
   },
@@ -236,12 +290,16 @@
     "playlist_id": "PLOa8YFQho_cFSn6mM-62jpAR9hjVes75W",
     "episodes": [
       {
-        "episode_id": "ep017",
-        "video_id": "qoodETrDhSg"
-      },
-      {
         "episode_id": "ep018",
         "video_id": "d2Mf5Vgy2jM"
+      },
+      {
+        "episode_id": "ep007",
+        "video_id": "ghHOBmFQvs8"
+      },
+      {
+        "episode_id": "ep017",
+        "video_id": "qoodETrDhSg"
       }
     ]
   },
@@ -270,14 +328,6 @@
     "playlist_id": "PLOa8YFQho_cEv5XWOcjYec799dw7mvv-W",
     "episodes": [
       {
-        "episode_id": "ep008",
-        "video_id": "CvdXyK2J6x4"
-      },
-      {
-        "episode_id": "ep018",
-        "video_id": "d2Mf5Vgy2jM"
-      },
-      {
         "episode_id": "ep019",
         "video_id": "ZPmQNASo0M0"
       }
@@ -295,12 +345,30 @@
   },
   "kenshin": {
     "display_name": "Uesugi Kenshin",
-    "playlist_id": null,
-    "episodes": []
+    "playlist_id": "PLOa8YFQho_cH0AxG-00TmhpLoF1fv7969",
+    "episodes": [
+      {
+        "episode_id": "ep021",
+        "video_id": "ybQBCcJMrgo"
+      },
+      {
+        "episode_id": "ep025",
+        "video_id": "Y4lXH4vJOqQ"
+      }
+    ]
   },
   "shingen": {
     "display_name": "Takeda Shingen",
-    "playlist_id": null,
-    "episodes": []
+    "playlist_id": "PLOa8YFQho_cGfBYk64pmNrarYNlnKVjVQ",
+    "episodes": [
+      {
+        "episode_id": "ep021",
+        "video_id": "ybQBCcJMrgo"
+      },
+      {
+        "episode_id": "ep025",
+        "video_id": "Y4lXH4vJOqQ"
+      }
+    ]
   }
 }
