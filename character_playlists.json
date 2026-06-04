@@ -18,28 +18,16 @@
       {
         "episode_id": "ep013",
         "video_id": "lMFgM4Q8yx4"
-      },
-      {
-        "episode_id": "ep022",
-        "video_id": "w2CFUIda7qM"
       }
     ]
   },
   "kojiro": {
     "display_name": "Sasaki Kojiro",
-    "playlist_id": "PLOa8YFQho_cFyb267jkKTGid4T_-L0BLL",
+    "playlist_id": null,
     "episodes": [
       {
         "episode_id": "ep001",
         "video_id": "kZN4msDx9Tg"
-      },
-      {
-        "episode_id": "ep021",
-        "video_id": "ybQBCcJMrgo"
-      },
-      {
-        "episode_id": "ep022",
-        "video_id": "w2CFUIda7qM"
       }
     ]
   },
@@ -66,14 +54,6 @@
       {
         "episode_id": "ep014",
         "video_id": "rJiO7I-llw4"
-      },
-      {
-        "episode_id": "ep021",
-        "video_id": "ybQBCcJMrgo"
-      },
-      {
-        "episode_id": "ep023",
-        "video_id": "THJvirjCvOY"
       }
     ]
   },
@@ -92,14 +72,6 @@
       {
         "episode_id": "ep012",
         "video_id": "VFzHiWmeHJE"
-      },
-      {
-        "episode_id": "ep022",
-        "video_id": "w2CFUIda7qM"
-      },
-      {
-        "episode_id": "ep023",
-        "video_id": "THJvirjCvOY"
       }
     ]
   },
@@ -131,15 +103,11 @@
   },
   "mitsunari": {
     "display_name": "Ishida Mitsunari",
-    "playlist_id": "PLOa8YFQho_cH3k8-exPtbhjfH-hkPTaV5",
+    "playlist_id": null,
     "episodes": [
       {
         "episode_id": "ep004",
         "video_id": "pjgU_IK0fJU"
-      },
-      {
-        "episode_id": "ep023",
-        "video_id": "THJvirjCvOY"
       }
     ]
   },
@@ -177,7 +145,7 @@
   },
   "benkei": {
     "display_name": "Musashibo Benkei",
-    "playlist_id": "PLOa8YFQho_cEDRoT9pmcaF-_kvrhI9Jl9",
+    "playlist_id": "PLOa8YFQho_cFUyqKdg0LkVEbjj8h_NDUq",
     "episodes": [
       {
         "episode_id": "ep006",
@@ -209,7 +177,7 @@
   },
   "yoritomo": {
     "display_name": "Minamoto Yoritomo",
-    "playlist_id": "PLOa8YFQho_cFEUxrPlN1kE_00imcvLoN5",
+    "playlist_id": "PLOa8YFQho_cEFBNTipQub87HsjtuHrf10",
     "episodes": [
       {
         "episode_id": "ep006",
@@ -218,16 +186,6 @@
       {
         "episode_id": "ep017",
         "video_id": "qoodETrDhSg"
-      }
-    ]
-  },
-  "saigo": {
-    "display_name": "Saigo Takamori",
-    "playlist_id": null,
-    "episodes": [
-      {
-        "episode_id": "ep008",
-        "video_id": "CvdXyK2J6x4"
       }
     ]
   },
@@ -278,16 +236,12 @@
     "playlist_id": "PLOa8YFQho_cFSn6mM-62jpAR9hjVes75W",
     "episodes": [
       {
-        "episode_id": "ep018",
-        "video_id": "d2Mf5Vgy2jM"
-      },
-      {
-        "episode_id": "ep007",
-        "video_id": "ghHOBmFQvs8"
-      },
-      {
         "episode_id": "ep017",
         "video_id": "qoodETrDhSg"
+      },
+      {
+        "episode_id": "ep018",
+        "video_id": "d2Mf5Vgy2jM"
       }
     ]
   },
@@ -316,6 +270,14 @@
     "playlist_id": "PLOa8YFQho_cEv5XWOcjYec799dw7mvv-W",
     "episodes": [
       {
+        "episode_id": "ep008",
+        "video_id": "CvdXyK2J6x4"
+      },
+      {
+        "episode_id": "ep018",
+        "video_id": "d2Mf5Vgy2jM"
+      },
+      {
         "episode_id": "ep019",
         "video_id": "ZPmQNASo0M0"
       }
@@ -334,21 +296,11 @@
   "kenshin": {
     "display_name": "Uesugi Kenshin",
     "playlist_id": null,
-    "episodes": [
-      {
-        "episode_id": "ep021",
-        "video_id": "ybQBCcJMrgo"
-      }
-    ]
+    "episodes": []
   },
   "shingen": {
     "display_name": "Takeda Shingen",
     "playlist_id": null,
-    "episodes": [
-      {
-        "episode_id": "ep021",
-        "video_id": "ybQBCcJMrgo"
-      }
-    ]
+    "episodes": []
   }
 }
