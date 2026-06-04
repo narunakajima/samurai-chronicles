@@ -2,7 +2,10 @@
   "skipDangerousModePermissionPrompt": true,
   "allowedTools": ["Bash", "Read", "Edit", "Write"],
   "permissions": {
+    "defaultMode": "bypassPermissions",
     "allow": [
+      "Bash(python3 *)",
+      "Bash(python3)",
       "ffprobe *"
     ]
   }

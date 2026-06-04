@@ -92,10 +92,14 @@ def find_next_publish_slot() -> str:
     """
     次の空き 03:00 JST スロットを返す（"YYYY-MM-DD HH:MM" JST 形式）。
 
+    配信曜日: 火〜土（月・日はスキップ）
     - episodes/*.json の scheduled_at を読んで使用済み日付を収集
     - 今日の 03:00 JST が未来 → 今日を候補に、過去 → 明日を候補に
-    - 使用済み日付を避けて最初の空き日を返す
+    - 月・日 および 使用済み日付を避けて最初の空き日を返す
     """
+    # 配信可能な曜日: 火(1), 水(2), 木(3), 金(4), 土(5)
+    PUBLISH_WEEKDAYS = {1, 2, 3, 4, 5}  # 0=月, 6=日 はスキップ
+
     now_jst = datetime.now(JST)
 
     # 使用済みスロット（date）を収集
@@ -116,8 +120,8 @@ def find_next_publish_slot() -> str:
     if candidate <= now_jst:
         candidate += timedelta(days=1)
 
-    # 使用済みを避けながら空きを探す
-    while candidate.date() in used_dates:
+    # 配信曜日 かつ 使用済みでない日を探す
+    while (candidate.weekday() not in PUBLISH_WEEKDAYS) or (candidate.date() in used_dates):
         candidate += timedelta(days=1)
 
     return candidate.strftime("%Y-%m-%d %H:%M")
@@ -315,6 +319,44 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
         update_playlists(youtube, episode_id, main_id, ep)
     except Exception as e:
         print(f"  ⚠️  プレイリスト処理でエラー（アップロード自体は成功）: {e}")
+
+    # プレイリスト整合チェック＋自動補完
+    # （非公開スキップ済みの動画を公開後に自動追加）
+    print(f"{'━'*60}")
+    print(f"  プレイリスト整合チェック")
+    print(f"{'━'*60}")
+    try:
+        from sc_playlist_manager import _load_data, _save_data, _add_to_playlist
+        pl_data = _load_data()
+        added_count = 0
+        for char_key, char_data in pl_data.items():
+            pid = char_data.get("playlist_id")
+            if not pid:
+                continue
+            # APIで実際のプレイリスト内動画IDを取得
+            resp = youtube.playlistItems().list(
+                part="snippet", playlistId=pid, maxResults=50
+            ).execute()
+            actual_vids = {
+                item["snippet"]["resourceId"]["videoId"]
+                for item in resp.get("items", [])
+            }
+            # JSONに記録済みでAPIに未追加のものを補完
+            for entry in char_data.get("episodes", []):
+                vid = entry.get("video_id")
+                if vid and vid not in actual_vids:
+                    try:
+                        _add_to_playlist(youtube, pid, vid)
+                        print(f"  🔧 {char_key} / {entry['episode_id']}: プレイリストに補完追加")
+                        added_count += 1
+                    except Exception:
+                        pass  # まだ非公開なら次回に持ち越し
+        if added_count == 0:
+            print(f"  ✅ 全プレイリスト整合済み（補完なし）")
+        else:
+            print(f"  ✅ {added_count}件を補完追加")
+    except Exception as e:
+        print(f"  ⚠️  整合チェックでエラー（アップロード自体は成功）: {e}")
 
     # index.html 再ビルド
     print(f"{'━'*60}")

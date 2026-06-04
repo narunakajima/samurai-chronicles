@@ -1,0 +1,260 @@
+{
+  "episode_id": "ep018",
+  "episode_title": "The One-Eyed Dragon: Year One",
+  "youtube_title": "The Warlord Who Sacrificed His Own Father at 17 — Date Masamune",
+  "youtube_description": "He was seventeen years old when he became warlord of the Date clan. A year later, he faced a choice that would define him — and northern Japan — for centuries. He chose power over blood. The north has never forgotten.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 He was seventeen years old when\n0:37 In 1567, in the mountainous...\n1:44 In the summer of 1584,...\n2:41 The man who shaped Masamune more\n3:46 Masamune's early campaigns...\n4:53 By the autumn of 1585, the\n5:54 In October 1585, Date...\n6:51 Masamune rode to intercept...\n7:52 The Hatakeyama soldiers...\n8:44 He gave the order. Date soldiers\n9:30 What changed in Masamune that...\n10:25 The campaigns that followed...\n11:37 There was a darkness at home\n12:29 Masamune's response was swift...\n13:23 There is a quality to Masamune's\n14:24 The crescent moon crest on his\n15:22 Toyotomi Hideyoshi eventually...\n16:29 Date Masamune lived until 1636 —\n17:29 Next time on Samurai...\n18:04 The boy who rode out to\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. The Samurai: A Military History. Osprey Publishing, 1977.\n2. Sasaki Junnosuke. Date Masamune (伊達政宗). Yoshikawa Kobunkan, 1985.\n3. Berry, Mary Elizabeth. Hideyoshi. Harvard University Press, 1982.\n\n#DateMasamune #OneEyedDragon #SengokuPeriod #SamuraiChronicles #JapaneseHistory\n🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0",
+  "youtube_tags": [
+    "Date Masamune",
+    "One-Eyed Dragon",
+    "Sengoku period",
+    "Japanese history",
+    "samurai",
+    "Date clan",
+    "Japanese warlord",
+    "Samurai Chronicles",
+    "Mutsu province",
+    "feudal Japan",
+    "1585",
+    "Sendai",
+    "Japanese castle",
+    "Sengoku warlord",
+    "northeast Japan history"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "They seized his father and sent one demand: stand down, or the old lord dies. The teenage warlord read the message, looked at his men, and gave an order no son should ever give. What kind of man does that? The kind who conquers everything.",
+  "shorts_narration": "Seventeen. Already a warlord. His father seized as a hostage. One demand: stand down. He charged anyway. His father died. Then he conquered the north. This is Date Masamune's awakening.",
+  "thumbnail_prompt": "Date Masamune, a teenage male warlord in his late teens, close three-quarter portrait view. Distinctive black lacquered armor with crescent moon mikazuki helmet crest and golden accents. His right eye socket is empty and scarred, fully visible, no patch. His remaining left eye burns with fierce, cold intelligence. Northern Japanese mountain landscape in mist and smoke behind him. Expression: absolute resolve, no grief, no hesitation. Dramatic side lighting from the left casting deep shadows. The crescent moon crest gleams above his head.",
+  "bgm_source": "ep009/audio/ep009-BGM.mp3",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He was seventeen years old when he gave an order that would haunt Japan for four centuries. His father was the hostage. Did that stop him?",
+      "image_prompt": "Extreme close-up of a teenage warlord's face lit by torchlight. His right eye socket is empty and deeply scarred, left eye burning with fierce, cold resolve. Black lacquered armor partially visible at the shoulders. Background is darkness and drifting smoke. Expression: not grief, not rage — absolute, terrifying calm.",
+      "ken_burns": "zoom_in",
+      "character_ref": "date_masamune",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "In 1567, in the mountainous northeast of Japan, Date Terumune fathered a son he named Bontenmaru. The Date clan controlled much of Mutsu and Dewa provinces — powerful enough to matter, not yet powerful enough to dominate. When the boy was barely two years old, smallpox swept through the castle. He survived. But the disease took his right eye, leaving a scarred and hollow socket. His mother, Yoshihime of the Mogami clan, reportedly urged the disfigured child be disinherited. His father refused. The boy would live. He would lead. And that empty socket would become the most feared sight in the north.",
+      "image_prompt": "A Japanese feudal lord (Date Terumune, a dignified man in his 40s) kneeling beside a sickly infant in a dimly lit castle room. Candles flicker, shadows play on shoji screens. The infant's face shows signs of illness. A worried wet nurse stands nearby. Late 16th century Japanese interior — tatami, low lacquered furniture, hanging scrolls. Atmosphere: quiet dread, a father's desperate hope.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "In the summer of 1584, seventeen-year-old Bontenmaru — now Date Masamune — formally became head of the Date clan after his father stepped aside. The timing was catastrophic. Northern Japan was fracturing. The Mogami clan to the southwest, the Ashina to the west, the Hatakeyama and Soma pressing from every direction. Neighbours watched the new teenage lord and calculated: this is the moment to strike. They saw a boy. They were mistaken. Within months, Masamune had launched his first independent military campaigns — not to defend borders, but to expand them.",
+      "image_prompt": "Date Masamune, a lean teenager in formal black lacquered armor with crescent moon helmet crest, seated at the head of a clan council in a Japanese castle's great hall. His right eye socket is empty and scarred, his remaining eye surveying the room with cold authority. Older retainers in formal attire bow before him. Tatami floor, weapon racks on the walls, candles and incense. Atmosphere: the tension of young power asserting itself.",
+      "ken_burns": "zoom_out",
+      "character_ref": "date_masamune",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "The man who shaped Masamune more than any other was not his father but his chief strategist, Katakura Kagetsuna — known as Kojuro. Kojuro was older, steadier, possessed of a political intelligence that perfectly complemented Masamune's volcanic aggression. Where Masamune wanted to charge, Kojuro calculated. Where Masamune burned bridges, Kojuro quietly preserved alliances. They were inseparable for forty years — a partnership so famous it entered Japanese legend. But in 1584, Kojuro faced his hardest task: advising a seventeen-year-old who burned to prove himself, surrounded by enemies on every side, and unwilling to hear the word patience.",
+      "image_prompt": "Two figures bent over a large map spread on the floor of a Japanese castle room at night. One is young with an empty right eye socket (Date Masamune), intense and leaning forward. The other is older, composed, with a steadying hand gesture toward the map (Katakura Kojuro). Candles illuminate the scene with warm orange light. The map shows northeastern Japan with clan territories marked. Atmosphere: strategy, tension, the partnership of youth and experience.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Masamune's early campaigns shocked his opponents with their ferocity. He did not move like a lord protecting territory — he moved like a predator expanding it. The Nihonmatsu clan, the Inawashiro, the Ashina — all found that the new Date lord offered terms once, then attacked without hesitation if refused. What distinguished him was the absence of sentimentality. Other Sengoku warlords fought with one eye on honour and reputation. Masamune simply fought to win. His men were paid, fed, and led from the front. Loyalty flowed both ways. Fear of him flowed in every direction.",
+      "image_prompt": "Date Masamune leading cavalry across a misty northern Japanese plain, autumn trees lining the horizon. He rides at the front on a dark horse, black lacquered armor gleaming, crescent moon helmet crest catching the pale light. His empty eye socket is visible as he turns to look back at his troops. Soldiers with Date clan banners stream behind him. Atmosphere: aggressive forward momentum, unstoppable force.",
+      "ken_burns": "zoom_in",
+      "character_ref": "date_masamune",
+      "zoom_anchor": {
+        "x": 0.57,
+        "y": 0.34
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "By the autumn of 1585, the Hatakeyama clan had become Masamune's most pressing problem. They controlled a strategic corridor between Date territory and the coast — land Masamune needed. Their lord, Hatakeyama Yoshitsugu, watched the young warlord's expansion with growing alarm. Date Terumune attempted to play the role of moderating force, reminding his son that not every dispute required war, that alliances built through diplomacy outlasted those built through conquest. Masamune listened. He also continued planning. The collision between his father's diplomacy and his own ambition was approaching faster than either man realised.",
+      "image_prompt": "A Hatakeyama clan stronghold — a mid-sized Japanese castle surrounded by deep autumn forests in the mountains of northern Honshu. Date scouts on horseback observe it from a wooded ridge above, partially concealed. Mist fills the valleys below. Golden and red autumn foliage. Atmosphere: surveillance, mounting threat, the calm before a storm.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "In October 1585, Date Terumune accepted an invitation to meet Hatakeyama Yoshitsugu in person — a diplomatic visit intended to ease mounting tensions. He rode out with a modest escort, a gesture of goodwill signalling that the Date clan sought peace. It was a fatal miscalculation. Hatakeyama had no intention of negotiating. As Terumune prepared to leave after the meeting, the Hatakeyama soldiers closed in from every side. He was seized, pulled from his horse, and taken hostage. Word reached Masamune within hours: stand down, withdraw your forces, or Date Terumune would not return alive.",
+      "image_prompt": "An older Japanese lord on horseback (Date Terumune, dignified, silver-haired, in formal lacquered armor), riding toward a meeting place with a modest escort. Autumn trees in brilliant gold and red surround the mountain road. The atmosphere is deceptively peaceful — golden light, falling leaves — but a faint wrongness in the stillness of the trees ahead. Atmosphere: calm about to shatter.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Masamune rode to intercept the Hatakeyama party before they could reach the safety of their own territory. He arrived in time to see it clearly: his father, surrounded by enemy soldiers, being marched away at swordpoint. Across the crowd of armed men, the two made eye contact. What Terumune did next would be remembered for centuries. He called out to his son — not pleading to be rescued, but issuing a command. Attack. Do not stop. Do not let them use me as a bargaining piece. Let them kill me if they must. Preserve the clan. The teenage warlord had seconds to decide.",
+      "image_prompt": "A tense standoff on an autumn mountain road in northern Japan. In the middle distance, an older lord (Date Terumune) is surrounded by armed soldiers, being held at swordpoint. In the foreground, Date Masamune on horseback — teenage, black armor, empty right eye socket — frozen, staring across the crowd at his father. Their eyes lock. Between them, a wall of enemy soldiers. Falling autumn leaves. Atmosphere: the unbearable moment before an irreversible choice.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "The Hatakeyama soldiers outnumbered Masamune's men. A direct assault meant his father would die in the fighting — he knew this. His advisors urged caution. Kojuro stood beside him, silent. The choice was not merely tactical but existential. If Masamune accepted the ransom terms, he would signal to every lord in the north that Date territory could be leveraged through hostage-taking. Every rival watching this moment would reach the same conclusion: capture someone Masamune loves, and he will yield. He could not be that kind of warlord. Not even for his father. Not even for the man who had refused to disinherit him.",
+      "image_prompt": "Date Masamune on horseback, frozen in the moment of decision. His remaining eye is wide but controlled — calculating, not panicking. Around him, his retainers watch for his command with tense expressions. His jaw is set like stone. Behind him, his chief advisor watches silently. In the far background through a gap in the crowd, his father can just be seen surrounded by enemy soldiers. Atmosphere: the silence before the most consequential decision of a young life.",
+      "ken_burns": "static",
+      "character_ref": "date_masamune",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "He gave the order. Date soldiers charged into the Hatakeyama party. In the chaos of the fighting, Date Terumune was killed — cut down in the melee, his life the price of his son's decision. By some accounts, Terumune himself had called the charge, choosing death over captivity to protect his clan's dignity. By others, Masamune simply calculated and acted. The Hatakeyama were destroyed. Their lord was killed. The crisis ended. And Masamune stood somewhere on a road in the mountains of northern Japan — not yet twenty years old, victorious, and utterly transformed by what he had just chosen.",
+      "image_prompt": "Battle chaos erupting on a northern Japanese mountain road in autumn. Horsemen charging, swords raised, dust and smoke filling the air. At the center of the melee, an older lord in lacquered armor falls from his horse. To the side, a teenage warlord on a black horse watches with an expression beyond grief — absolute, stone-cold resolution. Autumn leaves torn loose by the wind of fighting. Atmosphere: irreversible violence, a line crossed that can never be uncrossed.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "What changed in Masamune that day is difficult to name precisely, but every account of his life agrees — something did. The teenager who rode out that morning was not the same man who rode back. Something closed inside him, or perhaps something opened. He had discovered what he was capable of when forced to choose between sentiment and power. He had discovered, in the most brutal way possible, that he could always choose power. Katakura Kojuro watched it happen and said nothing. He had perhaps always known which choice his lord would make. It had simply needed the right moment to prove it.",
+      "image_prompt": "Date Masamune standing alone on a mountain road in the aftermath of battle. He looks down at something off-frame. His black armor has blood on it. His posture is completely still — not trembling, not weeping, just still. Fallen soldiers, scattered weapons, the chaos of battle receding around him. Autumn light slants through smoke. His empty right eye socket and his remaining eye both seem to stare at nothing and everything. Atmosphere: the silence after the worst moment of a life.",
+      "ken_burns": "zoom_in",
+      "character_ref": "date_masamune",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "The campaigns that followed were extraordinary for their speed and ferocity. In 1586, Masamune crushed the Nihonmatsu clan. At Suriagehara in 1589, he defeated the Ashina in one of the largest battles ever fought in northeastern Japan. By his early twenties, he had tripled Date territory, bringing more than a million koku under his control. Rivals who had watched the teenage heir with contempt now scrambled to submit or flee. The north had a new master. What drove him was not grief, exactly. It was the lesson of October 1585: hesitation kills. Act first. Decide first. Grieve never.",
+      "image_prompt": "Date Masamune leading a vast army across a wide river at dawn — the Battle of Suriagehara, 1589. Thousands of soldiers on the move, Date clan banners in black and gold rippling in the morning wind. The young warlord rides at the front, now slightly older but with the same fierce bearing. Mountains in the distance, mist rising from the water. Atmosphere: overwhelming force, inexorable momentum, the north being remade.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "There was a darkness at home that matched the violence in the field. Masamune's mother, Yoshihime of the Mogami clan, had never forgiven her son for his father's death — or so the stories say. She had always favoured his younger brother, the gentler Kojiro. After Terumune's death, tensions within the Date household fractured. According to the most dramatic accounts, Yoshihime placed poison in her eldest son's food. Masamune tasted it. Survived. Whether the story is entirely accurate is debated by historians. That Masamune believed it — and acted on that belief — is not.",
+      "image_prompt": "A tense scene inside a Japanese castle room. A noble woman in formal courtly robes (Yoshihime, middle-aged, composed but with grief in her eyes) stands at a distance from a young warlord. Between them, an overturned lacquered food tray on the tatami floor. Masamune (slightly older, empty right eye socket, armor) looks at his mother with cold suspicion. She meets his gaze with something between sorrow and defiance. Atmosphere: the fracture point of a family, love curdled into something dangerous.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "Masamune's response was swift and devastating. He ordered the execution of his younger brother Kojiro — a teenager, removed as a potential rallying point for dissent. Yoshihime was expelled from the castle and fled to her birth family, the Mogami clan. The man who had ordered his father killed in the field now ordered his brother killed in the castle. Whether driven by paranoia, necessity, or cold calculation, the result was the same. The family Masamune had been born into no longer existed. He had, one decision at a time, consumed everything that might have held him back.",
+      "image_prompt": "A dimly lit Japanese castle corridor at night. Two guards escort a young teenager in formal robes (Date Kojiro, early teens, frightened but composing himself) away from the main hall. In a shadowed doorway behind them, Date Masamune watches — his expression controlled, unreadable, the decision already made and irrevocable. Candles guttering in a draft. Atmosphere: cold necessity, the terrible quietness of power exercising itself without drama.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "There is a quality to Masamune's solitude that historians have noted. He was surrounded by men who feared and admired him, commanded by a strategist who would serve him loyally for forty years. But Masamune had severed himself from every personal attachment that could be weaponised against him. His enemies had taught him the lesson in October 1585: love is a vulnerability that will be found and used. He had absorbed it completely. He was perhaps twenty years old. He was, by every measure, already the most formidable warlord north of Kyoto. And he had made himself that way entirely alone.",
+      "image_prompt": "Date Masamune seated alone at night in a large castle room, battle maps and dispatches spread before him on the tatami. He stares past the documents at nothing — his remaining eye distant, the empty socket in shadow. The vast castle is silent around him. Candles burning low. His posture is that of a man completely in control and, in this private moment, completely alone with what that control has cost. Atmosphere: the weight of power, the silence of solitude chosen as a strategy.",
+      "ken_burns": "zoom_out",
+      "character_ref": "date_masamune",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "The crescent moon crest on his helmet became the most feared symbol in the north. His black armor, his empty eye socket — he cultivated the image deliberately. Masamune had understood something about power that many Sengoku commanders missed: perception precedes reality on the battlefield. If your enemies believe you are capable of anything — including killing your own father — they hesitate before forcing you to prove it again. That hesitation is the advantage. He had built his entire military reputation on the silence that falls when people realise there is nothing he will not do. The silence was worth ten thousand soldiers.",
+      "image_prompt": "A dramatic close-up of Date Masamune's distinctive crescent moon mikazuki helmet crest, lacquered black with golden details, illuminated by the orange glow of firelight or torchlight. In the background, slightly blurred, the walls of Aoba Castle lined with Date clan soldiers and banners. The symbol of absolute northern dominance. Atmosphere: the iconography of fear deliberately constructed.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Toyotomi Hideyoshi eventually brought Masamune to heel — not through battle, but through the credible threat of it. Summoned to Hideyoshi's 1590 Odawara campaign, Masamune appeared famously late, wearing white funeral robes as if prepared to be executed for his insubordination. Hideyoshi laughed and spared him. But he trimmed Date territory and kept Masamune where he could be watched. Even the man who unified Japan was cautious around the One-Eyed Dragon. Tokugawa Ieyasu later did the same — keeping Masamune close, useful, and never quite powerful enough to threaten the new order. Two of the three great unifiers of Japan handled Date Masamune with care.",
+      "image_prompt": "A formal meeting room in a grand Japanese castle. Toyotomi Hideyoshi — small, sharp-eyed, golden armor — sits at the head of the room, studying Date Masamune across the space with calculating eyes. Masamune (late teens, black armor, empty eye socket) kneels with careful formality but his posture radiates barely contained power. Between them, a charged silence. Other retainers observe from the sides. Atmosphere: two forces assessing each other, one nominally dominant, both understanding the danger.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Date Masamune lived until 1636 — dying at sixty-eight, having outlasted Hideyoshi's family, the chaos of Sekigahara, and Tokugawa's consolidation. He spent the second half of his life as a great lord under a greater shogun, channelling his energy into culture, architecture, and the development of Sendai domain into one of Japan's most prosperous regions. He never forgot, and history never let him forget, that he had arrived too late — that had he been born five years earlier, the east might have been his. The warlord who killed his father at seventeen lived long enough to understand what peace costs. And what it is worth.",
+      "image_prompt": "Date Masamune in older age — perhaps fifties, but still powerfully built and bearing — seated in a formal garden with Sendai's mountains visible in the background under a clear autumn sky. He is dressed in formal robes rather than armor. His empty right eye socket is still visible, still his emblem. His expression is contemplative, not bitter — the look of a man who has seen everything and decided, finally, that what remains is worth protecting. Atmosphere: earned peace, the weight of a life fully lived.",
+      "ken_burns": "pan_right",
+      "character_ref": "date_masamune",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 18,
+      "narration": "Next time on Samurai Chronicles: before Japan's last samurai uprising, there were the forgotten years. An exile on a remote southern island, alone with the sea and his principles. A general who had devoted his life to Japan's emperor — now discarded, watching the country he loved transform into something he barely recognised. Next time: the hidden years of Saigo Takamori.",
+      "image_prompt": "Saigo Takamori — a large, powerfully built Japanese man with close-cropped hair — sitting alone on a rocky shoreline of a small tropical island (Amami Oshima), the Pacific Ocean stretching to the horizon before him. He wears simple dark robes, not military uniform. His posture suggests both physical strength and inner heaviness — a man containing enormous grief. Wind moves his robes. Late afternoon light turns the sea gold. Atmosphere: exile, contemplation, a fire not yet extinguished.",
+      "ken_burns": "zoom_in",
+      "character_ref": "saigo_takamori",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 15,
+      "narration": "The boy who rode out to save his father came back as something else entirely. History remembers Date Masamune as the One-Eyed Dragon. But dragons are made, not born — and the fire that makes them always costs something precious. Subscribe to Samurai Chronicles for new episodes every day. We will see you next time.",
+      "image_prompt": "A wide panoramic view of the mountainous northern Japanese landscape — the plains and forests of Mutsu province — at dawn. In the far distance, the silhouette of Aoba Castle catches the first pale light. Mist fills the valleys. A vast, hard-won territory stretching to every horizon. The sense of something immense claimed at immense cost. Atmosphere: the quiet grandeur of consequence.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/d2Mf5Vgy2jM",
+  "shorts_url": "https://youtu.be/mah_V3uucKQ",
+  "scheduled_at": "2026-06-02 03:00"
+}

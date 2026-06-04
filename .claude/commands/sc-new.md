@@ -18,12 +18,18 @@ topics_queue.json から次のトピックを選び、動画生成まで一気�
 
 新しいトピックを5件提案し、ユーザーに確認してもらう。
 
+**再登場ルール（必須）：**
+- すでに登場済みの人物を提案する場合は、`notes` に**前回との違い（新角度）を必ず明記**する
+  - 例：`"notes": "ep002で本能寺を扱ったが、今回は比叡山焼き討ちに特化。残虐性vs合理性の議論"` 
+- 「別の有名なエピソードがある」だけでは理由として不十分。視聴者が**前回と全く違う何かを得られるか**で判断する
+- 新角度が明確でない場合は、未登場の人物を優先する
+
 提案フォーマット：
 ```
 残りトピックが少なくなりました。新しい候補を5件提案します：
 
 1. ep031「...」（era / Priority A）
-   ※ メモ
+   ※ メモ（再登場の場合：前回ep00Xとの違い）
 2. ep032「...」
 ...
 
@@ -34,7 +40,14 @@ OKが取れたら `topics_queue.json` の `queue` に追記し、`total_topics` 
 
 ---
 
-`status: "pending"` のうち**配列の先頭（最初に現れるもの）**を1件提案する。（episode_id の番号順ではなく、配列の並び順で決まる）
+`status: "pending"` のうち**配列の先頭（最初に現れるもの）**を候補とする。（episode_id の番号順ではなく、配列の並び順で決まる）
+
+### 人物重複チェック（必須）
+
+候補を提案する前に、直近5件の `status: "published" | "in_production"` のエピソードと `person` フィールドを照合する。
+
+- 直近5件に**同じ `person`** が含まれている場合 → その候補をスキップし、`person` が重ならない最初の `pending` を選ぶ
+- 同じ人物しか残っていない場合 → 候補を提案しつつ「直近に同じ人物が続いています」と警告する
 
 表示フォーマット：
 ```
@@ -503,11 +516,9 @@ CHOSEN=$(ls "$HOME/Desktop/BGM/BGM_candidate_"*.mp3 "$HOME/Desktop/BGM/BGM_libra
 CHOSEN_STEM=$(basename "$CHOSEN" .mp3)
 
 if [[ "$CHOSEN" == *"BGM_candidate_"* ]]; then
-  # Freesound新規: エピソードフォルダに移動
-  mv "$CHOSEN" "$DRIVE/audio/ep{NNN}-BGM.mp3"
-  # bgm_library.json に新規エントリを追加
+  # Freesound新規: BGM/フォルダに移動（sc_bgm_library.py --add が自動移動）
   python3 $HOME/samurai-chronicles/sc_bgm_library.py \
-    --add --episode ep{NNN} --file "$DRIVE/audio/ep{NNN}-BGM.mp3" \
+    --add --episode ep{NNN} --file "$CHOSEN" \
     --stem "$CHOSEN_STEM"
   # クレジット注入（CC BY の場合）
   CREDIT="/tmp/sc_bgm_credits/${CHOSEN_STEM}.credit.txt"
@@ -521,7 +532,7 @@ else
     --use-library --episode ep{NNN} --stem "$CHOSEN_STEM"
   # ライブラリ曲の試聴コピーを削除
   rm -f "$CHOSEN"
-  rmdir "$HOME/Desktop/BGM" 2>/dev/null || true
+  rm -rf "$HOME/Desktop/BGM" 2>/dev/null || true
   # クレジット注入（CC BY の場合）
   CREDIT="/tmp/sc_bgm_credits/${CHOSEN_STEM}.credit.txt"
   if [ -f "$CREDIT" ]; then

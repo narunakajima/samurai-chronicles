@@ -1,7 +1,7 @@
 [
   {
     "id": "ep001-BGM",
-    "path": "ep001/audio/ep001-BGM.mp3",
+    "path": "BGM/ep001-BGM.mp3",
     "duration": 62,
     "license": "CC0",
     "credit": null,
@@ -15,7 +15,7 @@
   },
   {
     "id": "ep002-BGM",
-    "path": "ep002/audio/ep002-BGM.mp3",
+    "path": "BGM/ep002-BGM.mp3",
     "duration": 39,
     "license": "CC0",
     "credit": null,
@@ -29,7 +29,7 @@
   },
   {
     "id": "ep003-BGM",
-    "path": "ep003/audio/ep003-BGM.mp3",
+    "path": "BGM/ep003-BGM.mp3",
     "duration": 180,
     "license": "CC0",
     "credit": null,
@@ -40,12 +40,14 @@
     ],
     "used_in": [
       "ep003",
-      "ep015"
+      "ep015",
+      "ep020",
+      "ep023"
     ]
   },
   {
     "id": "ep004-BGM",
-    "path": "ep004/audio/ep004-BGM.mp3",
+    "path": "BGM/ep004-BGM.mp3",
     "duration": 126,
     "license": "CC0",
     "credit": null,
@@ -54,12 +56,13 @@
       "dramatic"
     ],
     "used_in": [
-      "ep004"
+      "ep004",
+      "ep021"
     ]
   },
   {
     "id": "ep005-BGM",
-    "path": "ep005/audio/ep005-BGM.mp3",
+    "path": "BGM/ep005-BGM.mp3",
     "duration": 45,
     "license": "CC0",
     "credit": null,
@@ -73,7 +76,7 @@
   },
   {
     "id": "ep006-BGM",
-    "path": "ep006/audio/ep006-BGM.mp3",
+    "path": "BGM/ep006-BGM.mp3",
     "duration": 129,
     "license": "CC BY",
     "credit": "🎵 Music: A Piano and Choir Journey by Matio888 (freesound.org) — CC BY 4.0",
@@ -85,12 +88,13 @@
     ],
     "used_in": [
       "ep006",
-      "ep016"
+      "ep016",
+      "ep019"
     ]
   },
   {
     "id": "ep008-BGM",
-    "path": "ep008/audio/ep008-BGM.mp3",
+    "path": "BGM/ep008-BGM.mp3",
     "duration": 60,
     "license": "CC0",
     "credit": null,
@@ -99,12 +103,13 @@
       "epic"
     ],
     "used_in": [
-      "ep008"
+      "ep008",
+      "ep022"
     ]
   },
   {
     "id": "ep009-BGM",
-    "path": "ep009/audio/ep009-BGM.mp3",
+    "path": "BGM/ep009-BGM.mp3",
     "duration": 151,
     "license": "CC BY",
     "credit": "🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0",

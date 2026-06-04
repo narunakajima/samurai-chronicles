@@ -1,0 +1,259 @@
+{
+  "episode_id": "ep023",
+  "episode_title": "Why Akechi Mitsuhide Really Betrayed Nobunaga",
+  "youtube_title": "Why Akechi Mitsuhide Really Betrayed Nobunaga — Japan's Greatest Mystery | EP023",
+  "youtube_description": "He served Oda Nobunaga for twenty years. He was brilliant, cultured, and loyal. Then on one June morning in 1582, he surrounded his lord's temple with thirteen thousand soldiers and changed Japan forever. Four hundred years later, historians still can't agree on why.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 He served his lord for twenty\n0:44 To understand Mitsuhide's...\n1:38 Under Nobunaga, Mitsuhide...\n2:22 But serving Oda Nobunaga was not\n3:11 The most documented source of...\n4:06 The most dramatic documented...\n5:02 There was also the matter of\n6:02 On the night of June 20th,\n7:05 Nobunaga, with his...\n8:04 Before dawn on June 21st,...\n8:56 Oda Nobunaga died in the flames\n9:49 Mitsuhide's triumph lasted...\n10:48 On July 2nd, 1582 — thirteen\n11:51 Japan processed Nobunaga's...\n12:54 Modern historians have...\n13:53 There is one additional...\n14:53 What is certain is that Akechi\n15:51 The honest answer to the...\n17:05 Next time on Samurai...\n17:33 If the mystery of Akechi...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Lamers, Jeroen P. Japonius Tyrannus: The Japanese Warlord Oda Nobunaga Reconsidered. Hotei Publishing, 2000.\n2. Berry, Mary Elizabeth. Hideyoshi. Harvard University Press, 1982.\n3. Turnbull, Stephen. War in Japan 1467–1615. Osprey Publishing, 2002.\n\n#AkechiMitsuhide #HonnojiIncident #OdaNobunaga #SamuraiChronicles #JapaneseHistory",
+  "youtube_tags": [
+    "Akechi Mitsuhide",
+    "Honnoji Incident",
+    "Oda Nobunaga",
+    "Sengoku Period",
+    "Samurai Chronicles",
+    "Japanese History",
+    "Betrayal",
+    "Japan History",
+    "Samurai",
+    "Honnoji"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "On the morning of June 21, 1582, Akechi Mitsuhide surrounded his own lord's temple with thirteen thousand soldiers. He had served Oda Nobunaga for twenty years. He was loyal. He was brilliant. So why did he give the order that changed Japan forever — and did anyone ever find out the real reason?",
+  "shorts_narration": "Twenty years of loyalty. One morning. Thirteen thousand soldiers surrounding his own lord's temple. Nobunaga died. Mitsuhide ruled Japan for thirteen days — then was dead. Why? Japan still debates it. This is Akechi Mitsuhide.",
+  "thumbnail_prompt": "Akechi Mitsuhide in formal black lacquered armor with the Akechi clan bellflower mon, standing at a crossroads at night, holding a war fan. One road leads toward a distant burning temple (Honnoji), the other back into darkness. His face shows the expression of a man who has made a catastrophic decision — absolute resolution mixed with something unreadable. Dramatic torchlight from below.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He served his lord for twenty years without a single act of disloyalty. Then he destroyed him in a single night. What broke Akechi Mitsuhide — and did anyone ever find out?",
+      "image_prompt": "Akechi Mitsuhide in full black armor at the gates of Honnoji temple, his army filling the street behind him in the pre-dawn darkness. Torches cast harsh shadows. His face in profile shows absolute composure — no rage, no fear, only the terrible calm of a decision already made. The temple gates are closed before him. He is about to give the order.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "To understand Mitsuhide's betrayal, you must first understand what he was before it. Akechi Mitsuhide was not a simple soldier. Born around 1528, he was a man of exceptional education — fluent in classical Chinese literature, a skilled poet in the renga tradition, an expert in tea ceremony and court protocol. He navigated the complex politics of the Sengoku period with unusual sophistication. When he finally entered Oda Nobunaga's service in the 1560s, he was already in his thirties — experienced, refined, and deeply committed to the ideal of loyal service.",
+      "image_prompt": "Akechi Mitsuhide in his 30s in a formal study, composing a renga poem by lamplight. Calligraphy scrolls hang on the walls. He holds a brush with precise concentration, his expression reflecting deep literary engagement. The room suggests culture and refinement far above the typical Sengoku warlord. Books and scrolls surround him. The image of a scholar who chose to become a warrior.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "Under Nobunaga, Mitsuhide thrived. He became one of the inner circle of trusted generals — a small group of exceptional men who actually ran Japan's most powerful military machine. He was given the province of Tamba to govern after a difficult conquest. He built Sakamoto Castle on the shores of Lake Biwa. He served as Nobunaga's chief diplomat with the imperial court, a role that required both intelligence and the kind of social grace few Sengoku generals possessed. He was, by any measure, a success.",
+      "image_prompt": "Akechi Mitsuhide at his peak — in formal court dress at a meeting with Kyoto imperial courtiers, serving as Nobunaga's diplomatic representative. The imperial palace setting is elegant, with gold screens and tatami. Mitsuhide moves with ease in this refined environment where most generals would be lost. He holds a scroll, addressing the court officials with confidence and polish. Sakamoto Castle visible through a window in the background.",
+      "ken_burns": "zoom_out",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "But serving Oda Nobunaga was not like serving any other lord. Nobunaga was brilliant, visionary, and utterly unpredictable. He humiliated subordinates in public for entertainment. He executed advisors who failed him, including men who had served loyally for years. He had forced the Ashikaga Shogun into exile. He had burned the great monastery of Enryakuji with thousands of monks inside. In Nobunaga's service, the distance between valued general and dead man could be traveled in an afternoon. Mitsuhide knew this. He had watched it happen to others.",
+      "image_prompt": "Oda Nobunaga seated at a war council, in his distinctive black European-influenced armor, addressing a room of generals. His expression is imperious and slightly contemptuous — a man whose intelligence has become cruelty. One general shrinks slightly under his gaze. Mitsuhide sits apart, watching Nobunaga with an expression that is carefully neutral — the studied blankness of a man who has learned to hide his thoughts. The danger in the room is palpable.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.75,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "The most documented source of tension between the two men was Nobunaga's habit of public humiliation. Multiple sources record incidents of Nobunaga physically striking or mocking Mitsuhide at banquets and court events, sometimes before the imperial nobility Mitsuhide had spent years cultivating. One account describes Nobunaga repeatedly hitting Mitsuhide with his fan during a formal ceremony. Another records a banquet where Nobunaga grabbed Mitsuhide's head and rubbed his face against the floor. For a man of Mitsuhide's cultivation and pride, this was not merely painful — it was the systematic destruction of everything he valued.",
+      "image_prompt": "A Sengoku period formal banquet scene — Oda Nobunaga in the center position of honor, surrounded by generals and guests. In the middle of the gathering, Nobunaga is visibly humiliating a kneeling figure — Akechi Mitsuhide — with a contemptuous gesture. The other guests look away or down, uncomfortable. Mitsuhide's face, partially visible, shows the controlled rigidity of extreme humiliation being suppressed. A man being publicly unmade.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.5
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "The most dramatic documented incident came in 1582, just weeks before the betrayal. Nobunaga ordered Mitsuhide to organize an elaborate banquet for the Tokugawa clan leader Ieyasu, who was visiting Kyoto. Mitsuhide spent enormous effort and expense preparing the feast. Then, at the last moment, Nobunaga cancelled the assignment and sent Mitsuhide west to support Hashiba Hideyoshi's ongoing campaign against the Mori clan — without ceremony, without acknowledgment, without even waiting for the banquet he had ordered to occur. The humiliation was precise and complete.",
+      "image_prompt": "Akechi Mitsuhide in the preparation room of a banquet hall, surrounded by perfectly arranged food and decorations he has spent days organizing. He holds a new order scroll — Nobunaga's sudden reassignment. His servants and cooks watch him anxiously. His expression shows the moment of reading, then a very long pause. The elaborate feast behind him will go unused. The scene captures the specific cruelty of pointless humiliation.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "There was also the matter of territory. Sometime in the months before the betrayal, Nobunaga had indicated he would take away Mitsuhide's home province of Tamba — the land Mitsuhide had conquered at great cost and built his administrative identity around — and give him a different assignment in a newly conquered region. For Nobunaga, this was standard management: shifting generals to maximize his own strategic position. For Mitsuhide, it was the removal of everything he had built. His home, his income, his people, his legacy. Not punishment — which would at least carry meaning — but arbitrary reorganization.",
+      "image_prompt": "Akechi Mitsuhide standing at a high window of Sakamoto Castle overlooking Lake Biwa — a view of extraordinary beauty. He looks out at the castle and lands he built, knowing they are to be taken. His hands grip the window frame. His face shows a kind of grief that cannot be expressed — the loss of a created world. The lake reflects the gray sky. The beauty of what is being lost makes it worse.",
+      "ken_burns": "zoom_out",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "On the night of June 20th, 1582, as he led his army westward toward the campaign Nobunaga had assigned him, Mitsuhide made a stop at the Atago Shrine outside Kyoto. There, he participated in a renga poetry gathering. The opening verse he composed has become one of the most analyzed lines in Japanese history: 'Toki wa ima, ame ga shita shiru satsuki kana' — 'Now is the time when the fifth-month rains govern all beneath the sky.' The word 'toki' could be read as 'now' — or as the homophone for his own clan name, Toki. And 'ame ga shita shiru' — to govern all beneath the sky — was the classical phrase for ruling Japan.",
+      "image_prompt": "Night scene at Atago Shrine, torchlight casting orange shadows on stone lanterns and ancient cedar trees. Akechi Mitsuhide kneels in a small gathering of poets, writing brush in hand, composing the famous verse. His face shows something between concentration and finality — a man choosing his words for the last time in one life, and the first time in another. The shrine is ancient and quiet. History is being written in seventeen syllables.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Nobunaga, with his characteristic disregard for personal security, was staying at Honnoji temple in Kyoto with a minimal guard — perhaps a hundred men, mostly servants and personal attendants. He had no reason to expect danger. His armies were in the field, winning. His generals were loyal. Mitsuhide's force of thirteen thousand was supposed to be marching west. Instead, at some point in the night, Mitsuhide gave orders that reversed their march. They turned back toward Kyoto. He told them the target. His famous words, if he said them: 'Tekiwa Honnoji ni ari.' The enemy is at Honnoji.",
+      "image_prompt": "A misty road outside Kyoto at night — Akechi Mitsuhide on horseback at the head of his army, raising his war fan to signal the reversal of march. Thirteen thousand soldiers stretch back into the darkness behind him. Mitsuhide's face is lit by a single torch — resolved, focused, beyond doubt or hesitation. The road to Honnoji lies ahead. The road back to his old life is closed. This is the point of no return.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "Before dawn on June 21st, Mitsuhide's army surrounded Honnoji. Nobunaga was woken by the sound of fighting — he assumed it was a brawl among his own men. When he looked outside and saw the Akechi clan crest on the soldiers' banners, he reportedly said only: 'Is this Mitsuhide?' Then he closed the doors and prepared to fight. He was fifty years old, one of the greatest military minds Japan had ever produced, and he was about to die in a temple surrounded by his own general's army. History records that he fought with a spear until wounded, then withdrew and set fire to the building himself. His body was never found.",
+      "image_prompt": "Honnoji temple at dawn — Akechi soldiers pouring through the gates and surrounding the inner compound. Oda Nobunaga in his sleeping robes stands at an upper window, looking down at the Akechi banners below. His expression is not fear but a kind of grim recognition — the face of a man who has always known this was possible, confronting the moment it has arrived. Smoke begins to rise from the lower buildings. The beginning of the end.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.8,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "Oda Nobunaga died in the flames of Honnoji on June 21, 1582. His son Nobutada, who was staying nearby, also died fighting. The man who had unified more of Japan than anyone in a century was gone in a single morning, killed not by a rival warlord or a foreign army but by one of his own most trusted generals. Japan entered a period of sudden, terrifying uncertainty. For a brief moment, everything Nobunaga had built hung by a thread. And Akechi Mitsuhide — the poet, the diplomat, the twenty-year loyal servant — was the most powerful man in Japan.",
+      "image_prompt": "Honnoji temple in flames — massive fire consuming the wooden structure against a dawn sky. Soldiers of both sides are visible in silhouette. In the foreground, Akechi Mitsuhide sits on horseback, watching the fire from a distance. His expression is unreadable — not triumph, not horror, but something that has no ordinary name. The destruction is complete. The consequences are beginning. The fire illuminates everything.",
+      "ken_burns": "zoom_out",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "Mitsuhide's triumph lasted thirteen days. This duration has become so famous that the period is simply called 'the thirteen days.' He moved quickly, securing Kyoto and attempting to establish political legitimacy through the imperial court — the very institution he had served as Nobunaga's diplomat. But Japan's other great warlords did not pause to negotiate. Hashiba Hideyoshi, who had been besieging the Mori clan in western Japan, received word of Nobunaga's death and made a peace agreement with the Mori in hours. Then he turned his army around and marched back east at a speed that stunned everyone.",
+      "image_prompt": "Hashiba Hideyoshi on the road from western Japan, marching his army back east at forced speed in rain. His face shows focused urgency — a man who understands that history is moving faster than normal and that he must move with it. Behind him, his army marches in disciplined double-time. Maps and news dispatches are being read on horseback. Every hour counts. The famous 'great return march' in motion.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "On July 2nd, 1582 — thirteen days after Honnoji — Hideyoshi's army met Mitsuhide's at Yamazaki, a narrow valley south of Kyoto. Mitsuhide had fewer troops and less time to prepare. The battle was over in hours. His army broke. Mitsuhide fled northward toward his home territory, accompanied by a dwindling group of survivors. Three days later, he was killed — according to most accounts, ambushed by a group of peasant bandits on a mountain path. He died in obscurity, stabbed by people who did not know who he was. The man who had held Japan for thirteen days ended in a ditch on a mountain road.",
+      "image_prompt": "The aftermath of Yamazaki — a narrow valley road scattered with defeated Akechi soldiers. Akechi Mitsuhide, now alone or nearly so, rides in the direction of mountains. He no longer looks like the man who commanded thirteen thousand. His armor is damaged, his posture shows defeat, his face something between exhaustion and resignation. Behind him, the sounds of a lost battle fade into rain. Ahead, only forest and the unknown.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "Japan processed Nobunaga's death with remarkable speed — and Mitsuhide's rule was so brief that it left almost no institutional trace. But the questions Honnoji raised did not disappear. Why had Mitsuhide done it? The humiliation theory — the accumulated insults finally breaking a man's loyalty — was widely accepted. But Mitsuhide was too sophisticated, too strategic, to act on emotion alone. Some historians argued he had been planning this for months, perhaps years. Others suggested he acted on a specific opportunity rather than accumulated grievance. No confession, no letter, no clear statement of motive survived.",
+      "image_prompt": "A Japanese archive setting — a historian or archivist surrounded by Sengoku period documents, searching through records for evidence of Mitsuhide's intentions. On the table, various documents including Mitsuhide's renga poem and letters. Some papers have key phrases highlighted. The search for motive expressed as physical document research. The absence of a clear answer is itself the subject — blank spaces where a confession should be.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Modern historians have identified at least five plausible theories for Mitsuhide's betrayal, and the honest answer is that all of them are probably partially true. The humiliation: real and documented. The land loss: real and documented. The fear of being eliminated: plausible, given Nobunaga's behavior toward others. Political ambition: consistent with his subsequent actions. Opportunity: Nobunaga had never been more exposed. None of these theories contradicts the others. The most psychologically complete answer is that Mitsuhide was a man in an impossible situation who, when a window opened, chose to go through it rather than continue waiting for Nobunaga to destroy him by other means.",
+      "image_prompt": "Five separate vignette images arranged around a central portrait of Mitsuhide: humiliation at a banquet, the Tamba land being transferred, Nobunaga's army executing another retainer, Mitsuhide studying a map with Nobunaga's position marked, and the Atago shrine renga poem. Each vignette represents one theory. The central portrait of Mitsuhide looks out at all of them — a man who contained all these reasons simultaneously.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "There is one additional theory that has gained academic attention in recent decades: that Mitsuhide was not acting alone, but in coordination with other powerful figures — possibly including members of the imperial court who feared Nobunaga's growing power, or other warlords who saw opportunity in Nobunaga's fall. This theory, if true, would recast Mitsuhide not as a man who snapped under pressure, but as a calculating political actor executing a plan developed over months. The evidence is circumstantial but not negligible. The most damaging fact against it: if Mitsuhide had co-conspirators, none of them came to his aid in the thirteen days that followed.",
+      "image_prompt": "A shadowy nighttime meeting scene — several figures in formal court dress and samurai armor gathered in a dimly lit room, speaking in hushed tones around a map. Faces are partially obscured. The setting suggests conspiracy rather than open council. One figure in particular stands slightly apart — possibly Mitsuhide, possibly someone else. The scene deliberately leaves the participants ambiguous, capturing the unresolvable uncertainty of the conspiracy theory.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "What is certain is that Akechi Mitsuhide was not a simple villain. Japanese culture has treated him with remarkable complexity. He is not remembered the way traitors usually are — with contempt. He is remembered with something closer to sorrow and understanding. The Akechi clan's symbol, the bellflower, became associated with a particular kind of tragic beauty. Plays, novels, and dramas have consistently portrayed him as a man broken by impossible circumstances rather than corrupted by ambition. Japan has a long tradition of finding meaning in the noble failure. Mitsuhide fits it precisely.",
+      "image_prompt": "A traditional kabuki theater performance depicting Akechi Mitsuhide — a dramatic stage scene with an actor in Mitsuhide's armor and distinctive makeup conveying anguish rather than villainy. The audience watches in rapt attention. Bellflower clan symbols appear on the costume. The performance tradition — four hundred years of retelling his story as tragedy rather than treachery — is itself part of his legacy.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "The honest answer to the question of why Akechi Mitsuhide really betrayed Oda Nobunaga is this: we don't know, and we never will. What we know is that a highly intelligent, culturally refined man spent twenty years in loyal service to a brilliant, terrifying master, endured systematic humiliation and professional instability, and then on one June morning made a decision that cost him everything — his domain, his army, his life — and changed Japan forever. Whatever his reasons, he saw them clearly enough to act. The renga poem was composed. The soldiers marched. The torches were lit. And everything that came after — Hideyoshi, Ieyasu, the Edo period — flows from that single morning.",
+      "image_prompt": "A wide contemplative view: the site of Honnoji temple in modern Kyoto, now a smaller rebuilt structure on a residential street. A solitary visitor reads a historical marker. Ordinary city life continues around this spot where Japan's history pivoted. Cherry trees are blooming. The mundane and the momentous coexist. Time has passed, the city has grown around the scar, and the question remains unanswered.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles — he was a bureaucrat, not a warrior. He kept the accounts, managed the logistics, followed the rules. Then Toyotomi Hideyoshi died — and Ishida Mitsunari's loyalty turned into something that brought down an era. The man who started the Battle of Sekigahara.",
+      "image_prompt": "Ishida Mitsunari in formal administrative robes rather than battle armor, seated at a writing desk surrounded by documents and ledgers — the face of a dedicated bureaucrat. His expression is earnest and intense rather than martial. Behind him, through a window, the silhouette of a Japanese castle. The contrast between his desk-worker appearance and the epic consequences of his actions defines the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If the mystery of Akechi Mitsuhide's betrayal stayed with you, subscribe for new episodes every day. Japan's greatest questions rarely have simple answers — and that is exactly what makes them worth asking.",
+      "image_prompt": "The Samurai Chronicles channel logo against a deep black background with subtle crimson and gold Japanese design elements. Clean, cinematic, professional.",
+      "ken_burns": "static",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep003-BGM.mp3",
+  "youtube_url": "https://youtu.be/THJvirjCvOY",
+  "shorts_url": "https://youtu.be/WY0d7Ck7VjE",
+  "scheduled_at": "2026-06-07 03:00"
+}
