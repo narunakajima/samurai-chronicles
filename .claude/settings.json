@@ -4,6 +4,7 @@
   "permissions": {
     "defaultMode": "bypassPermissions",
     "allow": [
+      "Bash(*)",
       "Bash(python3 *)",
       "Bash(python3)",
       "ffprobe *"
