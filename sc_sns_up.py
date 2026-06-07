@@ -320,10 +320,21 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     except Exception as e:
         print(f"  ⚠️  プレイリスト処理でエラー（アップロード自体は成功）: {e}")
 
+    # プレイリストID整合性検証＋自動修正
+    # （手動削除・再作成やマシン間マージで playlist_id が実態とズレるのを防ぐ）
+    print(f"{'━'*60}")
+    print(f"  プレイリストID整合性検証")
+    print(f"{'━'*60}")
+    try:
+        from sc_playlist_verify import verify_and_fix
+        verify_and_fix(youtube, auto_fix=True, verbose=True)
+    except Exception as e:
+        print(f"  ⚠️  整合性検証でエラー（アップロード自体は成功）: {e}")
+
     # プレイリスト整合チェック＋自動補完
     # （非公開スキップ済みの動画を公開後に自動追加）
     print(f"{'━'*60}")
-    print(f"  プレイリスト整合チェック")
+    print(f"  プレイリスト動画補完チェック")
     print(f"{'━'*60}")
     try:
         from sc_playlist_manager import _load_data, _save_data, _add_to_playlist
@@ -333,10 +344,13 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
             pid = char_data.get("playlist_id")
             if not pid:
                 continue
-            # APIで実際のプレイリスト内動画IDを取得
-            resp = youtube.playlistItems().list(
-                part="snippet", playlistId=pid, maxResults=50
-            ).execute()
+            try:
+                # APIで実際のプレイリスト内動画IDを取得
+                resp = youtube.playlistItems().list(
+                    part="snippet", playlistId=pid, maxResults=50
+                ).execute()
+            except Exception:
+                continue  # 整合性検証で修正できなかった不正なIDはスキップ
             actual_vids = {
                 item["snippet"]["resourceId"]["videoId"]
                 for item in resp.get("items", [])
