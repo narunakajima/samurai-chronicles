@@ -12,10 +12,6 @@
         "video_id": "Xmr8tkRIHYY"
       },
       {
-        "episode_id": "ep012",
-        "video_id": "VFzHiWmeHJE"
-      },
-      {
         "episode_id": "ep013",
         "video_id": "lMFgM4Q8yx4"
       },
@@ -32,10 +28,6 @@
       {
         "episode_id": "ep001",
         "video_id": "kZN4msDx9Tg"
-      },
-      {
-        "episode_id": "ep021",
-        "video_id": "ybQBCcJMrgo"
       },
       {
         "episode_id": "ep022",
@@ -58,10 +50,6 @@
       {
         "episode_id": "ep011",
         "video_id": "xZQmj0i14oc"
-      },
-      {
-        "episode_id": "ep013",
-        "video_id": "lMFgM4Q8yx4"
       },
       {
         "episode_id": "ep014",
@@ -94,10 +82,6 @@
         "video_id": "VFzHiWmeHJE"
       },
       {
-        "episode_id": "ep022",
-        "video_id": "w2CFUIda7qM"
-      },
-      {
         "episode_id": "ep023",
         "video_id": "THJvirjCvOY"
       }
@@ -114,10 +98,6 @@
       {
         "episode_id": "ep004",
         "video_id": "pjgU_IK0fJU"
-      },
-      {
-        "episode_id": "ep014",
-        "video_id": "rJiO7I-llw4"
       },
       {
         "episode_id": "ep015",
@@ -140,10 +120,6 @@
       {
         "episode_id": "ep004",
         "video_id": "pjgU_IK0fJU"
-      },
-      {
-        "episode_id": "ep023",
-        "video_id": "THJvirjCvOY"
       },
       {
         "episode_id": "ep024",
@@ -206,10 +182,6 @@
         "video_id": "SMYdQA_vH-g"
       },
       {
-        "episode_id": "ep016",
-        "video_id": "2XLSdO_vOTM"
-      },
-      {
         "episode_id": "ep017",
         "video_id": "qoodETrDhSg"
       }
@@ -228,8 +200,8 @@
         "video_id": "qoodETrDhSg"
       },
       {
-        "episode_id": "ep025",
-        "video_id": "Y4lXH4vJOqQ"
+        "episode_id": "ep026",
+        "video_id": "-qhJIwZz_tM"
       }
     ]
   },
@@ -247,10 +219,6 @@
     "display_name": "Sanada Yukimura",
     "playlist_id": "PLOa8YFQho_cETINHm6TBoIbTlABG8gNbb",
     "episodes": [
-      {
-        "episode_id": "ep008",
-        "video_id": "CvdXyK2J6x4"
-      },
       {
         "episode_id": "ep009",
         "video_id": "2tO6djVL0q8"
@@ -296,10 +264,6 @@
       {
         "episode_id": "ep007",
         "video_id": "ghHOBmFQvs8"
-      },
-      {
-        "episode_id": "ep017",
-        "video_id": "qoodETrDhSg"
       }
     ]
   },

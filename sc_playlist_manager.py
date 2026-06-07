@@ -137,8 +137,13 @@ def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
         print(f"  ⏳ {episode_id} は予約公開中（{scheduled}）のためプレイリスト処理スキップ")
         return
 
+    # S19等の "teaser" シーンは次回予告であり、本編にそのキャラクターが
+    # 登場しているわけではない。character_ref の集計対象から除外する
+    # （本編シーンに同じキャラクターが別途登場していれば、そちらでカウントされる）
     chars = set()
     for scene in ep.get("scenes", []):
+        if scene.get("type") == "teaser":
+            continue
         char = scene.get("character_ref")
         if char:
             chars.add(char)
