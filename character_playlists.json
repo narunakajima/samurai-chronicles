@@ -205,16 +205,6 @@
       }
     ]
   },
-  "saigo": {
-    "display_name": "Saigo Takamori",
-    "playlist_id": null,
-    "episodes": [
-      {
-        "episode_id": "ep008",
-        "video_id": "CvdXyK2J6x4"
-      }
-    ]
-  },
   "sanada_yukimura": {
     "display_name": "Sanada Yukimura",
     "playlist_id": "PLOa8YFQho_cETINHm6TBoIbTlABG8gNbb",
@@ -287,16 +277,6 @@
       }
     ]
   },
-  "saigo_takamori": {
-    "display_name": "Saigo Takamori",
-    "playlist_id": "PLOa8YFQho_cEv5XWOcjYec799dw7mvv-W",
-    "episodes": [
-      {
-        "episode_id": "ep019",
-        "video_id": "ZPmQNASo0M0"
-      }
-    ]
-  },
   "sarutobi_sasuke": {
     "display_name": "Sarutobi Sasuke",
     "playlist_id": null,
@@ -342,6 +322,20 @@
       {
         "episode_id": "ep027",
         "video_id": "McuZPwsB7co"
+      }
+    ]
+  },
+  "saigo": {
+    "display_name": "Saigo Takamori",
+    "playlist_id": "PLOa8YFQho_cEv5XWOcjYec799dw7mvv-W",
+    "episodes": [
+      {
+        "episode_id": "ep008",
+        "video_id": "CvdXyK2J6x4"
+      },
+      {
+        "episode_id": "ep019",
+        "video_id": "ZPmQNASo0M0"
       }
     ]
   }
