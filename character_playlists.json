@@ -185,7 +185,7 @@
   },
   "benkei": {
     "display_name": "Musashibo Benkei",
-    "playlist_id": "PLOa8YFQho_cEDRoT9pmcaF-_kvrhI9Jl9",
+    "playlist_id": "PLOa8YFQho_cFUyqKdg0LkVEbjj8h_NDUq",
     "episodes": [
       {
         "episode_id": "ep006",
@@ -217,7 +217,7 @@
   },
   "yoritomo": {
     "display_name": "Minamoto Yoritomo",
-    "playlist_id": "PLOa8YFQho_cFEUxrPlN1kE_00imcvLoN5",
+    "playlist_id": "PLOa8YFQho_cEFBNTipQub87HsjtuHrf10",
     "episodes": [
       {
         "episode_id": "ep006",
@@ -345,7 +345,7 @@
   },
   "kenshin": {
     "display_name": "Uesugi Kenshin",
-    "playlist_id": "PLOa8YFQho_cH0AxG-00TmhpLoF1fv7969",
+    "playlist_id": null,
     "episodes": [
       {
         "episode_id": "ep021",
@@ -359,7 +359,7 @@
   },
   "shingen": {
     "display_name": "Takeda Shingen",
-    "playlist_id": "PLOa8YFQho_cGfBYk64pmNrarYNlnKVjVQ",
+    "playlist_id": null,
     "episodes": [
       {
         "episode_id": "ep021",
