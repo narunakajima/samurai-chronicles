@@ -249,7 +249,7 @@
     },
     {
       "episode_id": "ep026",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Rise of the Shogunate: How Warriors Took Power from the Emperor",
       "era": "Kamakura",
       "priority": "B",
@@ -259,7 +259,7 @@
     },
     {
       "episode_id": "ep027",
-      "status": "pending",
+      "status": "in_production",
       "title": "Hattori Hanzo: The Real Ninja Behind the Legend",
       "era": "Sengoku",
       "priority": "A",
@@ -269,7 +269,7 @@
     },
     {
       "episode_id": "ep028",
-      "status": "pending",
+      "status": "in_production",
       "title": "Tomoe Gozen: Japan's Greatest Female Warrior",
       "era": "Heian/Kamakura",
       "priority": "A",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-03",
+  "last_updated": "2026-06-07",
   "total_topics": 87
 }

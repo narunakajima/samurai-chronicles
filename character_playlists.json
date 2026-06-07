@@ -27,7 +27,7 @@
   },
   "kojiro": {
     "display_name": "Sasaki Kojiro",
-    "playlist_id": "PLOa8YFQho_cFyb267jkKTGid4T_-L0BLL",
+    "playlist_id": null,
     "episodes": [
       {
         "episode_id": "ep001",
@@ -135,7 +135,7 @@
   },
   "mitsunari": {
     "display_name": "Ishida Mitsunari",
-    "playlist_id": "PLOa8YFQho_cH3k8-exPtbhjfH-hkPTaV5",
+    "playlist_id": null,
     "episodes": [
       {
         "episode_id": "ep004",
@@ -368,6 +368,16 @@
       {
         "episode_id": "ep025",
         "video_id": "Y4lXH4vJOqQ"
+      }
+    ]
+  },
+  "hattori_hanzo": {
+    "display_name": "Hattori Hanzo",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep027",
+        "video_id": "McuZPwsB7co"
       }
     ]
   }
