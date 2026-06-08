@@ -408,12 +408,17 @@ Freesound から2曲ダウンロードし、`bgm_library.json` からエピソ�
 - 良い例: `"epic orchestral"` / `"dramatic cinematic strings"` / `"dark orchestral taiko"` / `"heroic brass orchestra"`
 - **禁止キーワード:** shamisen 単体, piano 単体, ambient, meditation, acoustic, folk, traditional, nature, forest, rain, calm, relaxing, light
 
+**重要:** `--library $HOME/samurai-chronicles/bgm_library.json` を必ず指定する。
+これにより、Samurai Chronicles の `bgm_library.json` に既に登録済みの曲（曲名が一致するもの）は
+Freesound から再ダウンロードされず自動的にスキップされる（ランプの独り言と同じ仕組み）。
+
 ```bash
 mkdir -p "$HOME/Desktop/BGM"
 FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
   "<Q1>" "<Q2>" \
   "$HOME/Desktop/BGM/" \
-  --round 0
+  --round 0 \
+  --library "$HOME/samurai-chronicles/bgm_library.json"
 ```
 
 **部分失敗時（一部スロットが0件・404）:** 失敗したスロットのみ `--start-slot <N>` で別クエリに差し替えて補完する。ダウンロード完了後、`.credit.txt` を退避：
