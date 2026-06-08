@@ -29,7 +29,6 @@ samurai-chronicles/
 ├── sc_image_gen.py     シーン画像生成（Gemini）
 ├── sc_inject_bgm_credit.py  CC BY クレジット自動注入
 ├── sc_bgm_library.py   BGMライブラリ管理（登録・紐付け）
-├── sc_review_gen.py    制作確認書生成
 ├── bgm_library.json    BGMライブラリ台帳（パス・ライセンス・タグ・used_in）
 └── topics_queue.json   制作キュー
 ```
