@@ -155,5 +155,33 @@
     "used_in": [
       "ep025"
     ]
+  },
+  {
+    "id": "ep029-BGM",
+    "path": "BGM/ep029-BGM.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: SunixMuz - Devil Dance (Opening, trailer, epic music, Free CCBY) by SunixMuz (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep029"
+    ]
+  },
+  {
+    "id": "ep030-BGM",
+    "path": "BGM/ep030-BGM.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: hero's and villains 4.wav by Blazearmani (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep030"
+    ]
   }
 ]

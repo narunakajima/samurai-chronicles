@@ -516,23 +516,42 @@ def teaser_caption_for_clip(narration: str, audio_dur: float, clip_idx: int) -> 
 
 
 def _auto_hook_lines(narration: str) -> list:
-    """hook ナレーションの先頭2文を最大25文字に切り詰めて hook lines を自動生成するフォールバック。"""
+    """hook ナレーションから短いフック行を自動生成するフォールバック。
+
+    shorts_hook_text_filter の各行フォントサイズ（160 / 125 / 68）に対して
+    DIN Condensed Bold の字幅係数（≈0.50）と SHORTS_W=1080 から算出した
+    最大文字数に収まるよう行ごとに切り詰める。
+      行1 fontsize=160 → 1080 / (160×0.50) ≈ 13文字  → 上限 11文字（余白込み）
+      行2 fontsize=125 → 1080 / (125×0.50) ≈ 17文字  → 上限 14文字（余白込み）
+    文章を引き継ぐのではなく、冒頭の数字・キーワードを短い断片として切り出す。
+    """
     import re
-    sentences = re.split(r'(?<=[.!?])\s+', narration.strip())
+    # 行ごとの文字数上限（フォントサイズに対応）
+    # shorts_hook_text_filter 側でフォントサイズ自動縮小を行うため、
+    # ここでは「単語がちょうど切れる」レベルの緩めな上限にしておく
+    CHAR_LIMITS = [14, 18, 26]
+
+    sentences = re.split(r'(?<=[.!?—])\s+', narration.strip())
     lines = []
-    for s in sentences[:2]:
-        # 25文字以上は切り詰め
+    for i, s in enumerate(sentences[:3]):
+        limit = CHAR_LIMITS[i] if i < len(CHAR_LIMITS) else 20
         s = s.strip()
-        if len(s) > 30:
-            s = s[:28].rsplit(" ", 1)[0] + "..."
+        # 単語境界で切り詰め
+        if len(s) > limit:
+            truncated = s[:limit].rsplit(" ", 1)[0]
+            s = truncated if truncated else s[:limit]
         lines.append(s.upper())
-    return lines or [narration[:25].upper()]
+        if len(lines) >= 3:
+            break
+
+    return lines or [narration[:11].upper()]
 
 
 def shorts_hook_text_filter(lines: list) -> str:
     """1クリップ目専用: DIN Condensed Bold 白・黒縁取り（最大3行）。
     lines: エピソードJSONの shorts_hook_lines フィールドから渡す。
     行数に応じてフォントサイズ・Y位置を自動調整。
+    テキスト幅が SHORTS_W の90%を超える場合は fontsize を自動縮小する。
     """
     # 行ごとのフォントサイズ・Y位置設定（最大3行）
     configs = [
@@ -540,9 +559,17 @@ def shorts_hook_text_filter(lines: list) -> str:
         (125, "h*0.22"),
         (68,  "h*0.37"),
     ]
+    # DIN Condensed Bold の大文字字幅係数（概算）とフレーム幅の安全マージン
+    CHAR_WIDTH_RATIO = 0.50
+    MAX_WIDTH = SHORTS_W * 0.90  # 両端 5% ずつ余白
+
     parts = []
     for i, text in enumerate(lines[:3]):
         fs, y = configs[i]
+        # テキスト幅が MAX_WIDTH を超えると推定される場合はフォントサイズを縮小
+        est_width = len(text) * fs * CHAR_WIDTH_RATIO
+        if est_width > MAX_WIDTH:
+            fs = max(int(MAX_WIDTH / max(len(text), 1) / CHAR_WIDTH_RATIO), 40)
         safe = text.replace("'", "").replace('"', "").replace(":", "\\:")
         bw = 9 if i == 0 else (7 if i == 1 else 4)
         sh = 6 if i == 0 else (5 if i == 1 else 3)
@@ -988,14 +1015,15 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
             print(f"\n--- Shorts v4 クリップ生成 ({len(selected_s)}シーン×{SHORTS_CLIP_DURATION}s) ---")
             print(f"  ナレーション尺: {narr_dur:.1f}s  使用シーン: {[s['scene_id'] for s in selected_s]}")
 
-            # エピソードごとの hook テキスト（shorts_hook_lines 優先、なければ hook シーンから自動生成）
+            # エピソードごとの hook テキスト
+            # 優先順位: shorts_hook_lines > shorts_narration（パンチのある短文が多い） > hook シーン
             hook_lines = ep.get("shorts_hook_lines")
             if not hook_lines:
-                hook_scene = next((s for s in scenes if s.get("type") == "hook"), None)
-                if hook_scene:
-                    hook_lines = _auto_hook_lines(hook_scene["narration"])
-                else:
-                    hook_lines = ["SAMURAI CHRONICLES"]
+                src = ep.get("shorts_narration") or ""
+                if not src:
+                    hook_scene = next((s for s in scenes if s.get("type") == "hook"), None)
+                    src = hook_scene["narration"] if hook_scene else ""
+                hook_lines = _auto_hook_lines(src) if src else ["SAMURAI CHRONICLES"]
 
             s_clips = []
             clip_idx = 0

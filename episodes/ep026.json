@@ -1,0 +1,235 @@
+{
+  "episode_id": "ep026",
+  "episode_title": "The First Shogun: How Minamoto Yoritomo Stole Japan From Its Emperor",
+  "youtube_title": "The Man Who Stole Japan From Its Emperor — And Built 700 Years of Samurai Rule | EP026",
+  "youtube_description": "For four hundred years, Japan's warriors had fought for emperors. Then one man asked a different question: what if warriors controlled the emperors instead? Minamoto Yoritomo didn't conquer Japan's throne. He built a parallel government beside it — and made it last seven centuries.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 For four centuries, samurai...\n0:48 To understand what Yoritomo...\n1:42 Minamoto Yoritomo was born in...\n2:36 Exile gave Yoritomo something...\n3:20 In 1180, a prince named...\n4:13 What set Yoritomo apart from...\n5:03 Yoshitsune's military genius...\n5:48 Victory created an immediate...\n6:50 The elimination of Yoshitsune...\n7:35 Yoritomo's genius was...\n8:31 In 1192, the retired Emperor...\n9:19 What exactly had Yoritomo...\n10:06 Yoritomo died in 1199,...\n10:57 The shogunate system Yoritomo...\n11:55 Why did the shogunate last so\n12:42 Yoritomo also understood...\n13:26 The price of the shogunal system\n14:23 Minamoto Yoritomo died...\n15:18 Next time on Samurai...\n15:47 If the story of Minamoto...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Sansom, George. A History of Japan to 1334. Stanford University Press, 1958.\n2. Mass, Jeffrey P. Yoritomo and the Founding of the First Bakufu. Stanford University Press, 1999.\n3. Friday, Karl. Samurai, Warfare and the State in Early Medieval Japan. Routledge, 2004.\n\n#MinamotoYoritomo #KamakuraShogunate #Shogun #SamuraiChronicles #JapaneseHistory",
+  "youtube_tags": [
+    "Minamoto Yoritomo",
+    "Kamakura Shogunate",
+    "Shogun",
+    "Genpei War",
+    "Samurai Chronicles",
+    "Japanese History",
+    "Kamakura Period",
+    "Heian Period",
+    "Japan History",
+    "Samurai"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "teaser_narration": "For centuries, Japan's warriors fought for emperors. Minamoto Yoritomo changed the question: not 'who serves the emperor?' but 'who controls the emperor?' He built a parallel government beside the throne — and made it last seven centuries. How does one man rewrite the rules of an entire civilization?",
+  "shorts_narration": "Samurai served emperors for centuries. Yoritomo asked a different question. 1192. He became Shogun. Samurai ruled Japan for 700 years. This is how one man stole a civilization from its own rulers.",
+  "thumbnail_prompt": "Minamoto Yoritomo seated in formal authority on a raised dais in the Kamakura shogunal court — imposing, stocky figure in black formal court robes, hands resting on his knees, unreadable eyes surveying his domain. The hall is magnificent but deliberately austere — a warrior's court, not an emperor's palace. Behind him, samurai retainers kneel in rows. Through the open screens, the ancient cedar forests of Kamakura are visible. The moment power shifted from nobility to warriors, captured in a single man's absolute stillness.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "For four centuries, samurai served Japan's emperors. Then one man reversed the equation. Warriors never left. But after 1192, it was emperors who served at warriors' pleasure.",
+      "image_prompt": "Split composition across time: on the left, a Heian period samurai kneeling before a courtly emperor in flowing robes — the warrior as servant. On the right, a Kamakura period scene with a courtier bowing before an armored general in the shogun's hall — the roles reversed. The visual split captures the before and after of Yoritomo's revolution. Same figures, different power.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "To understand what Yoritomo built, you must first understand what Japan was before him. The Heian period — roughly 794 to 1185 — was Japan's aristocratic golden age. Power resided at the imperial court in Kyoto. The emperor and the great noble families controlled land, appointments, and culture. Warriors existed — the samurai — but they were employees. They enforced noble orders, guarded noble properties, and fought noble wars. They were tools, not rulers. Brilliant, dangerous tools — but tools.",
+      "image_prompt": "Heian period Kyoto at its height — a wide view of the capital's elegant grid of boulevards, aristocratic palaces, and temple compounds, all laid out in perfect symmetry. Noble courtiers in elaborate layered robes walk among cherry blossoms. The scene is beautiful, refined, and completely civilian. Somewhere at its margins, barely visible, warrior servants wait with their weapons. Power is visible only in silk.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "Minamoto Yoritomo was born in 1147 into one of Japan's great warrior clans. His childhood ended at thirteen, when the Taira clan — the dominant warrior family of the day — destroyed his family in the Heiji Rebellion of 1160. His father was executed. His brothers were scattered or killed. Yoritomo himself was spared — too young to be a political threat — and sent into exile in Izu Province on the Izu Peninsula, far from the capital. He would spend the next twenty years there, watching, learning, and waiting.",
+      "image_prompt": "A young Yoritomo of perhaps 14 years, in simple dark clothing stripped of rank insignia, being escorted by Taira soldiers to exile on a remote coastal road. His expression shows neither fear nor visible grief — the careful blankness of a child who has learned in a single day to show nothing. Behind him, smoke is visible in the direction of the capital. The exile journey begins.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "Exile gave Yoritomo something his rivals lacked: time to think. While Taira no Kiyomori consolidated control of the court in Kyoto — ruling through the emperor, appointing relatives to key positions, accumulating wealth and influence — Yoritomo built relationships with the warrior families of the east. He married into the powerful Hojo family of Izu. He cultivated connections across the Kanto region. He was not gathering an army yet. He was building a network. The difference would matter enormously.",
+      "image_prompt": "Yoritomo in his 20s in exile — a private meeting in a modest provincial warrior's home, seated across from his future father-in-law Hojo Tokimasa. No palaces, no ceremony. Two men in plain clothes discussing alliance over simple food. The provincial setting — wooden beams, tatami, a courtyard garden beyond the screen — contrasts deliberately with the Kyoto court scenes. This is where real power is quietly being assembled.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.22,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "In 1180, a prince named Mochihito issued an imperial decree calling for the destruction of the Taira clan. Yoritomo answered. He raised the Minamoto banner in the east and called every warrior family that owed him loyalty to arms. The response was larger than expected — not because Yoritomo was loved, but because the eastern warrior clans had long resented Taira domination. What began as a personal vendetta became a civil war. Japan called it the Genpei War: five years of fighting that would reshape the country entirely.",
+      "image_prompt": "Yoritomo raising the white Minamoto banner at his base in Kamakura, 1180 — warriors from across the Kanto region arriving in growing numbers, their horses and armor filling the courtyard. Yoritomo stands elevated on the entrance steps, watching the gathering force with visible satisfaction rather than excitement. His expression is that of a man whose preparations have finally met their moment. The beginning of something irreversible.",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.73,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "What set Yoritomo apart from every warrior leader before him was this: he stayed in Kamakura. While his generals — most famously his brilliant younger brother Yoshitsune — fought battle after battle across Japan, Yoritomo governed. He established courts, issued laws, settled disputes between warrior families, and built the administrative infrastructure of a new kind of government. He understood, in a way his enemies did not, that winning battles was only the beginning. What mattered was what came after.",
+      "image_prompt": "Yoritomo in his Kamakura administrative hall, surrounded by messengers and scribes, reading dispatches, issuing orders, building governance while his armies fight elsewhere. Maps cover the walls. Petitions from warrior families are stacked in organized order. Through the open screens, training grounds are visible. The contrast with battlefield chaos is deliberate — this is the true war Yoritomo is fighting and winning.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Yoshitsune's military genius did what no one else could: in 1185, he destroyed the Taira fleet at the Battle of Dan-no-ura in the Shimonoseki Strait. The Taira clan was annihilated. The child emperor Antoku drowned in his grandmother's arms rather than be captured. Japan's most powerful warrior family was gone. The war was over. Yoritomo, who had barely left Kamakura, had won — by letting his brother fight his battles while he built his state.",
+      "image_prompt": "The Battle of Dan-no-ura, 1185 — the Taira fleet in flames and disarray in the narrow strait, Minamoto warships surrounding them from all sides. In the chaos of the water battle, ships collide and burn. The Taira court on their flagship huddles at the stern. Far away in Kamakura, Yoritomo receives the news. The scene captures the decisive naval victory that ended the Genpei War.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Victory created an immediate problem: Yoshitsune. The younger brother who had actually won the war was now dangerously popular. Warriors across Japan admired him. Yoshitsune had appealed directly to the retired emperor for support — bypassing Yoritomo's authority. For Yoritomo, this was unacceptable. He did not need a beloved hero. He needed a loyal instrument. When Yoshitsune refused to submit, Yoritomo had him hunted across Japan. The greatest general of the age died a fugitive in 1189, killed by men acting on his brother's orders.",
+      "image_prompt": "Yoritomo reading a dispatch reporting Yoshitsune's death — his expression showing nothing except the careful neutrality of a man who expected this outcome and accepted it as necessary. His chief retainers wait silently around him. The scene captures not cruelty but the cold logic of political power: Yoshitsune had to be eliminated not because he was an enemy, but because he was too independently valuable.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "The elimination of Yoshitsune was part of a broader pattern. After victory, Yoritomo systematically removed every independent power center that might challenge his authority — warrior clans that had fought for him but owed primary loyalty elsewhere, nobles who had helped him but expected reciprocal influence. He was building a hierarchy with himself at the apex and no competitors at any level. The Kamakura system was not chaos organized — it was control designed from the start.",
+      "image_prompt": "Yoritomo in formal reception in the Kamakura hall, receiving delegations of warrior families who have come to formally acknowledge his authority. The warriors kneel in perfect rows. Yoritomo is elevated above them, unhurried and absolute. The ceremony has the formal precision of something being institutionalized — not a personal submission but the beginning of a system. The shogunate being born in ritual.",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.73,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Yoritomo's genius was recognizing what he needed from the emperor and taking exactly that — and no more. He did not want to be emperor. The imperial institution had enormous legitimizing power: appointments from the emperor carried weight that no warrior could generate independently. So he kept the emperor — kept the court, kept the ceremonies, kept the succession — while systematically emptying these institutions of real power. He needed the emperor's blessing to be shogun. The emperor needed Yoritomo's goodwill to remain emperor. Both understood the arrangement.",
+      "image_prompt": "A formal court ceremony at the Kyoto imperial palace — the emperor, young and surrounded by elaborate ritual, presides over the investiture of Yoritomo's representatives. The court nobles in their layered robes observe the ceremony with carefully neutral expressions. The scene captures the essential paradox of the period: all the forms of imperial power are present, but the real power is in Kamakura, represented here only by Yoritomo's envoys.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "In 1192, the retired Emperor Go-Shirakawa died. He had been the last significant political obstacle — a courtier clever enough to play different warrior factions against each other. With his death, Yoritomo moved. He petitioned the new imperial court for the title of Sei-i Taishōgun — Barbarian-Subduing Great General — the ancient title that gave its holder military authority over all Japan. The court granted it. The appointment took a few minutes. What it inaugurated would last six hundred and seventy-six years.",
+      "image_prompt": "The moment of shogunal investiture — an imperial envoy kneels before Yoritomo in the Kamakura hall, presenting the formal scroll of appointment from the court. Yoritomo receives it with deliberate calm — no visible triumph, just the focused reception of something he had designed this entire system to receive. His senior retainers witness in absolute silence. This is 1192. The Kamakura shogunate has begun.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.75,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "What exactly had Yoritomo created? Not a monarchy — the emperor still existed. Not a dictatorship — a structured hierarchy of warrior families, each with defined rights and obligations. He called it the bakufu: the tent government. It was a military headquarters that had evolved into a governing institution. Warriors reported to Kamakura. Kamakura reported to no one. The emperor remained — in Kyoto, performing ceremonies, legitimizing appointments — but Japan's actual governance now happened entirely outside the imperial system.",
+      "image_prompt": "A wide view of Kamakura as it appears around 1192 — a functional warrior city growing rapidly around the shogunal hall. Administrative buildings, training grounds, markets, and temples spread across the wooded valleys. Samurai in armor walk alongside merchants and artisans. This is a new capital of a new kind of power — pragmatic, military, efficient. A city built for governing, not for beauty.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "Yoritomo died in 1199, possibly from injuries sustained falling from a horse, possibly from illness — the accounts are unclear. He was fifty-two years old. He had been shogun for seven years. His sons succeeded him but proved weak, and real power passed to his wife's family — the Hojo clan — who ruled as regents behind a series of figurehead shoguns. The institution Yoritomo created was more durable than the man. The bakufu he built outlasted his bloodline by centuries.",
+      "image_prompt": "Yoritomo's funeral in Kamakura, 1199 — his coffin borne in solemn procession through the city he built, attended by hundreds of warrior retainers. The weather is cold and grey. The Hojo clan leaders — his wife Masako and her father Tokimasa — stand at the forefront, their expressions complex. The power they are about to inherit is visible in their composure. An era ending, another beginning without pause.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "The shogunate system Yoritomo established would transform multiple times over seven centuries. The Kamakura bakufu was destroyed in 1333. The Ashikaga shogunate replaced it, governing from Kyoto for two hundred years before collapsing into the chaos of the Sengoku period. The Tokugawa shogunate — established in 1603 — lasted until 1868 and the Meiji Restoration. Three different warrior families held the title. Each time, the institution proved more resilient than the individuals who wielded it. Yoritomo had built a system, not a dynasty.",
+      "image_prompt": "A visual timeline of Japan's three shogunates — three distinct architectural styles representing Kamakura, Ashikaga Kyoto, and Edo Tokugawa periods. Samurai of each era stand in their respective environments. The continuous thread of the shogunal system is visible across six centuries of changing form. One idea, three incarnations, seven hundred years.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Why did the shogunate last so long? Because Yoritomo solved the central problem of governance in a warrior society: how do you institutionalize military power? His answer was the vassalage system — a personal bond between the shogun and each warrior family, in which the shogun guaranteed the warrior's land rights in exchange for military service. This gave warriors a stake in the system's stability. Destroying the shogunate would mean destroying the legal basis for their own property. They had been given reasons to maintain it.",
+      "image_prompt": "The formal ceremony of vassalage in the Kamakura period — a provincial warrior kneeling before Yoritomo's representative, placing his hands between the official's hands in the gesture of sworn service. Scrolls confirming his land rights are present. The exchange is businesslike and binding. This is the foundation of the shogunal system — not loyalty through love, but loyalty through mutual interest. An arrangement both parties need.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Yoritomo also understood something that would take Western Europe centuries more to learn: separating the sources of legitimacy from the sources of power. By keeping the emperor, he retained the legitimizing authority that warrior clans needed — only an emperor could make a shogun. By controlling the emperor, he ensured that legitimacy flowed where he directed it. The genius was not overthrowing the old order but subordinating it invisibly — leaving its symbols intact while hollowing out its substance.",
+      "image_prompt": "Side-by-side view of the two capitals: Kyoto's imperial palace — beautiful, ceremonial, surrounded by court culture — and Kamakura's shogunal hall — functional, military, surrounded by governance. Both exist simultaneously. Both are legitimate. Both need each other. The image captures the dual-capital structure of medieval Japan — and Yoritomo's insight that you don't need to destroy power to control it.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "The price of the shogunal system was paid by the imperial family, by the court nobles, and ultimately by the peasants who were caught between competing warrior interests. The Genpei War destroyed much of the country. Subsequent conflicts destroyed more. Yoritomo's system channeled warrior violence into governance — but it did not eliminate it. For seven centuries, Japan's political stability would depend on maintaining the balance within the warrior class. When that balance broke — as it did in the 1330s, the 1460s, and the 1560s — the results were catastrophic.",
+      "image_prompt": "A war-torn Japanese countryside in the Sengoku period — the breakdown of shogunal order made visible. Abandoned farmhouses, refugees on roads, distant smoke from burning villages. Rival warrior armies visible on a far hill. The landscape shows what happens when the shogunal system fails to contain warrior ambition. The cost of the system's absence — the chaos it was built to prevent — made plain.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Minamoto Yoritomo died obscure by the standards of samurai legend. He never led a battle. He executed his most brilliant ally. His bloodline vanished within decades. And yet his creation — the concept of the shogunate, the idea that warriors could build a legitimate government beside the imperial institution rather than overthrowing it — defined Japan's political structure for nearly seven hundred years. He is not remembered as a warrior. He is remembered as the architect of a civilization's operating system. That is a stranger and greater achievement.",
+      "image_prompt": "Yoritomo's tomb at Tsurugaoka Hachimangu shrine in Kamakura — a small, unassuming stone monument in a forested enclosure. Cherry blossoms fall around it. A few modern visitors stand quietly. The modesty of the memorial compared to the scale of what it commemorates captures Yoritomo's essential character: a man whose achievement was institutional rather than personal, whose legacy is the system rather than the man.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles — you know the name from cinema. But the real Hattori Hanzo was stranger than the legend. He served Tokugawa Ieyasu through thirty years of warfare, survived every battle, and built the most feared intelligence network in Japan. The truth behind Japan's most famous ninja.",
+      "image_prompt": "Hattori Hanzo, a lean experienced ninja-samurai in his 40s in dark practical clothing — neither the fantastical screen version nor a simple soldier, but something in between. Sharply alert eyes in a weathered face. He stands in the shadows of a Sengoku period forest at dusk, completely still, watching something out of frame. The scene captures the essence of a real intelligence operative — invisible, patient, and dangerous.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If the story of Minamoto Yoritomo — the man who built Japan's operating system — changed how you see Japanese history, subscribe for new episodes every week. The greatest achievements in history are often the invisible ones.",
+      "image_prompt": "The Samurai Chronicles channel logo against a deep black background with subtle crimson and gold Japanese design elements. Clean, cinematic, professional.",
+      "ken_burns": "static",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep004-BGM.mp3",
+  "youtube_url": "https://youtu.be/-qhJIwZz_tM",
+  "shorts_url": "https://youtu.be/r2ofEMp6WmQ",
+  "scheduled_at": "2026-06-11 03:00"
+}
