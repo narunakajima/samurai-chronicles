@@ -7,7 +7,12 @@
 
 > **重要:** このリポジトリは Samurai Chronicles 専用。`ランプの独り言` など他プロジェクトの
 > 仕様・スタイル・ワークフローを混入させないこと。
-> `lamp-whisper/` リポジトリは `freesound_download.py` を借用するためだけに参照する。
+> `lamp-whisper/` リポジトリは `freesound_download.py` を借用するためだけに参照する
+> （`$HOME/lamp-whisper/freesound_download.py`。ダウンロード済み曲IDを
+> `~/.claude/scripts/.freesound_seen_ids` に記録して重複DLを回避する `seen_ids` 機構に加え、
+> `--library <path>` でライブラリの `source_id`/`source_name` と照合し既存BGMの再DLを防ぐ
+> 機能を持つ。SC側から呼ぶ際は必ず `--library $HOME/samurai-chronicles/bgm_library.json`
+> を指定し、SC自身のライブラリと突き合わせること）。
 
 ---
 
@@ -23,19 +28,34 @@ samurai-chronicles/
 ├── sc_tts_gen.py       ナレーション音声生成（TTS）
 ├── sc_image_gen.py     シーン画像生成（Gemini）
 ├── sc_inject_bgm_credit.py  CC BY クレジット自動注入
+├── sc_bgm_library.py   BGMライブラリ管理（登録・紐付け）
 ├── sc_review_gen.py    制作確認書生成
+├── bgm_library.json    BGMライブラリ台帳（パス・ライセンス・タグ・used_in）
 └── topics_queue.json   制作キュー
 ```
 
 素材（音声・画像・出力動画）は Google Drive に保存:
 ```
 ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/
+├── BGM/              BGM集中管理フォルダ（{episode_id}-BGM.mp3。2026-06-01〜統一）
+│                     複数エピソードで使い回し可能。bgm_library.json で台帳管理。
 └── ep{NNN}/
-    ├── audio/        S01.wav〜S20.wav, S00_teaser.wav, S00_shorts.wav, ep{NNN}-BGM.mp3
+    ├── audio/        S01.wav〜S20.wav, S00_teaser.wav, S00_shorts.wav
+    │                 （BGMはここには置かない。BGM/ フォルダに集約する）
     ├── images/       S01.png〜S20.png（16:9）
     ├── images_shorts/ S01.png〜S20.png（9:16）
     └── output/       Samurai Chronicles ep{NNN}.mp4, ep{NNN}_shorts.mp4, ep{NNN}.srt
 ```
+
+### BGM 参照優先順位（`sc_video_gen.py`）
+
+1. `BGM/{episode_id}-BGM.mp3`（集中フォルダに直接ある場合）
+2. episode JSON の `bgm_source` フィールド（ライブラリ曲を流用紐付け）
+3. `bgm_library.json` の `used_in` 配列を逆引き
+
+新規BGMは `/sc-new` STEP 4（Freesound新規2曲＋ライブラリ既存2曲のハイブリッド選定）の中で
+`sc_bgm_library.py --add` により `BGM/` フォルダへ自動登録される。
+既存ライブラリ曲を別エピソードで使い回す場合は `sc_bgm_library.py --use-library` で `bgm_source` を設定する。
 
 ---
 
@@ -64,10 +84,11 @@ samurai-chronicles/
 ```
 
 スラッシュコマンド一覧:
-- `/sc-new`    新エピソード生成（JSON・確認書・サムネイル・BGM）
-- `/sc-review` 制作確認書 + BGM選択の確認
+- `/sc-new`    新エピソード生成（JSON・確認書・サムネイル・BGM選定を一括並行処理）
 - `/sc-upload` YouTube アップロード（本編・Shorts・字幕）
-- `/sc-bgm`    BGMピッカー
+
+> 旧 `/sc-bgm`（BGM単体ピッカー）・`/sc-review`（確認書+BGM）は
+> `/sc-new` STEP 4 に機能統合されたため 2026-06 に削除した。
 
 ---
 
