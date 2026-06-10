@@ -3,6 +3,9 @@
   "allowedTools": ["Bash", "Read", "Edit", "Write"],
   "permissions": {
     "defaultMode": "bypassPermissions",
+    "additionalDirectories": [
+      "~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles"
+    ],
     "allow": [
       "Bash(*)",
       "Bash(python3 *)",
