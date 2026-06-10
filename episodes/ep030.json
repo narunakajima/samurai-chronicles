@@ -1,0 +1,287 @@
+{
+  "episode_id": "ep030",
+  "episode_title": "Kuroda Kanbei: The Strategist Who Could Have Ruled Japan",
+  "youtube_title": "The Strategist Who Could Have Ruled Japan — And Chose Not To",
+  "youtube_description": "He was the mind behind Japan's greatest conqueror — and at the empire's most fragile hour, he nearly seized it for himself.\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 In ten days, he conquered nine\n0:39 Late sixteenth-century Japan...\n1:23 While other lords measured...\n2:07 In 1578, disaster struck. A key\n2:57 For nearly a year, Kanbei sat\n3:48 Carried home on a stretcher,...\n4:44 Then, in June 1582, the...\n5:33 Kanbei's genius was never...\n6:23 As Hideyoshi rose to rule a\n7:08 'If I were to die,' Hideyoshi\n7:49 In 1600, two years after...\n8:30 What followed stunned even...\n9:14 Then, in a single afternoon, it\n9:59 Here is where the story should\n10:49 Tokugawa Ieyasu received him...\n11:39 In retirement, the man once...\n12:27 Historians still argue over...\n13:12 Either way, Kuroda Kanbei...\n14:01 But not every great warrior of\n14:42 Kuroda Kanbei never wore the...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Samurai Archives — Kuroda Yoshitaka (Kanbei): Life of a Sengoku-Era Strategist\n2. The Cambridge History of Japan, Vol. 4: Early Modern Japan\n3. Turnbull, S. — Toyotomi Hideyoshi (Osprey Publishing)\n\n\n🎵 Music: hero's and villains 4.wav by Blazearmani (freesound.org) — CC BY 4.0\n#KurodaKanbei #Samurai #SengokuJapan #Sekigahara #JapaneseHistory",
+  "youtube_tags": [
+    "Kuroda Kanbei",
+    "Kuroda Yoshitaka",
+    "Samurai",
+    "Sengoku Japan",
+    "Toyotomi Hideyoshi",
+    "Battle of Sekigahara",
+    "Japanese history",
+    "Samurai Chronicles",
+    "Japanese strategist",
+    "feudal Japan",
+    "history documentary",
+    "samurai warlord",
+    "Edo period",
+    "Honnoji Incident",
+    "Japan history"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Autumn, 1600. While Japan's fate hung on a single battle, one man marched alone across Kyushu — castle after castle falling before him, racing toward a prize no one else dared imagine. Why did he stop just before the throne?",
+  "shorts_narration": "Nine castles. Ten days. An army that could have conquered Japan — led by the mind who built Hideyoshi's empire. At the edge of total victory, he stopped. This is Kuroda Kanbei.",
+  "thumbnail_prompt": "Close-up cinematic portrait of strategist Kuroda Kanbei, sharp intelligent eyes, dark robes bearing a wisteria clan crest, leaning on a cane, standing before a row of distant burning castles at dusk, dramatic chiaroscuro lighting, an expression of restrained ambition.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "In ten days, he conquered nine castles — with the power to take all of Japan. Then he stopped. What kind of strategist walks away from an empire he could have ruled?",
+      "image_prompt": "Wide cinematic shot at dusk: a lone strategist in dark robes stands silhouetted on a hilltop before a row of distant captured castles burning against an orange sky, smoke curling upward, banners with a wisteria crest planted in the foreground, epic and ominous mood.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 16,
+      "narration": "Late sixteenth-century Japan was a land devoured by war — a hundred lords, a hundred ambitions, and only one prize: the throne of a unified nation. Into this chaos was born Kuroda Kanbei, a sickly young heir to a minor castle in Harima province. He had no great army, no famous bloodline. What he had was something rarer — a mind that could see ten moves ahead of everyone else on the board.",
+      "image_prompt": "Interior of a modest provincial castle by candlelight: a young, slender Kuroda Kanbei leans over a low table covered in hand-drawn war maps and wooden game pieces, studying them intently, a wisteria crest banner hanging on the wall behind him, warm low light, contemplative atmosphere.",
+      "ken_burns": "pan_right",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.47,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 16,
+      "narration": "While other lords measured strength in swords and soldiers, Kanbei measured it in information — alliances, rivalries, fears, and ambitions he could turn to his advantage. He chose his master carefully: not the strongest warlord of the age, but the most promising one — Oda Nobunaga's brilliant, low-born general, Toyotomi Hideyoshi. Kanbei would become his shadow, his whisper in the dark, the architect behind victories the world would credit to someone else entirely.",
+      "image_prompt": "Inside a war tent lit by lanterns: Kuroda Kanbei kneels respectfully across a low table from an ambitious general in ornate armor, war maps and miniature banners arranged between them, Kanbei's calm calculating expression contrasting with the general's restless energy, cinematic side lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.34,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 16,
+      "narration": "In 1578, disaster struck. A key ally, Araki Murashige, rebelled against Nobunaga — and Kanbei volunteered to ride into the rebel's fortress alone and talk him down. It was either an act of supreme confidence, or supreme foolishness. The moment he stepped through the gates of Arioka Castle, the doors closed behind him. Murashige had no intention of listening. Instead, he dragged Japan's brightest strategic mind down into a stone pit beneath the castle — and left him there to rot.",
+      "image_prompt": "Dusk at the looming gates of a dark fortress: Kuroda Kanbei rides alone toward the entrance as massive wooden gates begin to swing shut behind him, torches flickering on the walls, ominous shadows stretching across the courtyard, tense and foreboding composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.27,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "For nearly a year, Kanbei sat in darkness — starved, soaked in his own filth, his joints seizing as illness ate through his body. Above ground, Nobunaga assumed he was dead, or worse, a traitor, and ordered Kanbei's young son executed as punishment. Only one general dared to hide the boy instead of killing him. When Arioka Castle finally fell and Kanbei was dragged into daylight, he could no longer stand on his own. His leg was permanently crippled. But his mind had not lost a single step.",
+      "image_prompt": "A dark, damp stone dungeon pit lit by a single shaft of light from above: a gaunt, emaciated Kuroda Kanbei sits chained against the wall, eyes still sharp and alert despite his ravaged body, dramatic high-contrast lighting emphasizing suffering and quiet defiance.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 16,
+      "narration": "Carried home on a stretcher, Kanbei should have disappeared from history — a broken man, finished before forty. Instead, he returned to Hideyoshi's side sharper than ever, as if the year underground had stripped away everything except the calculation. From this point on, every great victory Hideyoshi claimed carried Kanbei's invisible signature: the timing, the leverage, the quiet words spoken at exactly the right moment to the right person. Japan's future was being written by a man who could barely walk.",
+      "image_prompt": "A military camp at dawn: Kuroda Kanbei, gaunt and leaning on a wooden cane, is carried on a stretcher past rows of astonished soldiers who part to let him through, their faces showing shock and quiet respect, golden morning light breaking over the tents.",
+      "ken_burns": "pan_right",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.34
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 17,
+      "narration": "Then, in June 1582, the impossible happened. Nobunaga — the man remaking Japan by force — was betrayed and killed by his own general at Honnoji Temple. Hideyoshi, far away on campaign, received the news and broke down in grief and panic. But Kanbei leaned in close and said the words that would change Japanese history: 'Now, my lord, your chance has come.' In that single sentence, despair turned into ambition — and a war camp turned into the birthplace of a new ruler of Japan.",
+      "image_prompt": "Inside a candlelit war tent at night: a devastated general in armor sits hunched with his head in his hands, while Kuroda Kanbei leans close, whispering urgently into his ear, firelight casting sharp shadows across both faces, a moment of quiet, electric tension.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 17,
+      "narration": "Kanbei's genius was never only about words — it was about reshaping the battlefield itself. At the siege of Takamatsu Castle, he studied the terrain and saw what no one else did: the valley could become a lake. His men built a massive earthen dam overnight, diverting a river straight into the castle grounds. Within days, Takamatsu sat half-submerged, its defenders trapped on a shrinking island of stone and mud. The castle didn't fall to an army. It fell to water — and to one man's imagination.",
+      "image_prompt": "Vast cinematic landscape at night: a Japanese castle sits half-submerged in floodwaters created by a massive earthen dam, torchlit soldiers laboring in the foreground on the embankment, Kuroda Kanbei standing on a ridge above watching calmly, reflections of fire shimmering on the water's surface.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 16,
+      "narration": "As Hideyoshi rose to rule a unified Japan, Kanbei rose with him — rewarded with land, titles, and a reputation that began to frighten the very man he served. Hideyoshi started to notice something uneasy: every plan Kanbei touched seemed to bend toward success, as though fate itself obeyed him. Court whispers grew louder, repeating a single, dangerous sentence — one that Hideyoshi himself was rumored to have said aloud, half in admiration, half in fear.",
+      "image_prompt": "A grand wooden audience hall filled with richly dressed lords bowing in rows: Kuroda Kanbei stands among them in fine robes bearing the wisteria crest, his expression composed and watchful while courtiers nearby exchange wary glances behind raised fans, warm formal lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 17,
+      "narration": "'If I were to die,' Hideyoshi reportedly told his closest men, 'the next ruler of Japan would not be my own son. It would be Kuroda Kanbei.' It was meant as a warning — and Kanbei heard it. From that moment, he played the role of a humble, retiring strategist, asking for smaller rewards, stepping back from the spotlight. But beneath the surface, something else was quietly taking shape: a plan that only revealed itself the day Hideyoshi finally died.",
+      "image_prompt": "Dim chamber lit by a single lantern: an aging ruler lies propped on cushions speaking gravely to a circle of kneeling generals, while Kuroda Kanbei stands apart in shadow near a pillar, listening with a calm, unreadable expression, candlelight flickering across his sharp features.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.8,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 17,
+      "narration": "In 1600, two years after Hideyoshi's death, Japan split into two armies preparing for the battle that would decide everything: Sekigahara. Kanbei's own son, Nagamasa, rode east to fight for Tokugawa Ieyasu. But Kanbei himself stayed behind in Kyushu — far from the main battlefield, gathering ronin, opening war chests, and raising an army that answered to no one but him. While the nation watched the east, the empire's greatest strategist was building something of his own in the shadows.",
+      "image_prompt": "Dramatic wide composition at dawn: in the smoky distance, two great armies clash beneath storm clouds on a vast plain, while in the foreground Kuroda Kanbei mounts his horse before ranks of gathered soldiers and banners bearing the wisteria crest, resolve in his eyes.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.34
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 17,
+      "narration": "What followed stunned even his allies. In a single, relentless campaign, Kanbei's army tore across Kyushu — castle after castle surrendering or falling in days. Nine strongholds in roughly ten days, each victory swelling his forces with defectors eager to follow the legend. Some of his own men began to whisper the question hanging over the entire campaign: was this a mission to support Tokugawa — or the opening move of an old soldier's final, audacious bid for the throne of Japan itself?",
+      "image_prompt": "Chaotic battle scene at a breached castle wall: a single commanding figure, Kuroda Kanbei — older, leaner, with a thin beard and a wisteria-crest battle surcoat, clearly distinguishable from everyone else around him — rides alone in the foreground, sword raised, well ahead of his charging soldiers who follow several paces behind him as defenders scatter. Fire and falling banners fill the background, intense motion and dramatic orange firelight, cinematic action composition. Only one mounted commander should be prominent in the frame.",
+      "ken_burns": "pan_left",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 17,
+      "narration": "Then, in a single afternoon, it was over. Far to the east, the battle of Sekigahara — expected to drag on for weeks — collapsed in just a few hours through betrayal on the field. Tokugawa Ieyasu stood victorious, and the war that was supposed to reshape Japan ended before Kanbei's campaign could ever matter. He was still marching, still winning, still gathering strength — and suddenly, there was no war left to win. The empire he might have built had simply run out of time.",
+      "image_prompt": "Early morning military camp: a breathless messenger kneels before Kuroda Kanbei, handing him a sealed scroll; Kanbei stands frozen mid-stride reading it, his face caught in a moment of stunned realization, soldiers pausing behind him in the pale dawn light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 17,
+      "narration": "Here is where the story should end with one of two outcomes: Kanbei presses on, defies Tokugawa, and gambles everything on a final, desperate bid for power — or he quietly disappears into irrelevance, a warlord who arrived too late. He chose neither. Instead, the man who had just conquered nine castles in ten days laid down his sword, dissolved his army, and rode to Tokugawa's camp to formally submit — as if the empire he had nearly built had never existed at all.",
+      "image_prompt": "A quiet nighttime scene: Kuroda Kanbei kneels alone before a small stone shrine, laying his sword down on the ground in front of it, army tents and campfires fading into darkness behind him, somber blue moonlight, an atmosphere of solemn renunciation.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 16,
+      "narration": "Tokugawa Ieyasu received him with careful courtesy — and quiet suspicion. Here was a man who could have plunged Japan back into war with a single word, choosing instead to kneel. Was it loyalty? Exhaustion? Or simply the calculation of a master strategist who saw that one more war would cost more than any throne was worth? Tokugawa rewarded Kanbei's son generously, granted Kanbei himself a peaceful retirement — and never fully trusted him again for the rest of his life.",
+      "image_prompt": "Formal audience hall with sliding doors bearing the Tokugawa hollyhock crest: Kuroda Kanbei kneels with head bowed before a composed, watchful lord seated on a raised platform, both exchanging a measured glance, soft natural light filtering through paper screens.",
+      "ken_burns": "static",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.33,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 16,
+      "narration": "In retirement, the man once whispered about as Japan's secret ruler turned away from politics entirely — and toward something that surprised everyone who had known him. Years earlier, Kanbei had converted to Christianity, taking the baptismal name Simeon. Now, freed from the games of war and succession, he devoted his final years to quiet study, prayer, and the company of missionaries — a complete reversal for a man once famous for outmaneuvering an entire nation.",
+      "image_prompt": "A modest candlelit room with a simple wooden cross on the wall: an older Kuroda Kanbei kneels in quiet prayer in plain robes, a small group of robed missionaries seated nearby in soft conversation, warm peaceful lighting, an atmosphere of calm and reflection.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 16,
+      "narration": "Historians still argue over what truly stopped him at the edge of power. Some believe Kanbei understood something Hideyoshi and Tokugawa never fully grasped — that seizing Japan by force would only ignite decades more bloodshed, and that true mastery sometimes means recognizing the moment to walk away. Others believe it was simpler: that fate, in the form of one impossibly fast battle far to the east, simply closed the door before he could reach it.",
+      "image_prompt": "A tranquil Japanese garden at dusk: an elderly Kuroda Kanbei sits alone on a wooden veranda, a cane resting beside him, gazing thoughtfully at koi drifting across a still pond, soft golden twilight light, an atmosphere of quiet contemplation.",
+      "ken_burns": "pan_right",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "Either way, Kuroda Kanbei left behind something rarer than an empire — a legend built not on conquest, but on restraint. In a century remembered for warlords who burned cities and betrayed allies for power, he is remembered as the one man who came closest to ruling Japan… and chose, in the end, not to. Perhaps that is the most dangerous kind of genius of all: the one wise enough to know exactly when to stop.",
+      "image_prompt": "Symbolic cinematic composition: an ornate empty throne bathed in fading amber light at the end of a long wooden corridor, the silhouette of a lone figure with a cane walking calmly away from it into shadow, dust motes drifting in the light beams.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 17,
+      "narration": "But not every great warrior of this era knew how to retreat with grace. In our next episode, we follow a samurai who found himself surrounded — not by nine castles waiting to fall, but by eighty thousand enemy soldiers closing in on every side. His name was Shimazu Yoshihiro, and what he did next became one of the most legendary escapes in samurai history. How does one man cut through an army eight hundred times his size — and walk out alive?",
+      "image_prompt": "Vast misty battlefield at dawn: a lone samurai general on horseback faces an overwhelming horde of enemy soldiers stretching to the horizon, banners with a circled cross crest fluttering around him, dramatic scale contrast, tense and foreboding cinematic framing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 16,
+      "narration": "Kuroda Kanbei never wore the crown he could have taken. He never needed to. His genius had already shaped the nation from the shadows — through a betrayal survived, a flood that drowned a castle, and a single sentence that turned despair into an empire. In the end, the strategist who built Japan's future chose to disappear quietly into it. If you enjoyed uncovering the man behind the throne, subscribe — because Japan's history is full of figures who shaped everything... while staying just out of frame.",
+      "image_prompt": "Calm, reflective wide shot at sunset: a banner bearing the wisteria clan crest flutters gently atop a quiet castle wall, golden light spilling across empty courtyards below, peaceful aftermath atmosphere, cinematic stillness and warmth.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/aqX-Kq6QAXI",
+  "shorts_url": "https://youtu.be/VUDgx3fVtd4",
+  "scheduled_at": "2026-06-17 03:00"
+}

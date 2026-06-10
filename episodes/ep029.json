@@ -1,0 +1,262 @@
+{
+  "episode_id": "ep029",
+  "episode_title": "Honda Tadakatsu: The Samurai Who Never Bled",
+  "youtube_title": "The Samurai Who Fought 100 Battles and Never Bled — Honda Tadakatsu | EP029",
+  "youtube_description": "He fought in over a hundred battles across nearly fifty years of constant war — and never suffered a single serious wound. Even his greatest enemies came to admire him. This is the true story of Honda Tadakatsu, the warrior so respected that the most powerful warlords in Japan refused to see him killed.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 He fought in over a hundred\n0:42 In 1548, in a minor samurai\n1:31 At just thirteen years old,...\n2:14 Tadakatsu's signature weapon...\n2:54 In 1572, Ieyasu made a fatal\n3:33 As chaos swallowed the...\n4:11 Tadakatsu planted himself in...\n4:42 That single moment of...\n5:32 The year was 1584. The Battle\n6:08 Hideyoshi's officers begged...\n6:47 That moment sealed his...\n7:29 In 1600, Tadakatsu rode into the\n8:04 When the dust settled, Japan had\n8:36 He spent his final years not\n9:16 So how did a man survive\n9:53 His legendary spear,...\n10:30 Perhaps the real answer is this:\n11:04 Today, Honda Tadakatsu is...\n11:41 Next time on Samurai...\n12:11 If Honda Tadakatsu's story...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. Samurai Warfare. Cassell, 1996.\n2. Sadler, A.L. The Maker of Modern Japan: The Life of Tokugawa Ieyasu. Routledge, 1937.\n3. Frédéric, Louis. Japan Encyclopedia. Harvard University Press, 2002.\n\n\n🎵 Music: SunixMuz - Devil Dance (Opening, trailer, epic music, Free CCBY) by SunixMuz (freesound.org) — CC BY 4.0\n#HondaTadakatsu #Samurai #TokugawaIeyasu #Sengoku #SamuraiChronicles #JapaneseHistory",
+  "youtube_tags": [
+    "Honda Tadakatsu",
+    "Samurai",
+    "Tokugawa Ieyasu",
+    "Sengoku",
+    "Sekigahara",
+    "Samurai Chronicles",
+    "Japanese History",
+    "Mikatagahara",
+    "Tonbogiri",
+    "Four Guardians of Tokugawa"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "He rode alone toward an army of eighty thousand men — and simply stopped. No charge. No retreat. Just silence, and a helmet crowned with antlers. The enemy commander raised his hand and let him walk away. Why would Japan's most powerful warlord spare him?",
+  "shorts_narration": "100 battles. Zero serious wounds. He once stood alone before an army of eighty thousand men — and they let him walk away. This is Honda Tadakatsu, the warrior even his enemies refused to kill.",
+  "thumbnail_prompt": "Honda Tadakatsu in full battle armor, a fierce yet composed expression, his helmet crowned with large curling deer antlers, gripping the long blade of his legendary spear Tonbogiri raised diagonally across a smoke-filled battlefield at dusk, dramatic rim lighting outlining his silhouette against the glow of distant fires.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He fought in over a hundred battles — and never suffered a single serious wound. Even his greatest enemies came to admire him more than fear him. What kind of warrior earns that kind of legend?",
+      "image_prompt": "A dramatic wide shot of Honda Tadakatsu standing alone on a smoke-shrouded battlefield at dusk, his deer-antler helmet catching the last light, the long blade of his spear Tonbogiri resting point-down in the earth beside him, fallen banners and abandoned weapons scattered around him, his armor pristine and unmarked despite the carnage.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "In 1548, in a minor samurai household in Mikawa province, a boy was born who would become legend. Honda Tadakatsu entered the service of a young lord named Tokugawa Ieyasu — a man whose fortunes were, at the time, far from certain. Few could have predicted that this quiet, disciplined youth would one day be called the greatest warrior in Japan. His path to legend began not with ambition, but with loyalty.",
+      "image_prompt": "Inside a humble wooden hall in rural Mikawa province, a small child in plain infant's robes is held up by his father — a modest country samurai — before a simple household shrine, soft morning light filtering through paper screens, sparse furnishings, distant misty hills visible through an open doorway, an atmosphere of quiet rural beginnings far removed from the chaos of war.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "At just thirteen years old, Tadakatsu rode into his first battle — the siege of Odaka in 1561. While other boys his age trained in the courtyard, he was already cutting down enemy soldiers on the front line. His commanders noticed immediately: this was no ordinary recruit. Within a few short years, Tadakatsu would become one of the Four Guardians of the Tokugawa clan — an elite circle of warriors entrusted with Ieyasu's very life.",
+      "image_prompt": "A young teenage samurai — lean, sharp-eyed, gripping a simple spear with surprising steadiness — charges alongside seasoned warriors into the smoke and chaos of a small castle siege at dawn, his face calm and focused amid the surrounding panic, older soldiers glancing at him in surprise, fortress walls looming through the haze.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.56,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Tadakatsu's signature weapon was a spear named Tonbogiri — 'Dragonfly Cutter.' Legend claimed its blade was so sharp that a dragonfly landing on its edge would be sliced clean in two. Atop his helmet, he wore a crown of curling deer antlers, a silhouette that enemy soldiers learned to dread on sight. But it wasn't the weapon or the armor that made him feared. It was what he did with them, battle after battle after battle.",
+      "image_prompt": "Close-up cinematic portrait of Honda Tadakatsu in full battle dress, his dark lacquered armor gleaming, his helmet crowned with sweeping curved deer antlers, gripping the long blade of his spear Tonbogiri, the steel edge catching torchlight with a single dragonfly frozen mid-air just above it, his expression calm, composed, and quietly intimidating.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "In 1572, Ieyasu made a fatal miscalculation. He marched his army out to challenge Takeda Shingen — one of the most brilliant generals in Japanese history — at a place called Mikatagahara. Within hours, the Tokugawa lines collapsed. Soldiers scattered in terror. Ieyasu himself, humiliated and desperate, fled for his life — and the Takeda army surged forward to finish him.",
+      "image_prompt": "A wide chaotic battlefield at Mikatagahara in 1572 — Tokugawa banners falling into the mud as soldiers flee in terror under a darkening sky, enemy cavalry crashing through the broken lines in the background, dust and smoke swirling, a sense of total collapse and impending disaster.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "As chaos swallowed the retreating army, one man turned back toward the enemy. Honda Tadakatsu rode alone to a narrow bridge over the Ichi River — the only crossing between Ieyasu and annihilation. Behind him: his lord's last hope of survival. Ahead of him: the entire victorious Takeda army, flushed with bloodlust and closing fast.",
+      "image_prompt": "Honda Tadakatsu alone on horseback at the edge of a narrow wooden bridge over a rushing river at dusk, turning back against the tide of his fleeing army, his antlered helmet silhouetted against the glow of distant fires, the overwhelming mass of a pursuing army approaching through the misty distance behind him.",
+      "ken_burns": "pan_left",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.31,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Tadakatsu planted himself in the middle of that bridge — one man against thousands. He didn't charge. He didn't retreat. He simply stood there, spear raised, utterly unmoved, daring the enemy vanguard to cross. And somehow… they hesitated. No one wanted to be the first to die testing him.",
+      "image_prompt": "Low-angle dramatic shot of Honda Tadakatsu standing absolutely still in the center of a narrow wooden bridge, his spear Tonbogiri raised diagonally across his body, his expression unreadable and unshaken, while a wall of armored warriors hesitates at the bridge's far end, torches flickering, nobody daring to take the first step forward.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "That single moment of hesitation was all Ieyasu needed to escape into the night. Word of the lone warrior on the bridge spread through both armies like wildfire. Even Takeda Shingen — the rival commander who had just crushed the Tokugawa — is said to have remarked that Ieyasu possessed only two things greater than himself: his helmet, and Honda Tadakatsu. But his greatest test was still years away — and this time, he wouldn't be defending a bridge. He'd be riding straight at an army of eighty thousand men.",
+      "image_prompt": "Wide cinematic shot of Honda Tadakatsu seen from behind, riding alone toward the horizon where an enormous army stretches as far as the eye can see beneath storm-darkened skies, his small silhouette stark against their overwhelming numbers, countless banners rippling in the wind ahead of him.",
+      "ken_burns": "zoom_out",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "The year was 1584. The Battle of Komaki-Nagakute had ended, and Toyotomi Hideyoshi's massive army — eighty thousand strong — stood between Tadakatsu's small force and total destruction. Most men would have surrendered, fled, or prayed. Tadakatsu did none of these. He rode out alone, planted himself in front of that entire army, and simply waited.",
+      "image_prompt": "Honda Tadakatsu sitting motionless on his horse directly in front of the front ranks of an enormous opposing army, his antlered helmet and dark armor sharply lit against the mass of soldiers and spears behind him, his posture utterly relaxed and unthreatened, an aura of quiet defiance radiating from his stillness.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "Hideyoshi's officers begged for the order to attack — one man, utterly exposed, an easy kill. But Hideyoshi raised his hand and said no. He had heard the stories. He recognized the silhouette of the antlered helmet. And he refused to let his soldiers cut down a legend over something as small as pride. The single most powerful warlord in Japan let Honda Tadakatsu simply ride away.",
+      "image_prompt": "Toyotomi Hideyoshi, seated on a campaign stool surrounded by anxious officers gesturing toward a lone rider in the distance, raises a hand in a clear gesture of restraint, his expression a mixture of respect and amusement, the small silhouette of a single antlered horseman visible far off on the open plain beyond the army's front line.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "That moment sealed his reputation forever. Honda Tadakatsu was no longer just a skilled soldier — he had become something close to myth, a man whose name alone could freeze an army in its tracks. And yet, remarkably, he never let the legend change him. He remained exactly what he had always been: disciplined, watchful, and utterly devoted to his lord.",
+      "image_prompt": "Honda Tadakatsu walking calmly through a quiet camp of awestruck soldiers at dusk, warriors on either side bowing their heads or stepping aside in silent reverence, firelight flickering across his dark armor and antlered helmet, his expression unchanged — humble, composed, untouched by the legend forming around him.",
+      "ken_burns": "pan_right",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "In 1600, Tadakatsu rode into the largest battle of his life — Sekigahara, the clash that would decide the fate of Japan itself. By now he was over fifty years old, a veteran of more battles than most men could count in three lifetimes. He fought at the heart of the Tokugawa line, helping to crush the opposing forces and secure the victory that would create the Tokugawa shogunate.",
+      "image_prompt": "A sweeping view of the Battle of Sekigahara in 1600 — two massive armies locked in combat across a misty valley, banners bearing the Tokugawa hollyhock crest visible in the foreground, smoke rising from distant gunfire, the sheer scale and chaos of a battle that will decide the fate of Japan.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "When the dust settled, Japan had a new ruling order — and Honda Tadakatsu had survived to see it. More than a hundred engagements. Countless near-misses. Spears, arrows, and blades aimed at him more times than anyone could record. And through every single one of them… he never suffered a major wound.",
+      "image_prompt": "Honda Tadakatsu, now visibly older with streaks of grey beneath his iconic antlered helmet, standing in quiet contemplation on a hilltop overlooking a smoke-covered battlefield at sunset, his armor weathered but his posture as composed and upright as ever, the long shadow of his spear stretching across the ground.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "He spent his final years not on the battlefield, but governing the lands granted to him for his service — Kuwana, in Ise Province. The warrior who had once stared down armies now spent his days managing rice fields, settling disputes, and training the next generation of samurai. He died in 1610, peacefully, in his own home — an ending almost no warrior of his era was lucky enough to receive.",
+      "image_prompt": "An older Honda Tadakatsu in simple formal robes, no longer in armor, walking through terraced rice fields with local farmers and officials bowing respectfully nearby, mountains and a calm coastline visible in the background, warm late-afternoon light suggesting a rare and hard-earned retirement.",
+      "ken_burns": "pan_left",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "So how did a man survive over a hundred battles without a single serious wound? The answer isn't luck — and it isn't superhuman skill alone. Tadakatsu was famous for something rarer on the battlefield: restraint. He never sought personal glory in the chaos of combat. He read the flow of battle like a master reads a book, and struck only when the moment was exactly right.",
+      "image_prompt": "A contemplative close-up of Honda Tadakatsu's weathered face in profile, lit by soft firelight inside a quiet room, his eyes calm and focused as he carefully polishes the long blade of his spear Tonbogiri, the image emphasizing patience, discipline, and quiet mastery rather than aggression.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.79,
+        "y": 0.48
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "His legendary spear, Tonbogiri, and his antlered helmet are preserved in Japan to this day — silent witnesses to a career that should, by every law of probability, have ended in an early grave. Visitors still travel to see them, drawn by the same question that has followed Tadakatsu for four centuries: how does any human being survive that much war?",
+      "image_prompt": "A museum-like display in soft golden light showing a preserved long-bladed spear and an antlered samurai helmet resting on dark lacquered stands, fine dust motes drifting through a single beam of light, modern visitors in respectful silhouette observing from a short distance, bridging past and present.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Perhaps the real answer is this: Tadakatsu understood something that escaped so many of his contemporaries. Bravery without discipline gets men killed. But discipline without bravery never builds a legend. He found the razor-thin line between the two — and walked it, battle after battle, for nearly fifty years.",
+      "image_prompt": "A symbolic split composition: on one side, a reckless young warrior charging blindly into a wall of spears; on the other, Honda Tadakatsu standing with calm precision, his spear angled with perfect control, illustrating the razor-thin and decisive difference between recklessness and true battlefield mastery.",
+      "ken_burns": "static",
+      "character_ref": "honda_tadakatsu"
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Today, Honda Tadakatsu is remembered not simply as a warrior who survived, but as a symbol of what true mastery looks like — calm in the center of chaos, untouched in the heart of the storm. In a country built on the legends of fallen heroes, he remains something far rarer: a legend who simply… never fell.",
+      "image_prompt": "Honda Tadakatsu standing alone at the center of a vast, silent battlefield at dawn, mist rising around him, fallen banners and broken weapons scattered in the distance, sunlight breaking through the clouds to illuminate only him — untouched, unmarked, and utterly still amid the wreckage of a hundred battles.",
+      "ken_burns": "zoom_out",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 14,
+      "narration": "Next time on Samurai Chronicles: a man so brilliant that the most powerful warlord in Japan began to fear him. He held the keys to an empire — and then, deliberately, let it slip through his fingers. Why would the smartest strategist in the country choose to lose? The answer is stranger than you think.",
+      "image_prompt": "Kuroda Kanbei, a sharp-eyed strategist in dark formal robes, standing alone in a dim candlelit war room before a large map of Japan, his hand resting thoughtfully near a cluster of markers representing armies and provinces, his expression calculating and unreadable, the weight of an entire nation's future seemingly within his reach.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.39,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 12,
+      "narration": "If Honda Tadakatsu's story moved you, like and subscribe for more tales of Japan's greatest warriors — uploaded every single day. Until next time… stay sharp, stay disciplined, and we'll see you on the next chapter of Samurai Chronicles.",
+      "image_prompt": "A wide cinematic shot of a serene painted landscape of misty mountains and a lone torii gate at sunset, warm golden light fading into twilight, evoking a sense of closure and quiet anticipation for the next story.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/XDDPJXuPsYs",
+  "shorts_url": "https://youtu.be/zC4YuumOmoE",
+  "scheduled_at": "2026-06-16 03:00"
+}

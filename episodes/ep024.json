@@ -1,0 +1,262 @@
+{
+  "episode_id": "ep024",
+  "episode_title": "Ishida Mitsunari: The Loyal Bureaucrat Who Started a War",
+  "youtube_title": "Why Ishida Mitsunari Started a War He Knew He Would Lose | EP024",
+  "youtube_description": "He was not a warrior. He had never won a battle. Yet in 1600, Ishida Mitsunari raised the largest army in Japanese history and marched it against Tokugawa Ieyasu. He lost in six hours. But the reason he fought — and the smile he kept until the end — reveals something unforgettable about loyalty.\n\n⏱️ Chapters:\n0:00 Introduction\n0:29 He was a bureaucrat, not a\n0:51 Ishida Mitsunari was born in...\n1:45 Hideyoshi immediately took...\n2:31 But Mitsunari had a problem. He\n3:22 Then in August 1598, Toyotomi...\n4:23 Ieyasu began violating...\n5:17 In 1600, Ieyasu marched east to\n6:12 But from the beginning, the...\n7:06 October 20, 1600. The night...\n8:01 At eight in the morning on\n8:45 The Battle of Sekigahara...\n9:30 In the days before his...\n10:26 Tokugawa Ieyasu became Shogun...\n11:27 Japan has remembered Ishida...\n12:18 Here is what makes...\n13:11 Japan has a cultural...\n14:10 The tea story — the boy\n15:01 Ishida Mitsunari's head was...\n15:54 Next time on Samurai...\n16:24 If Ishida Mitsunari's loyalty...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Berry, Mary Elizabeth. Hideyoshi. Harvard University Press, 1982.\n2. Turnbull, Stephen. Sekigahara 1600: The Final Struggle for Power. Osprey Publishing, 2000.\n3. Sadler, A.L. The Maker of Modern Japan: The Life of Tokugawa Ieyasu. Tuttle Publishing, 1937.\n\n#IshidaMitsunari #Sekigahara #ToyotomiHideyoshi #SamuraiChronicles #JapaneseHistory",
+  "youtube_tags": [
+    "Ishida Mitsunari",
+    "Sekigahara",
+    "Toyotomi Hideyoshi",
+    "Tokugawa Ieyasu",
+    "Samurai Chronicles",
+    "Japanese History",
+    "Sengoku Period",
+    "Battle of Sekigahara",
+    "Japan History",
+    "Samurai"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "He was not a warrior. He had never won a battle. But on a foggy morning in 1600, Ishida Mitsunari raised the largest army Japan had ever seen against the most powerful man alive. He lost in six hours. Why did the most brilliant administrator of his age choose this — and what did he know that history took centuries to understand?",
+  "shorts_narration": "He was a bureaucrat. Not a warrior. He raised 120,000 men. Lost at Sekigahara in six hours. Captured. Executed. He never stopped smiling. Why did Ishida Mitsunari start a war he knew he'd lose?",
+  "thumbnail_prompt": "Ishida Mitsunari in black lacquered armor standing before a vast assembled army on a foggy battlefield at dawn, thin angular face composed and resolute, holding a war fan. Behind him, thousands of banners and soldiers disappear into morning mist. His expression is of a man at complete peace with a decision already made — the calm of someone who has chosen principle over survival. Sekigahara, October 1600.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He was a bureaucrat, not a warrior. He lost Japan's most decisive battle in six hours. And when they captured him, he was smiling. Who was Ishida Mitsunari?",
+      "image_prompt": "Ishida Mitsunari kneeling in formal capture, hands bound, black armor dust-covered after battle. Two Tokugawa samurai guard him on either side. Mitsunari's angular face is composed — not defeated, but clear-eyed and unexpectedly calm. The aftermath of Sekigahara visible in the misty background: fallen banners, scattered soldiers, the stillness after catastrophe.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "Ishida Mitsunari was born in 1560 in Omi Province — present-day Shiga Prefecture — the son of a minor samurai family. His path to power began with a cup of tea. According to the famous story, the young Mitsunari — around thirteen years old, serving at a temple — brought tea to the warlord Toyotomi Hideyoshi when he stopped to rest. He served it in three rounds: the first cup large and cool enough to drink quickly, the second smaller and warmer, the third small and hot. Hideyoshi was astonished. No servant had ever served tea with such studied care for the guest's needs.",
+      "image_prompt": "A traditional Japanese temple interior in the 1570s. A young Ishida Mitsunari — slight, precise, perhaps 13 years old — kneels before the powerful warlord Toyotomi Hideyoshi, presenting a bowl of tea with perfect formality. Hideyoshi, already a commanding figure in campaign dress, regards the boy with visible surprise and sharp interest. The scene captures the moment a brilliant mind recognizes another.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "Hideyoshi immediately took Mitsunari into his service. What followed was a meteoric rise built on a single quality: Mitsunari's administrative genius was without equal in Japan. He could coordinate the logistics of armies, manage complex taxation systems, organize census records, and plan supply chains for campaigns across the Korean straits — all with the precision of a man who experienced the world as a system to be optimized. By his thirties, he was one of the Go-Bugyo — the Five Magistrates who administered Hideyoshi's realm.",
+      "image_prompt": "Ishida Mitsunari in his 30s, in formal dark robes at a large writing desk covered in scrolls, documents, and maps. He writes with rapid precision, surrounded by assistants who wait for his instructions. His expression is one of total absorbed concentration — a mind at full speed. Hideyoshi's Osaka Castle visible through the open screens behind him. The scene radiates the quiet power of administrative mastery.",
+      "ken_burns": "pan_right",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "But Mitsunari had a problem. He was brilliant, and he could not hide that he knew it. He held other generals to the same standard of precision he held himself — and they reliably failed. He criticized Fukushima Masanori's battlefield decisions. He reported Kuroda Nagamasa's misconduct to Hideyoshi. He calculated outcomes coldly where other men reacted from pride. The samurai commanders who fought Hideyoshi's wars despised him. They called him a pen-pusher, a schemer, a man who had never held a spear. They were not entirely wrong.",
+      "image_prompt": "A tense confrontation at a military council in Osaka Castle. Ishida Mitsunari stands at one end of a long room presenting strategic documents, his expression precise and slightly contemptuous. Across the room, several samurai generals — including powerfully built warrior types — listen with barely concealed resentment. Some glare. The atmosphere bristles with the mutual incomprehension of administrators and fighters.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Then in August 1598, Toyotomi Hideyoshi died. He was sixty-two years old. On his deathbed, he entrusted his young son Toyotomi Hideyori — five years old — to the care of five regents, led by Tokugawa Ieyasu. Hideyoshi's last words were said to be a plea to Ieyasu to care for his son. Mitsunari heard those words. He had built his entire identity on serving Hideyoshi faithfully. The man was dead. The son remained. And Ieyasu was already moving.",
+      "image_prompt": "The deathbed scene of Toyotomi Hideyoshi in Fushimi Castle, 1598. The great warlord lies on a futon, aged and frail, surrounded by senior retainers. Ishida Mitsunari kneels close, face rigid with controlled grief. Tokugawa Ieyasu is visible across the room — composed, watchful, already calculating. The contrast between Mitsunari's grief and Ieyasu's stillness captures the moment the succession war began.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "Ieyasu began violating Hideyoshi's dying instructions almost immediately. He formed marriage alliances without the council's approval — technically forbidden. He received daimyo in private audiences, building personal loyalties. He positioned his allies in strategic domains. Mitsunari watched every move and documented each violation. He reported them to the council. The council did nothing. Ieyasu was too powerful, too careful, too liked. And Mitsunari — brilliant, cold, precise Mitsunari — was none of those things.",
+      "image_prompt": "Tokugawa Ieyasu in his distinctive armor and formal court robes receiving a daimyo visitor in his private quarters, the meeting clearly unofficial — warm, conspiratorial, a relationship being built outside of proper channels. Through a screen door in the background, partially visible, Ishida Mitsunari observes. His expression shows the frustration of a man watching rules be broken and powerless to stop it.",
+      "ken_burns": "pan_right",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "In 1600, Ieyasu marched east to punish a rebellious daimyo — leaving the west politically exposed. Mitsunari saw his moment. He spent weeks in furious correspondence, calling in favors, making promises, invoking Hideyoshi's memory. He assembled a coalition of daimyo who feared Ieyasu's growing dominance, and who remembered their loyalty to the Toyotomi house. The Western Army numbered over a hundred thousand men. Military men who had never respected Mitsunari now rode under his banner — not because they liked him, but because they had made the same calculation he had.",
+      "image_prompt": "Ishida Mitsunari at a writing desk late at night, surrounded by candles and stacked correspondence, writing letters with intense focus. Messengers come and go. Maps of Japan are spread before him, with markers indicating which daimyo have pledged to each side. His lean face is illuminated by candlelight — the face of a man building an army with documents, not swords.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "But from the beginning, the Western Army had a structural problem: its commanders did not respect their leader. Mitsunari had never commanded a large force in the field. Shimazu Yoshihiro, one of Japan's most fearsome warriors, was technically under his command and found it insulting. Ukita Hideie contributed forces but had his own agenda. Kobayakawa Hideaki — whose loyalty would prove critical — was already in contact with Ieyasu. Mitsunari had assembled an army built on a foundation of distrust, old grievances, and calculated self-interest. He probably knew it.",
+      "image_prompt": "The Western Army war council the night before Sekigahara — a tense gathering of powerful generals around a campfire and lanterns. Mitsunari speaks from a strategic map, gesturing with precision. The generals around him listen, but their postures express varying degrees of doubt, resentment, or distraction. Shimazu Yoshihiro sits apart. Kobayakawa is absent. The cracks in the coalition are visible in every face.",
+      "ken_burns": "zoom_out",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "October 20, 1600. The night before battle. Mitsunari walked the Western Army's positions in the fog and rain around the village of Sekigahara. He had done everything a man could do. He had written hundreds of letters. He had coordinated dozens of lords. He had positioned his forces with textbook precision on the high ground. Ieyasu's Eastern Army was below them in the valley. On paper, the West had more men. On paper, the position was favorable. Mitsunari had read every variable he could reach. He could not read the ones he couldn't.",
+      "image_prompt": "Ishida Mitsunari alone on a hilltop in rain and darkness the night before Sekigahara, October 1600. He looks out over the fog-filled valley below where lanterns of the Eastern Army flicker. His black armor gleams with rain. His expression is the opposite of confident — it is the face of a man who has done everything possible and knows that something beyond his control will decide tomorrow. The weight of history is visible in his stillness.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "At eight in the morning on October 21, 1600, the Battle of Sekigahara began. For the first hours, it was genuinely close — the Western Army's superior position gave them advantages Mitsunari had calculated correctly. Then, at around two in the afternoon, Kobayakawa Hideaki — whose forces held the decisive high ground on the western flank — received a signal shot from Ieyasu. He switched sides. Fifteen thousand men crashed into the Western Army's flank. In minutes, the coalition collapsed. What Mitsunari could not calculate was that the man he needed most had already been bought.",
+      "image_prompt": "The turning point at Sekigahara: a massive flanking force of soldiers pouring down a hillside in a charging assault, their armor and cloaks changing from dark (Western) to light (Eastern) colors mid-charge — no text, no written characters on any banners. In the valley below, Western Army troops scatter in chaos. From his command position to the right, Ishida Mitsunari watches — his face showing not panic but a terrible recognition, the expression of a man seeing the thing he feared most confirmed. His battle fan drops slightly. No written text anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "The Battle of Sekigahara lasted less than six hours. It had taken Mitsunari years to build. He fled into the mountains of Omi, his home province, pursued by Ieyasu's forces. He was found three days later hiding in a farmer's barn, cold, exhausted, feverish. The man who had administered half of Japan, coordinated two invasions of Korea, and raised the largest army of the era — was captured by farmers who recognized him. He was brought to Ieyasu in chains.",
+      "image_prompt": "Ishida Mitsunari hiding in the corner of a dark farmhouse barn, wrapped in a rough cloak, clearly feverish and exhausted. A lantern held by a farmer illuminates his face — angular, composed despite everything, recognizably the man from the wanted notices. Two armed Tokugawa samurai duck through the low doorway behind the farmer. The scene captures the impossible gap between what this man once was and where he has arrived.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "In the days before his execution, several things happened that became legend. When offered persimmons — considered harmful to the sick — Mitsunari declined, saying he needed his health for the execution, not for the persimmon. When a guard mocked him, saying the Toyotomi cause was finished and his loyalty pointless, Mitsunari replied: 'The greatest loyalty is to serve faithfully even when the cause is lost. What would you know of that?' He was executed in Kyoto on November 6, 1600, at the age of forty. The accounts say he faced it without flinching.",
+      "image_prompt": "Ishida Mitsunari in his final hours — seated in dignified captivity in Kyoto, formal black robes, wrists bound but posture as upright as ever. A guard or official stands over him making some remark. Mitsunari's expression is one of complete composure mixed with a faint, genuine smile — a man who finds something almost amusing in the situation, who has made his peace absolutely. The scaffold is visible through the open doorway behind him.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "Tokugawa Ieyasu became Shogun in 1603 and established the dynasty that would rule Japan for 265 years. The Toyotomi house survived another fifteen years, until Ieyasu destroyed it at the Siege of Osaka in 1615. Young Hideyori, the boy Mitsunari had given everything to protect, died in that siege at age twenty-three. The cause for which Mitsunari had sacrificed his life was ultimately lost in full. Ieyasu had won every possible victory. Mitsunari had been correct that the Tokugawa meant to take everything. He had simply been unable to stop it.",
+      "image_prompt": "Tokugawa Ieyasu in formal ceremonial robes, seated in the position of Shogun in Edo Castle's great hall, 1603. Rows of daimyo bow before him in formal acknowledgment. The scene is orderly, majestic, and final — the new order of Japan made visible. In the extreme foreground, out of focus, lies a small scroll that might be a final report from a dead administrator — the last document Mitsunari never delivered.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "Japan has remembered Ishida Mitsunari in complicated ways. For centuries, the Tokugawa narrative cast him as a scheming villain — the man who had disrupted peace for personal ambition. But modern Japanese scholarship has reassessed him significantly. His administrative records survive and are remarkable. His correspondence shows a man genuinely committed to Hideyoshi's legacy and to the Toyotomi cause. The question historians now ask is not whether Mitsunari was loyal — the evidence is overwhelming that he was — but whether loyalty itself can be a tragic flaw.",
+      "image_prompt": "A museum display case in modern Japan containing historical documents — Mitsunari's administrative records, correspondence, the famous conscription lists for Sekigahara. A scholar stands before the display, studying the documents with careful attention. The scene represents the ongoing historical rehabilitation of a man whose complexity was long oversimplified by his conquerors' narrative.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Here is what makes Mitsunari's story genuinely difficult: he was probably right about Ieyasu. Every violation of Hideyoshi's final instructions that Mitsunari documented was real. Ieyasu was systematically building personal power at the Toyotomi house's expense. The Western coalition's fears were not paranoid — they were accurate. But being right about the diagnosis did not help when the treatment failed. Mitsunari knew what was coming. He chose to resist it anyway. Whether that makes him heroic or foolish depends on what you think loyalty is worth.",
+      "image_prompt": "Ishida Mitsunari alone in contemplation, perhaps the night before the campaign — sitting at his writing desk with documents of Ieyasu's treaty violations laid out before him. His lean face is profoundly thoughtful rather than angry. He has read the evidence. He knows what it means. He knows what he will do. The scene captures a man making the most consequential decision of his life with complete clarity and complete resignation.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Japan has a cultural tradition of honouring those who fight losing causes with complete commitment. Yoshitsune, Saigo, Kusunoki Masashige — the roll call of noble failures is long and cherished. Mitsunari fits this tradition imperfectly, because he was not a warrior-hero. He was an accountant who chose to die for his employer's son. Japan has found that both more confusing and, quietly, more moving. The samurai ideals of the period were largely built around the martial. Mitsunari lived them through the administrative — and died for them just as absolutely.",
+      "image_prompt": "A montage of Japan's tragic loyal figures rendered as paintings: Kusunoki Masashige at Minatogawa, Sanada Yukimura at Osaka, Saigo Takamori at Shiroyama — and among them, Ishida Mitsunari at his writing desk, sword set aside. The juxtaposition of the soldier-heroes and the scholar-martyr captures Japan's complicated relationship with this particular kind of loyalty.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "The tea story — the boy who served Hideyoshi three perfect cups — has been told in Japan for four hundred years. It survives because it captures something true about Mitsunari: he thought carefully about what the person before him needed and provided it without being asked. That quality made him an extraordinary administrator. It also made him inflexible when the person he was serving was dead, and the cause he was serving had already been lost before the battle began. He was the perfect servant to a man who no longer existed, fighting for a house that would fall regardless.",
+      "image_prompt": "Ishida Mitsunari as a young boy again — the tea scene from S02, but now seen from a different angle: Hideyoshi's face in close-up as he takes the first, then second, then third cup, his expression shifting from surprise to recognition to something like awe. The moment a great man understood what kind of mind he had found. And in the background, barely visible, the young Mitsunari watches his master with the same quiet intensity he will maintain his entire life.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Ishida Mitsunari's head was displayed on a bridge in Kyoto after his execution, as was custom. Within a generation, his administrative records were being quietly consulted by Tokugawa officials trying to understand how Hideyoshi's system had worked so well. Within a century, he was being written about with sympathy. Today, in Nagahama in Shiga Prefecture — his home province — there is a festival in his honor each year. The bureaucrat who started a war and lost it has outlasted, in popular memory, most of the warriors who defeated him.",
+      "image_prompt": "Modern Nagahama City in Shiga Prefecture — a shrine or memorial to Ishida Mitsunari, well-maintained, with fresh flowers. Festival preparations visible in the background. Locals pass by with quiet familiarity. The scene bridges four centuries — the man executed on a Kyoto bridge now honored annually in his home town. The persistence of his memory in the place that knew him best.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles — two generals. Sixty years of rivalry. Five battles that never produced a winner. Takeda Shingen and Uesugi Kenshin fought each other for decades and neither could finish it. What does the most famous military rivalry in Japanese history tell us about what war is really for?",
+      "image_prompt": "A dramatic split composition: on the left, Takeda Shingen in his distinctive dark armor with crimson fur cloak, war fan raised, expression commanding and calculating. On the right, Uesugi Kenshin in white robes over black armor, tessen held loosely, expression of absolute calm. Between them, the misty Kawanakajima plain stretches into fog. Two equal forces, two equal minds, forever opposed.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If Ishida Mitsunari's loyalty — and the question of what it was worth — stayed with you, subscribe for new episodes every week. Japan's greatest stories live in the space between winning and being right.",
+      "image_prompt": "The Samurai Chronicles channel logo against a deep black background with subtle crimson and gold Japanese design elements. Clean, cinematic, professional.",
+      "ken_burns": "static",
+      "character_ref": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/TemJZxs-Dm4",
+  "shorts_url": "https://youtu.be/_AP0GLhbPmc",
+  "scheduled_at": "2026-06-09 03:00"
+}

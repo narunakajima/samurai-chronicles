@@ -1,0 +1,239 @@
+{
+  "episode_id": "ep028",
+  "episode_title": "Tomoe Gozen: The Warrior Japan Tried to Forget",
+  "youtube_title": "The Real Reason Japan Tried to Erase Its Greatest Female Warrior — Tomoe Gozen | EP028",
+  "youtube_description": "She rode into battle beside Japan's most doomed general — and vanished from history at the height of her legend. This is the true story of Tomoe Gozen, the woman chronicles called \"a match for a thousand warriors.\"\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 She rode into her final battle\n0:42 The year is 1180. Japan is\n1:25 The Tale of the Heike —\n1:58 Tomoe wasn't a symbolic...\n2:29 By 1183, Yoshinaka's gamble...\n2:58 But triumph curdled into...\n3:29 In early 1184, Yoshitsune led an\n3:57 The two armies collided near...\n4:30 As the battle collapsed...\n4:58 Then Yoshinaka turned to her —\n5:26 Tomoe rode away. Minutes...\n5:51 And then Tomoe Gozen simply...\n6:17 Later legends tried to fill the\n6:49 Here's the strangest twist:...\n7:14 That absence has fueled...\n7:39 What we do know is that\n8:09 Real or embellished, Tomoe...\n8:41 Maybe that's the real meaning of\n9:08 Next time on Samurai...\n9:35 If Tomoe Gozen's story moved you\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. McCullough, Helen Craig (trans.). The Tale of the Heike. Stanford University Press, 1988.\n2. Turnbull, Stephen. Samurai Women 1184-1877. Osprey Publishing, 2010.\n3. Tyler, Royall (trans.). The Tale of the Heike. Penguin Classics, 2012.\n\n\n🎵 Music: A Piano and Choir Journey by Matio888 (freesound.org) — CC BY 4.0\n#TomoeGozen #FemaleSamurai #OnnaBugeisha #SamuraiChronicles #JapaneseHistory",
+  "youtube_tags": [
+    "Tomoe Gozen",
+    "Female Samurai",
+    "Onna-Musha",
+    "Genpei War",
+    "Minamoto Yoshinaka",
+    "Samurai Chronicles",
+    "Japanese History",
+    "Heian Period",
+    "Female Warrior",
+    "Samurai"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "On a frozen battlefield by Lake Biwa, a woman dragged an enemy commander from his horse and took his head — then heard her own lord beg her to flee while he stayed behind to die. Why send away your fiercest warrior?",
+  "shorts_narration": "One battle. One severed head. One impossible order: leave me to die. Tomoe Gozen rode beside Japan's doomed general — fearless, deadly, and almost erased from history. This is her story.",
+  "thumbnail_prompt": "A fierce female samurai in dark lacquered armor astride a galloping black warhorse on a misty battlefield at dawn near a lake, gripping a long naginata in one hand, her expression calm and lethal, distant burning banners and silhouetted warriors in the background, dramatic cinematic lighting",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "She rode into her final battle holding an enemy's severed head. Some say she never existed at all. So how did Tomoe Gozen become Japan's most legendary female warrior?",
+      "image_prompt": "A female warrior in dark samurai armor sits mounted on a galloping warhorse mid-stride across a misty battlefield at dawn, her right hand raising a severed head by the hair high for the viewer to see, her left hand gripping the reins and a blood-streaked naginata laid across the saddle, her face calm and resolute, distant fires and fallen banners behind her",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "The year is 1180. Japan is being torn apart. Two warrior clans — the Taira and the Minamoto — are locked in a war that will decide who rules the country. Among the Minamoto commanders is a young general named Yoshinaka, cousin to the war's eventual victors. And riding at his side, in full armor, with bow and blade, is a woman the chronicles call Tomoe Gozen.",
+      "image_prompt": "Wide aerial view of feudal Japan torn by civil war — two armies of samurai clash across a misty valley beneath mountain ridges, banners bearing the Taira and Minamoto crests visible amid smoke and chaos, twelfth century Heian-period battlefield",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "The Tale of the Heike — Japan's great war chronicle — describes her in striking terms: extraordinarily beautiful, with white skin and long hair, and yet \"a fighter worth a thousand, ready to confront a demon or a god.\" She could ride the wildest horses down the steepest slopes. With bow or sword, few men dared face her.",
+      "image_prompt": "Close portrait of a striking female samurai in dark lacquered armor, long black hair framing an intense focused face, gripping a longbow, standing beside a powerful black warhorse at the edge of a war camp at dusk",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomoe_gozen",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 18,
+      "narration": "Tomoe wasn't a symbolic figure kept far from danger. She rode at the front of Yoshinaka's army as one of his commanders — leading men into battle, not behind them. In an age when women were expected to remain inside castle walls, she stood in the open field, armored, armed, and utterly unafraid.",
+      "image_prompt": "Tomoe Gozen rides at the front of a column of mounted samurai, armored and armed with a naginata, leading men into formation across an open plain, her posture commanding and unflinching, soldiers behind her watching her with respect",
+      "ken_burns": "pan_right",
+      "character_ref": "tomoe_gozen",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "By 1183, Yoshinaka's gamble was paying off. His forces swept into the Taira heartlands, crushed their armies in the mountain passes, and marched triumphantly into the imperial capital, Kyoto. For a brief moment, the cousin from the provinces controlled the most powerful city in Japan.",
+      "image_prompt": "Minamoto no Yoshinaka's victorious army marches triumphantly through the gates of Kyoto, banners flying, crowds of nobles and commoners watching from the streets with a mixture of awe and unease, golden temple rooftops in the background",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "But triumph curdled into disaster. Yoshinaka's soldiers looted the capital, alienating the court that had once welcomed them. Worse, his own cousins — Minamoto no Yoritomo and his brilliant younger brother Yoshitsune — saw a rival, not an ally. Within months, the Minamoto were turning their swords on each other.",
+      "image_prompt": "Soldiers loot a noble residence in Kyoto at night, fires burning in the background, while in the foreground two armored Minamoto commanders exchange a tense suspicious glance, symbolizing the rift forming between cousins and rivals",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "In early 1184, Yoshitsune led an army south toward Kyoto — not to fight the Taira, but to destroy his own cousin. Yoshinaka's forces, worn down by months of campaigning and abandoned by allies, scrambled to defend a capital that no longer wanted them.",
+      "image_prompt": "An army of samurai marches south along a misty mountain road toward Kyoto under grey winter skies, banners bearing the Minamoto crest, the mood grim and purposeful, a young general riding at the head of the column",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "The two armies collided near Lake Biwa, at a place called Awazu. Yoshinaka's force, once thousands strong, had shrunk to a handful of loyal riders. Among them — refusing every order to flee — was Tomoe Gozen, mounted, armored, and ready to die beside the man she served.",
+      "image_prompt": "On a frozen battlefield near a misty lake at dawn, a small band of exhausted samurai forms a defensive ring around their lord, Tomoe Gozen among them on horseback with naginata raised, her expression calm despite overwhelming enemy numbers approaching in the distance",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomoe_gozen",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 18,
+      "narration": "As the battle collapsed around them, a famous warrior named Onda no Hachiro Moroshige rode at her, boasting of the trophy her head would make. Tomoe spurred her horse alongside his, seized him by the collar, dragged him from his saddle — and took his head as her own.",
+      "image_prompt": "Tomoe Gozen on horseback grips an enemy samurai by the collar of his armor, dragging him from his saddle in mid-charge, her naginata discarded, fierce determination on her face, both warriors caught in a violent blur of motion on the battlefield",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomoe_gozen",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "Then Yoshinaka turned to her — not with an order to fight, but to live. \"It would shame me,\" he told her, \"to die with a woman at my side.\" He commanded her to leave the battlefield while she still could — to carry his name forward, even if his body would not survive the day.",
+      "image_prompt": "Minamoto no Yoshinaka, exhausted and wounded, turns on horseback to speak urgently to Tomoe Gozen riding beside him on a smoke-filled battlefield, his expression pleading, hers stricken with refusal, both armored with swords drawn, chaos raging around them",
+      "ken_burns": "static",
+      "character_ref": "tomoe_gozen",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 18,
+      "narration": "Tomoe rode away. Minutes later, surrounded and exhausted, Minamoto no Yoshinaka was killed — struck down in a frozen rice paddy, the dream of ruling Japan ending in mud and blood, on the last day of his brief reign over Kyoto.",
+      "image_prompt": "Minamoto no Yoshinaka falls from his horse in a frozen rice paddy, surrounded by enemy soldiers, his banner collapsing into the mud beside him, the brief glory of his rule over Kyoto ending in a single desperate moment",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "And then Tomoe Gozen simply disappears from the war record. No triumphant return, no recorded death in battle. The greatest female warrior of the Genpei War vanishes from history at the exact moment her story should have continued.",
+      "image_prompt": "An empty battlefield at dusk, mist rising from a frozen lake, abandoned armor and broken banners scattered across the mud, no bodies or survivors visible, an eerie sense of absence and unanswered questions",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 18,
+      "narration": "Later legends tried to fill the silence. One account claims she became a Buddhist nun, praying for Yoshinaka's soul until her death. Another insists she was captured, married to a rival samurai who admired her courage, and bore him a son who became a famous warrior in his own right. A darker version says she drowned herself rather than live without her lord.",
+      "image_prompt": "A triptych-like composition showing three faint silhouettes of the same female warrior in different settings — kneeling in a Buddhist temple, standing beside a rival samurai with hand extended toward her, and alone at the edge of dark water — representing competing legends of her fate",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Here's the strangest twist: many historians aren't even certain Tomoe Gozen existed. She appears vividly in the Tale of the Heike — a literary chronicle written generations later — but almost not at all in the more contemporary historical record, the Azuma Kagami.",
+      "image_prompt": "An ancient illustrated war scroll lies open on a wooden table beside a bare desk where another plainer historical record sits closed and untouched, candlelight illuminating the contrast between vivid legend and sparse historical record",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "That absence has fueled centuries of debate. Was she a real commander, omitted from official records because a woman in battle embarrassed later chroniclers? Or was she invented — a vivid character added to make Yoshinaka's tragic fall even more poignant?",
+      "image_prompt": "A Heian-era court scribe sits at his writing desk, brush poised over a blank scroll, hesitating, his expression conflicted, as though deciding whether to record or omit the deeds of a woman in battle",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "What we do know is that Tomoe Gozen wasn't an isolated fantasy. Female warriors — onna-musha — appear throughout Japan's early medieval wars, trained in spear and blade to defend their households when the men marched off to fight. Whether or not Tomoe herself rode at Awazu, women like her almost certainly did.",
+      "image_prompt": "A group of armored Japanese women trains with naginata and bows in the courtyard of a fortified manor house, defending their home while distant smoke signals approaching war, illustrating the real tradition of onna-musha female warriors",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Real or embellished, Tomoe Gozen became something larger than a single life. She inspired Noh plays, woodblock prints, and centuries of retellings — an image of fearless devotion that outlasted the empire she fought to defend, carved into Japan's cultural memory long after her name vanished from the official record.",
+      "image_prompt": "A grand Edo-period woodblock print and a Noh theater stage shown side by side, both depicting the same legendary female warrior in dramatic battle pose, illustrating how her image was preserved and reimagined through centuries of Japanese art and performance",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 18,
+      "narration": "Maybe that's the real meaning of her story. In an age that wrote women out of its battles, one name refused to disappear completely — surviving not in a grave or a record, but in the memory of everyone who refused to forget her.",
+      "image_prompt": "A solitary warrior's silhouette stands atop a misty hillside overlooking a quiet lake at sunset, faceless and timeless, her armor catching the last light of day, an image representing memory outlasting record",
+      "ken_burns": "static",
+      "character_ref": "tomoe_gozen",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 18,
+      "narration": "Next time on Samurai Chronicles: a warrior who fought in over a hundred battles across forty years of war — and never once suffered a serious wound. They called him the demon of Tokugawa's army. How does a man survive a hundred battlefields without bleeding? That story is next.",
+      "image_prompt": "A heavily armored samurai commander stands resolute on a smoke-filled battlefield, countless arrows embedded harmlessly in his armor and banner, his expression calm and unshaken after decades of relentless warfare, dramatic golden light breaking through the smoke behind him",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 18,
+      "narration": "If Tomoe Gozen's story moved you — the warrior who refused to be forgotten — subscribe to Samurai Chronicles for new episodes on Japan's greatest figures, every single day.",
+      "image_prompt": "A wide cinematic view of a misty Japanese battlefield at sunrise, a lone female warrior's silhouette riding into the distance toward the horizon, her legend fading into legend and memory, warm golden light spreading across the land",
+      "ken_burns": "static",
+      "character_ref": "tomoe_gozen",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.35
+      }
+    }
+  ],
+  "bgm_source": "BGM/ep006-BGM.mp3",
+  "youtube_url": "https://youtu.be/bp7x3ohwOEE",
+  "shorts_url": "https://youtu.be/Bx_X-Bqk13w",
+  "scheduled_at": "2026-06-13 03:00"
+}
