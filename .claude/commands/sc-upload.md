@@ -58,6 +58,25 @@ python3 $HOME/samurai-chronicles/sc_sns_up.py --episode ep{NNN} --publish-at "20
   ※ 指定日時まで非公開状態です。YouTube Studio で確認できます。
 ```
 
+## STEP 4 — コミット・プッシュ
+
+アップロード成功後、このエピソードの制作物をまとめて1コミットとして記録する。
+
+```bash
+git add episodes/ep{NNN}.json characters/*.txt bgm_library.json topics_queue.json
+git commit -m "$(cat <<'EOF'
+feat: ep{NNN}（{person}）を制作・アップロード
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+EOF
+)"
+git push
+```
+
+- `characters/*.txt` は今回新規追加されたキャラクター定義のみが対象（既存キャラのみの場合は変更なしなので自動的に含まれない）
+- コミット対象に変更がない場合（すでにコミット済みの場合）はスキップする
+- push 失敗時（リモートが進んでいる等）はユーザーに状況を報告し、対応を確認する
+
 ---
 
 ## 自動処理: キャラクタープレイリスト管理
