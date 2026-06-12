@@ -582,22 +582,28 @@ def shorts_hook_text_filter(lines: list) -> str:
     return ",".join(parts)
 
 
-def shorts_caption_for_clip(narration: str, audio_dur: float, clip_idx: int) -> str:
-    """グローバルタイムライン位置を考慮した1ワード字幕フィルターを返す。"""
+def shorts_caption_for_clip(narration: str, audio_dur: float, clip_idx: int, max_clip_idx: int) -> str:
+    """グローバルタイムライン位置を考慮した1ワード字幕フィルターを返す。
+
+    各ワードは「中心時刻が属するクリップ」にのみ1回だけ表示する
+    （クリップ間のクロスフェード重複区間で同じワードが2回表示されるのを防ぐ）。
+    """
     raw_words = [w for w in narration.replace("—", "-").split() if w]
     words = [_safe_word(w) for w in raw_words if _safe_word(w)]
     if not words:
         return ""
 
     word_dur = audio_dur / len(words)
-    clip_start_g = clip_idx * (SHORTS_CLIP_DURATION - SHORTS_XFADE)
-    clip_end_g   = clip_start_g + SHORTS_CLIP_DURATION
+    stride = SHORTS_CLIP_DURATION - SHORTS_XFADE
+    clip_start_g = clip_idx * stride
 
     parts = []
     for i, word in enumerate(words):
         g_start = i * word_dur
         g_end   = g_start + word_dur
-        if g_end <= clip_start_g or g_start >= clip_end_g:
+        g_mid   = (g_start + g_end) / 2
+        owner_clip = min(int(g_mid // stride), max_clip_idx)
+        if owner_clip != clip_idx:
             continue
         local_start = round(max(0.0, g_start - clip_start_g), 3)
         local_end   = round(min(SHORTS_CLIP_DURATION, g_end - clip_start_g), 3)
@@ -1027,6 +1033,7 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
 
             s_clips = []
             clip_idx = 0
+            max_clip_idx = len(selected_s) - 1
             for scene in selected_s:
                 sid    = scene["scene_id"]
                 effect = scene.get("ken_burns", "zoom_in")
@@ -1038,7 +1045,7 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 if clip_idx == 0:
                     overlay = shorts_hook_text_filter(hook_lines)
                 else:
-                    overlay = shorts_caption_for_clip(shorts_narration, narr_dur, clip_idx)
+                    overlay = shorts_caption_for_clip(shorts_narration, narr_dur, clip_idx, max_clip_idx)
                 out_clip = tmp / f"s_clip_{sid:02d}.mp4"
                 make_shorts_clip(img, out_clip, effect, overlay)
                 s_clips.append(out_clip)

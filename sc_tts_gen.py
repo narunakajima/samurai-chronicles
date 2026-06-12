@@ -177,8 +177,10 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
             print(f"(リトライ {attempt}/{max_retries - 1} / {wait}秒待機) ", end="", flush=True)
             time.sleep(wait)
     if last_audio_data is not None:
-        print("  ⚠️ リトライ後も繰り返しの疑いが残るため、最後の結果を使用します ", end="", flush=True)
-        return last_audio_data
+        raise RuntimeError(
+            f"全{max_retries}回のテイクが繰り返し疑い（想定上限{max_dur:.1f}s超）でした。"
+            "再実行してください。"
+        )
     raise RuntimeError("音声データが返ってきませんでした（全リトライ失敗）")
 
 

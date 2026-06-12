@@ -1,0 +1,250 @@
+{
+  "episode_id": "ep037",
+  "episode_title": "How Pride Destroyed Japan's Most Powerful Clan: The Taira's Fatal Downfall",
+  "youtube_title": "The Real Reason Taira no Kiyomori's Empire Collapsed in Just Four Years",
+  "youtube_description": "He ruled an empire with no crown of his own — and four years after his death, his entire bloodline was annihilated. This is the true story of Taira no Kiyomori, the first warrior to rule imperial Japan, and the pride that doomed everything he built.\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 He ruled an empire with no\n0:41 For centuries, the Fujiwara...\n1:45 That family was the Taira —\n2:39 In 1156, that opportunity...\n3:38 The answer came just three years\n4:41 With the Minamoto destroyed,...\n5:35 Then Kiyomori reached for the...\n6:40 The cracks appeared in 1177. A\n7:37 Two years later, Kiyomori...\n8:28 The backlash came almost...\n9:27 At the Fujikawa River in late\n10:29 In the spring of 1181, Kiyomori\n11:28 As death approached, Kiyomori...\n12:20 At the moment Taira no Kiyomori\n12:55 Kiyomori's son and successor,...\n13:53 By 1183, the unthinkable had...\n14:43 The end came in 1185, at\n15:41 So was Taira no Kiyomori a\n16:38 Pride had destroyed an empire...\n17:20 Taira no Kiyomori spent a...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. The Tale of the Heike (Heike Monogatari), translated by Helen Craig McCullough, Stanford University Press\n2. The Cambridge History of Japan, Vol. 3: Medieval Japan, edited by Kozo Yamamura\n3. Hurst, G. Cameron III, \"Insei: Abdicated Sovereigns in the Politics of Late Heian Japan, 1086-1185\"\n\n\n🎵 Music: A Piano and Choir Journey by Matio888 (freesound.org) — CC BY 4.0\n#TairaNoKiyomori #SamuraiHistory #HeianPeriod #JapaneseHistory #GenpeiWar #AncientJapan",
+  "youtube_tags": [
+    "Taira no Kiyomori",
+    "Samurai History",
+    "Heian Period",
+    "Japanese History",
+    "Genpei War",
+    "Ancient Japan",
+    "Japanese Warlords",
+    "Heike Monogatari"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 7,
+  "teaser_narration": "Summer, 1181. The most powerful man in Japan lay dying — his body burning so hot that water turned to steam on contact. The court watched in terror. What had this man done to deserve such an end?",
+  "shorts_narration": "1181. Japan's most powerful man dies screaming, his body on fire. Within four years, his entire clan is annihilated. He once ruled emperors. This is Taira no Kiyomori — and his pride destroyed everything.",
+  "thumbnail_prompt": "Taira no Kiyomori standing in dark Heian court robes atop a high palace balcony at night, storm clouds gathering over Kyoto below, an empty imperial throne visible in the dim hall behind him, dramatic red and black lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He ruled an empire with no crown of his own. Four years after his death, his entire bloodline was annihilated. What did Taira no Kiyomori do to bring his own family's destruction?",
+      "image_prompt": "Taira no Kiyomori standing alone on a high palace balcony overlooking Kyoto at night, an empty imperial throne glowing faintly in the dark hall behind him, storm clouds rolling overhead, his expression cold and commanding.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "For centuries, the Fujiwara clan had ruled Japan from behind the throne — not through armies, but through marriage. Emperors were puppets, manipulated by aristocrats who never lifted a weapon. Warriors existed only to serve, hunting bandits and guarding borders, never touching the machinery of real power. The court in Kyoto considered the military class beneath them — useful, but never equal. For nearly four hundred years, this arrangement held. But by the twelfth century, the Fujiwara's grip was weakening — and one warrior family from the west was about to shatter every rule of who was allowed to rule Japan.",
+      "image_prompt": "Grand Heian-era imperial court hall, ornately robed Fujiwara aristocrats surrounding a young child emperor on a raised dais like a puppet, while plainly armored warriors stand humbly near the entrance doors in the shadows, golden candlelight.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "That family was the Taira — and their rising star was Taira no Kiyomori, born in 1118. Rumors swirled that Kiyomori was not the son of a mere clan lord, but the secret child of a retired emperor — a rumor Kiyomori never denied. True or not, it gave him something rare: a sense that he belonged closer to the throne than any warrior before him. The Taira controlled western Japan's trade routes, growing wealthy from commerce with Song China. Kiyomori inherited not just land and soldiers, but ambition on an imperial scale — and an opportunity Kyoto's aristocrats never saw coming.",
+      "image_prompt": "A younger Taira no Kiyomori standing on a wooden harbor pier in western Japan, tall Song Chinese trading ships with billowing sails anchored behind him, red Taira clan banners with the butterfly crest snapping in the wind, golden afternoon light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1156, that opportunity arrived. A succession crisis split the imperial family in two, each side raising warriors for support. Kiyomori threw the Taira behind Emperor Go-Shirakawa — alongside another rising warrior, Minamoto no Yoshitomo. Together, they crushed the rebellion in a single night of fighting, the Hogen Rebellion. For the first time, two warrior clans had decided who would rule Japan — not the aristocracy. Kiyomori returned to Kyoto a hero, rewarded with land, titles, and the gratitude of an emperor. But an uneasy question now hung over the capital: who would the warriors serve next — themselves?",
+      "image_prompt": "Night battle scene during the Hogen Rebellion, a palace gate engulfed in flames, Taira no Kiyomori charging forward on horseback at the head of his troops, swords and torches lighting up the chaos, smoke and embers filling the air.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.73,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The answer came just three years later. In 1159, rivalry between Kiyomori and his former ally Yoshitomo exploded into open war — the Heiji Rebellion. Kiyomori struck first and struck hard. Yoshitomo was hunted down and killed, his clan shattered. His young sons, Yoritomo and Yoshitsune, were captured — and by all logic, should have been executed on the spot. Instead, Kiyomori spared them, exiling the boys instead. It was an act of mercy, or perhaps simple confidence. Kiyomori believed no Minamoto child could ever threaten him. That single decision would become the most expensive mistake of his life.",
+      "image_prompt": "Taira no Kiyomori standing victorious over a fallen Minamoto banner on a smoke-filled battlefield at dusk, defeated enemy soldiers kneeling under guard in the background, Kiyomori looking down at them with a calculating, dismissive expression, smoke and firelight illuminating the scene.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "With the Minamoto destroyed, Kiyomori's rise became unstoppable. In 1167, he achieved something no warrior had ever done: he was appointed Daijo Daijin — Chancellor of Japan, the highest civil rank in the empire. He filled the court with Taira relatives — sons, nephews, cousins — until a popular saying spread through Kyoto: 'those who are not Taira are not human.' The aristocracy that had once looked down on warriors now bowed to one. Kiyomori had not overthrown the imperial system. He had simply climbed inside it — and made it his own.",
+      "image_prompt": "Taira no Kiyomori seated on an elevated chancellor's dais in full black and red court robes, a grand hall filled with rows of bowing Taira clansmen wearing matching ceremonial robes, golden light streaming through tall wooden pillars.",
+      "ken_burns": "static",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.21,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Then Kiyomori reached for the one thing beyond even a Chancellor's grasp — the throne itself. His daughter, Tokuko, married Emperor Takakura. In 1180, their son — Kiyomori's own grandson — became Emperor Antoku at just two years old. For the first time in Japanese history, a warrior was grandfather to a reigning emperor. Kiyomori now stood above generals, above nobles, above the court itself — answerable to no one. He had achieved what no samurai before him had even imagined. But absolute power had made him something else, too: untouchable, and dangerously alone.",
+      "image_prompt": "Taira no Kiyomori standing behind a tiny child emperor seated on an ornate imperial throne, his hand resting possessively on the edge of the throne, rows of court nobles bowing deeply on the floor below, dim golden light and red drapery.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "The cracks appeared in 1177. A group of court nobles and monks, furious at Taira dominance, secretly plotted Kiyomori's downfall — the Shishigatani Conspiracy. Kiyomori discovered the plot before it could begin. His response was swift and merciless: conspirators were executed, exiled, or stripped of everything they owned, regardless of rank or reputation. Men who once dined with emperors were dragged from their homes in chains. The message was unmistakable — no one, not even the highest nobility, was safe from Kiyomori's wrath. Fear replaced respect across Kyoto. And fear, Kiyomori was about to learn, does not make loyal subjects.",
+      "image_prompt": "Taira no Kiyomori in red-laced samurai armor standing rigidly in a torch-lit courtyard, soldiers dragging chained court nobles in fine robes away into the darkness behind him, his face lit by harsh red firelight, an atmosphere of dread.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "Two years later, Kiyomori crossed a line no warrior ever had. In 1179, he placed the retired Emperor Go-Shirakawa — the very sovereign he once fought to protect — under armed house arrest. Then, in 1180, he forced the entire imperial court to abandon Kyoto and relocate to Fukuhara, his own power base on the coast. Nobles, monks, and commoners alike were uprooted from the city their families had called home for centuries. Kiyomori had built the most powerful position any warrior had ever held. And in doing so, he had turned every class of Japanese society against him at once.",
+      "image_prompt": "Taira no Kiyomori on horseback overseeing a long, miserable procession of court nobles and ox-carts leaving Kyoto along a coastal road toward Fukuhara, the old capital fading into mist behind them, grey overcast sky.",
+      "ken_burns": "pan_left",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.33,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The backlash came almost immediately. In the spring of 1180, an exiled prince issued a call to arms against the Taira — and it reached a man living quietly in exile in the eastern provinces: Minamoto no Yoritomo, the boy Kiyomori had spared twenty years earlier. Yoritomo raised the Minamoto banner once again. Kiyomori dismissed the threat — a minor uprising from a defeated clan's leftover son, nothing more. He sent a Taira army east to crush it without concern. The man Kiyomori had let live as a child was about to remind him exactly why mercy can be dangerous.",
+      "image_prompt": "Minamoto no Yoritomo, now a grown warrior in modest armor, standing before a small gathering of loyal samurai around a campfire in a remote forest clearing at dusk, raising a white Minamoto banner against a darkening sky.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "At the Fujikawa River in late 1180, the Taira army camped for the night, expecting an easy victory. Then, in the darkness, a flock of waterfowl burst into flight — the sudden roar of wings sounding exactly like a cavalry charge. Panic swept the camp. Soldiers fled without a single arrow being fired, abandoning weapons and horses in their retreat. It was a humiliation — and an omen the superstitious capital could not ignore. Back in Kyoto, Kiyomori, now gravely ill, received the news of the rout. The empire he had spent his life building was beginning, for the first time, to slip.",
+      "image_prompt": "Chaotic nighttime military camp beside a river, hundreds of startled waterfowl bursting into flight over the water, terrified samurai soldiers scrambling away in panic abandoning banners, spears, and armor scattered across the ground, moonlight.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "In the spring of 1181, Kiyomori fell into a violent fever. According to the Heike Monogatari, his body burned so hot that water poured over him to cool his skin instantly turned to steam, never reaching him. Servants who tried to approach were driven back by the heat radiating from his bed. To a court that already believed Kiyomori had angered the heavens — by imprisoning a retired emperor and overseeing the burning of sacred temples in Nara — there was only one explanation. This was not illness. This was divine punishment, arriving exactly as the warnings had predicted.",
+      "image_prompt": "Taira no Kiyomori lying on a futon in a dim, candlelit mansion room, steam rising violently from water splashed near his burning body, terrified servants recoiling against the walls in shadow, an eerie red glow surrounding the bed.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.46,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "As death approached, Kiyomori reportedly refused all Buddhist funeral rites — unusual for a man of his era. Instead, according to legend, his final request was defiant to the end: bury me without ceremony, he is said to have demanded, and send no prayers after me — only the heads of my enemies as an offering at my grave. Whether or not the words are accurate, they capture how Kiyomori was remembered: a man who, even facing death, refused to bow to anything — not the gods, not tradition, not the emperors he had spent his life controlling.",
+      "image_prompt": "Taira no Kiyomori on his deathbed in a dim mansion chamber, weak but glaring with defiance, a group of Buddhist priests turned away and standing helplessly near the doorway, single flickering candle casting long shadows.",
+      "ken_burns": "static",
+      "character_ref": "kiyomori",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "At the moment Taira no Kiyomori died, the clan he had built controlled more of Japan than any family in history — an emperor on the throne was his own grandson, the court was filled with his relatives, and rival clans had been crushed or exiled. By every measure, the Taira were unbeatable. And yet, within four years, none of it would remain. The very speed of Kiyomori's rise — built on fear, marriage politics, and the humiliation of everyone around him — had left the Taira with no allies. Only Kiyomori himself had been holding the structure together.",
+      "image_prompt": "A grand Taira clan palace complex glowing in golden sunset light, countless red butterfly-crest banners flying from every rooftop, but subtle cracks visible spreading across the stone foundation walls in the foreground, ominous tone.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Kiyomori's son and successor, Munemori, lacked his father's ruthless political instincts. The nobles Kiyomori had terrorized saw their chance and turned against the Taira almost overnight. The Minamoto, led by Yoritomo and his brilliant younger brother Yoshitsune, gathered allies across the country — warriors who, just years earlier, would never have dared defy the Taira. Kiyomori had spent his life making enemies who feared to act while he lived. The moment he was gone, every one of those enemies moved at once. The empire built on intimidation collapsed the instant the intimidator disappeared.",
+      "image_prompt": "Wide cinematic map-like composition of feudal Japan at dusk, dozens of distant warrior banners from many different clans converging from every direction toward a single shrinking red Taira banner at the center, candlelit war room shadows in foreground.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "By 1183, the unthinkable had happened: the Taira were driven out of Kyoto entirely. They fled west, taking with them the seven-year-old Emperor Antoku — Kiyomori's own grandson — along with the imperial regalia, the sacred symbols of the emperor's legitimacy. A reigning emperor, on the run, carried by a collapsing warrior clan toward the sea. It was a sight the Japanese court had never witnessed and would never forget — proof of just how completely the balance of power had reversed in only two years.",
+      "image_prompt": "A child emperor in elaborate court robes being carried in an ornate palanquin by exhausted Taira warriors fleeing along a coastal road, the burning skyline of Kyoto receding in the distance behind them, dusk light and smoke.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "The end came in 1185, at Dan-no-ura — a narrow strait where the Taira fleet made its final stand against the Minamoto navy. The battle turned into a massacre. As defeat became certain, Taira nobles began leaping into the sea rather than face capture. Among them was Kiyomori's widow, who took the child Emperor Antoku into the waves with her. The Taira clan — and the imperial line Kiyomori had so carefully engineered — vanished beneath the water in a single afternoon. The empire Kiyomori built to last forever had survived him by exactly four years.",
+      "image_prompt": "Dramatic naval battle in a narrow strait, burning Taira warships sinking into rough dark waves, armored figures leaping overboard into the sea, fragments of imperial regalia glinting amid the wreckage and foam under a grey stormy sky.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "So was Taira no Kiyomori a visionary — the first warrior bold enough to seize the machinery of imperial government, opening trade with China and reshaping Japan's economy? Or was he simply a tyrant whose arrogance made his family's destruction inevitable? Historians still argue both sides. But the storytellers of the generation that survived his fall had already chosen their answer, opening their account of his life with a single, famous warning: pride, no matter how absolute, never lasts. For more than eight hundred years, Kiyomori has remained Japan's most enduring lesson in what power costs the men who hold it.",
+      "image_prompt": "A robed traveling storyteller playing a biwa lute by candlelight in a quiet wooden hall, an attentive audience of silhouetted listeners seated in shadow around him, warm flickering candlelight, an atmosphere of quiet reflection.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 55,
+      "narration": "Pride had destroyed an empire built across the entire country. But four centuries later, on the island of Shikoku, one warlord would build an empire of his own — uniting every rival clan under a single banner. He believed nothing could stop him. He was wrong. Next time on Samurai Chronicles: the rise of Chosokabe Motochika, the last lord of Shikoku, and the impossible ambition that brought the most powerful army in Japan to his door.",
+      "image_prompt": "A lone samurai warlord standing on a windswept hilltop overlooking the mountainous island of Shikoku, unified clan banners planted in rows behind him, the distant sea visible on the horizon under a darkening sky.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 25,
+      "narration": "Taira no Kiyomori spent a lifetime building a power no warrior had ever held — and lost it within four years of his death, leaving behind only a legend and a warning. If you enjoyed this story, subscribe for new episodes of Samurai Chronicles every day, and let us know in the comments: was Kiyomori a visionary ruler, or simply a man undone by his own pride?",
+      "image_prompt": "Wide cinematic shot of a calm sea at dusk, faint red Taira clan banners with the butterfly crest slowly sinking beneath the still water's surface, soft golden light reflecting off the waves, a serene yet melancholic mood.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep006-BGM.mp3"
+}
