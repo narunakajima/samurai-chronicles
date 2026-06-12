@@ -1,0 +1,256 @@
+{
+  "episode_id": "ep031",
+  "episode_title": "Shimazu's Last Charge: The Escape from Sekigahara",
+  "youtube_title": "Why Shimazu Yoshihiro Charged Into 80,000 Enemies — And Survived",
+  "youtube_description": "In October 1600, fifteen hundred samurai found themselves surrounded by eighty thousand enemies on the battlefield of Sekigahara. Their general, Shimazu Yoshihiro, made a decision that defied all military logic: charge forward — straight through the enemy's center — and fight his way out. This is the story of the most audacious retreat in Japanese history.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 1,500 samurai. 80,000 enemies...\n0:41 October 1600. Japan stood at the\n1:29 The Shimazu had almost done the\n2:22 Shimazu Yoshihiro earned a...\n3:09 In 1598, Hideyoshi died. The...\n4:05 But the relationship between...\n4:51 The battlefield at Sekigahara...\n5:48 For hours, the fighting raged...\n6:35 In minutes, the battle...\n7:33 Yoshihiro called his...\n8:22 The order was given. With a\n9:11 But breaking through was only...\n9:59 The heaviest sacrifice fell...\n10:47 Yoshihiro broke free. Of the...\n11:45 The pursuit did not stop. Ieyasu\n12:35 The answer that came from Edo\n13:32 The 'Shimazu Nochiguchi' —...\n14:27 The Satsuma domain would go on\n15:21 Next time on Samurai...\n15:47 If Shimazu Yoshihiro's story...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. Sekigahara 1600: The Final Struggle for Power. Osprey Publishing, 2000.\n2. Bryant, Anthony J. Sekigahara 1600. Osprey Publishing, 1995.\n3. Shimazu Clan Records (Shimazu-ke Bunsho), National Archives of Japan.\n\n#SamuraiHistory #Sekigahara #ShimazuYoshihiro #JapaneseHistory #Sengoku #Samurai #FeudalJapan #BattleOfSekigahara #ShimazuClan #Satsuma",
+  "youtube_tags": [
+    "Shimazu Yoshihiro",
+    "Sekigahara",
+    "Battle of Sekigahara",
+    "Shimazu clan",
+    "Sengoku period",
+    "samurai history",
+    "Japanese history",
+    "feudal Japan",
+    "sutegamari",
+    "Satsuma",
+    "Tokugawa Ieyasu",
+    "Japanese warfare",
+    "samurai documentary",
+    "Shimazu retreat",
+    "Sengoku warlord"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "The battle is lost. Eighty thousand enemies close in from every side. Every route of retreat is cut off. So Shimazu Yoshihiro does the unthinkable — he charges straight into them. Who were the men who made this impossible escape possible?",
+  "shorts_narration": "1,500 men. 80,000 enemies. No escape. So Shimazu Yoshihiro did the unthinkable — he charged straight through them. This is Japan's most audacious retreat. This is Shimazu Yoshihiro.",
+  "thumbnail_prompt": "Shimazu Yoshihiro, a formidable elderly warrior in black lacquered Sengoku armor, mounted on a war horse and charging forward through smoke and chaos. Enemy soldiers on all sides. Fierce determination on his weathered face. The Shimazu clan cross mon visible on his banner. Battlefield of Sekigahara, autumn mist and fire. Extreme dramatic angle, low camera looking up at the charging figure.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "1,500 samurai. 80,000 enemies closing from every side. What kind of general orders his men to charge forward — straight through the heart of the enemy — just to escape?",
+      "image_prompt": "A lone samurai commander on horseback at the center of a vast encirclement. Enemy soldiers stretch to the horizon in every direction. The commander's silhouette upright and unbroken against the chaos. Aerial-wide shot, autumn fog filling a valley, smoke from arquebuses drifting across the field.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "October 1600. Japan stood at the edge of civil war. Two great powers clashed for control of the nation — Tokugawa Ieyasu in the east, and the supporters of the Toyotomi clan in the west. Caught in the middle was a warlord from the far south: Shimazu Yoshihiro. At sixty-five years old, he was one of Japan's most battle-hardened commanders. His clan, the Shimazu, had ruled the southern tip of Kyushu for centuries. And they had never — not once — known defeat by flight.",
+      "image_prompt": "Portrait composition of an elderly but powerfully built warrior — Shimazu Yoshihiro — seated on a war horse, overlooking a vast misty valley. He wears black lacquered armor with the Shimazu cross mon on his chest. Weathered, sharp-eyed face showing a lifetime of warfare. The rugged volcanic landscape of Kyushu stretches behind him.",
+      "ken_burns": "pan_right",
+      "character_ref": "shimazu_yoshihiro",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "The Shimazu had almost done the impossible. By the 1580s, they had conquered nearly all of Kyushu — an island larger than many European nations. They swept north, swallowing clan after clan, until only the Otomo stood in their way. Then Toyotomi Hideyoshi intervened. In 1587, he marched south with a force no one could resist. The Shimazu surrendered — but on their own terms. They kept their domain. They kept their pride. And in the years that followed, they would prove that submission to Hideyoshi did not mean weakness.",
+      "image_prompt": "Bird's-eye panoramic view of the island of Kyushu — vast armies sweeping across the landscape from south to north. Shimazu clan banners bearing the cross mon advancing, overwhelming fortress after fortress. Fire and movement across a map-like panorama of mountains and coastline.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "Shimazu Yoshihiro earned a reputation that crossed the sea. During Hideyoshi's invasion of Korea in the 1590s, his forces fought with a ferocity that unnerved even the Ming Chinese army. He became known as 'Oni Shimazu' — the Devil Shimazu. It was not a nickname born of cruelty. It was born of the unnerving certainty that this man could not be stopped. He was sixty-five when Sekigahara came. He had been at war his entire life. And he was still not finished.",
+      "image_prompt": "A Korean coastal fortress under siege at night. Shimazu warriors storming the walls with fierce momentum, arquebuses flashing in the dark. Chinese defenders overwhelmed on the ramparts. Lantern fire and smoke. A commanding figure on horseback directing the assault from below the walls.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shimazu_yoshihiro",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "In 1598, Hideyoshi died. The careful balance he had maintained began to unravel almost immediately. Tokugawa Ieyasu, the most powerful lord in Japan, moved quickly to consolidate power. Ishida Mitsunari, a loyal administrator of the Toyotomi clan, saw this as a betrayal of everything Hideyoshi had built. Alliances fractured. Japan split into two — the Eastern Army behind Ieyasu, and the Western Army behind Mitsunari. When Mitsunari called on western lords to resist, Shimazu Yoshihiro answered.",
+      "image_prompt": "Interior of Toyotomi Hideyoshi's palace — candlelit, golden screens, grieving advisors gathered around a dying figure. Shadows deepen across the gilded room. The faces of assembled lords show not just grief but calculation. Power is already shifting before the last breath is drawn.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "But the relationship between Yoshihiro and Mitsunari was never warm. The Shimazu had arrived at the Western Army camp with roughly fifteen hundred men — far fewer than Mitsunari had hoped for. There were arguments over strategy and respect. Yoshihiro had proposed an audacious night attack on Ieyasu's camp before the battle — a plan that might have changed everything. Mitsunari refused. It was a decision that would haunt the Western Army. By dawn on October 21st, both armies were ready to meet.",
+      "image_prompt": "A tense war council in a fortress interior. Western Army commanders gathered around a battle map, arguments evident in their postures. Shimazu Yoshihiro stands apart from the group on the right, arms crossed, expression skeptical. Ishida Mitsunari visible at the head of the table, insisting on his plan. Torchlight casting hard shadows.",
+      "ken_burns": "pan_left",
+      "character_ref": "shimazu_yoshihiro",
+      "zoom_anchor": {
+        "x": 0.82,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "The battlefield at Sekigahara was a valley — surrounded by mountains on three sides, shrouded in morning fog. Around eighty thousand Eastern soldiers faced a comparable force to the west. Numbers roughly equal. But numbers meant nothing if loyalty could not be guaranteed. Shimazu Yoshihiro took his position in the center of the Western Army's lines. His fifteen hundred men formed a small island in a sea of soldiers. He waited. The fog began to lift. The sound of gunfire cracked through the valley. The Battle of Sekigahara had begun.",
+      "image_prompt": "Dawn at Sekigahara — a wide valley between mountain ridges, thick morning fog filling the low ground. Two massive armies arrayed on opposite sides, their formations barely visible through the mist. The stillness before catastrophe. Cool blue-grey light, the faintest orange on the eastern peaks.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "For hours, the fighting raged across the valley floor. Yoshihiro watched, and waited. His forces had still not been given the order to advance. Whatever the reason, Yoshihiro sat motionless as the battle unfolded around him. Then — at the critical moment — everything changed. Kobayakawa Hideaki, one of the Western Army's largest contingents, switched sides. Thousands of soldiers who had been waiting on the hill poured down into the Western Army's flank.",
+      "image_prompt": "The pivotal betrayal — Kobayakawa Hideaki on a commanding hillside, his massive force suddenly wheeling and charging downward into the Western Army below. Viewed from elevation, the battle formation below fracturing, Western Army units dissolving in confusion and panic. Dust and movement across the entire valley.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "In minutes, the battle transformed. The Western Army — which had been holding its own — collapsed. Lord after lord fled the field. Units dissolved. Mitsunari himself abandoned his position. The Eastern Army surged forward to finish the rout. Shimazu Yoshihiro found himself stranded — his forces surrounded on multiple sides, the Western Army gone. The northern road, the safest path of retreat, was cut off. He looked around the valley. Everywhere, his enemies. There was no way forward. And there was no way back.",
+      "image_prompt": "Shimazu Yoshihiro on horseback at the center of his small encircled force. Eastern Army soldiers closing in from all directions, their numbers overwhelming. His commanders look to him in desperation. The horizon filled with enemies. Smoke and chaos, Western Army banners fallen. His expression scanning, calculating — not yet broken.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shimazu_yoshihiro",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "Yoshihiro called his commanders together. The options were simple and terrible. Surrender — and face the mercy of a Tokugawa court that had just crushed its enemies. Attempt to retreat north — and be destroyed in the open field. Or do something that no general in Japan would ever consider. Charge forward. Not sideways, not backward — but directly through the Eastern Army's formation. Through Tokugawa Ieyasu's own position. It was not a plan born of strategy. It was a gamble born of character. For Shimazu Yoshihiro, a man who had spent a lifetime choosing audacity over caution, it was the only path left.",
+      "image_prompt": "Extreme close-up of Shimazu Yoshihiro's face — eyes steady, jaw set, the decision forming. The grim faces of his commanders visible behind him, waiting for the order. Fire and smoke in the background. A single moment of absolute clarity before chaos. Dramatic side lighting, shadows deep.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shimazu_yoshihiro",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "The order was given. With a war cry that carried across the valley, the Shimazu formation surged forward. Fifteen hundred men — compact, disciplined, moving as a single weapon — drove straight into the heart of Ieyasu's lines. The shock of the assault stunned the Eastern soldiers. No one had expected an attack. Every commander on the field was preparing to pursue a retreating army. Instead, they faced a spearhead aimed directly at the Tokugawa command itself. Ieyasu's retainers scrambled. For one extraordinary moment, the most powerful man in Japan was personally under threat. The Shimazu punched through.",
+      "image_prompt": "The Shimazu charge — a compact wedge formation of samurai cavalry driving like a spear through the Eastern Army's center. Bodies and banners flying aside. The charge moving directly toward a command position visible ahead. Pure kinetic violence and momentum. Smoke, dust, the cross mon banner leading forward.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "But breaking through was only the beginning. Thousands of Eastern soldiers were giving chase. And this is where the Shimazu revealed a tactic unlike anything else in samurai warfare: the sutegamari. Small groups of warriors deliberately fell behind. They waited as the enemy drew near. Then rose — and attacked. Not to win. Not to survive. Only to slow the pursuit long enough for Yoshihiro to widen the gap. Each sutegamari group bought precious minutes. Each man who fell was making a deliberate exchange: his life, for his lord's chance of escape.",
+      "image_prompt": "Sutegamari warriors — small groups of Shimazu soldiers lying flat in tall grass and smoke, motionless as Eastern cavalry thunders past them. Then one warrior rising from the ground to strike at the flank of a passing horseman. The sacrifice tactic in its stark geometry. Dust and noise all around, isolation in their stillness.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "The heaviest sacrifice fell on one man: Shimazu Toyohisa. Yoshihiro's nephew. Just thirty years old. He led the final rearguard action against the Eastern Army's most feared commander — Ii Naomasa, known as the Red Devil, whose soldiers wore distinctive scarlet armor. Toyohisa held the line as long as he could. He was struck by arquebuses. He continued fighting. He was struck again. He refused to fall until he could no longer stay mounted. He died in the valley at Sekigahara. The path his uncle needed had been opened.",
+      "image_prompt": "Shimazu Toyohisa on horseback, surrounded by Ii Naomasa's red-armored soldiers pressing in from all sides. Toyohisa fighting on despite wounds, sword raised. The scarlet armor of the enemy vivid against grey smoke. His face showing not fear but fierce, exhausted resolve. A last stand in the chaos of battle.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "Yoshihiro broke free. Of the fifteen hundred men who had entered Sekigahara, only a fraction survived. Some accounts say as few as eighty made it out. The exact number has been debated for four centuries. What is not debated is what happened next. Yoshihiro moved west, pushing through enemy-held territory toward the sea. He commandeered a boat. He crossed the water. Slowly, painfully, the man who had charged through eighty thousand enemies began the long journey home to Satsuma — the southern province his family had ruled for three hundred years.",
+      "image_prompt": "Shimazu Yoshihiro and a small group of surviving riders galloping west through rugged mountain passes, the battlefield far behind them. Autumn foliage on the hillsides, vast distance ahead. Exhausted but moving — riding for their lives through enemy territory. Low afternoon light casting long shadows.",
+      "ken_burns": "pan_right",
+      "character_ref": "shimazu_yoshihiro",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "The pursuit did not stop. Ieyasu dispatched forces to capture the man who had dared charge through his position. Along the route, Shimazu retainers fought skirmishes and blocked roads across western Japan. Yoshihiro reached the sea. He crossed to Kyushu. He reached Satsuma. His domain. His people. But the war, in a sense, was not over. Ieyasu controlled Japan. And Shimazu Yoshihiro — one of the last Western Army commanders still standing — was in no position to dictate terms.",
+      "image_prompt": "Shimazu Yoshihiro on a small coastal vessel crossing a narrow strait at dusk. He looks back at the Honshu coastline receding behind him. Relief and grief in equal measure on his weathered face. The silhouette of Kyushu visible ahead across the water. Golden evening light on the sea surface.",
+      "ken_burns": "zoom_out",
+      "character_ref": "shimazu_yoshihiro",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "The answer that came from Edo surprised many. Tokugawa Ieyasu, for all his ambition, was also a pragmatist. The Shimazu domain was vast, distant, and fiercely defended. A campaign to crush them would be costly — and ultimately unnecessary. Negotiations began. In 1601, the Shimazu submitted formally to Tokugawa rule. Their domain was largely preserved. They were not executed like Ishida Mitsunari. They were not stripped of land like many Western lords. They had lost the battle. But the Shimazu clan would endure.",
+      "image_prompt": "A formal diplomatic meeting in a Tokugawa reception hall. Shimazu representatives seated in ceremonial attire on one side, Tokugawa officials on the other. Documents and maps on the low table between them. Tension masked by ceremony. The fate of a dynasty being negotiated with perfect composure.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "The 'Shimazu Nochiguchi' — the Shimazu fighting retreat — became one of the most celebrated episodes in Japanese military history. Not as a victory. But as a testament to something harder to define: the refusal to accept death on anyone else's terms. In Kagoshima today, the descendants of these warriors still commemorate the day. Memorials stand for the sutegamari warriors who chose to die so others could live. Shimazu Toyohisa is remembered by name. Four centuries later, the retreat from Sekigahara remains a symbol of what the Shimazu believed a samurai should be.",
+      "image_prompt": "Stone memorials and grave markers in a quiet Kagoshima park, surrounded by early autumn foliage. Distant figures paying silent respects. The volcanic peak of Sakurajima faintly visible through the trees. A scene of enduring memory — history made tangible in stone and landscape.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "The Satsuma domain would go on to shape Japanese history in ways no one at Sekigahara could have anticipated. Two and a half centuries later, when the samurai era was ending, it was Satsuma warriors who led the Meiji Restoration — and then, in 1877, who fought the last armed uprising of the samurai class. The spirit that drove Yoshihiro to charge through eighty thousand enemies did not die in that valley. It passed through generations, into men like Saigo Takamori, who would also choose audacity over submission. The Shimazu way endured long after Sekigahara turned to memory.",
+      "image_prompt": "Sakurajima volcano rising dramatically from the sea at dawn — the volcanic landscape of Satsuma. In the foreground, the silhouette of an armored samurai warrior standing on the shore, looking toward the volcano. A visual bridge between the warrior past and the living landscape. Power and endurance in the same frame.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles: a dying warlord handed his three sons a bundle of arrows. One arrow breaks easily. Three together cannot. From that single lesson, Mori Motonari built an empire that dominated western Japan for a century. That story is next.",
+      "image_prompt": "Three arrows — two snapped in half, one bundle of three arrows unbroken and bound together — held in weathered, powerful hands. A Sengoku-era stone fortress wall and mountain landscape in the background. The lesson of unity rendered in a single image. Warm golden light.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 5,
+      "narration": "If Shimazu Yoshihiro's story moved you, subscribe to Samurai Chronicles. New episodes every day. History that doesn't stay buried.",
+      "image_prompt": "A lone samurai silhouette standing on a mountain ridge at sunset, overlooking a vast Japanese landscape. The Shimazu cross mon faintly etched into the foreground rock. Cinematic orange and purple sky, the figure small against the immensity of the land.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/sK6KH3dFgLY",
+  "shorts_url": "https://youtu.be/Hyw7XbAbKhk",
+  "scheduled_at": "2026-06-18 03:00"
+}

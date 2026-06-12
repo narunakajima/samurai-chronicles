@@ -1,0 +1,247 @@
+{
+  "episode_id": "ep035",
+  "episode_title": "The Sword That Never Struck: Yagyu Munenori's Secret War",
+  "youtube_title": "The Master Swordsman Who Became the Shogun's Secret Spy Chief",
+  "youtube_description": "He taught swordsmanship to three Tokugawa shoguns — but his most dangerous skill was never drawing his blade. Yagyu Munenori built a secret intelligence network that watched over Japan's most powerful lords, all while writing a philosophy of the sword that argued true mastery meant avoiding violence altogether.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 He taught swordsmanship to...\n0:40 In 1594, an aging swordsman...\n1:36 Munenori had grown up in Yamato\n2:26 Under Hidetada, the second...\n3:21 In 1623, Hidetada's son...\n4:15 In 1632, Munenori received an...\n5:07 The shogunate's peace was...\n6:06 Around the same time,...\n6:57 In 1637, a massive rebellion...\n7:51 At Edo Castle, Munenori was...\n8:45 After Shimabara, Japan...\n9:36 There was a strange duality at\n10:34 Yagyu Munenori died in 1646, at\n11:18 The Heiho Kadensho outlived...\n12:10 There is no statue of Yagyu\n13:06 Munenori's role is sometimes...\n13:57 Today, the Yagyu Shinkage-ryu...\n14:48 Yagyu Munenori never sought...\n15:30 Next time on Samurai...\n16:03 In Yagyu village today, the dojo\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Yagyu, Munenori. The Life-Giving Sword: Secret Teachings from the House of the Shogun. Translated by William Scott Wilson. Kodansha International, 2003.\n2. Sato, Hiroaki. Legends of the Samurai. Overlook Press, 1995.\n3. Sansom, George. A History of Japan, 1615-1867. Stanford University Press, 1963.\n\n#YagyuMunenori #Samurai #JapaneseHistory #TokugawaShogunate #EdoPeriod",
+  "youtube_tags": [
+    "Yagyu Munenori",
+    "Heiho Kadensho",
+    "Samurai",
+    "Japanese History",
+    "Tokugawa Shogunate",
+    "Sword Master",
+    "Edo Period",
+    "Sengoku Period",
+    "Shinkage-ryu",
+    "Samurai Chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "Inside Edo Castle, the shogun's sword master knelt before his lord — not to fight, but to report on a rival daimyo's secret disloyalty. This swordsman never needed to draw his blade. So how did he become the most feared man in the shogunate?",
+  "shorts_narration": "Three shoguns. One sword master. Zero famous duels. His real weapon wasn't his blade — it was information. He built the spy network that watched every lord in Japan. This is Yagyu Munenori.",
+  "thumbnail_prompt": "A composed, watchful samurai in dark formal robes stands in a dim corridor of Edo Castle, one hand resting near a sheathed sword, sharp eyes catching a sliver of torchlight. Behind him, shadows of scrolls and sealed letters are scattered across a low table, hinting at secrets and surveillance. Atmosphere of quiet menace and absolute control.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He taught swordsmanship to three Tokugawa shoguns. Yet his greatest skill was never fighting at all. What made this swordsman the most feared man in Edo Castle?",
+      "image_prompt": "A solitary figure in dark formal robes stands motionless in a dim corridor of Edo Castle, one hand resting near a sheathed sword, his sharp eyes catching a sliver of light. Behind him, the shadow of the shogun's throne room is barely visible through a doorway. Atmosphere of quiet menace and absolute control.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "In 1594, an aging swordsman named Yagyu Muneyoshi stood before Tokugawa Ieyasu and disarmed him — bare-handed, without drawing a blade. The technique was called mutodori, the no-sword. Ieyasu, already one of Japan's most powerful warlords, was stunned. He asked Muneyoshi to become his sword instructor. But Muneyoshi was old. He recommended his fifth son instead — a quiet, watchful young man named Yagyu Munenori. Ieyasu agreed. It was a decision that would shape the next half-century of Japanese politics.",
+      "image_prompt": "Inside a grand reception hall, an elderly but powerfully built swordsman — Yagyu Muneyoshi — stands calmly having just disarmed Tokugawa Ieyasu, the warlord's sword now resting harmlessly to the side as Muneyoshi's empty hands remain raised in a controlled posture. Ieyasu, astonished, sits back on a low platform surrounded by stunned attendants. Soft lantern light, traditional Momoyama-era hall.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 15,
+      "narration": "Munenori had grown up in Yamato province, trained from childhood in the Yagyu Shinkage-ryu — a sword style built not on brute force, but on reading an opponent's intentions before they moved. At Sekigahara in 1600, he fought for Ieyasu's Eastern Army, leading a small unit through mountain terrain. His performance was modest, but his discipline impressed his superiors. When Ieyasu became shogun in 1603, Munenori was summoned to Edo. He was given a position few swordsmen ever achieved: personal instructor to the most powerful man in Japan.",
+      "image_prompt": "A young samurai officer in practical battle armor leads a small disciplined unit of soldiers through a misty mountain pass toward the distant smoke and banners of the Battle of Sekigahara. Determined expression, autumn fog clinging to the pines.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Under Hidetada, the second Tokugawa shogun, Munenori's position grew steadily. He was granted land in Yamato province in 1611 — a modest domain, but a clear sign of trust. He was no longer just a teacher of technique. He attended private meetings, advised on sensitive matters, and earned a reputation for absolute discretion. The Edo shogunate was still young and surrounded by powerful lords who had only recently been wartime enemies. Hidetada needed people whose loyalty and judgment were beyond question. Munenori, calm and watchful by nature, had become exactly that.",
+      "image_prompt": "In a formal audience chamber of Edo Castle, Yagyu Munenori, dressed in dark formal robes with twin swords at his belt, kneels respectfully near Tokugawa Hidetada's raised platform, exchanging a quiet, private word while other officials maintain a respectful distance. Warm lantern light, atmosphere of trust and discretion.",
+      "ken_burns": "pan_right",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.34,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "In 1623, Hidetada's son Iemitsu became the third Tokugawa shogun. Munenori, now in his fifties, remained at the center of power — becoming sword instructor to a third consecutive shogun, an honor no other teacher in Edo could claim. For Iemitsu, still establishing his authority, Munenori represented continuity: a man who had served his grandfather, his father, and now him, with the same quiet reliability. But Munenori's most consequential role was still to come.",
+      "image_prompt": "Yagyu Munenori, now older with streaks of grey in his beard, stands beside a young Tokugawa Iemitsu in a private training hall, both observing a wooden practice sword resting on a rack rather than in use — a lesson conducted through words rather than strikes. Soft natural light through shoji screens.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "In 1632, Munenori received an extraordinary appointment. He was named ōmetsuke — a senior inspector of the shogunate, responsible for watching Japan's daimyo for any sign of disloyalty. It was an unprecedented combination. By day, he taught the shogun swordsmanship in the quiet of the castle dojo. In secret, he oversaw a network of observers reporting on the words, movements, and alliances of the most powerful lords in the country. A suspicious fortification, an unguarded comment, a new alliance — all of it eventually reached Munenori's desk.",
+      "image_prompt": "Yagyu Munenori stands alone on a torchlit castle balcony at night, reading a sealed scroll of secret reports, his expression unreadable. Below in the courtyard, unseen messengers move quietly between gates. A sense of vast, invisible reach radiating from a single still figure.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "The shogunate's peace was still fragile. Many western daimyo had fought against the Tokugawa at Sekigahara or Osaka, and their loyalty could not simply be assumed — it had to be verified, continuously and quietly. Munenori's agents moved through castle towns and travel routes, noting which lords built new fortifications, which entertained which guests, which spoke too freely at banquets. None of it looked like war. None of it looked like the sword at all. But it was, in its own way, a battlefield — fought with patience and information instead of steel.",
+      "image_prompt": "A wide nighttime view of an Edo-period castle town, with multiple small figures — observers and messengers — moving along rooftops, roads, and waterways toward a distant central keep, each carrying scrolls or letters. Lines of implied movement converge toward the castle, suggesting an unseen surveillance network.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "Around the same time, Munenori completed a manuscript unlike any other in Japanese history: the Heiho Kadensho, 'The Life-Giving Sword.' On its surface, it was a swordsmanship text, passing down generations of Yagyu Shinkage-ryu technique. But its deeper argument concerned something else: how a skilled hand — whether holding a sword or governing a domain — could choose to take life, or to preserve it. For Munenori, the highest mastery of the sword was never needing to draw it at all. He presented the work directly to Shogun Iemitsu.",
+      "image_prompt": "Yagyu Munenori sits at a low writing desk in a quiet study, brush in hand, composing a manuscript by lamplight. A sheathed sword rests on a stand beside him, untouched. Calligraphy scrolls and books are stacked neatly around the room. Calm, contemplative atmosphere.",
+      "ken_burns": "static",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 15,
+      "narration": "In 1637, a massive rebellion erupted in Shimabara — tens of thousands of peasants and former samurai, many of them Christian, rose up against the shogunate. For Munenori's network, it was a moment of reckoning. For years, reports had quietly tracked Christian communities and disaffected ronin across western Japan. Some had warned of unrest brewing. Now, as shogunate forces moved to crush the rebellion, every report Munenori's agents had filed — every name, every rumor, every suspicion — suddenly mattered in ways no one could ignore.",
+      "image_prompt": "Yagyu Munenori reads an urgent dispatch by candlelight in a dim chamber, his expression grave. Spread on the table before him are multiple scrolls and a rough map marked with locations in western Kyushu. Outside the window, distant smoke rises on the horizon, hinting at the unrest of the Shimabara Rebellion.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 20,
+      "narration": "At Edo Castle, Munenori was called before Iemitsu as the rebellion at Hara Castle dragged into its third month. Some advisors urged immediate, overwhelming force — annihilation, regardless of cost. Munenori, now nearly seventy, offered a different counsel: patience, encirclement, and the cutting of supply lines, to end the siege with minimal further bloodshed on the shogunate's own side. It was the philosophy of the Heiho Kadensho applied to statecraft — using the least force necessary to end a conflict for good. The siege at Hara Castle would end in the spring of 1638, the brutal final chapter of the Shimabara uprising.",
+      "image_prompt": "Inside Edo Castle's council chamber, an elderly Yagyu Munenori speaks calmly before a youthful Tokugawa Iemitsu and a tense group of advisors, some gesturing forcefully for harsher action while Munenori remains composed, one hand raised in a measured gesture. A large map of Kyushu and Hara Castle lies on the table between them. Dramatic lantern lighting, contrast between agitation and stillness.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.8,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "After Shimabara, Japan changed. The shogunate tightened its borders, restricted Christianity, and entered the long period of relative isolation known as sakoku. Munenori, now in his late sixties and holding an income of over twelve thousand koku, gradually stepped back from the daily demands of court life. He had spent more than four decades inside the innermost circles of Tokugawa power — as a swordsman, a teacher, and an intelligence officer whose true influence few outside the castle ever fully understood.",
+      "image_prompt": "An elderly samurai in dark formal robes walks slowly through a quiet castle garden at dusk, fewer attendants around him than before, his pace unhurried. In the background, the silhouette of Edo Castle's keep stands against a darkening sky, marking the twilight of an era and a long career.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "There was a strange duality at the heart of Munenori's life. As a swordsman, his teachings emphasized restraint — the highest skill was avoiding the need to draw a blade at all. As an intelligence officer, his work could end a daimyo's career, or worse, with a single report. He never seemed to see these as contradictions. To Munenori, both roles served the same purpose: preserving peace by controlling the conditions that led to violence before they ever erupted. Whether that justified the methods was a question he never directly addressed — in his writings, or in his life.",
+      "image_prompt": "A symbolic split composition: on one half of the frame, Yagyu Munenori in a dojo, demonstrating a sword technique to a student with the blade still sheathed; on the other half, the same room's shadow falls across a desk covered in sealed reports and scrolls. One man, two instruments of power, rendered in the same soft light.",
+      "ken_burns": "static",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 15,
+      "narration": "Yagyu Munenori died in 1646, at the age of seventy-five. He had outlived the founder of the shogunate, served three of its rulers, and helped shape the quiet machinery that kept the Tokugawa peace intact for decades. His eldest son inherited the Yagyu domain. His other sons carried the Shinkage-ryu tradition forward — one of them, Yagyu Munefuyu, would go on to train the fourth shogun, Ietsuna, continuing the family's unbroken role at the heart of the shogunate for yet another generation.",
+      "image_prompt": "An elderly samurai lies peacefully in a simple tatami room, attended by his sons in formal mourning dress, soft natural light filtering through paper screens. A sheathed sword rests on a stand nearby, undisturbed. A quiet, dignified scene of passing.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "The Heiho Kadensho outlived its author by centuries. Long after the age of the sword had ended, the text continued to be read — not just by martial artists, but by leaders and strategists studying its central idea: that true mastery lies in judgment, restraint, and the ability to resolve conflict without resorting to force. Munenori's sword technique is remembered by specialists. His philosophy of 'the sword that gives life' became something far broader — a way of thinking about power itself.",
+      "image_prompt": "A weathered copy of an old Japanese manuscript lies open on a low wooden table in a sunlit study, handwritten calligraphy pages catching the light. In soft focus behind it, faint translucent images of swordsmen and strategists from different eras seem to study the same text — a visual bridge across centuries.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "There is no statue of Yagyu Munenori in a famous battle pose. No legendary duel bears his name. His historical footprint is quieter — a name in shogunate records, a martial arts lineage, a philosophical text. Yet for nearly fifty years, very little happened at the highest levels of Tokugawa Japan that Munenori did not, in some way, see, shape, or influence. He was neither a battlefield hero nor a court schemer in the dramatic sense. He was something the era had rarely produced before: a man whose power lay entirely in being trusted completely.",
+      "image_prompt": "A solitary engraved stone marker stands in a quiet historic district, the lettering faintly visible, with no grand statue or monument — just modest greenery and a worn path. Soft overcast light emphasizes the understated, easily overlooked nature of this historical site.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "Munenori's role is sometimes compared to that of legendary ninja like Hattori Hanzo, but the comparison only goes so far. Hanzo's world was one of secrecy, infiltration, and the shadows of Sengoku-era warfare. Munenori operated in the open — a recognized officer of the shogunate, his authority backed by law and rank. His power came not from hiding, but from a position so trusted that no one questioned what he reported, or how he came to know it. In an era defined by suspicion, Munenori had become the one man everyone believed.",
+      "image_prompt": "Side-by-side visual contrast: on the left, a shadowy ninja figure crouches on a rooftop at night, half-hidden; on the right, a samurai official in formal dark robes stands openly in a lit hall, visible to all yet equally unreadable. Both figures are watching, but only one hides.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "Today, the Yagyu Shinkage-ryu is still practiced by a small number of dedicated schools in Japan, preserving techniques and philosophy passed down directly from Munenori's writings. In Yagyu village in Nara Prefecture — the family's ancestral home — visitors can still see the stone where Muneyoshi is said to have demonstrated the no-sword technique centuries ago. The Yagyu name endures, not through monuments to military victory, but through a continuous, living tradition — a thread connecting a quiet 17th-century swordsman to practitioners training in the same principles today.",
+      "image_prompt": "A sunlit clearing in a rural Japanese village, where a worn stone marks a legendary historical site. In the middle distance, practitioners in white training uniforms practice sword forms in respectful silence, echoing techniques centuries old. Peaceful mountain backdrop.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 15,
+      "narration": "Yagyu Munenori never sought the kind of fame that belongs to warriors who win famous battles or duels. His legacy is more difficult to see, and perhaps more difficult to forget once understood: that the quietest people in any system — the ones who watch, who listen, who are trusted with everything and reveal almost nothing — often hold more power than anyone with a sword in their hand. In the shadow of the Tokugawa throne, that was Yagyu Munenori's true mastery.",
+      "image_prompt": "Yagyu Munenori, shown as an elderly man, sits alone in a quiet room at dusk, a sheathed sword resting beside him, untouched, as soft golden light falls across the tatami floor. His expression is calm, reflective — a portrait of a man whose greatest weapon was never drawn.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles: a single letter, written in defiance of the most powerful man in Japan, helped trigger a war that would decide the nation's future. Its author wore a single character on his helmet — the word for 'love.' How did Naoe Kanetsugu's act of defiance against Tokugawa Ieyasu set Japan on the road to Sekigahara? That story is next.",
+      "image_prompt": "A weathered samurai helmet rests on a stand, a single bold character meaning 'love' emblazoned on its front in gold. Beside it, a sealed letter with broken wax sits on a low table, candlelight flickering. Outside the window, the silhouettes of marching armies are visible in the distance, foreshadowing war.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 5,
+      "narration": "In Yagyu village today, the dojo where Munenori once trained still stands, its wooden floors worn smooth by centuries of practice. No monument marks a great victory here — only the quiet continuation of a tradition built on patience, observation, and restraint. It is a fitting resting place for a man who shaped an empire not through conquest, but through trust. If Yagyu Munenori's hidden influence surprised you, subscribe to Samurai Chronicles. New episodes every day. History that doesn't stay buried.",
+      "image_prompt": "A quiet wooden dojo in a rural Japanese village at dusk, its worn floorboards catching the last warm light through open shutters. No one is inside — just the empty space where centuries of practice once took place, mountains visible beyond, peaceful and timeless.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep004-BGM.mp3",
+  "youtube_url": "https://youtu.be/pa0_4JTb0Nk",
+  "shorts_url": "https://youtu.be/794k4AT6MvA",
+  "scheduled_at": "2026-06-24 03:00"
+}

@@ -1,0 +1,251 @@
+{
+  "episode_id": "ep034",
+  "episode_title": "The Red Devils: Ii Naomasa's Reign of Terror",
+  "youtube_title": "The Outcast Who Built Japan's Most Feared Army: Ii Naomasa and the Red Devils",
+  "youtube_description": "His army wore blood-red armor from head to hoof — and entire enemy units reportedly broke and ran at the sight of them. But Ii Naomasa wasn't born into power. He was a hunted child from a destroyed clan who clawed his way to the top of Tokugawa Japan.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 His army wore blood-red armor —\n0:45 In 1561, the Ii clan of\n1:35 In 1575, fortune intervened....\n2:35 In 1582, the mighty Takeda clan\n3:31 Naomasa understood the power...\n4:22 Naomasa's discipline was...\n5:18 The Red Devils' first great test\n6:14 Over the next fifteen years, the\n7:07 On the morning of October 21,\n8:04 Naomasa pushed his horsemen...\n8:47 By early afternoon, the...\n9:41 Naomasa led the pursuit...\n10:38 In the battle's aftermath,...\n11:37 Naomasa began planning a new...\n12:31 Naomasa's death did not end his\n13:19 The Red Devils themselves...\n14:09 What made the Red Devils so\n15:04 In the end, the boy hidden\n15:52 Next time on Samurai...\n16:34 Ii Naomasa's red armor became a\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Stephen Turnbull, \"The Samurai: A Military History\"\n2. Stephen Turnbull, \"Sekigahara 1600: The Final Struggle for Power\"\n3. George Sansom, \"A History of Japan, 1334-1615\"\n\n#IiNaomasa #RedDevils #SamuraiHistory #JapaneseHistory #Sekigahara",
+  "youtube_tags": [
+    "Ii Naomasa",
+    "Red Devils",
+    "Samurai",
+    "Japanese History",
+    "Battle of Sekigahara",
+    "Tokugawa Ieyasu",
+    "Tokugawa Shitenno",
+    "Sengoku Period",
+    "Hikone Castle",
+    "Samurai Chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "At dawn at Sekigahara, two armies waited for a signal. Then one general broke ranks alone, charging straight at the enemy — a reckless act that could have thrown the battle into chaos. Why would Tokugawa's most disciplined commander risk everything on one impulsive charge?",
+  "shorts_narration": "One army wore blood-red armor from helmet to horse. Enemies fled at the sight of them. At Sekigahara, their leader broke every rule — and started Japan's most decisive battle alone. This is Ii Naomasa.",
+  "thumbnail_prompt": "A fierce samurai general in head-to-toe crimson lacquered armor with gold trim, mounted on a dark horse with matching red tack, charging forward through battlefield smoke with a spear raised, golden crescent crest on his helmet glinting in the dawn light. Behind him, a wall of red-armored cavalry follows into the haze.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "His army wore blood-red armor — and entire enemy units fled rather than fight them. He wasn't even born a samurai of standing. So how did Ii Naomasa become the most feared warrior in Tokugawa Japan?",
+      "image_prompt": "A wide battlefield shot at dawn: a wall of samurai cavalry in matching blood-red lacquered armor charges through drifting smoke and mist toward the viewer, red banners with a small tachibana crest streaming behind them. In the distance, enemy soldiers break formation and scatter in panic.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1561, the Ii clan of Totomi Province was destroyed. Naomasa's father was executed on false charges of treason against the Imagawa, and the family's lands were seized. Naomasa — then a small child — was hidden away, smuggled from temple to temple to escape assassins sent to wipe out the bloodline entirely. For years he lived as a fugitive, his noble birth a secret even to himself. Few who met the quiet, watchful boy could have guessed that he would one day command the most feared cavalry unit in Japan.",
+      "image_prompt": "A small frightened boy in plain peasant clothing is hidden behind a wooden temple door by an elderly Buddhist monk, peering out at armored soldiers searching the temple grounds outside in the rain. Dim candlelight, somber muted colors, a sense of secrecy and danger.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1575, fortune intervened. Tokugawa Ieyasu, passing through Totomi, encountered a striking fourteen-year-old boy — composed, intelligent, and unmistakably noble in bearing. Ieyasu took him into his personal service as a page, restored his family name, and began grooming him for command. Naomasa repaid this trust with fierce loyalty and relentless ambition. Within a few years, the once-hidden orphan was leading troops in battle, earning a reputation for courage that bordered on recklessness. But his greatest opportunity was still to come — one tied to the legacy of Ieyasu's most dangerous former enemy.",
+      "image_prompt": "A young samurai teenager in simple grey robes kneels respectfully before an older, composed warlord (Tokugawa Ieyasu) seated on a veranda overlooking a Japanese garden. Ieyasu studies the boy's face thoughtfully. Soft afternoon light, warm tones, a sense of quiet but pivotal moment.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1582, the mighty Takeda clan — once Japan's most feared military power — was finally crushed. Among the spoils were veteran soldiers from one of the Takeda's most legendary units: the 'Akazonae,' warriors clad entirely in blood-red armor, famous for their discipline and ferocity under Yamagata Masakage. Most lords would have disbanded such men, fearing divided loyalties. Ieyasu did the opposite. He placed this entire unit — battle-hardened veterans of his former enemy — under the command of his rising young retainer: twenty-one-year-old Ii Naomasa.",
+      "image_prompt": "A mountain battlefield in the aftermath of defeat: rows of weary, battle-worn samurai in red-lacquered armor kneel in surrender on a misty hillside, laying down spears and banners marked with the Takeda 'mon' before a Tokugawa officer. Smoke rises from a ruined fortress in the background.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Naomasa understood the power of the red armor immediately. Rather than limit it to the Takeda veterans, he ordered every soldier under his command — from spear-bearers to mounted samurai — to wear matching crimson lacquer from helmet to boot. On the battlefield, his entire force became a single wall of red, visible for miles through smoke and dust. Enemy scouts could identify the unit at a glance — and so could allies. It was branding as much as armor: a declaration that wherever this color appeared, the fiercest fighting in Japan was about to begin.",
+      "image_prompt": "Ii Naomasa stands on a wooden viewing platform, surveying long disciplined ranks of soldiers below him, all dressed in identical, gleaming crimson-lacquered armor stretching into the distance under a grey sky. He wears his own red armor and observes with quiet satisfaction, one hand resting on his sword hilt.",
+      "ken_burns": "pan_left",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Naomasa's discipline was legendary — and brutal. He drilled his men relentlessly, punished failure severely, and demanded a standard of readiness few other commanders dared impose. His own retainers reportedly feared his temper as much as any enemy. Yet this harshness forged one of the most cohesive fighting forces of the era. Where other units might hesitate or break under pressure, the Red Devils moved as one. His soldiers called him 'Oni Naomasa' — Naomasa the Demon. It was not entirely a compliment. But on the battlefield, it became a weapon in itself.",
+      "image_prompt": "On a dusty training ground, Ii Naomasa in red armor stands with arms crossed, his expression sharp and severe, as rows of soldiers in matching red armor practice spear formations under his watchful eye. A few soldiers glance nervously toward him. Overcast late-afternoon light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The Red Devils' first great test came in 1584, at the Battle of Nagakute, part of the wider Komaki campaign against Toyotomi Hideyoshi. Naomasa led his crimson cavalry into the chaos of a fast-moving engagement, helping crush a Toyotomi detachment and capturing several enemy commanders. Word of the battle spread quickly — and so did the sight of that red wall of armor charging through the smoke. Even Hideyoshi himself is said to have taken note, reportedly remarking that Naomasa was a warrior worth watching. The Red Devils had announced themselves to all of Japan.",
+      "image_prompt": "Ii Naomasa on horseback, spear raised, leads a charging line of red-armored cavalry across a smoky battlefield, crashing into a line of fleeing enemy soldiers in grey and blue armor. Dynamic motion, dust and embers in the air, dramatic late-afternoon light breaking through smoke.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Over the next fifteen years, the Red Devils' reputation only grew. Naomasa fought in campaign after campaign — against the Hojo at Odawara in 1590, and in countless smaller engagements securing Ieyasu's eastern domains. He was formally recognized as one of the 'Four Guardians' of the Tokugawa house, alongside three of Ieyasu's most trusted generals. By the year 1600, Ii Naomasa was no longer just a soldier who had clawed his way up from obscurity. He was one of the most powerful men in eastern Japan — and he was about to face the largest battle of his life.",
+      "image_prompt": "Four samurai generals in distinct armor stand together in a formal hall before Tokugawa Ieyasu, who sits on a raised platform. Ii Naomasa, in red armor, stands proudly among them, illuminated by light from paper screens. Banners with the Tokugawa hollyhock crest hang on the walls.",
+      "ken_burns": "static",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.18,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "On the morning of October 21, 1600, two armies faced each other across the fog-shrouded valley of Sekigahara — over 150,000 men in total, the largest battle Japan had ever seen. By tradition, the honor of firing the first shot belonged to Fukushima Masanori, whose troops held the front line. But Ii Naomasa had no intention of waiting in the rear. Riding alongside his young brother-in-law, Matsudaira Tadayoshi, he began moving his crimson cavalry forward through the mist — toward the enemy line, toward the front, toward a decision that would ignore every rule of precedence.",
+      "image_prompt": "A vast misty valley at dawn, two enormous armies of samurai facing each other across a foggy battlefield, banners barely visible through the haze. In the foreground, Ii Naomasa on horseback in red armor rides forward alongside a younger samurai, both moving quietly past rows of waiting troops in grey and blue armor who watch them pass with confusion.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Naomasa pushed his horsemen past Fukushima's startled troops, claiming he was merely 'escorting' the young Tokugawa heir on a reconnaissance. It was a transparent excuse. As his red cavalry came within range of the Ukita position, Naomasa gave the order — and his men opened fire. The first shots of the Battle of Sekigahara came not from the army assigned the honor, but from the Red Devils, charging ahead of schedule, in open violation of the battle plan. Within moments, the entire front erupted. The largest battle in Japanese history had begun — started by one impatient general.",
+      "image_prompt": "Ii Naomasa in red armor raises his arm to give the signal to fire, his red cavalry unit firing matchlock guns in a sudden volley toward enemy lines through thinning fog. Smoke and muzzle flashes erupt across the foreground, while startled grey-armored allied troops look on from the side.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "By early afternoon, the battle was effectively decided. Mass defections shattered the Western Army's lines, and Ishida Mitsunari's forces collapsed into panicked retreat. But one unit refused to flee in the usual direction. Shimazu Yoshihiro, surrounded and badly outnumbered, chose the unthinkable — a desperate charge straight through the heart of the victorious Eastern Army, aiming to break out toward home rather than die where he stood. It was one of the most audacious maneuvers of the entire war. And the man sent to stop it was Ii Naomasa.",
+      "image_prompt": "A chaotic battlefield in early afternoon light: a small, tightly packed formation of samurai in dark armor with a circular cross crest on their banners pushes directly through a much larger army of grey and blue-armored soldiers, cutting a path through the chaos. Smoke and fallen banners litter the ground.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Naomasa led the pursuit personally, driving his red cavalry hard against the retreating Shimazu column. But the Shimazu were not running blindly — they were fighting a rear-guard action with suicidal discipline, peeling off small groups to slow their pursuers at any cost. As Naomasa closed in, one of these doomed defenders turned and fired. The shot struck Naomasa in the arm, shattering bone and throwing him from his horse. His own men dragged him from the field. The Red Devils had helped win the greatest battle of the age — but their commander would never fully recover.",
+      "image_prompt": "Ii Naomasa in red armor is thrown backward off his rearing horse as a matchlock shot strikes his arm, his spear falling from his grip. Around him, his red-armored soldiers react in alarm, reaching to catch him, while the dust and chaos of a running battle continue in the background.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In the battle's aftermath, Naomasa was richly rewarded. Ieyasu granted him the domain of Sawayama — the very castle that had belonged to his defeated rival, Ishida Mitsunari. On paper, it was the pinnacle of his career: a former fugitive now ruling the lands of the man he had helped destroy. But the wound from Sekigahara never properly healed. Infection lingered for months, then years. Naomasa, once famous for his ferocious energy on the battlefield, found himself increasingly confined — governing his new domain from a sickbed, his body slowly failing even as his name reached its peak.",
+      "image_prompt": "Inside a dim castle chamber, Ii Naomasa sits propped up on a futon, his arm bandaged and in a sling, his red armor displayed on a stand nearby unused. A retainer kneels before him presenting documents. Soft lamplight, somber atmosphere, autumn leaves visible through a window.",
+      "ken_burns": "static",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Naomasa began planning a new stronghold at Hikone, on the shores of Lake Biwa — a more defensible, more prestigious seat befitting his new status. But he would never see it completed, or even begun in earnest. In early 1602, less than two years after Sekigahara, Ii Naomasa died from complications of his battle wound. He was forty-one years old. The man who had survived a childhood as a hunted fugitive, who had led the most feared cavalry in Japan, was undone not by an enemy general — but by a single bullet from a defeated, desperate soldier.",
+      "image_prompt": "Ii Naomasa, pale and weakened, sits near a window overlooking Lake Biwa at dusk, studying an architectural plan for a castle laid across his lap. His red armor stands quietly in the corner of the room, untouched. Soft golden evening light, melancholic mood.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Naomasa's death did not end his family's rise — it was only the beginning. His son, Ii Naotaka, completed Hikone Castle and expanded the domain into one of the wealthiest in Japan. For the next two and a half centuries, the Ii clan held a unique privilege: they were the only family permitted to provide the Tokugawa shogunate's chief minister, the Tairo, in times of crisis. The most famous of these, Ii Naosuke, would go on to make decisions in the 1850s that helped open Japan to the world — and ultimately cost him his life.",
+      "image_prompt": "A grand white Japanese castle with multiple tiered roofs stands on a hill overlooking Lake Biwa, under construction with wooden scaffolding on one wing, workers visible carrying materials. Red-armored samurai banners fly from the completed towers. Bright daytime sky, sense of growth and prosperity.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "The Red Devils themselves outlived their founder. For generations, Ii clan troops continued to march into battle in crimson armor, a living symbol of the unit Naomasa had built from the remnants of his enemies. Hikone Castle still stands today, one of only a handful of Japanese castles to survive intact from the feudal era — a designated national treasure. Its mascot, a cartoon cat in a tiny red samurai helmet, has become one of Japan's most beloved characters, an unlikely modern echo of the terror that color once inspired across the battlefields of Sekigahara.",
+      "image_prompt": "A modern photograph-style scene of the real Hikone Castle on its hill in present-day Japan, white walls and dark wooden tiers against a clear blue sky, with cherry blossom trees in bloom along the stone pathway and tourists walking below. A small red samurai-helmet motif is visible on a nearby banner.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "What made the Red Devils so effective was never just the color of their armor. It was what that color represented: absolute discipline, relentless aggression, and a reputation so fearsome that some enemies reportedly broke formation at the mere sight of them approaching. Naomasa understood something that many commanders missed — that an army's reputation could be a weapon as real as any sword or spear. Fear, deployed correctly, could win battles before they even began. It was a lesson learned not from noble birth or formal training, but from a childhood spent surviving as nobody at all.",
+      "image_prompt": "A dramatic close formation of red-armored samurai cavalry stands motionless and silent at the edge of a misty field, spears raised in perfect unison, while in the distance a line of enemy soldiers visibly hesitates and begins to break ranks. Ii Naomasa sits at the head of the formation, calm and still.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naomasa",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "In the end, the boy hidden from assassins as a child became one of the most powerful men in Japan — his descendants serving at the very top of the Tokugawa government for generations, his name forever tied to one of history's most decisive battles. Ii Naomasa's story is rarely the first one told about Sekigahara. But without his impatience, his ambition, and his red-clad cavalry breaking every rule on that foggy October morning, the most famous battle in Japanese history might have unfolded very differently.",
+      "image_prompt": "A weathered suit of crimson samurai armor with gold trim and a tachibana crest stands displayed on a wooden stand inside a quiet museum hall, soft directional light illuminating it from above, dust motes visible in the air. Through a window in the background, the silhouette of Hikone Castle is visible against a sunset sky.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles — he never needed to draw his sword to destroy his enemies. Yagyu Munenori served as fencing instructor to three Tokugawa shoguns, but his true weapon was something far more dangerous: information. As the secret architect of the shogunate's intelligence network, he shaped the politics of an entire era from the shadows. How did a swordsman become one of the most powerful men in Japan without ever fighting a major battle?",
+      "image_prompt": "A composed samurai swordsman in dark formal robes stands in a dim castle corridor, one hand resting on a sheathed sword, watching shadowy figures pass through paper doors in the background. The lighting is moody, full of contrast between light and shadow, suggesting hidden surveillance and quiet power.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 15,
+      "narration": "Ii Naomasa's red armor became a symbol of fear across Japan — but his life began in hiding, a child with nothing but a name he couldn't even use. From fugitive to one of the most feared generals in Tokugawa history, his story is a reminder that the most dangerous men are often the ones who started with nothing to lose. If you enjoyed this episode, subscribe for more stories from Japan's age of warriors — and let us know in the comments which samurai we should cover next.",
+      "image_prompt": "A peaceful sunset view of Lake Biwa from the grounds of Hikone Castle, with a single suit of red samurai armor displayed on a stand in the foreground, silhouetted against the warm orange and pink sky reflecting on the water.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep024-BGM.mp3",
+  "youtube_url": "https://youtu.be/7WhCcJ3ERaY",
+  "shorts_url": "https://youtu.be/iPqMWo0J3AI",
+  "scheduled_at": "2026-06-23 03:00"
+}
