@@ -1,0 +1,261 @@
+{
+  "episode_id": "ep038",
+  "episode_title": "Chosokabe Motochika: The Conqueror of Shikoku and the Family He Destroyed",
+  "youtube_title": "The Warlord Who Conquered an Entire Island — Then Destroyed His Own Family",
+  "youtube_description": "He was once mocked as too weak to lead — yet within twenty-five years, he united an entire island under his banner. Then Japan's most powerful man decided that wasn't enough, and everything Chosokabe Motochika built began to fall apart — starting with his own family.\n\n⏱️ Chapters:\n0:00 Introduction\n0:18 He united an entire island under\n0:43 In the mid-1500s, the island of\n1:28 As a boy, Motochika was quiet,\n2:21 At the Battle of Tonomoto,...\n3:12 Over the next fifteen years,...\n4:06 What followed was nearly a...\n5:00 In 1585, Motochika finally...\n5:54 That man was Toyotomi...\n6:44 Motochika's entire army...\n7:29 By August 1585, Motochika had no\n8:26 As Hideyoshi's vassal,...\n9:16 At the Hetsugigawa River in...\n10:11 It was a trap. The Shimazu\n10:51 Motochika never recovered....\n11:42 Motochika had other adult...\n12:27 Motochika died in 1599,...\n13:14 In 1600, Morichika led the...\n14:03 So how should we remember...\n14:56 Motochika's story is one of a\n15:43 Chosokabe Motochika spent...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"The Samurai Sourcebook\" (Cassell, 1998)\n2. Sansom, George. \"A History of Japan, 1334-1615\" (Stanford University Press)\n3. Papinot, Edmond. \"Historical and Geographical Dictionary of Japan\"\n\n#ChosokabeMotochika #SamuraiHistory #SengokuPeriod #JapaneseHistory #Shikoku #ToyotomiHideyoshi #JapaneseWarlords #SengokuJidai",
+  "youtube_tags": [
+    "Chosokabe Motochika",
+    "Samurai History",
+    "Sengoku Period",
+    "Japanese History",
+    "Shikoku",
+    "Toyotomi Hideyoshi",
+    "Japanese Warlords",
+    "Sengoku Jidai"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 7,
+  "teaser_narration": "1585. One hundred thousand soldiers crossed the sea to crush a single island lord. He had spent twenty-five years uniting all of Shikoku — and believed nothing could stop him. He was wrong. Who was Chosokabe Motochika?",
+  "shorts_narration": "100,000 soldiers. One island lord. He conquered every rival on Shikoku — until Japan's most powerful man said it wasn't enough. This is Chosokabe Motochika — the man who built an empire and lost it.",
+  "thumbnail_prompt": "Chosokabe Motochika standing in dark green and black samurai armor on a rocky Shikoku coastline at dusk, a massive invasion fleet approaching from the sea behind him, his expression grim and resolute, dramatic stormy lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He united an entire island under one banner. Then Japan's most powerful man decided one island wasn't enough. What happened to Chosokabe Motochika next would destroy everything he built — and his own family along with it.",
+      "image_prompt": "Chosokabe Motochika standing on a coastal cliff overlooking the sea, Shikoku island stretching behind him, his dark green and black armor catching stormy light, a massive fleet of warships approaching on the horizon, dramatic and ominous.",
+      "ken_burns": "zoom_in",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In the mid-1500s, the island of Shikoku was a patchwork of warring clans, each controlling a fragment of land too small to matter on the national stage. Tosa province, on the island's wild southern coast, was ruled by the Chosokabe — a minor family with modest holdings and modest ambitions. Few in Kyoto had ever heard their name. But in 1539, a son was born to the Chosokabe lord who would change that completely — though nobody, least of all his own family, expected it from him.",
+      "image_prompt": "Wide cinematic view of feudal Shikoku island, mountainous terrain divided by rival clan banners and small wooden castles scattered across the landscape, misty valleys, late afternoon light.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "As a boy, Motochika was quiet, pale, and prone to tears — so unwarlike that his own retainers gave him a mocking nickname: 'Hime Wakagimi,' the Princess Young Lord. In an age where a samurai heir's worth was measured in battlefield courage, Motochika showed none. Whispers spread through the Chosokabe household that the clan's future was in the hands of a weakling. His father said nothing. But in 1560, at twenty-one years old, Motochika would face his first battle — and everyone assumed they already knew how it would end.",
+      "image_prompt": "A young Chosokabe Motochika as a pale, withdrawn teenager sitting quietly in a dim wooden castle hall, older samurai retainers exchanging doubtful glances behind him, muted candlelight.",
+      "ken_burns": "static",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "At the Battle of Tonomoto, Motochika charged into combat at the front of his men, fighting with a ferocity no one had seen from him before. He personally cut down enemy soldiers and refused to retreat even as arrows flew past him. By the end of the day, his stunned retainers had a new nickname for him: 'Oni Wakagimi' — the Demon Young Lord. The frightened boy was gone. In his place stood a warrior who, over the next two decades, would not stop until every rival clan on Shikoku bowed to him.",
+      "image_prompt": "Young Chosokabe Motochika in battle armor charging forward on a smoke-filled battlefield, sword raised, cutting through enemy ranks, his expression fierce and transformed, dust and chaos around him.",
+      "ken_burns": "zoom_in",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.23
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Over the next fifteen years, Motochika fought without pause. He crushed the Motoyama clan, who had once doubted him, and turned against the Ichijo — a once-powerful noble family exiled from Kyoto generations earlier, who still controlled western Tosa from their own private court. At the Battle of Watarigawa in 1575, Motochika's forces shattered the Ichijo for good. For the first time in its history, all of Tosa province answered to a single lord. But Motochika did not stop at the borders of his home province. He looked north, across the mountains, toward the rest of Shikoku.",
+      "image_prompt": "Chosokabe Motochika on horseback leading an army across a river at the Battle of Watarigawa, enemy banners falling into the water, mountainous Tosa landscape in the background, dynamic action.",
+      "ken_burns": "pan_left",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.47,
+        "y": 0.24
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "What followed was nearly a decade of relentless campaigning. Motochika pushed into Awa and Sanuki provinces, defeating the Miyoshi and Sogo clans one after another. He crossed into Iyo province on Shikoku's western coast, breaking the resistance of the Kono clan in turn. Castles fell. Rival lords either surrendered, fled, or died on the battlefield. By 1583, Motochika controlled more of Shikoku than any single ruler in its history — three provinces, dozens of castles, and an army that had never been defeated under his command. Only one province remained outside his grasp.",
+      "image_prompt": "Sweeping cinematic composition of samurai armies marching across multiple regions of a mountainous island, castle banners being replaced with a bold cross-shaped clan crest, dramatic overcast sky, sense of unstoppable conquest.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1585, Motochika finally completed what no one on Shikoku had ever achieved: total unification. Every province, every rival clan, every castle on the island now answered to him. He had spent twenty-five years transforming himself from a doubted child into the absolute master of an entire island. For a moment, it must have felt like the beginning of something even greater. But four hundred miles away, in the capital, a man who had just finished conquering the rest of Japan was looking at a map — and his eyes had landed on Shikoku.",
+      "image_prompt": "Chosokabe Motochika standing triumphantly atop a castle tower overlooking all of Shikoku island at sunset, his clan banner flying from every visible castle in the distance, a sense of total dominance — yet a small dark storm cloud forming on the horizon.",
+      "ken_burns": "zoom_in",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.34
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "That man was Toyotomi Hideyoshi, the most powerful warlord in Japan, who had just spent two years crushing every rival on the mainland. Hideyoshi sent Motochika an offer dressed as generosity: surrender most of Shikoku, and keep only Tosa as a vassal. To Motochika, who had bled for twenty-five years to win every inch of that land, it was an insult. He refused. In the summer of 1585, Hideyoshi's response arrived — not as a letter, but as an invasion force of over one hundred thousand men, crossing the sea toward Shikoku in three directions at once.",
+      "image_prompt": "A massive Toyotomi invasion fleet of warships crossing the sea toward Shikoku at dawn, hundreds of banners visible, Chosokabe coastal watchtowers in the foreground bracing for impact, epic scale.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "Motochika's entire army numbered perhaps forty thousand men — spread thin across an island he had only just finished conquering. Against him came three separate Toyotomi armies, each larger than his whole force, landing on different coasts simultaneously. Castle after castle fell within days. Motochika rushed from province to province trying to organize a defense, but there was no front line to hold — only a collapse happening everywhere at once. In less than a month, the island he had spent half his life uniting was being unmade piece by piece.",
+      "image_prompt": "Chosokabe Motochika on horseback at night, watching distant castles burning across a mountainous island landscape, his small army retreating around him in disarray, smoke rising on multiple horizons, desperate atmosphere.",
+      "ken_burns": "pan_right",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "By August 1585, Motochika had no army left capable of resisting. He surrendered to Hideyoshi's commanders, ending the unification he had spent twenty-five years building in less than thirty days. Hideyoshi's terms were harsh but not annihilating: Motochika would keep only Tosa, the province where his story began. Three provinces, dozens of castles, and an entire island's worth of conquest were gone. The boy once mocked as the Princess Young Lord had become, briefly, the master of Shikoku — and was now, once again, simply the lord of Tosa.",
+      "image_prompt": "Chosokabe Motochika kneeling in formal surrender before Toyotomi commanders inside a captured castle hall, his armor dusty and worn, his clan banner being lowered in the background, somber lighting.",
+      "ken_burns": "static",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.36,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "As Hideyoshi's vassal, Motochika had no choice but to fight in his new master's wars. In 1586, Hideyoshi launched a massive campaign against the Shimazu clan of Kyushu, and Motochika's forces — including his eldest son and heir, Nobuchika — were ordered to join. Motochika had raised Nobuchika as his successor for over twenty-five years, training him personally, grooming him to inherit everything the Chosokabe had built. Now father and son marched together into a war neither of them had chosen, under the command of a general neither of them trusted.",
+      "image_prompt": "Chosokabe Motochika and his young adult son Nobuchika riding side by side at the head of an army marching toward Kyushu, both in dark armor, Nobuchika earnest and determined, Motochika watching him with quiet concern.",
+      "ken_burns": "zoom_in",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "At the Hetsugigawa River in December 1586, the Toyotomi commander Sengoku Hidehisa ordered an immediate attack on the Shimazu army across the water — against the advice of every general present, including Motochika, who argued they should wait for reinforcements. Hidehisa overruled them all. Motochika watched as the order was given anyway. His son Nobuchika led his unit across the river as commanded, advancing into a Shimazu position that Motochika and others had warned was a trap. There was nothing left to do but follow the order — and hope.",
+      "image_prompt": "Tense war council at night beside a wide river, a Toyotomi commander pointing across the water toward distant enemy campfires, Chosokabe Motochika and other generals exchanging worried glances, torches flickering.",
+      "ken_burns": "zoom_in",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "It was a trap. The Shimazu had drawn the Toyotomi forces across the river deliberately, and as Nobuchika's unit advanced onto open ground, they were surrounded from three sides. The battle became a slaughter. Nobuchika fought to give his retreating men a chance to escape — and was killed on the field, along with thousands of allied soldiers. Motochika, watching from across the river, could do nothing but witness the destruction of the son he had spent his entire life preparing to inherit everything.",
+      "image_prompt": "Chaotic battle scene at a wide river, enemy forces surrounding and overwhelming a small samurai unit on an open plain, Chosokabe Motochika watching helplessly from the riverbank in the foreground, devastating atmosphere, dusk light.",
+      "ken_burns": "zoom_out",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.29
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Motochika never recovered. Those close to him said the conqueror of Shikoku, the man who had survived twenty-five years of war without faltering, returned from Kyushu a different person — withdrawn, suspicious, and consumed by grief he could not set aside. Nobuchika had been groomed as heir for decades; with him gone, the question of succession reopened a wound that had never fully closed. And the choice Motochika made next would prove far more destructive to his family than anything Hideyoshi's armies had done.",
+      "image_prompt": "An aged Chosokabe Motochika sitting alone in a dim castle room at night, staring at a single suit of armor displayed on a stand, his posture heavy with grief, candlelight.",
+      "ken_burns": "static",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.27,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "Motochika had other adult sons who were the natural choice to succeed him. Instead, he chose his fourth son, Morichika — bypassing his own family's expectations entirely. The decision split the Chosokabe retainers into bitter factions overnight. Loyalty that Motochika had spent decades building among his men began to fracture along family lines. He had survived a hundred-thousand-man invasion and the death of his heir — but the force that would ultimately break the Chosokabe clan apart was one Motochika created himself, inside his own household.",
+      "image_prompt": "Tense formal gathering inside a castle hall, Chosokabe Motochika announcing his successor to a divided room of samurai retainers, visible factions of supporters and dissenters on opposite sides of the hall, cold lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.31
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Motochika died in 1599, leaving Morichika in control of a clan still quietly split by the succession he had forced through. Within that same year, the rivalry boiled over — one of Motochika's own sons was executed in the power struggle that followed his death. The Chosokabe that Morichika inherited was not the unified force his father had built at the height of his power. It was a clan already wounded from within, just one year before Japan would be torn apart by its largest war yet.",
+      "image_prompt": "A solemn funeral procession moving through a misty castle courtyard, mourners in dark robes, a clan banner at half-mast, a divided crowd of retainers watching in uneasy silence.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "In 1600, Morichika led the Chosokabe into the Battle of Sekigahara on the losing side, fighting for the western army against Tokugawa Ieyasu. The defeat cost the clan almost everything — their lands were confiscated, and Morichika was reduced from the ruler of a province to a minor figure with no real power. Fifteen years later, after the fall of Osaka Castle in 1615, Morichika was captured and executed, along with his children. The Chosokabe line — the family that had once ruled all of Shikoku — was extinguished completely.",
+      "image_prompt": "Defeated samurai soldiers retreating from a smoke-covered battlefield, their banners torn and lowered, enemy forces visible in pursuit in the distance, grim grey weather.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "So how should we remember Chosokabe Motochika? He took an island that had never known a single ruler and, through twenty-five years of relentless war, gave it one — only to lose almost all of it within a month to a force he could never have matched. He buried the son he had raised to inherit everything, and in his grief, made a choice that planted the seeds of his family's complete destruction. Motochika's empire lasted barely long enough to be announced. His mistakes outlived him by sixteen years.",
+      "image_prompt": "Chosokabe Motochika standing alone on a quiet beach on the Tosa coast at sunset, looking out at the sea where the invasion fleet once appeared, his expression unreadable, weathered and aged, peaceful yet melancholic.",
+      "ken_burns": "zoom_in",
+      "character_ref": "motochika",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.31
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 55,
+      "narration": "Motochika's story is one of a man who proved himself through war, again and again — and was still undone by forces beyond the battlefield. But not every great warlord of this era fought their way up from doubt. On the other side of Japan, one woman commanded an army that was hers by right and by name — leading her clan's defense not from behind the walls, but from the front lines herself. Next time on Samurai Chronicles: the story of Tachibana Ginchiyo, the woman who led samurai into battle.",
+      "image_prompt": "Split cinematic composition: on one side, Chosokabe Motochika fading into shadow on a quiet beach; on the other side, the silhouette of a female samurai commander in armor raising a naginata before an army, dramatic contrast of light.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 25,
+      "narration": "Chosokabe Motochika spent twenty-five years proving that even a child everyone doubted could conquer an island — and one terrible year proving how quickly an empire, and a family, can come apart. If you enjoyed this story of ambition, grief, and the cost of total victory, subscribe for new episodes of Samurai Chronicles every day — and let us know in the comments: was Motochika's downfall Hideyoshi's doing, or his own?",
+      "image_prompt": "Wide cinematic shot of a coastline at golden hour, an empty castle ruin on a hilltop overlooking the sea, a weathered clan banner faintly visible, peaceful but melancholic, end-of-story atmosphere.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep024-BGM.mp3",
+  "youtube_url": "https://youtu.be/RnVEGYGwYlo",
+  "shorts_url": "https://youtu.be/lkOOz8L76fQ",
+  "scheduled_at": "2026-06-27 03:00"
+}
