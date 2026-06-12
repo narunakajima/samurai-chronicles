@@ -299,7 +299,7 @@
     },
     {
       "episode_id": "ep031",
-      "status": "pending",
+      "status": "in_production",
       "title": "How One Samurai Escaped 80,000 Enemies: Shimazu Yoshihiro at Sekigahara",
       "era": "Sengoku",
       "priority": "A",
@@ -309,7 +309,7 @@
     },
     {
       "episode_id": "ep032",
-      "status": "pending",
+      "status": "in_production",
       "title": "Three Arrows: The Lesson That Built Mori Motonari's Empire",
       "era": "Sengoku",
       "priority": "A",
@@ -319,7 +319,7 @@
     },
     {
       "episode_id": "ep033",
-      "status": "pending",
+      "status": "in_production",
       "title": "Japan's Most Loyal Warrior: Kusunoki Masashige's Impossible Last Stand",
       "era": "Kamakura/Muromachi",
       "priority": "A",
@@ -329,7 +329,7 @@
     },
     {
       "episode_id": "ep034",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Red Devils: Why Ii Naomasa's Army Was the Most Feared Force in Japan",
       "era": "Sengoku",
       "priority": "A",
@@ -339,7 +339,7 @@
     },
     {
       "episode_id": "ep035",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Shogun's Shadow: How Yagyu Munenori Controlled Japan from the Darkness",
       "era": "Edo",
       "priority": "A",
@@ -349,7 +349,7 @@
     },
     {
       "episode_id": "ep036",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Samurai Who Wore 'Love' Into Battle: Naoe Kanetsugu's Defiance",
       "era": "Sengoku",
       "priority": "A",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-07",
+  "last_updated": "2026-06-12",
   "total_topics": 87
 }

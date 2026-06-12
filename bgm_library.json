@@ -59,7 +59,8 @@
     "used_in": [
       "ep004",
       "ep021",
-      "ep026"
+      "ep026",
+      "ep035"
     ]
   },
   {
@@ -140,7 +141,8 @@
       "dramatic"
     ],
     "used_in": [
-      "ep024"
+      "ep024",
+      "ep034"
     ]
   },
   {
@@ -182,6 +184,62 @@
     ],
     "used_in": [
       "ep030"
+    ]
+  },
+  {
+    "id": "ep031-BGM",
+    "path": "BGM/ep031-BGM.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep031"
+    ]
+  },
+  {
+    "id": "ep032-BGM",
+    "path": "BGM/ep032-BGM.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep032"
+    ]
+  },
+  {
+    "id": "ep033-BGM",
+    "path": "BGM/ep033-BGM.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep033"
+    ]
+  },
+  {
+    "id": "ep036-BGM",
+    "path": "BGM/ep036-BGM.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "epic",
+      "orchestral"
+    ],
+    "used_in": [
+      "ep036"
     ]
   }
 ]

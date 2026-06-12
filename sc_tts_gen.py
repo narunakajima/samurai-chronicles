@@ -11,6 +11,7 @@ sc_tts_gen.py — Samurai Chronicles 英語ナレーション生成スクリプ�
 """
 
 import argparse
+import io
 import json
 import os
 import sys
@@ -26,6 +27,13 @@ TTS_MODEL = "gemini-3.1-flash-tts-preview"
 VOICE_NAME = "Charon"   # 重厚・ドラマチックな男性英語ボイス
 TEMPERATURE = 1.0
 SAMPLE_RATE = 24000
+
+# ── ナレーション繰り返し検知 ─────────────────────────────────
+# Gemini TTS が稀にナレーション全体を2回繰り返した音声を返すことがある。
+# 語数から推定した尺の DUP_RATIO_THRESHOLD 倍を超えたら「繰り返しの疑い」として再生成する。
+DUP_RATIO_THRESHOLD = 1.6
+MAIN_EXPECTED_WPM = 85.0     # 本編ナレーション（insight等の低速シーンも考慮した下限的な値）
+TRAILER_EXPECTED_WPM = 130.0  # teaser / shorts（トレイラー調・早口）
 
 import subprocess  # noqa: E402（silenceremove用）
 
@@ -95,6 +103,14 @@ SHORTS_NARRATOR_STYLE = (
 )
 
 
+def audio_duration_sec(data: bytes, sample_rate: int = SAMPLE_RATE) -> float:
+    """音声バイト列（WAVまたはPCM raw）の長さを秒で返す。"""
+    if data[:4] == b"RIFF":
+        with wave.open(io.BytesIO(data)) as wf:
+            return wf.getnframes() / float(wf.getframerate())
+    return len(data) / 2 / float(sample_rate)
+
+
 def pcm_to_wav(pcm_data: bytes, output_path: Path, sample_rate: int = SAMPLE_RATE):
     """PCM バイト列を WAV ファイルとして保存する。"""
     with wave.open(str(output_path), "wb") as wf:
@@ -113,9 +129,16 @@ def build_prompt(narration_text: str, scene_type: str = "") -> str:
 
 
 def generate_take(client, narration_text: str, max_retries: int = 5,
-                  scene_type: str = "") -> bytes:
-    """1テイク生成して音声バイト列を返す（指数バックオフリトライ付き）。"""
+                  scene_type: str = "", expected_wpm: float = MAIN_EXPECTED_WPM,
+                  dup_check_text: str = None) -> bytes:
+    """1テイク生成して音声バイト列を返す（指数バックオフリトライ付き）。
+
+    語数から推定した尺の DUP_RATIO_THRESHOLD 倍を超える音声が返った場合は
+    「ナレーション繰り返し」の疑いとして再生成する。
+    """
     prompt = build_prompt(narration_text, scene_type)
+    word_count = len((dup_check_text or narration_text).split())
+    max_dur = word_count / expected_wpm * 60 * DUP_RATIO_THRESHOLD
     config = types.GenerateContentConfig(
         response_modalities=["AUDIO"],
         speech_config=types.SpeechConfig(
@@ -127,6 +150,7 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
         ),
         temperature=TEMPERATURE,
     )
+    last_audio_data = None
     for attempt in range(1, max_retries + 1):
         try:
             response = client.models.generate_content(
@@ -139,13 +163,22 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
             if parts:
                 for part in parts:
                     if part.inline_data is not None:
-                        return part.inline_data.data
+                        audio_data = part.inline_data.data
+                        actual_dur = audio_duration_sec(audio_data)
+                        if actual_dur > max_dur:
+                            print(f"  ⚠️ 繰り返しの疑い（{actual_dur:.1f}s > 想定上限{max_dur:.1f}s） ", end="", flush=True)
+                            last_audio_data = audio_data
+                            break
+                        return audio_data
         except Exception as e:
             print(f"  API エラー: {e}")
         if attempt < max_retries:
             wait = 2 ** attempt
-            print(f"  (リトライ {attempt}/{max_retries - 1} / {wait}秒待機) ", end="", flush=True)
+            print(f"(リトライ {attempt}/{max_retries - 1} / {wait}秒待機) ", end="", flush=True)
             time.sleep(wait)
+    if last_audio_data is not None:
+        print("  ⚠️ リトライ後も繰り返しの疑いが残るため、最後の結果を使用します ", end="", flush=True)
+        return last_audio_data
     raise RuntimeError("音声データが返ってきませんでした（全リトライ失敗）")
 
 
@@ -197,7 +230,8 @@ def run_teaser(episode_id: str):
         out_file = out_dir / "S00_teaser.wav"
 
         print(f"  TTS生成中... ", end="", flush=True)
-        audio_data = generate_take(client, teaser_narration, scene_type="teaser")
+        audio_data = generate_take(client, teaser_narration, scene_type="teaser",
+                                    expected_wpm=TRAILER_EXPECTED_WPM)
         if audio_data[:4] == b"RIFF":
             raw_wav.write_bytes(audio_data)
         else:
@@ -250,7 +284,8 @@ def run_shorts(episode_id: str):
 
         print(f"  TTS生成中... ", end="", flush=True)
         prompt = f"{SHORTS_NARRATOR_STYLE}\n\n{shorts_narration}"
-        audio_data = generate_take(client, prompt)
+        audio_data = generate_take(client, prompt, expected_wpm=TRAILER_EXPECTED_WPM,
+                                    dup_check_text=shorts_narration)
         if audio_data[:4] == b"RIFF":
             raw_wav.write_bytes(audio_data)
         else:
