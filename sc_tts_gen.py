@@ -94,14 +94,6 @@ SCENE_TYPE_ADDENDUM = {
     ),
 }
 
-# ── Shorts専用ナレータープロファイル（トレイラースタイル） ──
-SHORTS_NARRATOR_STYLE = (
-    "You are a movie trailer narrator. Speak fast, intense, and urgent. "
-    "Drive forward without stopping — no long pauses between sentences. "
-    "Punchy. Cinematic. Like a 30-second Hollywood action trailer. "
-    "Each sentence lands like a punch."
-)
-
 
 def audio_duration_sec(data: bytes, sample_rate: int = SAMPLE_RATE) -> float:
     """音声バイト列（WAVまたはPCM raw）の長さを秒で返す。"""
@@ -285,8 +277,8 @@ def run_shorts(episode_id: str):
         out_file = out_dir / "S00_shorts.wav"
 
         print(f"  TTS生成中... ", end="", flush=True)
-        prompt = f"{SHORTS_NARRATOR_STYLE}\n\n{shorts_narration}"
-        audio_data = generate_take(client, prompt, expected_wpm=TRAILER_EXPECTED_WPM,
+        audio_data = generate_take(client, shorts_narration, scene_type="teaser",
+                                    expected_wpm=TRAILER_EXPECTED_WPM,
                                     dup_check_text=shorts_narration)
         if audio_data[:4] == b"RIFF":
             raw_wav.write_bytes(audio_data)
