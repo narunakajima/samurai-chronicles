@@ -16,15 +16,18 @@ sc_image_gen.py — Samurai Chronicles 静止画生成スクリプト
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
+from PIL import Image
 from google import genai
 from google.genai import types
 
 API_KEY = os.environ.get("GEMINI_API_KEY", "")
 
 MODEL = "gemini-3.1-flash-image-preview"
+QA_MODEL = "gemini-2.0-flash"
 
 BASE_DIR = Path(__file__).parent  # スクリプト・エピソードJSONの場所
 
@@ -125,6 +128,43 @@ def generate_one_image(client, scene_prompt: str, character_ref: str, output_pat
     return False
 
 
+def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: int) -> dict:
+    """生成画像をGemini Visionで自動チェックする。問題があれば issues に格納する。"""
+    try:
+        image = Image.open(image_path)
+        qa_prompt = (
+            "You are a quality-control reviewer for AI-generated historical concept art images "
+            "used in a samurai history video series.\n\n"
+            "Check the image against the intended scene description for these issue types:\n"
+            "- MISMATCH: the image does not match the scene description (wrong subject, action, or setting)\n"
+            "- DISTORTION: anatomical errors, malformed faces/hands/bodies, broken or warped objects\n"
+            "- TEXT: any readable text, captions, watermarks, or logos appear in the image\n"
+            "- ARCHITECTURE: anachronistic or era-incorrect architecture, objects, or clothing for Edo/Sengoku Japan\n\n"
+            f"Scene description: {image_prompt}\n\n"
+            "Respond with ONLY a JSON object, no other text, in this exact format:\n"
+            '{"ok": true, "issues": []}\n'
+            "or\n"
+            '{"ok": false, "issues": ["ISSUE_TYPE: brief description", ...]}'
+        )
+
+        response = client.models.generate_content(
+            model=QA_MODEL,
+            contents=[qa_prompt, image],
+        )
+        text = response.text.strip()
+        if text.startswith("```"):
+            text = re.sub(r"^```(?:json)?\s*", "", text)
+            text = re.sub(r"\s*```$", "", text)
+        result = json.loads(text)
+        return {
+            "scene_id": scene_id,
+            "ok": bool(result.get("ok", True)),
+            "issues": result.get("issues", []),
+        }
+    except Exception:
+        return {"scene_id": scene_id, "ok": True, "issues": []}
+
+
 def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
     if not API_KEY:
         print("❌ GEMINI_API_KEY が設定されていません")
@@ -199,6 +239,7 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
     print(f"{'━'*60}\n")
 
     saved = []
+    qa_results = []
     for scene in scenes:
         scene_id = scene["scene_id"]
         prompt = scene["image_prompt"]
@@ -211,8 +252,14 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
         try:
             ok = gen_func(client, prompt, char_ref, out_file)
             if ok:
-                print(f"✓ {out_file.name}")
+                print(f"✓ {out_file.name}", end="", flush=True)
                 saved.append(out_file)
+                qa = qa_image_with_gemini(client, out_file, prompt, scene_id)
+                qa_results.append(qa)
+                if qa["ok"]:
+                    print("  [QA: OK]")
+                else:
+                    print(f"  [QA: ⚠️  {len(qa['issues'])}件]")
             else:
                 print("⚠️  画像データなし")
         except Exception as e:
@@ -224,6 +271,34 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
     print(f"\n{'━'*60}")
     print(f"  完了: {len(saved)}/{len(scenes)} 枚 → {out_dir}")
     print(f"{'━'*60}\n")
+
+    # ── 画像QAレポート出力 ──────────────────────────────────
+    warnings = [r for r in qa_results if not r["ok"]]
+    all_ok = len(warnings) == 0
+
+    print(f"{'━'*60}")
+    print(f"  画像QA結果: {len(qa_results) - len(warnings)}/{len(qa_results)} 件 OK")
+    if warnings:
+        for w in warnings:
+            for issue in w["issues"]:
+                print(f"  ⚠️  S{w['scene_id']:02d}: {issue}")
+    else:
+        print(f"  問題なし")
+    print(f"{'━'*60}\n")
+
+    episode_dir = DRIVE_BASE / episode_id
+    episode_dir.mkdir(parents=True, exist_ok=True)
+    qa_file = episode_dir / ("image_qa_result_shorts.json" if shorts else "image_qa_result.json")
+    qa_output = {
+        "episode_id": episode_id,
+        "total_scenes": len(qa_results),
+        "warnings": warnings,
+        "all_ok": all_ok,
+    }
+    with open(qa_file, "w", encoding="utf-8") as f:
+        json.dump(qa_output, f, ensure_ascii=False, indent=2)
+    print(f"  QA結果を保存しました: {qa_file}\n")
+
     return saved
 
 

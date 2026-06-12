@@ -2,6 +2,55 @@
 
 topics_queue.json から次のトピックを選び、動画生成まで一気に進めるコマンド。
 
+---
+
+## 起動時プレビュー（毎回必ず表示する）
+
+コマンド起動直後、STEP 1 に入る前に以下を**そのまま**表示する：
+
+```
+## `/sc-new` — 作業プレビュー
+
+| ステップ | 内容 | 所要時間 |
+|---|---|---|
+| STEP 1  | 次のトピック確認（人物重複チェック・S19予告確認） | 約1〜2分 |
+| STEP 2A | エピソードJSON生成（20シーン） | 約2〜3分 |
+| STEP 2B | JSONファイル保存 + キュー更新 | 即時 |
+| STEP 3A | 制作確認書生成 ┐ | 約3〜5分 |
+| STEP 3B | サムネイル生成 ├（並行） | 約2〜3分 |
+| STEP 3C | BGM選定      ┘ | 約2〜3分 |
+| *(確認待ち)* | QA・BGM・サムネイル確認 → OK | ユーザー次第 |
+| STEP 4  | Google Driveへ移動 | 約1分 |
+| STEP 5A | TTS生成（本編・teaser・shorts）┐ | 約5〜10分 |
+| STEP 5B | 画像生成（16:9 + 9:16）      ┘（並行） | 約10〜15分 |
+| STEP 5C | zoom_anchor 判定 | 約3〜5分 |
+| STEP 5D | 画像QA | 約2〜3分 |
+| STEP 6  | 動画・字幕生成 | 約3〜5分 |
+
+**合計目安: 約30〜45分**（確認待ち除く）
+```
+
+表示後、ユーザーの確認を待たずにそのまま STEP 1 へ進む。
+
+### 各ステップの進捗報告（必須）
+
+各ステップ完了時に必ず以下の形式で報告してから次のステップへ進む：
+
+```
+✅ STEP 1 完了 — ep{NNN} 確定（{person}）
+✅ STEP 2A 完了 — JSON生成（{total_scenes}シーン）
+✅ STEP 2B 完了 — ファイル保存・キュー更新
+
+STEP 3 開始（並行処理）
+  ├─ 3A: 制作確認書生成
+  ├─ 3B: サムネイル生成
+  └─ 3C: BGM選定
+```
+
+STEP 3A/3B/3C はすべて完了してから一括で完了報告する（個別には報告しない）。
+
+---
+
 ## 定数
 
 - エピソードJSON: `$HOME/samurai-chronicles/episodes/`
@@ -61,7 +110,7 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 
 ---
 
-## STEP 2 — エピソード内容を生成する
+## STEP 2A — エピソード内容を生成する
 
 選ばれたトピックをもとに、以下を含む完全なエピソードJSONを生成する。
 
@@ -90,7 +139,7 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 
 **ナレーション（各シーン）:**
 - BBC/Netflix歴史ドキュメンタリー調の英語
-- 1シーン約80〜100語（約15〜18秒の読み上げ尺）
+- 1シーン約80〜100語（TTS読み上げ速度 約90語/分 → **実尺 約55〜70秒**）
 - 各シーンで次シーンへの引きを作る
 - hook → setup → rising_action → climax → falling_action → insight → teaser → outro の構成
 
@@ -199,7 +248,7 @@ https://www.youtube.com/@Samurai-Chronicles-JP
 
 ---
 
-## STEP 3 — JSONを保存し、topics_queue.json を更新する
+## STEP 2B — JSONを保存し、topics_queue.json を更新する
 
 ```bash
 # episodes/ に保存
@@ -219,11 +268,11 @@ Commanding presence. Carries a European arquebus as well as a katana.
 
 ---
 
-## STEP 4 — 制作確認書・サムネイル・BGMを並行して準備する
+## STEP 3 — 制作確認書・サムネイル・BGMを並行して準備する
 
-制作確認書の生成・サムネイル画像生成・BGMダウンロードを**同時に**バックグラウンドで実行する。
+制作確認書の生成（3A）・サムネイル画像生成（3B）・BGMダウンロード（3C）を**同時に**バックグラウンドで実行する。
 
-### 制作確認書（Claudeが直接生成）
+### STEP 3A — 制作確認書（Claudeが直接生成）
 
 **制作確認書の内容は画面に一切出力しない。** バックグラウンドで以下の手順で実行する：
 
@@ -319,7 +368,8 @@ BGM           : ❌ 未選択
 【各シーンのナレーション】
 ================================================================
 
-▶ S{id:02d}  [{type}]  キャラクター: {character_ref or —}  想定尺: {duration_seconds}秒
+▶ S{id:02d}  [{type}]  キャラクター: {character_ref or —}  語数: 約{word_count}語（推定実尺: 約{estimated_seconds}秒）
+※ 推定実尺 = word_count ÷ 90語/分 × 60 + 1.5s（NARR_DELAY+NARR_TAIL）。hook/teaser/outro は短め。
 
   【EN】
   {narration}（自動修正済みの場合は修正後のナレーション）
@@ -357,7 +407,7 @@ BGM           : ❌ 未選択
 
 ---
 
-### サムネイル画像（Claudeが直接生成）
+### STEP 3B — サムネイル画像（Claudeが直接生成）
 
 エピソードJSONの `thumbnail_prompt` にテキストオーバーレイ指示を加えてGeminiで生成し、デスクトップに保存する。
 
@@ -392,7 +442,7 @@ response = client.models.generate_content(
 
 ---
 
-### BGM（Freesound 2曲 + ライブラリ 2曲 = 計4曲）
+### STEP 3C — BGM（Freesound 2曲 + ライブラリ 2曲 = 計4曲）
 
 Freesound から2曲ダウンロードし、`bgm_library.json` からエピソードの雰囲気に合う2曲を選んでデスクトップにコピー。計4曲からユーザーが選ぶ。
 
@@ -455,7 +505,7 @@ BGM_library_02_xxx.mp3     ← ライブラリ
 
 3つすべてが完了したら、制作確認書で見つかった問題点を**画面に表示**してユーザーに確認を取る。
 
-**⚠️ 重要: TTS・画像生成（STEP 5）はユーザーの承認が取れるまで絶対に開始しない。**
+**⚠️ 重要: TTS・画像生成（STEP 5A/5B）はユーザーの承認が取れるまで絶対に開始しない。**
 ナレーション修正が必要な問題がある場合、承認前にTTSを走らせると再生成が必要になる。
 
 ```
@@ -484,7 +534,7 @@ BGM_library_02_xxx.mp3     ← ライブラリ
 ✅ 画像プロンプト: 問題なし
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-❌自動修正済み・⚠️なし → 「✅ QA完了 — 問題なし」のみ表示して即 STEP 5 へ。
+❌自動修正済み・⚠️なし → 「✅ QA完了 — 問題なし」のみ表示して即 STEP 5A/5B へ。
 ⚠️がある場合のみ上記を表示して確認を取る。
 
 サムネイルを確認し、BGMは1曲だけ残して削除してください。
@@ -500,11 +550,11 @@ BGM_library_02_xxx.mp3     ← ライブラリ
 - **ナレーション修正あり（❌ / ⚠️）** → `episodes/ep{NNN}.json` の該当シーンを直接編集して修正。デスクトップの制作確認書も上書き更新。修正箇所を報告して再確認を求める。
 - **サムネイルをやり直したい** → デスクトップの `ep{NNN}_thumbnail.png` を削除して再生成。
 - **BGMをやり直したい** → デスクトップの4曲と `/tmp/sc_bgm_credits/` 内の credit.txt を削除し、`--round` を1増やして再ダウンロード＋ライブラリ再選択。
-- **すべてOK** → STEP 4b へ進む
+- **すべてOK** → STEP 4 へ進む
 
 ---
 
-## STEP 4b — Google Driveへ移動
+## STEP 4 — Google Driveへ移動
 
 すべてOKが取れたら、デスクトップのファイルをGoogle Driveエピソードフォルダへ移動する：
 
@@ -581,21 +631,24 @@ Freesound の SOUND_ID は BGM ファイル名（`BGM_candidate_XX_{SOUND_ID}_..
 
 ---
 
-## STEP 5 — 素材を自動生成する
+## STEP 5A/5B — 素材を自動生成する
 
-以下を実行する：
+STEP 5A（TTS）と STEP 5B（画像）を並行して実行する：
 
 ```bash
+# STEP 5A — TTS生成
 python3 sc_tts_gen.py --episode ep{NNN}                    # ナレーション音声生成（本編用・シーンタイプ別感情トーン）
 python3 sc_tts_gen.py --episode ep{NNN} --teaser           # トレイラーイントロTTS生成（S00_teaser.wav）
 python3 sc_tts_gen.py --episode ep{NNN} --shorts           # Shorts専用TTS生成（S00_shorts.wav）
+
+# STEP 5B — 画像生成
 python3 sc_image_gen.py --episode ep{NNN}                  # 本編用画像生成（16:9）
 python3 sc_image_gen.py --episode ep{NNN} --shorts         # Shorts用画像生成（9:16）
 ```
 
 ---
 
-## STEP 5b — シーン画像解析・zoom_anchor 書き込み
+## STEP 5C — シーン画像解析・zoom_anchor 書き込み
 
 画像生成完了後、Claude が各シーン画像を直接 Read ツールで読み込み、ズーム焦点座標を判定して
 ep{NNN}.json に書き込む。**Gemini API は使わない。Claude のビジョンで直接判断する。**
@@ -633,43 +686,51 @@ zoom_anchor の処理結果は**画面に表示しない**。サイレントに�
 
 ---
 
-## STEP 5c — 画像 × ナレーション 整合性チェック
+## STEP 5D — 画像QA結果の確認
 
-STEP 5b 完了後、動画生成の**前**に実施する。
+STEP 5C 完了後、動画生成の**前**に実施する。
 
-### ⚠️ 絶対ルール：ナレーション変更は提案しない
+### ⚠️ 絶対ルール
 
-このステップで修正できる手段は**画像の再生成のみ**。
-ナレーション・JSONの修正は一切提案しない（＝TTS再生成は絶対に発生させない）。
-ナレーションの品質はSTEP 4で保証済みとみなす。
-「ナレーションに問題がある」と感じても、画像側で対応するか [B] 許容で進む。
+- **画像ファイルを Read ツールで開かない**。`sc_image_gen.py` が生成時に Gemini Vision で
+  自動チェック済みであり、その結果は `image_qa_result.json` / `image_qa_result_shorts.json`
+  に保存されている。このJSONを読むだけでよい。
+- このステップで修正できる手段は**画像の再生成のみ**。
+  ナレーション・JSONの修正は一切提案しない（＝TTS再生成は絶対に発生させない）。
+  ナレーションの品質はSTEP 3Aで保証済みとみなす。
 
 ### チェック内容
 
-Google Drive の `images/S01.png`〜`S{N}.png` を Read ツールで読み込み、
-各シーン画像を image_prompt と照合する。
+Google Drive の以下のファイルを読み込む：
+```bash
+cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/image_qa_result.json
+cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/image_qa_result_shorts.json
+```
 
-確認する観点（すべて「画像の問題」として扱う）:
-- 画像が image_prompt の指示と大きく乖離している（被写体・構図・時代設定）
-- AI 特有の不自然さで目立つもの（崩れた文字、異様な手・顔）
-- 冒頭と終盤で同じキャラクターの同じ構図が被っていないか（reveal 演出の破綻）
-
-**問題ありのシーンのみ報告**（正常シーンは省略）。
-画像が多い場合は S01・hook・キャラクター初登場・クライマックス・S19 を優先。
+各JSONの `all_ok` を確認する：
+- `all_ok: true` → 問題なし
+- `all_ok: false` → `warnings` 配列に `{scene_id, issues}` が入っている
 
 ### レポート出力フォーマット
+
+`all_ok: true`（両方）の場合：
+
+```
+✅ STEP 5D 完了 — 画像 QA: 全シーン問題なし → STEP 6 へ進みます
+```
+
+そのまま即座に次のステップへ進む。
+
+`all_ok: false`（いずれか）の場合：
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   画像 QA — ep{NNN}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  [WARNING] S{N}: {問題の説明} → 画像再生成を推奨
-  ✅ 主要シーン: 問題なし
+  [WARNING] S{N}: {issues の内容}
   WARNING {N}件
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
-
-問題がなければ「✅ 画像 QA: 全シーン問題なし → STEP 6 へ進みます」と1行で報告して即座に次へ。
 
 ### アクション
 
