@@ -379,7 +379,7 @@
     },
     {
       "episode_id": "ep039",
-      "status": "pending",
+      "status": "in_production",
       "title": "Japan's Female Warlord: Tachibana Ginchiyo Led Armies into Battle",
       "era": "Sengoku",
       "priority": "B",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-12",
+  "last_updated": "2026-06-13",
   "total_topics": 87
 }
