@@ -24,7 +24,7 @@ from PIL import Image
 from google import genai
 from google.genai import types
 
-API_KEY = os.environ.get("GEMINI_API_KEY", "")
+API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
 
 MODEL = "gemini-3.1-flash-image-preview"
 QA_MODEL = "gemini-2.0-flash"

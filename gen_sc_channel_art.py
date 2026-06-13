@@ -8,7 +8,7 @@ from PIL import Image
 
 TARGET_W, TARGET_H = 2560, 1440
 
-API_KEY = os.environ.get("GEMINI_API_KEY", "")
+API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
 if not API_KEY:
     print("GEMINI_API_KEY が未設定です")
     sys.exit(1)
