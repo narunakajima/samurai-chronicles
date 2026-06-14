@@ -399,7 +399,7 @@
     },
     {
       "episode_id": "ep041",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Night Nobunaga Burned Mount Hiei: Japan's Most Controversial Massacre",
       "era": "Sengoku",
       "priority": "A",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-14",
+  "last_updated": "2026-06-15",
   "total_topics": 87
 }

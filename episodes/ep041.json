@@ -1,0 +1,257 @@
+{
+  "episode_id": "ep041",
+  "episode_title": "Oda Nobunaga and the Burning of Mount Hiei: Japan's Most Controversial Massacre",
+  "youtube_title": "Why Oda Nobunaga Really Burned Mount Hiei to the Ground",
+  "youtube_description": "He surrounded a mountain sacred for eight centuries, and by morning, nothing was left. This is the story of Oda Nobunaga's most controversial act — and why he believed it had to happen.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 He burned down a mountain sacred\n0:44 By 1570, Oda Nobunaga had become\n1:35 That mountain was Hiei, and on\n2:27 In the summer of 1570, Nobunaga\n3:21 The monks of Enryakuji...\n4:15 By the winter of 1570,...\n5:06 In December 1570, a truce was\n6:05 In September 1571, Nobunaga...\n7:04 What followed was systematic...\n7:50 Estimates of the dead range into\n8:49 So why did he do it?\n9:52 The reaction was immediate...\n10:43 For more than a decade, Mount\n11:28 In the years that followed,...\n12:22 Brutal as it was, this campaign\n13:11 Nobunaga himself would not...\n14:02 Today, historians still argue...\n14:59 Enryakuji stands again today,...\n15:50 Nobunaga's ruthlessness built...\n16:19 The burning of Mount Hiei...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Lamers, Jeroen P. \"Japonius Tyrannus: The Japanese Warlord Oda Nobunaga Reconsidered.\" Hotei Publishing, 2000.\n2. Turnbull, Stephen. \"Battles of the Samurai.\" Arms and Armour Press, 1987.\n3. Sansom, George. \"A History of Japan, 1334-1615.\" Stanford University Press, 1961.\n\n\n🎵 Music: A Piano and Choir Journey by Matio888 (freesound.org) — CC BY 4.0\n#OdaNobunaga #SamuraiHistory #SengokuPeriod #JapaneseHistory #MountHiei #Enryakuji #JapaneseWarlords #SengokuJidai",
+  "youtube_tags": [
+    "Oda Nobunaga",
+    "Samurai History",
+    "Sengoku Period",
+    "Japanese History",
+    "Mount Hiei",
+    "Enryakuji",
+    "Japanese Warlords",
+    "Sengoku Jidai"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "September 1571. Oda Nobunaga's army surrounds a mountain sacred for eight centuries. Inside: thousands of monks, women, and children — granted sanctuary for generations. By nightfall, none of it will exist. What could justify burning down a mountain the gods themselves were said to protect?",
+  "shorts_narration": "Thousands dead. One sacred mountain, burned to ash in a single night. Oda Nobunaga destroyed Japan's holiest temple — monks, women, and children included. This was the night they began calling him 'the Demon King.'",
+  "thumbnail_prompt": "Oda Nobunaga on horseback in black lacquered armor with a golden paulownia crest, watching Mount Hiei's temple complex engulfed in flames at night, thick smoke rising into a dark sky, dramatic orange firelight illuminating his stern face, soldiers with torches visible in the distance.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He burned down a mountain sacred for eight centuries. Inside were thousands of monks, women, and children. Why would Japan's most ambitious warlord commit one of history's worst massacres?",
+      "image_prompt": "A vast mountain temple complex engulfed in roaring flames at night, thick smoke billowing into a dark sky, a lone armored warlord on horseback in black lacquered armor with a golden paulownia crest watching from a ridge below, firelight reflecting on his face.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "By 1570, Oda Nobunaga had become one of the most powerful warlords in Japan — and one of the most hated. He had seized Kyoto, installed a puppet shogun, and trampled the old order of court nobles and Buddhist institutions that had ruled for centuries. In response, a coalition formed against him: the Asakura clan of Echizen, the Azai clan of northern Omi, fanatical Ikko-ikki warrior-monks, and even the shogun he had installed. Nobunaga was fighting on every front at once. And one mountain, overlooking the very capital he controlled, was about to become the center of it all.",
+      "image_prompt": "A war room scene in Kyoto: a tall, imposing warlord in black lacquered armor with a golden paulownia crest standing over a large map of Japan covered with rival clan banners and markers, candlelight, tense advisors seated around him.",
+      "ken_burns": "static",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "That mountain was Hiei, and on its slopes stood Enryakuji — one of the most powerful religious institutions in Japan. For eight hundred years, its monks had trained emperors' advisors, blessed the capital, and commanded their own private army of warrior-monks known as sohei. Enryakuji answered to no daimyo. It taxed its own lands, fielded thousands of armed men, and considered itself above the wars of mere warlords. To attack it was almost unthinkable — a strike not just against an army, but against the spiritual foundation of the entire country.",
+      "image_prompt": "A sprawling mountain temple complex at dawn, dozens of wooden halls and pagodas spread across forested slopes, armored warrior-monks (sohei) with naginata polearms standing guard on the stone steps, mist rising through the cedar trees, serene yet imposing atmosphere.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In the summer of 1570, Nobunaga and his ally Tokugawa Ieyasu met the combined armies of the Asakura and Azai clans at the Anegawa River. The fighting was brutal — soldiers wading into the water, hacking at each other in the current. By the end of the day, Nobunaga's forces had won, but the victory was incomplete. The Asakura and Azai armies survived, retreating south toward the safety of the mountains overlooking Kyoto. They needed a place to regroup, resupply, and disappear from Nobunaga's reach. They found exactly that on Mount Hiei.",
+      "image_prompt": "A chaotic river battle scene — hundreds of armored samurai wading through a shallow river, swords and spears clashing in the water, banners of rival clans visible on both banks, splashes and blood in the current, overcast sky.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The monks of Enryakuji welcomed the defeated armies with open arms. To Nobunaga, this was no act of religious mercy — it was a declaration of war. From their fortified mountain, the Asakura and Azai forces could strike down into the valleys whenever they chose, then retreat back into sanctuary where Nobunaga's armies could not follow without committing an unthinkable act: violating the most sacred ground in Japan. Nobunaga sent word to the monks. Stay neutral, he warned, or hand over his enemies — or face the consequences. Enryakuji refused to answer.",
+      "image_prompt": "Defeated samurai soldiers in muddy, battle-worn armor being led up a mountain stone stairway by robed monks, torii gates and temple buildings visible above through the trees, a watchful sohei warrior-monk standing at the gate.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By the winter of 1570, Nobunaga's army surrounded the base of Mount Hiei, cutting off supplies to the temple complex above. For weeks, the standoff continued — Nobunaga's forces below, the monks and their guests entrenched above, neither side willing to strike first. Winter on the mountain was brutal, and Nobunaga's own position was precarious, with enemies still active elsewhere in the country. He needed this crisis resolved — but not yet at the cost of attacking Enryakuji directly. For now, a different kind of pressure would have to do.",
+      "image_prompt": "A winter military encampment at the base of a snow-covered mountain, rows of samurai tents and campfires, soldiers in armor looking up toward distant temple lights glowing faintly through falling snow on the slopes above, a commanding warlord in black armor with a golden paulownia crest standing at the edge of the camp.",
+      "ken_burns": "zoom_out",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In December 1570, a truce was brokered through the shogun and the imperial court. The Asakura and Azai forces were allowed to withdraw from Mount Hiei unharmed and return to their own territories. On paper, it looked like compromise. To Nobunaga, it looked like humiliation. Enryakuji had sheltered his enemies, defied his ultimatum, and walked away untouched — protected by exactly the kind of religious authority that, in Nobunaga's view, had no place dictating terms to warlords. He withdrew his army. But he did not forget. For nearly a year, Mount Hiei's fate was already decided.",
+      "image_prompt": "A tense formal scene at the edge of a military camp — an imperial court messenger in fine white robes presenting a scroll to a stern warlord in black lacquered armor with a golden paulownia crest, defeated enemy soldiers filing past in the background heading toward the mountains, Nobunaga's expression cold and unreadable.",
+      "ken_burns": "static",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In September 1571, Nobunaga returned — this time with no intention of negotiating. His army, numbering in the tens of thousands, marched up from every direction and surrounded the entire mountain, sealing off every path of escape. Inside Enryakuji's halls were not only monks and warrior-monks, but ordinary villagers, women, and children who had fled there for protection, believing — as they always had — that Mount Hiei was the one place in Japan that no army would dare to touch. Nobunaga gave the order to advance. By morning, that belief would be proven catastrophically wrong.",
+      "image_prompt": "A massive samurai army surrounding the base of a forested mountain at dawn, countless banners with the golden paulownia crest visible across the formations, a commanding warlord in black lacquered armor standing at the front on a ridge, raising his arm to signal the advance, the temple complex visible at the summit above, ominous grey light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "What followed was systematic destruction. Nobunaga's soldiers swept through the temple complex, setting fire to building after building — the Konpon Chudo, the lecture halls, the dormitories, all of it. Those who tried to flee down the mountain paths were cut down. A Portuguese missionary later wrote that the soldiers showed no distinction between monks and laypeople, men and women, the old and the very young. By the time the fires burned out, an institution that had stood for eight centuries — through wars, famines, and the rise and fall of emperors — had been reduced to ash in a single day.",
+      "image_prompt": "A mountain temple complex fully engulfed in flames at night, soldiers with torches moving between burning halls, smoke and embers filling the air, a warlord in black lacquered armor with a golden paulownia crest watching impassively from horseback on a stone path as the fire spreads behind him.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Estimates of the dead range into the thousands — monks, scholars, servants, and refugees alike. Enryakuji's main halls, libraries, and shrines, accumulated over eight hundred years, were gone. For Nobunaga's contemporaries, the scale of it was almost incomprehensible. This was not simply the defeat of a rival army. It was the deliberate annihilation of one of the most revered religious sites in the country — a place many believed was protected by the gods themselves. And Nobunaga had done it without hesitation, in a single coordinated assault.",
+      "image_prompt": "The smoldering ruins of a vast mountain temple complex at dawn after a fire, blackened foundation stones and charred wooden beams where grand halls once stood, thin smoke still rising, scattered broken statues and burned scrolls among the ashes, a desolate grey sky.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "So why did he do it? To Nobunaga, Enryakuji was never just a monastery — it was a rival power center with its own army, its own wealth, and its own agenda, one that had just proven it would arm his enemies. Destroying it eliminated that threat permanently. But it served another purpose too: it sent an unmistakable message to every other temple, clan, and warlord watching. Religious sanctuary would no longer protect anyone from Nobunaga. Neutrality was no longer an option. From this point on, every power in Japan had to choose a side — or risk the same fate.",
+      "image_prompt": "A warlord in black lacquered armor with a golden paulownia crest standing alone amid smoking ruins, looking out over a valley toward the capital city in the distance, his expression calm and calculating, smoke still rising from the destroyed temple behind him.",
+      "ken_burns": "zoom_out",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The reaction was immediate horror. Even allies who shared Nobunaga's ambitions were shaken by what he had ordered. In letters to rival lord Takeda Shingen, Nobunaga would later sign himself with a title that captured how the world now saw him: 'Dairokuten Maou' — the Demon King of the Sixth Heaven, a being in Buddhist cosmology who actively obstructs enlightenment itself. Whether Nobunaga embraced the title with grim pride or simply accepted it as inevitable, the message was clear. After Mount Hiei, no one doubted what he was capable of — or willing to do.",
+      "image_prompt": "A dim candle-lit study, a warlord in black lacquered armor with a golden paulownia crest seated at a low writing desk, brush in hand, finishing a letter, an ink seal bearing a fearsome demon-like emblem visible beside the scroll, his face half in shadow.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "For more than a decade, Mount Hiei remained in ruins — its halls reduced to ash, its monks scattered or dead, its centuries of religious authority shattered overnight. Some surviving monks fled to other temples, carrying with them what little they could save. The mountain that had once stood as untouchable now stood empty, a smoking reminder of what defiance of Nobunaga could cost. And it was far from the only target. Mount Hiei was simply the first and most shocking demonstration of a campaign that was only just beginning.",
+      "image_prompt": "A small group of robed monks fleeing down a forested mountain path at dusk, carrying bundles of scrolls and sacred objects wrapped in cloth, looking back over their shoulders at the ruined, smoke-stained temple complex on the mountainside behind them.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In the years that followed, Nobunaga turned the same ruthless logic against other religious strongholds. At Nagashima in 1574, he besieged tens of thousands of Ikko-ikki warrior-monks and their families, eventually setting fire to their fortified compounds and killing nearly everyone inside. The long siege of the Ishiyama Honganji temple in Osaka would drag on for years before its defenders finally surrendered. Mount Hiei had set the template: religious institutions that armed themselves against Nobunaga would be destroyed completely, regardless of who sheltered within their walls.",
+      "image_prompt": "A massive fortified temple compound surrounded by a moat and wooden palisades, under siege by a vast samurai army, smoke rising from multiple points within the walls, siege towers and banners with the golden paulownia crest visible among the besieging forces.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "Brutal as it was, this campaign served Nobunaga's larger vision: a Japan where political and military power answered to a single authority, not to competing temples, court factions, and regional lords each claiming their own independence. The destruction of Mount Hiei removed one of the last major institutions that could claim to stand above — or against — a warlord's authority. It was a horrifying price, paid in thousands of lives, for a question Nobunaga seemed determined to answer once and for all: who, in the end, truly ruled Japan?",
+      "image_prompt": "A warlord in black lacquered armor with a golden paulownia crest standing on a high castle balcony at sunset, overlooking a vast unified landscape of farmland, roads, and distant towns stretching to the horizon, a large map of Japan unrolled on a table beside him.",
+      "ken_burns": "zoom_out",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Nobunaga himself would not live to see Japan fully unified — he died at Honnoji in 1582, eleven years after the burning of Mount Hiei. But the path he had cleared was followed by his successors. Under Toyotomi Hideyoshi and later the Tokugawa shogunate, Enryakuji was gradually permitted to rebuild — but only as a religious institution, stripped permanently of the private armies and political independence it once held. The temple Nobunaga destroyed would rise again. The temple that had once stood above warlords never would.",
+      "image_prompt": "A mountain temple complex under reconstruction, wooden scaffolding around newly rebuilt halls, carpenters and monks working together, fresh timber contrasting with old stone foundations, soft morning light, a sense of quiet renewal after destruction.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "Today, historians still argue over how to judge what happened on Mount Hiei. Some see it as one of the clearest examples of Nobunaga's calculated, almost modern ruthlessness — a leader willing to do whatever was necessary to break the old order and end Japan's century of civil war. Others see it simply as an atrocity, the mass killing of noncombatants that no strategic justification can fully explain. Both readings may be true at once. Nobunaga's actions at Mount Hiei reshaped Japan's balance of power — and they did so at a human cost that contemporaries, and historians since, have never stopped reckoning with.",
+      "image_prompt": "A dramatic split-lighting portrait of a stern warlord in black lacquered armor with a golden paulownia crest, half of his face illuminated by warm golden light and the other half in cold blue shadow, standing against a plain dark background, symbolic and contemplative.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Enryakuji stands again today, rebuilt over centuries, its temples spread across the slopes of Mount Hiei as part of a UNESCO World Heritage site visited by pilgrims and tourists alike. Walk its grounds now, and there is little visible trace of the single day in September 1571 when it was reduced to ash. But the silence of that mountain still carries a warning: in Nobunaga's Japan, no place — however sacred, however ancient — was beyond the reach of a warlord determined to remake the country in his own image.",
+      "image_prompt": "A peaceful modern view of Enryakuji's rebuilt temple halls on Mount Hiei surrounded by tall cedar trees, soft autumn sunlight filtering through the leaves, a few visitors in modern clothing walking quietly along a stone path, serene and timeless atmosphere.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 55,
+      "narration": "Nobunaga's ruthlessness built the foundation for a unified Japan. But his successor, Toyotomi Hideyoshi, would take that same ambition and aim it overseas — launching an invasion of Korea so disastrous it would become known as one of Japan's greatest military catastrophes. How did total domestic victory lead to total foreign defeat?",
+      "image_prompt": "A harbor at dawn filled with hundreds of Japanese warships preparing to depart, soldiers in armor boarding vessels under banners bearing a paulownia crest, a short, sharp-featured warlord in golden armor standing on a dock overlooking the fleet with an expression of grim ambition.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 25,
+      "narration": "The burning of Mount Hiei remains one of the most debated moments of the Sengoku period — a single day that destroyed eight centuries of history and reshaped the balance of power in Japan forever. Whether you see Oda Nobunaga as a visionary unifier or a ruthless destroyer, this event sits at the heart of who he really was. If you found this story of ambition, defiance, and devastation compelling, subscribe for new Samurai Chronicles episodes every day — and let us know in the comments: was Nobunaga's ruthlessness the price of ending Japan's civil wars?",
+      "image_prompt": "A lone warlord in black lacquered armor with a golden paulownia crest standing on a hilltop at sunset, silhouetted against a glowing orange sky, overlooking the city of Kyoto in the valley below, a faint outline of a mountain temple visible in the far distance.",
+      "ken_burns": "zoom_out",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.2
+      }
+    }
+  ],
+  "bgm_source": "BGM/ep006-BGM.mp3",
+  "youtube_url": "https://youtu.be/6AHtEVx8eiA",
+  "shorts_url": "https://youtu.be/MS0EJZVM-pU",
+  "scheduled_at": "2026-07-02 03:00"
+}
