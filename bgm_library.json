@@ -244,5 +244,19 @@
       "ep036",
       "ep039"
     ]
+  },
+  {
+    "id": "ep040-BGM",
+    "path": "BGM/ep040-BGM.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: SunixMuz - Battle Melody (Opening, trailer, epic music, Free CCBY) by SunixMuz (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep040"
+    ]
   }
 ]

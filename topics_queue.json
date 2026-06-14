@@ -389,7 +389,7 @@
     },
     {
       "episode_id": "ep040",
-      "status": "pending",
+      "status": "in_production",
       "title": "Maeda Toshiie: The Spear Master Who Challenged Nobunaga",
       "era": "Sengoku",
       "priority": "B",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-13",
+  "last_updated": "2026-06-14",
   "total_topics": 87
 }
