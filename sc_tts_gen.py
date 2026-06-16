@@ -33,7 +33,7 @@ SAMPLE_RATE = 24000
 # 語数から推定した尺の DUP_RATIO_THRESHOLD 倍を超えたら「繰り返しの疑い」として再生成する。
 DUP_RATIO_THRESHOLD = 1.6
 MAIN_EXPECTED_WPM = 85.0     # 本編ナレーション（insight等の低速シーンも考慮した下限的な値）
-TRAILER_EXPECTED_WPM = 130.0  # teaser / shorts（トレイラー調・早口）
+TRAILER_EXPECTED_WPM = 90.0   # teaser / shorts（実測: Gemini TTS は ~80-90 WPM で読む）
 
 import subprocess  # noqa: E402（silenceremove用）
 
