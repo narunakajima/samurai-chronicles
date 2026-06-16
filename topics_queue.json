@@ -409,7 +409,7 @@
     },
     {
       "episode_id": "ep042",
-      "status": "pending",
+      "status": "in_production",
       "title": "Japan's Greatest Military Disaster: Hideyoshi's Invasion of Korea",
       "era": "Sengoku",
       "priority": "A",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-15",
+  "last_updated": "2026-06-16",
   "total_topics": 87
 }

@@ -1,0 +1,247 @@
+{
+  "episode_id": "ep042",
+  "episode_title": "Toyotomi Hideyoshi and the Invasion of Korea: Japan's Greatest Military Disaster",
+  "youtube_title": "Why Toyotomi Hideyoshi Sent 160,000 Samurai to Die in Korea",
+  "youtube_description": "He had just unified Japan — the first man in over a century to do it. So why did Toyotomi Hideyoshi immediately turn his battle-hardened armies toward Korea and Ming China, sending 160,000 soldiers into a war they could never win?\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 He unified Japan in a decade.\n0:44 By 1591, Toyotomi Hideyoshi...\n1:34 Hideyoshi's ambition did not...\n2:22 In April 1592, the invasion...\n3:23 The momentum seemed...\n4:12 That something was Admiral Yi...\n5:17 The crisis deepened in late...\n6:12 From 1593, both sides entered...\n7:11 The envoy's arrival was a...\n8:10 In January 1597, Hideyoshi...\n9:07 Yi returned to a navy that\n10:05 Then, in September 1598,...\n11:05 The withdrawal from Korea was a\n11:52 The human cost was...\n12:52 Back in Japan, the war's failure\n13:45 The veterans who returned...\n14:45 Historians still debate what...\n15:50 In Korea, the war of 1592\n16:50 Hideyoshi's death left...\n17:34 The invasion of Korea remains...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Berry, Mary Elizabeth. \"Hideyoshi.\" Harvard University Press, 1982.\n2. Hawley, Samuel. \"The Imjin War: Japan's Sixteenth-Century Invasion of Korea and Attempt to Conquer China.\" Royal Asiatic Society Korea Branch, 2005.\n3. Turnbull, Stephen. \"Samurai Invasion: Japan's Korean War 1592-98.\" Cassell, 2002.\n\n#ToyotomiHideyoshi #ImjinWar #SamuraiHistory #JapaneseHistory #KoreanHistory #SengokuPeriod #AdmiralYi #JapaneseInvasion #SengokuJidai #JapaneseWarlords",
+  "youtube_tags": [
+    "Toyotomi Hideyoshi",
+    "Imjin War",
+    "Samurai History",
+    "Japanese History",
+    "Korean History",
+    "Sengoku Period",
+    "Admiral Yi Sun-sin",
+    "Japanese Invasion of Korea",
+    "Sengoku Jidai",
+    "Japanese Warlords"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "In 1598, 140,000 Japanese soldiers were stranded on the Korean peninsula — their commander dead in Japan, their supply lines cut, their navy shattered. What made the man who unified Japan send his entire army to die overseas?",
+  "shorts_narration": "160,000 soldiers. Two invasions. Seven years — and Japan lost everything. Toyotomi Hideyoshi unified his country in a decade. Then he tried to conquer China. This is how ambition became catastrophe.",
+  "thumbnail_prompt": "Toyotomi Hideyoshi in ornate golden armor with a golden paulownia crest, standing on a rocky cliff overlooking a vast sea, a massive Japanese war fleet of hundreds of ships stretching to the horizon behind him, dark storm clouds gathering, an expression of cold ambition on his weathered face.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He unified Japan in a decade. Then he sent 160,000 soldiers to conquer China — through Korea. How did Japan's most unstoppable warlord engineer his own empire's collapse?",
+      "image_prompt": "Toyotomi Hideyoshi in ornate golden armor with a paulownia crest standing on a cliff edge, looking out over the sea toward the Korean coastline on the horizon, a Japanese war fleet of hundreds of ships visible on the water below, expression of cold ambition and total certainty.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "By 1591, Toyotomi Hideyoshi had accomplished something no Japanese warlord before him had ever achieved: the complete unification of the country. Born a peasant, he had risen through sheer brilliance — first as Oda Nobunaga's sandal-bearer, then as his greatest general, then as the man who outmaneuvered every rival after Nobunaga's death. Japan was at peace. Its armies — veterans of decades of civil war — were the finest fighting force in Asia. Hideyoshi had every reason to be satisfied. He was not.",
+      "image_prompt": "A grand formal audience at Osaka Castle — Toyotomi Hideyoshi in golden ceremonial court robes seated on an elevated dais, rows of daimyos in lacquered armor kneeling before him in a vast gilded hall, a large map of Japan and the Asian mainland spread across the floor, the posture of absolute supreme authority.",
+      "ken_burns": "static",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Hideyoshi's ambition did not stop at the water's edge. He told his allies — and his diary — that he planned to conquer Korea, then use it as a bridge to invade Ming China itself, the most powerful empire on earth. From there, he spoke of advancing further still. Whether these were genuine military plans or the grandiose fantasies of an aging ruler desperate for legacy, no one could say for certain. What everyone could say was that Hideyoshi meant to try — and that after thirty years of war, he had the army to attempt it.",
+      "image_prompt": "A candlelit war room: Toyotomi Hideyoshi in golden armor bent over a massive map showing Japan, the Korean peninsula, and the Chinese mainland, pointing at Korea with an iron war fan, nervous advisors clustered around him on both sides, the shadows of the room emphasizing the scale of the ambition being discussed.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In April 1592, the invasion began. Some 160,000 Japanese troops — carrying the arquebus firearms that had transformed warfare during the civil wars — crossed the Korea Strait and landed at Busan. The Korean military, unprepared and divided, collapsed almost immediately. The Japanese army advanced at a speed that shocked even its own commanders: Busan fell in hours. Chungju fell within weeks. The Korean king abandoned Seoul and fled north toward the Chinese border. By early June — less than three weeks after the landing — Japan had captured the Korean capital.",
+      "image_prompt": "A massive Japanese invasion fleet crossing open sea — hundreds of warships and troop transports stretching to the horizon, soldiers in lacquered armor visible on the decks, the Korean coastline emerging from morning mist ahead, banners bearing the paulownia crest snapping in the wind, the overwhelming scale of the armada.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The momentum seemed unstoppable. Japanese columns fanned out across the Korean peninsula, pushing north toward the Yalu River that marked the border with China. Japanese generals competed for the honor of leading the advance. Korean resistance — where it appeared — was crushed. But the rapid conquest concealed a dangerous vulnerability: Japan could win battles on land, but its supply lines ran across hundreds of miles of sea from home. And in the waters off the Korean coast, something was waiting that Japan's generals had not planned for.",
+      "image_prompt": "Japanese samurai armies marching in long column formation through Korean farmland and forested hills, banners with the paulownia crest stretching back to the horizon, soldiers in varied clan armor moving with the confidence of an unstoppable force, a distant walled Korean city visible on a rise ahead, grey overcast sky.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "That something was Admiral Yi Sun-sin, commander of the Korean navy. While Japanese armies swept through the peninsula, Yi was systematically destroying Japan's fleet and — with it — the supply lines the invasion depended on. His weapon was a revolutionary class of warship: the geobukseon, or turtle ship — iron-plated, bristling with cannon, nearly impossible to board. In engagement after engagement, Yi's outnumbered fleet defeated the Japanese navy. By midsummer 1592, the Japanese advance in the north had stalled — not because Korea stopped them on land, but because Japan could no longer reliably feed its armies.",
+      "image_prompt": "Admiral Yi Sun-sin's turtle ship (geobukseon) — a low iron-plated warship with a dragon-head prow belching smoke — charging into a formation of Japanese warships in a dramatic sea battle, cannon fire erupting from both sides, burning Japanese ships listing in the water, smoke and fire filling the frame.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The crisis deepened in late 1592, when Ming China decided it could not allow Japan to overrun its Korean tributary state. A Chinese army crossed the Yalu River and pushed the Japanese back south, away from Pyongyang and toward the peninsula's center. Hideyoshi's forces, already stretched across a hostile country and cut off by sea, now faced a new opponent — one with resources that dwarfed anything Japan could sustain across the water. The war that had begun with such terrifying speed had ground to a halt. Both sides would spend the next three years pretending to negotiate.",
+      "image_prompt": "A Ming Chinese army crossing the Yalu River into Korea in winter — thousands of soldiers in distinctive layered Ming armor crossing on a makeshift pontoon bridge, cavalry and infantry together, dragon banners of the Ming dynasty billowing in the cold wind, snow on the distant mountains.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "From 1593, both sides entered peace negotiations — a process that would drag on for three years and ultimately collapse in spectacular failure. Japanese negotiators, under orders to demand that Hideyoshi be recognized as equal sovereign of Asia, secretly concealed those terms from the Chinese. The Ming, in turn, prepared documents naming Hideyoshi merely 'King of Japan' — a subordinate vassal title that fell catastrophically short of what Hideyoshi had demanded. When the Ming envoy finally arrived in Osaka in 1596 with the papers, Hideyoshi read them — and the war's clock started again.",
+      "image_prompt": "Toyotomi Hideyoshi seated in his Osaka palace receiving a sealed document from a kneeling Chinese envoy in elaborate Ming court robes, Hideyoshi's expression moving from expectation toward fury as he reads, attendants and retainers watching anxiously, golden screens and paulownia-crested banners lining the ceremonial chamber.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "The envoy's arrival was a disaster. The documents the Chinese presented were fundamentally different from what Japan's negotiators had promised. Where Hideyoshi had expected acknowledgment as supreme lord of a new Asian order, the Ming offered a subordinate title, a symbolic vassal relationship, and not a single one of his territorial demands. Japan's own diplomats, who had quietly agreed to Chinese terms without authorization, had deceived their master for three years. Hideyoshi, reportedly shaking with rage, expelled the Chinese delegation from his palace. The negotiations collapsed overnight. The second invasion would follow within months.",
+      "image_prompt": "Toyotomi Hideyoshi erupting in fury in his audience chamber — standing and sweeping documents from a lacquered table, a shaken Chinese diplomatic delegation backing away, courtiers and attendants shrinking back against the walls, the golden paulownia crests on the chamber walls framing his rage, an atmosphere of sudden catastrophic collapse.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In January 1597, Hideyoshi launched the second invasion with an army of 140,000 men. This time, Korea was ready. The years of uneasy truce had been spent building new fortifications and training new armies. And Admiral Yi Sun-sin was waiting again — though barely. Yi had been dismissed on fabricated charges during the peace period, nearly executed, and reduced to the rank of common soldier. Now, with the second invasion underway and Japan's navy threatening to dominate the seas once more, the desperate Korean command made the only logical decision: restore Yi Sun-sin to command.",
+      "image_prompt": "A second Japanese invasion fleet launching at night — torches and lanterns illuminating thousands of soldiers boarding ships at a crowded harbor, grim determination on the faces of veterans who have crossed this water before, dark choppy seas, the distant Korean coast just visible on the horizon.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Yi returned to a navy that had been almost entirely destroyed in his absence — only thirteen ships remained seaworthy. At the Battle of Myeongnyang in October 1597, facing a Japanese fleet of over a hundred vessels in narrow straits, Yi used the geography and the current to neutralize Japan's numerical advantage. By the end of the battle, thirty-one Japanese ships had been sunk or disabled. Yi lost none. It was one of the most extraordinary naval victories in recorded history. The second invasion, like the first, could not hold its supply lines. Japan was winning on land and losing the war.",
+      "image_prompt": "Thirteen Korean warships holding a narrow sea strait against a vast Japanese fleet crowding the entrance — Yi Sun-sin's flagship at the center, cannon fire and smoke filling the water, Japanese ships colliding with each other in the confined channel, the scale disparity making the Korean resistance appear miraculous.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Then, in September 1598, everything changed — not on the battlefield in Korea, but in Japan. Toyotomi Hideyoshi died at Fushimi Castle, aged around sixty-two, after a prolonged illness. His son and heir was only five years old. Among Hideyoshi's final recorded words was a desperate plea to his generals: bring the army home safely, and protect his child. The council of regents he had appointed to rule until his heir came of age had already begun maneuvering for power before the body was cold. The war in Korea — already failing — had suddenly lost its reason for existing.",
+      "image_prompt": "Toyotomi Hideyoshi lying gravely ill on a futon in the dim inner chambers of Fushimi Castle, aged and gaunt, a small child heir beside him attended by anxious nurses, senior retainers in formal black robes kneeling in rows, candlelight casting long shadows, the atmosphere of a dynasty unraveling.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "The withdrawal from Korea was a catastrophe in its own right. Japanese commanders, under pressure to get their armies out before winter set in, arranged truces — and in many cases broke them. Korean and Chinese forces, sensing the collapse, attacked the retreating columns. The final sea battle of the war, at Noryang in November 1598, saw a joint Korean-Chinese fleet intercept the Japanese navy attempting to cover the retreat. Admiral Yi Sun-sin, who had spent six years defeating Japan at sea, was killed by a stray bullet in the very moment of his final victory — dying as the war he had defined finally ended.",
+      "image_prompt": "Japanese samurai armies in chaotic winter retreat through Korean mountain passes — soldiers discarding armor and equipment, formations breaking apart in the snow, a desperate rearguard fighting off pursuing Korean cavalry, the expressions of exhaustion and defeat in the grey winter light, a campaign collapsing into disorder.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The human cost was staggering. Historians estimate hundreds of thousands of Koreans died — soldiers and civilians alike — while the peninsula's cities, temples, and cultural treasures were destroyed. Japan lost tens of thousands to battle, disease, and brutal winters. Among the most disturbing practices of the war: Japanese commanders, under pressure from Hideyoshi to prove their progress, sent back hundreds of thousands of noses and ears cut from Korean and Chinese dead as a macabre body count. The practice is still commemorated in Kyoto today at Mimizuka — the Mound of Ears — a monument to one of history's most grotesque accounting methods.",
+      "image_prompt": "A desolate Korean landscape after years of war — the burned ruins of a town amid scorched fields, a lone stone torii gate still standing amid the rubble, thin smoke still rising from collapsed structures, the grey sky of a country devastated by seven years of invasion.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "Back in Japan, the war's failure immediately reshaped the political landscape. Hideyoshi had spent Japan's military strength and financial reserves on a catastrophic foreign adventure — and left behind only a five-year-old heir and a council of regents barely pretending to cooperate. Tokugawa Ieyasu, who had not been sent to Korea and had spent those years conserving both his army and his wealth while Hideyoshi's loyalists were bled dry overseas, moved quickly to consolidate influence. The seeds of the Battle of Sekigahara — which would decide Japan's next three hundred years just two years later — were sown in the mud of Korea.",
+      "image_prompt": "Tokugawa Ieyasu seated calmly at a writing desk in his private chambers, reading military dispatches with an expression of quiet calculation, a map of Japan spread before him, while through a window behind him other lords are visible arguing in a courtyard — Ieyasu entirely untouched by the surrounding chaos.",
+      "ken_burns": "static",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The veterans who returned from Korea were not the same men who had crossed the strait in 1592. Many came back bringing Korean artisans, potters, and scholars — taken captive and transported to Japan, where their work would transform Japanese ceramics and printing technology for generations. The Korean invasions, a military catastrophe for Japan, accidentally accelerated a cultural exchange that reshaped Japanese art and industry. The ceramic traditions of Arita and Hagi — still celebrated today — trace their origins directly to Korean potters brought to Japan during those seven years. Some historians call it Japan's 'pottery war.'",
+      "image_prompt": "Korean potters working at a hillside kiln in a Japanese village, producing distinctive celadon and white pottery under a wooden shelter, Japanese craftsmen watching with curiosity and attempting to learn the techniques, the smoke of the kiln rising into a clear autumn sky — beauty born from captivity.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "Historians still debate what Hideyoshi actually intended. Some see a leader who had run out of domestic enemies and needed a war to keep his restless veteran armies occupied — civil war soldiers with no civil war to fight. Others see genuine strategic vision: an attempt to reshape the balance of power in East Asia before the other major powers could react. A third view holds that Hideyoshi, aging and perhaps losing his grip on reality, simply could not accept that his ambition had limits. Whatever the true motive, the result was the same: Japan spent its strength, Korea was devastated, and the Toyotomi dynasty he had built survived him by barely two years.",
+      "image_prompt": "A dramatic formal portrait of Toyotomi Hideyoshi in his later years — seated in golden armor with the paulownia crest, face showing equal measures of age and unbroken ambition, one side lit by warm candlelight and the other in cold shadow, the weight of decisions made and unmade visible in his expression.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "In Korea, the war of 1592 to 1598 is called the Imjin War — and it is remembered as one of the defining events in the nation's history, a trauma that shaped Korean identity for centuries. Admiral Yi Sun-sin remains the country's greatest national hero. In Japan, the same war is rarely discussed — absent from most school curricula, largely unknown to the general public, its sites unmarked and its victims uncommemorated. The asymmetry of memory is itself a historical fact: the perpetrator moved on; the victim did not forget. The scars left by those seven years in Korea have never fully healed.",
+      "image_prompt": "The Mimizuka monument in Kyoto — a traditional stone stupa mound surrounded by greenery and a low wooden fence in a quiet urban setting, incense sticks still smoldering at its base, a single visitor standing in contemplative silence before the monument to hundreds of thousands of Korean and Chinese dead.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 55,
+      "narration": "Hideyoshi's death left Japan's future uncertain — and one northern warlord saw an opportunity unlike any other. While the rest of Japan mourned and maneuvered for power, Date Masamune, the one-eyed dragon of the north, was quietly planning the most audacious diplomatic gambit in samurai history: a secret mission to send a Japanese envoy all the way to Rome — to the Pope himself. What was Masamune really hoping to gain? And why has Japan almost entirely forgotten it happened?",
+      "image_prompt": "Date Masamune in black lacquered armor with a crescent moon crest on his helmet standing on a harbor dock at dawn, watching a large European-style galleon being prepared for departure, sailors loading provisions, Japanese retainers in formal dress nearby, the ship's foreign design contrasting starkly with the Japanese setting.",
+      "ken_burns": "zoom_out",
+      "character_ref": "date_masamune",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 25,
+      "narration": "The invasion of Korea remains one of the most consequential — and least discussed — chapters of samurai history: a war that devastated a peninsula, shattered Hideyoshi's dynasty, and handed Japan's future to the Tokugawa for the next 250 years. If you found this forgotten story of ambition and catastrophe compelling, subscribe for new Samurai Chronicles episodes every day — and tell us in the comments: was Hideyoshi a visionary who overreached, or simply a conqueror who ran out of enemies at home?",
+      "image_prompt": "A wide panoramic view of the Korea Strait at golden hour — calm water stretching between the Japanese coastline on one side and the Korean peninsula on the other, the vast sea between them catching the late light, a solitary Japanese warship silhouette fading in the distance, the two shores bound together by history.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep003-BGM.mp3",
+  "youtube_url": "https://youtu.be/jxSgV5bvdso",
+  "shorts_url": "https://youtu.be/f0bb0tpocWQ",
+  "scheduled_at": "2026-07-03 03:00"
+}
