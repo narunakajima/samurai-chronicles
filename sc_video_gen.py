@@ -31,6 +31,19 @@ import sys
 import tempfile
 from pathlib import Path
 
+
+def _notify(message: str) -> None:
+    """macOS通知を送信する（失敗しても続行）"""
+    try:
+        subprocess.run(
+            ["osascript", "-e",
+             f'display notification "{message}" with title "Samurai Chronicles" sound name "Glass"'],
+            capture_output=True, timeout=5,
+        )
+    except Exception:
+        pass
+
+
 BASE_DIR = Path(__file__).parent  # スクリプト・エピソードJSONの場所
 
 # 生成素材の保存先・読み込み元（Google Drive）
@@ -1303,6 +1316,7 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
     print(f"  ✓ {ep_json.name} の youtube_description を更新しました")
     print(f"{'━'*60}\n")
 
+    _notify(f"{episode_id} 動画生成完了")
     return output_file
 
 
