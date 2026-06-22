@@ -1,0 +1,266 @@
+{
+  "episode_id": "ep044",
+  "episode_title": "The 13 Days of Akechi Mitsuhide: Japan's Shortest Reign",
+  "youtube_title": "Why Akechi Mitsuhide's Perfect Coup Collapsed in 13 Days",
+  "youtube_description": "He killed Oda Nobunaga — the most powerful warlord in Japan — in a single night. Thirteen days later, Akechi Mitsuhide was dead in a ditch. This is the story of history's most brilliantly executed failure.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 He killed Oda Nobunaga. He had\n0:37 Akechi Mitsuhide was not an...\n1:30 Six days before the attack,...\n2:32 On the night of June 20th,\n3:26 Nobunaga was at Honnoji with a\n4:22 Mitsuhide moved quickly. He...\n5:19 The replies he received were...\n6:18 Two hundred kilometers to the...\n7:11 What followed is known in...\n8:04 The Battle of Yamazaki was...\n8:55 Mitsuhide fled east, trying...\n9:50 His head was carried to...\n10:49 Hideyoshi's political moves...\n11:46 Why did Mitsuhide fail? The...\n12:50 The second failure was...\n13:49 There is still one question that\n14:43 What did Mitsuhide want? This...\n15:37 The Japanese phrase...\n16:40 Mitsuhide's story ends before...\n17:39 That's the story of Akechi...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. George Sansom, \"A History of Japan 1334–1615\" (Stanford University Press, 1961)\n2. Mary Elizabeth Berry, \"Hideyoshi\" (Harvard University Press, 1982)\n3. Conrad Totman, \"Japan Before Perry: A Short History\" (University of California Press, 1981)\n\n#SamuraiHistory #AkechiMitsuhide #HonnojiIncident #SengokuJapan #JapaneseHistory",
+  "youtube_tags": [
+    "Akechi Mitsuhide",
+    "Honnoji Incident",
+    "Sengoku Japan",
+    "Japanese history",
+    "samurai",
+    "Oda Nobunaga",
+    "Hashiba Hideyoshi",
+    "Battle of Yamazaki",
+    "thirteen days",
+    "Japan history",
+    "Samurai Chronicles",
+    "samurai documentary",
+    "Japanese warlord",
+    "Chugoku Gaeshi",
+    "Sengoku era"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "On the night of June 21st, 1582, Akechi Mitsuhide stood over the burning ruins of Honnoji temple — and held all of Japan in his hands. Thirteen days later, those hands were empty. He had the perfect plan. He had the perfect moment. What he didn't have was a single ally. What went wrong?",
+  "shorts_narration": "Thirteen days. One perfect coup. He killed Japan's most powerful warlord — and then discovered he had no allies, no plan, and no time. Akechi Mitsuhide's thirteen-day empire was over before it started.",
+  "thumbnail_prompt": "Akechi Mitsuhide in his distinctive pale blue-grey formal armor (mizuasagi-iro lacquered plates), standing in the smoldering ruins of Honnoji temple at dawn, charred timbers and ash around him, amber firelight still reflecting on his armor, his face turned toward the viewer with an expression that is not triumphant but haunted and calculating — already carrying the weight of what he has done. Dramatic cinematic lighting, deep shadows, dust and smoke in the air. Bold text overlay at the top in large white block letters with dark drop shadow: \"THIRTEEN DAYS\". Smaller text at the bottom in white: \"Japan's Most Famous Failure\". Text must be clearly legible, sharp, and properly spelled. 16:9 aspect ratio, 1280x720.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 12,
+      "narration": "He killed Oda Nobunaga. He had thirteen days to turn one night's coup into a lasting empire. He never made it out of the second week.",
+      "image_prompt": "Aerial view of Honnoji temple engulfed in fire in the darkness of a June night, the streets of Kyoto visible below, orange flames reflected in the rooftops of the surrounding city, smoke rising in great columns toward a starless sky.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 70,
+      "narration": "Akechi Mitsuhide was not an impulsive man. In the summer of 1582, he was in his mid-fifties — cultured, methodical, one of Oda Nobunaga's most senior and trusted commanders. He had served under the Demon King for more than a decade, campaigning across central Japan, composing classical poetry, navigating the elaborate social hierarchies that defined power in the Sengoku era. If you had met him before Honnoji, you would have seen a man who had spent his life building things carefully. The coup, when he finally executed it, was flawless. What followed was not.",
+      "image_prompt": "Formal interior portrait of Akechi Mitsuhide seated at a low writing desk in a candlelit study, wearing pale blue-grey lacquered armor, scrolls of classical poetry and military maps arranged neatly beside him, his face composed and intelligent — the bearing of a scholar-general at rest.",
+      "ken_burns": "pan_right",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 70,
+      "narration": "Six days before the attack, Mitsuhide attended a renga poetry gathering at Atago Shrine near Kyoto. His verse that evening has been debated for four centuries: 'Toki wa ima, ame ga shita shiru, satsuki kana' — 'Now is the time. All beneath heaven shall know my rule. Fifth month.' The word 'toki' hid a second meaning — the Toki clan, Mitsuhide's claimed ancestors — and the phrase 'ame ga shita shiru' meant to govern all under heaven. He may have announced his rebellion in verse, in front of an audience that never suspected a thing. Nobody in the room understood.",
+      "image_prompt": "Evening gathering at Atago Shrine — a lantern-lit veranda on a mountainside, five samurai lords and scholars seated in a circle around an open poetry scroll, Akechi Mitsuhide in the foreground holding a calligraphy brush, his expression one of intense private focus, the dark mountain forest visible beyond the shrine's eaves.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.82,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 70,
+      "narration": "On the night of June 20th, Mitsuhide told his assembled officers where they were going. His orders had been to march west to reinforce Hashiba Hideyoshi's campaign in Chugoku. He didn't. Instead, he turned his army of roughly thirteen thousand soldiers toward Kyoto. His declaration to his commanders has passed into legend: 'The enemy is at Honnoji.' It was a few words that changed Japan forever. The troops marching through the darkness toward the capital didn't yet know exactly what they were doing. But Mitsuhide knew. He had been building toward this for a long time.",
+      "image_prompt": "A vast column of samurai soldiers moving through a mountain pass at night, thousands of torches illuminating the road ahead, Akechi clan banners visible among the ranks, the distant lights of Kyoto glowing on the horizon beyond the pass.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 70,
+      "narration": "Nobunaga was at Honnoji with a handful of attendants — no significant guard. He was traveling through Kyoto en route to join the western campaign and had stopped for a night of rest. When Mitsuhide's forces surrounded the temple in the pre-dawn dark and the attack began, Nobunaga reportedly grabbed a spear himself. The temple burned. His heir Nobutada was hunted down at Nijo Castle and killed the same morning. By dawn, Oda Nobunaga — the man who had dominated Japan for two decades — was dead. The most powerful warlord in the country had been erased in a single night.",
+      "image_prompt": "Interior of Honnoji temple engulfed in fire — great columns of flame consuming the wooden structure, smoke and chaos in the courtyard, a lone figure in simple robes silhouetted against the inferno in a final defiant stance, the darkness outside broken only by the burning.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 70,
+      "narration": "Mitsuhide moved quickly. He occupied Kyoto, secured the imperial court, and issued orders as if he were already the master of Japan. He held the capital, the emperor, and the symbolic legitimacy that control of Kyoto implied. What he didn't have were allies. The political landscape of Sengoku Japan was built on personal loyalty, debt, and threat — and Mitsuhide's position in that landscape had always been defined by Nobunaga. Without Nobunaga's authority behind him, he was a general without followers — only soldiers under command. He needed powerful lords to recognize him. He sent messengers immediately.",
+      "image_prompt": "Akechi Mitsuhide mounted on horseback in the pre-dawn streets of Kyoto, a retinue of soldiers around him, the silhouette of the imperial palace gates visible in the background, his expression stern and deliberate — a man issuing orders and expecting the world to comply.",
+      "ken_burns": "pan_left",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 70,
+      "narration": "The replies he received were devastating. Hosokawa Fujitaka — longtime ally, patron of the arts, his daughter's father-in-law — shaved his head and adopted Buddhist mourning dress for Nobunaga rather than join the rebellion. His son Hosokawa Tadaoki placed his wife Tama — Mitsuhide's own daughter — under house arrest rather than answer his father-in-law's summons. The Yamato warlord Tsutsui Junkei declared neutrality and watched from a safe distance. Other lords simply didn't respond. The silence across Japan was complete. Mitsuhide had planned the coup for years. He had not fully planned what came next.",
+      "image_prompt": "Closed gates of a samurai castle in early morning light, a group of Mitsuhide's messengers standing outside holding sealed letters, the gates firmly shut against them, a single retainer in mourning attire visible in a narrow opening — a scene of absolute political rejection.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 70,
+      "narration": "Two hundred kilometers to the west, Hashiba Hideyoshi was in the middle of one of the era's most methodical siege operations. He had flooded Takamatsu Castle by damming a local river — trapping the garrison with no hope of relief. Then a fast courier arrived from Kyoto. Hideyoshi read the message. Within hours, he had negotiated a ceasefire with the Mori clan. Shimizu Muneharu, the castle commander, performed ritual suicide to seal the arrangement. Hideyoshi ensured news of Nobunaga's death was suppressed long enough to protect his retreat. Then he began to march.",
+      "image_prompt": "Hashiba Hideyoshi in his military command tent at the Bitchu Takamatsu siege, maps spread before him, reading a sealed letter with an expression shifting from surprise to fierce resolution, the flooded landscape of the besieged castle visible through the tent opening.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 70,
+      "narration": "What followed is known in Japanese history as the Chugoku Gaeshi — the Return from Chugoku. Hideyoshi moved his force of more than twenty thousand soldiers back toward Kyoto at a pace that defied belief. Recruiting additional troops from sympathetic lords along the route and spreading word that he was marching to avenge Nobunaga's murder, his army swelled and accelerated simultaneously. He covered roughly two hundred kilometers in approximately ten days — a forced march that military historians still find extraordinary. By the time Mitsuhide learned the full scope of what was coming for him, it was almost too late to prepare.",
+      "image_prompt": "A long mountain road at dusk viewed from above, an enormous column of samurai soldiers marching at urgent pace, torches and plain war banners (no text, no crests, no writing on any banner) stretching to the horizon, the scale of the army dwarfing the forested mountain landscape, momentum and inevitability visible in every line of the composition. All banners must be solid color with no text or symbols.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 70,
+      "narration": "The Battle of Yamazaki was fought on the thirteenth day of the sixth month of the old calendar — July 2nd by modern reckoning — at a narrow corridor between Mount Tennozan and the Yodo River south of Kyoto. The geography left little room for maneuver. Hideyoshi commanded roughly forty thousand troops; Mitsuhide had perhaps sixteen thousand. At the crucial moment, Tsutsui Junkei — who had declared neutrality — crossed to Hideyoshi's side. The battle lasted only a few hours. Mitsuhide's forces broke and the rout was complete. Thirteen days of calculation, of nerve, of waiting — over in an afternoon.",
+      "image_prompt": "The Battle of Yamazaki — two armies clashing on a narrow corridor between a forested mountain and a wide river, the larger force's banners vastly outnumbering the smaller force, dust and smoke rising across the battlefield plain, a dramatic wide shot showing the overwhelming disparity in scale. No watermarks, no text, no signatures, no logos anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 70,
+      "narration": "Mitsuhide fled east, trying to reach Sakamoto Castle — his home domain on the shores of Lake Biwa. He never arrived. Near the village of Ogursu in Fushimi, his small party was ambushed. According to the traditional account, he was killed by peasants armed with bamboo spears — farmers who may or may not have known who he was, attacking a group of armed men who had wandered into their territory. There are other accounts: a ronin, a bandit, an opportunistic kill. The precise circumstances of his death remain disputed. What is not disputed is how quickly it happened.",
+      "image_prompt": "Akechi Mitsuhide in damaged pale blue-grey armor, riding alone through a dark forest path near a village at dusk, his retinue gone, the shadows deepening around him and the sounds of the forest suggesting danger closing in from all directions.",
+      "ken_burns": "zoom_out",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 70,
+      "narration": "His head was carried to Hideyoshi's camp for identification. Akechi Mitsuhide — the man who had spent decades commanding armies, composing classical verse, navigating the courts of warlords and emperors — was confirmed and displayed. The speed of his fall was almost disorienting. Less than two weeks had passed between Honnoji and Ogursu. He had achieved the single most audacious act in Sengoku history, and then, with no political allies, no military reserves, and no path forward, he had simply evaporated. The thirteen-day reign entered the Japanese historical consciousness almost immediately.",
+      "image_prompt": "A stone castle courtyard at dawn, a small group of senior samurai commanders standing in a loose semicircle, all facing inward with solemn expressions in the pale morning light, their armor catching the first light, the atmosphere one of quiet gravity after a battle just ended — no action, only stillness and the weight of history.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 70,
+      "narration": "Hideyoshi's political moves after Yamazaki were swift and calculated. He framed himself as Nobunaga's legitimate avenger and heir — a position that gave him enormous authority in the weeks that followed. At the Kiyosu Conference, convened just two weeks after the battle, he outmaneuvered his rivals within the Oda hierarchy to secure control of Nobunaga's infant grandson as his protégé. The conference, meant to determine the future of the Oda clan, became instead the moment Toyotomi Hideyoshi began his own ascent to undivided power. Mitsuhide's coup had destroyed the old order. Hideyoshi made himself the new one.",
+      "image_prompt": "Hashiba Hideyoshi at the Kiyosu Conference — a formal council gathering of armored Oda clan commanders in a great hall, Hideyoshi positioned centrally and prominently at the head of the assembly, his bearing already that of a leader rather than a general.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 70,
+      "narration": "Why did Mitsuhide fail? The first answer is political. His entire identity as a commander had been shaped by his relationship to Nobunaga. He held territory, commanded troops, and wielded influence because Nobunaga had given him those things. When he killed Nobunaga, he didn't inherit that authority — he destroyed the source of it. Other warlords had spent years building independent bonds of loyalty and obligation across Japan. Mitsuhide had spent those same years serving Nobunaga too completely. He was not a man with a network. He was a subordinate who had eliminated his superior and then discovered he had nothing left.",
+      "image_prompt": "Akechi Mitsuhide alone in a large military strategy room, maps of Japan spread across the floor, his desk empty of incoming messages, multiple sealed letters sent and unreturned visible on a side table — the visual of a man surrounded by his own silence.",
+      "ken_burns": "pan_left",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 70,
+      "narration": "The second failure was military — but it's more complicated than it appears. No commander in Japan could have anticipated the Chugoku Gaeshi. Hideyoshi's speed was genuinely without precedent. Mitsuhide had planned for political resistance and prepared to consolidate control of Kyoto over weeks. He had not planned for an army of forty thousand materializing at his doorstep in ten days. Historians have also noted that Mitsuhide made no serious effort to intercept Hideyoshi or disrupt his march. He waited at Yamazaki rather than advancing. Whether that reflected poor intelligence, strategic paralysis, or something else entirely, we don't fully know.",
+      "image_prompt": "A mountain road at early morning seen from above, an enormous column of samurai troops moving at relentless pace through a Sengoku-era mountain landscape, the scale of the advance filling the landscape from foreground to horizon — only ancient forested mountains and valleys visible in the background, no modern buildings, no anachronistic structures, purely feudal-era Japan countryside.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 70,
+      "narration": "There is still one question that haunts the story of the thirteen days: the renga poem at Atago Shrine. If Mitsuhide really did encode his intentions in those thirty-one syllables, six days before the attack — what does that tell us about his state of mind? A man who announces his rebellion in a poem, in public, before he has committed to it, is either supremely confident or caught between impulses he cannot fully reconcile. Some historians read the poem as the act of a man performing his own courage — convincing himself through the art form he loved best that he could do what he was about to do.",
+      "image_prompt": "Night scene at Atago Shrine — lanterns illuminate the veranda, Akechi Mitsuhide seated alone at a writing desk after the other guests have departed, his brush just touching a fresh sheet of paper, moonlight and torchlight creating deep shadows around him, his expression one of profound internal conflict.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 70,
+      "narration": "What did Mitsuhide want? This question has occupied historians for more than four centuries. Some argue he sought revenge for humiliations too public to forgive. Others see a rational political gamble — an attempt to seize a moment of unusual weakness. Still others believe he acted on behalf of forces we've never fully identified: the imperial court, rival clans, or interests working behind the scenes. The thirteen days give us no clear answer. A man who planned this carefully and executed it so precisely almost certainly had a vision of what came next. We simply don't know what it was.",
+      "image_prompt": "Akechi Mitsuhide standing alone on a hillside above Kyoto at dusk, the city and the imperial palace visible in the valley below, his silhouette against a darkening sky — a man at the edge of a decision whose full consequences he may not have imagined.",
+      "ken_burns": "pan_right",
+      "character_ref": "mitsuhide",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 70,
+      "narration": "The Japanese phrase 'juusannichi-tenka' — the thirteen-day rule — has passed into the language as an idiom for any brilliantly executed initiative that collapses before it can take root. Mitsuhide is remembered in Japan almost entirely through this lens of spectacular failure. Unlike Nobunaga, Hideyoshi, or Ieyasu, he left no institution, no policy, no transformation. He destroyed the old order and then disappeared before anything new could form. The man who killed Oda Nobunaga became a footnote in the story of the man who succeeded him. History, in the end, is written by the people who show up on day fourteen.",
+      "image_prompt": "The silent interior of an abandoned castle hall — Sakamoto Castle, Mitsuhide's home domain — pale moonlight falling through paper screen doors onto scattered documents and empty armor stands, the power that briefly inhabited this space already departed, dust settling in the stillness.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 70,
+      "narration": "Mitsuhide's story ends before he could explain himself. The next story begins with a man who had already won everything a warrior could win — and then, very deliberately, stopped. Miyamoto Musashi fought sixty-one duels without a single defeat. In his later years, he put down his swords and walked into a cave. He emerged with a manuscript, a set of paintings, and a philosophy of living that has outlasted every general of the Sengoku era. We've covered Musashi's duels and his writing before. This time, we ask what none of those episodes fully answered: why did the most feared swordsman in Japan decide to become an artist?",
+      "image_prompt": "Miyamoto Musashi in the interior of a cave lit by a traditional Japanese andon paper lantern and the warm glow of a small clay oil dish (tōka), seated at a low writing desk, his two famous swords displayed reverently on a rack behind him but not worn, his face older and serene, his brush moving across paper — a warrior transformed into a philosopher-artist. Period-accurate early Edo era lighting only — no glass chimneys, no kerosene lamps.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 35,
+      "narration": "That's the story of Akechi Mitsuhide and Japan's most famous thirteen days. If you want to understand why the Sengoku era produced men capable of acts this extraordinary — and this catastrophically flawed — this channel covers the full sweep of it. Subscribe to stay with us, and we'll see you in the next episode.",
+      "image_prompt": "Vast sweeping landscape of Japanese mountains and forested valleys at dawn, thick morning mist filling the spaces between the ridgelines, golden light breaking over distant peaks — no human figures, no buildings, no roads, no villages, purely the ancient natural landscape of Japan existing in silence long after any individual story has ended.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_source": "BGM/ep003-BGM.mp3",
+  "youtube_url": "https://youtu.be/7Ykcyj8LGQk",
+  "shorts_url": "https://youtu.be/1Y3SwfK1BTE",
+  "scheduled_at": "2026-07-07 03:00"
+}
