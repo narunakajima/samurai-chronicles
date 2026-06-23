@@ -1,0 +1,256 @@
+{
+  "episode_id": "ep046",
+  "episode_title": "Was Uesugi Kenshin Assassinated? Japan's Greatest Unsolved Mystery",
+  "youtube_title": "Was Uesugi Kenshin Assassinated? Japan's Greatest Unsolved Mystery",
+  "youtube_description": "Japan's most feared general collapsed in his own castle in 1578 — no enemy in sight, no wound on his body. He had never lost a battle. Was Uesugi Kenshin assassinated? Or did the God of War simply run out of time? The answer may have changed Japanese history forever.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 Japan's most feared general...\n0:48 Uesugi Kenshin was not like...\n1:45 For over a decade, Kenshin...\n2:37 By early 1578, Kenshin was...\n3:38 On March 9th, 1578, Uesugi...\n4:29 The news of Kenshin's death was\n5:17 Within days, the rumours...\n6:11 Historians have scrutinised...\n7:09 The prevailing explanation...\n7:55 A competing theory holds that...\n8:54 And yet the political...\n9:55 Oda Nobunaga did not hide his\n10:51 Kagekatsu eventually...\n11:56 The counterfactual question...\n12:48 In Japanese cultural memory,...\n13:41 There is something both...\n14:40 The cause of Uesugi Kenshin's...\n15:39 Kasugayama Castle no longer...\n16:27 Next time on Samurai...\n17:01 Uesugi Kenshin. The Dragon of...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Thomas Conlan, \"State of War: The Violent Order of Fourteenth-Century Japan\" (2003)\n2. Stephen Turnbull, \"The Samurai Sourcebook\" (1998)\n3. Hiroaki Sato, \"Legends of the Samurai\" (1995)\n\n\n🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0\n#uesugiKenshin #samuraihistory #japanesehistory #sengokuperiod #samurai #japanesemystery #japanhistory #samuraichronicles",
+  "youtube_tags": [
+    "uesugi kenshin",
+    "samurai history",
+    "japanese history",
+    "sengoku period",
+    "samurai",
+    "japanese mystery",
+    "japan history",
+    "kawanakajima",
+    "takeda shingen",
+    "oda nobunaga",
+    "dragon of echigo",
+    "god of war",
+    "bishamonten",
+    "kasugayama castle",
+    "japanese documentary",
+    "history documentary",
+    "samurai chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 7,
+  "teaser_narration": "Japan's God of War collapsed in his own castle — no enemy in sight, no wound on his body. He had never lost a battle. His death in 1578 changed Japanese history forever. Was Uesugi Kenshin assassinated — or did the greatest warrior in Japan simply run out of time?",
+  "shorts_narration": "He never lost a battle. Then he collapsed alone in his castle — no wound, no enemy, no explanation. 1578. The death that changed Japanese history. Was Uesugi Kenshin assassinated? Japan's greatest unsolved mystery.",
+  "thumbnail_prompt": "Uesugi Kenshin, powerfully built Japanese warlord in white Buddhist monk's cowl over heavy black lacquered armor, stands alone in a dim castle hall at night. A single torch casts dramatic chiaroscuro shadows. His face radiates absolute authority and spiritual intensity. His iron war fan is held at his side. Prayer beads at his belt. The Uesugi nine-spiked roundel mon is displayed on his chest armor. The surrounding darkness is deep and mysterious. Film production concept art style. Bold text overlay at the top in large white block letters with dark drop shadow: 'THE GOD OF WAR'. Smaller text at the bottom in white: 'Japan's Greatest Unsolved Mystery'. Text must be clearly legible, sharp, and properly spelled. 16:9 aspect ratio, 1280x720.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Japan's most feared general collapsed in his own castle — no enemy in sight, no wound on his body. He had never lost a battle in his life. Who — or what — really killed Uesugi Kenshin?",
+      "image_prompt": "The empty war council chamber of Kasugayama Castle at night. A great lacquered command chair stands unoccupied at the head of the room. A war fan rests untouched on its armrest. Campaign maps are still unrolled across the low table. Candles burn in the silence. No human figures. The scene radiates sudden, catastrophic absence — a seat of power unexpectedly emptied. Dramatic torchlight and deep shadows. No text, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 65,
+      "narration": "Uesugi Kenshin was not like other warlords. Born in 1530 in Echigo Province on Japan's northwestern coast, he took his first military command at fourteen and became lord of Echigo at nineteen. He was profoundly devout — a follower of Bishamonten, the Buddhist god of war, whose earthly avatar he believed himself to be. He never married. He never had children. He swore oaths of celibacy as part of his religious practice. Where other daimyo sought power and territory, Kenshin sought something rarer and harder to define: righteousness, expressed through battle.",
+      "image_prompt": "Uesugi Kenshin in white Buddhist monk's cowl over heavy black lacquered armor, standing alone on a high mountain ridge above coastal Echigo Province. The vast Japan Sea stretches behind him under a dramatic overcast sky. He holds his iron war fan, his posture utterly commanding. His face radiates spiritual intensity and absolute self-possession. The Uesugi nine-spiked roundel mon is visible on his armor. The scene conveys a man who inhabits a different category from ordinary humanity. No text, no modern elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.47,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 65,
+      "narration": "For over a decade, Kenshin fought one of the greatest rivalries in samurai history. Across five separate engagements on the plain of Kawanakajima, he clashed with Takeda Shingen — the Tiger of Kai — in battles neither man could decisively win. They exchanged poems and gifts between campaigns. When a rival cut off Shingen's salt supply, Kenshin — who controlled the northern coast — sent salt to his enemy rather than exploit the advantage, reportedly saying: 'I fight with swords, not salt.' It was the most honourable rivalry of the Sengoku era.",
+      "image_prompt": "A panoramic view of the flat plain of Kawanakajima at dusk, two vast armies facing each other across the misty field. On the left, banners bearing the Uesugi white roundel with nine spikes. On the right, Takeda diamond-pattern banners in red and white. Tens of thousands of soldiers face each other in disciplined ranks, neither side advancing, the tension of imminent battle frozen in time. Mountains in the background, mist in the valley, an overcast sky. No text, no watermarks, no modern elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 65,
+      "narration": "By early 1578, Kenshin was forty-eight years old and poised for his greatest campaign. He had constructed an alliance against Oda Nobunaga — the warlord steadily eliminating every rival in Japan. Kenshin had assembled an army of thirty thousand men and planned to march south in the spring. Historians believe his strategic position gave him a genuine chance of halting Nobunaga's advance. Nobunaga himself reportedly said that only Kenshin could defeat him. The army was assembled. The route was planned. The God of War was coming. And then, in March of 1578, he was gone.",
+      "image_prompt": "Uesugi Kenshin seated at the head of a war council, leaning forward over a large campaign map spread across a low lacquered table. He points to a southern route with his iron war fan. Around the table, armored generals listen with focused intensity. Torchlight illuminates the faces. The Uesugi roundel banner hangs behind Kenshin's seat. The atmosphere radiates strategic confidence and imminent action. No text on the map, no modern elements.",
+      "ken_burns": "static",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "On March 9th, 1578, Uesugi Kenshin collapsed at Kasugayama Castle in Echigo. He had complained of discomfort for several days — unusual for a man known for extraordinary physical resilience. The exact circumstances remain disputed: some accounts say he fell in the lavatory, others that he collapsed during a meal. His retainers found him unconscious. He never regained full consciousness. His body fought on for four days, until he died on March 13th. He was forty-eight years old. The campaign against Nobunaga died with him.",
+      "image_prompt": "Uesugi Kenshin in white robes and partial armor, collapsing against a wooden pillar inside a dimly lit castle corridor. His hand grips the post for support, his body pitching forward. His face is contorted in sudden agony. Two armored retainers rush toward him from either side in alarm. Torchlight flickers dramatically across the scene. The corridor is narrow and shadowed. The image captures the single most consequential moment of collapse in Sengoku history. No text, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "The news of Kenshin's death was suppressed for days — in some accounts, for weeks — as his generals scrambled to manage what was immediately clear: a catastrophic succession crisis. Kenshin had never appointed an heir. He had two adopted sons, Kagekatsu and Kagetora, and neither had been formally designated to succeed him. The assembled army of thirty thousand stood paralysed — a weapon with no hand to wield it. Meanwhile, in Kyoto, Oda Nobunaga received the news he had dreaded most, transformed in an instant into the news he had hoped for.",
+      "image_prompt": "An empty Japanese castle command room at night. The great campaign map is still spread across the table, war markers still positioned for the southern advance. A row of candles burns slowly. One candle has just been extinguished — smoke curling upward from the still-glowing wick. The war fan lies on the floor where it has fallen. No human figures. The scene conveys sudden, total command vacuum. Torchlight and shadow. No text, no modern elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "Within days, the rumours spread. The most dramatic theory held that a ninja had been hired — possibly by Nobunaga or one of his allies — and had concealed himself beneath the lavatory at Kasugayama Castle. When Kenshin used the facility, the assassin thrust a long spear upward from below, inflicting an internal wound invisible from outside. It would explain the sudden collapse. The four days of unconsciousness. The complete absence of any external injury. The God of War, brought down not in battle, but by an assassin hidden in the most undignified place imaginable.",
+      "image_prompt": "A dark, dramatic conceptual scene: deep beneath the floorboards of a Japanese castle, a shadowy hooded figure in black ninja attire crouches in absolute stillness, gripping the shaft of a long spear aimed upward. Narrow wooden beams above. Total darkness except for a single sliver of torchlight filtering down from above. The composition is claustrophobic and ominous. The image visualises the popular legend of the latrine assassin. No text, no watermarks, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "Historians have scrutinised the ninja theory for centuries and found it nearly impossible to defend. A ninja concealing himself beneath the lavatory of a heavily guarded castle — without detection, in a facility regularly checked — requires a chain of improbabilities. More critically: no contemporary record mentions assassination. The theory appears only in documents written decades after Kenshin's death, when dramatic legend had already taken root. His symptoms — prolonged unconsciousness, no visible wound, sudden catastrophic onset — point firmly toward internal causes. The story of the ninja is compelling. It is almost certainly not true.",
+      "image_prompt": "Ancient Japanese historical scrolls and documents spread across a low lacquered table in a candlelit scholarly room. Several scrolls are unrolled side by side, closely examined. A quill or brush rests beside an ink stone. The scene evokes careful historical investigation — searching for truth in incomplete records. Warm candlelight, dark surrounding shadows. The documents are written in old Japanese cursive brushwork, no legible text discernible. No modern elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "The prevailing explanation among modern historians is a subarachnoid haemorrhage — a stroke caused by a burst blood vessel near the brain. The circumstantial evidence is strong. Kenshin drank heavily throughout his campaigns, consuming sake in extraordinary quantities. He ate a diet saturated in salt, typical of the era but dangerous in excess. He was under immense psychological pressure as he prepared the most consequential campaign of his life. These are precisely the conditions that precede catastrophic vascular events — events that kill without warning and leave no external wound.",
+      "image_prompt": "An extreme close-up portrait of Uesugi Kenshin — face and shoulders only, no other figures in the frame, no background soldiers, no banners. White robes, strong jaw, deep-set eyes beneath a heavy brow seen in three-quarter profile. His face combines extraordinary spiritual discipline with visible physical wear: lines around his eyes, tension in his jaw. The expression suggests a man driving himself past his body's limits by sheer force of will. Single dramatic sidelight from one direction, deep shadow on the other side. Tight crop: fill the frame with his face and upper chest. Character_ref: kenshin. No text, no modern elements, no other people, solo portrait only.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "falling_action",
+      "duration_seconds": 65,
+      "narration": "A competing theory holds that Kenshin died of esophageal or stomach cancer. His final weeks show symptoms consistent with advanced gastrointestinal malignancy: difficulty eating, declining energy, chest discomfort, a gradual but accelerating physical deterioration. Either diagnosis is medically plausible. What stroke and cancer share is the most significant conclusion: natural causes. No conspiracy is required. No assassin is needed. Japan's most feared warrior was destroyed not by an enemy but by the accumulated cost of decades of hard campaigning, heavy drinking, and the relentless demands of Echigo winters.",
+      "image_prompt": "A still-life composition inside Kenshin's private chambers at Kasugayama Castle: an overturned sake cup on a lacquered tray, salt containers, scattered military dispatches and campaign maps, a half-eaten meal pushed aside. A single candle burns low near the end of its wick. The objects tell the story of a punishing lifestyle without showing any human figure. The scene suggests gradual physical attrition — the body's quiet rebellion against decades of relentless demand. No text, no modern elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 65,
+      "narration": "And yet the political circumstances make purely natural explanations feel almost too convenient. Consider the timing: Kenshin collapses precisely when he alone had both the military strength and strategic position to halt Nobunaga. Consider who benefited: one man above all others. Nobunaga had been dreading the northern campaign for months. Consider the method: an internal death, no visible wound, a private collapse in a restricted area of a guarded castle. History is full of convenient deaths. Whether Kenshin's was convenient or simply catastrophic coincidence, the question would not — and did not — go away.",
+      "image_prompt": "A dramatic chiaroscuro composition: a large map of Japan in Sengoku-era style laid flat, with strategic markers. One area in the north — Echigo — shows the Uesugi roundel. A shadow falls across that marker, covering it. The shadow's hand belongs to an unseen figure just outside the frame — the implication of political manipulation without identifying any specific person. Torchlight from below, deep shadow above. No text legible on the map, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 65,
+      "narration": "Oda Nobunaga did not hide his relief. Multiple chronicles record him reacting to the news with undisguised celebration. But the true catastrophe was what followed within the Uesugi clan itself. The sudden removal of Kenshin's commanding authority detonated a succession crisis. The conflict that followed — known as Otate no Ran, the Disturbance at Otate — pitched his two adopted sons, Kagekatsu and Kagetora, against each other in a civil war that lasted nearly a year. The great army assembled for the southern campaign turned its weapons inward. Japan's most powerful military force destroyed itself.",
+      "image_prompt": "Two groups of Japanese samurai warriors in full armor face each other in a castle courtyard at night, both groups bearing the same Uesugi roundel banners — the same clan fighting itself. Torchlight flickers across armored faces on both sides. The castle walls above are lined with observers, unable to intervene. The composition captures the horror of civil war — identical banners on opposing sides. Tension at the breaking point. No text, no modern elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 65,
+      "narration": "Kagekatsu eventually prevailed, supported by Toyotomi Hideyoshi. Kagetora was forced to commit suicide. The Uesugi clan survived, but diminished — its military capacity shattered, treasury depleted, prestige damaged beyond recovery. Oda Nobunaga, freed from his most feared adversary, accelerated his conquest with remarkable speed. Within four years of Kenshin's death, he controlled most of central Japan. The campaign that Kenshin had spent the winter of 1577 preparing — the campaign that might have stopped everything — was never fought. The door that only he could close was left permanently open.",
+      "image_prompt": "A vast Sengoku-era campaign map of Japan spread across a table, viewed from above. In the center of Japan, Oda Nobunaga's territory markers are shown expanding outward in all directions — south, east, west. In the north, the Uesugi territory sits reduced and fragmented. An unseen hand moves a marker southward, consolidating control. The visual captures the strategic vacuum left by Kenshin's death. No legible text on the map, no modern elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "The counterfactual question haunts Japanese historiography. Kenshin's army at full strength outnumbered Nobunaga's available forces in the field. His strategic position — attacking from the north while Nobunaga faced simultaneous threats on multiple fronts — was formidable. His military record was unmatched. Some historians argue that Kenshin, had he lived even another year, might have forced Nobunaga to accept a divided Japan rather than a unified one. The man who ultimately unified Japan, Toyotomi Hideyoshi, rose directly into the vacuum Kenshin's death created. One man's death — one course of history.",
+      "image_prompt": "A ghostly panoramic scene: a vast mountain road through the snow-covered passes of northern Japan — the route of the campaign that never happened. The road stretches empty through mist and snow, flanked by ancient cedar forests. Where thirty thousand soldiers should be marching, there is only silence and falling snow. A single Uesugi battle banner flutters alone in the wind, abandoned at the roadside. The campaign's absence is the visual subject. No human figures, no modern elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "In Japanese cultural memory, Uesugi Kenshin occupies a position unlike almost any other historical figure. He is the image of the warrior who fights for principle rather than self-interest — who sends salt to an enemy rather than exploit his weakness, who refuses titles and appointments that would compromise his independence, who serves his god rather than himself. His rivalry with Shingen is the paradigmatic example of samurai honour. He appears in Japanese novels, films, games, and school textbooks. For Japan, Kenshin is not merely a historical figure. He is what a warrior is supposed to be.",
+      "image_prompt": "A Bishamonten shrine in winter in the mountains of Niigata — a Japanese Buddhist temple building (not Shinto: no torii gate, no shimenawa rope, no shide paper streamers). Surrounded by ancient cedar trees heavy with snow. A stone Buddhist lantern lights the path. Prayer offerings at a Buddhist altar with incense and candles. White votive tablets at the altar. The atmosphere radiates deep religious devotion and reverence. Snow falls gently. No human figures visible. No text on the votive tablets, no modern elements. Strictly Buddhist architecture: wooden temple gate (sanmon), curved roof tiles, hanging lanterns.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "There is something both fitting and terrible about the manner of his death. Uesugi Kenshin had never been defeated on the battlefield. He had outlasted Shingen. He had held Nobunaga at bay for years. He had built something extraordinary in the mountains of Echigo. And then his body simply gave out — not on a battlefield, not by betrayal, but quietly, internally, in his own castle. The God of War was not brought down by any human opponent. He was brought down by time. And that is the one enemy no one — not even the God of War — wins against.",
+      "image_prompt": "Uesugi Kenshin alone in his private chamber at Kasugayama Castle in the deep of night. He sits in quiet meditation, armor set aside, wearing simple white robes. A single small oil lamp burns beside him. His eyes are closed, breathing deep and still. Outside the paper screen behind him, darkness and silence. The composition captures a man finally at rest — powerful, austere, utterly alone, unaware that this stillness is the last he will know. No text, no modern elements.",
+      "ken_burns": "static",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "The cause of Uesugi Kenshin's death has never been definitively established. The primary sources are incomplete, sometimes contradictory, and written at varying distances from the events. The ninja theory is almost certainly legend. The stroke theory is medically probable. The cancer theory is medically plausible. All remain theories. What is not a theory: that his death in March 1578 was one of the most consequential moments in Japanese history. Whatever killed him, it reshaped Japan. The Dragon of Echigo fell — and the country that followed was not the country he had been fighting for.",
+      "image_prompt": "Kasugayama Castle viewed from across the valley at dusk — a powerful Sengoku-era mountain fortress on its ridge above coastal Echigo, surrounded by dark forested slopes. The castle towers catch the last evening light above rising mist. The image is grand and majestic but tinged with melancholy — the great seat of power that was suddenly and permanently silenced. No human figures visible. No modern buildings, no electric lights, no modern elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "outro",
+      "duration_seconds": 65,
+      "narration": "Kasugayama Castle no longer stands. The hill above Joetsu City in Niigata Prefecture is a park and small museum now, preserving what records remain. Every year, visitors climb the path where Kenshin lived and died, looking for something the documents cannot provide: certainty. The mystery endures not because evidence is hidden, but because history rarely grants final answers. Uesugi Kenshin lived as a man who believed in absolute righteous principle. He died as a question. Japan is still asking it.",
+      "image_prompt": "Earthen ruins of Kasugayama Castle on a wooded hilltop — ancient embankments and overgrown stone foundations surrounded by towering cryptomeria trees. A narrow dirt path winds through the silent ruins. Snow dusts the ground and the dark branches. Evening light filters through the trees. The atmosphere is of sacred, forgotten history. No people, no human figures, no samurai, no characters of any kind — empty ruins only. No modern buildings, no paved roads, no electric lights, no modern signage. The ruins are ancient and absorbed back into the mountain.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles — Kenshin's greatest rival died under equally mysterious circumstances just five years earlier. Takeda Shingen: the Tiger of Kai, dead in 1573. Was it a sniper's bullet fired from a castle wall? Was it illness? Two rival generals. Two suspicious deaths. Coming next.",
+      "image_prompt": "Takeda Shingen, a massively built Japanese warlord in heavy red-lacquered lamellar armor and his distinctive Tsutsugasane battle helmet with ornate crest, slumped against the wooden wall inside a command tent or castle room, face contorted in sudden pain. Generals cluster around him in alarm. Torchlight throws dramatic shadows. Maps and war fans scattered on the floor. The atmosphere conveys sudden catastrophic crisis — the Tiger of Kai struck down at the height of his power. No text, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Uesugi Kenshin. The Dragon of Echigo. Japan's God of War. A man who fought sixty battles and never lost one. A celibate warrior-monk who sent salt to his enemy as an act of honour. The general who might have halted Japan's unification if he had lived another year. And a mystery that four and a half centuries have not resolved. The greatest warriors are remembered not only for how they fought. Sometimes, they are remembered for how they fell — and for the question they left behind.",
+      "image_prompt": "A stone memorial stele on the summit of a forested mountain in Niigata Prefecture, surrounded by ancient cedar trees. A single stone lantern burns at the base of the memorial. Evening light, deep shadows between the trees. Snow on the ground. No human figures. No text visible on the stone. The monument stands alone in mountain silence — permanent, still, enduring. The scene radiates quiet, eternal reverence for a figure time has not resolved.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_source": "BGM/ep009-BGM.mp3",
+  "youtube_url": "https://youtu.be/P-tDWD21RAI",
+  "shorts_url": "https://youtu.be/aor-HGDfLf4",
+  "scheduled_at": "2026-07-09 03:00"
+}
