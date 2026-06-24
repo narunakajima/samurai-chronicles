@@ -1,0 +1,258 @@
+{
+  "episode_id": "ep047",
+  "episode_title": "The Tiger's Last Secret: How Did Takeda Shingen Really Die?",
+  "youtube_title": "The Tiger's Last Secret: How Did Takeda Shingen Really Die?",
+  "youtube_description": "He was advancing on Kyoto with thirty thousand men and nothing in his way. Then, in 1573, the Tiger of Kai went silent. Was Takeda Shingen assassinated — or did the greatest military mind in Japan simply run out of time?\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 He crushed the strongest ally...\n0:42 Takeda Shingen was not a man\n1:49 For over a decade, the only\n2:41 In October 1572, Shingen...\n3:28 Tokugawa Ieyasu, Nobunaga's...\n4:19 Ieyasu fled. The battle...\n5:08 In February of 1573,...\n6:05 The sniper theory has...\n6:53 The illness theory is better...\n7:47 Takeda Shingen died on May 13th,\n8:49 Takeda Katsuyori inherited...\n9:44 June 1575. The Battle of...\n10:48 Seven years later, in 1582, Oda\n11:48 The counterfactual question...\n12:42 If Shingen had reached Kyoto in\n13:42 Shingen himself was a man of\n14:45 The cause of Shingen's death has\n15:44 Kōfu, the capital of...\n16:43 Next time on Samurai...\n17:13 Takeda Shingen. The Tiger of...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Stephen Turnbull, \"The Samurai Sourcebook\" (1998)\n2. Anthony Bryant, \"Samurai 1550-1600\" (1994)\n3. George Sansom, \"A History of Japan 1334-1615\" (1961)\n\n#takedashingen #samuraihistory #japanesehistory #sengokuperiod #samurai #mystery #tigerofkai #japanhistory #samuraichronicles",
+  "youtube_tags": [
+    "takeda shingen",
+    "samurai history",
+    "japanese history",
+    "sengoku period",
+    "samurai",
+    "japanese mystery",
+    "japan history",
+    "battle of nagashino",
+    "mikatagahara",
+    "oda nobunaga",
+    "tiger of kai",
+    "furinkazan",
+    "takeda clan",
+    "japanese documentary",
+    "history documentary",
+    "samurai chronicles",
+    "katsuyori",
+    "kawanakajima",
+    "sengoku era",
+    "japanese castle"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 7,
+  "teaser_narration": "He crushed Nobunaga's greatest ally. He was advancing on Kyoto — nothing in his way. Then silence. In 1573, the Tiger of Kai was gone. Was it a sniper? Was it illness? What killed Takeda Shingen may have changed Japan forever.",
+  "shorts_narration": "Thirty thousand men. Nobunaga in panic. One month from Kyoto. Then — silence. 1573. An assassin's bullet — or his own body? Takeda Shingen. Japan still doesn't know.",
+  "thumbnail_prompt": "Takeda Shingen in his iconic dark lacquered armor with crimson fur jinbaori draped over his shoulders, seated powerfully in command pose, iron war fan in hand. Imposing, broad, bearded face with sharp calculating eyes. Background: dramatic dark smoke and battle-lit orange sky. Composition: three-quarter angle, filling the frame. Takeda diamond clan crest (Takeda bishi) visible on armor.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He crushed the strongest ally Nobunaga had. He was three months from Kyoto with nothing left in his way. Then, in 1573, the Tiger of Kai simply stopped. What killed Takeda Shingen?",
+      "image_prompt": "A Japanese mountain castle at night — a single torch burning in a high window, the surrounding darkness absolute. Ancient stone walls, wooden towers, bare winter trees on the slopes. Below, the faint glow of a vast encamped army on the plain. The castle is still and ominous, holding some great secret. No human figures, no modern elements, no text.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Takeda Shingen was not a man who inherited power — he seized it. Born in 1521, he expelled his own father from Kai Province in 1541 and took command at nineteen. What followed was thirty years of methodical construction: a spy network, an agricultural system that turned mountain farmers into soldiers, a cavalry force that no army in Japan could match. His banner — Furinkazan, swift as wind, silent as forest, fierce as fire, immovable as mountain — was not a slogan. It was a statement of fact. By 1572, he was fifty years old and had never been defeated in the field.",
+      "image_prompt": "Takeda Shingen standing on a mountain cliff overlooking Kai Province — rice-field valleys and forested mountains below, Mount Fuji faintly visible in the distant haze. Broad, powerfully built, in dark lacquered armor with Takeda diamond-pattern (bishi) crest. Crimson fur jinbaori draped over his shoulders. Iron war fan held loosely at his side. Expression: absolute authority and quiet confidence. Three-quarter view, looking southwest. Character_ref: shingen. No text, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.24
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "For over a decade, the only man who could match him was Uesugi Kenshin — and even their five battles at Kawanakajima produced no decisive winner. Shingen was not a man who fought for honour or glory. He fought to win, and winning meant patience. While Kenshin charged, Shingen calculated. While Kenshin was an untouchable god of war, Shingen was building something more durable: a domain so well administered, an army so well trained, that time itself was his ally. All he needed was the right moment. In 1572, that moment arrived.",
+      "image_prompt": "The plain of Kawanakajima — two great armies facing each other across a misty river at dawn. On the left: Uesugi white-and-black banners with nine-spoke roundel mon. On the right: Takeda diamond-crest dark banners. The armies are enormous, stretching to the horizon. The river between them glints silver. Neither side advances. The tension of perfect deadlock fills the frame. No legible text on banners, no modern elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In October 1572, Shingen launched the campaign that was intended to end Oda Nobunaga. He had spent years constructing the conditions for it: an alliance with Kennyo Honganji, the great Buddhist fortress complex that was already fighting Nobunaga from the west, and an agreement with Asakura Yoshikage pressing from the north. Nobunaga suddenly faced enemies on three fronts simultaneously. His position, which had seemed unassailable, became dangerously exposed. And marching out of the mountains from the east, with thirty thousand men, came the Tiger of Kai.",
+      "image_prompt": "A torchlit war council inside a large campaign tent. Takeda Shingen seated at the centre before a large campaign map on a low table, four generals leaning in around him. His expression is focused and decisive, iron war fan pointing at the map. The generals wear Takeda diamond-crest armor. A crimson banner with abstract diamond pattern hangs behind him. No legible text on map or banners. No modern elements. Character_ref: shingen.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Tokugawa Ieyasu, Nobunaga's key ally in the east, stood directly in Shingen's path. He garrisoned Hamamatsu Castle and watched the Takeda army overwhelm everything around him. Then Ieyasu made a critical decision: he sallied out of his castle to meet Shingen on the plain of Mikatagahara. He had eleven thousand men. Shingen had thirty thousand. On January 25th, 1573, the two forces met. What followed was not a battle. It was an annihilation.",
+      "image_prompt": "The Battle of Mikatagahara — a massive Takeda cavalry charge sweeping down a winter hillside toward a smaller defending force on a frost-hardened plain. Takeda horsemen in dark armor with diamond-crest banners. The defending line is already beginning to break. Battle smoke rises. Winter light. The charge is enormous, unstoppable. No text, no modern elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Ieyasu fled. The battle lasted hours. His army was shattered, his generals killed or scattered, and he barely reached Hamamatsu Castle alive. According to later accounts, he was so terrified that he soiled himself on the retreat — a story his own retainers deliberately spread, to make it seem like cool indifference rather than panic. Shingen could have pursued and destroyed Hamamatsu entirely. He chose not to. He had larger objectives. The army moved west. In Kyoto, Nobunaga's letters to his allies grew increasingly urgent. The path was open.",
+      "image_prompt": "A torchlit castle gateway at night — a lone mounted figure in shattered armor flees through the open gates, horse wide-eyed with terror, vanishing into darkness. Castle walls glow from within with lantern light. On the distant horizon, the encircling light of an enormous Takeda encampment. The atmosphere conveys total defeat and desperate flight. No text, no modern elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In February of 1573, Shingen's army reached Noda Castle in Mikawa Province — a small Tokugawa fortress whose garrison refused to surrender. While the siege settled into a waiting game, something unexpected happened one night. A musician inside the castle played a flute — a haunting, beautiful melody drifting out through the darkness over the battlefield. According to one of Japan's most persistent legends, Shingen emerged from his command tent and sat in the open night air to listen. A marksman inside the castle took aim through the palisade wall. The shot found him.",
+      "image_prompt": "Late night at the siege of Noda Castle. Takeda Shingen has emerged from his command tent alone and sits on a campaign stool in the darkness outside, listening. A single paper lantern glows softly behind him. Beyond the siege palisade wall, the faint lights of the besieged castle. His expression is rare — open, absorbed, unguarded — caught in a moment of unexpected beauty amid war. The night is still. The danger is invisible. Character_ref: shingen. No text, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.75,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The sniper theory has persisted for four centuries. The marksman's name appears in some records as Suwa Koshiro — an expert rifleman using an arquebus, who spotted the Takeda commander silhouetted against lantern light through a gap in the castle wall. The shot was not immediately fatal. Shingen withdrew northward. His generals were told he was merely ill. Messengers carrying news of the campaign went silent. But historians who have examined contemporary records note a critical problem: no source written at the time of the siege mentions an assassination attempt. The story appears only in documents written decades later.",
+      "image_prompt": "Inside Noda Castle at night — a lone marksman kneels at a narrow gap in the wooden palisade wall, an arquebus barely protruding through the crack, aimed toward the enemy camp. The man's face is focused, breath held. Through the gap: the distant lantern light of the Takeda command area, small and vulnerable. Gunpowder smoke curls from the barrel — the shot has just been fired. The atmosphere is of absolute concentration and terrible consequence. No text, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The illness theory is better supported by the evidence. Shingen had been unwell for months before the western campaign began. The campaign itself moved more slowly than his previous operations — unusually slow for a commander renowned for speed. Contemporary accounts record symptoms consistent with a serious internal condition: difficulty breathing, persistent coughing, exhaustion. Modern medical historians have suggested esophageal cancer, stomach cancer, or tuberculosis as likely diagnoses. The picture that emerges is of a man already dying who pushed himself into one final campaign, and whose body gave out at Noda — not because of a bullet, but because it had nothing left.",
+      "image_prompt": "An extreme close-up portrait of Takeda Shingen inside a campaign tent — face and shoulders only, no other figures. His broad, bearded face shows his illness clearly: drawn, grey-tinged, the eyes still fierce but deeply exhausted. He waves away a physician kneeling at the edge of frame with the iron war fan. A single candle burns at his side. His armor is partially removed, the crimson jinbaori loose over his shoulders. The portrait captures extraordinary will fighting a losing battle against his own body. Character_ref: shingen. No text, no modern elements. Solo portrait only.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Takeda Shingen died on May 13th, 1573. He was fifty-one years old. On his deathbed, he reportedly told his generals: 'Conceal my death. Do not mourn. Continue as though I still live.' The order was obeyed. His body was transported northward in absolute secrecy, sealed inside a palanquin. The army withdrew from Mikawa without engaging Nobunaga's forces. Enemies and allies alike were confused. For months, it was unclear whether Shingen was dead, gravely ill, or simply repositioning. The greatest secret of the Sengoku period had begun — and it was being kept perfectly.",
+      "image_prompt": "A sealed palanquin being carried in total darkness through a mountain forest at night by silent retainers in dark clothing. No torches — only cold moonlight filtering through bare black branches. The bearers move in absolute silence, heads down. Snow dusts the ground. The atmosphere is of profound secrecy, grief, and the weight of what is being carried. No faces visible, no modern elements, no text.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Takeda Katsuyori inherited his father's domain, his father's army, and his father's unfinished war. He was a different kind of man. Shingen had been patient, strategic, and willing to retreat when the odds were wrong. Katsuyori was aggressive, proud, and deeply conscious of living in his legendary father's shadow. He needed a victory of his own to establish his authority over generals who had followed Shingen for thirty years. Two years after Shingen's death, that opportunity arrived. He would take it. And in taking it, he would destroy everything his father had built.",
+      "image_prompt": "Takeda Katsuyori stands before the Takeda war standards in full battle armor. Younger and leaner than Shingen, with an intense, aggressive bearing. His face shows the weight of inherited expectation mixed with dangerous ambition. The veteran generals around him watch carefully, faces guarded. Takeda diamond-crest banners hang behind him in the dark interior. The atmosphere is tense rather than triumphant — a new leader asserting himself over men who remember a greater one. No text, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "June 1575. The Battle of Nagashino. Katsuyori led the famous Takeda cavalry in a direct charge against Nobunaga's prepared defensive positions. Nobunaga had spent the intervening years preparing specifically for this moment: thousands of arquebusiers arranged behind wooden palisades, firing in coordinated volleys. The cavalry that had dominated Japanese warfare for three decades rode directly into massed gunfire. The Takeda lost their greatest surviving generals in a single afternoon. The army Shingen had spent thirty years building was shattered in hours. It never recovered.",
+      "image_prompt": "The Battle of Nagashino — a catastrophic cavalry charge frozen at its moment of destruction. Takeda horsemen in dark armor thundering full gallop directly into billowing white arquebus smoke rising from wooden palisades. The charge is already collapsing — riders and horses falling in the foreground. Beyond the smoke wall, the Oda-Tokugawa lines hold steady. The image conveys the brutal annihilation of a great military tradition. No text, no modern elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Seven years later, in 1582, Oda Nobunaga launched the final campaign to destroy the Takeda entirely. The clan that had once threatened to end him collapsed within weeks. Its allies abandoned it. Its generals surrendered or fled. Katsuyori died in the mountains, deserted by the last of his men. Nobunaga celebrated in a manner that shocked even his own generals: a banquet at which the skulls of Shingen and Katsuyori were put on display, lacquered in gold and silver. It was a final, deliberate act of desecration — the price of having been, for a brief moment, the man most likely to stop him.",
+      "image_prompt": "A cold mountain slope in early spring — bare trees, patches of snow. A single figure in battered, stripped armor kneels alone on the ground, head bowed. No army behind him, no retainers, no banners. The Takeda standards are gone. The domain is gone. The clan is gone. Only emptiness and the sound of wind. The atmosphere is of final, absolute defeat. No text, no modern elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "The counterfactual question haunts every history of the period. In early 1573, Nobunaga's position was genuinely desperate. The Honganji held him from the west. The Asakura pressed from the north. Shingen advanced from the east. Nobunaga's surviving letters from this period reveal something unusual for this normally unshakeable warlord: fear. He wrote urgently to allies, to the Portuguese Jesuits in Japan, seeking reassurance and support. His position was close to untenable. One more month of campaigning — perhaps two — and Shingen would have been in reach of Kyoto.",
+      "image_prompt": "A candlelit study interior — writing table covered in hastily unrolled scrolls and letters, ink still wet, a calligraphy brush dropped. The room suggests urgent, desperate correspondence. High-quality silk screens visible on the walls, a lacquered candelabra burning low. The letters are covered in abstract brushwork — no legible text. The atmosphere of barely controlled panic radiates from the scattered, urgent documents. No human figures, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "If Shingen had reached Kyoto in 1573, Japanese history diverges entirely. Nobunaga's unification project ends. The firearms revolution he was driving stalls. Toyotomi Hideyoshi, who served under Nobunaga, disappears from history. Tokugawa Ieyasu survives as a subordinate power at best. The Japan of the Edo period — two and a half centuries of Tokugawa peace — never happens. Instead: a Takeda-dominated Japan, built on cavalry doctrine and strategic patience, facing a completely different future. All of this hung on what happened at Noda Castle in the spring of 1573, in the darkness, by a palisade wall.",
+      "image_prompt": "A high mountain pass in winter, looking west toward a distant plains horizon where the sun sets over the implied direction of Kyoto. The pass is empty — the footprints of a great army in the snow lead up to the pass and then turn back northward, retreating into the mountains. The retreating tracks are deep and numerous. The westward view is open, undefended, beckoning. The atmosphere carries the weight of history not taken. No human figures, no modern elements, no text.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Shingen himself was a man of extraordinary and disturbing contradictions. He expelled his own father. He ordered the execution of a son. He broke alliances when it suited him and honoured others with perfect reliability, on terms that only he understood. He spent his entire life building toward one objective — and died one campaign short of it. In Japanese cultural memory, he occupies a specific position: the ideal strategic commander, never defeated in the field, betrayed only by time. His domain of Kai was, by the standards of the era, one of the best governed in Japan. His people called him their 'father.',",
+      "image_prompt": "Takeda Shingen in full armor, standing alone on a clifftop at sunset, looking west. The crimson jinbaori catches the last light and billows slightly in the wind. The iron war fan is closed and held at his side — not commanding, not pointing. Just a man looking at something he will never reach. Mount Fuji is visible to his left in dark silhouette against the orange sky. The image captures both power and the shadow of unfinished ambition. Character_ref: shingen. No text, no modern elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "The cause of Shingen's death has never been definitively established. The sniper theory persists because it is dramatic and because it was never conclusively disproven. The illness theory is better supported by the available evidence, and more consistent with the timeline of his deterioration. Both remain theories. What is beyond dispute: he died in May 1573, at fifty-one, at the worst possible moment for his enemies and the best possible moment for Nobunaga. Whether it was an arquebus ball or a failing body, the effect was identical: the Tiger of Kai fell silent, and Japan's future was written without him.",
+      "image_prompt": "A simple stone grave marker in an ancient Buddhist temple garden, surrounded by towering cedar trees. Snow dusts the ground and the tops of the stone lanterns lining the path. A single stick of incense burns before the marker, the smoke rising straight in still air. The atmosphere is of quiet, forgotten power — this could be the grave of any great warrior. No modern elements, no human figures, no legible text on the marker.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Kōfu, the capital of Shingen's domain, still honours him. A large bronze statue stands outside Kōfu Station — the Tiger of Kai, in full armor, war fan raised, looking west toward the Kyoto he never reached. Every spring, the Shingen-ko Festival fills the streets of Kōfu with thousands of participants in period dress: the war drums, the cavalry, the Furinkazan banners. No warlord in Japan is celebrated with more consistent civic devotion. He failed to unify Japan. He never reached Kyoto. And yet the city he built still carries his name, and still marches in his memory, five hundred years later.",
+      "image_prompt": "The great bronze statue of Takeda Shingen depicted in traditional Japanese ink-wash illustration style — the Tiger of Kai in full armor, war fan raised and pointing west, bearded face commanding. Cherry blossoms drift past the statue. In the background, plain crimson and black banners with geometric diamond shapes only — absolutely no writing, no kanji, no calligraphy, no text of any kind on any surface. Mount Fuji is faintly visible in the distance. Rich traditional colour palette: gold, crimson, deep blue-black. No modern infrastructure, no electric lights, no street signs. No text, no legible characters, no writing anywhere in the image.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — the weapon that made Takeda Shingen the most feared commander in Japan. A cavalry force so devastating that no army could stop it in the open field. Until Nagashino. The mounted shock troops that terrified a nation — and the tactics that finally ended them. Coming next.",
+      "image_prompt": "Takeda Shingen on horseback at the head of the famous Takeda cavalry, seen from a low angle looking up. He rides a powerful black horse at full gallop, crimson jinbaori streaming behind him, iron war fan raised in command. Behind him: a wave of Takeda mounted samurai in dark diamond-crest armor stretching to the horizon, lances raised, banners flying. The image captures the most feared cavalry force in Sengoku Japan at its moment of maximum power and terror. Character_ref: shingen. No text, no modern elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Takeda Shingen. The Tiger of Kai. Dead at fifty-one in the spring of 1573, with Kyoto within reach and Nobunaga at his mercy. The mystery of how he died is, in the end, less important than the fact of it. He did not reach Kyoto. The campaign he had spent three years building was never finished. And in the vacuum left by the Tiger of Kai, a different Japan took shape — unified by men who came after him, built on foundations he never laid, under banners that were not his. He came closer than anyone to stopping what followed. It was not close enough.",
+      "image_prompt": "The summit of Mount Fuji at dawn, seen from the east — the mountain that dominates the skyline of Kai Province, looking down on the valleys where Shingen's domain once stood. Wisps of cloud drift below the summit. Rose and gold dawn light illuminates the peak. Far below in the valley, the faint outline of ancient earthworks — the remains of a mountain castle — barely visible through the morning mist. Vast, silent, beautiful, and indifferent. No human figures, no modern elements, no text.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/9QX356I_dvc",
+  "shorts_url": "https://youtu.be/PPHxxkvNmsY",
+  "scheduled_at": "2026-07-10 03:00"
+}

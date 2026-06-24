@@ -80,6 +80,30 @@ def load_character_ref(name: str) -> str:
     return CHARACTER_DEFAULTS.get(name, "")
 
 
+def _generate_with_retry(client, full_prompt: str, output_path: Path, max_retries: int = 3) -> bool:
+    """generate_content を最大 max_retries 回リトライする（指数バックオフ）。"""
+    for attempt in range(max_retries + 1):
+        try:
+            response = client.models.generate_content(
+                model=MODEL,
+                contents=full_prompt,
+                config=types.GenerateContentConfig(
+                    response_modalities=["IMAGE"],
+                ),
+            )
+            for part in response.candidates[0].content.parts:
+                if part.inline_data is not None:
+                    output_path.write_bytes(part.inline_data.data)
+                    return True
+            return False
+        except Exception as e:
+            if attempt < max_retries:
+                wait = 5 * (2 ** attempt)  # 5s, 10s, 20s
+                time.sleep(wait)
+            else:
+                raise
+
+
 def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, output_path: Path) -> bool:
     """Shorts用縦長(9:16)画像を生成する。同モデル・縦型プロンプト指定。"""
     parts = [
@@ -91,19 +115,7 @@ def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, o
         parts.append(f"Character reference: {character_ref}")
     parts.append(f"Scene: {scene_prompt}")
     full_prompt = "\n\n".join(parts)
-
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=full_prompt,
-        config=types.GenerateContentConfig(
-            response_modalities=["IMAGE"],
-        ),
-    )
-    for part in response.candidates[0].content.parts:
-        if part.inline_data is not None:
-            output_path.write_bytes(part.inline_data.data)
-            return True
-    return False
+    return _generate_with_retry(client, full_prompt, output_path)
 
 
 def generate_one_image(client, scene_prompt: str, character_ref: str, output_path: Path) -> bool:
@@ -113,19 +125,7 @@ def generate_one_image(client, scene_prompt: str, character_ref: str, output_pat
         parts.append(f"Character reference: {character_ref}")
     parts.append(f"Scene: {scene_prompt}")
     full_prompt = "\n\n".join(parts)
-
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=full_prompt,
-        config=types.GenerateContentConfig(
-            response_modalities=["IMAGE"],
-        ),
-    )
-    for part in response.candidates[0].content.parts:
-        if part.inline_data is not None:
-            output_path.write_bytes(part.inline_data.data)
-            return True
-    return False
+    return _generate_with_retry(client, full_prompt, output_path)
 
 
 def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: int) -> dict:

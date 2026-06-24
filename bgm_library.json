@@ -277,5 +277,19 @@
     "used_in": [
       "ep043"
     ]
+  },
+  {
+    "id": "ep047-BGM",
+    "path": "BGM/ep047-BGM.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep047"
+    ]
   }
 ]
