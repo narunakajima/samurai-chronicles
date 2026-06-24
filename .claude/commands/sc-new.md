@@ -283,7 +283,7 @@ Commanding presence. Carries a European arquebus as well as a katana.
    - `episodes/ep{NNN}.json` の該当シーンを直接編集して修正
    - 修正後のナレーションで制作確認書を組み立てる
    - 保存される制作確認書には ❌ が残っていてはならない
-4. 以下のフォーマットで `ep{NNN}_制作確認書.txt` を組み立ててデスクトップに保存する
+4. 以下のフォーマットで `ep{NNN}_制作確認書.txt` を組み立てて `~/Desktop/SC/` に保存する
 
 **制作確認書フォーマット:**
 ```
@@ -408,7 +408,7 @@ BGM           : ❌ 未選択
 
 ### STEP 3B — サムネイル画像（Claudeが直接生成）
 
-エピソードJSONの `thumbnail_prompt` にテキストオーバーレイ指示を加えてGeminiで生成し、デスクトップに保存する。
+エピソードJSONの `thumbnail_prompt` にテキストオーバーレイ指示を加えてGeminiで生成し、`~/Desktop/SC/` に保存する。
 
 **テキストオーバーレイ指示（プロンプトに追記）:**
 ```
@@ -434,7 +434,7 @@ response = client.models.generate_content(
     config=types.GenerateContentConfig(response_modalities=["IMAGE"]),
 )
 # inline_data から PNG をデスクトップに保存
-# 保存先: ~/Desktop/ep{NNN}_thumbnail.png
+# 保存先: ~/Desktop/SC/ep{NNN}_thumbnail.png
 ```
 
 **Google Drive への保存はこの時点では行わない。**
@@ -510,9 +510,9 @@ BGM_library_02_xxx.mp3     ← ライブラリ
 ```
 制作確認書・サムネイル・BGM候補の準備ができました。
 
-📄 ep{NNN}_制作確認書.txt — デスクトップに保存済み
-🖼️ ep{NNN}_thumbnail.png — デスクトップに保存済み
-🎵 BGM候補 4曲 — デスクトップに保存済み
+📄 ep{NNN}_制作確認書.txt — Desktop/SC/ に保存済み
+🖼️ ep{NNN}_thumbnail.png — Desktop/SC/ に保存済み
+🎵 BGM候補 4曲 — Desktop/SC/BGM/ に保存済み
   1. {ファイル名}（{尺}s）[{ライセンス}]
   2. {ファイル名}（{尺}s）[{ライセンス}]
   3. {ファイル名}（{尺}s）[{ライセンス}]
@@ -546,9 +546,9 @@ BGM_library_02_xxx.mp3     ← ライブラリ
 
 ユーザーの回答に応じて対応する：
 
-- **ナレーション修正あり（❌ / ⚠️）** → `episodes/ep{NNN}.json` の該当シーンを直接編集して修正。デスクトップの制作確認書も上書き更新。修正箇所を報告して再確認を求める。
-- **サムネイルをやり直したい** → デスクトップの `ep{NNN}_thumbnail.png` を削除して再生成。
-- **BGMをやり直したい** → デスクトップの4曲と `/tmp/sc_bgm_credits/` 内の credit.txt を削除し、`--round` を1増やして再ダウンロード＋ライブラリ再選択。
+- **ナレーション修正あり（❌ / ⚠️）** → `episodes/ep{NNN}.json` の該当シーンを直接編集して修正。`~/Desktop/SC/ep{NNN}_制作確認書.txt` も上書き更新。修正箇所を報告して再確認を求める。
+- **サムネイルをやり直したい** → `~/Desktop/SC/ep{NNN}_thumbnail.png` を削除して再生成。
+- **BGMをやり直したい** → `~/Desktop/SC/BGM/` の4曲と `/tmp/sc_bgm_credits/` 内の credit.txt を削除し、`--round` を1増やして再ダウンロード＋ライブラリ再選択。
 - **すべてOK** → STEP 4 へ進む
 
 ---
@@ -562,10 +562,10 @@ DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイド�
 mkdir -p "$DRIVE/audio"
 
 # 制作確認書を移動
-mv "$HOME/Desktop/ep{NNN}_制作確認書.txt" "$DRIVE/"
+mv "$HOME/Desktop/SC/ep{NNN}_制作確認書.txt" "$DRIVE/"
 
 # サムネイルを移動
-mv "$HOME/Desktop/ep{NNN}_thumbnail.png" "$DRIVE/"
+mv "$HOME/Desktop/SC/ep{NNN}_thumbnail.png" "$DRIVE/"
 
 # 残ったBGM1曲を判定: Freesound新規 or ライブラリ
 CHOSEN=$(ls "$HOME/Desktop/SC/BGM/BGM_candidate_"*.mp3 "$HOME/Desktop/SC/BGM/BGM_library_"*.mp3 2>/dev/null | head -1)
