@@ -1,0 +1,255 @@
+{
+  "episode_id": "ep048",
+  "episode_title": "The Cavalry That Terrified All of Japan: Takeda Shingen's Mounted Shock Troops",
+  "youtube_title": "The Cavalry That Terrified All of Japan: Takeda Shingen's Mounted Shock Troops",
+  "youtube_description": "For thirty years, no army in Japan could stop them. The Takeda cavalry charge was the most feared weapon in the Sengoku period — and then, at Nagashino in 1575, sixty seconds of arquebus fire ended it all. This is how they were built, how they fought, and what they really were.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 For thirty years, no army in\n0:49 The foundation was geography....\n1:43 The Kai horse was central to\n2:40 The cavalry was only as good\n3:42 The tactical philosophy that...\n4:44 The proving ground was...\n5:52 The cavalry's greatest single...\n7:00 The reputation built over...\n8:10 Takeda Katsuyori was...\n9:06 The Takeda cavalry had never...\n10:02 On June 28th, 1575, the Takeda\n10:56 The generals died one after...\n12:14 The Takeda clan did not die\n13:21 Modern historians have...\n14:28 There is also the deeper...\n15:37 The question that haunts...\n16:56 The legacy of the Takeda cavalry\n18:11 The Nagashino battlefield...\n19:25 Next time on Samurai...\n19:50 The Takeda cavalry. Built on...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Stephen Turnbull, \"Nagashino 1575\" (2000)\n2. Thomas Conlan, \"State of War: The Violent Order of Fourteenth-Century Japan\" (2003)\n3. Anthony Bryant, \"Samurai 1550-1600\" (1994)\n\n#takedacavalry #nagashino #takedashingen #samuraihistory #japanesehistory #sengokuperiod #samurai #japanhistory #samuraichronicles #militaryhistory",
+  "youtube_tags": [
+    "takeda cavalry",
+    "nagashino",
+    "takeda shingen",
+    "samurai history",
+    "japanese history",
+    "sengoku period",
+    "samurai",
+    "japan history",
+    "samurai chronicles",
+    "military history",
+    "furinkazan",
+    "takeda clan",
+    "battle of nagashino",
+    "katsuyori",
+    "sengoku era",
+    "japanese warfare",
+    "cavalry tactics",
+    "japanese documentary",
+    "history documentary"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 7,
+  "teaser_narration": "Thirty thousand men. Thirty years undefeated. In 1575, Katsuyori led the greatest cavalry force Japan had ever built in one final charge. And Nobunaga just waited. What happened in the next sixty seconds destroyed an army — and a legend.",
+  "shorts_narration": "Thirty years. Every army in Japan feared them. The Takeda cavalry charge. Until Nagashino. Until sixty seconds of gunfire ended three decades of terror. Was it a military disaster — or the death of a myth? Takeda's cavalry.",
+  "thumbnail_prompt": "Dramatic Takeda cavalry charge at full gallop — dozens of mounted samurai in black lacquered armor bearing Takeda diamond-crest banners in deep crimson and black, lances lowered, horses at full gallop kicking up clouds of dust. Lead rider central in frame, face fierce and determined beneath an iron kabuto. Background: smoke, mountainous terrain, hint of opposing wooden palisade in far distance. Furinkazan banner prominent. Extremely dynamic composition, extreme motion blur on hooves and banners, diagonal charge composition. No text, no legible writing.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "For thirty years, no army in Japan could stop them. One sight on the battlefield — the Takeda diamond crest closing at full gallop — and disciplined men broke and ran. What made the Takeda cavalry so terrifying? And what finally destroyed them?",
+      "image_prompt": "Wide battlefield panorama at dusk: a wave of mounted samurai bearing crimson Takeda diamond-crest banners charging at full gallop across a misty plain. Enemy soldiers visible in foreground fleeing in terror, dropping weapons, backs turned. Dust and smoke across the field. No legible text, no writing on banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The foundation was geography. Kai Province — modern Yamanashi — is a landlocked mountain basin surrounded by the Japanese Alps on three sides. It had no access to the sea, no major rice plains, and limited natural wealth. What it had was horses. The Kai horse — bred in the mountain grasslands of the Koma region — was not the largest animal in Japan, but it was extraordinarily tough. It could operate at altitude, carry heavy loads over rough terrain, and sustain long marches that would exhaust animals bred in the lowlands. Shingen understood that this was not a limitation. It was a weapon.",
+      "image_prompt": "Takeda Shingen, imposing warlord in his early 40s with full black armor and crimson fur-lined jinbaori, standing on a high mountain ridge in Kai Province surveying a valley where Kai horses graze freely below. His iron war fan is tucked at his belt, one hand on the hilt of his sword. Expression: calm, calculating, proprietary. Distant peaks visible, early morning light. Takeda diamond-crest on chest armor. No text.",
+      "ken_burns": "zoom_out",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The Kai horse was central to Shingen's military thinking, but the cavalry he built was not simply a matter of mounting soldiers on horses. It was a complete doctrine. Takeda cavalry trained for coordinated shock — a massed charge delivered at the right moment to break an enemy formation that had already been softened by infantry pressure and missile fire. The horses were trained to move together, to hold formation at speed, and to respond to drum signals across the chaos of battle. Shingen did not invent Japanese cavalry. He industrialised it — standardised the training, the equipment, the command structure — and built it into the decisive arm of a full military system.",
+      "image_prompt": "Training ground at the foot of misty mountains in Kai Province: dozens of mounted samurai in partial armor practising coordinated formation charges across an open field. Instructors on foot directing formations with signal flags. War drums visible at the edge of the field. Crisp morning light, disciplined energy. Takeda diamond-crest banners line the training ground. No writing on banners, no text.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The cavalry was only as good as the men who led it. Shingen's genius lay not only in strategy but in his ability to identify and develop commanders of exceptional talent. Chief among them was Yamagata Masakage — commander of the Red Fire Brigade, whose men wore entirely crimson-lacquered armor to make them visible and terrifying on the battlefield. There was Baba Nobuharu, a general said to have fought in hundreds of engagements without receiving a single wound — a record that made him legendary even among his contemporaries. And Naito Masatoyo, whose cavalry unit was perhaps the most technically refined force Shingen commanded. These men were not simply soldiers. They were weapons in human form.",
+      "image_prompt": "Three battle-hardened Takeda commanders standing side by side before a campaign map in a military tent: left figure in all-crimson lacquered armor (Yamagata Masakage), center figure in dark iron armor with veteran bearing (Baba Nobuharu), right figure in ornate black-and-gold armor (Naito Masatoyo). Takeda banners behind them, torchlight, grim focused expressions. Diamond-crest visible on armor. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The tactical philosophy that governed the cavalry was embedded in the Furinkazan — the four-part maxim taken from Sun Tzu that Shingen adopted as the Takeda standard. Swift as wind: the cavalry was the instrument of sudden movement and rapid repositioning. Silent as forest: it could be held in reserve, concealed, until the precise moment to strike. Fierce as fire: when the charge came, it came with total commitment — nothing held back. Immovable as mountain: when defending or holding, the formation locked and did not yield. The cavalry was specifically the embodiment of the first and third principles. Speed and fire. Controlled, then unleashed.",
+      "image_prompt": "The iconic Furinkazan banner — tall, rectangular, inscribed with four vertical columns of characters against black silk — billowing powerfully in a high mountain wind at the head of a Takeda army column. Mounted samurai visible in formation behind the banner. Deep crimson and black color palette. Mountains in background. No additional text beyond the banner itself; the banner's text may appear stylised and abstract.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The proving ground was Kawanakajima — the five-battle series fought against Uesugi Kenshin between 1553 and 1564 in the flat delta where the Chikuma and Saigawa rivers meet in Shinano Province. The fourth battle, in 1561, was the most savage. Kenshin crossed the river at night and struck directly at Shingen's main camp. The cavalry was crucial in absorbing and then repelling the assault. What Kawanakajima demonstrated was not that Takeda cavalry was invincible — it wasn't — but that it was versatile. It could charge, it could countercharge, it could screen a retreat, and it could hold ground when dismounted. Against the best general in Japan, the cavalry kept the Takeda army together.",
+      "image_prompt": "The fourth battle of Kawanakajima at dawn: two vast samurai armies locked in melee combat across a misty riverside plain, cavalry visible charging through the centre of the engagement. Takeda diamond-crest banners clash with Uesugi crescent-moon banners. Chaos and dust. River visible in background. No legible text, no writing on banners.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The cavalry's greatest single performance came at Mikatagahara, in January 1573. Tokugawa Ieyasu, who had eleven thousand men to Shingen's thirty thousand, made the fatal decision to leave Hamamatsu Castle and face the Takeda in open terrain. Shingen let him form up, then unleashed the cavalry in a coordinated envelopment. The Takeda cavalry did not charge frontally — it attacked the flanks simultaneously, cutting into the Tokugawa formations from two sides at once. Within hours Ieyasu's army ceased to exist as a fighting force. Ieyasu himself barely escaped. What made the Takeda cavalry terrifying was not just its speed. It was the knowledge — shared by every commander in Japan — that if it caught you in the open, there was no answer.",
+      "image_prompt": "The height of the Mikatagahara cavalry charge: extreme dynamic angle, Takeda mounted samurai in black and crimson pouring in from left and right simultaneously around a desperate cluster of Tokugawa infantry soldiers surrounded in the centre of the frame, weapons raised in futile defence. Dust and motion everywhere. Crimson Takeda diamond-crest banners converging from both sides. Desperate, overwhelming energy. No legible text.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The reputation built over three decades was almost as powerful as the cavalry itself. By the early 1570s, Takeda cavalry had become a symbol — a psychological weapon that operated before the first horse moved. Commanders who knew they were facing the Takeda adjusted their entire strategy to avoid being caught in open ground, because being caught in open ground by Takeda cavalry was understood to be fatal. Nobunaga fortified positions. Ieyasu garrisoned castles and avoided engagement. Even Kenshin, the one general who consistently matched Shingen tactically, chose terrain that limited cavalry effectiveness at Kawanakajima. The cavalry had changed not just how battles were fought, but how wars were planned. And then Shingen died.",
+      "image_prompt": "A Tokugawa war council at night inside a torchlit castle: four generals huddled around a campaign map, expressions anxious, one pointing to a location and shaking his head. Through a narrow window in the castle wall, the distant glow of Takeda signal fires is visible on the hills. Atmosphere of tension and dread. No text, no legible writing on the map.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Takeda Katsuyori was twenty-nine when he inherited command of the clan in 1573. He was not without ability — he had led cavalry in battle under his father, and at Takatenjin Castle in 1574 he demonstrated genuine tactical skill, forcing a castle to surrender after a siege that embarrassed Nobunaga. But the summer of 1575 changed everything. Nobunaga had spent the two years since Shingen's death preparing for exactly the moment he now faced. He had assembled thirty-eight thousand men. He had positioned thousands of arquebusiers behind a system of wooden palisades along the Rengogawa river near Nagashino Castle. And he had invited Katsuyori to come to him.",
+      "image_prompt": "Takeda Katsuyori, powerfully built warlord in his late 20s with red lacquered armor bearing diamond crests, mounted on a war horse on a hilltop overlooking the broad Nagashino plain where the wooden Oda-Tokugawa palisade stretches across the valley below. Expression: fierce, almost reckless confidence. His generals visible behind him on horseback, some looking less certain. June light, mist in the valley. No text, no writing, no characters on any surface.",
+      "ken_burns": "zoom_out",
+      "character_ref": "katsuyori",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "The Takeda cavalry had never faced a prepared defensive position of this kind. Several of Katsuyori's most experienced generals — men who had served under Shingen — advised against a frontal assault. The palisades were constructed to channel and slow a cavalry charge. The arquebusiers behind them were specifically positioned to fire through gaps. Baba Nobuharu, who had never taken a wound in decades of campaigning, reportedly told Katsuyori directly that the attack should not be made. The advice was rejected. Katsuyori believed — perhaps correctly, in a narrow tactical sense — that the Takeda cavalry could overwhelm any defensive line if it hit hard enough. He was thirty years out of date.",
+      "image_prompt": "Interior of a military command tent at Nagashino: Katsuyori seated rigidly at the head of a campaign table, fist clenched, jaw set. Before him, standing veteran general Baba Nobuharu (older, white-bearded, in iron armor) gestures urgently at a battlefield map, his expression one of grave warning. Other generals watch in tense silence. Torchlight. Diamond-crest armor visible. No text.",
+      "ken_burns": "zoom_in",
+      "character_ref": "katsuyori",
+      "zoom_anchor": {
+        "x": 0.22,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "On June 28th, 1575, the Takeda cavalry charged. The arquebusiers behind the palisade held their fire until the horses were close — and then fired in sustained coordinated volleys. The traditional account describes three rotating ranks of shooters: as the first rank fired and reloaded, the second rank stepped forward and fired, then the third. The effect was a near-continuous wall of fire that the cavalry, committed to its charge across open ground with no cover, rode directly into. The horses that were not hit veered or fell. The men who reached the palisade found it too solid to break. What had been unstoppable in open terrain was, against a prepared position with disciplined firepower, stopped.",
+      "image_prompt": "The climactic Nagashino arquebus volley: behind a line of tall wooden palisades, rows of Oda arquebusiers fire in coordinated sequence, smoke erupting from dozens of weapons simultaneously. In the foreground, Takeda cavalry horses rear and fall, riders thrown. Chaos and smoke fill the scene between the charging cavalry and the palisade. Plain crimson and black banners with geometric diamond shapes only — absolutely no writing, no kanji, no calligraphy, no text of any kind on any surface — visible in the chaotic charge.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "The generals died one after another. Yamagata Masakage — commander of the red cavalry, who had never lost a battle — fell in the charge. Naito Masatoyo fell. Sanada Nobutsuna and his brother Masateru fell. Tsuchiya Masatsugu fell. By the end of the day, six of the Takeda's most experienced battlefield commanders were dead. Baba Nobuharu — the general who had argued against the attack, the man who had never taken a wound — died in the rearguard action, holding the line to allow Katsuyori and the remnants of the army to retreat. He fell covering the escape of a commander whose decision he had opposed. It was a final, characteristic act: a soldier's death in service of a cause he knew was already lost.",
+      "image_prompt": "The rearguard at Nagashino: veteran general Baba Nobuharu (white-bearded, iron armor, on horseback) stands alone against pursuing Oda-Tokugawa soldiers at the edge of a smoke-filled battlefield. Behind him, the remnants of the Takeda army retreat into the distant treeline. He faces forward, sword raised, expression one of calm resolve — the last man standing. Sunset light. No legible text.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "The Takeda clan did not die at Nagashino, but the cavalry did. The force that had taken thirty years to build — the horses, the training systems, the network of commanders who understood the doctrine — was gone in a single afternoon. Katsuyori survived, but he survived without the instrument that had made the Takeda name feared across Japan. He would spend the next seven years trying to maintain a domain that could no longer defend itself in the field. When Nobunaga finally launched his annihilation campaign in 1582, the Takeda collapsed within weeks. Not because their castles were weak. But because the army that had protected those castles — the cavalry that had kept every enemy at a distance for a generation — no longer existed.",
+      "image_prompt": "The aftermath of Nagashino: a devastated battlefield at dusk, scattered with fallen horses, broken Takeda banners in crimson and black trampled in the mud. A single riderless Kai horse stands motionless at the edge of the carnage, a plain crimson and black banner with geometric diamond shapes only — absolutely no writing, no kanji, no calligraphy, no text of any kind on any surface — dragging behind it. No living soldiers visible. The silence of total defeat.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Modern historians have complicated the picture considerably. The traditional account of Nagashino — three ranks of arquebusiers rotating in disciplined volleys, a revolutionary new tactic that made cavalry obsolete — has been challenged on multiple grounds. Some researchers argue there is no contemporary evidence for the rotating volley formation; the detailed description appears in documents written generations later. Others note that the arquebus had been in widespread use in Japanese warfare long before 1575, and that the Takeda cavalry had faced firearms in previous engagements without catastrophic results. What made Nagashino different, these historians argue, was not a tactical innovation, but numbers: Nobunaga simply had more arquebusiers, better-prepared positions, and a commander on the other side who refused to adapt.",
+      "image_prompt": "A tranquil modern research setting juxtaposed with battlefield imagery: old Japanese scrolls open on a wooden scholar's desk, with diagrams of battle formations visible — but the diagrams are abstract and calligraphic, not legible text. Through the window behind the desk, a hazy suggestion of the Nagashino plain as it looks today, peaceful farmland. The contrast of scholarship and violence. No legible writing in the documents.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "There is also the deeper question of what the Takeda cavalry actually was. The image fixed in later popular culture — hundreds of heavily armoured samurai thundering across the battlefield on powerful warhorses — overstates the reality. The Kai horse was a relatively small animal. Many samurai may have used horses primarily for transport, dismounting to fight on foot. The cavalry charge as a primary shock tactic was one element of the Takeda system, not the whole of it. What distinguished the Takeda militarily was the combination: coordinated infantry, mobile cavalry, skilled commanders, and above all the strategic intelligence of Shingen himself. The cavalry was the visible edge. The machine behind it was what made the edge sharp.",
+      "image_prompt": "Side-by-side visual contrast: left half shows the romantic legend — a European-style massive cavalry charge of enormous armoured warhorses. Right half shows the historical reality — smaller, stocky Kai mountain horses carrying samurai in practical field armor across rugged mountain terrain. The contrast is clear but not jarring, rendered in the same cinematic concept art style. No text, no legible labels.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The question that haunts Nagashino is what Shingen would have done. The veterans who advised against the attack knew the answer. Shingen had never committed cavalry to a prepared defensive position on terms set by the defender. At Kawanakajima, at Mikatagahara, at every significant battle in his career, he had chosen the ground or forced the enemy to abandon advantageous terrain before attacking. Patience was his most consistent weapon. He had waited thirty years for the right moment. Katsuyori waited three months before Nagashino before deciding he couldn't wait any longer. The cavalry that had survived because Shingen chose when to use it was destroyed because Katsuyori felt he had to use it. Timing. It was always about timing.",
+      "image_prompt": "Takeda Shingen standing alone at a vantage point high above an empty mountain valley, one hand raised pointing west, the other gripping his iron war fan. His expression is calm and absolute — the look of a man who already knows the outcome before the battle begins. Behind him, a tall crimson and black banner with geometric diamond shapes only — absolutely no writing, no kanji, no calligraphy, no text of any kind on any surface — catches the wind. The landscape stretches vast and patient below. Takeda diamond-crest visible on his armor.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The legacy of the Takeda cavalry was felt most powerfully in what it forced Nobunaga to build. The threat of cavalry — real or imagined — drove the development of defensive infantry tactics, fortified camp design, and the mass deployment of arquebusiers throughout the 1560s and 1570s. Nobunaga's genius at Nagashino was not the rotating volley, whatever its historical accuracy. It was the recognition that the cavalry's psychological power could be broken if men stood their ground long enough. His fortified line was as much a psychological barrier as a physical one. He bet that his arquebusiers, protected by palisades, would not break and run. They didn't. And in not breaking, they broke the cavalry's most important weapon: the certainty that it could not be stopped.",
+      "image_prompt": "Oda Nobunaga standing behind the completed Nagashino palisade line, inspecting the rows of arquebusiers positioned at the firing gaps. His expression is calculating and satisfied — a man seeing his preparation validated. The wooden palisade stretches left and right across the frame. Through the gaps, the open plain is visible beyond. No text, no legible signage.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "The Nagashino battlefield today is a quiet area of central Aichi Prefecture — farmland, a small museum, a monument. Every year it draws historians, enthusiasts, and descendants of the men who fought there. The palisade is reconstructed in part. The Rengogawa river still runs past the field. What is harder to reconstruct is the terror of what the Takeda cavalry once was: the speed, the drumming of hooves on mountain soil, the sight of crimson-lacquered armor closing at a gallop across ground where no army had successfully stood against it. For thirty years it was the most feared force in Japan. Its end was also one of history's most consequential military lessons: that even the most feared weapon fails when the conditions that made it effective no longer exist.",
+      "image_prompt": "The Nagashino battlefield as it exists today: quiet green farmland and a gently flowing river in the foreground, with a partial wooden palisade reconstruction visible at the field edge. A single stone monument stands in the middle distance. The landscape is peaceful, rural, timeless — a place where something enormous happened and left no visible scar. Late afternoon golden light. No text, no signage visible.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — he was the man who created the shogunate. He won every war he fought. And then he hunted down the brother who had won those wars for him. The jealousy that built Japan's first military government. Coming next.",
+      "image_prompt": "Minamoto Yoritomo, formal court-armored warlord, seated alone in a dimly lit early Kamakura period audience chamber — polished dark wood floors, sparse tatami seating areas, plain wooden partition screens. His expression is cold, calculating, suspicious. On the floor before him, a closed folded document (face down, blank surface — absolutely no writing visible on it). The shadows behind him suggest power and paranoia. No text, no legible writing, no characters on any surface anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.8,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "The Takeda cavalry. Built on mountain horses and thirty years of tactical refinement. Feared across Japan. Destroyed in a single afternoon at Nagashino in 1575 by a combination of palisades, arquebuses, and a commander who had no answer for any of them. The legend that survived that afternoon was, in many ways, more powerful than the cavalry itself — it shaped how the Japanese imagined samurai warfare for centuries to come: the diamond crests, the red armor, the charge across the plain. The reality was more complicated, more human, and more tragic. A weapon that had always depended on the genius of one man to know when not to use it, passed to a man who used it too soon. And a legend was born from its destruction.",
+      "image_prompt": "Takeda cavalry diamond-crest battle flag planted alone in a vast empty battlefield at dusk — the crimson banner with the iconic four-diamond pattern still standing, slightly tattered, while the ground around it is silent and empty. Distant mountains on the horizon, last light of day catching the banner. The solitude and grandeur of a legend's end. No text, no legible characters anywhere.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_source": "BGM/ep003-BGM.mp3",
+  "youtube_url": "https://youtu.be/QEEge92hrr8",
+  "shorts_url": "https://youtu.be/5gAV8kdM1mo",
+  "scheduled_at": "2026-07-11 03:00"
+}
