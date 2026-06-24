@@ -599,6 +599,9 @@ fi
 
 # /tmp の残 credit.txt をすべて削除
 rm -f /tmp/sc_bgm_credits/BGM_candidate_*.credit.txt
+
+# デスクトップの SC/ フォルダを削除（thumbnail・制作確認書は mv 済み、BGM残骸も含め一括削除）
+rm -rf "$HOME/Desktop/SC"
 ```
 
 credit.txt が存在した場合（CC BY）は、制作確認書の BGM 欄を更新する：
