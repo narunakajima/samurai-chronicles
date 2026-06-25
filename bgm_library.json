@@ -292,5 +292,19 @@
     "used_in": [
       "ep047"
     ]
+  },
+  {
+    "id": "ep049-BGM",
+    "path": "BGM/ep049-BGM.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "Title: Space Emergency.mp3\nAuthor: SoundFlakes\nLicense: CC BY 4.0\nURL: https://freesound.org/s/493508/\nCredit: 🎵 Music: Space Emergency.mp3 by SoundFlakes (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep049"
+    ]
   }
 ]

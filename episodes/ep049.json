@@ -1,0 +1,265 @@
+{
+  "episode_id": "ep049",
+  "episode_title": "The First Shogun's Darkest Act: Why Yoritomo Destroyed His Own Brother",
+  "youtube_title": "The First Shogun's Darkest Act: Why Yoritomo Destroyed His Own Brother",
+  "youtube_description": "He never lost a battle. He won the Genpei War for his brother — and his reward was to be hunted across Japan to his death. Minamoto no Yoshitsune is the most beloved figure in Japanese history. But the story of why his own brother destroyed him is more complicated than jealousy.\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 He never lost a battle. In\n0:39 Minamoto no Yoritomo was not a\n1:37 His half-brother had a...\n2:31 Yoshitsune joined Yoritomo in...\n3:23 The first great proof came at\n4:22 At Yashima in 1185,...\n5:09 The Genpei War ended on April\n6:01 Then came the decision that...\n7:14 Yoshitsune arrived at the...\n8:01 The refusal was not personal. It\n8:48 Yoshitsune tried to fight...\n9:31 For three years, Yoshitsune...\n10:30 Fujiwara no Hidehira died in...\n11:35 On June 15th, 1189,...\n12:22 Inside the burning mansion,...\n13:21 What Yoritomo feared was not...\n14:14 The system Yoritomo built...\n15:19 Yoshitsune became the most...\n16:09 Next time on Samurai...\n16:31 Minamoto no Yoritomo built a...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Helen McCullough, \"Yoshitsune: A Fifteenth-Century Japanese Chronicle\" (1966)\n2. Jeffrey Mass, \"Warrior Government in Early Medieval Japan\" (1974)\n3. Ivan Morris, \"The Nobility of Failure: Tragic Heroes in the History of Japan\" (1975)\n\n\nTitle: Space Emergency.mp3\nAuthor: SoundFlakes\nLicense: CC BY 4.0\nURL: https://freesound.org/s/493508/\nCredit: 🎵 Music: Space Emergency.mp3 by SoundFlakes (freesound.org) — CC BY 4.0\n#yoshitsune #yoritomo #minamoto #genpeiwar #kamakurashogunate #japanesehistory #samuraihistory #samurai #japanhistory #samuraichronicles",
+  "youtube_tags": [
+    "yoshitsune",
+    "yoritomo",
+    "minamoto",
+    "genpei war",
+    "kamakura shogunate",
+    "dan no ura",
+    "japanese history",
+    "samurai history",
+    "japanese documentary",
+    "history documentary",
+    "kamakura period",
+    "minamoto clan",
+    "benkei",
+    "hiraizumi",
+    "japan history",
+    "samurai chronicles",
+    "heian period",
+    "medieval japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "The war was over. He had won every battle — and Japan's greatest general rode to his brother's gates as a hero. They turned him away. What does the man who builds a shogunate fear enough to destroy his own blood?",
+  "shorts_narration": "Never lost a battle. Won the war. His reward? Hunted by his own brother across Japan. Minamoto no Yoshitsune — Japan's greatest general. And its greatest tragedy.",
+  "thumbnail_prompt": "Dramatic split composition: on the left, Minamoto no Yoritomo seated imperiously on a raised dais in Kamakura, black ceremonial armor, cold calculating expression, Minamoto clan crest visible. On the right, Minamoto no Yoshitsune in white and gold armor, standing alone in rain on an empty road, looking back over his shoulder — the closed gates of Kamakura visible behind him. Deep shadow and golden lantern light. Extreme contrast between power and exile. No text, no legible writing.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He never lost a battle. In six years, he destroyed the most powerful family in Japan. Then his own brother ordered his death. What does the first shogun fear more than any enemy?",
+      "image_prompt": "Dramatic close composition: a lone figure in white and gold samurai armor stands on the prow of a warship at the Battle of Dan-no-ura, sea in chaos around him, burning enemy ships in the background, enemy banners falling into the water. The figure's posture radiates absolute command. Crimson and white Minamoto banners visible — absolutely plain solid color only, no symbols, no writing, no kanji, no calligraphy, no characters of any kind on any banner or surface. Golden sunset light through battle smoke. No text, no legible writing, no characters anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Minamoto no Yoritomo was not a battlefield general. When his father was destroyed in the Heiji Rebellion of 1159, the thirteen-year-old Yoritomo was captured — and should have been executed. His life was spared by a woman who pleaded for mercy. He spent the next twenty years in exile in Izu, a minor figure in a provincial house. What he developed in that time was not military skill. It was political intelligence. When the Genpei War began in 1180, Yoritomo raised his flag in the east — and built the administrative machine that would eventually control Japan.",
+      "image_prompt": "Minamoto no Yoritomo, powerfully built warlord in his late 30s, seated at the centre of a military council in a campaign tent in Kamakura, maps of Japan's provinces spread across the low table before him. His expression is calculating, composed, absolutely controlled. Several gokenin retainers kneel attentively around him. Torch and candlelight. Minamoto clan crest (sasarindou) on his ceremonial black armor. No text on maps, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "His half-brother had a different story entirely. Minamoto no Yoshitsune was born in 1159, twelve years younger than Yoritomo, raised in Kurama Temple north of Kyoto after their father's death. History is uncertain where he learned to fight; legend says supernatural beings taught him in the mountain forests. What the records make clear is that when Yoshitsune emerged as a warrior, he was unlike anything Japan had seen: a tactician whose instinct for decisive, unexpected action seemed to operate at a different speed than everyone around him.",
+      "image_prompt": "Young Yoshitsune, a slender graceful figure of about eighteen, practising sword forms alone at night on a stone path through a dense mountain forest above Kurama Temple. Moonlight filters through ancient cedar trees. His movements are fluid, almost otherworldly in their precision. The temple roofs are visible far below in the valley. Mist at the treeline. No text, no legible writing.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Yoshitsune joined Yoritomo in 1180, when his older brother was gathering forces in the Kanto region. They had barely known each other — raised in different parts of Japan, separated by the catastrophe that killed their father. What Yoritomo needed was someone who could win battles. What Yoshitsune needed was a lord who could give his ability a purpose. The fit was perfect — and temporary. For the duration of the Genpei War, they were a complete military organization: Yoritomo provided the strategy, the logistics, and the political framework. Yoshitsune provided the victories.",
+      "image_prompt": "A formal military meeting in a large campaign tent: two brothers facing each other across a campaign table — Yoritomo older and more imposing in ceremonial black armor on the left, Yoshitsune younger and more elegant in white and gold armor on the right. The mood is formal, respectful, slightly guarded — two men who are family but not yet friends. Minamoto clan banners behind them. Low torchlight. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The first great proof came at Ichi-no-Tani in 1184. The Taira had fortified a narrow coastal position — sea on one side, steep cliffs behind, defended walls in front. The orthodox military response was a grinding frontal assault. Yoshitsune ordered a cavalry charge down the cliff face instead. It was considered physically impossible. He led it himself. The horses fell, scrambled, and fell again; some riders died. Those who reached the bottom hit the Taira position from its undefended rear. The fortress collapsed in hours.",
+      "image_prompt": "Yoshitsune, in white and gold armor, leading a line of mounted samurai charging down an almost vertical cliff face above the sea at Ichi-no-Tani. The cliff is impossibly steep — horses rearing, sliding, the riders clinging on. Below, the Taira fortress is visible on the coastal flat. The composition emphasizes the terrifying angle of descent. Morning light. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "At Yashima in 1185, Yoshitsune crossed the sea in a storm his own captains refused. He arrived when no attack was expected. A Taira ship placed a fan on a pole at its bow — a ritual challenge to Minamoto marksmanship. Yoshitsune's archer Nasu no Yoichi hit it from the deck of a moving ship. It was a gesture of such audacity that it broke Taira morale before the battle was fully joined. Each victory made Yoshitsune more famous. Each victory made his brother less comfortable.",
+      "image_prompt": "A single Minamoto archer standing on the bow of a storm-tossed warship, bow drawn, aiming at a distant small fan on a pole fixed to the mast of a Taira vessel across the turbulent water. Rain and sea spray. Other warriors behind him watching in tense silence. The Taira ship is just visible through the storm. No text, no legible writing.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The Genpei War ended on April 25th, 1185, at the straits of Dan-no-ura, where opposing tides run in opposite directions. The Taira were destroyed in a naval battle that lasted one day. The child Emperor Antoku — seven years old — was carried into the sea by his grandmother, who told him the ocean floor was paradise. Several pieces of the Imperial Regalia went with them. Yoshitsune had delivered the most decisive military victory in a generation. He was twenty-six years old.",
+      "image_prompt": "The climax of the Battle of Dan-no-ura: dozens of ships locked in close combat across a churning sea strait, fire and smoke everywhere. In the foreground, a small Taira vessel where an elderly court lady in robes holds a child Emperor — both about to step off the ship's railing into the grey water. On a Minamoto ship nearby, warriors watch in silence. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Then came the decision that destroyed him. After Dan-no-ura, Yoshitsune entered Kyoto in triumph. The Imperial Court — grateful for the destruction of the Taira — offered him court rank and titles. He accepted. Yoritomo had given explicit instructions to his warriors: do not accept imperial titles without his permission. The court's power to grant titles to warriors was precisely how the old order had controlled military power for centuries. Yoshitsune had handed the Emperor independent authority over Yoritomo's greatest general. Whether it was naïveté or defiance, the effect was identical: he now had a legitimacy separate from his brother's.",
+      "image_prompt": "Yoshitsune in white and gold armor kneeling formally before Imperial Court officials in a Kyoto palace chamber — painted screens, court robes, the gilded interior of Heian court architecture. Courtiers bow low presenting him with official documents conferring rank. Yoshitsune's expression is one of proud, slightly overwhelmed gratitude — a soldier in an unfamiliar world. He does not fully understand what he has done. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Yoshitsune arrived at the border of Kamakura in 1185 expecting the welcome due the man who had won the war. He was refused entry. He waited for weeks at Koshigoe, a small town near the city gates, and wrote a letter — the Koshigoe-jō — protesting his loyalty and bewilderment. The letter is one of the most anguished documents in Japanese history: a brilliant man who had won every battle on his brother's behalf, trying to understand why he was being treated as an enemy. Yoritomo never responded.",
+      "image_prompt": "Minamoto no Yoritomo seated rigid and stone-faced in his formal reception hall in Kamakura, a messenger kneeling before him with a scroll — the Koshigoe-jō. Yoritomo's expression is closed, implacable, entirely unmoved. His chief advisor Ooe no Hiromoto stands at his left. Afternoon light through shoji screens. Minamoto crest on the formal black armor. The scroll is completely blank — a plain empty white surface with absolutely no writing, no characters, no symbols, no marks of any kind on it. No text, no legible writing, no kanji anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "The refusal was not personal. It was architectural. Yoritomo was building something Japan had never seen: a government where military power answered to one warrior house alone, entirely independent of the Emperor's court. For this to work, every warrior needed one source of authority — Yoritomo. A general of Yoshitsune's reputation, with independent court relationships and the Emperor's gratitude, was not a subordinate. He was an alternative center of power. The man who had never lost a battle was now a structural impossibility inside the system his victories had made possible.",
+      "image_prompt": "Yoritomo alone in his administrative chamber in Kamakura at night, standing before a large unrolled map of Japan's provinces, one hand pointing to the eastern territories already under Kamakura control. His expression is cold and analytical — a man thinking in systems, not emotions. Candlelight. Stacks of administrative documents on the desk behind him. The map must be completely plain — absolutely no writing, no kanji, no seals, no red stamps, no calligraphy, no characters of any kind on the map or anywhere in the image. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Yoshitsune tried to fight back. In late 1185, with Yoritomo's forces moving against him, he attempted to raise an army and sail west to attack. The attempt fell apart almost immediately — most commanders feared Yoritomo more. A storm forced his fleet back to shore. He fled into obscurity with a handful of loyal followers, including the warrior-monk Benkei, who had been with him since before the war. From the most celebrated general in Japan, he became a fugitive. The transition took approximately three months.",
+      "image_prompt": "Yoshitsune and a small group of retainers, disguised as itinerant mountain priests (yamabushi) in dark travel robes and broad straw hats, moving through a snowy mountain pass at night. The imposing bulk of Benkei — huge, carrying a staff — walks at the rear. The group moves quickly, silently, heads down against the wind. No lanterns. No crest visible — they are deliberately hiding their identities. No text, no legible writing.",
+      "ken_burns": "pan_right",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.18,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "For three years, Yoshitsune found refuge in the far north. Fujiwara no Hidehira — ruler of Mutsu and head of the Northern Fujiwara clan — sheltered him at Hiraizumi, a city of gold-roofed temples that operated almost independently of Kamakura. Hidehira had his own reasons to resist Yoritomo: Kamakura's provincial authority was slowly encircling Northern Fujiwara territory. Yoshitsune was both guest and potential asset — a general without an army, hidden in the one territory where Yoritomo's reach had not yet arrived. For three years, he survived. Then Hidehira died.",
+      "image_prompt": "Hiraizumi in peaceful autumn light: the golden roof of the Konjikido hall visible through ancient maple trees in full red and gold foliage. In the garden before it, Yoshitsune and Hidehira (an elderly, dignified lord) are seated together on a veranda in quiet conversation. The scene radiates temporary peace, but Yoshitsune's posture carries the tension of a man who knows he is a fugitive. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Fujiwara no Hidehira died in 1187. On his deathbed, he commanded his son Yasuhira directly: protect Yoshitsune, and use him as a military commander if Yoritomo attacks. It was the last intelligent political calculation the Northern Fujiwara ever made. Yoritomo issued Yasuhira an ultimatum: surrender Yoshitsune or face military invasion. He also sent a declaration naming Yoshitsune an outlaw — an official sanction for exactly what he needed Yasuhira to do. Yasuhira was not his father. He had neither the political acuity nor the military confidence to refuse Kamakura.",
+      "image_prompt": "Yasuhira, a young uncertain-looking lord in formal ceremonial robes, seated alone in his reception hall, holding an unrolled official document from Kamakura — Yoritomo's ultimatum. His expression is trapped, conflicted, afraid. Through the open shoji screens behind him, the golden temples of Hiraizumi are visible in the winter light. The contrast between the beauty outside and the decision inside. The document must be completely blank — a plain empty white scroll with absolutely no writing, no characters, no kanji, no seals of any kind on its surface. No text, no legible writing anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "On June 15th, 1189, Yasuhira's forces surrounded the mansion at Koromogawa no tachi where Yoshitsune was staying — a surprise attack, a betrayal by the last patron he trusted. Yoshitsune's retinue was small and had no warning. In the fighting that followed, the warrior-monk Benkei is said to have stood at the gate until arrows filled his body — holding position so Yoshitsune could complete his final act inside. The account may be legend. The loyalty it describes is not.",
+      "image_prompt": "Night siege at the Koromogawa mansion: fires burning at the perimeter, arrows filling the air. At the gate, a massive lone figure — Benkei in battle robes and armor — stands upright at the gate entrance, bristling with dozens of arrows, yet still standing. Attacking soldiers have stopped, uncertain, staring at the impossible figure. Inside, the burning mansion is visible. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Inside the burning mansion, Yoshitsune killed his wife and child to spare them from capture. Then he sat in the posture of meditation, recited a Buddhist prayer, and drove his sword into his own body. He was thirty years old. His head was sent to Kamakura, preserved in sake, arriving after twelve days' travel. Yoritomo is said to have verified the identification personally. Shortly afterward, he launched a military campaign against the entire Northern Fujiwara clan — eliminating the last power in Japan capable of sheltering a rival. There was no one left who could threaten him.",
+      "image_prompt": "Yoshitsune inside the burning Koromogawa mansion, seated alone in perfect meditation posture on the polished floor, robes composed, expression serene and inward. Smoke fills the upper air and flames are visible at the edges of the room. A short sword rests across his palms. The posture is one of absolute stillness amid total destruction. No text, no legible writing.",
+      "ken_burns": "static",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "What Yoritomo feared was not personal. It was systemic. In the old Japan, a general's authority derived from imperial appointment — a supremely talented commander could, at any moment, receive imperial backing to act independently of his lord. This was not theoretical: it was the exact mechanism the Taira had used against the Minamoto, and that Yoshitsune had already demonstrated by accepting court rank after Dan-no-ura. Yoritomo's entire political project required breaking this mechanism permanently. Yoshitsune's death was that break made complete.",
+      "image_prompt": "Yoritomo seated formally in his Kamakura council chamber, surrounded by senior gokenin retainers in orderly attendance. His posture is absolute authority — the posture of a man who has arranged the world precisely as he intended. Maps and administrative documents visible on the desk beside him. His expression is cold satisfaction, entirely unmoved. No text on documents, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The system Yoritomo built specifically prevented another Yoshitsune. He created gokenin — housemen bound directly to Kamakura, not to individual generals. He appointed shugo and jitō — provincial constables and estate stewards answering to his government alone. Imperial appointment of military figures became ceremonial. The Kamakura shogunate established after 1192 was the first government in Japanese history where warrior power was institutionalized rather than personal. Every subsequent shogunate — Muromachi, Edo — built on the same architecture. The price of building it was the destruction of the man whose victories had made it possible.",
+      "image_prompt": "The formal administrative headquarters of the Kamakura shogunate: a wide courtyard with warriors in ordered ranks on both sides, administrative officials in formal robes moving with purpose between the buildings. The architecture is austere military — no court ornamentation. The scene conveys institutional power: not the power of one man, but the power of a system. Minamoto clan crests on the gate banners — plain geometric shapes only, no text. No legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "Yoshitsune became the most beloved figure in Japanese history. The Gikeiki — the Tales of Yoshitsune — reimagined his life as a sequence of miracles and tragedies, with Benkei as the eternal loyal companion. Noh plays and Kabuki transformed him from a historical general into a symbol: the brilliant, doomed hero destroyed by jealousy. Yoritomo became the cold man who couldn't forgive what he couldn't match. The history is more complicated than that. But Japan never stopped grieving for the man who never lost — and never found a way to survive the peace his victories created.",
+      "image_prompt": "A classical Noh performance in a candlelit theatre: an actor in white and gold armor and a painted wooden mask stands on the spare pine-tree stage, posture frozen in a gesture of anguished grace. The audience is barely visible in darkness beyond the stage's edge. The lanterns cast deep golden shadows. The image captures the transformation of history into eternal art. No text, no legible writing.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — no one knew his name. But he saved the man who would become shogun, ran the most dangerous intelligence network of the Sengoku era, and vanished into shadow. The real Hattori Hanzo. Coming next.",
+      "image_prompt": "Ancient cedar forest at night — dense, dark, impenetrable. Thick mist at ground level. The entire image is dominated by near-total darkness and deep shadow. Against the darkest tree trunk, barely distinguishable from the bark itself: the barest suggestion of a crouching human silhouette — not armor, just the darkest of dark fabrics blending completely into shadow. No weapons visible. No crest visible — all consumed by darkness. The viewer can barely tell if there is a human figure at all. 85% of the image is dark forest, mist, and cedar bark texture. This is a man designed to be unseen. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hattori_hanzo",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "Minamoto no Yoritomo built a system of government that lasted seven hundred years. He neutralized every threat to his authority with mechanical precision. He was correct in almost every political calculation he ever made. History remembers him as the cold man who killed his gifted brother. Yoshitsune's story is the one that endures. But without the man who built the administration, the general who won every battle would have been a single brilliant flame, burning out in a Japan that stayed unchanged. What Yoritomo created outlasted everything — including the brother he destroyed to build it.",
+      "image_prompt": "The Konjikido — the Gold Hall at Chusonji Temple in Hiraizumi — exterior view in late autumn afternoon light, ancient cedar trees surrounding it. The gold-roofed structure is the sole survivor of Yoshitsune's refuge, standing nine centuries later. The scene is quiet, empty of people, ageless. The beauty is absolute; the desolation is absolute. A place where history left something behind. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/mvHZ4WXgf9o",
+  "shorts_url": "https://youtu.be/HULWgGjoZFk",
+  "scheduled_at": "2026-07-14 03:00"
+}
