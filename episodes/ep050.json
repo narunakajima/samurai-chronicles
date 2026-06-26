@@ -1,0 +1,263 @@
+{
+  "episode_id": "ep050",
+  "episode_title": "The Shadow General: The Real Hattori Hanzo",
+  "youtube_title": "The Real Hattori Hanzo: The Night He Saved Japan's Future Shogun",
+  "youtube_description": "Everyone knows the name. Almost nothing they know is true. The real Hattori Hanzo wasn't a lone assassin in a black mask — he was something more dangerous: the architect of the intelligence network that made the Tokugawa shogunate possible.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 Everyone knows Hattori Hanzo....\n0:43 The Hattori clan were not lone\n1:34 Hattori Masanari — the man known\n2:26 What the Iga-mono actually...\n3:20 Hanzo's first recorded battle...\n4:14 At the Battle of Mikatagahara in\n5:11 In the years that followed, as\n6:18 What separated Hanzo from the...\n7:21 Then came June 21st, 1582. Oda\n8:07 Ieyasu's senior advisors...\n8:53 What Hanzo did in the next\n9:42 The crossing took three days....\n10:42 The Iga crossing changed the...\n11:48 In the years after the Iga\n12:47 The nickname 'Oni no Hanzo' —\n13:46 The fictional Hattori Hanzo —...\n14:40 What Hanzo built outlasted...\n15:36 Hattori Hanzo died in 1596 —\n16:38 Next time on Samurai...\n17:03 The Sengoku period produced...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Stephen Turnbull, \"Ninja: The True Story of Japan's Secret Warrior Cult\" (1991)\n2. Noel Perrin, \"Giving Up the Gun: Japan's Reversion to the Sword\" (1979)\n3. Anthony Bryant, \"Sekigahara 1600: The Final Struggle for Power\" (1995)\n\n#hattorihanzo #ninja #tokugawa #ieyasu #sengoku #japanesehistory #samuraihistory #ninjahistory #samurai #japanhistory #samuraichronicles",
+  "youtube_tags": [
+    "hattori hanzo",
+    "ninja",
+    "tokugawa ieyasu",
+    "iga ninja",
+    "sengoku period",
+    "japanese history",
+    "samurai history",
+    "ninja history",
+    "iga province",
+    "honnoji incident",
+    "japanese spy",
+    "tokugawa shogunate",
+    "samurai chronicles",
+    "japan history",
+    "medieval japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "In 1582, Japan's most powerful warlord died in the night. His ally was stranded — surrounded, outnumbered, with no army nearby. One man knew a way out. Three days through the most dangerous mountains in Japan. How do you disappear when everyone is looking for you?",
+  "shorts_narration": "June 1582. The most powerful man in Japan was dead. His ally was stranded — no army, no route home, enemies closing in. One ninja commander opened the mountains. Three days later, Japan's future shogun walked out alive. This is Hattori Hanzo.",
+  "thumbnail_prompt": "Hattori Hanzo, lean ninja commander in dark clothing, crouched low at the entrance to a moonlit mountain pass, one hand raised in a silent signal to halt. Behind him, barely visible in the mist, Tokugawa Ieyasu in plain travel robes with a tiny escort. The forest is absolute darkness punctuated by silver moonlight on cedar trunks. The image conveys: one wrong move and everything fails. Extreme dramatic contrast of shadow and moonlight. No text, no legible writing.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Everyone knows Hattori Hanzo. Almost none of it is true. What he actually did was far more dangerous — and it changed Japan forever.",
+      "image_prompt": "A lone figure in plain dark clothing stands absolutely still, deep in shadow under ancient cedar trees at night. He is almost completely absorbed by the darkness — only the faintest outline of a human silhouette visible, no illumination on his face or body, no blade or weapon visible at all. The forest is vast, dark, impenetrable. The impression: a man who exists in the spaces between — nearly invisible, designed to be overlooked. Absolutely no text, no legible writing, no writing on any surface.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The Hattori clan were not lone assassins. They were hereditary commanders of the Iga warrior houses — professional organizers of irregular warfare who had operated in the mountains of central Japan for generations. Their value was not individual combat skill. It was networks: safe houses, intelligence routes, dozens of trained fighters who could operate invisibly across provincial borders. The name 'Hanzo' was a title passed from father to son, marking the clan's senior commander. When Hattori Masanari inherited it, he was the second Hanzo — and the one history remembers.",
+      "image_prompt": "A sweeping view of the rugged Iga mountain landscape in late afternoon light — dense cedar forests, narrow mountain paths, small fortified farmhouses barely visible through the tree cover. In the foreground, a group of Iga warriors wearing absolutely no armor, no weapons visible — dressed only in plain dark peasant travel clothing identical to ordinary mountain travelers — move in disciplined silence along a narrow ridge path. No armor, no helmets, no swords visible on anyone. The scene conveys: this is territory that has been controlled and mapped for generations. Absolutely no text, no legible writing, no writing on any surface.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Hattori Masanari — the man known to history as Hattori Hanzo — was born in Iga Province around 1542. His father had served Tokugawa Ieyasu's family for years, part of a professional arrangement between the Iga warrior houses and the Matsudaira clan. When Hanzo entered Ieyasu's service as a boy, it was not out of loyalty to a warlord. It was the continuation of a professional contract. The distinction mattered enormously: it meant Hanzo's value was in his competence, not his sentiment. And his competence was extraordinary.",
+      "image_prompt": "Young Hattori Hanzo, perhaps sixteen, in plain dark training robes, practising combat forms in a mountain clearing above Iga Province. His movements are economical, precise, without flourish — the opposite of theatrical. A senior Iga warrior watches from the tree line, arms folded. The landscape of cedar mountains stretches behind them. Morning mist. No text, no legible writing.",
+      "ken_burns": "pan_right",
+      "character_ref": "hattori_hanzo",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "What the Iga-mono actually provided Ieyasu was not magic or mysticism. It was professional military intelligence: the capacity to move people and information across hostile territory without detection, and the ability to conduct small-unit operations that conventional armies could not. In an era before maps, before reliable roads, before any institutional intelligence service existed in Japan, this capability was extraordinary. Whoever controlled it had an asymmetric advantage in every conflict. Ieyasu understood this earlier and more completely than almost any other warlord of his era.",
+      "image_prompt": "Tokugawa Ieyasu in his Hamamatsu castle, meeting privately with Hattori Hanzo and two senior Iga commanders — a small, quiet meeting with no attendants. Maps and regional reports spread on the low table. The atmosphere is businesslike, confidential. Ieyasu's expression is attentive, genuinely interested in what Hanzo is telling him. Not the relationship of lord and servant — closer to commander and specialist. No text on maps, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Hanzo's first recorded battle came in 1562, when he was approximately sixteen years old. In a night raid on Udo Castle, a young warrior from the Iga contingent distinguished himself with an audacity that older commanders noted — not because he fought alone, but because he coordinated a small team with a precision that made the attack succeed where direct assault had failed. Night operations, infiltration, coordinated strikes under darkness: these were Iga skills, and Hanzo had mastered them early. He would carry a reputation for night operations for the rest of his career.",
+      "image_prompt": "A night raid in progress on a fortified castle compound — a small group of dark-clad Iga fighters moving in precise coordination through the outer compound, using shadow and timing rather than force. In the lead, a young lean figure directing the team with minimal hand signals. Torchlight from the defenders barely reaches them. The scene conveys controlled, professional aggression — not chaos. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "At the Battle of Mikatagahara in 1573, Ieyasu made one of the worst tactical decisions of his career — engaging Takeda Shingen's army in open field battle, which he lost badly. The retreat nearly became a rout. Hanzo's Iga contingent covered the withdrawal, using the mountain terrain east of the battlefield to slow pursuing forces and give Ieyasu's shattered army time to reach Hamamatsu. This was not the glamorous work of legend. It was the unglamorous, essential work of ensuring that the man you protect survives his own mistakes. Ieyasu survived. He never forgot who made it possible.",
+      "image_prompt": "The chaotic aftermath of Mikatagahara: Ieyasu's forces retreating through snow and darkness toward Hamamatsu, pursued by Takeda cavalry in the distance. In the forest flanking the road, Hattori Hanzo and a line of Iga fighters hold the treeline — not fighting the whole army, just slowing the pursuit at key chokepoints. The image conveys: professional rearguard action, cold, purposeful, unglamorous. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hattori_hanzo",
+      "zoom_anchor": {
+        "x": 0.18,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In the years that followed, as the Sengoku period moved toward its decisive phase, Hanzo's role expanded from battlefield irregular to intelligence coordinator. The Iga network extended across central Japan — a web of contacts, informants, and trained operators embedded in merchant families, temple communities, and provincial administrations. Before any major battle, Hanzo's intelligence on enemy positions, supply lines, and political dispositions arrived at Ieyasu's war council before the enemy's own commanders knew what they intended. In a conflict where information was the difference between survival and destruction, this made Hanzo one of Ieyasu's most valuable assets.",
+      "image_prompt": "A candlelit intelligence briefing at Ieyasu's headquarters: Hattori Hanzo presenting a detailed regional assessment to Ieyasu and his senior commanders, using a large sketch map of the region. The other commanders lean forward, attentive. Hanzo's posture is authoritative, methodical — a professional delivering analysis, not a servant reporting. The map shows terrain features and position markers but no legible text. No text, no legible writing.",
+      "ken_burns": "pan_left",
+      "character_ref": "hattori_hanzo",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "What separated Hanzo from the mythologized ninja was precisely this: he was a commander, not a lone operative. He managed people, assets, and information — not just his own body and blade. The Iga-gumi under his command numbered in the dozens of households, each providing trained fighters, logistical support, and regional knowledge. Hanzo's actual skill was organizational: turning a collection of independent mountain warrior families into a coherent intelligence and special operations force that answered to one lord. In a different century and country, we would call what he built an intelligence service. In sixteenth-century Japan, it was unique.",
+      "image_prompt": "Hattori Hanzo in a modest command room — sparse, functional — with several Iga commanders attending, receiving quiet instructions. The scene conveys a professional administrative operation: intelligence management, not individual heroism. Candlelight. Any scrolls or papers on the table are completely blank — plain white with absolutely no writing, no kanji, no characters, no marks of any kind on any surface. No text, no legible writing whatsoever anywhere in the image.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hattori_hanzo",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Then came June 21st, 1582. Oda Nobunaga — the man who had conquered more of Japan than anyone in a century — was murdered in his sleep at Honnoji temple in Kyoto by his own general, Akechi Mitsuhide. In a matter of hours, the political landscape of Japan collapsed. Tokugawa Ieyasu was in Sakai, far from his own territory, with only a small escort, surrounded by Oda-allied domains that might now align with Mitsuhide. He had no army. He had no safe road home. And every hour he stayed in Sakai, the danger increased.",
+      "image_prompt": "Tokugawa Ieyasu in a merchant's house in Sakai, receiving the news of Nobunaga's death from a breathless messenger. Ieyasu's expression is controlled but the tension is visible in every line of his body — a man assessing an existential threat with absolute focus. Through the open sliding screens behind him, the busy port of Sakai is visible, oblivious. The messenger kneels with a blank document. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Ieyasu's senior advisors debated two routes back to Mikawa. The coastal road was longer and exposed — if Mitsuhide sent forces south, they would be caught in the open. The Iga route cut directly through the mountains of central Japan — difficult terrain, nominally controlled by no one, home to the same warrior families that Hanzo commanded. It was dangerous. It was also the only route where Hanzo's network was absolute. Hanzo didn't wait to be asked. He was already sending messages into the mountains.",
+      "image_prompt": "A tense strategy meeting in a dim interior — Ieyasu with his closest advisors bent over a rough terrain sketch, debating routes. Hattori Hanzo stands slightly apart, already focused on the mountain route — his finger tracing the Iga path with quiet certainty while the others argue. The terrain sketch has no legible text. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "What Hanzo did in the next twenty-four hours was the operational achievement of his career. He activated the entire Iga network: contacting clan chiefs, securing safe houses, positioning escorts at every dangerous chokepoint along the mountain route. Ieyasu and his escort — perhaps fifty men — would be moving through terrain where a single hostile village, a single ambush, could end everything. Hanzo made sure there were no hostile villages. His relationships, built over decades of professional service to the Iga communities, turned the mountains into a corridor. When Ieyasu entered Iga Province, the mountains opened.",
+      "image_prompt": "Hattori Hanzo at the head of a tight escort formation, leading Tokugawa Ieyasu and his small retinue along a narrow mountain path at night. Iga fighters are positioned invisibly in the forest on both sides of the path — just barely visible shapes in the dark. The route is treacherous: steep drops, dense forest, absolute darkness except for one shaded lantern. Hanzo's posture radiates absolute control of the terrain. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hattori_hanzo",
+      "zoom_anchor": {
+        "x": 0.8,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "The crossing took three days. Ieyasu's party moved at night, rested in Iga safe houses by day, guided by Hanzo's network through passes that outsiders couldn't navigate in daylight let alone darkness. Local Iga and Koga warriors rotated as escorts, each group handing off to the next with the precision of a relay. At no point was there a fight. There were no ambushes, no hostile contacts, no close calls. The whole operation was invisible — which was exactly the point. Three days after entering the mountains, Ieyasu walked out alive on the Mikawa side.",
+      "image_prompt": "Dawn breaking over mountain peaks as Tokugawa Ieyasu and his escort emerge from the Iga mountain passes onto the Mikawa side — dishevelled from three days of mountain travel, but alive, safe, intact. Hattori Hanzo stands at the edge of the treeline watching them reach flat ground. His expression is unreadable — the look of a man who has done exactly what he set out to do and finds it unremarkable. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "The Iga crossing changed the nature of the Hattori relationship with the Tokugawa permanently. Before 1582, the Iga-mono were contractors — professional fighters retained for specific operations. After 1582, Ieyasu formalized the relationship into an institution: the Iga-gumi, a permanent household unit under Hanzo's command, integrated into the structure of Tokugawa administration. Over thirty Iga households were established in permanent service, with stipends, residences, and defined operational roles. What had been a professional arrangement became a structural component of Tokugawa military power. Hanzo had delivered Ieyasu through the mountains. Ieyasu delivered the Iga-mono into the future.",
+      "image_prompt": "A formal ceremony at Ieyasu's Okazaki castle: Ieyasu presenting Hattori Hanzo with official appointment documents — not a battlefield reward but an administrative confirmation of permanent institutional status. Behind Hanzo, senior Iga commanders kneel in formal posture. The atmosphere is businesslike, dignified, consequential. The appointment documents are plain blank scrolls. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "In the years after the Iga crossing, the Iga-gumi under Hanzo expanded into a full-spectrum intelligence and security organization. They guarded the western approaches to Ieyasu's territory, maintained courier networks, conducted reconnaissance before major operations, and provided the small-unit tactical capability that conventional samurai units could not. At the Battle of Komaki-Nagakute in 1584 — Ieyasu's confrontation with Toyotomi Hideyoshi — Hanzo's intelligence on Hideyoshi's force dispositions gave Ieyasu enough warning to avoid being encircled. The battle ended inconclusively, which counted as a success for the smaller force. Intelligence had done its work.",
+      "image_prompt": "Hattori Hanzo alone at the edge of a contested tree line near Komaki, crouched low, observing enemy movements through the undergrowth below. He uses one quiet hand signal to direct his unit — but his Iga fighters are completely invisible, fully hidden in the dense forest behind and beside him, impossible to see even looking directly at the treeline. Only Hanzo himself is visible. The wider battle is suggested — distant movement — but Hanzo's focus is complete, tactical, unhurried. No text, no legible writing.",
+      "ken_burns": "pan_right",
+      "character_ref": "hattori_hanzo",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "The nickname 'Oni no Hanzo' — Demon Hanzo — did not come from magic. It came from the specific terror that professional intelligence and irregular operations inspired in conventional military organizations. When you knew an enemy had an Iga network, you didn't know which servants were informants, which roads were watched, which supply routes had been mapped. You couldn't trust your own communications. This psychological effect — the sense that your opponent could see everything while remaining invisible — was the real weapon Hanzo wielded. Competence, applied consistently and invisibly, becomes indistinguishable from the supernatural.",
+      "image_prompt": "A Sengoku-era war council of opposing commanders — anxious, tense, arguing over a campaign map. Through the open wall of the command tent, the night beyond is opaque — full of shadows. One commander points at the darkness, making the implicit argument: we don't know what's out there. The atmosphere conveys institutional fear of an invisible opponent. The campaign map has no legible text. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The fictional Hattori Hanzo — the lone master, the mystical swordsman, the black-clad assassin — is a compression of everything Japan found romantic about the ninja tradition into one figure. The real Hanzo was more interesting: a professional who understood that organization was more powerful than individual skill, that information was more valuable than force, and that the best operation was the one nobody ever knew happened. He didn't work in darkness because it was theatrical. He worked in darkness because it was effective. The myth replaced the man — but the man was the more remarkable story.",
+      "image_prompt": "A split-frame composition: on the left, a theatrical Edo-period woodblock print style depiction of a dramatic ninja in a stylized dramatic pose — the legend. On the right, the real Hattori Hanzo, lean and plain in dark clothing, seated by candlelight in a sparse room — the man. The contrast is stark: one is spectacle, the other is work. All surfaces in the right panel — walls, floor, table — are completely bare. Any scrolls or papers are completely blank white with absolutely no writing, no kanji, no characters, no marks of any kind. No text, no legible writing anywhere in the image.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "What Hanzo built outlasted him by more than two centuries. The Iga-gumi remained an active Tokugawa institution through the entire Edo period — the intelligence and security apparatus that protected the shogunate from internal threats, monitored domain lords, and maintained the flow of political intelligence that allowed the Tokugawa to govern a fragmented country for two hundred and fifty years. It wasn't a coincidence that Japan's longest period of political stability was underpinned by the most sophisticated intelligence network in its history. Hanzo designed the prototype. The shogunate ran it until 1868.",
+      "image_prompt": "The administrative headquarters of the Edo period Iga-gumi inside Edo castle — a serious, functional compound with Iga operatives in formal and informal dress moving between buildings. The architecture is purposeful, undecorated — a working intelligence organization. Senior officers review reports at desks. The impression: institutional competence maintained across generations. No text on documents, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "Hattori Hanzo died in 1596 — four years before the Battle of Sekigahara that made the Tokugawa shogunate inevitable, and seven years before Ieyasu formally received the title of shogun. He never saw what he helped build. The gate in Edo that his unit guarded — Hanzomon — still bears his name in modern Tokyo. The intelligence apparatus he designed survived him by two and a half centuries. The myth that replaced him is known worldwide. But in the gap between the myth and the man, the real story is more compelling: a professional, in a world of warlords, who understood that the most powerful thing you can do is make yourself indispensable — and then make yourself invisible.",
+      "image_prompt": "Modern Tokyo at dusk, the Hanzomon gate of the Imperial Palace visible against the city skyline — ancient stone walls and moat surviving amid glass towers and commuter traffic. The gate stands exactly where Hanzo's unit once operated. No people in the image. No figures. No samurai. No human figures of any kind. Only the gate architecture, ancient stone walls, the moat, and the modern city skyline. The image holds the contrast between history and the present without comment. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — he never lost a battle. Not one. Not even the hopeless ones. His commanders called him the God of War. His enemies refused to believe he was human. The real Honda Tadakatsu. Coming next.",
+      "image_prompt": "Honda Tadakatsu, powerfully built veteran general in his prime, standing on an elevated position overlooking a battlefield, antler-horned helmet unmistakable against the sky, the long handle of his legendary spear Tonbo-kiri resting across his shoulders. His posture radiates absolute physical confidence — a man who has stood here before and will stand here again. Battlefield smoke and golden afternoon light. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "The Sengoku period produced hundreds of remarkable warriors. It produced very few remarkable organizations. What distinguished Tokugawa Ieyasu from his rivals was not that he fought better — he didn't. It was that he understood what war was actually made of: information, logistics, relationships, and time. Hattori Hanzo gave him the information and the relationships. The Iga crossing of 1582 gave him the time. The shogunate that resulted lasted longer than any other government in Japanese history. Behind every enduring institution is a moment when someone made the invisible choice that made everything else possible. In June 1582, in the mountains of Iga, Hanzo made that choice. Japan followed.",
+      "image_prompt": "The Iga mountains at dawn — the same cedar-forested mountain passes that Ieyasu crossed in 1582, now empty and timeless. Morning mist fills the valleys between the peaks. The paths are barely visible, narrow, ancient. The landscape holds no people, no drama — just the terrain itself, unchanged. A place where a moment happened that the mountains remember and no one saw. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_source": "BGM/ep029-BGM.mp3",
+  "youtube_url": "https://youtu.be/bu-V1DQQAzc",
+  "shorts_url": "https://youtu.be/k8bapJMU1Rg",
+  "scheduled_at": "2026-07-15 03:00"
+}
