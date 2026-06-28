@@ -308,5 +308,19 @@
     "used_in": [
       "ep049"
     ]
+  },
+  {
+    "id": "ep052-BGM",
+    "path": "BGM/ep052-BGM.mp3",
+    "duration": 80,
+    "license": "CC BY",
+    "credit": "🎵 Music: Thriller Intro by tyops (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep052"
+    ]
   }
 ]

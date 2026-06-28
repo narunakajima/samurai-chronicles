@@ -1,0 +1,278 @@
+{
+  "episode_id": "ep052",
+  "episode_title": "The Dangerous Mind: The Real Kuroda Kanbei",
+  "youtube_title": "Why Hideyoshi Feared His Own Greatest General: Kuroda Kanbei",
+  "youtube_description": "He was Toyotomi Hideyoshi's greatest weapon — a mind so sharp that his own master said: if Kanbei had ten more years, he would take all of Japan for himself. He survived a year in a dungeon. He converted to Christianity in a country about to ban it. And he almost conquered Kyushu on his own. This is the real Kuroda Kanbei.\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 He walked with a permanent limp.\n0:42 Kuroda Yoshitaka — known to...\n1:32 Kanbei entered the orbit of...\n2:23 The role of a gunshi —\n3:18 In the campaigns of the 1570s,\n4:13 Around 1578, Kuroda Kanbei...\n5:08 In the autumn of 1578, a\n6:09 When Itami Castle fell in late\n7:05 Back in Hideyoshi's service,...\n7:59 In 1582, Hideyoshi was...\n9:05 On June 2nd, 1582, a messenger\n9:56 Hideyoshi did move at once —\n10:46 In 1587, Toyotomi Hideyoshi...\n11:47 Hideyoshi's invasion of Korea...\n12:52 Hideyoshi died in 1598,...\n13:58 When news arrived that Ieyasu...\n15:04 The question Kuroda Kanbei...\n16:10 Kuroda Kanbei — Josui — died\n17:06 Next time on Samurai...\n17:34 Kuroda Kanbei's legacy in...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Mary Elizabeth Berry, \"Hideyoshi\" (1982)\n2. Stephen Turnbull, \"The Samurai Sourcebook\" (1998)\n3. George Elison, \"Deus Destroyed: The Image of Christianity in Early Modern Japan\" (1973)\n\n🎵 Music: Thriller Intro by tyops (freesound.org) — CC BY 4.0\n\n#kurodakanbei #christiansamurai #toyotomihideyoshi #sengoku #japanesehistory #samuraihistory #samurai #japanhistory #samuraichronicles #sengokuperiod",
+  "youtube_tags": [
+    "kuroda kanbei",
+    "christian samurai",
+    "toyotomi hideyoshi",
+    "sengoku period",
+    "japanese history",
+    "samurai history",
+    "samurai",
+    "japan history",
+    "samurai chronicles",
+    "kuroda josui",
+    "japanese strategist",
+    "honnoji",
+    "sekigahara",
+    "japanese christianity",
+    "feudal japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "teaser_narration": "He was Hideyoshi's greatest weapon — a mind so sharp his own master feared him. A Christian in a land of samurai. A man who survived a year in a dungeon and came out more dangerous. What kind of strategist terrifies the man who rules Japan?",
+  "shorts_narration": "One year in a dungeon. Never lost a battle of strategy. He never drew his sword — and the man who ruled Japan feared him most of all. This is Kuroda Kanbei.",
+  "thumbnail_prompt": "Kuroda Kanbei in his distinctive black hood, lean and intense, leaning on a wooden staff. His eyes are sharp, analytical, completely calm — a man who sees ten moves ahead. He stands in a sparse war room, a blank table before him. His expression conveys quiet, unsettling intelligence. Behind him, dark shadows and a faint suggestion of a battle map. Bold text overlay at the top in large white block letters with dark drop shadow: \"THE DANGEROUS MIND\". Smaller text at the bottom in white: \"The Strategist Hideyoshi Feared\". Text must be clearly legible, sharp, and properly spelled. Modern cinematic concept art style, dramatic lighting, film production illustration quality. 16:9 aspect ratio, 1280x720.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He walked with a permanent limp. He wore a black hood to hide what a year in a dungeon had taken from him. And the man who had unified Japan was terrified of what he might do next. Why?",
+      "image_prompt": "Kuroda Kanbei in his distinctive black hood, leaning on a wooden staff, standing alone at the edge of a vast battlefield in early dawn. His posture is still, completely composed. His eyes — partly shadowed by the hood — carry an intelligence that is almost unsettling. The battlefield stretches empty behind him. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Kuroda Yoshitaka — known to history as Kanbei — was born in 1546 in Harima Province, on the western coast of Honshu. The Kuroda were minor lords: not poor, but not powerful. They held a modest castle at Himeji and served the larger Kodera clan. In the fractured politics of the Sengoku period, minor lords survived by choosing their alliances carefully and executing them well. Kanbei grew up understanding this. He did not have the resources to win by force. He would have to win by thinking.",
+      "image_prompt": "A sweeping view of Harima Province in the Sengoku period — a coastal landscape of rice fields, modest castle towns, and pine-forested headlands meeting the Seto Inland Sea. Himeji Castle visible in the distance, modest and functional by later standards. The scene conveys a prosperous but politically precarious minor domain. Overcast sky. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Kanbei entered the orbit of Toyotomi Hideyoshi in the early 1570s, when Hideyoshi was still one of Oda Nobunaga's generals campaigning through western Japan. What Hideyoshi found in Kanbei was not another sword arm — he had plenty of those. It was a different kind of intelligence: the ability to look at a military or political situation and immediately see what everyone else had missed. Kanbei did not think about battles. He thought about the conditions that made battles unnecessary. The best outcome, in his analysis, was always the one where nobody had to die.",
+      "image_prompt": "Kuroda Kanbei as a young man in his mid-twenties, without the black hood — his face unlined, his hair still full, his bearing already carrying the quality of someone who processes the world differently than those around him. He stands before a map-covered table, pointing to a specific location with calm precision. Hideyoshi, younger and energetic, watches him with the focused attention of a man who has just realized he is listening to something rare. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The role of a gunshi — a military strategist — in Sengoku Japan was both essential and precarious. A commander needed someone who could see the whole board, not just the immediate engagement. But a strategist who saw too clearly, who thought too many moves ahead, became a kind of threat in himself. His value and his danger were the same quality. Kanbei was, by every account that survives, exceptional at the role. His method was consistent: understand the opponent's constraints before planning your own moves. Turn psychology into geography. Win before the fighting begins.",
+      "image_prompt": "A Sengoku-era war council in full session — a large hall, senior commanders seated in heated debate around a low table. At the side, Kuroda Kanbei stands slightly apart, calm and observant while the others argue. His stillness amid the noise marks him as a different kind of presence. Torchlight and morning light through paper screens. No text, no legible writing, no writing on any surface.",
+      "ken_burns": "pan_right",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.87,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In the campaigns of the 1570s, Kanbei demonstrated the quality that would define him. When Hideyoshi laid siege to a castle, Kanbei looked for the way to take it without a siege. He negotiated surrenders that other commanders would have fought for. He sent letters rather than soldiers, identified the one person whose defection would unravel the defence, and found terms that allowed enemies to become allies. By the late 1570s, western Japan was littered with castles and domains that had fallen to Kanbei's persuasion rather than Hideyoshi's army. The bloodless victories were his masterwork.",
+      "image_prompt": "Kuroda Kanbei alone at the gate of a fortified castle — completely unarmed, no sword, no katana, no weapons of any kind. He holds a plain sealed scroll in one hand. A single emissary standing before closed castle gates. Defenders watch from the walls above, uncertain. Behind Kanbei in the far distance, the Hideyoshi army waits — a dark mass on the horizon. No text, no legible writing, no characters on the scroll.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Around 1578, Kuroda Kanbei was baptized as a Christian by the Jesuit missionary Organtino, taking the baptismal name Simeon. This was not a marginal decision. Christianity had been present in Japan since Francis Xavier arrived in 1549, and in certain domains — particularly in western Japan — it had found substantial followings, including among the samurai class. Kanbei's conversion appears to have been sincere: he maintained his faith through decades of political pressure that would test it severely. What drew him to it is not recorded. But the faith he adopted would complicate every subsequent year of his life.",
+      "image_prompt": "Kuroda Kanbei kneeling in a sparse Christian chapel in 1570s Japan — a humble room with a wooden cross on the wall, candles, and the quiet presence of a Jesuit priest. Kanbei's expression is focused and inward — a man committing to something privately profound. The space is small, the moment is personal. No legible text on any surface. No text, no legible writing.",
+      "ken_burns": "static",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In the autumn of 1578, a senior Oda commander named Araki Murashige rebelled. Hideyoshi sent Kanbei to Itami Castle to negotiate. Kanbei went alone, as was his method. He did not come back. Araki had imprisoned him — apparently fearing that Kanbei's arrival was itself part of a plot. Hideyoshi, receiving no word, concluded that Kanbei had defected. He ordered Kanbei's son Nagamasa executed. Only the intervention of another strategist, Takenaka Hanbei, who personally vouched for Kanbei's loyalty and kept the boy alive, prevented the execution. Kanbei spent the next year in a pit beneath Itami Castle.",
+      "image_prompt": "A stone dungeon cell beneath a castle — dark, damp, barely large enough to stand in. The floor is bare stone with no objects, no scrolls, no fans, no items of any kind. Kuroda Kanbei sits in the darkness, back against the stone wall, composed despite the conditions. Through a narrow grate above, a sliver of sky is visible. His expression is not despair but controlled patience. No text, no legible writing, no markings on any surface.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "When Itami Castle fell in late 1579 and Kanbei was freed, he emerged physically transformed. The year of imprisonment had taken his hair — it never grew back fully. His joints had suffered in the damp and cold, leaving him with a permanent limp. He adopted the black hood that would mark him for the rest of his life, covering the evidence of what had been done to him. Those who saw him after the imprisonment noted something else: a quality of stillness that had not been there before. The dungeon had not broken him. It had, if anything, distilled him.",
+      "image_prompt": "Kuroda Kanbei emerging from Itami Castle into pale winter light after his release — gaunt, the black hood now on his head for the first time, leaning on a wooden staff. A small group of his retainers have come to meet him. They are visibly shocked by his condition. Kanbei's own expression carries no self-pity — only a contained, concentrated focus. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Back in Hideyoshi's service, Kanbei rebuilt his position with the same method he had always used: by being indispensable. His imprisonment had if anything sharpened his strategic thinking. He was present at every major campaign of the early 1580s. His solutions became more audacious: where others saw an obstacle, Kanbei saw the specific pressure point that would make the obstacle collapse. He rarely raised his voice in councils. He rarely needed to. When Kanbei spoke, the room went quiet — not from deference, but from the immediate recognition that what he was about to say would be the thing they all needed to hear.",
+      "image_prompt": "Kuroda Kanbei in the early 1580s — now in his mid-thirties, the black hood his permanent feature, the staff in his hand — presenting a strategic analysis to a war council. The commanders around the table are leaning forward, completely focused on him. The room has the charged quality of a moment when clarity arrives. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.43,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In 1582, Hideyoshi was conducting the siege of Takamatsu Castle in Bitchu Province — a fortress built on low ground, surrounded by swamp. Assault was impossible and starvation would take months. Kanbei devised a solution: redirect the local rivers, build earthen dikes, and flood the entire area until Takamatsu became an island. Within weeks, the castle was surrounded not by besieging troops but by water. The garrison watched their food stores submerge and their retreat close off. Takamatsu was effectively finished without a frontal assault. It was the kind of solution that made enemies feel that fighting Kanbei was somehow unfair.",
+      "image_prompt": "The flooded siege of Takamatsu — an aerial view of a castle surrounded by man-made floodwaters, the earthen dikes of Hideyoshi's army visible on all sides. The castle stands isolated like an island, its garrison trapped above rising water. Kuroda Kanbei on horseback surveys the scene from an elevated embankment, the engineering achievement he designed now complete around him. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "On June 2nd, 1582, a messenger reached the Takamatsu siege lines with news from Kyoto: Oda Nobunaga had been assassinated at Honnoji by his own general, Akechi Mitsuhide. The man who had assembled the power structure that made Hideyoshi possible was gone. Every calculation in Japan had just changed. While the other commanders absorbed the shock, Kanbei's response was immediate. He leaned toward Hideyoshi and said, in words that have been recorded in multiple accounts: 'The realm is yours for the taking. We must move at once.' He had understood the consequence before anyone else in the room had finished reading the message.",
+      "image_prompt": "The decisive moment at the Takamatsu camp: a messenger kneeling before Hideyoshi with the news of Honnoji, the commanders around him frozen in shock. At Hideyoshi's side, Kuroda Kanbei leans close, his expression not of horror but of focused calculation — the only man in the room already thinking about what comes next. The scene captures the contrast between Kanbei's composure and everyone else's paralysis. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Hideyoshi did move at once — the famous forced march from Takamatsu to Yamazaki that covered the distance in half the expected time. He defeated Akechi Mitsuhide within days and was positioned to claim succession to Nobunaga's power. In the months that followed, as Hideyoshi consolidated his authority, he is reported to have said of Kanbei: 'If that man had ten more years of life, he would take the realm for himself.' It was the most precise expression of fear a commander could feel about a subordinate — not suspicion of treachery, but recognition of capability. Kanbei was too intelligent. And Hideyoshi knew it.",
+      "image_prompt": "Toyotomi Hideyoshi in a private moment — seated alone in a reception room, his victorious campaign behind him, staring at nothing in particular. His expression carries an unusual quality for a man at the height of his power: the subtle unease of someone who has just understood the full dimensions of a person he thought he knew. In the background, just visible through a doorway, Kuroda Kanbei departs — his black hood, his staff, his unhurried walk. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "In 1587, Toyotomi Hideyoshi issued the Bateren Expulsion Edict, ordering Jesuit missionaries to leave Japan within twenty days and banning Christianity among the samurai class. The reasons were partly political: he had grown uneasy with the Christian daimyo of western Japan, whose loyalty to a foreign religion he saw as a divided loyalty. For Kanbei, this created an impossible situation. He was a public servant of the man who had just banned his faith. The record suggests he managed the contradiction carefully — publicly removing himself from visible Christian practice, while the private dimensions of his belief remained his own.",
+      "image_prompt": "Kuroda Kanbei alone in his private quarters, seen entirely from behind — we see his full back and the back of his head, his face is completely hidden from view. He holds a plain white paper, completely blank with no characters or markings. He faces the window. His posture conveys contained reckoning. Morning light through rice-paper screens. No text, no legible writing, no characters on any surface whatsoever.",
+      "ken_burns": "static",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Hideyoshi's invasion of Korea — launched in 1592 and resumed in 1597 — was the largest overseas military operation in Japanese history and, by most historical assessments, a strategic catastrophe. Multiple accounts suggest Kanbei advised against it, or at least against the scale of commitment it required. His analytical mind would have seen what other commanders did not: that Korea was defensible terrain, that Chinese intervention was predictable, and that wars fought far from home for unclear objectives do not end well. He was not listened to. He participated because he was a retainer, and retainers followed their lord. But the outcome vindicated his analysis.",
+      "image_prompt": "Japanese forces crossing the strait to Korea — an armada of ships in rough water under grey skies, soldiers and equipment visible on deck. In the foreground, Kuroda Kanbei watches from the stern of a command vessel, the black hood unmistakable. His hands are visible at his sides with clearly separated natural fingers, no distortion. His expression conveys executing a mission he believes is a mistake. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Hideyoshi died in 1598, leaving the question of succession unresolved and Japan's political structure suddenly unstable. Kanbei — now known as Josui after his formal retirement — was in Kyushu when Sekigahara erupted in 1600. He saw the chaos and made an immediate calculation: if the battle was going to determine who ruled Japan, he could use the distraction to conquer Kyushu himself, and arrive at the outcome with maximum leverage. He began taking castles and territory with characteristic efficiency. He won almost everything he attacked. But the Battle of Sekigahara was decided in a single morning. Ieyasu's victory came faster than Kanbei could consolidate Kyushu.",
+      "image_prompt": "Kuroda Kanbei — now older, in his fifties, the staff and black hood unchanged — directing forces in Kyushu during the Sekigahara campaign. His posture is intent, focused. Around him, his forces move with purpose. In the distance, castle gates stand open in surrender — a campaign of rapid territorial acquisition. Plain solid-colored banners only, no clan crests, no symbols on any banners. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "When news arrived that Ieyasu had won Sekigahara decisively, Kanbei is reported to have paused his Kyushu campaign and said: 'The battle ended too soon.' It was not bitterness — or not only bitterness. It was the specific frustration of a strategist who had set a plan in motion, executed it correctly, and been defeated not by his opponent but by timing. The window had closed. He stood down, surrendered his Kyushu gains where necessary, and accepted the new political reality with the same composure he had brought to everything. He had tried. The calculation had been reasonable. The world simply moved faster than he had.",
+      "image_prompt": "Kuroda Kanbei standing on the rampart of a newly captured Kyushu castle, looking westward. A messenger has just arrived — the news of Sekigahara's conclusion is visible in the messenger's posture and expression. Kanbei is utterly still, processing the information. The landscape around him shows a campaign mid-victory: banners in place, forces deployed. And now, none of it matters in the way he intended. No text, no legible writing.",
+      "ken_burns": "pan_right",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The question Kuroda Kanbei poses is about the relationship between intelligence and power. He was, by the testimony of his contemporaries, the clearest strategic mind of the Sengoku period. But the clearest mind in a hierarchy is not necessarily the safest position to occupy. Hideyoshi needed him and feared him simultaneously — needed the thinking, feared the independence of the thinker. The Christian faith adds another layer: a belief system that valued human life, mercy, and a moral order beyond political calculation, held by a man whose professional value was precisely his ability to calculate without sentiment. How he held these two things together, the record does not say.",
+      "image_prompt": "Kuroda Kanbei in a private moment of reflection — seated alone in a simple room, the black hood set aside for a moment, his thinning hair visible. He holds a rosary in one hand and a small plain wooden box in the other. He is not choosing between them — he is holding both, as he always has. His expression is acceptance of complexity. No text, no legible writing, no characters or markings on any object.",
+      "ken_burns": "static",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "Kuroda Kanbei — Josui — died in 1604, at the age of fifty-eight. He had served the most powerful men of his era, survived imprisonment that would have broken most people, and outlasted the Sengoku period itself. His son Nagamasa — the boy who had nearly been executed when Kanbei was imprisoned — went on to found the Kuroda domain at Fukuoka, which survived until the Meiji era. The son who was nearly killed because of his father's imprisonment founded a dynasty that lasted two and a half centuries. Kanbei, characteristically, would have calculated the probability of that outcome and found it, perhaps, acceptable.",
+      "image_prompt": "Kuroda Josui — Kanbei in retirement — seated in a peaceful garden in his final years, the black hood set aside, the staff leaning against a stone lantern beside him. He watches two young samurai practice nearby: one of them is his son Nagamasa. His expression is the quiet satisfaction of a man who has survived everything the world sent at him and delivered his son to a better position than he received. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": {
+        "x": 0.82,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — seven hundred years. They fought the Mongols. They fought the Chinese. They fought Toyotomi Hideyoshi. They fought Tokugawa Ieyasu. They were never fully conquered by any of them. The most defiant dynasty in Japanese history. The Shimazu clan. Coming next.",
+      "image_prompt": "A Shimazu warrior in full battle armor, the distinctive Shimazu clan mon — a circle divided into four quarters — displayed on his chest armor and banner. He stands against a dramatic coastal battlefield backdrop of southern Kyushu: volcanic mountains, the Satsuma coastline, smoke from battle. His bearing is absolute defiance. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "Kuroda Kanbei's legacy in Japan is the specific legacy of the brilliant subordinate: celebrated in history, celebrated in popular culture, studied in business schools for his strategic thinking — and ultimately defined by the fact that he served others rather than commanding himself. Whether this was loyalty, or the practical recognition that the moment never quite arrived, the record does not resolve. What it does show is a man who brought extraordinary intelligence to every situation he entered, maintained a private faith under conditions designed to extinguish it, and never — in any documented account — lost his composure when the world failed to cooperate with his plans.",
+      "image_prompt": "Fukuoka Castle in the early Edo period — a substantial, well-built domain castle on a coastal promontory in Kyushu. Plain solid-colored banners above the main gate with no clan crests or symbols. A prosperous, settled domain in a peaceful era. The morning is clear. In the foreground, the stone foundations of the castle extend solidly into the earth. No text, no legible writing, no clan crests, no mon symbols on any surface.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_source": "BGM/ep052-BGM.mp3",
+  "youtube_url": "https://youtu.be/PGbZ0dSgp28",
+  "shorts_url": "https://youtu.be/4ljE5pNY798",
+  "scheduled_at": "2026-07-17 03:00"
+}
