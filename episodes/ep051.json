@@ -1,0 +1,272 @@
+{
+  "episode_id": "ep051",
+  "episode_title": "The God of War: The Real Honda Tadakatsu",
+  "youtube_title": "The Samurai Who Never Lost a Battle: The Real Honda Tadakatsu",
+  "youtube_description": "He fought in more than fifty battles. He was never once seriously wounded. Not once, in the bloodiest century in Japanese history. The real Honda Tadakatsu wasn't just brave — he was the most complete warrior of the Sengoku period, and the proof is in what didn't happen to him.\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 He fought in more than fifty\n0:40 Mikawa Province — a small,...\n1:43 Honda Tadakatsu was born in 1548\n2:40 What distinguished Honda...\n3:42 In the campaigns of the 1560s\n4:38 The Battle of Mikatagahara in...\n5:40 The Battle of Nagashino in 1575\n6:40 Toyotomi Hideyoshi — the man who\n7:45 In 1584, Ieyasu and Toyotomi...\n8:39 Honda Tadakatsu rode out...\n9:31 The Komaki-Nagakute campaign...\n10:24 The years after...\n11:17 Honda Tadakatsu's weapons and...\n12:19 The Battle of Sekigahara in 1600\n13:17 After Sekigahara, Honda...\n14:19 The question Honda Tadakatsu...\n15:21 Honda Tadakatsu represented...\n16:23 Honda Tadakatsu died in 1610, at\n17:25 Next time on Samurai...\n17:51 The Sengoku period produced...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Stephen Turnbull, \"The Samurai Sourcebook\" (1998)\n2. Anthony Bryant, \"Sekigahara 1600: The Final Struggle for Power\" (1995)\n3. Conrad Totman, \"Japan Before Perry: A Short History\" (1981)\n\n#hondatadakatsu #godofwar #tokugawa #sengoku #japanesehistory #samuraihistory #samurai #japanhistory #samuraichronicles #mikawasamurai",
+  "youtube_tags": [
+    "honda tadakatsu",
+    "god of war",
+    "tokugawa ieyasu",
+    "sengoku period",
+    "japanese history",
+    "samurai history",
+    "samurai",
+    "japan history",
+    "samurai chronicles",
+    "mikawa samurai",
+    "tonbo-kiri",
+    "komaki nagakute",
+    "sekigahara",
+    "japanese warrior",
+    "feudal japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "He fought in more than fifty battles. He was never once wounded. In 1584, outnumbered and alone, he rode toward Hideyoshi's entire army. One man. One spear. What kind of warrior does that — and survives?",
+  "shorts_narration": "Fifty battles. Zero wounds. In 1584, he rode out alone against Hideyoshi's entire army. One man, one spear. And Hideyoshi ordered: don't fire. This is Honda Tadakatsu.",
+  "thumbnail_prompt": "Honda Tadakatsu in full battle armor, the distinctive antler-horned helmet rising dramatically against a smoke-filled orange and crimson battlefield sky. He stands alone in three-quarter view, the Tonbo-kiri spear held across his body at a diagonal. His face shows absolute composure — a man who has never been afraid. Behind him, the chaos of Sengoku warfare: distant cavalry, fire, smoke. Bold text overlay at the top in large white block letters with dark drop shadow: \"THE UNBREAKABLE\". Smaller text at the bottom in white: \"The Real Honda Tadakatsu\". Text must be clearly legible, sharp, and properly spelled. Modern cinematic concept art style, dramatic lighting, film production illustration quality. 16:9 aspect ratio, 1280x720.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He fought in more than fifty battles across forty years. He was never seriously wounded. Not once, in the bloodiest century in Japanese history — how?",
+      "image_prompt": "Honda Tadakatsu in full battle armor, antler-horned helmet against a smoke-filled sky, standing alone on a ridge overlooking a vast battlefield. His posture is absolute stillness amid chaos. The Tonbo-kiri spear across his shoulders. The image conveys: invincible. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.26
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Mikawa Province — a small, landlocked domain in central Japan — produced a specific kind of samurai. The terrain was difficult, the domain was poor, and the Matsudaira clan who ruled it had survived by being harder and more disciplined than their neighbors. The men who served in Mikawa armies were not the most numerous or the best equipped, but they were known for one quality above all: they did not break. When the Tokugawa shgunate later imposed two and a half centuries of order on Japan, the foundation they built on was these men — the Mikawa samurai, in whose tradition Honda Tadakatsu was formed.",
+      "image_prompt": "A sweeping view of Mikawa Province in the Sengoku period — rugged hill terrain, narrow valleys, modest castle towns barely visible in the distance. In the foreground, a column of Mikawa samurai in practical, undecorated armor marches in disciplined formation along a mountain road. No banners, no display — just professional soldiers moving with purpose. Overcast sky. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Honda Tadakatsu was born in 1548 in Okazaki, the heart of Mikawa Province. His father died when he was young, leaving the boy to enter the service of Tokugawa Ieyasu — then still known as Matsudaira Motoyasu — at the age of about eight or nine. This was not unusual for the time; samurai sons entered a lord's household young and grew up alongside the people they would spend their lives serving. What was unusual was what Honda Tadakatsu became. He fought his first battle at thirteen. By the time he was twenty, every senior commander in the Tokugawa force knew his name.",
+      "image_prompt": "Young Honda Tadakatsu, perhaps fifteen, in plain training armor without the antler helmet — the face still young but already set with the focused expression of someone who takes this seriously. He stands in a courtyard of Okazaki Castle, practicing spear forms with exceptional precision. Senior warriors watch from the side, visibly noting what they see. Morning light. No text, no legible writing.",
+      "ken_burns": "pan_right",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.33,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "What distinguished Honda Tadakatsu's relationship with Ieyasu was its duration and its depth. They had grown up in the same household. They had fought together since adolescence. By the time both men were in their twenties, the bond between them was not simply lord and retainer — it was the kind of trust that only comes from surviving shared danger over many years. Ieyasu was not a sentimental man. He calculated relationships as carefully as he calculated battles. That he placed Honda Tadakatsu at the core of his military force for over forty years was not sentiment. It was a professional judgment that proved correct every time.",
+      "image_prompt": "Tokugawa Ieyasu and Honda Tadakatsu, both men in their early thirties, seated together in a spare private room. They face each other in focused conversation — Ieyasu listening with calm intensity, Honda speaking with a measured gesture. The low table between them is completely bare and empty — no objects, no scrolls, no maps of any kind on its surface. The bond of trust between them is visible in their posture. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In the campaigns of the 1560s and early 1570s, Honda Tadakatsu developed the qualities that would define him. He led from the front — not as a symbolic gesture, but literally: Honda was typically among the first into any engagement, on horseback, with his spear, and he was still there at the end. What became his signature was not ferocity, exactly — though he had that. It was control. Commanders who led from the front usually took casualties. Honda did not. He had an extraordinary instinct for where the real danger was, and an equal capacity for reading the moment when to push and when to hold.",
+      "image_prompt": "Honda Tadakatsu in his prime — mid-twenties — leading a cavalry charge across open ground, his distinctive antler helmet unmistakable at the front of the formation. His posture on horseback is completely controlled — not wild aggression but precise, directed force. Behind him, Tokugawa cavalry in tight formation. Dust and motion. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The Battle of Mikatagahara in 1573 tested every Tokugawa commander. Ieyasu had made the catastrophic decision to fight Takeda Shingen's army in open field battle — and lost badly. As the retreat threatened to collapse into a rout, Honda Tadakatsu covered the withdrawal with the Tokugawa rear guard, holding back the pursuing Takeda forces long enough for Ieyasu to reach Hamamatsu. This was not the most dramatic contribution a samurai could make. It was the most important. It required the specific capacity to stay functional under pressure when everything around you is failing — and Honda's unit performed with exactly that discipline.",
+      "image_prompt": "Honda Tadakatsu leading a desperate rearguard action at Mikatagahara in heavy snow — his small cavalry force blocking a narrow mountain pass, holding back distant pursuing Takeda forces visible through the blizzard. Honda on horseback in the foreground, absolutely steady and commanding. Winter darkness. No polearms raised high — Honda holds his weapon low and steady at his side. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.26
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The Battle of Nagashino in 1575 changed Japanese warfare permanently. Oda Nobunaga's coordinated volley fire broke the Takeda cavalry — the most feared force in Japan — in a single afternoon. Honda Tadakatsu fought at Nagashino as part of the combined Oda-Tokugawa army. What distinguished his performance was not merely his personal bravery, which was by this point expected, but his tactical reading of the battlefield. The traditional samurai instinct was to charge. Honda understood when to charge and when to wait. He combined the Mikawa warrior's aggression with something rarer: judgment.",
+      "image_prompt": "The aftermath of Nagashino — Honda Tadakatsu surveying the battlefield from horseback as the smoke clears, the distinctive antler helmet outlined against a late afternoon sky. In the background, defensive palisades and the scattered remnants of Takeda cavalry. Honda's expression is composed, analytical — reading the field, not celebrating. No text, no legible writing.",
+      "ken_burns": "pan_left",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Toyotomi Hideyoshi — the man who would unify Japan after Nobunaga's assassination — is reported to have said of Honda Tadakatsu: 'Among the samurai of the east, Honda Tadakatsu stands above all.' This from the man who commanded armies of hundreds of thousands, who employed dozens of brilliant generals, and who was not given to complimenting his rivals' subordinates. The quote — whether precisely accurate in every detail or not — captures something true. By the early 1580s, Honda Tadakatsu had fought in more campaigns than most samurai fought in a lifetime, and had emerged from all of them with the same answer to the same question: still standing, still unhurt.",
+      "image_prompt": "A formal war council in the early 1580s — senior samurai commanders seated around a low table, all in battle dress. Honda Tadakatsu stands to one side, the antler-crested helmet tucked under his arm, hands otherwise empty. The other commanders look toward him with visible attention and respect. No weapons drawn, no polearms visible. Torchlight. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "In 1584, Ieyasu and Toyotomi Hideyoshi went to war — not openly, but in a campaign of maneuver and position around the Komaki hills north of Nagoya. Both sides understood that a direct battle would be catastrophic. They probed, feinted, repositioned. The armies camped within sight of each other for weeks. It was a political conflict as much as a military one, and both commanders were calculating the outcome as much as fighting for it. Then one day, from the Tokugawa lines, Honda Tadakatsu rode out alone. Directly toward Hideyoshi's army. He stopped just beyond bowshot and called across the field.",
+      "image_prompt": "Two vast armies facing each other across a wide valley — banners of Tokugawa on one ridge, Toyotomi on the other. Between them, open ground that neither side has crossed. A single armored figure on horseback — recognizable by the antler helmet — has ridden out from the Tokugawa lines and stopped midfield, facing the Toyotomi army alone. The scale emphasizes his isolation: one man against tens of thousands. The Toyotomi lines are still. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Honda Tadakatsu rode out alone in front of Hideyoshi's army and declared himself. He gave his name, his lineage, his lord. He invited anyone who wished to fight to come forward. No one came. Hideyoshi, watching from his command position, is reported to have ordered his men to hold their fire — not from weakness, but from something like recognition. 'A warrior of that quality,' the account says, 'should not be killed by musket shot.' Whether the story is precisely accurate in every detail, what it captures is the impression Honda Tadakatsu made on every opponent he faced: the sense that this was a different category of soldier.",
+      "image_prompt": "Honda Tadakatsu on horseback, alone in open ground between two vast armies, holding a traditional Japanese yari — a long bamboo shaft topped with a narrow, leaf-shaped metal spearhead — raised vertically in formal challenge. His posture is composed and defiant. The Toyotomi army fills the background in silence. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "The Komaki-Nagakute campaign ended without a decisive battle. Politically, the result was a negotiated settlement that preserved Ieyasu's independence — a significant achievement given the power imbalance. But the moment that entered history was Honda Tadakatsu's solo challenge. It spread through the samurai world as a specific kind of story: not the story of victory, but of character demonstrated publicly under conditions that could not be faked. You can stage many things in warfare. You cannot stage riding alone toward an army of tens of thousands and remaining calm. Honda Tadakatsu had been doing exactly that, in one form or another, for over twenty years.",
+      "image_prompt": "Honda Tadakatsu riding back through the Tokugawa formation after his solo challenge — the ranks of Tokugawa soldiers part to let him through. Honda's posture is unchanged: the same calm composure as when he rode out. The soldiers around him watch in silence, a deeper recognition than cheering on their faces. Behind him, open ground. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "The years after Komaki-Nagakute brought a change in the nature of the wars Honda Tadakatsu fought. Hideyoshi consolidated his control of Japan, and Ieyasu — who had avoided direct subordination — gradually accepted the new political reality. Honda participated in the campaigns of the late 1580s and 1590s. The scale of conflict was changing: away from the personal combat and small-unit operations that had made Honda's name, toward the mass armies and castle sieges of a unifying country. Honda adapted without diminishing — the qualities that had made him were not specific to any one era of warfare. Only the application changed.",
+      "image_prompt": "A large Sengoku-period castle siege from elevated ground: Tokugawa forces deployed around a fortified position in the middle distance, siege ladders and equipment visible. A mounted commander in the foreground surveys the operation — seen from behind or at an angle, no close-up of hands. The scale is vast and orderly. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Honda Tadakatsu's weapons and armor became famous in his own lifetime. The spear he carried — the Tonbo-giri, or Dragonfly Cutter — was counted as one of Japan's three greatest spears. The name came from a story that dragonflies landing on its blade were cut in two by their own weight, so sharp was the edge. His armor featured the distinctive antler-crested helmet that made him identifiable on any battlefield in Japan. These objects were not costume. They were tools of a specific communication: this is who I am, and you know what that means. Honda made himself unmissable — and then proved repeatedly that being visible carried no danger for him.",
+      "image_prompt": "Honda Tadakatsu's iconic equipment displayed with honor: the antler-horned helmet, the ornate battle armor, and the Tonbo-kiri spear resting against a wooden stand in a castle armory. The objects are shown with care — weapons of a warrior who has used them across decades of battle and survived. The light falls on the blade of the spear with particular precision. No text, no legible writing.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "The Battle of Sekigahara in 1600 was the event that made the Tokugawa shogunate inevitable. Honda Tadakatsu fought on the eastern — Tokugawa — side, as he had fought every battle of his career: without hesitation, in the forward position, present at the moment of decision. He was fifty-two years old. He had been fighting for nearly forty years. Sekigahara lasted one morning. By afternoon, the outcome was settled, and with it the next two and a half centuries of Japanese history. Honda Tadakatsu had helped build a world in which Honda Tadakatsu's particular skills would no longer be needed.",
+      "image_prompt": "Sekigahara at the moment of Tokugawa breakthrough — the eastern army's lines surging forward as the western coalition begins to break. Honda Tadakatsu on horseback in the Tokugawa vanguard, identifiable by the antler helmet, driving forward with controlled force. The scale of the battle is vast — thousands of soldiers, smoke, banners falling. Honda is fifty-two years old and looks experienced, authoritative, absolutely present. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.26
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "After Sekigahara, Honda Tadakatsu received the domain of Kuwana in Ise Province — a castle lord's appointment that rewarded his lifetime of service with administrative responsibility. The warrior who had charged enemy lines for forty years now governed a domain, heard local disputes, managed rice yields, and oversaw the affairs of a population that had not seen serious warfare and hoped never to. Honda performed this role as he had performed every other: competently, without complaint. He was not made for peace — no one who had lived as he had was made for peace — but he served in it as he had served in war. The discipline was the same. Only the application changed.",
+      "image_prompt": "Honda Tadakatsu in his castle at Kuwana in the early Edo period — older now, in his late fifties, in formal administrative robes rather than armor. He meets with domain officials in a reception room, listening to reports with the same focused attention he gave to battle assessments. The room is ordered, quiet, prosperous. Through the open screen, a peaceful river landscape. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The question Honda Tadakatsu poses to history is a real one: how do you fight in more than fifty major engagements and never receive a serious wound? The answer is not supernatural. It is the opposite of supernatural — it is extreme professional competence applied with absolute consistency. Honda read engagements better than his opponents. He positioned himself where he could engage effectively while maintaining situational awareness. He understood when to push and when to break off. The appearance of invincibility was the product of skills so refined that the situations where wounds happen simply did not occur for him. Invincibility, it turns out, is a form of intelligence.",
+      "image_prompt": "Honda Tadakatsu in a reflective moment after a battle — seated apart from the celebrations, the antler helmet resting on the ground beside him, studying the battlefield from an elevated position. His expression is not triumph but assessment: reading what happened, understanding what worked. The posture of someone who takes surviving seriously, not as luck but as a professional obligation. No text, no legible writing.",
+      "ken_burns": "static",
+      "character_ref": "honda_tadakatsu",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Honda Tadakatsu represented something that the Japan he helped create was making obsolete. The Tokugawa peace — the two and a half centuries of stability that followed Sekigahara — was built on the premise that the kind of warfare Honda personified would not recur. The great warrior had been indispensable in making that peace possible. He became irrelevant the moment it arrived. This is the specific irony of the perfect soldier: he reaches the peak of his powers in the last moment those powers are needed, and then outlives their necessity. Honda Tadakatsu spent his final decade governing a domain in a country that no longer required what he was best at.",
+      "image_prompt": "A symbolic contrast: Honda Tadakatsu's antler helmet and Tonbo-kiri spear rest against a castle wall in the foreground — the weapons of a warrior at rest. Through the open wall behind them, the peaceful landscape of early Edo-period Japan: farmers in fields, a road with ordinary travelers, distant mountains under clear sky. The armor that won battles in an age of war now sits in an age of peace. No text, no legible writing.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "Honda Tadakatsu died in 1610, at the age of sixty-three. He had served Tokugawa Ieyasu for over fifty years, fought in more battles than he or anyone else could precisely count, and was never — in the accepted account — seriously wounded in combat. The story attached to his end is almost too fitting: the wound that finally marked him was a paper cut. In his final months, declining from age, he cut his finger on a document while writing at his desk. A warrior who had ridden into the middle of enemy armies untouched, left by an administrative duty. The God of War departed Japan the same way Japan departed war: quietly, at a desk, with work still on the table.",
+      "image_prompt": "Honda Tadakatsu's formal memorial — his armor and Tonbo-kiri spear displayed with honor in a temple setting, soft lantern light falling on the objects. They are still, permanent, outlasting the man who used them. Through rice-paper screens, the early morning light of Japan in a new and peaceful era. The warrior's tools at rest, exactly as their owner now is. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — Hideyoshi called him the most dangerous mind in Japan. He was imprisoned for a year in a pit. He became a Christian. And when the wars finally ended, his own lord feared what he might do next. Kuroda Kanbei. Coming next.",
+      "image_prompt": "Kuroda Kanbei in his distinctive black hood, lean and intense, studying a strategic map by candlelight in a sparse military camp. His expression is that of a man who sees ten moves ahead — calm, precise, slightly unsettling. The map has no legible text. No text, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kuroda_kanbei",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "The Sengoku period produced many warriors who were famous for how they fought. It produced very few who were famous for how they survived. Honda Tadakatsu's legacy is not the number of enemies he killed — those records are lost and would be unremarkable anyway. It is the fact that across half a century of warfare, he came home from every engagement he entered. That is a different achievement from victory. Victory depends on circumstances, on numbers, on allies, on luck. Survival, at Honda Tadakatsu's level of consistency, is something else entirely — a specific form of mastery that looks like fortune from the outside and functions, on the inside, as pure professional judgment.",
+      "image_prompt": "The Tonbo-kiri spear, now a national treasure, displayed in a modern Japanese museum — the ancient blade and wood behind protective glass in a carefully lit exhibition case. A few visitors pass in the blurred background, barely pausing. The weapon Honda Tadakatsu carried through fifty battles has outlasted its age by four centuries. No text, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_source": "BGM/ep003-BGM.mp3",
+  "youtube_url": "https://youtu.be/ksD4e1MWIEc",
+  "shorts_url": "https://youtu.be/gM-VwUo1Xhg",
+  "scheduled_at": "2026-07-16 03:00"
+}
