@@ -339,7 +339,9 @@ def run_face(episode_id: str):
     print(f"  出力先: {out_file}")
     print(f"{'━'*60}\n")
 
-    qa_result = {"scene_id": 0, "ok": True, "issues": []}
+    # 初期値は失敗状態。生成成功＋QA実行で上書きする
+    # （画像データなし・例外時に初期値のまま all_ok:true で保存される穴を防ぐ）
+    qa_result = {"scene_id": 0, "ok": False, "issues": ["画像生成失敗（QA未実行）"]}
     for attempt in range(2):
         print(f"  S00_face 生成中{'（再生成）' if attempt else ''}... ", end="", flush=True)
         try:
