@@ -1,4 +1,4 @@
-# /sc-consult — Claude × Gemini 対話コンサルティング
+# /consult — Claude × Gemini 対話コンサルティング
 
 ユーザーから課題を受け取り、Claude と Gemini が2ターン対話したうえで
 Opus が両者の意見を統合して最終提案を行うコマンド。
