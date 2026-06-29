@@ -718,8 +718,8 @@ STEP 5C 完了後、動画生成の**前**に実施する。
 ### ⚠️ 絶対ルール
 
 - **画像ファイルを Read ツールで開かない**。`sc_image_gen.py` が生成時に Gemini Vision で
-  自動チェック済みであり、その結果は `image_qa_result.json` / `image_qa_result_shorts.json`
-  に保存されている。このJSONを読むだけでよい。
+  自動チェック済みであり、その結果は `image_qa_result.json` / `image_qa_result_shorts.json` /
+  `image_qa_result_face.json`（`--face` 使用時のみ）に保存されている。このJSONを読むだけでよい。
 - このステップで修正できる手段は**画像の再生成のみ**。
   ナレーション・JSONの修正は一切提案しない（＝TTS再生成は絶対に発生させない）。
   ナレーションの品質はSTEP 3Aで保証済みとみなす。
@@ -730,15 +730,20 @@ Google Drive の以下のファイルを読み込む：
 ```bash
 cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/image_qa_result.json
 cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/image_qa_result_shorts.json
+# --face を使用した場合のみ:
+cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/image_qa_result_face.json
 ```
 
 各JSONの `all_ok` を確認する：
 - `all_ok: true` → 問題なし
 - `all_ok: false` → `warnings` 配列に `{scene_id, issues}` が入っている
 
+`image_qa_result_face.json` の WARNING は `run_face` 内で自動再生成済み（最大2回）。
+`all_ok: false` のまま残っている場合は2回失敗した状態なので **[B] 許容** を推奨する。
+
 ### レポート出力フォーマット
 
-`all_ok: true`（両方）の場合：
+`all_ok: true`（全ファイル）の場合：
 
 ```
 ✅ STEP 5D 完了 — 画像 QA: 全シーン問題なし → STEP 6 へ進みます

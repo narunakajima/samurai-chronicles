@@ -177,9 +177,9 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
 
 
 def remove_silence(src: Path, dst: Path):
-    """無音区間を除去する（Shorts用）。
-    しきい値を緩めに設定して自然な「間」を残す。
+    """無音区間を除去する（Shorts・本編teaser共用）。
     -40dB / 0.15s: 本当の無音のみ除去、息継ぎや文末の間は保持。
+    末尾に 0.3s の無音を付加してクロスフェード余白を確保する。
     """
     subprocess.run([
         "ffmpeg", "-y", "-i", str(src),
