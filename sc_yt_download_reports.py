@@ -71,9 +71,15 @@ def download_all(force: bool):
         resp = yt.jobs().reports().list(jobId=job_id).execute()
         reports = resp.get("reports", [])
 
+        # 同一 startTime に複数レポートがある場合は createTime 最大（最新版）を採用
+        latest: dict[str, dict] = {}
         for rep in reports:
-            # 期間の開始日をファイル名に使う（UTC→日付文字列）
-            date_str = rep["startTime"][:10]  # "2026-06-24T07:00:00Z" → "2026-06-24"
+            date_str = rep["startTime"][:10]
+            prev = latest.get(date_str)
+            if prev is None or rep.get("createTime", "") > prev.get("createTime", ""):
+                latest[date_str] = rep
+
+        for date_str, rep in sorted(latest.items()):
             out_path = out_dir / f"{date_str}.csv"
 
             if out_path.exists() and not force:

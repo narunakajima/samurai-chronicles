@@ -1056,7 +1056,9 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 s_clips.append(out_clip)
 
             clip_idx = 1 if use_face_intro else 0
-            max_clip_idx = len(selected_s) - 1 + (1 if use_face_intro else 0)
+            # caption_idx は音声タイムラインと合わせるため face 分を引く
+            # （face clip は視覚上 clip 0 を占めるが音声は t=0 から始まるため）
+            caption_max = len(selected_s) - 1
             for scene in selected_s:
                 sid    = scene["scene_id"]
                 effect = scene.get("ken_burns", "zoom_in")
@@ -1065,10 +1067,11 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                     img = img_dir / f"S{sid:02d}.png"
                 if not img.exists():
                     continue
-                if clip_idx == 0:
+                caption_idx = clip_idx - (1 if use_face_intro else 0)
+                if caption_idx == 0 and not use_face_intro:
                     overlay = shorts_hook_text_filter(hook_lines)
                 else:
-                    overlay = shorts_caption_for_clip(shorts_narration, narr_dur, clip_idx, max_clip_idx)
+                    overlay = shorts_caption_for_clip(shorts_narration, narr_dur, caption_idx, caption_max)
                 out_clip = tmp / f"s_clip_{sid:02d}.mp4"
                 make_shorts_clip(img, out_clip, effect, overlay)
                 s_clips.append(out_clip)

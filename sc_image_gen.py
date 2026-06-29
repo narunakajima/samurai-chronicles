@@ -339,20 +339,44 @@ def run_face(episode_id: str):
     print(f"  出力先: {out_file}")
     print(f"{'━'*60}\n")
 
-    print(f"  S00_face 生成中... ", end="", flush=True)
-    try:
-        ok = generate_one_image_portrait(client, face_prompt, char_ref, out_file)
-        if ok:
-            print(f"✓ {out_file.name}")
-            qa = qa_image_with_gemini(client, out_file, face_prompt, 0)
-            if qa["ok"]:
-                print("  [QA: OK]")
+    qa_result = {"scene_id": 0, "ok": True, "issues": []}
+    for attempt in range(2):
+        print(f"  S00_face 生成中{'（再生成）' if attempt else ''}... ", end="", flush=True)
+        try:
+            ok = generate_one_image_portrait(client, face_prompt, char_ref, out_file)
+            if ok:
+                print(f"✓ {out_file.name}", end="", flush=True)
+                qa = qa_image_with_gemini(client, out_file, face_prompt, 0)
+                qa_result = qa
+                if qa["ok"]:
+                    print("  [QA: OK]")
+                    break
+                else:
+                    print(f"  [QA: ⚠️  {len(qa['issues'])}件]")
+                    if attempt == 0:
+                        print(f"  → 自動再生成します")
+                    else:
+                        print(f"  → 2回目失敗。そのまま許容します")
             else:
-                print(f"  [QA: ⚠️  {'; '.join(qa['issues'])}]")
-        else:
-            print("⚠️  画像データなし")
-    except Exception as e:
-        print(f"⚠️  エラー: {e}")
+                print("⚠️  画像データなし")
+                break
+        except Exception as e:
+            print(f"⚠️  エラー: {e}")
+            break
+
+    # QA結果をJSONに保存（STEP 5D で読み込まれる）
+    episode_dir = DRIVE_BASE / episode_id
+    episode_dir.mkdir(parents=True, exist_ok=True)
+    qa_file = episode_dir / "image_qa_result_face.json"
+    qa_output = {
+        "episode_id": episode_id,
+        "total_scenes": 1,
+        "warnings": [] if qa_result["ok"] else [qa_result],
+        "all_ok": qa_result["ok"],
+    }
+    with open(qa_file, "w", encoding="utf-8") as f:
+        json.dump(qa_output, f, ensure_ascii=False, indent=2)
+    print(f"  QA結果を保存しました: {qa_file}")
 
     print(f"\n{'━'*60}\n")
 
