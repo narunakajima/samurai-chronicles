@@ -322,5 +322,19 @@
     "used_in": [
       "ep052"
     ]
+  },
+  {
+    "id": "ep053-BGM",
+    "path": "BGM/ep053-BGM.mp3",
+    "duration": 54,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "cinematic",
+      "dark"
+    ],
+    "used_in": [
+      "ep053"
+    ]
   }
 ]
