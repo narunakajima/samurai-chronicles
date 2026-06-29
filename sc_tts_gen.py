@@ -177,13 +177,16 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
 
 
 def remove_silence(src: Path, dst: Path):
-    """無音区間を除去してテンポを上げる（Shorts用）"""
+    """無音区間を除去する（Shorts用）。
+    しきい値を緩めに設定して自然な「間」を残す。
+    -40dB / 0.15s: 本当の無音のみ除去、息継ぎや文末の間は保持。
+    """
     subprocess.run([
         "ffmpeg", "-y", "-i", str(src),
         "-af", (
             "silenceremove=stop_periods=-1"
-            ":stop_duration=0.08"
-            ":stop_threshold=-30dB"
+            ":stop_duration=0.15"
+            ":stop_threshold=-40dB"
             ",apad=pad_dur=0.3"
         ),
         str(dst),

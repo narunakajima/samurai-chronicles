@@ -1044,9 +1044,19 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                     src = hook_scene["narration"] if hook_scene else ""
                 hook_lines = _auto_hook_lines(src) if src else ["SAMURAI CHRONICLES"]
 
+            # S00_face.png があれば冒頭クリップとして使用（顔アップ画像）
+            face_img = img_dir_shorts / "S00_face.png"
+            use_face_intro = face_img.exists()
+
             s_clips = []
-            clip_idx = 0
-            max_clip_idx = len(selected_s) - 1
+            if use_face_intro:
+                out_clip = tmp / "s_clip_00_face.mp4"
+                overlay = shorts_hook_text_filter(hook_lines)
+                make_shorts_clip(face_img, out_clip, "zoom_in", overlay)
+                s_clips.append(out_clip)
+
+            clip_idx = 1 if use_face_intro else 0
+            max_clip_idx = len(selected_s) - 1 + (1 if use_face_intro else 0)
             for scene in selected_s:
                 sid    = scene["scene_id"]
                 effect = scene.get("ken_burns", "zoom_in")

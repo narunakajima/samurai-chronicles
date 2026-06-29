@@ -302,6 +302,61 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
     return saved
 
 
+def run_face(episode_id: str):
+    """Shorts冒頭用の顔アップ画像を生成 → images_shorts/S00_face.png"""
+    if not API_KEY:
+        print("❌ GEMINI_API_KEY が設定されていません")
+        sys.exit(1)
+
+    ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
+    if not ep_json.exists():
+        print(f"❌ エピソードJSONが見つかりません: {ep_json}")
+        sys.exit(1)
+
+    with open(ep_json, encoding="utf-8") as f:
+        ep = json.load(f)
+
+    face_prompt = ep.get("shorts_face_image_prompt", "")
+    if not face_prompt:
+        print(f"❌ 'shorts_face_image_prompt' フィールドがありません: {ep_json}")
+        sys.exit(1)
+
+    # character_ref は scenes[0] または主要シーンから取得（任意）
+    scenes = ep.get("scenes", [])
+    char_ref_name = next(
+        (s.get("character_ref") for s in scenes if s.get("character_ref")), None
+    )
+    char_ref = load_character_ref(char_ref_name) if char_ref_name else ""
+
+    out_dir = DRIVE_BASE / episode_id / "images_shorts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_file = out_dir / "S00_face.png"
+
+    client = genai.Client(api_key=API_KEY)
+
+    print(f"\n{'━'*60}")
+    print(f"  {episode_id} — Shorts顔アップ画像生成")
+    print(f"  出力先: {out_file}")
+    print(f"{'━'*60}\n")
+
+    print(f"  S00_face 生成中... ", end="", flush=True)
+    try:
+        ok = generate_one_image_portrait(client, face_prompt, char_ref, out_file)
+        if ok:
+            print(f"✓ {out_file.name}")
+            qa = qa_image_with_gemini(client, out_file, face_prompt, 0)
+            if qa["ok"]:
+                print("  [QA: OK]")
+            else:
+                print(f"  [QA: ⚠️  {'; '.join(qa['issues'])}]")
+        else:
+            print("⚠️  画像データなし")
+    except Exception as e:
+        print(f"⚠️  エラー: {e}")
+
+    print(f"\n{'━'*60}\n")
+
+
 def cli():
     parser = argparse.ArgumentParser(description="Samurai Chronicles 静止画生成")
     parser.add_argument("--episode", required=True, help="エピソードID（例: ep001）")
@@ -309,7 +364,13 @@ def cli():
                         help="特定シーンのみ（例: 1,3,9）。省略時は全シーン")
     parser.add_argument("--shorts", action="store_true",
                         help="Shorts用縦長(9:16)画像をimages_shorts/に生成")
+    parser.add_argument("--face", action="store_true",
+                        help="Shorts冒頭顔アップ画像を生成（images_shorts/S00_face.png）")
     args = parser.parse_args()
+
+    if args.face:
+        run_face(args.episode)
+        return
 
     scene_filter = None
     if args.scenes:

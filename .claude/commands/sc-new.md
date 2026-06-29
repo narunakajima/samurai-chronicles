@@ -169,6 +169,26 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 - 「この後どうなる？」と思わせる引きを作り、本編への誘導フックにする
 - climax シーンそのものではなく、その1〜2シーン前が理想
 
+**shorts_hook_lines（必須・3行固定）:**
+- Shorts冒頭クリップの画面上に表示されるテキストオーバーレイ（DIN Condensed Bold 白文字）
+- **必ず3行で生成する**（空配列・省略禁止）
+- 各行の文字数上限（フォントサイズ対応）:
+  - 行1: **最大14文字**（fontsize=160 / 最大インパクト）→ 数字・短い断言
+  - 行2: **最大18文字**（fontsize=125）→ 矛盾・謎の核心
+  - 行3: **最大26文字**（fontsize=68）→ 問いかけまたは余韻
+- すべて**大文字**で書く
+- 良い例（ep046）: `["NEVER LOST.", "DIED ALONE.", "WAS HE MURDERED?"]`
+- 良い例（ep044）: `["13 DAYS.", "ONE PERFECT COUP.", "WHY DID IT COLLAPSE?"]`
+- 良い例（ep045）: `["61 DUELS.", "ZERO DEFEATS.", "WHY DID HE QUIT?"]`
+- ❌ 避ける: 人物名のみ、説明的な文、14文字超の行1
+
+**shorts_face_image_prompt:**
+- Shorts冒頭クリップ（0秒目）専用の顔アップ画像プロンプト
+- **必ず人物の顔が画面中央〜上部を占める構図**にする（スワイプ離脱防止）
+- 含めるべき要素: キャラクター名・顔の表情・ドラマチックな照明・直視または強い視線
+- 例: `"Extreme close-up of Uesugi Kenshin's face in the darkness of his castle. His eyes are open but lifeless, a general who never lost a battle — now fallen. Dramatic single torch light from below, deep shadows. Vertical portrait composition."`
+- character_ref が null のエピソードでも、エピソードの主人公の顔を必ず描写する
+
 **teaser_narration（本編トレイラーイントロ・冒頭30秒）:**
 - 本編の最初に流れる「映画の予告編」スタイルのナレーション
 - 合計30〜45語（約10〜15秒の読み上げ尺）
@@ -200,6 +220,8 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
   "shorts_highlight_scene": N,
   "teaser_narration": "...",
   "shorts_narration": "...",
+  "shorts_hook_lines": ["...", "...", "..."],
+  "shorts_face_image_prompt": "...",
   "thumbnail_prompt": "...",
   "scenes": [
     {
@@ -646,6 +668,7 @@ python3 sc_tts_gen.py --episode ep{NNN} --shorts           # Shorts専用TTS生�
 # STEP 5B — 画像生成
 python3 sc_image_gen.py --episode ep{NNN}                  # 本編用画像生成（16:9）
 python3 sc_image_gen.py --episode ep{NNN} --shorts         # Shorts用画像生成（9:16）
+python3 sc_image_gen.py --episode ep{NNN} --face           # Shorts冒頭顔アップ画像生成（S00_face.png）
 ```
 
 ---
