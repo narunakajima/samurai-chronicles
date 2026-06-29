@@ -1055,23 +1055,32 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 make_shorts_clip(face_img, out_clip, "zoom_in", overlay)
                 s_clips.append(out_clip)
 
+            # 画像が実在するシーンを事前スキャンして caption_max を正確に算出
+            # （欠落シーンで continue した場合にクリップ数 < len(selected_s) となるため）
+            valid_scenes: list[tuple] = []
+            for scene in selected_s:
+                sid = scene["scene_id"]
+                img = img_dir_shorts / f"S{sid:02d}.png"
+                if not img.exists():
+                    img = img_dir / f"S{sid:02d}.png"
+                if img.exists():
+                    valid_scenes.append((scene, img))
+
             clip_idx = 1 if use_face_intro else 0
             # caption_idx は音声タイムラインと合わせるため face 分を引く
             # （face clip は視覚上 clip 0 を占めるが音声は t=0 から始まるため）
-            caption_max = len(selected_s) - 1
-            for scene in selected_s:
-                sid    = scene["scene_id"]
+            caption_max = max(0, len(valid_scenes) - 1)
+            for scene, img in valid_scenes:
                 effect = scene.get("ken_burns", "zoom_in")
-                img    = img_dir_shorts / f"S{sid:02d}.png"
-                if not img.exists():
-                    img = img_dir / f"S{sid:02d}.png"
-                if not img.exists():
-                    continue
                 caption_idx = clip_idx - (1 if use_face_intro else 0)
                 if caption_idx == 0 and not use_face_intro:
-                    overlay = shorts_hook_text_filter(hook_lines)
+                    # face intro なし時: hook_lines と冒頭字幕を重ねて冒頭1.5秒の単語を救う
+                    hook_part = shorts_hook_text_filter(hook_lines)
+                    cap_part  = shorts_caption_for_clip(shorts_narration, narr_dur, 0, caption_max)
+                    overlay   = ",".join(p for p in [hook_part, cap_part] if p)
                 else:
                     overlay = shorts_caption_for_clip(shorts_narration, narr_dur, caption_idx, caption_max)
+                sid = scene["scene_id"]
                 out_clip = tmp / f"s_clip_{sid:02d}.mp4"
                 make_shorts_clip(img, out_clip, effect, overlay)
                 s_clips.append(out_clip)
