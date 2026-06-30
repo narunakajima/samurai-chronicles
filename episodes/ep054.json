@@ -1,0 +1,252 @@
+{
+  "episode_id": "ep054",
+  "episode_title": "The Warlord Who Built an Empire Using Only His Mind: Mori Motonari",
+  "youtube_title": "The Warlord Who Beat 20,000 Men With Only His Mind: Mori Motonari",
+  "youtube_description": "Outnumbered five to one, Mori Motonari turned a sacred island into history's deadliest trap. This is how patience, deception, and one stormy night built an empire spanning ten provinces.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 He commanded barely four...\n0:52 In 1497, Mori Motonari was born\n1:28 By his teenage years,...\n2:07 His first real test came in\n2:49 He chose to bow to the\n3:30 Then in 1551, everything...\n4:08 Most lords in Motonari's...\n4:44 In 1554, Motonari finally...\n5:11 So Motonari built a trap instead\n5:40 The bait worked. In the autumn\n6:11 While Sue's army settled in for\n6:38 By the hour before dawn,...\n7:06 At first light, Motonari's...\n7:29 Sue Harukata tried to flee by\n8:06 The victory at Itsukushima...\n8:36 By 1566, after a grinding siege\n9:09 Whether or not he ever literally\n9:40 Motonari died in 1571, at...\n10:11 Not every warlord in this era\n10:39 Mori Motonari proved that...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Stephen Turnbull, \"Samurai Warfare\"\n2. George Sansom, \"A History of Japan, 1334–1615\"\n3. Mori clan historical records (Chōshū han records / Intoku Taiheiki)\n\n\n🎵 Music: Intense Dark Action Orchestra by DeVern (freesound.org) — CC BY 4.0\n#MoriMotonari #SengokuPeriod #JapaneseHistory #BattleOfItsukushima #SamuraiWarlord #FeudalJapan",
+  "youtube_tags": [
+    "Mori Motonari",
+    "Sengoku period",
+    "Japanese history",
+    "Battle of Itsukushima",
+    "samurai warlord",
+    "Japanese warlords",
+    "feudal Japan",
+    "Sengoku jidai",
+    "samurai documentary",
+    "Chugoku region"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 12,
+  "teaser_narration": "Twenty thousand soldiers landed on a sacred island, certain of an easy victory. By dawn, they were trapped between a hidden fleet and a storm-lit ambush. Decades of patience led to this one night. Who turned certain defeat into Japan's most devastating ambush?",
+  "shorts_narration": "Twenty thousand soldiers. Outnumbered five to one. He lured them onto a sacred island, then struck in a midnight storm. By dawn, their general was dead and an empire was born. This is Mori Motonari.",
+  "shorts_hook_lines": [
+    "20,000 MEN.",
+    "ONE NIGHT AMBUSH.",
+    "HOW DID HE WIN ANYWAY?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Mori Motonari's weathered face, narrow calculating eyes fixed on something distant, illuminated by flickering torchlight against a stormy night sky. Deep wrinkles, thin grey beard, an expression of cold, patient calculation rather than fear. Vertical portrait composition.",
+  "thumbnail_prompt": "Mori Motonari in dark grey lacquered armor standing on a foggy clifftop, overlooking a narrow strait where ships burn below. Ichimonji-mitsuboshi crest visible on his armor. Calculating, calm expression, a vast outnumbered enemy army visible in the misty distance below as the visual setup for an ambush about to spring. Cinematic dramatic lighting, epic composition.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He commanded barely four thousand men against an army of twenty thousand. He won by luring them onto a tiny island and sealing off their escape. How does a minor lord with almost no army conquer ten provinces?",
+      "image_prompt": "Wide aerial-style view of a small wooded island surrounded by a narrow misty strait at dawn, a massive army camp visible on the shore, ships silhouetted offshore. Tense, foreboding atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 12,
+      "narration": "In 1497, Mori Motonari was born into one of the smallest samurai houses in western Japan — a single mountain stronghold surrounded by giants. His father died when he was still a boy. The family's fortune crumbled, and relatives circled, eager to seize what little the Mori clan had left. Nobody expected this child to survive, let alone rule.",
+      "image_prompt": "A small modern-cinematic mountain castle compound in mist, a young boy in plain robes standing alone in a courtyard while adults argue inside a nearby hall, conveying isolation and instability.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 12,
+      "narration": "By his teenage years, Motonari had inherited a domain barely worth the name — a few thousand koku, squeezed between two empires: the Amago clan to the east, the Ouchi clan to the west. Either could crush him in a single campaign. He had no army capable of resisting both, so instead of choosing a side and praying, he began studying his neighbors like a physician studies a disease.",
+      "image_prompt": "A teenage Mori Motonari studying a hand-drawn map of western Japan spread across a low table by candlelight, marking rival territories with small stones, intense focused expression.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mori_motonari",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 12,
+      "narration": "His first real test came in 1517, at the Battle of Arita-Nakaide. An invading Amago force badly outnumbered the Mori. Motonari, barely twenty years old, proposed a night ambush few veterans believed could work. It worked. The enemy commander was killed, the invasion collapsed, and for the first time, western Japan noticed the name Mori Motonari — not as a victim, but as a threat.",
+      "image_prompt": "Young samurai warriors charging through a forest at night under torchlight, chaos and surprise on enemy faces, a young commanding figure directing the ambush from a ridge above.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mori_motonari",
+      "zoom_anchor": {
+        "x": 0.85,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 12,
+      "narration": "He chose to bow to the Ouchi clan, the stronger of his two threatening neighbors, becoming a vassal rather than risk annihilation. It was not loyalty — it was timing. Subordination bought him decades to grow his own strength quietly. While others bled each other in endless border wars, Motonari built roads, taxed trade routes, and married his children into rival houses, weaving alliances no sword could cut.",
+      "image_prompt": "Mori Motonari kneeling formally before an elaborately dressed Ouchi clan lord in a grand wooden hall, composed and deferential expression masking calculation, banners with Ouchi crest in background.",
+      "ken_burns": "static",
+      "character_ref": "mori_motonari",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 12,
+      "narration": "Then in 1551, everything changed. Sue Harukata, the most powerful general of the Ouchi clan, turned on his own lord and forced him to suicide, installing a puppet in his place. Overnight, the Ouchi clan that had protected Motonari for thirty years was gone — replaced by a usurper with a far larger army than Motonari's own.",
+      "image_prompt": "A dramatic torch-lit scene of an Ouchi lord performing seppuku in a besieged temple while armored soldiers loyal to a rival general look on coldly, smoke rising outside the windows.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 12,
+      "narration": "Most lords in Motonari's position would have submitted. Sue Harukata controlled vastly superior numbers, the old Ouchi territories, and the loyalty of dozens of smaller clans. But Motonari saw something else: a usurper everyone secretly resented. For years he said nothing, gathered intelligence, and waited — letting Sue's overconfidence grow unchecked.",
+      "image_prompt": "Mori Motonari standing quietly at the edge of a council chamber, listening intently while other lords debate loudly, his expression unreadable, a single hand resting calmly on the table.",
+      "ken_burns": "static",
+      "character_ref": "mori_motonari",
+      "zoom_anchor": {
+        "x": 0.2,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 12,
+      "narration": "In 1554, Motonari finally broke openly with Sue Harukata. Sue responded exactly as expected — assembling a fleet and army numbering by some accounts over twenty thousand men. Motonari could field barely a fifth of that. On paper, the war was already over.",
+      "image_prompt": "A vast samurai army and fleet of war junks assembling along a coastline at dusk, banners with the Sue clan crest snapping in the wind, overwhelming scale emphasized by wide composition.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 12,
+      "narration": "So Motonari built a trap instead of an army. On the sacred island of Itsukushima, he constructed a small, deliberately weak fortress — just tempting enough for Sue to want to crush it personally, just narrow enough that a huge army would have nowhere to maneuver once it arrived.",
+      "image_prompt": "A modest wooden fortress being built on a narrow forested island shoreline beside the famous red torii gate silhouette, workers and a few soldiers visible, deliberately unimposing scale.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 12,
+      "narration": "The bait worked. In the autumn of 1555, Sue Harukata personally led his enormous force onto Itsukushima, confident he could erase Motonari's garrison within days. He had walked his army onto a strip of sacred land barely wide enough for its own numbers — with the sea at its back.",
+      "image_prompt": "Thousands of samurai soldiers disembarking from war junks onto a narrow island shoreline, setting up a sprawling camp that stretches to the tree line, confident and relaxed body language.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 12,
+      "narration": "While Sue's army settled in for what it assumed would be a formality, Motonari moved. Under cover of a violent night storm — conditions no sane commander would choose to sail in — his fleet crossed the strait in darkness, landing his entire strike force undetected behind enemy lines.",
+      "image_prompt": "Small samurai war boats cutting through dark, storm-tossed waves at night under flashes of lightning, soldiers gripping the sides, an island silhouette looming ahead.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "rising_action",
+      "duration_seconds": 12,
+      "narration": "By the hour before dawn, Motonari's men were in position on the high ground above Sue's sleeping camp, soaked, exhausted, and silent. Below them lay an army many times their size, completely unaware. One signal, and there would be no retreat for either side.",
+      "image_prompt": "Mori Motonari crouched on a misty ridge at first light, looking down at a vast sleeping enemy camp below, rows of silent soaked soldiers waiting beside him, tense anticipation.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mori_motonari",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 12,
+      "narration": "At first light, Motonari's forces struck. Panic tore through Sue's camp as thousands of men, trapped between attackers on the high ground and the sea at their backs, had nowhere left to run. Mori ships moved to seal the strait, turning the entire island into a closed killing ground.",
+      "image_prompt": "Chaotic dawn battle scene on a narrow island shoreline, samurai charging down from wooded high ground into a panicked enemy camp, war ships blocking the strait in the background, dramatic orange sunrise light.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 12,
+      "narration": "Sue Harukata tried to flee by boat and failed. Surrounded, with his army shattered around him, he took his own life rather than face capture. In a single morning, the man who had murdered his way to power over western Japan's largest clan lost everything to an opponent with a fifth of his troops.",
+      "image_prompt": "A defeated samurai general kneeling alone on a smoke-filled beach at sunrise, sword drawn for ritual suicide, distant chaos of a routed army behind him, somber dramatic lighting.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 12,
+      "narration": "The victory at Itsukushima did more than destroy an army — it broke the Sue regime entirely. Over the following years, Motonari systematically absorbed what remained of the Ouchi domains, using the same patience and political pressure that had built his earlier alliances, rather than relentless conquest.",
+      "image_prompt": "Mori Motonari reviewing scrolls and maps with retainers in a grand hall, newly acquired territory banners being hung on the walls, calm administrative atmosphere rather than triumphant celebration.",
+      "ken_burns": "pan_left",
+      "character_ref": "mori_motonari",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 12,
+      "narration": "By 1566, after a grinding siege of the Amago clan's mountain stronghold at Gassantoda, Motonari controlled ten provinces across the Chugoku region — territory his impoverished teenage self could never have imagined inheriting. The boy nobody expected to survive now ruled more land than almost any lord in Japan.",
+      "image_prompt": "An elderly Mori Motonari standing on a fortress balcony overlooking a vast mountainous territory map of western Japan rendered as a wide cinematic landscape, sense of quiet, earned dominance.",
+      "ken_burns": "zoom_out",
+      "character_ref": "mori_motonari",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 12,
+      "narration": "Whether or not he ever literally handed his three sons a bundle of arrows, the lesson attributed to him endured: a single arrow snaps easily, but bound together, they hold. Unity, not individual brilliance, was what Motonari believed would outlast him — a philosophy as calculated as any battlefield trap.",
+      "image_prompt": "An elderly Mori Motonari seated with three adult sons in a quiet wooden hall, a bundle of arrows resting on the table between them, warm lamplight, contemplative family atmosphere.",
+      "ken_burns": "static",
+      "character_ref": "mori_motonari",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "legacy",
+      "duration_seconds": 12,
+      "narration": "Motonari died in 1571, at seventy-four — an extraordinarily long life for a man who had spent six decades surrounded by enemies wanting him dead. He left behind not a single overwhelming army, but a network of loyal sons, careful alliances, and a clan structure built to survive without him.",
+      "image_prompt": "An elderly Mori Motonari resting peacefully in a modest wooden room as soft evening light falls through paper screens, family crest banner visible outside, calm and dignified final years atmosphere.",
+      "ken_burns": "zoom_out",
+      "character_ref": "mori_motonari",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Not every warlord in this era won by patience. Next time, we follow a general who knew from the start that his final battle was unwinnable — and said goodbye to his son before walking into it anyway. Why would Japan's most loyal warrior march to a certain death?",
+      "image_prompt": "A solitary armored samurai general kneeling before his young son on a quiet road at dawn, mountains and a distant army camp in the background, emotional farewell atmosphere, soft melancholic light.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "Mori Motonari proved that empires don't always belong to the strongest sword — sometimes they belong to the most patient mind. From a forgotten mountain lordship to ten provinces, his story is a masterclass in turning weakness into leverage, one calculated decade at a time.",
+      "image_prompt": "A wide cinematic sunset view over the Chugoku mountains and coastline, the Mori clan banner with the ichimonji-mitsuboshi crest flying prominently in the foreground, reflective and conclusive mood.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/NwbdTCDEpuw",
+  "shorts_url": "https://youtu.be/Ti1JPhq0Pv4",
+  "scheduled_at": "2026-07-21 03:00"
+}

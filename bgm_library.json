@@ -336,5 +336,18 @@
     "used_in": [
       "ep053"
     ]
+  },
+  {
+    "id": "ep054-BGM",
+    "path": "BGM/ep054-BGM.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Intense Dark Action Orchestra by DeVern (freesound.org) — CC BY 4.0",
+    "tags": [
+      "dark"
+    ],
+    "used_in": [
+      "ep054"
+    ]
   }
 ]

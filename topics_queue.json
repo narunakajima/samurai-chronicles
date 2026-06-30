@@ -529,7 +529,7 @@
     },
     {
       "episode_id": "ep054",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Warlord Who Built an Empire Using Only His Mind: Mori Motonari",
       "era": "Sengoku",
       "priority": "B",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-25",
+  "last_updated": "2026-06-30",
   "total_topics": 87
 }
