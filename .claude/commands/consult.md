@@ -1,7 +1,7 @@
 # /consult — Claude × Gemini 対話コンサルティング
 
 ユーザーから課題を受け取り、Claude と Gemini が2ターン対話したうえで
-Opus が両者の意見を統合して最終提案を行うコマンド。
+Sonnet 5 が両者の意見を統合して最終提案を行うコマンド。
 
 ---
 
@@ -13,7 +13,7 @@ Opus が両者の意見を統合して最終提案を行うコマンド。
   → Gemini Turn 1（課題投入）
   → Claude が T1 回答を読んでコメント生成
   → Gemini Turn 2（Claude コメント投入）
-  → Opus が全ダイアログ + 両者の立場を統合して最終提案
+  → Sonnet 5 が全ダイアログ + 両者の立場を統合して最終提案
   → ユーザーへ提示
 ```
 
@@ -90,9 +90,9 @@ Gemini の T2 最終回答を画面に出力する：
 
 ---
 
-## STEP 5 — Opus が統合して最終提案を生成する
+## STEP 5 — Sonnet 5 が統合して最終提案を生成する
 
-以下の情報を Opus subagent に渡す：
+以下の情報を Sonnet 5 subagent に渡す：
 
 - ユーザーの元の課題
 - Claude が Turn 1 に渡したプロンプト（Claudeの問題整理）
@@ -100,7 +100,7 @@ Gemini の T2 最終回答を画面に出力する：
 - Claude の Turn 2 コメント（Claudeの立場・意見）
 - Gemini T2 最終回答
 
-Opus への指示:
+Sonnet 5 への指示:
 ```
 あなたは上記の Claude × Gemini 対話を踏まえて最終提案をまとめる統合役です。
 
@@ -113,12 +113,12 @@ Opus への指示:
 実装はしない。提案のみ。
 ```
 
-Opus の出力をそのままユーザーに提示する。
+Sonnet 5 の出力をそのままユーザーに提示する。
 
 ---
 
 ## 定数
 
 - Geminiモデル: `gemini-2.5-flash`
-- Opusモデル: `claude-opus-4-8`（Agent tool の `model="opus"`）
+- 統合モデル: `Sonnet 5`（Agent tool の `model="sonnet"`）
 - 履歴ファイル: `/tmp/sc_consult_history.json`（セッション開始時にクリア）
