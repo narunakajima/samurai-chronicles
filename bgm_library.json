@@ -349,5 +349,19 @@
     "used_in": [
       "ep054"
     ]
+  },
+  {
+    "id": "ep055-BGM",
+    "path": "BGM/ep055-BGM.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Emotional/Sad/Tragic String Orchestral BGM Background Music by EvanBoyerman (freesound.org) — CC BY 4.0",
+    "tags": [
+      "emotional",
+      "orchestral"
+    ],
+    "used_in": [
+      "ep055"
+    ]
   }
 ]

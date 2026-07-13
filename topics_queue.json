@@ -539,7 +539,7 @@
     },
     {
       "episode_id": "ep055",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Farewell at Sakurai: Kusunoki Masashige's Most Heartbreaking Choice",
       "era": "Kamakura/Muromachi",
       "priority": "B",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-06-30",
+  "last_updated": "2026-07-13",
   "total_topics": 87
 }

@@ -1,0 +1,240 @@
+{
+  "episode_id": "ep055",
+  "episode_title": "The Farewell at Sakurai",
+  "youtube_title": "He Sent His Son Away. Then He Marched to His Death: Kusunoki Masashige",
+  "youtube_description": "He was ordered to fight a battle he knew he could not win. Before he marched south, he stopped at a crossroads and said goodbye to his eleven-year-old son. Seven hundred years later, Japan still hasn't forgotten him.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 He knew he would die. Every\n0:48 Japan in the 1330s was a\n1:40 In 1331, the Kamakura...\n2:29 Two years later, Kusunoki...\n3:24 The Kenmu Restoration was, in...\n4:23 Takauji struck fast. He...\n5:12 Kusunoki laid out his plan...\n6:08 The imperial command was...\n7:13 They marched south through...\n8:12 At a place called Sakurai, south\n8:57 Masatsura refused. He was...\n9:59 The Battle of Minatogawa...\n10:44 But numbers are numbers. By...\n11:29 Inside a farmhouse at...\n12:21 'Brother — if you could be\n13:21 What set Kusunoki apart...\n14:12 Masatsura kept his promise....\n15:01 The Kusunoki story poses a...\n15:53 Next time on Samurai...\n16:19 If this story moved you the\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Taiheiki (太平記), 14th-century chronicle of the Nanbokucho period conflicts\n2. Varley, H. Paul. \"Imperial Restoration in Medieval Japan.\" Columbia University Press, 1971.\n3. Sansom, George. \"A History of Japan: 1334–1615.\" Stanford University Press, 1961.\n\n\n🎵 Music: Emotional/Sad/Tragic String Orchestral BGM Background Music by EvanBoyerman (freesound.org) — CC BY 4.0\n#samuraihistory #JapaneseHistory #KusunokiMasashige #medievalJapan #bushido #samurai #japanhistory #historyofJapan #nanbokucho #battleofMinatogawa",
+  "youtube_tags": [
+    "Kusunoki Masashige",
+    "Japanese history",
+    "samurai history",
+    "Battle of Minatogawa",
+    "Nanbokucho period",
+    "samurai loyalty",
+    "Emperor Go-Daigo",
+    "Ashikaga Takauji",
+    "Kenmu Restoration",
+    "Japanese warrior",
+    "bushido",
+    "medieval Japan",
+    "Japan history",
+    "history documentary",
+    "Sakurai farewell",
+    "Japanese culture",
+    "Shichi sho hokoku",
+    "samurai stories"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "The emperor's order was clear — march and fight. Kusunoki Masashige knew what it meant. He had warned them. Now, at Sakurai, he stopped, turned to his young son, and said goodbye. Who was this man who chose duty over survival?",
+  "shorts_narration": "One farewell. Eleven years old. His son begged to come. Kusunoki said no. Then he rode toward an army he couldn't beat. He knew. He went anyway. This is Kusunoki Masashige.",
+  "shorts_hook_lines": [
+    "HE WOULD DIE.",
+    "HE MARCHED ANYWAY.",
+    "WHY IS HE JAPAN'S HERO?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Kusunoki Masashige's face in a moment of profound resolve. A weathered samurai commander in his early forties, lean face with intelligent eyes that hold both determination and sorrow — a man who has already accepted his fate. His dark lacquered helmet frames his face, the kikusui crest barely visible on his chest plate. Dramatic low torchlight from below illuminates his jaw and cheekbones. He gazes directly at the viewer with quiet, unbreakable calm. Vertical portrait composition.",
+  "thumbnail_prompt": "A samurai father in full dark lacquered armor kneeling to his young son's eye level on a quiet country road at dusk. Cherry blossom petals drift through the warm amber air. The boy reaches up to touch his father's face. Rolling hills behind them, distant mountains fading into mist. The father's expression is composed but heartbroken. The kikusui crest visible on his armor. Bittersweet and cinematic.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He knew he would die. Every general in the Emperor's court agreed it was suicide — a small force against an unstoppable army. But Kusunoki Masashige had already decided. Not how to survive. How to say goodbye.",
+      "image_prompt": "A lone samurai warrior silhouetted against a blood-red sunset, standing on a mountain road. In the distance behind him, a small boy's figure is visible, watching him go. The warrior faces forward, toward darkness. Mist fills the valleys below. The gap between them feels enormous.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Japan in the 1330s was a land fracturing at its seams. The Kamakura shogunate — the military government that had ruled for over a century — was rotting from within. Into this chaos stepped Emperor Go-Daigo, determined to reclaim real power for the imperial throne. And rising alongside him was an unlikely commander from the mountains of Kawachi Province: Kusunoki Masashige. Not a great lord. Not a man of vast armies. But a strategist of near-supernatural ingenuity — who would prove that the right mind could outfight almost any force sent against it.",
+      "image_prompt": "A sweeping bird's-eye view of feudal Japan in turmoil — distant castle towns with smoke rising, roads filled with marching troops seen from above, imperial banners visible near a palace surrounded by mountains. The landscape feels vast, the nation divided. Late afternoon haze over the valleys.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1331, the Kamakura shogunate sent thousands to crush the imperial uprising. Kusunoki retreated to Akasaka Castle — a fortress barely worthy of the name — with a few hundred men. He flooded the approaches. He set traps. He dropped boiling water and swinging logs on those who climbed the walls. When the castle finally fell, he disappeared into the mountains like smoke. Kamakura had deployed its full might against him. He had held them off for weeks. And now he was already planning his next move.",
+      "image_prompt": "Kusunoki Masashige standing defiantly on the wooden walls of a small mountain fortress, pointing downward at the massed enemy forces below. Smoke rising from the approaches where traps have been sprung. His dark lacquered armor bears the kikusui crest. His face is fierce and calculating, eyes reading the battlefield. His small band of men behind him, ready. The disparity in force sizes is visible — thousands below, dozens above.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kusunoki",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Two years later, Kusunoki held Chihaya Castle high in the mountains for months — tying down the Kamakura armies long enough for other loyalist commanders to strike. In 1333, the shogunate collapsed. Emperor Go-Daigo returned from exile in triumph. The era called the Kenmu Restoration had begun — the first time in centuries that real power returned to the imperial throne. Kusunoki, the guerrilla commander from the mountains, now stood beside the man he had always believed was Japan's rightful ruler. Victory, at last. But it would not last long.",
+      "image_prompt": "A vast imperial procession on a mountain road — Emperor Go-Daigo's palanquin carried by attendants, flanked by hundreds of loyal warriors bearing the chrysanthemum crest. The mountain fortress of Chihaya visible on the ridge above. Golden afternoon light, banners streaming in the wind. A sense of triumphant restoration, fragile and beautiful.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The Kenmu Restoration was, in theory, everything Kusunoki had fought for. But governing proved harder than fighting. Emperor Go-Daigo's court rewarded its favorites poorly and alienated its most powerful allies. Ashikaga Takauji — the warrior whose defection from Kamakura had made the restoration possible — was growing restless. He had expected vast rewards and greater authority. Instead, the imperial court treated him with suspicion. By 1335, Takauji had had enough. He raised his banner against the very Emperor he had helped restore. And suddenly, everything Kusunoki had built was at risk.",
+      "image_prompt": "An imperial court interior, tension palpable — nobles in elaborate court robes seated in formal arrangement, arguing among themselves. Through the shoji screen doors behind them, the silhouettes of armed warriors are visible gathering in the courtyard. The court is fracturing. One prominent figure in the corner has turned his back on the proceedings.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Takauji struck fast. He seized Kyoto, was driven out, sailed to Kyushu, and returned with a force that dwarfed anything the Emperor could field. By early 1336, Japan had split in two. The Emperor held the mountain fortress at Yoshino. Takauji was marching east with tens of thousands. And from the sea, an Ashikaga naval force was sailing toward the imperial heartland. Kusunoki watched the horizon and understood exactly what was coming — and what it would cost to stop it.",
+      "image_prompt": "A fleet of hundreds of ships filling a wide bay, sails bearing the Ashikaga mon, rowing in formation toward the coastline. From a clifftop, a single samurai in dark armor watches in silence as the armada approaches. Overcast sky, the sea grey and heavy. The fleet is overwhelming. The figure on the cliff is alone.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Kusunoki laid out his plan before the imperial council with uncommon directness. Withdraw the Emperor to Mount Hiei. Let the Ashikaga advance. Stretch their supply lines. Then strike at night, in the mountains — where numbers mean nothing. His kind of war. The court listened politely, then dismissed him. The nobles wanted a decisive battle, a visible victory. They would meet Takauji's forces head-on. Kusunoki left the chamber knowing exactly what this meant. He had tried. He had been overruled. And he would now be ordered to fight a battle he could not win.",
+      "image_prompt": "Kusunoki Masashige standing before the imperial council in a formal court chamber, presenting his case with controlled urgency — one arm extended toward a scroll map of the terrain. The court nobles around him are passive, unmoved, their expressions politely dismissive. His posture is forward, urgent. The kikusui crest on his armor stands out against the ornate court interior. His face shows a man who knows he is losing the argument.",
+      "ken_burns": "static",
+      "character_ref": "kusunoki",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The imperial command was clear: march south to Hyogo and intercept Takauji's naval force before it landed. Kusunoki had perhaps three thousand men. Takauji commanded many times that. Every officer who could read a map knew how this would end. Kusunoki bowed, accepted the order without protest, and left the throne room. Later, his closest advisors asked if he would disobey — flee, buy time, hide his forces. He looked at them as if the question made no sense. 'The Emperor has spoken,' he said. He was not performing loyalty. He had simply never conceived of any other choice.",
+      "image_prompt": "Kusunoki Masashige in a formal throne room, kneeling in a deep bow before an implied imperial presence — the Emperor's elaborate robes visible only at the frame's edge. His shoulders carry the full weight of the moment. The chamber is vast and still. His armor's kikusui crest catches the light. The posture is one of absolute acceptance.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kusunoki",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "They marched south through summer heat — Kusunoki and his men, toward a battle they knew was unwinnable. There is no record of despair in his ranks. The men who followed him had held castles they should have lost, survived ambushes and winters in the mountains. They trusted him the way soldiers trust a commander who has never lied to them. And Kusunoki had never lied. He had simply never told them that this time — he had no plan that could save them.",
+      "image_prompt": "A disciplined column of warriors marching down a sun-baked summer road through Kinai countryside — rice fields stretching to either side, distant hills shimmering in the heat. The column is small and orderly. At its head, a commander on horseback seen from behind leads them toward the horizon. No ceremony. Just the march. The road ahead curves and disappears.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "At a place called Sakurai, south of Kyoto, Kusunoki stopped. He called his eldest son, Masatsura — eleven years old — and led him aside from the column. He knelt, looked into the boy's face, and began to speak. He told him to return home. To survive. To serve the Emperor faithfully after he was gone. To carry the Kusunoki name forward into whatever world remained. He did not offer false hope. He did not promise he would return. He simply told his son the truth — the way a man tells it when he has accepted what is coming.",
+      "image_prompt": "A samurai father in full dark lacquered armor kneeling to his young son's eye level on a quiet country road, their faces close together. Cherry blossom petals drift through the warm evening air. The kikusui crest is visible on the father's chest plate. His face holds quiet grief and complete resolve. The boy looks up at him with wide, uncomprehending eyes. Other soldiers wait in the background at a respectful distance, heads bowed.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Masatsura refused. He was eleven years old, and he refused. He would not go home. He would march with his father. He would die with his father. Kusunoki took the boy by the shoulders and looked at him for a long moment. Then he shook his head. 'That is not what I need from you,' he said. 'What I need is for you to live.' Masatsura wept. The column waited. And then, slowly, the boy turned and began walking home. Kusunoki watched until he disappeared from sight. Then he turned south and gave the order to march.",
+      "image_prompt": "Close-up at low angle — a young boy's face, tears on his cheeks, eyes red from weeping but chin raised in inherited dignity. One large adult hand rests gently on his shoulder. The background is blurred to softness — a summer road, soldiers at rest, late afternoon light through the trees. The boy's expression holds grief and a fragile, difficult acceptance.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The Battle of Minatogawa began on a summer morning in 1336. Kusunoki's three thousand faced Ashikaga Takauji's forces from the west and Tadayoshi's forces from the east simultaneously. The naval support he had been promised never arrived. From the beginning, he was encircled. What happened next stunned even his enemies. For half a day, Kusunoki's tiny force held — charging, retreating, reforming, fighting with a ferocity that made much larger armies give ground. His men did not fight like men trying to survive. They fought like men who had already made their peace.",
+      "image_prompt": "A dramatically outnumbered samurai force in tight formation on a flat river plain, facing an enemy line that stretches across the entire horizon. The small force holds its ground, calm and unbroken. Enemy banners fill the skyline. The sense of overwhelming disparity is visceral — a few hundred against tens of thousands. The moment before the charge. Summer sky, dust rising.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "But numbers are numbers. By afternoon, Kusunoki had been wounded multiple times. His forces were down to a fraction of their strength. He led what remained of his men in one final charge through the Ashikaga lines — not to escape, but to reach the farmhouse district near the river. There was no longer any battle to win. There was only the question of how a man like Kusunoki Masashige would choose to end things. And he had already decided that, too.",
+      "image_prompt": "The chaos of a battle in its final phase — a small band of warriors fighting desperately in a melee, arrows falling, the loyalist force being pressed on all sides. One commander on horseback fights through the crush, armor stained, refusing to break. The river is visible in the background. The surrounding enemy is everywhere. But the small force does not scatter.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Inside a farmhouse at Minatogawa, Kusunoki sat alone by a small lamp as the last of his guard took their positions outside. He was wounded in multiple places. The armor that had carried him through countless battles was damaged beyond repair. Through the paper screen, shadows moved — the Ashikaga forces closing in, methodical and inevitable. He had perhaps minutes left. He sat in the stillness, composed and present, and waited for his brother Masasue to come to him. And when Masasue arrived, he asked him a single question.",
+      "image_prompt": "Kusunoki Masashige alone inside a simple farmhouse interior, seated in formal posture by the dim light of a small oil lamp. His dark armor is battered and blood-stained. His face is composed — not desperate, not afraid, entirely still. Through the paper screen door behind him, the shadows of many enemy soldiers move slowly closer. The room is spare and quiet. A man at the center of his own ending.",
+      "ken_burns": "static",
+      "character_ref": "kusunoki",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "'Brother — if you could be born again into this world, what would you wish for?' Masasue asked. And Kusunoki answered: 'I would be reborn seven times, and seven times I would strike down the enemies of the Emperor.' Shichi-shō hōkoku. Seven lives for the nation. Not despair. Not bravado. Something older — a declaration that his loyalty had no end, that death was only a pause before the next attempt. The brothers bowed to each other. And died together, as they had lived: on the same side, to the last.",
+      "image_prompt": "Two brothers facing each other across a spare room in a final moment of complete dignity — seated in formal posture, bowing to one another, armor battered, a small lamp between them. Their expressions hold peace, not anguish. The flickering light casts long shadows on the walls. Outside through the shoji screen, everything is silence. An intimate, unhurried farewell at the end of the world.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "What set Kusunoki apart wasn't battlefield skill alone — although that was extraordinary. It was that he never confused loyalty with optimism. He didn't follow the Emperor because he believed the Emperor would win. He followed him because he believed the Emperor was right. This is harder than it sounds. Most loyalty is contingent — it holds while victory seems possible. Kusunoki's was unconditional. And that quality — the willingness to serve without the expectation of surviving — is precisely what made his death something Japan could not forget.",
+      "image_prompt": "A single warrior figure seen from high above, standing alone in the center of a vast battlefield that has gone quiet — wind moving through the tall summer grass, distant mountains on the horizon, the sky clearing after a storm. The figure is small against the landscape but fully present. The sense of immense time passing around one still point.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "legacy",
+      "duration_seconds": 60,
+      "narration": "Masatsura kept his promise. He grew up, fought for the Southern Court just as his father had, and died in battle at the age of twenty-two — still serving the same cause. The Kusunoki story became Japan's most retold tale of faithful service. In the Meiji era, when Japan needed symbols of loyalty to the emperor, Kusunoki was elevated to near-divine status — his image printed in school textbooks, his bronze statue placed at the entrance to the Imperial Palace in Tokyo, where it still stands today.",
+      "image_prompt": "The famous bronze equestrian statue of Kusunoki Masashige on a stone pedestal before the Imperial Palace Gate in Tokyo — rendered in cinematic warm golden light. The statue is detailed and commanding. Visitors from different eras appear in the background, suggesting the passage of centuries. Cherry blossom trees frame the scene. The palace moat reflects the sky behind the gate.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "The Kusunoki story poses a question that has endured for seven hundred years: what is the value of loyalty that doesn't win? Japan's answer has always been: the highest possible. Not because losing is noble, but because loyalty that requires a reward isn't really loyalty — it's a transaction. Kusunoki gave everything to a cause that failed in his lifetime. Yet his name outlasted every man who defeated him. Sometimes what history remembers is not who won — but the quality of character that was present in the moment it mattered.",
+      "image_prompt": "A quiet Kamakura-era road at dawn, empty and misty. A single set of footprints leads through soft earth toward a brightening horizon. The landscape is still and peaceful — bamboo on one side, a small stream on the other, mountains fading in the morning haze. The sense of something profound having passed through, leaving only its trace behind.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles: he served the shogun as a swordsmanship instructor — but his real weapon wasn't a blade. It was a philosophy that used the art of killing to illuminate the art of living. Yagyu Munenori: the samurai who wrote the book that still defines the Japanese martial tradition.",
+      "image_prompt": "A single unsheathed katana resting on a polished wooden stand in a formal Edo-period garden. Cherry blossoms fall around it. A worn leather-bound book lies open beside the stand. The scene is serene, philosophical — elegance without violence. Afternoon light through paper screens casts clean geometric shadows.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If this story moved you the way it has moved Japan for seven centuries, subscribe for new episodes every day. Next time, we meet a man whose sword was never the point — Yagyu Munenori.",
+      "image_prompt": "Samurai Chronicles channel branding — a stylized Japanese castle silhouette on a hilltop against a vivid golden sunset, clean and cinematic. The landscape is serene, the horizon wide. The image feels both ancient and timeless.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/K8KmkF9w7Bw",
+  "shorts_url": "https://youtu.be/osiHIX06MIg",
+  "scheduled_at": "2026-07-22 03:00"
+}
