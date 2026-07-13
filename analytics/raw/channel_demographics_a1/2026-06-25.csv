@@ -1,0 +1,11 @@
+date,channel_id,video_id,live_or_on_demand,subscribed_status,country_code,age_group,gender,views_percentage
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,TW,AGE_45_54,MALE,6.666666666666667
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,GB,AGE_45_54,MALE,20
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,US,AGE_55_64,MALE,6.666666666666667
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,BR,AGE_65_,MALE,6.666666666666667
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,PH,AGE_65_,MALE,20
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,NL,AGE_55_64,MALE,6.666666666666667
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,TW,AGE_55_64,MALE,6.666666666666667
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,PH,AGE_35_44,MALE,6.666666666666667
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,US,AGE_45_54,MALE,6.666666666666667
+20260625,UCN1-TUxX_2UumGm3OKpmncg,bMS2kP4LwDA,on_demand,not_subscribed,MY,AGE_45_54,MALE,13.333333333333334
