@@ -549,7 +549,7 @@
     },
     {
       "episode_id": "ep056",
-      "status": "pending",
+      "status": "in_production",
       "title": "Killing Without Killing: Yagyu Munenori's Philosophy That Went Beyond the Sword",
       "era": "Edo",
       "priority": "B",
@@ -864,6 +864,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-14",
   "total_topics": 87
 }

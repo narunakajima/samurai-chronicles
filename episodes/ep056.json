@@ -1,0 +1,237 @@
+{
+  "episode_id": "ep056",
+  "episode_title": "The Sword That Gives Life",
+  "youtube_title": "He Taught the Shogun Swordsmanship. His Real Weapon Wasn't a Blade: Yagyu Munenori",
+  "youtube_description": "He was the personal sword instructor to two shoguns. He wrote the book that still defines Japanese martial philosophy four centuries later. But his most dangerous teaching had nothing to do with cutting a man down — it was about learning exactly when not to.\n\n⏱️ Chapters:\n0:00 Introduction\n0:29 He trained two shoguns in the\n0:50 By the early 1600s, Japan's...\n1:48 Munenori's father, Yagyu...\n2:42 But Munenori was not merely a\n3:34 This idea transformed how...\n4:28 In 1632, Munenori compiled...\n5:16 Central to the Heiho Kadensho...\n6:17 As shogunal intelligence...\n7:16 There is a story, likely...\n8:10 Munenori's influence grew...\n9:06 Yet Munenori understood...\n9:52 In his final years, Munenori...\n10:48 Yagyu Munenori died in 1646,...\n11:40 The Heiho Kadensho endures...\n12:28 What made Munenori dangerous...\n13:10 The Yagyu Shinkage-ryu school...\n13:58 There is a lesson in Munenori's\n14:42 Four hundred years later, in a\n15:28 Next time on Samurai...\n15:53 If this story of restraint,...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Yagyu Munenori, Heiho Kadensho (兵法家伝書), 1632.\n2. Sato, Hiroaki (trans.). \"The Sword and the Mind.\" Overlook Press, 1985.\n3. Hurst, G. Cameron. \"Armed Martial Arts of Japan: Swordsmanship and Archery.\" Yale University Press, 1998.\n\n#samuraihistory #JapaneseHistory #YagyuMunenori #bushido #swordsmanship #samurai #japanhistory #historyofJapan #edoperiod #japanesephilosophy",
+  "youtube_tags": [
+    "Yagyu Munenori",
+    "Japanese history",
+    "samurai history",
+    "Heiho Kadensho",
+    "Yagyu Shinkage-ryu",
+    "Tokugawa shogunate",
+    "Japanese swordsmanship",
+    "bushido",
+    "Edo period",
+    "Japanese philosophy",
+    "samurai",
+    "Japan history",
+    "history documentary",
+    "sword saint",
+    "Japanese culture",
+    "martial arts history",
+    "Tokugawa Iemitsu",
+    "samurai stories"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "teaser_narration": "A shogun's most trusted retainer draws no sword in the palace corridor. Instead, he studies a stranger's eyes — and reads murder in them before a single hand moves. Yagyu Munenori's greatest kill was the one he never needed to make. What kind of swordsman wins battles no one sees?",
+  "shorts_narration": "He trained two shoguns. Wrote the book still studied today. His secret? The best swordsman never draws his blade. This is Yagyu Munenori — the man who mastered killing without killing.",
+  "shorts_hook_lines": [
+    "TRAINED 2 SHOGUNS.",
+    "NEVER DREW HIS SWORD.",
+    "WHAT DID HE REALLY TEACH?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Yagyu Munenori's face, a composed samurai in his fifties with sharp, watchful eyes and a neatly trimmed greying beard. His expression is utterly still — no aggression, no fear, only total awareness. Dramatic side lighting from a single lantern carves shadows across his features. He gazes directly at the viewer with an unnerving, motionless calm. Vertical portrait composition.",
+  "thumbnail_prompt": "An elderly samurai swordsman in formal dark indigo robes standing perfectly still in a torch-lit Edo castle corridor, one hand resting near an undrawn sword at his hip. Across from him, a shadowy figure with a hidden blade hesitates, frozen mid-step. Tension without violence. Warm torchlight against deep shadow, tatami floor, sliding doors. Cinematic and restrained.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He trained two shoguns in the art of the sword. He wrote the book that still defines Japanese swordsmanship today. But his most famous lesson wasn't about killing. It was about learning exactly when to stop your hand.",
+      "image_prompt": "A single katana resting sheathed on a low wooden stand in a dim castle corridor, a hand hovering near the hilt but not gripping it. Warm torchlight, deep shadow. The stillness feels charged with restrained power.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "By the early 1600s, Japan's centuries of civil war had finally ended. Tokugawa Ieyasu had unified the country, and his descendants now needed something rarer than battlefield victory: a way to keep the peace among tens of thousands of restless samurai who had known nothing but war. Into this new world stepped Yagyu Munenori — heir to a swordsmanship tradition called Shinkage-ryu, a man whose family had served warlords for generations. He was about to become something unprecedented: the shogun's personal teacher, not in the art of war, but in the art of not needing it.",
+      "image_prompt": "A wide view of Edo Castle at dawn, mist rising over the moat, the vast city of Edo spreading beyond its walls. The transition from war to peace is visible in the calm stillness of the scene — no armies, only quiet order. Golden early morning light.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Munenori's father, Yagyu Muneyoshi, had once demonstrated his skill before Tokugawa Ieyasu himself — disarming an armed attacker using nothing but empty hands, a technique called mutodori. Ieyasu was so impressed he made the Yagyu family his personal sword instructors. Munenori inherited this position and expanded it dramatically, eventually teaching not one shogun, but three generations of them: Ieyasu, Hidetada, and Iemitsu. No other swordsman in Japanese history held that kind of unbroken access to the absolute center of power.",
+      "image_prompt": "An elderly samurai swordsman demonstrating an empty-handed disarming technique against an armed attacker in a formal dojo, watched by an imposing seated lord in the background. The moment of the throw is captured mid-motion, precise and controlled. Wooden dojo interior, morning light through high windows.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "But Munenori was not merely a fencing coach. He served the Tokugawa shogunate as a metsuke — an intelligence officer, tasked with monitoring the loyalty of powerful lords across Japan. He also received a rare invitation from a Zen monk named Takuan Soho, who began teaching him that swordsmanship and spiritual discipline were, at their core, the same pursuit. The sword, Takuan argued, was not a tool for taking life. Properly understood, it was a tool for preserving it — for the wielder and for everyone around him.",
+      "image_prompt": "A samurai in formal dark robes seated across from a Zen Buddhist monk in a simple wooden temple room, engaged in quiet, intense conversation. A sheathed sword rests on the floor between them, untouched. Soft natural light through paper screens, an atmosphere of contemplation rather than combat.",
+      "ken_burns": "static",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "This idea transformed how Munenori thought about his art. He began to formalize a philosophy he called katsujinken — 'the sword that gives life' — as opposed to setsuninto, 'the sword that takes life.' A swordsman who could only kill was, in his view, a crude craftsman. A true master understood that the highest skill was preventing violence altogether — reading intention before it became action, and defusing conflict before a blade ever left its scabbard. This was a radically different definition of mastery for an age built on the sword.",
+      "image_prompt": "Two samurai facing each other in a formal courtyard, both hands resting calmly at their sides near their sheathed swords, neither reaching to draw. The tension is entirely psychological — visible in posture and eye contact, not motion. Clean architectural lines, overcast neutral light emphasizing stillness.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1632, Munenori compiled these ideas into a text called the Heiho Kadensho — the Life-Giving Sword, a family transmission scroll meant to teach the deepest secrets of Shinkage-ryu swordsmanship to his most trusted students. But the book went far beyond technique. It discussed psychology, timing, the nature of fear, and how a disciplined mind could perceive an opponent's next move before the opponent himself was aware of it. It would go on to become one of the most influential texts on martial philosophy ever written in Japan.",
+      "image_prompt": "An aged hand-bound Japanese scroll manuscript unrolled on a low wooden writing desk, brush and inkstone beside it, dense vertical calligraphy visible but rendered as artistic texture rather than legible text. Candlelight, late night study, a sense of profound intellectual labor.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Central to the Heiho Kadensho was a concept Munenori called 'the sickness of abiding' — the idea that a mind fixated on any single thing, whether fear, anger, or even the desire to win, became slow and predictable. A truly skilled swordsman kept his mind moving like water, attaching to nothing, so that he could respond instantly to whatever actually happened rather than what he expected to happen. This idea, drawn partly from his conversations with Takuan, would later influence not just swordsmanship, but Japanese aesthetics, business philosophy, and sport far beyond the battlefield.",
+      "image_prompt": "A swordsman standing in a courtyard during light rain, perfectly relaxed and centered, water flowing around his feet without disturbing his stillness. Symbolic visual metaphor for a mind that moves like water. Soft grey light, minimalist composition, meditative atmosphere.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "As shogunal intelligence officer, Munenori's greatest tests rarely involved a blade at all. Edo Castle was a nest of ambition — daimyo lords jockeying for favor, rivals spreading rumors, and constant undercurrents of potential rebellion in a country only a generation removed from open war. Munenori's role was to sense danger before it materialized: to walk through a room and know, from posture and breath and the placement of a hand, whether a man intended harm. It was the Heiho Kadensho applied not to combat, but to survival in a court of shifting loyalties.",
+      "image_prompt": "A formal Edo Castle audience chamber filled with seated daimyo lords in ceremonial dress, tension implied through subtle body language — averted eyes, tense shoulders, a hand resting too close to a concealed weapon. One composed figure near the entrance observes everyone with quiet, unreadable attention. Warm interior lighting, ornate architectural details.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "There is a story, likely embellished by later generations but revealing of his reputation nonetheless: that a would-be assassin, sent to test or eliminate the shogun's sword instructor, approached Munenori in a castle corridor with murder concealed in his heart. Munenori is said to have stopped, turned, and looked directly at the man — not with alarm, but with total, unblinking awareness. The assassin, the story goes, felt his intention read instantly, and understood that any attack would fail before it began. He turned and left without a word exchanged.",
+      "image_prompt": "A dimly lit castle corridor at night — an elderly samurai in formal robes has turned to face a shadowy figure a few paces away, his gaze calm but absolutely penetrating. The other man's posture shows sudden hesitation, weight shifting backward. No weapons drawn. Torchlight flickering against stone and wood.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Munenori's influence grew alongside his student, Tokugawa Iemitsu, who became the third shogun in 1623. Iemitsu trusted Munenori not only with his physical training but increasingly with matters of state, eventually appointing him to senior administrative positions rarely held by a mere swordsman. It was an extraordinary rise for a man whose family, only decades earlier, had been minor provincial retainers fighting for survival in Japan's endless civil wars. The sword that gives life had, quite literally, given Munenori a life beyond anything his ancestors could have imagined.",
+      "image_prompt": "A formal ceremony inside Edo Castle — a young shogun in elaborate robes formally bestowing rank and honors upon an older kneeling samurai swordsman. Attendants and officials watch from the sides. Rich reds and golds of Edo-period court dress, solemn dignified atmosphere.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Yet Munenori understood something dangerous about his position that many in his place would have missed: that his true power came not from the sword he carried, but from the restraint he showed in never needing to use it. In a court where a wrong word or a drawn blade could end a family's fortunes for generations, Munenori's genius was perpetual, disciplined stillness. Every day he served, he balanced on a blade's edge sharper than any weapon in his collection — one wrong instinct, one moment of the 'sickness of abiding,' and everything he had built could collapse in an instant.",
+      "image_prompt": "An elderly samurai standing motionless at the center of a vast, ornate castle hall, dwarfed by towering columns and gathered courtiers whose faces are turned toward him with a mixture of respect and calculation. The stillness of his posture is the visual focus amid a room charged with political tension. Dramatic shafts of light from high windows.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In his final years, Munenori continued teaching and refining the Shinkage-ryu tradition, ensuring it would survive him. His son, Yagyu Jubei Mitsuyoshi, became a legendary swordsman in his own right, and stories of the family — some true, many exaggerated into folklore — would eventually turn the Yagyu name into shorthand for the ultimate Japanese swordmaster in later fiction, film, and popular imagination. But Munenori himself, by all contemporary accounts, remained precisely what his philosophy demanded: quiet, watchful, and entirely uninterested in spectacle.",
+      "image_prompt": "An aging samurai teacher observing a younger swordsman practicing solo forms in a dojo courtyard at dusk, offering only a subtle nod of approval rather than words. The scene is calm, generational, and understated. Warm evening light, long shadows across the training ground.",
+      "ken_burns": "pan_right",
+      "character_ref": "yagyu",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Yagyu Munenori died in 1646, having served three generations of shoguns without ever being drawn into the plots, purges, and executions that consumed so many of his contemporaries at the Tokugawa court. In an era when falling out of favor could mean death, exile, or forced ritual suicide for an entire family line, Munenori's descendants continued to serve the shogunate in positions of trust for generations afterward. His life itself had become the ultimate demonstration of his own teaching.",
+      "image_prompt": "A serene Japanese garden at the edge of a temple, autumn leaves drifting onto still water, a modest stone memorial marker visible among moss-covered rocks. Quiet, contemplative, no figures present — a sense of a long life peacefully concluded. Soft diffused light.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "The Heiho Kadensho endures today as one of the foundational texts of Japanese martial philosophy, studied not only by practitioners of Yagyu Shinkage-ryu but by strategists, business leaders, and martial artists across disciplines who see in it something far larger than sword technique. Its central insight — that true mastery lies in reading a situation so completely that force becomes unnecessary — has outlived the age of the samurai by four centuries, translated and reinterpreted for readers who will never hold a katana.",
+      "image_prompt": "A modern-looking wooden table in soft natural light with an open historical Japanese manuscript, its pages showing artistic calligraphic texture, alongside a simple sheathed katana laid respectfully beside it. The scene bridges past and present through composition alone. Clean, contemplative, timeless lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "What made Munenori dangerous was never his blade. Any competent swordsman in Edo Japan could cut down an opponent. What made him singular was his refusal to let that ability define him — his understanding that the highest use of power is the discipline never to need it. In a violent age, he built an entire philosophy, and an entire career, around the radical idea that the greatest victories are the ones no one ever sees happen.",
+      "image_prompt": "A single candle flame perfectly still in a windless room, reflected in the polished blade of an unsheathed katana laid flat on dark lacquered wood. No hand touches it. The image is quiet, symbolic, and meditative — restraint as its own form of mastery.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "legacy",
+      "duration_seconds": 60,
+      "narration": "The Yagyu Shinkage-ryu school Munenori helped shape still exists today, its techniques and philosophical texts preserved and taught across Japan and internationally. His descendants' domain, Yagyu-Yanagi, is still remembered in local history, and the family crest can still be found on historical sites near Nara. Centuries after his death, martial arts scholars continue to debate and translate his writings, finding new relevance in his central claim: that the sword's truest purpose was never to end life, but to protect it.",
+      "image_prompt": "A traditional dojo interior in modern Japan, sunlight streaming through open shoji screens onto a polished wooden floor where an old scroll bearing the Yagyu family crest hangs on the wall alongside display swords. A quiet sense of living tradition continuing into the present day.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "There is a lesson in Munenori's life that transcends swordsmanship entirely: that true expertise is often invisible, expressed not through dramatic action but through the countless conflicts that never happen because someone skilled enough recognized them coming. In an age obsessed with visible strength, Munenori built a legacy on something far harder to demonstrate and far more valuable to master — the wisdom to know exactly when not to draw the blade at all.",
+      "image_prompt": "A wide, tranquil view of a mountain pass at dawn where a single path winds between the peaks, empty and peaceful, no sign of conflict anywhere in the landscape. Metaphor for a battle that never had to be fought. Soft golden morning light, mist in the valleys.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Four hundred years later, in a world far removed from castles and katanas, Munenori's central question still applies to anyone who has ever faced conflict: is your strength measured by what you can destroy, or by what you have the wisdom never to need to? The samurai who trained three shoguns and never once needed to prove his blade in mortal combat left behind an answer that still unsettles anyone who assumes power must always be shown to be real.",
+      "image_prompt": "A single sheathed katana resting untouched on a stand in an empty, sunlit room, dust motes visible in the light. The absence of a wielder makes the sword's stillness the entire subject — power held in complete reserve. Minimalist, quiet, contemplative composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles: a single letter, written in anger and pride, that a lord sent directly to Tokugawa Ieyasu himself — and triggered one of the most consequential wars in Japanese history. Naoe Kanetsugu: the retainer whose defiance lit the fuse of Sekigahara.",
+      "image_prompt": "A formal Japanese scroll letter (makigami) rolled into a scroll, wrapped in an outer paper cover (jobukuro) and tied closed with a red and white mizuhiki cord, resting on a lacquered tray beside an inkstone and brush, torchlight flickering across the paper. No wax seal, no European-style envelope, no folded tatou-style letter. The scene carries an ominous, consequential weight despite its stillness. Dark wood, dramatic shadow.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If this story of restraint, wisdom, and quiet mastery resonated with you, subscribe for new episodes every day. Next time: the letter that started a war, and the man bold enough to write it — Naoe Kanetsugu.",
+      "image_prompt": "Samurai Chronicles channel branding — a stylized Japanese castle silhouette on a hilltop against a vivid golden sunset, clean and cinematic. The landscape is serene, the horizon wide. The image feels both ancient and timeless.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep025-BGM.mp3",
+  "youtube_url": "https://youtu.be/5VYENsFS4RA",
+  "shorts_url": "https://youtu.be/r5sNLlI6FiY",
+  "scheduled_at": "2026-07-23 03:00"
+}
