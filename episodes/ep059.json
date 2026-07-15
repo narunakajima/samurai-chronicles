@@ -1,0 +1,245 @@
+{
+  "episode_id": "ep059",
+  "episode_title": "Dan-no-ura: The Final Destruction of the Taira Clan",
+  "youtube_title": "The Battle That Ended an Era: The Final Destruction of the Taira Clan",
+  "youtube_description": "A child emperor drowned in his grandmother's arms. A sacred sword — one of Japan's three imperial treasures — sank with them into the sea and has never been found. This is the story of the Battle of Dan-no-ura, the single afternoon that ended the Taira clan and the world they had ruled for a generation.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 A seven-year-old emperor...\n0:43 By the spring of 1185, the\n1:34 Commanding the Taira fleet...\n2:18 On the twenty-fourth day of the\n3:02 The morning tide pushed the...\n3:40 Tomomori moved between the...\n4:15 On the Minamoto side,...\n5:08 Just past midday, the current in\n5:54 Tomomori rowed to the ship...\n6:30 Taira no Tokiko, the...\n7:12 Tomomori watched it happen...\n7:44 By late afternoon, the battle...\n8:24 Minamoto no Yoshitsune had...\n9:08 The loss of the sword was\n9:45 More than a clan died at\n10:31 The strait itself would not let\n11:10 History has not judged the two\n11:49 For nearly a century, the Taira\n12:23 Next time on Samurai...\n12:49 If the fall of the Taira\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. The Tale of the Heike (Heike Monogatari), translated by Royall Tyler (Penguin Classics, 2012)\n2. Turnbull, Stephen. \"The Samurai Sourcebook\" (Cassell, 1998)\n3. Sansom, George. \"A History of Japan to 1334\" (Stanford University Press, 1958)\n\n\n🎵 Music: Slow Orchestra - Bittersweet Goodbyes by joshuaempyre (freesound.org) — CC BY 4.0\n#DanNoUra #TairaClan #GenpeiWar #Samurai #JapaneseHistory #HeianPeriod #MinamotoClan #Yoshitsune #NavalBattle #SamuraiChronicles",
+  "youtube_tags": [
+    "Dan-no-ura",
+    "Taira no Tomomori",
+    "Genpei War",
+    "Samurai",
+    "Japanese History",
+    "Heian Period",
+    "Taira clan",
+    "Minamoto clan",
+    "Yoshitsune",
+    "Naval Battle",
+    "Japan",
+    "Samurai Chronicles",
+    "Medieval Japan",
+    "Heike Monogatari",
+    "Feudal Japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "He tied two suits of armor to his body and stepped off the deck. Around him, the greatest fleet in Japan was sinking, and the emperor's grandmother had already vanished beneath the waves. What made a commander choose the sea over surrender?",
+  "shorts_narration": "1185. A tide turned mid-battle, and Japan's ruling clan had nowhere left to run. A child emperor. A stolen sword. A commander who chose the sea over surrender. This is Dan-no-ura.",
+  "shorts_hook_lines": [
+    "TIDE TURNED.",
+    "A DYNASTY DROWNED.",
+    "WHO WENT DOWN WITH IT?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Taira no Tomomori's face at the moment of his final decision — weathered skin, eyes calm and resigned beneath a battle-worn brow, faint reflection of burning ships in his stare. Dramatic single light source from the side, deep shadow across half his face, stormy grey backdrop. Vertical portrait composition filling the frame.",
+  "thumbnail_prompt": "Dramatic close portrait of Taira no Tomomori in dark red lacquered armor with butterfly crest, standing at the edge of a warship as it sinks around him, storm-grey sky, chaotic naval battle with burning ships blurred in the background, one hand gripping the ship's rail, calm and resigned expression. Cinematic scale, dramatic and historical, moody atmospheric lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "A seven-year-old emperor drowned in the strait. His grandmother chose the sea over surrender — and took one of Japan's three sacred treasures down with her. How did an entire clan collapse in a single afternoon?",
+      "image_prompt": "Extreme macro close-up shot, camera nearly at the waterline: a small red imperial fan and dark strands of hair sinking just beneath dark churning seawater, water filling most of the frame. Overcast storm-grey sky visible only as a thin sliver at the top edge. Muted, desaturated, somber color grading, no sunlight glare. Dramatic documentary style.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "By the spring of 1185, the Taira clan was finished as a ruling power — though they did not yet know it. Two catastrophic defeats, at Ichi-no-Tani and Yashima, had shattered their army and driven them from the capital they once commanded. What remained of the clan retreated west by sea, dragging with them the young Emperor Antoku and the three sacred treasures of the imperial line. Their last hope was the narrow strait of Shimonoseki, where fierce tidal currents could turn a fleet of ships into a weapon — if you knew how to use them.",
+      "image_prompt": "Wide cinematic shot of a fleet of medieval Japanese warships with red Taira banners sailing through a narrow strait at dusk, mountains rising on both sides, stormy orange sky, refugees and armored warriors visible on deck. Modern cinematic concept art style, dramatic lighting, film production illustration quality.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Commanding the Taira fleet was Taira no Tomomori — a general who had spent two years watching his clan lose everything, and who understood, better than anyone, exactly how desperate their position had become. The strait at Dan-no-ura ran fast and unpredictable, its currents shifting several times a day. In the morning, the tide flowed in the Taira's favor, massed as they were at the strait's western mouth. Tomomori knew this. His plan depended entirely on ending the battle before the sea turned against him.",
+      "image_prompt": "Portrait of Taira no Tomomori, weathered samurai commander wearing authentic Heian-period o-yoroi box-style armor (not later Sengoku-period armor) in dark red lacquer with butterfly crest, rounded kabuto helmet with wide sweeping fukigaeshi, historically accurate 12th-century Genpei War aesthetic. Standing on the deck of a warship at dawn, scanning the strait with a hardened, resigned expression. Dramatic side lighting, cinematic composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "On the twenty-fourth day of the third month, the two fleets closed the distance in the strait. Arrows rained across the water first, then grappling hooks and boarding parties as ships crashed together hull to hull. The Taira had built their reputation as sailors and archers, and it showed — their volleys tore into the Minamoto lines, forcing rowers to abandon their oars and dive for cover. For the first hours of the battle, victory seemed to belong entirely to the Taira.",
+      "image_prompt": "Chaotic naval battle scene, dozens of Japanese warships locked together in a narrow strait, arrows flying through smoke and spray, warriors boarding enemy vessels with swords drawn, dramatic overcast sky. Cinematic wide shot, intense action.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The morning tide pushed the Minamoto fleet backward, ship by ship, deeper into the strait's eastern waters. Minamoto no Yoshitsune's rowers fought the current as much as the enemy, and for a time it looked as though the entire invasion might simply be swept out of the fight before it truly began. Taira commanders allowed themselves, for the first time in months, to imagine winning.",
+      "image_prompt": "Minamoto warships being pushed back by strong ocean current in a narrow strait, oars breaking against churning waves, warriors struggling to hold formation under arrow fire, dramatic stormy lighting. Cinematic concept art.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Tomomori moved between the Taira ships in a small boat, shouting orders, steadying wavering captains, keeping the formation tight against the current's advantage. He had seen soldiers break before — men who fought bravely until the moment they sensed the tide of a battle shifting. His job was to make sure that moment never came. For now, at least, the line held.",
+      "image_prompt": "Taira no Tomomori standing in a small rowing boat between warships, shouting commands to his fleet, gripping a war fan, intense determined expression, spray and chaos around him. Dramatic cinematic lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "On the Minamoto side, Yoshitsune made a decision that would be remembered — and criticized — for centuries. Convention held that warriors did not target the rowers and helmsmen who steered enemy ships; they were not combatants, merely crew. Yoshitsune ordered his archers to kill them anyway. Without rowers, Taira ships could not maneuver. Without maneuver, the strait's currents would decide everything — and the tide was about to turn.",
+      "image_prompt": "Minamoto no Yoshitsune standing at the prow of his warship, pointing toward enemy vessels, giving a stern command to archers beside him, wind whipping his armor, grim resolve on his face. Cinematic dramatic lighting, intense composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.24
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Just past midday, the current in the strait reversed, as it always did — but this time it could not have come at a worse moment for the Taira. Ships that had been crippled and left drifting were now dragged directly into the heart of the Minamoto fleet. Formation collapsed into chaos. Boats that could no longer be rowed became floating targets, and the battle that had favored the Taira all morning turned against them within minutes.",
+      "image_prompt": "Aerial cinematic view of a narrow sea strait at midday, warships scattering in disarray as ocean currents visibly shift direction, chaos and collision between vessels, dramatic lighting breaking through storm clouds.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Tomomori rowed to the ship carrying the imperial family and gave a single order, one he had hoped never to give: prepare for the end. There would be no retreat, no negotiated surrender that spared the child emperor from Minamoto hands. He had seen enough of this war to know exactly what capture would mean for a young sovereign — and he was not going to let it happen.",
+      "image_prompt": "Taira no Tomomori aboard the imperial ship, kneeling before the child emperor's attendants, delivering grave news, other warriors bowing their heads in the background, storm-lit dramatic scene, somber atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.56,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Taira no Tokiko, the emperor's grandmother, took the boy in her arms. She told him they were going to a better capital, beneath the waves. Clutching him and the sacred sword of the imperial regalia, she stepped to the ship's edge and jumped into the strait. Around her, ladies of the court followed rather than face capture. The sword — said to have been passed down since the age of the gods — sank into the sea and was never recovered.",
+      "image_prompt": "Elderly noblewoman in white funeral robes embracing a young child emperor, standing at the edge of a warship above dark stormy water, other court ladies nearby with resolute expressions, dramatic tragic composition, muted color palette.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Tomomori watched it happen from across the water. There was nothing left to command, nothing left to save. He is said to have looked at what remained of his fleet and remarked that he had now seen everything there was to see in this life. Then, wearing two suits of armor to make sure he would not float, he stepped off his ship and let the strait take him too.",
+      "image_prompt": "Taira no Tomomori standing alone at the edge of his warship, wearing authentic Heian-period o-yoroi box-style armor (not later Sengoku-period armor), double-layered for weight, looking out over the sinking fleet with calm acceptance, stormy sea and grey sky, dramatic solemn lighting.",
+      "ken_burns": "zoom_out",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "By late afternoon, the battle was over. Most of the Taira fleet's leadership was dead, drowned rather than captured. Of the three sacred imperial treasures the emperor's family had carried into the strait, only two were recovered from the water. The sword was gone — and with it, a piece of the imperial line's claim to unbroken continuity that would trouble Japanese emperors for generations to come.",
+      "image_prompt": "Wreckage of warships floating on a calm sea strait at sunset after battle, debris and broken oars scattered across the water, Minamoto soldiers searching the wreckage in small boats, somber golden light.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Minamoto no Yoshitsune had won the war his brother Yoritomo would rule. Nearly the entire Taira leadership was gone — dead in the strait or executed in the weeks that followed. A single branch of the clan's line was spared: infants too young to be considered a threat, sent into exile rather than killed. The regime that had governed Japan from the shadow of the throne was, in a single afternoon, effectively erased.",
+      "image_prompt": "Minamoto no Yoshitsune standing on the deck of his flagship at sunset, wearing authentic Heian-period o-yoroi box-style armor (not later Sengoku-period armor) in white and gold lacquer with the Minamoto sasarindou crest, surveying the aftermath of the battle across the strait, victorious but weary expression, Minamoto banners flying behind him. Cinematic dramatic lighting.",
+      "ken_burns": "static",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.15
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The loss of the sword was not a minor footnote. For centuries afterward, Japanese emperors were enthroned using a replacement blade, and scholars and priests debated whether it carried the same legitimacy as the original — said to have been drawn from the tail of an eight-headed serpent in the age of the gods. Divers searched the strait for it on and off for generations. It has never been found.",
+      "image_prompt": "Symbolic image of an ornate ancient Japanese sword partially visible beneath dark ocean water, shafts of light penetrating from the surface, mysterious and reverent atmosphere. No divers, no boats, no human figures — sword and water only. Cinematic underwater concept art.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "More than a clan died at Dan-no-ura. The old order of the Heian court — centuries of aristocratic rule, where power flowed through poetry, lineage, and proximity to the emperor — died with it. Real authority now belonged to whichever warrior clan could hold it by force. Minamoto no Yoritomo would formalize that shift within a decade, but the shift itself had already happened, in the water, that afternoon.",
+      "image_prompt": "Symbolic contrast image: a faded, elegant Heian-era imperial court hall dissolving into mist on one side, a fortified samurai stronghold emerging on the other, dramatic transitional lighting, cinematic concept art.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The strait itself would not let the story go. Fishermen in the region began reporting crabs with shell patterns that resembled scowling human faces — samurai faces, they said, the drowned spirits of Taira warriors, unwilling to leave the water where they died. The Heike crab, as it became known, is still found in the waters off Shimonoseki today, a small, strange piece of folklore that refuses to fade.",
+      "image_prompt": "Close-up of a Japanese Heikegani crab shell with a distinct pattern resembling a scowling samurai face, resting on wet rocks at the edge of a strait at dusk, moody atmospheric lighting, macro cinematic detail. No people, no ships, no armor visible in frame — crab and rocks only.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "History has not judged the two commanders equally. Tomomori is remembered with a kind of tragic respect — a man who fought honorably for a doomed cause and chose his own end rather than surrender. Yoshitsune's tactics at Dan-no-ura, particularly the killing of unarmed rowers, unsettled even his own allies. He won the battle. He did not entirely win the argument about how it was won.",
+      "image_prompt": "Split cinematic composition: on one side Taira no Tomomori standing solemn in armor, on the other Minamoto no Yoshitsune with a conflicted expression, both figures facing away from each other, moody dramatic lighting.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "For nearly a century, the Taira had stood at the summit of Japanese power, closer to the throne than any clan before them. It took one war, one shifting tide, and one afternoon in a narrow strait to end it completely. Dan-no-ura remains, to this day, the story Japan tells itself about how quickly even the mightiest can fall.",
+      "image_prompt": "Wide serene aerial shot of the modern Shimonoseki Strait at sunset, contemporary real-world setting with a modern suspension bridge visible in the distance, calm waters where the battle once raged, a distant memorial statue silhouette on the shore. No traditional wooden boats or historical architecture — strictly present-day. Reflective contemplative mood, cinematic wide composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — four centuries later, a tea master would be ordered to take his own life by the most powerful man in Japan. No army. No rebellion. Just a bowl of tea, a friendship, and a betrayal neither man ever explained. Coming next.",
+      "image_prompt": "Both figures rendered as pure dark silhouettes with no visible facial detail, strongly backlit by a single candle so their forms are black outlines only: a Japanese tea master kneeling before a tea bowl in a dim tearoom, a powerful warlord's silhouette looming in the doorway behind him. Tense candlelit atmosphere, cinematic teaser framing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If the fall of the Taira moved you, subscribe to Samurai Chronicles — new episodes every day. The age of the samurai was only just beginning.",
+      "image_prompt": "Calm wide shot of the Shimonoseki Strait at golden hour, gentle waves catching the light, a lone torii gate silhouette on the distant shore. No people, no boats, no samurai figures — empty tranquil seascape only. Peaceful and reflective closing tone.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/QqvD-P1Gy-Y",
+  "shorts_url": "https://youtu.be/dUNKRj4_t-Y",
+  "scheduled_at": "2026-07-28 03:00"
+}

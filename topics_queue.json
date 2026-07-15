@@ -581,13 +581,14 @@
     },
     {
       "episode_id": "ep059",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Battle That Ended an Era: The Final Destruction of the Taira Clan",
       "era": "Heian",
       "priority": "A",
       "person": null,
       "angle": "military",
-      "notes": "Battle of Dan-no-ura 1185. The Taira flee into the sea. End of aristocratic Japan."
+      "notes": "Battle of Dan-no-ura 1185. The Taira flee into the sea. End of aristocratic Japan.",
+      "last_updated": "2026-07-15"
     },
     {
       "episode_id": "ep060",

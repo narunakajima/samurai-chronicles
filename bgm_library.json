@@ -366,5 +366,19 @@
     "used_in": [
       "ep055"
     ]
+  },
+  {
+    "id": "ep059-BGM",
+    "path": "BGM/ep059-BGM.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Slow Orchestra - Bittersweet Goodbyes by joshuaempyre (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep059"
+    ]
   }
 ]
