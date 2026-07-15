@@ -62,6 +62,10 @@
       {
         "episode_id": "ep023",
         "video_id": "THJvirjCvOY"
+      },
+      {
+        "episode_id": "ep041",
+        "video_id": "6AHtEVx8eiA"
       }
     ]
   },
@@ -84,6 +88,10 @@
       {
         "episode_id": "ep023",
         "video_id": "THJvirjCvOY"
+      },
+      {
+        "episode_id": "ep044",
+        "video_id": "7Ykcyj8LGQk"
       }
     ]
   },
@@ -110,6 +118,18 @@
       {
         "episode_id": "ep024",
         "video_id": "TemJZxs-Dm4"
+      },
+      {
+        "episode_id": "ep036",
+        "video_id": "bMS2kP4LwDA"
+      },
+      {
+        "episode_id": "ep042",
+        "video_id": "jxSgV5bvdso"
+      },
+      {
+        "episode_id": "ep050",
+        "video_id": "bu-V1DQQAzc"
       }
     ]
   },
@@ -156,6 +176,14 @@
       {
         "episode_id": "ep016",
         "video_id": "2XLSdO_vOTM"
+      },
+      {
+        "episode_id": "ep042",
+        "video_id": "jxSgV5bvdso"
+      },
+      {
+        "episode_id": "ep044",
+        "video_id": "7Ykcyj8LGQk"
       }
     ]
   },
@@ -184,6 +212,10 @@
       {
         "episode_id": "ep017",
         "video_id": "qoodETrDhSg"
+      },
+      {
+        "episode_id": "ep049",
+        "video_id": "mvHZ4WXgf9o"
       }
     ]
   },
@@ -202,6 +234,14 @@
       {
         "episode_id": "ep026",
         "video_id": "-qhJIwZz_tM"
+      },
+      {
+        "episode_id": "ep037",
+        "video_id": "5WXkNaNNTi8"
+      },
+      {
+        "episode_id": "ep049",
+        "video_id": "mvHZ4WXgf9o"
       }
     ]
   },
@@ -219,17 +259,21 @@
       },
       {
         "episode_id": "ep020",
-        "video_id": "r_ufysNlqlY"
+        "video_id": "dnq70SeCiBY"
       }
     ]
   },
   "katsuyori": {
     "display_name": "Katsuyori",
-    "playlist_id": null,
+    "playlist_id": "PLXQ9mc-4i9sE",
     "episodes": [
       {
         "episode_id": "ep014",
         "video_id": "rJiO7I-llw4"
+      },
+      {
+        "episode_id": "ep048",
+        "video_id": "QEEge92hrr8"
       }
     ]
   },
@@ -254,6 +298,10 @@
       {
         "episode_id": "ep007",
         "video_id": "ghHOBmFQvs8"
+      },
+      {
+        "episode_id": "ep043",
+        "video_id": "NzL2QAbEdmM"
       }
     ]
   },
@@ -283,13 +331,13 @@
     "episodes": [
       {
         "episode_id": "ep020",
-        "video_id": "r_ufysNlqlY"
+        "video_id": "dnq70SeCiBY"
       }
     ]
   },
   "kenshin": {
     "display_name": "Uesugi Kenshin",
-    "playlist_id": null,
+    "playlist_id": "PLAEx7jJy6qos",
     "episodes": [
       {
         "episode_id": "ep021",
@@ -298,12 +346,16 @@
       {
         "episode_id": "ep025",
         "video_id": "Y4lXH4vJOqQ"
+      },
+      {
+        "episode_id": "ep046",
+        "video_id": "P-tDWD21RAI"
       }
     ]
   },
   "shingen": {
     "display_name": "Takeda Shingen",
-    "playlist_id": null,
+    "playlist_id": "PLO_laGacTssU",
     "episodes": [
       {
         "episode_id": "ep021",
@@ -312,16 +364,28 @@
       {
         "episode_id": "ep025",
         "video_id": "Y4lXH4vJOqQ"
+      },
+      {
+        "episode_id": "ep047",
+        "video_id": "9QX356I_dvc"
+      },
+      {
+        "episode_id": "ep048",
+        "video_id": "QEEge92hrr8"
       }
     ]
   },
   "hattori_hanzo": {
     "display_name": "Hattori Hanzo",
-    "playlist_id": null,
+    "playlist_id": "PLCueIKO-wv3A",
     "episodes": [
       {
         "episode_id": "ep027",
-        "video_id": "McuZPwsB7co"
+        "video_id": "7_gERg0afq4"
+      },
+      {
+        "episode_id": "ep050",
+        "video_id": "bu-V1DQQAzc"
       }
     ]
   },
@@ -336,6 +400,156 @@
       {
         "episode_id": "ep019",
         "video_id": "ZPmQNASo0M0"
+      }
+    ]
+  },
+  "tomoe_gozen": {
+    "display_name": "Tomoe Gozen",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep028",
+        "video_id": "bp7x3ohwOEE"
+      }
+    ]
+  },
+  "honda_tadakatsu": {
+    "display_name": "Honda Tadakatsu",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep029",
+        "video_id": "XDDPJXuPsYs"
+      }
+    ]
+  },
+  "kuroda_kanbei": {
+    "display_name": "Kuroda Kanbei",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep030",
+        "video_id": "aqX-Kq6QAXI"
+      }
+    ]
+  },
+  "shimazu_yoshihiro": {
+    "display_name": "Shimazu Yoshihiro",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep031",
+        "video_id": "sK6KH3dFgLY"
+      }
+    ]
+  },
+  "mori_motonari": {
+    "display_name": "Mori Motonari",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep032",
+        "video_id": "UUlPhZ2-Lv0"
+      }
+    ]
+  },
+  "kusunoki": {
+    "display_name": "Kusunoki Masashige",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep033",
+        "video_id": "6Ncztplwf-c"
+      }
+    ]
+  },
+  "ii_naomasa": {
+    "display_name": "Ii Naomasa",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep034",
+        "video_id": "7WhCcJ3ERaY"
+      }
+    ]
+  },
+  "yagyu": {
+    "display_name": "Yagyu Munenori",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep035",
+        "video_id": "pa0_4JTb0Nk"
+      }
+    ]
+  },
+  "naoe_kanetsugu": {
+    "display_name": "Naoe Kanetsugu",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep036",
+        "video_id": "bMS2kP4LwDA"
+      }
+    ]
+  },
+  "kiyomori": {
+    "display_name": "Taira Kiyomori",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep037",
+        "video_id": "5WXkNaNNTi8"
+      }
+    ]
+  },
+  "motochika": {
+    "display_name": "Motochika",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep038",
+        "video_id": "RnVEGYGwYlo"
+      }
+    ]
+  },
+  "muneshige": {
+    "display_name": "Muneshige",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep039",
+        "video_id": "Z1eymIQqavs"
+      }
+    ]
+  },
+  "tachibana_ginchiyo": {
+    "display_name": "Tachibana Ginchiyo",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep039",
+        "video_id": "Z1eymIQqavs"
+      }
+    ]
+  },
+  "maeda_toshiie": {
+    "display_name": "Maeda Toshiie",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep040",
+        "video_id": "LTmal6JExhE"
+      }
+    ]
+  },
+  "hasekura": {
+    "display_name": "Hasekura",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep043",
+        "video_id": "NzL2QAbEdmM"
       }
     ]
   }

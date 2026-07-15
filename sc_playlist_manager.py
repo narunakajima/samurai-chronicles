@@ -182,35 +182,17 @@ def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
         updated = True
         appearances = len(char_data["episodes"])
 
-        if appearances == 1:
-            print(f"  {display_name}: 初登場（記録のみ）")
+        # このキャラクターのYouTube API呼び出しで例外が起きても、
+        # 記録済みのepisodes追記や他キャラクターの処理には影響させない。
+        # 1件の不正なvideo_id（過去データの混入等）がループ全体を
+        # 中断させ、character_playlists.json への保存自体を
+        # 丸ごと失わせる事故を防ぐための隔離。
+        try:
+            if appearances == 1:
+                print(f"  {display_name}: 初登場（記録のみ）")
 
-        elif appearances == 2:
-            # プレイリスト作成 → 出演済み全エピソードを追加（公開済みのみ）
-            playlist_id = _create_playlist(youtube, display_name)
-            char_data["playlist_id"] = playlist_id
-            added = 0
-            for entry in char_data["episodes"]:
-                if not entry["video_id"]:
-                    print(f"     ⚠️  {entry['episode_id']}: video_id 未登録のためスキップ")
-                    continue
-                ep_data = _load_episode_json(entry["episode_id"])
-                if ep_data and not _is_published(ep_data):
-                    print(f"     ⏳ {entry['episode_id']}: 予約公開中のためスキップ")
-                    continue
-                _add_to_playlist(youtube, playlist_id, entry["video_id"])
-                added += 1
-            print(f"     ✓ {added}本を追加")
-
-        else:
-            # 既存プレイリストに追加
-            playlist_id = char_data["playlist_id"]
-            if playlist_id:
-                _add_to_playlist(youtube, playlist_id, video_id)
-                print(f"  {display_name}: プレイリストに追加 ({appearances}回目)")
-            else:
-                # playlist_id が未登録（過去のアップロード漏れ）→ 今から作成してバックフィル
-                print(f"  {display_name}: playlist_id 未登録 → プレイリストを新規作成してバックフィル")
+            elif appearances == 2:
+                # プレイリスト作成 → 出演済み全エピソードを追加（公開済みのみ）
                 playlist_id = _create_playlist(youtube, display_name)
                 char_data["playlist_id"] = playlist_id
                 added = 0
@@ -222,12 +204,48 @@ def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
                     if ep_data and not _is_published(ep_data):
                         print(f"     ⏳ {entry['episode_id']}: 予約公開中のためスキップ")
                         continue
-                    _add_to_playlist(youtube, playlist_id, entry["video_id"])
-                    added += 1
-                print(f"     ✓ {added}本を追加（バックフィル完了）")
+                    try:
+                        _add_to_playlist(youtube, playlist_id, entry["video_id"])
+                        added += 1
+                    except Exception as e:
+                        print(f"     ⚠️  {entry['episode_id']} ({entry['video_id']}): 追加失敗 — {e}")
+                print(f"     ✓ {added}本を追加")
+
+            else:
+                # 既存プレイリストに追加
+                playlist_id = char_data["playlist_id"]
+                if playlist_id:
+                    _add_to_playlist(youtube, playlist_id, video_id)
+                    print(f"  {display_name}: プレイリストに追加 ({appearances}回目)")
+                else:
+                    # playlist_id が未登録（過去のアップロード漏れ）→ 今から作成してバックフィル
+                    print(f"  {display_name}: playlist_id 未登録 → プレイリストを新規作成してバックフィル")
+                    playlist_id = _create_playlist(youtube, display_name)
+                    char_data["playlist_id"] = playlist_id
+                    added = 0
+                    for entry in char_data["episodes"]:
+                        if not entry["video_id"]:
+                            print(f"     ⚠️  {entry['episode_id']}: video_id 未登録のためスキップ")
+                            continue
+                        ep_data = _load_episode_json(entry["episode_id"])
+                        if ep_data and not _is_published(ep_data):
+                            print(f"     ⏳ {entry['episode_id']}: 予約公開中のためスキップ")
+                            continue
+                        try:
+                            _add_to_playlist(youtube, playlist_id, entry["video_id"])
+                            added += 1
+                        except Exception as e:
+                            print(f"     ⚠️  {entry['episode_id']} ({entry['video_id']}): 追加失敗 — {e}")
+                    print(f"     ✓ {added}本を追加（バックフィル完了）")
+        except Exception as e:
+            print(f"  ⚠️  {display_name}: プレイリスト処理でエラー（{episode_id}の記録は保持） — {e}")
+        finally:
+            # 例外の有無にかかわらず、ここまでの追記を都度保存する。
+            # 後続キャラクターや後続エピソードの処理が失敗しても、
+            # 今回成功した分が失われないようにする。
+            _save_data(data)
 
     if updated:
-        _save_data(data)
         print(f"  ✓ character_playlists.json 更新済み")
 
 

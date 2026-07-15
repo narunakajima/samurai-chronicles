@@ -21,8 +21,8 @@ topics_queue.json から次のトピックを選び、動画生成まで一気�
 | STEP 4  | Google Driveへ移動 | 約1分 |
 | STEP 5A/5B | TTS生成 + 画像生成 16:9（並行） | 約10分 |
 | STEP 5A/5B | TTS（teaser・shorts）+ 画像生成 9:16（並行） | 約3分 |
-| STEP 5C | zoom_anchor 判定 | 約3〜5分 |
-| STEP 5D | 画像QA（＋再生成時 +3〜5分） | 約2〜3分 |
+| STEP 5C | 画像QA（＋再生成時 +3〜5分） | 約2〜3分 |
+| STEP 5D | zoom_anchor 判定 | 約3〜5分 |
 | STEP 6  | 動画生成（本編+Shorts） | 約20〜30分 |
 | STEP 6  | 字幕生成 | 約1分 |
 
@@ -691,47 +691,11 @@ python3 sc_image_gen.py --episode ep{NNN} --face           # Shorts冒頭顔ア�
 
 ---
 
-## STEP 5C — シーン画像解析・zoom_anchor 書き込み
+## STEP 5C — 画像QA結果の確認
 
-画像生成完了後、Claude が各シーン画像を直接 Read ツールで読み込み、ズーム焦点座標を判定して
-ep{NNN}.json に書き込む。**Gemini API は使わない。Claude のビジョンで直接判断する。**
-
-### 対象シーン（zoom_anchor を書き込む）
-
-- `character_ref` が設定されているシーン（1人構図）
-- かつ、image_prompt に "on the left"/"on the right" 系キーワードが **両方** 含まれない（2人構図でない）こと
-
-その他のシーン（character_ref なし、または2人構図）はスキップ（zoom_anchor は null のまま）。
-
-### 手順
-
-1. Google Drive の `images/` フォルダから S{id:02d}.png を Read ツールで読み込む
-2. 画像内の主被写体の重心を判断し、正規化座標で記録：
-   - `x`: 0.0=画面左端、0.5=中央、1.0=右端
-   - `y`: 0.0=画面上端、0.5=中央、1.0=下端
-   - 人物の「顔〜胸」あたりの重心を焦点にする（足元や背景ではなく）
-3. ep{NNN}.json の該当シーンに `"zoom_anchor": {"x": ..., "y": ...}` を書き込む
-
-### 例
-
-```json
-{
-  "scene_id": 3,
-  "character_ref": "musashi",
-  "zoom_anchor": {"x": 0.38, "y": 0.42},
-  ...
-}
-```
-
-### 完了報告
-
-zoom_anchor の処理結果は**画面に表示しない**。サイレントに実行して完了後は次のステップへ進む。
-
----
-
-## STEP 5D — 画像QA結果の確認
-
-STEP 5C 完了後、動画生成の**前**に実施する。
+STEP 5A/5B 完了後、zoom_anchor 判定の**前**に実施する。画像の再生成が発生しうる工程を
+先に終わらせてから zoom_anchor を判定することで、再生成後の構図とズレた座標を書いてしまう
+手戻りを防ぐ。
 
 ### ⚠️ 絶対ルール
 
@@ -764,7 +728,7 @@ cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライ�
 `all_ok: true`（全ファイル）の場合：
 
 ```
-✅ STEP 5D 完了 — 画像 QA: 全シーン問題なし → STEP 6 へ進みます
+✅ STEP 5C 完了 — 画像 QA: 全シーン問題なし → STEP 5D へ進みます
 ```
 
 そのまま即座に次のステップへ進む。
@@ -785,11 +749,52 @@ cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライ�
 WARNING がある場合のみユーザーに確認：
 ```
 {N}件の画像に問題が見つかりました。
-[A] 画像を再生成して修正（zoom_anchor も再判定）
-[B] 許容してそのまま動画生成へ進む
+[A] 画像を再生成して修正
+[B] 許容してそのまま zoom_anchor 判定へ進む
 ```
 
 ナレーション変更の選択肢は絶対に提示しない。
+再生成後、なお解決しない WARNING が残る場合（2回試行しても直らないモデル起因の問題等）は、
+再度ユーザーに許容可否を確認する。
+
+---
+
+## STEP 5D — シーン画像解析・zoom_anchor 書き込み
+
+STEP 5C（画像QA・再生成含む）が完了し、最終的な画像が確定した後に実施する。
+Claude が各シーン画像を直接 Read ツールで読み込み、ズーム焦点座標を判定して
+ep{NNN}.json に書き込む。**Gemini API は使わない。Claude のビジョンで直接判断する。**
+
+### 対象シーン（zoom_anchor を書き込む）
+
+- `character_ref` が設定されているシーン（1人構図）
+- かつ、image_prompt に "on the left"/"on the right" 系キーワードが **両方** 含まれない（2人構図でない）こと
+
+その他のシーン（character_ref なし、または2人構図）はスキップ（zoom_anchor は null のまま）。
+
+### 手順
+
+1. Google Drive の `images/` フォルダから S{id:02d}.png を Read ツールで読み込む
+2. 画像内の主被写体の重心を判断し、正規化座標で記録：
+   - `x`: 0.0=画面左端、0.5=中央、1.0=右端
+   - `y`: 0.0=画面上端、0.5=中央、1.0=下端
+   - 人物の「顔〜胸」あたりの重心を焦点にする（足元や背景ではなく）
+3. ep{NNN}.json の該当シーンに `"zoom_anchor": {"x": ..., "y": ...}` を書き込む
+
+### 例
+
+```json
+{
+  "scene_id": 3,
+  "character_ref": "musashi",
+  "zoom_anchor": {"x": 0.38, "y": 0.42},
+  ...
+}
+```
+
+### 完了報告
+
+zoom_anchor の処理結果は**画面に表示しない**。サイレントに実行して完了後は次のステップへ進む。
 
 ---
 
