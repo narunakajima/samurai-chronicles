@@ -570,13 +570,14 @@
     },
     {
       "episode_id": "ep058",
-      "status": "pending",
+      "status": "in_production",
       "title": "The War That Created the Samurai Class: Japan's Genpei War Explained",
       "era": "Heian",
       "priority": "A",
       "person": null,
       "angle": "key_event",
-      "notes": "1180-1185. Taira vs Minamoto. End of court aristocracy, rise of warrior rule."
+      "notes": "1180-1185. Taira vs Minamoto. End of court aristocracy, rise of warrior rule.",
+      "last_updated": "2026-07-15"
     },
     {
       "episode_id": "ep059",

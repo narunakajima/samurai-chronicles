@@ -1,0 +1,257 @@
+{
+  "episode_id": "ep058",
+  "episode_title": "The Genpei War: The War That Created the Samurai Class",
+  "youtube_title": "The War That Created the Samurai Class: Japan's Genpei War Explained",
+  "youtube_description": "Five years. Two clans. One war that rewrote Japan forever. When the last Taira warriors drowned at Dan-no-ura in 1185, a thousand years of aristocratic rule ended — and the age of the samurai began. This is the story of the Genpei War.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 Five years. Two clans. One war\n0:52 Heian court Japan. For nearly...\n1:50 The Taira clan shattered that...\n2:44 The match that lit the fire\n3:39 Yoritomo's first battle was a...\n4:40 In 1180, a young man arrived\n5:43 Through 1183, momentum...\n6:32 The Taira regrouped at...\n7:31 The Taira retreated to...\n8:28 On the twenty-fourth day of the\n9:15 Taira no Tokiko, grandmother...\n9:59 Not all the Taira died at\n10:54 While Yoshitsune celebrated...\n12:01 In 1192, Minamoto no Yoritomo...\n13:03 The Heian world didn't...\n14:12 Here is the great irony of\n15:05 The Genpei War established...\n16:05 The Genpei War produced...\n17:00 Next time on Samurai...\n17:24 If the story of the Genpei\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. The Tale of the Heike (Heike Monogatari), translated by Royall Tyler (Penguin Classics, 2012)\n2. Mass, Jeffrey P. \"Warrior Government in Early Medieval Japan\" (Yale University Press, 1974)\n3. Sansom, George. \"A History of Japan to 1334\" (Stanford University Press, 1958)\n\n#GenpeiWar #Samurai #JapaneseHistory #HeianPeriod #TairaMinamoto #SamuraiChronicles",
+  "youtube_tags": [
+    "Genpei War",
+    "Samurai",
+    "Japanese History",
+    "Heian Period",
+    "Taira clan",
+    "Minamoto clan",
+    "Dan-no-ura",
+    "Yoshitsune",
+    "Yoritomo",
+    "Kamakura Shogunate",
+    "Japan",
+    "Samurai Chronicles",
+    "Medieval Japan",
+    "Heike Monogatari",
+    "Battle",
+    "Feudal Japan",
+    "Warrior Class",
+    "Japanese Civil War"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "On a moonlit sea in 1185, the last heirs of Japan's ruling clan stood at the edge of their ships with nowhere left to run. A grandmother held the child Emperor close — and walked into the waves. What destroyed them? And what rose in their place?",
+  "shorts_narration": "1185. Japan's ruling clan stepped into the sea to die. Five years. Hundreds of battles. One moment that changed everything. The Genpei War didn't just end a dynasty — it created the samurai. And it started here.",
+  "shorts_hook_lines": [
+    "ONE WAR.",
+    "ARISTOCRATS FELL.",
+    "THE SAMURAI WERE BORN."
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of a Heian-period samurai warrior's face in the heat of battle, jaw set with fierce determination, wearing a black lacquered kabuto helmet with dramatic red lacing. One eye partially in shadow, lit from the side by burning ship fire, smoke rising behind. The face of a man watching an era end. Direct gaze, intense and resolute. Vertical portrait composition filling the frame.",
+  "thumbnail_prompt": "Epic aerial view of the naval Battle of Dan-no-ura, 1185. Hundreds of Heian-period warships locked in fierce combat on dark choppy waters, smoke and fire rising from burning vessels. In the foreground, a Minamoto warrior in black lacquered armor stands at the prow of a warship, sword raised. In the far distance, Taira ships with red banners sinking into the waves. Dawn light breaking over the mountains of Shimonoseki strait. Cinematic scale, dramatic and historical.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Five years. Two clans. One war that ended a thousand years of aristocratic rule, gave birth to the samurai class, and drowned Japan's most powerful family in the sea — so why did it happen, and who truly won?",
+      "image_prompt": "Dramatic wide shot of the Straits of Shimonoseki at dawn, 1185. The still water reflects the pale sky. Scattered debris of battle — broken oars, scraps of red silk, a shattered banner — floats on the surface. In the distance, the silhouette of a single surviving warship drifts through morning mist. The aftermath of a civilization's end. Haunting, cinematic, wide lens.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Heian court Japan. For nearly four centuries, aristocratic families in Kyoto had controlled Japan through poetry, ceremony, and elaborate ritual — not swords. The emperor was sacred, untouchable, and almost completely powerless. Real authority belonged to the Fujiwara regents, who governed through marriage alliances and court intrigue. Warriors existed, but as servants — hired muscle for the nobility. They kept order in the provinces, suppressed rebellions, and returned to their inferior place in the hierarchy. Japan in 1180 was a world where the brush was mightier than the sword. That was about to change.",
+      "image_prompt": "Wide view from behind of the Heian-period imperial court hall in Kyoto, circa 1180 — looking over the heads of seated noble figures in layered formal robes toward an ornate gold lacquered ceremonial screen at the far end of the hall. Incense smoke drifts upward. Soft golden light through shoji panels. The composition seen entirely from behind — no faces visible. In the far background near the screen, two small silhouettes of armored guards stand almost invisible in the deep shadows. Serene, ceremonial, painterly.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The Taira clan shattered that order first. Under their leader Taira no Kiyomori, warriors had clawed their way into the highest circles of power. Kiyomori maneuvered his daughter into the Emperor's bed, and when she bore a son in 1178, that son became Emperor Antoku — making Kiyomori the grandfather of a god. He moved the capital, rewrote court hierarchies, and accumulated wealth that no warrior had ever held. The Taira had done the unthinkable: they had become the nobility they once served. And in doing so, they made enemies of everyone.",
+      "image_prompt": "Powerful Heian-period warlord Taira no Kiyomori seated on an elevated dais in formal court robes layered over his armor, in a grand hall decorated with Taira clan butterfly crests. His expression is proud and imperious, eyes sharp with the calculation of a man who rewrote the rules. Attendants and court nobles bow before him. Rich lacquered interiors, red and black color palette. Dramatic downward lighting emphasizing his absolute authority. Historical cinematic concept art.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The match that lit the fire was struck in the fourth month of 1180. Prince Mochihito, passed over for the throne, issued a secret call to arms to Minamoto warriors across Japan: destroy the Taira. The message was intercepted. Mochihito was killed. But the call had already spread. In the east — far from Kyoto — a disgraced Minamoto heir named Yoritomo heard the summons. He had been exiled since childhood, spared only because he was too young to be a threat. He was twenty-nine. He was not young anymore.",
+      "image_prompt": "A Minamoto warrior on horseback at dawn in the eastern Japanese countryside, circa 1180, surrounded by a handful of mounted followers raising white banners bearing the Minamoto clan crest. The rider is still and resolute, gazing toward the horizon. The landscape is rugged — pine forests, distant mountains, autumn mist. A single rolled message scroll visible in the rider's hand. A sense of beginning, of something irreversible set in motion. Wide panoramic shot, cool morning light.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Yoritomo's first battle was a disaster. At Ishibashiyama, Taira forces outnumbered his handful of followers and scattered them into the forests. He fled into the mountains and hid for days. A different man might have given up. Instead, Yoritomo understood something that Kiyomori had underestimated: the east was Minamoto territory. Clan after clan that had chafed under Taira domination came to him. By the time Yoritomo emerged from hiding, he commanded not a handful of men but an army. The Taira in Kyoto received the reports and, for the first time, felt uneasy.",
+      "image_prompt": "Dense forested mountain valley in eastern Japan, autumn 1180. A small group of defeated samurai moving through thick bamboo and pine groves in near darkness, their white banners torn and muddied. One figure pauses, looking back toward the valley below where distant Taira fires still glow. His expression is not despair but calculation — the look of a man already planning his return. Misty, atmospheric, the sense of survival and regrouping. Dramatic backlighting filtering through the trees.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In 1180, a young man arrived at Yoritomo's camp in the east — Minamoto no Yoshitsune, Yoritomo's younger half-brother, raised in a mountain monastery after their father's defeat. The two men could not have been more different. Yoritomo was a calculating politician, building alliances and managing power from behind the lines. Yoshitsune was a fighter — reckless, brilliant, incapable of sitting still. Where Yoritomo thought in years, Yoshitsune thought in moments. Together they were formidable. But their differences would eventually cost everything. For now, the Minamoto had a commander who could win battles.",
+      "image_prompt": "Minamoto no Yoshitsune seen from behind and slightly to the right, standing at the edge of a military camp at dusk, gazing eastward across a darkening plain. He wears armor with a tachi sword hung at his hip. His posture is lean and restless — weight shifted, poised to move at any moment. The warm glow of camp torches behind him silhouettes his frame dramatically. In the distance, the silhouettes of mountains against a last pale strip of sky. No bow. Dramatic backlighting, cinematic rear-profile composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Through 1183, momentum shifted decisively. Minamoto general Kiso no Yoshinaka swept through the mountain provinces and drove the Taira out of Kyoto entirely. The Taira fled westward, taking with them the young Emperor Antoku and the three sacred imperial regalia — the sword, the mirror, and the jewel. In one stroke, the symbols of legitimate imperial authority had moved from the capital to a warship. Kyoto, the center of civilization for four hundred years, was now occupied by soldiers. The Heian dream was cracking.",
+      "image_prompt": "A column of Taira clan warriors and court nobles in hasty retreat through Kyoto's western gates at dusk, 1183. Red banners bearing the Taira butterfly crest hang limp and disordered. Aristocratic women in disheveled layered robes ride in ox-carts. Warriors in red-laced armor flank the procession, faces grim. In the distance behind them, smoke rises as Minamoto forces begin to enter the capital from the east. The faces of the Taira show disbelief — this was not supposed to happen. Cinematic wide shot, somber golden light.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The Taira regrouped at Ichi-no-Tani in early 1184, a fortified coastal position with steep cliffs behind and the ocean in front. It seemed impregnable. Yoshitsune's response was to do what no rational commander would attempt: he led a cavalry force to the cliff's edge — and charged straight down. Horses stumbled. Men fell. Some died before reaching the bottom. But enough survived to strike the Taira fortifications from the rear at the exact moment the main force hit from the front. The line broke. The Taira fled to their ships. Yoshitsune had done the impossible.",
+      "image_prompt": "A breathtaking cavalry charge down an impossibly steep forested cliff face at Ichi-no-Tani, 1184. Yoshitsune on horseback at the front, sword drawn, descending through pine trees at a near-vertical angle — eyes fierce with reckless certainty. Below, the Taira encampment and wooden palisades smoke against the glittering sea. Other mounted samurai in white-laced armor follow him over the edge, some barely in control of their horses. The sheer audacity of the moment captured in a dramatic diagonal composition. Morning light slashing through the forest canopy.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The Taira retreated to Yashima on Shikoku and rebuilt their fleet. Yoshitsune would not let them rest. In early 1185, he crossed the Inland Sea in a winter storm that no sailor would willingly face, landed with a handful of men, and set fire to the surrounding villages. The Taira, panicked and uncertain of the size of the attacking force, abandoned Yashima and fled to their ships. It was a masterpiece of psychological warfare — achieved through audacity rather than numbers. The Taira now had only the sea. And Yoshitsune was already planning how to take that from them too.",
+      "image_prompt": "A small fleet of Minamoto warships crossing a storm-wracked sea at night, the lead vessel surging through massive waves. Yoshitsune stands at the prow — lit by flashes of lightning, steady while sailors struggle around him — eyes fixed on the dark coastline ahead. Behind him in the far distance, the first fires of Yashima begin to glow orange on the horizon. Dramatic stormy sea composition, diagonal rain lines, intense contrast of darkness and flame. Cinematic and relentless.",
+      "ken_burns": "pan_right",
+      "character_ref": "yoshitsune",
+      "zoom_anchor": {
+        "x": 0.53,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "On the twenty-fourth day of the third month, 1185, both fleets met at Dan-no-ura in the Straits of Shimonoseki. The Taira knew these waters, had more ships, and for the first hours the current worked in their favor. The Minamoto line buckled. Then the tide literally turned. As the current reversed, the Minamoto surged forward. A Taira commander defected mid-battle and revealed the location of the child Emperor's ship. What had been a contest became a collapse. Within hours, the world's mightiest warrior clan had nothing left. Nothing but the sea.",
+      "image_prompt": "Vast naval battle at Dan-no-ura, the Straits of Shimonoseki, 1185. Hundreds of Heian-period warships locked in fierce combat — red-bannered Taira vessels against white-bannered Minamoto ships. Arrows fill the sky in dense arcs. Fire spreads between vessels. Samurai leap between ships in close combat. Smoke rises across the entire strait. In the center of the carnage, a single ornate Taira imperial barge surrounded by desperate defenders. Epic overhead panoramic view capturing the chaos of history-ending battle. Dramatic midday light filtering through smoke.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Taira no Tokiko, grandmother of the seven-year-old Emperor Antoku, understood what capture meant. The Minamoto would take the Emperor and strip the Taira of their last claim to legitimacy. So she gathered the child in her arms, told him there was a paradise beneath the waves, and walked into the sea. Others followed. The sacred imperial sword Kusanagi — one of Japan's three divine regalia — was lost to the depths that day and never recovered. A child emperor, a sacred blade, a dynasty. All gone beneath the waters of Dan-no-ura.",
+      "image_prompt": "Heartbreaking scene on the deck of a Taira warship at Dan-no-ura. An elderly court lady in disheveled formal robes holds a small child — the child Emperor in ceremonial court dress — close to her chest at the ship's railing. The sea churns below. Around them, other court ladies and wounded warriors face their end with quiet dignity. The elderly woman's expression is serene with terrible resolve; the child looks trusting. Minamoto ships close in from the background. Intimate, devastating close composition. Deep crimson sunset light.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Not all the Taira died at Dan-no-ura. The women were pulled from the water alive — court ladies, noblewomen, warriors' wives. Some became nuns. Some were distributed among Minamoto commanders as prizes of war. Taira children who survived were hunted down over the following years and killed. Kiyomori himself had died of fever in 1181, before he could see his life's work destroyed. Of the hundreds of Taira nobles who had controlled Japan just five years earlier, almost none remained. The clan that had defied the old order was itself erased.",
+      "image_prompt": "Close portrait of three surviving Taira noblewomen after Dan-no-ura, 1185. Upper body framing only. Their elaborate Heian-period layered court robes are disheveled and damp, hair undone. Their expressions are dignified but hollow with grief and defeat — not weeping, but irreparably changed. Minamoto guards visible as blurred silhouettes at the edges. Muted, desaturated colors, soft overcast dusk light. Intimate emotional portrait, no water or wreckage visible — only faces and ruined elegance.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "While Yoshitsune celebrated victories, Yoritomo was building something that would outlast them all. From his base at Kamakura, he watched the capital, the court, and his brother with equal calculation. He refused to enter Kyoto himself, refused to be drawn into court politics, and refused to let military victory become personal celebration. What Yoritomo wanted was not fame. He wanted a system — a government of warriors, built for warriors, located far from the corrupting influence of the imperial court. He would not make Kiyomori's mistake: reaching for the court's world and being absorbed by it.",
+      "image_prompt": "Minamoto no Yoritomo seated alone in austere military headquarters in Kamakura, studying administrative documents spread on a low table. He wears simple high-quality black armor over formal dress, his expression cold and deliberate. The room is sparse — no court ornamentation, no silk screens, just polished wood, candles, and the tools of governance. A single oil lamp illuminates his face from one side, deep shadows behind. The stark contrast with the decadent Taira court is absolute. The face of a man designing a new world.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "In 1192, Minamoto no Yoritomo received the title of Seii-tai-shōgun — the Barbarian-Subduing Generalissimo. For Yoritomo, it was not a court honor but the foundation of a parallel government. The Kamakura shogunate administered warriors, managed provinces, settled legal disputes among the military class, and collected its own revenues — all without asking the imperial court for permission. Japan now had two governments: the ceremonial court in Kyoto and real power in Kamakura. The emperor was still sacred. But a warrior now decided what that meant.",
+      "image_prompt": "Formal investiture ceremony at Kamakura, 1192. A senior figure in ceremonial robes presents an official scroll to Yoritomo, who kneels in controlled reverence before it. Around him, his senior commanders in full armor bow in unison. The hall is impressive but unmistakably military — not a court ceremonial space but a warrior's hall of governance. Torchlight, solemn ceremony, the founding of a seven-hundred-year institution. Wide shot capturing the scale and historical gravity of the moment.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The Heian world didn't disappear overnight. Aristocratic families still lived in Kyoto, still held their titles, still performed their ancient rituals. The emperor still reigned — he just no longer ruled. This was the bargain that would define Japan for the next seven centuries: imperial legitimacy in exchange for political irrelevance. The court survived as a cultural institution — a source of ceremony, aesthetics, poetry, and divine sanction for whoever held real power. Warriors would fight over who controlled Japan. The emperor would bless whoever won. An elegant arrangement that served everyone. Except, perhaps, the emperor.",
+      "image_prompt": "Split composition: the left half shows the Imperial palace in Kyoto — refined and beautiful, incense smoke rising, court nobles in ceremonial robes performing an ancient seasonal ceremony in a garden. The right half shows a Kamakura administrative hall — warriors in armor around a table reviewing land records and legal documents, swords visible on stands. The same era, two completely different Japans. Visual metaphor for the divided power structure post-1185. Cinematic framing, warm light on both sides.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Here is the great irony of the Genpei War: neither the Taira nor the Minamoto began as rivals to the court. Both clans were originally offshoots of the imperial family — surplus princes given surnames and sent to the provinces to manage the frontiers. They were created by the court, trained by the court, and spent generations serving the court. The Taira wanted to join the nobility. The Minamoto wanted to replace it with something new. In trying to escape the court's world, they didn't destroy it — they created a structure that would depend on it for legitimacy forever after.",
+      "image_prompt": "Two war banners hanging side by side in a shadowed hall: on the left, a deep red banner with a large stylized butterfly silhouette in darker red — the Taira clan symbol. On the right, a white banner with a stylized three-petal flower silhouette — the Minamoto clan symbol. Between them, complete shadow. No text, no writing, no people — only the two banners and the darkness between them. Dramatic underlighting from below, the rest in shadow. Wide symmetric composition. Visual metaphor for two clans from the same imperial line.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The Genpei War established the template for every Japanese civil conflict for the next seven hundred years. The pattern repeats: a warrior clan accumulates power, challenges the existing order, triggers a military response, and the war reshapes Japan's political landscape. Whoever wins establishes a new shogunate — always alongside the imperial court, never instead of it, because imperial legitimacy remains necessary for ruling Japan. The Onin War, the chaos of the Sengoku period, the rise of Nobunaga, Hideyoshi, Ieyasu — all of it follows the script written at Dan-no-ura in 1185.",
+      "image_prompt": "Vast aerial panoramic view of medieval Japan — a sweeping landscape from high above showing Kyoto's court district nestled in mountains, mountain passes where armored armies march, and coastal waters dotted with warships on the Inland Sea. The entire geography of conflict captured in one image: east to west, court to province, city to sea. Epic in scale, dramatic storm clouds parting over the islands, golden light catching the distant waters of Shimonoseki.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The Genpei War produced Japan's greatest literary epic. The Heike Monogatari — the Tale of the Heike — was compiled within a generation of the war's end and recited by blind monks for centuries after. Its opening lines became among the most famous in Japanese literature: the sound of the Gion Shoja bells echoes the impermanence of all things. The Heike told the Taira's story not as a villain's defeat but as tragedy — a clan too proud, too beautiful, too close to the sun. In Japan, it is the losers who are remembered with the deepest feeling.",
+      "image_prompt": "A blind biwa hoshi — a blind lute monk — performing by firelight in a humble Heian-period roadside inn, surrounded by a small hushed audience of common travelers and pilgrims in simple Heian-period traveling clothes and straw sandals. No samurai or warriors present — only the monk and ordinary people. The monk's weathered face is serene with quiet grief as he recites from memory. Firelight casts warm shadows across the small circle of listeners. Outside the open shoji panels, winter darkness. Intimate, atmospheric, timeless. No swords, no armor.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — we return to Dan-no-ura. A seven-year-old emperor. A grandmother's impossible choice. And a sacred sword lost to the sea forever. The battle that ended an era. Coming next.",
+      "image_prompt": "Dramatic close-up of a Taira court lady at the stern of a warship at Dan-no-ura, holding a small child Emperor in ceremonial court robes. Dark churning sea below, smoke and battle chaos visible behind them, the setting sun casting everything in deep crimson. The image framed as a cliffhanger — a moment suspended at the edge of an impossible decision. Cinematic, heartbreaking, lit as though the world itself is ending.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If the story of the Genpei War moves you, subscribe to Samurai Chronicles — new episodes every day. The age of the samurai has only just begun.",
+      "image_prompt": "Peaceful panoramic view of a Japanese strait at golden hour — calm mirror-like water reflecting golden sky, distant forested mountains silhouetted on both shores. No boats, no human presence, no buildings — only still water, mountains, and sky. The natural beauty of the geography where Dan-no-ura was fought, now utterly quiet. Wide, vast, contemplative. Late afternoon golden light dissolving into the surface of the water. Serene and timeless.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_source": "BGM/ep024-BGM.mp3",
+  "youtube_url": "https://youtu.be/xLGrZRfuwTQ",
+  "shorts_url": "https://youtu.be/4eis9rczSkw",
+  "scheduled_at": "2026-07-25 03:00"
+}
