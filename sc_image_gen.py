@@ -212,15 +212,21 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
                     break
                 selected_ids.add(remaining[i]["scene_id"])
 
+        # --scenes 指定がある場合は selected_ids をさらに絞り込む
+        if scene_filter:
+            selected_ids = {sid for sid in selected_ids if sid in scene_filter}
+
         # scene_id 順にソート
         scenes = sorted([s for s in all_scenes if s["scene_id"] in selected_ids], key=lambda s: s["scene_id"])
         out_dir = DRIVE_BASE / episode_id / "images_shorts"
         gen_func = generate_one_image_portrait
         label = "Shorts縦長(9:16)"
-        # 再生成時に旧ファイルが残らないよう既存PNGをクリア
+        # 再生成対象のファイルのみ削除（指定外シーンの既存PNGは保持）
         if out_dir.exists():
-            for f in out_dir.glob("S*.png"):
-                f.unlink()
+            for s in scenes:
+                fp = out_dir / f"S{s['scene_id']:02d}.png"
+                if fp.exists():
+                    fp.unlink()
     else:
         scenes = ep["scenes"]
         if scene_filter:

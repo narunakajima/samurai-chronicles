@@ -559,13 +559,14 @@
     },
     {
       "episode_id": "ep057",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Ultimatum Letter That Started a War: Naoe Kanetsugu's Defiance of Tokugawa",
       "era": "Sengoku",
       "priority": "A",
       "person": "naoe_kanetsugu",
       "angle": "key_event",
-      "notes": "The Naoe Letter 1600. Directly triggered the Sekigahara sequence."
+      "notes": "The Naoe Letter 1600. Directly triggered the Sekigahara sequence.",
+      "last_updated": "2026-07-15"
     },
     {
       "episode_id": "ep058",
@@ -864,6 +865,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-07-14",
+  "last_updated": "2026-07-15",
   "total_topics": 87
 }
