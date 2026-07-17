@@ -706,6 +706,20 @@ STEP 5A/5B 完了後、zoom_anchor 判定の**前**に実施する。画像の�
   ナレーション・JSONの修正は一切提案しない（＝TTS再生成は絶対に発生させない）。
   ナレーションの品質はSTEP 3Aで保証済みとみなす。
 
+### 自動リトライの仕組み（`sc_image_gen.py` 内で完結）
+
+各シーンの生成は、`sc_image_gen.py` 内部で以下の3段階まで自動的に試行される
+（Claude が手動でプロンプトを書き換えて再実行する必要はない）：
+
+1. **1回目**: 元のプロンプトで生成
+2. **2回目**（QA失敗時）: 検出された issue の種類（TEXT / ARCHITECTURE / DISTORTION / MISMATCH）
+   に応じた具体的な修正指示を自動でプロンプトに追記して再生成
+3. **3回目**（それでもQA失敗時）: 修正指示に加えて「構図を大きく変える」指示を追記して再生成
+
+3回試行してもQAが通らなかった場合のみ、そのシーンは `warnings` に残る。
+つまりこの STEP で読み込む `image_qa_result*.json` は**すでに自動修正を尽くした後の最終結果**であり、
+残っている WARNING はモデルの限界に起因する可能性が高い。
+
 ### チェック内容
 
 Google Drive の以下のファイルを読み込む：
@@ -718,10 +732,7 @@ cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライ�
 
 各JSONの `all_ok` を確認する：
 - `all_ok: true` → 問題なし
-- `all_ok: false` → `warnings` 配列に `{scene_id, issues}` が入っている
-
-`image_qa_result_face.json` の WARNING は `run_face` 内で自動再生成済み（最大2回）。
-`all_ok: false` のまま残っている場合は2回失敗した状態なので **[B] 許容** を推奨する。
+- `all_ok: false` → `warnings` 配列に `{scene_id, issues}` が入っている（＝3回試行済みで解決しなかったシーン）
 
 ### レポート出力フォーマット
 
@@ -748,14 +759,14 @@ cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライ�
 
 WARNING がある場合のみユーザーに確認：
 ```
-{N}件の画像に問題が見つかりました。
-[A] 画像を再生成して修正
+{N}件の画像に問題が見つかりました（自動修正3回試行済み・未解決分）。
+[A] さらにプロンプトを手動調整して再生成
 [B] 許容してそのまま zoom_anchor 判定へ進む
 ```
 
 ナレーション変更の選択肢は絶対に提示しない。
-再生成後、なお解決しない WARNING が残る場合（2回試行しても直らないモデル起因の問題等）は、
-再度ユーザーに許容可否を確認する。
+[A] を選んだ場合、`sc_image_gen.py --scenes N,M` の再実行でもさらに自動3段階リトライが走る。
+それでも解決しない場合は、再度ユーザーに許容可否を確認する。
 
 ---
 

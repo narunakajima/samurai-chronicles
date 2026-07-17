@@ -128,6 +128,95 @@ def generate_one_image(client, scene_prompt: str, character_ref: str, output_pat
     return _generate_with_retry(client, full_prompt, output_path)
 
 
+def _correction_note(issues: list) -> str:
+    """QAで見つかった issue の種類ごとに、プロンプトへ追記する修正指示を組み立てる。"""
+    notes = []
+    seen = set()
+    for issue in issues:
+        prefix = issue.split(":", 1)[0].strip().upper()
+        if prefix == "TEXT" and prefix not in seen:
+            notes.append(
+                "Absolutely no readable text, letters, calligraphy, signage, "
+                "banners with writing, or watermarks anywhere in the image."
+            )
+        elif prefix == "ARCHITECTURE" and prefix not in seen:
+            notes.append(
+                "Ensure all armor, clothing, and architecture are strictly "
+                "authentic to the correct historical period as described — "
+                "no anachronistic later-era styles."
+            )
+        elif prefix == "DISTORTION" and prefix not in seen:
+            notes.append(
+                "Render all hands, faces, and anatomy with correct, natural "
+                "proportions — no malformed or distorted body parts."
+            )
+        elif prefix == "MISMATCH" and prefix not in seen:
+            notes.append(
+                "Follow the scene description exactly — do not add extra "
+                "elements or deviate from the specified composition, subject, "
+                "and setting."
+            )
+        seen.add(prefix)
+    return " ".join(notes)
+
+
+def build_retry_prompt(base_prompt: str, issues: list, level: int) -> str:
+    """
+    QA失敗時の再生成用プロンプトを組み立てる。
+    level 2: 問題の種類に応じた具体的な修正指示を追記。
+    level 3: 修正指示に加えて、大きく構図を変える指示を追記。
+    """
+    note = _correction_note(issues)
+    prompt = base_prompt
+    if note:
+        prompt = f"{prompt}\n\nIMPORTANT CORRECTIONS: {note}"
+    if level >= 3:
+        prompt = (
+            f"{prompt}\n\nUse a substantially different camera angle, framing, "
+            "and composition from a typical rendering of this scene, to avoid "
+            "repeating the same generation issues."
+        )
+    return prompt
+
+
+def _generate_and_qa(client, gen_func, base_prompt: str, char_ref: str,
+                      out_file: Path, scene_id: int, max_attempts: int = 3) -> dict:
+    """
+    生成 → QA を行い、クリティカル（QA失敗）なら自動的にプロンプトを修正して
+    最大 max_attempts 回まで再試行する。
+    attempt 1: 元のプロンプトのまま
+    attempt 2: QA issue の種類に応じた修正指示を追記
+    attempt 3: 修正指示に加えて構図を大きく変える指示を追記
+    それでも解決しない場合は最終結果をそのまま返す（呼び出し元でユーザー確認）。
+    """
+    qa_result = {"scene_id": scene_id, "ok": False, "issues": ["画像生成失敗（QA未実行）"]}
+    prompt = base_prompt
+    for attempt in range(1, max_attempts + 1):
+        suffix = f"（{attempt}回目）" if attempt > 1 else ""
+        print(f"生成中{suffix}... ", end="", flush=True)
+        try:
+            ok = gen_func(client, prompt, char_ref, out_file)
+        except Exception as e:
+            print(f"⚠️  エラー: {e}")
+            return qa_result
+        if not ok:
+            print("⚠️  画像データなし")
+            return qa_result
+        print(f"✓ {out_file.name}", end="", flush=True)
+        qa_result = qa_image_with_gemini(client, out_file, base_prompt, scene_id)
+        if qa_result["ok"]:
+            print("  [QA: OK]")
+            return qa_result
+        print(f"  [QA: ⚠️  {len(qa_result['issues'])}件]")
+        if attempt < max_attempts:
+            next_level = attempt + 1
+            print(f"     → {'構図を変更して' if next_level == 3 else '修正指示付きで'}自動再生成します")
+            prompt = build_retry_prompt(base_prompt, qa_result["issues"], next_level)
+        else:
+            print(f"     → {max_attempts}回試行して未解決。ユーザー確認へ")
+    return qa_result
+
+
 def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: int) -> dict:
     """生成画像をGemini Visionで自動チェックする。問題があれば issues に格納する。"""
     try:
@@ -254,22 +343,11 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
         out_file = out_dir / f"S{scene_id:02d}.png"
 
         ref_label = f" [{char_ref_name}]" if char_ref_name else ""
-        print(f"  S{scene_id:02d}{ref_label} 生成中... ", end="", flush=True)
-        try:
-            ok = gen_func(client, prompt, char_ref, out_file)
-            if ok:
-                print(f"✓ {out_file.name}", end="", flush=True)
-                saved.append(out_file)
-                qa = qa_image_with_gemini(client, out_file, prompt, scene_id)
-                qa_results.append(qa)
-                if qa["ok"]:
-                    print("  [QA: OK]")
-                else:
-                    print(f"  [QA: ⚠️  {len(qa['issues'])}件]")
-            else:
-                print("⚠️  画像データなし")
-        except Exception as e:
-            print(f"⚠️  エラー: {e}")
+        print(f"  S{scene_id:02d}{ref_label} ", end="", flush=True)
+        qa = _generate_and_qa(client, gen_func, prompt, char_ref, out_file, scene_id)
+        qa_results.append(qa)
+        if out_file.exists():
+            saved.append(out_file)
 
         if scene != scenes[-1]:
             time.sleep(1)
@@ -345,32 +423,10 @@ def run_face(episode_id: str):
     print(f"  出力先: {out_file}")
     print(f"{'━'*60}\n")
 
-    # 初期値は失敗状態。生成成功＋QA実行で上書きする
-    # （画像データなし・例外時に初期値のまま all_ok:true で保存される穴を防ぐ）
-    qa_result = {"scene_id": 0, "ok": False, "issues": ["画像生成失敗（QA未実行）"]}
-    for attempt in range(2):
-        print(f"  S00_face 生成中{'（再生成）' if attempt else ''}... ", end="", flush=True)
-        try:
-            ok = generate_one_image_portrait(client, face_prompt, char_ref, out_file)
-            if ok:
-                print(f"✓ {out_file.name}", end="", flush=True)
-                qa = qa_image_with_gemini(client, out_file, face_prompt, 0)
-                qa_result = qa
-                if qa["ok"]:
-                    print("  [QA: OK]")
-                    break
-                else:
-                    print(f"  [QA: ⚠️  {len(qa['issues'])}件]")
-                    if attempt == 0:
-                        print(f"  → 自動再生成します")
-                    else:
-                        print(f"  → 2回目失敗。そのまま許容します")
-            else:
-                print("⚠️  画像データなし")
-                break
-        except Exception as e:
-            print(f"⚠️  エラー: {e}")
-            break
+    print(f"  S00_face ", end="", flush=True)
+    qa_result = _generate_and_qa(
+        client, generate_one_image_portrait, face_prompt, char_ref, out_file, 0
+    )
 
     # QA結果をJSONに保存（STEP 5D で読み込まれる）
     episode_dir = DRIVE_BASE / episode_id
