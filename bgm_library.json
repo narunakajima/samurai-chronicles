@@ -380,5 +380,19 @@
     "used_in": [
       "ep059"
     ]
+  },
+  {
+    "id": "ep060-BGM",
+    "path": "BGM/ep060-BGM.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Short Intense Orchestra.wav by DeVern (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep060"
+    ]
   }
 ]

@@ -592,13 +592,14 @@
     },
     {
       "episode_id": "ep060",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Tea Master Ordered to Die: Sen no Rikyu and Hideyoshi's Fatal Rivalry",
       "era": "Sengoku",
       "priority": "A",
       "person": null,
       "angle": "key_event",
-      "notes": "Sen no Rikyu ordered seppuku by Hideyoshi 1591. Political art in the Sengoku era."
+      "notes": "Sen no Rikyu ordered seppuku by Hideyoshi 1591. Political art in the Sengoku era.",
+      "last_updated": "2026-07-17"
     },
     {
       "episode_id": "ep061",

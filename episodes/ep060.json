@@ -1,0 +1,244 @@
+{
+  "episode_id": "ep060",
+  "episode_title": "Sen no Rikyu: The Tea Master Hideyoshi Ordered to Die",
+  "youtube_title": "The Tea Master Ordered to Die: Sen no Rikyu and Hideyoshi's Fatal Rivalry",
+  "youtube_description": "He held more influence over Japan's most powerful man than any general in his army — through nothing but a bowl of tea. Then, in 1591, that same man ordered him to die, and never explained why. This is the unsolved mystery of Sen no Rikyu.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 A tea master held more influence\n0:45 Sen no Rikyu was born in\n1:38 Rikyu's genius was not...\n2:27 When Oda Nobunaga rose to power,\n3:10 In 1587, Hideyoshi staged the...\n4:00 Hideyoshi loved gold. He...\n4:42 What Rikyu believed, he...\n5:23 By 1590, Rikyu's influence...\n6:02 In early 1591, the accusation...\n6:47 Exile should have been the end\n7:18 The night before his death,...\n7:55 On the twenty-eighth day of the\n8:29 Hideyoshi ordered Rikyu's...\n9:11 Historians still cannot agree...\n9:56 Underneath every theory sits...\n10:36 Rikyu's death did not end what\n11:14 Hideyoshi's empire did not...\n11:44 Sen no Rikyu never commanded a\n12:17 Next time on Samurai...\n12:44 If the fall of Sen no\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Varley, Paul, and Kumakura Isao (eds.). \"Tea in Japan: Essays on the History of Chanoyu\" (University of Hawaii Press, 1989)\n2. Hirota, Dennis (ed.). \"Wind in the Pines: Classic Writings of the Way of Tea as a Buddhist Path\" (Asian Humanities Press, 1995)\n3. Berry, Mary Elizabeth. \"Hideyoshi\" (Harvard University Asia Center, 1982)\n\n\n🎵 Music: Short Intense Orchestra.wav by DeVern (freesound.org) — CC BY 4.0\n#SenNoRikyu #Hideyoshi #TeaCeremony #Chanoyu #Samurai #JapaneseHistory #SengokuPeriod #Seppuku #Japan #SamuraiChronicles",
+  "youtube_tags": [
+    "Sen no Rikyu",
+    "Toyotomi Hideyoshi",
+    "Tea Ceremony",
+    "Chanoyu",
+    "Wabi-sabi",
+    "Samurai",
+    "Japanese History",
+    "Sengoku Period",
+    "Seppuku",
+    "Japan",
+    "Samurai Chronicles",
+    "Medieval Japan",
+    "Tea Master",
+    "Feudal Japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "He knelt in a tiny room, prepared one final bowl of tea for his closest students, and wrote a poem before taking his own life. The most powerful man in Japan had ordered his death. But even now, no one agrees on why.",
+  "shorts_narration": "1591. Japan's most powerful man ordered his own tea master to die — and never said why. No trial. No explanation. Just a blade, and a bowl of tea. This is Sen no Rikyu.",
+  "shorts_hook_lines": [
+    "ONE TEA BOWL.",
+    "TOTAL POWER. GONE.",
+    "WHY DID HE HAVE TO DIE?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Sen no Rikyu's face in dim candlelight, eyes calm and unflinching, faint shadow of a blade hinted at the edge of frame. The face of a man who has already made peace with his fate. Direct gaze, serene and resolute. Vertical portrait composition filling the frame.",
+  "thumbnail_prompt": "Dramatic close portrait of Sen no Rikyu in simple dark monk's robes, kneeling in a small dim tea room, holding a rustic imperfectly-glazed tea bowl, calm resigned expression as if awaiting his fate, a single shaft of light falling across his face. Cinematic scale, dramatic and historical, moody atmospheric lighting, muted earth tones.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "A tea master held more influence than most generals in Japan. Then the man who gave him that power ordered him to die — and never explained why. What could turn absolute trust into a death sentence?",
+      "image_prompt": "Extreme close-up of steam rising from a rustic, imperfectly glazed tea bowl in dim candlelight, a blurred silhouette of a kneeling figure barely visible in the background shadow. Muted, somber color grading, quiet tension.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Sen no Rikyu was born in 1522 in Sakai, a wealthy merchant port city south of Kyoto that prized commerce over pedigree. In that world, tea was not simply a drink — it was theater, diplomacy, and status rolled into a single ritual. Rikyu trained for decades under tea masters who treated the ceremony as a discipline as demanding as swordsmanship. By the time he reached his fifties, he was widely regarded as the greatest tea master Japan had ever produced — a reputation built entirely without a single battle won.",
+      "image_prompt": "Wide atmospheric shot of the bustling 16th-century merchant port of Sakai, wooden trading ships in the harbor, a young man in simple robes walking through a market street toward a modest tea house. Warm late-afternoon light, cinematic historical establishing shot.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Rikyu's genius was not decoration — it was subtraction. Where earlier tea masters had prized rare Chinese porcelain and gilded utensils, Rikyu built his ideal tea room the size of a peasant's hut, lit by a single window, using a roughly-glazed bowl a farmer might have owned. He called this beauty wabi — the elegance found in imperfection, poverty, and silence. Every gathering, he insisted, should be treated as though it would never happen again. One time, one meeting. Ichigo ichie.",
+      "image_prompt": "Sen no Rikyu kneeling in a tiny, bare tea room the size of a peasant's hut, arranging a rustic, imperfectly-glazed tea bowl by the light of a single small window. Extreme simplicity, natural muted tones, serene contemplative atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "rikyu",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "When Oda Nobunaga rose to power, he understood something most warlords missed: tea ceremony had become political currency. Owning a famous tea utensil, or being invited to a gathering hosted by the right master, signaled status as clearly as territory or army size. Rikyu became Nobunaga's tea master — and, after Nobunaga's death at Honnoji, he simply continued in the same role for the man who inherited his power: Toyotomi Hideyoshi.",
+      "image_prompt": "Silhouetted tea ceremony gathering inside a dim tearoom, samurai lords seated in respectful rows around a modest hearth, Sen no Rikyu preparing tea at the center, banners transitioning faintly in the background. Cinematic muted lighting, atmosphere of quiet political weight.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In 1587, Hideyoshi staged the largest tea gathering Japan had ever seen — the Grand Kitano Tea Ceremony, open for ten days to anyone who wished to attend, samurai and commoner alike. Rikyu organized it. He decided who sat where, whose utensils were displayed, whose reputation rose and whose quietly did not. For one extraordinary autumn, the most powerful man in Japan and the humblest tea master in Japan stood, in the world of chanoyu, almost as equals.",
+      "image_prompt": "Wide sweeping shot of the Grand Kitano Tea Ceremony — hundreds of tea stalls and canopies spread across a temple precinct, samurai and commoners mingling together, autumn leaves drifting, a sense of vast scale and festivity. Cinematic wide establishing shot, warm autumn light.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Hideyoshi loved gold. He commissioned an entire portable tea room built from it — walls, ceiling, utensils, all gleaming — and had it carried from castle to castle to dazzle guests and rivals alike. To him, tea ceremony was another stage for demonstrating power, no different from an army on parade. Rikyu attended these golden gatherings and performed his duties flawlessly. He never once said what he actually thought of them.",
+      "image_prompt": "Toyotomi Hideyoshi standing inside his ornate portable tea room built entirely of gold — gleaming walls, gold utensils, gold-leafed alcove — gesturing proudly to impress a group of awed samurai guests. Warm golden glow, opulent cinematic lighting, sense of spectacle and excess.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "What Rikyu believed, he expressed instead through his own tea rooms — spaces so small two men could barely sit facing each other, walls of bare clay, a single flower in an unglazed vase. He was not simply serving a different aesthetic. He was making an argument: that true refinement had nothing to do with how much gold a man could display. It was a quiet argument. But the most powerful man in Japan was listening.",
+      "image_prompt": "Sen no Rikyu seated in his own minimalist tea room — bare clay walls, a single flower in an unglazed vase, two tatami mats — composing himself with quiet dignity, a deliberate contrast to opulence. Soft natural light, muted earth tones, serene cinematic composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": "rikyu",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "By 1590, Rikyu's influence had become impossible to ignore. Daimyo seeking an audience with Hideyoshi often went through Rikyu first. Access to tea became access to power, and Rikyu — a merchant's son with no army, no castle, no official rank — sat at the center of it. Some of Hideyoshi's advisors had started to ask a dangerous question: whose court was this really becoming?",
+      "image_prompt": "A line of samurai lords waiting outside a modest tea room entrance at dusk, anxious and deferential, while inside a single lantern glows — visual metaphor for access and influence flowing through one small doorway. Cinematic muted tones, quiet tension.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In early 1591, the accusation surfaced. A wooden statue of Rikyu, commissioned for a Kyoto temple gate, stood directly above the path Hideyoshi would walk beneath on his way in — meaning, technically, the ruler of Japan would pass under the image of his own tea master's feet. Hideyoshi declared it an act of monstrous disrespect. Rikyu was stripped of his position and ordered into exile at Sakai, the city of his birth.",
+      "image_prompt": "Toyotomi Hideyoshi standing furious beneath a temple gate, pointing up at a wooden statue perched above the archway, attendants bowing nervously around him, dramatic stormy lighting emphasizing his anger. Cinematic wide shot, tense atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyoshi",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Exile should have been the end of it. Instead, weeks later, Hideyoshi summoned Rikyu back to Kyoto — and ordered him to take his own life. Rikyu did not protest, did not beg for explanation, did not apologize for a crime he may not have believed he'd committed. He simply accepted the order with the same composure he brought to every tea gathering he had ever hosted.",
+      "image_prompt": "Sen no Rikyu kneeling alone in an empty room, having just received the order for his exile and death, composed and unflinching, a folded scroll on the floor before him. Cold, austere lighting, somber cinematic framing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "rikyu",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "The night before his death, Rikyu held one final tea ceremony for a handful of his closest disciples. He moved through the ritual exactly as he always had — measured, unhurried, precise — as if the room held nothing more urgent than the taste of the tea. Before dawn, he wrote a death poem. Then he prepared for seppuku the way he had spent his life preparing tea: without a single wasted motion.",
+      "image_prompt": "Sen no Rikyu calmly performing a tea ceremony for a small group of solemn disciples by candlelight, the night before his death, everyone seated in respectful silence, steam rising from the kettle. Warm candlelight against deep shadow, intimate and reverent cinematic composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": "rikyu",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "On the twenty-eighth day of the second month, 1591, Sen no Rikyu died by his own hand in Kyoto. He was sixty-nine years old. The man who had spent his life teaching that a single gathering should be treasured as though it would never come again had, in the end, only one final ceremony left to give — and he gave it to himself.",
+      "image_prompt": "A single empty tea bowl and a folded white cloth resting on a tatami mat in a bare, dimly lit room at dawn. A short blade lies beside them, wrapped in white silk. No figures shown. Muted, solemn color palette, cinematic stillness.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Hideyoshi ordered Rikyu's severed head displayed at the Ichijo Modoribashi bridge — placed, deliberately, atop the very wooden statue that had supposedly caused such offense. It was a final, calculated cruelty: the image that had once stood above Hideyoshi's head now stood beneath Rikyu's own. Whatever the true reason for the execution, Hideyoshi wanted everyone in Kyoto to understand exactly who still held the power.",
+      "image_prompt": "Wide atmospheric shot of the wooden Ichijo Modoribashi bridge in old Kyoto at dawn, mist rising from the river below, a solitary wooden statue standing at the foot of the bridge, onlookers in silhouette keeping their distance. Somber, muted lighting, no graphic details shown.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Historians still cannot agree on why. The statue may have been only a pretext — Rikyu was also accused of inflating the prices of tea utensils he sold, enriching himself through his position. Others point to simple rivalry: a man with no army had become too influential for a ruler who trusted almost no one. A persistent legend claims Hideyoshi tried to take Rikyu's daughter as a concubine and was refused. No single account has ever been proven.",
+      "image_prompt": "Symbolic split image: an ornate golden tea utensil on one side, a plain unglazed clay tea bowl on the other, both resting on a dark wooden table, dramatic single-source lighting creating deep contrast between them. Cinematic still-life composition, symbolic and contemplative.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Underneath every theory sits the same tension. Hideyoshi built his identity from gold, spectacle, and total control. Rikyu built his from restraint, imperfection, and the belief that meaning could not be purchased. Two men who needed each other — one for legitimacy, one for protection — until the values underneath that partnership finally came into open conflict.",
+      "image_prompt": "Symbolic contrast composition: a lavish golden tea room dissolving into mist on one side, a small austere thatched tea hut emerging on the other, dramatic transitional lighting, cinematic concept art conveying opposing philosophies.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Rikyu's death did not end what he had built. His descendants and disciples carried his teachings forward into what became the great schools of Japanese tea ceremony — Omotesenke, Urasenke, and Mushakojisenke — all tracing their lineage directly back to the tea room of a merchant's son from Sakai. Those schools are still teaching wabi-cha today, more than four centuries later.",
+      "image_prompt": "A modern Japanese tea ceremony being performed in a traditional tatami room by practitioners in formal kimono, sunlight filtering through paper shoji screens, serene and timeless atmosphere, cinematic contemplative composition bridging past and present.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Hideyoshi's empire did not survive nearly as long. Within a generation, the Toyotomi clan he had built his golden tea room to celebrate was destroyed at the Siege of Osaka, its heirs hunted down, its name erased from power. The bowl of imperfect clay outlasted the walls of gold.",
+      "image_prompt": "Wide shot of Osaka Castle burning in the distance at night, smoke rising over the silhouette of its collapsing towers, symbolizing the end of the Toyotomi clan. Dramatic, somber, cinematic historical framing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Sen no Rikyu never commanded a single soldier. He never conquered a province. And yet centuries after Hideyoshi's power turned to ash, people around the world still sit in tiny rooms, in silence, treating a single bowl of tea as though it will never happen again. That, in the end, may have been the only victory that mattered.",
+      "image_prompt": "A single simple tea bowl resting alone in soft natural light on a bare wooden floor, steam rising gently, the rest of the frame empty and quiet. Minimalist, reflective, cinematic closing composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — a young samurai kills a rival in a fit of rage, right in front of his lord, and is cast out in disgrace. Somehow, that same exile claws his way back to become the second most powerful man in Japan. How does a killer become a kingmaker? Coming next.",
+      "image_prompt": "Silhouette of a young samurai standing over a fallen rival in a dim castle courtyard, other warriors recoiling in shock, torchlight flickering. Tense, dramatic cinematic teaser framing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If the fall of Sen no Rikyu moved you, subscribe to Samurai Chronicles — new episodes every day. Not every battle in Japan's history was fought with a sword.",
+      "image_prompt": "Calm wide shot of a traditional Japanese tea garden at dawn, mist drifting between stepping stones and a small tea house, peaceful and reflective closing tone. No people visible.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "youtube_url": "https://youtu.be/iBT1K5SYzOQ",
+  "shorts_url": "https://youtu.be/71pXeYI9WR4",
+  "scheduled_at": "2026-07-29 03:00"
+}
