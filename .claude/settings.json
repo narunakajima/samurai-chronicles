@@ -10,7 +10,13 @@
       "Bash(*)",
       "Bash(python3 *)",
       "Bash(python3)",
-      "ffprobe *"
+      "ffprobe *",
+      "Write",
+      "Edit",
+      "Write(/tmp/*)",
+      "Edit(/tmp/*)",
+      "Write(/private/tmp/*)",
+      "Edit(/private/tmp/*)"
     ]
   }
 }
