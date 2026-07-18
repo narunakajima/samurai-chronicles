@@ -603,13 +603,14 @@
     },
     {
       "episode_id": "ep061",
-      "status": "pending",
+      "status": "in_production",
       "title": "From Criminal to Japan's Second Most Powerful Man: Maeda Toshiie's Redemption",
       "era": "Sengoku",
       "priority": "B",
       "person": "maeda_toshiie",
       "angle": "character",
-      "notes": "Killed Nobunaga's favourite page, was exiled — then returned and became his closest general."
+      "notes": "Killed Nobunaga's favourite page, was exiled — then returned and became his closest general.",
+      "last_updated": "2026-07-18"
     },
     {
       "episode_id": "ep062",

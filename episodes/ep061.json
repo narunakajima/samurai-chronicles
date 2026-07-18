@@ -1,0 +1,244 @@
+{
+  "episode_id": "ep061",
+  "episode_title": "Maeda Toshiie: From Exiled Killer to Japan's Second Most Powerful Man",
+  "youtube_title": "From Criminal to Japan's Second Most Powerful Man: Maeda Toshiie's Redemption",
+  "youtube_description": "He murdered a man inside his own lord's house — and was banished in disgrace. Most samurai would have vanished into obscurity. Instead, this exile fought his way back into favor, rose through the ranks, and eventually became one of the most powerful lords in all of Japan. This is the redemption of Maeda Toshiie.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 He killed a man in front\n0:45 In the 1550s, a young samurai\n1:28 Among Nobunaga's household...\n2:09 In 1559, the breaking point...\n2:52 Toshiie drew his sword and...\n3:30 Nobunaga's fury was immediate...\n4:14 Most men in Toshiie's...\n4:55 At the Battle of Okehazama in\n5:33 For nearly two years, Toshiie...\n6:13 In 1561, Nobunaga formally...\n6:40 From that point on, Toshiie's...\n7:16 When Nobunaga was killed at...\n7:57 At the Battle of Shizugatake in\n8:41 History has never fully...\n9:19 Hideyoshi rewarded Toshiie's...\n9:51 Near the very end of his\n10:26 Toshiie died in 1599, only...\n11:00 Maeda Toshiie began his story as\n11:39 Next time on Samurai...\n12:00 If Maeda Toshiie's redemption...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"The Samurai Sourcebook\" (Cassell, 1998)\n2. Berry, Mary Elizabeth. \"Hideyoshi\" (Harvard University Asia Center, 1982)\n3. Sadler, A. L. \"The Maker of Modern Japan: The Life of Tokugawa Ieyasu\" (Charles E. Tuttle, 1978)\n\n\n🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0\n#MaedaToshiie #OdaNobunaga #ToyotomiHideyoshi #Samurai #JapaneseHistory #SengokuPeriod #KagaDomain #Japan #SamuraiChronicles",
+  "youtube_tags": [
+    "Maeda Toshiie",
+    "Oda Nobunaga",
+    "Toyotomi Hideyoshi",
+    "Samurai",
+    "Japanese History",
+    "Sengoku Period",
+    "Kaga Domain",
+    "Five Great Elders",
+    "Japan",
+    "Samurai Chronicles",
+    "Medieval Japan",
+    "Spearman",
+    "Feudal Japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "He drew his sword inside his own lord's house and killed a man on the spot. Banishment followed immediately. But this exiled killer refused to disappear — and what he did next would make him one of the most powerful men in Japan.",
+  "shorts_narration": "1559. He murdered a man in front of his lord and was banished in disgrace. Two years later, he was back — and he never stopped rising. This is Maeda Toshiie.",
+  "shorts_hook_lines": [
+    "ONE MURDER.",
+    "TWO YEARS EXILED.",
+    "HOW DID HE RISE SO HIGH?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Maeda Toshiie's face, intense fierce eyes beneath a stern brow, the moment right after an act of violence. Dramatic harsh torchlight from below, deep shadows. Direct unflinching gaze. Vertical portrait composition filling the frame.",
+  "thumbnail_prompt": "Dramatic close portrait of Maeda Toshiie, a tall imposing samurai gripping an exceptionally long spear, standing amid the aftermath of battle with fierce intense eyes, dark lacquered armor with gold accents. Cinematic scale, dramatic and historical, moody atmospheric lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He killed a man in front of his lord. His punishment: banishment, disgrace, and the loss of everything he had earned. So how did that same exile become Japan's second most powerful man?",
+      "image_prompt": "Extreme close-up of a bloodied hand releasing a katana onto a wooden floor, a shocked court in soft blur behind, dim candlelight, tense somber atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "In the 1550s, a young samurai named Maeda Toshiie served as a page in the household of Oda Nobunaga, a minor warlord still fighting to control his own province. Toshiie was fiercely proud, quick-tempered, and already a formidable fighter — qualities that made him useful in battle and dangerous everywhere else. He was ambitious, loyal to Nobunaga almost to a fault, and utterly unable to let an insult go unanswered.",
+      "image_prompt": "A young Maeda Toshiie standing at attention in a modest wooden hall, simple armor, an ornamental hairpin visible at his side, sharp watchful eyes, other retainers in the background. Warm interior lighting, historical establishing composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": "maeda_toshiie",
+      "zoom_anchor": {
+        "x": 0.53,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Among Nobunaga's household staff was an entertainer named Juami — a companion and performer whose job was to keep the young lord amused. He was a favorite, valued for his wit, and known for needling the other retainers without much fear of consequence. Juami and Toshiie had clashed before, small frictions that never quite resolved. Everyone around them could sense it was only a matter of time before that friction became something worse.",
+      "image_prompt": "A court entertainer smirking as he gestures mockingly toward a stern young samurai across a torch-lit hall, other attendants watching uneasily, tense theatrical atmosphere, muted warm tones.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In 1559, the breaking point came. Juami took Toshiie's ornamental hairpin — a kogai, a small but prized symbol of a samurai's dignity and taste — and paraded it in front of Nobunaga's assembled court, mocking Toshiie openly as the room laughed along. For Toshiie, this was not harmless teasing. It was a public attack on his honor, delivered in the one place, in front of the one audience, where he could least afford to lose face.",
+      "image_prompt": "A court entertainer dangling a small ornamental hairpin above his head, laughing, in front of a crowded formal hall, a young samurai's face tightening with fury nearby. Dramatic firelit interior, rising tension.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Toshiie drew his sword and killed Juami on the spot — inside Nobunaga's own residence, in front of dozens of witnesses, without a moment's hesitation for what it might cost him. Whatever the provocation, the act was unforgivable by any standard of the era. He had murdered a member of his lord's household, in his lord's own presence, over nothing more than an insult and a stolen hairpin.",
+      "image_prompt": "Silhouetted figures recoiling in shock inside a dim wooden hall, a drawn sword catching the torchlight, chaos and stunned silence frozen in the moment after violence. Dark, dramatic, no graphic detail shown.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Nobunaga's fury was immediate and absolute. Juami had been a favorite; his death inside Nobunaga's own home could not simply be excused or quietly forgotten. Nobunaga stripped Toshiie of his rank on the spot and banished him from service entirely — no land, no stipend, no position, no future. In a single afternoon, Toshiie went from a rising young retainer to a masterless samurai with nothing left but his sword and his pride.",
+      "image_prompt": "Oda Nobunaga seated in cold judgment on a raised dais, pointing toward the doorway in stern command, a kneeling young samurai bowing his head before him. Harsh directional lighting, atmosphere of finality.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.15
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Most men in Toshiie's position would have drifted quietly into obscurity, taking whatever work a disgraced ronin could find. Toshiie did the opposite. Banished or not, he refused to simply disappear. When Nobunaga's army marched to war, Toshiie followed anyway — uninvited, unsanctioned, and unpaid — determined to keep fighting for a lord who had just thrown him out of his household.",
+      "image_prompt": "Maeda Toshiie walking alone at the rear of a marching army column, plain unmarked clothing, gripping his long spear, resolute expression, dust and banners ahead of him in the distance. Cinematic wide shot, determined atmosphere.",
+      "ken_burns": "pan_right",
+      "character_ref": "maeda_toshiie",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "At the Battle of Okehazama in 1560, one of the most consequential victories of Nobunaga's entire career, Toshiie fought without any official permission to even be on the field. He took enemy heads in combat, the traditional proof of a samurai's valor, and presented them to Nobunaga's officers anyway — silent evidence of loyalty from a man who technically no longer served anyone at all.",
+      "image_prompt": "Chaotic battlefield skirmish in driving rain, a lone spearman fighting fiercely among Nobunaga's ranks despite wearing no official banner or crest, dramatic dynamic composition, intense action.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "For nearly two years, Toshiie repeated this same pattern: formally banished from the ranks, yet showing up again and again to fight and bleed for Nobunaga's cause regardless of the cost to himself. Word of his stubborn persistence reached Nobunaga time after time. Eventually, even a lord who prized discipline above almost everything else could no longer ignore devotion that relentless.",
+      "image_prompt": "Oda Nobunaga standing at a war table, listening thoughtfully to a kneeling messenger's report, a distant expression of grudging respect crossing his face. Warm candlelit interior, quiet turning-point atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "In 1561, Nobunaga formally reinstated him. Toshiie was given back his rank, his stipend, and his place among the ranks of Nobunaga's trusted retainers — not because he had begged or groveled for forgiveness, but because he had spent two full years proving, battle after battle, exactly what kind of man he intended to be.",
+      "image_prompt": "Maeda Toshiie kneeling before Oda Nobunaga in a formal hall, receiving back his rank insignia with quiet dignity, sunlight breaking through a window behind him. Warm, resolute, cinematic composition of restoration.",
+      "ken_burns": "zoom_in",
+      "character_ref": "maeda_toshiie",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "From that point on, Toshiie's rise through Nobunaga's ranks was rapid and unstoppable. He became known across every battlefield as one of the deadliest spearmen in Japan, earning the nickname 'Yari no Mataza' — Mataza of the Spear. What had once been reckless, uncontrollable temper had become disciplined, lethal skill, channeled entirely in service of the very lord who had once cast him out.",
+      "image_prompt": "Maeda Toshiie in full armor wielding an exceptionally long spear on a battlefield, dominant and precise, enemy soldiers falling back around him, banners of Oda Nobunaga's forces visible behind him. Dynamic dramatic action composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": "maeda_toshiie",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "When Nobunaga was killed at Honnoji in 1582, Toshiie faced an impossible choice between two men he owed everything to. His old comrade and former commanding officer, Shibata Katsuie, openly opposed Toyotomi Hideyoshi's bid to inherit Nobunaga's power and legacy. Toshiie owed Katsuie years of genuine friendship and shared loyalty. But Hideyoshi was already, unmistakably, winning.",
+      "image_prompt": "Two veteran samurai commanders standing on opposite sides of a war council table, tension and old friendship visible in their expressions, maps and banners between them. Somber, conflicted atmosphere.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "At the Battle of Shizugatake in 1583, the decisive clash of the succession war, Toshiie withdrew his forces from the field rather than fully commit them to Katsuie's failing cause. Katsuie's army collapsed almost immediately without them. Whether it was calculated self-preservation or simple battlefield realism, the effect was exactly the same: Hideyoshi won decisively, and Toshiie's old friend was finished.",
+      "image_prompt": "A samurai army in the mid-distance turning and marching away from a raging battle, smoke and chaos behind them, a lone commander watching grimly from horseback in the foreground. Wide dramatic battlefield composition.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "History has never fully settled whether Toshiie's withdrawal at Shizugatake was betrayal or pure survival instinct. He had spent his entire youth learning exactly what loyalty could cost a man. Now, staying loyal to the losing side would have cost him everything all over again. He chose the future over the past — and Hideyoshi, watching closely, never once forgot it.",
+      "image_prompt": "Symbolic image of a single samurai standing at a fork in a misty mountain path, one path leading toward smoke and ruin, the other toward distant light. Reflective, muted, cinematic concept art.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Hideyoshi rewarded Toshiie's timely allegiance with the Kaga domain in central Japan — a grant of land that would grow, over the following decades, into the single largest territory held by any lord outside the Tokugawa family itself. The exiled killer who had once owned nothing at all now governed one of the wealthiest domains in the entire country.",
+      "image_prompt": "Wide aerial view of Kanazawa Castle and its surrounding domain at sunset, rice fields and mountains stretching to the horizon, banners bearing the Maeda plum-blossom crest flying above the walls. Grand, prosperous, cinematic establishing shot.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Near the very end of his life, Hideyoshi named Toshiie one of the Five Great Elders — a council of the most powerful lords in Japan, entrusted personally with protecting his young son and heir after his death. The man once banished from service for committing murder was now one of the handful of people responsible for the future of the entire Toyotomi regime.",
+      "image_prompt": "A formal council chamber containing a young child in fine robes seated at the center on a raised cushion. Kneeling to the left of the child: three separate adult daimyo lords in a row, each clearly distinct from the others. Kneeling to the right of the child: two more separate adult daimyo lords in a row, each clearly distinct from the others. Total headcount: three adults on the left, two adults on the right, one child in the center — six people in the room in total. Solemn and watchful expressions, banners of great clans hanging on the walls behind them. Grand, weighty, cinematic composition.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Toshiie died in 1599, only months after Hideyoshi himself passed away. With him went the last real counterweight to Tokugawa Ieyasu's growing ambition among the Five Elders. Within barely a year, the fragile peace Hideyoshi had spent his life building collapsed entirely, and Japan marched steadily toward the Battle of Sekigahara.",
+      "image_prompt": "An empty formal seat at a council table, a single banner with the plum-blossom crest lowered in mourning, storm clouds visible through an open doorway beyond. Somber, symbolic, cinematic stillness.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Maeda Toshiie began his story as a disgraced killer with absolutely nothing left to lose. He ended it as the second most powerful lord in all of Japan, trusted personally with the fate of a dead ruler's empire. Very few men in Japanese history traveled that particular distance — from exile to guardian of the realm — and actually lived long enough to see it matter.",
+      "image_prompt": "An older Maeda Toshiie standing alone on a castle balcony overlooking his vast domain at dusk, richly dressed, weathered and dignified, spear resting nearby. Reflective, grand, cinematic closing composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — forty-seven masterless samurai wait two years, hiding their rage, before striking in the dead of night to avenge their murdered lord. It became the most famous act of loyalty in Japanese history. Coming next.",
+      "image_prompt": "Silhouettes of masked samurai creeping through a snowy nighttime courtyard toward a lit mansion, tense and coiled with purpose, moonlight glinting off drawn blades. Cinematic teaser framing, suspenseful.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If Maeda Toshiie's redemption moved you, subscribe to Samurai Chronicles — new episodes every day. Sometimes the making of a legend starts with the worst mistake of a man's life.",
+      "image_prompt": "Calm wide shot of Kanazawa Castle grounds at dawn, mist drifting over quiet gardens, warm golden light rising over the walls. Peaceful, reflective closing tone.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep009-BGM.mp3",
+  "youtube_url": "https://youtu.be/9wxXjD6hQ2E",
+  "shorts_url": "https://youtu.be/EPiINB-EreY",
+  "scheduled_at": "2026-07-30 03:00"
+}
