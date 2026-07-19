@@ -614,13 +614,14 @@
     },
     {
       "episode_id": "ep062",
-      "status": "pending",
+      "status": "in_production",
       "title": "The 47 Ronin: Japan's Most Famous Act of Loyalty",
       "era": "Edo",
       "priority": "A",
       "person": null,
       "angle": "key_event",
-      "notes": "47 masterless samurai avenge their lord 2 years after his forced seppuku. 1703."
+      "notes": "47 masterless samurai avenge their lord 2 years after his forced seppuku. 1703.",
+      "last_updated": "2026-07-19"
     },
     {
       "episode_id": "ep063",

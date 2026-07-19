@@ -1,0 +1,240 @@
+{
+  "episode_id": "ep062",
+  "episode_title": "The 47 Ronin: Two Years of Silence, One Night of Vengeance",
+  "youtube_title": "The 47 Ronin: Japan's Most Famous Act of Loyalty",
+  "youtube_description": "Their lord was ordered to die for drawing a sword. The man who provoked him walked free. Forty-seven of his samurai swore revenge — then waited two years in silence, deceiving everyone, before striking on a single snowbound night. This is the true story behind Japan's most famous tale of loyalty.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 Forty-seven men waited two...\n0:49 In 1701, Asano Naganori, the...\n1:27 Kira held real power in matters\n2:02 On the fourteenth day of the\n2:38 The shogun's judgment came...\n3:12 Word reached Ako days later,...\n3:50 Oishi refused to let them act.\n4:19 For nearly two years, Oishi...\n4:57 Kira was not entirely...\n5:33 On the snowbound night of...\n6:04 The ronin stormed the mansion in\n6:33 They found Kira hiding in an\n7:09 Rather than flee, all...\n7:43 The debate consumed Edo for...\n8:20 In February 1703, the...\n8:50 Forty-six of the forty-seven...\n9:23 The story of the forty-seven...\n9:51 What made the story endure was\n10:24 Next time on Samurai...\n10:48 If the loyalty of the...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Tucker, John Allen (trans.). \"The Forty-Seven Ronin: The Vendetta in History\" (Cambridge University Press, 2018)\n2. Turnbull, Stephen. \"The Samurai Sourcebook\" (Cassell, 1998)\n3. Sadler, A. L. \"The Maker of Modern Japan: The Life of Tokugawa Ieyasu\" (Charles E. Tuttle, 1978)\n\n#47Ronin #Chushingura #OishiKuranosuke #Samurai #JapaneseHistory #EdoPeriod #Bushido #Japan #SamuraiChronicles",
+  "youtube_tags": [
+    "47 Ronin",
+    "Chushingura",
+    "Oishi Kuranosuke",
+    "Kira Yoshinaka",
+    "Samurai",
+    "Japanese History",
+    "Edo Period",
+    "Bushido",
+    "Sengaku-ji",
+    "Japan",
+    "Samurai Chronicles",
+    "Medieval Japan",
+    "Feudal Japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "On a snowbound night, forty-seven men stood outside a mansion in the dark, waiting for a single signal. Two years of silence, humiliation, and deception had led to exactly this moment. What could make forty-seven samurai wait that long — and never once break?",
+  "shorts_narration": "1701. A lord was ordered to die. The man who provoked him walked free. Two years later, forty-seven samurai struck in the snow — then turned themselves in. This is the 47 Ronin.",
+  "shorts_hook_lines": [
+    "TWO YEARS.",
+    "47 MEN. ONE NIGHT.",
+    "WHY DID THEY WAIT SO LONG?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Oishi Kuranosuke's face, calm unreadable eyes beneath a mild exterior, snowflakes catching torchlight around him, the moment just before giving the signal to attack. Direct resolute gaze, dramatic cold nighttime lighting. Vertical portrait composition filling the frame.",
+  "thumbnail_prompt": "Dramatic close portrait of Oishi Kuranosuke in dark night-raid armor, snow falling around him, gripping a katana with calm resolute intensity, a mansion looming in the shadowed background. Cinematic scale, dramatic and historical, moody atmospheric lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Forty-seven men waited two years to avenge their master's death. Not one of them broke. When they finally struck, they turned themselves in immediately afterward. What kind of loyalty survives two years of silence?",
+      "image_prompt": "Extreme close-up of a snow-covered katana blade resting against dark fabric, faint torchlight reflecting off the steel, blurred silhouettes of kneeling figures in the background. Somber, cold color grading, quiet tension.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "In 1701, Asano Naganori, the young lord of the Ako domain, traveled to Edo Castle to help host a delegation of imperial envoys — an enormous honor, and an enormous responsibility. Court protocol for the ceremony was notoriously complex, and Asano, unfamiliar with its finer details, was assigned a senior shogunate official to guide him through every step: Kira Yoshinaka.",
+      "image_prompt": "Wide shot of the grand interior of Edo Castle, a young provincial lord in formal robes standing uncertainly among elaborate court preparations, an elder official observing him with cool detachment nearby. Cinematic historical establishing composition, muted formal lighting.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Kira held real power in matters of etiquette, and he expected to be paid for his guidance — through gifts, deference, and flattery. Asano, by most accounts a plain and unpolished man, gave too little of all three. Kira responded the only way his position allowed: with mounting public humiliation, correcting Asano's every mistake in front of the entire court.",
+      "image_prompt": "Kira Yoshinaka sharply correcting a younger lord's posture in front of a watching court, condescending expression, formal ceremonial hall setting. Cold formal lighting, tense courtly atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kira_yoshinaka",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "On the fourteenth day of the third month, inside a corridor of Edo Castle itself, Kira delivered one insult too many. Asano drew his short sword and struck him, wounding him about the face and back before attendants pulled him away. Drawing a blade inside the castle was one of the gravest crimes a samurai could commit — regardless of provocation.",
+      "image_prompt": "Chaotic moment in a narrow castle corridor: only two men grappling — attendants pulling a young samurai back as he lunges with a short blade toward an older official recoiling in shock. No armored figures, no spears, no soldiers anywhere in the frame — this is an unarmed court corridor, not a battlefield. Dramatic motion blur and harsh directional light.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The shogun's judgment came the same day. Asano was ordered to commit seppuku immediately, his title stripped, his domain confiscated. Kira, the man who had provoked him for months, received no punishment at all. Convention demanded that both sides of a quarrel be punished equally. In this case, only one side paid anything.",
+      "image_prompt": "A formal edict scroll being unrolled and read aloud in a solemn hall, a young lord kneeling in white funeral robes preparing for seppuku, attendants bowing their heads. Somber, restrained, cinematic composition, no graphic detail shown.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Word reached Ako days later, carried by exhausted riders. Their lord was dead. Their domain was gone. And the man who had pushed him to violence walked free. Oishi Kuranosuke, Asano's chief retainer, now led several hundred suddenly masterless samurai who wanted nothing more than immediate, furious revenge.",
+      "image_prompt": "Oishi Kuranosuke standing before a crowd of furious armed samurai in a castle courtyard, calm and controlled amid their outrage, grey overcast sky. Tense restrained atmosphere, cinematic wide shot.",
+      "ken_burns": "zoom_in",
+      "character_ref": "oishi_kuranosuke",
+      "zoom_anchor": {
+        "x": 0.37,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Oishi refused to let them act. An immediate strike would fail — Kira's household would be braced for exactly that. Some of Asano's former retainers gave up and moved on with their lives. Others accused Oishi of cowardice. He said nothing to defend himself. He was already planning something slower, and far more dangerous.",
+      "image_prompt": "A group of samurai dispersing down a misty road away from a lone figure standing motionless at a fork in the path, some walking away in disgust, others lingering uncertainly. Muted, reflective, cinematic wide composition.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "For nearly two years, Oishi lived as a disgraced drunkard in Kyoto's pleasure districts, squandering money, brawling in the streets, apparently abandoning any thought of loyalty or revenge. It was a performance, aimed directly at Kira's spies. Every report that reached Kira's household said the same reassuring thing: Asano's men had given up.",
+      "image_prompt": "Oishi Kuranosuke slumped disheveled at a lantern-lit teahouse table in Kyoto's entertainment district, feigning drunkenness, sharp watchful eyes betraying his true alertness beneath a careless exterior. Warm lantern light, deceptive atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "oishi_kuranosuke",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Kira was not entirely convinced. He doubled his household guard, moved his sleeping quarters deeper into his mansion, and kept watch for any sign that Ako's scattered samurai were regrouping. But even careful men grow tired of waiting for a danger that never seems to arrive. Over two years, his guard, inevitably, began to relax.",
+      "image_prompt": "Kira Yoshinaka standing tensely at a window of his mansion at dusk, guards patrolling below in the courtyard, a wary expression slowly giving way to complacency. Cool blue evening light, quiet unease.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kira_yoshinaka",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "On the snowbound night of December 14th, 1702, forty-seven of Asano's former retainers gathered in the darkness outside Kira's mansion in Edo. Oishi Kuranosuke gave the signal. Nearly two years of waiting, deception, and quiet preparation had led to exactly this moment — and there would be no turning back from it.",
+      "image_prompt": "Oishi Kuranosuke standing in falling snow at night outside a walled mansion, raising a hand to signal dozens of armored samurai crouched in the shadows behind him, breath visible in the cold air. Dramatic moonlit cinematic composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": "oishi_kuranosuke",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "The ronin stormed the mansion in two coordinated groups, overwhelming Kira's guards in the snow-muffled darkness. They had trained for this, planned every entrance and exit, and left strict orders among themselves: harm no one but Kira and those who directly resisted. Room by room, they searched the mansion for the man they had waited two years to find.",
+      "image_prompt": "Armored samurai silhouettes moving swiftly through a snow-covered courtyard toward a mansion at night, torches and drawn blades catching moonlight, tense coordinated action. Dark, dramatic, no graphic detail shown.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "They found Kira hiding in an outbuilding before dawn. Oishi offered him the chance to die by his own hand, the honorable death Asano had been forced into. Kira said nothing. The ronin beheaded him themselves, then carried his head across the city to Sengaku-ji temple and laid it on their lord's grave — the debt, finally, repaid.",
+      "image_prompt": "Solemn procession of samurai walking through snowy pre-dawn streets of Edo toward a temple gate, carrying a cloth-wrapped bundle with quiet ceremonial gravity. Somber, muted, cinematic composition, no graphic detail shown.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Rather than flee, all forty-seven ronin turned themselves in to the authorities that same morning. They had broken the law in the most public way possible, and they knew exactly what that meant. The shogunate now faced an impossible question: were these men murderers, or were they the most loyal samurai Japan had produced in a generation?",
+      "image_prompt": "A line of samurai kneeling in formal surrender before shogunate officials in a courtyard, calm and composed despite their circumstances, snow still dusting their shoulders. Cinematic wide shot, solemn dignified atmosphere.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The debate consumed Edo for weeks. Confucian scholars argued for their execution as common criminals — the law was the law, and premeditated killing could not simply be excused by good intentions. Others argued the opposite: that the original judgment against Asano had been unjust from the start, and the ronin had merely finished what the shogunate itself had failed to make right.",
+      "image_prompt": "A formal council chamber of shogunate officials and robed scholars in heated but restrained debate, scrolls and documents spread across a table, divided expressions. Cinematic weighty composition.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "In February 1703, the shogunate reached its compromise. The forty-seven ronin would not be executed as criminals. Instead, they were granted the honorable death of seppuku — a punishment, but also, unmistakably, a recognition of exactly what they had done and why.",
+      "image_prompt": "Rows of samurai kneeling in white funeral robes in separate quiet courtyards at dawn, calm and composed, morning mist rising around them. Solemn, restrained, cinematic composition, no graphic detail shown.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Forty-six of the forty-seven died that day and were buried beside Asano Naganori at Sengaku-ji temple, their graves arranged around his in a final act of loyalty. The forty-seventh, a low-ranking ronin sent away before the raid to carry news of it, lived on — and spent the rest of his life visiting his comrades' graves.",
+      "image_prompt": "Rows of weathered stone grave markers arranged around a central larger tombstone in a quiet temple graveyard, incense smoke drifting, an elderly lone figure kneeling before them in the distance. Reflective, cinematic wide composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The story of the forty-seven ronin became one of the most retold tales in Japanese history, dramatized on kabuki stages within weeks of the event and reimagined in theater, film, and print ever since, under the title it is still known by today: Chushingura, the Treasury of Loyal Retainers.",
+      "image_prompt": "A vibrant kabuki theater stage mid-performance, actors in dramatic samurai costume under warm stage lighting, an enraptured audience visible in silhouette in the foreground. Rich, theatrical, cinematic composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "What made the story endure was not the violence, but the patience — two years of silence, humiliation, and discipline, absorbed without complaint, in service of a single night. Few stories capture what bushido claimed to demand of a samurai as precisely as the wait itself.",
+      "image_prompt": "A single set of stone steps leading up to a quiet temple gate at dawn, mist drifting, no figures present, the aftermath of a long story told entirely through empty, peaceful space. Minimalist, reflective, cinematic composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — the assassins who supposedly walked through walls, vanished in smoke, and killed without a trace. Almost none of it is true. This is the real history behind Japan's most misunderstood warriors. Coming next.",
+      "image_prompt": "Silhouette of a black-clad figure crouched on a rooftop under moonlight, mist curling around the eaves below, mysterious and understated rather than fantastical. Cinematic teaser framing, tense atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If the loyalty of the forty-seven ronin moved you, subscribe to Samurai Chronicles — new episodes every day. Some debts, it turns out, take exactly as long as they need to.",
+      "image_prompt": "Calm wide shot of Sengaku-ji temple grounds at dawn, incense smoke drifting gently over rows of weathered gravestones, soft golden morning light. Peaceful, reflective closing tone.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep053-BGM.mp3",
+  "youtube_url": "https://youtu.be/l86QTwq3O_0",
+  "shorts_url": "https://youtu.be/zoJE3MRSoD4",
+  "scheduled_at": "2026-07-31 03:00"
+}
