@@ -841,6 +841,9 @@ def resolve_bgm_paths(ep: dict, episode_id: str) -> dict:
     従来方式の優先順位: BGM/{ep}-BGM.mp3 → bgm_source → bgm_library.json の used_in
     """
     sources = ep.get("bgm_sources") or {}
+    if sources and not all(sources.get(r) for r in BGM_ROLES):
+        missing_roles = [r for r in BGM_ROLES if not sources.get(r)]
+        print(f"  ⚠️ bgm_sources が不完全です（{', '.join(missing_roles)} が未設定）— 1曲方式にフォールバック")
     if all(sources.get(r) for r in BGM_ROLES):
         paths = {r: DRIVE_BASE / sources[r] for r in BGM_ROLES}
         if all(p.exists() for p in paths.values()):
