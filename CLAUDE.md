@@ -48,13 +48,22 @@ samurai-chronicles/
 
 ### BGM 参照優先順位（`sc_video_gen.py`）
 
+**3曲構成（2026-07〜の標準）:** episode JSON の `bgm_sources` に
+`{"intro": ..., "main": ..., "outro": ...}` が揃っていればそれを使う。
+序盤（hook〜setup）・中盤（rising_action〜climax）・終盤（falling_action〜outro）の
+境界はシーンタイプから自動計算し、`BGM_CROSSFADE`（4秒）でクロスフェードする。
+新規曲は `BGM/{episode_id}-BGM-{role}.mp3` として保存される。
+Shorts は3曲構成でも中盤（main）の1曲のみ使用。
+
+**従来1曲方式（フォールバック）:** `bgm_sources` がない場合は以下の順で解決する。
+
 1. `BGM/{episode_id}-BGM.mp3`（集中フォルダに直接ある場合）
 2. episode JSON の `bgm_source` フィールド（ライブラリ曲を流用紐付け）
 3. `bgm_library.json` の `used_in` 配列を逆引き
 
-新規BGMは `/sc-new` STEP 4（Freesound新規2曲＋ライブラリ既存2曲のハイブリッド選定）の中で
-`sc_bgm_library.py --add` により `BGM/` フォルダへ自動登録される。
-既存ライブラリ曲を別エピソードで使い回す場合は `sc_bgm_library.py --use-library` で `bgm_source` を設定する。
+新規BGMは `/sc-new` STEP 4（役割別: Freesound新規3曲＋ライブラリ既存3曲の計6候補から
+各役割1曲選定）の中で `sc_bgm_library.py --add --role <role>` により `BGM/` フォルダへ自動登録される。
+既存ライブラリ曲を使い回す場合は `sc_bgm_library.py --use-library --role <role>` で `bgm_sources[role]` を設定する。
 
 ---
 
@@ -69,6 +78,7 @@ samurai-chronicles/
 | `INTRO_DURATION` | 5.0s | チャンネルイントロ尺 |
 | `TEASER_MAX_CLIPS` | 12 | テイザー最大クリップ数 |
 | `BGM_VOLUME` | 0.12 | BGM音量 |
+| `BGM_CROSSFADE` | 4.0s | 3曲構成時の曲間クロスフェード |
 
 クリップ尺の決定ロジック:
 - 音声あり: `max(MIN_CLIP_FLOOR, narr_dur + NARR_DELAY + NARR_TAIL)`

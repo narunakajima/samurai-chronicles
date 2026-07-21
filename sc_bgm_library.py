@@ -7,6 +7,12 @@ sc_bgm_library.py — BGM ライブラリ管理ユーティリティ
 
   # ライブラリ既存BGMをエピソードに紐付け（bgm_source を episode JSON に記録）
   python3 sc_bgm_library.py --use-library --episode ep012 --stem BGM_library_01_ep003-BGM
+
+  # 3曲構成（役割別）: --role intro|main|outro を付けると
+  #   --add        → BGM/{ep}-BGM-{role}.mp3 として登録し bgm_sources[role] を設定
+  #   --use-library → bgm_sources[role] にライブラリ曲のパスを設定
+  python3 sc_bgm_library.py --add --episode ep064 --role intro --file <path> --stem intro_candidate_01_xxx
+  python3 sc_bgm_library.py --use-library --episode ep064 --role main --stem main_library_01_ep003-BGM
 """
 
 import argparse
@@ -53,9 +59,10 @@ def _save_ep(ep_json: Path, data: dict):
 def _tags_from_stem(stem: str) -> list:
     """Freesound ファイル名のキーワードからタグを推測する。
     例: BGM_candidate_01_12345_epic-orchestral → ["epic", "orchestral"]
+        main_candidate_01_12345_epic-orchestral → ["epic", "orchestral"]
     """
-    # ファイル名から数字・アンダースコア・BGM_candidate プレフィックスを除去してキーワード抽出
-    cleaned = re.sub(r'^BGM_candidate_\d+_\d+_', '', stem)
+    # ファイル名から数字・アンダースコア・candidate プレフィックスを除去してキーワード抽出
+    cleaned = re.sub(r'^(?:BGM|intro|main|outro)_candidate_\d+_\d+_', '', stem)
     words = re.split(r'[-_\s]+', cleaned.lower())
     known = {"orchestral", "epic", "dramatic", "cinematic", "heroic", "dark",
              "powerful", "tense", "triumphant", "strings", "brass", "choir",
@@ -63,18 +70,30 @@ def _tags_from_stem(stem: str) -> list:
     return [w for w in words if w in known] or ["orchestral", "cinematic"]
 
 
-def cmd_add(episode_id: str, bgm_file: Path, stem: str):
-    """Freesound 新規BGMをライブラリに追加し、used_in を記録する。"""
+def cmd_add(episode_id: str, bgm_file: Path, stem: str, role: str = None):
+    """Freesound 新規BGMをライブラリに追加し、used_in を記録する。
+
+    role 指定時（3曲構成）: BGM/{ep}-BGM-{role}.mp3 として保存し、
+    episode JSON の bgm_sources[role] にパスを記録する。
+    """
     library = _load_library()
 
     # BGM/フォルダに移動してDRIVE_BASE相対パスを記録
     bgm_folder = DRIVE_BASE / "BGM"
     bgm_folder.mkdir(exist_ok=True)
-    dst = bgm_folder / f"{episode_id}-BGM.mp3"
+    suffix = f"-{role}" if role else ""
+    dst = bgm_folder / f"{episode_id}-BGM{suffix}.mp3"
     import shutil
     shutil.move(str(bgm_file), str(dst))
-    rel_path = f"BGM/{episode_id}-BGM.mp3"
+    rel_path = f"BGM/{episode_id}-BGM{suffix}.mp3"
     print(f"  ✓ Drive BGM/ に移動: {dst.name}")
+
+    # role 指定時は episode JSON の bgm_sources[role] を更新
+    if role:
+        ep_data, ep_json = _load_ep(episode_id)
+        ep_data.setdefault("bgm_sources", {})[role] = rel_path
+        _save_ep(ep_json, ep_data)
+        print(f"  ✓ bgm_sources.{role} を設定: {rel_path}")
 
     # 重複チェック（同パスが既にある場合は used_in のみ更新）
     existing = next((e for e in library if e["path"] == rel_path), None)
@@ -88,7 +107,7 @@ def cmd_add(episode_id: str, bgm_file: Path, stem: str):
     # 新規エントリ
     tags = _tags_from_stem(stem)
     entry = {
-        "id": f"{episode_id}-BGM",
+        "id": f"{episode_id}-BGM{suffix}",
         "path": rel_path,
         "duration": 0,  # 後で ffprobe で更新可
         "license": "CC0",  # credit.txt があれば CC BY に変更
@@ -108,26 +127,31 @@ def cmd_add(episode_id: str, bgm_file: Path, stem: str):
     print(f"  ✓ ライブラリに追加: {rel_path}  tags={tags}")
 
 
-def cmd_use_library(episode_id: str, stem: str):
-    """ライブラリ既存BGMをエピソードに紐付ける（bgm_source を episode JSON に記録）。
+def cmd_use_library(episode_id: str, stem: str, role: str = None):
+    """ライブラリ既存BGMをエピソードに紐付ける（episode JSON に記録）。
 
-    stem 例: BGM_library_01_ep003-BGM
-    → ライブラリから id="ep003-BGM" のエントリを探して bgm_source に path を設定
+    stem 例: BGM_library_01_ep003-BGM / main_library_01_ep003-BGM
+    → ライブラリから id="ep003-BGM" のエントリを探してパスを設定
+    role 指定時は bgm_sources[role]、なしは従来どおり bgm_source に記録する。
     """
     library = _load_library()
     ep_data, ep_json = _load_ep(episode_id)
 
     # stem から元のライブラリ id を取得
-    # "BGM_library_01_ep003-BGM" → "ep003-BGM"
-    lib_id = re.sub(r'^BGM_library_\d+_', '', stem)
+    # "BGM_library_01_ep003-BGM" / "main_library_01_ep003-BGM" → "ep003-BGM"
+    lib_id = re.sub(r'^(?:BGM|intro|main|outro)_library_\d+_', '', stem)
     entry = next((e for e in library if e["id"] == lib_id), None)
 
     if not entry:
         print(f"❌ ライブラリにエントリが見つかりません: id={lib_id}")
         sys.exit(1)
 
-    # episode JSON に bgm_source を記録
-    ep_data["bgm_source"] = entry["path"]
+    # episode JSON に記録
+    if role:
+        ep_data.setdefault("bgm_sources", {})[role] = entry["path"]
+        print(f"  ✓ bgm_sources.{role} を設定: {entry['path']}")
+    else:
+        ep_data["bgm_source"] = entry["path"]
     _save_ep(ep_json, ep_data)
 
     # ライブラリの used_in を更新
@@ -152,14 +176,16 @@ def cli():
     parser.add_argument("--episode", required=True)
     parser.add_argument("--file", help="BGMファイルパス（--add 時）")
     parser.add_argument("--stem", required=True, help="ファイル名（拡張子なし）")
+    parser.add_argument("--role", choices=["intro", "main", "outro"],
+                        help="3曲構成の役割（bgm_sources[role] に記録）")
     args = parser.parse_args()
 
     if args.add:
         if not args.file:
             parser.error("--add には --file が必要です")
-        cmd_add(args.episode, Path(args.file), args.stem)
+        cmd_add(args.episode, Path(args.file), args.stem, role=args.role)
     elif args.use_library:
-        cmd_use_library(args.episode, args.stem)
+        cmd_use_library(args.episode, args.stem, role=args.role)
     else:
         parser.error("--add または --use-library を指定してください")
 

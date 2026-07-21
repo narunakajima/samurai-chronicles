@@ -72,6 +72,8 @@ MIN_CLIP_FLOOR = 5.0  # 音声ありシーンの最低クリップ尺（秒）
 BGM_VOLUME = 0.12     # BGM音量（0〜1）
 BGM_FADE_IN = 5       # BGMフェードイン秒数
 BGM_FADE_OUT = 6      # BGMフェードアウト秒数
+BGM_CROSSFADE = 4.0   # 3曲構成時の曲間クロスフェード秒数
+BGM_ROLES = ["intro", "main", "outro"]  # 3曲構成の役割（序盤・中盤・終盤）
 
 # ── イントロ・アウトロ設定 ──────────────────────────────────
 LOGO_PATH = BASE_DIR / "LOGO_dark.PNG"  # 背景黒・クロップ済み版
@@ -831,11 +833,100 @@ def crossfade_concat_n(clips: list, durations: list, dst: Path, xfade_dur: float
     )
 
 
+def resolve_bgm_paths(ep: dict, episode_id: str) -> dict:
+    """BGMファイルパスを解決して {role: Path} を返す。
+
+    3曲構成（episode JSON の bgm_sources）が揃っていればそれを使い、
+    なければ従来の1曲方式（{"single": Path}）にフォールバックする。
+    従来方式の優先順位: BGM/{ep}-BGM.mp3 → bgm_source → bgm_library.json の used_in
+    """
+    sources = ep.get("bgm_sources") or {}
+    if all(sources.get(r) for r in BGM_ROLES):
+        paths = {r: DRIVE_BASE / sources[r] for r in BGM_ROLES}
+        if all(p.exists() for p in paths.values()):
+            print(f"  BGM: 3曲構成（bgm_sources）")
+            for r in BGM_ROLES:
+                print(f"    {r:6}: {sources[r]}")
+            return paths
+        for r, p in paths.items():
+            if not p.exists():
+                print(f"  ⚠️ bgm_sources.{r} が見つかりません: {p} — 1曲方式にフォールバック")
+
+    bgm_path = DRIVE_BASE / "BGM" / f"{episode_id}-BGM.mp3"
+    if not bgm_path.exists() and ep.get("bgm_source"):
+        bgm_path = DRIVE_BASE / ep["bgm_source"]
+        print(f"  BGM: ライブラリ参照（bgm_source）→ {ep['bgm_source']}")
+    if not bgm_path.exists():
+        lib_json = BASE_DIR / "bgm_library.json"
+        if lib_json.exists():
+            lib = json.loads(lib_json.read_text())
+            for entry in lib:
+                if episode_id in entry.get("used_in", []):
+                    bgm_path = DRIVE_BASE / entry["path"]
+                    print(f"  BGM: ライブラリ参照（bgm_library.json）→ {entry['path']}")
+                    break
+    return {"single": bgm_path}
+
+
+def compute_bgm_segments(bgm_paths: dict, scenes: list, scene_offsets: list,
+                         effective_intro_dur: float, total_video_dur: float) -> list:
+    """BGMの (path, start, end) セグメントリストを組み立てる。
+
+    3曲構成: シーンタイプから幕の境界を求める。
+      境界1 = 最初の rising_action/climax シーンの開始（序盤→中盤）
+      境界2 = 最後の climax シーンの終了＝次シーンの開始（中盤→終盤）
+    タイプが見つからない場合はシーン数の 1/3・2/3 にフォールバックする。
+    1曲方式: 全編1セグメント。
+    """
+    if "single" in bgm_paths:
+        return [(bgm_paths["single"], 0.0, total_video_dur)]
+
+    types = [s.get("type", "") for s in scenes]
+    n = len(scenes)
+
+    b1_idx = next((i for i, t in enumerate(types) if t in ("rising_action", "climax")), n // 3)
+    climax_idxs = [i for i, t in enumerate(types) if t == "climax"]
+    b2_idx = (climax_idxs[-1] + 1) if climax_idxs else (n * 2 // 3)
+    if b2_idx <= b1_idx or b2_idx >= n:
+        b2_idx = min(max(b1_idx + 1, n * 2 // 3), n - 1)
+
+    b1 = effective_intro_dur + scene_offsets[b1_idx]
+    b2 = effective_intro_dur + scene_offsets[b2_idx]
+    print(f"  BGM切替: 序盤→中盤 {b1:.1f}s (S{scenes[b1_idx]['scene_id']:02d})"
+          f" / 中盤→終盤 {b2:.1f}s (S{scenes[b2_idx]['scene_id']:02d})")
+
+    half_xf = BGM_CROSSFADE / 2
+    return [
+        (bgm_paths["intro"], 0.0, min(b1 + half_xf, total_video_dur)),
+        (bgm_paths["main"], max(0.0, b1 - half_xf), min(b2 + half_xf, total_video_dur)),
+        (bgm_paths["outro"], max(0.0, b2 - half_xf), total_video_dur),
+    ]
+
+
+def _bgm_segment_filter(in_idx: int, start: float, end: float, is_first: bool,
+                        is_last: bool, out_label: str) -> str:
+    """1BGMセグメント分のフィルター文字列を返す（ループ・トリム・音量・フェード・遅延）。"""
+    seg_dur = end - start
+    fade_in = BGM_FADE_IN if is_first else BGM_CROSSFADE
+    fade_out = BGM_FADE_OUT if is_last else BGM_CROSSFADE
+    fade_out_start = max(0.0, seg_dur - fade_out)
+    delay_ms = int(start * 1000)
+    return (
+        f"[{in_idx}:a]aloop=loop=-1:size=2000000000,"
+        f"atrim=duration={seg_dur:.3f},"
+        f"volume={BGM_VOLUME},"
+        f"afade=t=in:st=0:d={fade_in},"
+        f"afade=t=out:st={fade_out_start:.3f}:d={fade_out},"
+        f"adelay={delay_ms}:all=1[{out_label}]"
+    )
+
+
 def build_audio_track(scenes: list, audio_dir: Path, total_video_dur: float,
-                      bgm_path: Path, dst: Path, scene_offsets: list,
+                      bgm_segments: list, dst: Path, scene_offsets: list,
                       intro_dur: float = 0.0, teaser_wav: Path = None):
     """全シーンのナレーションを配置し BGM とミックスしたオーディオトラックを生成する。
 
+    bgm_segments: [(bgm_path, start_sec, end_sec), ...] — 1曲方式は1要素、3曲構成は3要素。
     teaser_wav: テイザーナレーション（S00_teaser.wav）を指定すると offset=NARR_DELAY で配置。
                 scene_offsets は teaser_dur を含む intro_dur で既にオフセット済みであること。
     """
@@ -864,21 +955,34 @@ def build_audio_track(scenes: list, audio_dir: Path, total_video_dur: float,
         all_labels.append(f"[{lbl}]")
 
     n_narr = len(narr_inputs)
+    n_bgm = len(bgm_segments)
+
+    # ── BGMセグメントのフィルター（入力はナレーションの後に並ぶ） ──
+    bgm_labels = []
+    for si, (bgm_path, start, end) in enumerate(bgm_segments):
+        lbl = f"bgm{si}"
+        narr_filters.append(
+            _bgm_segment_filter(n_narr + si, start, end,
+                                is_first=(si == 0), is_last=(si == n_bgm - 1),
+                                out_label=lbl)
+        )
+        bgm_labels.append(f"[{lbl}]")
+
     if n_narr == 0:
-        # ナレーションなし: BGMのみ
-        bgm_fadeout_start = max(0.0, total_video_dur - BGM_FADE_OUT)
+        # ナレーションなし: BGMのみ（amix は inputs=1 でも動作する）
+        # adelay/aloop 由来のタイムスタンプ乱れを atrim + asetpts で正規化する
+        narr_filters.append(
+            f"{''.join(bgm_labels)}amix=inputs={n_bgm}:duration=longest:normalize=0[mix]"
+        )
+        narr_filters.append(
+            f"[mix]atrim=duration={total_video_dur:.3f},asetpts=N/SR/TB[aout]"
+        )
+        inputs_flat = []
+        for bgm_path, _, _ in bgm_segments:
+            inputs_flat += ["-i", str(bgm_path)]
         run_cmd(
-            [
-                FFMPEG, "-y",
-                "-i", str(bgm_path),
-                "-filter_complex",
-                (
-                    f"[0:a]aloop=loop=-1:size=2000000000,"
-                    f"atrim=duration={total_video_dur},"
-                    f"volume={BGM_VOLUME},"
-                    f"afade=t=in:st=0:d={BGM_FADE_IN},"
-                    f"afade=t=out:st={bgm_fadeout_start:.1f}:d={BGM_FADE_OUT}[aout]"
-                ),
+            [FFMPEG, "-y"] + inputs_flat + [
+                "-filter_complex", ";".join(narr_filters),
                 "-map", "[aout]",
                 "-c:a", "aac", "-b:a", "192k",
                 str(dst),
@@ -896,25 +1000,21 @@ def build_audio_track(scenes: list, audio_dir: Path, total_video_dur: float,
     narr_filters.append(
         f"[narr_mix]apad=whole_dur={total_video_dur}[narr_padded]"
     )
-
-    bgm_fadeout_start = max(0.0, total_video_dur - BGM_FADE_OUT)
-    # BGMフィルター（narr_inputs の直後の入力）
-    bgm_idx = len(narr_inputs)
+    # ナレーション + 全BGMセグメントを合算（normalize=0 なので単純加算）
+    # adelay/aloop 由来のタイムスタンプ乱れを atrim + asetpts で正規化する
     narr_filters.append(
-        f"[{bgm_idx}:a]aloop=loop=-1:size=2000000000,"
-        f"atrim=duration={total_video_dur},"
-        f"volume={BGM_VOLUME},"
-        f"afade=t=in:st=0:d={BGM_FADE_IN},"
-        f"afade=t=out:st={bgm_fadeout_start:.1f}:d={BGM_FADE_OUT}[bgm_loop]"
+        f"[narr_padded]{''.join(bgm_labels)}"
+        f"amix=inputs={1 + n_bgm}:duration=first:normalize=0[mix]"
     )
     narr_filters.append(
-        "[narr_padded][bgm_loop]amix=inputs=2:duration=first:normalize=0[aout]"
+        f"[mix]atrim=duration={total_video_dur:.3f},asetpts=N/SR/TB[aout]"
     )
 
     inputs_flat = []
     for wav in narr_inputs:
         inputs_flat += ["-i", str(wav)]
-    inputs_flat += ["-i", str(bgm_path)]
+    for bgm_path, _, _ in bgm_segments:
+        inputs_flat += ["-i", str(bgm_path)]
 
     run_cmd(
         [
@@ -941,23 +1041,11 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
     img_dir = DRIVE_BASE / episode_id / "images"
     img_dir_shorts = DRIVE_BASE / episode_id / "images_shorts"
     audio_dir = DRIVE_BASE / episode_id / "audio"
-    bgm_path = DRIVE_BASE / "BGM" / f"{episode_id}-BGM.mp3"
 
-    # フォールバック1: episode JSON の bgm_source フィールド
-    if not bgm_path.exists() and ep.get("bgm_source"):
-        bgm_path = DRIVE_BASE / ep["bgm_source"]
-        print(f"  BGM: ライブラリ参照（bgm_source）→ {ep['bgm_source']}")
-
-    # フォールバック2: bgm_library.json の used_in を検索
-    if not bgm_path.exists():
-        lib_json = Path(__file__).parent / "bgm_library.json"
-        if lib_json.exists():
-            lib = json.loads(lib_json.read_text())
-            for entry in lib:
-                if episode_id in entry.get("used_in", []):
-                    bgm_path = DRIVE_BASE / entry["path"]
-                    print(f"  BGM: ライブラリ参照（bgm_library.json）→ {entry['path']}")
-                    break
+    # BGM解決: 3曲構成（bgm_sources）または従来1曲方式
+    bgm_paths = resolve_bgm_paths(ep, episode_id)
+    # Shorts・存在チェック用の代表パス（3曲構成では中盤のepic曲を使う）
+    bgm_path = bgm_paths.get("main") or bgm_paths.get("single")
 
     if out_dir is None:
         out_dir = DRIVE_BASE / episode_id / "output"
@@ -1178,9 +1266,10 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
             if not wav.exists():
                 missing.append((f"audio/S{sid:02d}.wav", "sc_tts_gen.py --episode " + episode_id))
 
-        # BGM
-        if not bgm_path.exists():
-            missing.append((f"audio/{bgm_path.name}", "BGMを設定してください（sc_bgm_library.py）"))
+        # BGM（3曲構成なら全役割をチェック）
+        for role, p in bgm_paths.items():
+            if not p.exists():
+                missing.append((f"BGM/{p.name}（{role}）", "BGMを設定してください（sc_bgm_library.py）"))
 
         # テイザー音声（teaser_narration がある場合は必須）
         teaser_narration = ep.get("teaser_narration", "")
@@ -1260,8 +1349,11 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
         effective_intro_dur = teaser_dur + INTRO_DURATION
         total_full_dur = teaser_dur + INTRO_DURATION + total_dur + OUTRO_MAIN_DURATION
         audio_only = tmp / "audio_only.aac"
+        bgm_segments = compute_bgm_segments(
+            bgm_paths, scenes, scene_offsets, effective_intro_dur, total_full_dur
+        )
         build_audio_track(
-            scenes, audio_dir, total_full_dur, bgm_path,
+            scenes, audio_dir, total_full_dur, bgm_segments,
             audio_only, scene_offsets,
             intro_dur=effective_intro_dur,
             teaser_wav=teaser_wav if (teaser_video_path and teaser_wav.exists()) else None,

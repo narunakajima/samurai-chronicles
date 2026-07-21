@@ -481,20 +481,29 @@ response = client.models.generate_content(
 
 ---
 
-### STEP 3C — BGM（Freesound 2曲 + ライブラリ 2曲 = 計4曲）
+### STEP 3C — BGM 3曲構成（役割別: Freesound 3曲 + ライブラリ 3曲 = 計6曲）
 
-Freesound から2曲ダウンロードし、`bgm_library.json` からエピソードの雰囲気に合う2曲を選んでデスクトップにコピー。計4曲からユーザーが選ぶ。
+本編BGMは**序盤（intro）・中盤（main）・終盤（outro）の3曲構成**（2026-07〜）。
+役割ごとに Freesound 新規1曲 + ライブラリ1曲の2候補を用意し、計6曲から各役割1曲ずつ選ぶ。
+`sc_video_gen.py` がシーンタイプから切り替え時刻を自動計算してクロスフェードでつなぐ。
 
-#### ① Freesound から2曲ダウンロード
+**役割とトーンの対応:**
 
-エピソードのムード（タイトル・シーン構成・感情トーン）から2〜3語の英語クエリを2本生成し、ダウンロードする。
+| 役割 | 対象シーン | トーン | クエリ例 |
+|---|---|---|---|
+| intro（序盤） | hook〜setup | 緊張・導入・影 | `"dark tense orchestral"` / `"dark cinematic strings"` |
+| main（中盤） | rising_action〜climax | 高揚・戦闘・英雄 | `"epic heroic orchestral"` / `"epic orchestral taiko"` |
+| outro（終盤） | falling_action〜outro | 余韻・荘厳・鎮魂 | `"emotional cinematic orchestral"` / `"somber epic strings"` |
+
+#### ① Freesound から役割別に3曲ダウンロード
+
+エピソードのムードを踏まえ、上の表に沿って役割別クエリを3本生成しダウンロードする。
 
 **クエリ生成ルール:**
 - 必ず短く（2〜3語）
 - **必ず `orchestral` または `epic` または `cinematic` のいずれかを含める**
-- トーン修飾語（組み合わせて使う）: dramatic, heroic, dark, powerful, epic, tense, triumphant
+- トーン修飾語（組み合わせて使う）: dramatic, heroic, dark, powerful, epic, tense, triumphant, emotional, somber
 - 楽器補強（単体では使わない）: strings, brass, choir, taiko, percussion
-- 良い例: `"epic orchestral"` / `"dramatic cinematic strings"` / `"dark orchestral taiko"` / `"heroic brass orchestra"`
 - **禁止キーワード:** shamisen 単体, piano 単体, ambient, meditation, acoustic, folk, traditional, nature, forest, rain, calm, relaxing, light
 
 **重要:** `--library $HOME/samurai-chronicles/bgm_library.json` を必ず指定する。
@@ -504,38 +513,52 @@ Freesound から再ダウンロードされず自動的にスキップされる�
 ```bash
 mkdir -p "$HOME/Desktop/SC/BGM"
 FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
-  "<Q1>" "<Q2>" \
+  "<Q_intro>" "<Q_main>" "<Q_outro>" \
   "$HOME/Desktop/SC/BGM/" \
   --round 0 \
   --library "$HOME/samurai-chronicles/bgm_library.json"
 ```
 
-**部分失敗時（一部スロットが0件・404）:** 失敗したスロットのみ `--start-slot <N>` で別クエリに差し替えて補完する。ダウンロード完了後、`.credit.txt` を退避：
+**部分失敗時（一部スロットが0件・404）:** 失敗したスロットのみ `--start-slot <N>` で別クエリに差し替えて補完する。
+
+ダウンロード完了後、スロット番号を役割プレフィックスにリネームし、`.credit.txt` を退避：
 
 ```bash
+cd "$HOME/Desktop/SC/BGM"
+# スロット1=intro / 2=main / 3=outro（.mp3 と .credit.txt の両方をリネーム）
+for f in BGM_candidate_01_*; do mv "$f" "intro_${f#BGM_}"; done 2>/dev/null
+for f in BGM_candidate_02_*; do mv "$f" "main_${f#BGM_}"; done 2>/dev/null
+for f in BGM_candidate_03_*; do mv "$f" "outro_${f#BGM_}"; done 2>/dev/null
+
 mkdir -p /tmp/sc_bgm_credits
-mv "$HOME/Desktop/SC/BGM/BGM_candidate_"*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null || true
+mv "$HOME/Desktop/SC/BGM/"*_candidate_*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null || true
 ```
 
-#### ② ライブラリから2曲選択
+#### ② ライブラリから役割別に3曲選択
 
-`bgm_library.json` を読み込み、エピソードのタイトル・ナレーション・シーン構成（climax/rising_action の多さ、トーン）を考慮してタグが合致する上位2件を選ぶ。
+`bgm_library.json` を読み込み、各役割のトーンに合うタグの曲を1曲ずつ選ぶ
+（intro=dark/tense系、main=epic/heroic系、outro=emotional/somber系。
+エピソードのタイトル・シーン構成も考慮する）。
 
-選んだ2件を `~/Desktop/SC/BGM/` にコピー（試聴用の一時コピー。選択後は削除）：
+選んだ3件を `~/Desktop/SC/BGM/` にコピー（試聴用の一時コピー。選択後は削除）：
 
 ```bash
 DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles"
-cp "$DRIVE/<path1>" "$HOME/Desktop/SC/BGM/BGM_library_01_<name>.mp3"
-cp "$DRIVE/<path2>" "$HOME/Desktop/SC/BGM/BGM_library_02_<name>.mp3"
-# CC BY の場合は credit.txt も /tmp/sc_bgm_credits/ に保存しておく
+cp "$DRIVE/<path1>" "$HOME/Desktop/SC/BGM/intro_library_01_<lib_id>.mp3"
+cp "$DRIVE/<path2>" "$HOME/Desktop/SC/BGM/main_library_01_<lib_id>.mp3"
+cp "$DRIVE/<path3>" "$HOME/Desktop/SC/BGM/outro_library_01_<lib_id>.mp3"
 ```
 
-`~/Desktop/SC/BGM/` に合計4曲が並ぶ：
+※ `<lib_id>` はライブラリエントリの `id`（例: `ep003-BGM`）。STEP 4 で id 逆引きに使うため正確に。
+
+`~/Desktop/SC/BGM/` に計6曲が並ぶ（役割ごとに新規 vs ライブラリの2択）：
 ```
-BGM_candidate_01_xxx.mp3   ← Freesound 新規
-BGM_candidate_02_xxx.mp3   ← Freesound 新規
-BGM_library_01_xxx.mp3     ← ライブラリ
-BGM_library_02_xxx.mp3     ← ライブラリ
+intro_candidate_01_xxx.mp3   ← Freesound 新規（序盤）
+intro_library_01_xxx.mp3     ← ライブラリ（序盤）
+main_candidate_02_xxx.mp3    ← Freesound 新規（中盤）
+main_library_01_xxx.mp3      ← ライブラリ（中盤）
+outro_candidate_03_xxx.mp3   ← Freesound 新規（終盤）
+outro_library_01_xxx.mp3     ← ライブラリ（終盤）
 ```
 
 ---
@@ -549,7 +572,9 @@ BGM_library_02_xxx.mp3     ← ライブラリ
 - 問題なければそのまま採用。明らかな問題（文字化け・崩れた構図等）があれば1回だけ自動再生成し、それでも改善しなければ注記した上でそのまま採用する（ユーザーには止めずに進む）。
 
 **BGM:**
-- Freesound新規2曲・ライブラリ2曲の計4曲を用意した後、`/consult` スキルを使い、エピソードのトーン・制作上の制約（単一トラック固定音量ループ、シーン別演出不可）を踏まえて1曲に自動的に絞り込む。
+- 役割別6曲（各役割2候補）を用意した後、`/consult` スキルを使い、エピソードのトーン・
+  3曲構成の制約（役割ごとに固定音量ループ、曲間はクロスフェード4秒、序盤→中盤→終盤で
+  緊張→高揚→余韻の流れを作る）を踏まえて**各役割1曲ずつ計3曲**に自動的に絞り込む。
 - `/consult` の最終提案に従って採用し、STEP 4 のBGM紐付け処理へそのまま進む。
 - 選ばれなかった3曲・使用しなかった credit.txt は通常通り削除する。
 
@@ -606,38 +631,36 @@ mv "$HOME/Desktop/SC/ep{NNN}_制作確認書.txt" "$DRIVE/"
 # サムネイルを移動
 mv "$HOME/Desktop/SC/ep{NNN}_thumbnail.png" "$DRIVE/"
 
-# 残ったBGM1曲を判定: Freesound新規 or ライブラリ
-CHOSEN=$(ls "$HOME/Desktop/SC/BGM/BGM_candidate_"*.mp3 "$HOME/Desktop/SC/BGM/BGM_library_"*.mp3 2>/dev/null | head -1)
-CHOSEN_STEM=$(basename "$CHOSEN" .mp3)
+# 役割ごとに残った1曲を判定して登録: Freesound新規 or ライブラリ
+for ROLE in intro main outro; do
+  CHOSEN=$(ls "$HOME/Desktop/SC/BGM/${ROLE}_"*.mp3 2>/dev/null | head -1)
+  if [ -z "$CHOSEN" ]; then
+    echo "⚠️ ${ROLE} のBGMが見つかりません"; continue
+  fi
+  CHOSEN_STEM=$(basename "$CHOSEN" .mp3)
 
-if [[ "$CHOSEN" == *"BGM_candidate_"* ]]; then
-  # Freesound新規: BGM/フォルダに移動（sc_bgm_library.py --add が自動移動）
-  python3 $HOME/samurai-chronicles/sc_bgm_library.py \
-    --add --episode ep{NNN} --file "$CHOSEN" \
-    --stem "$CHOSEN_STEM"
-  # クレジット注入（CC BY の場合）
+  if [[ "$CHOSEN" == *"_candidate_"* ]]; then
+    # Freesound新規: BGM/{ep}-BGM-{role}.mp3 へ移動し bgm_sources[role] を設定
+    python3 $HOME/samurai-chronicles/sc_bgm_library.py \
+      --add --episode ep{NNN} --role "$ROLE" --file "$CHOSEN" \
+      --stem "$CHOSEN_STEM"
+  else
+    # ライブラリ既存曲: bgm_sources[role] にパスを記録、ファイルは移動しない
+    python3 $HOME/samurai-chronicles/sc_bgm_library.py \
+      --use-library --episode ep{NNN} --role "$ROLE" --stem "$CHOSEN_STEM"
+    rm -f "$CHOSEN"
+  fi
+
+  # クレジット注入（CC BY の場合。sc_inject_bgm_credit.py は重複追加しないので役割ごとに実行してよい）
   CREDIT="/tmp/sc_bgm_credits/${CHOSEN_STEM}.credit.txt"
   if [ -f "$CREDIT" ]; then
     python3 $HOME/samurai-chronicles/sc_inject_bgm_credit.py \
       --episode ep{NNN} --credit-file "$CREDIT"
   fi
-else
-  # ライブラリ既存曲: episode JSON に bgm_source を記録、ファイルは移動しない
-  python3 $HOME/samurai-chronicles/sc_bgm_library.py \
-    --use-library --episode ep{NNN} --stem "$CHOSEN_STEM"
-  # ライブラリ曲の試聴コピーを削除
-  rm -f "$CHOSEN"
-  rm -rf "$HOME/Desktop/SC/BGM" 2>/dev/null || true
-  # クレジット注入（CC BY の場合）
-  CREDIT="/tmp/sc_bgm_credits/${CHOSEN_STEM}.credit.txt"
-  if [ -f "$CREDIT" ]; then
-    python3 $HOME/samurai-chronicles/sc_inject_bgm_credit.py \
-      --episode ep{NNN} --credit-file "$CREDIT"
-  fi
-fi
+done
 
 # /tmp の残 credit.txt をすべて削除
-rm -f /tmp/sc_bgm_credits/BGM_candidate_*.credit.txt
+rm -f /tmp/sc_bgm_credits/*.credit.txt
 
 # デスクトップの SC/ フォルダを削除（thumbnail・制作確認書は mv 済み、BGM残骸も含め一括削除）
 rm -rf "$HOME/Desktop/SC"
@@ -651,20 +674,14 @@ credit.txt が存在した場合（CC BY）は、制作確認書の BGM 欄を�
 
 BGM が CC0 の場合は「CC0 — クレジット不要」と記載。
 
-**更新後の BGM 欄フォーマット（CC BY の場合）:**
+**更新後の BGM 欄フォーマット（3曲構成）:**
 ```
-BGM           : ✅ {タイトル} by {作者名}
-  Freesound URL : https://freesound.org/s/{SOUND_ID}/
-  ライセンス    : CC BY 4.0
-  概要欄クレジット: 🎵 Music: {タイトル} by {作者名} (freesound.org) — CC BY 4.0
+BGM           : ✅ 3曲構成
+  序盤 (intro) : {タイトル} by {作者名} [CC0 / CC BY 4.0]
+  中盤 (main)  : {タイトル} by {作者名} [CC0 / CC BY 4.0]
+  終盤 (outro) : {タイトル} by {作者名} [CC0 / CC BY 4.0]
 ```
-
-**更新後の BGM 欄フォーマット（CC0 の場合）:**
-```
-BGM           : ✅ {タイトル} by {作者名}
-  Freesound URL : https://freesound.org/s/{SOUND_ID}/
-  ライセンス    : CC0（クレジット不要）
-```
+CC BY の曲がある場合は、その曲ごとに Freesound URL と概要欄クレジット行を続けて記載する。
 
 Freesound の SOUND_ID は BGM ファイル名（`BGM_candidate_XX_{SOUND_ID}_...mp3`）から取得する。
 
