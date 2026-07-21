@@ -165,7 +165,8 @@ def cmd_use_library(episode_id: str, stem: str, role: str = None):
         credit_tmp.parent.mkdir(parents=True, exist_ok=True)
         credit_tmp.write_text(entry["credit"], encoding="utf-8")
 
-    print(f"  ✓ bgm_source を設定: {entry['path']}")
+    if not role:
+        print(f"  ✓ bgm_source を設定: {entry['path']}")
     print(f"  ✓ ライブラリ used_in 更新: {entry['used_in']}")
 
 

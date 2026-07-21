@@ -340,7 +340,8 @@
     ],
     "used_in": [
       "ep053",
-      "ep062"
+      "ep062",
+      "ep064"
     ]
   },
   {
@@ -367,7 +368,8 @@
       "orchestral"
     ],
     "used_in": [
-      "ep055"
+      "ep055",
+      "ep064"
     ]
   },
   {
@@ -396,6 +398,19 @@
     ],
     "used_in": [
       "ep060"
+    ]
+  },
+  {
+    "id": "ep064-BGM-main",
+    "path": "BGM/ep064-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: The Leading Edge (orchestral climax anthem) by SondreDrakensson (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral"
+    ],
+    "used_in": [
+      "ep064"
     ]
   }
 ]

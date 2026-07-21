@@ -636,13 +636,13 @@
     },
     {
       "episode_id": "ep064",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Real Ninja: How Japan's Secret Agents Actually Operated",
       "era": "Sengoku",
       "priority": "A",
       "person": null,
       "angle": "thematic",
-      "notes": "Operational focus — missions, tools, techniques. Different angle from ep066."
+      "notes": "Operational focus — missions, tools, techniques. Different angle from ep063 (myth-vs-history), not ep066."
     },
     {
       "episode_id": "ep065",
@@ -871,6 +871,6 @@
       "notes": "Japan's greatest cultural export. Manga, anime, Hollywood, bushido in business."
     }
   ],
-  "last_updated": "2026-07-15",
+  "last_updated": "2026-07-22",
   "total_topics": 87
 }

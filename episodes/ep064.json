@@ -1,0 +1,226 @@
+{
+  "episode_id": "ep064",
+  "episode_title": "The Real Ninja: How Japan's Secret Agents Actually Operated",
+  "youtube_title": "The Spies Who Won Japan's Wars Without Ever Drawing a Sword",
+  "youtube_description": "The best ninja never drew their sword. They opened gates from the inside, spread panic through enemy camps at night, and vanished before anyone knew they'd been there. This is how Japan's warlords actually used their secret agents — and the real missions history has only recently confirmed.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 The best ninja never drew a\n0:47 Every Sengoku warlord...\n1:30 These agents were not...\n2:10 The most common mission was also\n2:43 Takeda Shingen built one of the\n3:11 When reconnaissance wasn't...\n3:48 The Later Hojo clan relied on\n4:23 None of this worked without...\n4:52 The most dangerous missions...\n5:23 When that night came, the agent\n5:48 When it worked, a fortress...\n6:15 A successful agent didn't...\n6:48 As the wars ended and Japan\n7:16 Almost none of this was written\n7:44 This secrecy is exactly why the\n8:12 For a warlord, the...\n8:40 Not every mission succeeded....\n9:10 Strip away the myth, and what\n9:37 Next time on Samurai...\n10:02 If the real story behind Japan's\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"Ninja: Unmasking the Myth\" (Frontline Books, 2017)\n2. Cummins, Antony, and Minami, Yoshie (trans.). \"The Book of Ninja: The Bansenshukai\" (Watkins Publishing, 2013)\n3. Turnbull, Stephen. \"Ninja AD 1460–1650\" (Osprey Publishing, 2003)\n\n\n🎵 Music: The Leading Edge (orchestral climax anthem) by SondreDrakensson (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional/Sad/Tragic String Orchestral BGM Background Music by EvanBoyerman (freesound.org) — CC BY 4.0\n#Ninja #Shinobi #FumaKotaro #Suppa #Bansenshukai #Samurai #JapaneseHistory #SengokuPeriod #TakedaShingen #Japan #SamuraiChronicles",
+  "youtube_tags": [
+    "Ninja",
+    "Shinobi",
+    "Suppa",
+    "Fuma Kotaro",
+    "Iga",
+    "Koga",
+    "Bansenshukai",
+    "Samurai",
+    "Japanese History",
+    "Sengoku Period",
+    "Takeda Shingen",
+    "Hojo Clan",
+    "Japan",
+    "Samurai Chronicles",
+    "Medieval Japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "An agent stands motionless in the dark, hand on a castle's gate mechanism, one signal fire from changing history. He has waited months for this single night — no sword, no army, just patience. What happens when the signal finally comes?",
+  "shorts_narration": "Three missions: watch, sabotage, infiltrate. Real secret agents opened castle gates from inside and vanished without a trace. This is how ninja actually won Japan's wars. Who were they really?",
+  "shorts_hook_lines": [
+    "NEVER A SWORD.",
+    "SHADOWS AND FIRE.",
+    "HOW DID THEY REALLY WIN?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of an anonymous ninja operative's eyes beneath the low brim of a wide straw traveler's hat, face otherwise obscured in shadow, a faint reflection of firelight visible in the eyes. Dramatic single-source lighting, intense focused gaze, vertical portrait composition filling the frame.",
+  "thumbnail_prompt": "Dramatic close portrait of a real historical ninja operative disguised as a traveling merchant, wide straw hat casting a shadow over the upper face, sharp watchful eyes visible beneath the brim, plain practical clothing rather than theatrical black. Cinematic scale, dramatic and historical, moody atmospheric lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "The best ninja never drew a sword. They opened gates from the inside, spread panic through enemy camps at night, and vanished before anyone knew they'd been there. So how did Japan's warlords actually use these secret agents?",
+      "image_prompt": "Extreme close-up of a gloved hand resting motionlessly on a sheathed short blade in deep shadow, the weapon never drawn, faint torchlight from a distant castle wall reflected in the metal. Tense, restrained, cinematic close framing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "Every Sengoku warlord understood a simple truth: battles could be won or lost before a single soldier crossed a field. The side with better information — troop numbers, supply routes, a castle's weak points — usually won. This is the story of how that information was gathered, not through legend, but through documented missions: infiltration, sabotage, and deliberate chaos, carried out by agents trained for exactly this purpose.",
+      "image_prompt": "Wide aerial view of two opposing army camps at dusk on a Sengoku battlefield, one camp shown with precise defensive positioning as if guided by prior knowledge, the other in disorganized sprawl. Cinematic strategic overview, dramatic lighting.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "These agents were not soldiers pulled from the ranks. Families in Iga and Koga trained children from an early age in stealth, disguise, lock-picking, and improvised chemistry — skills passed down like a trade. By adulthood, a skilled operative could read a battlefield, forge a travel permit, and disappear into a crowd without a second glance. Daimyo paid handsomely for these skills, often more than for an equivalent number of soldiers.",
+      "image_prompt": "A remote mountain village courtyard in Iga province at dawn, young trainees practicing silent movement and balance along a low wooden beam under an elder's watchful eye. Grounded, disciplined, muted natural lighting.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The most common mission was also the least dramatic: reconnaissance. An agent might spend weeks posing as a traveling merchant, mapping a castle's walls, counting sentries, and timing the changing of the guard. No weapons were drawn. The entire operation succeeded only if no one noticed anything had happened at all.",
+      "image_prompt": "A plainly dressed traveling merchant pausing at a market stall near a castle's outer wall, subtly studying the fortification and guard positions while appearing to haggle over goods. Naturalistic daylight, quiet observational tension.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Takeda Shingen built one of the most effective intelligence networks of the era, employing agents known as suppa to scout enemy movements before his campaigns. Their reports on troop strength and terrain reportedly shaped his decisions before the battles of Kawanakajima, where information often mattered as much as swordsmanship.",
+      "image_prompt": "A stern Sengoku warlord seated before a war map illuminated by candlelight, a plainly dressed scout kneeling nearby delivering a whispered report, other generals watching in tense silence. Dramatic interior lighting, historical war council atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "When reconnaissance wasn't enough, agents moved to sabotage. Records describe operatives infiltrating supply lines to spoil grain stores, disable weapons caches, or set delayed fires using slow-burning fuses timed to ignite hours after the agent had already escaped. A single successful sabotage could weaken a garrison before an army even arrived.",
+      "image_prompt": "A cloaked figure crouched beside a castle's grain storehouse at night, carefully igniting a slow-burning fuse hidden beneath sacks of rice, no torch or open flame visible. Tense nighttime cinematic lighting, muted earth tones.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The Later Hojo clan relied on a shinobi group said to be led by Fuma Kotaro, credited in campaign chronicles with a tactic requiring no infiltration at all: chaos. Under cover of darkness, his agents would strike an enemy camp, cut tent ropes, set fires, and vanish — leaving confused soldiers to attack each other in the dark before dawn even broke.",
+      "image_prompt": "A raiding party in dark practical clothing moving swiftly through a chaotic enemy camp at night, cutting tent ropes and scattering campfires as confused soldiers stumble in the dark. Dynamic nighttime cinematic composition, dramatic firelight.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "None of this worked without specialized equipment. Agents carried compact lock-picking tools, concealed message capsules, and mixtures for starting fires without flint or spark. Every tool was designed around a single principle: leave no trace, and if discovered, leave nothing that could be traced back to who sent you.",
+      "image_prompt": "Close-up still life of compact lock-picking tools, a small sealed message capsule, and a simple fire-starting mixture laid out on dark cloth, practical and unglamorous. Muted documentary-style lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The most dangerous missions of all were infiltrations meant to open a castle from within. An agent might spend months establishing a cover identity inside the walls — as a servant, a gardener, a tradesman — waiting patiently for the single night an army outside would need the gates to fall.",
+      "image_prompt": "A plainly dressed servant figure moving unnoticed through a castle's inner courtyard at dusk, carrying supplies past guards who pay no attention, eyes quietly studying the gate mechanism nearby. Subtle tension, naturalistic castle interior lighting.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "When that night came, the agent moved fast: disabling the gate mechanism, silencing a guard, signaling the waiting army with a single controlled fire. There was no room for hesitation. If the signal came too early or too late, the entire assault — and the agent's life — was lost.",
+      "image_prompt": "Close-up of hands working quickly to disable a heavy wooden gate locking mechanism in near-total darkness, a single small controlled flame flickering nearby as a signal. Tense, high-stakes cinematic close framing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "When it worked, a fortress considered impregnable could fall in minutes, its defenders overwhelmed before they understood what had happened. Chronicles rarely credit these operations by name — officially, castles simply 'fell.' The agents who made it possible were never meant to be remembered at all.",
+      "image_prompt": "Wide dramatic shot of a castle's main gate swinging open at night as attacking soldiers pour through in silhouette, defenders caught in disarray. Chaotic, decisive, cinematic wide battle composition, dramatic firelight.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "A successful agent didn't celebrate. They disappeared again, back into the disguise of farmer or merchant, ready for the next assignment. Recognition was never the goal — survival and continued usefulness were. Fame would only make the next mission impossible.",
+      "image_prompt": "A lone figure in plain farmer's clothing walking calmly away from a smoking battlefield at dawn, blending seamlessly into a group of ordinary travelers on a country road. Quiet, understated, cinematic wide shot.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "As the wars ended and Japan entered two centuries of peace, the demand for these missions nearly vanished. Some operatives found quiet new roles as castle guards and border watchmen; most simply returned to ordinary lives their training had always let them blend into.",
+      "image_prompt": "A former operative, now dressed as an ordinary castle guard, standing watch along quiet stone ramparts in daylight during peacetime, no trace of his past visible. Calm, reflective, cinematic peacetime lighting.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Almost none of this was written down at the time — and that was deliberate. A documented method is a method that can be countered. What survives today comes largely from fragments: family transmissions, later manuals compiled from memory, and the occasional line in a victorious lord's own war chronicle.",
+      "image_prompt": "Close-up of a fragile, partially damaged handwritten scroll fragment on a wooden table, illuminated by a single traditional paper lantern, most of the text faded or missing. Contemplative documentary still-life, warm soft lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "This secrecy is exactly why the myths took over so easily. When the real record is this thin, legend rushes in to fill the silence. But the fragments that do survive suggest something more useful than magic: a working intelligence and sabotage operation, centuries ahead of its time.",
+      "image_prompt": "Symbolic split composition: on one side a faded, incomplete historical scroll fragment, on the other a vivid, exaggerated fictional ninja illustration bursting with theatrical color. Conceptual cinematic contrast, muted versus vivid lighting.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "For a warlord, the calculation was simple. A single trained agent cost a fraction of what an extra company of soldiers cost — and could achieve in one night what a siege might take months to accomplish. Information and sabotage were, quite literally, cheaper than war.",
+      "image_prompt": "A visual comparison composition: a small group of a few plainly dressed agents on one side, a vast formation of armored soldiers on the other, subtly suggesting unequal cost and impact. Symbolic, cinematic wide composition.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Not every mission succeeded. Captured agents faced execution, and a botched infiltration could expose an entire network built over years. The romantic image of the unstoppable ninja ignores this reality: these were dangerous, fragile operations that failed as often as any human endeavor.",
+      "image_prompt": "A somber shot of an empty prison cell within a castle's lower level, a single discarded plain cloak left behind, indicating a captured operative's fate. Grim, restrained, cinematic somber lighting, no graphic content.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Strip away the myth, and what remains is still remarkable: ordinary people who turned patience, disguise, and precise timing into a weapon that could decide a war before the first blade was drawn. History has only recently begun to take that seriously.",
+      "image_prompt": "A lone plainly dressed figure standing at dawn on a quiet hillside overlooking a peaceful valley, calm and unremarkable, the war long over. Reflective, minimalist, cinematic closing composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — the men behind these missions paid a price. In 1581, Oda Nobunaga marched an army into their home province, determined to erase them for good. This is the story of the campaign that nearly ended the ninja forever.",
+      "image_prompt": "A vast army preparing to march into misty mountain valleys at dawn, banners raised, a sense of overwhelming force about to descend on a small remote province. Ominous, dramatic, cinematic teaser framing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If the real story behind Japan's secret agents surprised you, subscribe to Samurai Chronicles — new episodes every day. The most effective weapon in Sengoku Japan, it turns out, was never seen at all.",
+      "image_prompt": "Calm wide shot of a quiet Japanese mountain village at sunrise, peaceful and unremarkable, hiding centuries of untold operations beneath its ordinary surface. Peaceful, reflective closing tone.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep053-BGM.mp3",
+    "main": "BGM/ep064-BGM-main.mp3",
+    "outro": "BGM/ep055-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/1n60x1yE108",
+  "shorts_url": "https://youtu.be/UL-efYBMgIM",
+  "scheduled_at": "2026-08-04 03:00"
+}
