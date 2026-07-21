@@ -1,0 +1,224 @@
+{
+  "episode_id": "ep063",
+  "episode_title": "The Ninja: Separating Myth from History",
+  "youtube_title": "The Ninja: Separating Myth from History",
+  "youtube_description": "No invisibility. No sorcery. No walking through walls. The real ninja were something far more interesting than the legend — professional spies, saboteurs, and masters of disguise who shaped the outcome of Japan's civil wars from the shadows. This is where the myth ends and the history begins.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 Real ninja never walked...\n0:49 During Japan's Sengoku...\n1:29 The specialists came...\n2:03 Start with the most famous myth:\n2:34 The iconic solid-black ninja...\n3:13 Shuriken, the iconic throwing...\n3:48 So-called 'ninjutsu' was not...\n4:20 Perhaps the most valuable...\n4:58 In 1581, Oda Nobunaga decided...\n5:32 The Iga clans fought back with\n6:04 By the end of the Iga\n6:29 Some of the surviving Iga...\n7:02 As the country settled into two\n7:41 The Bansenshukai reads less...\n8:14 So where did invisibility,...\n8:46 That fictional version only...\n9:20 Modern historians and...\n9:51 The real story may be less\n10:21 Next time on Samurai...\n10:43 If separating ninja myth from...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"Ninja: Unmasking the Myth\" (Frontline Books, 2017)\n2. Cummins, Antony, and Minami, Yoshie (trans.). \"The Book of Ninja: The Bansenshukai\" (Watkins Publishing, 2013)\n3. Turnbull, Stephen. \"The Samurai Sourcebook\" (Cassell, 1998)\n\n#Ninja #Shinobi #Iga #JapaneseHistory #SengokuPeriod #Bansenshukai #Samurai #Japan #SamuraiChronicles",
+  "youtube_tags": [
+    "Ninja",
+    "Shinobi",
+    "Iga",
+    "Koga",
+    "Bansenshukai",
+    "Samurai",
+    "Japanese History",
+    "Sengoku Period",
+    "Oda Nobunaga",
+    "Japan",
+    "Samurai Chronicles",
+    "Medieval Japan",
+    "Feudal Japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "An army of tens of thousands marched into the mountains to destroy them completely. Not wizards. Not assassins with magic powers. Just spies, saboteurs, and disguise artists — and the lord who decided they had finally become too dangerous to let live.",
+  "shorts_narration": "1581. Nobunaga sent an army to wipe out Japan's most feared spies. No invisibility. No magic. Just disguise, patience, and deadly skill. This is the real history of the ninja.",
+  "shorts_hook_lines": [
+    "NO MAGIC.",
+    "JUST DISCIPLINE.",
+    "WHO WERE THEY REALLY?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of an anonymous ninja's face partially wrapped in dark cloth, only sharp watchful eyes visible, a single sliver of moonlight cutting across the face. Dramatic shadow, direct intense gaze. Vertical portrait composition filling the frame.",
+  "thumbnail_prompt": "Dramatic close portrait of a real historical ninja — dark practical earth-toned clothing rather than flashy black, face partially concealed by cloth wrap, crouched in shadow with sharp watchful eyes, ordinary tools rather than exotic weapons visible at the belt. Cinematic scale, dramatic and historical, moody atmospheric lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Real ninja never walked through walls, never turned invisible, and never used magic. Almost everything you think you know about them is fiction. So who were they really — and why did the myth take over so completely?",
+      "image_prompt": "Extreme close-up of a plain dark cloth mask and watchful eyes emerging from deep shadow, no exotic weapons or theatrical costume visible, muted earth tones. Somber, quiet, cinematic tension.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "During Japan's Sengoku period, warlords needed something armies alone couldn't provide: information. Spies who could infiltrate an enemy castle, sabotage supplies, or simply report back on troop movements were often more valuable than another thousand soldiers. This need created a demand for specialists — men and women skilled in stealth, disguise, and quiet violence. History remembers them as ninja.",
+      "image_prompt": "Wide cinematic shot of a Sengoku-era war council studying maps by candlelight, a plain-clothed figure slipping unnoticed out a side door into the night. Muted tones, historical establishing atmosphere.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The specialists came overwhelmingly from two regions: Iga and Koga, rugged mountain provinces with little centralized authority and a long tradition of small independent clans training in irregular warfare. Far from a single unified order, these were loose networks of families who sold their skills as mercenaries to whichever daimyo could pay for them.",
+      "image_prompt": "Wide landscape of the rugged, mist-covered mountains of Iga province at dawn, small isolated farming villages nestled in the valleys below, a sense of remote independence. Cinematic establishing shot, natural earth tones.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Start with the most famous myth: invisibility. No historical technique allowed a person to vanish. What actually worked was patience and timing — moving during a sentry's blind spot, waiting motionless in shadow for hours, exploiting a guard's fatigue near dawn. It looked like magic only to the men who never saw it coming.",
+      "image_prompt": "A figure in dark practical clothing pressed motionless against a stone wall in deep shadow, a torch-carrying guard walking past just feet away without noticing. Tense, quiet, cinematic nighttime composition.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "The iconic solid-black ninja costume is almost entirely theatrical invention. On a kabuki stage, black-clad stagehands were understood by the audience to be invisible — a convention later borrowed for ninja characters. In the field, an all-black outfit would stand out badly against most rural backgrounds. Real operatives dressed as farmers, merchants, or traveling monks — disguises that let them walk in plain sight.",
+      "image_prompt": "Split visual: on one side a kabuki stagehand in black moving unseen among performers under stage lights, on the other a plainly dressed traveling merchant walking openly along a country road. Cinematic contrast composition, warm and cool tones.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Shuriken, the iconic throwing stars, existed — but were a minor, secondary tool, not a primary weapon. They were used mainly as a distraction, a moment's flinch bought to create an opening for escape or a more lethal blade. The idea of ninja winning fights by hurling stars at enemies owes far more to twentieth-century cinema than to any historical battlefield.",
+      "image_prompt": "Close-up still life of a small collection of simple iron throwing stars, a plain dagger, and everyday tools laid out on dark cloth, unglamorous and functional. Muted lighting, documentary still-life composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "So-called 'ninjutsu' was not a mystical martial art. It was closer to a professional skill set: how to pick a lock, forge a document, start a controlled fire, mix a sedative, climb a wall using simple hooked tools, and remember a floor plan after a single glance. Espionage tradecraft, not sorcery.",
+      "image_prompt": "A figure using a simple hooked climbing tool to silently scale a wooden castle wall at night, focused and methodical rather than acrobatic or superhuman. Realistic, grounded, cinematic nighttime lighting.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Perhaps the most valuable skill of all was disguise, formalized in later manuals as the 'seven ways of going' — posing convincingly as a monk, a merchant, a performer, a laborer, or a wandering priest, each identity granting access to a different kind of target. A good ninja was rarely noticed at all, which was, of course, the entire point.",
+      "image_prompt": "A row of seven simple silhouettes in different everyday disguises — monk, merchant, performer, laborer, priest — subtly overlapping to suggest one person shifting identity. Symbolic, muted, cinematic concept composition.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In 1581, Oda Nobunaga decided the independent clans of Iga had grown too dangerous to leave alone. He sent an army of tens of thousands into the province with orders to crush its resistance completely. It became one of the most brutal campaigns of his career — and very nearly the end of the ninja as a distinct tradition.",
+      "image_prompt": "Oda Nobunaga standing at the edge of a mountain pass, surveying a vast army preparing to march into the misty Iga valleys below, cold resolute expression. Dramatic overcast lighting, ominous scale.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "The Iga clans fought back with everything their training had taught them — ambush, sabotage, guerrilla raids from terrain they knew better than any invading force. It delayed Nobunaga's army, but it could not stop it. Village after village was burned. Thousands of people, fighters and civilians alike, were killed in a campaign of deliberate, systematic destruction.",
+      "image_prompt": "Distant wide shot of smoke rising from burning mountain villages at dusk, columns of soldiers advancing through narrow valley paths, scattered defenders retreating into the tree line. Somber, devastating, cinematic wide composition, no graphic detail shown.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "By the end of the Iga campaign, the old networks were shattered. Survivors scattered across Japan, some finding new employers, many disappearing into ordinary civilian life, their skills and family knowledge quietly passed down without the organized clan structure that had once supported them.",
+      "image_prompt": "Small groups of weary travelers in plain clothing walking away from a smoking mountain valley in different directions along forest roads, dawn light breaking through clouds. Reflective, somber, cinematic wide shot.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Some of the surviving Iga families found a new patron: Tokugawa Ieyasu, who valued their skills enough to employ them as guards, scouts, and intelligence gatherers. Their descendants would go on to guard the walls of Edo Castle for generations, a discreet, largely undocumented presence inside the new center of Japanese power.",
+      "image_prompt": "Plainly dressed but alert guards standing watch along the stone walls of a great castle at night, unremarkable in appearance yet sharply attentive, lanterns glowing along the ramparts. Cinematic quiet vigilance.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "As the country settled into two centuries of enforced peace under Tokugawa rule, the practical need for wartime spies mostly vanished. What remained of ninja tradition survived instead as writing — most notably the Bansenshukai, a seventeenth-century manual compiling techniques, tools, and philosophy from across the old Iga and Koga schools.",
+      "image_prompt": "An aged leather-bound scroll manuscript open on a wooden desk, illustrated diagrams of tools and climbing devices visible on the pages, lit by a single traditional Japanese andon paper lantern or a simple wax candle in a plain holder — absolutely no oil lamp, no glass, no metal spouted lamp of any kind. Contemplative, historical documentary still-life, warm soft light source true to Edo/Sengoku Japan.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The Bansenshukai reads less like a book of magic and more like a field manual: instructions for making explosives, guidance on psychological manipulation, detailed diagrams of climbing tools and listening devices. It is, in many ways, the closest thing history has to a real-world spy handbook from feudal Japan.",
+      "image_prompt": "Close-up of detailed hand-drawn technical diagrams on aged paper — climbing hooks, listening devices, small tools — rendered with careful practical precision rather than fantastical flourish. Muted documentary lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "So where did invisibility, sorcery, and superhuman ninja come from? Largely from Edo-period entertainment. Kabuki plays and woodblock prints needed spectacle, and quiet professional spycraft doesn't sell tickets. Writers gave ninja characters magical powers, and audiences loved it far more than the truth.",
+      "image_prompt": "A vibrant Edo-period kabuki stage mid-performance, an actor in exaggerated ninja costume leaping dramatically amid painted smoke effects, an enthralled audience watching in silhouette. Rich theatrical cinematic lighting.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "That fictional version only grew larger in the twentieth century, exported worldwide through novels, films, and eventually a flood of manga, anime, and Hollywood productions. Somewhere along the way, the invented ninja — supernatural, silent, unstoppable — became far more famous globally than the actual historical spies who inspired it.",
+      "image_prompt": "Symbolic montage-style image: a vintage film projector light beam cutting through darkness, silhouettes of an exaggerated fictional ninja figure dissolving into flickering cinema light. Nostalgic, cinematic concept composition.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Modern historians and archaeologists are still working to separate the two. Excavations in the old Iga region have turned up genuine tools — climbing spikes, hidden blades, listening devices pressed to walls — physical evidence of a real profession that operated in the shadows of Japan's civil wars, largely undocumented by design.",
+      "image_prompt": "An archaeologist's gloved hands carefully brushing dirt away from small excavated iron tools laid out on a tray, soft daylight in a rural dig site. Documentary, grounded, contemplative composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The real story may be less flashy than the legend, but it is, in its own way, more impressive. These were ordinary people who turned patience, disguise, and information into genuine political power — proof that in war, knowing something first can matter more than any sword.",
+      "image_prompt": "A lone plainly dressed figure standing at dawn on a quiet mountain ridge overlooking a peaceful valley, no weapons drawn, calm and unremarkable. Reflective, minimalist, cinematic closing composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — we go deeper into how these real spies actually operated: the missions they ran, the tools they carried, and the techniques history has finally been able to confirm. Coming next.",
+      "image_prompt": "Close-up of a weathered hand selecting tools from a hidden pouch by dim lantern light, practical and methodical, no faces shown. Cinematic teaser framing, quiet anticipation.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "If separating ninja myth from ninja history interested you, subscribe to Samurai Chronicles — new episodes every day. The truth, it turns out, was hiding in plain sight all along.",
+      "image_prompt": "Calm wide shot of the misty Iga mountain valleys at sunrise, peaceful farmland where a hidden history once unfolded, no figures visible. Peaceful, reflective closing tone.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_source": "BGM/ep043-BGM.mp3",
+  "youtube_url": "https://youtu.be/qKMB6Hjt6C4",
+  "shorts_url": "https://youtu.be/BywMKoo3xMk",
+  "scheduled_at": "2026-08-01 03:00"
+}

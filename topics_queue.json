@@ -625,13 +625,14 @@
     },
     {
       "episode_id": "ep063",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Ninja: Separating Myth from History",
       "era": "Sengoku",
       "priority": "A",
       "person": null,
       "angle": "thematic",
-      "notes": "What ninja actually were vs. pop culture myth."
+      "notes": "What ninja actually were vs. pop culture myth.",
+      "last_updated": "2026-07-21"
     },
     {
       "episode_id": "ep064",
