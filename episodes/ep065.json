@@ -1,0 +1,234 @@
+{
+  "episode_id": "ep065",
+  "episode_title": "The Day the Ninja Were Almost Wiped Out: The Iga Uprising of 1581",
+  "youtube_title": "The Day 46,000 Soldiers Tried to Kill Every Ninja in Japan",
+  "youtube_description": "In 1581, more than forty thousand soldiers surrounded a single mountain province with one objective: leave nothing standing. The people inside were Japan's most feared intelligence operatives. This is what happened when the ninja faced open war — and what the survivors built from the ashes.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 46,000 soldiers. One mountain...\n0:52 The province of Iga sits at\n1:41 What made Iga remarkable was not\n2:41 The skills the Iga warriors...\n3:32 Oda Nobunaga had one policy for\n4:31 In 1579, Nobunaga's second...\n5:31 Nobunaga's response to his...\n6:29 By September of 1581, the...\n7:25 The columns moved in...\n8:15 But the mathematics were...\n8:57 Nobunaga's commanders...\n9:41 Not everyone died. The Iga...\n10:32 Nobunaga arrived in the ruins of\n11:24 The man who benefited most from\n12:16 The Iga Uprising produced an...\n13:09 Tokugawa Ieyasu, who...\n13:58 What the Iga Uprising reveals is\n14:49 There is also something in this\n15:49 Next time on Samurai...\n16:12 The Iga Uprising tends to get\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"The Ninja: An Illustrated History\" (Osprey Publishing, 2014)\n2. Berry, Mary Elizabeth. \"Hideyoshi\" (Harvard University Asia Center, 1982)\n3. Turnbull, Stephen. \"Ninja AD 1460–1650\" (Osprey Publishing, 2003)\n\n#Ninja #IgaUprising #OdaNobunaga #SengokuPeriod #Shinobi #JapaneseHistory #Samurai #IgaProvince #TokugawaIeyasu #HattoriHanzo #FeudualJapan #Japan #SamuraiChronicles",
+  "youtube_tags": [
+    "Ninja",
+    "Iga Uprising",
+    "Iga Province",
+    "Oda Nobunaga",
+    "Sengoku Period",
+    "Shinobi",
+    "Japanese History",
+    "Samurai",
+    "Iga no Ran",
+    "Tokugawa Ieyasu",
+    "Hattori Hanzo",
+    "Feudal Japan",
+    "Japan",
+    "Samurai Chronicles",
+    "Tensho Iga no Ran"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "In 1581, more than forty thousand soldiers surrounded a single mountain province. Their orders were simple: leave nothing standing. The people inside were Japan's most feared intelligence operatives. What happens when the ninja face open war — and lose?",
+  "shorts_narration": "1581. Forty thousand soldiers. One ninja province. Oda Nobunaga sent his entire army to erase the Iga. They burned every village. They killed everyone they found. But the ones who escaped — changed Japan forever.",
+  "shorts_hook_lines": [
+    "40,000 VS ALL.",
+    "KILL EVERY NINJA.",
+    "WHO SURVIVED THE BLAZE?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of a wounded Iga shinobi's face, eyes fierce and defiant, firelight from a burning village casting dramatic orange light across ash-streaked and weathered features. The look of someone who has lost everything and refuses to break. Vertical portrait composition filling the frame.",
+  "thumbnail_prompt": "Panoramic dramatic shot of Iga Province at dusk, a vast Oda army with thousands of torches advancing through mountain passes below, silhouettes of a handful of Iga warriors standing on a ridge above watching them come — dramatically, impossibly outnumbered but defiant. Smoky orange and red sky, epic historical scale.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "46,000 soldiers. One mountain province. Japan's greatest military force descended on the ninja homeland — and the people inside weren't supposed to fight back. What happens when the most feared spies in Japan are forced into open war?",
+      "image_prompt": "Extreme wide aerial view of a vast army with tens of thousands of torches winding through dark mountain passes at dusk, filling every valley road from horizon to horizon. The scale is overwhelming. Smoky amber sky, torchlight reflecting off armor.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The province of Iga sits at the center of the Japanese archipelago, ringed by mountain ranges that made it difficult to reach and nearly impossible to hold. For centuries, this isolation bred something unusual: communities of men and women who sold a specific set of skills — intelligence gathering, infiltration, and disruption — to warlords who could afford to pay. They were not the black-clad assassins of later legend. They were specialists in the art of not being seen, and they operated with an independence that no single lord had been able to break.",
+      "image_prompt": "Atmospheric wide shot of the mist-covered Iga Province mountain range at dawn, dense forested ridges receding into the distance in layered silhouette, ancient thatched farmhouses tucked into a hidden valley far below. Serene, isolated, secretive.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "What made Iga remarkable was not any single warrior but its structure. Unlike every other domain in Japan, Iga had no central lord. It was governed by a loose confederation of warrior families — an ikki — in which power was shared, disputed, and occasionally fought over, but never surrendered to an outsider. This independence was by design. A province with no master could serve every master. By the mid-sixteenth century, Iga shinobi were working for warlords across Japan simultaneously, selling intelligence to rivals without ever committing to a single side.",
+      "image_prompt": "Interior of a traditional Iga village gathering hall, a circle of stern-faced men seated on tatami in dim candlelight, scrolls and weapons arranged on the floor between them. No single figure sits at the head of the circle. Collective authority, quiet gravity.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The skills the Iga warriors trained in were not flashy. They learned to move through terrain without leaving traces, to change appearance, to gather information from enemy camps without raising suspicion, and to disappear before anyone thought to look. They also trained in conventional fighting techniques — necessary for when intelligence work went wrong. But their primary value was always information. In an era when a warlord's survival depended on knowing what enemies were planning before the plans became armies, Iga offered something no amount of military strength could replicate.",
+      "image_prompt": "A lone shinobi figure, face partially obscured by a cloth wrap, crouched motionlessly in deep shadow at the edge of a lantern-lit enemy encampment, watching without being seen. Night scene, extreme contrast between darkness and distant firelight, total stillness.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Oda Nobunaga had one policy for every domain he encountered: submit, or cease to exist. He had applied this principle to temples, rival warlords, and entire peasant rebellions with the same cold efficiency. Iga was different. Its lack of a central lord meant there was no one whose surrender Nobunaga could accept. Its mountain geography made conventional invasion costly. And its shinobi had occasionally been hired by Nobunaga's own enemies. For a man who required absolute loyalty from everyone in his orbit, Iga represented an irritant he could not ignore — and had not yet learned how to remove.",
+      "image_prompt": "Silhouette of Oda Nobunaga standing on a castle tower balcony at night, looking out over a vast landscape of fires and banners stretching to the horizon, his expression cold and calculating. Dramatic backlit figure against a smoky red-orange sky.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "In 1579, Nobunaga's second son, Oda Nobukatsu, launched the first serious invasion of Iga without his father's permission or knowledge. He brought roughly ten thousand soldiers into the mountain passes and met an immediate disaster. Iga's warriors had no intention of standing in formation and fighting like a conventional army. They used the terrain, attacked supply lines, targeted commanders, and vanished before counter-attacks could form. Nobukatsu lost several of his best officers and retreated in humiliation. In Iga, the failed invasion became a source of local pride. In Nobunaga's court, it was something far more dangerous: an insult.",
+      "image_prompt": "Oda soldiers in disarray on a narrow mountain path, crashing into one another in panic as arrows rain down from forested ridges above, a disciplined Iga ambush visible only as shadows and movement among the trees. Chaos and defeat, mountain forest closing in.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Nobunaga's response to his son's failure was public and calculated. He reprimanded Nobukatsu in front of his court — a ritual humiliation that made clear the fault lay entirely with the son, not the plan itself. Privately, he began a different kind of preparation. The second invasion of Iga would not be a raid. It would be organized like a siege — methodical, overwhelming, designed to close every exit before the campaign began. For two years, Nobunaga gathered resources, identified every mountain pass into the province, and recruited commanders who understood that this time, nothing could go wrong.",
+      "image_prompt": "Oda Nobunaga seated in formal audience in his castle hall, listening to reports with rigid controlled fury in his posture, attendants kneeling before him, detailed ink maps of mountain terrain spread across the floor. The planning begins.",
+      "ken_burns": "static",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "By September of 1581, the preparations were complete. Nobunaga assembled a force estimated at more than forty thousand soldiers — a number that dwarfed anything Iga's warriors could realistically oppose. The campaign was designed around one principle: simultaneous entry from every direction. Six separate columns would enter Iga through six separate mountain passes at the same time. There would be no direction to retreat to, no neighboring domain to seek shelter in, no gap in the line to slip through. What Nobunaga intended was not a battle. It was an erasure.",
+      "image_prompt": "Stylized ink-map perspective of Iga Province surrounded by mountains, six thick red arrows converging simultaneously from all directions toward the center, small colored military banner symbols at each entry point — no text or numbers. Strategic inevitability rendered visual.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "The columns moved in September 1581. From the north, south, east, west, and through the central passes, Oda forces poured into Iga simultaneously. The Iga warriors had known this was coming — the scale of Nobunaga's preparations could not be entirely hidden. Some had already moved their families to mountain retreats. Others prepared to fight as they always had: not in open formation, but in ambushes, in night raids, from positions the enemy could not easily reach. For the first weeks, the resistance was fierce. The Oda columns slowed. People died on both sides.",
+      "image_prompt": "Six columns of armored Oda soldiers simultaneously pushing through separate mountain passes from all directions at dawn, torches and banners visible at every entrance to the province, the valleys narrowing like a closing fist. Epic scale, smoke rising, mountains encircling.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "But the mathematics were impossible. Every ambush that succeeded brought three more columns behind it. Every Iga position that held was eventually bypassed or surrounded. The fighters who might have escaped earlier now found the passes blocked. Villages that refused to surrender were burned. The province that had resisted for generations was being taken apart systematically, one valley at a time. Iga's greatest advantage — the terrain — had been neutralized by sheer numbers. There were simply too many soldiers to ambush, too many columns to delay, too many fires to put out at once.",
+      "image_prompt": "Iga warriors executing a night ambush — figures dropping from trees onto a column of soldiers on a narrow forest path, close combat in near-total darkness, only torchlight and the brief flash of blades visible. The defenders are outnumbered but still fighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Nobunaga's commanders operated under explicit orders: take no prisoners among the fighting men, destroy the villages that had sheltered them. The province was not being conquered — it was being cleared. Observers who recorded the campaign described scenes of mass killing and systematic burning that left entire valleys empty. The mountainous terrain that had once made Iga impossible to hold now made it impossible to escape. By the time the campaign ended, the Iga that had existed as an independent power for centuries was gone. What remained was ash and silence.",
+      "image_prompt": "Wide shot of Iga valley villages burning in sequence at night, flames reflecting off rice paddies and streams, columns of smoke rising into a grey overcast sky, the scale of destruction extending valley after valley as far as the eye can see.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Not everyone died. The Iga warriors who survived were the ones who had read what was coming early enough to act on it. In the days and weeks before the six columns arrived, many shinobi families had already slipped out through routes they knew and the invaders did not. They carried what they could: tools, documents, the knowledge and techniques that defined their trade. They scattered across Japan — north to the Tohoku, east toward the Kanto, west into the territories of lords who had no loyalty to Nobunaga and every reason to welcome people who knew things.",
+      "image_prompt": "Small groups of Iga families and warriors moving silently through dense mountain forest at night, single paper lanterns barely visible between the trees, carrying bundles and children, moving fast through paths only they know. Escape before the trap closes.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "Nobunaga arrived in the ruins of Iga shortly after the campaign ended and held what was described as a triumphal review of the devastated province. He rewarded his commanders with territories carved from what remained and moved on to his next problem. He would not survive to see what that scattering produced. In June 1582, eight months after his victory tour of Iga, Nobunaga was ambushed and killed at the Honnoji temple in Kyoto — not by any ninja, but by one of his most trusted generals, Akechi Mitsuhide.",
+      "image_prompt": "Oda Nobunaga standing amid the ruins of a burned Iga village, surrounded by generals and bannermen, conducting a formal review of ash and rubble. Cold triumph over devastated landscape. Smoke still rising from collapsed structures in the background.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "The man who benefited most from Nobunaga's death was Tokugawa Ieyasu, who happened to be in Sakai — far from his own territory — when the assassination occurred. He needed to return to his domain through hostile territory as quickly as possible. The route he chose ran through what had been Iga Province. And the people who guided him safely home through the mountain passes, protecting him from the forces hunting him, were Iga warriors — the survivors of the province Nobunaga had destroyed just months before. One of those survivors was Hattori Hanzo.",
+      "image_prompt": "A mounted figure in travel robes being guided urgently through dark mountain passes by a group of shadowy Iga warriors, narrow rocky paths under a star-filled sky. Fast, silent movement through terrain only the guides know. Urgency and trust.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The Iga Uprising produced an irony that the people who ordered it could not have foreseen. By destroying Iga as a place, Nobunaga scattered the people who made it what it was. Iga shinobi who might otherwise have spent their lives in the same province, serving the same lords in the same mountains, were now distributed across Japan. Every domain that offered them shelter received, along with the refugees, the accumulated intelligence techniques of a tradition that had been developing for over a century. The destruction of Iga had not ended the ninja. It had exported them.",
+      "image_prompt": "Stylized wide view with Iga Province at the center, streams of small warrior figures dispersing outward in all directions across a map of Japan, spreading into every region. The diaspora rendered as visual metaphor, muted historical palette.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Tokugawa Ieyasu, who understood exactly what the Iga survivors had risked to help him, incorporated them into the institutional structure of the Tokugawa government. Iga and Koga warriors formed the core of the shogunate's intelligence and security apparatus for the next two and a half centuries. The skills that Nobunaga had tried to eliminate became the foundation of the most stable government Japan had ever seen. The irony was complete: the men who survived the shogunate's predecessor helped build the system that replaced it.",
+      "image_prompt": "Formal audience chamber of the early Tokugawa shogunate, Iga warriors now dressed as official retainers standing in a composed line before a seated lord, carrying scrolls and intelligence reports. Order, composure, and purpose born from survival.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "What the Iga Uprising reveals is something about the nature of knowledge under pressure. The shinobi tradition had always been a form of knowledge — not just techniques, but a way of thinking about problems. How do you obtain information in an environment where information is guarded? How do you move through space that someone else controls? How do you survive when the people hunting you are stronger? These questions didn't disappear when Iga burned. If anything, the burning made them more urgent. The survivors brought their answers with them wherever they went.",
+      "image_prompt": "Close-up of a shinobi's hands carefully transcribing techniques onto a scroll by candlelight in a modest room, the knowledge being preserved and passed forward. Ink brush, aged paper, the deliberate act of transmission. No readable text visible.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "There is also something in this story about the limits of overwhelming force. Nobunaga brought forty-six thousand soldiers to destroy a few thousand specialists and their families. He succeeded in destroying the place. He could not destroy the knowledge the place had produced. The techniques, the networks, the accumulated understanding of how to operate in the shadows of power — these survived in the people who carried them. In trying to erase the ninja completely, Nobunaga ensured they would be everywhere. Sometimes the most durable thing about a tradition is that it cannot be burned into nonexistence.",
+      "image_prompt": "Wide shot of the ruins of Iga Province slowly being reclaimed by forest — saplings pushing through ash and burned timber, moss covering collapsed walls, new growth emerging from destruction. Time has passed. The land endures.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 10,
+      "narration": "Next time on Samurai Chronicles — every samurai was supposed to follow a strict code: loyalty, honor, death before surrender. But where did that code actually come from? The answer is more complicated — and more recent — than most people expect.",
+      "image_prompt": "Dramatic close-up of an aged samurai code scroll laid open on a stone floor, a katana resting beside it, faint brush calligraphy visible on yellowed paper, candlelight illuminating the edges. Solemn and mysterious. No readable text.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "The Iga Uprising tends to get lost between Nobunaga's rise and his death at Honnoji. But the warriors scattered by that campaign built the intelligence foundation of the Tokugawa shogunate — two and a half centuries of stability. If you found this worth your time, subscribe. There are more stories like it. We'll see you next time.",
+      "image_prompt": "Aerial panoramic view of modern Iga city in Japan, the white castle tower visible above rooftops, the surrounding mountain ranges still standing exactly as they did in 1581. History and continuity, ancient and present layered together.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep054-BGM.mp3",
+    "main": "BGM/ep024-BGM.mp3",
+    "outro": "BGM/ep006-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/bse1YvA4Pns",
+  "shorts_url": "https://youtu.be/7DC9KzwfMxc",
+  "scheduled_at": "2026-08-05 03:00"
+}
