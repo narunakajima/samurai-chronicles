@@ -119,6 +119,6 @@ Sonnet 5 の出力をそのままユーザーに提示する。
 
 ## 定数
 
-- Geminiモデル: `gemini-2.5-flash`
+- Geminiモデル: `models/gemini-3.6-flash`
 - 統合モデル: `Sonnet 5`（Agent tool の `model="sonnet"`）
 - 履歴ファイル: `/tmp/sc_consult_history.json`（セッション開始時にクリア）

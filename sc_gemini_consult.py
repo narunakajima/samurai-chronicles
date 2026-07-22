@@ -28,7 +28,7 @@ from google.genai import types
 
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
 DEFAULT_HISTORY = Path("/tmp/sc_consult_history.json")
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "models/gemini-3.6-flash"
 
 
 def load_history(path: Path) -> list:
