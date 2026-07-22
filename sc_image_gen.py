@@ -50,7 +50,11 @@ BASE_CONTEXT = (
     "Mood: epic, weighty, emotionally resonant, historically grounded. "
     "No text, no watermarks, no modern elements, no anachronisms. "
     "All human figures are East Asian / Japanese in appearance. "
-    "Period-accurate Edo/Sengoku era attire: kimono, samurai armor, period weapons only."
+    "Period-accurate Edo/Sengoku era attire: kimono, samurai armor, period weapons only. "
+    "Unless a character reference specifies otherwise (e.g. a monk's shaved head, "
+    "a woman's hair, a ninja's covered hair, a ronin's unbound hair), default male "
+    "hairstyles to a period-accurate chonmage (topknot with shaved pate) — never a "
+    "modern haircut."
 )
 
 # ── キャラクター参照定義 ──────────────────────────────────
@@ -141,9 +145,11 @@ def _correction_note(issues: list) -> str:
             )
         elif prefix == "ARCHITECTURE" and prefix not in seen:
             notes.append(
-                "Ensure all armor, clothing, and architecture are strictly "
+                "Ensure all armor, clothing, hairstyles, and architecture are strictly "
                 "authentic to the correct historical period as described — "
-                "no anachronistic later-era styles."
+                "no anachronistic later-era styles. Unless the scene calls for an exception "
+                "(monk, woman, ninja, ronin), male hair should be a chonmage "
+                "(topknot with shaved pate), never a modern haircut."
             )
         elif prefix == "DISTORTION" and prefix not in seen:
             notes.append(
@@ -228,7 +234,12 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "- MISMATCH: the image does not match the scene description (wrong subject, action, or setting)\n"
             "- DISTORTION: anatomical errors, malformed faces/hands/bodies, broken or warped objects\n"
             "- TEXT: any readable text, captions, watermarks, or logos appear in the image\n"
-            "- ARCHITECTURE: anachronistic or era-incorrect architecture, objects, or clothing for Edo/Sengoku Japan\n\n"
+            "- ARCHITECTURE: anachronistic or era-incorrect architecture, objects, clothing, or "
+            "HAIRSTYLE for Edo/Sengoku Japan. Unless the scene description calls for an exception "
+            "(a monk's shaved head, a woman's hair, a ninja's covered hair, a ronin's unbound hair), "
+            "male hairstyles should be a chonmage (topknot with shaved pate) or similarly "
+            "period-correct — flag a clearly modern haircut (e.g. undercut, short back and sides, "
+            "styled/gelled hair, contemporary fades).\n\n"
             f"Scene description: {image_prompt}\n\n"
             "Respond with ONLY a JSON object, no other text, in this exact format:\n"
             '{"ok": true, "issues": []}\n'
