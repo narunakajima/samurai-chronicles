@@ -13,7 +13,7 @@ sc_gemini_consult.py — Gemini との1ターン対話（履歴ファイルで�
   --message        送信するメッセージ（必須）
   --history-file   前ターンの会話履歴JSONファイル
   --save-history   履歴の保存先（デフォルト: /tmp/sc_consult_history.json）
-  --model          Geminiモデル（デフォルト: gemini-2.5-flash）
+  --model          Geminiモデル（デフォルト: gemini-3.6-flash）
   --system         システムプロンプト（任意）
 """
 
