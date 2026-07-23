@@ -1,0 +1,249 @@
+{
+  "episode_id": "ep066",
+  "episode_title": "Bushido's True Origins",
+  "youtube_title": "The Warrior Code Japan Invented After the Wars Were Over",
+  "youtube_description": "Bushido is celebrated as the ancient code of Japan's samurai — a philosophy of honor, loyalty, and death before surrender. But historians have a problem. Most of it was invented during two hundred and fifty years of peace.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 Bushido is celebrated as the...\n0:44 Ask anyone what Bushido...\n1:39 The samurai of medieval Japan...\n2:35 Everything changed in 1615....\n3:29 The Tokugawa period would...\n4:21 The answer came from China....\n5:17 In 1665, a scholar named Yamaga\n6:11 Fifty years later, in a mountain\n7:05 The opening line of Hagakure...\n7:57 Tsunetomo was born in 1659 —\n8:45 Hagakure circulated in...\n9:40 The answer was given not by\n10:37 Nitobe's Bushido became an...\n11:40 By the 1930s, Bushido had been\n12:42 So what did real medieval...\n13:39 None of this makes the samurai\n14:36 The myth of Bushido persisted —\n15:29 Today, Bushido lives far...\n16:23 Next time on Samurai...\n16:45 If you found this episode...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Yamamoto Tsunetomo, Hagakure: The Book of the Samurai (trans. William Scott Wilson, 1979)\n2. Nitobe Inazo, Bushido: The Soul of Japan (1900)\n3. Karl Friday, \"Bushido or Bull? A Medieval Historian's Perspective on the Imperial Army and the Japanese Warrior Tradition,\" The History Teacher, 2004\n\n\n🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional/Sad/Tragic String Orchestral BGM Background Music by EvanBoyerman (freesound.org) — CC BY 4.0\n#Bushido #SamuraiHistory #JapanHistory",
+  "youtube_tags": [
+    "bushido",
+    "samurai",
+    "samurai code",
+    "japanese history",
+    "bushido origins",
+    "edo period",
+    "hagakure",
+    "nitobe inazo",
+    "samurai philosophy",
+    "warrior code",
+    "japan history",
+    "bushido truth",
+    "samurai history",
+    "japanese culture",
+    "meiji era",
+    "yamamoto tsunetomo",
+    "sengoku",
+    "tokugawa"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "The wars were over. The enemies were dead. Japan was at peace — and the samurai had nothing left to fight for. So they invented something more powerful than any sword: a code. But was Bushido ever real?",
+  "shorts_narration": "Three hundred years of peace. No battles. No enemies. So Japan's samurai invented a warrior code — after the fighting was already over. The real story of Bushido.",
+  "shorts_hook_lines": [
+    "NOT MEDIEVAL.",
+    "INVENTED IN PEACE.",
+    "WAS BUSHIDO EVER REAL?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of an Edo-period samurai scholar's face, aging, deeply wise, wearing formal kamishimo robes rather than armor. He stares directly into the camera with calm, knowing eyes — a man who understands the gap between myth and reality. Dramatic single paper-lantern light from the side, deep shadows on the opposite cheek. Vertical portrait composition.",
+  "thumbnail_prompt": "An ancient Japanese calligraphy scroll partially unfurled against a deep black background. The brushstrokes of the kanji are rendered in dramatic gold ink. To the right, a silhouette of a samurai in full armor stands slightly out of focus, suggesting presence without dominating. A single beam of cold moonlight cuts diagonally across the scroll. Atmospheric, mysterious, cinematic.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Bushido is celebrated as the ancient code of Japan's samurai warriors. But historians have a problem. It was written during two hundred years of peace — when no samurai had fought a real battle in generations.",
+      "image_prompt": "Empty Edo-period sword dojo at dawn. Two katana on a wooden rack, polished and unused. Ancient scrolls on the wall. Soft morning light filtering through shoji screens. Dust motes in the light. Peaceful atmosphere that paradoxically underscores the absence of war.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Ask anyone what Bushido means, and you will get the same answer: loyalty unto death, honor above survival, the willingness to die rather than be captured. This image is everywhere — in martial arts dojos, in Japanese films, in business leadership books. Bushido has become one of the most recognized philosophical frameworks in the world, a shorthand for discipline, sacrifice, and moral purity. It is Japan's gift to global culture. But that image was constructed, carefully and deliberately, centuries after the samurai age was already over.",
+      "image_prompt": "A formal Edo-period ceremony hall. Rows of samurai in ceremonial armor kneel in perfect symmetry before a dais, heads bowed in disciplined respect. Lanterns cast warm golden light across lacquered armor and polished floors. The scene radiates idealized order and honor — the popular image of Bushido made visual.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "The samurai of medieval Japan operated by a very different logic. Loyalty was real — but it was transactional. A warrior served a lord who fed, equipped, and rewarded him. Betrayal was common. Warlords changed sides when it was profitable. The historical record is full of defections, double-crossings, and calculated surrenders. When Oda Nobunaga was betrayed at Honnoji, no one was surprised. Treachery was a recognized tool of medieval politics. This was the real samurai world — practical, brutal, and far more human than the legend allows.",
+      "image_prompt": "Sengoku-period battlefield negotiations on a hilltop. Two rival commanders face each other across a low lacquered table, both in battered campaign armor. One gestures with a calculating hand. Advisors flank each man. The posture is diplomatic, not heroic — two pragmatists doing the math of survival. Storm clouds on the horizon.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Everything changed in 1615. The siege of Osaka Castle ended with the destruction of the Toyotomi clan, and Japan fell under the absolute control of the Tokugawa shogunate. After a century of civil war, the killing stopped. Trade routes opened. Cities grew. For ordinary Japanese, this was a miracle. But for the samurai class — two million warriors, trained for nothing but combat — peace created an existential crisis. Their entire identity was built around warfare. And now, there was no war.",
+      "image_prompt": "The great walls of Osaka Castle seen from a distance, smoke rising from the final siege, armies withdrawing across a vast plain. The scale is enormous but the violence is fading — troops dispersing, banners being lowered. The last act of an era. Golden late-afternoon light over the scene.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "The Tokugawa period would last two hundred and fifty years. That is ten generations of samurai who never drew their swords in combat. They collected government stipends, wore their two swords as symbols of status, and watched the merchant class — officially ranked below them — grow wealthier every decade. Some became bureaucrats. Some became scholars. Some became alcoholics. The samurai class was hollowing out from within, and everyone could see it. Something had to fill the void. Someone had to explain what a samurai was, now that there was no one left to fight.",
+      "image_prompt": "A row of Edo-period samurai officials in formal kamishimo robes sitting at low desks in a government office, brushing administrative documents. Each man wears a simple chonmage topknot — hair swept back and tied into a small folded queue laid flat over a shaved pate — rendered as natural textured hair, not a rigid cap, hat, or solid black object resting on top of the head. Their two swords hang on a rack behind them — decorative, untouched. Through the open screens, a busy merchant street hums with commerce. The contrast between warrior status and clerical reality is quietly devastating.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "The answer came from China. Neo-Confucianism — a philosophical system emphasizing moral duty, hierarchical loyalty, and self-cultivation — swept through the Tokugawa intellectual class in the early 1600s. For a warrior caste desperate for meaning, it offered a framework: if you could not prove your worth through battle, you could prove it through virtue. The samurai began redefining themselves as moral exemplars — learned, disciplined, restrained. Confucian scholars argued that the true samurai was not a killer, but a gentleman. A guardian of social order. A living embodiment of civilized values.",
+      "image_prompt": "A Confucian scholar's study in Edo-period Japan. Shelves lined with Chinese and Japanese texts. An elderly teacher in scholar's robes gestures at an open scroll. A young samurai student kneels opposite, listening intently, his two swords placed carefully to one side. Lit by candles and a traditional Japanese andon lamp — a low wooden-framed box lantern covered in warm glowing washi paper — absolutely not a Western glass oil lamp with a glass chimney or globe. The intellectual atmosphere of ideas replacing swords.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "In 1665, a scholar named Yamaga Soko published the first systematic attempt to define what a samurai should be. He called it Shido — the Way of the Warrior. Yamaga argued that the samurai's true purpose was not violence, but moral leadership. They existed to model virtue for the rest of society. It was a radical rebranding. The sword was still there — but now it was a symbol, not a tool. Yamaga would later be exiled by the shogunate for his unconventional ideas. But the project he started — defining Bushido — had begun.",
+      "image_prompt": "A lone scholar working by the light of a traditional Japanese andon lamp — a low wooden-and-paper box lantern glowing softly on the floor beside him — in a sparse, austere room. Writing brushes, inkstone, stacks of manuscript pages. Scrolls pinned to the walls covered in dense philosophical text. The room suggests intellectual isolation, perhaps exile. A single katana lies on a stand in the corner — observed, studied, symbolized rather than used. Late night, deep shadows. The light source must be a period-correct paper andon lantern — absolutely no modern electric lamp, no lampshade on a stand, no pull-cord or string switch of any kind.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Fifty years later, in a mountain hermitage near Saga Castle, an aging former retainer named Yamamoto Tsunetomo began dictating his memories to a young scribe. He had served a lord for thirty years. When that lord died in 1700, Tsunetomo had wanted to follow him in ritual suicide — but the practice had been banned. So he retired to the mountains instead. And for the next seven years, he talked. The result was eleven volumes of recollections, opinions, and philosophical musings. He called it Hagakure — Hidden Among Leaves.",
+      "image_prompt": "A small wooden hermitage deep in autumn forest, red and gold leaves falling around it. Through the open shoji, an elderly man in plain robes speaks with quiet intensity to a young scribe bent over paper, writing furiously. Lit by a single traditional Japanese andon lamp — a small wooden-framed box lantern covered in warm glowing washi paper, resting on the floor or a low stand — absolutely not a Western-style glass oil lamp with a glass chimney or globe. Outside, wind moves through the trees. The atmosphere of something important being committed to paper before it is lost forever.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "The opening line of Hagakure became one of the most quoted statements in Japanese history: 'The way of the samurai is found in death.' Tsunetomo argued that a true warrior must live as if already dead — that only by accepting death completely could a samurai act without hesitation. It was the ultimate articulation of warrior philosophy. Passionate, uncompromising, absolute. It would go on to inspire generations of soldiers, nationalists, and martial artists. But there was a problem with Yamamoto Tsunetomo. He had never fought in a single battle in his life.",
+      "image_prompt": "Extreme close-up of aged, yellowed Japanese manuscript paper — the surface worn and stained with centuries of handling. An inkstone, a worn brush, and a single guttering candle fill the frame. Abstract ink marks and brushstroke textures on the aged page suggest writing without rendering legible text. Dark background, the page dramatically lit as if it were the most important document in the world.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "Tsunetomo was born in 1659 — forty-four years after Japan's last major civil war had ended. He spent his entire life in peacetime. His lord was an administrator, not a general. The closest he ever came to real violence was hearing older men's stories. The great warrior philosophy of Bushido was written by a man who had never killed anyone, living in a country that had not fought a war in half a century. This is not a criticism. It is simply the truth — and it tells us everything about what Bushido actually is.",
+      "image_prompt": "A serene Edo-period garden in late autumn. An aging samurai administrator sits on a wooden veranda in civilian robes, watching maple leaves fall into a still pond. No sword at his side. No armor nearby. A cup of tea in his hands. The scene is genuinely beautiful and genuinely peaceful — and that is precisely the point. A man who defined death, at rest.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Hagakure circulated in manuscript form for over a century, known only in Saga domain. Then Japan changed again. In 1868, the Meiji Emperor was restored to power and the Tokugawa shogunate collapsed. The samurai class was abolished. Their stipends were cut off. They were forbidden to carry swords in public. Within a generation, the warrior caste that had defined Japanese society for seven centuries had been erased by government decree. And into that cultural wound, a question emerged: what was Japan now? What had all those centuries of samurai sacrifice meant?",
+      "image_prompt": "A formal exchange in Meiji-era Japan. A weathered samurai, still wearing his traditional two swords, faces a young government official in a Western-style military uniform. The samurai is removing one sword from his belt, offering it across a lacquered table. His expression is composed but carries the weight of a world ending. Behind them through a window, a street full of men in Western clothing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "The answer was given not by a soldier, but by a diplomat. In 1899, a Japanese agricultural scientist named Nitobe Inazo published a slim book in English called Bushido: The Soul of Japan. He wrote it while living in the United States, for a Western audience that knew almost nothing about Japan. His goal was to explain Japanese civilization in terms Americans could understand — comparing Bushido to the code of the European medieval knight. Japan had its own deep civilization, he argued. Its own traditions. Its own soul.",
+      "image_prompt": "A Japanese scholar's study in turn-of-the-century America. An elegant man in Western suit writes at a mahogany desk by gas lamp. Through the window, a lamplit American street is visible. On the desk: Japanese scrolls beside Western leather-bound books. A small Japanese flag. The image of a man building a cultural bridge with his pen.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Nitobe's Bushido became an international sensation. Theodore Roosevelt reportedly bought sixty copies to give to friends. The book was translated into multiple languages and back into Japanese — where it became the definitive statement of national identity. The Meiji government embraced it. The military establishment used it. Nitobe had taken a scattered collection of Edo-period writings and transformed them into a coherent, exportable philosophy. He had, in effect, invented the Bushido the world knows today. A single book, written in a foreign language, had defined Japan's soul for the next century.",
+      "image_prompt": "A busy 1900s Western bookshop. Curious well-dressed Westerners examine a slim Japanese-themed book with interest, cover showing only a samurai illustration with no readable title text. Behind them, a dramatic woodblock-print style illustration of a samurai warrior adorns a large poster — illustration only, no text or writing on it. The moment when Japan's warrior image entered the global imagination. No readable text anywhere in the image.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "By the 1930s, Bushido had been fully absorbed into Japanese military ideology. Death before capture was official policy. Surrender was disgrace. To die for the Emperor was the highest expression of the samurai spirit. The kamikaze pilots flew their final missions with Bushido on their lips — sincere, and devastating. But it was the endpoint of a very long construction project. Medieval samurai had surrendered when strategically sensible. The death-before-surrender code that sent those young men to their deaths was barely fifty years old. A modern invention, disguised as ancient wisdom.",
+      "image_prompt": "A young Japanese pilot in WWII flight gear stands before his aircraft at dawn, head bowed, hands clasped. Cherry blossoms fall across the airfield in the early morning light. Other pilots stand in respectful silence nearby. The scene is genuinely beautiful and genuinely heartbreaking — young men carrying the weight of a philosophy invented long after the age it claimed to represent.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "So what did real medieval samurai actually believe? Historical texts from the Kamakura and Sengoku periods paint a complicated picture. Loyalty mattered — but to family and clan first, lord second. Personal survival was valued. Taking prisoners for ransom was standard practice. Warriors boasted about the enemy heads they had taken, not the deaths they had accepted. They prayed to Buddhist and Shinto deities for victory, not for an honorable end. They negotiated, defected, and made deals. They were human beings doing an extremely dangerous job — not philosophical archetypes living for death.",
+      "image_prompt": "A Sengoku battlefield aftermath. Samurai warriors in battered, mud-stained armor are taking prisoners and tallying the fallen. One warrior presents a captured enemy to a general on horseback — a transaction, not a ritual. The scene is unglamorous and distinctly human. Overcast sky, the smell of earth and iron implied by the grounded, un-romanticized composition.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "None of this makes the samurai less interesting or less admirable. If anything, it makes them more so. Real warriors operating under impossible pressure, making life-or-death decisions with incomplete information — that story is far more compelling than the sanitized myth. The historical Kusunoki Masashige really did choose death at Minatogawa, and that loyalty was genuine and remarkable. Honda Tadakatsu really did fight over a hundred battles without a major wound. These men existed. But they were individuals — not embodiments of a systematic code that hadn't been written yet.",
+      "image_prompt": "A split composition in the style of Edo-period screen painting. On the left, the idealized image: a samurai in gleaming armor in a dramatic heroic pose, cherry blossoms behind him. On the right, the historical reality: a samurai in worn, practical armor, tired, examining a map with a general by firelight. Both images are in the frame, the tension between them unmistakable.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "The myth of Bushido persisted — and still persists — for a reason. Every society needs stories about what its people are at their best. Japan needed that story urgently in the Meiji era, racing to modernize while holding onto its identity. Bushido said: we are disciplined, we are honorable, we have always been this way. It provided continuity in a moment of radical change. That is not dishonest. That is how culture works. The question is not whether Bushido was always real. The question is what we choose to do with it now.",
+      "image_prompt": "A Meiji-era Japanese artist in a Western-style painter's studio — wooden easel, oil paint palette, glass-paned window, European-style furniture and floorboards, clearly distinct from a traditional tatami room — carefully painting a traditional samurai scroll propped on the easel. He is adding idealized elements — perfect posture, noble expression, flowing robes. The canvas shows a warrior more perfect than any who ever lived. Through the studio window, a modernizing Tokyo street with Western-style brick buildings is visible, no readable signage or shop signs of any kind. The act of myth-making made literal: a man constructing the past. Absolutely no readable text, characters, or writing anywhere in the image, including on any window signage.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "Today, Bushido lives far beyond Japan. It shapes martial arts philosophy from Brazil to Norway. It appears in business management books, military training manuals, and video game narratives. It has become a global shorthand for disciplined, self-sacrificing excellence. And somewhere inside that global mythology, there are real values worth preserving — courage, loyalty, personal accountability, the willingness to keep going when the odds are impossible. The code may have been constructed. But the qualities it describes were always there, in the men and women who actually lived it.",
+      "image_prompt": "A contemporary kendo dojo in a European city — stone archways visible through large windows. Japanese and Western students in full kendo armor bow to each other before sparring, their shinai raised. Traditional Japanese calligraphy banners on the walls. The scene is genuinely international — the old code breathing in a new world.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles: romanticized for centuries as the ultimate act of honor, seppuku was Japan's most misunderstood ritual. The real history is more political, more human, and more complicated than you think.",
+      "image_prompt": "A hushed, candlelit room. A samurai kneels in formal white death robes on a tatami mat, two witnesses standing silently at either side. Incense smoke rises. The atmosphere is solemn and charged with unspoken ritual. The face of the kneeling figure is partially in shadow. A composition that raises questions rather than answering them.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 12,
+      "narration": "If you found this episode thought-provoking, subscribe to Samurai Chronicles for new episodes every day. Japan's history is deeper, stranger, and more fascinating than the myths — and we are just getting started.",
+      "image_prompt": "Wide panoramic view of a Japanese castle at dusk — perhaps Himeji, silhouetted against a deep purple and amber sky. Cherry blossoms drift across the frame. A lone silhouette of a samurai stands on the highest rampart, looking out over the landscape. Epic, contemplative, timeless.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep053-BGM.mp3",
+    "main": "BGM/ep009-BGM.mp3",
+    "outro": "BGM/ep055-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/EUppTsQK1lo",
+  "shorts_url": "https://youtu.be/D6PeS_5HXgg",
+  "scheduled_at": "2026-08-06 03:00"
+}
