@@ -1,0 +1,279 @@
+{
+  "episode_id": "ep068",
+  "episode_title": "Sakamoto Ryoma: The Ronin Who United Japan's Bitterest Enemies",
+  "youtube_title": "The Failed Assassin Who United Japan's Bitterest Enemies",
+  "youtube_description": "Sakamoto Ryoma set out to assassinate a shogunate official — and ended up becoming his student instead. Within a few years, this ronin with no rank and no domain brokered the alliance that would end 700 years of military rule in Japan. He never lived to see it succeed.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 He set out to kill the\n0:47 Ask most Japanese people to name\n1:30 Ryoma grew up in Tosa, a\n2:18 To act on his convictions, Ryoma\n2:59 Ryoma's first target was a man\n3:33 But when Ryoma arrived at...\n4:15 Under Katsu's mentorship,...\n4:51 This company became something...\n5:33 That hatred ran deep. Just two\n6:04 In early 1866, Ryoma brought the\n6:33 The result was the Satcho...\n7:07 The shogunate now hunted...\n7:38 By 1867, Ryoma had turned from\n8:20 That plan helped shape the final\n8:55 Ryoma did not live to see\n9:28 The Meiji Restoration was...\n9:59 Who killed him remains...\n10:35 Today, Ryoma is consistently...\n11:13 Next time on Samurai...\n11:36 Sakamoto Ryoma never held a...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Marius B. Jansen, Sakamoto Ryoma and the Meiji Restoration (1961)\n2. Romulus Hillsborough, Ryoma: Life of a Renaissance Samurai (1999)\n3. W.G. Beasley, The Meiji Restoration (1972)\n\n\n🎵 Music: Orchestral Rising Horror #1 by Mark_Murray (freesound.org) — CC BY 4.0\n\n🎵 Music: Hopeful Cinematic Emotional Orchestra Background Music by EvanBoyerman (freesound.org) — CC BY 4.0\n#SakamotoRyoma #Bakumatsu #JapaneseHistory",
+  "youtube_tags": [
+    "sakamoto ryoma",
+    "bakumatsu",
+    "meiji restoration",
+    "samurai",
+    "japanese history",
+    "satsuma choshu alliance",
+    "ronin",
+    "japan history",
+    "tokugawa shogunate",
+    "japanese samurai",
+    "edo period",
+    "kochi",
+    "katsu kaishu",
+    "japanese revolution",
+    "samurai history",
+    "japan bakumatsu era",
+    "meiji era",
+    "japanese culture"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "In a candlelit room in Kyoto, two men who hated each other clasped hands for the first time — forced together by a ronin with no rank, no domain, and no right to be there. What made Sakamoto Ryoma believe the impossible was worth trying?",
+  "shorts_narration": "One ronin, marked for execution. He went to kill a shogunate official — and became his student. Then he did what no lord could: unite Japan's bitterest enemies. This is Sakamoto Ryoma.",
+  "shorts_hook_lines": [
+    "HE FAILED.",
+    "UNITED THE ENEMY.",
+    "THEN WAS MURDERED FOR IT?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Sakamoto Ryoma's face at night, his hair neatly tied back in a low ponytail at the nape (not shaved at the forehead, not loose or unbound), weathered features suggesting a hard life on the run. His eyes are sharp, alive, staring directly into the camera with restless intensity — a man who knows he is being hunted. Single cold rim light from the side, deep shadow on the other half of his face. Vertical portrait composition.",
+  "thumbnail_prompt": "Sakamoto Ryoma standing confidently at the edge of a stone harbor at dusk, one hand resting on his sword hilt, his hair neatly tied back in a low ponytail at the nape (not shaved at the forehead, but not loose or flowing either — just a few short strands catching the sea wind), foreign ships anchored in the misty bay behind him. Cinematic side lighting, deep blue-gold color palette, a sense of a man standing between two worlds.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He set out to kill the man who would change his life. Instead, he became his student — and united Japan's two most bitter enemies. How does a would-be assassin end a 700-year regime?",
+      "image_prompt": "Sakamoto Ryoma standing alone on a shadowed Kyoto street at night, hand resting on the hilt of his sword, eyes scanning the darkness with quiet wariness, wearing traditional straw sandals rather than Western boots. Rain-slicked cobblestones reflect distant lantern light. Tense, foreboding atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.18
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Ask most Japanese people to name their favorite historical figure, and the answer is often the same: Sakamoto Ryoma. His face appears on postcards, statues, and company logos. He is remembered as a visionary who saw a modern Japan before anyone else did. But strip away the folk hero, and Ryoma's real story begins somewhere far less glamorous — the son of a wealthy merchant family that had simply purchased its way into the lowest rank of the samurai class.",
+      "image_prompt": "The real bronze statue of Sakamoto Ryoma at Katsurahama in Kochi: he stands upright wearing a traditional haori jacket over hakama trousers, one hand tucked into the front of his robe at chest height, the other hand relaxed at his side, gazing calmly out toward the ocean. He wears NO armor of any kind — Ryoma was a civilian reformist, never a battlefield general, and has no historical record of wearing armor. Modern tourists in the far distance take photographs. Bright daylight, dramatic sea view.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Ryoma grew up in Tosa, a domain on the remote island of Shikoku, in a family that made its money in sake and pawnbroking, not the sword. In 1853, when he was eighteen, American warships under Commodore Perry forced their way into Edo Bay, ending two centuries of isolation. Like thousands of young samurai, Ryoma was radicalized overnight — swept up in a violent movement demanding the expulsion of foreigners and the restoration of the emperor's authority.",
+      "image_prompt": "A young Sakamoto Ryoma standing at the edge of a rugged fishing village on Shikoku's coastline, staring out at distant smoke on the horizon — the silhouettes of foreign steamships far out at sea. He wears traditional straw sandals — this scene is set in 1853, well before he ever adopted any Western-style clothing. Other villagers point and murmur in alarm behind him. Overcast, tense coastal light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.15
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "To act on his convictions, Ryoma made an irreversible choice. In 1862, he deserted his domain — becoming a ronin, a samurai without a lord. Under Tosa law, this was punishable by death. He was now a fugitive with no income, no rank, and no protection, free to pursue the revolution he believed in, but only one step ahead of his own execution.",
+      "image_prompt": "Sakamoto Ryoma walking away from a formal domain gate at night, glancing back once at the place he is leaving forever. Cloak pulled tight, moving toward open country and uncertain exile, wearing traditional straw sandals — not Western boots, since this is 1862, still early in his life before he adopted any Western dress. Cold moonlight, long shadow trailing behind him. Painterly photorealistic digital concept art — no comic-book ink outlines, no manga-style linework, no torn-paper or canvas-edge border, a seamless full-bleed image exactly like the rest of this series.",
+      "ken_burns": "pan_left",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.15
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Ryoma's first target was a man named Katsu Kaishu — a shogunate naval official notorious among radicals for admiring Western technology and advocating cooperation with the very foreigners Ryoma wanted expelled. To men like Ryoma, Katsu looked like a traitor. So in 1862, Ryoma traveled to Edo with a simple plan: to kill him.",
+      "image_prompt": "Sakamoto Ryoma approaching a traditional Edo-period residence at dusk, hand gripping his sword hilt beneath his cloak, jaw set with grim determination, wearing traditional straw sandals rather than Western boots (still early in his life, 1862). The sliding door of the house stands slightly open ahead of him, warm lamplight spilling out.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "But when Ryoma arrived at Katsu's door, something unexpected happened. Katsu did not fight or flee. Instead, he calmly laid out his vision: Japan could never resist the Western powers by expelling them — only by building a modern navy and a unified nation to match them. Ryoma listened. And by the end of the conversation, the would-be assassin asked to become his student instead.",
+      "image_prompt": "Inside a modest study, an older Japanese naval official (Katsu Kaishu — traditional chonmage topknot, formal dark kamishimo, calm composed expression) sits on the left side of a low table, gesturing toward a large Western nautical chart. On the right, Sakamoto Ryoma sits opposite him, his hand relaxed away from his sword, expression shifting from hostility to fascination. Both men are seated on tatami mats in bare feet or white tabi socks, having removed their footwear at the entrance as is customary — no boots, shoes, or sandals visible anywhere in the room. Warm lamplight, a quiet moment of transformation.",
+      "ken_burns": "static",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Under Katsu's mentorship, Ryoma studied naval science and Western economics, and his ambitions grew far beyond the sword. When Katsu fell from political favor in 1864, Ryoma took the vision with him — founding Kameyama Shachu in the port city of Nagasaki, Japan's first modern trading company and private navy, staffed by fellow ronin with nowhere else to belong.",
+      "image_prompt": "Sakamoto Ryoma standing on a wooden pier in Nagasaki harbor at dawn, wearing traditional straw sandals (it is 1864 — still a couple of years before he adopted Western boots), surveying a small fleet of Western-style trading ships and rifles being loaded aboard. A handful of fellow ronin work alongside him. Golden morning light, a sense of ambition and new purpose.",
+      "ken_burns": "zoom_out",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.18
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "This company became something more than a business. The Choshu domain, crushed and embargoed by the shogunate after a failed uprising, could no longer legally buy weapons. Satsuma, a rival domain with no such restriction, could. Ryoma's company began quietly buying rifles and a warship in Satsuma's name — and delivering them to Choshu instead. He was building a bridge between two domains that despised each other.",
+      "image_prompt": "A dockside warehouse at night, crates of rifles being quietly transferred between two unmarked ships. The only light sources are traditional Japanese paper lanterns (chochin or andon) — absolutely no candlesticks, no candelabras, no Western-style standing candle holders anywhere in the scene. Sakamoto Ryoma oversees the exchange from the shadows, wearing traditional straw sandals (still 1864-65, before he adopted Western boots), watching two groups of unnamed domain retainers who refuse to make eye contact with one another. Secretive, tense atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "That hatred ran deep. Just two years earlier, in 1864, Choshu forces had marched on Kyoto and been slaughtered by an alliance that included Satsuma's own army. Choshu samurai considered Satsuma a traitor to the anti-shogunate cause. Uniting these two domains was not just difficult — nearly everyone agreed it was politically impossible.",
+      "image_prompt": "A smoke-filled battlefield outside the gates of Kyoto, two groups of samurai armies clashing violently beneath rival domain banners. Fire and chaos, bodies fallen in the foreground, arrows crossing overhead. Dark, brutal, historically grounded battle scene — no specific named individuals, only anonymous armies.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "In early 1866, Ryoma brought the two domains' representatives together in a Kyoto safehouse. Talks stalled for days — pride and old blood standing in the way of a deal both sides secretly needed. According to accounts of the meeting, Ryoma finally lost patience, confronted both delegations directly, and physically pushed Satsuma's envoy and Choshu's envoy to shake hands.",
+      "image_prompt": "A dim, smoke-hazed safehouse room in Kyoto. Sakamoto Ryoma stands between two seated, wary domain envoys — one on the left, one on the right, both anonymous silhouetted samurai in formal dark robes — physically pushing their hands together into a reluctant handshake. Everyone in the room is on tatami mats in bare feet or white tabi socks, footwear removed at the entrance as is customary — no boots or shoes visible anywhere. The only light source is a single traditional Japanese paper andon lantern — absolutely no candle, no candlestick, no candelabra of any kind anywhere in the frame. Tense atmosphere, a decisive turning point.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "The result was the Satcho Alliance — a secret military pact between Japan's two most powerful anti-shogunate domains. It was arguably the single most consequential political alliance in the country's modern history, and it existed because one ronin with no domain, no rank, and no official authority refused to accept that old enemies had to stay enemies forever.",
+      "image_prompt": "Sakamoto Ryoma standing quietly in a doorway lit by a traditional Japanese paper andon lantern, watching from a respectful distance as two rival domain banners are set side by side on a wooden stand in the softly lit room beyond him. He is in bare feet or white tabi socks, footwear removed as is customary for the indoor tatami room he is standing at the threshold of — no boots or shoes visible. The banners are plain solid-color fabric with no readable text, characters, or symbols of any kind — absolutely no kanji, no lettering, no legible markings anywhere in the image. His expression is quiet satisfaction rather than triumph. Warm, still atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.15
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "The shogunate now hunted Ryoma as a dangerous conspirator. In 1866, assassins cornered him at the Teradaya inn in Kyoto. He survived only because his companion discovered them first — and ran to warn him from her bath. Ryoma fought his way out, wounded, and escaped by boat down the river.",
+      "image_prompt": "A dark inn corridor in Kyoto at night, Sakamoto Ryoma bursting barefoot from a room with a pistol in one hand and a sword in the other — he was resting indoors when the attack began, so he has no footwear on, just as anyone indoors on tatami would not be wearing shoes. Expression alert and startled, a woman's silhouette visible behind him in an adjoining doorway calling out a warning. Chaotic candlelight, sense of sudden danger.",
+      "ken_burns": "pan_right",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "By 1867, Ryoma had turned from soldier to statesman. Aboard a ship bound for Kyoto, he dictated an eight-point plan for Japan's future: political power returned to the emperor, a new bicameral council, reformed laws and military, and equal treaties with foreign powers. It was a blueprint for an entirely new kind of government — written by a man with no formal position in any of it.",
+      "image_prompt": "Sakamoto Ryoma seated below deck on a wooden trading ship, barefoot or in white tabi socks as is customary indoors, lantern light illuminating a scroll of handwritten notes as he dictates to a young scribe. Through a small porthole, the night sea rolls past. Focused, purposeful atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "That plan helped shape the final act. In October 1867, the last shogun, Tokugawa Yoshinobu, formally returned power to the emperor without a fight — a stunning, peaceful transfer that many credit to the political groundwork Ryoma and his allies had laid. Seven hundred years of military rule ended not in a decisive battle, but in a signature.",
+      "image_prompt": "A formal Edo Castle audience hall, an aging shogun in ceremonial robes kneeling before a written proclamation on a lacquered stand, surrounded by silent, solemn officials. Soft grey light through high windows. Weighty, historic stillness — no violence, no crowd, just quiet finality.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Ryoma did not live to see it celebrated. On November 15th, 1867 — his thirty-third birthday — assassins broke into the Omiya inn in Kyoto and cut down both Ryoma and his ally. He died from his wounds within hours, just weeks after the shogunate he had worked to dismantle had already agreed to fall.",
+      "image_prompt": "A quiet inn room in Kyoto at night, a single overturned tea cup and scattered papers on the floor, a katana lying in the foreground. A sliding door hangs open to a dark corridor beyond. No figures shown — the aftermath of violence implied rather than depicted, restrained and somber.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "The Meiji Restoration was formally declared two months later, in January 1868 — the new imperial government Ryoma had spent his life fighting for. He never saw it. The man who united Japan's bitterest enemies, and helped write the plan for its future, died before the country he imagined ever officially existed.",
+      "image_prompt": "An empty stone harbor at dawn in Kochi, waves rolling in against the rocks, gulls circling overhead. No figure present in the frame — an image of absence and quiet loss, the sea he loved continuing on without him.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "Who killed him remains disputed. Suspicion has fallen on a shogunate-aligned police force, on rogue rival agents fearful of his growing influence, even on former allies. No one was ever definitively convicted. More than a century and a half later, Ryoma's assassination remains one of the great unsolved mysteries of Japanese history.",
+      "image_prompt": "A dim, atmospheric composition of a single unsigned wooden name-plaque and a discarded straw sandal on a rain-soaked Kyoto street at night, lit by a distant lantern. Mysterious, unresolved mood, evoking an unanswered question rather than depicting any individual.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "Today, Ryoma is consistently ranked Japan's most admired historical figure — voted for in polls more often than any shogun or emperor. His trading company's model inspired one of his own associates, who went on to found one of Japan's largest modern corporations. Statues of Ryoma gaze out to sea from his native Kochi, forever facing the wider world he never got to fully see.",
+      "image_prompt": "The real bronze statue of Sakamoto Ryoma at Katsurahama in Kochi, seen from the side at golden hour: he stands upright wearing a traditional haori jacket over hakama trousers, one hand tucked into the front of his robe, gazing out to sea. He wears NO armor of any kind — Ryoma was a civilian reformist, never a battlefield general. Modern shipping vessels are visible far out on the horizon beyond the old fishing boats, blending past and present in a single wide view.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles: a widow refuses to disappear after her husband's death — and instead rules Japan from behind a Buddhist veil for two decades. Her name was Hojo Masako, and they called her the nun shogun.",
+      "image_prompt": "A composed, veiled Japanese noblewoman in dark Buddhist nun's robes seated in quiet authority within a shadowed Kamakura-era hall, warriors kneeling in respectful distance before her. Dim, reverent lighting, an aura of unshakable command. Painterly photorealistic digital concept art — no comic-book ink outlines, no manga-style linework, no torn-paper or canvas-edge border, a seamless full-bleed image exactly like the rest of this series.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 15,
+      "narration": "Sakamoto Ryoma never held a title, never commanded an army, and never lived to see the government he designed. What he had instead was the conviction that enemies could become allies, and that a nation could be rebuilt by people no one had given permission to rebuild it. That conviction, more than any battle, is what actually ended seven hundred years of shogun rule.",
+      "image_prompt": "Sakamoto Ryoma's silhouette standing at the prow of a small ship at dawn, sailing toward an open horizon where sunlight breaks through parting clouds over the sea. Calm, hopeful, resolved final image.",
+      "ken_burns": "zoom_out",
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.25
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep068-BGM-intro.mp3",
+    "main": "BGM/ep068-BGM-main.mp3",
+    "outro": "BGM/ep068-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/Dkr9Ed3mNFQ",
+  "shorts_url": "https://youtu.be/QYXfLvwg_K8",
+  "scheduled_at": "2026-08-08 03:00"
+}

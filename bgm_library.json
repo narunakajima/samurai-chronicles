@@ -446,5 +446,46 @@
     "used_in": [
       "ep067"
     ]
+  },
+  {
+    "id": "ep068-BGM-intro",
+    "path": "BGM/ep068-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Orchestral Rising Horror #1 by Mark_Murray (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral"
+    ],
+    "used_in": [
+      "ep068"
+    ]
+  },
+  {
+    "id": "ep068-BGM-main",
+    "path": "BGM/ep068-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "emotional",
+      "epic"
+    ],
+    "used_in": [
+      "ep068"
+    ]
+  },
+  {
+    "id": "ep068-BGM-outro",
+    "path": "BGM/ep068-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Hopeful Cinematic Emotional Orchestra Background Music by EvanBoyerman (freesound.org) — CC BY 4.0",
+    "tags": [
+      "cinematic",
+      "emotional"
+    ],
+    "used_in": [
+      "ep068"
+    ]
   }
 ]
