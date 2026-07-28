@@ -510,23 +510,26 @@ response = client.models.generate_content(
 
 ---
 
-### STEP 3C — BGM 3曲構成（役割別: Freesound 3曲 + ライブラリ 3曲 = 計6曲）
+### STEP 3C — BGM 3曲構成（役割別: Freesound 6曲 + ライブラリ 6曲 = 計12曲）
 
 本編BGMは**序盤（intro）・中盤（main）・終盤（outro）の3曲構成**（2026-07〜）。
-役割ごとに Freesound 新規1曲 + ライブラリ1曲の2候補を用意し、計6曲から各役割1曲ずつ選ぶ。
+役割ごとに Freesound 新規2曲 + ライブラリ2曲の4候補を用意し、計12曲から各役割1曲ずつ選ぶ
+（2026-07-29〜: 6曲/2候補では選択肢が少ないとの判断で12曲/4候補に拡大。ユーザー試聴は
+Consultで3曲に絞り込んでから行うため、候補を増やしてもユーザー側の試聴負荷は変わらない）。
 `sc_video_gen.py` がシーンタイプから切り替え時刻を自動計算してクロスフェードでつなぐ。
 
 **役割とトーンの対応:**
 
-| 役割 | 対象シーン | トーン | クエリ例 |
+| 役割 | 対象シーン | トーン | クエリ例（Q1 / Q2） |
 |---|---|---|---|
 | intro（序盤） | hook〜setup | 緊張・導入・影 | `"dark tense orchestral"` / `"dark cinematic strings"` |
 | main（中盤） | rising_action〜climax | 高揚・戦闘・英雄 | `"epic heroic orchestral"` / `"epic orchestral taiko"` |
 | outro（終盤） | falling_action〜outro | 余韻・荘厳・鎮魂 | `"emotional cinematic orchestral"` / `"somber epic strings"` |
 
-#### ① Freesound から役割別に3曲ダウンロード
+#### ① Freesound から役割別に6曲（各役割2曲）ダウンロード
 
-エピソードのムードを踏まえ、上の表に沿って役割別クエリを3本生成しダウンロードする。
+エピソードのムードを踏まえ、上の表の Q1/Q2 を軸に役割別クエリを6本生成しダウンロードする
+（Q1/Q2は例。エピソードのムードに応じて調整してよいが、各役割で必ず異なる2クエリにする）。
 
 **クエリ生成ルール:**
 - 必ず短く（2〜3語）
@@ -539,12 +542,24 @@ response = client.models.generate_content(
 これにより、Samurai Chronicles の `bgm_library.json` に既に登録済みの曲（曲名が一致するもの）は
 Freesound から再ダウンロードされず自動的にスキップされる（ランプの独り言と同じ仕組み）。
 
+`freesound_download.py` は1回の呼び出しにつき2〜3クエリまでしか受け付けないため、
+Q1セット・Q2セットの2回に分けて実行する（`--start-slot` でファイル名の連番をずらす）：
+
 ```bash
 mkdir -p "$HOME/Desktop/SC/BGM"
+
+# Q1セット（スロット1-3）
 FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
-  "<Q_intro>" "<Q_main>" "<Q_outro>" \
+  "<Q_intro_1>" "<Q_main_1>" "<Q_outro_1>" \
   "$HOME/Desktop/SC/BGM/" \
-  --round 0 \
+  --round 0 --start-slot 1 \
+  --library "$HOME/samurai-chronicles/bgm_library.json"
+
+# Q2セット（スロット4-6）
+FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py \
+  "<Q_intro_2>" "<Q_main_2>" "<Q_outro_2>" \
+  "$HOME/Desktop/SC/BGM/" \
+  --round 0 --start-slot 4 \
   --library "$HOME/samurai-chronicles/bgm_library.json"
 ```
 
@@ -554,10 +569,13 @@ FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_downlo
 
 ```bash
 cd "$HOME/Desktop/SC/BGM"
-# スロット1=intro / 2=main / 3=outro（.mp3 と .credit.txt の両方をリネーム）
+# スロット1,4=intro / 2,5=main / 3,6=outro（.mp3 と .credit.txt の両方をリネーム）
 for f in BGM_candidate_01_*; do mv "$f" "intro_${f#BGM_}"; done 2>/dev/null
 for f in BGM_candidate_02_*; do mv "$f" "main_${f#BGM_}"; done 2>/dev/null
 for f in BGM_candidate_03_*; do mv "$f" "outro_${f#BGM_}"; done 2>/dev/null
+for f in BGM_candidate_04_*; do mv "$f" "intro_${f#BGM_}"; done 2>/dev/null
+for f in BGM_candidate_05_*; do mv "$f" "main_${f#BGM_}"; done 2>/dev/null
+for f in BGM_candidate_06_*; do mv "$f" "outro_${f#BGM_}"; done 2>/dev/null
 
 mkdir -p /tmp/sc_bgm_credits
 mv "$HOME/Desktop/SC/BGM/"*_candidate_*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null || true
@@ -579,31 +597,41 @@ python3 $HOME/samurai-chronicles/sc_bgm_qa.py --dir "$HOME/Desktop/SC/BGM"
 `--start-slot <N>` で別クエリに差し替えて再ダウンロード → 再度音声QAを実行する。
 全候補が `has_vocals: false` になるまで②以降には進まない。
 
-#### ② ライブラリから役割別に3曲選択
+#### ② ライブラリから役割別に6曲（各役割2曲）選択
 
-`bgm_library.json` を読み込み、各役割のトーンに合うタグの曲を1曲ずつ選ぶ
+`bgm_library.json` を読み込み、各役割のトーンに合うタグの曲を2曲ずつ選ぶ
 （intro=dark/tense系、main=epic/heroic系、outro=emotional/somber系。
-エピソードのタイトル・シーン構成も考慮する）。
+エピソードのタイトル・シーン構成も考慮し、同一役割の2曲は極力タグ・雰囲気が
+被らないものを選ぶ）。
 
-選んだ3件を `~/Desktop/SC/BGM/` にコピー（試聴用の一時コピー。選択後は削除）：
+選んだ6件を `~/Desktop/SC/BGM/` にコピー（試聴用の一時コピー。選択後は削除）：
 
 ```bash
 DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles"
 cp "$DRIVE/<path1>" "$HOME/Desktop/SC/BGM/intro_library_01_<lib_id>.mp3"
-cp "$DRIVE/<path2>" "$HOME/Desktop/SC/BGM/main_library_01_<lib_id>.mp3"
-cp "$DRIVE/<path3>" "$HOME/Desktop/SC/BGM/outro_library_01_<lib_id>.mp3"
+cp "$DRIVE/<path2>" "$HOME/Desktop/SC/BGM/intro_library_02_<lib_id>.mp3"
+cp "$DRIVE/<path3>" "$HOME/Desktop/SC/BGM/main_library_01_<lib_id>.mp3"
+cp "$DRIVE/<path4>" "$HOME/Desktop/SC/BGM/main_library_02_<lib_id>.mp3"
+cp "$DRIVE/<path5>" "$HOME/Desktop/SC/BGM/outro_library_01_<lib_id>.mp3"
+cp "$DRIVE/<path6>" "$HOME/Desktop/SC/BGM/outro_library_02_<lib_id>.mp3"
 ```
 
 ※ `<lib_id>` はライブラリエントリの `id`（例: `ep003-BGM`）。STEP 4 で id 逆引きに使うため正確に。
 
-`~/Desktop/SC/BGM/` に計6曲が並ぶ（役割ごとに新規 vs ライブラリの2択）：
+`~/Desktop/SC/BGM/` に計12曲が並ぶ（役割ごとに新規2曲・ライブラリ2曲の4候補）：
 ```
-intro_candidate_01_xxx.mp3   ← Freesound 新規（序盤）
-intro_library_01_xxx.mp3     ← ライブラリ（序盤）
-main_candidate_02_xxx.mp3    ← Freesound 新規（中盤）
-main_library_01_xxx.mp3      ← ライブラリ（中盤）
-outro_candidate_03_xxx.mp3   ← Freesound 新規（終盤）
-outro_library_01_xxx.mp3     ← ライブラリ（終盤）
+intro_candidate_01_xxx.mp3   ← Freesound 新規（序盤 Q1）
+intro_candidate_04_xxx.mp3   ← Freesound 新規（序盤 Q2）
+intro_library_01_xxx.mp3     ← ライブラリ（序盤 1）
+intro_library_02_xxx.mp3     ← ライブラリ（序盤 2）
+main_candidate_02_xxx.mp3    ← Freesound 新規（中盤 Q1）
+main_candidate_05_xxx.mp3    ← Freesound 新規（中盤 Q2）
+main_library_01_xxx.mp3      ← ライブラリ（中盤 1）
+main_library_02_xxx.mp3      ← ライブラリ（中盤 2）
+outro_candidate_03_xxx.mp3   ← Freesound 新規（終盤 Q1）
+outro_candidate_06_xxx.mp3   ← Freesound 新規（終盤 Q2）
+outro_library_01_xxx.mp3     ← ライブラリ（終盤 1）
+outro_library_02_xxx.mp3     ← ライブラリ（終盤 2）
 ```
 
 ---
@@ -619,12 +647,12 @@ outro_library_01_xxx.mp3     ← ライブラリ（終盤）
 - そのうえで Read ツールで画像をチャットに表示し、ユーザーの確認を待つ。差し替え希望があれば再生成する。
 
 **BGM:**
-- 役割別6曲（各役割2候補）を用意した後、Freesound新規候補には `sc_bgm_qa.py` で
-  音声QA（ボーカル・台詞混入チェック）を実行し、`has_vocals: true` の候補があれば
-  該当スロットのみ別クエリで再取得する。
+- 役割別12曲（各役割4候補: Freesound新規2 + ライブラリ2）を用意した後、Freesound新規候補には
+  `sc_bgm_qa.py` で音声QA（ボーカル・台詞混入チェック）を実行し、`has_vocals: true` の候補が
+  あれば該当スロットのみ別クエリで再取得する。
 - `/consult` スキルを使い、エピソードのトーン・3曲構成の制約（役割ごとに固定音量ループ、
   曲間はクロスフェード4秒、序盤→中盤→終盤で緊張→高揚→余韻の流れを作る）を踏まえて
-  **各役割1曲ずつ計3曲**に絞り込む。
+  **12曲から各役割1曲ずつ計3曲**に絞り込む。
 - **選定した3曲（`~/Desktop/SC/BGM/` 内）を SendUserFile ツールでユーザーに送付し、
   試聴の上でOKを得る。ここは自動確定せず、明示的な承認を待って初めて次に進む。**
 - OKが出るまで STEP 4（BGM紐付け・Google Driveへの移動）には進まない。

@@ -61,7 +61,7 @@ Shorts は3曲構成でも中盤（main）の1曲のみ使用。
 2. episode JSON の `bgm_source` フィールド（ライブラリ曲を流用紐付け）
 3. `bgm_library.json` の `used_in` 配列を逆引き
 
-新規BGMは `/sc-new` STEP 4（役割別: Freesound新規3曲＋ライブラリ既存3曲の計6候補から
+新規BGMは `/sc-new` STEP 4（役割別: Freesound新規6曲＋ライブラリ既存6曲の計12候補から
 各役割1曲選定）の中で `sc_bgm_library.py --add --role <role>` により `BGM/` フォルダへ自動登録される。
 既存ライブラリ曲を使い回す場合は `sc_bgm_library.py --use-library --role <role>` で `bgm_sources[role]` を設定する。
 
