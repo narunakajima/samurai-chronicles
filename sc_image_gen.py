@@ -54,7 +54,14 @@ BASE_CONTEXT = (
     "Unless a character reference specifies otherwise (e.g. a monk's shaved head, "
     "a woman's hair, a ninja's covered hair, a ronin's unbound hair), default male "
     "hairstyles to a period-accurate chonmage (topknot with shaved pate) — never a "
-    "modern haircut."
+    "modern haircut. "
+    "When a scene depicts a sealed letter or document, use a period-accurate Japanese "
+    "seal — a red vermillion ink stamp (shuin) or a paper cord tie (mizuhiki) — never "
+    "a Western-style wax seal with ribbon. "
+    "When a scene requires lighting from a lamp or lantern, use a traditional Japanese "
+    "light source — a paper andon lantern, a chochin paper lantern, or a simple wax "
+    "candle (rousoku) on a plain stand — never a Western-style glass oil lamp, "
+    "hurricane lamp, or metal lamp with a wick-adjustment knob."
 )
 
 # ── キャラクター参照定義 ──────────────────────────────────
@@ -149,7 +156,11 @@ def _correction_note(issues: list) -> str:
                 "authentic to the correct historical period as described — "
                 "no anachronistic later-era styles. Unless the scene calls for an exception "
                 "(monk, woman, ninja, ronin), male hair should be a chonmage "
-                "(topknot with shaved pate), never a modern haircut."
+                "(topknot with shaved pate), never a modern haircut. Any lamp or lantern "
+                "must be a traditional Japanese andon, chochin, or wax candle (rousoku) — "
+                "never a Western-style oil lamp or glass-shaded lamp. Any sealed letter or "
+                "document must use a red vermillion ink stamp (shuin) or paper cord tie "
+                "(mizuhiki) — never a Western-style wax seal with ribbon."
             )
         elif prefix == "DISTORTION" and prefix not in seen:
             notes.append(
@@ -238,7 +249,9 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "HAIRSTYLE for Edo/Sengoku Japan. This includes light sources — flag Western-style "
             "oil lamps, glass-shaded lamps, candlesticks, or electric-style lighting fixtures; "
             "period-correct light sources are andon (paper-and-wood lanterns), chochin (paper "
-            "lanterns), or open torches/fire only.\n"
+            "lanterns), or open torches/fire only. This also includes document seals — flag a "
+            "Western-style wax seal with ribbon on any letter or scroll; period-correct sealing "
+            "is a red vermillion ink stamp (shuin) or a paper cord tie (mizuhiki).\n"
             "Unless the scene description calls for an exception "
             "(a monk's shaved head, a woman's hair, a ninja's covered hair, a ronin's unbound hair), "
             "male hairstyles should be a chonmage (topknot with shaved pate) or similarly "
