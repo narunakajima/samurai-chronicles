@@ -534,6 +534,22 @@ mkdir -p /tmp/sc_bgm_credits
 mv "$HOME/Desktop/SC/BGM/"*_candidate_*.credit.txt /tmp/sc_bgm_credits/ 2>/dev/null || true
 ```
 
+**音声QA（ボーカル・台詞混入チェック・必須）:**
+
+Freesound候補にはBGMとして不適切な「音声混じり」の曲（ナレーション・台詞・歌詞入りサンプル等）
+が紛れることがある。タイトルに `cast` / `voice` / `narration` / `dialogue` / `whisper` 等の
+語がないか目視確認するのに加え、`sc_bgm_qa.py` で機械的に検証する（Geminiの音声理解による
+自動QA。`sc_image_gen.py` の画像QAと同じ考え方）：
+
+```bash
+python3 $HOME/samurai-chronicles/sc_bgm_qa.py --dir "$HOME/Desktop/SC/BGM"
+```
+
+`has_vocals: true` と判定された候補（Freesound新規曲のみ対象。ライブラリ既存曲は
+過去に問題なく使われてきた実績があるため対象外）があれば、そのスロットだけ
+`--start-slot <N>` で別クエリに差し替えて再ダウンロード → 再度音声QAを実行する。
+全候補が `has_vocals: false` になるまで②以降には進まない。
+
 #### ② ライブラリから役割別に3曲選択
 
 `bgm_library.json` を読み込み、各役割のトーンに合うタグの曲を1曲ずつ選ぶ
