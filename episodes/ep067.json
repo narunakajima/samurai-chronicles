@@ -1,0 +1,249 @@
+{
+  "episode_id": "ep067",
+  "episode_title": "Seppuku: The Truth Behind Japan's Ritual Suicide",
+  "youtube_title": "The Suicide Ritual That Was Never About Honor",
+  "youtube_description": "Seppuku is remembered as the ultimate act of samurai honor — a warrior choosing death over disgrace. But historians see something far more complicated: a battlefield escape, a legal punishment engineered by the state, and a custom the government itself was eventually forced to ban.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 Seppuku killed thousands of...\n0:47 Ask most people what seppuku...\n1:37 Seppuku was not part of Japan's\n2:20 By the time of the Edo\n3:04 The kaishakunin's role...\n3:51 Seppuku was also a legal...\n4:35 As Japan settled into two...\n5:22 The numbers became impossible...\n6:05 In 1663, the fourth shogun,...\n6:50 The ban worked — mostly. A\n7:28 Two centuries later, the...\n8:09 But a law cannot erase a\n8:55 Nogi's death split the...\n9:47 Strip away the legend, and a\n10:36 In the West, seppuku became...\n11:18 The logic of seppuku...\n12:00 So was seppuku ever really about\n12:49 Seppuku endured for eight...\n13:29 Next time on Samurai...\n13:55 Seppuku was never really a story\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Ivan Morris, The Nobility of Failure: Tragic Heroes in the History of Japan (1975)\n2. Andrew Rankin, Seppuku: A History of Samurai Suicide (2011)\n3. Karl Friday, Samurai, Warfare and the State in Early Medieval Japan (2004)\n\n\n🎵 Music: Orchestral Rising Horror #2 by Mark_Murray (freesound.org) — CC BY 4.0\n#Seppuku #Samurai #JapaneseHistory",
+  "youtube_tags": [
+    "seppuku",
+    "harakiri",
+    "samurai",
+    "japanese history",
+    "samurai suicide",
+    "bushido",
+    "edo period",
+    "japanese ritual",
+    "samurai honor",
+    "nogi maresuke",
+    "kamikaze",
+    "japan history",
+    "samurai culture",
+    "ritual suicide",
+    "ronin",
+    "tokugawa shogunate",
+    "meiji era",
+    "japanese samurai"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "He knelt in white robes, a blade wrapped before him, a second standing ready with a raised sword. It looked like the ultimate act of honor. But the man kneeling there may never have had a real choice at all. What was seppuku actually for?",
+  "shorts_narration": "Eight hundred years of ritual suicide. Not for honor — for control. A shogunate banned it. Soldiers still chose it in 1945. This is the real story of seppuku.",
+  "shorts_hook_lines": [
+    "NOT HONOR.",
+    "IT WAS CONTROL.",
+    "WHO REALLY CHOSE TO DIE?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of an Edo-period samurai's face in the moments before seppuku — pale, composed, eyes calm and steady despite what is about to happen. He wears the collar of a plain white burial robe. Lit from below by a traditional Japanese andon lamp or a thin Japanese wax candle (rousoku) on a low stand — not a thick Western-style pillar candle — casting harsh shadows across his features. He looks directly into the camera with unsettling serenity. Vertical portrait composition.",
+  "thumbnail_prompt": "A pristine white burial robe folded on a tatami mat under a single beam of cold light, a short ceremonial blade wrapped in white cloth resting beside it. Deep black background beyond the light's edge. Extremely minimalist, solemn, cinematic. Atmosphere of ritual stillness and quiet dread.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Seppuku killed thousands of samurai — and almost none of them chose it freely. The ritual we call an act of honor began as a way to escape something far worse. So what was seppuku really for?",
+      "image_prompt": "A single short blade wrapped in white cloth resting on a bare tatami mat, lit by one cold shaft of moonlight through a shoji screen, the rest of the room in total darkness. Stark, minimalist, unsettling stillness.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Ask most people what seppuku means, and they will describe the same scene: a samurai in white robes, kneeling before witnesses, driving a blade into his own stomach to preserve his honor. It is one of the most iconic images to come out of Japan — dramatized in films, novels, and legend as the ultimate expression of samurai discipline and courage. It looks like ancient tradition, unbroken for a thousand years. But the true history of seppuku is far stranger, far more political, and far more recent than the legend allows.",
+      "image_prompt": "A formal Edo-period seppuku ceremony chamber. A samurai in pure white burial robes kneels centered on a tatami platform, a short blade wrapped in white cloth resting before him on a lacquered stand. Witnesses in formal dress sit in respectful rows at a distance. Behind him, a second samurai stands with a raised katana, present but restrained. Solemn candlelight, muted color, overwhelming stillness.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Seppuku was not part of Japan's earliest warrior culture. For centuries, samurai died the way soldiers everywhere did — cut down in battle, or captured and executed by the enemy. Capture was the real disgrace: a warrior stripped of his weapons, paraded, tortured, and killed on someone else's terms. Sometime around the twelfth century, a different option emerged. If defeat was certain, a warrior could take control of the one thing his enemy could not: the manner of his own death.",
+      "image_prompt": "A defeated samurai commander on a smoke-filled battlefield at dusk, surrounded by the enemy's distant banners, drawing his own short blade rather than being taken captive. His expression is calm resolve, not despair. Fallen weapons and broken banners litter the ground around him. Dramatic low orange light through smoke.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "By the time of the Edo period, seppuku had become an elaborate, codified ritual. The condemned wore pure white burial robes and was seated on a fresh tatami mat, sometimes composing a final death poem beforehand. A short blade — never the long katana — was placed before him, wrapped so only a few inches of the blade were exposed. And standing behind him was a second, the kaishakunin, whose sole duty was to end his suffering the instant the blade touched flesh.",
+      "image_prompt": "Close detail shot of seppuku ritual objects arranged on a low lacquered stand: a short wakizashi blade wrapped in white paper, a folded white burial robe, an ink brush and paper for a final death poem, lit by a single traditional Japanese wax candle (rousoku) on a plain wooden candlestand (shokudai) — absolutely no Western-style oil lamp, no metal lamp base with a wick-adjustment knob, no glass chimney. Minimalist, solemn composition emphasizing the precision of ritual over violence.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "The kaishakunin's role reveals something the popular myth conveniently forgets: seppuku was rarely about enduring agony to prove one's resolve. In most formal executions by the Edo period, the condemned barely touched the blade before the second's sword ended it in a single stroke. The suffering was not the point. The composure was. What mattered was that a man could face death without flinching — and that his lord, his family, and his honor remained intact because of how he died, not how much pain he absorbed.",
+      "image_prompt": "The moment just before the kaishakunin's strike in a formal Edo-period seppuku ceremony. The condemned samurai kneels with perfect stillness, blade barely touching his robes, eyes closed in total composure. The second (kaishakunin) wears formal kamishimo ceremonial attire — not battlefield armor — and grips his drawn katana with both hands, its sheath held securely at his own side, never floating or detached. Face grim but controlled. The image captures restraint and ritual precision rather than violence.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Seppuku was also a legal instrument. Under Tokugawa law, samurai convicted of serious crimes were rarely hanged or beheaded like commoners. Instead, they were sentenced to die by their own hand — a punishment that preserved their status even in death. This was not mercy. It was a way for the shogunate to keep the samurai class distinct, disciplined, and self-policing, using the promise of a 'clean' death to enforce obedience without turning every execution into a public spectacle.",
+      "image_prompt": "An Edo-period magistrate's courtroom. A kneeling samurai in formal dress receives a written verdict from an official seated on a raised dais, the paper unrolled between them. Guards stand rigid at the sides. Cold, bureaucratic lighting through shoji screens — the mechanics of law rather than battle.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "As Japan settled into two centuries of Tokugawa peace, a disturbing new custom spread: junshi, or 'following in death.' When a lord passed away — even peacefully, of old age — loyal retainers would perform seppuku to accompany him into the afterlife. It was framed as the ultimate proof of loyalty. But as the practice spread through the 1600s, the shogunate began to see it very differently: not as devotion, but as a slow bleeding away of exactly the skilled retainers the state needed alive.",
+      "image_prompt": "A grieving group of at least four Edo-period samurai retainers kneeling in a shrine hall before their deceased lord's memorial tablet. Most of them are already dressed in plain white burial robes, prepared for their own ritual deaths — white robes clearly the dominant clothing in the scene, not a single exception among armored figures. Incense smoke curls upward. Somber, muted lighting, a sense of mounting, unstoppable momentum. Render all hands with exactly five fingers each, anatomically correct.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "The numbers became impossible to ignore. Entire administrations were gutted overnight as their most experienced officials chose death over service to a new lord. Clans lost generations of accumulated knowledge in a single ceremony. What had begun as an act of devotion was quietly becoming a threat to the stability the Tokugawa shogunate had spent decades building. Something had to change — and in 1663, it did.",
+      "image_prompt": "An Edo-period castle administrative office standing empty, ink brushes abandoned mid-stroke, ledgers left open on desks, dust beginning to settle. Through the window, a distant funeral procession moves toward a shrine. The image conveys sudden institutional emptiness — competence vanishing overnight.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "In 1663, the fourth shogun, Tokugawa Ietsuna, issued a formal edict: junshi was banned. Any retainer who followed his lord in death would bring punishment down on his own family and heirs — turning what had been an honor into a liability. It was a radical redefinition of loyalty itself. True devotion, the shogunate now declared, meant serving the successor, not dying with the predecessor. The state had decided that loyalty to Japan's stability mattered more than loyalty to any one man.",
+      "image_prompt": "A formal proclamation scene in an Edo castle great hall. A shogunate official unrolls an official edict scroll before a row of stunned, seated samurai lords. Stern, authoritative lighting from high windows. The mood is one of a sudden, irreversible shift in social order.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "The ban worked — mostly. A handful of retainers defied it anyway, accepting that their families would suffer for their loyalty. But junshi as a widespread practice collapsed within a generation. Seppuku itself did not disappear; it simply narrowed back to its two original functions — a battlefield escape from capture, and a state-sanctioned punishment for the elite. The mythology of 'honorable death' had just been stripped of its most extreme and uncontrollable form.",
+      "image_prompt": "A lone elderly samurai performing seppuku in a private garden at dawn, deliberately defying the shogunate's ban, his family watching in grief and quiet pride from a doorway. Soft dawn light, cherry blossoms falling. The composition balances tragedy with quiet resolve.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Two centuries later, the Meiji government abolished seppuku as a legal punishment entirely, in 1873. Japan was racing to modernize, rewriting its laws to look civilized in the eyes of Western powers it desperately wanted as equals rather than colonial targets. Ritual disembowelment as state execution had no place in that new image. On paper, seppuku's long legal life was over.",
+      "image_prompt": "A Meiji-era government office where officials in a mix of traditional robes and new Western-style suits review a printed legal code document. Through the window, telegraph poles and a steam train are visible against a traditional cityscape — old and new Japan colliding.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "But a law cannot erase a belief system overnight. In 1912, General Nogi Maresuke — a celebrated military hero — committed seppuku with his wife on the day of Emperor Meiji's funeral. It was junshi, the very practice banned two and a half centuries earlier, performed in the heart of a supposedly modern empire. The nation was shocked. And fascinated. The old logic of dying with one's lord had never actually vanished — it had only been waiting.",
+      "image_prompt": "A modernizing Tokyo street in 1912 lined with mourners in dark formal Western and traditional dress, newspapers being read and passed hand to hand. In the background, telegraph wires and gas lamps. A mood of collective shock rippling through a crowd.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Nogi's death split the country. To conservative nationalists, it was proof that the old samurai spirit still burned beneath Japan's new suits and steam engines — a reassurance during dizzying change. To modernist writers and intellectuals, it looked like something closer to superstition: a brilliant man throwing his life away for a code that belonged to a world already gone. Both readings were true. That was exactly the problem seppuku had always solved, and exactly the problem it now represented.",
+      "image_prompt": "Two contrasting groups depicted symbolically: on one side, elderly men in traditional robes bowing solemnly before a portrait of a deceased general; on the other, a group of young intellectuals in Western suits arguing intensely over a newspaper at a cafe table. Split composition, contrasting warm traditional light versus cool modern light.",
+      "ken_burns": "static",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "Strip away the legend, and a different pattern appears. Seppuku was never one thing. It was a battlefield tactic to deny the enemy a trophy. It was a legal fiction that let a regime execute its own elite without admitting they were being executed like criminals. It was social pressure disguised as devotion, powerful enough to outlive the law that banned it. 'Honor' was the word used to describe all of it — but honor was never really the mechanism. Control was.",
+      "image_prompt": "An abstract, symbolic composition: a single white burial robe hanging in an empty tatami room, lit by a single shaft of light, casting a long shadow shaped like a government seal. No figure present — an image of ritual as institution rather than individual choice.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "In the West, seppuku became shorthand for an entire imagined Japan — stoic, disciplined, willing to die for honor at the drop of an insult. Films and novels leaned into the drama of the blade and ignored the bureaucracy behind it: the edicts, the family liability clauses, the centuries of legal engineering that shaped who died, when, and why. The image survived. The machinery behind it did not need to.",
+      "image_prompt": "A vintage 20th-century Western illustrated poster artwork, unframed and propped in a dim gallery-like space, depicting a dramatized, exoticized samurai figure with a blade — clearly a stylized, foreign interpretation rather than historical accuracy. No readable text, lettering, or titles anywhere in the image. Moody spotlight, dust in the air.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "The logic of seppuku resurfaced one final time in the twentieth century. In 1945, as Japan's defeat became certain, kamikaze pilots and senior officers invoked the same ancient reasoning — that a chosen death was preferable to the shame of surrender. It was the oldest justification in Japanese military history, deployed at the very end of an empire that had, in every other way, become thoroughly modern.",
+      "image_prompt": "A 1945 Japanese military airfield at dusk, a lone officer in uniform standing before a row of aircraft, a white ceremonial cloth visible tucked into his uniform. The mood is heavy, resigned, historically grounded rather than glorified. Muted grey-gold light, long shadows.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "So was seppuku ever really about choice? Some men who died this way clearly chose it — as escape, as protest, as personal conviction. Others died because refusing was unthinkable in the world they lived in, where a family's survival depended on how a man's death looked to everyone watching. Seppuku's true history is not a story about honor. It is a story about how much of what we call 'choice' has always depended on who is watching, and what they will do if you choose wrong.",
+      "image_prompt": "A single empty white burial robe laid out on tatami in an otherwise bare room, lit by soft window light, no blade, no figure — an image of absence and quiet ambiguity. The composition invites reflection rather than depicting an act.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "Seppuku endured for eight hundred years — but it was never one unchanging tradition. Each era bent it toward its own purpose: a warrior's escape, a shogunate's legal tool, a retainer's forced devotion, a soldier's final protest against surrender. The blade itself never changed. What changed, again and again, was the reason a man was handed it — and how much choice he truly had when he picked it up.",
+      "image_prompt": "A timeline-like symbolic composition: a single traditional tanto blade resting across centuries of overlapping translucent images — a battlefield, a courtroom, a shrine, and a stack of aged blank paper documents — blending together like layered exposures. Human figures within the layered exposures are small, indistinct silhouettes rather than detailed faces — an intentional part of the double-exposure style. No readable text, lettering, or legible writing of any kind anywhere in the image — all paper surfaces are blank or textured only. Cinematic double-exposure effect, blue-grey palette.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles: a low-ranking samurai from a backwater domain will do something no lord or shogun could — unite Japan's bitterest enemies against the shogunate itself. His name was Sakamoto Ryoma, and his gamble would ignite a revolution.",
+      "image_prompt": "Sakamoto Ryoma, instantly recognizable in the iconic likeness from his famous historical photograph: he does NOT wear a shaved-pate chonmage topknot like a traditional samurai — instead his hair is grown out long and slightly wavy/tousled, swept back off his forehead with no shaved crown, loose strands moving in the sea wind. Strong jaw, calm confident gaze, faint sideburns. He wears a dark formal kimono with a haori jacket bearing a small family crest (kamon) on the sleeve, paired with Western-style leather boots — the signature blend of old and new that defined him. A traditional daisho (katana and wakizashi) worn correctly through his sash, both blades clearly separated and properly sheathed, no extra floating blades. He stands at the prow of a ship at night, silhouetted against a harbor. In the background, foreign sailing ships are each lit by a small number of individual warm oil lanterns hanging at their sterns and mastheads — absolutely no strings of small round electric bulbs, no fairy lights, no Christmas-light-style light chains anywhere in the image. No crew member anywhere in the scene is holding a handheld lamp or lantern of any kind — all light sources are fixed, mounted lanterns only. A symbol of old and new Japan colliding. Dramatic rim lighting, ocean mist.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 15,
+      "narration": "Seppuku was never really a story about the blade. It was a story about who got to decide when a life ended — a warrior on a lost battlefield, a shogunate writing law, a retainer trapped by loyalty, a general in a dying empire. Every generation told itself a different reason. The ritual simply gave them all the same shape to pour it into. That, more than any single act of courage, is the real history of seppuku.",
+      "image_prompt": "A single unused traditional tanto blade resting on white cloth in an empty tatami room, morning light streaming through a shoji screen, dust motes drifting. Calm, resolved, contemplative final image — the ritual object at rest, its long history behind it.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep067-BGM-intro.mp3",
+    "main": "BGM/ep004-BGM.mp3",
+    "outro": "BGM/ep067-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/EkNacFtrKNU",
+  "shorts_url": "https://youtu.be/XzYmEWIHf_k",
+  "scheduled_at": "2026-08-07 03:00"
+}

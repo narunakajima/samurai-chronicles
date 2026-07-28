@@ -65,7 +65,8 @@
       "ep004",
       "ep021",
       "ep026",
-      "ep035"
+      "ep035",
+      "ep067"
     ]
   },
   {
@@ -417,6 +418,33 @@
     ],
     "used_in": [
       "ep064"
+    ]
+  },
+  {
+    "id": "ep067-BGM-intro",
+    "path": "BGM/ep067-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Orchestral Rising Horror #2 by Mark_Murray (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral"
+    ],
+    "used_in": [
+      "ep067"
+    ]
+  },
+  {
+    "id": "ep067-BGM-outro",
+    "path": "BGM/ep067-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "emotional",
+      "strings"
+    ],
+    "used_in": [
+      "ep067"
     ]
   }
 ]
