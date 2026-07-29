@@ -15,6 +15,7 @@ sc_sns_up.py — Samurai Chronicles YouTube アップロード
 
 import argparse
 import json
+import subprocess
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -381,6 +382,44 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
         build_site()
     except Exception as e:
         print(f"  ⚠️  サイトビルドでエラー（アップロード自体は成功）: {e}")
+
+    print(f"{'━'*60}")
+    print(f"  残りの変更をコミット")
+    print(f"{'━'*60}")
+    commit_remaining_changes(episode_id)
+
+
+def commit_remaining_changes(episode_id: str):
+    """
+    アップロード完了は制作フローの区切りとなるため、ep.json の書き戻し・サイト再ビルド
+    (index.html/episodes.html/playlists.html) などリポジトリに残っている変更をまとめて
+    コミット・プッシュする。差分がなければ何もしない。
+    """
+    status = subprocess.run(
+        ["git", "-C", str(BASE_DIR), "status", "--porcelain"],
+        capture_output=True, text=True,
+    )
+    if not status.stdout.strip():
+        return
+
+    subprocess.run(["git", "-C", str(BASE_DIR), "add", "-A"], capture_output=True, text=True)
+    result = subprocess.run(
+        ["git", "-C", str(BASE_DIR), "commit", "-m",
+         f"data: {episode_id} YouTubeアップロード完了 → 制作アセット関連ファイル更新"],
+        capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        print(f"  警告: git commit 失敗: {result.stderr.strip()}")
+        return
+
+    result = subprocess.run(
+        ["git", "-C", str(BASE_DIR), "push"],
+        capture_output=True, text=True,
+    )
+    if result.returncode == 0:
+        print(f"  ✓ 残りの変更を git push しました")
+    else:
+        print(f"  警告: git push 失敗: {result.stderr.strip()}")
 
 
 def fix_shorts_description(episode_id: str, shorts_id: str):
