@@ -376,7 +376,8 @@
     "used_in": [
       "ep055",
       "ep064",
-      "ep066"
+      "ep066",
+      "ep069"
     ]
   },
   {
@@ -486,6 +487,34 @@
     ],
     "used_in": [
       "ep068"
+    ]
+  },
+  {
+    "id": "ep069-BGM-intro",
+    "path": "BGM/ep069-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: cine background5.WAV by phantastonia (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep069"
+    ]
+  },
+  {
+    "id": "ep069-BGM-main",
+    "path": "BGM/ep069-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Violintro by Clay-Blood (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep069"
     ]
   }
 ]

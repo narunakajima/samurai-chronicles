@@ -1,0 +1,273 @@
+{
+  "episode_id": "ep069",
+  "episode_title": "Hojo Masako: The Nun Who Ruled Japan From the Shadows",
+  "youtube_title": "The Nun Who Ruled Japan After Both Her Sons Were Murdered",
+  "youtube_description": "In 1221, the most powerful person in Japan was a widowed Buddhist nun who held no office at all. Hojo Masako buried her husband, both of her sons, and her own father's ambitions — then held the first samurai government in Japanese history together with a single speech. They called her the nun shogun, because there was no other word for what she was.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 Both her sons were murdered. She\n0:48 In the year 1221, the most\n1:40 Masako was born in 1156, the\n2:33 Her father was horrified....\n3:19 Three years later, in 1180,...\n4:12 Masako's position in the new...\n5:09 Masako's response was...\n6:05 Yoriie ruled by favorites and by\n6:53 Masako had consented to the...\n7:43 The plot came from Tokimasa's...\n8:32 For fourteen years, Sanetomo...\n9:18 Masako was sixty-three, and...\n10:03 Masako summoned the assembled...\n10:50 Kamakura did not wait to be\n11:46 The punishment was without...\n12:52 Her brother Yoshitoki died...\n13:56 This is the part that still\n14:48 Later ages never knew what to\n15:35 Next time on Samurai...\n16:01 Hojo Masako was told what a\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Azuma Kagami (Mirror of the East), the Kamakura shogunate's official chronicle\n2. Jeffrey P. Mass, The Development of Kamakura Rule, 1180-1250 (1979)\n3. The Cambridge History of Japan, Volume 3: Medieval Japan (1990)\n\n\n🎵 Music: cine background5.WAV by phantastonia (freesound.org) — CC BY 4.0\n\n🎵 Music: Violintro by Clay-Blood (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional/Sad/Tragic String Orchestral BGM Background Music by EvanBoyerman (freesound.org) — CC BY 4.0\n#HojoMasako #KamakuraPeriod #JapaneseHistory #Samurai #JokyuWar",
+  "youtube_tags": [
+    "hojo masako",
+    "nun shogun",
+    "kamakura period",
+    "kamakura shogunate",
+    "jokyu war",
+    "minamoto no yoritomo",
+    "japanese history",
+    "samurai",
+    "hojo clan",
+    "women in japanese history",
+    "minamoto sanetomo",
+    "go-toba",
+    "shikken",
+    "medieval japan",
+    "japan history",
+    "samurai history",
+    "japanese culture",
+    "ama shogun"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 12,
+  "teaser_narration": "Kamakura, 1221. A retired emperor has declared her family enemies of the throne, and the warriors sworn to Kamakura are wavering. A widow in a nun's robes rises to speak — no title, no army of her own, everything to lose. What did she say?",
+  "shorts_narration": "Two sons, both murdered. In 1221, an emperor's edict called for her family's destruction. One woman in a nun's robes answered — with a speech. Kamakura's warriors marched. This is Hojo Masako.",
+  "shorts_hook_lines": [
+    "TWO SONS DEAD.",
+    "SHE RULED ANYWAY.",
+    "HOW DID SHE HOLD JAPAN?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Hojo Masako's face in a dark Kamakura-era hall — a Japanese woman in her sixties in dark grey Buddhist nun's robes, hair cut short at shoulder length beneath a plain white cloth head covering, not a shaved head. Her eyes stare directly into the camera: dry, steady, entirely unafraid — the face of a woman who has buried a husband and two murdered sons and still refuses to yield. A single low warm light from one side, deep black shadow filling the rest of the frame. She wears no armor. Vertical portrait composition.",
+  "thumbnail_prompt": "Hojo Masako seated alone at the center of a shadowed Kamakura-era wooden hall, wearing dark grey Buddhist nun's robes with a plain white cloth head covering over short-cut hair, prayer beads in one hand, gazing directly at the viewer with calm unyielding authority. She wears no armor of any kind. Rows of armored samurai kneel in the darkness on both sides of her, faces lowered and indistinct. Cold blue shadow with a single warm shaft of light falling across her face. Severe, powerful, cinematic.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Both her sons were murdered. She ruled Japan for six more years anyway — a widow in a nun's robes, commanding samurai she had no legal right to command. How does a woman with no title hold a country together?",
+      "image_prompt": "Hojo Masako standing alone in a vast, shadowed Kamakura-era wooden hall in dark grey Buddhist nun's robes, a plain white cloth head covering over short-cut hair, prayer beads in one hand. Rows of armored samurai kneel in deep shadow on either side, heads bowed. A single shaft of cold light falls on her face. She wears no armor. Utter stillness, immense implied authority.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "In the year 1221, the most powerful person in Japan was a sixty-five-year-old woman who held no office, commanded no troops in her own name, and had taken Buddhist vows more than twenty years earlier. The samurai of Kamakura called her the nun shogun. It was not a real title — no woman could hold the office of shogun. But everyone understood exactly what it meant. Every order that left Kamakura carried her weight behind it. To understand how that happened, you have to go back to a rainstorm in the province of Izu.",
+      "image_prompt": "A wide aerial view of Kamakura in the early thirteenth century: a narrow coastal valley town enclosed by forested green hills, with the sea on one side. Rows of low wooden buildings with dark tiled and thatched roofs, a broad straight avenue running from the shore up to a large wooden shrine complex, mounted samurai and foot retainers moving along it. Overcast morning light, historically grounded Japanese architecture only — no Chinese or European buildings.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Masako was born in 1156, the daughter of Hojo Tokimasa — head of a small warrior family in Izu, on the eastern edge of Japan. The Hojo were nobody. Their most important duty was a humiliating one: guarding a prisoner. In 1160, after the Taira clan crushed the Minamoto in the capital, a thirteen-year-old boy named Minamoto no Yoritomo was exiled to Izu rather than executed. For twenty years, the Hojo watched him. And somewhere inside those twenty years, Masako fell in love with the man she was supposed to be guarding.",
+      "image_prompt": "A young Hojo Masako in her late teens, long straight black hair worn loose down her back, wearing pale layered silk robes, standing beneath the wooden eaves of a modest provincial warrior residence in rural Izu. Across a rain-soaked gravel courtyard, a young man in plain dark robes sits reading under an open veranda, unaware of her. Grey rain, wet green hills beyond the fence. Quiet, charged, watchful atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.33,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Her father was horrified. Marrying an exiled enemy of the ruling Taira could destroy the Hojo entirely. So Tokimasa arranged for Masako to marry a Taira-appointed official instead. According to the shogunate's own chronicle, on the night of that wedding Masako fled — through a mountain storm, in darkness, on foot, to reach Yoritomo. She married him around 1177, against her father's will and against every rule of obedience she had been raised on. It was the first time she chose the impossible option. It would not be the last.",
+      "image_prompt": "A young Japanese woman in soaked layered silk robes running along a dark mountain path at night through heavy driving rain, long black hair plastered to her back, one hand lifting the hem of her robes. Far behind her, the warm lantern glow of a warrior residence recedes between the trees. Wind-bent pines, mud, lightning-lit clouds. Kamakura-era rural Izu, no buildings visible ahead — only darkness and forest.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Three years later, in 1180, Yoritomo raised a rebellion against the Taira. His first battle was a catastrophe — routed at Ishibashiyama, he escaped only by hiding in a hollow tree. But he survived, rebuilt his forces in the east, and across five years of war his generals annihilated the Taira. By 1185, the Minamoto stood supreme. Yoritomo did not move to the imperial capital. He built his government in Kamakura, a small coastal valley far from the court — and in 1192 the emperor formally named him shogun.",
+      "image_prompt": "A construction scene in early Kamakura: carpenters raising the timber frame of a large administrative hall in a valley, with the sea visible in the distance. In the foreground, seen from behind and slightly below, a heavyset commander in dark lacquered Japanese armor stands on a rise surveying the work, hands clasped behind his back, face not clearly visible. Mounted retainers wait behind him. Cold clear morning light, banners of plain solid color with no readable text or characters of any kind.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Masako's position in the new order was extraordinary. Kamakura's records call her the Mi-Daidokoro, the shogun's lady, and she was no ornament. She brokered alliances, arbitrated disputes among her husband's vassals, and on one occasion had the house of Yoritomo's mistress torn to the ground in retaliation for his infidelity. Her father and brother rose alongside her, from obscure provincial wardens into the inner circle of the new military government. Then, in 1199, Yoritomo died after a fall from his horse. He was fifty-one. Everything he had built was suddenly unguarded.",
+      "image_prompt": "Hojo Masako in her early forties, in dark restrained silk robes with her long black hair still worn loose, standing at the raised edge of a wooden Kamakura hall while several armored retainers kneel below her on the boards, waiting. Her expression is level and unimpressed. Late afternoon light through open shutters, sliding paper screens behind her, tatami and bare polished wood. Everyone indoors is in white tabi socks or bare feet — no footwear on the floor.",
+      "ken_burns": "static",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.14
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Masako's response was immediate. She took Buddhist vows and became a nun. For a widow of her rank this was entirely expected, and it looked like a withdrawal from the world. It was the exact opposite. As a nun, she stood outside the ordinary rules governing women, remarriage, and inheritance — untouchable, unmarriageable, impossible to remove. She kept her household, her wealth, and her voice in council. Her eldest son, Yoriie, seventeen years old, inherited his father's position. Within months it was obvious he could not hold it.",
+      "image_prompt": "Hojo Masako kneeling before a modest Buddhist altar in a dim Kamakura temple hall, newly ordained: hair freshly cut short at shoulder length, dark grey nun's robes, a dark kesa stole across one shoulder, prayer beads wound around her joined hands. A single oil lamp and candle-free lantern light. Her eyes are open, not closed in prayer — she is thinking, not grieving. Bare feet on tatami. Solemn, controlled atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.24
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Yoriie ruled by favorites and by temper. Within three months of his father's death, Kamakura's senior vassals stripped him of the right to judge lawsuits alone and vested authority in a council of thirteen men — Masako's father and brother among them. Yoriie fought back through his wife's family, the Hiki. In 1203 the Hojo destroyed the Hiki in a single day, deposed Yoriie, forced him to take Buddhist vows, and exiled him to a temple in Izu. The following year he was assassinated there. He was twenty-one years old.",
+      "image_prompt": "A young man in plain dark monk's robes, head bowed, being escorted on foot out of a Kamakura gate by armored guards on either side of him, in heavy grey rain. His face is turned away and indistinct. Behind him the gate stands open and empty; ahead, a muddy road into misted hills. Cold desaturated light, a sense of a door closing permanently.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Masako had consented to the removal of her own son. Whether she knew he would be killed is one of the most argued questions of her life, and the sources do not answer it. What is certain is what she did next. Her second son, Sanetomo, eleven years old, was installed as the third shogun — and her father, Tokimasa, took the newly created office of shikken, regent to the shogun. The Hojo now controlled the government the Minamoto had founded. And in 1205, Masako learned that her father intended to murder Sanetomo too.",
+      "image_prompt": "A formal Kamakura-era audience hall. A small boy of about eleven in oversized formal court robes sits stiffly on a low raised dais, hands on his knees. Behind and slightly to the side, Hojo Masako stands in dark grey nun's robes with a white cloth head covering, one hand resting protectively on the frame of the dais, watching the room rather than the boy. Rows of armored retainers kneel in the shadowed depth of the hall. All figures indoors are in white tabi socks or bare feet. Cool, tense, formal lighting.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.12
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "The plot came from Tokimasa's wife, who wanted her own son-in-law installed as shogun instead. Masako did not hesitate. Working with her brother Yoshitoki, she had Sanetomo spirited to safety, broke the conspiracy apart, and forced her own father into retirement and a monk's robes. Tokimasa died in obscurity in Izu ten years later. Yoshitoki became shikken in his place. Masako had now surrendered one son and destroyed her own father to keep the shogunate intact. She would be tested once more, and far worse.",
+      "image_prompt": "A night interior in a Kamakura residence: Hojo Masako in dark grey nun's robes stands facing an elderly man in formal robes across a low table, both in profile, neither seated — a confrontation frozen mid-silence. The elderly man's face is turned partly into shadow and is not clearly readable. A single paper andon lantern provides the only light — absolutely no candles, no candlesticks, no Western lamps of any kind. Sliding paper screens, tatami, bare feet. Cold, severe, irreversible mood.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.24,
+        "y": 0.14
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "For fourteen years, Sanetomo grew into a cultivated young man — a gifted poet whose collected verses still survive — but he had no children, and his authority was hollow. On a snowy night in February 1219, he descended the long stone steps of the Tsurugaoka Hachimangu shrine after a ceremony. A figure burst from beside the great ginkgo tree and cut him down. The killer was Kugyo, Yoriie's son — Sanetomo's own nephew. He was executed the same day. In one night, Masako lost her last son, and the Minamoto line ended forever.",
+      "image_prompt": "Heavy falling snow at night on the long stone stairway of a large Kamakura-era Shinto shrine. Paper lanterns line the steps, their light diffused by the snowfall. A huge ancient ginkgo tree stands beside the stairs, its trunk in deep shadow. Scattered footprints and one dropped ceremonial fan lie in the fresh snow on the steps. No figures visible — the violence is implied, not shown. Cold blue-black palette, absolute stillness.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "Masako was sixty-three, and every heir she had was dead. She sent to Kyoto for a two-year-old aristocrat to serve as a figurehead shogun — and until that child came of age, she governed in his place. That was the moment Retired Emperor Go-Toba struck. In 1221 he issued an edict declaring her brother Yoshitoki an enemy of the throne, calling on every warrior in Japan to destroy him. Kamakura's vassals had sworn loyalty to a shogun. Now the imperial court itself was ordering them to turn.",
+      "image_prompt": "A tense Kamakura-era hall at night. In the foreground, four or five armored samurai retainers argue over an unrolled paper scroll spread on the floor between them, faces hard and divided, some half-risen. The scroll surface is blank — no readable text, no characters, no writing of any kind visible. Behind them, half-lost in shadow, Hojo Masako stands motionless in dark grey nun's robes and white head cloth, watching, her face the only calm one in the room. Lit only by paper andon lanterns — no candles anywhere. High tension, the instant before a decision.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.61,
+        "y": 0.13
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "Masako summoned the assembled warriors of Kamakura. According to the Azuma Kagami, the shogunate's own chronicle, she reminded them of what Yoritomo had given them — land, law, and a government of their own, after generations of serving as the court's disposable swords. Their debt to him, she said, was higher than the mountains and deeper than the sea. Then she offered them a choice: repay it now, or say so aloud and go join the retired emperor. Not one man left the hall. They committed to war against the imperial court.",
+      "image_prompt": "A great Kamakura-era wooden hall packed with hundreds of kneeling armored samurai, seen from behind and above Hojo Masako, who stands alone at the front in dark grey Buddhist nun's robes and white head cloth, small against the assembly. Every face in the hall is raised toward her. A single broad shaft of daylight falls from high shutters across the floor between her and them. She wears no armor and carries only prayer beads. Overwhelming scale, reverent silence.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Kamakura did not wait to be attacked. On Masako and Yoshitoki's decision, the army marched west immediately — a force the chronicles number at close to a hundred and ninety thousand men, advancing on Kyoto in three columns. Go-Toba had expected the warrior class to fracture at the sight of an imperial edict. Instead it arrived at his gates. The Jokyu War lasted barely a month. The imperial forces broke at the Uji River, and Kyoto fell. For the first time in Japanese history, a warrior government had defeated the imperial court in open war.",
+      "image_prompt": "An enormous Kamakura-era army marching west along a wide river valley toward distant mountains, seen from a high vantage point: three long columns of mounted samurai and foot soldiers stretching to the horizon, dust rising. Hundreds of tall war banners are plain solid-colored fabric with no text, no kanji, no crests or legible markings of any kind. Hard midday light, an overwhelming sense of unstoppable mass.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "The punishment was without precedent. Go-Toba was exiled to the Oki Islands, where he died eighteen years later without ever returning. Two more retired emperors were banished. The court's supporters lost some three thousand estates, redistributed to Kamakura's loyal vassals, and a permanent Hojo garrison — the Rokuhara Tandai — was planted in Kyoto to watch the throne itself. The emperor remained sacred. But from 1221 onward, no one in Japan was confused about who actually governed. Masako had not merely survived the crisis. She had ended the court's political power for centuries.",
+      "image_prompt": "A small wooden boat approaching a bleak, windswept rocky island under a grey sky. An aging man in faded imperial court robes stands at the stern looking back toward the mainland, his face turned away and indistinct. Cold sea spray, low cliffs, no settlement visible. Desolate, final, quietly devastating.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Her brother Yoshitoki died suddenly in 1224, and a succession fight broke out inside her own clan. Masako, now nearing seventy, settled it — confirming her nephew Yasutoki as shikken and crushing the challenge from a rival faction of her own family. It was her last political act. She died in the summer of 1225, having outlived her husband, both her sons, her daughter, her father, and her brother. She had held Kamakura together for twenty-six years. She died holding no title whatsoever.",
+      "image_prompt": "Hojo Masako in old age, seated alone on the tatami of a quiet Kamakura hall at dusk, dark grey nun's robes, white cloth head covering, greying hair, prayer beads loose in her lap. Her posture is perfectly upright. Open shutters look out onto an empty garden and a darkening sky. One low paper lantern beside her — no candles. Bare feet on tatami. Profound, dignified solitude.",
+      "ken_burns": "static",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "This is the part that still unsettles historians. Masako was never appointed shogun. She was never shikken. She held no office at all in the government she effectively ran, and she issued her decisions from behind a Buddhist veil, in the names of husbands, sons, and infants. Her power came from something no appointment could grant. She was the last living link to Yoritomo — and in a regime built entirely on personal loyalty to one man, she was that loyalty made flesh. The title was irrelevant. The legitimacy was hers.",
+      "image_prompt": "An empty raised wooden dais in a shadowed Kamakura-era hall, a single formal cushion resting on it, unoccupied. To one side, the elongated shadow of a standing woman in nun's robes falls across the dais and the floorboards, cast by light from behind a paper screen. No person is visible in the frame — only the shadow. Quiet, unsettling, symbolic.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "Later ages never knew what to do with her. Confucian scholars of the Edo period condemned her as a woman who overstepped her station and a mother who let her sons die. Modern historians see something else entirely: the political architect who kept the first warrior government in Japanese history from collapsing on three separate occasions. The Hojo regency she preserved governed Japan until 1333. For more than a century after her death, the country was run by a system that a nun with no title refused to let fall apart.",
+      "image_prompt": "The long stone approach to a great Kamakura shrine at dawn in the present day, lined with old stone lanterns and mature trees, completely empty of people. Pale gold morning light on wet stone, mist between the trees, the modern city's low rooftops just visible beyond. Serene, timeless, reflective.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles: at the greatest battle in samurai history, one young general sat on a mountainside and refused to move — until he finally chose a side, and decided the fate of Japan in a single afternoon. His name was Kobayakawa Hideaki.",
+      "image_prompt": "A young Japanese general in elaborate ornate Sengoku-period armor standing alone on a fog-shrouded mountainside, looking down at two vast armies locked in battle in the valley below. His back is half-turned and his face is caught between two directions, tense and undecided. Banners below are plain solid color with no readable text or characters. Heavy morning mist, cold grey light, immense unresolved tension.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 20,
+      "narration": "Hojo Masako was told what a woman of her rank could not do: choose her own husband, sit in council, rule a country. She did all three — and never held a single office while doing it. They called her the nun shogun because there was no other word for what she was. Subscribe for a new story from Japanese history every day.",
+      "image_prompt": "Hojo Masako seen in silhouette from behind, standing at the open veranda of a Kamakura-era hall at dawn, dark grey nun's robes and white head cloth outlined against a pale gold sky, looking out over the valley town and the distant sea. Still, resolved, quietly monumental final image.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hojo_masako",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.35
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep069-BGM-intro.mp3",
+    "main": "BGM/ep069-BGM-main.mp3",
+    "outro": "BGM/ep055-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/BQrnCF7nxSM",
+  "shorts_url": "https://youtu.be/ctutmxGRXsc",
+  "scheduled_at": "2026-08-11 03:00"
+}

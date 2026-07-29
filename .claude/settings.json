@@ -16,7 +16,11 @@
       "Write(/tmp/*)",
       "Edit(/tmp/*)",
       "Write(/private/tmp/*)",
-      "Edit(/private/tmp/*)"
+      "Edit(/private/tmp/*)",
+      "Read(//Users/claude/Desktop/SC/**)",
+      "Read(//Users/claude/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/**)",
+      "Bash(FREESOUND_API_KEY=$FREESOUND_API_KEY python3 $HOME/lamp-whisper/freesound_download.py *)",
+      "Bash(python3 $HOME/lamp-whisper/freesound_download.py *)"
     ]
   }
 }
