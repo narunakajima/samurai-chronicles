@@ -58,9 +58,22 @@ python3 $HOME/samurai-chronicles/sc_sns_up.py --episode ep{NNN} --publish-at "20
   ※ 指定日時まで非公開状態です。YouTube Studio で確認できます。
 ```
 
-## STEP 4 — コミット・プッシュ
+## STEP 4 — コミット・プッシュ確認（2026-07-29〜: 自動化済み）
 
-アップロード成功後、このエピソードの制作物をまとめて1コミットとして記録する。
+`sc_sns_up.py` は `run()` の末尾（サイト再ビルド後）で `commit_remaining_changes()` を実行し、
+`git status --porcelain` に差分があれば（`episodes/ep{NNN}.json` の更新、`character_playlists.json`、
+`index.html`/`episodes.html`/`playlists.html` の再ビルド分など）自動でまとめてコミット・pushする。
+そのため STEP 2 のアップロード実行が成功していれば、このステップで手動コミットする必要は
+通常ない（lamp-whisper の `sns_up.py` に実装済みの同等の仕組みを移植したもの）。
+
+STEP 3 の完了報告後、念のため `git status` で作業ツリーがクリーンか確認する：
+
+```bash
+git status --short
+```
+
+**差分が残っている場合のみ**（自動コミットが何らかの理由で走らなかった場合のフォールバック）、
+手動でコミット・pushする：
 
 ```bash
 git add episodes/ep{NNN}.json characters/*.txt bgm_library.json topics_queue.json
@@ -74,7 +87,6 @@ git push
 ```
 
 - `characters/*.txt` は今回新規追加されたキャラクター定義のみが対象（既存キャラのみの場合は変更なしなので自動的に含まれない）
-- コミット対象に変更がない場合（すでにコミット済みの場合）はスキップする
 - push 失敗時（リモートが進んでいる等）はユーザーに状況を報告し、対応を確認する
 
 ---
