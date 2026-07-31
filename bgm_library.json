@@ -360,7 +360,8 @@
     ],
     "used_in": [
       "ep054",
-      "ep065"
+      "ep065",
+      "ep070"
     ]
   },
   {
@@ -515,6 +516,33 @@
     ],
     "used_in": [
       "ep069"
+    ]
+  },
+  {
+    "id": "ep070-BGM-main",
+    "path": "BGM/ep070-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep070"
+    ]
+  },
+  {
+    "id": "ep070-BGM-outro",
+    "path": "BGM/ep070-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "strings"
+    ],
+    "used_in": [
+      "ep070"
     ]
   }
 ]

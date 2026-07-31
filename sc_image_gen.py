@@ -173,6 +173,13 @@ def _correction_note(issues: list) -> str:
                 "elements or deviate from the specified composition, subject, "
                 "and setting."
             )
+        elif prefix == "STYLE" and prefix not in seen:
+            notes.append(
+                "Render in a strictly photorealistic cinematic concept-art / film-still style — "
+                "natural photographic skin texture, volumetric directional lighting, realistic "
+                "proportions and materials. Do not render as a flat illustration, cel-shaded art, "
+                "anime/manga style, or hand-painted graphic-novel panel."
+            )
         seen.add(prefix)
     return " ".join(notes)
 
@@ -245,6 +252,10 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "- MISMATCH: the image does not match the scene description (wrong subject, action, or setting)\n"
             "- DISTORTION: anatomical errors, malformed faces/hands/bodies, broken or warped objects\n"
             "- TEXT: any readable text, captions, watermarks, or logos appear in the image\n"
+            "- STYLE: the rendering does not match a photorealistic cinematic concept-art / film-still "
+            "look (natural skin texture, volumetric photographic lighting, realistic proportions). Flag "
+            "images that instead look flat, cel-shaded, hand-painted-illustration, anime/manga, or like a "
+            "graphic-novel panel — this series must look consistently photorealistic across every scene.\n"
             "- ARCHITECTURE: anachronistic or era-incorrect architecture, objects, clothing, or "
             "HAIRSTYLE for Edo/Sengoku Japan. This includes light sources — flag Western-style "
             "oil lamps, glass-shaded lamps, candlesticks, or electric-style lighting fixtures; "

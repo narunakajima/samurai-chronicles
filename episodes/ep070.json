@@ -1,0 +1,265 @@
+{
+  "episode_id": "ep070",
+  "episode_title": "Kobayakawa Hideaki: The Betrayal That Decided Japan",
+  "youtube_title": "The Teenage General Who Betrayed His Own Side and Decided Japan's Fate",
+  "youtube_description": "At the battle that decided who would rule Japan, one of the largest armies on the field belonged to a nineteen-year-old who had promised his loyalty to both sides. For hours he sat on a mountain and refused to move. When he finally charged, he annihilated the army he had marched in with — and two years later he was dead at twenty-one, his house erased from the map of the shogunate he had personally created.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 Fifteen thousand men sat on a\n0:50 October 21st, 1600. In a narrow\n1:44 He was not born to any\n2:41 The child was Toyotomi...\n3:41 In 1597 Hideyoshi launched...\n4:41 The report that reached Japan...\n5:45 When the country split open in\n6:40 On the night of October...\n7:33 Dawn on the twenty-first came...\n8:31 One commander down there was not\n9:18 By midday the battle had not\n10:01 Fifteen thousand men poured...\n10:43 Wakisaka, Ogawa, Akaza,...\n11:31 Ieyasu paid exactly what he had\n12:19 Sixteen days after the...\n13:15 Two years after Sekigahara,...\n14:09 It is easy to call him\n15:03 Historians have also begun...\n15:55 Next time on Samurai...\n16:22 Kobayakawa Hideaki spent...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Anthony J. Bryant, Sekigahara 1600: The Final Struggle for Power (1995)\n2. The Cambridge History of Japan, Volume 4: Early Modern Japan (1991)\n3. Mary Elizabeth Berry, Hideyoshi (1982)\n\n#KobayakawaHideaki #Sekigahara #SengokuPeriod #JapaneseHistory #Samurai #TokugawaIeyasu",
+  "youtube_tags": [
+    "kobayakawa hideaki",
+    "sekigahara",
+    "battle of sekigahara",
+    "sengoku period",
+    "tokugawa ieyasu",
+    "ishida mitsunari",
+    "otani yoshitsugu",
+    "toyotomi hideyoshi",
+    "japanese history",
+    "samurai",
+    "samurai betrayal",
+    "matsuoyama",
+    "sengoku jidai",
+    "japan history",
+    "samurai history",
+    "edo period",
+    "daimyo",
+    "japanese culture"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Sekigahara, midday, 1600. A volley of gunfire slams into the mountainside where fifteen thousand allied troops have sat motionless for hours. Their nineteen-year-old commander stands up. In the next ten minutes he will destroy his own army. Why?",
+  "shorts_narration": "Fifteen thousand men sat on a mountain while Japan's greatest battle raged below. Their commander was nineteen, and he had promised loyalty to both sides. Then the mountain charged — the wrong way. Kobayakawa Hideaki.",
+  "shorts_hook_lines": [
+    "15,000 MEN.",
+    "HE WOULDN'T MOVE.",
+    "WHOSE SIDE WAS HE ON?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Kobayakawa Hideaki's face on a fog-covered mountainside — a Japanese general of about twenty in elaborate ornate Sengoku-period armor, round youthful face, wide uncertain eyes staring directly into the camera. Sweat on his temple, jaw tight, the expression of someone being forced to choose. Cold grey morning mist behind him with the faint orange glow of distant battle fires below. Harsh low light from one side, deep shadow filling the rest of the frame. Vertical portrait composition.",
+  "thumbnail_prompt": "Kobayakawa Hideaki standing at the edge of a mountain summit in elaborate ornate Sengoku-period armor, round youthful face turned toward the viewer with wide conflicted eyes, one hand gripping his sword hilt without drawing it. Far below and behind him, a vast fog-filled valley where two enormous samurai armies are locked together, tiny and smoking. Cold blue mist against a single shaft of hard morning light on his face. War banners in the valley are plain solid-colored fabric with no markings. Tense, cinematic, a man caught mid-decision.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Fifteen thousand men sat on a mountain, refusing to fight. Their commander was nineteen, and he had sworn loyalty to both armies below. Which way did he charge?",
+      "image_prompt": "Kobayakawa Hideaki, a young Japanese general of about twenty in elaborate ornate Sengoku-period armor, standing alone at the edge of a fog-shrouded mountain summit. His round youthful face is turned in profile with wide uncertain eyes, caught between two directions. Below him a vast valley filled with drifting mist, two enormous armies faintly visible locked in battle. Ranks of his own soldiers kneel motionless behind him. War banners are plain solid-colored fabric with no markings of any kind. Cold grey dawn light, immense unresolved tension.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kobayakawa",
+      "zoom_anchor": {
+        "x": 0.76,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "October 21st, 1600. In a narrow valley in central Japan called Sekigahara, roughly one hundred and sixty thousand men had assembled to settle who would rule the country. One of the largest contingents on that field had not been given an order all morning. It belonged to Kobayakawa Hideaki, and it sat on Mount Matsuo, on the southwestern rim of the basin — fifteen thousand six hundred men, nearly a fifth of the Western Army, holding the highest ground in sight. Both supreme commanders spent that morning watching the mountain. Hideaki was nineteen years old.",
+      "image_prompt": "A high aerial view of the Sekigahara basin at dawn in autumn: a narrow valley floor of muddy fields and old roads, enclosed on three sides by low forested mountains, thick white fog pooling in the bottom. Two vast armies of Japanese samurai are drawn up in blocks facing each other, half-swallowed by mist. On a prominent hill at the southwestern edge, a large motionless formation sits above everything. All war banners are plain solid-colored fabric with no text, kanji, or crests. Cold blue-grey morning light, enormous scale.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "He was not born to any of this. In 1582 he arrived as the fifth son of the Kinoshita, a minor warrior family with no lands worth naming. What he did have was an aunt — Nene, wife of Toyotomi Hideyoshi, the peasant-born general who within a decade would rule all Japan. Hideyoshi had no son of his own. So he took the boy into his household at the age of three, gave him the Hashiba name, and raised him as a possible heir to everything. Then, in 1593, a concubine gave Hideyoshi a son.",
+      "image_prompt": "A small Japanese boy of about three in oversized formal silk robes, seated alone and stiffly upright on a cushion in the vast gold-leafed audience hall of a grand Momoyama-period Japanese castle. He has a young child's hairstyle appropriate to the Momoyama period — long unshaven hair left natural and gathered loosely at the crown or falling free with a simple forelock, NOT a shaved-pate adult topknot (chonmage/sakayaki), since boys did not shave their pate until their coming-of-age ceremony as teenagers. Painted sliding screens of pines and clouds tower behind him; the hall stretches away empty and enormous around him. Bare feet and white tabi socks on tatami, no footwear indoors. Warm light from high shutters, absolutely no text or writing anywhere in the image. A child dwarfed by a room built for power.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "The child was Toyotomi Hideyori, and his birth erased Hideaki's future overnight. An adopted nephew was no longer a successor; he was an obstacle to be relocated. In 1594 Hideyoshi arranged a second adoption — this time into the Kobayakawa house of western Japan, a powerful family inside the Mori alliance, and safely far from the capital. By the age of thirteen, the boy had carried three surnames, none of them chosen by him. Twice he had been moved to suit another man's plans. He was learning precisely what his own preferences were worth.",
+      "image_prompt": "A boy of about twelve in formal dark silk robes kneeling alone at the center of a formal Japanese castle chamber while four older men in stiff court dress sit in a semicircle above and around him, discussing his future over his head. Their faces are turned away or lost in shadow, unreadable. Painted sliding screens, tatami, bare feet, a single low paper andon lantern — no candles, no Western furniture. Cold formal light, the boy small and silent in the middle of the composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "In 1597 Hideyoshi launched his second invasion of Korea, and named Hideaki commander-in-chief of the forces there. He was sixteen years old. That winter, at the fortress of Ulsan, a huge Ming and Korean relief army closed in on a starving Japanese garrison — and in the fighting, Hideaki did the one thing a supreme commander must never do. He took up a spear and went into the front rank himself. To the boy it was courage, proof that he belonged. To the officials watching from headquarters, it was a child who did not understand what his own rank meant.",
+      "image_prompt": "Brutal winter siege combat at a Japanese-built stone fortress on a Korean hillside: snow, mud, and smoke, samurai in dark lacquered armor fighting hand to hand at a breached palisade. In the center foreground, Kobayakawa Hideaki, a young general of about twenty in elaborate ornate armor far too fine for the front line, drives forward with a spear, round youthful face lit by fear and exhilaration at once. Attackers press in from the left. Grey daylight, blowing snow, plain unmarked banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kobayakawa",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "The report that reached Japan was severe, and Hideaki's household always believed its author was Ishida Mitsunari, the administrator supervising the campaign. The punishment was ruinous. Hideaki was stripped of Chikuzen — a domain of over three hundred thousand koku — and reassigned to a fraction of that in Echizen. Then Hideyoshi died in the autumn of 1598, and in the reshuffling that followed, one man quietly reversed the ruling and handed Chikuzen back. That man was Tokugawa Ieyasu. By eighteen, Hideaki had been publicly humiliated by one great power and rescued by the other.",
+      "image_prompt": "Kobayakawa Hideaki, a young Japanese general of about twenty, kneeling alone on the polished wooden veranda of a Japanese castle in autumn, still in ornate armor with his helmet set down beside him. An unrolled paper scroll lies open on the boards in front of him, its surface completely blank with no text or characters visible. His round youthful face is rigid with humiliation, wide eyes fixed on nothing. Falling yellow gingko leaves, an empty stone-walled courtyard beyond. Flat overcast light, total isolation.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kobayakawa",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "When the country split open in 1600, both sides knew exactly what Hideaki's army was worth, and both bid for it. Mitsunari's Western Army offered him the office of kanpaku — imperial regent, the highest civil rank a subject could hold — along with two provinces, to be his until Hideyori came of age. From the eastern side, Kuroda Nagamasa worked on Hideaki's senior retainers, who had already sent hostages and secret pledges to Ieyasu. Hideaki refused neither offer. He marched to Sekigahara under Western banners, carrying a written promise to betray them.",
+      "image_prompt": "A night interior in a Japanese castle chamber: Kobayakawa Hideaki, a young general of about twenty in ornate armor, sits alone at a low writing table with two blank sealed letters lying apart from each other on the tatami before him, one on each side. His round youthful face is turned down between them, wide eyes uncertain, one hand hovering. All paper is blank with no writing or characters visible. Lit only by a single paper andon lantern — no candles, no Western lamps. Deep shadow, sliding paper screens, a decision suspended.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kobayakawa",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "On the night of October twentieth, in cold rain, Hideaki did something nobody had authorized. He marched his army up onto Mount Matsuo, a fortified hill on the southwestern rim of the battlefield, and turned out the small garrison already holding it. From that summit he could see every formation in the valley, and reach any of them at a run, downhill. Mitsunari sent messenger after messenger ordering him into his assigned place in the line. Hideaki did not come. He had placed himself somewhere neither army could compel him.",
+      "image_prompt": "A long column of samurai climbing a steep forested mountain path at night in driving rain, torches guttering, mud sliding underfoot, horses struggling. Near the head of the column Kobayakawa Hideaki, a young general of about twenty in elaborate ornate armor, turns in the saddle to look back down at the black valley below. His round youthful face is tense and set. Wet pines, low cloud, plain unmarked banners sagging in the rain. Cold blue-black night palette.",
+      "ken_burns": "pan_left",
+      "character_ref": "kobayakawa",
+      "zoom_anchor": {
+        "x": 0.78,
+        "y": 0.2
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Dawn on the twenty-first came smothered in fog so thick the armies could not see each other. When it burned off around eight o'clock, they collided at once. Fukushima Masanori's men tore into Ukita Hideie's contingent on the Western right; Mitsunari's gunners held the centre while the Shimazu beside them refused to move; the fighting swung back and forth across the muddy valley floor for hours with neither side breaking. On paper the Western Army held every advantage — high ground on three sides of an enemy packed into a basin. And on the highest ground of all, fifteen thousand men stood perfectly still.",
+      "image_prompt": "A wide battlefield view of Sekigahara in full combat: dense blocks of samurai infantry grinding against each other on a muddy autumn valley floor, gunpowder smoke drifting in sheets, mounted commanders behind the lines, spears in massed rows. In the upper third of the frame, above the smoke, a forested hill holds a large, completely motionless formation of troops looking down. Plain solid-colored banners with no text or crests. Hard grey daylight, chaos below and stillness above.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "One commander down there was not fooled. Otani Yoshitsugu, Mitsunari's closest friend, was so far gone with illness that he directed his troops from a covered palanquin and could barely see the men he was ordering. He had heard the rumours about Mount Matsuo. So he did the only thing left to him — he turned part of his small force around to face uphill, toward the allied army above him. His soldiers fought the enemy in front while watching the mountain behind. They were standing guard against their own side.",
+      "image_prompt": "A curtained Japanese palanquin set on the ground at the rear of a small samurai formation on a battlefield rise, a hooded figure barely visible inside, face fully obscured by white cloth and shadow. Around it, half the soldiers face forward into drifting gunpowder smoke while the other half stand turned uphill toward a forested mountain looming above them, spears braced upward. Plain unmarked banners. Overcast light, mud, tension pulling in two directions at once.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "By midday the battle had not broken, and Tokugawa Ieyasu was out of patience. He had pushed his command post forward to within sight of the mountain, and by every traditional account he was chewing his fingers raw. Then he gave an order that had nothing to do with the enemy in front of him. His arquebusiers turned and fired a volley into the slope of Mount Matsuo. It killed almost no one. It was not an attack at all — it was a question, asked in gunpowder. Choose. Now. Minutes later, the mountain came down.",
+      "image_prompt": "A rank of Japanese arquebusiers in dark armor kneeling in a muddy field, matchlock guns raised and firing upward at a steep forested mountainside, muzzle flashes and white smoke bursting along the line. Behind them, seen from the back, exactly one single heavyset older commander sits alone on a folding camp stool watching the slope, his face not visible — no other seated figures or second commander anywhere in the frame, only standing soldiers around him. On the hillside above, dark ranks of troops are just discernible through the trees. Plain solid-colored banners with no markings. Harsh midday light, smoke, a threat made physical.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "Fifteen thousand men poured off the slope at a dead run and struck Otani Yoshitsugu's position in the flank. This was the whole reason Ieyasu had spent months writing letters. Otani had perhaps six hundred men facing that direction, and they did something extraordinary — they held. Twice they threw Hideaki's charge back up the hill. For a few minutes the entire outcome of Japanese history rested on a few hundred soldiers commanded by a dying man in a palanquin. Then four more Western contingents changed sides at once.",
+      "image_prompt": "A massive downhill charge: thousands of samurai streaming down a steep forested mountainside in a torrent, spears lowered, mud and leaves flying. At the front on horseback rides Kobayakawa Hideaki, a young general of about twenty in elaborate ornate armor, round youthful face contorted with panic rather than rage, sword thrust forward. Below them a thin defensive line braces to receive the impact. Plain unmarked banners streaming behind. Motion blur, dust, overwhelming force, hard daylight.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kobayakawa",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "Wakisaka, Ogawa, Akaza, Kutsuki — more than four thousand men who had been waiting to see which way Matsuo went — turned and struck Otani from the opposite direction. His line dissolved. Otani Yoshitsugu ordered a retainer to take his head and hide it where no enemy would ever find it, and killed himself where he sat. From there the Western Army came apart in under an hour. Mitsunari fled into the hills on foot. The battle meant to decide Japan over days had been decided by one teenager in one afternoon.",
+      "image_prompt": "The collapse of a samurai battle line: broken formations, discarded spears and helmets trampled in the mud, riderless horses, wounded men crawling as attackers pour in from two directions at once. In the middle distance an overturned curtained palanquin lies abandoned on the churned ground. Smoke drifts low across the field. Plain solid-colored banners fallen and muddied, with no text or crests. Late afternoon light through gunpowder haze, total disintegration.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Ieyasu paid exactly what he had promised. Hideaki was given the provinces of Bizen and Mimasaka — some five hundred and ten thousand koku, centred on Okayama Castle — making a nineteen-year-old one of the wealthiest lords in Japan. He had gained more from a single afternoon than his two adoptive fathers had given him in a lifetime. What he had not gained was a single ally. The new order accepted the defection and despised the defector, and the survivors of the army he destroyed had names for him that outlived him by four centuries.",
+      "image_prompt": "Kobayakawa Hideaki, a young Japanese general of about twenty out of armor and in rich formal silk robes, seated alone on a raised dais in the enormous reception hall of a Japanese castle. Rows of retainers kneel far down the hall from him, heads lowered, an unnatural amount of empty tatami between him and the nearest of them. His round youthful face is blank and hollow-eyed. Bare feet and white tabi socks, painted sliding screens, cold light from high shutters. Wealth arranged as isolation.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kobayakawa",
+      "zoom_anchor": {
+        "x": 0.75,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Sixteen days after the battle, Ishida Mitsunari was paraded through Kyoto in an open cart and beheaded on the riverbed at Rokujo. Eighty-seven daimyo houses were dissolved. In 1603 Ieyasu took the title of shogun, and the government he founded would hold Japan for two hundred and sixty-five years. Hideaki governed Okayama in the middle of all of it, in a castle full of retainers who had watched him do what he did. Accounts from those two years describe heavy drinking, broken sleep, and a young man who would not be left alone after dark.",
+      "image_prompt": "A bleak wide riverbed in Kyoto at dusk, pale stones and shallow braided water, a low wooden execution platform standing empty with a plain straw mat beside it. A handful of onlookers in dark robes are drifting away in the far distance, small and indistinct. Bare willows on the bank, the roofs of the old city beyond. No bodies, no blood, no text anywhere. Cold grey-violet light, silence after the fact.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "Two years after Sekigahara, in 1602, Kobayakawa Hideaki died at Okayama Castle. He was twenty-one. The recorded symptoms point to a collapse brought on by relentless drinking; the stories that spread afterwards insisted that Otani Yoshitsugu's vengeful spirit had come for him, and that he died screaming at something in the room that no one else could see. He left no son. The Kobayakawa house was abolished and its lands taken back — the first daimyo family extinguished under the Tokugawa shogunate, the shogunate he had personally handed to Ieyasu.",
+      "image_prompt": "An empty inner chamber of a Japanese castle at night: rumpled bedding on the tatami, a toppled sake flask and cup lying on their sides, sliding paper screens half open onto black darkness beyond. A single paper andon lantern burns low in the corner — no candles, no Western lamps. No people anywhere in the frame. Cold blue shadow with one small pool of amber light. Abandoned, haunted, final.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "It is easy to call him a coward, and Japan has done so for four hundred years. But look at what he was actually holding. He was nineteen, commanding an army he had inherited rather than built, in a war between the man who had destroyed his career and the man who had restored it — fighting nominally for a child whose birth had cost him everything. Both sides had already bought his officers. Whatever he did on that mountain, he was going to betray someone. Standing still was never neutrality. It was the last moment before choosing.",
+      "image_prompt": "A tight close-up of Kobayakawa Hideaki's face and shoulders on a windswept mountain summit, a young Japanese general of about twenty in elaborate ornate armor and helmet. His forehead and pate are shaved in the traditional sakayaki style beneath the helmet, with no bangs or hair falling over the forehead — only the topknot and side hair are visible at the edges of the helmet, consistent with a samurai's shaved hairline. Round youthful face, wide uncertain eyes staring past the camera, mouth slightly open, sweat and grime on his skin. The battlefield below is a soft blur of smoke and grey light behind him. Harsh sidelight, shallow focus, the portrait of a man who has run out of good options.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kobayakawa",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "Historians have also begun dismantling the famous version of these events. Letters written soon after the battle suggest Hideaki may have charged the moment the fighting began, rather than after hours of agonizing — and that the warning volley, the most cinematic detail in Japanese military history, may be a later embellishment. Some scholars now argue the whole battle lasted around two hours. If they are right, the hesitation was never the story. The story is that Sekigahara was won months earlier, in writing, by the side that understood what a frightened young man was worth.",
+      "image_prompt": "The Sekigahara battlefield today: quiet flat rice fields and hedgerows in early morning, low forested hills ringing the valley, a few modern farmhouse roofs at the edges, thin mist lying in the fields. A weathered stone marker stands unread in the foreground grass with no legible characters on it. Pale gold sunrise light, utterly peaceful, no people. Reflective and timeless.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles: four centuries earlier, in a sea battle in the straits of Shimonoseki, a commander watched his clan, his child emperor, and his entire world go under the waves — and chose to follow them down rather than surrender. His name was Taira no Tomomori.",
+      "image_prompt": "A chaotic naval battle in a narrow strait at dusk in the late Heian period: dozens of low wooden Japanese warships crushed together on a churning tidal current, archers firing across the gaps, warriors in ornate lamellar armor falling into the dark water. Broken oars and drifting arrows on the surface. Steep coastal cliffs on both sides, a blood-red sunset behind them. All banners plain solid-colored with no text or markings. Desperate, epic, doomed.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 20,
+      "narration": "Kobayakawa Hideaki spent nineteen years being moved around by other people's decisions, and then made one of his own. It took ten minutes. It set the next two and a half centuries of Japanese history, and it destroyed him. Japan has never forgiven him for it. Subscribe for a new story from Japanese history every day.",
+      "image_prompt": "Kobayakawa Hideaki seen in silhouette from behind, a lone armored figure standing on a bare mountain summit at dusk, elaborate ornate Sengoku-period armor outlined against a deep orange and violet sky. Far below, the valley of Sekigahara lies in blue shadow, empty and silent. Wind moving through the grass on the ridge. Still, solitary, quietly devastating final image.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kobayakawa",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.28
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep054-BGM.mp3",
+    "main": "BGM/ep070-BGM-main.mp3",
+    "outro": "BGM/ep070-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/oSASko3hDts",
+  "shorts_url": "https://youtu.be/lXRtj3zwJpI",
+  "scheduled_at": "2026-08-12 03:00"
+}

@@ -697,7 +697,7 @@
     },
     {
       "episode_id": "ep070",
-      "status": "pending",
+      "status": "in_production",
       "title": "The General Whose Betrayal Decided Japan: Kobayakawa Hideaki at Sekigahara",
       "era": "Sengoku",
       "priority": "A",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-07-23",
+  "last_updated": "2026-07-31",
   "total_topics": 97
 }
