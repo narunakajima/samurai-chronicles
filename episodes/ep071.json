@@ -1,0 +1,256 @@
+{
+  "episode_id": "ep071",
+  "episode_title": "The Admiral Who Chose the Sea Over Surrender: Taira no Tomomori's Last Battle",
+  "youtube_title": "The Admiral Who Wore Two Suits of Armor So He Would Never Float",
+  "youtube_description": "He worked out that his clan was going to be destroyed two years before it happened — and never once used that as a reason to stop fighting. When the end finally came in the straits of Shimonoseki, he swept the deck of a sinking flagship with his own hands, said he had seen everything a man needed to see, and put on a second suit of armor so that nobody would ever pull him out of the water alive. This is the story of Taira no Tomomori.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 He saw the end two years\n0:40 Taira no Tomomori was the fourth\n1:36 Munemori was not a soldier. The\n2:41 By the summer of 1183, Minamoto\n3:33 At sea, the Taira were still\n4:24 In the second month of 1184\n5:15 A year later at Yashima,...\n6:08 Before the fleets met at...\n6:59 His plan for the battle was\n7:52 Tomomori watched it happen...\n8:39 What he did next is the\n9:24 His mother, Taira no Tokiko,...\n10:04 His brother did not. Munemori...\n10:56 The strait went quiet by...\n11:47 Three centuries later, the...\n12:38 The stage kept rewriting his...\n13:26 Along the strait itself, the...\n14:17 What makes Tomomori unusual...\n15:05 Next time on Samurai...\n15:32 Taira no Tomomori saw exactly...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. The Tale of the Heike (Heike Monogatari), translated by Royall Tyler (Penguin Classics, 2012)\n2. Paul Varley, Warriors of Japan as Portrayed in the War Tales (University of Hawaii Press, 1994)\n3. George Sansom, A History of Japan to 1334 (Stanford University Press, 1958)\n\n\n🎵 Music: Epic Orchestral Cue by graham_makes (freesound.org) — CC BY 4.0\n#TairaNoTomomori #DanNoUra #GenpeiWar #HeikeMonogatari #Samurai #JapaneseHistory #HeianPeriod #TairaClan #Yoshitsune #SamuraiChronicles",
+  "youtube_tags": [
+    "taira no tomomori",
+    "dan-no-ura",
+    "genpei war",
+    "taira clan",
+    "heike monogatari",
+    "tale of the heike",
+    "minamoto no yoshitsune",
+    "taira no munemori",
+    "heian period",
+    "japanese history",
+    "samurai",
+    "samurai history",
+    "medieval japan",
+    "funa benkei",
+    "shimonoseki",
+    "japan history",
+    "samurai chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "The strait at Dan-no-ura, 1185. A Taira commander walks the deck of a sinking flagship, sweeping it clean with his own hands, calm as a man tidying a room. He had known this was coming for two years. Why did he keep fighting?",
+  "shorts_narration": "1185. One commander knew the war was lost before anyone else — and fought it to the end anyway. When the fleet went down, he put on two suits of armor. Taira no Tomomori.",
+  "shorts_hook_lines": [
+    "HE KNEW FIRST.",
+    "HE FOUGHT ANYWAY.",
+    "WHY CHOOSE THE SEA?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Taira no Tomomori's face filling the upper center of a vertical frame — a weathered battle-hardened Japanese commander in his late thirties, stern square jaw, deep-set exhausted eyes staring directly into the camera without fear. Salt spray on his skin, the plain iron rim of a late-Heian kabuto helmet just visible at the top of the frame, dark red lacquered o-yoroi shoulder plate at the bottom edge. Behind him, out of focus, dark storm water and the faint orange smear of burning ships. Single hard light source from one side, deep shadow filling the other half of his face. No text or written characters anywhere in the image.",
+  "thumbnail_prompt": "Taira no Tomomori standing at the tilting rail of a wooden warship as it goes down beneath him — a weathered Japanese commander in his late thirties wearing two full sets of dark red lacquered late-Heian o-yoroi armor layered one over the other, his silhouette visibly thickened and weighed down, plain iron helmet, one hand on the rail. His face is turned toward the viewer with calm, resigned, completely unafraid eyes. Behind and below him a narrow storm-grey strait choked with burning and capsizing ships, blurred and smoking. A single shaft of cold light falls across his face. All banners are plain solid-colored fabric with no markings. Cinematic, monumental, a man at peace inside a catastrophe.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He saw the end two years before it came. He never once told his clan to stop fighting. What kind of commander does that?",
+      "image_prompt": "Tight close-up of Taira no Tomomori, a weathered battle-hardened Japanese commander in his late thirties, stern square jaw, deep-set eyes carrying quiet exhaustion and resolve, calm resigned dignity rather than fear, wearing authentic late-Heian-period (12th century) o-yoroi box-style armor in dark red lacquer with the Taira swallowtail-butterfly crest, plain rounded iron kabuto helmet with wide sweeping fukigaeshi and no ornate decoration — strictly Genpei War era, never later Sengoku-period armor. He stands at the rail of a wooden warship at dusk, sea wind moving across his face, eyes fixed on something far off the bow. Behind him the water of a narrow strait is dark and moving fast, steep coastal cliffs blurred out of focus. Cold blue-grey light with one hard rim of orange from a low sun. Absolutely no text, letters or written characters anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Taira no Tomomori was the fourth son of Taira no Kiyomori, the man who had lifted their family to the summit of Japanese power and kept it there for twenty years. Born in 1152, Tomomori grew up inside a household that had never lost anything. By the time he was thirty, that household was coming apart. Kiyomori died of fever in the spring of 1181, telling his family to build him no temple and hold no services — only to bring him the head of Minamoto no Yoritomo. He left the clan to his third son, Munemori.",
+      "image_prompt": "Interior of a grand late-Heian aristocratic residence at night: a dying elderly nobleman lies on layered silk bedding in a wide wooden hall, his face turned away and lost in shadow. Court nobles in stiff formal robes kneel in a wide arc around him with heads lowered, faces indistinct. Painted folding screens of pines and mist, bare polished floorboards, a single low paper lamp giving the only warm light. Deep shadow filling the upper frame. No text or written characters anywhere in the image.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "Munemori was not a soldier. The Tale of the Heike treats him with something close to contempt — a man who wept easily, hesitated constantly, and had inherited a war he had no idea how to fight. Tomomori was the opposite. The year before, at the Uji River, he had helped crush the first Minamoto rising and driven Minamoto no Yorimasa to suicide. Now, with the Taira fresh from breaking Minamoto no Yukiie's army at the Sunomata River, Tomomori was named to lead the campaign east and finish the war. Then he collapsed with fever, famine spread through the provinces, and the advance was cancelled before it began. It was the last moment the Taira could still have won the war. It never came again.",
+      "image_prompt": "Taira no Tomomori, a weathered battle-hardened Japanese commander in his late thirties, stern square jaw, deep-set eyes carrying quiet exhaustion and resolve, calm resigned dignity rather than fear, wearing authentic late-Heian-period (12th century) o-yoroi box-style armor in dark red lacquer with the Taira swallowtail-butterfly crest, plain rounded iron kabuto helmet with wide sweeping fukigaeshi and no ornate decoration — strictly Genpei War era, never later Sengoku-period armor, sits mounted on a dark horse on a muddy riverbank at dawn, holding a naginata upright at his side. Behind him a column of Heian-period mounted warriors in laced lamellar armor fords shallow water, spray rising around the horses' legs. Broken reeds and abandoned shields on the near bank. Flat grey morning light, low mist along the river. All banners are plain solid-colored fabric with no text, characters or markings of any kind.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 75,
+      "narration": "By the summer of 1183, Minamoto no Yoshinaka was descending on Kyoto from the north and the Taira had nothing left to stop him. They abandoned the capital they had governed for a generation, burning their own mansions behind them, and carried the child Emperor Antoku and the three sacred imperial treasures west toward the Inland Sea. Tomomori went with them. He had spent his entire life inside that city, in a family that assumed the city belonged to it. Every account of that departure suggests he already understood he would not be coming back.",
+      "image_prompt": "A long procession of Heian-period nobles, court women in many-layered robes, and armored warriors moving out of a burning capital city at dusk: tiled roofs and wooden gates of an ancient Japanese city on fire behind them, thick smoke climbing into an orange sky, ox-drawn carriages and packhorses on a wide dirt avenue. Figures small against the scale of the fire. Ash falling like snow. All banners plain solid-colored fabric with no text or markings anywhere in the image.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "At sea, the Taira were still formidable. They knew the tides and channels of the Inland Sea the way the eastern warriors knew horses, and that winter they destroyed one of Yoshinaka's fleets at Mizushima. But Tomomori could count. Every victory on the water bought weeks; every defeat on land cost provinces, and the western lords sworn to the Taira had quietly begun sending messages to Kamakura. He was winning battles inside a war that had already been decided somewhere else. He went on fighting them exactly as though it mattered.",
+      "image_prompt": "A late-Heian naval engagement on a calm inland sea at midday: low wooden Japanese warships with curved prows locked together, archers in lamellar armor firing across the narrow gaps of water, grappling lines strung between hulls, men falling into the sea. Wooded islands scattered in the hazy distance. Hard flat daylight on the water. All banners plain solid-colored fabric with no text, characters or crests.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "In the second month of 1184 the Taira were caught at Ichi-no-tani, a fortified camp pinned between mountains and the sea. Yoshitsune's cavalry came down a slope no one believed a horse could descend, and the camp came apart in minutes. Tomomori ran for the boats. His sixteen-year-old son, Tomoakira, turned back into the fighting to hold off the pursuit long enough for his father to reach the water, and was killed there. Tomomori got aboard a ship. He is said to have wept and said that no father would have done for a son what his son had just done for him.",
+      "image_prompt": "Taira no Tomomori, a weathered battle-hardened Japanese commander in his late thirties, stern square jaw, deep-set eyes carrying quiet exhaustion and resolve, calm resigned dignity rather than fear, wearing authentic late-Heian-period (12th century) o-yoroi box-style armor in dark red lacquer with the Taira swallowtail-butterfly crest, plain rounded iron kabuto helmet with wide sweeping fukigaeshi and no ornate decoration — strictly Genpei War era, never later Sengoku-period armor, stands at the stern of a low wooden warship pulling away from a burning beach camp, one hand gripping the rail, body turned back toward the shore he is leaving. His face is stripped bare with grief, mouth open, eyes fixed on the fighting on the sand. Smoke and cavalry chaos on the beach behind him reduced to blurred shapes and firelight. Grey daylight, spray, cold sea in the foreground. No text or written characters anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "A year later at Yashima, Yoshitsune did it again — arriving from a direction the Taira had left undefended and panicking them onto their ships before they understood how few men had actually attacked them. Each defeat pushed the clan further west and further out to sea, with less coastline left to land on. By the third month of 1185 the Taira held no territory at all — only ships. Their allies in Kyushu were changing sides. There was no province to retreat into, no army coming, and no version of the future in which they survived.",
+      "image_prompt": "A high aerial view of a fleet of low wooden Heian-period warships crowded together on open grey sea at dusk, the last thin line of coast far behind them, empty water filling most of the frame ahead. Ships packed with armored warriors, court women in layered robes, crates and rolled bedding — a whole society living on the water. Cold slate-blue palette, heavy cloud, immense scale and emptiness. All banners plain solid-colored fabric with no text or markings.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "Before the fleets met at Dan-no-ura, Tomomori went to his brother with a request. One of their own commanders, Taguchi Shigeyoshi of Awa, had a son in Minamoto hands, and Tomomori was certain the man had already sold them. He asked permission to take his head. Munemori refused — there was no proof, and the clan could not afford to lose the ships Shigeyoshi commanded on the strength of a suspicion. Tomomori let it go. He had spent four years being right and being overruled, and by then he had learned not to argue.",
+      "image_prompt": "Night interior of a warship's low cabin: Taira no Tomomori, a weathered battle-hardened Japanese commander in his late thirties, stern square jaw, deep-set eyes carrying quiet exhaustion and resolve, calm resigned dignity rather than fear, wearing authentic late-Heian-period (12th century) o-yoroi box-style armor in dark red lacquer with the Taira swallowtail-butterfly crest, plain rounded iron kabuto helmet with wide sweeping fukigaeshi and no ornate decoration — strictly Genpei War era, never later Sengoku-period armor with his helmet set down on the boards beside him, kneels facing an older seated nobleman in soft court robes whose face is turned away into deep shadow. Tomomori's jaw is tight, one hand flat on the deck, the argument already lost. A single small oil lamp swings on a hook, throwing moving shadows across the timbers. Cramped wooden space, sea black beyond the opening. No text or written characters anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.44,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 75,
+      "narration": "His plan for the battle was built on deception. The Taira would fill the great Chinese ship — the obvious flagship, the vessel any enemy would go for first — with ordinary soldiers, and keep the clan's commanders and the imperial party on the plain boats around it. Let Yoshitsune commit everything to the wrong target, then close on him from every side at once. It was a good plan. It depended entirely on the Minamoto not knowing which ship was which. Around midday, Shigeyoshi's boats swung out of the Taira line and rowed toward the enemy.",
+      "image_prompt": "A tense wide view across a narrow tidal strait from deck level: a large ornate foreign-built vessel sits at the center of a Taira formation of plain low warships, deliberately conspicuous. Off to one side, a small group of boats has broken formation and is rowing away toward the distant enemy fleet, oars out of rhythm, wakes cutting across the current. Warriors on the near deck stand frozen, watching them go. Hard midday light on churning water, steep cliffs on both sides. All banners plain solid-colored with no text or markings.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "Tomomori watched it happen from his own deck, and there was nothing in it he had not already imagined. Shigeyoshi told the Minamoto precisely which ships mattered. The arrows shifted to the plain boats. The current in the strait reversed, as it did every day of the year, and Taira ships that could no longer be rowed drifted down into the enemy fleet. What followed was not a battle. Tomomori did not shout, and did not try to rally anyone. He climbed down into a small boat and had himself rowed toward the ship carrying the emperor.",
+      "image_prompt": "Taira no Tomomori, a weathered battle-hardened Japanese commander in his late thirties, stern square jaw, deep-set eyes carrying quiet exhaustion and resolve, calm resigned dignity rather than fear, wearing authentic late-Heian-period (12th century) o-yoroi box-style armor in dark red lacquer with the Taira swallowtail-butterfly crest, plain rounded iron kabuto helmet with wide sweeping fukigaeshi and no ornate decoration — strictly Genpei War era, never later Sengoku-period armor, stands alone and perfectly still in a small open rowing boat being pulled across a churning strait, his naginata upright beside him, water breaking over the low sides. Around and behind him the battle is dissolving — burning hulls, drifting oars, ships tangled sideways in the current, all softened by spray and distance. His posture is calm in the middle of it. Storm-grey light, desaturated cold palette. All banners plain solid-colored with no text or markings.",
+      "ken_burns": "zoom_out",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "What he did next is the strangest and most human moment in the whole account. He came aboard the imperial ship and began cleaning it — sweeping the deck, gathering up the wreckage of the fighting with his own hands, tidying the boat while the women of the court watched him in silence. One of them asked what was happening. He answered, with terrible politeness, that they were shortly going to meet some gentlemen from the eastern provinces. Then he said the line he has been remembered for ever since: that he had now seen everything a man needed to see.",
+      "image_prompt": "Taira no Tomomori, a weathered battle-hardened Japanese commander in his late thirties, stern square jaw, deep-set eyes carrying quiet exhaustion and resolve, calm resigned dignity rather than fear, wearing authentic late-Heian-period (12th century) o-yoroi box-style armor in dark red lacquer with the Taira swallowtail-butterfly crest, plain rounded iron kabuto helmet with wide sweeping fukigaeshi and no ornate decoration — strictly Genpei War era, never later Sengoku-period armor, bends to sweep the deck of a warship with a simple long-handled broom, gathering broken arrow shafts and debris into a pile, working with unhurried care. Behind him, several Heian court women in many-layered white and pale robes kneel motionless on the boards, watching him, faces still. Beyond the rail, distant smoke and drifting wreckage on grey water. Overcast light, muted color, unnerving domestic calm inside a catastrophe. No text or written characters anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "His mother, Taira no Tokiko, took the child emperor into her arms and went over the side. The court ladies followed her. Tomomori waited until there was no one left to give an order to, then pulled on a second suit of armor over the first — enough weight to be certain he would not float, and would not be hauled out alive by anyone. His foster brother, Ienaga, did the same. The two of them took hold of each other's hands and stepped off the edge of the ship together. He was thirty-three years old.",
+      "image_prompt": "Taira no Tomomori, a weathered battle-hardened Japanese commander in his late thirties, stern square jaw, deep-set eyes carrying quiet exhaustion and resolve, calm resigned dignity rather than fear, seen from behind and slightly to the side at the rail of a warship, wearing two full sets of authentic late-Heian-period (12th century) o-yoroi box-style armor in dark red lacquer with the Taira swallowtail-butterfly crest, plain rounded iron kabuto helmet with wide sweeping fukigaeshi and no ornate decoration — strictly Genpei War era, never later Sengoku-period armor layered heavily one over the other so his silhouette is visibly thickened and weighed down. Another armored warrior stands beside him, their hands clasped between them, both facing dark churning water below. Empty tilted deck behind them, wreckage on the sea, a low iron-grey sky. Solemn, still, absolutely quiet composition. No text or written characters anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori"
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "His brother did not. Munemori went into the water as well — the accounts disagree over whether he jumped or was pushed by a retainer who could not stand to watch him hesitate — and was fished out alive by Minamoto sailors, along with his son. He was taken east to Kamakura, displayed to Minamoto no Yoritomo, and beheaded that summer on the road back. The head of the Taira clan finished as a prisoner. The man who had actually run its war finished at the bottom of the strait, exactly as he had arranged.",
+      "image_prompt": "Sailors in plain armor hauling a soaked, robed nobleman over the side of a warship with ropes and boathooks, his body slack and heavy with water, head hanging so the face is not visible. Other warriors stand around watching without expression. Grey afternoon light, wreckage floating on the surface beyond the hull, the strait flat and spent. Muted desaturated palette, an atmosphere of humiliation rather than violence. No text or written characters anywhere in the image.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 75,
+      "narration": "The strait went quiet by evening. For twenty years the Taira had governed Japan in all but name, and in a single afternoon their leadership was gone — drowned, captured, or hunted down in the weeks that followed. Tomomori's body was never identified. Somewhere under the tidal race off Shimonoseki, in two suits of armor, holding another man's hand, the most capable commander the Taira ever produced stopped being a part of history. He immediately began becoming something else.",
+      "image_prompt": "Underwater view looking up toward a distant rippling surface far above: shafts of pale green light coming down through deep moving water, a scatter of broken oars, arrow shafts and torn fabric sinking slowly through the column. Suspended silt drifting in the current. No human figures, no faces, no bodies anywhere in the frame. Cold green-blue palette, enormous depth, absolute silence. No text or written characters anywhere in the image.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "Three centuries later, the Noh theatre gave him back. In the play Funa Benkei, Yoshitsune's boat is putting out from the coast when the sea rises and Tomomori's ghost comes out of it — armored, furious, swinging a naginata across the waves, still trying to finish the battle he lost. He is not driven off by a sword. He is driven off by a priest's prayers, because a sword would be pointless. You cannot kill a man twice. So Japan imagined him simply refusing to stay dead.",
+      "image_prompt": "A towering armored figure rising out of a storm sea at night, formed half of water and half of dark lacquered late-Heian armor, a long naginata swept back over the waves, face hidden inside the shadow of a plain helmet. Below it, a small wooden boat tips on the swell, tiny figures bracing against the wind. Spray, black water, a sliver of cold moonlight. Supernatural, theatrical, terrifying. No text or written characters anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "The stage kept rewriting his death, and it kept getting heavier. In one Noh play he goes down wound in the rope of a ship's anchor. On the kabuki stage, in Yoshitsune and the Thousand Cherry Trees, he hauls the anchor up onto his shoulder, wraps the line around his own body and falls backward off the deck with it — one of the most famous images in Japanese theatre. The historical account only ever said two suits of armor. Audiences needed the weight to be something they could see.",
+      "image_prompt": "A heavy iron and timber ship's anchor lying on the wet boards of a warship deck, thick coiled rope trailing away across the planks toward the open rail and the sea beyond. Late golden light raking low across the grain of the wood, salt drying white in the joints. No people anywhere in the frame. Still-life composition, symbolic weight, quiet and ominous. No text or written characters anywhere in the image.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "Along the strait itself, the drowned never entirely left. Fishermen pulled up crabs whose shells looked like scowling human faces and called them Heike crabs. Sailors reported figures rising out of the water beside their hulls at night asking to borrow a ladle, so they could fill the boat and take it down with them — the funayurei, the ship ghosts, the Taira still trying to sink somebody. And at Akama Shrine in Shimonoseki, where the child emperor is enshrined, the Taira dead have had a caretaker for eight hundred years.",
+      "image_prompt": "A vermilion-painted Japanese shrine gate and steps above a dark sea strait at blue hour, stone lanterns burning low along the approach, black pines leaning over the water. Mist lying on the surface below. No people anywhere in the frame. Deep indigo and lantern-orange palette, reverent and haunted stillness. No text, characters, plaques or written signage anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 75,
+      "narration": "What makes Tomomori unusual is not the way he died. Plenty of men in that war chose the water over capture. It is that he spent his last two years fighting a war he had already worked out he was going to lose, and never once used that knowledge as a reason to stop. He was not hoping. He was not deceived. He simply refused to accept that knowing the ending released him from the work in front of him. That is a harder thing than courage, and it is why Japan has never let him go.",
+      "image_prompt": "A quiet, tightly framed portrait of Taira no Tomomori, a weathered battle-hardened Japanese commander in his late thirties, stern square jaw, deep-set eyes carrying quiet exhaustion and resolve, calm resigned dignity rather than fear, wearing authentic late-Heian-period (12th century) o-yoroi box-style armor in dark red lacquer with the Taira swallowtail-butterfly crest, plain rounded iron kabuto helmet with wide sweeping fukigaeshi and no ornate decoration — strictly Genpei War era, never later Sengoku-period armor, standing alone on a warship deck with the sea behind him going out of focus. He is not fighting and not posed — just looking slightly past the camera with steady, tired, completely unafraid eyes. Wind moving loose hair at his temple, salt spray on the lacquer of his shoulder plates. Soft overcast sidelight, shallow focus, muted colour. No text or written characters anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tomomori",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 15,
+      "narration": "Next time on Samurai Chronicles: seven centuries later, another man went on fighting a war that was already over — the vice-commander of the Shinsengumi, riding into rifle fire on a northern island in 1869, long after the government he had served had ceased to exist. His name was Hijikata Toshizo.",
+      "image_prompt": "A lone rider rendered as a dark silhouette with no visible facial detail, seen from behind against a cold winter dawn: a nineteenth-century Japanese swordsman in a Western-cut military coat on horseback, moving toward a distant star-shaped earthwork fortress on a snowbound northern plain. Thin gunsmoke drifting low across the snow, a pale grey-gold sky. Bleak, final, cinematic teaser framing. No text or written characters anywhere in the image.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 20,
+      "narration": "Taira no Tomomori saw exactly how his world was going to end, years before it ended, and went to work anyway. That is the whole of him. Subscribe for a new story from Japanese history every day.",
+      "image_prompt": "A calm wide seascape of the Shimonoseki strait at golden hour, low sun laying a long broken line of light across moving water, dark headlands on either side fading into haze. No people, no boats, no armor, nothing man-made in the frame. Warm amber and deep blue, peaceful and reflective closing tone. No text or written characters anywhere in the image.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep071-BGM-intro.mp3",
+    "main": "BGM/ep071-BGM-main.mp3",
+    "outro": "BGM/ep071-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/j_cRrziP_54",
+  "shorts_url": "https://youtu.be/raf_140nk-w",
+  "scheduled_at": "2026-08-13 03:00"
+}

@@ -544,5 +544,47 @@
     "used_in": [
       "ep070"
     ]
+  },
+  {
+    "id": "ep071-BGM-intro",
+    "path": "BGM/ep071-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "dark",
+      "orchestral"
+    ],
+    "used_in": [
+      "ep071"
+    ]
+  },
+  {
+    "id": "ep071-BGM-main",
+    "path": "BGM/ep071-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Epic Orchestral Cue by graham_makes (freesound.org) — CC BY 4.0",
+    "tags": [
+      "epic",
+      "orchestral"
+    ],
+    "used_in": [
+      "ep071"
+    ]
+  },
+  {
+    "id": "ep071-BGM-outro",
+    "path": "BGM/ep071-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep071"
+    ]
   }
 ]

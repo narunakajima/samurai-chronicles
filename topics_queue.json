@@ -708,14 +708,14 @@
     },
     {
       "episode_id": "ep071",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Admiral Who Chose the Sea Over Surrender: Taira no Tomomori's Last Battle",
       "era": "Heian",
       "priority": "A",
       "person": "tomomori",
       "angle": "death",
       "notes": "Companion piece to ep059 (Dan-no-ura) from the losing admiral's POV. Character art already exists (characters/tomomori).",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-07-31"
     },
     {
       "episode_id": "ep072",
