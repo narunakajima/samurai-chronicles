@@ -392,7 +392,8 @@
       "cinematic"
     ],
     "used_in": [
-      "ep059"
+      "ep059",
+      "ep072"
     ]
   },
   {
@@ -585,6 +586,34 @@
     ],
     "used_in": [
       "ep071"
+    ]
+  },
+  {
+    "id": "ep072-BGM-intro",
+    "path": "BGM/ep072-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep072"
+    ]
+  },
+  {
+    "id": "ep072-BGM-main",
+    "path": "BGM/ep072-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: SunixMuz - Fountain of Life (Opening, trailer, epic music, Free CCBY) by SunixMuz (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep072"
     ]
   }
 ]

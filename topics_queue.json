@@ -719,14 +719,14 @@
     },
     {
       "episode_id": "ep072",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Last True Samurai: Hijikata Toshizo and the Shinsengumi's Final Stand",
       "era": "Bakumatsu",
       "priority": "A",
       "person": "hijikata_toshizo",
       "angle": "overview",
       "notes": "Shinsengumi vice-commander, died fighting to the end in Hokkaido 1869. First appearance.",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-01"
     },
     {
       "episode_id": "ep073",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-07-31",
+  "last_updated": "2026-08-01",
   "total_topics": 97
 }
