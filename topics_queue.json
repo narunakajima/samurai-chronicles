@@ -730,14 +730,14 @@
     },
     {
       "episode_id": "ep073",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Samurai Who Declared Himself Emperor: The Rebellion of Taira no Masakado",
       "era": "Heian",
       "priority": "A",
       "person": "masakado",
       "angle": "key_event",
       "notes": "10th-century rebel who declared a rival imperial court. First appearance.",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-01"
     },
     {
       "episode_id": "ep074",
@@ -1007,3 +1007,4 @@
   "last_updated": "2026-08-01",
   "total_topics": 97
 }
+

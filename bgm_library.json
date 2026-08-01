@@ -615,5 +615,47 @@
     "used_in": [
       "ep072"
     ]
+  },
+  {
+    "id": "ep073-BGM-intro",
+    "path": "BGM/ep073-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Tension building intro by LunarThePunar (freesound.org) — CC BY 3.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep073"
+    ]
+  },
+  {
+    "id": "ep073-BGM-main",
+    "path": "BGM/ep073-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Epic Powerful Theme by TheoJT (freesound.org) — CC BY 4.0",
+    "tags": [
+      "epic",
+      "powerful"
+    ],
+    "used_in": [
+      "ep073"
+    ]
+  },
+  {
+    "id": "ep073-BGM-outro",
+    "path": "BGM/ep073-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Emotional Dramatic Theme by tyops (freesound.org) — CC BY 4.0",
+    "tags": [
+      "emotional",
+      "dramatic"
+    ],
+    "used_in": [
+      "ep073"
+    ]
   }
 ]
