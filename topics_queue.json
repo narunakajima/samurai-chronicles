@@ -741,14 +741,14 @@
     },
     {
       "episode_id": "ep074",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Dying General Who Fought a Battle He Knew Was Lost, For a Friend: Otani Yoshitsugu",
       "era": "Sengoku",
       "priority": "A",
       "person": "otani_yoshitsugu",
       "angle": "death",
       "notes": "Terminally ill general who joined Mitsunari at Sekigahara out of loyalty, not strategy. First appearance.",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-02"
     },
     {
       "episode_id": "ep075",
@@ -1004,7 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-01",
+  "last_updated": "2026-08-02",
   "total_topics": 97
 }
-

@@ -447,7 +447,8 @@
       "strings"
     ],
     "used_in": [
-      "ep067"
+      "ep067",
+      "ep074"
     ]
   },
   {
@@ -656,6 +657,33 @@
     ],
     "used_in": [
       "ep073"
+    ]
+  },
+  {
+    "id": "ep074-BGM-intro",
+    "path": "BGM/ep074-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "strings"
+    ],
+    "used_in": [
+      "ep074"
+    ]
+  },
+  {
+    "id": "ep074-BGM-main",
+    "path": "BGM/ep074-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: SunixMuz - Follow the road (Opening, trailer, epic music, Free CCBY) by SunixMuz (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep074"
     ]
   }
 ]
