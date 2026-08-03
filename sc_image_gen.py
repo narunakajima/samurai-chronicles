@@ -11,6 +11,11 @@ sc_image_gen.py — Samurai Chronicles 静止画生成スクリプト
 キャラクター参照:
   ep001.json の各シーンに "character_ref": "musashi" がある場合、
   characters/musashi.txt のキャラクター設定が BASE_CONTEXT に追加される。
+
+Shorts(9:16)生成について（2026-08-02〜）:
+  --shorts は本編(16:9, images/S{id}.png)が既に生成済みならそれをGeminiで
+  9:16に再構成する（ゼロから独立生成しない）。必ず本編を先に生成すること。
+  本編画像が無い場合はテキストのみから独立生成する（フォールバック）。
 """
 
 import argparse
@@ -91,13 +96,15 @@ def load_character_ref(name: str) -> str:
     return CHARACTER_DEFAULTS.get(name, "")
 
 
-def _generate_with_retry(client, full_prompt: str, output_path: Path, max_retries: int = 3) -> bool:
-    """generate_content を最大 max_retries 回リトライする（指数バックオフ）。"""
+def _generate_with_retry(client, contents, output_path: Path, max_retries: int = 3) -> bool:
+    """generate_content を最大 max_retries 回リトライする（指数バックオフ）。
+    contents は文字列プロンプト、または [プロンプト, PIL.Image] のような
+    マルチモーダル入力（画像編集・再構成用）のどちらも受け付ける。"""
     for attempt in range(max_retries + 1):
         try:
             response = client.models.generate_content(
                 model=MODEL,
-                contents=full_prompt,
+                contents=contents,
                 config=types.GenerateContentConfig(
                     response_modalities=["IMAGE"],
                 ),
@@ -115,8 +122,29 @@ def _generate_with_retry(client, full_prompt: str, output_path: Path, max_retrie
                 raise
 
 
-def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, output_path: Path) -> bool:
-    """Shorts用縦長(9:16)画像を生成する。同モデル・縦型プロンプト指定。"""
+def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, output_path: Path,
+                                 ref_image: Image.Image = None) -> bool:
+    """Shorts用縦長(9:16)画像を生成する。
+
+    ref_image が指定された場合（本編16:9で既にQA承認済みの画像がある場合）は、
+    ゼロから再生成せずその画像を9:16に再構成する（同一構図・同一キャラクター外見を
+    維持しつつ縦画角に拡張する）。QAで一度承認済みの内容を流用するため、
+    MISMATCH等の再発が起きにくく、コスト面でも失敗時の再試行を減らせる。
+    ref_image が無い場合（本編画像が未生成、または --shorts 単独実行等）は
+    従来通りテキストのみから新規生成する。
+    """
+    if ref_image is not None:
+        prompt = (
+            "Reframe this exact reference image into a 9:16 vertical portrait composition for "
+            "mobile short-form video. Keep the same subject, character appearance, setting, "
+            "lighting, and art style exactly as in the reference image — do not change the "
+            "scene content. Extend/recompose the framing so the main subject is centered and "
+            "prominent in a vertical frame, generating plausible additional scene content "
+            "above/below as needed to fill the vertical canvas.\n\n"
+            f"Scene: {scene_prompt}"
+        )
+        return _generate_with_retry(client, [prompt, ref_image], output_path)
+
     parts = [
         "Cinematic vertical short film still, 9:16 format. "
         "Subject centered and prominent in frame. Composed for portrait mobile viewing. "
@@ -129,8 +157,10 @@ def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, o
     return _generate_with_retry(client, full_prompt, output_path)
 
 
-def generate_one_image(client, scene_prompt: str, character_ref: str, output_path: Path) -> bool:
-    """1シーン1枚生成して output_path に保存。成功すれば True を返す。"""
+def generate_one_image(client, scene_prompt: str, character_ref: str, output_path: Path,
+                        ref_image: Image.Image = None) -> bool:
+    """1シーン1枚生成して output_path に保存。成功すれば True を返す。
+    ref_image は本編(16:9)生成では使わない（gen_func の呼び出しシグネチャ統一のため受け取るのみ）。"""
     parts = [BASE_CONTEXT]
     if character_ref:
         parts.append(f"Character reference: {character_ref}")
@@ -187,13 +217,23 @@ def _correction_note(issues: list) -> str:
 def build_retry_prompt(base_prompt: str, issues: list, level: int) -> str:
     """
     QA失敗時の再生成用プロンプトを組み立てる。
-    level 2: 問題の種類に応じた具体的な修正指示を追記。
-    level 3: 修正指示に加えて、大きく構図を変える指示を追記。
+    - 問題の種類に応じた定型の修正指示（_correction_note）に加えて、
+      QAが検出した issue の原文をそのまま「Specific issues」として渡す。
+      定型指示だけでは MISMATCH（構図の食い違い）等の具体的な差分が
+      伝わらず的外れな再生成になりがちなため、QAの生テキストを直接
+      フィードバックすることで再試行の的中率を上げる。
+    - level 3以上（max_attempts を増やした場合用に残置）: 大きく構図を変える指示を追記。
     """
     note = _correction_note(issues)
     prompt = base_prompt
     if note:
         prompt = f"{prompt}\n\nIMPORTANT CORRECTIONS: {note}"
+    if issues:
+        specific = "\n".join(f"- {issue}" for issue in issues)
+        prompt = (
+            f"{prompt}\n\nSpecific issues detected by QA in the previous attempt "
+            f"(fix these exactly):\n{specific}"
+        )
     if level >= 3:
         prompt = (
             f"{prompt}\n\nUse a substantially different camera angle, framing, "
@@ -204,30 +244,38 @@ def build_retry_prompt(base_prompt: str, issues: list, level: int) -> str:
 
 
 def _generate_and_qa(client, gen_func, base_prompt: str, char_ref: str,
-                      out_file: Path, scene_id: int, max_attempts: int = 3) -> dict:
+                      out_file: Path, scene_id: int, max_attempts: int = 2,
+                      ref_image: Image.Image = None) -> dict:
     """
     生成 → QA を行い、クリティカル（QA失敗）なら自動的にプロンプトを修正して
     最大 max_attempts 回まで再試行する。
     attempt 1: 元のプロンプトのまま
-    attempt 2: QA issue の種類に応じた修正指示を追記
-    attempt 3: 修正指示に加えて構図を大きく変える指示を追記
+    attempt 2以降: QA issue の原文＋種類別の修正指示を追記
     それでも解決しない場合は最終結果をそのまま返す（呼び出し元でユーザー確認）。
+
+    2026-08-02改訂: 実績データ（89エピソード分のQA結果）で、3回目まで
+    リトライしても最終的にNGのまま終わるケースが本編38.5%・Shorts39.1%と
+    高頻度だったため、デフォルトを3→2回に削減してコストを抑える
+    （3回目の追加コストに見合う改善効果が確認できなかったため）。
     """
-    qa_result = {"scene_id": scene_id, "ok": False, "issues": ["画像生成失敗（QA未実行）"]}
+    qa_result = {"scene_id": scene_id, "ok": False, "issues": ["画像生成失敗（QA未実行）"], "attempts": 0}
     prompt = base_prompt
     for attempt in range(1, max_attempts + 1):
         suffix = f"（{attempt}回目）" if attempt > 1 else ""
         print(f"生成中{suffix}... ", end="", flush=True)
         try:
-            ok = gen_func(client, prompt, char_ref, out_file)
+            ok = gen_func(client, prompt, char_ref, out_file, ref_image)
         except Exception as e:
             print(f"⚠️  エラー: {e}")
+            qa_result["attempts"] = attempt
             return qa_result
         if not ok:
             print("⚠️  画像データなし")
+            qa_result["attempts"] = attempt
             return qa_result
         print(f"✓ {out_file.name}", end="", flush=True)
         qa_result = qa_image_with_gemini(client, out_file, base_prompt, scene_id)
+        qa_result["attempts"] = attempt
         if qa_result["ok"]:
             print("  [QA: OK]")
             return qa_result
@@ -381,9 +429,21 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
         char_ref = load_character_ref(char_ref_name)
         out_file = out_dir / f"S{scene_id:02d}.png"
 
+        # Shorts生成時: 本編(16:9)で既にQA承認済みの画像があれば、それを9:16に
+        # 再構成する（ゼロから独立生成しない）。無ければ従来通りテキストのみで生成。
+        ref_image = None
+        if shorts:
+            main_img_path = DRIVE_BASE / episode_id / "images" / f"S{scene_id:02d}.png"
+            if main_img_path.exists():
+                try:
+                    ref_image = Image.open(main_img_path)
+                except Exception:
+                    ref_image = None
+
         ref_label = f" [{char_ref_name}]" if char_ref_name else ""
-        print(f"  S{scene_id:02d}{ref_label} ", end="", flush=True)
-        qa = _generate_and_qa(client, gen_func, prompt, char_ref, out_file, scene_id)
+        reuse_label = " (本編流用)" if ref_image is not None else ""
+        print(f"  S{scene_id:02d}{ref_label}{reuse_label} ", end="", flush=True)
+        qa = _generate_and_qa(client, gen_func, prompt, char_ref, out_file, scene_id, ref_image=ref_image)
         qa_results.append(qa)
         if out_file.exists():
             saved.append(out_file)
@@ -407,6 +467,8 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
                 print(f"  ⚠️  S{w['scene_id']:02d}: {issue}")
     else:
         print(f"  問題なし")
+    avg_attempts = sum(r.get("attempts", 1) for r in qa_results) / len(qa_results) if qa_results else 0
+    print(f"  平均試行回数: {avg_attempts:.2f}回/シーン（コスト効果測定用）")
     print(f"{'━'*60}\n")
 
     episode_dir = DRIVE_BASE / episode_id
@@ -417,6 +479,11 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
         "total_scenes": len(qa_results),
         "warnings": warnings,
         "all_ok": all_ok,
+        # 全シーンの試行回数（成功・失敗問わず）。リトライ回数の妥当性を後で検証するためのログ。
+        "scene_attempts": [
+            {"scene_id": r["scene_id"], "attempts": r.get("attempts", 1), "ok": r["ok"]}
+            for r in qa_results
+        ],
     }
     with open(qa_file, "w", encoding="utf-8") as f:
         json.dump(qa_output, f, ensure_ascii=False, indent=2)

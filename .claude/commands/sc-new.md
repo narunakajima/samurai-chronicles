@@ -834,18 +834,23 @@ Freesound の SOUND_ID は BGM ファイル名（`BGM_candidate_XX_{SOUND_ID}_..
 
 ## STEP 5A/5B — 素材を自動生成する
 
-STEP 5A（TTS）と STEP 5B（画像）を並行して実行する：
+STEP 5A（TTS）と STEP 5B（画像）を並行して実行する。
+**STEP 5Bの画像生成は3コマンドを並行実行してはいけない** — `--shorts` は本編(16:9)の
+画像を流用して9:16に再構成する仕組み（2026-08-02〜、コスト削減のため）のため、
+必ず本編用（引数なし）を先に完走させてから `--shorts` を実行する（`--face` は
+本編画像に依存しないため並行可）：
 
 ```bash
-# STEP 5A — TTS生成
+# STEP 5A — TTS生成（並行可）
 python3 sc_tts_gen.py --episode ep{NNN}                    # ナレーション音声生成（本編用・シーンタイプ別感情トーン）
 python3 sc_tts_gen.py --episode ep{NNN} --teaser           # トレイラーイントロTTS生成（S00_teaser.wav）
 python3 sc_tts_gen.py --episode ep{NNN} --shorts           # Shorts専用TTS生成（S00_shorts.wav）
 
-# STEP 5B — 画像生成
+# STEP 5B — 画像生成（--face はここと並行してよいが、--shorts は本編完了後に実行）
 python3 sc_image_gen.py --episode ep{NNN}                  # 本編用画像生成（16:9）
+python3 sc_image_gen.py --episode ep{NNN} --face           # Shorts冒頭顔アップ画像生成（S00_face.png、本編と並行可）
+# ↓ 本編(16:9)完了後に実行 — QA承認済みの本編画像を9:16に再構成する（新規生成しない）
 python3 sc_image_gen.py --episode ep{NNN} --shorts         # Shorts用画像生成（9:16）
-python3 sc_image_gen.py --episode ep{NNN} --face           # Shorts冒頭顔アップ画像生成（S00_face.png）
 ```
 
 ---
@@ -869,17 +874,24 @@ STEP 5A/5B 完了後、zoom_anchor 判定の**前**に実施する。画像の�
 
 ### 自動リトライの仕組み（`sc_image_gen.py` 内で完結）
 
-各シーンの生成は、`sc_image_gen.py` 内部で以下の3段階まで自動的に試行される
+各シーンの生成は、`sc_image_gen.py` 内部で以下の2段階まで自動的に試行される
 （Claude が手動でプロンプトを書き換えて再実行する必要はない）：
 
 1. **1回目**: 元のプロンプトで生成
-2. **2回目**（QA失敗時）: 検出された issue の種類（TEXT / ARCHITECTURE / DISTORTION / MISMATCH）
+2. **2回目**（QA失敗時）: 検出された issue の原文＋種類（TEXT / ARCHITECTURE / DISTORTION / MISMATCH）
    に応じた具体的な修正指示を自動でプロンプトに追記して再生成
-3. **3回目**（それでもQA失敗時）: 修正指示に加えて「構図を大きく変える」指示を追記して再生成
 
-3回試行してもQAが通らなかった場合のみ、そのシーンは `warnings` に残る。
+2回試行してもQAが通らなかった場合のみ、そのシーンは `warnings` に残る。
 つまりこの STEP で読み込む `image_qa_result*.json` は**すでに自動修正を尽くした後の最終結果**であり、
 残っている WARNING はモデルの限界に起因する可能性が高い。
+
+**2026-08-02改訂（コスト削減）:** 実績データ（89エピソード分のQA結果）で、3回目まで
+リトライしても最終的にNGのまま終わるケースが本編38.5%・Shorts39.1%と高頻度で、
+3回目の追加コストに見合う改善効果が確認できなかったため、最大試行回数を3→2回に削減した。
+また `--shorts` は本編(16:9)でQA承認済みの画像をGeminiに渡して9:16に再構成する方式に変更し、
+ゼロからの独立生成をやめた（同じ内容を2回課金する無駄と、独立生成時のMISMATCH再発を防ぐ）。
+各 `image_qa_result*.json` には `scene_attempts`（シーンごとの試行回数ログ）が追加されており、
+リトライ回数の妥当性は今後この値の推移で検証する。
 
 ### チェック内容
 
