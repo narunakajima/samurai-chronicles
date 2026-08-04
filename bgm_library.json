@@ -158,7 +158,8 @@
       "ep034",
       "ep038",
       "ep058",
-      "ep065"
+      "ep065",
+      "ep076"
     ]
   },
   {
@@ -700,6 +701,32 @@
     ],
     "used_in": [
       "ep075"
+    ]
+  },
+  {
+    "id": "ep076-BGM-intro",
+    "path": "BGM/ep076-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral"
+    ],
+    "used_in": [
+      "ep076"
+    ]
+  },
+  {
+    "id": "ep076-BGM-outro",
+    "path": "BGM/ep076-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Emotional Orchestra by TheoJT (freesound.org) — CC BY 4.0",
+    "tags": [
+      "emotional"
+    ],
+    "used_in": [
+      "ep076"
     ]
   }
 ]

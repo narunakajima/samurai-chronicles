@@ -763,14 +763,14 @@
     },
     {
       "episode_id": "ep076",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Farmer's Son Who Commanded Japan's Most Feared Swordsmen: Kondo Isami",
       "era": "Bakumatsu",
       "priority": "A",
       "person": "kondo_isami",
       "angle": "character",
       "notes": "Shinsengumi commander, companion to ep072 (Hijikata). First appearance.",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-04"
     },
     {
       "episode_id": "ep077",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-03",
+  "last_updated": "2026-08-04",
   "total_topics": 97
 }
