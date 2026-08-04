@@ -489,7 +489,8 @@
       "emotional"
     ],
     "used_in": [
-      "ep068"
+      "ep068",
+      "ep075"
     ]
   },
   {
@@ -558,7 +559,8 @@
       "orchestral"
     ],
     "used_in": [
-      "ep071"
+      "ep071",
+      "ep075"
     ]
   },
   {
@@ -684,6 +686,20 @@
     ],
     "used_in": [
       "ep074"
+    ]
+  },
+  {
+    "id": "ep075-BGM-main",
+    "path": "BGM/ep075-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: SunixMuz - Brave Fight (Opening, trailer, epic music, Free CCBY) by SunixMuz (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep075"
     ]
   }
 ]

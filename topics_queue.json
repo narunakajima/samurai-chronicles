@@ -752,14 +752,14 @@
     },
     {
       "episode_id": "ep075",
-      "status": "pending",
+      "status": "in_production",
       "title": "The One-Eyed Strategist Who Died Atoning for His Own Plan: Yamamoto Kansuke at Kawanakajima",
       "era": "Sengoku",
       "priority": "A",
       "person": "yamamoto_kansuke",
       "angle": "key_event",
       "notes": "Shingen's strategist whose plan failed at the 4th Kawanakajima battle. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-03"
     },
     {
       "episode_id": "ep076",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-02",
+  "last_updated": "2026-08-03",
   "total_topics": 97
 }
