@@ -394,7 +394,8 @@
     ],
     "used_in": [
       "ep059",
-      "ep072"
+      "ep072",
+      "ep077"
     ]
   },
   {
@@ -727,6 +728,33 @@
     ],
     "used_in": [
       "ep076"
+    ]
+  },
+  {
+    "id": "ep077-BGM-intro",
+    "path": "BGM/ep077-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "dark"
+    ],
+    "used_in": [
+      "ep077"
+    ]
+  },
+  {
+    "id": "ep077-BGM-main",
+    "path": "BGM/ep077-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Diablo Wrath - Fight Wounded Rage.mp3 by SoundFlakes (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep077"
     ]
   }
 ]
