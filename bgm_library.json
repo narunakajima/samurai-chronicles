@@ -646,7 +646,8 @@
       "powerful"
     ],
     "used_in": [
-      "ep073"
+      "ep073",
+      "ep078"
     ]
   },
   {
@@ -755,6 +756,34 @@
     ],
     "used_in": [
       "ep077"
+    ]
+  },
+  {
+    "id": "ep078-BGM-intro",
+    "path": "BGM/ep078-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "tense",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep078"
+    ]
+  },
+  {
+    "id": "ep078-BGM-outro",
+    "path": "BGM/ep078-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep078"
     ]
   }
 ]
