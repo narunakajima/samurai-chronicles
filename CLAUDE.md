@@ -93,8 +93,9 @@ Shorts は3曲構成でも中盤（main）の1曲のみ使用。
 ```
 
 スラッシュコマンド一覧:
-- `/sc-new`    新エピソード生成（JSON・確認書・サムネイル・BGM選定を一括並行処理）
-- `/sc-upload` YouTube アップロード（本編・Shorts・字幕）
+- `/sc-new`       新エピソード生成（JSON・確認書・サムネイル・BGM選定を一括並行処理）
+- `/sc-upload`    YouTube アップロード（本編・Shorts・字幕）
+- `/sc-analytics` YouTube アナリティクス分析（月1回程度。解釈・提言はOpusサブエージェントに委任）
 
 > 旧 `/sc-bgm`（BGM単体ピッカー）・`/sc-review`（確認書+BGM）は
 > `/sc-new` STEP 4 に機能統合されたため 2026-06 に削除した。
