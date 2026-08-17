@@ -796,7 +796,7 @@
     },
     {
       "episode_id": "ep079",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Samurai Who Sailed to Rome and Came Home to Nothing: Hasekura Tsunenaga",
       "era": "Edo",
       "priority": "A",
@@ -807,7 +807,7 @@
     },
     {
       "episode_id": "ep080",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Englishman Who Became a Samurai: William Adams's Impossible Second Life",
       "era": "Edo",
       "priority": "A",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-17",
   "total_topics": 97
 }

@@ -1,0 +1,281 @@
+{
+  "episode_id": "ep080",
+  "episode_title": "The Englishman Who Became a Samurai: William Adams's Impossible Second Life",
+  "youtube_title": "The Shipwrecked Sailor Who Became Japan's First Western Samurai",
+  "youtube_description": "In 1600, a starving English sailor washed ashore in Japan as a suspected pirate, one word from execution. Four years later, he stood before Tokugawa Ieyasu as a landed samurai with two swords at his belt — and a homeland he would never see again. This is the true story of William Adams, and the mirror image of a story we told last episode: while Hasekura Tsunenaga crossed the world and lost his place in Japan, Adams crossed the world and somehow found his.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 He was an English sailor,...\n0:50 William Adams was born in 1564\n1:43 The fleet that left Rotterdam...\n2:37 On April 19th, 1600, the ship\n3:40 Ieyasu summoned Adams to...\n4:36 For weeks, Adams did not know\n5:39 Ieyasu's real test came in 1604:\n6:38 Sometime around 1604 or 1605,...\n7:35 The condition was permanent...\n8:17 Adams built a second life within\n9:02 Everything Adams had built...\n9:56 Adams spent his final years...\n10:46 He never returned to England....\n11:41 William Adams died at Hirado on\n12:29 News of his death took over\n13:23 Strip away the shipwreck and the\n14:12 His name still marks the ground\n15:05 So what did William Adams...\n15:50 William Adams found his place in\n16:39 William Adams never chose to...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Milton, Giles. \"Samurai William: The Englishman Who Opened Japan.\" Farrar, Straus and Giroux, 2002.\n2. Massarella, Derek. \"A World Elsewhere: Europe's Encounter with Japan in the Sixteenth and Seventeenth Centuries.\" Yale University Press, 1990.\n3. Cooper, Michael, ed. \"They Came to Japan: An Anthology of European Reports on Japan, 1543-1640.\" University of California Press, 1965.\n\n\n🎵 Music: Nostalgic Violins - Cinematic Calm Music by humanoide9000 (freesound.org) — CC BY 4.0\n#WilliamAdams #MiuraAnjin #TokugawaIeyasu #SamuraiHistory #JapaneseHistory #EdoPeriod #Shogun #DutchEastIndiaCompany #JapaneseSamurai #EnglishHistory",
+  "youtube_tags": [
+    "William Adams",
+    "Miura Anjin",
+    "Tokugawa Ieyasu",
+    "Samurai History",
+    "Japanese History",
+    "Edo Period",
+    "Shogun",
+    "Dutch East India Company",
+    "Japanese Samurai",
+    "English History"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "Osaka Castle, 1600. A shipwrecked English sailor kneels before Japan's most powerful warlord, one word from execution as a pirate. Four years later, that same man wears two swords and commands his own fief. What did Ieyasu see in him?",
+  "shorts_narration": "Four years. A shipwrecked English sailor, sentenced to die as a pirate, became Japan's first Western samurai — granted land and two swords. He never sailed home again. This is William Adams.",
+  "shorts_hook_lines": [
+    "SHIPWRECKED.",
+    "BECAME A SAMURAI.",
+    "WHY DID HE NEVER GO HOME?"
+  ],
+  "shorts_face_image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Extreme close-up of William Adams's weathered face, reddish beard and sharp pale eyes catching dramatic side lighting, a hint of a Japanese kimono collar visible at the shoulder, his expression resolute and direct, staring straight into the camera. Vertical portrait composition.",
+  "thumbnail_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). William Adams standing confidently on a Japanese hillside in hybrid European-Japanese dress, two samurai swords at his belt, reddish beard and weathered face clearly visible, a Japanese-built ship and coastline behind him, dramatic golden-hour cinematic lighting, an expression of quiet authority and hard-won belonging.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He was an English sailor, shipwrecked and starving. Within four years, the man who held Japan's fate in his hands gave him land, a fortune, and two swords. What did William Adams do to become the first Western samurai in history?",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A grounded, storm-battered European ship on a foggy Japanese shoreline, a gaunt English sailor in salt-stained maritime clothing sitting exhausted against the hull, curious Japanese fishermen and officials approaching cautiously along the beach in the distance, no legible lettering anywhere, distant misty coastline barely visible.",
+      "ken_burns": "zoom_in",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.33,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "William Adams was born in 1564 in the English county of Kent, apprenticed as a boy to a master shipwright and trained in the mathematics of navigation. He served England's navy during its wars with Spain, then spent years piloting merchant ships across Europe's northern waters. By his thirties he was a skilled, restless navigator with a wife and children in London — and an appetite for something greater. In 1598, a Dutch trading company offered him a rare and dangerous honor: pilot major of a five-ship fleet bound for the unmapped markets of the Far East.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A shipyard workshop in Limehouse on the River Thames in 16th-century London, a young William Adams in plain European sailor's clothing studying navigational charts and a compass by lantern light, no legible lettering on the charts, ship timbers and tools around him, muted grey daylight through a small window.",
+      "ken_burns": "static",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "The fleet that left Rotterdam carried grand ambitions and almost no margin for survival. Adams's ships crossed the Atlantic, forced their way through the murderous storms of the Strait of Magellan, and scattered across the Pacific in search of trade and plunder. Crews died of scurvy, starvation, and violence with local peoples along the way. Ships vanished one by one — wrecked, captured, or lost without a trace. By the time a single battered vessel limped toward the coast of Japan in the spring of 1600, only twenty-four of the original crew were still alive, and most of them could barely stand.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A Dutch merchant ship battling towering waves in the narrow, storm-lashed Strait of Magellan, William Adams gripping the ship's wheel on a pitching deck, torn rigging and struggling crew around him, dark stormy sky and heavy sea spray filling the frame.",
+      "ken_burns": "zoom_in",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "On April 19th, 1600, the ship Liefde ran aground in Usuki Bay, on the coast of Bungo province — the first Dutch vessel ever to reach Japan. Local officials found a floating wreck crewed by dying foreigners who spoke no Japanese and carried unfamiliar weapons. Portuguese Jesuits, already established at court and eager to protect their trade monopoly, denounced the newcomers as pirates and demanded their execution. Word of the strange ship reached Osaka within days. The decision now belonged to one man: Tokugawa Ieyasu, the most powerful lord in Japan, who had not yet even seen these foreigners' faces.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). The wrecked Dutch ship Liefde run aground in a Japanese coastal bay in 1600, gaunt starving European sailors including William Adams in worn sailor's clothing being examined on the beach by armored Japanese officials and samurai guards, robed Portuguese Jesuit priests watching with hostile expressions nearby, overcast dawn light.",
+      "ken_burns": "static",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.49
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Ieyasu summoned Adams to Osaka Castle for questioning, curious about the ship and the men who had sailed it. Through an interpreter, and the fragments of Portuguese he had picked up at sea, Adams explained where he had come from, what his nation believed, and why his ship carried cannon. Ieyasu asked about the wars of Europe, the shapes of the world's oceans, mathematics, astronomy — question after question, for hours at a time. The Portuguese pressed again for execution. But Ieyasu, unlike his advisors, seemed less interested in punishing a castaway than in understanding what a man like this actually knew.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). The grand wooden interior of Osaka Castle's audience hall, tatami floors and sliding fusuma screens, a powerful daimyo seated on a raised platform in formal dark robes questioning William Adams, who kneels before him in worn European sailor's clothing gesturing toward a sketched diagram on the floor, an interpreter kneeling beside him, samurai guards standing watchful at the chamber's edges, warm lantern light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.23,
+        "y": 0.47
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "For weeks, Adams did not know whether he would live or die. He was held in confinement while Ieyasu weighed conflicting advice, and rumors reached him that the Portuguese were still lobbying for his death. Then, gradually, the summons changed in tone. Ieyasu began requesting Adams's presence not for interrogation but for conversation — about shipbuilding, artillery, the balance of power among Europe's rival nations. Adams answered honestly, without the religious agenda the Jesuits carried. It was a dangerous gamble in a country that could still kill him for a wrong word. It was also, slowly, working.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A dim, sparse holding chamber within a Japanese castle, William Adams sitting alone in worn sailor's clothing in a single shaft of light from a small barred window, his expression uncertain and watchful, the shadow of a guard passing outside the doorway.",
+      "ken_burns": "static",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.43,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Ieyasu's real test came in 1604: build me a ship. Using skills he had learned as an apprentice shipwright decades earlier, Adams designed and constructed Japan's first Western-style ocean-going vessel at a shipyard in Ito, on the Izu coast. It worked. A second, larger ship followed. No Japanese craftsman had ever produced anything like it, and Ieyasu now possessed something almost no ruler in Asia could claim — modern European naval technology, built on Japanese soil, by a man he could actually trust. Adams had stopped being a prisoner. He had become indispensable.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A busy Japanese shipyard at Ito on the Izu coast, William Adams in simple sailor's clothing directing Japanese carpenters as they construct a Western-style ocean-going ship, exposed timber frames and rigging, tools and plans spread on a nearby table, warm daylight.",
+      "ken_burns": "pan_right",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.56,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Sometime around 1604 or 1605, Ieyasu made his decision permanent. He granted Adams a stipend, a fief of roughly ninety households on the Miura Peninsula near Edo, and formal samurai rank — the right to wear two swords in a country where foreigners were barely tolerated as visitors, let alone armed. Adams took a new name, Miura Anjin, \"the pilot of Miura.\" An Englishman shipwrecked as a suspected pirate had become, within four years, a landed vassal of the man who commanded all of Japan. But status this unprecedented came bound to a condition Adams had not yet fully understood.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). William Adams kneeling formally in a grand audience hall before a powerful daimyo, two samurai swords being ceremonially presented to him on a lacquered tray, Adams now dressed in a hybrid of European and Japanese formal attire, attendants and officials witnessing solemnly, warm golden interior light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The condition was permanent proximity. Ieyasu valued Adams's counsel on foreign affairs too highly to let him sail home. Requests to return to England — and to the wife and children he had left there — were quietly refused, year after year. Adams wrote letters that took months to reach anyone who might read them, describing a life of wealth and rank he had never imagined, and a homesickness he could not resolve. He had gained everything a shipwrecked sailor could ask for, except the one thing he still wanted most: permission to leave.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). William Adams standing alone at the edge of a Japanese harbor at dusk, dressed in hybrid European-Japanese clothing. He wears exactly two swords, both hilts crossed neatly at the front of his belt, both scabbard tips pointing straight down and fully hidden behind the folds of his hakama — no scabbard, rod, or blade shape of any kind should be visible near his free hand or elbow. His free hand holds only a half-written letter, nothing else. He gazes toward the western horizon over the ocean, an expression of quiet longing.",
+      "ken_burns": "zoom_out",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Adams built a second life within the boundaries he could not cross. He married a Japanese woman named Oyuki, the daughter of a local official, and raised two children who would never see England. He served as Ieyasu's interpreter and advisor in dealings with Dutch and, later, English traders — the very nations competing for a foothold he alone could help them win. In 1613, an English ship reached Japan for the first time in history, and its captain owed his audience with Ieyasu almost entirely to the countryman who had arrived, shipwrecked, thirteen years before.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A modest but comfortable Japanese household interior, William Adams in hybrid European-Japanese dress sitting with his Japanese wife and two young children in a warm domestic scene, a garden visible through an open screen door, soft natural light.",
+      "ken_burns": "static",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.31,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Everything Adams had built rested on one relationship. In 1616, Tokugawa Ieyasu died, and his son Hidetada, shogun in title since 1605 but only now the real power, proved far more suspicious of foreigners and far less curious about the world beyond Japan. The open era of Portuguese, Dutch, and English traders mingling at court began quietly closing. Adams, now in his fifties, found his influence shrinking along with the tolerance that had once made his entire second life possible. The world that had made a shipwrecked Englishman into a samurai was ending — and he had nowhere else he was fully welcome to go.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A somber formal wooden hall in a Japanese castle lit only by traditional paper andon lanterns on low wooden stands, a solemn mourning procession for a powerful daimyo passing in the background with grim officials, William Adams in hybrid European-Japanese dress standing apart with both hands empty and visible at his sides, watching with a troubled expression. He wears exactly two swords, both hilts crossed neatly at the front of his belt, both scabbard tips pointing straight down and fully hidden behind the folds of his hakama — no scabbard, rod, or blade shape of any kind should be visible near his hands, elbows, or back. Muted grey light.",
+      "ken_burns": "pan_left",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.71,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Adams spent his final years working as a merchant and advisor for the English and Dutch trading posts at Hirado, a small harbor town in the far southwest. He sailed on trading voyages to Southeast Asia, negotiated contracts, and tried, without much success, to make the fledgling English factory in Japan profitable. Colleagues described him as proud, sometimes difficult, a man who had grown used to a status no other Englishman in Asia possessed and did not easily defer to merchants who outranked him back in London but understood nothing of the country he had come to call home.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). The bustling harbor of Hirado in southwestern Japan, William Adams in hybrid European-Japanese dress negotiating with English and Dutch merchants beside stacked trade goods and anchored ships, a mix of European and Japanese figures on the busy dock, bright coastal daylight.",
+      "ken_burns": "zoom_in",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.59,
+        "y": 0.44
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "He never returned to England. Whether by the shogunate's continued restrictions, his own divided loyalties, or simple practicality after two decades away, William Adams remained in Japan until the end. His English wife, Mary, received his letters and a share of his earnings through the East India Company, but never saw him again. His Japanese family remained at Hemi, on the fief Ieyasu had granted him, tied to a rank and a name — Miura Anjin — that existed nowhere outside Japan. Two families, two countries, two lives that could never be reconciled into one.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A split composition: on one side a modest English household interior with a woman in period dress gazing out a rain-streaked window, on the other side William Adams in hybrid European-Japanese dress standing on a Japanese hillside estate, the two scenes divided by a faint horizon line suggesting the ocean between them.",
+      "ken_burns": "static",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.8,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "William Adams died at Hirado on May 16th, 1620, at the age of fifty-five, likely from illness. He was buried on a hill overlooking the harbor, in the country that had first tried to execute him as a pirate and had ended by making him a lord. His will divided his estate between the English wife he had left behind and the Japanese family he had built in her place — a final acknowledgment of the two lives he had somehow lived at once, and could never fully choose between.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A wide establishing shot of a hillside cemetery overlooking Hirado harbor at dawn, small distant grave markers scattered among tall grass, the full curve of the misty harbor and fishing boats visible far below, no figures present, a solemn and contemplative atmosphere.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "News of his death took over a year to cross the world and reach anyone in England who had known him. Three years later, in 1623, the English trading post that had brought him his old countrymen closed for good, unable to compete with the Dutch. His son Joseph inherited both the fief and the name Miura Anjin, and the memorials raised to him in Japan were still being tended long after his English name had been forgotten by everyone who once knew it. In Japan, he was never truly a foreigner again. In England, he had become one.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). An aging wooden trading post building at Hirado being shuttered and abandoned, English and Dutch merchants packing crates and ledgers, the last light of a setting sun over the harbor beyond.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Strip away the shipwreck and the swords, and William Adams's story becomes a study in reinvention forced by circumstance rather than chosen freely. He did not set out to become Japanese. He arrived starving, powerless, and one bad word away from execution — and built, piece by piece, a version of himself that fit the only world still open to him. Every rank, every acre of land, every year of trust with Ieyasu was earned in a language and a culture he had to learn from nothing, with his life as the stake on the table.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). William Adams in hybrid European-Japanese dress standing thoughtfully on the veranda of a Japanese estate, two swords at his belt, looking out over rice fields and distant hills, a contemplative expression, warm late afternoon light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "His name still marks the ground he once walked. A street in Tokyo's Nihonbashi district still carries a name derived from his, and a stone monument on his old fief at Hemi still bears his samurai title. Centuries later, his life would inspire a bestselling novel and a television adaptation that introduced his story to millions who had never heard of the real man. But the fictionalized version obscures a harder truth: Adams's transformation was not an adventure he chose. It was the only path available to a man with nowhere else left to belong.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A weathered stone monument marker standing among trees on a quiet hillside in modern Japan, autumn leaves scattered around its base, soft diffused daylight, a sense of quiet permanence and forgotten history.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "So what did William Adams actually do to become Japan's first Western samurai? He survived when almost no one else on his ship did. He answered a warlord's curiosity honestly instead of exploiting it. He built what he was asked to build, and he stayed loyal to a lord who had once held his life in one hand. In the end, the sword Ieyasu gave him mattered less than the trust it represented — trust earned by a shipwrecked stranger who had absolutely nothing left to lose, and everything left to prove.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). William Adams in hybrid European-Japanese dress standing at the bow of a Japanese-built ship at sea, exactly two swords sheathed at his belt and both hands empty resting on the ship's rigging (no blade drawn or held), gazing forward with quiet resolve, the coastline of Japan behind him and open ocean ahead, dramatic late-day lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": "william_adams",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 60,
+      "narration": "William Adams found his place in Japan by teaching Ieyasu about the world beyond its shores. Two and a half centuries later, another man would try to do the same in reverse — teaching a generation of young samurai to look outward, toward a world Japan could no longer ignore. His name was Yoshida Shoin, and his students would go on to topple a shogunate and build a modern nation. His reward for that teaching was execution for treason. Why would Japan kill the very teacher whose students would go on to save it?",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A young adult Japanese scholar in modest samurai-era robes, with a full adult sakayaki shaved pate and topknot, teaching a small group of teenage boys inside a simple wooden schoolroom. IMPORTANT hairstyle rule: none of the students has a shaved forehead or shaved crown. Every student's hair grows naturally down to the eyebrows and covers the entire top of the head with no bald or shaved skin visible anywhere on their heads — the hair is simply gathered and tied at the back in a small ponytail, like a child or teenager, in clear visual contrast to the teacher's adult shaved-pate topknot. Calligraphy scrolls and books stacked around them, candlelight, an atmosphere of quiet revolutionary intensity, late Edo period setting.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "William Adams never chose to become a samurai. He simply refused to disappear when the odds said he should have. From a wrecked ship on the coast of Bungo to a fief on the Miura Peninsula, his life traces one of the strangest journeys in Japanese history — proof that reinvention, however unwanted at first, can outlast the world that forced it. Miura Anjin is buried in Hirado still, an Englishman who never went home, remembered in Japan far longer than he ever was in the country of his birth.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A weathered blank stone marker with no carved lettering or characters of any kind on a quiet hillside overlooking Hirado harbor at golden hour, two samurai swords laid respectfully before it alongside a small ship's compass, soft warm light and a sense of quiet closure.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep054-BGM.mp3",
+    "main": "BGM/ep071-BGM-main.mp3",
+    "outro": "BGM/ep080-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/4InDmw9LFRg",
+  "shorts_url": "https://youtu.be/6Dbxnx15Hss",
+  "scheduled_at": "2026-08-26 03:00"
+}
