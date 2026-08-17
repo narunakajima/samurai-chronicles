@@ -818,7 +818,7 @@
     },
     {
       "episode_id": "ep081",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Teacher Executed for Treason Who Built Modern Japan: Yoshida Shoin",
       "era": "Bakumatsu",
       "priority": "A",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-17",
+  "last_updated": "2026-08-18",
   "total_topics": 97
 }

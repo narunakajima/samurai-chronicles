@@ -1,0 +1,257 @@
+{
+  "episode_id": "ep081",
+  "episode_title": "The Teacher Executed for Treason Who Built Modern Japan: Yoshida Shoin",
+  "youtube_title": "The Teacher Executed for Treason Who Secretly Built Modern Japan",
+  "youtube_description": "He plotted to assassinate a shogunate official — and confessed it in writing before anyone even accused him. At 29, Yoshida Shoin was executed as a traitor. Within a decade, the teenage students from his one-room schoolhouse had overthrown the government that killed him, and gone on to become the founding leaders of modern Japan.\n\n⏱️ Chapters:\n0:00 Introduction\n0:29 He trained the men who would\n0:52 Yoshida Shoin was born in 1830\n1:44 By his twenties, Shoin had...\n2:38 When Perry's fleet returned...\n3:28 Shoin surrendered to Japanese...\n4:21 Inside Noyama Prison, Shoin...\n5:22 The students who passed...\n6:24 In 1858, the shogunate's...\n7:28 Shoin devised a plan few of\n8:08 The domain government did not...\n8:56 On November 21st, 1859,...\n9:47 In his final days, Shoin wrote\n10:36 Shoin's students scattered,...\n11:26 In 1863, Takasugi Shinsaku...\n12:23 In 1868, the shogunate...\n13:14 Itō Hirobumi, once an...\n14:03 Yamagata Aritomo, another...\n14:51 Yoshida Shoin never held...\n15:39 Nearly eight centuries before...\n16:22 Yoshida Shoin left behind no...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Earl, David Magarey. \"Emperor and Nation in Japan: Political Thinkers of the Tokugawa Period.\" University of Washington Press, 1964.\n2. Craig, Albert M. \"Choshu in the Meiji Restoration.\" Harvard University Press, 1961.\n3. Beasley, W. G. \"The Meiji Restoration.\" Stanford University Press, 1972.\n\n\n🎵 Music: SunixMuz - Follow the road (Opening, trailer, epic music, Free CCBY) by SunixMuz (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional Orchestra by TheoJT (freesound.org) — CC BY 4.0\n#YoshidaShoin #MeijiRestoration #ItoHirobumi #TakasugiShinsaku #SamuraiHistory #JapaneseHistory #Bakumatsu #ChoshuDomain #ShokaSonjuku #JapaneseSamurai",
+  "youtube_tags": [
+    "Yoshida Shoin",
+    "Meiji Restoration",
+    "Ito Hirobumi",
+    "Takasugi Shinsaku",
+    "Samurai History",
+    "Japanese History",
+    "Bakumatsu",
+    "Choshu Domain",
+    "Shoka Sonjuku",
+    "Japanese Samurai"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "Edo, 1859. A young teacher walks calmly toward execution, condemned for plotting to kill a shogunate minister. He never learns that the teenagers he taught will soon overthrow that same government. Who was Yoshida Shoin — and how did a dead man build a nation?",
+  "shorts_narration": "One teacher. Two years. A one-room schoolhouse in Hagi. Executed for treason at 29 — his teenage students overthrew the government that killed him, and built modern Japan. This is Yoshida Shoin.",
+  "shorts_hook_lines": [
+    "EXECUTED AT 29",
+    "STUDENTS RAN JAPAN",
+    "WHAT DID HE TEACH THEM?"
+  ],
+  "shorts_face_image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Extreme close-up of Yoshida Shoin's face, sharp intense eyes staring directly into the camera, clean-shaven jaw. His hair is properly styled as a traditional chonmage: the crown is shaved bare (sakayaki), and the long hair from the back and sides is oiled, gathered, folded forward, and tied flat against the crown in a neat loop — NOT a small isolated tuft or patch sitting alone on top of the head. Dim prison-cell lighting from one side casting deep shadow across half his face, an expression of calm unshakable conviction. Vertical portrait composition.",
+  "thumbnail_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Yoshida Shoin standing resolute in a dim prison cell doorway, plain dark robes and adult sakayaki topknot clearly visible, a single shaft of dramatic light illuminating his calm intense face against deep shadow, small silhouettes of young students faintly visible in a glowing schoolroom scene layered behind him, cinematic high-contrast lighting, an expression of quiet unshakable conviction.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He trained the men who would overthrow Japan's government — from a one-room schoolhouse under house arrest. At 29, he was beheaded as a traitor. So why does modern Japan call him one of its founding fathers?",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Wide establishing shot of Yoshida Shoin sitting cross-legged on a thin mat in a dim wooden prison cell, the whole small cell visible around him, writing intently by candlelight, his expression calm but resolute, wooden bars and a guard's shadow visible in the background, warm flickering light against deep shadow, tense contemplative atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshida_shoin",
+      "zoom_anchor": {
+        "x": 0.74,
+        "y": 0.46
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Yoshida Shoin was born in 1830 in the western domain of Chōshū, at the far end of Japan's main island, adopted as a child into a family of military strategists. He was a prodigy of unnerving intensity — by age nine he was teaching military science to adult samurai, and by eleven he lectured the lord of Chōshū himself on the art of war. Most children who show this kind of brilliance are shaped by their teachers. Shoin was shaped by something else: an unshakable conviction that Japan itself was in danger, and that he alone could see how.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Interior of a formal Chōshū domain hall, seated adult samurai officials (each with the full adult sakayaki shaved pate and topknot) and a young boy of about nine at a low writing desk with an open military scroll before him — the boy's hair is a child's hairstyle with the forehead unshaved, clearly NOT the adult shaved-pate topknot worn by the men around him, tatami mats and paper screens, a traditional wooden andon floor lantern with no visible cords or wires, warm lantern light, an atmosphere of quiet astonishment among the adults, the scroll shows only abstract illegible brush marks, no readable text or characters anywhere in the image.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "By his twenties, Shoin had walked across Japan chasing knowledge the shogunate tried to keep hidden, studying artillery, coastal defense, and the West under the scholar Sakuma Shōzan. Then, in 1853, four black American warships under Commodore Perry steamed into Edo Bay, their cannons aimed at a country with no navy capable of answering them. For Shoin, it was proof of everything he feared: Japan was defenseless, and its rulers were pretending otherwise. He became consumed by one idea. If Japan could not yet fight the West, it first had to understand it.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Yoshida Shoin standing on a coastal bluff at dawn, staring out at four dark American warships anchored in Edo Bay in the distance, smoke rising faintly from their stacks, his expression a mix of alarm and fierce determination, wind moving his robes, dramatic overcast sky.",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoshida_shoin",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "When Perry's fleet returned to Japan in 1854, Shoin saw his chance. On a dark night at Shimoda, he and a companion rowed out to the American flagship and begged to be smuggled aboard — determined to see the outside world for himself, at any cost, in direct defiance of Japan's law forbidding travel abroad on pain of death. Perry's officers refused him, fearing it would wreck delicate treaty negotiations. Shoin had no ship, no permission, and no way home except one: to turn himself in to the shogunate and confess everything.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A small wooden rowboat approaching the dark hull of an American warship at night off the coast of Shimoda, Yoshida Shoin and a companion reaching up toward the ship in desperate appeal, a traditional Japanese paper chochin lantern hanging in their rowboat (not a Western glass lantern), light from the deck above casting long reflections on black water, tense and clandestine mood.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshida_shoin",
+      "zoom_anchor": {
+        "x": 0.57,
+        "y": 0.47
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Shoin surrendered to Japanese authorities and confessed his plan in full, refusing to let his companion take the blame alone. For a would-be traitor who had tried to leave the country illegally, the shogunate showed surprising restraint — imprisonment rather than execution. He was locked in Edo's Denmachō jail, then transferred back to his home domain and confined in Noyama Prison in Hagi. Most men would have counted this the end of their story. Shoin, still only twenty-four, was about to discover that a prison cell could become something else entirely: a classroom.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Yoshida Shoin kneeling before shogunate magistrates in a stark interrogation hall, hands resting calmly on his knees, his posture composed rather than fearful, officials in formal dark kamishimo court dress (no armor) seated on a raised platform above him, cold grey daylight through paper screens.",
+      "ken_burns": "static",
+      "character_ref": "yoshida_shoin",
+      "zoom_anchor": {
+        "x": 0.23,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Inside Noyama Prison, Shoin began lecturing his fellow inmates on history, philosophy, and the crisis facing Japan, turning condemned men into eager students. Released to house arrest in 1855, he kept teaching — and in 1857 took over his uncle's tiny village school, Shōka Sonjuku, in Hagi. It was barely more than a single room. But Shoin taught without hierarchy, treating farmers' sons and samurai heirs as equals, pushing every student to ask not what they knew, but what they were prepared to risk for it. In little more than a year, that one room would reshape a nation.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Yoshida Shoin teaching a small group of ragged fellow prisoners inside a cramped Japanese jail cell, gesturing toward a simple diagram scratched on a wooden board (abstract lines and shapes only, no legible text or characters), the prisoners listening with rapt attention, dim light filtering through a barred window.",
+      "ken_burns": "pan_right",
+      "character_ref": "yoshida_shoin",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The students who passed through Shōka Sonjuku read like a roster of the men who would build modern Japan: Takasugi Shinsaku, the reckless tactical genius; Kusaka Genzui, the fiery idealist; Itō Hirobumi and Yamagata Aritomo, then unremarkable teenage sons of low-ranking samurai. Shoin taught for barely more than a year, yet his students later said he changed how they saw their own lives entirely. His core lesson was simple and dangerous: loyalty to the emperor mattered more than loyalty to the shogunate that had ruled Japan for two hundred and fifty years. It was an idea that could get a man killed.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Yoshida Shoin teaching only THREE students (not more) inside a simple wooden schoolroom in Hagi, lit only by natural window light and a traditional paper andon lantern (no glass oil lamps, no metal wall sconces anywhere in the room). IMPORTANT hairstyle rule, apply to every single student without exception including any partially visible or background student: Shoin is the ONLY person in this image with a shaved forehead or shaved crown. Every student's hair grows naturally down to the eyebrows and covers the entire top of the head with no bald or shaved skin visible anywhere on any student, foreground or background — their hair is simply gathered and tied at the back like a teenager. Simple wooden desks, open books, an atmosphere of intense focus.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshida_shoin",
+      "zoom_anchor": {
+        "x": 0.21,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1858, the shogunate's chief minister, Ii Naosuke, signed a trade treaty with the United States without imperial approval — and then crushed anyone who objected. The Ansei Purge swept across Japan — dissenting daimyo and courtiers were placed under house arrest or forced into retirement, while the scholars and activists who resisted most fiercely were imprisoned or executed. Shoin watched from Chōshū with mounting fury, certain that Ii Naosuke's treaty betrayed the emperor and doomed the country to foreign domination. Talk was no longer enough for him. If the shogunate would not defend Japan's honor, Shoin decided, someone would have to force its hand — even if that meant striking at the government itself.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Close-up over-the-shoulder shot of Yoshida Shoin's hands and face as he leans over a map of Japan's coastline spread across his desk late at night, his expression hardening into resolve as candlelight flickers, the map showing only abstract coastline shapes and no legible place names or lettering, a letter and writing brush pushed to the side, shadows deepening around him.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshida_shoin",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Shoin devised a plan few of his own students would support: intercept and kill Manabe Akikatsu, the shogunate minister who had been sent to Kyoto to carry out Ii Naosuke's purge. When his students and even his own family refused to help, Shoin did something almost incomprehensible — he wrote directly to the Chōshū domain government, laying out the assassination plot in detail and asking for weapons to carry it out. He was not hiding his intentions. He was daring the authorities to stop him, or to finally act as he believed they should.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Tight close-up on Yoshida Shoin's face and the red wax seal in his hand as he presses it onto a folded letter, his face lit starkly from one side by a single lamp, an expression of fierce and unwavering resolve, no legible characters visible on the letter or seal, deep shadow filling the rest of the frame.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshida_shoin",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The domain government did not arm him. It arrested him. Shoin was sent back to Edo in chains and imprisoned once more in the Denmachō jail, this time facing interrogation from the shogunate itself over ties to a wider conspiracy against Ii Naosuke's regime. His questioners expected him to deny everything, or beg for leniency. Instead, Shoin openly confessed the full assassination plot, unprompted, believing that stating his convictions plainly might yet move his judges to see the righteousness of his cause. It did not. It gave them everything they needed to condemn him.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Yoshida Shoin bound and escorted along a rain-slicked road toward Edo by guards in formal Edo-period escort uniforms (jittōgu-style constables' dress, not battlefield armor), his chin level and his gaze steady despite his restraints, grey overcast sky, other travelers watching from a distance, somber muted tones.",
+      "ken_burns": "pan_left",
+      "character_ref": "yoshida_shoin",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "On November 21st, 1859, Yoshida Shoin was led from his cell to the execution ground inside Edo's Denmachō prison, and afterward buried at Kozukappara on the city's outskirts. He was twenty-nine years old. Witnesses described him as calm, almost serene, a man who had spent his final weeks in prison writing rather than pleading for his life. The shogunate believed it was silencing a dangerous radical for good. In truth, it was about to learn that ideas, once planted in the right minds, do not die with the man who planted them.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Dawn over a quiet execution ground on the outskirts of Edo, mist hanging low over bare autumn trees, a single empty path leading toward a solemn gathering of distant silhouetted officials, a folded prisoner's robe resting on a wooden stand in the foreground, somber and respectful atmosphere, no figures shown up close.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In his final days, Shoin wrote a short testament called the Ryūkonroku — 'Record of the Enduring Spirit' — addressed to his students. In it he compared his life to the four seasons, insisting that a short life lived with sincerity was no less complete than a long one. He asked his students not to mourn him, but to carry forward the work he had started. The document reached Hagi within weeks of his death. For the young men of Shōka Sonjuku, it read less like a farewell than an instruction.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Close view of a handwritten scroll resting on a simple wooden desk beside a traditional Japanese paper andon lantern (fully enclosed in paper/wood, not an open candle or candlestick of any kind), soft window light falling across the paper's edge and a writing brush laid beside it, the paper's texture and folds in sharp focus. The writing on the scroll must be rendered completely out of focus and blurred, or as loose abstract ink wash marks — under no circumstances should any character be sharp, upright, or readable as real writing. Quiet reflective mood.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Shoin's students scattered, some devastated, some radicalized further by his death. Takasugi Shinsaku and Kusaka Genzui, who had once begged their teacher to wait for a better moment, now had nothing left to wait for. The shogunate had made Shoin a martyr for the cause he died pursuing: loyalty to the emperor above obedience to Edo. Within Chōshū, and soon across Japan, his execution became a rallying cry rather than a warning. The government had meant to extinguish a threat. Instead, it had lit a fuse.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A group of young Japanese men in samurai-era dress standing in the empty schoolroom at Shōka Sonjuku, heads bowed in grief around an empty teacher's writing desk, soft grey daylight through paper screens, an atmosphere of quiet mourning turning to resolve, none with a shaved adult pate — the students' foreheads are unshaved.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In 1863, Takasugi Shinsaku formed the Kiheitai, an irregular militia recruiting farmers and townsmen alongside samurai — a radical break from centuries of military tradition that Shoin himself had once argued for. Chōshū, once a peripheral domain, became the beating heart of the movement to overthrow the shogunate, fighting the Tokugawa government's own forces and eventually winning. Every major step of that rebellion carried Shoin's fingerprints, even though he had been dead for years. His students were no longer just remembering their teacher. They were finishing what he had started.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A mixed militia of young samurai and armed farmers and townsmen drilling in a Chōshū training field, rifles and traditional spears held side by side, banners marked with simple geometric domain crests rather than lettering, dust rising under a bright overcast sky, energetic determined atmosphere.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In 1868, the shogunate finally collapsed, and imperial rule was restored under the young Emperor Meiji — the very outcome Shoin had died demanding nine years earlier. Chōshū men, many of them his former students, flooded into the new government that replaced two and a half centuries of Tokugawa rule. The revolution Shoin had predicted, planned for, and been executed over had actually happened. He simply was not alive to see it. What came next would prove even his most ambitious students could not have fully imagined.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A grand ceremonial hall in Kyoto filled with newly empowered officials in formal court dress bowing before an ornate empty dais representing imperial authority, morning light streaming through tall wooden doors, an atmosphere of solemn historic transition, no legible banners or text visible.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Itō Hirobumi, once an unremarkable teenager sweeping the floor of Shōka Sonjuku, became Japan's first Prime Minister in 1885 and the principal author of its first modern constitution. He would serve as Prime Minister four times, shaping the institutions of a country his teacher had never lived to see modernized. When Itō spoke of his education, he did not point to Japan's most prestigious academies. He pointed to one cramped village schoolroom, and to two brief years under a condemned man.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A distinguished middle-aged Japanese statesman in formal Meiji-era Western frock coat standing before a grand government building in Tokyo, a closed leather-bound document representing a new constitution held in one hand with no legible text visible on its cover, confident composed expression, bright clear daylight, symbols of a modernizing nation in the background such as telegraph poles and Western-style architecture.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Yamagata Aritomo, another quiet student from that same schoolroom, went on to build Japan's modern conscript army and served twice as Prime Minister himself. Beyond these two men, Shoin's former students filled the new Meiji government's ministries, military command, and diplomatic corps for decades. Few teachers in Japanese history produced a comparable concentration of founding leadership from so brief and so obscure a school. Shōka Sonjuku operated for barely two years. Its influence would shape Japan for the next half century.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Rows of Japanese soldiers in modern Meiji-era military uniforms standing at attention on a parade ground, a senior officer in formal dress reviewing the ranks, distant Western-style barracks buildings under a crisp blue sky, disciplined orderly composition conveying institutional strength.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Yoshida Shoin never held office, never led an army, never lived to see the emperor he died defending hold real power. By every conventional measure of the era, his life ended in total failure — a treason conviction and a public execution at twenty-nine. And yet the men he taught for one short year built the government, army, and constitution of modern Japan. He did not live to build the nation. He simply made sure the people who would build it knew why it mattered.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Close-up of a weathered blank stone memorial marker with a smooth, unmarked face — no carved characters, kanji, or lettering of any kind, only natural stone texture and weathering — standing quietly in the preserved grounds of the old Shōka Sonjuku schoolhouse in Hagi, autumn leaves scattered on the ground, soft cool morning light, an atmosphere of quiet enduring legacy.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 60,
+      "narration": "Nearly eight centuries before Yoshida Shoin was born, another young warrior was already becoming legend on Japan's northern frontier. They called him Hachimantarō — the eldest son of the god of war — a bowman said to fell galloping horsemen with a single arrow. His name was Minamoto no Yoshiie, and generations before the samurai would rule Japan in their own name, he was already writing the rules for what a warrior was supposed to be. Next time, we go back to the true origins of the samurai legend.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A young Heian-era Japanese mounted warrior in early lamellar armor drawing a powerful longbow atop a galloping horse across a windswept northern battlefield, his hair in the traditional adult samurai style with the crown shaved bare (sakayaki) and the remaining hair tied back, arrows already loosed streaking toward distant riders, dramatic dust and motion, dawn light breaking over rugged hills, epic legendary atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Yoshida Shoin left behind no army, no title, and no long life. What he left behind was a room in Hagi where a handful of teenagers learned to believe that Japan's future was theirs to decide — and then went out and decided it. If you found his story as remarkable as we did, subscribe for more true stories from Japan's history, hit like to support the channel, and tell us in the comments: could two years with the right teacher really change the fate of an entire nation?",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). Wide cinematic view of the small preserved wooden schoolhouse of Shōka Sonjuku in Hagi at golden hour, warm late sunlight falling across its modest exterior and surrounding garden, a sense of quiet historic reverence, no people in frame, soft long shadows.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep072-BGM-intro.mp3",
+    "main": "BGM/ep074-BGM-main.mp3",
+    "outro": "BGM/ep076-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/D0qC8_aP_vs",
+  "shorts_url": "https://youtu.be/ZNzYeDS-gX4",
+  "scheduled_at": "2026-08-27 03:00"
+}
