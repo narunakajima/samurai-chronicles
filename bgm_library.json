@@ -562,7 +562,8 @@
     ],
     "used_in": [
       "ep071",
-      "ep075"
+      "ep075",
+      "ep079"
     ]
   },
   {
@@ -647,7 +648,8 @@
     ],
     "used_in": [
       "ep073",
-      "ep078"
+      "ep078",
+      "ep079"
     ]
   },
   {
@@ -784,6 +786,19 @@
     ],
     "used_in": [
       "ep078"
+    ]
+  },
+  {
+    "id": "ep079-BGM-outro",
+    "path": "BGM/ep079-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "emotional"
+    ],
+    "used_in": [
+      "ep079"
     ]
   }
 ]

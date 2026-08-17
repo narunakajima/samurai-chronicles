@@ -1,0 +1,289 @@
+{
+  "episode_id": "ep079",
+  "episode_title": "The Samurai Who Sailed to Rome and Came Home to Nothing: Hasekura Tsunenaga",
+  "youtube_title": "The Samurai Who Sailed to Rome and Came Home to Nothing",
+  "youtube_description": "In 1613, a disgraced samurai named Hasekura Tsunenaga boarded a ship bound for Rome, carrying his lord's ambitions across two oceans he had never imagined crossing. Seven years later he returned home baptized, celebrated as a Roman citizen — and utterly unwanted, in a Japan that had just outlawed the very faith he had embraced in its name.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 He sailed 30,000 miles to meet\n0:44 Hasekura Tsunenaga was not...\n1:42 In the shipyard at...\n2:40 On October 28th, 1613, the San\n3:39 The Pacific crossing took...\n4:37 Spain received him with...\n5:33 On February 17th, 1615, in a\n6:38 By late 1615, Hasekura's...\n7:36 On November 3rd, 1615,...\n8:28 Word had already reached...\n9:20 Officials in Madrid quietly...\n10:10 The return journey stretched...\n11:04 In August 1620, nearly seven...\n12:08 The Japan Hasekura returned...\n13:04 Historical records go...\n14:01 Hasekura Tsunenaga died in...\n14:54 The story did not end with\n15:47 Strip away the treaties and the\n16:42 Hasekura crossed an ocean to...\n17:29 Hasekura Tsunenaga never...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Boxer, C.R. \"The Christian Century in Japan 1549-1650.\" University of California Press, 1951.\n2. Amati, Scipione. \"Historia del regno di Voxu del Giappone.\" Rome, 1615.\n3. Cooper, Michael, ed. \"They Came to Japan: An Anthology of European Reports on Japan, 1543-1640.\" University of California Press, 1965.\n\n#HasekuraTsunenaga #KeichoEmbassy #SamuraiHistory #JapaneseHistory #EdoPeriod #DateMasamune #PopePaulV #ChristianityInJapan #JapaneseDiplomacy #VaticanHistory",
+  "youtube_tags": [
+    "Hasekura Tsunenaga",
+    "Keicho Embassy",
+    "Samurai History",
+    "Japanese History",
+    "Edo Period",
+    "Date Masamune",
+    "Pope Paul V",
+    "Christianity in Japan",
+    "Japanese Diplomacy",
+    "Vatican History"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 8,
+  "teaser_narration": "Rome, 1615. A disgraced samurai kneels before the Pope, baptized and celebrated as a Roman citizen. Seven years later he returns home, to a Japan that has just outlawed his new faith. Why did it cost him everything?",
+  "shorts_narration": "30,000 miles. One samurai. He crossed two oceans, met the Pope, and became a Christian noble. Then Japan banned his faith — and erased his name. This is Hasekura Tsunenaga.",
+  "shorts_hook_lines": [
+    "30,000 MILES.",
+    "MET THE POPE.",
+    "JAPAN ERASED HIM ANYWAY."
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Hasekura Tsunenaga's face, half lit by warm Roman candlelight and half in cold shadow, a small crucifix barely visible at his throat, his eyes intense and conflicted, staring directly into the camera. Dramatic single-source lighting, deep shadows. Vertical portrait composition.",
+  "thumbnail_prompt": "Hasekura Tsunenaga in formal black lacquered samurai court dress with a small crucifix visible at his chest, standing between a Japanese torii gate on one side and the dome of St. Peter's Basilica on the other, dramatic conflicted expression, cinematic golden-hour lighting, sense of a man caught between two worlds.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He sailed 30,000 miles to meet a Pope. He became a Christian, a Spanish nobleman, even a Roman citizen. So why did Japan erase his name the moment he came home?",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A lone Japanese samurai in formal court dress with a small crucifix at his chest stands at the rail of a great wooden galleon, gazing forward into a foggy Atlantic dawn, the distant silhouette of a grand European dome barely visible through the mist, his expression caught between hope and dread.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Hasekura Tsunenaga was not born for greatness. His father, a minor Date-clan retainer, had been convicted of corruption and forced to end his own life, a disgrace that nearly destroyed the family's name. Tsunenaga inherited what remained: a shrunken fief, a tarnished house, and little hope of rising further. By his early forties he was simply one more provincial samurai, serving a restless and ambitious lord in the cold north of Japan. Nothing about him suggested a man destined for Rome. But Date Masamune was searching for exactly that kind of man — one with everything to prove, and nothing left to lose.",
+      "image_prompt": "A modest samurai residence in the cold hills of northern Japan, faded and simple, Hasekura Tsunenaga in his early forties kneeling alone in a spare tatami room, a worn family crest banner hanging on the wall behind him, muted grey winter light through a paper screen, an air of quiet diminished status.",
+      "ken_burns": "static",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.24
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In the shipyard at Tsukinoura, something impossible was taking shape: a Western-style galleon, built by Japanese hands under a foreign shipwright's guidance, big enough to cross an entire ocean. Date Masamune's ambitions stretched far beyond Japan — trade routes to New Spain, an alliance with the Spanish crown, perhaps even leverage against the shogun himself. He needed an envoy who could kneel before kings without asking questions. Hasekura, dutiful and expendable, was chosen. He did not choose this mission. It chose him — and it would carry him further from home than any samurai had ever traveled.",
+      "image_prompt": "A bustling Japanese shipyard at Tsukinoura, workers swarming over the half-built hull of a massive Western-style galleon far larger than any Japanese vessel, Hasekura Tsunenaga standing before it in formal dark kamishimo travel dress (no armor) studying the ship with a mixture of awe and apprehension, the distant silhouette of a robed daimyo watching from a raised platform.",
+      "ken_burns": "pan_right",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "On October 28th, 1613, the San Juan Bautista slipped out of Tsukinoura harbor, carrying roughly 180 souls — samurai, sailors, merchants, and missionaries — toward a horizon no one aboard could truly imagine. Hasekura stood at the rail in his black lacquered armor, watching the coast of Japan shrink into mist. He carried sealed letters from his lord, instructions to negotiate trade and alliance, and a private uncertainty he told no one. He was forty-two years old, leaving behind a wife, a son, and a country he might never see again — for a destination most of Japan had never heard of.",
+      "image_prompt": "The harbor at Tsukinoura at dawn, the great galleon San Juan Bautista pulling away from the dock under full sail, Hasekura Tsunenaga standing at the stern rail in black lacquered armor looking back toward the receding Japanese coastline, small figures of family gathered on the shore, mist rising off the water.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.26
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The Pacific crossing took nearly three months of storms, sickness, and endless grey water. When the San Juan Bautista finally reached Acapulco in early 1614, Hasekura stepped onto a continent no Japanese samurai had ever set foot on. New Spain overwhelmed him — strange fruits, unfamiliar faces, churches built of stone rising taller than any castle he knew. He pressed on overland toward Veracruz, then boarded a Spanish galleon bound for the Atlantic. Every mile carried him further from the world that had shaped him, and closer to one that would soon demand he become someone entirely different.",
+      "image_prompt": "The deck of a storm-battered galleon crossing the vast grey Pacific, Hasekura Tsunenaga gripping a rope railing as waves crash over the bow, exhausted sailors around him, then a contrasting glimpse of a lush unfamiliar coastline of New Spain with stone church towers rising in the distance ahead of the ship.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.24
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Spain received him with genuine fascination — a samurai in full ceremonial dress was a spectacle unlike anything the Spanish court had seen. Hasekura landed at Sanlúcar de Barrameda in October 1614 and traveled on to Madrid, where King Philip III granted him a royal audience. But the warm welcome carried a quiet condition: Spain would not seriously discuss trade or alliance with a nation of non-believers. If Hasekura wanted his mission to succeed, the path forward ran through the Church. The decision waiting for him was not a diplomatic formality. It was a question of what he was willing to become.",
+      "image_prompt": "The Spanish port of Sanlúcar de Barrameda, Hasekura Tsunenaga in full ceremonial Japanese court dress disembarking down a gangplank onto a European stone quay, curious Spanish onlookers in period clothing crowding to see him, tall whitewashed buildings and church spires of 17th-century Spain in the background.",
+      "ken_burns": "pan_left",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "On February 17th, 1615, in a royal chapel in Madrid, Hasekura Tsunenaga was baptized by the king's own chaplain. He took a new name — Felipe Francisco Hasekura — kneeling where he had once merely bowed. Was it faith, or calculation, or both at once? No record fully answers that question, and perhaps even he could not have. What is certain is that the man who rose from that font was no longer only a samurai serving Date Masamune. He was now, in the eyes of Catholic Europe, one of their own — a conversion that would open doors in Rome, and one day close every door back home.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). The candlelit interior of an ornate royal chapel in Madrid, Spanish Baroque architecture and a gilded altar, Hasekura Tsunenaga kneeling at the baptismal font in formal dress with a royal chaplain's hand raised over him, solemn Spanish courtiers witnessing in the background, a single shaft of light falling on his bowed head.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.57,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By late 1615, Hasekura's procession reached Rome itself, and the city turned out to see him. Roman nobles, cardinals, and curious crowds lined the streets as the Japanese ambassador — baptized, robed, and utterly unlike anything they had encountered — approached the Vatican. He had crossed two oceans and an entire continent to reach this moment: an audience with the Pope himself, the man who could bless his lord's ambitions before all of Christian Europe. Whatever waited behind those doors would mark the highest point of his extraordinary journey. He could not have known it was also the beginning of its unraveling.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A grand procession moving through the streets of Baroque Rome, Hasekura Tsunenaga riding in ceremonial robes surrounded by Roman cardinals and cheering crowds, ornate stone facades and church domes lining the street, the dome of St. Peter's Basilica rising in the distance ahead, golden late-afternoon light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "On November 3rd, 1615, Hasekura Tsunenaga knelt before Pope Paul V inside the Vatican. The Pope received him with genuine warmth, and the city of Rome made him an honorary Roman citizen, recording his likeness in paint for posterity — honors almost no foreigner, let alone a Japanese samurai, had ever been given. For one suspended moment, the mission seemed to have succeeded beyond anything Date Masamune could have hoped. Hasekura, the disgraced retainer's son, stood celebrated in the heart of Christendom. It was the summit of everything he had sacrificed to reach. And it was already, quietly, too late.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). The opulent interior of the Vatican, Pope Paul V in white and gold papal vestments seated on a raised throne, Hasekura Tsunenaga kneeling before him in formal dress with hands clasped, cardinals and Vatican dignitaries gathered around in reverent silence, warm golden light streaming through high windows.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.37,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Word had already reached Rome, carried across the same oceans Hasekura had crossed: in 1614, while he was still at sea, the Tokugawa shogunate had issued an empire-wide edict banning Christianity. The very faith he now wore as a title — Felipe Francisco — was already a crime in the country he served. Spain's ministers, hearing this, grew cold on any talk of trade or alliance. The celebrations in Rome could not change what had already happened at home. Hasekura had climbed as high as any samurai ever would in Europe, and the ground beneath the mission had already vanished.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A quiet side chamber within the Vatican, Hasekura Tsunenaga standing alone reading a sealed letter by candlelight, his triumphant expression from the ceremony outside now shadowed with concern, faint distant sounds of celebration audible through a doorway behind him, the contrast between public glory and private dread.",
+      "ken_burns": "static",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Officials in Madrid quietly suggested he might simply stay — Europe had honored him more than Japan ever had, and a converted Christian samurai had little left to return to. For a moment, the offer must have tempted him. But Hasekura had sailed under his lord's seal, carrying letters that demanded an answer, however unwelcome. Whatever he had become in Rome, he was still bound by the duty that had sent him. In 1617, he turned back toward the Pacific, choosing a homeward voyage that would take years — toward a country that no longer wanted what he now carried inside him.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A quiet Spanish courtyard at dusk, Hasekura Tsunenaga standing at a crossroads between an ornate European palace behind him and a distant harbor visible through an archway ahead, torn between two paths, his hand resting on a sealed diplomatic scroll bearing his lord's crest.",
+      "ken_burns": "pan_right",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The return journey stretched on for years — back across Mexico, waiting months for passage, crossing the Pacific once more toward a Japan that felt increasingly distant with every mile. Hasekura was no longer the same man who had left Tsukinoura in 1613. He had knelt before a king and a pope, taken a foreign name, and seen a world most of his countrymen would never believe existed. Somewhere on that long passage home, the question must have haunted him: what exactly was he bringing back — a diplomatic triumph, or simply a faith that could now get him killed?",
+      "image_prompt": "A wide aerial-angle view of a small galleon crossing the Pacific at night, seen from high above and slightly behind, Hasekura Tsunenaga a small solitary figure visible on deck beneath a vast starlit sky, the ship dwarfed by the endless dark ocean, a sense of years passing and a distant unknown homeland waiting beyond the horizon.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.68
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In August 1620, nearly seven years after he departed, Hasekura Tsunenaga finally returned to Japan. There was no procession, no celebration, no acknowledgment of everything he had endured. Christianity was now brutally suppressed under Shogun Hidetada, and Date Masamune — ever the survivor — had already begun distancing himself from the mission he once championed. The trade agreement Hasekura had crossed the world to secure never materialized. The man who had been received by kings came home to silence, his extraordinary journey treated by his own government as an inconvenience best forgotten.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A grey, quiet Japanese harbor dock in 1620, Hasekura Tsunenaga stepping off a modest boat in plain traveling clothes, no crowd or officials to greet him, only a few indifferent dockworkers going about their business, overcast sky and muted colors conveying an anticlimactic homecoming.",
+      "ken_burns": "static",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The Japan Hasekura returned to had no place for who he had become. Christian missionaries were being expelled or executed. Believers were forced to trample on sacred images to prove their renunciation, or face torture and death. Somewhere in his quiet household, Hasekura is said to have hidden away the crucifix and Christian items he had carried home from Rome — the same symbols that had opened doors across an entire continent, now dangerous enough to destroy his family. The samurai who once knelt before the Pope now had to decide, in private, how much of that moment he could ever admit to.",
+      "image_prompt": "The dim interior of a modest Japanese household at night, Hasekura Tsunenaga alone by candlelight carefully wrapping a small crucifix and Christian relics in cloth to hide them beneath a floorboard, tense and secretive posture, deep shadows filling the room around him.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Historical records go strangely quiet on Hasekura's final two years. Some accounts suggest he formally renounced Christianity to protect his family and his lord. Others believe he remained secretly faithful, practicing in private what he could no longer practice at all in public. He retired to his estate, largely out of public life, a man who had seen more of the world than perhaps any Japanese person alive — and who now had almost no one left to tell. The mission that once carried the hopes of a warlord had quietly become his alone to carry, in silence.",
+      "image_prompt": "Photorealistic, sharp-focus photographic detail (not a painting). A quiet Japanese estate garden at dusk, an aging Hasekura Tsunenaga sitting alone on a wooden veranda in simple robes with a full-shaved sakayaki pate and topknot clearly visible (no headband covering the hairline), gazing out at falling autumn leaves, a contemplative and isolated expression, the muted colors of late afternoon light suggesting a life withdrawn from the world.",
+      "ken_burns": "pan_left",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Hasekura Tsunenaga died in 1622, most likely of illness, at his family estate in Tohoku. He was around fifty years old. There was no state funeral, no formal recognition of the seven years he had spent representing Japan across the known world. Whether he died a Christian or renounced entirely remains disputed to this day — a final ambiguity fitting a life defined by them. What is not disputed is that Date Masamune, the lord who had launched the mission with such ambition, made almost no public gesture to honor the retainer who had risked everything to carry it out.",
+      "image_prompt": "A dim, sparsely furnished Japanese room lit by a single lantern, an elderly Hasekura Tsunenaga lying peacefully on a simple bed near the end of his life, a family attendant kneeling respectfully nearby, soft fading light through a paper window suggesting the quiet close of an extraordinary life.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "The story did not end with his death. In 1640, eighteen years later, authorities investigating hidden Christians turned their attention to Hasekura's own household and former retainers. His son Tsuneyori was accused of harboring Christian servants and lost everything, and members of that household paid with their lives under Japan's brutal anti-Christian laws. The embassy that Date Masamune once hoped would elevate his domain instead left a quiet, dangerous inheritance — a family forever shadowed by a mission the state had officially chosen to forget.",
+      "image_prompt": "A somber Japanese household courtyard being searched by grim-faced Edo-period officials in dark robes, anonymous family members and servants standing fearfully to one side, no identifiable named figures, tense atmosphere of suspicion and quiet tragedy unfolding a generation after the embassy's return.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Strip away the treaties and the trade routes, and Hasekura Tsunenaga's story becomes something else entirely: a man who crossed the world not for himself, but for a lord's ambition — and returned to find that the self he had built along the way no longer fit anywhere. Not fully Japanese anymore in the eyes of his own government. Not truly European despite the citizenship and the name. He belonged, in the end, to neither Kyoto nor Rome, but to the seven years in between — the only place where Felipe Francisco Hasekura had ever really existed.",
+      "image_prompt": "A symbolic composition of Hasekura Tsunenaga standing at a threshold, one side of the frame showing the wooden architecture and paper screens of a Japanese room, the other side dissolving into the stone arches and golden light of a European cathedral, his figure caught directly between the two worlds.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hasekura",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 60,
+      "narration": "Hasekura crossed an ocean to become something Japan no longer wanted. But at almost the same moment, in the very court that exiled his faith, another outsider was becoming something Japan had never seen before. An English navigator, shipwrecked on these shores years earlier, had risen to become a trusted advisor to Tokugawa Ieyasu himself — granted land, a Japanese name, and the rank of samurai. If Hasekura's story is about a man crossing the world and losing his place in it, William Adams's story is its mirror: a foreigner who crossed the world and somehow found his.",
+      "image_prompt": "A weathered European sailor with a reddish beard, dressed in a mix of European clothing and Japanese samurai armor, standing on the deck of a Japanese-built ship in Edo-period Japan, two swords at his belt, an expression of quiet resolve, Mount Fuji faintly visible in the distance.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "Hasekura Tsunenaga never asked to become a symbol. He simply followed his lord's orders across two oceans, adapted to survive in courts that had never seen a man like him, and paid the price when the world he left behind changed without warning. Today, statues of him stand in Spain, Italy, and Japan — quiet acknowledgments of a journey his own era refused to honor. His crest, his crucifix, and his seven lost years remain a reminder that history's grandest missions are still carried out by ordinary, expendable men — men asked to become someone else, and never quite allowed to come home.",
+      "image_prompt": "A weathered bronze statue of Hasekura Tsunenaga in samurai dress with a small crucifix visible at his chest, one arm raised as if gesturing toward a distant horizon, standing against a dramatic sunset sky, symbolically bridging a Japanese coastal landscape on one side and a hint of European architecture on the other, a timeless and contemplative closing image.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep071-BGM-intro.mp3",
+    "main": "BGM/ep073-BGM-main.mp3",
+    "outro": "BGM/ep079-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/BwcpqgxPC6Q",
+  "shorts_url": "https://youtu.be/BT_nvVvUpjg",
+  "scheduled_at": "2026-08-25 03:00"
+}
