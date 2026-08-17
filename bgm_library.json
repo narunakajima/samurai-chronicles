@@ -362,7 +362,8 @@
     "used_in": [
       "ep054",
       "ep065",
-      "ep070"
+      "ep070",
+      "ep080"
     ]
   },
   {
@@ -577,7 +578,8 @@
       "orchestral"
     ],
     "used_in": [
-      "ep071"
+      "ep071",
+      "ep080"
     ]
   },
   {
@@ -799,6 +801,20 @@
     ],
     "used_in": [
       "ep079"
+    ]
+  },
+  {
+    "id": "ep080-BGM-outro",
+    "path": "BGM/ep080-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Nostalgic Violins - Cinematic Calm Music by humanoide9000 (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep080"
     ]
   }
 ]
