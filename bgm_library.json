@@ -158,7 +158,8 @@
       "ep034",
       "ep038",
       "ep058",
-      "ep065"
+      "ep065",
+      "ep076"
     ]
   },
   {
@@ -393,7 +394,8 @@
     ],
     "used_in": [
       "ep059",
-      "ep072"
+      "ep072",
+      "ep077"
     ]
   },
   {
@@ -644,7 +646,8 @@
       "powerful"
     ],
     "used_in": [
-      "ep073"
+      "ep073",
+      "ep078"
     ]
   },
   {
@@ -700,6 +703,87 @@
     ],
     "used_in": [
       "ep075"
+    ]
+  },
+  {
+    "id": "ep076-BGM-intro",
+    "path": "BGM/ep076-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral"
+    ],
+    "used_in": [
+      "ep076"
+    ]
+  },
+  {
+    "id": "ep076-BGM-outro",
+    "path": "BGM/ep076-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Emotional Orchestra by TheoJT (freesound.org) — CC BY 4.0",
+    "tags": [
+      "emotional"
+    ],
+    "used_in": [
+      "ep076"
+    ]
+  },
+  {
+    "id": "ep077-BGM-intro",
+    "path": "BGM/ep077-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "dark"
+    ],
+    "used_in": [
+      "ep077"
+    ]
+  },
+  {
+    "id": "ep077-BGM-main",
+    "path": "BGM/ep077-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Diablo Wrath - Fight Wounded Rage.mp3 by SoundFlakes (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep077"
+    ]
+  },
+  {
+    "id": "ep078-BGM-intro",
+    "path": "BGM/ep078-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "tense",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep078"
+    ]
+  },
+  {
+    "id": "ep078-BGM-outro",
+    "path": "BGM/ep078-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep078"
     ]
   }
 ]
