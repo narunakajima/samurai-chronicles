@@ -118,7 +118,8 @@
     ],
     "used_in": [
       "ep008",
-      "ep022"
+      "ep022",
+      "ep082"
     ]
   },
   {
@@ -666,7 +667,8 @@
       "dramatic"
     ],
     "used_in": [
-      "ep073"
+      "ep073",
+      "ep082"
     ]
   },
   {
@@ -818,6 +820,20 @@
     ],
     "used_in": [
       "ep080"
+    ]
+  },
+  {
+    "id": "ep082-BGM-intro",
+    "path": "BGM/ep082-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Classical Suspense by GowlerMusic (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep082"
     ]
   }
 ]

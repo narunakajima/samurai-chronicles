@@ -1,0 +1,277 @@
+{
+  "episode_id": "ep082",
+  "episode_title": "The Undefeated Archer Who Bankrupted Himself for His Men: Minamoto no Yoshiie",
+  "youtube_title": "The Undefeated Archer Who Bankrupted Himself to Reward His Men",
+  "youtube_description": "He never lost a single battle in over a decade of war — yet the emperor refused to reward a single one of his soldiers. So Minamoto no Yoshiie sold his own land to pay them himself. It was an act of defiance that would help end the age of the emperors, and begin the age of the samurai.\n\n⏱️ Chapters:\n0:00 Introduction\n0:29 For over a decade, he never\n0:49 Minamoto no Yoshiie was born in\n1:39 At just seven years old, Yoshiie\n2:33 That test came quickly. In the\n3:21 The war against the Abe clan,\n4:10 One story from these years...\n4:59 By 1062, after eleven...\n5:59 In 1083, the north called again.\n6:58 Deep in hostile territory,...\n7:56 The war dragged into its final,\n8:50 When Kanazawa finally fell,...\n9:39 The response from Kyoto was...\n10:28 Yoshiie's answer became one...\n11:15 That single decision reshaped...\n12:12 The court noticed, and it...\n13:05 Yoshiie spent his final years in\n14:06 Here is the irony the Kyoto\n14:51 That debt came due nearly a\n15:40 Nearly five centuries later,...\n16:32 Minamoto no Yoshiie never...\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Friday, Karl F. \"Hired Swords: The Rise of Private Warrior Power in Early Japan.\" Stanford University Press, 1992.\n2. Farris, William Wayne. \"Heavenly Warriors: The Evolution of Japan's Military, 500-1300.\" Harvard University Asia Center, 1992.\n3. Turnbull, Stephen. \"The Samurai: A Military History.\" Routledge, 1996.\n\n\n🎵 Music: Classical Suspense by GowlerMusic (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional Dramatic Theme by tyops (freesound.org) — CC BY 4.0\n#MinamotoNoYoshiie #HachimanTaro #SamuraiHistory #JapaneseHistory #HeianPeriod #MinamotoClan #SamuraiOrigins #GosannenWar #JapaneseWarriors #GenpeiWar",
+  "youtube_tags": [
+    "Minamoto no Yoshiie",
+    "Hachiman Taro",
+    "Samurai History",
+    "Japanese History",
+    "Heian Period",
+    "Minamoto Clan",
+    "Samurai Origins",
+    "Gosannen War",
+    "Japanese Warriors",
+    "Genpei War"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Mutsu province, 1087. Four brutal years into a siege the court refuses to call a war, Minamoto no Yoshiie has just won — and lost everything. His emperor will pay his soldiers nothing. So he sells his own land instead. But who was this man?",
+  "shorts_narration": "1087. Four years of siege. Zero reward from his own emperor. So Minamoto no Yoshiie sold his own land — and paid his soldiers himself. This is Hachiman Taro, the God of War.",
+  "shorts_hook_lines": [
+    "NEVER LOST.",
+    "PAID THEM HIMSELF",
+    "WHY DID HE GO BROKE?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Minamoto no Yoshiie's weathered face, his hard commanding eyes staring directly into the camera. Snow falls around him, his breath visible in the cold. The iron edge of his kabuto helmet with flaring side plates frames his face, deep shadow cutting across one cheek from a single low firelight source. His expression is grim, resolute — a man who has just spent his own fortune to keep his soldiers fed. Vertical portrait composition.",
+  "thumbnail_prompt": "Minamoto no Yoshiie on horseback in heavy snowfall outside a besieged wooden stockade, drawing his longbow at full extension with fierce concentration, lamellar o-yoroi armor and a horned kabuto helmet, banners and smoke faintly visible behind him, dramatic low golden light cutting through grey winter storm clouds, epic wide composition emphasizing his solitary intensity against the vast frozen northern landscape.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "For over a decade, he never lost a war. Yet his own emperor refused to pay a single soldier. So why did Japan's greatest warrior end up paying for his own war himself?",
+      "image_prompt": "Minamoto no Yoshiie mounted on horseback in driving snow, twisting in the saddle to loose an arrow from a fully drawn longbow, his lamellar o-yoroi armor and horned kabuto helmet catching a shaft of pale winter light, a burning wooden stockade smoldering in the distance behind him, tense diagonal composition emphasizing motion and danger.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Minamoto no Yoshiie was born in 1039, into a clan that occupied an uneasy place in Heian Japan. The Minamoto were imperial descendants, stripped of royal rank generations earlier and pushed into the messy business of war that the court preferred not to notice: crushing rebellions on the frontier. His father, Minamoto no Yoriyoshi, built the family's reputation as hired swords for a capital that valued poetry and court rank far more than the men who kept its provinces from collapsing. Yoshiie would inherit that reputation — and push it further than any Minamoto before him.",
+      "image_prompt": "Interior of a modest provincial Minamoto residence, a stern warrior-nobleman in his forties standing over a wooden cradle where an infant sleeps, wall scrolls and a lacquered longbow mounted on the wall behind him, a female attendant kneeling nearby, warm lamp light against the dim wooden interior, quiet domestic scene tinged with the weight of expectation.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "At just seven years old, Yoshiie underwent his coming-of-age ceremony not in a quiet family hall, but at Iwashimizu Hachiman Shrine — dedicated to Hachiman, the god of war himself. From that day, he carried a new name: Hachiman Taro, 'the eldest son of Hachiman.' For a warrior clan desperate to prove its worth to a court of poets and priests, the name was a statement. This boy was not merely descended from emperors. He was, in some sense, descended from war itself — and he intended to live up to it.",
+      "image_prompt": "A solemn coming-of-age ceremony at a grand Shinto shrine complex on a forested hillside, priests in white robes performing a ritual before a seven-year-old boy of the Minamoto clan kneeling in formal court dress, vermillion shrine gates and wooden halls in the background, incense smoke drifting in still morning air, reverent and ceremonial atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "That test came quickly. In the remote northern province of Mutsu, the powerful Abe clan had grown too independent, defying the tax collectors and officials the court sent to control them. In 1051, the court ordered Yoriyoshi north to crush them. He took his young son with him. What began as a routine punitive campaign against a rebellious frontier family would drag on for over a decade, through freezing winters and burning stockades, and it would make Yoshiie's name a legend across Japan — long before he understood what that legend would eventually cost him.",
+      "image_prompt": "A column of mounted Heian-era warriors in lamellar armor riding out from a provincial garrison gate at dawn, an older warrior-general at the head of the column with a young boy on horseback close behind him, banners hanging still in cold air, distant snow-capped northern mountains ahead, a sense of a long journey just beginning.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The war against the Abe clan, later called the Former Nine Years' War, ground on through freezing mountain passes and burning wooden forts. Yoshiie fought at his father's side through every brutal season of it, and soon soldiers were telling a different story than the one about his father. They spoke of a young man on horseback who could put an arrow through a galloping rider at full speed, who charged first and retreated last, who seemed immune to the fear that gripped ordinary men. He was still in his twenties. Already, they were calling him something more than a soldier.",
+      "image_prompt": "Minamoto no Yoshiie as a young warrior charging on horseback through a chaotic battlefield skirmish, loosing an arrow at full gallop toward a retreating enemy rider, other mounted warriors clashing around him in lamellar armor, smoke and dust obscuring the background, dynamic low-angle composition emphasizing raw speed and fearlessness.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.34,
+        "y": 0.31
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "One story from these years became legend in its own right. At a display of archery before startled officials, Yoshiie drew his bow and put an arrow clean through several layers of lacquered armor stacked one behind the other — a shot that should have been impossible. News like this traveled fast in a country where the court's own guards could barely draw a hunting bow. To ordinary people, and increasingly to frightened rivals, Yoshiie was no longer just a warrior. He was proof that the old aristocracy no longer held a monopoly on power in Japan.",
+      "image_prompt": "Minamoto no Yoshiie standing in a formal courtyard drawing his longbow to full extension before a row of astonished Heian court officials, several stacked lacquered armor plates set up as a target in the distance, his expression calm and focused, dramatic side lighting emphasizing the tension of the bowstring.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.31,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By 1062, after eleven grinding years, the Abe clan was destroyed and the north pacified. Yoshiie returned to the capital a war hero, his name spoken with genuine awe. But the court's gratitude came with limits: modest promotions, respectable but nowhere close to what a Fujiwara courtier received for far less effort. The message, unspoken but unmistakable, was clear enough — warriors could be useful, even essential, but they would never truly belong among the men who ran the empire. Two decades later, Yoshiie would test that boundary again, under far worse circumstances.",
+      "image_prompt": "Minamoto no Yoshiie riding through the gates of the Heian capital in formal battle dress, weary but proud, common townspeople and low-ranking officials watching from the roadside with awe, distant glimpses of the grand tiled roofs of the imperial court buildings, warm late-afternoon light, a muted sense of triumph tempered by distance from the palace itself.",
+      "ken_burns": "pan_right",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1083, the north called again. The Kiyohara clan, once useful allies against the Abe, had torn itself apart in a bloody succession feud. Now in his mid-forties, Yoshiie was appointed governor of Mutsu and marched north to restore order — or so the appointment officially read. In practice, he threw himself into the conflict on behalf of a young Kiyohara claimant named Fujiwara no Kiyohira, turning a family quarrel into a full-scale war. It would become known as the Later Three Years' War. And this time, the court had never actually authorized it as a war at all.",
+      "image_prompt": "Minamoto no Yoshiie, now a weathered warrior in his mid-forties, riding at the head of a provincial army departing a fortified northern garrison under a grey autumn sky, a rolled official appointment scroll visible at his saddle, banners marked with simple clan devices, mountainous wilderness stretching ahead, a mood of grim determination rather than youthful excitement.",
+      "ken_burns": "pan_left",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.61,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Deep in hostile territory, Yoshiie's forces marched through a narrow valley when he suddenly raised his hand and halted the column. A flock of wild geese ahead had broken formation in mid-flight — scattering exactly as a military classic he had once studied described, when hidden soldiers below disturb birds passing overhead. Yoshiie ordered his men into battle positions. Moments later, an ambush that should have slaughtered his column met a prepared army instead. It was the kind of moment that turned a skilled warrior into a legend: not brute strength, but the discipline to notice what almost everyone else would have missed.",
+      "image_prompt": "Minamoto no Yoshiie raising a closed fist to halt his mounted column in a narrow forested valley, his eyes fixed on a scattering flock of wild geese breaking formation in the grey sky above, his soldiers behind him tensing and reaching for weapons, dense trees on either side hinting at hidden danger, still and suspenseful atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The war dragged into its final, grimmest stage at the Kiyohara stronghold of Kanazawa, a fortress ringed by cliffs and rivers that made direct assault nearly suicidal. Yoshiie settled in for a siege through the brutal northern winter, cutting off food and reinforcements while his men froze in makeshift camps outside the walls. Contemporary accounts describe defenders reduced to starvation and horror before the stronghold finally fell in late 1087. It had taken four years, most of Yoshiie's own resources, and immeasurable strain on his men — with no guarantee any of it would be honored in the capital.",
+      "image_prompt": "A wide winter landscape showing a fortified wooden stockade perched on a cliff above a frozen river, ringed at a distance by the tents and watchfires of a besieging army in heavy snowfall, Minamoto no Yoshiie a small but recognizable mounted figure surveying the fortress from a ridge in the foreground, bleak grey winter light, atmosphere of grinding endurance.",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.82,
+        "y": 0.48
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "When Kanazawa finally fell, Yoshiie stood victorious over a war he had fought for four brutal years — a war that had cost him fortunes in supplies, hundreds of loyal men, and decades of campaigning stretching back to his first battles as a young man beside his father. Fujiwara no Kiyohira, the ally he had backed, now controlled the north unchallenged, the beginning of a golden age of Fujiwara rule in Mutsu that would last a century. Yoshiie sent word to the capital, expecting the formal recognition, titles, and rewards that any general who had just secured Japan's entire northern frontier surely deserved.",
+      "image_prompt": "Minamoto no Yoshiie standing before the breached gates of the fallen Kanazawa stockade, snow trampled and scorched around him, exhausted soldiers gathering behind him, a defeated banner lying in the mud, his expression one of hard-won relief rather than celebration, cold pale winter light breaking through clouds.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.29
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The response from Kyoto was devastating. The court declared that the Later Three Years' War had never been an official campaign at all — merely a private quarrel between provincial families that Yoshiie had chosen, on his own authority, to involve himself in. No war, no rewards. His soldiers, men who had frozen through northern winters and starved besieging armies for him, would receive nothing from the imperial government whose frontier they had just secured. It was a calculated insult, designed to remind an increasingly powerful warrior exactly how replaceable the court still believed men like him to be.",
+      "image_prompt": "Minamoto no Yoshiie seated inside a spare military campaign tent, reading an official document by lamplight with a hardening expression, a messenger kneeling before him with head bowed, maps and a longbow resting against the tent wall, tense intimate composition, shadows deepening around the single light source.",
+      "ken_burns": "static",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.31
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Yoshiie's answer became one of the defining moments in samurai history. Rather than send his men home empty-handed, he began selling off his own private estates — land that represented his family's wealth and status — and used the proceeds to personally reward every soldier who had fought for him. It was financially reckless and politically audacious: a warrior openly declaring that his obligation to his men outweighed his obedience to an ungrateful court. The eastern warriors never forgot it. From that moment on, their loyalty belonged not to the distant emperor in Kyoto, but to the Minamoto name itself.",
+      "image_prompt": "Minamoto no Yoshiie standing before a line of kneeling soldiers in a snow-covered military camp, personally handing a sealed document representing his own private land to a grizzled warrior, his expression resolute and unyielding, other soldiers watching in visible surprise and gratitude, cold light emphasizing the weight of the moment.",
+      "ken_burns": "zoom_in",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "That single decision reshaped the balance of power in Japan more than any battle had. Provincial warriors across the eastern lands began to see the Minamoto not as tax collectors serving a distant court, but as a family that paid its debts even when the emperor would not. It was a personal, almost feudal bond, built on gratitude rather than law. In the short term, it cost Yoshiie dearly. But he had unknowingly built something the aristocracy in Kyoto could never fully control: a network of armed men whose first loyalty ran through blood and honor, not through the imperial court at all.",
+      "image_prompt": "A wide composition of dozens of provincial warriors kneeling in respect around Minamoto no Yoshiie at the center of a fortified courtyard, his plain unmarked dark banner raised above them (a solid color banner with no text, characters, or emblem printed on it), the mood one of solemn personal loyalty rather than formal ceremony, golden late-afternoon light softening the harsh military setting.",
+      "ken_burns": "pan_right",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.41
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The court noticed, and it panicked. In 1091, the government issued a formal edict forbidding local landholders from commending their estates to Yoshiie — a direct attempt to choke off the flow of loyalty and wealth building around him. It was an extraordinary measure, reserved for men the court genuinely feared. Yoshiie, the general who had spent a fortune securing Japan's northern frontier, now found himself treated less like a hero and more like a threat to be contained. He kept his titles. He kept his reputation. But the path to real power at court had quietly, deliberately, been closed to him.",
+      "image_prompt": "Interior of a formal Heian imperial court hall, seated aristocratic officials in elaborate sokutai court robes and tall black eboshi caps listening as an official reads from an unrolled document, tense and calculating expressions among the courtiers, ornate wooden pillars and painted screens, cool formal lighting emphasizing bureaucratic power.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Yoshiie spent his final years in a strange position: the most famous warrior in Japan, celebrated in songs and stories, yet permanently frozen out of the real corridors of imperial power. Family troubles compounded the isolation — a rebellious son, court intrigue, old rivals still resentful of his fame. He died in 1106 at around sixty-seven, without ever holding a rank that matched the scale of what he had actually accomplished on the battlefield. By any measure the court used to judge success, Minamoto no Yoshiie had failed. And yet the story of Japan's warrior class was only just beginning.",
+      "image_prompt": "An aging Minamoto no Yoshiie, hair streaked with grey, seated alone in a plain wooden room, his lacquered longbow resting untouched against the wall beside folded armor, faint winter light through a paper screen, a quiet and contemplative atmosphere far removed from the battlefield of his youth.",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Here is the irony the Kyoto court never saw coming. By refusing to reward Yoshiie's soldiers, they had pushed him into an act of personal loyalty that money from the treasury could never have bought. The eastern warriors who received his estates didn't just remember a paycheck — they remembered a lord who bankrupted himself rather than abandon them. That kind of debt doesn't disappear in a generation. It compounds quietly, passed down through families who once fought beside Hachiman Taro in the snow of Mutsu, waiting for a Minamoto worth following again.",
+      "image_prompt": "A wide symbolic composition of an empty snow-covered northern battlefield at dusk, a simple abandoned Minamoto banner planted upright in the snow, faint ghostly outlines of mounted warriors visible in the mist behind it, distant mountains fading into grey light, a solemn and reflective atmosphere.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "That debt came due nearly a century later. Minamoto no Yoritomo, Yoshiie's own descendant, would call on exactly the kind of loyalty his ancestor had built in the northeast — and use it to crush the Taira clan, end centuries of court-dominated rule, and found the Kamakura shogunate: the first government in Japanese history run entirely by warriors. Yoshiie never lived to see it. He died believing the court had cheated him out of everything he'd earned. In truth, he had already built something far more permanent than any title Kyoto could have granted him.",
+      "image_prompt": "Minamoto no Yoritomo standing before assembled warriors in the newly built halls of Kamakura, formal dark robes and armor visible beneath, banners bearing the Minamoto crest raised behind him, a sense of new authority and order being established, cool coastal light through open wooden doors, composition suggesting the dawn of an era.",
+      "ken_burns": "pan_right",
+      "character_ref": "yoritomo",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 60,
+      "narration": "Nearly five centuries later, another warrior family would face its own reckoning — this time not through a court's neglect, but through catastrophic defeat on the battlefield. In 1575, at the Battle of Nagashino, the Takeda clan's legendary cavalry was cut down by a wall of gunfire, and the man left holding the pieces was Takeda Katsuyori, son of the great Takeda Shingen. He inherited one of Japan's most feared armies. Within seven years, he would lose everything his father built. Next time, we follow the son who couldn't escape his father's shadow — and the empire he couldn't save.",
+      "image_prompt": "A young Sengoku-era warlord (16th century Japan, 1575) with a properly shaved sakayaki pate and his remaining hair tied back in a small chonmage topknot — standard samurai hairstyle of this later period, unlike earlier Heian-era warriors — in plain, unmarked red-lacquered armor (no text, characters, numbers, or emblems on the armor plates) standing alone amid the wreckage of a battlefield at Nagashino, shattered cavalry banners and fallen horses visible in drifting smoke around him, distant wooden palisades where gunners once stood, his expression stricken and disbelieving, harsh grey daylight, atmosphere of a shattered legacy.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Minamoto no Yoshiie never received the rewards his court owed him. But nine centuries later, his name endures in shrines, in legend, and in the bloodline of the shogunate that finally freed Japan's warriors from the aristocracy that scorned him. If you want more stories of the men who built — and broke — the age of the samurai, subscribe to Samurai Chronicles, and join us for the next chapter in this story of loyalty, betrayal, and legend.",
+      "image_prompt": "Minamoto no Yoshiie standing alone in silhouette atop a quiet hillside at dusk, his longbow lowered at his side, looking out over a peaceful northern valley now free of war, the last warm light of sunset behind him, a distant torii gate faintly visible on the horizon, calm and contemplative wide composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": "yoshiie",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.29
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep082-BGM-intro.mp3",
+    "main": "BGM/ep008-BGM.mp3",
+    "outro": "BGM/ep073-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/-bOahcaoMcA",
+  "shorts_url": "https://youtu.be/BsRG43CzuKs",
+  "scheduled_at": "2026-08-28 03:00"
+}
