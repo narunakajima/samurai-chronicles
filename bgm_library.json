@@ -835,5 +835,46 @@
     "used_in": [
       "ep082"
     ]
+  },
+  {
+    "id": "ep083-BGM-intro",
+    "path": "BGM/ep083-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep083"
+    ]
+  },
+  {
+    "id": "ep083-BGM-main",
+    "path": "BGM/ep083-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Another epic soundtrack.wav by nuria1512 (freesound.org) — CC BY 4.0",
+    "tags": [
+      "epic"
+    ],
+    "used_in": [
+      "ep083"
+    ]
+  },
+  {
+    "id": "ep083-BGM-outro",
+    "path": "BGM/ep083-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Souls Fly Home.wav by BuytheField (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep083"
+    ]
   }
 ]

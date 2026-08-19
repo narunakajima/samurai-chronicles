@@ -840,14 +840,14 @@
     },
     {
       "episode_id": "ep083",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Son Who Lost His Father's Empire: Takeda Katsuyori After Nagashino",
       "era": "Sengoku",
       "priority": "A",
       "person": "katsuyori",
       "angle": "legacy",
       "notes": "Shingen's son and the Takeda clan's decline after ep014 (Nagashino). Character art already exists (characters/katsuyori).",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-19"
     },
     {
       "episode_id": "ep084",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-18",
+  "last_updated": "2026-08-19",
   "total_topics": 97
 }
