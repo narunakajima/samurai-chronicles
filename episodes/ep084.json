@@ -1,0 +1,283 @@
+{
+  "episode_id": "ep084",
+  "episode_title": "The Monk Who Died So Saigo Takamori Could Live",
+  "youtube_title": "The Monk Who Drowned So Japan's Last Samurai Could Live",
+  "youtube_description": "Two men threw themselves into Kagoshima Bay intending to die together. Only one drowned. This is the story of Gessho, the monk history remembers only as a footnote to Saigo Takamori's legend — and the debt Saigo spent the rest of his life failing to repay.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 Two men threw themselves into...\n0:52 In the 1850s, Kyoto's...\n1:44 In 1858, the shogunate's...\n2:40 Earlier that same year, in July\n3:42 By autumn, the purge had...\n4:36 But Nariakira was gone, and the\n5:33 Saigo faced an impossible...\n6:21 On the night of November 16,\n7:16 What passed between them in...\n8:20 The bay took them without...\n9:01 Gessho was pronounced dead...\n9:48 Saigo would later describe...\n10:29 Saigo's survival created an...\n11:17 The solution was exile...\n12:08 On Amami Oshima, Saigo had...\n13:04 That guilt never fully left him.\n13:55 History remembers Gessho,...\n14:39 Two men entered Kagoshima Bay in\n15:37 Not every impossible choice...\n16:31 Gessho never lived to see the\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Ravina, Mark. \"The Last Samurai: The Life and Battles of Saigo Takamori.\" Wiley, 2004.\n2. Yates, Charles L. \"Saigo Takamori: The Man Behind the Myth.\" Kegan Paul International, 1995.\n3. Jansen, Marius B. \"The Making of Modern Japan.\" Harvard University Press, 2000.\n\n#Gessho #SaigoTakamori #AnseiPurge #Bakumatsu #JapaneseHistory #SamuraiHistory #SamuraiChronicles #KagoshimaBay #ShimazuNariakira #MeijiRestoration",
+  "youtube_tags": [
+    "Saigo Takamori",
+    "Gessho",
+    "Ansei Purge",
+    "Bakumatsu",
+    "Japanese history",
+    "samurai history",
+    "Samurai Chronicles",
+    "Kagoshima Bay",
+    "Shimazu Nariakira",
+    "Meiji Restoration"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "Kagoshima Bay, November 1858. Two men throw themselves from a small boat into the cold dark water, both resolved to die together. Only one of them drowns. The other will go on to help rebuild an entire nation. So why did the sea decide which man survived, and which one didn't?",
+  "shorts_narration": "1858. Two men threw themselves into Kagoshima Bay to die together. Only one drowned. The survivor called it the most shameful moment of his life. Why did Saigo Takamori live?",
+  "shorts_hook_lines": [
+    "1 MAN DROWNED.",
+    "ONE WALKED AWAY.",
+    "WHY DID SAIGO SURVIVE?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Gessho's face half-submerged in dark water at night, his shaved head bare and wet, eyes open and calm, meeting the camera directly with an expression of total peace rather than fear. Faint moonlight catches droplets on his skin. Behind him, out of focus, the dark shape of a companion's shoulder. Vertical portrait composition, cold blue-black lighting, photorealistic cinematic film still.",
+  "thumbnail_prompt": "Two men in the black water of Kagoshima Bay at night, seen from the side, having just gone over the side of the small wooden boat that drifts empty just behind them. On the left, Gessho, a shaved-head Buddhist monk in dark soaked monastic robes, already going still beneath the surface, eyes closing. On the right, Saigo Takamori, an enormous samurai with a period-accurate sakayaki topknot, head still above the water, one arm instinctively rising toward the surface. Behind them, the silhouette of Sakurajima volcano against a clearing night sky, faint lights of Kagoshima city on the far shore. Harsh cold moonlight, dramatic contrast between the two fates. Wide cinematic composition emphasizing the single dividing moment between drowning and survival.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Two men threw themselves into the sea to die together. Only one drowned — the other became Japan's last samurai. Why did the sea choose to let Saigo Takamori live?",
+      "image_prompt": "Wide night shot of two figures in the black, still water of Kagoshima Bay, seen from behind, the small wooden boat they have just gone over the side of drifting empty beside them — on one side a slender, shaved-head monk in dark soaked robes, on the other an enormous samurai with a sakayaki topknot. Their backs are to the viewer, facing the dark silhouette of Sakurajima volcano across the water under a clearing night sky. No faces visible, only the shared stillness of the moment before they go under. Cold moonlight, photorealistic cinematic film still, real skin and fabric texture, natural camera grain, not a painting.",
+      "ken_burns": "zoom_in",
+      "character_ref": "gessho",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.48
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In the 1850s, Kyoto's Kiyomizu Temple housed an unlikely political operative. Gessho, a Buddhist priest in his mid-forties, spent his days in prayer and his nights drafting letters to court nobles and provincial lords, all urging the same cause: restore the emperor, resist the foreign treaties the shogunate had signed without imperial permission. He carried no sword and wore no armor. His only weapons were conviction and a network of allies stretching from the imperial court to the domain of Satsuma, where a reform-minded lord named Shimazu Nariakira had begun, cautiously, to listen.",
+      "image_prompt": "Gessho, a slender, shaved-head Buddhist monk in dark monastic robes, seated at a low writing desk inside a dim temple chamber late at night, brush in hand, several sealed letters already stacked beside him. Warm light from a single paper andon lantern — no Western candles. Through a paper screen door, the faint silhouette of Kiyomizu Temple's wooden veranda is visible. His expression is calm, focused, resolute. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "gessho",
+      "zoom_anchor": {
+        "x": 0.57,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1858, the shogunate's chief minister, Ii Naosuke, launched a sweeping crackdown remembered as the Ansei Purge — arresting, exiling, and executing anyone linked to the movement to restore imperial power. Gessho's name appeared on the wanted lists within weeks. It was through Lord Nariakira's household that he had come to know Saigo Takamori, a towering Satsuma retainer entrusted with the domain's most delicate missions. Saigo, fiercely loyal and increasingly alarmed, became Gessho's protector in Kyoto — arranging safe houses, carrying messages, buying time for a friend the shogunate wanted dead.",
+      "image_prompt": "Inside a shadowed Kyoto safe house at night, Saigo Takamori — an enormous samurai with a period-accurate sakayaki topknot, plain dark kimono, katana and wakizashi at his hip — stands guard near a doorway while Gessho, the shaved-head monk in dark robes, sits reading a letter by lantern light behind him. Tension in Saigo's posture, as if listening for footsteps outside. Warm paper-lantern light only, deep shadows. Photorealistic cinematic film still.",
+      "ken_burns": "pan_left",
+      "character_ref": "saigo",
+      "zoom_anchor": {
+        "x": 0.43,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Earlier that same year, in July 1858, Lord Nariakira had died suddenly, likely from illness, though rumors of poison spread through Satsuma. For Saigo, it was devastating. His patron, mentor, and reason for serving Satsuma was gone, and he resolved to follow him in ritual suicide, a final act of loyalty. It was Gessho who talked him out of it. Death, the monk argued, was easy — living for the cause Nariakira believed in was harder, and far more necessary. Saigo listened. He chose to live. Neither man yet knew their positions would soon reverse, with fatal consequences.",
+      "image_prompt": "Inside a dim temple room, Gessho, the shaved-head monk in dark robes, kneels close to Saigo Takamori — the enormous samurai with a sakayaki topknot, dressed in plain mourning-grey kimono, a short wakizashi dagger (NOT a long katana) set on the mat before him but not yet drawn — gently gripping his forearm to stop him, speaking with quiet urgency. Saigo's face shows raw grief. The room is lit only by the single paper andon lantern on the floor — there must be NO wax taper candles or candlesticks of any kind anywhere in the frame, foreground or background. Photorealistic cinematic film still. CRITICAL: Saigo's forehead and the top of his scalp MUST be shaved bare (sakayaki) with only a small compact chonmage topknot remaining — he must NOT have a full head of hair merely swept back into a bun. CRITICAL: the blade on the mat must be visibly SHORT — a wakizashi roughly half the length of a katana, with a short scabbard, NOT a full-length long sword.",
+      "ken_burns": "zoom_in",
+      "character_ref": "gessho",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By autumn, the purge had tightened its grip on Kyoto. Ii Naosuke's agents were arresting sympathizers by the dozen, and Gessho, one of the movement's most visible figures, could no longer safely remain in the city. Saigo made the arrangements himself: a secret departure by boat, south along the coast, toward the one place that might still offer sanctuary. Satsuma had sheltered reformers before. Nariakira had made it a refuge for men the shogunate wanted dead. Surely, Saigo believed, his domain would honor that legacy now, and protect the friend who had once talked him out of dying.",
+      "image_prompt": "A small wooden boat departing a quiet Kyoto riverbank before dawn, two passengers boarding under cover of mist — Saigo Takamori, the enormous sakayaki-topknotted samurai, helping Gessho, the shaved-head monk in dark travel robes, step down into the boat. A lone boatman waits with an oar. Faint lantern light on the dock, heavy fog over the water. Somber, urgent departure atmosphere. Photorealistic cinematic film still.",
+      "ken_burns": "pan_right",
+      "character_ref": "saigo",
+      "zoom_anchor": {
+        "x": 0.49,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "But Nariakira was gone, and the men now running Satsuma were not interested in his legacy — only in avoiding the shogunate's wrath. Sheltering a wanted fugitive risked war with Edo. In mid-November 1858, the domain delivered its answer: Gessho would not be granted asylum. He was to be quietly escorted out of Satsuma territory, over the border into neighboring Hyuga province — a bureaucratic phrase both men understood as something else entirely. Men sent away that way did not arrive. Sending him off was not a compromise. It was, in every practical sense, a death sentence with a paper trail.",
+      "image_prompt": "Inside a formal Satsuma domain office, a seated senior retainer in dark formal robes delivers a sealed decree to a kneeling Gessho, the shaved-head monk in travel-worn dark robes, his expression absorbing the verdict with quiet stillness. Saigo Takamori stands just behind him, fists clenched, unable to intervene. Saigo has a period-accurate sakayaki hairstyle: forehead and crown of the scalp shaved bare, remaining hair oiled and gathered into a small compact chonmage topknot folded flat against the crown — NOT a short buzz cut or crew cut. Grey daylight through paper screens, a cold and bureaucratic atmosphere. No legible text on the decree. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": "gessho",
+      "zoom_anchor": {
+        "x": 0.27,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Saigo faced an impossible order: escort his friend toward certain arrest, or defy his own domain to save him. He found a third option, one that satisfied neither the shogunate nor Satsuma's fear of it. If Gessho could not live free, and Saigo could not save him, then they would leave together, on their own terms, before anyone else decided how the story ended. It was the same argument Gessho had once made to Saigo, that some deaths carry more meaning than the years that might follow them. Now it was Gessho's turn to believe it.",
+      "image_prompt": "Saigo Takamori, the enormous sakayaki-topknotted samurai, standing alone on a dark wooden veranda overlooking Kagoshima harbor at dusk, hands gripping the railing, jaw set, working through an unbearable decision. Distant torchlit ships in the bay behind him. His katana and wakizashi remain sheathed at his hip. Heavy, contemplative atmosphere, deep blue dusk light. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "saigo",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "On the night of November 16, a small boat carried the two men out onto Kagoshima Bay. Behind them, the lights of the city flickered along the shore. Ahead, the dark silhouette of Sakurajima rose against a sky just beginning to clear. Saigo was thirty years old, thirty-one by Japanese count, a man already talked back once that year from following Nariakira into death. This time, no one was left to argue him out of it. Gessho, in his mid-forties, sat quietly beside him, the calm of a man already at peace with the choice.",
+      "image_prompt": "A small wooden boat drifting on the calm black water of Kagoshima Bay at night, a plainly dressed boatman working the single stern oar in silence while Saigo Takamori — enormous, sakayaki-topknotted — sits amidships and Gessho, the shaved-head monk in dark robes, sits facing him with a serene, resigned expression. Sakurajima's volcanic silhouette looms behind them against a sky just beginning to clear of clouds, faint stars visible. Cold moonlight on the water. Photorealistic cinematic film still.",
+      "ken_burns": "pan_left",
+      "character_ref": "saigo",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "What passed between them in those last minutes was never fully recorded, only fragments the men in the boat remembered afterward. Mostly, the outcome speaks for the conversation. Late on the night of November 16, 1858, Saigo Takamori and Gessho locked arms and threw themselves over the side into the cold water of Kagoshima Bay, neither man hesitating. It was, in its way, a final political act, a statement that their cause had been worth dying for, made by two men the shogunate would never get the satisfaction of executing. The water closed over them both. Only one of them had truly made peace with what came next.",
+      "image_prompt": "Close side view of Gessho, the shaved-head monk in dark robes, and Saigo Takamori, the enormous sakayaki-topknotted samurai, arms locked around each other at the low gunwale of a small wooden boat at night, in the instant of tipping together over the side into the still black water below. Sakurajima's dark silhouette fills the background under a clearing sky. Their expressions are calm and resolute, no fear visible. Cold blue moonlight, intimate and haunting composition. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_in",
+      "character_ref": "gessho",
+      "zoom_anchor": {
+        "x": 0.56,
+        "y": 0.26
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The bay took them without ceremony. Cold winter water works quickly against exhausted bodies and heavy, water-logged robes. Within minutes, both men had lost consciousness beneath the surface. The boatman and companions who had rowed them out hauled the two bodies back aboard and pulled hard for the shore. One responded to the desperate efforts to revive him. The other did not. The sea, indifferent to conviction and prayer alike, had already made its own decision about which man would walk back onto Satsuma's shore that morning.",
+      "image_prompt": "Dramatic night shot from just above the black water beside a small wooden boat, two indistinct submerged silhouettes barely visible beneath the surface, ripples spreading outward, no faces clearly visible. Aboard the boat, several anonymous figures in plain dark clothing lean far over the gunwale with a raised torch and outstretched arms, hauling at the water. Cold moonlight, urgent and chaotic composition emphasizing the moment of crisis rather than any single identifiable person. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Gessho was pronounced dead within the hour, his body carried back into a city that, days earlier, had refused to let him live in it. Saigo remained unconscious for some time, his enormous frame proving stubbornly resistant to the same water that had already claimed his friend. When he finally woke, it was to the worst possible outcome for a man who had gone into the bay intending to die: he was alive, his cause was in ruins, his patron was dead, and the one person who might have understood what he was feeling was gone.",
+      "image_prompt": "Dawn on a quiet Kagoshima beach, Gessho's body, the shaved-head monk in soaked dark robes, laid respectfully on the sand and covered with a plain cloth by several anonymous attendants, heads bowed. A short distance away, barely visible in the background, the massive figure of Saigo Takamori lies collapsed but breathing, unattended for the moment. Pale grey morning light, somber and quiet composition. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "gessho",
+      "zoom_anchor": {
+        "x": 0.29,
+        "y": 0.71
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Saigo would later describe the weeks that followed as the most shameful of his life. He had not merely failed to die, he had failed at the one thing he believed a man of conviction should be able to do cleanly. Gessho, a monk with no combat training, had managed what Saigo, a soldier by temperament, could not. The guilt did not fade quickly. It became something closer to a debt: a life he had not asked to keep, owed to a friend who no longer existed to collect it.",
+      "image_prompt": "Saigo Takamori, the enormous sakayaki-topknotted samurai, sitting alone and soaked on the wet sand of a beach at dawn, wrapped in a rough blanket, staring blankly at the calm water where his friend died, his large face etched with shame rather than relief. No other figures nearby. Pale, cold morning light, isolating and quiet composition. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_in",
+      "character_ref": "saigo",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Saigo's survival created an awkward problem for Satsuma's leadership. A living Saigo, publicly known to have defied the shogunate's wanted list for a purge target, was a liability they could not easily explain to Edo. Executing him outright risked turning him into a martyr for the very cause they had just refused to protect. Quietly making him disappear, without quite killing him, offered a third path, one that solved the domain's immediate problem while leaving Saigo's fate entirely dependent on Satsuma's continued goodwill.",
+      "image_prompt": "Interior of a formal Satsuma council chamber, several anonymous senior officials in dark formal robes seated in tense discussion around a low table, an empty seat at the center representing the absent, unresolved question of Saigo's fate. Unlabeled documents and a folded travel permit sit on the table. Muted grey daylight through paper screens, a cold and calculating atmosphere. Photorealistic cinematic film still.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The solution was exile disguised as mercy. Saigo was stripped of his name and samurai status, given the alias Kikuchi Gengo, and placed on a ship bound for Amami Oshima, a subtropical island far south of Kagoshima. He arrived in early 1859 to a place that had never heard of the purge, the pact, or the monk who had died beside him. For a man who had just watched his cause collapse and his closest ally drown, exile was not punishment, it was simply confirmation that Satsuma still did not know what to do with him.",
+      "image_prompt": "Saigo Takamori, the enormous sakayaki-topknotted samurai, now in plain, unadorned travel clothing without swords, standing alone at the railing of a small transport ship as it approaches a lush subtropical island coastline, palm-like vegetation and white sand visible ahead. His expression is distant, unreadable. Bright but muted daylight, a sense of exile rather than adventure. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": "saigo",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "On Amami Oshima, Saigo had little to do but think. He married, fathered a child, and studied, but colleagues who corresponded with him during these years noted a change: a man who had once argued passionately for living now spoke, when the subject came up, with a strange detachment about death itself. He kept Gessho's memory close, referring to him in later letters as a debt still owed. Whatever guilt had taken root in the cold water of Kagoshima Bay, exile gave it three years to grow roots of its own.",
+      "image_prompt": "Saigo Takamori, the enormous sakayaki-topknotted samurai, seated on a wooden veranda of a simple island house at dusk, writing brush in hand over a half-finished letter, a small oil lamp beside him, lush tropical foliage visible outside. His expression is thoughtful and distant, not at peace. Warm but melancholy lamplight. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "saigo",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "That guilt never fully left him. Colleagues who knew Saigo in his later years, after he had helped topple the shogunate and build the new Meiji government, described a man who seemed almost unafraid of his own death, willing to walk into confrontations others thought suicidal, as though he had already used up his allotted fear of dying back in 1858. In 1877, when the modern Japan he had helped create turned its own army against him, he did not flee. He made his final stand on a hillside above the same city where Gessho had died nineteen years earlier.",
+      "image_prompt": "Saigo Takamori in 1877, older and heavier, with short-cropped Meiji-era hair and a heavy beard — no topknot, no shaved pate — wearing a plain dark military-style jacket over hakama, standing calmly atop a smoke-hazed hillside overlooking Kagoshima city and the bay below, Sakurajima faintly visible in the distance, his expression serene rather than fearful despite the chaos implied around him. Muted late-afternoon light, a quiet, resigned composition. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": "saigo",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "History remembers Gessho, when it remembers him at all, as a supporting figure in Saigo Takamori's story, the monk who drowned so the general could live. It is a framing he likely would not have chosen for himself. Gessho believed an idea was worth more than his own survival, and he was proven right in the most literal sense possible. After his death, the Meiji government he never lived to see posthumously honored him as a loyalist who gave everything for the cause he preached, recognition that came decades too late to matter to the man himself.",
+      "image_prompt": "A quiet stone memorial marker inscribed with no legible text, standing on a wooded hillside overlooking Kagoshima Bay in soft golden late-afternoon light, a few fallen camellia flowers scattered at its base, no figures present. Sakurajima faintly visible across the water in the distance. A peaceful, reflective wide composition evoking quiet, overlooked remembrance. Photorealistic cinematic film still.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Two men entered Kagoshima Bay in November 1858, each equally resolved to die there. Only the sea decided otherwise, and it never explained its reasoning. What survived that night was not a plan, or a cause, or even a friendship, it was a single life, carried forward by a debt one man spent the rest of his years trying, and failing, to repay. Gessho's death did not make Saigo Takamori who he became. But it is hard to imagine the man who walked calmly toward his own end in 1877 without first understanding the one who went into the water beside him in 1858.",
+      "image_prompt": "A low, close dawn view from just above the surface of Kagoshima Bay, mirror-still water in the foreground perfectly reflecting Sakurajima's silhouette and a soft pink-orange sky, a single small wooden boat lying empty and unmanned a short distance offshore. No figures present. A reflective, quietly haunting composition symbolizing memory rather than event. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 60,
+      "narration": "Not every impossible choice in Bakumatsu Japan ended in the water. Nine years later, in 1867, the fifteenth and final Tokugawa shogun inherited a regime built by the fourteen shoguns of his house before him, an army still willing to fight for his name, and a decision no shogun before him had ever faced: whether to surrender all of it without a single battle. Tokugawa Yoshinobu chose differently than almost anyone expected. Next time, we ask why the last shogun handed back centuries of samurai rule without ever drawing his sword.",
+      "image_prompt": "A solitary shogun in formal dark ceremonial court robes, period-accurate sakayaki hairstyle, kneeling alone in a vast, otherwise empty audience hall inside Nijo Castle, an ornate ceremonial document laid on a low table before him, its writing not legible. Rows of empty cushions stretch into shadow behind him where his court once sat. Soft grey daylight through high windows, an atmosphere of quiet, historic finality. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Gessho never lived to see the Japan his sacrifice helped make possible. Saigo Takamori spent the rest of his life trying to be worthy of a debt he could never fully repay, and in the end, he paid it the only way he knew how. If you want more stories of the choices that shaped Japan, and the people history remembers only in someone else's shadow, subscribe to Samurai Chronicles, and join us for the next chapter in the history of the samurai.",
+      "image_prompt": "A peaceful, elevated view of Kagoshima Bay at golden sunset seen from a grassy headland above the shore, Sakurajima's silhouette glowing warmly against the sky, the far shoreline of the city just beginning to show scattered evening lights. No boats, no figures. A serene, contemplative wide composition marking closure and quiet remembrance. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "zoom_anchor": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep084-BGM-intro.mp3",
+    "main": "BGM/ep068-BGM-main.mp3",
+    "outro": "BGM/ep084-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/mvZwlUOjOwI",
+  "shorts_url": "https://youtu.be/LpizEFxWW_8",
+  "scheduled_at": "2026-09-01 03:00"
+}

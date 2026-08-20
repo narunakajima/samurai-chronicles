@@ -479,7 +479,8 @@
       "epic"
     ],
     "used_in": [
-      "ep068"
+      "ep068",
+      "ep084"
     ]
   },
   {
@@ -875,6 +876,34 @@
     ],
     "used_in": [
       "ep083"
+    ]
+  },
+  {
+    "id": "ep084-BGM-intro",
+    "path": "BGM/ep084-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep084"
+    ]
+  },
+  {
+    "id": "ep084-BGM-outro",
+    "path": "BGM/ep084-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep084"
     ]
   }
 ]
