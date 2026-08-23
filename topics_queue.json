@@ -862,14 +862,14 @@
     },
     {
       "episode_id": "ep085",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Shogun Who Surrendered Without a Fight: Tokugawa Yoshinobu's Choice",
       "era": "Bakumatsu",
       "priority": "A",
       "person": "yoshinobu",
       "angle": "key_event",
       "notes": "Last shogun, resigned 1867 rather than fight. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-23"
     },
     {
       "episode_id": "ep086",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-20",
+  "last_updated": "2026-08-23",
   "total_topics": 97
 }

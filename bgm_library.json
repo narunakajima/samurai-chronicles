@@ -581,7 +581,8 @@
     ],
     "used_in": [
       "ep071",
-      "ep080"
+      "ep080",
+      "ep085"
     ]
   },
   {
@@ -904,6 +905,33 @@
     ],
     "used_in": [
       "ep084"
+    ]
+  },
+  {
+    "id": "ep085-BGM-intro",
+    "path": "BGM/ep085-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "strings"
+    ],
+    "used_in": [
+      "ep085"
+    ]
+  },
+  {
+    "id": "ep085-BGM-outro",
+    "path": "BGM/ep085-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Smooth Emotional Dramatic Intro by tyops (freesound.org) — CC BY 4.0",
+    "tags": [
+      "emotional",
+      "dramatic"
+    ],
+    "used_in": [
+      "ep085"
     ]
   }
 ]
