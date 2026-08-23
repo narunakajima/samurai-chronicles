@@ -814,13 +814,20 @@ BGMの`bgm_library.json`本登録が「まだ承認されていないBGM」に�
 
 ```bash
 DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}"
-mkdir -p "$DRIVE/audio"
+mkdir -p "$DRIVE/audio" "$DRIVE/images" "$DRIVE/images_shorts"
 
 # 制作確認書を移動
 mv "$HOME/Desktop/SC/ep{NNN}_制作確認書.txt" "$DRIVE/"
 
 # サムネイルを移動
 mv "$HOME/Desktop/SC/ep{NNN}_thumbnail.png" "$DRIVE/"
+
+# シーン画像・画像QA結果を移動（sc_image_gen.py の出力）
+mv "$HOME/Desktop/SC/ep{NNN}/images/"*.png "$DRIVE/images/" 2>/dev/null
+mv "$HOME/Desktop/SC/ep{NNN}/images_shorts/"*.png "$DRIVE/images_shorts/" 2>/dev/null
+mv "$HOME/Desktop/SC/ep{NNN}/image_qa_result.json" "$DRIVE/" 2>/dev/null
+mv "$HOME/Desktop/SC/ep{NNN}/image_qa_result_shorts.json" "$DRIVE/" 2>/dev/null
+mv "$HOME/Desktop/SC/ep{NNN}/image_qa_result_face.json" "$DRIVE/" 2>/dev/null
 
 # 役割ごとに残った1曲を判定して登録: Freesound新規 or ライブラリ
 mkdir -p /tmp/sc_bgm_credits
@@ -921,6 +928,11 @@ python3 sc_image_gen.py --episode ep{NNN} --face           # Shorts冒頭顔ア�
 python3 sc_image_gen.py --episode ep{NNN} --shorts         # Shorts用画像生成（9:16）
 ```
 
+**保存先（2026-08-23〜）:** `sc_image_gen.py` の出力は `~/Desktop/SC/ep{NNN}/images/`・
+`~/Desktop/SC/ep{NNN}/images_shorts/` に保存される（確認用。制作確認書・サムネイル・BGMと
+同じ運用）。**Google Drive への保存はこの時点では行わない。** STEP5C統合確認でOKが出てから
+STEP4でDriveへ移動する。
+
 ---
 
 ## STEP 5C — 画像QA、およびサムネイル・BGM・シーン画像の統合確認
@@ -966,12 +978,13 @@ STEP 5A/5B 完了後、zoom_anchor 判定の**前**に実施する。画像の�
 
 ### チェック内容
 
-Google Drive の以下のファイルを読み込む：
+`~/Desktop/SC/ep{NNN}/` の以下のファイルを読み込む（2026-08-23〜、STEP4完了前なので
+まだGoogle Driveではなくデスクトップの確認用フォルダにある）：
 ```bash
-cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/image_qa_result.json
-cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/image_qa_result_shorts.json
+cat ~/Desktop/SC/ep{NNN}/image_qa_result.json
+cat ~/Desktop/SC/ep{NNN}/image_qa_result_shorts.json
 # --face を使用した場合のみ:
-cat ~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/image_qa_result_face.json
+cat ~/Desktop/SC/ep{NNN}/image_qa_result_face.json
 ```
 
 各JSONの `all_ok` を確認する：
@@ -1028,9 +1041,9 @@ STEP5C後に目視確認、と最大3回に分かれていた確認をここに�
 Read単体1回のみ・他の画像配信呼び出しなしのターンでのみ表示に成功することを確認済み。
 したがって：
 - サムネイルは Read ツールで**1回だけ**表示する
-- シーン画像・BGMはファイル自体を送らず、Google Driveのフォルダパス／`~/Desktop/SC/BGM/`
-  を案内する方式にする（全シーンを一括でReadツールに貼り付ける、または `SendUserFile`
-  でまとめて送る、という方法は**行わない**）
+- シーン画像・BGMはファイル自体を送らず、`~/Desktop/SC/ep{NNN}/images/`／`~/Desktop/SC/BGM/`
+  のフォルダパスを案内する方式にする（全シーンを一括でReadツールに貼り付ける、または
+  `SendUserFile` でまとめて送る、という方法は**行わない**）
 - 上記の案内テキストと、サムネイルのRead表示は**同じターンでよい**（禁止されているのは
   画像"配信"ツールの複数回呼び出しであり、テキスト＋Read1回の組み合わせは問題ない）
 
@@ -1041,7 +1054,7 @@ Read単体1回のみ・他の画像配信呼び出しなしのターンでのみ
 📷 サムネイル: 下に表示します
 🎵 BGM: ~/Desktop/SC/BGM/ に3曲（intro/main/outro）を用意しました。
    試聴してご確認ください（sc_bgm_final_check.py判定: {総合GO/差し替え推奨}）
-🖼️ シーン画像: Google Driveの images/ フォルダ（ep{NNN}/images/）でご確認ください
+🖼️ シーン画像: ~/Desktop/SC/ep{NNN}/images/ フォルダでご確認ください
    （画像QA: 全{total}シーン問題なし）
 
 すべて問題なければお知らせください。
@@ -1050,7 +1063,7 @@ Read単体1回のみ・他の画像配信呼び出しなしのターンでのみ
 
 **画像QAに未解決WARNINGが残っている場合、上記の🖼️部分を以下に差し替える：**
 ```
-🖼️ シーン画像: Google Driveの images/ フォルダ（ep{NNN}/images/）でご確認ください。
+🖼️ シーン画像: ~/Desktop/SC/ep{NNN}/images/ フォルダでご確認ください。
    このうち以下は自動修正・Claudeでの修正を試みましたが解決しませんでした。
    特に注意してご覧いただき、そのまま許容するか差し替えを希望するかお知らせください。
      S{N}: {issues の内容}

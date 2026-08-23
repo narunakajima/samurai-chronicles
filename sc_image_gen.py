@@ -5,7 +5,8 @@ sc_image_gen.py — Samurai Chronicles 静止画生成スクリプト
   python3 sc_image_gen.py --episode ep001
   python3 sc_image_gen.py --episode ep001 --scenes 1,3,9   # 特定シーンのみ再生成
 
-出力先: samurai-chronicles/images/{episode_id}/
+出力先: ~/Desktop/SC/{episode_id}/images/（確認用。/sc-new STEP4でユーザーOK後に
+  Google Driveのsamurai-chronicles/{episode_id}/images/へ移動する）
   S01.png, S02.png, ... S20.png
 
 キャラクター参照:
@@ -36,14 +37,8 @@ QA_MODEL = "gemini-3.6-flash"
 
 BASE_DIR = Path(__file__).parent  # スクリプト・エピソードJSONの場所
 
-# 生成素材の保存先（Google Drive）
-DRIVE_BASE = (
-    Path.home()
-    / "Library/CloudStorage"
-    / "GoogleDrive-naru.nakajima@gmail.com"
-    / "マイドライブ"
-    / "samurai-chronicles"
-)
+# 生成素材の保存先（確認用。/sc-new STEP4でOK後にGoogle Driveへ移動する）
+DESKTOP_BASE = Path.home() / "Desktop" / "SC"
 
 # ── ベースコンテキスト（全シーン共通） ───────────────────
 BASE_CONTEXT = (
@@ -417,7 +412,7 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
 
         # scene_id 順にソート
         scenes = sorted([s for s in all_scenes if s["scene_id"] in selected_ids], key=lambda s: s["scene_id"])
-        out_dir = DRIVE_BASE / episode_id / "images_shorts"
+        out_dir = DESKTOP_BASE / episode_id / "images_shorts"
         gen_func = generate_one_image_portrait
         label = "Shorts縦長(9:16)"
         # 再生成対象のファイルのみ削除（指定外シーンの既存PNGは保持）
@@ -430,7 +425,7 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
         scenes = ep["scenes"]
         if scene_filter:
             scenes = [s for s in scenes if s["scene_id"] in scene_filter]
-        out_dir = DRIVE_BASE / episode_id / "images"
+        out_dir = DESKTOP_BASE / episode_id / "images"
         gen_func = generate_one_image
         label = "横長(16:9)"
 
@@ -456,7 +451,7 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
         # 再構成する（ゼロから独立生成しない）。無ければ従来通りテキストのみで生成。
         ref_image = None
         if shorts:
-            main_img_path = DRIVE_BASE / episode_id / "images" / f"S{scene_id:02d}.png"
+            main_img_path = DESKTOP_BASE / episode_id / "images" / f"S{scene_id:02d}.png"
             if main_img_path.exists():
                 try:
                     ref_image = Image.open(main_img_path)
@@ -494,7 +489,7 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
     print(f"  平均試行回数: {avg_attempts:.2f}回/シーン（コスト効果測定用）")
     print(f"{'━'*60}\n")
 
-    episode_dir = DRIVE_BASE / episode_id
+    episode_dir = DESKTOP_BASE / episode_id
     episode_dir.mkdir(parents=True, exist_ok=True)
     qa_file = episode_dir / ("image_qa_result_shorts.json" if shorts else "image_qa_result.json")
     qa_output = {
@@ -541,7 +536,7 @@ def run_face(episode_id: str):
     )
     char_ref = load_character_ref(char_ref_name) if char_ref_name else ""
 
-    out_dir = DRIVE_BASE / episode_id / "images_shorts"
+    out_dir = DESKTOP_BASE / episode_id / "images_shorts"
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / "S00_face.png"
 
@@ -558,7 +553,7 @@ def run_face(episode_id: str):
     )
 
     # QA結果をJSONに保存（STEP 5D で読み込まれる）
-    episode_dir = DRIVE_BASE / episode_id
+    episode_dir = DESKTOP_BASE / episode_id
     episode_dir.mkdir(parents=True, exist_ok=True)
     qa_file = episode_dir / "image_qa_result_face.json"
     qa_output = {
