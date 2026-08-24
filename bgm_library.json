@@ -452,7 +452,8 @@
     ],
     "used_in": [
       "ep067",
-      "ep074"
+      "ep074",
+      "ep086"
     ]
   },
   {
@@ -932,6 +933,35 @@
     ],
     "used_in": [
       "ep085"
+    ]
+  },
+  {
+    "id": "ep086-BGM-intro",
+    "path": "BGM/ep086-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "strings",
+      "choir"
+    ],
+    "used_in": [
+      "ep086"
+    ]
+  },
+  {
+    "id": "ep086-BGM-main",
+    "path": "BGM/ep086-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep086"
     ]
   }
 ]

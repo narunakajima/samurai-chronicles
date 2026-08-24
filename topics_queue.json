@@ -873,14 +873,14 @@
     },
     {
       "episode_id": "ep086",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Christian Noblewoman Who Chose Death Over Dishonor: Hosokawa Gracia",
       "era": "Sengoku",
       "priority": "A",
       "person": "hosokawa_gracia",
       "angle": "character",
       "notes": "Christian daimyo's wife, chose death rather than be taken hostage before Sekigahara. First appearance.",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-24"
     },
     {
       "episode_id": "ep087",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-23",
+  "last_updated": "2026-08-24",
   "total_topics": 97
 }

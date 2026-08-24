@@ -1,0 +1,269 @@
+{
+  "episode_id": "ep086",
+  "episode_title": "The Christian Noblewoman Who Chose Death Over Dishonor: Hosokawa Gracia",
+  "youtube_title": "The Christian Noblewoman Who Ordered Her Own Death to Escape Capture",
+  "youtube_description": "In August 1600, soldiers surrounded a mansion in Osaka with orders to take a noblewoman hostage. She was the daughter of the man who murdered Oda Nobunaga, a secret convert who defied her own husband, and a woman who found a way to die on her own terms when her faith forbade her from choosing suicide. This is the story of Hosokawa Gracia.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 She ordered her own death. Her\n0:40 She was born Tama in 1563,\n1:33 In June 1582, everything...\n2:29 Her husband faced an...\n3:19 In 1584, Tadaoki finally...\n4:18 In the spring of 1587, with\n5:08 A full baptism by a priest\n6:00 When Tadaoki learned what his...\n6:44 That same year, Toyotomi...\n7:41 By the summer of 1600, Japan\n8:33 Mitsunari's plan was simple...\n9:24 On the twenty-fifth of...\n10:04 News of her death raced through\n10:50 That autumn, on the...\n11:44 Jesuit missionaries wrote of...\n12:35 Her death is often flattened...\n13:31 There is a symmetry worth...\n14:19 Today Hosokawa Gracia is...\n15:14 Hosokawa Gracia chose to die so\n16:03 Gracia's death did not save her\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Boxer, C. R. \"The Christian Century in Japan, 1549-1650.\" University of California Press, 1951.\n2. Turnbull, Stephen. \"Samurai Women 1184-1877.\" Osprey Publishing, 2010.\n3. Elison, George. \"Deus Destroyed: The Image of Christianity in Early Modern Japan.\" Harvard University Press, 1973.\n\n#HosokawaGracia #AkechiMitsuhide #SengokuPeriod #Sekigahara #KirishitanDaimyo #HosokawaTadaoki #JapaneseHistory #SamuraiHistory #SamuraiChronicles #SamuraiWomen",
+  "youtube_tags": [
+    "Hosokawa Gracia",
+    "Akechi Mitsuhide",
+    "Sengoku period",
+    "Battle of Sekigahara",
+    "Japanese Christian history",
+    "Hosokawa Tadaoki",
+    "samurai women",
+    "Japanese history",
+    "Samurai Chronicles",
+    "Osaka Castle"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Osaka, August 1600. Soldiers surround a noblewoman's mansion, ordered to take her hostage. Her faith forbids suicide. Her honor forbids capture. So how does a warrior's wife solve an impossible choice?",
+  "shorts_narration": "1600. Ishida Mitsunari's men surround her mansion, demanding a hostage. Her Christian faith forbids suicide. Her samurai honor forbids capture. So she ordered her own death instead. Hosokawa Gracia.",
+  "shorts_hook_lines": [
+    "SHE REFUSED.",
+    "SUICIDE WAS A SIN.",
+    "SO SHE CHOSE ANOTHER WAY."
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Hosokawa Gracia's face in dim candlelight, a composed Japanese noblewoman in her late thirties with large dark solemn eyes fixed directly on the camera, an unreadable expression of absolute calm on the edge of grief. Her long black hair falls loose past her shoulders, a glimpse of a small silver crucifix visible at her collarbone. Warm light from a single Japanese paper andon lantern below catching one side of her face, the other half in deep shadow — there must be NO Western-style wax candle or candlestick anywhere in the frame, only the paper-shaded andon lantern. Vertical portrait composition, face centered in the upper frame, no text or writing anywhere in the image, photorealistic cinematic film still.",
+  "thumbnail_prompt": "Hosokawa Gracia, a composed Japanese noblewoman in her late thirties in a rich red and gold patterned kimono, long black hair loose down her back, standing alone and perfectly still in the center of a grand Japanese mansion room, a small silver crucifix visible at her collarbone, her expression calm and resolved. Behind her, paper screen doors are lit from outside by the orange glow of torches and the massed silhouettes of armed soldiers surrounding the building. Warm firelight bleeding through the shoji panels against the cool dark interior around her. Wide cinematic composition, the single figure isolated against the encroaching threat. Japanese architecture only. No text or writing anywhere in the image.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "She ordered her own death. Her faith forbade suicide, so she found another way to die on her own terms. What made the daughter of a traitor choose a blade over a hostage's chains?",
+      "image_prompt": "Low over-the-shoulder view from behind Gracia inside a dim Japanese mansion room in Osaka: she kneels upright and motionless in a rich patterned kimono, seen from a rear three-quarter angle, her long black hair loose down her back, her hands folded in her lap around a small silver crucifix, facing a closed paper screen door. Beyond the shoji, the orange glow of torches throws the massed silhouettes of armed soldiers surrounding the building onto the paper. Warm firelight bleeding through the panels against the cold dark interior, her figure a dark shape against the light. No other figures in the room. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hosokawa_gracia",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "She was born Tama in 1563, third daughter of a rising general named Akechi Mitsuhide. At fifteen she was married into the Hosokawa house, a political match arranged by Oda Nobunaga to bind two of his most capable commanders together. The marriage suited everyone — her father's ambition, her husband's standing, Nobunaga's grand design for a unified Japan. Tama was intelligent, devout in the old ways, and by every account devoted to her new husband, Hosokawa Tadaoki. Nothing in those early years suggested the name she carried would one day become a curse.",
+      "image_prompt": "A formal Momoyama-period wedding ceremony inside a grand Japanese residence: a teenage Tama in an elaborate red and gold bridal kosode, long black hair unbound down her back, kneeling beside a young Hosokawa Tadaoki in dark formal robes and hakama with a period-accurate sakayaki hairstyle and small chonmage topknot, exchanging ceremonial cups of sake. Rows of anonymous attendants in formal dress kneel along the walls, gold-leaf folding screens behind them. Soft warm daylight through open shoji screens, an atmosphere of arranged solemnity rather than joy. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "hosokawa_gracia",
+      "zoom_anchor": {
+        "x": 0.34,
+        "y": 0.46
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In June 1582, everything collapsed. Her father, Akechi Mitsuhide, turned his army against his own lord and cornered Oda Nobunaga at the Honno-ji temple in Kyoto, forcing him to take his own life. It was one of the most shocking betrayals in Japanese history — and it barely lasted two weeks. Toyotomi Hideyoshi crushed Mitsuhide's forces at Yamazaki, and the man who had briefly ruled Japan was killed fleeing the battlefield. Tama was no longer a respected general's daughter. Overnight, she became the daughter of the most notorious traitor in the country.",
+      "image_prompt": "Honno-ji temple in Kyoto engulfed in flames at dawn, thick smoke rising into a pale sky. In the temple courtyard below, Akechi Mitsuhide's armored soldiers with period-accurate sakayaki topknots press forward with spears and matchlocks against the burning structure, banners bearing the akechi mon crest raised amid the chaos. Anonymous defenders make a desperate last stand in the doorway, no individual close-up faces, only the anonymous mass of the assault. Harsh orange firelight against a pre-dawn blue-grey sky. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Her husband faced an impossible choice. Keeping the traitor's daughter in his household could brand the entire Hosokawa clan as accomplices; killing her risked staining his honor forever. Tadaoki chose a third path. He sent Tama away to a remote mountain village called Midono, in the Tango hills, and kept her there under guard, isolated from court, from friends, from almost everyone she had known. It was not divorce, and it was not death. It was a kind of living erasure — and it lasted nearly two years before he allowed her back to Osaka.",
+      "image_prompt": "A remote mountain village in the Tango hills shrouded in mist, simple thatched-roof Japanese farmhouses among steep pine-covered slopes. Tama, in a plain undyed kimono stripped of noble ornament, long black hair loose down her back, walks under guard between two stern anonymous samurai escorts with sakayaki topknots along a narrow dirt path toward an isolated house, her face composed but distant. No other village life visible, an atmosphere of total isolation. Cool grey overcast light. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "pan_left",
+      "character_ref": "hosokawa_gracia",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.46
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1584, Tadaoki finally recalled her to his mansion in Osaka. But recall was not release. She lived behind guarded walls, watched by retainers loyal first to her husband, in a household still shadowed by her father's crime. Those who knew her described a woman of sharp intelligence and quiet composure, grieving in private for a family destroyed and a name she could never unmake. She read whatever she could, questioned everything, and found the old certainties of her upbringing offering less and less comfort. Something in her was searching — for meaning, for order, for a peace no one around her could give.",
+      "image_prompt": "Tama alone in a spare, elegantly furnished room inside the Hosokawa mansion in Osaka, seated beside a low writing desk, long black hair loose down her back, wearing a fine but subdued dark kimono, reading intently from a bound book. Through a half-open sliding door in the background, an anonymous retainer in dark formal dress stands watching her without expression. Soft grey daylight through shoji screens, an atmosphere of quiet surveillance. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "hosokawa_gracia",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.41
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In the spring of 1587, with Tadaoki away on campaign, Tama slipped out of the mansion in disguise and made her way to a small Christian mission chapel in Osaka. She had heard the missionaries preached a god who forgave, a faith that promised worth to every soul regardless of blood or family name. For a woman living under the weight of her father's disgrace, the idea struck like nothing had in years. She stayed, she listened, and she asked the priests question after question. She left that chapel a different person than she had entered it.",
+      "image_prompt": "A dim wooden interior of a small Christian mission chapel in 16th-century Osaka, built in restrained Japanese carpentry with a simple altar bearing a plain wooden crucifix, candlelight flickering. Tama, disguised in a plain hooded traveling cloak over her kimono with only her face visible, stands just inside the doorway gazing up at the altar with quiet astonishment. Two anonymous Jesuit missionaries in dark cassocks stand near the altar, one gesturing gently toward her. Warm candlelight against the cool shadow of the doorway. No legible writing anywhere. Photorealistic cinematic film still. CRITICAL STYLE REQUIREMENT: this must look like a raw photograph or film still from a live-action historical epic — real skin texture, real fabric weave, real depth of field, natural camera grain. Absolutely NOT a painting, NOT a digital illustration, NOT concept art with visible brushwork.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hosokawa_gracia",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "A full baptism by a priest was impossible — Tadaoki's guards controlled who could reach her. So the missionaries sent word in by letter, instructing one of her own ladies-in-waiting — already a baptized Christian — to perform the rite herself, inside the mansion. Tama took a new name: Gracia, meaning grace. It was, by every historical account, one of the strangest baptisms in the history of the mission in Japan — a noblewoman's faith sealed not by a priest at an altar, but in secret, by a servant, inside the household of a man who would have forbidden it outright.",
+      "image_prompt": "A private inner room of the Hosokawa mansion at night, lit only by a single oil lamp. Tama kneels with her head bowed, long black hair loose down her back, wearing a plain white under-kimono, as an anonymous Japanese lady-in-waiting in modest dark robes pours water gently over her forehead from a small vessel, lips moving in quiet prayer. A small wooden crucifix rests on a low table beside them. Two more anonymous attendants keep watch at the closed door. Intimate, hushed, secretive atmosphere, warm low lamplight against deep shadow. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "hosokawa_gracia",
+      "zoom_anchor": {
+        "x": 0.61,
+        "y": 0.48
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "When Tadaoki learned what his wife had done, he was furious. He was already a famously possessive husband — jealous enough, by legend, to have mutilated a servant he merely suspected of looking at her too long. A foreign faith that answered to no lord, no clan, and no husband was, to him, a direct challenge to his authority. He forbade her from attending Mass, from keeping a crucifix openly, from speaking of it at all. Gracia obeyed the letter of his orders. She never once obeyed them in her heart.",
+      "image_prompt": "Hosokawa Tadaoki, powerfully built with a short groomed beard and period-accurate sakayaki hairstyle, in dark formal robes, stands rigid with barely controlled fury in a lamplit room of the mansion, one hand clenched at his side, glaring down at Gracia who kneels calmly before him in a subdued kimono, her small crucifix worn on a cord tucked completely out of sight inside her collar — it must NOT be visible anywhere on her chest or clothing, her expression steady and unflinching despite his anger. Warm lamplight, tense composition, distance between the two figures emphasized. Japanese architecture only, no legible writing. Photorealistic cinematic film still. CRITICAL STYLE REQUIREMENT: this must look like a raw photograph or film still from a live-action historical epic — real skin texture, real fabric weave, real depth of field, natural camera grain. Absolutely NOT a painting, NOT a digital illustration, NOT concept art with visible brushwork.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hosokawa_tadaoki",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "That same year, Toyotomi Hideyoshi, now the most powerful man in Japan, issued an edict expelling the Christian missionaries and forbidding his senior vassals to convert without his permission. Being a Christian was no longer a private defiance of one husband — it was a political liability that could destroy a clan. Gracia practiced in secret for the rest of her life: no church, no priest, no public prayer, only a private devotion carried silently through a household that watched her every move. For thirteen years she lived two lives inside the same walls, and told almost no one which one was real.",
+      "image_prompt": "A public notice board in a Japanese town square where an official in formal dark robes reads aloud an edict to a gathered anonymous crowd, while in the background two Jesuit missionaries in dark cassocks are being escorted toward a waiting ship at the harbor, their belongings in bundles. Overcast grey daylight, an atmosphere of expulsion and quiet crisis. Japanese architecture and period ships only, no legible writing on the notice board itself. Photorealistic cinematic film still.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By the summer of 1600, Japan was sliding toward the war that would decide who ruled it. Tokugawa Ieyasu and Ishida Mitsunari were maneuvering their allies into position for what would become the Battle of Sekigahara. Tadaoki committed the Hosokawa clan to Ieyasu's side and rode north to join him, leaving his wife and household behind in the family's mansion in Osaka — a city that, the moment he left, belonged entirely to his enemies. Mitsunari needed a way to guarantee that men like Tadaoki would not change their minds. He found one.",
+      "image_prompt": "Dawn at the gate of the Hosokawa mansion in Osaka: Hosokawa Tadaoki in full dark lacquered armor with gold accents, period-accurate sakayaki hairstyle, mounting a horse as a column of armored retainers with spears assembles behind him ready to march. Gracia stands alone on the veranda in a formal kimono, long black hair loose down her back, watching him go with a composed, unreadable expression, no farewell embrace. Cool grey morning light, a sense of finality. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hosokawa_tadaoki",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Mitsunari's plan was simple and ruthless: seize the wives and children of the eastern lords still in Osaka and hold them hostage inside the castle, guaranteeing their husbands' loyalty or their families' deaths. Soldiers arrived at the Hosokawa mansion with the order. Gracia was to come to the castle immediately. She refused. To go was to hand Mitsunari a weapon against her husband's honor and his cause. To be dragged out by force was worse still. And to end her own life to escape capture, the ordinary samurai answer to this exact situation, was the one door her faith had sealed shut.",
+      "image_prompt": "The gate of the Hosokawa mansion in Osaka at dusk: a group of armed Ishida-allied samurai with period-accurate sakayaki topknots stand outside demanding entry, one holding up a sealed order, torches lit against the fading light. On the veranda above, Gracia stands with her retainer just behind her shoulder, both perfectly still, her expression calm refusal rather than fear. Long black hair loose down her back, a subdued formal kimono. Tense standoff composition, warm torchlight against cold dusk sky. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hosokawa_gracia",
+      "zoom_anchor": {
+        "x": 0.76,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "On the twenty-fifth of August, 1600, Gracia summoned her most trusted retainer, Ogasawara Shosai, and gave him an order no wife should have to give. Christian teaching forbade her from taking her own life — but it said nothing about accepting death from another's hand. She knelt, and at her command, Shosai ended her life. He then set the mansion ablaze around her body, so it could never be captured, displayed, or used as leverage against her husband, and took his own life in the fire that followed.",
+      "image_prompt": "Interior of the Hosokawa mansion at night, Gracia kneeling in profile in a plain white under-kimono, long black hair loose down her back, hands folded, eyes closed in absolute calm, her retainer Ogasawara Shosai kneeling just behind her with his head bowed in grief and duty, a spear laid across his knees. Flames have already begun licking up the wooden pillars and paper screens around them, smoke gathering near the ceiling. The composition holds on the instant before the flames engulf the room, dignified and still rather than violent. Warm firelight against deep shadow. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hosokawa_gracia",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "News of her death raced through Osaka within hours. Gracia was not the only wife the plan targeted, but she was the first, and word of what happened at the Hosokawa mansion horrified the other noble households Mitsunari meant to seize. Rather than frightening the remaining wives into compliance, her death made the entire scheme look monstrous. Within days, by most accounts, Mitsunari abandoned the hostage-taking plan outright. One woman's defiance had broken a strategy meant to control an entire city.",
+      "image_prompt": "A wide view over nighttime Osaka from a rooftop vantage, the distant glow and smoke of a burning mansion visible on the skyline. In the foreground, on the veranda of a neighboring noble residence, an anonymous noblewoman and her attendants stand frozen, staring toward the smoke with expressions of horror. Scattered lantern lights across the dark city. Somber wide composition emphasizing distance and rumor spreading. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "That autumn, on the battlefield at Sekigahara, Tokugawa Ieyasu crushed Ishida Mitsunari's forces in a single day and became the master of Japan. Tadaoki fought there for the winning side, his loyalty never in doubt — the very loyalty his wife had died refusing to let Mitsunari break. Word of her death had reached him months earlier; the famously volatile lord who had once forbidden her faith outright had said almost nothing. He arranged for her funeral to be held by Christian rite, quietly honoring in death the religion he had spent thirteen years trying to suppress.",
+      "image_prompt": "The battlefield at Sekigahara in the aftermath of victory, autumn mist over a valley scattered with banners and spent equipment, Tokugawa forces regrouping in the distance. In the foreground, Hosokawa Tadaoki stands alone in dented armor, period-accurate sakayaki hairstyle, having removed his helmet, staring at nothing in particular, his triumphant expression undercut by private grief. Cool grey autumn light, muted battlefield colors. Japanese architecture and period military equipment only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "hosokawa_tadaoki",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Jesuit missionaries wrote of her death within months, and their letters crossed the ocean to Europe, where a Japanese noblewoman's sacrifice for her faith became a sensation few in Rome could have anticipated. Within a century her story was staged as a play in courts far from Japan, performed for audiences who had never set foot there and would never fully understand the samurai code she died inside of. In Japan itself, she was remembered rather more carefully — not quite a saint, not quite a traitor's daughter, but something the old categories could not fully hold.",
+      "image_prompt": "A Jesuit missionary in a modest mission room in Japan, dark cassock, writing intently by candlelight, an unfinished letter covered in dense but illegible script on the desk before him, other completed and sealed letters stacked beside him ready for the ship to Europe. Warm candlelight against the dark room, an atmosphere of solemn record-keeping. Japanese architecture with simple mission furnishings, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Her death is often flattened into a single word — martyrdom, or suicide, or sacrifice — and each one misses what actually happened. She did not die by her own hand; Christian teaching forbade that absolutely. She died by choice, on her own terms, through an order she alone had the authority to give. It was neither the blade to her own throat that her culture expected of a defeated samurai's wife, nor a straightforward Christian death. It was something she built herself, in the space between two moral systems that were never supposed to fit together at all.",
+      "image_prompt": "A quiet close symbolic still life composition: a small silver crucifix resting beside an unsheathed short blade on a plain wooden surface, soft directional light isolating both objects against dark shadow, neither object touching the other. No hands, no figures, no text. A contemplative, deliberately ambiguous composition. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "There is a symmetry worth sitting with. Her life began under the shadow of one parent's ultimate act of disloyalty — a father who turned his sword against the lord who trusted him. It ended with an act of loyalty so complete that history still debates whether to call it beautiful or horrifying. She spent eighteen years as the daughter Japan associated with betrayal. She spent one afternoon making sure no one would ever say that about her again.",
+      "image_prompt": "Gracia seated alone in a quiet room, long black hair loose down her back, a plain dark kimono, holding a small unrolled paper hanging scroll bearing an ink portrait of her father Akechi Mitsuhide in both hands, studying it with a complicated, unreadable expression, neither anger nor forgiveness. Soft grey daylight through a paper screen, minimal room, contemplative stillness. Japanese architecture only, no legible writing. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "hosokawa_gracia",
+      "zoom_anchor": {
+        "x": 0.48,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Today Hosokawa Gracia is remembered in stained glass and statues at Catholic sites across Japan, and in the regions around Osaka and Kumamoto her story is told as local history rather than legend. She is one of the very few women of the Sengoku period whose name survives not attached to a father, a husband, or a son, but entirely to her own final decision. Four hundred years later, the question she forced everyone around her to answer is still the one that lingers: what does it cost to keep your honor when honor and faith refuse to agree?",
+      "image_prompt": "A tall stained glass window inside a modern Japanese Catholic church built in a simple Japanese-influenced architectural style — plain wooden pews, unpainted timber beams and posts, plaster walls, NOT a European stone Gothic cathedral — depicting a stylized image of a Momoyama-period noblewoman in kimono holding a small cross, her hair in a plain period-accurate style (not geisha-style ornamental hairpins), colored light streaming through the glass onto the pews below. The stained glass design contains only abstract decorative patterns and floral motifs — absolutely no characters, no kanji, no lettering, no text-like symbols anywhere on the glass, including any small medallion or border details. Quiet, reverent, timeless atmosphere. Photorealistic cinematic film still of the window and church interior.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 60,
+      "narration": "Hosokawa Gracia chose to die so that her husband's loyalty could never be questioned. Two hundred and seventy years later, another figure in Japanese history would build something meant to make loyalty itself obsolete — a national army that answered to no lord and no clan, only to the state. It made him one of the most important architects of modern Japan. It also made him a target. In a Kyoto inn, samurai who despised everything he had built came for him with swords. Next time, the man who armed Japan's future — and was killed by its past: Omura Masujiro.",
+      "image_prompt": "A dim Kyoto inn room at night in the early Meiji era, a modest oil lamp burning on a low table beside scattered papers and books on Western military science. A composed Japanese man in his forties wearing a plain dark kimono and short-cropped Meiji-era hair without a topknot sits reading, unaware of shadowy armed figures with drawn swords just visible through a gap in the sliding door behind him. Tense, ominous atmosphere, warm lamplight against encroaching darkness. Japanese architecture only, no legible writing. Photorealistic cinematic film still. There must be NO electrical switches, outlets, wiring, or any modern wall fixtures anywhere in the frame — this is a pre-electric era interior lit only by the oil lamp. The only light source in the entire room is the single oil lamp (andon) — there must be NO candles, NO candlesticks, and NO wax tapers anywhere in the frame.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Gracia's death did not save her husband's honor by accident — it was the deliberate final act of a woman who had spent eighteen years redefining what honor and faith could mean when neither would bend to the other. Whether you call it martyrdom, defiance, or simply a choice no one should have had to make, it is a story Japan has never stopped telling. If you want more stories of the people who shaped this country in moments no one else could have survived, subscribe to Samurai Chronicles, and join us for the next chapter in the history of the samurai.",
+      "image_prompt": "A wide, quiet view of a tranquil Japanese garden at the site of an old noble residence in modern Osaka at golden sunset, stone foundations and a single weathered memorial marker among carefully tended trees, warm light across still water in a small pond. No figures, no smoke, a calm and spacious composition marking a distant, resolved history. Japanese architecture and landscaping only, the memorial marker weathered smooth with no legible inscription or writing anywhere in the image. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep086-BGM-intro.mp3",
+    "main": "BGM/ep086-BGM-main.mp3",
+    "outro": "BGM/ep067-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/BFGDI0RNlQ8",
+  "shorts_url": "https://youtu.be/MrCkfQRM3bg",
+  "scheduled_at": "2026-09-03 03:00"
+}

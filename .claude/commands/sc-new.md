@@ -877,10 +877,13 @@ done
 
 # /tmp の残 credit.txt をすべて削除
 rm -f /tmp/sc_bgm_credits/*.credit.txt
-
-# デスクトップの SC/ フォルダを削除（thumbnail・制作確認書は mv 済み、BGM残骸も含め一括削除）
-rm -rf "$HOME/Desktop/SC"
 ```
+
+**⚠️ 2026-08-24〜変更: `~/Desktop/SC/` フォルダはこの時点では削除しない。**
+以前はここで `rm -rf "$HOME/Desktop/SC"` していたが、ユーザーが動画完成後もDesktopフォルダ上で
+BGM・サムネイル・完成動画をまとめて確認したいとの要望により、削除タイミングをSTEP 6完了後・
+ユーザーの最終OK後まで遅らせるように変更した。STEP 4完了時点ではDriveへの登録（画像・BGM）のみ
+行い、Desktopの残骸（BGM候補ファイル・サムネイル・制作確認書の元ファイル等）はそのまま残す。
 
 credit.txt が存在した場合（CC BY）は、制作確認書の BGM 欄を更新する：
 - BGM タイトル・作者名
@@ -1137,18 +1140,37 @@ python3 sc_video_gen.py --episode ep{NNN}      # 動画生成（本編 + Shorts�
 python3 sc_subtitle_gen.py --episode ep{NNN}   # 字幕生成
 ```
 
+出力は Google Drive の `ep{NNN}/output/` に生成される。完了後、ユーザーが Desktop 上で
+サムネイル・BGM・完成動画をまとめて確認できるよう、Drive の出力を `~/Desktop/SC/` へコピーする
+（2026-08-24〜。move ではなく copy — Drive 側が正本のまま）：
+
+```bash
+DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/output"
+cp "$DRIVE/Samurai Chronicles ep{NNN}.mp4" "$HOME/Desktop/SC/"
+cp "$DRIVE/ep{NNN}_shorts.mp4" "$HOME/Desktop/SC/"
+cp "$DRIVE/ep{NNN}.srt" "$HOME/Desktop/SC/"
+```
+
 完了後：
 ```
 ep{NNN} の制作が完了しました。
 
-出力ファイル:
+出力ファイル（~/Desktop/SC/ に確認用コピーを用意しました）:
   - Samurai Chronicles ep{NNN}.mp4
   - ep{NNN}_shorts.mp4
   - ep{NNN}.srt
 
-動画を確認してから /sc-upload でアップロードしてください。
+動画を確認してください。問題なければお知らせください（確認後、Desktopの作業フォルダを削除します）。
+確認できたら /sc-upload でアップロードしてください。
 ```
 
 **⚠️ 重要:** STEP 6 完了後はここで必ず停止する。
 `sc_sns_up.py` の自動実行・`/sc-upload` の自動呼び出しは絶対に行わない。
 アップロードはユーザーが明示的に `/sc-upload` を実行した時のみ行う。
+
+**Desktopフォルダの削除（2026-08-24〜）:** ユーザーが動画を確認し「OK」等の確認が取れたら、
+`rm -rf "$HOME/Desktop/SC"` でDesktopの作業フォルダ（BGM候補・サムネイル・動画コピー・
+制作確認書の元ファイル等）を削除する。Drive側にはSTEP4・STEP6でそれぞれ登録・コピー済みのため、
+削除しても実データは失われない。ユーザーが動画に問題を指摘した場合は、該当箇所を修正して
+STEP6を再実行し、Desktopへの再コピー→再確認のループを繰り返す（このループが終わるまで
+Desktopフォルダは削除しない）。
