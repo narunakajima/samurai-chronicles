@@ -626,7 +626,8 @@
       "cinematic"
     ],
     "used_in": [
-      "ep072"
+      "ep072",
+      "ep087"
     ]
   },
   {
@@ -962,6 +963,32 @@
     ],
     "used_in": [
       "ep086"
+    ]
+  },
+  {
+    "id": "ep087-BGM-intro",
+    "path": "BGM/ep087-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Cinematic Crime Suspense by tyops (freesound.org) — CC BY 4.0",
+    "tags": [
+      "cinematic"
+    ],
+    "used_in": [
+      "ep087"
+    ]
+  },
+  {
+    "id": "ep087-BGM-outro",
+    "path": "BGM/ep087-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "strings"
+    ],
+    "used_in": [
+      "ep087"
     ]
   }
 ]

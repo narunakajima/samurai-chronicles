@@ -18,6 +18,25 @@ Lamps Whisper と同じ認証ファイルを使用:
 ユーザーにエピソード番号を聞く（例: 1、001、ep001 などどの形式でも受け付ける）。
 内部では `ep001` 形式に正規化する。
 
+**Desktopフォルダの扱い（2026-08-25〜）:** `/sc-new` STEP 6完了後、`~/Desktop/SC/` に
+確認用コピー（サムネイル・BGM・完成動画）が残っている場合がある。ユーザーが `/sc-upload` を
+明示的に実行した時点で「動画を確認しOKした」とみなし、動画確認への個別のOK待ちは行わない
+（`/sc-upload` の起動自体が確認完了の意思表示のため）。
+
+`rm -rf "$HOME/Desktop/SC"` を実行する**前に必ず**、Google Drive側に該当エピソードの
+必要ファイルが揃っていることを確認する（削除後に不足が発覚すると復旧できないため）：
+```bash
+DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}"
+ls "$DRIVE/images" | wc -l          # 本編シーン画像（通常20枚）
+ls "$DRIVE/images_shorts" | wc -l   # Shorts画像
+ls "$DRIVE/audio" | wc -l           # 音声（シーン数+teaser+shorts）
+ls "$DRIVE/output"                  # 本編mp4・shortsmp4・srtの3点
+ls "$DRIVE" | grep -E "thumbnail|制作確認書"
+```
+件数がSTEP5C統合確認時点の想定と大きく食い違う、またはファイルが見当たらない場合は
+削除を中止し、先にDriveへの登録・コピー漏れを解消してからクリーンアップする。
+確認できたら `rm -rf "$HOME/Desktop/SC"` でクリーンアップしてよい。
+
 特別な指定がある場合のみ追加オプションを使用:
 - 「今すぐ公開」「即時」→ `--now`
 - 「○月○日 ○時に公開」→ `--publish-at "YYYY-MM-DD HH:MM"`

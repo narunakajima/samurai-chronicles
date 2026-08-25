@@ -884,14 +884,14 @@
     },
     {
       "episode_id": "ep087",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Man Who Built Japan's Modern Army — And Was Killed For It: Omura Masujiro",
       "era": "Meiji",
       "priority": "A",
       "person": "omura_masujiro",
       "angle": "legacy",
       "notes": "Architect of the Meiji conscript army, assassinated by samurai who opposed reform. First appearance.",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-25"
     },
     {
       "episode_id": "ep088",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-24",
+  "last_updated": "2026-08-25",
   "total_topics": 97
 }
