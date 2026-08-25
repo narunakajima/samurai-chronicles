@@ -372,9 +372,16 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
 
     px, py = anchor
 
-    # 固定速度ズーム: KB_ZOOM_SPEED [倍率/frame]、上限は KB_ZOOM_FACTOR
-    zoom_step = KB_ZOOM_SPEED
-    z_end = round(min(1.0 + zoom_step * total_frames, z), 6)   # zoom_in の到達倍率
+    # zoom_in速度: 固定速度(KB_ZOOM_SPEED)だと、クリップが約28秒を超える長さの
+    # 場合に最大倍率(KB_ZOOM_FACTOR)へ途中到達し、残り時間ズームが完全静止して
+    # しまう（kagaku-life kl004で発覚、2026-08-25）。zoom_outは元々クリップ全長に
+    # 応じた可変速度（z_step_dn）で最後まで動き続ける設計のため、zoom_inも同様に
+    # 「固定速度」と「クリップ全長で割った可変速度」の遅い方を採用する。min()に
+    # より必ずどちらか遅い方の上限に収まるため、KB_ZOOM_FACTORを超過することは
+    # ない（短いクリップは従来通りの控えめな速度、長いクリップは最後まで途切れず
+    # 動きKB_ZOOM_FACTORちょうどで終わる）。
+    zoom_step = min(KB_ZOOM_SPEED, (z - 1.0) / max(total_frames, 1))
+    z_end = round(1.0 + zoom_step * total_frames, 6)   # zoom_in の到達倍率
 
     # zoom_out: 常に KB_ZOOM_FACTOR(1.40x)スタート → クリップ尺内に1.0xまで完全に戻す
     z_step_dn = round((z - 1.0) / max(total_frames, 1), 8)     # zoom_out の速度（比例）
