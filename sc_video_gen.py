@@ -423,21 +423,28 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
     elif effect in ("pan_zoom_out_lr", "pan_zoom_out_rl"):
         # フェーズ1（60%）: 1.40倍で片側→反対側へパン
         # フェーズ2（40%）: パン先の位置からズームアウト→全体表示
+        # 各フェーズは smoothstep（ease-in-out, 3t^2-2t^3）でイージングする。
+        # 線形補間だと動き出し・フェーズ切り替わり地点（60%地点）で速度が
+        # 不連続にジャンプしカクついて見えたため（2026-08-25、テスト動画で確認）。
+        # smoothstepはt=0/t=1で速度がゼロになるため、フェーズ1の終端とフェーズ2の
+        # 始端がどちらも速度ゼロで滑らかにつながる。
         pf = int(total_frames * 0.6)           # パン終了フレーム
         zf = max(total_frames - pf, 1)         # ズームアウトフレーム数
-        z_step_dn = round((z - 1.0) / zf, 6)
         pan_range = round(buf_w * (1 - 1 / z), 4)  # z倍時の最大パン量
 
-        # z: パン中は固定(z)、ズームアウト中は線形減少→1.0
-        z_expr = (f"if(lt(on\\,{pf})\\,"
-                  f"{z}\\,"
-                  f"max({z}-{z_step_dn}*(on-{pf})\\,1))")
+        t1 = f"(on/{pf})"
+        ease1 = f"(3*pow({t1}\\,2)-2*pow({t1}\\,3))"
+        t2 = f"((on-{pf})/{zf})"
+        ease2 = f"(3*pow({t2}\\,2)-2*pow({t2}\\,3))"
+
+        # z: パン中は固定(z)、ズームアウト中は smoothstep で減少→1.0
+        z_expr = f"if(lt(on\\,{pf})\\,{z}\\,({z}-({z}-1)*{ease2}))"
         if effect == "pan_zoom_out_lr":
             # 左側スタート → 右側パン → 右端固定でズームアウト
-            x_expr = f"if(lt(on\\,{pf})\\,{pan_range}*on/{pf}\\,iw-iw/zoom)"
+            x_expr = f"if(lt(on\\,{pf})\\,{pan_range}*{ease1}\\,iw-iw/zoom)"
         else:
             # 右側スタート → 左側パン → 左端固定でズームアウト
-            x_expr = f"if(lt(on\\,{pf})\\,{pan_range}*(1-on/{pf})\\,0)"
+            x_expr = f"if(lt(on\\,{pf})\\,{pan_range}*(1-{ease1})\\,0)"
         vf = (
             f"{prescale},"
             f"zoompan=z='{z_expr}'"
