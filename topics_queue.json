@@ -895,14 +895,14 @@
     },
     {
       "episode_id": "ep088",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Samurai Who Saved Edo Without a Single Sword Drawn: Katsu Kaishu",
       "era": "Bakumatsu",
       "priority": "A",
       "person": "katsu_kaishu",
       "angle": "key_event",
       "notes": "Negotiated the bloodless surrender of Edo Castle 1868. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-25"
     },
     {
       "episode_id": "ep089",
@@ -912,8 +912,8 @@
       "priority": "A",
       "person": "abe_masahiro",
       "angle": "key_event",
-      "notes": "Rōjū who handled Perry's 1853 ultimatum. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
-      "last_updated": "2026-07-23"
+      "notes": "Rōjū who handled Perry's 1853 ultimatum. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。⚠️タイトルの「in 40 Days」は史実的根拠が薄い（ep088制作時にOpusが同種の表現を史実的根拠不足と判断し削除した経緯あり。ペリーは1853年7月来航時に「翌春再来」を告げており、40日という具体的期限の典拠が不明）。STEP 2A/3Aで年号・期間表現を要検証、タイトル自体の修正も検討すること。",
+      "last_updated": "2026-08-26"
     },
     {
       "episode_id": "ep090",

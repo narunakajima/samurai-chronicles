@@ -304,11 +304,14 @@ def infer_zoom_anchor(image_prompt: str, character_ref: str = None,
     """ズーム焦点座標と推奨エフェクトを返す。
 
     優先順位:
-      1. zoom_anchor（JSON に Claude が画像を見て書き込んだ精確な座標）がある場合はそれを使用
+      1. zoom_anchor（Gemini Visionが画像を見て書き込んだ判定結果）がある場合はそれを使用
+         - {"multi_person": true} → 2人以上の構図として扱う
+         - {"x":..., "y":...} → その座標を1人構図のズーム焦点として使う
       2. なければ image_prompt のキーワードからフォールバック推測
 
     エフェクト決定ルール:
-      - 両端に2人（left + right 両方検出）→ pan_zoom_out_lr / rl をランダム選択
+      - 2人以上（zoom_anchor.multi_person、またはテキストからleft+right両方検出）
+        → pan_zoom_out_lr / rl をランダム選択
       - 1人（character_ref あり）→ zoom_in（焦点は zoom_anchor or テキスト推測）
       - 人物なし・3人以上（character_ref なし）→ zoom_out（中央、1.40x → 1.0x）
 
@@ -323,8 +326,9 @@ def infer_zoom_anchor(image_prompt: str, character_ref: str = None,
     right_hits = any(w in text for w in ["on the right", "right side", "right of frame",
                                           "right foreground", "right corner", "right third"])
 
-    # 両端2人構図 → パン＋ズームアウト（方向はランダム）
-    if left_hits and right_hits:
+    # Gemini Vision が2人以上の構図と判定済み、またはテキストから両端2人と判明
+    # → パン＋ズームアウト（方向はランダム）
+    if (zoom_anchor and zoom_anchor.get("multi_person")) or (left_hits and right_hits):
         import random
         effect = random.choice(["pan_zoom_out_lr", "pan_zoom_out_rl"])
         return (0.5, 0.5, effect)

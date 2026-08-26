@@ -12,8 +12,14 @@ episode JSONにzoom_anchorを書き込む。
 圧迫するため、sc_image_gen.pyの画像QAと同じ考え方でGemini Visionへ委任する
 方式に変更した。
 
-対象シーン: character_ref が設定され、かつ2人構図でない
-（image_promptに "on the left"/"on the right" が両方は含まれない）シーンのみ。
+対象シーン: character_ref が設定されているシーン。
+2人構図かどうかは image_prompt のキーワードだけでは判定しない
+（"facing" "opposite" "two-shot" のような表現は "on the left"/"on the right"
+を伴わないことが多く、旧ロジックでは二人シーンを1人構図として誤判定していた
+— 2026-08-26、ep088のKatsu/Saigo対談シーンで発覚）。
+代わりにGemini Vision自体に「画面内の主要な人物が1人か2人以上か」を判定させ、
+2人以上の場合は zoom_anchor に {"multi_person": true} を書き込む。
+sc_video_gen.py 側はこれを見て pan_zoom_out（両者を収める構図）に切り替える。
 """
 
 import argparse
@@ -39,26 +45,41 @@ DRIVE_BASE = (
 
 
 def is_target_scene(scene: dict) -> bool:
-    """zoom_anchorを判定すべきシーンか（1人構図・character_refあり）。"""
-    if not scene.get("character_ref"):
-        return False
-    prompt = scene.get("image_prompt", "")
-    if "on the left" in prompt and "on the right" in prompt:
-        return False  # 2人構図
-    return True
+    """zoom_anchorを判定すべきシーンか（character_refあり）。
+    1人構図か2人構図かはこの時点では判定しない（Gemini Visionに委ねる）。"""
+    return bool(scene.get("character_ref"))
 
 
 def determine_zoom_anchor(client, image_path: Path) -> dict:
-    """Gemini Visionで主被写体（顔〜胸あたり）の重心を正規化座標で判定する。"""
+    """Gemini Visionで主被写体の構図を判定する。
+
+    画面内の主要な人物が2人以上いる場合は {"multi_person": true} を返す
+    （このシーンは1点ズームではなく両者を収めるpan_zoom_outで扱うべきため）。
+    主要な人物が1人の場合は、その顔〜胸あたりの重心を正規化座標で返す。
+    """
     image = Image.open(image_path)
     prompt = (
-        "This is a cinematic concept-art still from a historical documentary. "
-        "Identify the main human subject's face-to-chest area center of mass "
-        "(not the feet, not the background, not any secondary/background figures) "
-        "and return its position as normalized coordinates where "
-        "x: 0.0=left edge, 1.0=right edge; y: 0.0=top edge, 1.0=bottom edge.\n\n"
-        "Respond with ONLY a JSON object, no other text, in this exact format:\n"
-        '{"x": 0.0, "y": 0.0}'
+        "This is a cinematic concept-art still from a historical documentary.\n"
+        "Classify this image's composition as exactly one of:\n\n"
+        "- SINGLE: there is one clearly dominant human subject — the one most "
+        "central, closest to camera, most sharply lit/in focus, or the one other "
+        "people are oriented toward/addressing. This applies even if several other "
+        "people are also visible (a crowd, students, guards, soldiers, bystanders), "
+        "as long as one figure is clearly the compositional focus and the others are "
+        "secondary/supporting.\n"
+        "- TWO_SHOT: there are exactly two people who are CO-EQUAL subjects of the "
+        "shot — similar size and visual prominence, neither one clearly dominant over "
+        "the other, both clearly posed as the joint focus (e.g. two people facing "
+        "each other in conversation, seated across a table from each other). Do NOT "
+        "classify as TWO_SHOT just because 2+ people are visible — only when there is "
+        "no single dominant figure among them.\n\n"
+        "If TWO_SHOT, respond with ONLY:\n"
+        '{"multi_person": true}\n\n'
+        "If SINGLE, identify the dominant subject's face-to-chest area center of mass "
+        "and respond with ONLY:\n"
+        '{"x": 0.0, "y": 0.0}\n'
+        "(x: 0.0=left edge, 1.0=right edge; y: 0.0=top edge, 1.0=bottom edge)\n\n"
+        "Respond with ONLY the JSON object, no other text."
     )
     response = client.models.generate_content(
         model=MODEL,
@@ -69,6 +90,8 @@ def determine_zoom_anchor(client, image_path: Path) -> dict:
         text = re.sub(r"^```(?:json)?\s*", "", text)
         text = re.sub(r"\s*```$", "", text)
     result = json.loads(text)
+    if result.get("multi_person"):
+        return {"multi_person": True}
     return {"x": round(float(result["x"]), 2), "y": round(float(result["y"]), 2)}
 
 
@@ -110,7 +133,10 @@ def run(episode_id: str, scene_filter: list = None):
             anchor = determine_zoom_anchor(client, img_path)
             scene["zoom_anchor"] = anchor
             updated += 1
-            print(f"  S{scene_id:02d}: x={anchor['x']}, y={anchor['y']}")
+            if anchor.get("multi_person"):
+                print(f"  S{scene_id:02d}: multi_person（two-shot構図と判定）")
+            else:
+                print(f"  S{scene_id:02d}: x={anchor['x']}, y={anchor['y']}")
         except Exception as e:
             print(f"  ⚠️  S{scene_id:02d}: 判定失敗（{e}）— zoom_anchorはnullのまま")
             failed.append(scene_id)

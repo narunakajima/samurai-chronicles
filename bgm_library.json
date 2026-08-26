@@ -714,7 +714,8 @@
       "cinematic"
     ],
     "used_in": [
-      "ep075"
+      "ep075",
+      "ep088"
     ]
   },
   {
@@ -823,7 +824,8 @@
       "cinematic"
     ],
     "used_in": [
-      "ep080"
+      "ep080",
+      "ep088"
     ]
   },
   {
@@ -989,6 +991,20 @@
     ],
     "used_in": [
       "ep087"
+    ]
+  },
+  {
+    "id": "ep088-BGM-intro",
+    "path": "BGM/ep088-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "dark",
+      "orchestral"
+    ],
+    "used_in": [
+      "ep088"
     ]
   }
 ]
