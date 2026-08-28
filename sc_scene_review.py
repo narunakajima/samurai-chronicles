@@ -148,14 +148,18 @@ def data_uri(path: Path, mime: str = None) -> str:
     return f"data:{mime};base64,{b64}"
 
 
+def _play_button(src: str, label: str, button_text: str) -> str:
+    return (
+        f'<button type="button" class="media-play" '
+        f'data-src="{html_escape(src)}" data-label="{html_escape(label)}">'
+        f'{html_escape(button_text)}</button>'
+    )
+
+
 def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path,
                audio_dir: Path, bgm_files: dict, overall_review: str = "") -> str:
-    # BGMは役割ごとに1回だけ埋め込む（シーンごとに重複埋め込みするとファイルサイズが膨れるため）。
+    # BGMは役割ごとに1回だけデータURI化する（シーンごとに再エンコードするとファイルサイズが膨れるため）。
     bgm_uris = {role: data_uri(path, "audio/mpeg") for role, path in bgm_files.items()}
-    bgm_elements = "\n".join(
-        f'<audio id="bgm-{role}" preload="none" src="{uri}"></audio>'
-        for role, uri in bgm_uris.items()
-    )
     bgm_role_label = {"intro": "序盤", "main": "中盤", "outro": "終盤"}
 
     scene_roles = compute_scene_bgm_roles(scenes)
@@ -174,20 +178,16 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
             if img_path.exists()
             else '<div class="missing">画像が見つかりません</div>'
         )
-        audio_tag = (
-            f'<audio controls src="{data_uri(audio_path, "audio/wav")}"></audio>'
+        narration_button = (
+            _play_button(data_uri(audio_path, "audio/wav"), f"S{sid:02d} ナレーション", "▶ ナレーション再生")
             if audio_path.exists()
-            else '<div class="missing">音声が見つかりません</div>'
+            else '<span class="missing-inline">音声が見つかりません</span>'
         )
         if role in bgm_uris:
-            bgm_controls = (
-                f'<div class="bgm-controls">'
-                f'<button class="bgm-toggle" data-role="{role}" data-label="{bgm_role_label[role]}" '
-                f'onclick="toggleBgm(\'{role}\')">▶ {bgm_role_label[role]}BGM再生</button>'
-                f'</div>'
-            )
+            bgm_button = _play_button(bgm_uris[role], f"BGM:{bgm_role_label[role]}", f"▶ {bgm_role_label[role]}BGM再生")
         else:
-            bgm_controls = f'<div class="bgm-controls missing">{bgm_role_label[role]}BGMが見つかりません</div>'
+            bgm_button = f'<span class="missing-inline">{bgm_role_label[role]}BGMが見つかりません</span>'
+        play_row = f'<div class="play-row">{narration_button}{bgm_button}</div>'
 
         rows.append(f"""
         <section class="scene">
@@ -197,8 +197,7 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
           <div class="scene-body">
             <div class="scene-image">{img_tag}</div>
             <div class="scene-text">
-              {audio_tag}
-              {bgm_controls}
+              {play_row}
               <p class="en">{html_escape(narr['en'])}</p>
               <p class="ja">{html_escape(narr['ja'])}</p>
             </div>
@@ -223,7 +222,7 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
 <title>{episode_id} シーン確認</title>
 <style>
   body {{ font-family: -apple-system, "Hiragino Sans", sans-serif; background: #1c1c1e; color: #eee;
-          max-width: 900px; margin: 0 auto; padding: 24px; }}
+          max-width: 900px; margin: 0 auto; padding: 24px 24px 84px; }}
   h1 {{ font-size: 20px; }}
   .scene {{ border-bottom: 1px solid #444; padding: 20px 0; }}
   .scene h2 {{ font-size: 16px; margin: 0 0 12px; }}
@@ -232,54 +231,70 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
   .scene-body {{ display: flex; gap: 16px; flex-wrap: wrap; }}
   .scene-image img {{ max-width: 420px; width: 100%; border-radius: 6px; display: block; }}
   .scene-text {{ flex: 1; min-width: 260px; }}
-  audio {{ width: 100%; margin-bottom: 12px; }}
   .en {{ color: #aaa; font-size: 13px; line-height: 1.5; }}
   .ja {{ color: #fff; font-size: 15px; line-height: 1.7; margin-top: 8px; }}
   .missing {{ color: #e66; font-size: 13px; padding: 40px 0; text-align: center; border: 1px dashed #644; }}
   .bgm-role {{ color: #f4b942; font-weight: normal; margin-left: 12px; font-size: 13px; }}
-  .bgm-controls {{ margin-bottom: 12px; }}
-  .bgm-controls button {{ background: #333; color: #eee; border: 1px solid #555; border-radius: 4px;
-                           padding: 4px 10px; margin-right: 6px; font-size: 13px; cursor: pointer; }}
-  .bgm-controls button:hover {{ background: #444; }}
-  .bgm-controls.missing {{ color: #e66; font-size: 12px; }}
+  .play-row {{ display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }}
+  .media-play {{
+    font-size: 13px; padding: 4px 10px; border-radius: 6px; border: 1px solid #555;
+    background: #333; color: #eee; cursor: pointer;
+  }}
+  .media-play.playing {{ background: #2f5d8a; border-color: #2f5d8a; }}
+  .media-play:hover {{ background: #444; }}
+  .missing-inline {{ color: #e66; font-size: 12px; }}
   .overall {{ background: #262629; border: 1px solid #444; border-radius: 8px; padding: 16px 20px; margin-bottom: 8px; }}
   .overall h2 {{ font-size: 15px; margin: 0 0 10px; color: #f4b942; }}
   .overall-body {{ font-size: 14px; line-height: 1.8; color: #ddd; margin: 0; }}
+  #media-player-bar {{
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+    display: flex; align-items: center; gap: 12px;
+    background: #111; border-top: 1px solid #444;
+    padding: 10px 16px;
+  }}
+  #media-player-label {{ font-size: 12px; color: #999; white-space: nowrap; flex-shrink: 0; }}
+  #media-player {{ flex: 1; width: 100%; }}
 </style>
 </head>
 <body>
 <h1>{episode_id} — シーン確認（画像 × ナレーション × BGM × 日本語訳）</h1>
 <p style="color:#999;font-size:13px;">動画生成前の突き合わせ確認用。ナレーション音声・そのシーンのBGMを聴きながら、画像内容と日本語訳が対応しているか確認してください。</p>
 {overall_block}
-{bgm_elements}
 {"".join(rows)}
+<div id="media-player-bar">
+  <span id="media-player-label">未選択</span>
+  <audio id="media-player" controls preload="none"></audio>
+</div>
 <script>
-function toggleBgm(role) {{
-  const el = document.getElementById('bgm-' + role);
-  if (!el) return;
-  if (el.paused) {{
-    ['intro', 'main', 'outro'].forEach(function(r) {{
-      if (r !== role) {{
-        const other = document.getElementById('bgm-' + r);
-        if (other) other.pause();
-      }}
-    }});
-    el.play();
-  }} else {{
-    el.pause();
+  // ナレーション・BGMどちらの再生ボタンも、ページ下部に固定した単一のaudio要素
+  // （ネイティブcontrols＝シークバー付き）を共有する（トグル式）。別のボタンで
+  // 再生を押すと自動的に切り替わる（同時に複数音源が鳴らないように）。同じ
+  // ボタンをもう一度押すと停止する。kagaku-lifeのkl_review_gen.pyと同じ方式。
+  const player = document.getElementById('media-player');
+  const playerLabel = document.getElementById('media-player-label');
+  const playButtons = document.querySelectorAll('.media-play');
+  function clearPlayingState() {{
+    playButtons.forEach(b => {{ b.classList.remove('playing'); b.textContent = b.dataset.idleText; }});
   }}
-}}
-function setBgmButtonState(role, playing) {{
-  document.querySelectorAll('button[data-role="' + role + '"]').forEach(function(btn) {{
-    btn.textContent = playing ? ('⏸ ' + btn.dataset.label + 'BGM停止') : ('▶ ' + btn.dataset.label + 'BGM再生');
+  playButtons.forEach(btn => {{
+    btn.dataset.idleText = btn.textContent;
+    btn.addEventListener('click', () => {{
+      const src = btn.getAttribute('data-src');
+      if (btn.classList.contains('playing')) {{
+        player.pause();
+        clearPlayingState();
+        return;
+      }}
+      clearPlayingState();
+      player.src = src;
+      player.currentTime = 0;
+      player.play();
+      btn.classList.add('playing');
+      btn.textContent = '⏸ 停止';
+      playerLabel.textContent = btn.getAttribute('data-label') || '';
+    }});
   }});
-}}
-['intro', 'main', 'outro'].forEach(function(role) {{
-  const el = document.getElementById('bgm-' + role);
-  if (!el) return;
-  el.addEventListener('play', function() {{ setBgmButtonState(role, true); }});
-  el.addEventListener('pause', function() {{ setBgmButtonState(role, false); }});
-}});
+  player.addEventListener('ended', clearPlayingState);
 </script>
 </body>
 </html>

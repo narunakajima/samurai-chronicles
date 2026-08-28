@@ -21,6 +21,7 @@ topics_queue.json から次のトピックを選び、動画生成まで一気�
 | STEP 5A/5B | TTS生成 + 画像生成 16:9（並行） | 約10分 |
 | STEP 5A/5B | TTS（teaser・shorts）+ 画像生成 9:16（並行） | 約3分 |
 | STEP 5C | 画像QA（＋再生成時 +3〜5分） | 約3〜5分 |
+| STEP 5C | シーン確認ページ生成（画像×音声×BGM×日本語訳） | 約1分 |
 | *(確認待ち)* | サムネイル・BGM・シーン画像を1回のメッセージでまとめて確認 | 要確認 |
 | STEP 4  | Google Driveへ移動・BGM本登録（統合確認のOK後に実行） | 約1分 |
 | STEP 5D | zoom_anchor 判定 | 約3〜5分 |
@@ -1047,6 +1048,19 @@ cat ~/Desktop/SC/ep{NNN}/image_qa_result_face.json
 [未解決] S{N}: {issues の内容}
 ```
 
+### シーン確認ページの生成（2026-08-28〜）
+
+統合確認メッセージを組み立てる前に、画像・ナレーション音声・BGM・日本語訳を1ページで
+突き合わせ確認できるHTMLページを生成する（`sc_scene_review.py`。この時点ではまだ
+STEP4未実行のため、画像・BGM候補ともDesktop/SC側から読み込まれる）：
+
+```bash
+python3 sc_scene_review.py --episode ep{NNN}
+```
+
+出力: `~/Desktop/SC/ep{NNN}_review.html`（ブラウザで開いて確認する用。Finderの自動オープンは
+行わない）。生成後は下記の統合確認メッセージにこのページのパスを含める。
+
 ### 統合確認 — サムネイル・BGM・シーン画像をまとめて確認（2026-08-04〜）
 
 STEP3で準備済みのサムネイル・BGMと、ここまでの画像QA結果を**1回のメッセージ**で
@@ -1074,6 +1088,8 @@ Read単体1回のみ・他の画像配信呼び出しなしのターンでのみ
    試聴してご確認ください（sc_bgm_final_check.py判定: {総合GO/差し替え推奨}）
 🖼️ シーン画像: ~/Desktop/SC/ep{NNN}/images/ フォルダでご確認ください
    （画像QA: 全{total}シーン問題なし）
+🎬 シーン確認ページ: ~/Desktop/SC/ep{NNN}_review.html をブラウザで開くと、
+   画像・ナレーション音声・BGM・日本語訳をシーンごとに突き合わせて確認できます
 
 すべて問題なければお知らせください。
 ```

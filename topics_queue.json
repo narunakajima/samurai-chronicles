@@ -906,7 +906,7 @@
     },
     {
       "episode_id": "ep089",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Bureaucrat Who Had to Decide Japan's Fate in 40 Days: Abe Masahiro and the Black Ships",
       "era": "Bakumatsu",
       "priority": "A",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-25",
+  "last_updated": "2026-08-28",
   "total_topics": 97
 }

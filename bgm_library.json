@@ -866,7 +866,8 @@
       "epic"
     ],
     "used_in": [
-      "ep083"
+      "ep083",
+      "ep089"
     ]
   },
   {
@@ -1005,6 +1006,32 @@
     ],
     "used_in": [
       "ep088"
+    ]
+  },
+  {
+    "id": "ep089-BGM-intro",
+    "path": "BGM/ep089-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "strings"
+    ],
+    "used_in": [
+      "ep089"
+    ]
+  },
+  {
+    "id": "ep089-BGM-outro",
+    "path": "BGM/ep089-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: strings orchestra music by kris klavenes.mp3 by klavo1985 (freesound.org) — CC BY 4.0",
+    "tags": [
+      "strings"
+    ],
+    "used_in": [
+      "ep089"
     ]
   }
 ]
