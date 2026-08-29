@@ -11,6 +11,12 @@ Gemini等による自動判定ではなく、動画生成前の人間による�
 突き合わせ確認を目的とする（動画生成は素材によっては数十分かかるため、
 生成前にこの確認を済ませることで手戻りを防ぐ）。
 
+画像・BGMは相対パス参照、ナレーション音声（Google Drive配下）はbase64埋め込み
+というハイブリッド方式（2026-08-29〜）。以前は全てbase64埋め込みだったが、
+画像を再生成してもHTML内の古いデータが残ったまま反映されない問題が実際に
+発生したため、同じディレクトリツリー内で完結する画像・BGMは相対パスに戻した
+（kl_review_gen.py と同じ考え方）。
+
 使い方:
   python3 sc_scene_review.py --episode ep088
 
@@ -140,12 +146,33 @@ def sniff_image_mime(data: bytes) -> str:
 def data_uri(path: Path, mime: str = None) -> str:
     """ローカルファイルをbase64データURIに変換する。
     file:// 参照はブラウザのローカルファイルアクセス制限（特にSafari）で
-    読み込めないことがあるため、画像・音声とも埋め込み方式にする。"""
+    読み込めないことがあるため、ナレーション音声（Google Drive配下＝HTMLと別ツリー）
+    はこの埋め込み方式を維持する。"""
     data = path.read_bytes()
     if mime is None:
         mime = sniff_image_mime(data)
     b64 = base64.b64encode(data).decode("ascii")
     return f"data:{mime};base64,{b64}"
+
+
+def rel_path(path: Path, base: Path = DESKTOP_SC) -> str:
+    """HTML（base直下）から見た相対パスを返す。base配下になければBGM/にコピーしてから
+    相対パス化する（kl_review_gen.pyの_bgm_rel_pathと同じ発想。STEP4後にBGMが
+    Google Drive側に移動済みのケースへのフォールバック）。
+    画像・BGMは相対パス参照にすることで、再生成のたびにHTML全体（数百MB規模）を
+    書き直さなくても最新のファイルがそのまま反映される（base64埋め込みだと、
+    元画像だけ差し替えてもHTML内の古いデータが残り、しかもブラウザのfile://
+    キャッシュも重なって「直っていないように見える」問題が実際に発生した）。"""
+    try:
+        return str(path.relative_to(base))
+    except ValueError:
+        dst_dir = base / "BGM"
+        dst_dir.mkdir(exist_ok=True)
+        dst = dst_dir / path.name
+        if not dst.exists() or dst.stat().st_mtime < path.stat().st_mtime:
+            import shutil
+            shutil.copyfile(path, dst)
+        return str(dst.relative_to(base))
 
 
 def _play_button(src: str, label: str, button_text: str) -> str:
@@ -158,8 +185,8 @@ def _play_button(src: str, label: str, button_text: str) -> str:
 
 def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path,
                audio_dir: Path, bgm_files: dict, overall_review: str = "") -> str:
-    # BGMは役割ごとに1回だけデータURI化する（シーンごとに再エンコードするとファイルサイズが膨れるため）。
-    bgm_uris = {role: data_uri(path, "audio/mpeg") for role, path in bgm_files.items()}
+    # BGMは相対パス参照（画像と同じ理由。data_uri化しない）。
+    bgm_uris = {role: rel_path(path) for role, path in bgm_files.items()}
     bgm_role_label = {"intro": "序盤", "main": "中盤", "outro": "終盤"}
 
     scene_roles = compute_scene_bgm_roles(scenes)
@@ -174,7 +201,7 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
         narr = narrations.get(sid, {"en": scene.get("narration", ""), "ja": "（制作確認書に訳文が見つかりません）"})
 
         img_tag = (
-            f'<img src="{data_uri(img_path)}" alt="S{sid:02d}">'
+            f'<img src="{html_escape(rel_path(img_path))}" alt="S{sid:02d}">'
             if img_path.exists()
             else '<div class="missing">画像が見つかりません</div>'
         )

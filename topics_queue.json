@@ -917,7 +917,7 @@
     },
     {
       "episode_id": "ep090",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Teenage Prophet Who Led 37,000 Rebels Against the Shogun: Amakusa Shiro",
       "era": "Edo",
       "priority": "A",
@@ -1004,6 +1004,6 @@
       "last_updated": "2026-07-23"
     }
   ],
-  "last_updated": "2026-08-28",
+  "last_updated": "2026-08-29",
   "total_topics": 97
 }

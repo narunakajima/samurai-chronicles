@@ -1126,8 +1126,10 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
             scene_count = max(scene_count, 5)
 
             # シーン選択（highlight必須、priority順）
+            # 注: "teaser"（S19次回予告）は今エピソードと無関係な人物・場面を描くため除外する
+            #     （ep090で発覚: Shorts内に次回予告対象の豊臣秀頼が紛れ込んでいた）
             selected_ids = {shorts_scene_id} if shorts_scene_id else set()
-            for ptype in ["hook", "climax", "teaser", "insight",
+            for ptype in ["hook", "climax", "insight",
                           "falling_action", "rising_action", "setup"]:
                 for s in scenes:
                     if len(selected_ids) >= scene_count:
