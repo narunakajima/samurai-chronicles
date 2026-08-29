@@ -978,8 +978,8 @@
       "priority": "A",
       "person": "ii_naosuke",
       "angle": "death",
-      "notes": "Chief minister assassinated 1860 for forcing open-door treaties. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
-      "last_updated": "2026-07-23"
+      "notes": "Chief minister assassinated 1860 for forcing open-door treaties. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。 → 2026-08-29追記（Fable5監査）: ep069-079の11本連続低CTR（8月コホートで統計的に有意な落ち込み、p≈0.002）を踏まえ、暗殺事件の顛末描写に寄りすぎないよう注意。開国という孤独な決断を貫いた人物ドラマとして構成する。",
+      "last_updated": "2026-08-29"
     },
     {
       "episode_id": "ep096",
@@ -989,8 +989,8 @@
       "priority": "A",
       "person": "shibata_katsuie",
       "angle": "death",
-      "notes": "Nobunaga's general, died with his wife Oichi rather than surrender to Hideyoshi. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
-      "last_updated": "2026-07-23"
+      "notes": "Nobunaga's general, died with his wife Oichi rather than surrender to Hideyoshi. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。 → 2026-08-29追記（Fable5監査）: 最期の潔さだけでなく、賤ヶ岳での戦略判断（佐久間盛政を止めきれなかった采配ミス）を軸に据え、黒田官兵衛(ep030/ep052)型の「軍略ドラマ」として構成すると強テーマとの重複が狙える。",
+      "last_updated": "2026-08-29"
     },
     {
       "episode_id": "ep097",
@@ -1002,8 +1002,19 @@
       "angle": "overview",
       "notes": "Kyushu Christian daimyo, rise and defeat at Mimikawa. First appearance.",
       "last_updated": "2026-07-23"
+    },
+    {
+      "episode_id": "ep098",
+      "status": "pending",
+      "title": "The Sickly Genius Who Planned Every Battle From His Deathbed: Takenaka Hanbee",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "takenaka_hanbee",
+      "angle": "overview",
+      "notes": "2026-08-29追加（/sc-analytics Fable5監査を反映）: 黒田官兵衛（ep030 CTR9.58%・ep052 CTR6.16%、2本ともCTR1位・2位）と並ぶ「秀吉の二兵衛」の片割れ。同系統の「知られざる軍師・参謀」テーマ・overview角度で、黒田官兵衛の勝ちパターンを再現できるか検証する枠。First appearance。",
+      "last_updated": "2026-08-29"
     }
   ],
-  "last_updated": "2026-08-28",
-  "total_topics": 97
+  "last_updated": "2026-08-29",
+  "total_topics": 98
 }

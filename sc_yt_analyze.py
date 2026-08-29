@@ -201,10 +201,10 @@ def print_top_bottom(results: list, n: int, min_impressions: int, min_views: int
 
     if filtered_ctr:
         avg_ctr = sum(r["ctr"] for r in filtered_ctr) / len(filtered_ctr)
-        print(f"\n平均CTR（impr{min_impressions}+）: {avg_ctr:.2f}%")
+        print(f"\n平均CTR（impr{min_impressions}+、n={len(filtered_ctr)}）: {avg_ctr:.2f}%")
     if filtered_view:
         avg_view = sum(r["avg_view_pct"] for r in filtered_view) / len(filtered_view)
-        print(f"平均維持率（views{min_views}+）: {avg_view:.1f}%")
+        print(f"平均維持率（views{min_views}+、n={len(filtered_view)}）: {avg_view:.1f}%")
 
 
 def print_title_pattern_breakdown(results: list, min_impressions: int, min_views: int):
