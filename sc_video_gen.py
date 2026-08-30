@@ -238,7 +238,7 @@ def make_outro_clip(dst: Path, landscape: bool = True, shorts: bool = False):
         line2_size = 52 if landscape else 46
     else:
         line1_text = OFFICIAL_SITE
-        line2_text = "New episode every day  ·  Subscribe"
+        line2_text = "New episode every week  ·  Subscribe"
 
     gold = "0xd4a843"  # ゴールドカラー
 
