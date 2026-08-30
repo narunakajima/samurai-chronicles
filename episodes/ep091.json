@@ -1,0 +1,270 @@
+{
+  "episode_id": "ep091",
+  "episode_title": "The Heir Who Never Had a Chance: Toyotomi Hideyori's Last Days",
+  "youtube_title": "The Heir Who Never Had a Chance: Toyotomi Hideyori's Last Days",
+  "youtube_description": "He inherited an empire at age five — and never once truly controlled it. Toyotomi Hideyori grew up inside Osaka Castle under the protection of the very man plotting his destruction, married to that man's own granddaughter, and slowly stripped of everything his father had built. This is the story of the heir who never had a chance.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 He inherited an empire at age\n0:44 In 1598, Toyotomi Hideyoshi...\n1:44 Two years later, Ieyasu...\n2:39 In 1603, Ieyasu sealed the...\n3:40 By 1611, Hideyori was...\n4:40 The pretext arrived in 1614,...\n5:50 Hideyori was offered a way out.\n6:48 In the winter of 1614, Ieyasu\n7:41 Unable to breach Osaka's...\n8:51 By June 1615, war had resumed,\n9:48 On June 3rd, 1615, Tokugawa...\n10:34 As the castle burned around...\n11:28 On June 4th, 1615, inside a\n12:23 Ieyasu's purge did not end with\n13:19 Senhime survived, remarried...\n14:18 It is tempting to judge Hideyori\n15:13 Some historians argue...\n16:06 Toyotomi Hideyori left behind...\n17:03 Next time on Samurai...\n17:48 If the story of a man\n\n🎌 Subscribe for new episodes every day:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Berry, Mary Elizabeth. \"Hideyoshi.\" Harvard University Press, 1982.\n2. Sadler, A.L. \"The Maker of Modern Japan: The Life of Shogun Tokugawa Ieyasu.\" Tuttle Publishing, 2011.\n3. Turnbull, Stephen. \"Osaka 1615: The Last Battle of the Samurai.\" Osprey Publishing, 2006.\n\n\n🎵 Music: Epic Dramatic Buildup Long by LulSayer (freesound.org) — CC BY 4.0\n\n🎵 Music: Sad Serenade by ViraMiller (freesound.org) — CC BY 4.0\n#ToyotomiHideyori #OsakaCastle #TokugawaIeyasu #SiegeOfOsaka #YodoDono #Senhime #SengokuPeriod #EdoPeriod #JapaneseHistory #SamuraiHistory #SamuraiChronicles #ToyotomiClan",
+  "youtube_tags": [
+    "Toyotomi Hideyori",
+    "Osaka Castle",
+    "Tokugawa Ieyasu",
+    "Siege of Osaka",
+    "Yodo-dono",
+    "Senhime",
+    "Toyotomi clan",
+    "Sengoku period",
+    "Edo period",
+    "samurai history",
+    "Japanese history",
+    "Samurai Chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "June 1615. Osaka Castle burns around him, the empire his father built collapsing into fire and ash. He is twenty-one — and has never once truly ruled any of it. How does an heir this powerful end up with nothing at all?",
+  "shorts_narration": "Age five. When Hideyori inherited an empire he could never control — trapped in his father's castle, marked by the man sworn to protect him. This is Hideyori, the heir who never had a chance.",
+  "shorts_hook_lines": [
+    "AGE FIVE.",
+    "ALREADY A TARGET.",
+    "COULD HE EVER SURVIVE?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Toyotomi Hideyori's face — a large-framed young Japanese lord in his early twenties with a full, fair-skinned face, a broad forehead, a heavy jaw, and alert dark eyes that hold both pride and quiet fear, looking directly into the camera. His hairstyle is a proper period-accurate chonmage: the forehead and crown cleanly shaved (sakayaki), with the remaining hair oiled and folded flat forward on top of the head in a neat, flattened topknot — not a short tuft sprouting straight upward. Faint orange firelight flickers across one side of his face, deep shadow on the other, suggesting the burning castle around him. He wears a hint of gold-and-black lacquered armor bearing the Toyotomi paulownia crest visible at the shoulder. Vertical portrait composition, face centered with clear space above the head, photorealistic cinematic film still, dramatic single-source lighting, normal human proportions.",
+  "thumbnail_prompt": "Toyotomi Hideyori, an unusually tall and heavily built young lord in his early twenties — broad-shouldered and physically imposing, with a full, fair-skinned face, a broad forehead, and alert dark eyes — stands centered in elaborate gold-and-black lacquered armor bearing the Toyotomi paulownia crest, inside the grand hall of Osaka Castle. Behind him, faint and looming through smoke, the shadowed silhouette of Tokugawa Ieyasu in black armor bearing the hollyhock crest watches from a doorway, cast in deep shadow. Dramatic firelight glows from one side, suggesting the castle's coming destruction. Hideyori's expression is proud yet uncertain, caught between two legacies. Wide cinematic composition, dramatic lighting, normal human proportions throughout, no text or writing anywhere in the image.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He inherited an empire at age five. The man who destroyed it called himself an ally for fifteen years. How does an heir this powerful end up with no power at all?",
+      "image_prompt": "Toyotomi Hideyori, an unusually tall and heavily built young lord in his early twenties — broad-shouldered and physically imposing, with a full, fair-skinned face and alert dark eyes — stands alone in a vast ornate hall of Osaka Castle, wearing elaborate gold-and-black lacquered armor bearing the Toyotomi paulownia crest. Golden folding screens and towering wooden pillars surround him, dwarfing his figure. Shafts of late-afternoon light cut through high windows, casting long shadows across the polished floor. His expression is proud but uncertain, a young man standing inside a legacy far larger than himself. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, dramatic lighting, normal human proportions.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.31
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1598, Toyotomi Hideyoshi died knowing his life's work stood on fragile ground. He had risen from a peasant's son to unify all of Japan, and now he was leaving that empire to a five-year-old boy. On his deathbed, Hideyoshi begged his most powerful ally, Tokugawa Ieyasu, to protect his son and preserve the Toyotomi succession. Ieyasu swore the oath. Hideyoshi died believing his house was secure. He could not have known that the very man he trusted above all others was already the greatest danger his son would ever face.",
+      "image_prompt": "An aging Toyotomi Hideyoshi, small in stature with weathered, deeply lined features, lies on a deathbed within a richly appointed chamber of Fushimi Castle, wearing simple white robes, the Toyotomi paulownia crest displayed on a folding screen behind him. Tokugawa Ieyasu — a stocky, powerfully built Japanese warlord in his mid-fifties, sakayaki-shaved forehead, greying topknot and beard, dressed in formal dark kamishimo mourning attire (plain silk kimono with stiff-shouldered wings and hakama, no armor of any kind — this is a private deathbed audience, not a battlefield or military occasion) — kneels solemnly at his bedside with head bowed, appearing to swear an oath. Soft candlelight, somber atmosphere. Japanese architecture only, no legible text anywhere. Photorealistic cinematic film still.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Two years later, Ieyasu crushed his rivals at the Battle of Sekigahara and became the undisputed master of Japan. In 1603, the emperor named him shogun, founding a shogunate of his own. Hideyori, still a child, was quietly reduced from ruler of a unified nation to lord of a single castle domain. No one declared war on the House of Toyotomi. No one needed to. Ieyasu simply built a new order around the boy, layer by layer, until the empire Hideyoshi had left his son existed only inside Osaka Castle's walls.",
+      "image_prompt": "Tokugawa Ieyasu, stocky and powerfully built, sakayaki-shaved forehead with a greying topknot and beard, stands in formal black-and-gold lacquered armor bearing the Tokugawa hollyhock crest, atop a hill overlooking a vast unified Japan at dusk. In the far distance, small and isolated, the silhouette of Osaka Castle stands alone on the horizon. His expression is calm, calculating satisfaction. Japanese architecture only, no legible text anywhere. Photorealistic cinematic film still, dramatic lighting.",
+      "ken_burns": "pan_right",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1603, Ieyasu sealed the arrangement with a marriage. His own granddaughter, seven-year-old Senhime, was sent to Osaka Castle to become Hideyori's wife. It looked like reconciliation — two great houses joined by blood. In truth, it placed a permanent set of Tokugawa eyes inside the Toyotomi household, watching everything Hideyori did. He grew up surrounded by his father's old retainers, his formidable mother Yodo-dono, and a young wife whose loyalty ultimately belonged elsewhere. Every relationship in his life carried a hidden allegiance. There was no room in Osaka Castle where Hideyori could simply be himself.",
+      "image_prompt": "A solemn bridal procession moves through the great gate of Osaka Castle: a young girl in elaborate red-and-gold ceremonial robes, seven-year-old Senhime, is carried in a lacquered palanquin escorted by Tokugawa retainers in black armor bearing the hollyhock crest, while Toyotomi household guards in gold-and-black armor marked with the paulownia crest look on from the castle walls above. Autumn light, formal and watchful atmosphere. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By 1611, Hideyori was seventeen — tall, composed, and by every account far more impressive than the harmless figurehead Ieyasu had expected. When the two finally met face to face at Nijo Castle, witnesses said Ieyasu left visibly shaken by the young man's bearing and intelligence. Whatever affection or respect passed between them in that meeting, it changed nothing about the calculation underneath. A capable Toyotomi heir, loyal retainers still devoted to his father's memory, and a castle that remained the most formidable fortress in Japan — together, they were a problem Ieyasu had decided, long before, that he could not leave unsolved.",
+      "image_prompt": "Toyotomi Hideyori, a strikingly tall and heavily built young lord of seventeen — broad-shouldered and physically imposing, towering over everyone in the room — sits formally in a Japanese court noble's silk kariginu robe and tall black lacquered eboshi cap, across from Tokugawa Ieyasu — stocky, sakayaki-shaved forehead, greying topknot and beard, in a dark formal silk kariginu robe with the Tokugawa hollyhock crest woven into the fabric — inside a formal reception hall of Nijo Castle. Hideyori's posture is calm and dignified; Ieyasu studies him with a subtly unsettled, calculating expression. Formal tatami room, soft natural light. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, normal human proportions.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The pretext arrived in 1614, carved into bronze. Hideyori had funded the restoration of Hoko-ji temple, fulfilling one of his father's unfinished projects, and commissioned a great bell inscribed with a blessing for peace. Ieyasu's scholars examined the inscription and declared it an insult — the characters for his own name split apart by other words, they claimed, as a curse, while different characters elsewhere seemed to wish prosperity on the Toyotomi. Historians still debate whether the interpretation was sincere or invented. It hardly mattered. Ieyasu now had exactly what he needed: a public justification to end the Toyotomi permanently.",
+      "image_prompt": "Inside a temple hall, Tokugawa scholars in dark formal robes crowd around a massive bronze temple bell suspended in a heavy wooden frame, pointing at its surface with grave, accusatory expressions. Toyotomi paulownia-crest banners are visible on the temple grounds outside through an open doorway. Dramatic torchlight, tense atmosphere. Japanese temple architecture only, no legible text or writing anywhere. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Hideyori was offered a way out. Leave Osaka Castle, accept a diminished domain elsewhere, and the matter could be settled peacefully — or so the terms implied. His mother Yodo-dono and his father's old generals urged him to refuse; leaving the castle their lord had built, they argued, meant abandoning the last of the Toyotomi name. Hideyori, not yet twenty-two, chose to stand. It is impossible to know how much of that choice was truly his own, and how much belonged to the people who had raised him inside those walls his entire life. Either way, the decision was now made.",
+      "image_prompt": "Toyotomi Hideyori, an unusually tall and heavily built young man in gold-and-black lacquered armor bearing the paulownia crest, stands resolute in a formal chamber of Osaka Castle as his mother Yodo-dono — an elegant, strong-willed noblewoman in rich silk robes — and several grey-haired veteran generals kneel around him, gesturing urgently. His expression is proud but strained, a young man carrying a decision heavier than he looks able to bear. Warm interior lighting, tense atmosphere. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, normal human proportions.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "x": 0.41,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In the winter of 1614, Ieyasu marched on Osaka with nearly two hundred thousand men — one of the largest armies Japan had ever assembled, against a single castle. Ronin from across the country flooded in to fight beside the Toyotomi, drawn by loyalty to Hideyoshi's memory more than to his untested son. Hideyori walked the ramparts among soldiers who had chosen to die for a name, watching a siege that had, in truth, very little to do with him personally. He was the reason for the war and, increasingly, the only person inside the castle without real control over how it would be fought.",
+      "image_prompt": "Toyotomi Hideyori, an unusually tall and heavily built young man in gold-and-black lacquered armor bearing the paulownia crest, walks along the stone ramparts of Osaka Castle at dusk, past rows of grim ronin and Toyotomi soldiers manning the walls, banners marked with the paulownia crest snapping in the wind. The rampart parapet is authentic Japanese castle wall construction: plain stone base topped with a white plastered mud wall (dobei) pierced only by small rectangular and circular arrow/gun ports, absolutely no European-style crenellations, merlons, or battlements of any kind. In the distance beyond the moat, the vast campfires of a two-hundred-thousand-strong besieging army stretch to the horizon. His expression is watchful, isolated even among his own men. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, dramatic lighting.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Unable to breach Osaka's defenses by force, Ieyasu changed tactics. He proposed peace, promised Hideyori's mother safety and honor, and once the agreement was signed, ordered his engineers to fill in the castle's outer moats — supposedly to formalize the truce. Hideyori's retainers protested that the terms had been twisted; laborers worked through the winter filling defenses it had taken years to dig. By spring, the fortress that had withstood two hundred thousand men stood essentially undefended. Hideyori had signed a peace that was never meant to last, and now understood, too late, exactly how far Ieyasu was willing to go.",
+      "image_prompt": "Tokugawa Ieyasu, stocky and powerfully built, sakayaki-shaved forehead with greying topknot and beard, wearing black lacquered armor bearing the Tokugawa hollyhock crest, stands calmly on a hillside overseeing hundreds of laborers shoveling earth into Osaka Castle's wide outer moat under grey winter skies. His expression is patient, unhurried satisfaction. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, wide composition.",
+      "ken_burns": "pan_right",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.43
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By June 1615, war had resumed, and Hideyori knew what remained of his father's regime could not survive another siege. His moats were gone. His allies were exhausted. Sanada Yukimura, the finest general left in his service, begged him to lead a final charge himself, arguing that Hideyori's presence on the battlefield might rally the wavering ranks one last time. Hideyori refused to leave his mother's side inside the castle. It was, by every account, the last real decision of his life — and it was made not as a warlord, but as a son.",
+      "image_prompt": "Inside a chamber of Osaka Castle lit only by traditional Japanese andon paper lanterns on wooden stands (no freestanding western-style iron or wax candlesticks of any kind), Toyotomi Hideyori — an unusually tall and heavily built young man with a properly shaved sakayaki forehead and a small neat chonmage topknot folded flat forward — in gold-and-black lacquered armor bearing the paulownia crest, stands close beside his seated mother Yodo-dono, one hand resting protectively near her shoulder, while a weathered general in red-accented armor kneels before them both, gesturing urgently toward the doorway as if pleading for him to ride out. Hideyori's face shows quiet, immovable resolve. Tense, intimate lighting. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, normal human proportions.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "On June 3rd, 1615, Tokugawa forces broke through the last defenses outside Osaka Castle. Sanada Yukimura led one final charge toward Ieyasu's own command position, close enough by some accounts to force the retired shogun to consider retreat, before he was cut down. With the outer lines collapsed, Tokugawa soldiers poured into the castle grounds, and fires began spreading through the compound Hideyoshi had built to be the greatest fortress in Japan. Inside, Hideyori and his mother retreated deeper into the keep, past retainers who had chosen to die defending doors that could no longer be defended.",
+      "image_prompt": "Toyotomi Hideyori, an unusually tall and heavily built young man in gold-and-black lacquered armor bearing the paulownia crest, guides his mother Yodo-dono through a smoke-filled corridor deep within Osaka Castle's burning keep, retainers with drawn swords forming a protective line behind them at a doorway. Flames and falling embers are visible through a shattered screen wall. His expression is grim determination, past fear. Chaotic, urgent atmosphere. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, dramatic firelight.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "As the castle burned around them, Hideyori's wife Senhime — Ieyasu's own granddaughter — was smuggled out and rushed to her grandfather's camp, reportedly to beg for her husband's life. Some accounts say Ieyasu considered it. What is certain is that his answer, in the end, was no. A Toyotomi heir left alive was a banner any future rebellion could rally around, and Ieyasu had spent seventeen years making sure no such banner would remain. The plea that might have saved Hideyori's life arrived, and changed nothing about how this story was always going to end.",
+      "image_prompt": "Tokugawa Ieyasu, stocky, sakayaki-shaved forehead with greying topknot and beard, seated with calm, unreadable composure on a camp stool inside his war tent, black lacquered armor bearing the hollyhock crest, as a young noblewoman in disheveled ceremonial robes kneels before him with hands clasped, pleading. Smoke and distant firelight glow through the open tent flap behind them. Tense, somber atmosphere. Japanese architecture only, no legible text anywhere. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "On June 4th, 1615, inside a storehouse within the burning keep, Toyotomi Hideyori and his mother Yodo-dono took their own lives. He was twenty-one years old. He had never commanded an army in battle, never ruled the unified Japan his father built, and never once, in his short life, been free of the man who called himself his protector. The regime Hideyoshi had risen from nothing to create ended in a single afternoon, in a single burning room, with the son who had inherited everything and controlled almost none of it.",
+      "image_prompt": "Toyotomi Hideyori, a large, heavily built young man in plain formal white robes, kneels in quiet, composed dignity beside his mother Yodo-dono inside a small storehouse chamber, its wooden walls lit by the orange glow of the burning castle visible through a gap in the wall. The moment is somber and restrained, conveyed through stillness and posture rather than violence. Soft, fading light. Japanese architecture only, no legible text anywhere. Photorealistic cinematic film still, respectful and non-graphic composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Ieyasu's purge did not end with Hideyori's death. His young son, Kunimatsu — not yet eight years old — was found in hiding weeks later and executed on Ieyasu's order, the last male heir of Hideyoshi's bloodline erased along with his father. A daughter was spared and sent into a convent. Within months, every trace of an independent Toyotomi succession had been extinguished. Ieyasu had spent seventeen years dismantling his old ally's legacy piece by piece, and in the end, he made certain there would be no piece left standing to rebuild it.",
+      "image_prompt": "A somber procession scene outside a Kyoto execution ground at dawn: Tokugawa guards in black armor bearing the hollyhock crest escort a small, solemn figure of a young boy in plain robes, flanked respectfully, toward a modest wooden gate, while onlookers bow their heads in the misty street beyond. The image is restrained and non-graphic, conveying grief through atmosphere rather than violence. Muted grey light. Japanese architecture only, no legible text anywhere. Photorealistic cinematic film still, respectful composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Senhime survived, remarried within the Tokugawa order, and lived on for decades — a reminder that the marriage arranged to secure the Toyotomi had, in the end, only ever secured the Tokugawa. The peace that followed Hideyori's death lasted, largely uninterrupted, for the next two hundred and fifty years. Historians call the years after 1615 the beginning of the 'Great Peace.' It came at the cost of the last legitimate rival to Tokugawa rule — a young man whose entire adult life had been spent inside a single castle he was never truly permitted to leave.",
+      "image_prompt": "An older Senhime, dressed in refined Tokugawa-era silk robes befitting her remarried status, stands on a veranda overlooking a tranquil, peaceful Japanese garden in soft afternoon light, her expression distant and contemplative. In the far background on the horizon, unmistakably visible through the mist, stands the broken silhouette of Osaka Castle's keep: its upper stories collapsed and partially caved in, roofline jagged and incomplete, blackened and skeletal — clearly ruined, not an intact building. Serene yet melancholy atmosphere. Japanese architecture only, no legible text anywhere. Photorealistic cinematic film still.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "It is tempting to judge Hideyori by the standards of the warlords around him — his father, who built an empire from nothing, or Ieyasu, who patiently dismantled it. But Hideyori never had the chances either man had. He inherited a legacy too large to escape and a guardian too dangerous to trust, at an age before he could understand either. Whatever military or political failures historians assign to him, few ask what real freedom of action he ever actually possessed. The heir was blamed for losing a game that had been decided before he was old enough to play it.",
+      "image_prompt": "A contemplative portrait of Toyotomi Hideyori — an unusually tall and heavily built young man — standing alone at a high window of Osaka Castle, gold-and-black lacquered armor bearing the paulownia crest, looking out over the castle grounds below at dusk, his expression thoughtful and burdened rather than commanding. Soft golden light. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, normal human proportions.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Some historians argue Hideyori could have saved himself by accepting Ieyasu's early offers to leave Osaka quietly. Others point out that a Toyotomi heir stripped of his father's castle would have been just as vulnerable to assassination or forced suicide on some later pretext — that Ieyasu's design left no version of events where Hideyoshi's bloodline simply continued in peace. The bell inscription, the filled moats, the broken truce: each one suggests a man being maneuvered toward a single, unavoidable outcome, regardless of which door he chose to walk through.",
+      "image_prompt": "A symbolic still-life composition: a large bronze temple bell in shadow, a partially filled moat with muddy earthworks beyond it, and a broken formal document scroll lying half-unrolled on tatami matting, all lit by a single shaft of cold morning light, evoking deception and inevitability. No legible text or writing anywhere. Japanese architectural details only. Photorealistic cinematic film still, moody atmospheric lighting.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Toyotomi Hideyori left behind no great military victories, no lasting institutions, no house of his own to remember him by. What he left was a question that still occupies historians four centuries later: how much of a life shaped entirely by other people's decisions can honestly be called his own story at all? He was Japan's most powerful unifier's only son, and Japan's most patient conqueror's most necessary victim — a young man positioned, from the moment he was born, at the exact point where one era of Japan had to end for another to begin.",
+      "image_prompt": "Toyotomi Hideyori, unusually tall and heavily built, stands alone amid the ruins of Osaka Castle's outer grounds at sunrise, gold-and-black lacquered armor bearing the paulownia crest, scorched wooden beams and broken stonework around him, his face calm and resigned as golden light breaks through drifting smoke. The smoke and sky are clean, natural, and uniform in texture — no faint lettering, symbols, watermark, or logo-like shapes of any kind anywhere in the image. Elegiac, cinematic atmosphere. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, wide composition, normal human proportions.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hideyori",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.29
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "teaser",
+      "duration_seconds": 60,
+      "narration": "Next time on Samurai Chronicles: not every heir inherits a legacy freely given. When the legendary warlord Uesugi Kenshin died without a declared successor, his adopted son Uesugi Kagekatsu had to win a brutal war of succession against his own adoptive brother — and then spend the rest of his life proving he deserved the name he had fought for. Was Kagekatsu a worthy heir to one of Japan's greatest generals, or a pretender who never filled his father's shadow? That story is next.",
+      "image_prompt": "A young Japanese samurai lord in dark blue-and-white lacquered armor bearing a stylized bamboo-and-sparrow crest stands before a snow-covered mountain castle in Echigo province, flanked on either side by silhouetted retainers who eye him with uncertain loyalty, evoking a contested succession. Cold, dramatic winter light. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "If the story of a man crushed beneath a legacy too heavy to carry speaks to you, subscribe and join us for every new chapter of Samurai Chronicles. Toyotomi Hideyori never had the chance his father's empire seemed to promise him — but four hundred years later, his story still asks what any of us would have done, born into a role we never chose and could never truly escape.",
+      "image_prompt": "A wide, elegiac dawn view of Osaka Castle's ruined keep rising above a calm, mist-covered moat, scattered cherry blossom petals drifting across still water, the paulownia crest faintly visible on a fallen banner in the foreground. Soft golden morning light. Japanese castle architecture only, no legible text anywhere. Photorealistic cinematic film still, wide serene composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep078-BGM-intro.mp3",
+    "main": "BGM/ep091-BGM-main.mp3",
+    "outro": "BGM/ep091-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/kwhPBHunL2s",
+  "shorts_url": "https://youtu.be/jTyMw-cTnJA",
+  "scheduled_at": "2026-09-10 03:00"
+}

@@ -917,7 +917,7 @@
     },
     {
       "episode_id": "ep090",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Teenage Prophet Who Led 37,000 Rebels Against the Shogun: Amakusa Shiro",
       "era": "Edo",
       "priority": "A",
@@ -928,7 +928,7 @@
     },
     {
       "episode_id": "ep091",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Heir Who Never Had a Chance: Toyotomi Hideyori's Last Days",
       "era": "Sengoku/Edo",
       "priority": "A",
@@ -1015,6 +1015,6 @@
       "last_updated": "2026-08-29"
     }
   ],
-  "last_updated": "2026-08-29",
+  "last_updated": "2026-08-30",
   "total_topics": 98
 }
