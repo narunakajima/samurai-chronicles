@@ -183,8 +183,85 @@ def _play_button(src: str, label: str, button_text: str) -> str:
     )
 
 
+def build_shorts_html(episode_id: str, ep: dict, narrations: dict,
+                       images_dir_shorts: Path, audio_dir: Path) -> str:
+    """Shorts確認セクション（S00_face + ハイライト画像列 + shorts_narration再生）を組み立てる。
+    sc_video_gen.py の gen_video() 内 Shorts クリップ生成ロジックと同じ並び順
+    （S00_face → シーンID昇順）で、images_shorts/ に実在するファイルをそのまま列挙する。"""
+    if not images_dir_shorts.exists():
+        return ""
+
+    hook_lines = ep.get("shorts_hook_lines") or []
+    shorts_narration = ep.get("shorts_narration", "")
+
+    face_path = images_dir_shorts / "S00_face.png"
+    scene_pngs = sorted(
+        (p for p in images_dir_shorts.glob("S[0-9][0-9].png")),
+        key=lambda p: int(p.stem[1:]),
+    )
+
+    if not face_path.exists() and not scene_pngs:
+        return ""
+
+    audio_path = audio_dir / "S00_shorts.wav"
+    narration_button = (
+        _play_button(data_uri(audio_path, "audio/wav"), "Shorts ナレーション", "▶ Shorts ナレーション再生")
+        if audio_path.exists()
+        else '<span class="missing-inline">S00_shorts.wav が見つかりません</span>'
+    )
+
+    hook_html = ""
+    if hook_lines:
+        hook_html = '<div class="shorts-hook">' + "".join(
+            f'<div class="hook-line">{html_escape(line)}</div>' for line in hook_lines
+        ) + "</div>"
+
+    tiles = []
+    if face_path.exists():
+        tiles.append(f"""
+        <div class="shorts-tile">
+          <img src="{html_escape(rel_path(face_path))}" alt="S00_face">
+          <div class="shorts-tile-label">S00 顔アップ（冒頭）</div>
+        </div>""")
+    for p in scene_pngs:
+        sid = int(p.stem[1:])
+        narr = narrations.get(sid, {})
+        ja = narr.get("ja", "")
+        tiles.append(f"""
+        <div class="shorts-tile">
+          <img src="{html_escape(rel_path(p))}" alt="{html_escape(p.stem)}">
+          <div class="shorts-tile-label">S{sid:02d}</div>
+          {f'<div class="shorts-tile-ja">{html_escape(ja)}</div>' if ja else ""}
+        </div>""")
+
+    narration_text = f'<p class="en">{html_escape(shorts_narration)}</p>' if shorts_narration else ""
+
+    return f"""
+    <section class="shorts-section">
+      <h2>Shorts 確認</h2>
+      {hook_html}
+      <div class="play-row">{narration_button}</div>
+      {narration_text}
+      <div class="shorts-strip">{"".join(tiles)}</div>
+    </section>
+    """
+
+
+def build_thumbnail_html(thumbnail_path: Path) -> str:
+    """サムネイル確認セクション。~/Desktop/SC/ep{NNN}_thumbnail.png をそのまま表示する。"""
+    if not thumbnail_path.exists():
+        return ""
+    return f"""
+    <section class="thumbnail-section">
+      <h2>サムネイル確認</h2>
+      <img class="thumbnail-img" src="{html_escape(rel_path(thumbnail_path))}" alt="thumbnail">
+    </section>
+    """
+
+
 def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path,
-               audio_dir: Path, bgm_files: dict, overall_review: str = "") -> str:
+               audio_dir: Path, bgm_files: dict, overall_review: str = "",
+               shorts_block: str = "", thumbnail_block: str = "") -> str:
     # BGMは相対パス参照（画像と同じ理由。data_uri化しない）。
     bgm_uris = {role: rel_path(path) for role, path in bgm_files.items()}
     bgm_role_label = {"intro": "序盤", "main": "中盤", "outro": "終盤"}
@@ -273,6 +350,16 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
   .overall {{ background: #262629; border: 1px solid #444; border-radius: 8px; padding: 16px 20px; margin-bottom: 8px; }}
   .overall h2 {{ font-size: 15px; margin: 0 0 10px; color: #f4b942; }}
   .overall-body {{ font-size: 14px; line-height: 1.8; color: #ddd; margin: 0; }}
+  .thumbnail-section, .shorts-section {{ background: #262629; border: 1px solid #444; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px; }}
+  .thumbnail-section h2, .shorts-section h2 {{ font-size: 15px; margin: 0 0 12px; color: #f4b942; }}
+  .thumbnail-img {{ max-width: 640px; width: 100%; border-radius: 6px; display: block; }}
+  .shorts-hook {{ margin-bottom: 12px; }}
+  .hook-line {{ color: #fff; font-weight: bold; font-size: 15px; line-height: 1.4; }}
+  .shorts-strip {{ display: flex; gap: 14px; overflow-x: auto; padding-bottom: 8px; margin-top: 12px; }}
+  .shorts-tile {{ flex: 0 0 auto; width: 160px; }}
+  .shorts-tile img {{ width: 160px; border-radius: 6px; display: block; }}
+  .shorts-tile-label {{ color: #8ab4f8; font-size: 12px; margin-top: 4px; }}
+  .shorts-tile-ja {{ color: #ccc; font-size: 12px; line-height: 1.4; margin-top: 2px; }}
   #media-player-bar {{
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
     display: flex; align-items: center; gap: 12px;
@@ -286,6 +373,8 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
 <body>
 <h1>{episode_id} — シーン確認（画像 × ナレーション × BGM × 日本語訳）</h1>
 <p style="color:#999;font-size:13px;">動画生成前の突き合わせ確認用。ナレーション音声・そのシーンのBGMを聴きながら、画像内容と日本語訳が対応しているか確認してください。</p>
+{thumbnail_block}
+{shorts_block}
 {overall_block}
 {"".join(rows)}
 <div id="media-player-bar">
@@ -353,14 +442,25 @@ def main():
         print(f"⚠️  制作確認書が見つかりません（{review_path}）。日本語訳なしで生成します。", file=sys.stderr)
 
     images_dir = DESKTOP_SC / episode_id / "images"
+    images_dir_shorts = DESKTOP_SC / episode_id / "images_shorts"
     audio_dir = DRIVE_BASE / episode_id / "audio"
+    thumbnail_path = DESKTOP_SC / f"{episode_id}_thumbnail.png"
 
     bgm_files = find_bgm_files(episode_id, ep)
     missing_roles = [r for r in ("intro", "main", "outro") if r not in bgm_files]
     if missing_roles:
         print(f"⚠️  BGMが見つかりません: {', '.join(missing_roles)}", file=sys.stderr)
 
-    html = build_html(episode_id, ep["scenes"], narrations, images_dir, audio_dir, bgm_files, overall_review)
+    thumbnail_block = build_thumbnail_html(thumbnail_path)
+    if not thumbnail_block:
+        print(f"⚠️  サムネイルが見つかりません（{thumbnail_path}）", file=sys.stderr)
+
+    shorts_block = build_shorts_html(episode_id, ep, narrations, images_dir_shorts, audio_dir)
+    if not shorts_block:
+        print(f"⚠️  Shorts画像が見つかりません（{images_dir_shorts}）", file=sys.stderr)
+
+    html = build_html(episode_id, ep["scenes"], narrations, images_dir, audio_dir, bgm_files,
+                       overall_review, shorts_block=shorts_block, thumbnail_block=thumbnail_block)
 
     out_path = DESKTOP_SC / f"{episode_id}_review.html"
     out_path.write_text(html, encoding="utf-8")
