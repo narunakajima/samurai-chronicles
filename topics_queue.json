@@ -939,14 +939,14 @@
     },
     {
       "episode_id": "ep092",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Heir Who Had to Prove He Wasn't a Fraud: Uesugi Kagekatsu",
       "era": "Sengoku",
       "priority": "A",
       "person": "kagekatsu",
       "angle": "character",
       "notes": "Kenshin's adopted heir and successor — companion to ep046 (Kenshin's mysterious death). Character art already exists (characters/uesugi_kagekatsu).",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-08-31"
     },
     {
       "episode_id": "ep093",
@@ -1015,6 +1015,6 @@
       "last_updated": "2026-08-29"
     }
   ],
-  "last_updated": "2026-08-30",
+  "last_updated": "2026-08-31",
   "total_topics": 98
 }

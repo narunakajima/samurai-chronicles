@@ -41,8 +41,8 @@ DRIVE_BASE = (
 
 SCENE_BLOCK_RE = re.compile(
     r"▶ S(\d+)\s+\[(\w+)\].*?\n+"
-    r"\s*【EN】\s*\n(?P<en>.*?)\n+"
-    r"\s*【JA】\s*\n(?P<ja>.*?)\n+"
+    r"\s*【EN】[^\n]*\n(?P<en>.*?)\n+"
+    r"\s*【JA】[^\n]*\n(?P<ja>.*?)\n+"
     r"-{5,}",
     re.DOTALL,
 )
