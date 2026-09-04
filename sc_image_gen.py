@@ -33,11 +33,29 @@ import re
 import sys
 import time
 from pathlib import Path
-from PIL import Image
 from google import genai
 from google.genai import types
 
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
+
+
+def sniff_image_mime(data: bytes) -> str:
+    """出力は拡張子が.pngでも実体がJPEGのことがあるため、ファイル先頭バイトから
+    実際の画像形式を判定する（拡張子は信用しない。sc_scene_review.pyと同じ関数）。"""
+    if data[:3] == b"\xff\xd8\xff":
+        return "image/jpeg"
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return "image/png"
+    return "image/png"  # フォールバック
+
+
+def image_part_from_path(path: Path) -> types.Part:
+    """画像ファイルを生バイト列のままPartとして渡す。PIL.Imageオブジェクトを渡すと
+    SDK内部でJPEG q75に再エンコードされてしまう（sc_image_gen.pyの出力は既に
+    JPEG実体のことが多く、QA・Shorts再構成のたびに画質が劣化する二重圧縮になっていた
+    ため2026-09-04修正。Fable 5.1監査の指摘）。"""
+    data = path.read_bytes()
+    return types.Part.from_bytes(data=data, mime_type=sniff_image_mime(data))
 
 MODEL = "gemini-3.1-flash-image"
 QA_MODEL = "gemini-3.7-flash"
@@ -125,7 +143,7 @@ def _generate_with_retry(client, contents, output_path: Path, max_retries: int =
 
 
 def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, output_path: Path,
-                                 ref_image: Image.Image = None) -> bool:
+                                 ref_image: types.Part = None) -> bool:
     """Shorts用縦長(9:16)画像を生成する。
 
     ref_image が指定された場合（本編16:9で既にQA承認済みの画像がある場合）は、
@@ -160,7 +178,7 @@ def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, o
 
 
 def generate_one_image(client, scene_prompt: str, character_ref: str, output_path: Path,
-                        ref_image: Image.Image = None) -> bool:
+                        ref_image: types.Part = None) -> bool:
     """1シーン1枚生成して output_path に保存。成功すれば True を返す。
     ref_image は本編(16:9)生成では使わない（gen_func の呼び出しシグネチャ統一のため受け取るのみ）。"""
     parts = [BASE_CONTEXT]
@@ -257,7 +275,7 @@ def build_retry_prompt(base_prompt: str, issues: list, level: int) -> str:
 
 def _generate_and_qa(client, gen_func, base_prompt: str, char_ref: str,
                       out_file: Path, scene_id: int, max_attempts: int = 2,
-                      ref_image: Image.Image = None) -> dict:
+                      ref_image: types.Part = None) -> dict:
     """
     生成 → QA を行い、クリティカル（QA失敗）なら自動的にプロンプトを修正して
     最大 max_attempts 回まで再試行する。
@@ -304,7 +322,7 @@ def _generate_and_qa(client, gen_func, base_prompt: str, char_ref: str,
 def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: int) -> dict:
     """生成画像をGemini Visionで自動チェックする。問題があれば issues に格納する。"""
     try:
-        image = Image.open(image_path)
+        image = image_part_from_path(Path(image_path))
         qa_prompt = (
             "You are a quality-control reviewer for AI-generated historical concept art images "
             "used in a samurai history video series.\n\n"
@@ -488,7 +506,7 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force:
             main_img_path = DESKTOP_BASE / episode_id / "images" / f"S{scene_id:02d}.png"
             if main_img_path.exists():
                 try:
-                    ref_image = Image.open(main_img_path)
+                    ref_image = image_part_from_path(main_img_path)
                 except Exception:
                     ref_image = None
 
