@@ -358,8 +358,10 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "ok": bool(result.get("ok", True)),
             "issues": result.get("issues", []),
         }
-    except Exception:
-        return {"scene_id": scene_id, "ok": True, "issues": []}
+    except Exception as e:
+        # QA自体が失敗した場合はサイレントにOK扱いせず、issueとして扱い
+        # 既存のリトライ機構に乗せる（API障害等を「問題なし」と誤認しないため）。
+        return {"scene_id": scene_id, "ok": False, "issues": [f"QA_ERROR: {e}"]}
 
 
 def run(episode_id: str, scene_filter: list = None, shorts: bool = False):

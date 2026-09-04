@@ -165,7 +165,9 @@ def qa_narration_with_gemini(client, audio_data: bytes, script_text: str) -> dic
         result = json.loads(text)
         return {"ok": bool(result.get("ok", True)), "issues": result.get("issues", [])}
     except Exception as e:
-        return {"ok": True, "issues": [], "qa_error": str(e)}
+        # QA自体が失敗した場合はサイレントにOK扱いせず、issueとして扱い
+        # 既存のリトライ機構に乗せる（API障害等を「問題なし」と誤認しないため）。
+        return {"ok": False, "issues": [f"QA_ERROR: {e}"]}
 
 
 def build_prompt(narration_text: str, scene_type: str = "") -> str:
