@@ -76,7 +76,6 @@ Shorts は3曲構成でも中盤（main）の1曲のみ使用。
 | `MIN_CLIP_FLOOR` | 5.0s | 音声ありシーンの最低クリップ尺 |
 | `CROSSFADE_DURATION` | 0.8s | シーン間クロスフェード |
 | `INTRO_DURATION` | 5.0s | チャンネルイントロ尺 |
-| `TEASER_MAX_CLIPS` | 12 | テイザー最大クリップ数 |
 | `BGM_VOLUME` | 0.12 | BGM音量 |
 | `BGM_CROSSFADE` | 4.0s | 3曲構成時の曲間クロスフェード |
 

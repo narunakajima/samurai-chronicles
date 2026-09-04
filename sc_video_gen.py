@@ -94,7 +94,6 @@ DIN_FONT = str(Path("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf")
 # ── 本編 Teaser イントロ設定 ──────────────────────────────
 TEASER_CLIP_DUR = 2.5     # テイザー1クリップ秒数
 TEASER_XFADE    = 0.3     # 速めのクロスフェード（映画的テンポ感）
-TEASER_MAX_CLIPS = 12     # テイザーに使う最大シーン数（ナレーション尺に合わせる）
 
 # ── Ken Burns パラメータ ─────────────────────────────────
 KB_ZOOM_FACTOR = 1.40   # zoom_in/out の最大倍率（上限キャップ）
