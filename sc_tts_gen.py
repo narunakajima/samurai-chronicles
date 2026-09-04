@@ -5,9 +5,14 @@ sc_tts_gen.py — Samurai Chronicles 英語ナレーション生成スクリプ�
   python3 sc_tts_gen.py --episode ep001
   python3 sc_tts_gen.py --episode ep001 --scenes 1,3,5   # 特定シーンのみ再生成
   python3 sc_tts_gen.py --episode ep001 --takes 2        # 複数テイク
+  python3 sc_tts_gen.py --episode ep001 --force          # 既存ファイルも含め全シーン再生成
 
 出力先: samurai-chronicles/audio/{episode_id}/
   S01.wav, S02.wav, ... S20.wav（またはテイク指定時: S01_take2.wav など）
+
+生成済みならスキップ（2026-09-04〜、sc_image_gen.pyと同じ考え方）:
+  --scenes未指定のフル実行では、既に音声が存在するシーンは再生成しない。
+  全シーンを強制的に作り直したい場合は --force。
 """
 
 import argparse
@@ -362,7 +367,7 @@ def run_shorts(episode_id: str):
     print(f"{'━'*60}\n")
 
 
-def run(episode_id: str, scene_filter: list = None, takes: int = 1):
+def run(episode_id: str, scene_filter: list = None, takes: int = 1, force: bool = False):
     if not API_KEY:
         print("❌ GEMINI_API_KEY が設定されていません")
         sys.exit(1)
@@ -391,6 +396,11 @@ def run(episode_id: str, scene_filter: list = None, takes: int = 1):
     print(f"  出力先: {out_dir}")
     print(f"{'━'*60}\n")
 
+    # 「生成済みならスキップ」（2026-09-04〜）: --scenes未指定のフル実行では、
+    # 既に音声が存在するシーンは再生成しない（sc_image_gen.pyと同じ考え方）。
+    skip_existing = scene_filter is None and not force
+    skipped_count = 0
+
     saved = []
     for scene in scenes:
         scene_id = scene["scene_id"]
@@ -402,6 +412,13 @@ def run(episode_id: str, scene_filter: list = None, takes: int = 1):
                 out_file = out_dir / f"S{scene_id:02d}_take{take}.wav"
 
             label = f"S{scene_id:02d}" + (f" テイク{take}" if takes > 1 else "")
+
+            if skip_existing and out_file.exists():
+                print(f"  {label} … 既存ファイルをスキップ")
+                saved.append(out_file)
+                skipped_count += 1
+                continue
+
             scene_type = scene.get("type", "")
             print(f"  {label} [{scene_type}] 生成中... ", end="", flush=True)
             try:
@@ -424,7 +441,8 @@ def run(episode_id: str, scene_filter: list = None, takes: int = 1):
             time.sleep(2)
 
     print(f"\n{'━'*60}")
-    print(f"  完了: {len(saved)} ファイル → {out_dir}")
+    skip_note = f"（うちスキップ{skipped_count}件）" if skipped_count else ""
+    print(f"  完了: {len(saved)} ファイル{skip_note} → {out_dir}")
     print(f"{'━'*60}\n")
     return saved
 
@@ -439,6 +457,8 @@ def cli():
                         help="Shorts専用ナレーション（shorts_narration）をトレイラースタイルで生成")
     parser.add_argument("--teaser", action="store_true",
                         help="本編トレイラーイントロ（teaser_narration）を生成 → S00_teaser.wav")
+    parser.add_argument("--force", action="store_true",
+                        help="--scenes未指定のフル実行で、既存ファイルがあっても全シーン再生成する（デフォルトは既存ファイルをスキップ）")
     args = parser.parse_args()
 
     if args.teaser:
@@ -453,7 +473,7 @@ def cli():
     if args.scenes:
         scene_filter = [int(x.strip()) for x in args.scenes.split(",")]
 
-    run(args.episode, scene_filter=scene_filter, takes=args.takes)
+    run(args.episode, scene_filter=scene_filter, takes=args.takes, force=args.force)
 
 
 if __name__ == "__main__":

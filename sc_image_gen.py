@@ -4,6 +4,13 @@ sc_image_gen.py — Samurai Chronicles 静止画生成スクリプト
 使い方:
   python3 sc_image_gen.py --episode ep001
   python3 sc_image_gen.py --episode ep001 --scenes 1,3,9   # 特定シーンのみ再生成
+  python3 sc_image_gen.py --episode ep001 --force          # 既存ファイルも含め全シーン再生成
+
+生成済みならスキップ（2026-09-04〜）:
+  --scenes未指定のフル実行では、既に画像が存在するシーンは再生成しない
+  （タイムアウト等で中断して同じコマンドを再実行しても、成功済み分を
+  無駄に作り直さない）。全シーンを強制的に作り直したい場合は --force。
+  --scenesで個別指定した場合は常に再生成する（このスキップの対象外）。
 
 出力先: ~/Desktop/SC/{episode_id}/images/（確認用。/sc-new STEP4でユーザーOK後に
   Google Driveのsamurai-chronicles/{episode_id}/images/へ移動する）
@@ -364,7 +371,7 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
         return {"scene_id": scene_id, "ok": False, "issues": [f"QA_ERROR: {e}"]}
 
 
-def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
+def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force: bool = False):
     if not API_KEY:
         print("❌ GEMINI_API_KEY が設定されていません")
         sys.exit(1)
@@ -424,8 +431,11 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
         out_dir = DESKTOP_BASE / episode_id / "images_shorts"
         gen_func = generate_one_image_portrait
         label = "Shorts縦長(9:16)"
-        # 再生成対象のファイルのみ削除（指定外シーンの既存PNGは保持）
-        if out_dir.exists():
+        # 再生成対象のファイルのみ削除（指定外シーンの既存PNGは保持）。
+        # ただし--scenes未指定かつ--force未指定の「生成済みならスキップ」対象時は、
+        # ここで消してしまうと下のスキップ判定が常に空振りになるため削除しない
+        # （2026-09-04〜）。
+        if out_dir.exists() and not (scene_filter is None and not force):
             for s in scenes:
                 fp = out_dir / f"S{s['scene_id']:02d}.png"
                 if fp.exists():
@@ -447,14 +457,29 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
     print(f"  出力先: {out_dir}")
     print(f"{'━'*60}\n")
 
+    # 「生成済みならスキップ」（2026-09-04〜）: --scenesを指定しないフル実行で、
+    # 既に画像が存在するシーンは再生成しない（API呼び出しがコストの8割を占める中、
+    # タイムアウト等で中断して同じコマンドを再実行すると、既に成功した分まで
+    # 毎回作り直していた無駄への対処）。--scenesで個別指定した場合や--force指定時は
+    # 従来通り必ず再生成する（既存の狙い撃ち再生成の挙動は変えない）。
+    skip_existing = scene_filter is None and not force
+
     saved = []
     qa_results = []
+    skipped_count = 0
     for scene in scenes:
         scene_id = scene["scene_id"]
         prompt = scene["image_prompt"]
         char_ref_name = scene.get("character_ref")
         char_ref = load_character_ref(char_ref_name)
         out_file = out_dir / f"S{scene_id:02d}.png"
+
+        if skip_existing and out_file.exists():
+            print(f"  S{scene_id:02d} … 既存ファイルをスキップ")
+            saved.append(out_file)
+            qa_results.append({"scene_id": scene_id, "ok": True, "issues": [], "attempts": 0, "skipped": True})
+            skipped_count += 1
+            continue
 
         # Shorts生成時: 本編(16:9)で既にQA承認済みの画像があれば、それを9:16に
         # 再構成する（ゼロから独立生成しない）。無ければ従来通りテキストのみで生成。
@@ -479,7 +504,8 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
             time.sleep(1)
 
     print(f"\n{'━'*60}")
-    print(f"  完了: {len(saved)}/{len(scenes)} 枚 → {out_dir}")
+    skip_note = f"（うちスキップ{skipped_count}枚）" if skipped_count else ""
+    print(f"  完了: {len(saved)}/{len(scenes)} 枚{skip_note} → {out_dir}")
     print(f"{'━'*60}\n")
 
     # ── 画像QAレポート出力 ──────────────────────────────────
@@ -587,6 +613,8 @@ def cli():
                         help="Shorts用縦長(9:16)画像をimages_shorts/に生成")
     parser.add_argument("--face", action="store_true",
                         help="Shorts冒頭顔アップ画像を生成（images_shorts/S00_face.png）")
+    parser.add_argument("--force", action="store_true",
+                        help="--scenes未指定のフル実行で、既存ファイルがあっても全シーン再生成する（デフォルトは既存ファイルをスキップ）")
     args = parser.parse_args()
 
     if args.face:
@@ -597,7 +625,7 @@ def cli():
     if args.scenes:
         scene_filter = [int(x.strip()) for x in args.scenes.split(",")]
 
-    run(args.episode, scene_filter=scene_filter, shorts=args.shorts)
+    run(args.episode, scene_filter=scene_filter, shorts=args.shorts, force=args.force)
 
 
 if __name__ == "__main__":
