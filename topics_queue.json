@@ -950,7 +950,7 @@
     },
     {
       "episode_id": "ep093",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Samurai Who Never Fought a Battle and Wrote the Book on Bushido: Yamamoto Tsunetomo",
       "era": "Edo",
       "priority": "A",
@@ -1015,6 +1015,6 @@
       "last_updated": "2026-08-29"
     }
   ],
-  "last_updated": "2026-08-31",
+  "last_updated": "2026-09-04",
   "total_topics": 98
 }

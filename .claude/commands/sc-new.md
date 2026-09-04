@@ -13,7 +13,7 @@ topics_queue.json から次のトピックを選び、動画生成まで一気�
 
 | ステップ | 内容 | 所要時間 |
 |---|---|---|
-| STEP 1  | 次のトピック確認（人物重複チェック・S19予告確認） | 約5分 |
+| STEP 1  | 次のトピック確認（人物重複チェック） | 約5分 |
 | STEP 2A | エピソードJSON生成（20シーン） | 約5〜10分 |
 | STEP 2B | JSONファイル保存 + キュー更新 | 即時 |
 | STEP 3A/3B/3C | 制作確認書・サムネイル・BGM選定（並行、確認待ちなし） | 約30〜40分 |
@@ -35,6 +35,12 @@ OKが出てから実行する順序に変更した（未承認のBGMをライブ
 許容範囲か」を判定し、修正すべきものは確認なしにその場で `episodes/ep{NNN}.json` へ
 反映するようになった。** これによりナレーション⚠️によるSTEP 5A/5B前の早期確認ゲートは
 廃止し、確認ポイントは実質1箇所（STEP5C後の統合確認）に一本化された。
+**2026-09-04〜: S19（次回予告シーン）を廃止した。** キューの並び替え・差し込みで
+「予告した次回」と実際の次エピソードがずれるリスク（過去に発生）に対して、予告対象を
+毎話確認する運用コストが見合わないと判断。各話は falling_action → insight → outro で
+締め、次回への言及は行わない。**総シーン数は20を維持する**（ep093のみ暫定的に19シーンで
+制作したが、ep094以降は次回予告シーンが抜けた1枠を setup/rising_action/falling_action/
+insight のいずれかに1シーン追加して物語の厚みに充て、20シーンで構成する）。
 ```
 
 表示後、ユーザーの確認を待たずにそのまま STEP 1 へ進む。
@@ -208,7 +214,6 @@ Claude一次判断でも時代考証ミスを拾える多層構成になって�
 - このSTEP 2A以下（本ファイルの「生成ルール」節全文 — タイトル型・ナレーション・Hookルール・
   画像プロンプト・Ken Burns・character_ref・登場人物数上限・shorts関連フィールド・
   JSONフォーマット・youtube_description必須フォーマット）をそのまま転記する
-- STEP 1で確認済みのS19次回予告の対象エピソード情報
 - 出力先パス `$HOME/samurai-chronicles/episodes/ep{NNN}.json` に直接JSONファイルを
   書き込むよう指示する（オーケストレーター側では保存しない）
 - 新キャラクターが必要な場合は `characters/{name}.txt` も作成するよう指示する
@@ -256,7 +261,9 @@ Agentの最終報告はユーザーには表示しない（画面に出力しな
 - BBC/Netflix歴史ドキュメンタリー調の英語
 - 1シーン約80〜100語（TTS読み上げ速度 約90語/分 → **実尺 約55〜70秒**）
 - 各シーンで次シーンへの引きを作る
-- hook → setup → rising_action → climax → falling_action → insight → teaser → outro の構成
+- hook → setup → rising_action → climax → falling_action → insight → outro の構成、合計20シーン
+  （2026-09-04〜: 次回予告シーン(旧S19)は廃止。insightの後は直接outroで締める。抜けた1枠は
+  setup/rising_action/falling_action/insight のいずれかに1シーン追加して20シーンを維持する）
 
 **Hook シーン（scene_id: 1, type: "hook"）の特別ルール:**
 - 必ず3文以内、合計40語以内
@@ -375,7 +382,7 @@ Agentの最終報告はユーザーには表示しない（画面に出力しな
 ```
 {フック文（2〜3文）}
 
-🎌 Subscribe for new episodes every day:
+🎌 Subscribe for new episodes every week:
 https://www.youtube.com/@Samurai-Chronicles-JP
 
 🌐 Official site: https://samurai-chronicles.com
@@ -568,7 +575,7 @@ BGM           : ❌ 未選択
 ================================================================
 
 ▶ S{id:02d}  [{type}]  キャラクター: {character_ref or —}  語数: 約{word_count}語（推定実尺: 約{estimated_seconds}秒）
-※ 推定実尺 = word_count ÷ 90語/分 × 60 + 1.5s（NARR_DELAY+NARR_TAIL）。hook/teaser/outro は短め。
+※ 推定実尺 = word_count ÷ 90語/分 × 60 + 1.5s（NARR_DELAY+NARR_TAIL）。hook/outro は短め。
 
   【EN】
   {narration}（自動修正済みの場合は修正後のナレーション）
