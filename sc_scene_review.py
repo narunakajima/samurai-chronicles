@@ -332,9 +332,9 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
   .scene h2 {{ font-size: 16px; margin: 0 0 12px; }}
   .type {{ color: #8ab4f8; font-weight: normal; margin-left: 8px; }}
   .cref {{ color: #999; font-weight: normal; margin-left: 12px; font-size: 13px; }}
-  .scene-body {{ display: flex; gap: 16px; flex-wrap: wrap; }}
-  .scene-image img {{ max-width: 420px; width: 100%; border-radius: 6px; display: block; }}
-  .scene-text {{ flex: 1; min-width: 260px; }}
+  .scene-body {{ display: flex; flex-direction: column; gap: 16px; }}
+  .scene-image img {{ max-width: 640px; width: 100%; border-radius: 6px; display: block; }}
+  .scene-text {{ flex: 1; }}
   .en {{ color: #aaa; font-size: 13px; line-height: 1.5; }}
   .ja {{ color: #fff; font-size: 15px; line-height: 1.7; margin-top: 8px; }}
   .missing {{ color: #e66; font-size: 13px; padding: 40px 0; text-align: center; border: 1px dashed #644; }}
@@ -356,8 +356,8 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
   .shorts-hook {{ margin-bottom: 12px; }}
   .hook-line {{ color: #fff; font-weight: bold; font-size: 15px; line-height: 1.4; }}
   .shorts-strip {{ display: flex; gap: 14px; overflow-x: auto; padding-bottom: 8px; margin-top: 12px; }}
-  .shorts-tile {{ flex: 0 0 auto; width: 160px; }}
-  .shorts-tile img {{ width: 160px; border-radius: 6px; display: block; }}
+  .shorts-tile {{ flex: 0 0 auto; width: 320px; }}
+  .shorts-tile img {{ width: 320px; border-radius: 6px; display: block; }}
   .shorts-tile-label {{ color: #8ab4f8; font-size: 12px; margin-top: 4px; }}
   .shorts-tile-ja {{ color: #ccc; font-size: 12px; line-height: 1.4; margin-top: 2px; }}
   #media-player-bar {{
