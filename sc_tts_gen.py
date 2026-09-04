@@ -14,6 +14,7 @@ import argparse
 import io
 import json
 import os
+import re
 import sys
 import time
 import wave
@@ -24,6 +25,7 @@ from google.genai import types
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
 
 TTS_MODEL = "gemini-3.1-flash-tts-preview"
+QA_MODEL = "gemini-flash-latest"  # ナレーション音声が台本通りか判定する用（sc_image_gen.pyのQA_MODELと同じ考え方）
 VOICE_NAME = "Charon"   # 重厚・ドラマチックな男性英語ボイス
 TEMPERATURE = 1.0
 SAMPLE_RATE = 24000
@@ -112,6 +114,57 @@ def pcm_to_wav(pcm_data: bytes, output_path: Path, sample_rate: int = SAMPLE_RAT
         wf.writeframes(pcm_data)
 
 
+def _to_wav_bytes(audio_data: bytes, sample_rate: int = SAMPLE_RATE) -> bytes:
+    """WAV/PCMいずれのバイト列でも、QA用にWAVバイト列へ正規化する。"""
+    if audio_data[:4] == b"RIFF":
+        return audio_data
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(sample_rate)
+        wf.writeframes(audio_data)
+    return buf.getvalue()
+
+
+def qa_narration_with_gemini(client, audio_data: bytes, script_text: str) -> dict:
+    """生成されたナレーション音声が台本通りに発話されているかをGeminiに判定させる。
+    Gemini TTSは稀に台本の一部を省略・改変したり、途中で発話が途切れたりすることが
+    あるため、人間が毎回聴いて確認する前段のフィルタとして自動チェックする
+    （sc_bgm_qa.pyの音声QAと同じ、Geminiのマルチモーダル音声理解を使う考え方）。"""
+    try:
+        wav_bytes = _to_wav_bytes(audio_data)
+        qa_prompt = (
+            "Listen to this narration audio and compare it against the intended script below.\n\n"
+            "Check for these issues:\n"
+            "- SKIPPED: one or more sentences or phrases from the script are missing from the audio\n"
+            "- ALTERED: the spoken words deviate significantly from the script — not just natural "
+            "reading variation (pauses, emphasis), but substituted, garbled, or materially different wording\n"
+            "- REPEATED: any part of the script is spoken more than once\n"
+            "- CUTOFF: the audio ends abruptly mid-sentence or mid-word instead of completing the script\n\n"
+            f"Script:\n{script_text}\n\n"
+            "Respond with ONLY a JSON object, no other text, in this exact format:\n"
+            '{"ok": true, "issues": []}\n'
+            "or\n"
+            '{"ok": false, "issues": ["ISSUE_TYPE: brief description", ...]}'
+        )
+        response = client.models.generate_content(
+            model=QA_MODEL,
+            contents=[
+                qa_prompt,
+                types.Part.from_bytes(data=wav_bytes, mime_type="audio/wav"),
+            ],
+        )
+        text = response.text.strip()
+        if text.startswith("```"):
+            text = re.sub(r"^```(?:json)?\s*", "", text)
+            text = re.sub(r"\s*```$", "", text)
+        result = json.loads(text)
+        return {"ok": bool(result.get("ok", True)), "issues": result.get("issues", [])}
+    except Exception as e:
+        return {"ok": True, "issues": [], "qa_error": str(e)}
+
+
 def build_prompt(narration_text: str, scene_type: str = "") -> str:
     """シーンタイプに応じたスタイル指示 + ナレーションテキストでプロンプトを構築する。"""
     style = NARRATOR_STYLE
@@ -143,6 +196,7 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
         temperature=TEMPERATURE,
     )
     last_audio_data = None
+    last_fail_reason = ""
     for attempt in range(1, max_retries + 1):
         try:
             response = client.models.generate_content(
@@ -160,6 +214,13 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
                         if actual_dur > max_dur:
                             print(f"  ⚠️ 繰り返しの疑い（{actual_dur:.1f}s > 想定上限{max_dur:.1f}s） ", end="", flush=True)
                             last_audio_data = audio_data
+                            last_fail_reason = f"繰り返しの疑い（想定上限{max_dur:.1f}s超）"
+                            break
+                        qa = qa_narration_with_gemini(client, audio_data, dup_check_text or narration_text)
+                        if not qa["ok"]:
+                            print(f"  ⚠️ 台本不一致の疑い（{'; '.join(qa['issues'])}） ", end="", flush=True)
+                            last_audio_data = audio_data
+                            last_fail_reason = f"台本不一致の疑い（{'; '.join(qa['issues'])}）"
                             break
                         return audio_data
         except Exception as e:
@@ -170,8 +231,7 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
             time.sleep(wait)
     if last_audio_data is not None:
         raise RuntimeError(
-            f"全{max_retries}回のテイクが繰り返し疑い（想定上限{max_dur:.1f}s超）でした。"
-            "再実行してください。"
+            f"全{max_retries}回のテイクが{last_fail_reason}のままでした。再実行してください。"
         )
     raise RuntimeError("音声データが返ってきませんでした（全リトライ失敗）")
 
