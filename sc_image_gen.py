@@ -344,6 +344,9 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
         response = client.models.generate_content(
             model=QA_MODEL,
             contents=[qa_prompt, image],
+            config=types.GenerateContentConfig(
+                thinking_config=types.ThinkingConfig(thinking_budget=0)
+            ),
         )
         text = response.text.strip()
         if text.startswith("```"):
@@ -386,7 +389,11 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False):
             selected_ids.add(highlight_id)
 
         # タイプ優先度順に追加
-        priority_types = ["hook", "climax", "teaser", "insight", "falling_action", "outro", "rising_action", "setup"]
+        # "teaser"（S19次回予告）はsc_video_gen.pyのShorts選定（gen_video内）が
+        # 今エピソードと無関係な人物・場面のため除外しているのと合わせて対象外にする
+        # （2026-09-04〜。以前はteaserも候補に入れていたため、動画側で使われない
+        # Shorts画像を毎話1枚無駄に生成していた）。
+        priority_types = ["hook", "climax", "insight", "falling_action", "outro", "rising_action", "setup"]
         for ptype in priority_types:
             if len(selected_ids) >= 8:
                 break

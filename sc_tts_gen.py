@@ -154,6 +154,9 @@ def qa_narration_with_gemini(client, audio_data: bytes, script_text: str) -> dic
                 qa_prompt,
                 types.Part.from_bytes(data=wav_bytes, mime_type="audio/wav"),
             ],
+            config=types.GenerateContentConfig(
+                thinking_config=types.ThinkingConfig(thinking_budget=0)
+            ),
         )
         text = response.text.strip()
         if text.startswith("```"):
