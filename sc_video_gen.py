@@ -25,11 +25,21 @@ sc_video_gen.py — Samurai Chronicles 最終動画生成スクリプト
 
 import argparse
 import json
+import os
 import shutil
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
+
+
+def atomic_write_json(path: Path, data) -> None:
+    """同じディレクトリに一時ファイルを書いてからos.replaceでアトミックに置き換える。
+    書き込み中にプロセスが落ちても、既存のJSONが壊れた状態で残らないようにする
+    （2026-09-04追加、Fable 5.1監査の指摘）。"""
+    tmp_path = path.with_suffix(path.suffix + ".tmp")
+    tmp_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    os.replace(tmp_path, path)
 
 
 def _notify(message: str) -> None:
@@ -1447,8 +1457,7 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
     ep["youtube_description"] = desc
 
     # JSON を上書き保存
-    with open(ep_json, "w", encoding="utf-8") as _f:
-        json.dump(ep, _f, ensure_ascii=False, indent=2)
+    atomic_write_json(ep_json, ep)
     print(f"  ✓ {ep_json.name} の youtube_description を更新しました")
     print(f"{'━'*60}\n")
 
