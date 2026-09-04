@@ -114,6 +114,15 @@ def run(episode_id: str, scene_filter: list = None):
     targets = [s for s in ep["scenes"] if is_target_scene(s)]
     if scene_filter:
         targets = [s for s in targets if s["scene_id"] in scene_filter]
+    else:
+        # 「生成済みならスキップ」（2026-09-04〜、sc_image_gen.py等と同じ考え方）:
+        # --scenes未指定のフル実行では、既にzoom_anchorが設定済みのシーンは
+        # 再判定しない。個別に判定し直したい場合は --scenes で指定する。
+        already_set = [s for s in targets if s.get("zoom_anchor")]
+        if already_set:
+            labels = ", ".join(f"S{s['scene_id']:02d}" for s in already_set)
+            print(f"  スキップ（判定済み）: {labels}")
+        targets = [s for s in targets if not s.get("zoom_anchor")]
 
     print(f"\n{'━'*60}")
     print(f"  {episode_id} — zoom_anchor 判定（Gemini Vision）")
