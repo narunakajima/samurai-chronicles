@@ -32,7 +32,7 @@ from PIL import Image
 from google import genai
 
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
-MODEL = "gemini-flash-latest"
+MODEL = "gemini-3.7-flash"
 
 BASE_DIR = Path(__file__).parent
 DRIVE_BASE = (

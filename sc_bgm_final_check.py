@@ -15,7 +15,7 @@ from pathlib import Path
 from google import genai
 
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
-MODEL = "gemini-flash-latest"
+MODEL = "gemini-3.7-flash"
 
 DESKTOP_SC = Path(os.path.expanduser("~/Desktop/SC"))
 

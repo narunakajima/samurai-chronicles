@@ -40,7 +40,7 @@ from google.genai import types
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
 
 MODEL = "gemini-3.1-flash-image"
-QA_MODEL = "gemini-flash-latest"
+QA_MODEL = "gemini-3.7-flash"
 
 BASE_DIR = Path(__file__).parent  # スクリプト・エピソードJSONの場所
 
