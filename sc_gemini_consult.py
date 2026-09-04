@@ -13,7 +13,7 @@ sc_gemini_consult.py — Gemini との1ターン対話（履歴ファイルで�
   --message        送信するメッセージ（必須）
   --history-file   前ターンの会話履歴JSONファイル
   --save-history   履歴の保存先（デフォルト: /tmp/sc_consult_history.json）
-  --model          Geminiモデル（デフォルト: gemini-3.6-flash）
+  --model          Geminiモデル（デフォルト: gemini-flash-latest、常に最新Flashを指す）
   --system         システムプロンプト（任意）
 """
 
@@ -28,7 +28,7 @@ from google.genai import types
 
 API_KEY = os.environ.get("GEMINI_API_KEY", "")
 DEFAULT_HISTORY = Path("/tmp/sc_consult_history.json")
-DEFAULT_MODEL = "models/gemini-3.6-flash"
+DEFAULT_MODEL = "models/gemini-flash-latest"
 
 
 def load_history(path: Path) -> list:
