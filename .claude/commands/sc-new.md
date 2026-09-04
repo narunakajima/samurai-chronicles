@@ -632,11 +632,16 @@ Modern cinematic concept art style, dramatic lighting, film production illustrat
 
 **生成コード:**
 ```python
+import os
 from google import genai
 from google.genai import types
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+# SC専用キーを優先（sc_image_gen.py等と同じ、2026-09-04修正 —
+# 以前はos.environ["GEMINI_API_KEY"]直読みで汎用キーに課金されており、
+# SC Projectの請求に計上されていなかった）
+api_key = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
+client = genai.Client(api_key=api_key)
 response = client.models.generate_content(
-    model="gemini-3.1-flash-image-preview",
+    model="gemini-3.1-flash-image",  # sc_image_gen.pyのMODELと統一（"-preview"サフィックスは廃止済み）
     contents=full_prompt,
     config=types.GenerateContentConfig(response_modalities=["IMAGE"]),
 )
