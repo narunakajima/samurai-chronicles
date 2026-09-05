@@ -1,0 +1,286 @@
+{
+  "episode_id": "ep094",
+  "episode_title": "Tachibana Muneshige: The Undefeated General Who Lost Everything",
+  "youtube_title": "The Undefeated General Hideyoshi Feared: Tachibana Muneshige",
+  "youtube_description": "He never lost a single battle in over forty years of near-constant warfare — yet he still ended up stripped of everything he had built. Then something happened to Tachibana Muneshige that had never happened to any other daimyo in Japanese history. This is the story of Kyushu's undefeated general, and the domain he lost, and reclaimed.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 He never lost a single battle\n0:43 Tachibana Muneshige was born...\n1:34 In 1581, at Otomo Sorin's...\n2:31 Tachibana Dosetsu died in...\n3:28 In 1587, Toyotomi Hideyoshi...\n4:27 As Yanagawa's new lord,...\n5:22 In 1592, Hideyoshi launched...\n6:21 When Hideyoshi died in 1598, his\n7:17 Marching east with the...\n8:14 On that same day, October 21st,\n8:58 Rather than surrender...\n9:44 Word of the surrender reached...\n10:30 Two years into his exile, in\n11:24 For several years, Muneshige...\n12:25 Muneshige entered Tokugawa...\n13:23 Then, in 1620, the shogunate...\n14:19 Nearly two decades later, in...\n15:16 Across more than four decades of\n16:13 Muneshige died in 1643, in his\n17:10 Today, Tachibana Muneshige is...\n\n🎌 Subscribe for new episodes every week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"Samurai Warlords: The Book of the Daimyo.\" Blandford Press, 1989.\n2. Turnbull, Stephen. \"The Samurai Sourcebook.\" Cassell, 1998.\n3. Papinot, E. \"Historical and Geographical Dictionary of Japan.\"\n\n#TachibanaMuneshige #TachibanaGinchiyo #SengokuPeriod #SamuraiHistory #Sekigahara #Yanagawa #JapaneseHistory #Kyushu #Daimyo #SamuraiChronicles",
+  "youtube_tags": [
+    "Tachibana Muneshige",
+    "Tachibana Ginchiyo",
+    "Sengoku Period",
+    "Samurai History",
+    "Battle of Sekigahara",
+    "Yanagawa",
+    "Japanese History",
+    "Kyushu",
+    "Daimyo",
+    "Samurai Chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "Otsu Castle finally falls under his relentless siege — another flawless victory in a forty-year unbeaten career. But that same afternoon, the war he was fighting for has already been lost. How does an undefeated general end up on history's losing side?",
+  "shorts_narration": "Forty years. Zero defeats. Yet he lost his entire domain the same day his greatest siege succeeded — and became the only lord in Japanese history to get it back. This is Tachibana Muneshige.",
+  "shorts_hook_lines": [
+    "NEVER LOST.",
+    "LOST EVERYTHING.",
+    "HOW DID HE GET IT BACK?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Tachibana Muneshige's face, a battle-hardened samurai general in his thirties with a strong jaw, short beard, and intense unflinching eyes staring directly into the camera. Dramatic torchlight from below casts deep shadows across his features inside a dim castle hall, his dark red and black lacquered armor faintly visible at the edges of frame. Vertical portrait composition, tense and commanding atmosphere.",
+  "thumbnail_prompt": "Dramatic medium shot of Tachibana Muneshige in dark red and black lacquered samurai armor bearing the Tachibana clan's gyoyo crest (a paired foliate emblem, not a citrus blossom), standing resolute before the burning silhouette of a castle at dusk, sword sheathed at his side, an unmarked banner behind him. Cinematic, high-contrast lighting, imposing and undefeated presence.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He never lost a single battle in 40 years. Yet he still lost everything at Sekigahara. So how did the only man ever stripped of his lands get them back — exactly as they were?",
+      "image_prompt": "Dusk over a Sengoku-era mountain castle in Kyushu, silhouette of a lone samurai general in dark red and black lacquered armor standing atop the ramparts, sword undrawn, surveying a battlefield littered with the banners of a defeated enemy army below. In the far distance, faint and half-hidden by mist, a second castle stands dark and abandoned. Dramatic contrast between triumph and impending loss, moody cinematic lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Tachibana Muneshige was born in 1567 as the son of Takahashi Joun, one of the fiercest generals serving the Otomo clan of Kyushu. From childhood, Muneshige trained under his father's brutal standards, and by his teenage years he was already leading men in battle. His talent was impossible to ignore — precise, fearless, and instinctively tactical. But his father's genius alone would not decide his future. Just south, the Tachibana clan had lost its male heir, its aging commander Dosetsu clinging to a threatened border domain with only a young daughter to inherit it.",
+      "image_prompt": "Dusty training courtyard within a Kyushu fortress at dawn, a lean teenage boy Tachibana Muneshige and his father Takahashi Joun, a grizzled veteran general in worn battle-scarred armor, gripping opposite ends of a single straight wooden bokken practice sword locked together at one clear point of contact between them, hands clearly wrapped around the same shaft, no crossed spears or overlapping blades, other young retainers watching from the sidelines. Intense, disciplined atmosphere, early morning light.",
+      "ken_burns": "pan_right",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1581, at Otomo Sorin's urging, fourteen-year-old Muneshige married Ginchiyo, the twelve-year-old heir of the Tachibana clan, and took her family's name as his own. It was meant to merge two of the Otomo's most capable military houses into one unbreakable border defense. But Ginchiyo was no ordinary bride — she was already the sole ruling head of her clan, trained since childhood to command her own retainers. Two proud warriors, each raised to lead rather than follow, now shared one household and one uncertain future on a frontier Kyushu's most dangerous army was already eyeing.",
+      "image_prompt": "Grand hall of Tachibana Castle during a formal Sengoku wedding ceremony, fourteen-year-old Tachibana Muneshige in formal dark kimono kneeling on one side facing his young bride, twelve-year-old Ginchiyo in elaborate ceremonial kimono, hardened retainers from both households seated along the walls, the hall lit only by traditional Japanese andon paper lanterns and chochin, no exposed Western-style taper candles, quiet formality masking evident tension between the two proud families.",
+      "ken_burns": "static",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Tachibana Dosetsu died in 1585, and the following year the Shimazu clan's invasion of northern Kyushu reached its most dangerous point, with Muneshige, still in his teens, defending the family's mountain stronghold, Tachibanayama Castle, virtually alone. Where his wife Ginchiyo held the castle town with a scratch force of the household's women, Muneshige led punishing counterattacks against Shimazu detachments in the surrounding hills, refusing every demand to surrender. It was reckless, outnumbered warfare against Kyushu's strongest army — and yet, scout report after scout report came back the same: the young Tachibana lord had not lost a single engagement.",
+      "image_prompt": "Steep, forested mountainside in Kyushu at dusk, a lean nineteen-year-old Tachibana Muneshige with a youthful smooth face, no beard or mustache, in dark red and black lacquered armor leading a small band of samurai in a fierce counterattack against Shimazu clan soldiers retreating through the trees, spears clashing, smoke drifting through the canopy, fierce determined expression on his young face.",
+      "ken_burns": "zoom_in",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1587, Toyotomi Hideyoshi marched into Kyushu with an army large enough to crush the Shimazu outright, and Muneshige's forces joined the invasion as a vanguard unit. His performance in the campaign was so relentless that Hideyoshi singled him out personally, reportedly declaring him 'the finest warrior in Kyushu' — chinzei-ichi, 'number one in the west.' It was an extraordinary compliment for a twenty-year-old commander who had inherited no clan of his own. Hideyoshi rewarded him with something rarer still: his own independent domain at Yanagawa, answerable not to the Otomo, but directly to Hideyoshi himself.",
+      "image_prompt": "Formal audience hall within Hideyoshi's Kyushu campaign headquarters, lit only by traditional Japanese andon paper lanterns with no exposed Western-style taper candles, a young Tachibana Muneshige kneeling before a compact, sharp-eyed warlord seated on a raised dais surrounded by attendants and banners bearing the Toyotomi paulownia crest, the warlord gesturing toward a partially rolled blank formal land-grant scroll on a low table with only a red official seal visible and no legible readable text or characters on it, other assembled generals looking on with visible surprise. Photorealistic cinematic film still, natural lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "As Yanagawa's new lord, Muneshige built a reputation that went beyond victories. He was famous for treating defeated enemies and captured soldiers with unusual mercy, refusing the casual brutality common among Sengoku commanders, and his own troops were known for discipline rather than looting. Other daimyo began speaking of him not merely as skilled, but as trustworthy — a rare word on a battlefield built on shifting alliances. It was a reputation that would soon be tested far from Japan's shores, as Hideyoshi turned his ambitions toward an invasion no one in Kyushu had asked for: the conquest of Korea.",
+      "image_prompt": "Courtyard of Yanagawa Castle after a battle, Tachibana Muneshige in armor personally overseeing the respectful treatment of bound but unharmed captured enemy soldiers, his own troops standing in orderly ranks rather than looting, calm authoritative presence, late afternoon light.",
+      "ken_burns": "pan_left",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1592, Hideyoshi launched his invasion of Korea, and Muneshige's forces crossed the strait among the first waves. He fought there for years, but his defining moment came during the brutal Japanese withdrawal of 1598, when retreating armies faced annihilation from pursuing Ming and Joseon forces. Muneshige led the relief force that broke through to rescue Konishi Yukinaga's army, blockaded and surrounded at Suncheon, holding the line again and again so that other Japanese units could escape to their ships. Commanders who had mocked his youth years earlier now credited him with saving thousands of lives — and his record remained exactly what it had always been: undefeated.",
+      "image_prompt": "Chaotic coastal battlefield in Korea at dusk, Tachibana Muneshige in weathered dark armor commanding a disciplined rearguard formation of spearmen holding a defensive line on a hillside above a beach, Japanese soldiers streaming past toward waiting ships in the background, pursuing enemy banners visible in the smoke-filled distance.",
+      "ken_burns": "zoom_in",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.56,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "When Hideyoshi died in 1598, his heir was still a child, and Japan's most powerful lords began circling for control. Tokugawa Ieyasu, the shrewdest of them, moved to seize authority in all but name — and men across the country quietly recalculated where their loyalty truly belonged. Muneshige had built his entire career, his domain, and his reputation on Hideyoshi's personal favor. When war finally broke out in 1600 between Ieyasu's faction and those defending the Toyotomi house, there was little question which side the general once called 'the finest warrior in Kyushu' would choose.",
+      "image_prompt": "Dim interior chamber of Yanagawa Castle, Tachibana Muneshige standing alone before a lacquered writing table, a letter bearing news of Hideyoshi's death held in his hand, expression grave and resolute, a sheathed sword resting nearby, muted evening light through shoji screens.",
+      "ken_burns": "static",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.61,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Marching east with the Western army, Muneshige was assigned to a mission that would define his reputation for the whole campaign: besieging Otsu Castle, held by a Tokugawa-aligned lord blocking the road toward the coming battlefield. It was exactly the kind of fight Muneshige excelled at — methodical, disciplined, unrelenting. Day after day his forces battered the castle's defenses, and on October 21st, 1600, its garrison finally surrendered. Muneshige had won again. He simply hadn't realized that, only miles away, the entire war he was fighting for had already been decided in a single afternoon.",
+      "image_prompt": "Wide dramatic view of the siege of Otsu Castle, Tachibana Muneshige directing a coordinated assault from a hillside command position while holding a solid oval-shaped iron war fan (gunbai) with no unusual pinched or hourglass shape, all nearby samurai wearing correct chonmage topknots neatly folded forward flat against the scalp rather than loose upward bun-like ponytails, siege ladders and troops advancing against the castle's stone walls under a hail of arrows, banners of the Western coalition army snapping in the wind, smoke rising from breached outer defenses.",
+      "ken_burns": "zoom_in",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "On that same day, October 21st, 1600, the main Western army had been annihilated at Sekigahara in a matter of hours — undone by betrayal from within its own ranks. Muneshige's own record remained spotless: he had never lost a battle, not this one included. But the cause he had bled for was finished, and the news reached him almost as soon as his victory at Otsu did. He now commanded an intact, undefeated army with nowhere left to march it — the last coherent Western force in a war that had already ended.",
+      "image_prompt": "Split, uneasy composition: in the foreground, Tachibana Muneshige standing triumphant before the newly surrendered gates of Otsu Castle at dusk; in the hazy distance beyond a mountain ridge, faint smoke rising from an unseen battlefield where a great army has already been destroyed. Muneshige's expression is beginning to shift from victory to unease as a messenger approaches at a run.",
+      "ken_burns": "zoom_in",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Rather than surrender immediately, Muneshige withdrew his army back to Kyushu intact, and when Tokugawa-aligned forces under Kuroda Josui and Kato Kiyomasa moved against Yanagawa to punish him, he prepared to fight them too. His own retainers reportedly believed he could still win. Instead, weighing the cost to his soldiers and his people against a war already lost everywhere else, Muneshige chose to lay down his arms and formally surrender his domain. It was the only defeat of his life — and he had engineered it himself, without ever losing a single engagement to bring it about.",
+      "image_prompt": "Torch-lit war council tent, lit only by traditional Japanese andon paper lanterns and torches with no exposed Western-style taper candles, Tachibana Muneshige standing before his assembled retainers and officers, his hair styled as a correct Edo-period chonmage with the front and crown shaved and the long back hair oiled, gathered, folded forward, and laid flat against the top of the shaved crown in a horizontal loop (not tied into an upright cylindrical topknot standing straight up), calmly laying his war fan down on a map of Kyushu rather than raising it for battle, the officers' faces a mixture of protest and grim respect, tense but resolved atmosphere.",
+      "ken_burns": "static",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Word of the surrender reached Edo, and the Tokugawa shogunate wasted no time. Yanagawa, the domain he had built for over a decade, and the legacy his father-in-law's line had defended for a generation, was confiscated in full. Tachibana Muneshige — the general Hideyoshi had once called the finest warrior in Kyushu, the commander who had never lost a fight in his life — walked out of his own castle a landless ronin, with no lord, no income, and by most measures, no future left in the world he had spent forty years mastering.",
+      "image_prompt": "Tachibana Muneshige walking alone out through the main gate of Yanagawa Castle in plain travel clothes rather than armor, a single retainer following a few steps behind carrying a modest bundle, Tokugawa-aligned officials and soldiers standing formally at the gate documenting the handover, overcast grey sky, quiet and humiliating finality.",
+      "ken_burns": "zoom_out",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Two years into his exile, in 1602, Ginchiyo died in the remote countryside of Higo province, far from the castle her father had once placed in her seven-year-old hands. She had spent her entire life defined by a title she never truly held again after Sekigahara, and by most accounts, the couple had lived apart for long stretches even before the disaster. Muneshige, wandering with a shrinking band of loyal retainers and no fixed home, could offer his wife nothing in her final months but the reputation neither of them could exchange for land, income, or safety anymore.",
+      "image_prompt": "A modest rural dwelling in Higo province, lit only by a traditional Japanese andon paper lantern with no exposed Western-style taper candles, Tachibana Ginchiyo lying peacefully on a simple pallet in her final moments, older and more weathered than in her youth, hair greying, a small group of loyal retainers kneeling in quiet grief around her, humble surroundings far removed from castle life.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tachibana_ginchiyo",
+      "zoom_anchor": {
+        "x": 0.43,
+        "y": 0.66
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "For several years, Muneshige lived as a wandering ronin, reportedly turning down offers to serve rival lords who had profited from his downfall. Slowly, his reputation began working in his favor again — not as Kyushu's finest warrior this time, but as a man of unusual integrity even in ruin. Word of his conduct reached Tokugawa Hidetada, Ieyasu's son and heir, who found himself intrigued by a former enemy commander who had never broken and never begged. Around 1603, Hidetada extended an invitation that no one, least of all Muneshige himself, could have predicted.",
+      "image_prompt": "A weathered Tachibana Muneshige in plain grey travel robes rather than armor, walking a rural mountain road in the rain with two or three loyal remaining retainers, turning away from a well-dressed envoy on horseback who gestures toward a distant castle in invitation, resolute refusal in his posture.",
+      "ken_burns": "pan_right",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.61,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Muneshige entered Tokugawa service as a minor retainer, granted a modest stipend far smaller than the domain he had lost, in the northern province of Mutsu. It should have been the quiet, diminished end to a once-brilliant career. Instead, he served with the same discipline that had defined him at Tachibanayama and in Korea, earning Hidetada's genuine trust rather than mere tolerance. Years passed. The shogunate consolidated its power, old Toyotomi loyalists faded from relevance one by one — and somehow, the landless ronin from Yanagawa kept rising, position by position, back toward the life Sekigahara had taken from him.",
+      "image_prompt": "A modest wooden residence in the cold northern province of Mutsu, Tachibana Muneshige in simple dark retainer's attire training a small group of local samurai in a snow-dusted courtyard, humble scale compared to his former castle, quiet diligence and discipline evident in his bearing.",
+      "ken_burns": "static",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Then, in 1620, the shogunate made a decision without precedent in its history: it returned Muneshige to Yanagawa, the exact domain confiscated from him twenty years earlier, restoring him as its lord in full. No other daimyo stripped of his lands after backing the losing side at Sekigahara was ever given back the very same territory. Tachibana Muneshige, once erased from the map entirely, now ruled the identical castle and countryside he had surrendered as a young man — the sole case, in over two and a half centuries of Tokugawa rule, of a fallen lord fully restored to his original domain.",
+      "image_prompt": "Tachibana Muneshige, now older with a weathered, solemn expression, standing once again before the gates of Yanagawa Castle in formal daimyo's attire, an official shogunate scroll of restoration held in his hands, his old retainers and townspeople gathered emotionally to welcome him back, warm golden late-afternoon light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.31
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Nearly two decades later, in 1637, the Shimabara Rebellion erupted in Kyushu, and the shogunate summoned Muneshige — now over seventy years old — to help direct the suppression. He was, by then, one of the last men alive who had actually commanded troops in Sengoku-era warfare, a living relic advising generals born into a world already at peace. He offered counsel on siege tactics rather than leading charges himself, but his presence alone said something: even the Tokugawa, who had once confiscated everything he owned, now wanted the undefeated general's judgment before risking their own soldiers.",
+      "image_prompt": "A military command tent near Shimabara Castle, an elderly Tachibana Muneshige, now in his seventies with grey hair and a weathered face, seated calmly advising younger Tokugawa generals gathered around a siege map, his simple dark robes contrasting with their ornate armor, quiet authority despite his advanced age.",
+      "ken_burns": "static",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.36,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Across more than four decades of nearly continuous warfare — defending his home castle as a teenager, fighting in Korea, besieging Otsu, and eventually advising at Shimabara — no primary source ever records Tachibana Muneshige losing a battle he personally commanded. Even Sekigahara, the disaster that destroyed his domain, was not a defeat on the battlefield but a war lost elsewhere while he was busy winning. It is perhaps the strangest career in Sengoku history: a man whose personal combat record stayed perfect, even as the wars around him ended in his total ruin — twice.",
+      "image_prompt": "Symbolic still composition: an aged suit of dark red and black lacquered samurai armor displayed on a stand in dim candlelight, unmarked and unscarred despite decades of use, a single sheathed katana resting before it, no figure present, contemplative atmosphere emphasizing an unbroken record.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Muneshige died in 1643, in his mid-seventies, one of the last surviving commanders of an era that had already passed into legend during his own lifetime. Historians still argue over how a general could remain undefeated for forty years and still lose everything not once, but nearly, before clawing it entirely back. The answer says less about swordsmanship than about a kind of stubborn integrity — a refusal to abandon a losing cause, and an equal refusal to let that loss define him permanently. In Sengoku Japan, both choices usually got a man killed. Muneshige made his work twice.",
+      "image_prompt": "A dignified, elderly Tachibana Muneshige seated alone on the veranda of Yanagawa Castle at sunset, gazing calmly over the domain he lost and reclaimed, hands resting quietly in his lap, peaceful acceptance in his expression, warm fading light across the castle grounds.",
+      "ken_burns": "zoom_out",
+      "character_ref": "muneshige",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Today, Tachibana Muneshige is remembered in Japan as chinzei-ichi — Kyushu's finest — a title earned in his twenties and somehow still true when he died half a century later. He fought for four lords, across three campaigns, over five decades, and never once lost a battle he personally led. Yet his true legacy may be the domain he lost and reclaimed: proof that in an age defined by betrayal and shifting loyalty, unwavering loyalty itself could eventually be its own reward. His wife Ginchiyo commanded a castle at seventeen. Muneshige commanded his own fate — and refused to let Sekigahara have the final word.",
+      "image_prompt": "Wide, elegiac shot of Yanagawa Castle at dusk, its walls and banners restored, with two faint painted portraits displayed respectfully side by side inside a quiet memorial hall — Tachibana Muneshige in his armor and Tachibana Ginchiyo in hers — soft candlelight illuminating both, a sense of legacy and reunion in death.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep088-BGM-intro.mp3",
+    "main": "BGM/ep008-BGM.mp3",
+    "outro": "BGM/ep079-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/7HyJCHy3ubc",
+  "shorts_url": "https://youtu.be/OMMORalEd-8",
+  "scheduled_at": "2026-09-17 03:00"
+}

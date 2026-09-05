@@ -961,14 +961,14 @@
     },
     {
       "episode_id": "ep094",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Undefeated General Nobunaga Feared: Tachibana Muneshige",
       "era": "Sengoku",
       "priority": "A",
       "person": "muneshige",
       "angle": "overview",
       "notes": "Husband of Tachibana Ginchiyo (ep039) — companion angle. Character art already exists (characters/muneshige).",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-09-05"
     },
     {
       "episode_id": "ep095",
@@ -1013,8 +1013,63 @@
       "angle": "overview",
       "notes": "2026-08-29追加（/sc-analytics Fable5監査を反映）: 黒田官兵衛（ep030 CTR9.58%・ep052 CTR6.16%、2本ともCTR1位・2位）と並ぶ「秀吉の二兵衛」の片割れ。同系統の「知られざる軍師・参謀」テーマ・overview角度で、黒田官兵衛の勝ちパターンを再現できるか検証する枠。First appearance。",
       "last_updated": "2026-08-29"
+    },
+    {
+      "episode_id": "ep099",
+      "status": "pending",
+      "title": "The Traitor Who Ruled Japan for Thirteen Days: Akechi Mitsuhide's Fatal Gamble",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "akechi_mitsuhide",
+      "angle": "character",
+      "notes": "Honnoji incident covered from Nobunaga side in ep002/ep011 — this tells it from Mitsuhide himself: his motive, his 13 days as ruler, and his death fleeing peasants.",
+      "last_updated": "2026-09-05"
+    },
+    {
+      "episode_id": "ep100",
+      "status": "pending",
+      "title": "The Tiger Hunter Who Built Japan's Mightiest Castles: Kato Kiyomasa's Rise and Fall",
+      "era": "Sengoku/Edo",
+      "priority": "A",
+      "person": "kato_kiyomasa",
+      "angle": "overview",
+      "notes": "Never featured before. Hideyoshi's loyal general and castle-building genius, his rivalry with Ishida Mitsunari, and his precarious position under the Tokugawa.",
+      "last_updated": "2026-09-05"
+    },
+    {
+      "episode_id": "ep101",
+      "status": "pending",
+      "title": "The Ninja Whose Name Outlived Five Different Men: Fuma Kotaro's Reign of Terror",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "fuma_kotaro",
+      "angle": "overview",
+      "notes": "Ninja/spy theme — proven strong (7/7 past ninja episodes above CTR median) but currently absent from the pending queue. Hojo clan's legendary ninja leader, a title passed down across generations under one name.",
+      "last_updated": "2026-09-05"
+    },
+    {
+      "episode_id": "ep102",
+      "status": "pending",
+      "title": "The Retainer Worth More Than His Lord's Entire Domain: Shima Sakon's Final Stand at Sekigahara",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "shima_sakon",
+      "angle": "character",
+      "notes": "Never featured before. Test case for the 'hidden strategist' hypothesis — built as a loyalty/sacrifice human-drama arc (not event listing), following the Kuroda Kanbee construction pattern rather than Yamamoto Kansuke's.",
+      "last_updated": "2026-09-05"
+    },
+    {
+      "episode_id": "ep103",
+      "status": "pending",
+      "title": "The Shogun Who Escaped Into Art While Japan Burned: Ashikaga Yoshimasa and the War He Started",
+      "era": "Muromachi",
+      "priority": "B",
+      "person": "ashikaga_yoshimasa",
+      "angle": "character",
+      "notes": "Era diversification — pending queue had become all-Sengoku. Indecisive shogun whose succession dispute triggered the Onin War; retreated into art and built the Silver Pavilion while the country fractured. Priority B: data-poor era, confirm early performance before adding more.",
+      "last_updated": "2026-09-05"
     }
   ],
-  "last_updated": "2026-09-04",
-  "total_topics": 98
+  "last_updated": "2026-09-05",
+  "total_topics": 103
 }
