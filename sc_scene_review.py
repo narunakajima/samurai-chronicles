@@ -25,11 +25,39 @@ Gemini等による自動判定ではなく、動画生成前の人間による�
 import argparse
 import base64
 import json
+import os
 import re
 import sys
 from pathlib import Path
 
+from google import genai
+
 BASE_DIR = Path(__file__).parent
+
+TRANSLATE_API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
+TRANSLATE_MODEL = "gemini-flash-latest"
+
+
+def translate_to_japanese(text: str) -> str:
+    """shorts_narration等、制作確認書に訳文が存在しないフィールド用の簡易JA翻訳。
+    BBC/Netflixドキュメンタリーのトレイラー風トーンを保った自然な日本語にする。
+    失敗時は空文字を返す（呼び出し側でEN文のみのフォールバック表示にする）。"""
+    if not text or not TRANSLATE_API_KEY:
+        return ""
+    try:
+        client = genai.Client(api_key=TRANSLATE_API_KEY)
+        prompt = (
+            "Translate the following English movie-trailer-style narration for a Japanese "
+            "history documentary YouTube channel into natural, punchy Japanese. "
+            "Keep the same short, dramatic trailer tone (not a literal word-for-word translation). "
+            "Respond with ONLY the Japanese translation, no quotes, no explanation.\n\n"
+            f"{text}"
+        )
+        response = client.models.generate_content(model=TRANSLATE_MODEL, contents=prompt)
+        return (response.text or "").strip()
+    except Exception as e:
+        print(f"⚠️  日本語訳の生成に失敗しました: {e}", file=sys.stderr)
+        return ""
 DESKTOP_SC = Path.home() / "Desktop" / "SC"
 DRIVE_BASE = (
     Path.home()
@@ -187,12 +215,18 @@ def build_shorts_html(episode_id: str, ep: dict, narrations: dict,
                        images_dir_shorts: Path, audio_dir: Path) -> str:
     """Shorts確認セクション（S00_face + ハイライト画像列 + shorts_narration再生）を組み立てる。
     sc_video_gen.py の gen_video() 内 Shorts クリップ生成ロジックと同じ並び順
-    （S00_face → シーンID昇順）で、images_shorts/ に実在するファイルをそのまま列挙する。"""
+    （S00_face → シーンID昇順）で、images_shorts/ に実在するファイルをそのまま列挙する。
+
+    ⚠️ 画像タイルには本編シーンの日本語訳(narrations)を絶対に付けない。Shorts音声は
+    shorts_narration（本編とは別の短いトレイラー文）が流れるため、本編シーンの訳文を
+    タイルに載せると「聞こえている内容と違う訳」が表示されてしまう（2026-09-07に発覚した不具合）。
+    日本語訳はshorts_narration全体を1箇所にまとめて表示する。"""
     if not images_dir_shorts.exists():
         return ""
 
     hook_lines = ep.get("shorts_hook_lines") or []
     shorts_narration = ep.get("shorts_narration", "")
+    shorts_narration_ja = translate_to_japanese(shorts_narration) if shorts_narration else ""
 
     face_path = images_dir_shorts / "S00_face.png"
     scene_pngs = sorted(
@@ -225,16 +259,17 @@ def build_shorts_html(episode_id: str, ep: dict, narrations: dict,
         </div>""")
     for p in scene_pngs:
         sid = int(p.stem[1:])
-        narr = narrations.get(sid, {})
-        ja = narr.get("ja", "")
         tiles.append(f"""
         <div class="shorts-tile">
           <img src="{html_escape(rel_path(p))}" alt="{html_escape(p.stem)}">
           <div class="shorts-tile-label">S{sid:02d}</div>
-          {f'<div class="shorts-tile-ja">{html_escape(ja)}</div>' if ja else ""}
         </div>""")
 
-    narration_text = f'<p class="en">{html_escape(shorts_narration)}</p>' if shorts_narration else ""
+    narration_text = ""
+    if shorts_narration:
+        narration_text = f'<p class="en">{html_escape(shorts_narration)}</p>'
+        if shorts_narration_ja:
+            narration_text += f'<p class="ja">{html_escape(shorts_narration_ja)}</p>'
 
     return f"""
     <section class="shorts-section">
@@ -359,7 +394,6 @@ def build_html(episode_id: str, scenes: list, narrations: dict, images_dir: Path
   .shorts-tile {{ flex: 0 0 auto; width: 320px; }}
   .shorts-tile img {{ width: 320px; border-radius: 6px; display: block; }}
   .shorts-tile-label {{ color: #8ab4f8; font-size: 12px; margin-top: 4px; }}
-  .shorts-tile-ja {{ color: #ccc; font-size: 12px; line-height: 1.4; margin-top: 2px; }}
   #media-player-bar {{
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
     display: flex; align-items: center; gap: 12px;

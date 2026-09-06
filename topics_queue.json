@@ -971,18 +971,18 @@
       "last_updated": "2026-09-05"
     },
     {
-      "episode_id": "ep101",
-      "status": "pending",
+      "episode_id": "ep095",
+      "status": "published",
       "title": "The Ninja Whose Name Outlived Five Different Men: Fuma Kotaro's Reign of Terror",
       "era": "Sengoku",
       "priority": "A",
       "person": "fuma_kotaro",
       "angle": "overview",
       "notes": "Ninja/spy theme — proven strong (7/7 past ninja episodes above CTR median) but currently absent from the pending queue. Hojo clan's legendary ninja leader, a title passed down across generations under one name. → 2026-09-06: Fable監査の指摘（実証済みテーマがキュー7番目に埋もれていた）を受けてキュー先頭へ前倒し。",
-      "last_updated": "2026-09-06"
+      "last_updated": "2026-09-07"
     },
     {
-      "episode_id": "ep105",
+      "episode_id": "ep096",
       "status": "pending",
       "title": "The 250 Years of Peace One Man Bought With Patience: Tokugawa Ieyasu's Final Gamble",
       "era": "Sengoku/Edo",
@@ -993,14 +993,14 @@
       "last_updated": "2026-09-06"
     },
     {
-      "episode_id": "ep096",
+      "episode_id": "ep097",
       "status": "pending",
       "title": "The General Who Burned His Castle Rather Than Surrender: Shibata Katsuie's Last Stand",
       "era": "Sengoku",
       "priority": "A",
       "person": "shibata_katsuie",
       "angle": "death",
-      "notes": "Nobunaga's general, died with his wife Oichi rather than surrender to Hideyoshi. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。 → 2026-08-29追記（Fable5監査）: 最期の潔さだけでなく、賤ヶ岳での戦略判断（佐久間盛政を止めきれなかった采配ミス）を軸に据え、黒田官兵衛(ep030/ep052)型の「軍略ドラマ」として構成すると強テーマとの重複が狙える。 → 2026-09-06: ep095(同じdeath角度)と連続しないようキュー内で分離。",
+      "notes": "Nobunaga's general, died with his wife Oichi rather than surrender to Hideyoshi. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。 → 2026-08-29追記（Fable5監査）: 最期の潔さだけでなく、賤ヶ岳での戦略判断（佐久間盛政を止めきれなかった采配ミス）を軸に据え、黒田官兵衛(ep030/ep052)型の「軍略ドラマ」として構成すると強テーマとの重複が狙える。 → 2026-09-06: ep100(同じdeath角度)と連続しないようキュー内で分離。",
       "last_updated": "2026-09-06"
     },
     {
@@ -1015,7 +1015,7 @@
       "last_updated": "2026-08-29"
     },
     {
-      "episode_id": "ep104",
+      "episode_id": "ep099",
       "status": "pending",
       "title": "The Demon King's Only Weakness: Oda Nobunaga and the Boy Who Died Beside Him",
       "era": "Sengoku",
@@ -1026,18 +1026,18 @@
       "last_updated": "2026-09-06"
     },
     {
-      "episode_id": "ep095",
+      "episode_id": "ep100",
       "status": "pending",
       "title": "The Minister Who Was Assassinated in the Snow: Ii Naosuke and the Sakuradamon Incident",
       "era": "Bakumatsu",
       "priority": "A",
       "person": "ii_naosuke",
       "angle": "death",
-      "notes": "Chief minister assassinated 1860 for forcing open-door treaties. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。 → 2026-08-29追記（Fable5監査）: ep069-079の11本連続低CTR（8月コホートで統計的に有意な落ち込み、p≈0.002）を踏まえ、暗殺事件の顛末描写に寄りすぎないよう注意。開国という孤独な決断を貫いた人物ドラマとして構成する。 → 2026-09-06: ep096(同じdeath角度)と連続しないようキュー内で分離。なお2026-09-06のFable監査でこのp≈0.002自体の方法論的脆弱性（14日窓未完了・多重比較未補正・コホート境界の事後選択）が指摘されている点に留意。",
+      "notes": "Chief minister assassinated 1860 for forcing open-door treaties. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。 → 2026-08-29追記（Fable5監査）: ep069-079の11本連続低CTR（8月コホートで統計的に有意な落ち込み、p≈0.002）を踏まえ、暗殺事件の顛末描写に寄りすぎないよう注意。開国という孤独な決断を貫いた人物ドラマとして構成する。 → 2026-09-06: ep097(同じdeath角度)と連続しないようキュー内で分離。なお2026-09-06のFable監査でこのp≈0.002自体の方法論的脆弱性（14日窓未完了・多重比較未補正・コホート境界の事後選択）が指摘されている点に留意。",
       "last_updated": "2026-09-06"
     },
     {
-      "episode_id": "ep100",
+      "episode_id": "ep101",
       "status": "pending",
       "title": "The Tiger Hunter Who Built Japan's Mightiest Castles: Kato Kiyomasa's Rise and Fall",
       "era": "Sengoku/Edo",
@@ -1045,10 +1045,10 @@
       "person": "kato_kiyomasa",
       "angle": "overview",
       "notes": "Never featured before. Hideyoshi's loyal general and castle-building genius, his rivalry with Ishida Mitsunari, and his precarious position under the Tokugawa.",
-      "last_updated": "2026-09-05"
+      "last_updated": "2026-09-06"
     },
     {
-      "episode_id": "ep106",
+      "episode_id": "ep102",
       "status": "pending",
       "title": "Fūrinkazan: The Four-Word Code That Made Takeda Shingen Unstoppable",
       "era": "Sengoku",
@@ -1059,7 +1059,7 @@
       "last_updated": "2026-09-06"
     },
     {
-      "episode_id": "ep097",
+      "episode_id": "ep103",
       "status": "pending",
       "title": "The Christian Warlord Whose Faith Cost Him Everything: Otomo Sorin's Rise and Fall",
       "era": "Sengoku",
@@ -1067,10 +1067,10 @@
       "person": "otomo_sorin",
       "angle": "overview",
       "notes": "Kyushu Christian daimyo, rise and defeat at Mimikawa. First appearance.",
-      "last_updated": "2026-07-23"
+      "last_updated": "2026-09-06"
     },
     {
-      "episode_id": "ep102",
+      "episode_id": "ep104",
       "status": "pending",
       "title": "The Retainer Worth More Than His Lord's Entire Domain: Shima Sakon's Final Stand at Sekigahara",
       "era": "Sengoku",
@@ -1078,10 +1078,10 @@
       "person": "shima_sakon",
       "angle": "character",
       "notes": "Never featured before. Test case for the 'hidden strategist' hypothesis — built as a loyalty/sacrifice human-drama arc (not event listing), following the Kuroda Kanbee construction pattern rather than Yamamoto Kansuke's.",
-      "last_updated": "2026-09-05"
+      "last_updated": "2026-09-06"
     },
     {
-      "episode_id": "ep103",
+      "episode_id": "ep105",
       "status": "pending",
       "title": "The Shogun Who Escaped Into Art While Japan Burned: Ashikaga Yoshimasa and the War He Started",
       "era": "Muromachi",
@@ -1089,7 +1089,7 @@
       "person": "ashikaga_yoshimasa",
       "angle": "character",
       "notes": "Era diversification — pending queue had become all-Sengoku. Indecisive shogun whose succession dispute triggered the Onin War; retreated into art and built the Silver Pavilion while the country fractured. Priority B: data-poor era, confirm early performance before adding more.",
-      "last_updated": "2026-09-05"
+      "last_updated": "2026-09-06"
     }
   ],
   "hypotheses": [
@@ -1097,7 +1097,13 @@
       "id": "hidden_strategist",
       "description": "知られざる軍師・参謀タイプの人物を、黒田官兵衛(ep030/ep052)型のoverview/謎解き寄りの人物ドラマとして構成するとCTRが伸びる、という仮説。2026-08-29のFable5監査で「実証済み」から「有望な仮説」に格下げされた（山本勘助ep075がkey_event角度でCTR1.99%と低調だった対照例あり）。",
       "status": "testing",
-      "evidence_episodes": ["ep030", "ep052", "ep075", "ep098", "ep102"],
+      "evidence_episodes": [
+        "ep030",
+        "ep052",
+        "ep075",
+        "ep098",
+        "ep104"
+      ],
       "success_criteria": "同型で構成したエピソードがn≥5に達し、かつ公開後14日CTRが同月中央値以上・impr1500以上に到達する割合が過半数を超えたら「実証済み」に格上げする。単純な累計CTR比較や外れ値1本への依存では格上げしない。",
       "last_updated": "2026-09-06"
     },
@@ -1105,7 +1111,15 @@
       "id": "ninja_spy_theme",
       "description": "忍者・間諜テーマは累計CTRで中央値超えの実績が多いが、2026-09-06のFable監査で（a）信頼性閾値未満の事例を含む、（b）一部は連続公開で独立試行でない、（c）維持率は7本中5本が中央値未満、という脆弱性が判明し「実証済み」から「有望な仮説」に格下げされた。",
       "status": "testing",
-      "evidence_episodes": ["ep020", "ep027", "ep035", "ep050", "ep063", "ep064", "ep065"],
+      "evidence_episodes": [
+        "ep020",
+        "ep027",
+        "ep035",
+        "ep050",
+        "ep063",
+        "ep064",
+        "ep065"
+      ],
       "success_criteria": "今後追加するn≥3本（例: ep101）が、同月コホート比較でCTR中央値以上・かつ維持率も中央値以上を同時に満たせば「実証済み」に格上げする（従来はCTRのみで判定していたため、維持率も条件に加える）。",
       "last_updated": "2026-09-06"
     },
@@ -1113,7 +1127,17 @@
       "id": "data_poor_era_bakumatsu",
       "description": "Bakumatsu期はep068のCTRが低かった（0.6%程度）が実績データが乏しく傾向を判断できない。2〜3本公開して初期データを見てから優先度を判断する方針（2026-08-04）。",
       "status": "testing",
-      "evidence_episodes": ["ep068", "ep072", "ep076", "ep081", "ep084", "ep085", "ep088", "ep089", "ep090"],
+      "evidence_episodes": [
+        "ep068",
+        "ep072",
+        "ep076",
+        "ep081",
+        "ep084",
+        "ep085",
+        "ep088",
+        "ep089",
+        "ep090"
+      ],
       "success_criteria": "完全な14日測定窓を持つBakumatsu公開分がn≥5に達した時点で、他era平均とCTR・維持率を比較する。明確な差がなければ「era自体の問題ではない」と判定し注意書きを解除、明確に低ければ新規投入頻度を下げる。",
       "last_updated": "2026-09-06"
     }
