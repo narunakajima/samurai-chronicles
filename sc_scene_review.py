@@ -247,21 +247,14 @@ def build_shorts_html(episode_id: str, ep: dict, narrations: dict,
     """
 
 
-def build_thumbnail_html(thumbnail_paths: list) -> str:
-    """サムネイル確認セクション。2026-09-06〜: 案A・案B（A/Bテスト用）に対応。
-    存在するファイルのみ表示する（旧形式の単一ファイルにもフォールバック対応）。"""
-    existing = [(label, p) for label, p in thumbnail_paths if p.exists()]
-    if not existing:
+def build_thumbnail_html(thumbnail_path: Path) -> str:
+    """サムネイル確認セクション。~/Desktop/SC/ep{NNN}_thumbnail.png をそのまま表示する。"""
+    if not thumbnail_path.exists():
         return ""
-    imgs = "\n".join(
-        f'      <div class="thumbnail-variant"><h3>{html_escape(label)}</h3>'
-        f'<img class="thumbnail-img" src="{html_escape(rel_path(p))}" alt="{html_escape(label)}"></div>'
-        for label, p in existing
-    )
     return f"""
     <section class="thumbnail-section">
       <h2>サムネイル確認</h2>
-{imgs}
+      <img class="thumbnail-img" src="{html_escape(rel_path(thumbnail_path))}" alt="thumbnail">
     </section>
     """
 
@@ -451,20 +444,14 @@ def main():
     images_dir = DESKTOP_SC / episode_id / "images"
     images_dir_shorts = DESKTOP_SC / episode_id / "images_shorts"
     audio_dir = DRIVE_BASE / episode_id / "audio"
-    thumbnail_path_a = DESKTOP_SC / f"{episode_id}_thumbnail_a.png"
-    thumbnail_path_b = DESKTOP_SC / f"{episode_id}_thumbnail_b.png"
-    thumbnail_path_legacy = DESKTOP_SC / f"{episode_id}_thumbnail.png"
-    if thumbnail_path_a.exists() or thumbnail_path_b.exists():
-        thumbnail_paths = [("案A", thumbnail_path_a), ("案B", thumbnail_path_b)]
-    else:
-        thumbnail_paths = [("サムネイル", thumbnail_path_legacy)]
+    thumbnail_path = DESKTOP_SC / f"{episode_id}_thumbnail.png"
 
     bgm_files = find_bgm_files(episode_id, ep)
     missing_roles = [r for r in ("intro", "main", "outro") if r not in bgm_files]
     if missing_roles:
         print(f"⚠️  BGMが見つかりません: {', '.join(missing_roles)}", file=sys.stderr)
 
-    thumbnail_block = build_thumbnail_html(thumbnail_paths)
+    thumbnail_block = build_thumbnail_html(thumbnail_path)
     if not thumbnail_block:
         print(f"⚠️  サムネイルが見つかりません（{thumbnail_path}）", file=sys.stderr)
 

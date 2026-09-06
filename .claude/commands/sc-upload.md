@@ -84,13 +84,6 @@ python3 $HOME/samurai-chronicles/sc_sns_up.py --episode ep{NNN} --publish-at "20
   ※ 指定日時まで非公開状態です。YouTube Studio で確認できます。
 ```
 
-**サムネイルA/Bテスト（2026-09-06追加・Fable監査対応）:** `/sc-new` STEP3Bで生成した
-サムネイル案A（`ep{NNN}_thumbnail_a.png`）はAPI経由で自動アップロードされる。
-案B（`ep{NNN}_thumbnail_b.png`）はYouTube Data APIでは追加できない（YouTube Studioの
-「テストと比較」機能はStudio UI専用でAPIが存在しない）ため、`sc_sns_up.py`実行後、
-案Bのパスが完了報告に表示される。**ユーザーがYouTube Studioを開き、動画の
-「詳細」→「サムネイル」→「テストと比較」から手動で案Bを追加する。** この手順は自動化できない。
-
 ## STEP 4 — コミット・プッシュ確認（2026-07-29〜: 自動化済み）
 
 `sc_sns_up.py` は `run()` の末尾（サイト再ビルド後）で `commit_remaining_changes()` を実行し、

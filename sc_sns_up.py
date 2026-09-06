@@ -243,13 +243,7 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     main_video = out_dir / f"Samurai Chronicles {episode_id}.mp4"
     shorts_video = out_dir / f"{episode_id}_shorts.mp4"
     srt_file = out_dir / f"{episode_id}.srt"
-    # 2026-09-06〜: STEP3Bはサムネイル案A/B 2件を生成する（A/Bテスト用）。
-    # APIでアップロードするのは案Aのみ（案BはYouTube Studioで手動追加、sc-upload.md参照）。
-    # 案Aが無い旧形式のエピソードは従来のファイル名にフォールバックする。
-    thumbnail_file_a = DRIVE_BASE / episode_id / f"{episode_id}_thumbnail_a.png"
-    thumbnail_file_legacy = DRIVE_BASE / episode_id / f"{episode_id}_thumbnail.png"
-    thumbnail_file = thumbnail_file_a if thumbnail_file_a.exists() else thumbnail_file_legacy
-    thumbnail_file_b = DRIVE_BASE / episode_id / f"{episode_id}_thumbnail_b.png"
+    thumbnail_file = DRIVE_BASE / episode_id / f"{episode_id}_thumbnail.png"
 
     title = ep["youtube_title"]
     description = ep["youtube_description"]
@@ -321,9 +315,6 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     print(f"  ✓ アップロード完了（{publish_label}）")
     print(f"  本編:   https://youtu.be/{main_id}")
     print(f"  Shorts: https://youtu.be/{shorts_id}")
-    if thumbnail_file_b.exists():
-        print(f"  📷 サムネイル案B（未アップロード）: {thumbnail_file_b}")
-        print(f"     YouTube Studioで手動追加すればA/Bテスト（テストと比較）を開始できます。")
     print(f"{'━'*60}\n")
 
     # キャラクタープレイリスト自動更新
