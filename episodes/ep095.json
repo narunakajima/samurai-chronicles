@@ -1,0 +1,264 @@
+{
+  "episode_id": "ep095",
+  "episode_title": "The Ninja Whose Name Outlived Five Different Men: Fuma Kotaro's Reign of Terror",
+  "youtube_title": "The Ninja Whose Name Outlived Five Different Men",
+  "youtube_description": "For over eighty years, one name terrorized Sengoku Japan's battlefields — but the man behind it may have changed five times over. This is the story of Fuma Kotaro, the hereditary ninja leader of the Hojo clan of Odawara, and the legend that refused to die with any single man.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 For over eighty years, one ninja\n0:42 By the mid-1500s, Japan had been\n1:37 That valley was Ashigara, and...\n2:30 But 'Kotaro' was never meant to\n3:21 Under Hojo Ujiyasu, then his son\n4:20 Their masterpiece came in...\n5:22 News of the Kise River raids\n6:20 Yet the Fuma's usefulness was...\n7:18 But by the late 1580s, the\n8:11 In 1590, Hideyoshi marched on...\n9:04 Inside Odawara, the siege...\n10:03 In the summer of 1590, after\n11:02 Some accounts say the...\n11:54 In the years after Odawara's...\n12:54 By the turn of the century,\n14:03 With that execution, the name...\n14:59 Modern historians remain...\n15:54 That structure is, in many ways,\n16:43 Perhaps that is the real reason\n17:38 Today, the Ashigara valley...\n\n🎌 Subscribe for new episodes every week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Turnbull, Stephen. \"Ninja: Unmasking the Myth.\" Frontline Books, 2017.\n2. Turnbull, Stephen. \"Ninja AD 1460-1650.\" Osprey Publishing, 2003.\n3. Odawara City Historical Records (小田原市史) and local Ashigara-region traditions on the Hojo clan's Fuma ninja.\n\n\n🎵 Music: Lurker of the Depths (Cinematic Music) by NightWolfCFM (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional/Sad/Tragic String Orchestral BGM Background Music by EvanBoyerman (freesound.org) — CC BY 4.0\n#FumaKotaro #NinjaHistory #SengokuJapan #HojoClan #SamuraiHistory #JapaneseHistory #OdawaraCastle #FeudalJapan #ToyotomiHideyoshi #SamuraiChronicles",
+  "youtube_tags": [
+    "Fuma Kotaro",
+    "Ninja History",
+    "Sengoku Japan",
+    "Hojo Clan",
+    "Samurai History",
+    "Japanese History",
+    "Odawara Castle",
+    "Ninja Documentary",
+    "Feudal Japan",
+    "Toyotomi Hideyoshi"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "teaser_narration": "Odawara's gates fall silent, and Japan's most feared ninja clan stands leaderless overnight. For decades, one name had terrorized armies across a nation — but that name may never have belonged to just one man. So who was actually behind the mask?",
+  "shorts_narration": "Five men. One legendary name. Fuma Kotaro's ninja clan brought a samurai army to its knees in a single night raid — then vanished into legend. Who was he really?",
+  "shorts_hook_lines": [
+    "ONE NAME.",
+    "FIVE MEN WORE IT.",
+    "WAS HE EVEN ONE PERSON?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up portrait of Fuma Kotaro, a scarred, weathered ninja leader in his 40s, dark hood pulled back just enough to reveal a fierce, battle-hardened face, eyes locked directly on camera with a piercing, menacing stare, dramatic side-lighting casting half his face in shadow, faint smoke drifting in the background, his face centered in the upper portion of the vertical frame.",
+  "thumbnail_prompt": "Dramatic close-up thumbnail portrait of Fuma Kotaro, a fearsome scarred ninja leader emerging from shadow and mist, piercing eyes staring directly at the viewer, dark shinobi garb with hood partially covering the lower face, a moonlit mountain silhouette faintly visible behind him, cinematic high-contrast lighting evoking a legendary, ageless assassin whose name struck terror into Sengoku Japan.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "For over eighty years, one ninja never died. Because Fuma Kotaro was never one man to begin with. So who — or what — was he actually?",
+      "image_prompt": "A shadowy ninja figure crouched on a rocky mountain ridge at night, overlooking a distant castle's lit windows far below, face obscured by dark cloth, moonlight glinting off narrowed eyes, sense of an ancient, ageless watcher. Wide dramatic composition, fog drifting through pine trees.",
+      "ken_burns": "zoom_in",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "By the mid-1500s, Japan had been tearing itself apart for a century. Rival warlords carved the land into fortresses of ambition, and among the most calculating were the Hojo, rulers of Odawara Castle in Sagami province. Open battle alone could not secure a domain surrounded by enemies. Lords needed eyes in the dark — men who could scout a camp, spread a rumor, or vanish a granary in flames before dawn. The Hojo found such men in the wild, forested hills north of their castle, in a valley whose name would soon become a byword for terror.",
+      "image_prompt": "Sweeping view of Sengoku-era Japan at dusk, rival daimyo armies clashing across a distant valley, Odawara Castle's wooden keep and stone ramparts rising on a hill in the foreground, banners bearing a triangular clan mon fluttering in the wind. Overcast sky suggesting a century of unending war.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "That valley was Ashigara, and its people were the Fuma — mountain villagers hardened by isolation, skilled in tracking, climbing, and killing without a sound. Other ninja clans of the age prized subtlety; the Fuma prized fear itself. Chroniclers described their leader as a giant of a man, with a face so scarred and twisted that soldiers swore he was no man at all, but an oni wearing human skin. Whether that leader had one true name or none, the Hojo gave him one that would outlast every battle he ever fought: Fuma Kotaro.",
+      "image_prompt": "A rugged mountain valley village of thatched-roof huts in the Ashigara mountains, weathered villagers training in stealth and climbing among boulders and pine forest in the midground, a towering, scarred-faced ninja leader with a full unshaved head of hair pulled back into a plain low ponytail (no shaved forehead) in dark shinobi garb seated on a boulder in the foreground overseeing the training, three-quarter angle, daylight filtering through mist.",
+      "ken_burns": "zoom_in",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.74,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "But 'Kotaro' was never meant to belong to one man. When a leader died — in ambush, in old age, in the shadows where his kind operated — another took the name, the mask, and the mantle of command. To rival lords and frightened villagers alike, Fuma Kotaro seemed unkillable, striking decades apart in campaigns no single lifetime could span. It was less a person than an office: a title stitched onto whichever ninja proved ruthless enough to wear it. And under successive generations of Hojo lords, that title was about to be tested in the cruelest wars of the age.",
+      "image_prompt": "Symbolic scene of a dark ninja hood and set of shinobi garb being passed from an older scarred warrior's hands to a younger warrior's hands inside a dim, torch-lit mountain cave, emphasizing the handing down of an identity rather than a bloodline.",
+      "ken_burns": "pan_left",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Under Hojo Ujiyasu, then his son Ujimasa, the Fuma became the clan's hidden blade. They slipped into enemy castles disguised as monks, merchants, and laborers, memorizing gates and guard rotations before vanishing into the night. Wells turned foul overnight. Granaries burned without warning. Rumors of betrayal spread through rival camps until soldiers no longer trusted the man beside them. No official record credits a single raid to a single Fuma Kotaro — the accounts blur across decades — but the pattern was unmistakable: wherever the Hojo faced an enemy too strong to meet in open battle, chaos arrived first.",
+      "image_prompt": "A Fuma ninja disguised as a traveling monk slips through the wooden gate of a rival samurai castle at dusk, scanning the guard positions with a subtle sideways glance, tension in the shadowed courtyard beyond the gate.",
+      "ken_burns": "pan_right",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Their masterpiece came in 1581, on the banks of the Kise River, where Takeda Katsuyori's army faced the Hojo across the water through a long and exhausting standoff. Fuma raiders slipped past the sentries in darkness, men who seemed to know every rock and ravine in the terrain. They did not attack in formation. They scattered through the camp itself, cutting a few tents, screaming false orders, vanishing before anyone could see a face. Within minutes, according to the chronicle that preserves the story, exhausted Takeda soldiers were slashing blindly at shapes in the dark — and at each other. By sunrise, the Takeda had been badly bled without the Hojo striking a single open blow.",
+      "image_prompt": "Chaotic night raid at a riverside army encampment on the banks of a wide river, soldiers in confusion attacking shadowy shapes and each other by torchlight and moonlight, tents pitched along the water's edge, a solitary ninja figure silently cutting a tent rope and vanishing into darkness at the edge of the frame, chaos and fire glow reflecting on the river surface.",
+      "ken_burns": "zoom_out",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.83,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "News of the Kise River raids spread through Sengoku Japan like a curse. Rival generals began posting extra guards not against arrows or spears, but against shapes that might slip through their own ranks at midnight. Some commanders reportedly refused night marches altogether rather than risk a Fuma ambush. The legend grew faster than the facts could support: the chronicle puts their number at two hundred, organized under four subordinate captains, while rumor made them capable of striking three provinces in a single night. Whether that fear was earned by genuine skill, or amplified afterward, one thing was certain — for the Hojo, terror had become a weapon in its own right.",
+      "image_prompt": "A samurai general standing atop a fortified camp wall at night, nervously scanning the tree line with torch-bearing guards doubled around him, an atmosphere of paranoia and dread spreading through the ranks below.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Yet the Fuma's usefulness was never limited to the battlefield. Within Odawara itself, later accounts credit them with a second role: a hidden police force, hunting spies who tried to infiltrate the Hojo court and silencing loose tongues before secrets could travel. Such traditions describe them testing poisons, examining forged documents, and reading the movements of merchant caravans for signs of an enemy scout. Some accounts claim their leader personally interrogated captured spies in a manner so merciless that few survived to be questioned twice. In a war fought as much through information as through swords, the Fuma had made themselves indispensable — and irreplaceable.",
+      "image_prompt": "Photorealistic cinematic film-still, live-action photography look, no illustration or cel-shading, no outlines: a dim interrogation chamber within a wooden castle keep, a captured spy kneeling bound before a ninja leader with his hood down, with a full unshaved head of hair simply pulled back into a plain low ponytail (no shaved forehead, no bangs falling loose), examining a blank aged scroll document by candlelight (no legible text or writing visible, texture and age only), the scene tense and cold.",
+      "ken_burns": "zoom_in",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "But by the late 1580s, the world the Fuma had mastered was closing in. A new power had risen far to the west: Toyotomi Hideyoshi, a former peasant who had clawed his way to near-total control of Japan through both the sword and the art of alliance. One by one, the warlords who might have stood beside the Hojo bent the knee to him instead. Hojo Ujimasa's son, Ujinao, now ruled a domain that stood almost alone. And no amount of night raids, disguises, or poisoned wells could hide an entire castle from an army of over two hundred thousand men.",
+      "image_prompt": "A grand war council hall with Hojo retainers gathered around a low table covered in an old ink-brushed map showing abstract coastlines and mountain contours only (no legible text or place names), worry etched on their faces as a messenger kneels reporting the westward armies of a rival coalition, banners of many defeated clans shown folded and set aside.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1590, Hideyoshi marched on Odawara with a force so vast that Hojo officers reportedly stopped counting the enemy campfires after the first few nights. The Fuma tried what had always worked before — infiltration, sabotage, sudden strikes against the vast siege camp ringing the castle. But an army that size did not panic the way a single army camped along a riverbank once had. For every fire the Fuma lit, ten thousand soldiers remained calmly making camp elsewhere. For the first time, the tactics that had made their name seemed to be failing them.",
+      "image_prompt": "A vast siege camp surrounding a castle at night, countless campfires stretching to the horizon representing an overwhelming army, while in the foreground a single solitary lone ninja figure (only one person visible in the foreground, no duplicate or twin figures) with a full unshaved head of hair simply pulled back into a plain low ponytail (no shaved forehead) lights a small fire near a traditional Japanese flatbed handcart (daihachiguruma) stacked with sacks and crates — not a Western-style covered wagon — clearly outmatched by the sheer scale of the enemy force beyond.",
+      "ken_burns": "zoom_out",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.31,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Inside Odawara, the siege dragged on for months, and morale began to crack long before the walls did. Hideyoshi's forces built an entire camp town just outside the walls, entertainers and merchants included, a calculated message that they could wait as long as it took. Hojo Ujimasa's council split between those who wanted to fight and those who wanted terms. Whatever role the Fuma played in these final desperate weeks — and later legends credit them with one last, near-suicidal raid — nothing they attempted could change the arithmetic of more than two hundred thousand men outside the gate.",
+      "image_prompt": "View from a castle's wooden ramparts looking down at a sprawling besieging army's makeshift camp town with merchant stalls and banners stretching into the distance, contrasted with gaunt, exhausted defenders on the castle walls staring out in dismay.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "In the summer of 1590, after three months of siege, the Hojo surrendered. Odawara Castle, the fortress the Fuma had served for generations, opened its gates without a final battle. Ujinao, the young lord who gave up the castle, was spared and exiled to Mount Koya; his father Ujimasa and his uncle Ujiteru were ordered to take their own lives. In a matter of weeks, the clan that had employed the Fuma for over half a century simply ceased to exist. For a group whose entire identity was built around serving — and terrifying — on behalf of a lord, the fall of Odawara raised a question sharper than any blade they carried: without the Hojo, what were the Fuma now?",
+      "image_prompt": "Solemn scene of a great castle's main gate opening at dawn, defeated retainers in formal but downcast posture kneeling as banner-bearing rival officers enter the mist-shrouded courtyard, quiet devastation in the air.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Some accounts say the reigning Fuma Kotaro refused to surrender at all, vanishing into the mountains with a band of loyal fighters rather than accept a new master. Whether driven by loyalty, pride, or simply nowhere left to belong, the Fuma who had once operated in the shadows on behalf of a daimyo now operated in the shadows for no one but themselves. The skills that had made them Japan's most feared irregulars — infiltration, disguise, night raids — did not disappear with their lord. They simply lost their reason to serve, and, according to legend, that fact turned very quickly into a Fuma reign of open banditry.",
+      "image_prompt": "A scarred ninja leader with a full unshaved head of hair simply pulled back into a plain low ponytail (no shaved forehead, not a modern short haircut), dark shinobi garb, a sheathed sword held naturally at his side gripped only by its scabbard/hilt (no bare blade, no hand touching exposed steel), walking at ground level along a forest trail at dusk, a small band of loyal fighters flanking him closely, the distant fallen castle visible only as a tiny silhouette through gaps in the trees behind them, low-angle composition emphasizing the group moving forward.",
+      "ken_burns": "pan_left",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In the years after Odawara's fall, chronicles from the new Tokugawa era describe a band of bandits terrorizing the roads and villages around Edo — raiding merchant caravans, robbing travelers, and vanishing into forests no ordinary lawman could track. Locals reportedly whispered the name behind the violence: Fuma. If true, the same techniques once used to unravel the Takeda army on the Kise River were now turned on ordinary farmers and traders, a master's toolkit with no war left to justify it. The men who had once been the Hojo's secret weapon had become, in peacetime, simply criminals.",
+      "image_prompt": "Photorealistic cinematic film-still, live-action photography look, no illustration or digital-painting rendering, no visible brushwork: a masked bandit group ambushing a merchant caravan on a forest road at twilight, overturned goods and frightened travelers, the raiders moving with the same disciplined stealth once used in war, now turned toward common banditry.",
+      "ken_burns": "zoom_out",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.79,
+        "y": 0.23
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "By the turn of the century, Tokugawa Ieyasu had become the most powerful man in Japan, and he had little patience for freelance chaos on the roads he intended to govern in peace. Authorities in Edo are said to have hunted the bandit band using the very same methods the Fuma themselves had perfected — informants, disguise, patient surveillance — to close the net. According to the traditional account, it was a rival bandit chief who finally betrayed them: the man carrying the name Fuma Kotaro was captured and executed in 1603, the year the Tokugawa shogunate began, his band broken up along with him. If the record is thin, the symbolism is not: the shadow warrior undone by the state's own shadow methods.",
+      "image_prompt": "Tokugawa-era investigators and disguised agents tracking bandit footprints through a dense forest at dawn, lanterns in hand, closing in on a hidden camp, tension of a manhunt using stealth against stealth.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "With that execution, the name Fuma Kotaro largely disappears from the historical record. No new leader is documented taking up the title; no clan structure survives into the peaceful centuries of Tokugawa rule that followed. The Sengoku era that had made men like the Fuma necessary was ending, replaced by a peace enforced not by ninja clans but by an entrenched, centralized shogunate. Whatever the Fuma had truly been — spies, saboteurs, mountain warriors, bandits, or all of these at once across five or more lifetimes — the world that required them was gone, and so, at last, was the name.",
+      "image_prompt": "A quiet, empty mountain village at dusk with abandoned thatched huts and overgrown paths, symbolizing the end of an era, a single extinguished torch lying in the foreground grass.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Modern historians remain divided on how much of this story is documented fact and how much is later embellishment. Contemporary Sengoku-era sources on the Fuma are scarce; much of the vivid detail — the giant stature, the demonic face, the exact death of the final Kotaro — comes from Edo-period accounts written decades after the events, in a genre that prized a thrilling tale over a sourced one. What does appear consistently, across multiple records, is the underlying structure: a hereditary clan of irregular fighters serving the Hojo, and a title passed between its leaders rather than fixed to one bloodline.",
+      "image_prompt": "Close-up still-life composition on a wooden table: an aged, ornately painted scroll depicting an exaggerated giant, demon-faced ninja figure (painted illustration as a physical object in-frame, not the overall image style) laid beside a plainer, blank weathered document with no legible text, soft directional window light, shallow depth of field emphasizing the contrast between the two objects.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "That structure is, in many ways, the more remarkable story. In an age obsessed with named heroes and individual glory, the Fuma built something closer to an institution — a role that could survive the death of any single person who filled it. It let the Hojo rely on Fuma Kotaro the way they relied on a fortress or a treasury: a resource, not a man. And it meant that when people whispered his name in fear across decades of warfare, they may never have realized they were afraid of an office, not a person.",
+      "image_prompt": "Symbolic image of an empty dark shinobi hood resting on a stone pedestal within a mountain shrine, moonlight illuminating it like a relic, representing a title outliving any single person who wore it.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Perhaps that is the real reason the legend endured long after the last true Fuma Kotaro was gone. A single man's fame dies with him. A title, worn by five different men or more, each adding new deeds and new terror to the same two words, becomes something closer to myth — flexible enough to absorb every rumor, every unexplained fire, every camp that turned on itself in the dark. History remembers Fuma Kotaro not as a man who lived and died once, but as a name that Japan's most turbulent century simply refused to let die.",
+      "image_prompt": "A silhouette of a ninja figure multiplying into faint, overlapping translucent silhouettes across a moonlit mountain ridge, visually suggesting many different men behind one enduring legend. Any figure whose hair is visible (not hooded) has a full unshaved head of hair simply pulled back into a plain low ponytail — no shaved forehead, no samurai-style topknot with bald pate.",
+      "ken_burns": "pan_right",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.24
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Today, the Ashigara valley that once bred Japan's most feared shadow warriors is quiet farmland, and the name Fuma Kotaro survives mostly in folklore, in Edo-period storytelling, and in the pages of later novelists who could never resist a demon-faced ninja. But strip away the exaggeration, and what remains is still extraordinary: a clan that turned identity itself into a weapon, and a title fearsome enough to outlive every man who ever wore it. Somewhere between the sourced fact and the campfire legend, the true Fuma Kotaro still waits to be found — and stories like his are exactly what we go looking for here.",
+      "image_prompt": "Peaceful modern-style view of a quiet mountain valley farmland at golden hour, a faint, translucent ghostly ninja silhouette overlooking the land from a high ridge in the distance, blending history and legend into a serene present-day landscape.",
+      "ken_burns": "zoom_out",
+      "character_ref": "fuma_kotaro",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.13
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep095-BGM-intro.mp3",
+    "main": "BGM/ep095-BGM-main.mp3",
+    "outro": "BGM/ep055-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/IOHxq_TeUz8",
+  "shorts_url": "https://youtu.be/j-el0dp5Hl4",
+  "scheduled_at": "2026-09-19 03:00"
+}

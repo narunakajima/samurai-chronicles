@@ -383,7 +383,8 @@
       "ep055",
       "ep064",
       "ep066",
-      "ep069"
+      "ep069",
+      "ep095"
     ]
   },
   {
@@ -1099,6 +1100,33 @@
     ],
     "used_in": [
       "ep091"
+    ]
+  },
+  {
+    "id": "ep095-BGM-intro",
+    "path": "BGM/ep095-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep095"
+    ]
+  },
+  {
+    "id": "ep095-BGM-main",
+    "path": "BGM/ep095-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Lurker of the Depths (Cinematic Music) by NightWolfCFM (freesound.org) — CC BY 4.0",
+    "tags": [
+      "cinematic"
+    ],
+    "used_in": [
+      "ep095"
     ]
   }
 ]
