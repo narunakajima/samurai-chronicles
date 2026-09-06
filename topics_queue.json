@@ -1094,6 +1094,15 @@
   ],
   "hypotheses": [
     {
+      "id": "format_length",
+      "description": "本編の平均視聴時間は177.5秒（動画尺16〜19分の約18%）で、YPP到達（本編視聴時間4,000h）のボトルネックになっている（2026-09-07 Fable監査）。teaser_narration省略でhookに直接入る、または20シーン→12シーン程度に短縮すれば、同じ滞在秒数でも維持率(%)が上がり推薦上有利になる可能性がある、という仮説。",
+      "status": "testing",
+      "test_variant": "次の3話でteaser_narration省略（hook直開始）または12シーン構成のいずれかを試す。通常構成の直近エピソードと比較する。",
+      "evidence_episodes": [],
+      "success_criteria": "公開後14日の平均視聴時間（秒）が同時期の通常構成エピソードと比較して+30秒以上、かつCTRの明確な低下がないこと。n≥3で判定する。",
+      "last_updated": "2026-09-08"
+    },
+    {
       "id": "hidden_strategist",
       "description": "知られざる軍師・参謀タイプの人物を、黒田官兵衛(ep030/ep052)型のoverview/謎解き寄りの人物ドラマとして構成するとCTRが伸びる、という仮説。2026-08-29のFable5監査で「実証済み」から「有望な仮説」に格下げされた（山本勘助ep075がkey_event角度でCTR1.99%と低調だった対照例あり）。",
       "status": "testing",

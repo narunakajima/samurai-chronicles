@@ -340,6 +340,17 @@ Agentの最終報告はユーザーには表示しない（画面に出力しな
   （2026-09-04〜: 次回予告シーン(旧S19)は廃止。insightの後は直接outroで締める。抜けた1枠は
   setup/rising_action/falling_action/insight のいずれかに1シーン追加して20シーンを維持する）
 
+**維持率実験（2026-09-08追加・Fable監査対応、`topics_queue.json`の`hypotheses.format_length`参照）:**
+本編の平均視聴時間177.5秒（動画尺の約18%）がYPP到達のボトルネックになっている。
+ユーザーから「この回は`format_length`実験として作る」と明示された場合のみ、以下いずれかの
+バリアントで構成する（通常は適用しない。無指定時は従来通り20シーン＋teaser_narrationあり）：
+- **バリアントA（teaser省略）:** `teaser_narration`を空にし、S01（hook）から直接開始する
+- **バリアントB（短縮構成）:** 20シーンではなく12シーン程度に短縮する（hook→setup→
+  rising_action→climax→falling_action→insight→outroの各要素は残しつつ、1要素あたりの
+  シーン数を減らす）
+実施した場合は `topics_queue.json` の `hypotheses.format_length.evidence_episodes` に
+episode_idを追記し、`/sc-analytics` で通常構成エピソードとの平均視聴時間を比較すること。
+
 **Hook シーン（scene_id: 1, type: "hook"）の特別ルール:**
 - 必ず3文以内、合計40語以内
 - 1文目: 衝撃の結論 or 問いかけ（10語以内、数字を含めると効果的）
@@ -472,7 +483,7 @@ outroに存在しなかった（Fable監査指摘）。次回予告の復活は�
 ```
 {フック文（2〜3文）}
 
-🎌 Subscribe for new episodes every week:
+🎌 Subscribe for new episodes every Tuesday, Thursday & Saturday:
 https://www.youtube.com/@Samurai-Chronicles-JP
 
 🌐 Official site: https://samurai-chronicles.com

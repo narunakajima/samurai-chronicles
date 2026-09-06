@@ -169,12 +169,24 @@ def parse_publish_at(publish_at_str: str) -> str:
 
 def upload_video(youtube, video_path: Path, title: str, description: str,
                  tags: list, publish_at: Optional[str] = None) -> str:
+    # 2026-09-08追加（Fable監査対応）: selfDeclaredMadeForKids・containsSyntheticMedia
+    # は従来チャンネル既定値に依存しており明示送信していなかった。全編AI音声＋実在人物・
+    # 実在事件を写実的に再現する生成画像を使っているため、YouTubeの合成/改変コンテンツ
+    # 開示要件の対象になりうる。containsSyntheticMediaはあくまで動画下部にラベルが
+    # 付くだけで、概要欄本文に「AI」等の文言を書く義務は生じない（sc-new.mdの
+    # AI関連文言禁止ルールとは独立）。
     if publish_at:
         publish_at_rfc = parse_publish_at(publish_at)
-        status_body = {"privacyStatus": "private", "publishAt": publish_at_rfc}
+        status_body = {
+            "privacyStatus": "private", "publishAt": publish_at_rfc,
+            "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+        }
         print(f"  アップロード中（予約公開: {publish_at}）: {video_path.name} ...")
     else:
-        status_body = {"privacyStatus": "public"}
+        status_body = {
+            "privacyStatus": "public",
+            "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+        }
         print(f"  アップロード中: {video_path.name} ...")
 
     req = youtube.videos().insert(
@@ -186,6 +198,7 @@ def upload_video(youtube, video_path: Path, title: str, description: str,
                 "tags": tags,
                 "categoryId": "27",  # Education
                 "defaultLanguage": "en",
+                "defaultAudioLanguage": "en",
             },
             "status": status_body,
         },
@@ -294,7 +307,7 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     shorts_description = (
         f"{hook_text}\n\n"
         f"▶ Full episode: https://youtu.be/{main_id}\n\n"
-        f"** Subscribe for new episodes every day:\n"
+        f"** Subscribe for new episodes every Tuesday, Thursday & Saturday:\n"
         f"https://www.youtube.com/@Samurai-Chronicles-JP"
     )
     shorts_id = upload_video(youtube, shorts_video,
@@ -489,7 +502,7 @@ def fix_shorts_description(episode_id: str, shorts_id: str):
     new_description = (
         f"{hook_text}\n\n"
         f"▶ Full episode: https://youtu.be/{main_id}\n\n"
-        f"** Subscribe for new episodes every day:\n"
+        f"** Subscribe for new episodes every Tuesday, Thursday & Saturday:\n"
         f"https://www.youtube.com/@Samurai-Chronicles-JP"
     )
 

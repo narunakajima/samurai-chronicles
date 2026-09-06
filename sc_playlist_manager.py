@@ -131,11 +131,16 @@ def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
         video_id:   アップロードした本編動画の YouTube ID
         ep:         エピソード JSON の dict
     """
-    # 公開前の動画はプレイリストに追加しない
-    if not _is_published(ep):
+    # 2026-09-08修正（Fable監査対応）: 従来はここで予約公開中（scheduled_at未到来）の
+    # 場合に即returnしており、character_playlists.json への記録自体が行われなかった。
+    # /sc-upload は既定で予約公開（即時公開はオプション）のため、この早期returnが
+    # ほぼ毎回発生し、ep051以降のキャラクター登場が2ヶ月半にわたり一切記録されていなかった
+    # （Fable監査で発覚）。記録は常に行い、実際にYouTubeへ動画を追加するAPI呼び出しのみ
+    # 未公開の場合は保留する（公開後は sc_sns_up.py の「プレイリスト動画補完チェック」が拾う）。
+    published = _is_published(ep)
+    if not published:
         scheduled = ep.get("scheduled_at", "未設定")
-        print(f"  ⏳ {episode_id} は予約公開中（{scheduled}）のためプレイリスト処理スキップ")
-        return
+        print(f"  ⏳ {episode_id} は予約公開中（{scheduled}）— 記録のみ行い、YouTubeへの追加は公開後に補完される")
 
     # S19等の "teaser" シーンは次回予告であり、本編にそのキャラクターが
     # 登場しているわけではない。character_ref の集計対象から除外する
@@ -215,8 +220,11 @@ def update_playlists(youtube, episode_id: str, video_id: str, ep: dict):
                 # 既存プレイリストに追加
                 playlist_id = char_data["playlist_id"]
                 if playlist_id:
-                    _add_to_playlist(youtube, playlist_id, video_id)
-                    print(f"  {display_name}: プレイリストに追加 ({appearances}回目)")
+                    if published:
+                        _add_to_playlist(youtube, playlist_id, video_id)
+                        print(f"  {display_name}: プレイリストに追加 ({appearances}回目)")
+                    else:
+                        print(f"  {display_name}: 予約公開中のため追加を保留 ({appearances}回目、記録済み)")
                 else:
                     # playlist_id が未登録（過去のアップロード漏れ）→ 今から作成してバックフィル
                     print(f"  {display_name}: playlist_id 未登録 → プレイリストを新規作成してバックフィル")
