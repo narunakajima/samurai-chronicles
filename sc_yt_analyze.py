@@ -91,6 +91,27 @@ def aggregate_daily_reach() -> dict:
     return daily
 
 
+def aggregate_acquisition() -> dict:
+    """channel_combined_a3 から video_id別に subscribed_status・traffic_source_type別の
+    views を集計する。
+
+    2026-09-06追加（Fable監査対応）: 「有名人物は検索流入の受け皿になる」（sc-new.md
+    L128）等の視聴者獲得系の仮説が、これまで`traffic_source_type`/`subscribed_status`
+    列（CSVには存在する）を一度も使わずに検証不能なまま放置されていたため追加した。
+    """
+    agg = defaultdict(lambda: {"views": 0, "unsubscribed_views": 0, "traffic": defaultdict(int)})
+    for f in glob.glob(str(ANALYTICS_DIR / "channel_combined_a3" / "*.csv")):
+        with open(f, encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                vid = row["video_id"]
+                views = int(row["views"])
+                agg[vid]["views"] += views
+                if row["subscribed_status"] == "not_subscribed":
+                    agg[vid]["unsubscribed_views"] += views
+                agg[vid]["traffic"][row["traffic_source_type"]] += views
+    return agg
+
+
 def build_publish_dates() -> dict:
     """episode_id -> 'YYYYMMDD' の公開日マップ。scheduled_atが無いエピソードは含めない
     （公開日が特定できないため、年齢調整済み指標から安全に除外する）。"""
@@ -330,6 +351,47 @@ def print_monthly_channel_summary():
         print(f"  {ym[:4]}-{ym[4:]}: インプレ={impr:,}  視聴={views:,}")
 
 
+def print_acquisition_breakdown(min_views: int):
+    """新規視聴者比率（非登録者視聴%）・流入経路別視聴を表示する（2026-09-06追加）。
+    「新規視聴者獲得」の直接指標が意思決定に接続されていない問題（Fable監査M7）への対応。"""
+    acq = aggregate_acquisition()
+    ep_map = build_episode_map()
+
+    total_views = sum(a["views"] for a in acq.values())
+    total_unsub = sum(a["unsubscribed_views"] for a in acq.values())
+    traffic_totals = defaultdict(int)
+    for a in acq.values():
+        for src, v in a["traffic"].items():
+            traffic_totals[src] += v
+
+    print("\n=== 新規視聴者獲得・流入経路（チャンネル全体） ===")
+    if total_views == 0:
+        print("  データがありません")
+        return
+    print(f"  非登録者視聴（新規視聴者の代理指標）: {total_unsub/total_views*100:.1f}%"
+          f"（全{total_views:,}再生中）")
+    print("  流入経路別（traffic_source_type、数値コードのまま表示）:")
+    print("  ⚠️ コード→名称の対応は公式ドキュメント参照のこと"
+          "（https://developers.google.com/youtube/reporting/v1/reports/dimensions#traffic_source_type）。"
+          "取得元を確認せずに憶測でラベル付けしない（誤ラベルは分析結果全体の信頼性を損なう）。")
+    for src, v in sorted(traffic_totals.items(), key=lambda x: -x[1]):
+        print(f"    code={src}: {v/total_views*100:5.1f}%  ({v:,}回)")
+
+    print(f"\n  動画別 非登録者視聴%（views>={min_views}のみ）:")
+    rows = []
+    for vid, a in acq.items():
+        ep = ep_map.get(vid)
+        if not ep or a["views"] < min_views:
+            continue
+        pct = a["unsubscribed_views"] / a["views"] * 100 if a["views"] else 0
+        rows.append((ep["episode_id"], a["views"], pct))
+    if not rows:
+        print(f"    該当なし（views>={min_views}を満たす動画がありません）")
+        return
+    for ep_id, views, pct in sorted(rows, key=lambda x: x[0]):
+        print(f"    {ep_id}  views={views:5}  非登録者視聴={pct:5.1f}%")
+
+
 def cli():
     parser = argparse.ArgumentParser(description="Samurai Chronicles YouTube アナリティクス集計")
     parser.add_argument("--top", type=int, default=10, help="上位/下位表示件数（デフォルト10）")
@@ -343,6 +405,8 @@ def cli():
                         help="公開後14日の年齢調整済み指標をスキップする")
     parser.add_argument("--no-monthly", action="store_true",
                         help="チャンネル全体の月次露出トレンドをスキップする")
+    parser.add_argument("--no-acquisition", action="store_true",
+                        help="新規視聴者獲得・流入経路の集計をスキップする（2026-09-06追加）")
     args = parser.parse_args()
 
     results = build_stats()
@@ -359,6 +423,8 @@ def cli():
         print_age_adjusted(results)
     if not args.no_monthly:
         print_monthly_channel_summary()
+    if not args.no_acquisition:
+        print_acquisition_breakdown(args.min_views)
 
 
 if __name__ == "__main__":

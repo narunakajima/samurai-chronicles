@@ -144,7 +144,10 @@ STEP 3A/3B/3C はすべて完了してから一括で完了報告する（個別
   ことから、**「軍師キャラクターであること」自体より、黒田官兵衛のように overview/謎解き
   寄りの人物ドラマとして構成できているかが効いている可能性が高い。** 竹中半兵衛・直江兼続
   など同系統の人物を候補に入れる際は、event列挙ではなくoverview角度・人物の知略と葛藤を
-  軸にした構成を優先し、次の1〜2本の結果で仮説を検証してから「実証済み」に格上げする。
+  軸にした構成を優先し、`topics_queue.json`の`hypotheses`（`hidden_strategist`）に記載した
+  事前の成功基準（n≥5・同月CTR中央値以上到達が過半数）を満たしてから「実証済み」に格上げする
+  （2026-09-06〜: 「次の1〜2本で格上げ」という基準はn不足のまま格上げする誤りを繰り返すため、
+  `hypotheses`レジストリの事前基準に置き換えた）。
 
 **月次視聴数トレンドの解釈に注意（2026-08-29追加・Fable5監査）:** `/sc-analytics` の
 月次集計「視聴数」はShortsフィード経由の再生が34〜66%混入しており、本編の健全性指標として
@@ -344,6 +347,21 @@ Agentの最終報告はユーザーには表示しない（画面に出力しな
 - 3文目: 「続きを見れば分かる」という約束（疑問文推奨）
 - "Today"、"In this video"、"Let me tell you" で始めない
 - 例: "He fought 61 duels. He never lost once. But his greatest weapon wasn't his sword."
+
+**Outroシーン（type: "outro"）の特別ルール（2026-09-06追加・Fable監査対応）:**
+
+⚠️ 2026-09-04にS19（次回予告シーン）を廃止して以来、チャンネル内回遊・登録を促す装置が
+outroに存在しなかった（Fable監査指摘）。次回予告の復活はキュー並び替えリスクがあるため行わないが、
+代わりにoutro最後の1文で軽い登録CTAを入れる。
+- outroの最後の1文（それまでの人物ドラマの余韻を壊さない範囲で）に、チャンネル登録または
+  関連動画への示唆を自然に織り込む
+- ナレーション調を崩さない婉曲的な表現にする（「Subscribe now」のような直接的な広告口調は禁止）
+- 例: "His story ended in defeat — but the questions he left behind are still being asked today.
+  If you want to keep asking them, you know where to find us."
+- 例: "He chose loyalty over survival. It's a choice this channel keeps coming back to —
+  and there are more like him waiting to be told."
+- 前回や関連エピソードへの直接的な言及（次回予告的な内容）はしない
+  （L38-43の理由により廃止済みのため）
 
 **画像プロンプト（image_prompt）:**
 - 英語、具体的なシーン描写
@@ -724,11 +742,16 @@ BGM           : ❌ 未選択
 
 ---
 
-### STEP 3B — サムネイル画像（Claudeが直接生成）
+### STEP 3B — サムネイル画像（Claudeが直接生成、2026-09-06〜: A/Bテスト用に2案生成）
+
+⚠️ 2026-08-04のOpus監査で「サムネイルA/Bテスト（YouTube Studio『テストと比較』機能）は
+本監査のどの手法よりも検出力が高い」と指摘されながら1ヶ月以上未着手だったため
+（2026-09-06のFable監査で再指摘）、STEP 3Bで**構図・訴求アプローチの異なる2案**を生成する。
 
 エピソードJSONの `thumbnail_prompt` にテキストオーバーレイ指示を加えてGeminiで生成し、`~/Desktop/SC/` に保存する。
 
-**テキストオーバーレイ指示（プロンプトに追記）:**
+**テキストオーバーレイ指示（プロンプトに追記。案A・案Bで`EPISODE_TITLE_SHORT`/`SUBTITLE`/
+構図を変える）:**
 ```
 Bold text overlay at the top in large white block letters with dark drop shadow: "{EPISODE_TITLE_SHORT}".
 Smaller text at the bottom in white: "{SUBTITLE}".
@@ -736,12 +759,18 @@ Text must be clearly legible, sharp, and properly spelled.
 Modern cinematic concept art style, dramatic lighting, film production illustration quality. 16:9 aspect ratio, 1280x720.
 ```
 
-- `EPISODE_TITLE_SHORT`: エピソードの**肩書き・ドラマチックな形容**を大文字で（例: "THE GOD OF WAR" / "THE EXILE" / "THE WRONG SIDE"）
+- `EPISODE_TITLE_SHORT`: エピソードの**肩書き・ドラマチックな形容**を大文字で
   - ❌ 避ける: 人物名そのまま（"ISHIDA MITSUNARI" / "SASAKI KOJIRO"）
   - ✅ 良い例: "THE GOD OF WAR"（上杉謙信）/ "THE EXILE"（西郷隆盛）/ "THE WRONG SIDE"（石田三成）
 - `SUBTITLE`: サブコピー（例: "Japan's Greatest Betrayal"）
+- **案A（肩書き訴求型）:** 人物の顔・表情のクローズアップ中心。`EPISODE_TITLE_SHORT`は上記の
+  肩書き型
+- **案B（数字・逆説訴求型）:** 構図はシーン性を持たせる（対峙・戦闘・決断の瞬間等）。
+  `EPISODE_TITLE_SHORT`はタイトルの数字・逆説要素を短く抜き出したもの（例: "200 YEARS"
+  "13 DAYS" 等、STEP 2Aの`youtube_title`で使った数字・逆説と整合させる）
+- 2案は似た構図の使い回しにしない（A/Bテストとして意味を持たせるため）
 
-**生成コード:**
+**生成コード（案A・案Bそれぞれで実行）:**
 ```python
 import os
 from google import genai
@@ -757,10 +786,11 @@ response = client.models.generate_content(
     config=types.GenerateContentConfig(response_modalities=["IMAGE"]),
 )
 # inline_data から PNG をデスクトップに保存
-# 保存先: ~/Desktop/SC/ep{NNN}_thumbnail.png
+# 保存先: ~/Desktop/SC/ep{NNN}_thumbnail_a.png（案A）/ ep{NNN}_thumbnail_b.png（案B）
 ```
 
-**Google Drive への保存はこの時点では行わない。**
+**Google Drive への保存はこの時点では行わない。** STEP4での移動、`/sc-upload`実行時の
+YouTube Studio「テストと比較」への登録手順は`sc-upload.md`参照。
 
 ---
 
@@ -902,9 +932,9 @@ outro_library_02_xxx.mp3     ← ライブラリ（終盤 2）
 確認を遅らせてもSTEP5A/5B以降が無駄になることはない）。ここでは生成と自動チェックのみ行い、
 ユーザーへの提示・確認待ちは行わない。
 
-**サムネイル:**
-- 生成後、Claude が Read ツールで画像を直接見て一次チェックする（文字の可読性・時代考証・破綻の有無）。明らかな問題（文字化け・崩れた構図等）があれば1回だけ自動再生成する。
-- ユーザーへの表示・確認は行わない。`~/Desktop/SC/ep{NNN}_thumbnail.png` に保存したまま次に進む。
+**サムネイル（2026-09-06〜: 案A・案B 2件）:**
+- 生成後、Claude が Read ツールで両案を直接見て一次チェックする（文字の可読性・時代考証・破綻の有無）。明らかな問題（文字化け・崩れた構図等）があれば該当案のみ1回だけ自動再生成する。
+- ユーザーへの表示・確認は行わない。`~/Desktop/SC/ep{NNN}_thumbnail_a.png` / `_b.png` に保存したまま次に進む（統合確認・YouTube StudioでのA/Bテスト登録は`/sc-upload`側で扱う）。
 
 **BGM:**
 - 役割別9曲（各役割3候補: Freesound新規1 + ライブラリ2）を用意した後、Freesound新規候補には
@@ -1000,8 +1030,9 @@ mkdir -p "$DRIVE/audio" "$DRIVE/images" "$DRIVE/images_shorts"
 # 制作確認書を移動
 mv "$HOME/Desktop/SC/ep{NNN}_制作確認書.txt" "$DRIVE/"
 
-# サムネイルを移動
-mv "$HOME/Desktop/SC/ep{NNN}_thumbnail.png" "$DRIVE/"
+# サムネイル（案A・案B）を移動。両方残す（YouTube StudioのA/Bテストで両方使うため）
+mv "$HOME/Desktop/SC/ep{NNN}_thumbnail_a.png" "$DRIVE/"
+mv "$HOME/Desktop/SC/ep{NNN}_thumbnail_b.png" "$DRIVE/"
 
 # シーン画像・画像QA結果を移動（sc_image_gen.py の出力）
 mv "$HOME/Desktop/SC/ep{NNN}/images/"*.png "$DRIVE/images/" 2>/dev/null
@@ -1244,18 +1275,22 @@ STEP5C後に目視確認、と最大3回に分かれていた確認をここに�
 （`Read` や `SendUserFile`）が複数あると、ユーザー側に表示されない。
 Read単体1回のみ・他の画像配信呼び出しなしのターンでのみ表示に成功することを確認済み。
 したがって：
-- サムネイルは Read ツールで**1回だけ**表示する
+- サムネイルは**案Aのみ** Read ツールで**1回だけ**表示する。**案B**は表示せず、
+  `~/Desktop/SC/ep{NNN}_thumbnail_b.png` のパスを案内するに留める（2026-09-06〜:
+  A/Bテスト用に2案あるが、同ターンで2枚Readすると表示制約に抵触するため）
 - シーン画像・BGMはファイル自体を送らず、`~/Desktop/SC/ep{NNN}/images/`／`~/Desktop/SC/BGM/`
   のフォルダパスを案内する方式にする（全シーンを一括でReadツールに貼り付ける、または
   `SendUserFile` でまとめて送る、という方法は**行わない**）
-- 上記の案内テキストと、サムネイルのRead表示は**同じターンでよい**（禁止されているのは
+- 上記の案内テキストと、サムネイル案Aの Read 表示は**同じターンでよい**（禁止されているのは
   画像"配信"ツールの複数回呼び出しであり、テキスト＋Read1回の組み合わせは問題ない）
 
 **提示するメッセージ（画像QAに未解決WARNINGが無い場合）:**
 ```
 制作素材が揃いました。まとめてご確認ください。
 
-📷 サムネイル: 下に表示します
+📷 サムネイル案A: 下に表示します
+📷 サムネイル案B: ~/Desktop/SC/ep{NNN}_thumbnail_b.png でご確認ください
+   （YouTube StudioのA/Bテストで2案とも使う想定です。どちらか1案に絞りたい場合はお知らせください）
 🎵 BGM: ~/Desktop/SC/BGM/ に3曲（intro/main/outro）を用意しました。
    試聴してご確認ください（sc_bgm_final_check.py判定: {総合GO/差し替え推奨}）
 🖼️ シーン画像: ~/Desktop/SC/ep{NNN}/images/ フォルダでご確認ください
@@ -1265,7 +1300,7 @@ Read単体1回のみ・他の画像配信呼び出しなしのターンでのみ
 
 すべて問題なければお知らせください。
 ```
-（このテキストと同じターンで、Read ツールでサムネイル画像を1回だけ表示する）
+（このテキストと同じターンで、Read ツールでサムネイル案Aの画像を1回だけ表示する）
 
 **画像QAに未解決WARNINGが残っている場合、上記の🖼️部分を以下に差し替える：**
 ```

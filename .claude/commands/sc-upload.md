@@ -65,6 +65,11 @@ python3 $HOME/samurai-chronicles/sc_sns_up.py --episode ep{NNN} --publish-at "20
 - Shorts動画（タイトルに #Shorts を付加）
 - 予約の場合: 本編・Shorts ともに同じ日時で予約される
 
+**2026-09-06〜: `topics_queue.json` の `status` を自動更新（Fable監査対応）。**
+アップロード成功後、`update_queue_status()` が該当 `episode_id` のエントリを
+`"in_production"` → `"published"` に更新する（`last_updated` も更新）。以前はこの
+更新が行われず、公開済みエピソードをキューから判別できなかった。
+
 スロット割り当てロジック:
 1. `episodes/*.json` の `scheduled_at` を読んで使用済み日付を収集
 2. 今日の 03:00 JST がまだ未来 → 今日を候補に
@@ -78,6 +83,13 @@ python3 $HOME/samurai-chronicles/sc_sns_up.py --episode ep{NNN} --publish-at "20
   Shorts: https://youtu.be/{SHORTS_ID}
   ※ 指定日時まで非公開状態です。YouTube Studio で確認できます。
 ```
+
+**サムネイルA/Bテスト（2026-09-06追加・Fable監査対応）:** `/sc-new` STEP3Bで生成した
+サムネイル案A（`ep{NNN}_thumbnail_a.png`）はAPI経由で自動アップロードされる。
+案B（`ep{NNN}_thumbnail_b.png`）はYouTube Data APIでは追加できない（YouTube Studioの
+「テストと比較」機能はStudio UI専用でAPIが存在しない）ため、`sc_sns_up.py`実行後、
+案Bのパスが完了報告に表示される。**ユーザーがYouTube Studioを開き、動画の
+「詳細」→「サムネイル」→「テストと比較」から手動で案Bを追加する。** この手順は自動化できない。
 
 ## STEP 4 — コミット・プッシュ確認（2026-07-29〜: 自動化済み）
 

@@ -758,7 +758,7 @@
       "priority": "A",
       "person": "yamamoto_kansuke",
       "angle": "key_event",
-      "notes": "Shingen's strategist whose plan failed at the 4th Kawanakajima battle. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
+      "notes": "Shingen's strategist whose plan failed at the 4th Kawanakajima battle. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。",
       "last_updated": "2026-08-03"
     },
     {
@@ -791,7 +791,7 @@
       "priority": "A",
       "person": "torii_mototada",
       "angle": "key_event",
-      "notes": "Held Fushimi Castle knowing it was a suicide mission, to buy Ieyasu time before Sekigahara. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
+      "notes": "Held Fushimi Castle knowing it was a suicide mission, to buy Ieyasu time before Sekigahara. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。",
       "last_updated": "2026-07-23"
     },
     {
@@ -802,7 +802,7 @@
       "priority": "A",
       "person": "hasekura",
       "angle": "key_event",
-      "notes": "The actual envoy of the Keicho Embassy (ep043 covered Masamune's angle on the mission). Character art already exists (characters/hasekura). → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
+      "notes": "The actual envoy of the Keicho Embassy (ep043 covered Masamune's angle on the mission). Character art already exists (characters/hasekura). → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。",
       "last_updated": "2026-07-23"
     },
     {
@@ -813,7 +813,7 @@
       "priority": "A",
       "person": "william_adams",
       "angle": "key_event",
-      "notes": "English navigator granted samurai status by Ieyasu. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
+      "notes": "English navigator granted samurai status by Ieyasu. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。",
       "last_updated": "2026-07-23"
     },
     {
@@ -857,7 +857,7 @@
       "priority": "A",
       "person": "gessho",
       "angle": "key_event",
-      "notes": "Companion piece to ep008/ep019 (Saigo Takamori) — the failed double-suicide pact. Character art already exists (characters/gessho). → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
+      "notes": "Companion piece to ep008/ep019 (Saigo Takamori) — the failed double-suicide pact. Character art already exists (characters/gessho). → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。",
       "last_updated": "2026-08-19"
     },
     {
@@ -868,7 +868,7 @@
       "priority": "A",
       "person": "yoshinobu",
       "angle": "key_event",
-      "notes": "Last shogun, resigned 1867 rather than fight. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
+      "notes": "Last shogun, resigned 1867 rather than fight. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。",
       "last_updated": "2026-08-23"
     },
     {
@@ -901,7 +901,7 @@
       "priority": "A",
       "person": "katsu_kaishu",
       "angle": "key_event",
-      "notes": "Negotiated the bloodless surrender of Edo Castle 1868. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
+      "notes": "Negotiated the bloodless surrender of Edo Castle 1868. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。",
       "last_updated": "2026-08-25"
     },
     {
@@ -912,7 +912,7 @@
       "priority": "A",
       "person": "abe_masahiro",
       "angle": "key_event",
-      "notes": "Rōjū who handled Perry's 1853 ultimatum. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。⚠️タイトルの「in 40 Days」は史実的根拠が薄い（ep088制作時にOpusが同種の表現を史実的根拠不足と判断し削除した経緯あり。ペリーは1853年7月来航時に「翌春再来」を告げており、40日という具体的期限の典拠が不明）。STEP 2A/3Aで年号・期間表現を要検証、タイトル自体の修正も検討すること。",
+      "notes": "Rōjū who handled Perry's 1853 ultimatum. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。⚠️タイトルの「in 40 Days」は史実的根拠が薄い（ep088制作時にOpusが同種の表現を史実的根拠不足と判断し削除した経緯あり。ペリーは1853年7月来航時に「翌春再来」を告げており、40日という具体的期限の典拠が不明）。STEP 2A/3Aで年号・期間表現を要検証、タイトル自体の修正も検討すること。",
       "last_updated": "2026-08-26"
     },
     {
@@ -923,7 +923,7 @@
       "priority": "A",
       "person": "amakusa_shiro",
       "angle": "key_event",
-      "notes": "Teenage leader of the Shimabara Rebellion 1637-38. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。",
+      "notes": "Teenage leader of the Shimabara Rebellion 1637-38. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。",
       "last_updated": "2026-07-23"
     },
     {
@@ -1000,7 +1000,7 @@
       "priority": "A",
       "person": "shibata_katsuie",
       "angle": "death",
-      "notes": "Nobunaga's general, died with his wife Oichi rather than surrender to Hideyoshi. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。 → 2026-08-29追記（Fable5監査）: 最期の潔さだけでなく、賤ヶ岳での戦略判断（佐久間盛政を止めきれなかった采配ミス）を軸に据え、黒田官兵衛(ep030/ep052)型の「軍略ドラマ」として構成すると強テーマとの重複が狙える。 → 2026-09-06: ep095(同じdeath角度)と連続しないようキュー内で分離。",
+      "notes": "Nobunaga's general, died with his wife Oichi rather than surrender to Hideyoshi. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。 → 2026-08-29追記（Fable5監査）: 最期の潔さだけでなく、賤ヶ岳での戦略判断（佐久間盛政を止めきれなかった采配ミス）を軸に据え、黒田官兵衛(ep030/ep052)型の「軍略ドラマ」として構成すると強テーマとの重複が狙える。 → 2026-09-06: ep095(同じdeath角度)と連続しないようキュー内で分離。",
       "last_updated": "2026-09-06"
     },
     {
@@ -1033,7 +1033,7 @@
       "priority": "A",
       "person": "ii_naosuke",
       "angle": "death",
-      "notes": "Chief minister assassinated 1860 for forcing open-door treaties. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。 → 2026-08-29追記（Fable5監査）: ep069-079の11本連続低CTR（8月コホートで統計的に有意な落ち込み、p≈0.002）を踏まえ、暗殺事件の顛末描写に寄りすぎないよう注意。開国という孤独な決断を貫いた人物ドラマとして構成する。 → 2026-09-06: ep096(同じdeath角度)と連続しないようキュー内で分離。なお2026-09-06のFable監査でこのp≈0.002自体の方法論的脆弱性（14日窓未完了・多重比較未補正・コホート境界の事後選択）が指摘されている点に留意。",
+      "notes": "Chief minister assassinated 1860 for forcing open-door treaties. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。 → 2026-08-29追記（Fable5監査）: ep069-079の11本連続低CTR（8月コホートで統計的に有意な落ち込み、p≈0.002）を踏まえ、暗殺事件の顛末描写に寄りすぎないよう注意。開国という孤独な決断を貫いた人物ドラマとして構成する。 → 2026-09-06: ep096(同じdeath角度)と連続しないようキュー内で分離。なお2026-09-06のFable監査でこのp≈0.002自体の方法論的脆弱性（14日窓未完了・多重比較未補正・コホート境界の事後選択）が指摘されている点に留意。",
       "last_updated": "2026-09-06"
     },
     {
@@ -1090,6 +1090,32 @@
       "angle": "character",
       "notes": "Era diversification — pending queue had become all-Sengoku. Indecisive shogun whose succession dispute triggered the Onin War; retreated into art and built the Silver Pavilion while the country fractured. Priority B: data-poor era, confirm early performance before adding more.",
       "last_updated": "2026-09-05"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hidden_strategist",
+      "description": "知られざる軍師・参謀タイプの人物を、黒田官兵衛(ep030/ep052)型のoverview/謎解き寄りの人物ドラマとして構成するとCTRが伸びる、という仮説。2026-08-29のFable5監査で「実証済み」から「有望な仮説」に格下げされた（山本勘助ep075がkey_event角度でCTR1.99%と低調だった対照例あり）。",
+      "status": "testing",
+      "evidence_episodes": ["ep030", "ep052", "ep075", "ep098", "ep102"],
+      "success_criteria": "同型で構成したエピソードがn≥5に達し、かつ公開後14日CTRが同月中央値以上・impr1500以上に到達する割合が過半数を超えたら「実証済み」に格上げする。単純な累計CTR比較や外れ値1本への依存では格上げしない。",
+      "last_updated": "2026-09-06"
+    },
+    {
+      "id": "ninja_spy_theme",
+      "description": "忍者・間諜テーマは累計CTRで中央値超えの実績が多いが、2026-09-06のFable監査で（a）信頼性閾値未満の事例を含む、（b）一部は連続公開で独立試行でない、（c）維持率は7本中5本が中央値未満、という脆弱性が判明し「実証済み」から「有望な仮説」に格下げされた。",
+      "status": "testing",
+      "evidence_episodes": ["ep020", "ep027", "ep035", "ep050", "ep063", "ep064", "ep065"],
+      "success_criteria": "今後追加するn≥3本（例: ep101）が、同月コホート比較でCTR中央値以上・かつ維持率も中央値以上を同時に満たせば「実証済み」に格上げする（従来はCTRのみで判定していたため、維持率も条件に加える）。",
+      "last_updated": "2026-09-06"
+    },
+    {
+      "id": "data_poor_era_bakumatsu",
+      "description": "Bakumatsu期はep068のCTRが低かった（0.6%程度）が実績データが乏しく傾向を判断できない。2〜3本公開して初期データを見てから優先度を判断する方針（2026-08-04）。",
+      "status": "testing",
+      "evidence_episodes": ["ep068", "ep072", "ep076", "ep081", "ep084", "ep085", "ep088", "ep089", "ep090"],
+      "success_criteria": "完全な14日測定窓を持つBakumatsu公開分がn≥5に達した時点で、他era平均とCTR・維持率を比較する。明確な差がなければ「era自体の問題ではない」と判定し注意書きを解除、明確に低ければ新規投入頻度を下げる。",
+      "last_updated": "2026-09-06"
     }
   ],
   "last_updated": "2026-09-06",
