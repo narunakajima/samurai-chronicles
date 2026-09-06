@@ -971,15 +971,26 @@
       "last_updated": "2026-09-05"
     },
     {
-      "episode_id": "ep095",
+      "episode_id": "ep101",
       "status": "pending",
-      "title": "The Minister Who Was Assassinated in the Snow: Ii Naosuke and the Sakuradamon Incident",
-      "era": "Bakumatsu",
+      "title": "The Ninja Whose Name Outlived Five Different Men: Fuma Kotaro's Reign of Terror",
+      "era": "Sengoku",
       "priority": "A",
-      "person": "ii_naosuke",
-      "angle": "death",
-      "notes": "Chief minister assassinated 1860 for forcing open-door treaties. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。 → 2026-08-29追記（Fable5監査）: ep069-079の11本連続低CTR（8月コホートで統計的に有意な落ち込み、p≈0.002）を踏まえ、暗殺事件の顛末描写に寄りすぎないよう注意。開国という孤独な決断を貫いた人物ドラマとして構成する。",
-      "last_updated": "2026-08-29"
+      "person": "fuma_kotaro",
+      "angle": "overview",
+      "notes": "Ninja/spy theme — proven strong (7/7 past ninja episodes above CTR median) but currently absent from the pending queue. Hojo clan's legendary ninja leader, a title passed down across generations under one name. → 2026-09-06: Fable監査の指摘（実証済みテーマがキュー7番目に埋もれていた）を受けてキュー先頭へ前倒し。",
+      "last_updated": "2026-09-06"
+    },
+    {
+      "episode_id": "ep105",
+      "status": "pending",
+      "title": "The 250 Years of Peace One Man Bought With Patience: Tokugawa Ieyasu's Final Gamble",
+      "era": "Sengoku/Edo",
+      "priority": "A",
+      "person": "ieyasu",
+      "angle": "legacy",
+      "notes": "2026-09-06追加（Fable監査対応・有名人物比率の是正。08-04ルール「有名人物3〜4本混在」がpendingキューで0件だった問題への対応）: 晩年、幕藩体制・参勤交代など『二度と戦国に戻さない』ための制度設計に焦点を当てる。ep003(overview)/ep004・ep015(military)/ep016(character・忍耐)とは異なる、家康のlegacy角度は初出。",
+      "last_updated": "2026-09-06"
     },
     {
       "episode_id": "ep096",
@@ -989,19 +1000,8 @@
       "priority": "A",
       "person": "shibata_katsuie",
       "angle": "death",
-      "notes": "Nobunaga's general, died with his wife Oichi rather than surrender to Hideyoshi. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。 → 2026-08-29追記（Fable5監査）: 最期の潔さだけでなく、賤ヶ岳での戦略判断（佐久間盛政を止めきれなかった采配ミス）を軸に据え、黒田官兵衛(ep030/ep052)型の「軍略ドラマ」として構成すると強テーマとの重複が狙える。",
-      "last_updated": "2026-08-29"
-    },
-    {
-      "episode_id": "ep097",
-      "status": "pending",
-      "title": "The Christian Warlord Whose Faith Cost Him Everything: Otomo Sorin's Rise and Fall",
-      "era": "Sengoku",
-      "priority": "A",
-      "person": "otomo_sorin",
-      "angle": "overview",
-      "notes": "Kyushu Christian daimyo, rise and defeat at Mimikawa. First appearance.",
-      "last_updated": "2026-07-23"
+      "notes": "Nobunaga's general, died with his wife Oichi rather than surrender to Hideyoshi. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。 → 2026-08-29追記（Fable5監査）: 最期の潔さだけでなく、賤ヶ岳での戦略判断（佐久間盛政を止めきれなかった采配ミス）を軸に据え、黒田官兵衛(ep030/ep052)型の「軍略ドラマ」として構成すると強テーマとの重複が狙える。 → 2026-09-06: ep095(同じdeath角度)と連続しないようキュー内で分離。",
+      "last_updated": "2026-09-06"
     },
     {
       "episode_id": "ep098",
@@ -1015,15 +1015,26 @@
       "last_updated": "2026-08-29"
     },
     {
-      "episode_id": "ep099",
+      "episode_id": "ep104",
       "status": "pending",
-      "title": "The Traitor Who Ruled Japan for Thirteen Days: Akechi Mitsuhide's Fatal Gamble",
+      "title": "The Demon King's Only Weakness: Oda Nobunaga and the Boy Who Died Beside Him",
       "era": "Sengoku",
       "priority": "A",
-      "person": "akechi_mitsuhide",
+      "person": "nobunaga",
       "angle": "character",
-      "notes": "Honnoji incident covered from Nobunaga side in ep002/ep011 — this tells it from Mitsuhide himself: his motive, his 13 days as ruler, and his death fleeing peasants.",
-      "last_updated": "2026-09-05"
+      "notes": "2026-09-06追加（Fable監査対応・有名人物比率の是正）: 信長の若き小姓・森蘭丸との主従関係に焦点を当てる。本能寺で共に死んだ忠義の物語。ep002(本能寺の変・事件そのもの)/ep011(生涯overview)/ep041(比叡山焼き討ち)とは重ならない、信長のcharacter角度は初出。新キャラクター characters/ranmaru.txt が必要になる可能性がある。",
+      "last_updated": "2026-09-06"
+    },
+    {
+      "episode_id": "ep095",
+      "status": "pending",
+      "title": "The Minister Who Was Assassinated in the Snow: Ii Naosuke and the Sakuradamon Incident",
+      "era": "Bakumatsu",
+      "priority": "A",
+      "person": "ii_naosuke",
+      "angle": "death",
+      "notes": "Chief minister assassinated 1860 for forcing open-door treaties. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く（2026-08-02分析: key_event/death角度はCTR・維持率とも弱いため）。 → 2026-08-29追記（Fable5監査）: ep069-079の11本連続低CTR（8月コホートで統計的に有意な落ち込み、p≈0.002）を踏まえ、暗殺事件の顛末描写に寄りすぎないよう注意。開国という孤独な決断を貫いた人物ドラマとして構成する。 → 2026-09-06: ep096(同じdeath角度)と連続しないようキュー内で分離。なお2026-09-06のFable監査でこのp≈0.002自体の方法論的脆弱性（14日窓未完了・多重比較未補正・コホート境界の事後選択）が指摘されている点に留意。",
+      "last_updated": "2026-09-06"
     },
     {
       "episode_id": "ep100",
@@ -1037,15 +1048,26 @@
       "last_updated": "2026-09-05"
     },
     {
-      "episode_id": "ep101",
+      "episode_id": "ep106",
       "status": "pending",
-      "title": "The Ninja Whose Name Outlived Five Different Men: Fuma Kotaro's Reign of Terror",
+      "title": "Fūrinkazan: The Four-Word Code That Made Takeda Shingen Unstoppable",
       "era": "Sengoku",
       "priority": "A",
-      "person": "fuma_kotaro",
+      "person": "shingen",
+      "angle": "philosophy",
+      "notes": "2026-09-06追加（Fable監査対応・有名人物比率の是正）: 「疾如風・徐如林・侵掠如火・不動如山」の軍旗の由来と統治哲学。ep025(rivalry)/ep047(death)/ep048(military)とは異なる、信玄のphilosophy角度は初出。",
+      "last_updated": "2026-09-06"
+    },
+    {
+      "episode_id": "ep097",
+      "status": "pending",
+      "title": "The Christian Warlord Whose Faith Cost Him Everything: Otomo Sorin's Rise and Fall",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "otomo_sorin",
       "angle": "overview",
-      "notes": "Ninja/spy theme — proven strong (7/7 past ninja episodes above CTR median) but currently absent from the pending queue. Hojo clan's legendary ninja leader, a title passed down across generations under one name.",
-      "last_updated": "2026-09-05"
+      "notes": "Kyushu Christian daimyo, rise and defeat at Mimikawa. First appearance.",
+      "last_updated": "2026-07-23"
     },
     {
       "episode_id": "ep102",
@@ -1070,6 +1092,6 @@
       "last_updated": "2026-09-05"
     }
   ],
-  "last_updated": "2026-09-05",
-  "total_topics": 103
+  "last_updated": "2026-09-06",
+  "total_topics": 105
 }
