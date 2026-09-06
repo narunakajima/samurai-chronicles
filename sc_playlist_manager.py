@@ -83,9 +83,11 @@ def _create_playlist(youtube, display_name: str) -> str:
     return playlist_id
 
 
-def _add_to_playlist(youtube, playlist_id: str, video_id: str):
-    """動画をプレイリストに追加する。"""
-    youtube.playlistItems().insert(
+def _add_to_playlist(youtube, playlist_id: str, video_id: str) -> dict:
+    """動画をプレイリストに追加する。戻り値のplaylistItem["id"]は、
+    誤って追加した場合にplaylistItems().delete()で取り消す際に必要になる
+    （2026-09-08追加・Fable監査対応: 遡及バックフィルの復旧手段として）。"""
+    resp = youtube.playlistItems().insert(
         part="snippet",
         body={
             "snippet": {
@@ -95,6 +97,7 @@ def _add_to_playlist(youtube, playlist_id: str, video_id: str):
         },
     ).execute()
     time.sleep(0.5)  # API レート制限対策
+    return resp
 
 
 def _load_episode_json(episode_id: str):

@@ -12,21 +12,32 @@ character_playlists.json に一切記録されていなかった問題）の遡�
      公開済みのものだけをプレイリストに追加する
 
 ⚠️ --dry-run なしの実行はYouTube上に実際のプレイリストを作成・動画追加する。
-   実行前に character_playlists.json のバックアップ（git管理下なのでコミット済みでよい）
-   と、--dry-run の出力内容を必ず確認すること。
+
+安全対策（2026-09-08追加）:
+  - 実行前に character_playlists.json を backups/ にタイムスタンプ付きでコピーする
+  - 作成したプレイリストID・追加したplaylistItem IDを逐次
+    backups/playlist_backfill_{timestamp}.json に記録する
+  - 問題があれば --undo でこのログを使い、追加したplaylistItemを削除し
+    character_playlists.json をバックアップから復元できる
+    （新規作成したプレイリスト自体は空になるだけで残る。不要なら手動で削除すること）
 
 使い方:
   python3 sc_playlist_rescan_backfill.py --dry-run   # 何が追加されるか確認のみ
   python3 sc_playlist_rescan_backfill.py              # 実際にYouTubeへ反映
+  python3 sc_playlist_rescan_backfill.py --undo backups/playlist_backfill_20260908_120000.json
+                                                       # 追加分を取り消す
 """
 
 import argparse
 import glob
 import json
+import shutil
+from datetime import datetime
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
 CHAR_PLAYLISTS_JSON = BASE_DIR / "character_playlists.json"
+BACKUP_DIR = BASE_DIR / "backups"
 
 
 def _video_id_from_url(url: str):
@@ -71,13 +82,59 @@ def rescan_missing_entries() -> dict:
     return missing
 
 
+def _log_action(log_path: Path, entry: dict):
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    data = json.loads(log_path.read_text(encoding="utf-8")) if log_path.exists() else []
+    data.append(entry)
+    log_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def undo(log_file: Path):
+    from sc_sns_up import get_youtube_client
+    youtube = get_youtube_client()
+
+    log = json.loads(log_file.read_text(encoding="utf-8"))
+    added_items = [e for e in log if e["action"] == "add_item"]
+    created_playlists = [e for e in log if e["action"] == "create_playlist"]
+    backup_ref = next((e["backup_file"] for e in log if e.get("backup_file")), None)
+
+    print(f"取り消し対象: playlistItem {len(added_items)}件、新規プレイリスト{len(created_playlists)}件\n")
+
+    for e in added_items:
+        try:
+            youtube.playlistItems().delete(id=e["playlist_item_id"]).execute()
+            print(f"  ✓ 削除: {e['char']} / {e['episode_id']} (playlistItem={e['playlist_item_id']})")
+        except Exception as ex:
+            print(f"  ⚠️ 削除失敗: {e['char']} / {e['episode_id']} — {ex}")
+
+    if created_playlists:
+        print("\n以下は今回新規作成したプレイリストです（動画は上記で削除済みのため空になります）。")
+        print("完全に削除したい場合は手動でYouTube Studioから削除してください:")
+        for e in created_playlists:
+            print(f"  - {e['char']}: https://www.youtube.com/playlist?list={e['playlist_id']}")
+
+    if backup_ref and Path(backup_ref).exists():
+        shutil.copy(backup_ref, CHAR_PLAYLISTS_JSON)
+        print(f"\n✓ character_playlists.json を {backup_ref} から復元しました。")
+    else:
+        print("\n⚠️ character_playlists.json のバックアップ参照が見つかりません。手動確認してください。")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--dry-run", action="store_true",
         help="変更内容を表示するだけでJSON更新・YouTube反映は行わない",
     )
+    parser.add_argument(
+        "--undo", metavar="LOG_FILE",
+        help="指定した実行ログを使い、追加したplaylistItemを削除しJSONを復元する",
+    )
     args = parser.parse_args()
+
+    if args.undo:
+        undo(Path(args.undo))
+        return
 
     from sc_playlist_manager import (
         CHAR_DISPLAY_NAMES, _create_playlist, _add_to_playlist,
@@ -97,6 +154,16 @@ def main():
     if args.dry_run:
         print("\n--dry-run のためJSON更新・YouTube反映は行いません。")
         return
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    backup_path = BACKUP_DIR / f"character_playlists_{timestamp}.json"
+    log_path = BACKUP_DIR / f"playlist_backfill_{timestamp}.json"
+    BACKUP_DIR.mkdir(parents=True, exist_ok=True)
+    if CHAR_PLAYLISTS_JSON.exists():
+        shutil.copy(CHAR_PLAYLISTS_JSON, backup_path)
+    print(f"\nバックアップ: {backup_path}")
+    print(f"実行ログ: {log_path}")
+    _log_action(log_path, {"action": "backup", "backup_file": str(backup_path)})
 
     data = (
         json.loads(CHAR_PLAYLISTS_JSON.read_text(encoding="utf-8"))
@@ -128,6 +195,9 @@ def main():
             print(f"\n  {display}: プレイリスト新規作成")
             playlist_id = _create_playlist(youtube, display)
             info["playlist_id"] = playlist_id
+            _log_action(log_path, {
+                "action": "create_playlist", "char": char, "playlist_id": playlist_id,
+            })
             added = 0
             for entry in eps:
                 vid = entry.get("video_id")
@@ -137,7 +207,11 @@ def main():
                 if ep_data and not _is_published(ep_data):
                     continue
                 try:
-                    _add_to_playlist(youtube, playlist_id, vid)
+                    resp = _add_to_playlist(youtube, playlist_id, vid)
+                    _log_action(log_path, {
+                        "action": "add_item", "char": char, "episode_id": entry["episode_id"],
+                        "playlist_id": playlist_id, "playlist_item_id": resp["id"],
+                    })
                     added += 1
                 except Exception as e:
                     print(f"     ⚠️  {entry['episode_id']}: 追加失敗 — {e}")
@@ -159,7 +233,11 @@ def main():
                 if ep_data and not _is_published(ep_data):
                     continue
                 try:
-                    _add_to_playlist(youtube, playlist_id, vid)
+                    add_resp = _add_to_playlist(youtube, playlist_id, vid)
+                    _log_action(log_path, {
+                        "action": "add_item", "char": char, "episode_id": entry["episode_id"],
+                        "playlist_id": playlist_id, "playlist_item_id": add_resp["id"],
+                    })
                     added += 1
                     print(f"  {display}: {entry['episode_id']} を既存プレイリストに追加")
                 except Exception as e:
@@ -170,7 +248,8 @@ def main():
     CHAR_PLAYLISTS_JSON.write_text(
         json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print("\n✓ 完了")
+    print(f"\n✓ 完了。問題があれば次のコマンドで取り消せます:")
+    print(f"  python3 sc_playlist_rescan_backfill.py --undo {log_path}")
 
 
 if __name__ == "__main__":
