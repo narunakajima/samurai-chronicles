@@ -10,7 +10,14 @@ sc_sns_up.py — Samurai Chronicles YouTube アップロード
   火・木・土 03:00 JST に1本ずつ公開（週3本、2026-08-30〜）。
   すでに予約済みのエピソードがある場合は次の配信曜日の空きスロットを自動割り当て。
 
-認証: ~/.claude/secrets/yt_client_secrets.json（Lamps Whisper と共用）
+認証: ~/.claude/secrets/yt_client_secrets_sc.json
+（2026-09-08〜: SC専用のGoogle Cloudプロジェクト "SC Project"
+  gen-lang-client-0312540709 に分離。YouTube Data APIの日次クォータ
+  （10,000ユニット/日）をKL/LWと共有しないようにするため。
+  以前はLamps Whisperと共用のyt_client_secrets.jsonを使っていたが、
+  SC単体でも遡及作業等でクォータを使い切ることがあり、かつSC/KLが
+  同じ火木土に公開するため合算リスクがあった。KL/LWは引き続き
+  civic-vigil-476308-i1（旧yt_client_secrets.json）を共用する）
 """
 
 import argparse
@@ -37,7 +44,7 @@ SCOPES = [
 SAMURAI_CHANNEL_ID = "UCN1-TUxX_2UumGm3OKpmncg"  # Samurai Chronicles チャンネルID
 
 SECRETS_DIR = Path.home() / ".claude" / "secrets"
-YT_CLIENT_SECRETS = SECRETS_DIR / "yt_client_secrets.json"
+YT_CLIENT_SECRETS = SECRETS_DIR / "yt_client_secrets_sc.json"
 YT_TOKEN = SECRETS_DIR / "yt_token_sc.json"
 
 BASE_DIR = Path(__file__).parent

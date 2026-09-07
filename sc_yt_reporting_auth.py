@@ -34,7 +34,7 @@ from googleapiclient.discovery import build
 SAMURAI_CHANNEL_ID = "UCN1-TUxX_2UumGm3OKpmncg"  # Samurai Chronicles チャンネルID
 
 SECRETS_DIR = Path.home() / ".claude" / "secrets"
-YT_CLIENT_SECRETS = SECRETS_DIR / "yt_client_secrets.json"
+YT_CLIENT_SECRETS = SECRETS_DIR / "yt_client_secrets_sc.json"
 YT_TOKEN_REPORTING = SECRETS_DIR / "yt_token_sc_reporting.json"
 
 BASE_SCOPES = [
