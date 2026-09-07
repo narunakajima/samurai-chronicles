@@ -1,0 +1,264 @@
+{
+  "episode_id": "ep096",
+  "episode_title": "The 250 Years of Peace One Man Bought With Patience: Tokugawa Ieyasu's Final Gamble",
+  "youtube_title": "The Warlord Who Won Every War, Then Spent 16 Years Making War Impossible",
+  "youtube_description": "By 1600, Tokugawa Ieyasu had already won everything — every rival dead, defeated, or bowing before him. So why did he spend his final sixteen years still afraid? This is the story of the laws, marriages, and one final, ruthless war he waged not to win power, but to make sure no one could ever take it the way he had.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 By 1600, Tokugawa Ieyasu had...\n0:46 By the time Tokugawa Ieyasu...\n1:37 In 1603, the emperor granted...\n2:33 One obstacle remained, and it...\n3:34 While the Osaka question...\n4:36 In 1614, an inscription on a\n5:39 That winter, Ieyasu's army...\n6:39 Within months, Tokugawa...\n7:35 What Ieyasu did next revealed...\n8:29 Ieyasu went further than...\n9:26 By early 1616, Ieyasu's body was\n10:28 This was Ieyasu's real...\n11:24 To make the gamble stick, Ieyasu\n12:20 On the seventeenth day of the\n13:29 The true test came in the\n14:28 That contrast is the entire...\n15:28 Historians still argue over...\n16:24 That durability came at a price\n17:17 Perhaps the clearest way to...\n18:15 Tokugawa Ieyasu is remembered...\n\n🎌 Subscribe for new episodes every week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Sadler, A.L. \"The Maker of Modern Japan: The Life of Tokugawa Ieyasu.\" Tuttle Publishing, 1937 (reprint 2009).\n2. Totman, Conrad. \"Tokugawa Ieyasu: Shogun.\" Heian International, 1983.\n3. Ooms, Herman. \"Tokugawa Ideology: Early Constructs, 1570–1680.\" Princeton University Press, 1985.\n\n\n🎵 Music: A Piano and Choir Journey by Matio888 (freesound.org) — CC BY 4.0\n#TokugawaIeyasu #EdoPeriod #SiegeOfOsaka #Shogunate #JapaneseHistory #SengokuJapan #SamuraiHistory #TokugawaShogunate #FeudalJapan #SamuraiChronicles",
+  "youtube_tags": [
+    "Tokugawa Ieyasu",
+    "Edo Period",
+    "Siege of Osaka",
+    "Shogunate",
+    "Japanese History",
+    "Sengoku Japan",
+    "Samurai History",
+    "Tokugawa Shogunate",
+    "Feudal Japan",
+    "Samurai Chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "teaser_narration": "Osaka Castle burns beneath him, and the Toyotomi line ends in the ashes. Tokugawa Ieyasu had won the war he wanted — but victory was never his real target. Why did an old man spend his final years chasing something no sword could win?",
+  "shorts_narration": "1615: Osaka Castle falls, and Japan's last rival house dies with it. But Tokugawa Ieyasu wasn't finished — he had spent sixteen years writing the laws that mattered more. What was he really afraid of?",
+  "shorts_hook_lines": [
+    "ALREADY WON.",
+    "16 YEARS OF FEAR.",
+    "WHY WAS HE STILL SCARED?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up portrait of Tokugawa Ieyasu, a stocky Japanese warlord in his 70s with a traditional sakayaki shaved-forehead hairstyle and greying topknot, deep-set watchful eyes staring directly into the camera with unblinking, calculating intensity, faint greying beard, dark formal robes bearing the triple hollyhock (aoi) crest visible at the shoulder, dramatic low side-lighting casting half his weathered face in shadow, his face centered in the upper portion of the vertical frame.",
+  "thumbnail_prompt": "Dramatic close-up thumbnail portrait of an elderly Tokugawa Ieyasu in dark formal court robes bearing the triple hollyhock (aoi) crest, seated with calculating composure in a torch-lit study surrounded by rolled scrolls and law documents, a burning castle glowing faintly through a window behind him, his expression patient but unyielding, cinematic high-contrast lighting evoking a ruler who had already won the war and was now waging a quieter, more permanent one.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "By 1600, Tokugawa Ieyasu had already won everything. So why did he spend his last sixteen years still terrified? What was he actually trying to stop from happening again?",
+      "image_prompt": "An elderly Japanese warlord in dark formal robes bearing the triple hollyhock (aoi) crest stands alone at a veranda railing at dusk, looking out over a peaceful castle town below with a distant, subtle unease in his posture despite the calm scene, sakayaki shaved-forehead hairstyle with greying topknot, deep-set watchful eyes.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "By the time Tokugawa Ieyasu crushed his last rivals at Sekigahara in 1600, he was already fifty-seven years old — and he had seen this ending before. Oda Nobunaga died suddenly, and Japan fractured within days. Toyotomi Hideyoshi died in his sleep, and just over two years later his generals were slaughtering each other on a single battlefield. Ieyasu had spent his entire life watching the men who unified Japan lose everything the moment they stopped breathing. Victory, he now understood, was the easy part. The real war — the one against time itself — was only just beginning.",
+      "image_prompt": "An aging Japanese warlord in black lacquered armor bearing the triple hollyhock (aoi) crest stands atop a hillside overlooking a smoke-hazed battlefield at dusk in the distance, his expression somber rather than triumphant, as if already contemplating what comes after this victory rather than celebrating it. Sakayaki shaved-forehead hairstyle, greying beard.",
+      "ken_burns": "pan_right",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1603, the emperor granted Ieyasu the title of shogun, the supreme military authority of Japan. It should have been the summit of his ambition. Instead, only two years later, he did something almost unheard of: he resigned. He handed the title to his son Hidetada and withdrew to Sunpu Castle, keeping real power in his own hands as 'Ogosho,' the retired ruler behind the throne. To outsiders it looked like an old man stepping aside. In truth, Ieyasu was rehearsing something no warlord had ever managed — proving the shogunate could survive being handed down, not just seized.",
+      "image_prompt": "Inside a formal wooden audience hall at Sunpu Castle, an elderly Japanese lord in dark formal robes bearing the triple hollyhock (aoi) crest sits on a raised dais handing a lacquered scroll of appointment to a younger, formally dressed samurai kneeling before him, both figures rendered with historically accurate sakayaki hairstyles, tatami mats and sliding paper screens in the background, quiet ceremonial atmosphere.",
+      "ken_burns": "static",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "One obstacle remained, and it lived inside the largest castle in Japan. Toyotomi Hideyori, the son of Ieyasu's old rival Hideyoshi, was growing into adulthood behind the walls of Osaka Castle, surrounded by loyalists who had never accepted Tokugawa rule as final. Ieyasu had bound the boy to his own family by marriage, sending his granddaughter to Osaka as a bride, hoping kinship might dissolve old loyalties. But marriages could be undone by war, and Hideyori was no longer a child. As Ieyasu entered his seventies, one question outweighed every law he had drafted: what to do about Osaka.",
+      "image_prompt": "Wide view of the immense stone ramparts and multi-tiered keep of Osaka Castle rising above its city at dusk, a young formally dressed samurai lord standing on a distant balcony overlooking the grounds, banners bearing a stylized paulownia crest hanging from the walls, an atmosphere of quiet defiance and unresolved tension.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "While the Osaka question simmered, Ieyasu was already building the cage meant to hold every lord in Japan, including his own descendants. Working with Confucian scholars and legal advisors, he drafted regulations no shogun had dared impose so broadly: daimyo would need shogunal permission to marry, to build or repair castles, even to shelter each other's fugitives. Every clause was aimed at the same target — the private alliances and fortified strongholds that had let ambitious men like himself rise in the first place. He was, in effect, writing rules designed to make his own career impossible for anyone else to repeat.",
+      "image_prompt": "Inside a bright study lined with wooden scroll cases, sunlight streaming through open paper screens, an elderly Japanese lord in dark formal robes bearing the triple hollyhock (aoi) crest stands over a low writing desk gesturing at a spread of legal documents while two Confucian-robed scholar-advisors kneel nearby taking notes, brush and inkstone in the foreground, an atmosphere of active daytime deliberation.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.43,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1614, an inscription on a temple bell commissioned by Hideyori's household gave Ieyasu the opening he needed. The characters, read one way, seemed to wish for the Tokugawa's ruin while honoring the Toyotomi name. Ieyasu's advisers declared it an unforgivable insult. Modern historians still debate whether it was genuine treachery or a deliberately manufactured grievance — a pretext dressed as an outrage. Either way, the effect was immediate. Negotiations collapsed, Osaka's garrison swelled with ronin who had nowhere else to fight, and the aging Ogosho who had spent fourteen years building peace now marched toward one final war.",
+      "image_prompt": "Close-up still-life composition of a massive bronze temple bell hanging under a wooden temple eave, worn abstract engraved patterns and weathered surface texture on its surface catching torchlight (no legible readable text or characters, decorative relief only), a group of formally dressed advisors gathered below pointing up at the bell with alarmed expressions, dusk sky beyond the temple grounds.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "That winter, Ieyasu's army surrounded Osaka Castle, one of the most formidable fortresses ever built in Japan. Cannon fire from newly imported guns pounded the keep, one shot reportedly landing near Hideyori's own mother. But the walls held, and the siege dragged into a costly stalemate. Rather than exhaust his forces further, Ieyasu offered terms: peace, in exchange for filling in the castle's outer moats. Hideyori's advisors agreed, believing they had preserved their fortress. They had not read the old warlord correctly. A castle without its moats was no longer a fortress at all — it was a target.",
+      "image_prompt": "An elderly Japanese commander in black lacquered armor bearing the triple hollyhock (aoi) crest stands calmly inside a command tent on a hillside at night, observing Osaka Castle's distant silhouette through the open tent flap as cannon fire flashes near its walls, a war council map with abstract terrain markings spread on a table beside him, sakayaki hairstyle, composed expression.",
+      "ken_burns": "pan_left",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Within months, Tokugawa forces returned to find Osaka Castle stripped of the defenses that had held them off before. The summer campaign of 1615 was brutally short. The castle fell, fires consumed its keep, and Hideyori and his mother took their own lives among the ruins. The Toyotomi line, the last house capable of contesting Tokugawa rule, ended in the ashes of the fortress Hideyoshi himself had built to be unconquerable. Ieyasu, seventy-two years old, had removed the final obstacle to his peace — but he had also, in the eyes of many, broken a peace he had promised in writing.",
+      "image_prompt": "Wide dramatic view of Osaka Castle's great keep engulfed in fire and smoke against a dawn sky, its moat visibly filled with earth and rubble rather than water, defeated retainers and refugees fleeing the burning grounds in the foreground, an overwhelming sense of a great house ending in flame.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "What Ieyasu did next revealed how long this had been planned. Barely three months after Osaka burned, he did not celebrate a military triumph — he issued paperwork. The Buke Shohatto, laws governing every samurai household in Japan, and a companion code binding the imperial court, were promulgated within the same season as his final victory. One castle per domain. No repairs without permission. No marriages, no alliances, without the shogunate's approval. The timing was not an accident. The sword had cleared the field; now the law would make sure no one else could ever plant a new one on it.",
+      "image_prompt": "Wide outdoor shot in the open stone courtyard of a great castle, rows of dozens of formally dressed daimyo kneeling in the open air before a raised wooden platform where an elderly Japanese lord in dark ceremonial robes bearing the triple hollyhock (aoi) crest observes as a robed official reads aloud from a long formal document, castle walls and pine trees framing the courtyard, overcast sky, a sense of scale and mass assembly distinct from an indoor chamber, no legible text visible on the scroll.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.84,
+        "y": 0.5
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Ieyasu went further than simple rules. He sorted every daimyo in Japan into categories of trust, rewarding hereditary allies with land near Edo and the capital, while scattering the lords who had only bowed to him after Sekigahara to distant, less strategic provinces. Their travel, their fortresses, even their family ties were entangled in obligations to the shogunate. It was the rough scaffolding of what his successors would later formalize as alternate attendance, forcing lords to spend years shuttling between their domains and Edo. No single daimyo, however wealthy, would ever again gather the freedom of movement Ieyasu himself had once used to seize power.",
+      "image_prompt": "A large ink-brushed map of Japan's provinces spread across a low table, abstract coastlines and mountain contours only with no legible text or place names, a single solitary elderly Japanese lord (only one person seated at the table, no second identical figure) in dark formal robes bearing the triple hollyhock (aoi) crest placing small lacquered clan-crest tokens onto different regions of the map with a deliberate, calculating expression, younger advisors of clearly different age and appearance observing respectfully from a distance behind him.",
+      "ken_burns": "pan_right",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By early 1616, Ieyasu's body was failing him — stomach pain, exhaustion, the unmistakable signs of a man near the end of a long life. He did not slow his work. Advisors at Sunpu described him reviewing succession arrangements and legal codes from his sickbed, as if each remaining day were another brick to lay before the structure had to stand on its own. He had buried two unifiers who left no such foundation behind them. Whatever else Ieyasu accomplished in seventy-three years, he did not intend to make their mistake — running out of time before the peace could hold itself up.",
+      "image_prompt": "Inside a dim private chamber at Sunpu Castle, a frail elderly Japanese lord in simple dark robes bearing the triple hollyhock (aoi) crest lies propped up on a low bedding platform, reviewing a stack of documents held with trembling hands, a worried attendant kneeling nearby with a lantern, soft candlelight emphasizing his gaunt but focused expression.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "This was Ieyasu's real gamble, and it was far riskier than any battlefield. Armies could be defeated and rebuilt, but laws depended on being obeyed by men not yet born, under a shogun who would never personally frighten them the way Ieyasu once had. He was betting that a document — the Buke Shohatto, the sorted domains, a shogunate handed down rather than seized — could restrain human ambition more reliably than his own sword ever had. No warlord before him had wagered his life's legacy on paperwork outliving his reputation. If it failed, everything he had built would collapse the moment he stopped breathing, exactly as it had for Nobunaga and Hideyoshi.",
+      "image_prompt": "Symbolic composition: an elderly Japanese lord in dark formal robes bearing the triple hollyhock (aoi) crest stands alone in a vast, empty formal hall, one hand resting on a stack of traditional Japanese scrolls (makimono, rolled paper/silk documents tied with cord, not Western bound books or folios, no wax seals) on a low table, his own long shadow cast across the tatami floor toward an empty dais in the distance, conveying the weight of a legacy resting on paper rather than swords.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "To make the gamble stick, Ieyasu placed his three youngest sons at the head of powerful new branch houses, the lines that would soon settle at Owari, Kii, and Mito as a built-in safety net so the shogunate would never run out of eligible heirs if the main line failed. Hidetada, already installed as shogun, had spent a decade being watched, corrected, and trained by his father's side. Every safeguard Ieyasu could imagine had now been written into law, distributed across loyal branches, or drilled into his heir. By the spring of 1616, the machine he had spent sixteen years constructing was finally complete — and it no longer needed him.",
+      "image_prompt": "Intimate nighttime scene in a small private inner chamber lit only by a few lanterns: an elderly Japanese lord in dark ceremonial robes bearing the triple hollyhock (aoi) crest leans forward close to three younger formally dressed samurai lords seated in a tight circle around him, each holding a closed scroll tied with a plain cord and sealed only with a small red ink stamp impression (no Western-style wax seals or ribbons) bearing a small variant of the hollyhock crest symbolizing distinct branch households, a blank unmarked hanging scroll visible in the background with no legible text or calligraphy, deep shadows and warm lantern glow, a hushed and confidential atmosphere unlike a large formal hall.",
+      "ken_burns": "static",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "On the seventeenth day of the fourth month, 1616, Tokugawa Ieyasu died at Sunpu Castle at the age of seventy-three. His instructions for what came after were as deliberate as everything else he had done: he asked to be enshrined not merely as an ancestor, but as a deity watching over Japan from a shrine at Nikko. A year after his death, the imperial court granted him the divine title Tosho Daigongen. It was a calculated final act. A mortal ruler could be forgotten, challenged, or outgrown by his heirs. A god, watching eternally over the peace he had built, could not be so easily dismissed by anyone tempted to undo it.",
+      "image_prompt": "Serene, reverent scene at a mist-shrouded mountain shrine complex at dawn, ornate wooden shrine gate and vermilion-lacquered buildings nestled among tall cedar trees, a faint procession of robed priests carrying a covered palanquin up stone steps toward the inner sanctuary, sense of solemn deification and eternal watchfulness.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The true test came in the years after his death, and this time, Japan did not collapse. Hidetada governed within the framework his father had left him, and in 1635 Ieyasu's grandson Iemitsu formalized the scattered travel obligations into a single system: alternate attendance, requiring the outer lords to alternate years between their domains and Edo, their families kept in the capital under the shogunate's watchful eye. The rules had outlived their author by two decades and were only growing stronger. For the first time in centuries, the death of Japan's paramount ruler had not reopened a single old war.",
+      "image_prompt": "Grand procession scene along a wide highway, a long line of daimyo retainers in formal traveling dress carrying banners and lacquered palanquins moving steadily toward a distant city skyline of a castle town, orderly and peaceful, morning light, sense of routine institutional order rather than conflict.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "That contrast is the entire measure of what Ieyasu built. After Nobunaga died, Japan burned for years. After Hideyoshi died, it took just two years for his lieutenants to meet in open battle at Sekigahara. After Ieyasu died, nothing happened — no war, no collapse, no rival army marching on Edo. The system of laws, obligations, and hereditary branches he left behind held for two hundred and fifty years, until a very different kind of pressure, arriving from beyond Japan's shores, finally forced its collapse in the nineteenth century. No sword had ever bought that kind of time.",
+      "image_prompt": "Peaceful wide view of a thriving Edo-period castle town at golden hour, merchants and travelers moving calmly through orderly streets beneath a distant castle skyline, generations of quiet prosperity implied through the calm, settled composition, no soldiers or conflict visible anywhere in the frame.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Historians still argue over how much of this was foresight and how much was improvisation dressed up afterward as genius. But the pattern is difficult to dismiss. Nobunaga and Hideyoshi had built order around their own irreplaceable presence — brilliant, terrifying, and impossible to hand to a successor intact. Ieyasu built something almost the opposite: a system deliberately designed to function without him, staffed by rules rather than personality, and structured so that even a mediocre heir could keep it running. It was a far less glamorous kind of genius, and precisely for that reason, a far more durable one.",
+      "image_prompt": "Close-up still-life composition on a wooden desk: a weathered formal legal scroll, blank aged paper texture with no legible text, title, or writing of any kind visible, bearing only an ornate but illegible seal impression, rests open beside a simple lacquered box bearing the triple hollyhock (aoi) crest emblem, soft window light, shallow depth of field emphasizing the quiet permanence of an institution over any single portrait or personal object.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "That durability came at a price historians rarely let him forget. The peace treaty at Osaka, honored just long enough for the moats to be filled, then discarded the moment it became inconvenient, remains one of the more calculating betrayals in Japanese history. Hideyori and his mother paid for it with their lives. Ieyasu clearly believed the ends justified the deception: two and a half centuries without civil war, purchased in part with a broken promise. Whether that trade was wisdom or ruthlessness dressed as statesmanship is a question his final years never bothered to answer for us.",
+      "image_prompt": "Quiet, somber memorial composition: a small weathered stone marker and a few wilted offerings sit near the excavated, partially restored moat foundations of Osaka Castle, overgrown grass at the edges, soft overcast light, conveying quiet remembrance rather than triumph.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Perhaps the clearest way to understand Ieyasu's final gamble is this: he had spent his whole life being patient with people — waiting out rivals, enduring humiliation, timing his moves for decades. In his last sixteen years, he applied that same patience to something far larger than any one relationship. He was patient with an entire system, willing to spend his remaining strength on laws and marriages and hereditary branches whose payoff he would never live to see. That, in the end, may be the rarest kind of ambition: building a legacy engineered to succeed specifically after its architect was gone.",
+      "image_prompt": "Interior shot inside a sparse formal room: an elderly Japanese lord in dark formal robes bearing the triple hollyhock (aoi) crest sits alone in seiza before a low writing desk, a paper shoji screen slid open beside him revealing a meticulously raked rock garden in soft dawn light beyond, hands resting on a closed scroll, patient and unhurried posture, the interior room dim and the garden bright, suggesting a life measured in decades rather than moments.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.33,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Tokugawa Ieyasu is remembered as the man who finally ended the age of the warring states, but ending a war was never the hard part — his own life had already proven that swords could always be beaten by better swords. What he actually left behind was rarer: a peace built to survive its founder, tested against two and a half centuries of ambitious men who might have restarted it, and never broken until forces far larger than Japan itself arrived to end it. If a legacy engineered that carefully sounds worth understanding, there are more of these long, patient stories waiting here.",
+      "image_prompt": "Peaceful golden-hour view of Nikko's Toshogu shrine complex nestled among tall cedar forest, ornate vermilion and gilded gate architecture catching the last light of day, a faint, dignified sense of eternal watchfulness over a calm and prosperous land stretching in the distance below the mountain.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep078-BGM-intro.mp3",
+    "main": "BGM/ep024-BGM.mp3",
+    "outro": "BGM/ep006-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/Ja3ez2KMMmU",
+  "shorts_url": "https://youtu.be/nC16Afdges4",
+  "scheduled_at": "2026-09-22 03:00"
+}

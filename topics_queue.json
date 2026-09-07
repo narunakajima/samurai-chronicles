@@ -983,14 +983,14 @@
     },
     {
       "episode_id": "ep096",
-      "status": "pending",
+      "status": "published",
       "title": "The 250 Years of Peace One Man Bought With Patience: Tokugawa Ieyasu's Final Gamble",
       "era": "Sengoku/Edo",
       "priority": "A",
       "person": "ieyasu",
       "angle": "legacy",
       "notes": "2026-09-06追加（Fable監査対応・有名人物比率の是正。08-04ルール「有名人物3〜4本混在」がpendingキューで0件だった問題への対応）: 晩年、幕藩体制・参勤交代など『二度と戦国に戻さない』ための制度設計に焦点を当てる。ep003(overview)/ep004・ep015(military)/ep016(character・忍耐)とは異なる、家康のlegacy角度は初出。",
-      "last_updated": "2026-09-06"
+      "last_updated": "2026-09-07"
     },
     {
       "episode_id": "ep097",
