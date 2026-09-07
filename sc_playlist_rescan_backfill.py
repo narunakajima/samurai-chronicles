@@ -32,6 +32,7 @@ import argparse
 import glob
 import json
 import shutil
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -142,14 +143,14 @@ def main():
     )
 
     missing = rescan_missing_entries()
-    if not missing:
-        print("欠落しているキャラクター登場エントリはありません。")
-        return
-
-    print(f"欠落エントリを検出: {sum(len(v) for v in missing.values())}件・{len(missing)}キャラクター\n")
-    for char, entries in sorted(missing.items()):
-        display = CHAR_DISPLAY_NAMES.get(char, char.replace("_", " ").title())
-        print(f"  {display} ({char}): {[e['episode_id'] for e in entries]}")
+    if missing:
+        print(f"欠落エントリを検出: {sum(len(v) for v in missing.values())}件・{len(missing)}キャラクター\n")
+        for char, entries in sorted(missing.items()):
+            display = CHAR_DISPLAY_NAMES.get(char, char.replace("_", " ").title())
+            print(f"  {display} ({char}): {[e['episode_id'] for e in entries]}")
+    else:
+        print("新規の欠落エントリはありません（record済み）。"
+              "作成済みだが未反映のプレイリスト・動画がないか同期のみ行います。")
 
     if args.dry_run:
         print("\n--dry-run のためJSON更新・YouTube反映は行いません。")
@@ -193,11 +194,16 @@ def main():
 
         if info["playlist_id"] is None:
             print(f"\n  {display}: プレイリスト新規作成")
+            time.sleep(2)  # playlists().insert 連発によるバースト制限(429)対策
             playlist_id = _create_playlist(youtube, display)
             info["playlist_id"] = playlist_id
             _log_action(log_path, {
                 "action": "create_playlist", "char": char, "playlist_id": playlist_id,
             })
+            # 作成直後にJSONへ反映（この後の追加処理で中断してもplaylist_idは失われない）
+            CHAR_PLAYLISTS_JSON.write_text(
+                json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
             added = 0
             for entry in eps:
                 vid = entry.get("video_id")
