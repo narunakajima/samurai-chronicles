@@ -1,0 +1,266 @@
+{
+  "episode_id": "ep097",
+  "episode_title": "The Miscalculation That Ended an Empire: Shibata Katsuie's Last Stand",
+  "youtube_title": "The General Who Burned His Castle Rather Than Surrender: Shibata Katsuie's Last Stand",
+  "youtube_description": "Shibata Katsuie was one of Oda Nobunaga's fiercest generals — feared by allies and enemies alike as \"Oni Shibata,\" the Demon Shibata. But after Nobunaga's death, one ignored order and one hesitant ally cost him everything, and in 1583 he chose to burn his own castle rather than surrender it, dying beside a wife who refused to leave his side. This is the story of his rise, his fatal miscalculation at the Battle of Shizugatake, and the fire that ended it all.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 In 1583, a general burned his\n0:44 Among Oda Nobunaga's inner...\n1:45 In June 1582, Oda Nobunaga was\n2:46 Weeks later, Nobunaga's...\n3:41 To answer Hideyoshi's rising...\n4:32 By late 1582, the fragile peace\n5:30 Katsuie's own stronghold...\n6:27 When the snow finally...\n7:29 The opening broke on...\n8:29 Morimasa refused to give up...\n9:21 Hideyoshi answered with a...\n10:10 What followed was collapse,...\n10:59 With his line broken and his\n11:47 Kitanosho Castle was strong,...\n12:42 Before the end, Katsuie...\n13:36 On the night before the end,\n14:35 On the twenty-fourth day of the\n15:24 Historians still debate how...\n16:21 The irony of Katsuie's death...\n17:11 Shibata Katsuie is remembered...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Berry, Mary Elizabeth. \"Hideyoshi.\" Harvard University Asia Center, 1982.\n2. Turnbull, Stephen. \"The Samurai Sourcebook.\" Cassell, 1998.\n3. Turnbull, Stephen. \"Samurai Warfare.\" Cassell, 1996.\n\n\n🎵 Music: Tension building intro by LunarThePunar (freesound.org) — CC BY 3.0\n\n🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0\n\n🎵 Music: Slow Orchestra - Bittersweet Goodbyes by joshuaempyre (freesound.org) — CC BY 4.0\n#ShibataKatsuie #BattleOfShizugatake #Oichi #OdaNobunaga #ToyotomiHideyoshi #SengokuJapan #SamuraiHistory #KitanoshoCastle #JapaneseHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Shibata Katsuie",
+    "Battle of Shizugatake",
+    "Oichi",
+    "Oda Nobunaga",
+    "Toyotomi Hideyoshi",
+    "Sengoku Japan",
+    "Samurai History",
+    "Kitanosho Castle",
+    "Japanese History",
+    "Samurai Chronicles"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "teaser_narration": "Kitanosho Castle burns, and inside it, a general feared for forty years takes his own life beside the wife who refused to leave him. Months earlier, one order was ignored, and everything after became inevitable. But who was this man?",
+  "shorts_narration": "1583: Shibata Katsuie burns his own castle rather than surrender it. Months before, one ignored order had already lost him the war. Inside the flames, his wife stayed by choice. Shibata Katsuie.",
+  "shorts_hook_lines": [
+    "HE BURNED IT.",
+    "SHE STAYED TO DIE.",
+    "WHY DIDN'T HE RETREAT?"
+  ],
+  "shorts_face_image_prompt": "Photorealistic cinematic film still (not an illustration, not digital painting, no visible line art or graphic-novel inking), extreme close-up portrait of Shibata Katsuie, a powerfully built Japanese warlord in his late 50s to early 60s with a traditional sakayaki shaved-forehead hairstyle, his greying topknot (chonmage) folded forward and tied flat against the crown of his head rather than standing up as a round bun, thick furrowed brow and hard weathered features earning him the nickname 'Oni Shibata' (Demon Shibata), fierce dark eyes staring directly into the camera with unyielding intensity, a thin greying beard, dark battle-worn armor with a hint of a stylized crest visible at the shoulder, dramatic firelit orange glow suggesting a burning castle just out of frame, his face centered in the upper portion of the vertical frame, shot on film with realistic skin texture and natural lighting.",
+  "thumbnail_prompt": "Dramatic wide thumbnail composition of Kitanosho Castle's wooden keep engulfed in flames at night, silhouettes of a powerfully built samurai lord in dark battle-worn armor and a composed noblewoman in fine silk kimono standing together at a high veranda overlooking the fire below, their postures resolute rather than fearful, embers and smoke swirling upward into a dark sky, intense high-contrast firelight illuminating both figures from below, evoking a final stand chosen rather than forced.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 8,
+      "narration": "In 1583, a general burned his own castle down. His wife chose to burn with him. What choice, made months earlier, sealed both their fates?",
+      "image_prompt": "Wide dramatic night shot of a Japanese castle's wooden keep engulfed in flames, two small silhouetted figures standing together at a high veranda amid the fire, embers rising into a dark smoke-filled sky, ominous and tragic atmosphere established from the very first frame.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Among Oda Nobunaga's inner circle of generals, one man was feared even by his own allies. Shibata Katsuie had served the Oda clan since youth, rising through decades of brutal campaigns until he commanded Echizen province from the fortress of Kitanosho. Soldiers called him 'Oni Shibata' — Demon Shibata — for a temper that turned battlefields into slaughter. His loyalty had not always been certain: in 1556 he backed Nobunaga's younger brother in a failed attempt to unseat him, and was pardoned. He never wavered again. By 1582, no general stood higher in Nobunaga's trust. That trust was about to be tested in ways no battlefield ever had.",
+      "image_prompt": "A powerfully built Japanese samurai general with a shaved sakayaki pate and his chonmage topknot folded forward flat against the crown (not an upright bun), stands at the center of a torch-lit war council tent in weathered dark armor, other seated retainers deferring to him with visible respect and wariness, his stern expression and commanding posture conveying the fierce reputation that earned him the nickname 'Demon Shibata.' A blank unmarked map with no readable text or writing lies on the table, and no legible text, letters, or signatures appear anywhere in the scene.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In June 1582, Oda Nobunaga was betrayed and killed by his own retainer Akechi Mitsuhide at Honnoji temple in Kyoto. Katsuie should have been Nobunaga's sword of vengeance. Instead, he was far to the north, besieging an Uesugi stronghold at Uozu, unable to disengage in time. It was Toyotomi Hideyoshi — campaigning far closer, in the west — who force-marched his army back, crushed Mitsuhide within days, and claimed the honor of avenging their lord. By the time Katsuie could disengage and turn south, it no longer mattered. A single accident of geography had handed his rival the first, decisive advantage.",
+      "image_prompt": "A Japanese samurai general with a shaved sakayaki pate and his chonmage topknot folded forward flat against the crown (not an upright bun), in dark lacquered armor, stands atop a fortified hilltop siege camp in a mountainous northern province, distant peaks on the horizon, a faint plume of smoke visible far beyond the mountains toward the south, his expression tense with the realization that he is too far away to act.",
+      "ken_burns": "pan_left",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Weeks later, Nobunaga's senior generals gathered at Kiyosu Castle to decide who would inherit his realm. Katsuie argued for Nobunaga's grown son, Nobutaka, a candidate with experience and standing. Hideyoshi, still riding the prestige of avenging their lord, championed a different heir: Nobunaga's three-year-old grandson, Samboshi. It was a strange choice, and precisely for that reason a shrewd one — an infant lord would need a powerful regent to rule through him. The council sided with Hideyoshi. Katsuie left Kiyosu having lost the argument that mattered most, and gained a rival he could no longer out-maneuver quietly.",
+      "image_prompt": "Inside a formal wooden council hall, several senior samurai generals — all with the traditional shaved sakayaki pate and chonmage topknot folded forward flat against the crown, never an upright bun — sit in a tense semicircle discussing succession, a powerfully built general with a stern weathered face seated prominently among them, an ornately dressed rival general gesturing persuasively toward the others, a small infant's ceremonial garment displayed on a stand nearby symbolizing the succession dispute, tatami mats and sliding paper screens.",
+      "ken_burns": "static",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "x": 0.25,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "To answer Hideyoshi's rising influence, Katsuie made a move meant to bind himself permanently to Nobunaga's bloodline. He married Oichi, Nobunaga's younger sister — a noblewoman already marked by tragedy, widowed a decade earlier when Nobunaga's own army destroyed her first husband's clan. The marriage, arranged through Nobunaga's son Nobutaka, made Katsuie something more than a general: guardian, by kinship, of the Oda family's honor. Oichi brought three young daughters from her first marriage into Kitanosho Castle with her. None of them yet knew how this new household would end.",
+      "image_prompt": "Inside a formal reception hall decorated for a wedding ceremony, a composed noblewoman in rich multi-layered silk kimono with an air of quiet dignity sits beside a powerfully built samurai general with a shaved sakayaki pate and his chonmage topknot folded forward flat against the crown (not an upright bun), in formal dark robes, both seated in traditional Momoyama-period ceremonial fashion, three young girls in matching children's kimono standing nearby, the room lit only by traditional paper andon lanterns and oil lamps (no Western-style freestanding wax candles or metal candlesticks), a formal but subdued atmosphere befitting a political alliance rather than a joyful celebration.",
+      "ken_burns": "static",
+      "character_ref": "oichi",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By late 1582, the fragile peace from Kiyosu was collapsing. Katsuie aligned openly with Nobutaka and with Takigawa Kazumasu, a veteran general controlling territory east of Kyoto, forming a coalition meant to check Hideyoshi's growing power before it hardened into outright control of the Oda inheritance. Hideyoshi, for his part, was already moving pieces off the board one at a time, isolating rivals before they could unite against him. Both sides understood that words and councils had failed. What remained was the one method Sengoku Japan always eventually returned to: an army moving in the snow.",
+      "image_prompt": "A powerfully built samurai general in dark armor stands over a war map with two allied lords in formal armor gathered around a low table, pointing toward territories marked with small clan-crest tokens, night lanterns illuminating determined, wary expressions, a sense of an alliance being sealed out of necessity rather than trust.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "x": 0.44,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Katsuie's own stronghold worked against him. Echizen's mountain passes lay buried under winter snow for months at a time, and in early 1583 that geography turned into a trap. While Katsuie's army sat immobilized at Kitanosho, unable to march south to support his allies, Hideyoshi struck first — forcing Nobutaka to surrender Gifu in December, then turning on Takigawa Kazumasu in Ise and taking his castles one by one, all before Katsuie could bring a single soldier to their defense. The coalition Katsuie had built to counterbalance Hideyoshi was being dismantled piece by piece, and there was nothing the demon general who terrified battlefields could do about weather.",
+      "image_prompt": "A samurai general with a shaved sakayaki pate and his chonmage topknot folded forward flat against the crown (not an upright bun), in dark armor, stands at the gate of a snow-buried mountain fortress, deep snowdrifts blocking the mountain passes beyond the walls, frustrated soldiers attempting to clear a path, grey winter sky, a palpable sense of an army trapped by its own terrain.",
+      "ken_burns": "zoom_out",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "When the snow finally cleared, Katsuie marched south with everything he had left, meeting Hideyoshi's forces near Shizugatake, in the hills above Lake Biwa in Omi Province. Hideyoshi brought the larger army — perhaps fifty thousand men against Katsuie's thirty thousand — but the broken hill country blunted that advantage, and both commanders understood that whoever blinked first — abandoning a fortified position, overextending a flank — would likely lose the entire campaign. For weeks the two armies dug in along a chain of hilltop forts, probing for weakness. It was patient, grinding warfare, the kind Katsuie had mastered over four decades. It would not stay patient for long.",
+      "image_prompt": "Wide view of two opposing samurai armies encamped on hillside fortifications facing each other across a narrow valley near a great lake, banners fluttering in the wind, a chain of fortified hilltop positions visible on both sides, tense stillness before battle.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The opening broke on Katsuie's side. His nephew Sakuma Morimasa, a fierce young commander with a reputation for reckless aggression, stormed Hideyoshi's forward fortress at Oiwayama, killing its commander and seizing the position outright. It was a genuine victory — and immediately a dangerous one. The captured fort sat deep inside enemy territory, exposed on every flank the moment Hideyoshi's main army returned. Katsuie, watching from the rear, understood the danger instantly and sent orders south: withdraw now, before the position becomes a trap instead of a triumph. Morimasa read the same battlefield and reached the opposite conclusion.",
+      "image_prompt": "A young, fiercely aggressive samurai general with a shaved sakayaki pate and his chonmage topknot folded forward flat against the crown (not an upright bun), in blood-spattered armor, stands triumphantly atop a captured hilltop fortress at dawn, his soldiers raising a completely blank plain cloth banner with absolutely no crest, symbol, insignia, or lettering of any kind behind him, the position visibly isolated and exposed on a narrow ridge surrounded by open, undefended terrain.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Morimasa refused to give up ground his men had bled for. He argued the captured fort could be held, that retreating now would throw away the campaign's only real gain, and he delayed Katsuie's withdrawal order once, then again. It was the failure that would define the battle: an uncle who understood the danger perfectly, and a nephew too proud, or too far away, to be reined in when it mattered most. Katsuie had built his reputation on ferocity in the field. He was about to learn that controlling ferocity in someone else was an entirely different skill.",
+      "image_prompt": "Inside a hastily fortified hilltop camp lit only by traditional Japanese paper lanterns (no Western-style wax taper candles or metal candlesticks), a young samurai general with a shaved sakayaki pate and his chonmage topknot folded forward flat against the crown (not an upright bun) gestures defiantly at a messenger holding a sealed scroll of withdrawal orders, refusing to comply, his officers — all with the same correct chonmage hairstyle — exchanging uneasy glances, a distant silhouette of another army's watchfires visible on the horizon beyond the camp.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Hideyoshi answered with a march that has entered military legend. Learning of the delay at Oiwayama, he pulled his army out of a separate standoff in Mino and covered roughly fifty kilometers in about five hours, reaching the battlefield that same evening at a speed no one on Katsuie's side thought possible. Morimasa's men, still holding their captured fort, saw torchlight filling a valley that should have been empty, and were attacked in the dead of night. There had been no time to finish digging in, no time to retreat in good order. The trap Katsuie had warned against had just closed from the other direction.",
+      "image_prompt": "A vast samurai army moves at a punishing forced march through the night along a moonlit mountain road, torches and banners strung out for miles, exhausted but relentless soldiers pressing forward, a valley of fortified hilltop positions coming into view ahead of them under cold moonlight.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "What followed was collapse, not battle. Morimasa's overextended troops broke and ran within hours, and as the retreat spread down the line, Katsuie's old comrade Maeda Toshiie made a choice that finished the disaster: rather than commit his own men to a fight he judged already lost, Toshiie pulled his forces off the field entirely. Whether it was caution or calculation, the effect was the same — a gaping hole where Katsuie's flank should have held. The demon general whose ferocity had carried Oda armies through forty years of campaigns watched his own army come apart in a single morning.",
+      "image_prompt": "Wide chaotic battlefield scene in cold early-morning light, routed samurai soldiers fleeing down a hillside in disorder, a powerfully built general in dark armor watching in disbelief from a command position on a distant ridge as an allied contingent's banners visibly withdraw from the fighting on the opposite flank, smoke and dust obscuring parts of the field.",
+      "ken_burns": "zoom_out",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "With his line broken and his allies scattered, Katsuie had one order left to give: retreat to Kitanosho. He rode north through the same mountain passes that had trapped him in winter, this time pursued rather than protected by them, arriving at his own castle with a fraction of the army he had marched out with. Hideyoshi's forces followed close behind, and within days the fortress that had once symbolized Katsuie's authority over Echizen was surrounded on every side. There would be no third campaign, no negotiated truce. Whatever came next would happen inside those walls.",
+      "image_prompt": "A battle-worn samurai general in damaged dark armor rides at the head of a small, exhausted column of surviving soldiers along a mountain road toward a distant castle silhouette, pursuing banners visible far behind them on the horizon, grim urgency in his posture.",
+      "ken_burns": "pan_left",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Kitanosho Castle was strong, but strength alone had never been the point of a siege like this one. Hideyoshi's army ringed the walls in overwhelming numbers, cutting off any hope of relief or resupply. Inside, Katsuie gathered his remaining retainers and made no attempt to pretend otherwise: the campaign was lost, the coalition that might have saved them had collapsed at Shizugatake, and no reinforcement was coming from anywhere in Japan. For a man who had spent his life choosing how battles would be fought, the only decision left to make now was how this one would end.",
+      "image_prompt": "Wide view of a mountain castle completely surrounded by a besieging army's countless campfires and banners at dusk, a solitary samurai general in dark armor standing on the castle's ramparts looking out over the encirclement with grim resolve, no path of escape visible in any direction.",
+      "ken_burns": "zoom_out",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "x": 0.71,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Before the end, Katsuie insisted on one thing: Oichi's three daughters from her first marriage would leave the castle and live. Chacha, Ohatsu, and Go were sent out under guard to Hideyoshi's lines, spared from a fate their mother had already decided for herself. Oichi could have gone with them. Her brother was dead, her first husband was dead, and now her second husband's castle stood surrounded with no path to survival. She chose to stay inside those walls with Katsuie anyway — a decision nothing in the surrounding chaos forced her to make.",
+      "image_prompt": "Inside a castle's inner courtyard at dusk, a composed noblewoman in fine silk kimono kneels to embrace three young girls in traveling kimono one final time as guards prepare to escort them through a side gate, her expression calm and resolute rather than tearful, the castle's besieged walls looming in the background.",
+      "ken_burns": "static",
+      "character_ref": "oichi",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.51
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "On the night before the end, Katsuie held a final banquet for the retainers who had chosen to die with him rather than surrender. Thirteen years earlier, besieged at Chokoji Castle with his water running out, he had reportedly smashed the last water jars in the fortress rather than let his men die slowly of thirst, then broken out fighting — the act that earned him the nickname 'Kamewari,' jar-breaking Shibata. There would be no breakout this time, no field left to fight on. Whatever defiance remained now would have to be expressed a different way, inside walls no army was coming to relieve.",
+      "image_prompt": "Inside a dimly lit castle hall, a samurai general in formal dark robes sits at the head of a small solemn gathering of loyal retainers sharing a final cup of sake together, an old cracked ceramic water jar visible in the corner of the room as a quiet symbol of a younger, more defiant version of himself, candlelight and shadow, a hushed atmosphere of shared, chosen fate.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "x": 0.56,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "On the twenty-fourth day of the fourth month, 1583, Shibata Katsuie set fire to his own keep. He and Oichi took their own lives together inside the burning castle, rather than face capture, humiliation, or a slow negotiated surrender to the rival who had out-maneuvered him at every turn. Katsuie was around sixty years old. He had spent four decades as one of the most feared generals in Japan, and he ended his life making sure that whatever remained of Kitanosho Castle, Hideyoshi would inherit only its ashes.",
+      "image_prompt": "Inside a burning castle keep, a samurai general in formal dark robes and a noblewoman in fine silk kimono sit together in composed final stillness as flames spread through the wooden chamber around them, thick smoke rising, their expressions calm and resolved rather than afraid, a scene of chosen fate rather than defeat.",
+      "ken_burns": "static",
+      "character_ref": "shibata_katsuie",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Historians still debate how much of Shizugatake was decided by Hideyoshi's brilliance and how much was decided by Katsuie's failure to control his own side. Sakuma Morimasa's refusal to retreat, Maeda Toshiie's choice to withdraw rather than fight — both happened on Katsuie's flank, and both were exactly the kind of breakdown a commander is supposed to prevent before it happens, not after. Katsuie had been beaten before — Uesugi Kenshin had driven him back at the Tedori River in 1577 — but never like this: not by the enemy in front of him, but by allies he could not make listen when it mattered most.",
+      "image_prompt": "Quiet symbolic composition: a broken samurai war fan and a snapped standard-bearer's pole lie half-buried in ash and rubble near the ruins of a burned castle gate at dawn, mist rising, no figures present, conveying aftermath and reflection rather than action.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "The irony of Katsuie's death outlived him by decades. Chacha, the eldest daughter he had sent out of Kitanosho to save her life, grew up to become Yodo-dono, the favored consort of Toyotomi Hideyoshi himself — the very man whose siege had ended with her mother's death inside a burning castle. She would later bear Hideyoshi's only surviving heir. The general who lost everything at Shizugatake and the daughter he saved from it ended up bound, one generation later, to the same rival family neither Katsuie nor Oichi had ever forgiven.",
+      "image_prompt": "A young noblewoman in elegant formal kimono of a slightly later, more opulent Momoyama style stands on a grand castle veranda overlooking a thriving city, her expression composed and unreadable, a faded keepsake kimono sash from childhood held quietly in one hand, conveying a life built atop an inherited tragedy.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Shibata Katsuie is remembered less for the battles he won across forty years of service than for the one campaign he could not hold together, and the fire he chose rather than survive its collapse. His story asks a harder question than most: whether loyalty and ferocity are enough, when the men fighting beside you refuse to follow orders at the one moment they matter most. It's a question this channel keeps returning to, one general at a time, if you'd like to keep following it.",
+      "image_prompt": "Peaceful dawn view of the quiet grounds where Kitanosho Castle once stood, a solitary stone memorial marker standing among trees and grass at the site, soft morning light, a dignified and lasting sense of remembrance rather than triumph or tragedy.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep073-BGM-intro.mp3",
+    "main": "BGM/ep009-BGM.mp3",
+    "outro": "BGM/ep059-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/DHUwW4TNTEc",
+  "shorts_url": "https://youtu.be/pkDKE9S657M",
+  "scheduled_at": "2026-09-24 03:00"
+}

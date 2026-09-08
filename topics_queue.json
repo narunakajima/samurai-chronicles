@@ -994,14 +994,14 @@
     },
     {
       "episode_id": "ep097",
-      "status": "pending",
+      "status": "published",
       "title": "The General Who Burned His Castle Rather Than Surrender: Shibata Katsuie's Last Stand",
       "era": "Sengoku",
       "priority": "A",
       "person": "shibata_katsuie",
       "angle": "death",
       "notes": "Nobunaga's general, died with his wife Oichi rather than surrender to Hideyoshi. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。 → 2026-08-29追記（Fable5監査）: 最期の潔さだけでなく、賤ヶ岳での戦略判断（佐久間盛政を止めきれなかった采配ミス）を軸に据え、黒田官兵衛(ep030/ep052)型の「軍略ドラマ」として構成すると強テーマとの重複が狙える。 → 2026-09-06: ep100(同じdeath角度)と連続しないようキュー内で分離。",
-      "last_updated": "2026-09-06"
+      "last_updated": "2026-09-08"
     },
     {
       "episode_id": "ep098",
@@ -1151,6 +1151,6 @@
       "last_updated": "2026-09-06"
     }
   ],
-  "last_updated": "2026-09-06",
+  "last_updated": "2026-09-08",
   "total_topics": 105
 }

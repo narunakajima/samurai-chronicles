@@ -952,5 +952,25 @@
         "video_id": "IOHxq_TeUz8"
       }
     ]
+  },
+  "oichi": {
+    "display_name": "Oichi",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep097",
+        "video_id": "DHUwW4TNTEc"
+      }
+    ]
+  },
+  "shibata_katsuie": {
+    "display_name": "Shibata Katsuie",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep097",
+        "video_id": "DHUwW4TNTEc"
+      }
+    ]
   }
 }

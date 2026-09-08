@@ -343,7 +343,7 @@ def build_index(episodes: list[dict], playlists: list[dict]):
 
     html = head_html(
         "Samurai Chronicles | 2,600 Years of Japanese History",
-        "Samurai Chronicles brings you the untold stories of Japan's history — new episodes every Tuesday, Thursday & Saturday."
+        "Samurai Chronicles brings you the untold stories of Japan's history — new episodes 3 times a week."
     )
     html += nav_html("top")
     html += f"""
@@ -409,7 +409,7 @@ def build_index(episodes: list[dict], playlists: list[dict]):
         Samurai Chronicles brings you the untold stories of Japan's
         <strong style="color:var(--gold);font-weight:500;font-style:italic;">2,600-year history</strong>
         — wars, betrayals, forgotten heroes, and legendary warriors.
-        Produced in the style of BBC and Netflix documentaries. New episodes every Tuesday, Thursday &amp; Saturday.
+        Produced in the style of BBC and Netflix documentaries. New episodes 3 times a week.
       </p>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;max-width:720px;margin:0 auto;">
         <div class="reveal reveal-delay-1" style="text-align:center;padding:24px 16px;border:1px solid rgba(201,168,76,.2);border-radius:3px;background:rgba(139,0,0,.06);">
@@ -436,7 +436,7 @@ def build_index(episodes: list[dict], playlists: list[dict]):
     <div class="section-inner" style="text-align:center;">
       <p class="section-label reveal">Subscribe</p>
       <h2 class="section-heading reveal reveal-delay-1">Never Miss a Story</h2>
-      <p class="reveal reveal-delay-2" style="color:var(--white-dim);line-height:1.9;margin-bottom:32px;">New episodes released every Tuesday, Thursday &amp; Saturday. Subscribe so you never miss a story.</p>
+      <p class="reveal reveal-delay-2" style="color:var(--white-dim);line-height:1.9;margin-bottom:32px;">New episodes released 3 times a week. Subscribe so you never miss a story.</p>
       <div class="reveal reveal-delay-3">
         <a class="btn-primary" href="{CHANNEL_URL}" target="_blank" rel="noopener">
           Subscribe on YouTube &rarr;

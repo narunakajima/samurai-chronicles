@@ -314,7 +314,7 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     shorts_description = (
         f"{hook_text}\n\n"
         f"▶ Full episode: https://youtu.be/{main_id}\n\n"
-        f"** Subscribe for new episodes every Tuesday, Thursday & Saturday:\n"
+        f"** Subscribe for new episodes 3 times a week:\n"
         f"https://www.youtube.com/@Samurai-Chronicles-JP"
     )
     shorts_id = upload_video(youtube, shorts_video,
@@ -509,7 +509,7 @@ def fix_shorts_description(episode_id: str, shorts_id: str):
     new_description = (
         f"{hook_text}\n\n"
         f"▶ Full episode: https://youtu.be/{main_id}\n\n"
-        f"** Subscribe for new episodes every Tuesday, Thursday & Saturday:\n"
+        f"** Subscribe for new episodes 3 times a week:\n"
         f"https://www.youtube.com/@Samurai-Chronicles-JP"
     )
 

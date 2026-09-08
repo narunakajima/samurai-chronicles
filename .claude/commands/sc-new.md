@@ -483,7 +483,7 @@ outroに存在しなかった（Fable監査指摘）。次回予告の復活は�
 ```
 {フック文（2〜3文）}
 
-🎌 Subscribe for new episodes every Tuesday, Thursday & Saturday:
+🎌 Subscribe for new episodes 3 times a week:
 https://www.youtube.com/@Samurai-Chronicles-JP
 
 🌐 Official site: https://samurai-chronicles.com

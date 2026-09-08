@@ -52,7 +52,7 @@ def _shorts_description(ep: dict, main_id: str) -> str:
     return (
         f"{hook_text}\n\n"
         f"▶ Full episode: https://youtu.be/{main_id}\n\n"
-        f"** Subscribe for new episodes every Tuesday, Thursday & Saturday:\n"
+        f"** Subscribe for new episodes 3 times a week:\n"
         f"https://www.youtube.com/@Samurai-Chronicles-JP"
     )
 
