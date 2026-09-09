@@ -379,6 +379,27 @@ outroに存在しなかった（Fable監査指摘）。次回予告の復活は�
 - "Modern cinematic concept art style, dramatic lighting, film production illustration quality" のトーンを前提（BASE_CONTEXTが自動付与されるため重複不要）
 - キャラクターが登場する場合は構図・位置・表情を具体的に記述
 
+**⚠️ 標準から外れる容姿的特徴は、キャラクターファイルだけでなく全シーンのimage_promptに
+直接埋め込む（2026-09-10追加・Gemini APIコスト分析対応、ep098竹中半兵衛で実証済み）:**
+
+`characters/{name}.txt` への記載だけでは、`character_ref`経由の自動注入がシーン生成時に
+確実に反映されるとは限らない（総髪などプロジェクト標準〈月代ありのちょんまげ〉から外れる
+特徴で頻発）。これによりSTEP5C以降の目視確認で不合格が連発し、シーンあたり3〜4回もの
+再生成（＝Gemini画像APIコストの直接の無駄）が発生した実績がある。
+
+- 対象人物にキャラクターファイル記載レベルの「標準から外れる容姿的特徴」（[[feedback_historical_likeness_verification]]参照）がある場合、
+  STEP 2A生成の時点で、**その人物が登場する全シーンのimage_prompt本文に、同じ強い対比表現
+  （"his hair completely covers his entire head... NOT the sakayaki-shaved-forehead look every
+  other character has"等、"何が標準と違うか"を具体的に対比で書く）を直接埋め込む**
+- **`character_ref`が別人物に設定されているシーン（対象人物が脇役として登場するケース）も
+  対象に含める。** character_refのユニーク人物だけでなく、シーン本文中に対象人物が
+  登場する全シーンを洗い出すこと（見落としがあると事後のSTEP5Cで発覚し、修正コストが
+  跳ね上がる）
+- 資料に基づく特徴が定まるのはSTEP3A/3B（WebSearch検証）であることが多いため、
+  STEP2A時点でまだ判明していない場合は、STEP3Aの自動修正パス（❌/⚠️の一括修正）で
+  該当シーン全ての image_prompt に同じ対比表現を一括反映する（キャラクターファイルの
+  修正だけで済ませない）
+
 **Ken Burnsエフェクト（ken_burns）:**
 - zoom_in / zoom_out / pan_right / pan_left / static から選択
 - シーンの感情に合わせる（緊張感→zoom_in、引き→pan_right など）
@@ -1203,6 +1224,22 @@ cat ~/Desktop/SC/ep{NNN}/image_qa_result_face.json
 各JSONの `all_ok` を確認する：
 - `all_ok: true` → 問題なし
 - `all_ok: false` → `warnings` 配列に `{scene_id, issues}` が入っている（＝2回試行済みで解決しなかったシーン）
+
+### ⚠️ 自動QAの「OK」判定を鵜呑みにしない（2026-09-10追加・Gemini APIコスト分析対応）
+
+自動QA（`gemini-flash-latest`）は、プロジェクト標準から外れる容姿的特徴（総髪等）について
+**偽陰性（誤ってNGを見逃す＝間違った画像を"OK"と判定）と偽陽性（正しい画像を誤ってNGと
+判定）の両方**が実際に発生している（ep098竹中半兵衛で確認済み）。
+`all_ok: true` は「自動QAが機械的にチェックした結果」に過ぎず、**容姿的特徴に標準からの
+逸脱がある人物が登場するエピソードでは、`character_ref`が該当人物のシーンだけでなく、
+別人物の`character_ref`で該当人物が脇役として登場するシーンも含めて、Claude自身が
+Readツールで実際に画像を1枚ずつ確認する**（`all_ok: true`だからスキップしてよい、
+という判断はしない）。この確認はMaxプランの会話コンテキストを使うのみで追加課金は
+発生しないため、Gemini側の無駄な再生成（＝直接のAPIコスト）を減らす最も費用対効果の高い
+手段になる。
+
+該当人物がいないエピソード（標準的な月代・ちょんまげのみで構成）では、この節の追加確認は
+不要で、従来通り`warnings`の一次対応のみでよい。
 
 ### WARNINGへの一次対応（Claude判断、2026-08-02〜）
 
