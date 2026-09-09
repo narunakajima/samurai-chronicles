@@ -27,14 +27,14 @@
     "WHY DIDN'T HE RETREAT?"
   ],
   "shorts_face_image_prompt": "Photorealistic cinematic film still (not an illustration, not digital painting, no visible line art or graphic-novel inking), extreme close-up portrait of Shibata Katsuie, a powerfully built Japanese warlord in his late 50s to early 60s with a traditional sakayaki shaved-forehead hairstyle, his greying topknot (chonmage) folded forward and tied flat against the crown of his head rather than standing up as a round bun, thick furrowed brow and hard weathered features earning him the nickname 'Oni Shibata' (Demon Shibata), fierce dark eyes staring directly into the camera with unyielding intensity, a thin greying beard, dark battle-worn armor with a hint of a stylized crest visible at the shoulder, dramatic firelit orange glow suggesting a burning castle just out of frame, his face centered in the upper portion of the vertical frame, shot on film with realistic skin texture and natural lighting.",
-  "thumbnail_prompt": "Dramatic wide thumbnail composition of Kitanosho Castle's wooden keep engulfed in flames at night, silhouettes of a powerfully built samurai lord in dark battle-worn armor and a composed noblewoman in fine silk kimono standing together at a high veranda overlooking the fire below, their postures resolute rather than fearful, embers and smoke swirling upward into a dark sky, intense high-contrast firelight illuminating both figures from below, evoking a final stand chosen rather than forced.",
+  "thumbnail_prompt": "Dramatic wide thumbnail composition featuring exactly two people — no more, no less: a powerfully built samurai lord in dark battle-worn armor and a composed noblewoman in fine silk kimono — standing together at a high veranda, facing toward the camera at a three-quarter angle so both of their faces are clearly visible, with Kitanosho Castle's wooden keep engulfed in flames behind them at night. Their postures are resolute rather than fearful, embers and smoke swirl upward into a dark sky, intense high-contrast firelight illuminates both figures from below, evoking a final stand chosen rather than forced. The noblewoman's long black hair is worn completely loose and unbound, flowing straight down her back in the Momoyama-period court style (suihatsu) — no updo, no chignon, no bun, no hair ornaments or pins gathering it up.",
   "scenes": [
     {
       "scene_id": 1,
       "type": "hook",
       "duration_seconds": 8,
       "narration": "In 1583, a general burned his own castle down. His wife chose to burn with him. What choice, made months earlier, sealed both their fates?",
-      "image_prompt": "Wide dramatic night shot of a Japanese castle's wooden keep engulfed in flames, two small silhouetted figures standing together at a high veranda amid the fire, embers rising into a dark smoke-filled sky, ominous and tragic atmosphere established from the very first frame.",
+      "image_prompt": "Wide dramatic night shot of a Japanese castle's wooden keep engulfed in flames, two small silhouetted figures standing together at a high veranda amid the fire — a samurai man and a woman whose long hair hangs completely loose and unbound down her back in the Momoyama-period court style (suihatsu), with no updo, bun, or chignon silhouette — embers rising into a dark smoke-filled sky, ominous and tragic atmosphere established from the very first frame.",
       "ken_burns": "zoom_in",
       "character_ref": null
     },
@@ -220,7 +220,7 @@
       "type": "falling_action",
       "duration_seconds": 60,
       "narration": "On the twenty-fourth day of the fourth month, 1583, Shibata Katsuie set fire to his own keep. He and Oichi took their own lives together inside the burning castle, rather than face capture, humiliation, or a slow negotiated surrender to the rival who had out-maneuvered him at every turn. Katsuie was around sixty years old. He had spent four decades as one of the most feared generals in Japan, and he ended his life making sure that whatever remained of Kitanosho Castle, Hideyoshi would inherit only its ashes.",
-      "image_prompt": "Inside a burning castle keep, a samurai general in formal dark robes and a noblewoman in fine silk kimono sit together in composed final stillness as flames spread through the wooden chamber around them, thick smoke rising, their expressions calm and resolved rather than afraid, a scene of chosen fate rather than defeat.",
+      "image_prompt": "Inside a burning castle keep, a samurai general in formal dark robes sits beside a noblewoman in fine silk kimono in composed final stillness as flames spread through the wooden chamber around them, thick smoke rising, their expressions calm and resolved rather than afraid, a scene of chosen fate rather than defeat. The noblewoman's long black hair is worn completely loose and unbound, flowing straight down her back in the Momoyama-period court style (suihatsu) — no updo, no chignon, no bun, no hair ornaments gathering it up, matching a historical Oichi portrait rather than an Edo-period married-woman hairstyle.",
       "ken_burns": "static",
       "character_ref": "shibata_katsuie",
       "zoom_anchor": {
@@ -241,7 +241,7 @@
       "type": "insight",
       "duration_seconds": 60,
       "narration": "The irony of Katsuie's death outlived him by decades. Chacha, the eldest daughter he had sent out of Kitanosho to save her life, grew up to become Yodo-dono, the favored consort of Toyotomi Hideyoshi himself — the very man whose siege had ended with her mother's death inside a burning castle. She would later bear Hideyoshi's only surviving heir. The general who lost everything at Shizugatake and the daughter he saved from it ended up bound, one generation later, to the same rival family neither Katsuie nor Oichi had ever forgiven.",
-      "image_prompt": "A young noblewoman in elegant formal kimono of a slightly later, more opulent Momoyama style stands on a grand castle veranda overlooking a thriving city, her expression composed and unreadable, a faded keepsake kimono sash from childhood held quietly in one hand, conveying a life built atop an inherited tragedy.",
+      "image_prompt": "A young noblewoman in elegant formal kimono of a slightly later, more opulent Momoyama style stands on a grand castle veranda overlooking a thriving city, her expression composed and unreadable, a faded keepsake kimono sash from childhood held quietly in one hand, conveying a life built atop an inherited tragedy. Her long black hair is worn completely loose and unbound, flowing straight down her back in the Momoyama-period court style (suihatsu) — no updo, no chignon, no bun, no hair ornaments or pins gathering it up.",
       "ken_burns": "static",
       "character_ref": null
     },
@@ -260,7 +260,7 @@
     "main": "BGM/ep009-BGM.mp3",
     "outro": "BGM/ep059-BGM.mp3"
   },
-  "youtube_url": "https://youtu.be/DHUwW4TNTEc",
-  "shorts_url": "https://youtu.be/pkDKE9S657M",
-  "scheduled_at": "2026-09-24 03:00"
+  "youtube_url": "https://youtu.be/tau3UXtFIVo",
+  "shorts_url": "https://youtu.be/AiO6MNd4Ikw",
+  "scheduled_at": "2026-09-26 03:00"
 }
