@@ -894,7 +894,8 @@
       "cinematic"
     ],
     "used_in": [
-      "ep083"
+      "ep083",
+      "ep098"
     ]
   },
   {
@@ -1133,6 +1134,33 @@
     ],
     "used_in": [
       "ep095"
+    ]
+  },
+  {
+    "id": "ep098-BGM-intro",
+    "path": "BGM/ep098-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral"
+    ],
+    "used_in": [
+      "ep098"
+    ]
+  },
+  {
+    "id": "ep098-BGM-main",
+    "path": "BGM/ep098-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Thriller Suspense Theme by tyops (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep098"
     ]
   }
 ]

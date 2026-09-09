@@ -1005,14 +1005,14 @@
     },
     {
       "episode_id": "ep098",
-      "status": "pending",
+      "status": "published",
       "title": "The Sickly Genius Who Planned Every Battle From His Deathbed: Takenaka Hanbee",
       "era": "Sengoku",
       "priority": "A",
       "person": "takenaka_hanbee",
       "angle": "overview",
       "notes": "2026-08-29追加（/sc-analytics Fable5監査を反映）: 黒田官兵衛（ep030 CTR9.58%・ep052 CTR6.16%、2本ともCTR1位・2位）と並ぶ「秀吉の二兵衛」の片割れ。同系統の「知られざる軍師・参謀」テーマ・overview角度で、黒田官兵衛の勝ちパターンを再現できるか検証する枠。First appearance。",
-      "last_updated": "2026-08-29"
+      "last_updated": "2026-09-09"
     },
     {
       "episode_id": "ep099",
@@ -1151,6 +1151,6 @@
       "last_updated": "2026-09-06"
     }
   ],
-  "last_updated": "2026-09-08",
+  "last_updated": "2026-09-09",
   "total_topics": 105
 }

@@ -158,9 +158,14 @@ def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, o
             "Reframe this exact reference image into a 9:16 vertical portrait composition for "
             "mobile short-form video. Keep the same subject, character appearance, setting, "
             "lighting, and art style exactly as in the reference image — do not change the "
-            "scene content. Extend/recompose the framing so the main subject is centered and "
-            "prominent in a vertical frame, generating plausible additional scene content "
-            "above/below as needed to fill the vertical canvas.\n\n"
+            "scene content. Pay especially close attention to preserving the hairstyle of any "
+            "character exactly pixel-for-pixel as shown in the reference image — if a character's "
+            "hair in the reference fully covers their scalp with no shaved patches, the "
+            "reframed version must also show hair fully covering their scalp with no shaved "
+            "patches; do not reintroduce a shaved sakayaki forehead or topknot that is not "
+            "present in the reference image. Extend/recompose the framing so the main subject "
+            "is centered and prominent in a vertical frame, generating plausible additional "
+            "scene content above/below as needed to fill the vertical canvas.\n\n"
             f"Scene: {scene_prompt}"
         )
         return _generate_with_retry(client, [prompt, ref_image], output_path)

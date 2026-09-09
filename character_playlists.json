@@ -228,6 +228,10 @@
       {
         "episode_id": "ep060",
         "video_id": "iBT1K5SYzOQ"
+      },
+      {
+        "episode_id": "ep098",
+        "video_id": "ttrWDa8qhJ8"
       }
     ]
   },
@@ -970,6 +974,16 @@
       {
         "episode_id": "ep097",
         "video_id": "DHUwW4TNTEc"
+      }
+    ]
+  },
+  "takenaka_hanbee": {
+    "display_name": "Takenaka Hanbee",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep098",
+        "video_id": "ttrWDa8qhJ8"
       }
     ]
   }
