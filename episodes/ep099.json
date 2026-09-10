@@ -1,0 +1,276 @@
+{
+  "episode_id": "ep099",
+  "episode_title": "The Demon King's Only Weakness: Oda Nobunaga and the Boy Who Died Beside Him",
+  "youtube_title": "The Demon King's Only Weakness: Oda Nobunaga and the Boy Who Died Beside Him",
+  "youtube_description": "He called himself the Demon King of the Sixth Heaven — and trusted almost no one. But one teenage page earned that trust completely, and paid for it with his life at Honnoji temple in 1582. This is the story of Oda Nobunaga's most loyal companion, Mori Ranmaru.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 One boy, seventeen years old,...\n0:47 By 1582, Oda Nobunaga...\n1:47 Ranmaru's path to Nobunaga's...\n2:43 In samurai households, a...\n3:34 By the spring of 1582, Ranmaru's\n4:42 Among Nobunaga's generals...\n5:43 Nobunaga had chosen Honnoji,...\n6:43 Before dawn on the second of\n7:44 As the attack intensified,...\n8:46 Nobunaga did not simply wait for\n9:44 With the temple collapsing...\n10:33 There was, perhaps, still a...\n11:25 By the time Akechi's soldiers...\n12:15 For a moment, Akechi...\n13:11 Within roughly two weeks,...\n13:59 Nobunaga's death did not end the\n14:57 In the centuries that...\n15:59 It is tempting to call loyalty\n16:54 Akechi Mitsuhide's betrayal...\n17:50 Oda Nobunaga reshaped Japan...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Jeroen P. Lamers, Japonius Tyrannus: The Japanese Warlord Oda Nobunaga Reconsidered (Hotei Publishing, 2000)\n2. Stephen Turnbull, Nobunaga: The Man Who Unified Japan (Osprey Publishing, 2019)\n3. George Elison & Bardwell L. Smith (eds.), Warlords, Artists, and Commoners: Japan in the Sixteenth Century (University of Hawaii Press, 1981)\n\n\n🎵 Music: Epic Powerful Theme by TheoJT (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional Orchestra by TheoJT (freesound.org) — CC BY 4.0\n#OdaNobunaga #SengokuJapan #SamuraiHistory #JapaneseHistory #HonnojiIncident #MoriRanmaru #WarlordsOfJapan",
+  "youtube_tags": [
+    "Oda Nobunaga",
+    "Mori Ranmaru",
+    "Sengoku period",
+    "Honnoji Incident",
+    "Akechi Mitsuhide",
+    "samurai history",
+    "Japanese history",
+    "feudal Japan",
+    "samurai loyalty",
+    "Japanese warlords",
+    "Sengoku Jidai",
+    "Warring States Japan",
+    "samurai documentary",
+    "Japan history documentary",
+    "samurai betrayal"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Flames engulf Honnoji temple. Nobunaga, Japan's most feared warlord, has been betrayed by his own general. Only one attendant remains at his side — a teenage page named Ranmaru. Why would a boy choose death here, over escape? The answer starts years earlier.",
+  "shorts_narration": "Seventeen years old, Mori Ranmaru became the most trusted page of Japan's most feared warlord. Then betrayal struck at dawn. Surrounded, outnumbered, he chose to stay and burn beside his lord. Who was this boy?",
+  "shorts_hook_lines": [
+    "AGE SEVENTEEN.",
+    "HE SERVED A DEMON.",
+    "WHY DID HE STAY TO DIE?"
+  ],
+  "shorts_face_image_prompt": "Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than an adult sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead. Now the scene: extreme close-up of young Mori Ranmaru's face, a slender teenage page noticeably younger and softer-featured than a grown warrior, illuminated by flickering torchlight and the orange glow of distant flames. His expression is calm and resolute despite the danger around him, eyes steady and direct toward the camera, conveying quiet, unshakable loyalty rather than fear. Vertical portrait composition, dramatic chiaroscuro lighting, smoke drifting faintly in the background.",
+  "thumbnail_prompt": "Close dramatic composition: Oda Nobunaga's imposing armored figure fills the left side of the frame, lit by orange firelight, his expression cold and commanding; behind and slightly beside him, the smaller figure of young Mori Ranmaru stands in shadow, resolute and unflinching. Flames and smoke fill the background. High contrast, cinematic, dramatic rim lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 20,
+      "narration": "One boy, seventeen years old, guarded Japan's most feared warlord. When enemies surrounded them, neither one carried enough men to survive. So why did they choose to die together, rather than escape?",
+      "image_prompt": "Extreme wide shot: the towering silhouette of Oda Nobunaga in black lacquered armor stands against a blood-orange sky lit by distant flames, while in the foreground, small and half-turned toward him, stands the slight silhouette of a teenage page. Smoke drifts between them. High contrast, ominous, cinematic teaser framing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 63,
+      "narration": "By 1582, Oda Nobunaga controlled more of Japan than any warlord before him. He had burned sacred mountains, crushed rival clans, and armed his soldiers with foreign guns on a scale no rival could match. His enemies called him a tyrant. In one famous message to a rival warlord, he signed himself Dairokuten Maō — the Demon King of the Sixth Heaven. Few men who served him lasted long; fewer still earned his trust. Yet inside his inner circle stood a boy barely out of childhood, entrusted with the warlord's most private correspondence, his schedule, even his sword. His name was Mori Ranmaru.",
+      "image_prompt": "Oda Nobunaga stands in a war council chamber, illuminated by low lantern light, unlabeled maps of a fractured Japan spread before him showing only coastlines and territory shading with no legible writing or place names, surrounded by at least three seated generals who dare not meet his eyes. His posture is commanding, his expression coldly certain of victory. Photorealistic cinematic film still — NOT a digital illustration, cel-shaded, or graphic-novel style rendering. Nobunaga's build is medium height and slender, not heavily muscled or tall; his face is long/oval with a pronounced angular jaw, a large prominent nose, deep vertical frown lines between the brows. His face clearly shows visible facial hair: a light mustache above the lip and a small tuft of beard on the chin — he is NOT clean-shaven.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.31
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 66,
+      "narration": "Ranmaru's path to Nobunaga's side began with loss. His father, Mori Yoshinari, had been one of Nobunaga's most trusted generals, killed in battle when Ranmaru was still a child. Rather than abandon the family, Nobunaga took the boy into his own household as a page — a kosho, trained to serve at the warlord's elbow day and night. It was a position of danger and privilege in equal measure. Most pages faded into anonymity. Ranmaru did not. By his early teens, he was already handling Nobunaga's messages, his appointments, even matters of state older retainers were never shown.",
+      "image_prompt": "A young Ranmaru, about thirteen years old, kneels formally before Nobunaga on the tatami of a modest Japanese reception hall, dressed in plain travelling clothes, being formally accepted into the warlord's household years after his father's death in battle. Nobunaga's gaze studies the boy with unusual attentiveness. Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than an adult sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead. This must read as distinctly younger and softer than the full adult sakayaki (forehead-to-crown shaved) worn by grown samurai like Nobunaga in the same scene.",
+      "ken_burns": "pan_right",
+      "character_ref": "ranmaru",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 65,
+      "narration": "In samurai households, a kosho's duties went far beyond fetching tea or polishing armor. He might carry sealed orders across enemy lines, guard his lord's sleep, or serve as a bridge between the warlord and the world outside. Chroniclers of the age wrote that the bond between a lord and his most favored page could run deeper than ordinary service — a devotion some described as closer to family, or even to love. Whatever its true nature, Nobunaga's attachment to Ranmaru was impossible to miss. He kept the boy close in council chambers where generals twice his age were kept waiting outside.",
+      "image_prompt": "Inside a dim council chamber, teenage Ranmaru stands attentively just behind Nobunaga's shoulder, handling a stack of sealed documents, while older armored generals wait outside the sliding doors, visibly displeased at being excluded. Nobunaga is seen from behind: the back of his head must clearly show the traditional sakayaki hairstyle — the crown and forehead area shaved bald/smooth, with only the remaining side and back hair oiled and pulled back into a flat folded topknot (chonmage) resting on top of the shaved crown, NOT a full unshaved head of hair gathered into a loose ponytail or tuft. Photorealistic cinematic film still, not a painterly or illustrated rendering. Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than an adult sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead. Room is lit only by traditional Japanese paper andon lanterns — do NOT include any European-style pillar candles or ornate metal/brass candlestick holders anywhere in the frame.",
+      "ken_burns": "static",
+      "character_ref": "ranmaru",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "By the spring of 1582, Ranmaru's authority extended well past his years. In the rewards that followed the destruction of the Takeda clan, Nobunaga granted him control of a substantial domain in Mino province — an honor generals decades older had spent lifetimes trying to earn. Rival retainers noticed. Some praised the boy's composure and sharp memory; others whispered that no page should hold such power so young. Nobunaga ignored the murmurs entirely. He was, by this point, the most powerful man in Japan, unifying territory shattered by a century of civil war — and he trusted almost no one completely. Ranmaru, it seemed, was the exception.",
+      "image_prompt": "Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than an adult sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead. Now the scene: Ranmaru, still visibly a teenage page despite his new administrative responsibility — same youthful face and hairstyle as always, not a grown man — reviews land ledgers and correspondence in his own modest chamber in Mino province, his composed expression betraying quiet pride, while an older retainer watches from a doorway with visible resentment. Room is lit only by a traditional Japanese paper andon lantern with a fully enclosed wood-and-paper body — do NOT show any glass oil-burner mechanism, wick assembly, or European-style brass or metal candlestick holders. The andon lantern has NO electrical cord, wire, or power cable visible on it. The walls have no modern fixtures of any kind — no electrical switch plates, outlets, or panels anywhere in the room. Writing implements on the desk are traditional only: an ink brush (fude) and inkstone — no modern pens or styluses. Any sealed letters use a plain paper wrapper tied with string, or a plain dark ink stamp — NOT a red wax seal, which is a European custom.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ranmaru",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Among Nobunaga's generals stood Akechi Mitsuhide — accomplished, cultured, and increasingly humiliated by a lord who prized loyalty above pedigree. Historians still debate exactly what pushed Mitsuhide toward treason. What is certain is this: in the early summer of 1582, Nobunaga ordered him to march west with reinforcements, to support a campaign against the powerful Mori clan of western Japan — no relation to Ranmaru's own family, despite the shared name. Mitsuhide gathered his army as commanded. But instead of marching west, he turned his soldiers east — toward Kyoto, and toward the temple where his lord was sleeping with almost no protection at all.",
+      "image_prompt": "The armored silhouette of a senior samurai general, face obscured in shadow, stands alone on a hillside at dusk, his army's banners behind him pointed unmistakably east toward Kyoto instead of west.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "Nobunaga had chosen Honnoji, a modest temple in Kyoto, as his lodging for the night — confident that no enemy in Japan would dare move against him there. He brought no army, only a small retinue of pages and attendants. Among them was Ranmaru, now seventeen, serving as always at his lord's side. The temple grounds were quiet that night, lit by lantern light, the business of empire momentarily set aside. It should have been an ordinary evening before an ordinary morning. Instead, it would become the last night of Nobunaga's life — and Ranmaru had no idea the enemy was already at the gates.",
+      "image_prompt": "Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than an adult sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead. Now the scene: Nobunaga and a small retinue including Ranmaru arrive at the modest, lantern-lit Honnoji temple compound at dusk — traditional sixteenth-century Japanese Buddhist temple architecture with dark tiled roofs, deep eaves, wooden verandas and plaster walls, absolutely no European or Gothic elements — gates closing behind them, the peaceful gravel courtyard giving no hint of the danger approaching, no drawn weapons visible.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ranmaru",
+      "zoom_anchor": {
+        "x": 0.59,
+        "y": 0.57
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 63,
+      "narration": "Before dawn on the second of June, 1582, Akechi Mitsuhide's soldiers surrounded Honnoji temple. Thousands of men closed in around a compound defended by perhaps a hundred. At first, Nobunaga reportedly believed the noise outside was nothing more than a drunken brawl among his own men. Then the arrows began. Within minutes, it was clear this was no accident and no minor skirmish — this was a coup, executed by one of his most trusted generals, aimed squarely at ending his life. There would be no reinforcements. No escape route. Only the handful of men already inside the walls.",
+      "image_prompt": "Before dawn, arrows streak across the dark temple courtyard as Akechi's soldiers breach the outer walls of Honnoji; Nobunaga, roused from sleep and wearing a white sleeping robe rather than armor, stands in a doorway snatching up a bow, realizing with dawning horror that this is no drunken brawl. Nobunaga's build is medium height and slender, not heavily muscled or tall; his face is long/oval with a pronounced angular jaw, a large prominent nose, deep vertical frown lines between the brows, and a light sparse mustache with a small chin beard — not clean-shaven. Any lighting fixtures visible must be traditional Japanese paper andon lanterns or hanging chōchin lanterns only — do NOT include any European-style pillar candles or metal candlestick stands anywhere in the scene, indoors or outdoors.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 66,
+      "narration": "As the attack intensified, Ranmaru moved through the burning corridors gathering information — how many attackers, which gates had fallen, how much time remained. Contemporary accounts describe him relaying each grim update directly to Nobunaga, staying composed as the temple around them was overrun. His two younger brothers, also serving as pages, fought alongside him. There was no realistic hope of victory. What mattered now was something else entirely: making sure their lord faced his final hour with clear information, and without having to face it alone. Ranmaru had spent his whole short life preparing for exactly this kind of duty.",
+      "image_prompt": "Amid smoke-filled corridors, Ranmaru rushes to report to Nobunaga, his expression focused and unshaken despite the chaos, while behind him his two younger brothers fight off attackers with drawn swords near a burning doorway. Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than an adult sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead. This must read as distinctly younger and softer than the full adult sakayaki (forehead-to-crown shaved) worn by grown samurai like Nobunaga in the same scene.",
+      "ken_burns": "pan_right",
+      "character_ref": "ranmaru",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 63,
+      "narration": "Nobunaga did not simply wait for death. Accounts describe him taking up a bow, then a spear, fighting from the temple's inner rooms as the perimeter collapsed around him. But the numbers were impossible to overcome, and eventually he was wounded. Recognizing that further resistance was pointless, he withdrew deeper into the temple, out of sight of the attacking soldiers. What happened in those final private moments has never been fully confirmed. What is agreed upon by nearly every account is this: Nobunaga chose the manner of his own death, rather than let it be chosen for him by Akechi's blades.",
+      "image_prompt": "Low wide shot: Nobunaga, wounded and bloodied, his white sleeping robe stained red and no armor on him, lowers a spear inside the temple's inner chamber as the sounds of battle fade around him, smoke curling through shattered paper screens, his expression resolute rather than afraid as he retreats further inside. He carries only the single spear in his hands — no extra swords, scabbards, or blades floating or tucked at his waist; his obi is otherwise bare. Nobunaga's build is medium height and slender, not heavily muscled or tall; his face is long/oval with a pronounced angular jaw, a large prominent nose, deep vertical frown lines between the brows, and a light sparse mustache with a small chin beard — not clean-shaven.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.41,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "With the temple collapsing around them and no possibility of rescue, Nobunaga turned to the one attendant still beside him. Tradition holds he gave Ranmaru a final command: set fire to the chambers, so that Akechi's soldiers would never display his head as a trophy of victory. It was, in effect, an order to help end his own life on his own terms. Ranmaru had followed every instruction from this man since entering his service as a boy of about thirteen, years after losing his own father in Nobunaga's wars. This would be the last one he ever received — and, by every account that survives, he did not hesitate to obey it.",
+      "image_prompt": "Tight two-shot from a low angle, an oil lamp burning large in the foreground: Nobunaga, in his blood-stained white robe, leans close to Ranmaru and gives a final, quiet command, his hand gesturing toward the lamp flame; Ranmaru's face, caught in profile against the darkness, shows solemn understanding rather than fear. Nobunaga (right) has the full adult sakayaki: forehead and crown shaved bald with a folded topknot. Nobunaga's build is medium height and slender, not heavily muscled; his face is long/oval with a pronounced angular jaw, a large prominent nose, deep vertical frown lines between the brows, and a light sparse mustache with a small chin beard — not clean-shaven. Ranmaru (left) is much younger and must NOT share Nobunaga's hairstyle — Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than Nobunaga's sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "There was, perhaps, still a narrow chance to escape through the smoke and confusion. Ranmaru did not take it. Alongside his two younger brothers, he remained within the burning temple until the very end, ensuring his lord's final wish was carried out completely. What passed between them in those last moments — words, silence, or nothing at all — no record has preserved. Only the outcome survives: a boy who had spent his short life proving his loyalty chose, in the end, to prove it one final time, with nothing left to gain from it but the certainty of dying beside the man he served.",
+      "image_prompt": "Ranmaru kneels beside a doorway wreathed in flame, deliberately choosing not to flee through a nearby gap in the burning wall, his two younger brothers visible fighting just beyond him, his expression calm and resolved. Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than an adult sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead. This must read as distinctly younger and softer than the full adult sakayaki (forehead-to-crown shaved) worn by grown samurai like Nobunaga in the same scene.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ranmaru",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "By the time Akechi's soldiers forced their way into the inner chambers, Honnoji was engulfed in flame. They found no warlord to capture, no head to present as proof of triumph — only ash, smoke, and silence. Oda Nobunaga, the man who had terrified and reshaped an entire nation, was gone, his remains never conclusively identified to this day. Beside where he had made his final stand lay the bodies of the boy who had guarded him since childhood, and that boy's two younger brothers. In a matter of hours, the most powerful household in Japan had been reduced to smoldering ruins and unanswered questions.",
+      "image_prompt": "Wide shot of Honnoji, a traditional Japanese Buddhist temple with dark tiled roofs, deep eaves and heavy timber framing — no European or Gothic architecture — fully engulfed in flame against the dawn sky, silhouetted samurai standing at the wooden gate in stunned stillness, finding no one left to capture inside the collapsing structure.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 63,
+      "narration": "For a moment, Akechi Mitsuhide appeared to have succeeded beyond expectation. The demon king was dead, and Kyoto lay in his hands. He moved quickly to secure alliances and legitimacy, presenting himself as the man who had ended a tyrant's reign. But news of Honnoji spread fast across a country Nobunaga had spent decades unifying — and not everyone was prepared to accept the new order Akechi proposed. Among those racing back toward the capital was one of Nobunaga's own generals, a man who would turn this act of betrayal into the opening chapter of his own rise to power.",
+      "image_prompt": "Akechi Mitsuhide, now shown fully in ornate armor, stands before assembled retainers in a captured Kyoto residence, declaring his new authority, though the faces around him betray visible uncertainty rather than celebration.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 55,
+      "narration": "Within roughly two weeks, that general had marched his army back from a distant campaign at extraordinary speed, confronted Akechi's forces near Kyoto, and crushed them decisively. Akechi Mitsuhide's rule over Japan, built on a single night of betrayal, lasted barely eleven days before it collapsed entirely — reportedly ending with his own death at the hands of local villagers as he tried to flee. The demon king had been struck down by treachery. But treachery, in the end, bought its architect almost nothing at all.",
+      "image_prompt": "A distant general's army marches at forced speed along a dusty road under banners, racing back toward Kyoto, dust and motion conveying urgency and inevitability.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 63,
+      "narration": "Nobunaga's death did not end the unification of Japan — it merely passed the project to other hands, first to the general who had avenged him, and eventually to the shogunate that followed. His name endured as the man who broke centuries of feudal deadlock through sheer, often brutal, force of will. But amid the battles, the burned monasteries, and the fearsome reputation, one relationship stood apart from everything else historians associate with him: the bond between a warlord who trusted almost no one, and the page who had earned that trust completely, then died proving it justified.",
+      "image_prompt": "A formal, painterly portrait-style image of Oda Nobunaga in full armor against a backdrop suggesting a unified map of Japan taking shape, rendered as coastline and shaded territory only with no legible writing, letters or place names anywhere in the image, evoking his historical legacy rather than a specific battlefield moment. Nobunaga's build is medium height and slender, not heavily muscled or tall; his face is long/oval with a pronounced angular jaw, a large prominent nose, deep vertical frown lines between the brows, and a light sparse mustache with a small chin beard — not clean-shaven.",
+      "ken_burns": "zoom_in",
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.48
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "falling_action",
+      "duration_seconds": 63,
+      "narration": "In the centuries that followed, Mori Ranmaru's story took on a life far beyond the historical record. Playwrights, poets, and later novelists and filmmakers returned to him again and again — sometimes as the ideal of samurai loyalty, sometimes as something more intimate, a companion whose devotion blurred the line between duty and love. Some of these portrayals lean on evidence; many lean on legend. What almost none of them dispute is the core fact preserved across every account: whatever the exact nature of the bond, Ranmaru chose to die rather than leave his lord's side when leaving may still have been possible.",
+      "image_prompt": "Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than an adult sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead. Now the scene: a quiet, reverent close shot of Ranmaru kneeling alone in an empty formal hall, shown from a three-quarter front angle (NOT a flat side profile), soft directional light picking him out of the shadows, evoking how his story has been remembered and retold for centuries — dignified, timeless, elegiac in tone. Photorealistic cinematic film still.",
+      "ken_burns": "static",
+      "character_ref": "ranmaru",
+      "zoom_anchor": {
+        "x": 0.59,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 66,
+      "narration": "It is tempting to call loyalty like Ranmaru's a weakness — after all, it ended with a teenage boy dead in a burning temple, having gained nothing material from the choice. But looked at differently, it may have been the one relationship that let Nobunaga function at all. A man who trusted no one completely cannot delegate, cannot rest, cannot ever truly be surprised by comfort instead of betrayal. For a few years, at least, Nobunaga had exactly one person he did not need to watch his back against. That, in a country full of ambitious men waiting for their moment, was rarer than any weapon he owned.",
+      "image_prompt": "Close, intimate shot of Ranmaru's face in soft lantern light, expression thoughtful and calm, framed to suggest quiet reflection rather than action, emphasizing the human cost behind the historical narrative. Ranmaru's hairstyle: the top of his crown is shaved (a visible bald patch at the very top of the head, smaller and higher-positioned than an adult sakayaki), while the rest of his hair is parted in the center and swept outward to both the left and right sides, framing his face and temples — like a young nobleman's side-parted hairstyle. The hair does NOT hang straight down as bangs/fringe over the forehead, and does NOT cover the whole forehead. This must read as distinctly younger and softer than the full adult sakayaki (forehead-to-crown shaved) worn by grown samurai like Nobunaga in the same scene.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ranmaru",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.48
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 63,
+      "narration": "Akechi Mitsuhide's betrayal is remembered as the great turning point of the Sengoku period — the single act that ended one warlord's life and opened the path for another's rise. But it is Ranmaru's choice, quieter and far less consequential to the shape of the nation, that continues to unsettle people centuries later. Betrayal is easy to explain: ambition, humiliation, opportunity. Loyalty carried all the way to a pointless death is harder to explain — and perhaps that is exactly why his name survived at all, attached forever to the demon king he refused, until the very last moment, to leave behind.",
+      "image_prompt": "Symbolic split composition: on one side, shadowed armored figures representing betrayal and ambition; on the other, a single small lantern glowing steadily in darkness representing quiet loyalty, both halves reflected in a still pool of water.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 55,
+      "narration": "Oda Nobunaga reshaped Japan through fear, ambition, and an unrelenting will to win — yet the moment people remember most is the one where none of that mattered, and only trust did. Mori Ranmaru left no empire, no armies, no lasting title of his own. He left only the fact that, when the fire came, he stayed. If stories like his — of loyalty tested at the very end — are the ones that stay with you, there are more waiting for you here.",
+      "image_prompt": "A final wide, elegiac shot of the burned ruins of Honnoji temple at sunrise, smoke thinning into a clear sky, the silhouettes of Nobunaga and Ranmaru faintly implied in the drifting smoke patterns above the ashes.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep071-BGM-intro.mp3",
+    "main": "BGM/ep073-BGM-main.mp3",
+    "outro": "BGM/ep076-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/NPxUsikZN0Y",
+  "shorts_url": "https://youtu.be/rCpMBq1poxk",
+  "scheduled_at": "2026-09-29 03:00"
+}

@@ -82,6 +82,10 @@
       {
         "episode_id": "ep083",
         "video_id": "hf2h_hMO-r0"
+      },
+      {
+        "episode_id": "ep099",
+        "video_id": "NPxUsikZN0Y"
       }
     ]
   },
@@ -984,6 +988,16 @@
       {
         "episode_id": "ep098",
         "video_id": "ttrWDa8qhJ8"
+      }
+    ]
+  },
+  "ranmaru": {
+    "display_name": "Ranmaru",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep099",
+        "video_id": "NPxUsikZN0Y"
       }
     ]
   }

@@ -24,6 +24,18 @@ Shorts(9:16)生成について（2026-08-02〜）:
   --shorts は本編(16:9, images/S{id}.png)が既に生成済みならそれをGeminiで
   9:16に再構成する（ゼロから独立生成しない）。必ず本編を先に生成すること。
   本編画像が無い場合はテキストのみから独立生成する（フォールバック）。
+
+外見の参照画像による統一について（--ref-scene, 2026-09-10〜）:
+  標準（月代のちょんまげ）から外れる容姿・髪型のキャラクター（例: 若衆髷の小姓）は、
+  BASE_CONTEXTのデフォルト髪型指示とテキストのみの個別指示が競合し、シーンごとに
+  容姿が巻き戻ることが繰り返し発生した（ep099で実証）。対処として:
+    1. まず該当キャラクターの1シーンを --scenes で生成する
+    2. Claudeが目視確認（＋実在人物ならWebSearchで一般的イメージと照合）する
+    3. 問題なければ、そのシーンIDを --ref-scene に指定して残りのシーンを生成する
+       （同じcharacter_refを持つ全シーンにその画像が外見参照として渡される）
+  例: python3 sc_image_gen.py --episode ep099 --scenes 3
+      （目視確認後）
+      python3 sc_image_gen.py --episode ep099 --ref-scene 3 --scenes 4,5,7,9,...
 """
 
 import argparse
@@ -185,12 +197,27 @@ def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, o
 def generate_one_image(client, scene_prompt: str, character_ref: str, output_path: Path,
                         ref_image: types.Part = None) -> bool:
     """1シーン1枚生成して output_path に保存。成功すれば True を返す。
-    ref_image は本編(16:9)生成では使わない（gen_func の呼び出しシグネチャ統一のため受け取るのみ）。"""
+
+    ref_image が指定された場合（--ref-scene で同一キャラクターの承認済み既存画像が
+    ある場合）は、その画像を外見（髪型・顔立ち・体格）の参照として渡す。テキストのみの
+    指示はBASE_CONTEXTのデフォルト髪型指示（月代のちょんまげ）等と競合し、標準から
+    外れる容姿（本エピソードの蘭丸の若衆髷等）が度々巻き戻る問題が繰り返し発生したため
+    （ep099で実証済みの対処。2026-09-10〜）。"""
     parts = [BASE_CONTEXT]
     if character_ref:
         parts.append(f"Character reference: {character_ref}")
     parts.append(f"Scene: {scene_prompt}")
     full_prompt = "\n\n".join(parts)
+    if ref_image is not None:
+        full_prompt += (
+            "\n\nATTACHED REFERENCE IMAGE — CRITICAL APPEARANCE OVERRIDE: this image shows "
+            "this character's exact, already-approved appearance (hairstyle, face, build) "
+            "from another scene in this same episode. This reference takes priority over any "
+            "general default appearance instruction above. Match it precisely — same hairstyle "
+            "shave/coverage boundary, same facial features and build — adjusting only for the "
+            "new pose, angle, and scene content described above."
+        )
+        return _generate_with_retry(client, [full_prompt, ref_image], output_path)
     return _generate_with_retry(client, full_prompt, output_path)
 
 
@@ -394,7 +421,8 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
         return {"scene_id": scene_id, "ok": False, "issues": [f"QA_ERROR: {e}"]}
 
 
-def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force: bool = False):
+def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force: bool = False,
+        ref_scene: int = None):
     if not API_KEY:
         print("❌ GEMINI_API_KEY が設定されていません")
         sys.exit(1)
@@ -487,6 +515,25 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force:
     # 従来通り必ず再生成する（既存の狙い撃ち再生成の挙動は変えない）。
     skip_existing = scene_filter is None and not force
 
+    # --ref-scene: 同一キャラクターの承認済み既存画像を外見の参照として全シーンに使う
+    # （標準から外れる容姿・髪型がBASE_CONTEXTのデフォルト指示と競合して巻き戻る問題への
+    # 対処。ep099で実証済み。2026-09-10〜）。参照元シーンのcharacter_refを基準に、
+    # 同じcharacter_refを持つ他シーンにのみ適用する。
+    anchor_char_ref_name = None
+    anchor_image_bytes = None
+    if ref_scene is not None:
+        anchor_scene = next((s for s in ep["scenes"] if s["scene_id"] == ref_scene), None)
+        if anchor_scene is None:
+            print(f"❌ --ref-scene で指定されたシーン {ref_scene} が見つかりません")
+            sys.exit(1)
+        anchor_char_ref_name = anchor_scene.get("character_ref")
+        anchor_path = out_dir / f"S{ref_scene:02d}.png"
+        if not anchor_path.exists():
+            print(f"❌ --ref-scene の画像が見つかりません: {anchor_path}（先にこのシーンを生成してください）")
+            sys.exit(1)
+        anchor_image_bytes = anchor_path.read_bytes()
+        print(f"  参照画像: S{ref_scene:02d}（character_ref: {anchor_char_ref_name}）\n")
+
     saved = []
     qa_results = []
     skipped_count = 0
@@ -514,6 +561,10 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force:
                     ref_image = image_part_from_path(main_img_path)
                 except Exception:
                     ref_image = None
+        elif (anchor_image_bytes is not None and scene_id != ref_scene
+                and char_ref_name == anchor_char_ref_name and char_ref_name is not None):
+            ref_image = types.Part.from_bytes(data=anchor_image_bytes,
+                                               mime_type=sniff_image_mime(anchor_image_bytes))
 
         ref_label = f" [{char_ref_name}]" if char_ref_name else ""
         reuse_label = " (本編流用)" if ref_image is not None else ""
@@ -638,6 +689,12 @@ def cli():
                         help="Shorts冒頭顔アップ画像を生成（images_shorts/S00_face.png）")
     parser.add_argument("--force", action="store_true",
                         help="--scenes未指定のフル実行で、既存ファイルがあっても全シーン再生成する（デフォルトは既存ファイルをスキップ）")
+    parser.add_argument("--ref-scene", type=int, default=None,
+                        help="指定シーンの生成済み画像を外見（髪型・顔立ち・体格）の参照として、"
+                             "同じcharacter_refを持つ他の全シーンに渡す。標準から外れる容姿の"
+                             "キャラクターで、先に1シーンを生成→WebSearch等で実在イメージと照合→"
+                             "問題なければそのシーンを--ref-sceneに指定して残りを一括生成する運用を想定。"
+                             "本編(16:9)生成のみ対応（--shorts時は無視、本編画像を自動参照する既存の仕組みを使う）。")
     args = parser.parse_args()
 
     if args.face:
@@ -648,7 +705,8 @@ def cli():
     if args.scenes:
         scene_filter = [int(x.strip()) for x in args.scenes.split(",")]
 
-    run(args.episode, scene_filter=scene_filter, shorts=args.shorts, force=args.force)
+    run(args.episode, scene_filter=scene_filter, shorts=args.shorts, force=args.force,
+        ref_scene=args.ref_scene)
 
 
 if __name__ == "__main__":

@@ -1016,14 +1016,14 @@
     },
     {
       "episode_id": "ep099",
-      "status": "pending",
+      "status": "published",
       "title": "The Demon King's Only Weakness: Oda Nobunaga and the Boy Who Died Beside Him",
       "era": "Sengoku",
       "priority": "A",
       "person": "nobunaga",
       "angle": "character",
       "notes": "2026-09-06追加（Fable監査対応・有名人物比率の是正）: 信長の若き小姓・森蘭丸との主従関係に焦点を当てる。本能寺で共に死んだ忠義の物語。ep002(本能寺の変・事件そのもの)/ep011(生涯overview)/ep041(比叡山焼き討ち)とは重ならない、信長のcharacter角度は初出。新キャラクター characters/ranmaru.txt が必要になる可能性がある。",
-      "last_updated": "2026-09-06"
+      "last_updated": "2026-09-10"
     },
     {
       "episode_id": "ep100",
@@ -1151,6 +1151,6 @@
       "last_updated": "2026-09-06"
     }
   ],
-  "last_updated": "2026-09-09",
+  "last_updated": "2026-09-10",
   "total_topics": 105
 }
