@@ -1,0 +1,254 @@
+{
+  "episode_id": "ep100",
+  "episode_title": "The Man Who Opened Japan Knowing It Would Kill Him",
+  "youtube_title": "The Man Who Opened Japan Knowing It Would Kill Him",
+  "youtube_description": "He opened Japan to the world with a single signature — and signed his own death warrant in the same stroke. Ii Naosuke chose a lonely, unpopular path that history would take decades to understand.\n\n⏱️ Chapters:\n0:00 Introduction\n0:22 One signature ended his life. He\n0:38 In 1815, in the castle town\n1:27 One by one, his brothers died\n2:22 In 1853, American warships...\n3:18 The shogun himself was dying,...\n4:19 An American envoy, Townsend...\n5:16 In July of 1858, Ii Naosuke\n6:10 The reaction was immediate...\n7:04 Rather than retreat, Ii...\n7:53 Among those punished were men...\n8:48 By early 1860, warnings...\n9:37 On the morning of March 24th,\n10:25 As the procession neared the...\n10:58 Ii Naosuke died in the snow\n11:46 Within the hour, word reached...\n12:23 What followed was almost as...\n13:15 The assassination did not...\n14:11 In the aftermath, Ii's own...\n14:59 History's judgment of Ii...\n15:51 Ii Naosuke is remembered...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Jansen, Marius B. — \"The Making of Modern Japan\" (Harvard University Press, 2000)\n2. Beasley, W.G. — \"The Meiji Restoration\" (Stanford University Press, 1972)\n3. Totman, Conrad — \"The Collapse of the Tokugawa Bakufu, 1862–1868\" (University of Hawaii Press, 1980)\n\n\n🎵 Music: more Suspense.wav by chimerical (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional Dramatic Theme by tyops (freesound.org) — CC BY 4.0\n#IiNaosuke #Bakumatsu #SamuraiHistory #TokugawaShogunate #JapaneseHistory #SakuradamonIncident #EdoPeriod #MeijiRestoration",
+  "youtube_tags": [
+    "Ii Naosuke",
+    "Sakuradamon Incident",
+    "Bakumatsu",
+    "samurai history",
+    "Tokugawa shogunate",
+    "Edo period",
+    "Japanese history",
+    "Meiji Restoration",
+    "Ansei Purge",
+    "Japan history documentary",
+    "Treaty of Amity and Commerce",
+    "Hikone",
+    "Japanese history channel",
+    "feudal Japan",
+    "samurai assassination"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 12,
+  "teaser_narration": "Snow falls over Edo's gate, March 1860. A procession halts — the man who signed away Japan's isolation is about to die for it. Who was he — and why did he refuse to stop?",
+  "shorts_narration": "1860. One signature opened Japan to the world — and made him the most hated man in the country. Then, in the snow outside Edo Castle, eighteen swords answered his choice. This is Ii Naosuke.",
+  "shorts_hook_lines": [
+    "ONE SIGNATURE.",
+    "MADE HIM A TARGET.",
+    "DID HE KNOW HE WOULD DIE?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Ii Naosuke's face — oval face, high forehead, cleanly shaven with no mustache or beard, hair in a chonmage topknot with shaved crown — snow falling around him in the darkness outside Edo Castle. His expression is calm, resolute, eyes locked directly on the viewer despite visible tension. Dramatic cold blue side lighting cutting through falling snow, deep shadows. Vertical portrait composition, face filling the upper two-thirds of the frame.",
+  "thumbnail_prompt": "Cinematic medium shot of Ii Naosuke — solid thick-set build, oval face, cleanly shaven with no mustache or beard, hair in a chonmage topknot with shaved crown — in formal dark kamishimo, standing resolute in heavy snowfall before the silhouette of Edo Castle's stone Sakuradamon Gate. His expression is calm and determined, unaware or unafraid of the danger implied by the falling snow and shadowed gate behind him. High-contrast dramatic lighting, cold blue-grey palette with a single warm highlight on his face. No visible text or characters in the image.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "One signature ended his life. He knew it would kill him — and signed anyway. What made a man walk willingly toward his own death?",
+      "image_prompt": "Wide dramatic shot of Edo Castle's stone Sakuradamon Gate under heavy snowfall, an empty ceremonial road stretching toward it, a single overturned paper lantern half-buried in fresh snow in the foreground. No figures visible. Cold, ominous atmosphere, muted blue-grey winter light, traditional Japanese castle stonework and wooden gate architecture.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1815, in the castle town of Hikone, a fourteenth son was born with no claim to anything. Ii Naosuke was raised not as an heir, but as a spare — a boy expected to become a monk, or a minor retainer to his own family. He filled his years with tea ceremony, swordsmanship, and Zen meditation, mastering the art of stillness. No one imagined this quiet, contemplative man would one day hold the fate of Japan in his hands. Fate, however, was already clearing a path toward him — one death at a time.",
+      "image_prompt": "Modest samurai household interior in Hikone Castle, a swaddled infant held gently by a wet nurse in the corner of a reception room, muted colors, traditional Edo-period Japanese architecture with fusuma sliding doors and tatami mats, soft filtered window light. Quiet, unremarkable domestic atmosphere befitting a minor branch of a samurai household. No text visible anywhere.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "One by one, his brothers died — and the path that was never meant for him opened wide. In 1850, at the age of thirty-five, Ii Naosuke became daimyo of Hikone, lord of a domain whose ancestors had guarded the Tokugawa shoguns for two hundred and fifty years. It was a position of trust, not ambition. But Japan itself was changing. Foreign warships had begun probing its shores, and the old certainties — of isolation, of order, of a closed and peaceful realm — were starting, quietly, to crack beneath the surface.",
+      "image_prompt": "Ii Naosuke, mid-30s, newly invested as daimyo, kneeling in formal ceremonial dress in Hikone Castle's main hall, rows of elder retainers bowing before him. Morning light filters through wooden lattice windows onto polished wooden floors, traditional Japanese castle interior architecture, dignified and solemn atmosphere. No text visible.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ii_naosuke",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1853, American warships under Commodore Perry forced open two centuries of Japanese isolation. The shogunate reeled, and Japan's leaders split into bitter factions — some wanting resistance, others insisting negotiation was the nation's only path to survival. In 1858, at the height of this crisis, the shogunate appointed Ii Naosuke to its highest office: Tairo, chief minister, a role given to only a handful of men each century. He now stood at the center of a decision no one else wanted to make — one that would define the rest of his life.",
+      "image_prompt": "Wide dramatic shot of black steam warships anchored off a rocky Japanese coastline, dark smoke rising from their funnels, small groups of alarmed samurai coastal watchmen standing on cliffs above observing with tense postures. Traditional Japanese fishing village architecture in the foreground, overcast grey sky heightening the sense of crisis. No European-style buildings, no text visible.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "The shogun himself was dying, childless, and two rival candidates stood ready to succeed him. One, Tokugawa Yoshinobu, was favored by reformers and by Mito's powerful retired lord — his own father. The other, a twelve-year-old boy named Yoshitomi, later known as the shogun Iemochi, was favored by Ii. He pushed the boy's claim through — and won. It secured his authority, but it also made him a permanent enemy of Mito's retainers, men who would neither forgive nor forget. Ii had made his first great choice. It would not be his last — and this one, too, would carry a price.",
+      "image_prompt": "Formal shogunate council chamber, Ii Naosuke seated at the head of a low table addressing a row of seated officials with a firm, commanding gesture. Tense expressions among the listening officials, dark wood interior architecture, heavy shadows. Lighting comes ONLY from traditional Japanese andon floor lanterns (wooden-framed paper shade boxes) and hanging paper chochin lanterns — absolutely NO Western-style metal candlesticks or exposed open-flame candles on stands anywhere in the frame. Documents on the table are blank or show only abstract ink brush texture, no legible or garbled text/characters.",
+      "ken_burns": "pan_left",
+      "character_ref": "ii_naosuke",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "An American envoy, Townsend Harris, waited in Edo with a treaty that would open Japanese ports, set its tariffs by agreement, and place foreigners beyond the reach of Japanese courts. The shogunate had already asked the emperor to sanction it — an unprecedented step — and Kyoto had refused. Then couriers brought grim news from China, where foreign gunboats had just crushed the Qing dynasty into humiliating concessions. Ii believed delay was not caution — it was danger. Every week without a treaty was a week closer to war. He faced an impossible choice: defy the emperor's refusal, or risk the fate of a nation that could not yet defend itself.",
+      "image_prompt": "Ii Naosuke standing alone on a wooden castle veranda at dusk, holding a rolled document, gazing out toward the distant silhouette of Edo Castle's towers under gathering storm clouds. Contemplative, weighty atmosphere, traditional Japanese architecture, no legible text on the scroll.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naosuke",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In July of 1858, Ii Naosuke made his decision. He ordered the Treaty of Amity and Commerce signed with the United States — without the emperor's sanction, and against the court's express refusal. It was, in the strictest sense, an act of defiance against the very throne the shogunate claimed to serve. Ii knew exactly what he was doing. He believed a divided, hesitant Japan would be devoured the way China had been. One signature, made in his name alone, opened the country to the world — and marked him, in the eyes of many, as a traitor to it.",
+      "image_prompt": "Close composition of Ii Naosuke's hand pressing a formal wax or ink seal onto a document on a low writing desk, his face resolute and shadowed in warm candlelight. Deep shadows around the edges of the frame, traditional Japanese writing implements nearby, atmosphere of grave finality. No legible text visible on the document.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naosuke",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The reaction was immediate and furious. Samurai loyal to the emperor, particularly from Mito and other domains, denounced Ii as a man who had sold Japan's sovereignty to foreigners without the throne's blessing. Secret letters and pamphlets branded him a traitor. Scholars and young radicals who preached \"revere the emperor, expel the barbarian\" found in him the perfect target for their outrage. Ii had expected resistance. What he had not expected was how quickly that resistance would turn into open talk of his death — whispered first, then spoken aloud in the streets of Edo.",
+      "image_prompt": "Nighttime Edo street scene, silhouetted samurai figures posting secret notices on a wooden fence by dim lantern light, glancing warily over their shoulders. Traditional wooden townhouse architecture lining a narrow street, tense and secretive atmosphere, deep shadows. EVERY male samurai figure in the frame, including background and side figures, must have the traditional Edo-period sakayaki hairstyle: the top/crown of the head shaved bare, with the remaining hair oiled and tied back into a topknot (chonmage). No character should have a full, unshaved head of hair swept back — that hairstyle is not permitted for any figure in this scene. No legible text visible on any notices or signs.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Rather than retreat, Ii tightened his grip. He launched a sweeping crackdown that would become known as the Ansei Purge — arresting, interrogating, and punishing more than a hundred critics across the country. To his supporters, it was necessary order in a moment of crisis. To his enemies, it was proof of tyranny. Ii did not flinch from the accusation. He had chosen a course for Japan, and he intended to see it through, whatever the cost to himself — or to the men who now filled the shogunate's prisons because of him.",
+      "image_prompt": "Low-angle view from behind two shogunate clerks hunched over low writing desks in a dim hall, brushes in hand, with Ii Naosuke seen beyond them raised on a tatami dais, stern and upright, a small distant figure dominating the room. Shallow depth of field, somber oppressive paper-lantern light, heavy bureaucratic atmosphere, traditional Japanese government office architecture. No legible text visible on any documents.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naosuke",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Among those punished were men history would later remember as visionaries. The scholar Yoshida Shoin, who had dreamed of a stronger, modernized Japan, was executed. So was the reformer Hashimoto Sanai. Tokugawa Nariaki, Mito's fierce retired lord, who had opposed Ii at every turn, was placed under permanent confinement in his own domain, stripped of his voice in the shogunate. Ii had silenced his loudest critics. But in doing so, he had turned political disagreement into personal grievance — and given the retainers of Mito a grief that would not stay quiet for long.",
+      "image_prompt": "A dim prison courtyard at dawn, a solitary anonymous samurai-scholar figure kneeling in quiet dignity, head bowed, before a simple wooden fence in soft morning mist. Muted grey-blue tones, respectful and restrained composition that avoids depicting graphic violence directly, traditional Japanese prison architecture. No text visible anywhere.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By early 1860, warnings reached Ii almost daily. Spies reported that Mito ronin — masterless samurai loyal to their disgraced lord — were plotting his death. Retainers urged him to increase his guard, to vary his route, to show more caution. Ii refused. To alter his life because of threats, he believed, was to admit the treaty had been a mistake — and he did not believe that. He had chosen his path with open eyes. If the price of that choice was his own life, he had already decided he would not run from paying it.",
+      "image_prompt": "Ii Naosuke standing calmly in his residence's inner chamber, an anxious retainer kneeling before him gesturing urgently while holding a letter. Ii's expression is unmoved and resolute, contrasting with the retainer's visible alarm. Warm lantern light, traditional Japanese interior architecture, tense but quiet atmosphere. No legible text visible on the letter.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ii_naosuke",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.22
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "On the morning of March 24th, 1860 — the third day of the third month by the old calendar, a festival day — snow fell thick over Edo. Ii's procession prepared to leave his residence for Edo Castle, as it did every year on this date, for a ceremony older than the shogunate itself. His guards moved slower in the snow, cloaks heavy, blades wrapped against the wet. Nothing in the scene looked unusual. But less than a mile away, near the castle's Sakuradamon Gate, eighteen men were already waiting in the white silence — for him.",
+      "image_prompt": "Wide shot of a ceremonial palanquin procession departing a residence gate into heavy snowfall, samurai guards in snow-dusted cloaks walking alongside with lanterns glowing faintly in the white haze. Serene yet quietly foreboding atmosphere, traditional Japanese gate and wall architecture, thick falling snow obscuring the distance. No text visible anywhere.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "As the procession neared the gate, a lone figure stepped into the road and thrust a petition toward the lead guards — a common enough sight to cause hesitation. It was a signal. From the snowbanks on either side, armed men surged forward. A pistol shot rang out, striking the palanquin. Guards, hampered by oiled-paper sword covers meant to keep out the wet, struggled to draw their blades in time. In seconds, an ambush planned for months had turned a quiet ceremonial road into chaos.",
+      "image_prompt": "Dramatic snowy ambush scene at a stone castle gate, anonymous armed ronin figures in white winter cloaks surging forward from snowbanks around a ceremonial palanquin procession, motion blur and flying snow conveying sudden chaos, guards reacting with drawn weapons. Traditional Edo Castle stone wall and wooden gate architecture in the background. Restrained composition implying violent impact without graphic gore. No text visible anywhere.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Ii Naosuke died in the snow outside the gate he had passed a hundred times before, killed by men who believed they were saving Japan from him. He was forty-four years old. The men who struck him down left behind a manifesto: he had betrayed the emperor and sold out the nation, they wrote, and this was justice. Whatever the truth of that judgment, one fact was beyond dispute. The most powerful man in Japan had just been killed for a decision he had made completely alone.",
+      "image_prompt": "Solemn wide shot of an overturned ceremonial palanquin resting in snow at the base of a stone castle gate, snow continuing to fall gently over the scene, faint dark stains barely visible in the white. No graphic injury shown, emphasis on stillness, falling snow, and quiet aftermath rather than violence. Muted cold color palette, traditional Japanese gate architecture. No text visible anywhere.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Within the hour, word reached Edo Castle, and a stunned silence spread through its halls. The snow that had fallen so gently that morning now lay reddened at Sakuradamon. No one in the shogunate's command structure was prepared for what had just happened — the one man holding together an impossibly difficult policy of opening, negotiation, and control was simply gone. For the first time since the treaty had been signed, the future of Japan's dealings with the world had no one steering it at all.",
+      "image_prompt": "Wide shot of Edo Castle's inner corridor, shogunate officials frozen in stunned silence as a breathless messenger kneels at an open doorway. Falling snow visible through open shoji screens beyond, muted grey and blue tones, atmosphere of shock and disbelief, traditional Japanese castle interior architecture. No text visible anywhere.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "What followed was almost as strange as the killing itself. Terrified that news of the Tairo's assassination would shatter what little authority the shogunate had left, officials concealed his death for weeks — announcing instead that Ii was gravely ill. It was, in its own way, a final tribute to how much the government depended on the illusion of his control. Even in death, Ii Naosuke could not be allowed to look vulnerable. The truth eventually surfaced. By then, the damage to the shogunate's authority was already done.",
+      "image_prompt": "Interior of a dim shogunate administrative office, several officials quietly drafting a document, uneasy and secretive expressions, stacks of paper documents nearby with no legible text visible. Tense, hushed atmosphere, traditional Japanese office architecture, shadows dominating the composition. Lighting comes ONLY from traditional Japanese andon floor lanterns (wooden-framed paper shade boxes) — absolutely NO Western-style metal candlesticks or exposed open-flame candles on stands anywhere in the frame.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The assassination did not restore the old order the plotters had hoped for. Instead, it revealed how fragile that order truly was. Rival domains watched a chief minister struck down in broad daylight and drew a simple lesson: the shogunate could no longer guarantee even its own safety, let alone the country's. Over the years that followed, the anti-shogunate movement that had grown in Sakuradamon's shadow gathered strength, pulling Japan step by step toward a revolution that would end the Tokugawa shogunate itself less than a decade later.",
+      "image_prompt": "Grand traditional Japanese domain hall with several seated lords in formal attire murmuring among themselves as a messenger kneels delivering news, tense shifting-power atmosphere conveyed through posture and glances. Dim natural light through wooden lattice windows, traditional Japanese architecture throughout. No text visible anywhere.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In the aftermath, Ii's own domain of Hikone was punished rather than honored — its territory reduced, its status diminished, as if loyalty to a man now called a traitor was itself a crime. For years, his name could barely be spoken with pride even in the land his family had ruled for generations. The lord who had given his life for what he believed was Japan's survival was, for a long time, remembered only as the man who had caused his own death.",
+      "image_prompt": "Hikone Castle under grey overcast skies, banners lowered along its walls, a solemn procession of retainers in muted mourning attire walking slowly through the castle courtyard. Quiet, disgraced atmosphere, traditional Japanese castle architecture, desaturated color palette. No text visible anywhere.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "History's judgment of Ii Naosuke did not stay fixed. As the decades passed and Japan avoided the fate of China — carved up, humiliated, pressured by the very powers it once refused to face — historians began asking a harder question. Had Ii not been the villain of 1860, but the one man willing to make an unbearable decision no one else dared to make? There is no comfortable answer. What remains certain is this: he chose a lonely, unpopular path for a nation not yet ready to thank him — and he never once turned back.",
+      "image_prompt": "Contemplative wide shot of Ii Naosuke standing alone at the edge of a snow-covered garden, looking out toward a distant horizon in soft winter light. Dignified, reflective composition rather than tragic, traditional Japanese garden architecture with bare winter trees, muted warm-cold color contrast. No text visible anywhere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ii_naosuke",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Ii Naosuke is remembered today less as a traitor and more as a man who understood something his enemies refused to see — that survival sometimes demands choices no one will thank you for. He died in the snow for a signature he made alone, certain it was right. His story asks a question every generation must answer for itself: what would you risk for a decision you knew was correct, but no one else would forgive? If that question stays with you, there are more like it waiting here.",
+      "image_prompt": "Final symbolic view of the Sakuradamon Gate seen from across the castle moat at dawn, camera low near the water, the stone ramparts and wooden gate mirrored in the still surface, last patches of snow melting along the bank, warm sunlight breaking through parting clouds. No figures present, sense of quiet historical resolution, cold blue tones giving way to warm light. No text visible anywhere.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep077-BGM-intro.mp3",
+    "main": "BGM/ep100-BGM-main.mp3",
+    "outro": "BGM/ep073-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/KWXptBjKfRc",
+  "shorts_url": "https://youtu.be/lTdA2JTUzlc",
+  "scheduled_at": "2026-10-01 03:00"
+}

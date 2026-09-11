@@ -1000,5 +1000,15 @@
         "video_id": "NPxUsikZN0Y"
       }
     ]
+  },
+  "ii_naosuke": {
+    "display_name": "Ii Naosuke",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep100",
+        "video_id": "KWXptBjKfRc"
+      }
+    ]
   }
 }

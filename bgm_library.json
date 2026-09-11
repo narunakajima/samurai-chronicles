@@ -682,7 +682,8 @@
     ],
     "used_in": [
       "ep073",
-      "ep082"
+      "ep082",
+      "ep100"
     ]
   },
   {
@@ -767,7 +768,8 @@
     ],
     "used_in": [
       "ep077",
-      "ep092"
+      "ep092",
+      "ep100"
     ]
   },
   {
@@ -1164,6 +1166,20 @@
     ],
     "used_in": [
       "ep098"
+    ]
+  },
+  {
+    "id": "ep100-BGM-main",
+    "path": "BGM/ep100-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: more Suspense.wav by chimerical (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep100"
     ]
   }
 ]

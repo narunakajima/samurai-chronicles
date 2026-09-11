@@ -1027,14 +1027,14 @@
     },
     {
       "episode_id": "ep100",
-      "status": "pending",
+      "status": "published",
       "title": "The Minister Who Was Assassinated in the Snow: Ii Naosuke and the Sakuradamon Incident",
       "era": "Bakumatsu",
       "priority": "A",
       "person": "ii_naosuke",
       "angle": "death",
       "notes": "Chief minister assassinated 1860 for forcing open-door treaties. First appearance. → 事件の顛末そのものより、その事件が物語る人物の生き方・選択に軸足を置く。 → 2026-08-29追記（Fable5監査）: ep069-079の11本連続低CTR（8月コホートで統計的に有意な落ち込み、p≈0.002）を踏まえ、暗殺事件の顛末描写に寄りすぎないよう注意。開国という孤独な決断を貫いた人物ドラマとして構成する。 → 2026-09-06: ep097(同じdeath角度)と連続しないようキュー内で分離。なお2026-09-06のFable監査でこのp≈0.002自体の方法論的脆弱性（14日窓未完了・多重比較未補正・コホート境界の事後選択）が指摘されている点に留意。",
-      "last_updated": "2026-09-06"
+      "last_updated": "2026-09-11"
     },
     {
       "episode_id": "ep101",
