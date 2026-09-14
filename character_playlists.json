@@ -180,6 +180,10 @@
       {
         "episode_id": "ep024",
         "video_id": "TemJZxs-Dm4"
+      },
+      {
+        "episode_id": "ep101",
+        "video_id": "tPTFDRktp-E"
       }
     ]
   },
@@ -1008,6 +1012,16 @@
       {
         "episode_id": "ep100",
         "video_id": "KWXptBjKfRc"
+      }
+    ]
+  },
+  "kato_kiyomasa": {
+    "display_name": "Kato Kiyomasa",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep101",
+        "video_id": "tPTFDRktp-E"
       }
     ]
   }

@@ -1,0 +1,284 @@
+{
+  "episode_id": "ep101",
+  "episode_title": "The Tiger Hunter Whose Castle Outlived Him by 266 Years: Kato Kiyomasa",
+  "youtube_title": "The Castle That Outlived Him by 266 Years: Kato Kiyomasa",
+  "youtube_description": "He hunted a man-eating tiger on a foreign battlefield and built a castle so formidable it would still be standing 266 years after his death. But Kato Kiyomasa's fiercest fight wasn't against tigers, sieges, or rival generals — it was the impossible balancing act of serving the man who conquered his world while protecting the boy that man was determined to destroy. This is the rise and fall of Japan's greatest castle-builder.\n\n⏱️ Chapters:\n0:00 Introduction\n0:31 How do you kill a tiger\n0:55 Kato Kiyomasa was born in 1562\n1:48 That road ran through...\n2:45 By 1588, Hideyoshi had all but\n3:45 Not every rising star in...\n4:47 In 1592, Hideyoshi launched...\n5:46 That different picture nearly...\n6:40 Mitsunari's reports on the...\n7:37 In 1598, Hideyoshi died,...\n8:38 Ieyasu used the incident...\n9:36 When war finally erupted in...\n10:25 Mitsunari was captured within...\n11:13 But architecture could not...\n12:00 In 1611, Ieyasu summoned...\n13:01 The meeting passed without...\n13:54 He would not get the chance\n14:46 Three years later, in the winter\n15:41 Kumamoto Castle, however, was...\n16:38 It is tempting to remember Kato\n17:27 Kato Kiyomasa left behind no...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Stephen Turnbull, Samurai Invasion: Japan's Korean War 1592–98 (Cassell, 2002)\n2. Stephen Turnbull, Japanese Castles 1540–1640 (Osprey Publishing, 2003)\n3. Mary Elizabeth Berry, Hideyoshi (Harvard University Asia Center, 1982)\n\n\n🎵 Music: Classical Suspense by GowlerMusic (freesound.org) — CC BY 4.0\n\n🎵 Music: Michael Stutz - Battle of the Galleys.wav by Michaelp800 (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional/Sad/Tragic String Orchestral BGM Background Music by EvanBoyerman (freesound.org) — CC BY 4.0\n#KatoKiyomasa #IshidaMitsunari #SengokuJidai #KumamotoCastle #SamuraiHistory #JapaneseHistory #TokugawaIeyasu #ToyotomiHideyoshi #WarlordsOfJapan",
+  "youtube_tags": [
+    "Kato Kiyomasa",
+    "Ishida Mitsunari",
+    "Sengoku period",
+    "Kumamoto Castle",
+    "Toyotomi Hideyoshi",
+    "Tokugawa Ieyasu",
+    "samurai history",
+    "Japanese history",
+    "feudal Japan",
+    "Battle of Sekigahara",
+    "Japanese invasions of Korea",
+    "Japanese castles",
+    "samurai documentary",
+    "Japan history documentary",
+    "Toyotomi Hideyori"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Deep in a Korean winter camp, a man-eating tiger stalks the perimeter. One samurai general walks out alone to face it, armed, the story goes, with nothing but a cross-bladed spear. He would survive that night. But the rival waiting for him at home would prove far harder to defeat. Who was Kato Kiyomasa?",
+  "shorts_narration": "266 years. That's how long his castle stood after he died. He hunted tigers. He built fortresses no army could break. But he couldn't save the one loyalty that mattered most. This is Kato Kiyomasa.",
+  "shorts_hook_lines": [
+    "266 YEARS.",
+    "THE CASTLE WON.",
+    "COULD HE SAVE HIS LORD?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Kato Kiyomasa's face, a weathered samurai general with a long face, thick dark eyebrows, a full mustache and beard, and small narrow eyes set wide apart that stare directly into the camera. The top of his unmistakable tall black-lacquered eboshi-nari helmet is visible rising above the frame. Dramatic firelight from below casts deep shadows across his features, evoking both the tiger hunter and the castle builder. Vertical portrait composition, high contrast, intense direct gaze.",
+  "thumbnail_prompt": "Close dramatic composition: Kato Kiyomasa's imposing armored figure fills the frame, his unmistakable tall black eboshi-nari helmet rising above him with a plain red sun disc painted on its side, his long weathered face and narrow wide-set eyes turned toward the viewer with a fierce, resolute expression; behind him looms the massive curved stone wall of Kumamoto Castle beneath a stormy sky. Faint silhouette of a crouching tiger in the shadowed foreground corner. High contrast, cinematic rim lighting, dramatic atmosphere.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 15,
+      "narration": "How do you kill a tiger with one spear? Legend says he did — then met a rival no blade could touch. So how did Japan's mightiest castle-builder end up unable to save the boy he vowed to protect?",
+      "image_prompt": "Split dramatic composition: on the left, the silhouette of a lone samurai warrior facing a crouching tiger in a dark foreign forest, spear raised and ready; on the right, the towering curved stone walls of a Japanese castle rising into storm clouds. Both halves meet at the center in deep shadow. High contrast, ominous, cinematic teaser framing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 65,
+      "narration": "Kato Kiyomasa was born in 1562 into a minor samurai family in Owari province, distantly related to the mother of a rising commander named Toyotomi Hideyoshi. His father died when Kiyomasa was barely three, and around the age of eleven the boy entered Hideyoshi's household, raised among the pages who would one day lead his armies. Japan at the time was a patchwork of warring domains, its old order shattered by a century of civil war. For a boy with no great name behind him, there was only one road upward: become indispensable to the one man who might unify the entire country.",
+      "image_prompt": "A young Kato Kiyomasa, a slender boy of about eleven in plain traveling robes, no armor or helmet yet, kneels formally on the floor of a modest wooden hall before a rising warlord on the day he is taken in as a household page. Nearby, an unrolled map of a fractured Japan shows only coastlines and shaded territory with no legible writing or place names. The boy's eyes are alert and unusually serious for his age. Photorealistic cinematic film still, dramatic low lantern light.",
+      "ken_burns": "pan_right",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 66,
+      "narration": "That road ran through Shizugatake, a mountain pass in Omi province where, in 1583, Hideyoshi's forces clashed with a powerful rival for control of Nobunaga's legacy. Kiyomasa, barely twenty years old, charged into the enemy line and cut down an enemy commander, Yamaji Masakuni, in single combat. He emerged as one of the so-called Seven Spears of Shizugatake, an elite group of young warriors whose bravery that day launched their careers. Hideyoshi rewarded him with land, rank, and something rarer still — genuine trust. But military glory, Kiyomasa would soon discover, was only half the battle for power.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. Now barely twenty years old, he charges through a chaotic mountain battlefield at Shizugatake, cutting down an enemy commander in single combat, dust and clashing spears around him. Dynamic low-angle action shot, dramatic lighting, cinematic intensity.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.44,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 66,
+      "narration": "By 1588, Hideyoshi had all but unified Japan, and he needed men who could govern as well as fight. He granted Kiyomasa a significant portion of Higo province, on the southern island of Kyushu, after the previous governor's brutal mismanagement provoked a revolt. There, Kiyomasa revealed an unexpected talent. Over the following years he began reworking the local stronghold into a fortress unlike anything the region had seen: soaring stone walls curved outward in a defensive shape so steep that no attacker could climb it. The technique became known as musha-gaeshi — the warrior repeller. It would become Kumamoto Castle, and it would outlive every empire built around it.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. He stands on a hillside overlooking the early construction of a massive fortress, pointing toward workers building steep, outward-curving stone walls, blueprints of the fortification's distinctive shape held in his other hand. Golden late-afternoon light, wide establishing shot, cinematic scale.",
+      "ken_burns": "pan_right",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.46
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 66,
+      "narration": "Not every rising star in Hideyoshi's government carried a sword. Ishida Mitsunari, a brilliant young administrator, had climbed to power managing supply lines, land surveys, and the tangled finances of an expanding empire. Where Kiyomasa's world was forged in single combat, Mitsunari's was built on ledgers and negotiation — and he made little secret of his disdain for battlefield glory he considered crude and overrated. The two men represented rival philosophies of power taking shape inside Hideyoshi's court: the sword versus the brush, the general versus the bureaucrat. For now, both men served the same master. That would not last.",
+      "image_prompt": "Ishida Mitsunari: lean, sharp-featured Japanese administrator-general in his late 30s. Angular face with intense, uncompromising eyes. Thin precise lips. Dark formal court robes or black lacquered armor. Rigid upright posture. He sits at a low desk surrounded by tax ledgers, land survey scrolls, and supply manifests, reviewing them with cold precision by lantern light, radiating quiet contempt for the boisterous armored generals visible through an open doorway behind him. Interior scene, disciplined composition, muted color palette.",
+      "ken_burns": "static",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "In 1592, Hideyoshi launched an invasion of Korea, and Kiyomasa led his forces deep into hostile territory, further and faster than almost any other commander. Amid brutal, grinding warfare, one story spread through the ranks and back to Japan: that Kiyomasa had hunted and killed a man-eating tiger stalking his camp, using nothing but his signature cross-bladed spear. Whether myth or memory, the tale cemented his legend as a warrior of almost superhuman nerve. But Mitsunari, overseeing the invasion's logistics from a distance, filed reports back to Hideyoshi that painted a very different picture of the campaign's generals.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. In a dense Korean forest encampment at night, he stands alone facing a crouching, snarling tiger, his signature jumonji-yari cross-bladed spear leveled and ready, torchlight from the camp flickering behind him. Tense, dramatic composition, low angle, high stakes.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 70,
+      "narration": "That different picture nearly cost lives. In the brutal winter of 1597, Kiyomasa found himself trapped inside a half-finished fortress at Ulsan, besieged by a vastly larger Ming and Joseon army. His men ran out of food, then water, reportedly drinking their own urine and eating paper to survive. Yet the walls Kiyomasa had rushed to build held firm long enough for reinforcements to break the siege. It was a brutal proof of concept: the same instincts that made him a feared warrior also made him one of the finest military engineers of his generation. Not everyone back home would credit him for it.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. He stands atop the half-finished stone walls of Ulsan fortress in a brutal winter siege, gaunt and exhausted soldiers behind him, snow falling as a vast enemy army's campfires stretch to the horizon below. Bleak, desperate atmosphere, cold blue-grey lighting, wide cinematic shot.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.53
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 66,
+      "narration": "Mitsunari's reports on the Korean campaign reached Hideyoshi filtered through the priorities of an administrator managing an empire's finances, not a soldier who had survived starvation behind enemy lines. Generals who had bled for every mile of territory felt their sacrifices reduced to numbers on a ledger, their failures exaggerated, their victories underplayed. Kiyomasa, along with several fellow commanders, grew convinced that Mitsunari was maneuvering to undercut the military faction's influence at court. It was less a single betrayal than a slow accumulation of grievances — the kind that, given the right spark, could ignite into something far more dangerous.",
+      "image_prompt": "Ishida Mitsunari: lean, sharp-featured Japanese administrator-general in his late 30s. Angular face with intense, uncompromising eyes. Thin precise lips. Dark formal court robes or black lacquered armor. Rigid upright posture. He writes a formal report by candlelight in a quiet administrative chamber far from any battlefield, his expression composed and unreadable, stacks of similar reports piled neatly beside him. Interior scene, cool restrained lighting, contrast with the chaos of the war he is reporting on.",
+      "ken_burns": "static",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.44,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 63,
+      "narration": "In 1598, Hideyoshi died, leaving behind a five-year-old heir and a government suddenly without its unifying authority. The resentment Kiyomasa and his fellow generals had nursed for years finally boiled over. In 1599, seven of Hideyoshi's most decorated commanders moved openly against Mitsunari, intent on ending his influence for good. Mitsunari survived only because the one man powerful enough to arbitrate between them stepped in: Tokugawa Ieyasu, the ambitious elder statesman waiting patiently on the sidelines. In trying to destroy his rival, Kiyomasa had just handed Japan's most dangerous opportunist exactly the leverage he needed.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. He leads a group of armored generals converging with grim purpose on the closed gate of a walled residence at night, retainers barring the entrance as the generals halt before it. Tense night scene, dramatic torchlight, standoff rather than pursuit.",
+      "ken_burns": "pan_left",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.57,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "Ieyasu used the incident perfectly, positioning himself as the reasonable mediator between feuding factions while quietly expanding his own authority. Kiyomasa and the other military men, still furious at Mitsunari, drifted further into Ieyasu's orbit — a relationship built on convenience rather than devotion. Yet Kiyomasa never renounced the oath that mattered most to him: his loyalty to Hideyoshi's young son and heir, Hideyori. He was, in effect, playing two roles at once — ally to the man most likely to seize the country, and guardian of the boy that man was most likely to eventually destroy.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. He kneels respectfully before a small child seated on a formal dais in an ornate chamber, the boy's face turned away or in soft shadow, Kiyomasa's expression torn between duty and unease. Muted, contemplative lighting, quiet interior scene.",
+      "ken_burns": "static",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 66,
+      "narration": "When war finally erupted in 1600, the two great alliances collided at Sekigahara — but Kiyomasa was nowhere near the battlefield. Instead, he fought his own war in Kyushu, besieging castles held by lords loyal to Mitsunari's faction, careful to frame his campaign as opposing a scheming administrator rather than the Toyotomi name itself. It was a fine distinction, and a convenient one. When news arrived that Ieyasu's forces had crushed the western alliance in a single day, Kiyomasa's calculated gamble was vindicated — he had backed the winning side without technically betraying the boy he had sworn to protect.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. He directs a siege against a distant Kyushu castle, his jumonji-yari spear raised as troops advance under his banner, smoke rising from the battlements ahead. Wide dynamic battle composition, dramatic overcast lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 68,
+      "narration": "Mitsunari was captured within days and executed as a traitor, his brief bid for power over almost as quickly as it began. Kiyomasa emerged from Sekigahara with his reputation and his domain both dramatically enlarged, now ruling the whole of Higo province. He poured the new resources into finishing his masterpiece. When Kumamoto Castle was completed around 1607, it stood as one of the most formidable fortifications ever built in Japan — over a hundred wells and storehouses designed to survive a siege of years, its curved walls a monument to a man who had learned defense the hard way, in Korea.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. Seen from below at the very foot of the newly completed Kumamoto Castle, he stands small against the base of an enormous curved outward-sloping stone wall that fills most of the frame and rises steeply out of view, arms crossed, an expression of quiet, hard-earned pride on his face. Extreme low-angle shot, hard bright midday sunlight, overwhelming sense of vertical scale.",
+      "ken_burns": "zoom_out",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.76
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "But architecture could not solve his deeper problem. Ieyasu had been appointed shogun by the imperial court in 1603, formally founding a new regime that made no secret of its intention to sideline the Toyotomi name permanently. Kiyomasa found himself the last significant bridge between two worlds that increasingly could not coexist: a shogunate determined to secure its future, and a teenage heir whose mere existence represented a threat to it. Every visit Kiyomasa paid to young Hideyori was watched. Every gesture of loyalty toward the old regime risked being read, by the new one, as something closer to defiance.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. He sits alone in a quiet chamber within his castle, helmet removed and resting beside him, revealing a period-correct Sengoku samurai hairstyle — the crown of the head shaved (sakayaki) with the remaining hair oiled back into a small topknot, staring at a lantern flame with a heavy, contemplative expression, the weight of divided loyalty visible in his posture. Intimate, dim interior lighting, reflective mood.",
+      "ken_burns": "static",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 65,
+      "narration": "In 1611, Ieyasu summoned Hideyori, now seventeen, to a formal meeting at Nijo Castle in Kyoto — the first face-to-face encounter between the old regime's heir and the new order's founder. Toyotomi loyalists feared it was a trap. Kiyomasa insisted on accompanying Hideyori personally, reportedly carrying a concealed dagger and privately warning the young lord to remain composed no matter what happened inside those walls. It was, by every account, the most dangerous diplomatic mission of his life — a warrior who had survived tigers and sieges now guarding a boy with nothing but words and nerve.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. He walks protectively beside a composed young nobleman toward the imposing gates of a grand castle, an elder statesman's retinue waiting in the distance, tension evident in the stiff formality of the scene. Wide shot, overcast dramatic lighting, sense of quiet danger.",
+      "ken_burns": "pan_right",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 62,
+      "narration": "The meeting passed without incident. Ieyasu received Hideyori with courtesy, the two exchanged formal pleasantries, and Kiyomasa escorted his young lord safely home. For one brief moment, it seemed as though decades of accumulated distrust might yet be managed rather than resolved through bloodshed. Contemporaries credited Kiyomasa's steady presence, more than any diplomatic language, for keeping the encounter peaceful. It was arguably his finest achievement outside of stone and mortar — proof that the same nerve that once faced down a tiger could also, if only briefly, hold a fracturing peace together.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general with broad shoulders and a thick frame, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart holding a steady unblinking gaze, full mustache and short beard, wearing his unmistakable extremely tall black-lacquered eboshi-nari helmet — a smooth trapezoidal peak rising straight up roughly two feet above his head like a folded court cap, a plain red sun disc painted on each side and a plain circular black-lacquered front crest with no writing on it — and dark lacquered armor built for a large frame. Tight medium two-shot of his face beside the young nobleman's on a quiet Kyoto street well away from any castle, his stern expression finally breaking into visible relief as he exhales, the young lord calm beside him. Shallow depth of field, warm fading dusk light, intimate framing, quiet emotional release.",
+      "ken_burns": "pan_left",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.68
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 68,
+      "narration": "He would not get the chance to build on it. On the voyage home from Kyoto, Kiyomasa fell seriously ill, and within three months he was dead — in the summer of 1611, at the age of forty-nine. The suddenness of his death, so soon after such a delicate mission, fueled rumors that persist to this day — whispers of poison, of a rival faction eager to remove the one man capable of restraining Ieyasu's ambitions. No solid evidence has ever confirmed it. What is certain is that Japan had just lost the last powerful advocate the Toyotomi family had left.",
+      "image_prompt": "Kato Kiyomasa: a tall, powerfully built samurai general, now visibly gaunt and pale with illness, a long weathered sun-darkened face, thick dark eyebrows, small narrow eyes set wide apart and feverish, full mustache and short beard, no helmet — revealing a period-correct Sengoku samurai hairstyle with the crown of the head shaved (sakayaki) and the remaining hair drawn back into a small topknot — lying weakly on a simple bed inside the cabin of a ship. Attendants hover nearby with worried expressions as the ship rocks gently on calm water outside a small window. Somber, dim lighting, elegiac mood.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kato_kiyomasa",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.65
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Three years later, in the winter and summer campaigns of 1614 and 1615, Tokugawa forces laid siege to Osaka Castle and destroyed the Toyotomi line for good, driving Hideyori to take his own life and ending any hope of a Toyotomi restoration. Historians can only speculate whether Kiyomasa's presence might have changed that outcome. What is clear is that with his death, the fragile balance he had spent years maintaining collapsed almost immediately. The tiger hunter who once held back a Ming army with half-built walls had not been able to hold back history itself.",
+      "image_prompt": "Wide shot of Osaka Castle engulfed in flame and smoke during a fierce siege, traditional Japanese castle architecture with dark tiled roofs and massive stone walls silhouetted against the fire, distant armored figures fighting near the outer walls. Chaotic, apocalyptic atmosphere, dawn light breaking through smoke.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 62,
+      "narration": "Kumamoto Castle, however, was not finished making its point. In 1877, more than two and a half centuries after Kiyomasa's death, rebel forces led by the former samurai Saigo Takamori laid siege to the very walls he had designed. For more than fifty days, against modern artillery and thousands of attackers, the fortress held — even after fire destroyed its wooden keep days before the assault began. The Kato clan itself had long since vanished from power, stripped of the domain generations earlier. But the stone Kiyomasa had shaped with his own obsessive engineering outlasted his bloodline, his rivals, and the entire feudal world that had produced him.",
+      "image_prompt": "Wide historical contrast shot: the same massive curved stone walls of Kumamoto Castle, now weathered by centuries, under bombardment from distant artillery positions in a 19th-century siege, smoke rising from cannon fire in the foreground while the ancient walls stand unbroken. Muted period-appropriate lighting, sense of enduring strength across time.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 57,
+      "narration": "It is tempting to remember Kato Kiyomasa simply as a ferocious warrior — the man who hunted tigers and built impregnable walls. But his real struggle was quieter and less resolvable: how does a man of absolute personal loyalty survive in a world where the ground beneath that loyalty keeps shifting? He never resolved it cleanly. He served a rising shogunate while shielding the family it intended to erase, and in the end, his death, not his enemies, decided which loyalty would outlast the other.",
+      "image_prompt": "Symbolic composition: a single tall black samurai helmet resting alone atop a cracked, shifting stone foundation, faint reflections of both a rising sun and a setting sun visible on either side, evoking a man caught between two eras. Minimalist, atmospheric, soft directional lighting.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 62,
+      "narration": "Kato Kiyomasa left behind no simple legacy — a fortress that repelled armies long after his death, a rivalry that reshaped a nation, and a debt of loyalty he spent his final years trying, and ultimately failing, to repay in full. He could out-build, out-fight, and outmaneuver almost anyone he faced. The one battle history never let him win was the one against time itself. If stories like his — men caught between two masters — are the ones that keep pulling you back, this channel has quite a few more of them.",
+      "image_prompt": "A final wide, elegiac shot of Kumamoto Castle's curved stone walls at dawn, mist drifting low across the grounds, the massive fortification standing silent and eternal against a clearing sky, no figures present. Serene, monumental, timeless composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep082-BGM-intro.mp3",
+    "main": "BGM/ep101-BGM-main.mp3",
+    "outro": "BGM/ep055-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/tPTFDRktp-E",
+  "shorts_url": "https://youtu.be/12k6oTNZxog",
+  "scheduled_at": "2026-10-03 03:00"
+}

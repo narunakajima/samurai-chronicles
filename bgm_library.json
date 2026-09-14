@@ -387,7 +387,8 @@
       "ep064",
       "ep066",
       "ep069",
-      "ep095"
+      "ep095",
+      "ep101"
     ]
   },
   {
@@ -857,7 +858,8 @@
       "cinematic"
     ],
     "used_in": [
-      "ep082"
+      "ep082",
+      "ep101"
     ]
   },
   {
@@ -1180,6 +1182,20 @@
     ],
     "used_in": [
       "ep100"
+    ]
+  },
+  {
+    "id": "ep101-BGM-main",
+    "path": "BGM/ep101-BGM-main.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Michael Stutz - Battle of the Galleys.wav by Michaelp800 (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep101"
     ]
   }
 ]
