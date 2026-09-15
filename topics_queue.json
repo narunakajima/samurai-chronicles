@@ -1049,14 +1049,14 @@
     },
     {
       "episode_id": "ep102",
-      "status": "pending",
+      "status": "published",
       "title": "Fūrinkazan: The Four-Word Code That Made Takeda Shingen Unstoppable",
       "era": "Sengoku",
       "priority": "A",
       "person": "shingen",
       "angle": "philosophy",
       "notes": "2026-09-06追加（Fable監査対応・有名人物比率の是正）: 「疾如風・徐如林・侵掠如火・不動如山」の軍旗の由来と統治哲学。ep025(rivalry)/ep047(death)/ep048(military)とは異なる、信玄のphilosophy角度は初出。",
-      "last_updated": "2026-09-06"
+      "last_updated": "2026-09-15"
     },
     {
       "episode_id": "ep103",
@@ -1070,6 +1070,17 @@
       "last_updated": "2026-09-06"
     },
     {
+      "episode_id": "ep105",
+      "status": "pending",
+      "title": "The Shogun Who Escaped Into Art While Japan Burned: Ashikaga Yoshimasa and the War He Started",
+      "era": "Muromachi",
+      "priority": "B",
+      "person": "ashikaga_yoshimasa",
+      "angle": "character",
+      "notes": "Era diversification — pending queue had become all-Sengoku. Indecisive shogun whose succession dispute triggered the Onin War; retreated into art and built the Silver Pavilion while the country fractured. Priority B: data-poor era, confirm early performance before adding more. → 2026-09-15: キュー健全性チェック（era連続）でpending先頭3件がSengoku連続だったため、ep104と順序を入れ替え前倒し。",
+      "last_updated": "2026-09-15"
+    },
+    {
       "episode_id": "ep104",
       "status": "pending",
       "title": "The Retainer Worth More Than His Lord's Entire Domain: Shima Sakon's Final Stand at Sekigahara",
@@ -1078,17 +1089,6 @@
       "person": "shima_sakon",
       "angle": "character",
       "notes": "Never featured before. Test case for the 'hidden strategist' hypothesis — built as a loyalty/sacrifice human-drama arc (not event listing), following the Kuroda Kanbee construction pattern rather than Yamamoto Kansuke's.",
-      "last_updated": "2026-09-06"
-    },
-    {
-      "episode_id": "ep105",
-      "status": "pending",
-      "title": "The Shogun Who Escaped Into Art While Japan Burned: Ashikaga Yoshimasa and the War He Started",
-      "era": "Muromachi",
-      "priority": "B",
-      "person": "ashikaga_yoshimasa",
-      "angle": "character",
-      "notes": "Era diversification — pending queue had become all-Sengoku. Indecisive shogun whose succession dispute triggered the Onin War; retreated into art and built the Silver Pavilion while the country fractured. Priority B: data-poor era, confirm early performance before adding more.",
       "last_updated": "2026-09-06"
     },
     {
@@ -1206,6 +1206,6 @@
       "last_updated": "2026-09-06"
     }
   ],
-  "last_updated": "2026-09-14",
+  "last_updated": "2026-09-15",
   "total_topics": 110
 }

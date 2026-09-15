@@ -1,0 +1,288 @@
+{
+  "episode_id": "ep102",
+  "episode_title": "Fūrinkazan: The 2,000-Year-Old Words Takeda Shingen Stole to Rule Japan",
+  "youtube_title": "Fūrinkazan: The 2,000-Year-Old Words Takeda Shingen Stole to Rule Japan",
+  "youtube_description": "Four words, painted onto a war banner, turned a poor mountain province into the most feared army in Sengoku Japan. They weren't Takeda Shingen's own creation — he borrowed them from a Chinese military classic written two thousand years earlier. This is the story of Fūrinkazan: wind, forest, fire, and mountain, and the warlord who built an entire philosophy of rule around them.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 Four words ruled an army of\n0:46 Japan, the mid-1500s. The...\n1:39 Unlike his rivals, Shingen...\n2:36 The framework Shingen sought...\n3:40 Shingen did not keep these words\n4:39 Wind: move as swiftly as wind.\n5:33 Forest: be as still and silent\n6:32 Fire: attack and plunder like a\n7:28 Mountain: stand immovable as...\n8:32 But Fūrinkazan was never only...\n9:38 Word of the banner spread across\n10:31 In 1561, on the plain of\n11:19 What followed was the...\n12:05 Kawanakajima settled nothing...\n12:55 In the years that followed, the\n13:56 Yet even a mountain, Shingen...\n14:52 Strip away the battle...\n15:48 Nearly five centuries later,...\n16:48 Perhaps that is the real lesson\n17:43 Takeda Shingen never...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Sun Tzu, The Art of War (trans. Samuel B. Griffith, Oxford University Press)\n2. Stephen Turnbull, Kawanakajima 1553–64: Samurai Power Struggle (Osprey Publishing)\n3. Stephen Turnbull, Samurai Warfare (Cassell & Co.)\n\n\n🎵 Music: Intense Dark Action Orchestra by DeVern (freesound.org) — CC BY 4.0\n\n🎵 Music: Another epic soundtrack.wav by nuria1512 (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional/Sad/Tragic String Orchestral BGM Background Music by EvanBoyerman (freesound.org) — CC BY 4.0\n#TakedaShingen #Furinkazan #SengokuJapan #SamuraiHistory #JapaneseHistory #Kawanakajima #Samurai",
+  "youtube_tags": [
+    "Takeda Shingen",
+    "Furinkazan",
+    "Sengoku period",
+    "Samurai history",
+    "Japanese history",
+    "Kawanakajima",
+    "Uesugi Kenshin",
+    "Tiger of Kai",
+    "Sun Tzu Art of War",
+    "Samurai warlord",
+    "feudal Japan",
+    "Japanese warlord documentary"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 13,
+  "teaser_narration": "Mist clings to a riverbank as two armies collide in their fiercest clash. One moves like wind, holds like forest, strikes like fire, stands like mountain. But whose mind turned an enemy's own words into an unstoppable weapon?",
+  "shorts_narration": "Four words. Written by an enemy general centuries dead. They turned a mountain lord into Japan's most feared commander — wind, forest, fire, mountain. This is Takeda Shingen.",
+  "shorts_hook_lines": [
+    "FOUR WORDS.",
+    "2,000 YEARS OLD.",
+    "WHY DID THEY WORK?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Takeda Shingen's face under flickering torchlight, calculating eyes fixed directly on camera, thick beard and stern expression, a dark war banner marked with bold black calligraphy barely visible and blurred behind him, dramatic chiaroscuro lighting emphasizing his commanding presence.",
+  "thumbnail_prompt": "Dramatic close-up portrait of Takeda Shingen, the Tiger of Kai, seated in commanding posture in dark lacquered armor with a crimson fur-trimmed jinbaori draped over his shoulders, holding a war fan, sharp calculating eyes staring directly at the viewer. His head is fully shaved bald in the Buddhist tonsure style (he took monastic vows in 1559) — absolutely NOT a chonmage topknot or any hair on top of the scalp, only his beard remains. A dark war banner directly behind him marked with four huge bold black Japanese kanji characters arranged vertically down its center (the banner must clearly show exactly four large legible characters, unmistakably readable as a count of four), intense dramatic side lighting, cinematic BBC documentary style composition.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 12,
+      "narration": "Four words ruled an army of thousands. They weren't Takeda Shingen's own — he stole them from an enemy text a thousand years old. So why did this borrowed philosophy make him Japan's most feared warlord?",
+      "image_prompt": "Dramatic dawn battlefield shot of a large dark war banner directly behind Takeda Shingen, the banner's cloth prominently covered edge to edge with four huge bold black Japanese kanji characters painted vertically down its center (must be clearly visible, large, and legible against the dark cloth) fluttering above rows of samurai troops, Takeda Shingen seated on a camp stool before his army in dark lacquered armor with a crimson fur-trimmed jinbaori, war fan resting on his knee, commanding presence.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 59,
+      "narration": "Japan, the mid-1500s. The central government has collapsed, and more than two hundred warlords carve the country into rival domains, each fighting for survival. In the mountainous province of Kai, one lord commands armies without a single major seaport, without rich farmland, without the wealth his neighbors enjoy. His name is Takeda Shingen. To survive in this landscape, he cannot rely on resources. He needs something rarer — a system of thought sharp enough to turn a poor, landlocked province into a war machine feared across the entire country.",
+      "image_prompt": "Wide establishing shot of the rugged, mountainous Kai province at dawn, Takeda Shingen standing alone on a rocky ridge overlooking his domain, wearing dark lacquered armor and crimson fur-trimmed jinbaori, Takeda bishi diamond-crest banners planted nearby, vast valleys and peaks stretching into the distance.",
+      "ken_burns": "pan_right",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.26
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 65,
+      "narration": "Unlike his rivals, Shingen built no great stone fortress to rule from. His capital, Kōfu, had no towering castle walls — an almost reckless choice in an age when every lord raced to build higher, thicker defenses. Critics called it weakness. Shingen called it strategy. Stone could be breached, burned, starved into surrender. He believed something else determined whether a domain survived: the loyalty of the people inside it, and the discipline of the mind commanding them. But belief alone would not win battles. He needed a framework — one precise enough to govern both an army and a nation.",
+      "image_prompt": "Takeda Shingen seated inside a modest single-storey wooden residential compound in Kofu, studying a map spread across a low table, solid lacquered war fan in hand, crimson fur-trimmed jinbaori draped over his shoulders, a hanging scroll and a rack of spears along the plain plaster wall, a low earthwork and shallow moat visible through the open doorway with no stone keep or tall castle walls anywhere, contemplative expression.",
+      "ken_burns": "static",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 70,
+      "narration": "The framework Shingen sought did not come from Japan. Some two thousand years earlier, in China, a general named Sun Tzu had written a treatise on warfare that would outlast every dynasty that read it: The Art of War. Buried within one chapter was a single passage describing the ideal army — an army that moved like wind, waited like forest, attacked like fire, and held its ground like a mountain. Most commanders treated it as poetry. Shingen read it as a blueprint. He did not just admire these words. He decided to build his entire army, and his entire rule, around them.",
+      "image_prompt": "Takeda Shingen seated by candlelight reading an aged Chinese scroll, war fan resting beside him on a low writing desk, dark lacquered armor partially removed revealing travel robes, Takeda bishi crest banner visible as a shadow on the wall behind him, intense focused expression.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 84,
+      "narration": "Shingen did not keep these words in a private study. He ordered the four phrases painted in bold black ink onto a battle standard. Tradition credits that brushwork to Kaisen, a renowned Zen calligrapher — though the Takeda chronicles show the banner already flying a year before Kaisen was invited into Kai, and no surviving record names the hand that truly wrote it. The act itself is beyond dispute: a foreign text, two thousand years old, raised openly over a Japanese army for every soldier and every enemy to see. The banner was both a command and a declaration: this is how we move, this is how we strike, this is how we stand. From that day forward, the flag itself became a weapon.",
+      "image_prompt": "A Zen monk in simple robes kneeling and painting bold black brushstroke calligraphy onto a large cloth battle standard by candlelight inside a temple hall, Takeda Shingen standing nearby observing in his crimson fur-trimmed jinbaori, solemn and ceremonial atmosphere.",
+      "ken_burns": "pan_left",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 64,
+      "narration": "Wind: move as swiftly as wind. Shingen's cavalry became legendary for speed few armies could match. Where rival lords spent weeks gathering troops and supplies, Takeda forces could appear at an enemy's border within days, striking before word of their approach had even finished traveling. This was not recklessness — it was calculation. Speed meant choosing the moment of battle instead of reacting to it. An enemy who could not predict where Shingen's army would appear next was an enemy already losing. Wind, Shingen taught his generals, was not about hurry. It was about controlling time itself.",
+      "image_prompt": "Takeda cavalry charging swiftly across a misty mountain valley at dawn, motion blur on galloping horses, Takeda bishi diamond-crest banners streaming in the wind, Shingen riding near the front in dark lacquered armor and crimson fur-trimmed jinbaori, war fan raised forward.",
+      "ken_burns": "pan_right",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 67,
+      "narration": "Forest: be as still and silent as a forest. This was the discipline few enemies expected from a mountain warlord. Before striking, Takeda troops could remain utterly motionless for hours, concealed along ridgelines and tree lines, giving no sign of their position. No campfires that might betray them, no movement, no noise. An approaching enemy scout might walk within yards of an entire waiting army and see nothing but trees. This patience was its own form of terror. The not-knowing — whether the forest ahead held nothing, or held thousands of armed men — unsettled enemies more than any open threat could.",
+      "image_prompt": "A hidden line of samurai warriors crouched motionless among dense forest ridgelines at dusk, barely visible between tree trunks and shadow, faint glimpses of Takeda bishi diamond-crest banners tucked low, eerie stillness and tension, no campfires or movement visible.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 62,
+      "narration": "Fire: attack and plunder like a raging fire. When Shingen did strike, there was no half-measure. Fire does not negotiate with what stands in its path, and neither did his army once battle began. Enemy strongholds could fall in a single overwhelming assault, supply lines severed, resistance crushed before reinforcements ever arrived. This ferocity was deliberate terror as much as tactic — word of a Takeda attack's brutality traveled faster than the army itself, and some rivals chose surrender simply to avoid becoming the next example. It was the coldest calculation wrapped inside the hottest violence.",
+      "image_prompt": "Nighttime battle scene of Takeda warriors storming an enemy wooden stockade engulfed in fire and smoke, chaos and clashing blades illuminated by flames, Takeda Shingen commanding from horseback in the distance with war fan raised, crimson fur-trimmed jinbaori catching the firelight.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "Mountain: stand immovable as a mountain. This was the principle Shingen valued above all three others combined. No matter how fast the wind moved, how patient the forest waited, or how fiercely the fire burned, an army that could be shaken from its position in a crisis was an army that would eventually break. Kai's own geography reinforced the lesson — ringed by peaks, the province itself stood like a fortress no enemy had ever fully conquered. Shingen built his reputation not on aggression alone, but on the certainty that his lines, his word, and his rule would not move. Mountains do not retreat.",
+      "image_prompt": "Low-angle shot looking up at Takeda Shingen seated immovable on a camp stool at the head of a stationary battle line on open ground, solid lacquered war fan resting across his knee, gale tearing at a Takeda bishi diamond-crest banner and at the crimson fur-trimmed jinbaori across his shoulders, ranks of soldiers holding formation without flinching, heavy storm clouds and the jagged peaks of Kai massed on the horizon behind him.",
+      "ken_burns": "static",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.31
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 78,
+      "narration": "But Fūrinkazan was never only about the battlefield. Shingen applied the same four principles to ruling itself. The Takeda house chronicles preserve a saying long attributed to him: people are the castle, people are the stone walls, people are the moat — meaning no fortress mattered if the men and women inside a domain felt no loyalty to their lord. He drove vast flood-control works along the Kamanashi River, earthen embankments still holding back water four centuries later, wrote one of the era's most detailed law codes, and settled disputes personally. The mountain, in this sense, was not stone. It was trust — and trust, once broken, was far harder to rebuild than any wall.",
+      "image_prompt": "Takeda Shingen walking atop a long earthen flood-control embankment beside a wide braided river in Kai province, bamboo and young pines planted along the levee crest, local farmers working the rice fields below and bowing respectfully as he passes, mountains rising in the background, his crimson fur-trimmed jinbaori visible amid the simple rural setting, warm late-afternoon light.",
+      "ken_burns": "pan_left",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 62,
+      "narration": "Word of the banner spread across Japan faster than any army could march. To a rival warlord watching four bold ink marks rise over an approaching force, the message was unmistakable — this enemy did not fight by instinct, but by a code precise enough to anticipate every move. One such rival, a formidable lord from the north, would come to know this banner better than any other commander alive. Their armies would meet again and again across a single contested plain, neither willing to retreat, each testing whether Fūrinkazan could truly answer an equally brilliant opponent.",
+      "image_prompt": "A rival warlord seen from behind and slightly to the side on horseback, white Buddhist hood and robes worn over black lacquered armor, staring across a misty river plain at an approaching army bearing a dark war banner marked with bold black calligraphy, his face largely hidden from the viewer, tense standoff atmosphere, dramatic storm clouds gathering overhead, distant mountains framing the scene.",
+      "ken_burns": "zoom_in",
+      "character_ref": "kenshin",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.23
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 75,
+      "narration": "In 1561, on the plain of Kawanakajima, the two armies collided in the bloodiest of their five encounters. Shingen's plan was pure Fūrinkazan: split the army, send twelve thousand men to sweep the enemy off a mountain at first light, and catch them on the open plain with the waiting main force. But his rival read the trap before it closed. Studying the cooking smoke rising from a Takeda castle, he counted the fires, guessed the split, and took his entire army down the mountain in darkness to strike first. Wind had been answered by wind. At dawn, it was Shingen's own eight thousand who found themselves absorbing the assault.",
+      "image_prompt": "Dawn on a mist-covered riverside plain, a large enemy army in dark armor surging out of the fog in a rolling wheel-shaped charge and slamming into a thinly stretched Takeda formation caught mid-deployment, Takeda bishi diamond-crest banners tilting under the impact, shock and disarray among the defenders, flat grey morning light.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 76,
+      "narration": "What followed was the mountain tested to its limit. Shingen's younger brother was killed. His chief strategist was killed. The chronicles say enemy riders broke through to the command post itself, and that Shingen turned the blows aside with the iron war fan in his hand — and did not move. He held. He held long enough for the twelve thousand to come down off an empty mountain, find the battle raging behind them, and crash into the enemy's rear. That was the fire. By the time the mist lifted, neither side could claim a clean victory — but the mountain had not broken, and every soldier on that field knew it.",
+      "image_prompt": "Takeda Shingen seated immovable on a camp stool at his command post amid swirling battle, raising a solid lacquered war fan to deflect a sword blow from a mounted enemy warrior lunging down at him, bodyguards falling around him, smoke and mist, a dark war banner marked with bold black calligraphy standing upright behind his seat.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 66,
+      "narration": "Kawanakajima settled nothing permanently — the two rivals would face each other across that same plain for years to come, neither able to deliver a final, decisive blow. But something else had been settled. Fūrinkazan was no longer a philosophy confined to scrolls and banners. It had been tested in the chaos of real combat, against an opponent as capable as any in the country, and it had held. Shingen's reputation hardened from that of a formidable regional lord into something closer to legend — a commander whose mind itself had become his most dangerous weapon.",
+      "image_prompt": "Aftermath of battle at dusk on a riverside plain, Takeda soldiers regrouping and tending to the wounded, Shingen standing solemnly surveying the battlefield in dark lacquered armor and crimson fur-trimmed jinbaori, war fan lowered, banners still standing amid the haze.",
+      "ken_burns": "pan_right",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 65,
+      "narration": "In the years that followed, the Fūrinkazan banner became inseparable from the Takeda name itself. Soldiers spoke of serving under the four words rather than under any single lord. Neighboring domains adjusted their own strategies simply around the expectation of facing it. Shingen continued expanding his territory, applying the same code to campaign after campaign — swift marches through mountain passes, patient sieges that broke enemy morale before a single wall fell, and sudden, merciless strikes when hesitation would have cost everything. The four-word code that began as borrowed poetry had become the operating principle of an entire province.",
+      "image_prompt": "A long column of Takeda soldiers marching through a misty mountain pass, dark war banner marked with bold black calligraphy and Takeda bishi crest banners visible throughout the procession, Shingen riding on horseback near the front in crimson fur-trimmed jinbaori.",
+      "ken_burns": "pan_left",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 72,
+      "narration": "Yet even a mountain, Shingen knew, does not stand forever. In his final years, he set his sights on a campaign toward the capital itself — an ambition that, if completed, might have reshaped the entire country's future. Illness, not the battlefield, ultimately interrupted that march. Command passed to his son Katsuyori — a capable commander who had fought at his father's side, but who inherited the code without the decades of judgment behind it. The four words did not die with him. But without the mind that had turned each phrase into precise action, the code alone was no longer quite the same weapon.",
+      "image_prompt": "Takeda Shingen, aged and visibly weary, seated in a war camp tent at night studying a campaign map by lamplight, his crimson fur-trimmed jinbaori draped loosely over his shoulders, expression of quiet determination mixed with fatigue.",
+      "ken_burns": "zoom_out",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.34
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 62,
+      "narration": "Strip away the battle standard, and what remains is something closer to a philosophy of command than a set of military tactics. Fūrinkazan demanded that a leader master contradiction — be fast and patient, gentle and ruthless, flexible and unshakeable, all depending entirely on the moment the situation demanded. Shingen's genius was not inventing these qualities. Sun Tzu had written them centuries before, half a world away. His genius was refusing to treat them as abstract wisdom, and instead building an entire province, army, and legal code around living them in practice, every single day.",
+      "image_prompt": "Tight side-profile shot of Takeda Shingen's face lit from one side only, half in deep shadow and half in warm light, eyes closed in concentration, the blurred edge of a dark war banner marked with bold black calligraphy at the far edge of frame, deliberate visual tension between light and dark.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.58
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Nearly five centuries later, those four words have outlived every castle Shingen's rivals ever built. Japanese sports teams still invoke Fūrinkazan before championship matches. Business leaders cite it in leadership seminars. The phrase appears in novels, games, and films far beyond Japan's borders — usually with little mention of the warlord who first proved it could actually work. Few philosophies borrowed from a two-thousand-year-old foreign text have ever been tested this thoroughly, or survived this completely intact. Shingen never claimed originality. He claimed only that he understood something others had merely read.",
+      "image_prompt": "A weathered, ancient battle standard displayed in soft museum-like lighting, its cloth marked with only four large bold black Japanese kanji characters arranged vertically in a single column down the center (must exactly match the phrase Fūrinkazan: 風林火山, and absolutely no other text, labels, captions, or additional characters anywhere in the image), Takeda Shingen's silhouette barely visible and heavily obscured in deep background shadow, symbolizing the passage of centuries and enduring legacy.",
+      "ken_burns": "static",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.44
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "Perhaps that is the real lesson hidden inside four simple words. Wind without mountain is chaos — energy with no anchor. Mountain without wind is stagnation — strength that never moves. Shingen's genius, and his banner's enduring power, lay in refusing to choose only one virtue. He held all four in constant tension, switching between them with a discipline few rulers before or since have matched. In a country built from a thousand shattered ambitions, one warlord had found something sturdier than any wall: a way of thinking that could bend without ever truly breaking.",
+      "image_prompt": "Symbolic wide shot with no figures present: a single ancient pine on an exposed rock ridge, half its branches whipped sideways by a gale while its trunk and roots grip the immovable stone, torn storm clouds racing past on one side and still clear evening light on the other, a dark war banner marked with bold black calligraphy planted at the base of the tree.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 67,
+      "narration": "Takeda Shingen never conquered the capital. He never lived to see whether his four-word code could have reshaped the entire nation. But the philosophy outlived the ambition — studied, quoted, and tested long after the mountains of Kai stopped echoing with his army's march. Four borrowed words, painted onto cloth by a warlord who refused to separate thought from action, still ask the same question they asked five centuries ago: are you moving like the moment demands, or only the way you always have? If that question still unsettles you, there are more like it waiting in the episodes ahead.",
+      "image_prompt": "Takeda Shingen silhouetted against a setting sun over the mountains of Kai, his dark war banner marked with bold black calligraphy planted beside him, a contemplative, legendary atmosphere marking the end of an era.",
+      "ken_burns": "zoom_out",
+      "character_ref": "shingen",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.32
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep054-BGM.mp3",
+    "main": "BGM/ep083-BGM-main.mp3",
+    "outro": "BGM/ep055-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/Cb9JDFpvtJM",
+  "shorts_url": "https://youtu.be/7JwbZ-xwnxA",
+  "scheduled_at": "2026-10-06 03:00"
+}
