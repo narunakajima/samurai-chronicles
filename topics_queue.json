@@ -1060,14 +1060,14 @@
     },
     {
       "episode_id": "ep103",
-      "status": "in_production",
+      "status": "published",
       "title": "The Christian Warlord Whose Faith Cost Him Everything: Otomo Sorin's Rise and Fall",
       "era": "Sengoku",
       "priority": "A",
       "person": "otomo_sorin",
       "angle": "overview",
       "notes": "Kyushu Christian daimyo, rise and defeat at Mimikawa. First appearance.",
-      "last_updated": "2026-09-06"
+      "last_updated": "2026-09-27"
     },
     {
       "episode_id": "ep105",

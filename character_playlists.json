@@ -1032,5 +1032,15 @@
         "video_id": "tPTFDRktp-E"
       }
     ]
+  },
+  "otomo_sorin": {
+    "display_name": "Otomo Sorin",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep103",
+        "video_id": "j5HvzIrteVQ"
+      }
+    ]
   }
 }
