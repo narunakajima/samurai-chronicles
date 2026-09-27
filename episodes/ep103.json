@@ -1,0 +1,278 @@
+{
+  "episode_id": "ep103",
+  "episode_title": "The Christian Warlord Whose Faith Cost Him Everything: Otomo Sorin's Rise and Fall",
+  "youtube_title": "The Christian Warlord Whose Faith Cost Him Everything: Otomo Sorin's Rise and Fall",
+  "youtube_description": "He built one of Sengoku Japan's largest domains through trade, diplomacy, and sheer nerve — then converted to Christianity and marched to war under its banner. Months after his baptism, Otomo Sorin's army was destroyed at the Mimikawa River, and the empire he spent thirty years building began to collapse. This is the story of a warlord caught between faith and power, and what it cost him to choose.\n\n⏱️ Chapters:\n0:00 Introduction\n0:27 He built an empire spanning six\n0:47 Japan, the mid-1500s. As the...\n1:45 Sorin's rule did not begin with\n2:43 Sorin had met the Jesuits years\n3:44 His own wife despised the...\n4:36 By the 1570s, Otomo Sorin stood\n5:32 Yet ambition and devotion...\n6:32 Emboldened by his new faith,...\n7:28 The Shimazu clan of Satsuma had\n8:25 In November 1578, the two armies\n9:21 The defeat at Mimikawa was...\n10:18 In the months after Mimikawa,...\n11:06 Stripped of nearly...\n11:59 Before Hideyoshi's massive...\n12:54 Sorin did not long outlive his\n13:42 The Christian communities...\n14:47 Historians still argue over...\n15:40 Sorin's story sits uneasily...\n16:33 Six provinces built through...\n17:26 Otomo Sorin died believing he...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. George Elison, \"Christianity and the Daimyo,\" in The Cambridge History of Japan, Vol. 4 (Cambridge University Press)\n2. Michael Cooper, Rodrigues the Interpreter: An Early Jesuit in Japan and China (Weatherhill)\n3. Stephen Turnbull, The Samurai: A Military History (Routledge)\n\n\n🎵 Music: sad movie.mp3 by klavo1985 (freesound.org) — CC BY 4.0\n#OtomoSorin #SengokuJapan #SamuraiHistory #JapaneseHistory #Kyushu #BattleOfMimikawa #ChristianDaimyo #Samurai",
+  "youtube_tags": [
+    "Otomo Sorin",
+    "Sengoku period",
+    "Samurai history",
+    "Japanese history",
+    "Kyushu",
+    "Battle of Mimikawa",
+    "Christian daimyo",
+    "Shimazu clan",
+    "Sengoku warlord",
+    "feudal Japan",
+    "Nanban trade",
+    "Japanese warlord documentary"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "By the Mimikawa River, an army marching under a Christian banner collapses in minutes — thousands drowned, an empire of six provinces broken in one afternoon. Its lord had been baptized weeks before. What kind of faith drives a ruler to lose everything at once?",
+  "shorts_narration": "Six provinces. One new Christian daimyo. Weeks after his baptism, Otomo Sorin lost thousands at the Mimikawa River in a single afternoon. Was his faith devotion — or his downfall?",
+  "shorts_hook_lines": [
+    "SIX PROVINCES.",
+    "LOST IN ONE DAY.",
+    "WAS FAITH HIS UNDOING?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Otomo Sorin's face, a weathered Japanese daimyo in his late 40s with a completely shaven head (Buddhist tonsure taken in 1562, kept even after his Christian baptism — NOT a topknot or chonmage), dark mustache and beard, eyes staring directly into camera with a mixture of conviction and quiet anguish. A small silver cross pendant catches dim candlelight at his throat, visible above the collar of dark armor. Dramatic single-source lighting from below casting deep shadows across the shaven scalp and one side of his face, stormy dark background suggesting an unseen battlefield. Vertical portrait composition.",
+  "thumbnail_prompt": "Dramatic close-up portrait of Otomo Sorin, Christian daimyo of Bungo, completely shaven head (he took Buddhist tonsure in 1562 and remained a shaven lay monk even after his Christian conversion — NOT a topknot or chonmage), full dark mustache and beard, standing in dark Sengoku-period lacquered armor bearing the Otomo clan crest, a small silver cross pendant visible at his throat against the shaven scalp, one hand resting on the hilt of a sword, expression torn between resolve and doubt, storm clouds and the suggestion of a distant river battle in the smoky background, intense side lighting, cinematic BBC documentary style composition.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 12,
+      "narration": "He built an empire spanning six provinces. Then he burned Buddhist temples for a foreign God — and lost everything at a river called Mimikawa. What does it cost a warlord to trade power for faith?",
+      "image_prompt": "Dramatic dawn shot at the Mimikawa riverbank, Otomo Sorin standing alone amid drifting mist in dark Sengoku lacquered armor, his head shaven in the Buddhist tonsure, a small cross pendant catching faint light at his throat, distant smoke rising from a battlefield behind him, torn banners scattered on the ground, his expression caught between grief and unshaken conviction.",
+      "ken_burns": "zoom_in",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 63,
+      "narration": "Japan, the mid-1500s. As the shogunate crumbles and rival lords tear the country apart, one young ruler on the southern island of Kyushu builds something rare — an empire spanning six provinces, built not on conquest alone, but on foreign trade. His name is Otomo Sorin, lord of Bungo. Portuguese ships dock at his harbor town of Funai, unloading silk, muskets, and merchants eager for silver. But among the sailors and traders arrives something Sorin never expected to want: Catholic missionaries, carrying a message that will reshape not just his court, but his own soul.",
+      "image_prompt": "Wide establishing shot of the bustling Portuguese trading port of Funai at dawn, tall-masted carracks anchored in the harbor, merchants and Jesuit missionaries in black robes moving among market stalls, Otomo Sorin observing from a raised veranda above the port in formal indigo silk robes, taking in the foreign ships with calculating interest.",
+      "ken_burns": "pan_right",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.74,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 66,
+      "narration": "Sorin's rule did not begin with inheritance freely given. In 1550, his father favored a younger son as heir, and Sorin's retainers moved first — a bloody palace coup that left rivals dead and placed the twenty-year-old at the head of the Otomo house. He inherited not just a domain, but its debts of loyalty. To hold Kyushu's most fractious lords in line, he needed alliances stronger than mere bloodline. Trade with the Portuguese offered muskets and wealth no rival could match. But the missionaries who came with those ships asked for something he had never yet given anyone completely: his belief.",
+      "image_prompt": "Interior of a torch-lit residential hall the night of a sudden coup, armed retainers in dark armor moving purposefully past fallen rivals, a young Otomo Sorin in his twenties standing resolute in formal robes with a short sword at his hip, stern and composed amid the chaos around him.",
+      "ken_burns": "static",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.53,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 64,
+      "narration": "Sorin had met the Jesuits years before through Francis Xavier himself, the missionary who first carried Christianity to Japanese shores. He welcomed the priests not out of piety, but calculation — European trade followed European priests, and Sorin wanted both. Yet something in their teaching lingered. Confucian order prized hierarchy; Buddhist doctrine prized detachment. Christianity offered him something else entirely — a single, absolute truth, and a God who judged kings the same as peasants. For a warlord used to being obeyed without question, that idea was either dangerous, or exactly what his restless conscience needed.",
+      "image_prompt": "Otomo Sorin, dressed in rich formal robes, seated across from a Jesuit priest in a black cassock inside a modest reception hall, a wooden crucifix and rolled scrolls resting on a low table between them. This scene takes place decades before his conversion — Sorin is UNCONVERTED and NOT yet baptized: he wears a standard Sengoku-period chonmage topknot with shaved forehead (sakayaki), NOT a shaved head, and wears NO cross or crucifix pendant of his own (the crucifix belongs to the priest and rests on the table, not on Sorin's body). Sorin listening intently with a thoughtful, searching expression, soft window light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 67,
+      "narration": "His own wife despised the foreign religion, and for years Sorin kept his fascination private, wary of alienating the Buddhist clergy who legitimized his rule. But as Portuguese ships kept arriving and Jesuit letters home described a lord uniquely receptive to their message, Sorin's court split quietly into factions — those who saw opportunity in the foreign faith, and those who saw betrayal of the old gods. Sorin himself stood between both, unconverted but unwilling to turn the priests away. It would take nearly three more decades, and the collapse of everything he had built, before he finally chose a side.",
+      "image_prompt": "Otomo Sorin standing alone in a quiet corridor of his residence at dusk, torn between two doorways — one leading toward a lit Buddhist altar room, the other toward Jesuit priests waiting with a small wooden cross in an adjoining chamber, his expression conflicted, dim lantern light emphasizing the divide.",
+      "ken_burns": "pan_left",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 67,
+      "narration": "By the 1570s, Otomo Sorin stood as the most powerful daimyo in Kyushu, his influence stretching across six provinces from Bungo to Chikuzen. Funai had grown into one of Japan's busiest international ports, its harbor lined with Portuguese carracks and its streets home to Japan's first Western-style hospital, founded there by the Jesuit brother Luis de Almeida under Sorin's patronage. Its wards treated the poor for free, and took in leprosy patients whom most of Japan turned away. To missionaries writing home to Rome, he was the great hope of Japanese Christianity: a mighty lord who might convert an entire nation, one province at a time.",
+      "image_prompt": "Elevated wide shot of Funai at its height, harbor crowded with Portuguese ships, a bustling street lined with a modest Western-style hospital building and a Jesuit mission house, Otomo Sorin walking through the prosperous streets in formal indigo silk robes, his head shaven in the Buddhist tonsure he took in 1562, greeted respectfully by merchants and townspeople, golden late-afternoon light.",
+      "ken_burns": "pan_right",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.49
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "Yet ambition and devotion pulled in different directions. Sorin dreamed of expanding further south into Hyuga province, driving out the rival Shimazu clan of Satsuma and building there a new capital — one imagined, in his most fevered vision, as a Christian city free of the temples and shrines he now saw as obstacles to his soul. In the summer of 1578, at forty-eight, he finally did what he had circled for nearly thirty years: he received baptism, taking the Christian name Don Francisco. His conversion was no quiet ceremony. It became the opening act of his final campaign.",
+      "image_prompt": "Solemn baptism ceremony inside a simple wooden chapel, Otomo Sorin kneeling in formal robes, his head shaven in the Buddhist tonsure, as a Jesuit priest pours water over his bowed head, a small silver cross now resting visible at his throat, candlelight, a handful of retainers watching from the shadows with uncertain expressions.",
+      "ken_burns": "zoom_in",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.59,
+        "y": 0.46
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 67,
+      "narration": "Emboldened by his new faith, Sorin marched an army into Hyuga to claim the province for both his empire and his God. Buddhist temples in the conquered territory were burned, their statues destroyed, in acts his own commanders privately called reckless provocation rather than righteous cleansing. Sorin himself did not lead the invading force from the front — illness, or perhaps caution, kept him behind at a fortress near the coast, directing the campaign through his generals. It was a decision that would haunt him, because the army marching without him was about to meet an enemy it had gravely underestimated.",
+      "image_prompt": "Otomo Sorin standing on the ramparts of a coastal fortress overlooking a distant marching column of his army heading south toward Hyuga, his head shaven in the Buddhist tonsure, his hand resting on the fortress wall, an anxious, watchful expression, smoke from a burning temple visible faintly on the horizon.",
+      "ken_burns": "static",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "The Shimazu clan of Satsuma had spent decades unifying southern Kyushu through disciplined, ruthless warfare, and they did not intend to surrender Hyuga without a fight. As the Otomo army pushed toward the Mimikawa River, Shimazu commanders read the invasion not as an unstoppable Christian crusade, but as an overextended force, far from its supply lines, weakened by the very religious fervor that was supposed to strengthen it. They prepared a trap along the riverbanks — a feigned retreat designed to draw the confident Otomo vanguard deep into unfamiliar ground, where numbers and momentum would count for nothing.",
+      "image_prompt": "Shimazu commanders in dark lacquered armor conferring around a terrain map spread on the ground near the reed-lined banks of the Mimikawa River at dusk, pointing toward river crossings, their faces sharp and calculating, scouts crouched nearby watching a distant approaching army's dust cloud.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 66,
+      "narration": "In November 1578, the two armies collided at the Mimikawa River. True to the trap, the Shimazu vanguard broke and fled, and Otomo forces surged forward in pursuit, certain the battle was already won. It was exactly the mistake Satsuma's commanders had gambled on. Hidden reserves closed from both flanks, and the retreating soldiers turned back to fight. Within hours, an army that had marched south under the banner of an unstoppable new faith was surrounded, its formations broken, its escape routes cut by the rising river at its back. What followed was less a battle than a slaughter.",
+      "image_prompt": "Chaotic river battle at the Mimikawa, Otomo samurai in pursuit of a fleeing Shimazu vanguard suddenly finding themselves surrounded as hidden reserves close in from both flanks, dust and spray rising from the shallow river, banners falling, desperate hand-to-hand combat, harsh midday light.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 68,
+      "narration": "The defeat at Mimikawa was catastrophic beyond anything Sorin's domain had suffered. Thousands of Otomo soldiers died in the retreat, drowned in the river or cut down as they fled, and several of his most capable generals fell alongside them. Word of the disaster spread across Kyushu within days, and lords who had bent to Otomo strength for a generation suddenly sensed weakness. Sorin, waiting at his coastal fortress, received the news not as a distant lord but as a father learning his family had been destroyed while he stood at a safe remove. His empire had broken in a single afternoon.",
+      "image_prompt": "Otomo Sorin standing rigid on the same fortress rampart as a breathless messenger kneels before him delivering grim news, his head shaven in the Buddhist tonsure, his face draining of color, the distant horizon streaked with smoke from the direction of the Mimikawa River, his hand gripping the stone wall for support.",
+      "ken_burns": "zoom_out",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 66,
+      "narration": "In the months after Mimikawa, the empire Sorin had spent thirty years building unraveled with terrifying speed. Vassal lords across Chikuzen, Chikugo, and Higo renounced their allegiance one by one, some switching to the very Shimazu forces that had crushed him. His own retainers, many still resentful of the burned temples, whispered that the God of the foreigners had punished their lord's arrogance. Sorin, the man who had once commanded six provinces, watched his territory shrink to little more than his home province of Bungo — besieged from every direction, his faith now blamed by name for his ruin.",
+      "image_prompt": "Otomo Sorin standing alone in a great hall stripped increasingly bare, his head shaven in the Buddhist tonsure, empty seats where loyal vassals once sat, a large painted domain map hanging on the wall with territories struck through by bold brush strokes, no lettering or written characters anywhere in the image, his formal robes slightly disheveled, an expression of mounting despair.",
+      "ken_burns": "zoom_out",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 61,
+      "narration": "Stripped of nearly everything, Sorin made a final, desperate choice: in 1586 he traveled all the way to Osaka to beg for help from Japan's rising unifier, Toyotomi Hideyoshi, kneeling before a rival lord to save what remained of his house. It was an extraordinary reversal for a man who had once ruled unchallenged across six provinces. Hideyoshi agreed to intervene, launching a campaign into Kyushu that would eventually force the Shimazu to submit. But Sorin would outlive that victory by barely two weeks, and he would never rebuild the empire faith and war had both cost him.",
+      "image_prompt": "Otomo Sorin kneeling humbly on a tatami floor before a richly armored warlord seated on a raised dais in an ornate reception hall, formal supplicant posture, his shaven tonsured head bowed low, hands pressed to the floor, the seated lord's expression watchful and measured, tense formal atmosphere.",
+      "ken_burns": "static",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.58
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 61,
+      "narration": "Before Hideyoshi's massive army could arrive, the Shimazu pressed their advantage, invading Bungo itself and laying siege to Sorin's remaining strongholds. For months, the aging lord watched enemy forces burn the towns and harbors he had spent a lifetime building into Kyushu's gateway to the wider world. Relief finally came in the spring of 1587, when Hideyoshi's overwhelming force swept south and forced the Shimazu into submission by the start of summer. Sorin's domain survived, technically intact — but as a fraction of the empire he once commanded, and entirely at the mercy of another man's army.",
+      "image_prompt": "Otomo Sorin standing atop a fortress wall watching distant fires consume the harbor town below, Shimazu banners visible advancing among the burning buildings, smoke filling the sky, his expression hollow and exhausted, weathered armor, a shaven tonsured head and a greying beard marking the passage of hard years.",
+      "ken_burns": "pan_left",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.43
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 61,
+      "narration": "Sorin did not long outlive his rescue. Weakened by age and years of strain, he died in the summer of 1587, barely two weeks after the Shimazu surrender secured what remained of his lands. He died a Christian, attended by the priests he had once welcomed for trade and come to trust for something far deeper. His son and heir, Yoshimune, had grown distant from his father's faith and would abandon much of it after Sorin's death, leaving the great Christian experiment of Bungo without the one man who had truly believed in it.",
+      "image_prompt": "Otomo Sorin lying frail in a dim private chamber, his shaven tonsured head resting on a pillow, a Jesuit priest kneeling at his bedside in quiet prayer, a small wooden cross resting on the coverlet near his hand, soft candlelight, a distant window showing calm harbor waters beyond, peaceful yet somber atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 59,
+      "narration": "The Christian communities Sorin had nurtured did not vanish with him, but their protection did. Within weeks of his death, Hideyoshi — the very man who had just saved his house — issued an edict ordering the missionaries out of Japan, having come to see Christianity as a foreign threat to his own authority. The faith Sorin died defending would be driven underground within a generation. The port he built at Funai, once crowded with Portuguese ships and Jesuit scholars, faded as Japan's rulers turned the country inward. What Sorin had risked his empire to build lasted only slightly longer than the man himself.",
+      "image_prompt": "Wide symbolic shot of the once-thriving port of Funai now quiet and sparse, a few remaining Portuguese-style trade goods and a faded wooden cross left in an abandoned chapel doorway, overgrown paths, soft fading evening light suggesting years passing, no figures present.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 67,
+      "narration": "Historians still argue over what truly drove Otomo Sorin. Some see a cynical strategist who used Christianity as a diplomatic tool, and wrapped a genuine conversion around it only late in life. Others see a man of real conviction whose worst military decision — invading Hyuga in his new faith's name — was also his most sincere. Both readings may be true at once. Sorin spent decades treating belief as a resource to manage, then discovered, too late, that faith does not stay contained to negotiation and trade. It changes the man carrying it, whether he intended that or not.",
+      "image_prompt": "Extreme close-up on Otomo Sorin's aged, weathered face lit from one side, his head shaven in the Buddhist tonsure, eyes distant and reflective, the faint silhouette of a small cross pendant visible at his collar, deliberate contrast between light and shadow across his features, contemplative mood.",
+      "ken_burns": "zoom_in",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.53
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 65,
+      "narration": "Sorin's story sits uneasily beside the era's more familiar legends — warlords remembered chiefly for conquest, cunning, or survival. He built one of Kyushu's great fortunes through calculated pragmatism, then very nearly destroyed it chasing a conviction that pragmatism could not fully explain. In an age when most lords treated religion as one more tool of statecraft, Sorin became the rare case where the tool turned in his hand, reshaping the very ambitions it was meant to serve. His empire's collapse at Mimikawa remains one of Sengoku Japan's sharpest lessons in what unexamined certainty can cost a ruler.",
+      "image_prompt": "Symbolic wide shot with no figures present: a Sengoku-era domain map spread across a low table, half its provinces marked with a small Buddhist temple symbol and half with a small cross, no lettering, labels or written characters anywhere in the image, candlelight flickering across the parchment, a war fan resting unused beside it.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 56,
+      "narration": "Six provinces built through decades of careful diplomacy, alliances, and foreign trade. Gone in the space of one afternoon by a river most Japanese had never even heard of before 1578. Otomo Sorin's rise proved that a warlord could out-trade and out-maneuver every rival on Kyushu. His fall proved that even the most calculating ruler could be undone by the one force he never fully learned to calculate: his own belief. Both truths belonged to the same restless man, inseparable to the very end.",
+      "image_prompt": "Symbolic wide shot of the Mimikawa River winding peacefully through a green valley at dusk, utterly still and empty of any trace of battle, distant mountains fading into mist, a lone weathered banner post standing empty on the riverbank, no figures present.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 55,
+      "narration": "Otomo Sorin died believing he had chosen rightly, even as the empire that faith helped cost him crumbled around him in his final years. Today, little remains of the Christian city he once imagined rising from Bungo's harbor — only scattered records, quiet ruins, and the question of whether his gamble was folly or genuine faith. History still has not fully settled which. If you want to keep weighing evidence like this for yourself, you already know where to find more of it.",
+      "image_prompt": "Otomo Sorin's silhouette standing at the edge of a quiet harbor at dusk, the clean shaven-headed profile of a tonsured lay monk unmistakable against the sky, the small cross at his throat catching the last light of sunset, calm waters stretching before him, faint outlines of ships long since gone, a contemplative and legendary closing atmosphere.",
+      "ken_burns": "zoom_out",
+      "character_ref": "otomo_sorin",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.3
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep103-BGM-intro.mp3",
+    "main": "BGM/ep024-BGM.mp3",
+    "outro": "BGM/ep103-BGM-outro.mp3"
+  }
+}

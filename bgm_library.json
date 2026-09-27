@@ -165,7 +165,8 @@
       "ep058",
       "ep065",
       "ep076",
-      "ep096"
+      "ep096",
+      "ep103"
     ]
   },
   {
@@ -1199,6 +1200,34 @@
     ],
     "used_in": [
       "ep101"
+    ]
+  },
+  {
+    "id": "ep103-BGM-intro",
+    "path": "BGM/ep103-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep103"
+    ]
+  },
+  {
+    "id": "ep103-BGM-outro",
+    "path": "BGM/ep103-BGM-outro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: sad movie.mp3 by klavo1985 (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep103"
     ]
   }
 ]

@@ -1060,7 +1060,7 @@
     },
     {
       "episode_id": "ep103",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Christian Warlord Whose Faith Cost Him Everything: Otomo Sorin's Rise and Fall",
       "era": "Sengoku",
       "priority": "A",
@@ -1206,6 +1206,6 @@
       "last_updated": "2026-09-06"
     }
   ],
-  "last_updated": "2026-09-15",
+  "last_updated": "2026-09-16",
   "total_topics": 110
 }
