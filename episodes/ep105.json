@@ -1,0 +1,275 @@
+{
+  "episode_id": "ep105",
+  "episode_title": "The Shogun Who Refused to Choose — And Watched Kyoto Burn for 10 Years",
+  "youtube_title": "The Shogun Who Refused to Choose — And Watched Kyoto Burn for 10 Years",
+  "youtube_description": "He caused a war that burned Japan's capital for a decade — then walked away to build a garden. Ashikaga Yoshimasa, the eighth Ashikaga shogun, let one unresolved succession dispute spiral into the Onin War, and spent the rest of his life creating some of Japan's most enduring art instead of cleaning up the wreckage.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 One man's indecision burned...\n0:45 Ashikaga Yoshimasa became...\n1:36 In 1455, Yoshimasa married...\n2:28 By 1461, famine and flood had\n3:26 With no surviving son after...\n4:19 Barely a year after Yoshimasa...\n5:17 Any decisive ruler faced an...\n6:17 The paralysis at the top spread\n7:12 In the first month of 1467,\n8:21 The fighting that both sides...\n9:20 As the fighting ground on around\n10:24 In 1473, within months of each\n11:20 Retirement changed nothing...\n12:17 By 1477, both sides were simply\n13:16 The numbers told their own...\n14:20 In 1482, with the country still\n15:19 At the heart of the new\n16:25 Within the walls of his...\n17:31 Yoshimasa died in 1490, at...\n18:28 Historians still argue over...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. H. Paul Varley, The Onin War: History of Its Origins and Background (Columbia University Press)\n2. Mary Elizabeth Berry, The Culture of Civil War in Kyoto (University of California Press)\n3. Donald Keene, Yoshimasa and the Silver Pavilion: The Creation of the Soul of Japan (Columbia University Press)\n\n\n🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0\n#AshikagaYoshimasa #OninWar #MuromachiPeriod #SamuraiHistory #JapaneseHistory #GinkakuJi #SilverPavilion #SengokuPeriod #JapaneseShogun #KyotoHistory",
+  "youtube_tags": [
+    "Ashikaga Yoshimasa",
+    "Onin War",
+    "Muromachi period",
+    "Samurai history",
+    "Japanese history",
+    "Silver Pavilion",
+    "Ginkakuji",
+    "Hino Tomiko",
+    "Sengoku period origins",
+    "Japanese shogun",
+    "Kyoto history",
+    "Japanese warlord documentary"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "teaser_narration": "1473. Two warlords who dragged Kyoto into a decade of civil war are suddenly dead — and the fighting doesn't stop. That same year, the shogun who caused it all hands his throne to his son and walks away. But who was this man?",
+  "shorts_narration": "1473. Two rival warlords who burned half of Kyoto both died within months — and the war didn't end. That same year, Ashikaga Yoshimasa simply walked away from the throne. Why?",
+  "shorts_hook_lines": [
+    "TWO WARLORDS.",
+    "BOTH DIED IN 1473.",
+    "WHY DID HE WALK AWAY?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Ashikaga Yoshimasa's face, a Japanese shogun in his mid-30s, oval face with delicate, refined features, standard Muromachi-period sakayaki shaved forehead and a chonmage topknot that is neatly folded flat and doubled back against the crown of the head in the traditional style — not an upright brush-like or ponytail-like tuft, dark eyes staring directly into the camera with a mixture of exhaustion and quiet detachment, faint orange glow of a burning city reflected in his eyes and across one side of his face, deep shadow across the other side, dramatic single-source lighting, vertical portrait composition, no modern or European elements.",
+  "thumbnail_prompt": "Dramatic portrait of Ashikaga Yoshimasa, a Japanese Muromachi-period shogun in his mid-30s, oval face with refined, melancholy features, standard sakayaki shaved forehead and chonmage topknot, wearing fine deep-indigo Muromachi-period hitatare robes marked with the Ashikaga two-bar clan crest, seated calmly with a tea bowl held in both hands in the foreground, while behind him through a torn shoji screen the city of Kyoto burns under a smoke-filled sky, warm lantern light on his face contrasting with the cold orange glow of distant fire, cinematic BBC documentary style composition, dramatic side lighting.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 12,
+      "narration": "One man's indecision burned Kyoto to ash. He had every chance to prevent it — and chose art instead. So how did a shogun obsessed with beauty destroy his own capital?",
+      "image_prompt": "High, wide establishing shot looking down across a shogunal palace veranda: Ashikaga Yoshimasa kneels alone and small in the frame, cradling a delicate tea bowl in both hands, while the entire rooftop skyline of Kyoto burns below and beyond him under a smoke-choked orange sky. He wears fine deep-indigo Muromachi-period robes, sakayaki shaved forehead and chonmage topknot, his posture serene and strangely detached from the destruction filling the horizon. His chonmage topknot is a short tight loop bent sharply forward and pressed flat and horizontal against the crown of his shaved head — like a folded hairpin lying down, not an upright vertical tuft, ponytail, or brush standing up from the scalp.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.46
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 63,
+      "narration": "Ashikaga Yoshimasa became shogun at just thirteen, the eighth head of a dynasty already losing its grip on Japan. Real power lay elsewhere — with a council of powerful regional lords who had learned, over decades, that the shogun's word could be ignored. Yoshimasa grew up amid ritual and ceremony, trained in poetry, painting, and the tea ceremony rather than command. He would prove himself a gifted patron of the arts. Whether he could hold together a fracturing government was a very different question — one no one around him seemed eager to answer.",
+      "image_prompt": "A young Ashikaga Yoshimasa, thirteen years old and barely a teenager, kneeling in formal indigo robes marked with the Ashikaga clan crest — two black horizontal bars inside a circle (maru ni futatsu-biki) — at the center of a grand but half-empty ceremonial hall, receiving the shogunal sword of office from a row of solemn regional lords and court officials, the same two-bar crest repeated on the hanging cloth curtains behind the dais, standing screens painted with cranes, muted morning light through paper windows.",
+      "ken_burns": "pan_right",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 64,
+      "narration": "In 1455, Yoshimasa married Hino Tomiko, daughter of a court family skilled at working the levers of power he seemed content to ignore. Where he drifted toward gardens and paintings, she watched alliances, debts, and grain markets with a sharper eye than most of his ministers. Contemporaries whispered that she, not her husband, understood how the shogunate actually survived. For years the couple had no son, a gap that mattered more than affection in a house built entirely on succession. That absence would eventually become the single most dangerous fact about the Ashikaga shogunate.",
+      "image_prompt": "Hino Tomiko, an elegant young noblewoman in richly patterned formal robes, standing in a quiet courtyard reviewing ledger scrolls with a sharp, calculating expression, while in the background through an open doorway Ashikaga Yoshimasa can be glimpsed absorbed in arranging a display of imported paintings, unaware of her scrutiny.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 65,
+      "narration": "By 1461, famine and flood had emptied Kyoto's markets and filled its riverbanks with the dead — one contemporary account describes tens of thousands of bodies collected along the Kamo River in a single spring. Yet the shogun's household kept commissioning new gardens, new banquets, new imported paintings from China. Advisors begged him to divert funds toward relief; he answered by pressing on with a lavish renovation of his own palace instead. It was not the last time Yoshimasa would choose beauty over the suffering in front of him — but it was the moment his own court began openly questioning whether he cared to rule at all.",
+      "image_prompt": "Wide contrast composition: in the foreground, famine-stricken commoners huddle along the muddy banks of the Kamo River in ragged clothing; in the background across a canal, warm lantern light spills from a shogunal garden pavilion where Ashikaga Yoshimasa and courtiers in fine robes examine a newly delivered Chinese painting, oblivious to the riverbank below. All courtiers and attendants seated with Yoshimasa must have the same standard sakayaki shaved forehead and folded chonmage topknot as Yoshimasa himself — no attendant should have a full, unshaven head of hair.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.77,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 64,
+      "narration": "With no surviving son after nearly a decade of marriage, Yoshimasa made what he assumed was a simple decision. In 1464 he pulled his younger brother Yoshimi out of the monastery where he had lived since childhood, and named him heir to the shogunate. To secure the arrangement, he brought in the shogunate's most powerful deputy, Hosokawa Katsumoto, as Yoshimi's guarantor. It seemed a tidy solution to an awkward problem. Yoshimasa did not yet know that his wife was already pregnant — or that the child she was carrying would turn his tidy solution into a catastrophe.",
+      "image_prompt": "Ashikaga Yoshimasa in formal robes standing before his younger brother, a startled man in plain monk's grey robes with a shaved Buddhist tonsure, in a modest Buddhist temple courtyard (no torii gate or any Shinto shrine architecture — this is a Buddhist temple only), gesturing toward him with an air of tidy finality, while an armored retainer of Hosokawa Katsumoto waits nearby as witness. Yoshimasa's own chonmage topknot is a short, tight, closely-bound knot no more than a few centimeters tall, resting low and close against the back of his head — small and inconspicuous, not a tall loop, arch, or upright tuft.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 64,
+      "narration": "Barely a year after Yoshimasa named his brother heir, Hino Tomiko gave birth to a son: Yoshihisa. Now the shogunate had two heirs and no ruling. Later chroniclers told a simple story — that Tomiko went to the warlord Yamana Sozen and bought her infant a champion — but contemporary diaries say nothing of the kind, and modern historians doubt it. What is certain is that the court began splitting into camps around Yamana Sozen and Hosokawa Katsumoto, two men who had been allies and in-laws for years, and who now found in the succession a reason to test which of them the shogunate really answered to.",
+      "image_prompt": "Hino Tomiko, dressed in fine formal robes, seated in a palace reception hall with her newborn son cradled protectively in her arms, her expression watchful and resolved; beyond an open sliding door behind her, two separate groups of retainers in rival clan colors stand apart in the courtyard, pointedly not looking at one another.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 66,
+      "narration": "Any decisive ruler faced an obvious choice: confirm the promise already made to his brother, or formally replace him with his newborn son. Yoshimasa did neither. He avoided Hosokawa, avoided Yamana, avoided his own wife, and let the ambiguity stand while both factions quietly armed their retainers around the capital. Advisors who pressed him for a ruling came away with vague reassurances and no decision at all. His silence was not neutrality. Every week he refused to choose, more soldiers moved into Kyoto's temples and mansions, and both sides became more convinced that only weapons would settle what words had not.",
+      "image_prompt": "Ashikaga Yoshimasa alone in a dim study, formal robes slightly disheveled, surrounded by unread petitions and letters scattered across a low desk, his hand hovering uncertainly over a brush and inkstone, gazing toward a closed door rather than at the documents in front of him, torchlight casting long indecisive shadows.",
+      "ken_burns": "static",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 65,
+      "narration": "The paralysis at the top spread outward. Two other great houses, the Shiba and the Hatakeyama, were locked in their own succession quarrels, and their rival claimants folded neatly into the growing Hosokawa and Yamana camps. By the winter of 1466, Kyoto held two armies rather than one government — tens of thousands of warriors camped inside a city built for court ceremony, not siege warfare. Yoshimasa, still shogun in name, issued no orders capable of stopping either side. He had spent two years avoiding a single decision. The capital he ruled was about to pay for it in fire.",
+      "image_prompt": "Wide elevated view over nighttime Kyoto, two separate armed camps visible in different districts of the city, campfires and banners marking the Hosokawa and Yamana positions among the temple rooftops and mansion walls, tension palpable in the still, smoke-hazed air between them.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 66,
+      "narration": "In the first month of 1467, the standoff finally broke. Two rival Hatakeyama claimants fought a pitched battle in the grounds of a Kyoto shrine, with Yamana's men reinforcing one side. Yoshimasa forbade the other lords to intervene, and for a few uneasy months it held. Then, in the fifth month, Hosokawa's forces opened the fighting in earnest, and the containment collapsed into full civil war inside Japan's own capital. Contemporaries would call it the Onin War, after the era name proclaimed that spring. Ancient temples that had stood for centuries burned, their halls turned into fortified camps or reduced to ash by rival armies fighting block by block. No one — least of all Yoshimasa — had a plan to stop it.",
+      "image_prompt": "Chaotic street battle erupting between armored samurai forces at a narrow Kyoto crossroads, temple gates in the background already catching fire, banners bearing rival clan crests clashing amid overturned market stalls, dust and embers rising into a darkening sky.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 67,
+      "narration": "The fighting that both sides expected to end in weeks stretched into years. Kyoto's grid of avenues, home to the imperial court and centuries of accumulated art and scripture, became a patchwork of burned wards and fortified strongholds. Contemporary accounts describe most of the city reduced to ruin before the decade was out — libraries, shrines, and noble residences lost in fires no one could fully contain. Farmers fled the countryside as provincial lords abandoned their domains to fight in the capital, leaving local rivals to seize the vacuum. The war meant to settle one succession was now unmaking the entire country.",
+      "image_prompt": "Wide devastated view over Kyoto's burned wards at dusk, entire blocks reduced to blackened timber and ash, a handful of surviving temple roofs standing amid the ruin, distant columns of smoke still rising from multiple fires across the skyline, no figures present.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 68,
+      "narration": "As the fighting ground on around his own palace walls, Yoshimasa did something that stunned even his own retainers: he simply stopped attending to the war. He filled his days with imported Chinese paintings, incense games, and elaborate tea gatherings, collecting rare art with a single-mindedness he had never shown for government. Courtiers recorded him spending vast sums on ink paintings and ceramics while soldiers he technically commanded burned each other's positions barely a mile away. It was not despair driving him inward. It looked, to those who knew him, disturbingly like relief — as if the war had finally excused him from ever having to decide anything again.",
+      "image_prompt": "Ashikaga Yoshimasa seated in serene concentration at an elegant tea gathering inside a refined pavilion, carefully examining a prized ceramic tea bowl, lit only by a traditional Japanese paper andon lantern (no Western-style wax pillar candles or candlesticks anywhere in the frame), while through the open veranda behind him distant fires and smoke from the ongoing war glow faintly against the night sky, his expression untroubled and absorbed. This scene takes place years before his 1485 Buddhist tonsure: he still has the standard Muromachi-period sakayaki shaved forehead and a chonmage topknot, bent sharply forward and pressed flat against the crown of his head — he must NOT be depicted with a fully shaved bald monk's head in this scene.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.61,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 65,
+      "narration": "In 1473, within months of each other, the war's two architects died — Yamana Sozen in the spring, Hosokawa Katsumoto that summer. The men whose rivalry had burned half of Kyoto were gone, and the fighting continued anyway, now driven by grudges that had long since outlived its original cause. That same year, Yoshimasa did something almost absurd: he formally retired as shogun, handing the title to his eight-year-old son, Yoshihisa — the very child whose birth had ignited the whole catastrophe. The war he had refused to prevent now belonged, on paper, to someone else entirely.",
+      "image_prompt": "Ashikaga Yoshimasa standing in a formal hall, placing the shogunal sword of office into the hands of his small eight-year-old son, courtiers watching in muted disbelief; through a side window, distant funeral processions for two rival warlords can be faintly seen passing in the smoke-hazed street beyond. Yoshimasa's chonmage topknot is a short tight loop bent sharply forward and pressed flat and horizontal against the crown of his shaved head — like a folded hairpin lying down, not an upright vertical tuft, ponytail, or brush standing up from the scalp.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 65,
+      "narration": "Retirement changed nothing about the war burning around him. In 1476, fire finally consumed the Hana no Gosho, the 'Palace of Flowers' that had served the Ashikaga shoguns as their seat of power for nearly a century. Yoshimasa, technically no longer shogun, watched the palace he had lavishly rebuilt during the famine years reduced to embers alongside so much of the capital. He did not attempt to rebuild it. Instead, he had already quietly begun negotiations for a plot of land in the eastern hills of Kyoto — a modest, defensible retreat, far from palaces, far from armies, far from any more decisions.",
+      "image_prompt": "Ashikaga Yoshimasa standing amid a crowd of stunned onlookers, watching the great Hana no Gosho palace collapse in flames against the night sky, its lacquered gates and painted halls consumed by fire, his expression unreadable, formal robes lit by the harsh orange glow, shown mostly in profile with his head tilted slightly down so the crown of his head is not the focal point of the shot. His hair is pulled back into a small, tight, closely-bound topknot no more than a few centimeters tall, resting low and close against the back of his head — small and inconspicuous, absolutely not a tall loop, arch, handle, or upright tuft. No readable text, characters, or writing of any kind on any lantern, banner, or signage in the frame — depict them as plain blank paper lanterns.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.41
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 67,
+      "narration": "By 1477, both sides were simply exhausted. There had been no decisive battle, no surrender, no treaty settling who was right. Provincial lords who had spent a decade fighting in Kyoto packed up their remaining soldiers and went home — many finding their own domains already seized by ambitious deputies who had used the chaos to carve out power of their own. The Onin War ended not with victory, but with abandonment. Kyoto lay largely in ruins, and the authority that had once made the Ashikaga shoguns worth fighting over was gone, replaced by a country of warlords who answered to no one.",
+      "image_prompt": "Wide symbolic shot of exhausted armies dismantling their camps and filing out of a ruined Kyoto district at dawn, banners lowered and dragging, the scarred city stretching silent and empty behind them, weak grey morning light over the devastation, no clear victors visible.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 67,
+      "narration": "The numbers told their own story. A capital that had housed the emperor, the shogunate, and centuries of temples and archives now stood scarred by burned wards and abandoned lots. Regional lords who had once deferred to Kyoto discovered, during a decade of civil war, that they no longer needed to. Historians would later mark the Onin War as the true beginning of the Sengoku period — a full century of open warfare across Japan. Yoshimasa, the man whose indecision had lit the fuse, emerged from the wreckage remarkably undiminished. Freed of the shogun's title, he turned his full attention to the hillside plot he had already claimed.",
+      "image_prompt": "Ashikaga Yoshimasa standing alone on a scorched hillside overlooking the ruined sprawl of Kyoto below, formal robes now simple and unadorned, gazing instead toward a quiet wooded slope on the eastern hills where morning light falls untouched by smoke, a rolled architectural plan held loosely in one hand. No artist signature, no watermark, no logo, and no text of any kind anywhere in the frame.",
+      "ken_burns": "static",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.27
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 64,
+      "narration": "In 1482, with the country still recovering and his own treasury nearly empty, Yoshimasa began building anyway. He borrowed, taxed, and called in favors to fund a retirement villa in the Higashiyama hills, hiring the finest carpenters, garden designers, and tea masters he could summon. Courtiers who remembered the famine years and the burned capital were appalled at the expense. Yoshimasa seemed not to hear them. He had spent his entire reign failing to build political consensus. Now, finally free of the throne that had never suited him, he intended to build something that would actually last.",
+      "image_prompt": "Ashikaga Yoshimasa, still in lay dress with the standard Muromachi-period sakayaki shaved forehead and chonmage topknot, wearing plain unadorned grey-green robes, walking through an active hillside construction site, overseeing carpenters raising the timber frame of a modest two-story pavilion, garden designers arranging stones nearby, Higashiyama's wooded slopes rising behind.",
+      "ken_burns": "pan_right",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 67,
+      "narration": "At the heart of the new villa stood a modest two-story pavilion, set above a pond garden of moss, stone and pine modelled on the temple grounds of Saiho-ji. Later generations would call it Ginkaku-ji — the Silver Pavilion — though Yoshimasa never covered it in silver at all; whether by lack of funds or deliberate restraint, historians still debate. What he built instead became something more influential than gold or silver ever could be: an aesthetic of quiet imperfection, later called wabi-sabi, that prized a single flawed tea bowl over a room full of gaudy treasure. The shogun who could never resolve one succession dispute had, almost by accident, resolved something far larger about beauty itself.",
+      "image_prompt": "The two-story Higashiyama pavilion still under construction at dusk, bare scaffolding along one side, its unpainted dark timber facade catching the last warm light, standing above a still reflecting pond garden of moss, stone and pine modelled on the grounds of Saiho-ji, Ashikaga Yoshimasa, shaved-headed in simple monastic grey robes, seated quietly on a garden stone taking it in.",
+      "ken_burns": "zoom_in",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.6
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 67,
+      "narration": "Within the walls of his Higashiyama retreat, Yoshimasa gathered connoisseurs, garden designers, and Noh performers, and let them refine practices still recognizable today. Later tea masters would even claim Murata Juko as his personal instructor — a lineage historians now doubt, though it points at the right taste. The tea ceremony as a disciplined art, the dry rock garden as a form of meditation, the alcove display of a single scroll or flower — all trace some part of their modern shape to the circle Yoshimasa assembled while his own government lay in ruins. Japan calls this era Higashiyama culture, still one of the most influential aesthetic movements the country ever produced. Its patron had just spent thirty years failing at almost everything else.",
+      "image_prompt": "Inside a small tea room at the Higashiyama villa, Ashikaga Yoshimasa, shaved-headed and dressed in simple grey monastic robes, sits with several artists and connoisseurs arranging a single flower in an alcove and preparing tea with deliberate, quiet ritual, soft afternoon light through paper screens.",
+      "ken_burns": "pan_left",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 62,
+      "narration": "Yoshimasa died in 1490, at fifty-four, with his hillside pavilion still unfinished. He left behind two conflicting legacies that have never fully reconciled. As a ruler, he triggered a war that some historians count as the opening act of over a century of civil conflict across Japan. As a patron, he shaped the tea ceremony, garden design, and quiet aesthetics that the world still associates with Japan itself. Few figures in Japanese history did more damage to their own government, or left behind something so many people would come to love.",
+      "image_prompt": "Ashikaga Yoshimasa, elderly, shaved-headed, and dressed in plain monastic robes, resting on a simple futon in a quiet room of his Higashiyama villa, the still-unfinished two-story pavilion visible across the garden through an open doorway, its scaffolding and unpainted timber pale in the evening light, a single attendant kneeling nearby in quiet grief, soft fading light.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 53,
+      "narration": "Historians still argue over which Yoshimasa mattered more — the indecisive shogun who let his capital burn, or the reclusive patron who gave Japan one of its most enduring visions of beauty. Perhaps he was never really two men at all, just one who discovered, too late, which kind of legacy he was actually suited to leave. If his story has you wondering how many other quiet obsessions reshaped history from the sidelines, this channel has more of them waiting.",
+      "image_prompt": "Ashikaga Yoshimasa's shaved-headed silhouette, in simple monastic robes, seated alone on the veranda of his Higashiyama villa at dusk, looking out across the still, moonlit garden pond toward the dark silhouette of the two-story pavilion, calm and contemplative, the wooded Higashiyama hills fading into darkness behind him.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ashikaga_yoshimasa",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.52
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep078-BGM-intro.mp3",
+    "main": "BGM/ep009-BGM.mp3",
+    "outro": "BGM/ep067-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/9agyAVY6ixs",
+  "shorts_url": "https://youtu.be/S25yii8xDyM",
+  "scheduled_at": "2026-10-10 03:00"
+}

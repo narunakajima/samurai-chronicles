@@ -1071,14 +1071,14 @@
     },
     {
       "episode_id": "ep105",
-      "status": "pending",
+      "status": "published",
       "title": "The Shogun Who Escaped Into Art While Japan Burned: Ashikaga Yoshimasa and the War He Started",
       "era": "Muromachi",
       "priority": "B",
       "person": "ashikaga_yoshimasa",
       "angle": "character",
       "notes": "Era diversification — pending queue had become all-Sengoku. Indecisive shogun whose succession dispute triggered the Onin War; retreated into art and built the Silver Pavilion while the country fractured. Priority B: data-poor era, confirm early performance before adding more. → 2026-09-15: キュー健全性チェック（era連続）でpending先頭3件がSengoku連続だったため、ep104と順序を入れ替え前倒し。",
-      "last_updated": "2026-09-15"
+      "last_updated": "2026-09-27"
     },
     {
       "episode_id": "ep104",
@@ -1206,6 +1206,6 @@
       "last_updated": "2026-09-06"
     }
   ],
-  "last_updated": "2026-09-16",
+  "last_updated": "2026-09-27",
   "total_topics": 110
 }

@@ -1042,5 +1042,15 @@
         "video_id": "j5HvzIrteVQ"
       }
     ]
+  },
+  "ashikaga_yoshimasa": {
+    "display_name": "Ashikaga Yoshimasa",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep105",
+        "video_id": "9agyAVY6ixs"
+      }
+    ]
   }
 }
