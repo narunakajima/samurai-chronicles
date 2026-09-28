@@ -16,12 +16,15 @@ sc_tts_gen.py — Samurai Chronicles 英語ナレーション生成スクリプ�
 """
 
 import argparse
+import base64
 import io
 import json
 import os
 import re
 import sys
 import time
+import urllib.error
+import urllib.request
 import wave
 from pathlib import Path
 from google import genai
@@ -31,9 +34,18 @@ API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY"
 
 # 2026-09-28: gemini-3.1-flash-tts-preview → gemini-3.8-flash-tts（正式版）に移行。
 # 3.8は入力テキストを「読み上げ原稿そのもの」として扱うため、演技指導をテキスト先頭に
-# 付けると指示文まで読み上げられる。演技指導は Part.speech_metadata.style で渡す
-# （build_contents参照）。出力もヘッダー付きWAVになったが、RIFF判定で両対応済み。
+# 付けると指示文まで読み上げられる。演技指導は speech_metadata.style で渡す
+# （_tts_rest_call参照）。出力もヘッダー付きWAVになったが、RIFF判定で両対応済み。
+#
+# ⚠️ speech_metadata は2026-09-28時点のgoogle-genai最新版（PyPI 1.47.0）の
+# types.Part にまだ型定義されておらず、SDK経由で呼ぶとPydanticに拒否される
+# （実機検証で確認済み）。そのためTTS生成のみ生のREST APIを直接叩く
+# （_tts_rest_call）。QA用の音声読み込み（qa_narration_with_gemini）は
+# speech_metadataを使わないためSDKのままでよい。SDKがspeech_metadataに
+# 対応したら generate_take 内の _tts_rest_call 呼び出しを
+# client.models.generate_content に戻してよい。
 TTS_MODEL = "gemini-3.8-flash-tts"
+TTS_REST_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 QA_MODEL = "gemini-flash-latest"  # ナレーション音声が台本通りか判定する用（sc_image_gen.pyのQA_MODELと同じ考え方）
 VOICE_NAME = "Charon"   # 重厚・ドラマチックな男性英語ボイス
 TEMPERATURE = 1.0
@@ -179,15 +191,55 @@ def qa_narration_with_gemini(client, audio_data: bytes, script_text: str) -> dic
         return {"ok": False, "issues": [f"QA_ERROR: {e}"]}
 
 
-def build_contents(narration_text: str, scene_type: str = "") -> types.Content:
-    """ナレーション本文（読み上げ原稿）と、シーンタイプに応じたスタイル指示
-    （speech_metadata.style）を分けてリクエストを構築する。"""
+def style_for_scene(scene_type: str = "") -> str:
+    """シーンタイプに応じたスタイル指示（speech_metadata.style用）を返す。"""
     style = NARRATOR_STYLE
     if scene_type and scene_type in SCENE_TYPE_ADDENDUM:
         style = NARRATOR_STYLE + SCENE_TYPE_ADDENDUM[scene_type]
-    return types.Content(role="user", parts=[
-        types.Part(text=narration_text, speech_metadata=types.SpeechMetadata(style=style)),
-    ])
+    return style
+
+
+def _tts_rest_call(narration_text: str, style: str, voice_name: str = VOICE_NAME,
+                    temperature: float = TEMPERATURE) -> bytes:
+    """gemini-3.8-flash-tts を speech_metadata.style 付きで呼び出す（生REST）。
+    google-genai SDK（PyPI最新1.47.0時点）が speech_metadata を型定義しておらず
+    Pydanticに拒否されるための回避策（クラスコメント参照）。"""
+    url = TTS_REST_URL.format(model=TTS_MODEL, key=API_KEY)
+    body = {
+        "contents": [{
+            "role": "user",
+            "parts": [{
+                "text": narration_text,
+                "speech_metadata": {"style": style},
+            }],
+        }],
+        "generationConfig": {
+            "responseModalities": ["AUDIO"],
+            "speechConfig": {
+                "voiceConfig": {
+                    "prebuiltVoiceConfig": {"voiceName": voice_name}
+                }
+            },
+            "temperature": temperature,
+        },
+    }
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        data = json.loads(resp.read())
+    candidates = data.get("candidates") or []
+    if not candidates:
+        raise RuntimeError(f"レスポンスにcandidatesがありません: {data}")
+    parts = candidates[0].get("content", {}).get("parts") or []
+    for part in parts:
+        inline = part.get("inlineData")
+        if inline and inline.get("data"):
+            return base64.b64decode(inline["data"])
+    raise RuntimeError(f"レスポンスに音声データがありません: {data}")
 
 
 def generate_take(client, narration_text: str, max_retries: int = 5,
@@ -198,48 +250,27 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
     語数から推定した尺の DUP_RATIO_THRESHOLD 倍を超える音声が返った場合は
     「ナレーション繰り返し」の疑いとして再生成する。
     """
-    contents = build_contents(narration_text, scene_type)
+    style = style_for_scene(scene_type)
     word_count = len((dup_check_text or narration_text).split())
     max_dur = word_count / expected_wpm * 60 * DUP_RATIO_THRESHOLD
-    config = types.GenerateContentConfig(
-        response_modalities=["AUDIO"],
-        speech_config=types.SpeechConfig(
-            voice_config=types.VoiceConfig(
-                prebuilt_voice_config=types.PrebuiltVoiceConfig(
-                    voice_name=VOICE_NAME
-                )
-            )
-        ),
-        temperature=TEMPERATURE,
-    )
     last_audio_data = None
     last_fail_reason = ""
     for attempt in range(1, max_retries + 1):
         try:
-            response = client.models.generate_content(
-                model=TTS_MODEL,
-                contents=contents,
-                config=config,
-            )
-            candidate = response.candidates[0] if response.candidates else None
-            parts = candidate.content.parts if (candidate and candidate.content) else None
-            if parts:
-                for part in parts:
-                    if part.inline_data is not None:
-                        audio_data = part.inline_data.data
-                        actual_dur = audio_duration_sec(audio_data)
-                        if actual_dur > max_dur:
-                            print(f"  ⚠️ 繰り返しの疑い（{actual_dur:.1f}s > 想定上限{max_dur:.1f}s） ", end="", flush=True)
-                            last_audio_data = audio_data
-                            last_fail_reason = f"繰り返しの疑い（想定上限{max_dur:.1f}s超）"
-                            break
-                        qa = qa_narration_with_gemini(client, audio_data, dup_check_text or narration_text)
-                        if not qa["ok"]:
-                            print(f"  ⚠️ 台本不一致の疑い（{'; '.join(qa['issues'])}） ", end="", flush=True)
-                            last_audio_data = audio_data
-                            last_fail_reason = f"台本不一致の疑い（{'; '.join(qa['issues'])}）"
-                            break
-                        return audio_data
+            audio_data = _tts_rest_call(narration_text, style)
+            actual_dur = audio_duration_sec(audio_data)
+            if actual_dur > max_dur:
+                print(f"  ⚠️ 繰り返しの疑い（{actual_dur:.1f}s > 想定上限{max_dur:.1f}s） ", end="", flush=True)
+                last_audio_data = audio_data
+                last_fail_reason = f"繰り返しの疑い（想定上限{max_dur:.1f}s超）"
+            else:
+                qa = qa_narration_with_gemini(client, audio_data, dup_check_text or narration_text)
+                if not qa["ok"]:
+                    print(f"  ⚠️ 台本不一致の疑い（{'; '.join(qa['issues'])}） ", end="", flush=True)
+                    last_audio_data = audio_data
+                    last_fail_reason = f"台本不一致の疑い（{'; '.join(qa['issues'])}）"
+                else:
+                    return audio_data
         except Exception as e:
             print(f"  API エラー: {e}")
         if attempt < max_retries:
