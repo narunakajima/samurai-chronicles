@@ -1099,7 +1099,7 @@
       "priority": "A",
       "person": "musashi",
       "angle": "character",
-      "notes": "武蔵4回目の登場。ep001（巌流島の決闘）、ep010（60戦無敗の軍事的overview）、ep013（五輪書・哲学）、ep045（晩年・芸術家としてのlegacy）とは異なり、13歳での初斬殺〜放浪の荒々しい少年期に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の指摘（era偏重・有名人物再登場の集中・death角度の1本おき連続）を踏まえ、キュー先頭に移動（Sengoku以外のera、かつcharacter角度）。",
+      "notes": "武蔵4回目の登場。ep001（巌流島の決闘）、ep010（60戦無敗の軍事的overview）、ep013（五輪書・哲学）、ep045（晩年・芸術家としてのlegacy）とは異なり、13歳での初斬殺〜放浪の荒々しい少年期に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の指摘（era偏重・有名人物再登場の集中・death角度の1本おき連続）を踏まえ、キュー先頭に移動（Sengoku以外のera、かつcharacter角度）。 → 【format_length実験・ユーザー指定済み】この回はhypotheses.format_lengthのバリアントA（teaser省略）で制作すること。`/sc-new`実行時、teaser_narrationを空にしS01（hook）から直接開始する構成にする。制作完了後、hypotheses.format_length.evidence_episodesにep107を追記し、次回`/sc-analytics`で通常構成エピソードとの平均視聴時間を比較すること。",
       "last_updated": "2026-09-28"
     },
     {
