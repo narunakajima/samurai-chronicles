@@ -36,6 +36,13 @@ Shorts(9:16)生成について（2026-08-02〜）:
   例: python3 sc_image_gen.py --episode ep099 --scenes 3
       （目視確認後）
       python3 sc_image_gen.py --episode ep099 --ref-scene 3 --scenes 4,5,7,9,...
+
+任意画像の参照による個別修正（--ref-image, 2026-09-29〜）:
+  --ref-sceneはアンカーと同じcharacter_refのシーンにしか参照を渡さないため、脇役として
+  登場するシーンや、出家の前後など容姿の段階ごとに別のアンカーが要るケースは直せない。
+  --ref-image は指定した画像を、そのrunで生成する全シーン（本編のみ）に参照として渡す。
+  /sc-new のクロスシーン一貫性チェックで見つかった不一致シーンを1枚ずつ直す用途:
+      python3 sc_image_gen.py --episode ep099 --scenes 12 --ref-image ~/Desktop/SC/ep099/images/S05.png
 """
 
 import argparse
@@ -422,7 +429,7 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
 
 
 def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force: bool = False,
-        ref_scene: int = None):
+        ref_scene: int = None, ref_image_path: str = None):
     if not API_KEY:
         print("❌ GEMINI_API_KEY が設定されていません")
         sys.exit(1)
@@ -534,6 +541,19 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force:
         anchor_image_bytes = anchor_path.read_bytes()
         print(f"  参照画像: S{ref_scene:02d}（character_ref: {anchor_char_ref_name}）\n")
 
+    # --ref-image: 任意の画像を、このrunで生成する全シーン（本編のみ）に参照として渡す。
+    # --ref-sceneはアンカーと同じcharacter_refのシーンにしか効かないため、脇役として
+    # 登場するシーンや、出家の前後など容姿の段階ごとに別アンカーが要るケースを直せない。
+    # クロスシーン一貫性チェック（/sc-new）で不一致シーンを個別に直す用途（2026-09-29〜）。
+    forced_ref_bytes = None
+    if ref_image_path is not None:
+        forced_ref_file = Path(ref_image_path).expanduser()
+        if not forced_ref_file.exists():
+            print(f"❌ --ref-image の画像が見つかりません: {forced_ref_file}")
+            sys.exit(1)
+        forced_ref_bytes = forced_ref_file.read_bytes()
+        print(f"  参照画像（--ref-image）: {forced_ref_file}\n")
+
     saved = []
     qa_results = []
     skipped_count = 0
@@ -561,6 +581,9 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force:
                     ref_image = image_part_from_path(main_img_path)
                 except Exception:
                     ref_image = None
+        elif forced_ref_bytes is not None:
+            ref_image = types.Part.from_bytes(data=forced_ref_bytes,
+                                               mime_type=sniff_image_mime(forced_ref_bytes))
         elif (anchor_image_bytes is not None and scene_id != ref_scene
                 and char_ref_name == anchor_char_ref_name and char_ref_name is not None):
             ref_image = types.Part.from_bytes(data=anchor_image_bytes,
@@ -695,7 +718,15 @@ def cli():
                              "キャラクターで、先に1シーンを生成→WebSearch等で実在イメージと照合→"
                              "問題なければそのシーンを--ref-sceneに指定して残りを一括生成する運用を想定。"
                              "本編(16:9)生成のみ対応（--shorts時は無視、本編画像を自動参照する既存の仕組みを使う）。")
+    parser.add_argument("--ref-image", default=None,
+                        help="任意の画像ファイルを、このrunで生成する全シーンに外見の参照として渡す"
+                             "（character_refの一致は問わない）。--scenesと組み合わせ、クロスシーン"
+                             "一貫性チェックで見つかった不一致シーンを個別に直す用途。--ref-sceneとは併用不可。"
+                             "本編(16:9)生成のみ対応（--shorts時は無視）。")
     args = parser.parse_args()
+
+    if args.ref_image and args.ref_scene is not None:
+        parser.error("--ref-image と --ref-scene は併用できません")
 
     if args.face:
         run_face(args.episode)
@@ -706,7 +737,7 @@ def cli():
         scene_filter = [int(x.strip()) for x in args.scenes.split(",")]
 
     run(args.episode, scene_filter=scene_filter, shorts=args.shorts, force=args.force,
-        ref_scene=args.ref_scene)
+        ref_scene=args.ref_scene, ref_image_path=args.ref_image)
 
 
 if __name__ == "__main__":
