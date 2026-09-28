@@ -1092,17 +1092,6 @@
       "last_updated": "2026-09-28"
     },
     {
-      "episode_id": "ep106",
-      "status": "pending",
-      "title": "The Demon King's Body Was Never Found: The Mystery of Nobunaga's Final Moments",
-      "era": "Sengoku",
-      "priority": "A",
-      "person": "nobunaga",
-      "angle": "death",
-      "notes": "信長5回目の登場。ep002（本能寺の変・事件そのもの）、ep011（生涯overview）、ep014（長篠・軍事）、ep041（比叡山焼き討ち）、ep099（森蘭丸との主従）とは異なり、遺体が見つからなかったという未解決の謎に焦点を当てる death 角度は初出。",
-      "last_updated": "2026-09-14"
-    },
-    {
       "episode_id": "ep107",
       "status": "pending",
       "title": "The Boy Who Killed a Grown Man at 13: Musashi's Violent, Rootless Youth",
@@ -1110,30 +1099,8 @@
       "priority": "A",
       "person": "musashi",
       "angle": "character",
-      "notes": "武蔵4回目の登場。ep001（巌流島の決闘）、ep010（60戦無敗の軍事的overview）、ep013（五輪書・哲学）、ep045（晩年・芸術家としてのlegacy）とは異なり、13歳での初斬殺〜放浪の荒々しい少年期に絞るcharacter角度は初出。",
-      "last_updated": "2026-09-14"
-    },
-    {
-      "episode_id": "ep108",
-      "status": "pending",
-      "title": "The Ruler Who Executed His Own Family to Save His Son's Throne: Hideyoshi's Final, Darkest Years",
-      "era": "Sengoku",
-      "priority": "A",
-      "person": "hideyoshi",
-      "angle": "death",
-      "notes": "秀吉4回目の登場。ep005（生い立ちからのoverview）、ep012（本能寺後13日間）、ep042（朝鮮出兵・軍事）とは異なり、甥・秀次とその一族を粛清してまで我が子秀頼の後継を守った晩年の闇に焦点を当てるdeath角度は初出。ep091（秀頼の最期）の前日譚として機能する。",
-      "last_updated": "2026-09-14"
-    },
-    {
-      "episode_id": "ep109",
-      "status": "pending",
-      "title": "The Warlord Who Never Married, Drank Alone, and Called Himself a God of War: Uesugi Kenshin's Private War",
-      "era": "Sengoku",
-      "priority": "A",
-      "person": "kenshin",
-      "angle": "character",
-      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。",
-      "last_updated": "2026-09-14"
+      "notes": "武蔵4回目の登場。ep001（巌流島の決闘）、ep010（60戦無敗の軍事的overview）、ep013（五輪書・哲学）、ep045（晩年・芸術家としてのlegacy）とは異なり、13歳での初斬殺〜放浪の荒々しい少年期に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の指摘（era偏重・有名人物再登場の集中・death角度の1本おき連続）を踏まえ、キュー先頭に移動（Sengoku以外のera、かつcharacter角度）。",
+      "last_updated": "2026-09-28"
     },
     {
       "episode_id": "ep110",
@@ -1143,8 +1110,41 @@
       "priority": "B",
       "person": null,
       "angle": "thematic",
-      "notes": "新規テーマ。忍者・間諜テーマ（ninja_spy_theme仮説、現在「有望だが未実証」に格下げ済み）の検証本数を積み増す。ep028（巴御前・戦う女性武将だが忍者ではない）、ep063/064/065（忍者全般の実態）、ep020（真田十勇士）、ep027/ep050（服部半蔵）とは異なり、女性の忍者・くノ一の実態という切り口は初出。実証段階のテーマのためPriority B。",
-      "last_updated": "2026-09-14"
+      "notes": "新規テーマ。忍者・間諜テーマ（ninja_spy_theme仮説、現在「有望だが未実証」に格下げ済み）の検証本数を積み増す。ep028（巴御前・戦う女性武将だが忍者ではない）、ep063/064/065（忍者全般の実態）、ep020（真田十勇士）、ep027/ep050（服部半蔵）とは異なり、女性の忍者・くノ一の実態という切り口は初出。実証段階のテーマのためPriority B。 → 2026-09-28: Opus月次分析の提言によりキュー2番目に前倒し（ninja_spy_theme仮説の検証本数を早く積むため）。",
+      "last_updated": "2026-09-28"
+    },
+    {
+      "episode_id": "ep106",
+      "status": "pending",
+      "title": "The Demon King's Body Was Never Found: The Mystery of Nobunaga's Final Moments",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "nobunaga",
+      "angle": "death",
+      "notes": "信長5回目の登場。ep002（本能寺の変・事件そのもの）、ep011（生涯overview）、ep014（長篠・軍事）、ep041（比叡山焼き討ち）、ep099（森蘭丸との主従）とは異なり、遺体が見つからなかったという未解決の謎に焦点を当てる death 角度は初出。 → 2026-09-28: Opus月次分析の指摘（ep108とdeath角度が1本おきに連続、Sengoku偏重、有名人物再登場への偏り）を踏まえキュー3番目に配置。",
+      "last_updated": "2026-09-28"
+    },
+    {
+      "episode_id": "ep109",
+      "status": "pending",
+      "title": "The Warlord Who Never Married, Drank Alone, and Called Himself a God of War: Uesugi Kenshin's Private War",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "kenshin",
+      "angle": "character",
+      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。",
+      "last_updated": "2026-09-28"
+    },
+    {
+      "episode_id": "ep108",
+      "status": "pending",
+      "title": "The Ruler Who Executed His Own Family to Save His Son's Throne: Hideyoshi's Final, Darkest Years",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "hideyoshi",
+      "angle": "death",
+      "notes": "秀吉4回目の登場。ep005（生い立ちからのoverview）、ep012（本能寺後13日間）、ep042（朝鮮出兵・軍事）とは異なり、甥・秀次とその一族を粛清してまで我が子秀頼の後継を守った晩年の闇に焦点を当てるdeath角度は初出。ep091（秀頼の最期）の前日譚として機能する。 → 2026-09-28: Opus月次分析の提言によりキュー最後尾に配置（death角度・Sengoku・有名人物再登場が重なるため、最も分散させたい位置）。",
+      "last_updated": "2026-09-28"
     }
   ],
   "hypotheses": [
@@ -1168,8 +1168,9 @@
         "ep098",
         "ep104"
       ],
-      "success_criteria": "同型で構成したエピソードがn≥5に達し、かつ公開後14日CTRが同月中央値以上・impr1500以上に到達する割合が過半数を超えたら「実証済み」に格上げする。単純な累計CTR比較や外れ値1本への依存では格上げしない。",
-      "last_updated": "2026-09-06"
+      "success_criteria": "同型で構成したエピソードがn≥5に達し、かつ公開後14日CTRが同月中央値以上・公開後14日インプレッションが1500以上に到達する割合が過半数を超えたら「実証済み」に格上げする。単純な累計CTR比較や外れ値1本への依存では格上げしない。",
+      "last_updated": "2026-09-28",
+      "notes_2026-09-28": "Opus月次分析で確認: 14日窓完了はep030(CTR8.97%・中央値以上)/ep052(5.49%・中央値以上)/ep075(2.08%・同月中央値2.16%を下回る)のn=3で基準のn≥5未達。3本とも14日インプレ1500未満。ep098は窓未完了(10/8完了予定)、ep104は10/13公開予定でまだデータなし。ep075(key_event角度)とep104(忠義劇)が本当に「同型」かの事前定義も曖昧との指摘あり。status=testingのまま据え置き。"
     },
     {
       "id": "ninja_spy_theme",
@@ -1182,10 +1183,12 @@
         "ep050",
         "ep063",
         "ep064",
-        "ep065"
+        "ep065",
+        "ep095"
       ],
-      "success_criteria": "今後追加するn≥3本（例: ep101）が、同月コホート比較でCTR中央値以上・かつ維持率も中央値以上を同時に満たせば「実証済み」に格上げする（従来はCTRのみで判定していたため、維持率も条件に加える）。",
-      "last_updated": "2026-09-06"
+      "success_criteria": "今後追加するn≥3本（ep095は最初の追加例。窓完了後に判定対象へ含める）が、同月コホート比較でCTR中央値以上・かつ維持率も中央値以上を同時に満たせば「実証済み」に格上げする（従来はCTRのみで判定していたため、維持率も条件に加える）。",
+      "last_updated": "2026-09-28",
+      "notes_2026-09-28": "Opus月次分析で誤り発覚・修正: 従来success_criteriaの「例: ep101」は現在ep101がKato Kiyomasa（忍者ではない）に差し替わっており誤り。実際の追加例はep095（風魔小太郎）で、これに修正しevidence_episodesにも追加した。ep095は14日窓が未完了のため今回は判定に使わず、window完了後の次回分析で追加n≥3の1本目として評価する。既存7本を月内相対CTRで補正すると6/7が同月中央値以上（ep035は同値）、維持率は3/7のみ中央値以上。"
     },
     {
       "id": "data_poor_era_bakumatsu",
@@ -1196,14 +1199,13 @@
         "ep072",
         "ep076",
         "ep081",
-        "ep084",
         "ep085",
         "ep088",
-        "ep089",
-        "ep090"
+        "ep089"
       ],
       "success_criteria": "完全な14日測定窓を持つBakumatsu公開分がn≥5に達した時点で、他era平均とCTR・維持率を比較する。明確な差がなければ「era自体の問題ではない」と判定し注意書きを解除、明確に低ければ新規投入頻度を下げる。",
-      "last_updated": "2026-09-06"
+      "last_updated": "2026-09-28",
+      "notes_2026-09-28": "Opus月次分析で誤り発覚・修正: evidence_episodesにera=Edoのep090（島原の乱、Bakumatsuではない）とera=Bakumatsu/Meiji（混在）のep084が誤って含まれていたため除外し、純粋なBakumatsu7本に修正した。n≥5の判定条件は満たした（n=7）が、CTRが同月中央値以上だったのは1/7（そのep076はリタイトルの影響を受けており除外すると0/6）。並べ替え検定でp≈0.09（複数区分を走査した中の1つであり「明確」とは言えない）。維持率は中央値20.4% vs 他era17.9%で劣っていない。proven/rejectedどちらにも判定せず、testingのまま据え置く。pendingキューにBakumatsuは0本のため当面の実害なし。"
     }
   ],
   "last_updated": "2026-09-28",
