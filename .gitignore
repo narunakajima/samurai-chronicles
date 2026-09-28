@@ -1,3 +1,4 @@
 .vercel
 analytics/raw/
 backups/
+__pycache__/
