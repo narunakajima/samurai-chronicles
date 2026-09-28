@@ -29,7 +29,11 @@ from google.genai import types
 
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
 
-TTS_MODEL = "gemini-3.1-flash-tts-preview"
+# 2026-09-28: gemini-3.1-flash-tts-preview → gemini-3.8-flash-tts（正式版）に移行。
+# 3.8は入力テキストを「読み上げ原稿そのもの」として扱うため、演技指導をテキスト先頭に
+# 付けると指示文まで読み上げられる。演技指導は Part.speech_metadata.style で渡す
+# （build_contents参照）。出力もヘッダー付きWAVになったが、RIFF判定で両対応済み。
+TTS_MODEL = "gemini-3.8-flash-tts"
 QA_MODEL = "gemini-flash-latest"  # ナレーション音声が台本通りか判定する用（sc_image_gen.pyのQA_MODELと同じ考え方）
 VOICE_NAME = "Charon"   # 重厚・ドラマチックな男性英語ボイス
 TEMPERATURE = 1.0
@@ -175,12 +179,15 @@ def qa_narration_with_gemini(client, audio_data: bytes, script_text: str) -> dic
         return {"ok": False, "issues": [f"QA_ERROR: {e}"]}
 
 
-def build_prompt(narration_text: str, scene_type: str = "") -> str:
-    """シーンタイプに応じたスタイル指示 + ナレーションテキストでプロンプトを構築する。"""
+def build_contents(narration_text: str, scene_type: str = "") -> types.Content:
+    """ナレーション本文（読み上げ原稿）と、シーンタイプに応じたスタイル指示
+    （speech_metadata.style）を分けてリクエストを構築する。"""
     style = NARRATOR_STYLE
     if scene_type and scene_type in SCENE_TYPE_ADDENDUM:
         style = NARRATOR_STYLE + SCENE_TYPE_ADDENDUM[scene_type]
-    return f"{style}\n\n{narration_text}"
+    return types.Content(role="user", parts=[
+        types.Part(text=narration_text, speech_metadata=types.SpeechMetadata(style=style)),
+    ])
 
 
 def generate_take(client, narration_text: str, max_retries: int = 5,
@@ -191,7 +198,7 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
     語数から推定した尺の DUP_RATIO_THRESHOLD 倍を超える音声が返った場合は
     「ナレーション繰り返し」の疑いとして再生成する。
     """
-    prompt = build_prompt(narration_text, scene_type)
+    contents = build_contents(narration_text, scene_type)
     word_count = len((dup_check_text or narration_text).split())
     max_dur = word_count / expected_wpm * 60 * DUP_RATIO_THRESHOLD
     config = types.GenerateContentConfig(
@@ -211,7 +218,7 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
         try:
             response = client.models.generate_content(
                 model=TTS_MODEL,
-                contents=prompt,
+                contents=contents,
                 config=config,
             )
             candidate = response.candidates[0] if response.candidates else None
