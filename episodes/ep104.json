@@ -1,0 +1,286 @@
+{
+  "episode_id": "ep104",
+  "episode_title": "The Retainer Worth More Than His Lord's Entire Domain: Shima Sakon's Final Stand at Sekigahara",
+  "youtube_title": "The Retainer Too Good for His Lord: Shima Sakon's Final Stand at Sekigahara",
+  "youtube_description": "Ishida Mitsunari was one of the most unpopular generals in Sengoku Japan — arrogant, unloved, and with little reputation on the battlefield. Yet he convinced the single most feared, most independent warrior of his era to serve him, at a price no lord had ever paid a subordinate. This is the story of Shima Sakon: the retainer so respected that Japan agreed he was too good for his own lord.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 He was too good for his\n0:42 In his own lifetime, people were\n1:38 Shima Sakon's early years...\n2:29 Ishida Mitsunari had risen...\n3:19 So Mitsunari made an offer that\n4:10 Sakon accepted, and in the years\n5:11 In 1598, Toyotomi Hideyoshi...\n6:11 Sakon read the coming war with\n7:14 The preemptive strike never...\n8:11 On the night before the battle,\n9:09 The battle opened with Sakon...\n9:53 Then a volley of matchlock fire\n10:35 Then, around midday by the...\n11:26 Mitsunari fled the collapsing...\n12:28 Yet Shima Sakon's story did not\n13:18 Compare Sakon's choice to the...\n14:13 In the centuries that...\n15:10 So why would a warrior with\n16:06 Sakon left behind no diary, no\n16:59 Shima Sakon's body was never...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Stephen Turnbull, \"Sekigahara 1600: The Final Struggle for Power\" (Osprey Publishing)\n2. Stephen Turnbull, \"Samurai Armies 1467-1649\" (Osprey Publishing)\n3. Watanabe Daimon, \"Ishida Mitsunari to Sekigahara no Tatakai\" (石田三成と関ヶ原の戦い)\n\n\n🎵 Music: Suspense & Mystery by tyops (freesound.org) — CC BY 4.0\n\n🎵 Music: Another epic soundtrack.wav by nuria1512 (freesound.org) — CC BY 4.0\n\n🎵 Music: Slow Orchestra - Bittersweet Goodbyes by joshuaempyre (freesound.org) — CC BY 4.0\n#ShimaSakon #IshidaMitsunari #Sekigahara #SengokuPeriod #SamuraiHistory #JapaneseHistory #SamuraiLoyalty #FeudalJapan",
+  "youtube_tags": [
+    "Shima Sakon",
+    "Ishida Mitsunari",
+    "Battle of Sekigahara",
+    "Sekigahara 1600",
+    "Sengoku period",
+    "Samurai history",
+    "Japanese history",
+    "Sengoku warlord",
+    "feudal Japan",
+    "samurai loyalty",
+    "Tokugawa Ieyasu",
+    "Japanese warlord documentary"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "October 1600, Sekigahara. A wounded general rises from the ground and walks back into the battle that will kill him — then vanishes from history without a body or a grave. Why did people say he was too good for his own lord?",
+  "shorts_narration": "Twenty thousand koku — half of what Ishida Mitsunari spent on his entire army — bought one retainer's loyalty. Shima Sakon kept his word even as the battle collapsed around him. Was he ever really defeated?",
+  "shorts_hook_lines": [
+    "20,000 KOKU.",
+    "HALF HIS FORTUNE.",
+    "WAS HE EVER DEFEATED?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up portrait of Shima Sakon, a battle-scarred Japanese samurai general in his fifties or sixties with a thick grey-streaked beard, deep-set stern eyes staring directly into the camera, weathered skin marked by old scars, dark iron battle armor visible at the shoulders, dramatic low side lighting with deep shadows, faint smoke drifting behind him, intense unflinching expression of a man who has accepted death, face fills the upper two-thirds of the frame.",
+  "thumbnail_prompt": "Wide cinematic thumbnail composition: Shima Sakon, a grizzled veteran samurai general in dark iron armor, stands in the foreground at Sekigahara's misty battlefield, sword raised, blood on his brow, fierce determined expression facing the viewer; in the background, smaller and slightly out of focus, Ishida Mitsunari watches from a hillside command position; dramatic overcast battlefield lighting, banners and spears visible through fog, dramatic Netflix-documentary color grading, open negative space at top left for title text.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "He was too good for his own lord. Not in gold — in reputation, in dread, in loyalty no fortune could buy. What did Ishida Mitsunari give up to win him?",
+      "image_prompt": "A lone veteran samurai general stands with his back to the viewer on the misty, corpse-strewn field of Sekigahara at dawn, dark iron okegawa-do armor catching faint grey light, a weathered war banner planted beside him, distant armies barely visible through fog, atmosphere of dread and inevitability. All topknots (chonmage) must be tied traditionally: hair gathered at the crown and folded FORWARD and DOWN flat against the top of the head, NOT tied into an upright vertical loop, bun, or brush shape sticking straight up.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.34
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In his own lifetime, people were said to repeat a mocking saying: 'Mitsunari has two things too fine for him — Shima Sakon, and the castle of Sawayama.' It was an insult wrapped in a compliment. Ishida Mitsunari was a tax clerk turned lord, brilliant with numbers, cold with men, widely disliked by the very generals he commanded. Yet somehow this unloved bureaucrat had secured the loyalty of the most feared, most independent warrior in central Japan — a man who had walked away from his old masters rather than serve one he did not respect. How had Mitsunari won him?",
+      "image_prompt": "Ishida Mitsunari, a lean sharp-featured Japanese administrator in the dark formal kataginu and hakama of a Sengoku-era samurai official, stands on the ramparts of Sawayama Castle at dusk, ledgers and correspondence scattered on a nearby table, his expression rigid and calculating as he surveys the domain below, distant silhouette of a warrior visible on a lower wall. The documents are closed with Japanese-style paper cord ties (mizuhiki) or black ink stamps only — absolutely no red Western-style sealing wax anywhere on the correspondence.",
+      "ken_burns": "static",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.26
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Shima Sakon's early years remain half-legend — even his birth year is disputed. What is certain is his reputation: a veteran of Yamato province, hardened by decades of clan warfare, feared on the battlefield and unwilling to bow to a master he judged unworthy. He had served the Tsutsui clan for years, then walked away after clashing with its young new lord. Offers followed. Sakon turned most of them aside, living for a time as a masterless warrior in Omi. By his fifties, he had become something rarer than a great general — a warrior who could simply refuse to serve at all.",
+      "image_prompt": "Shima Sakon, a powerfully built veteran samurai general with a grey-streaked beard and battle-scarred face, stands alone on a rocky Yamato hillside overlooking an abandoned castle, faded iron armor and worn sashimono banner, arms crossed, expression of stern independence, other retainers' banners lying discarded in the foreground.",
+      "ken_burns": "pan_right",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.23
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Ishida Mitsunari had risen through Toyotomi Hideyoshi's court not by the sword but by the ledger — a supply officer, a tax assessor, a man of documents and quotas. Brilliant, yes. But among the sword-and-horse generals of the realm, he was an outsider, and everyone knew it. A lord without martial reputation could not hold a domain, let alone command an army. Mitsunari needed something no promotion could buy him: a warrior whose very name would make other generals think twice. And there was only one name being spoken as the very best.",
+      "image_prompt": "Ishida Mitsunari seated at a low desk inside his castle study, surrounded by scrolls, tax registers, and hand-drawn campaign maps with no legible writing, candlelight illuminating his tense, calculating face as battle-hardened generals can be glimpsed through an open shoji screen mocking him quietly in the courtyard below, contrast between paperwork and warriors.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.74,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "So Mitsunari made an offer that stunned his contemporaries. His own holdings at the time were modest — under forty thousand koku of annual rice income by most tellings. To secure Sakon's service, he reportedly offered fifteen thousand koku — some versions say twenty thousand, fully half of everything he had — to a man who owned no land and commanded no army of his own. Sakon, they say, refused again and again, testing whether Mitsunari's conviction was real. It was not the money that finally moved him. It was what the offer revealed about the man making it.",
+      "image_prompt": "Ishida Mitsunari kneeling formally on tatami mats, presenting a sealed scroll of land-stipend documents with both hands to Shima Sakon, who sits opposite in a plain dark kimono and hakama, katana at his side, no armor, arms folded and a skeptical, appraising expression, warm lantern light, tense negotiation atmosphere, retainers watching silently from the shadows.",
+      "ken_burns": "zoom_in",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Sakon accepted, and in the years that followed — as Mitsunari rose to become lord of Sawayama Castle — the two formed a partnership unusual in Sengoku Japan. Mitsunari handled the ledgers, the diplomacy, the endless correspondence of Hideyoshi's government. Sakon trained the army, advised on war, and stood as the shield between his lord and his enemies. Soldiers who mocked Mitsunari behind his back did not dare mock Sakon to his face. Within a few years, the awkward administrator and the battle-hardened wanderer had become something rarer than allies — men who trusted each other with their lives, though history barely explains why.",
+      "image_prompt": "Shima Sakon drilling ranks of foot soldiers in the training yard of Sawayama Castle, shouting commands with commanding authority, while Ishida Mitsunari observes approvingly from a raised veranda above, morning light, disciplined troops in formation, sense of a well-run and feared domain.",
+      "ken_burns": "static",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.46
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1598, Toyotomi Hideyoshi died, and the fragile peace he had built began to crack. Tokugawa Ieyasu, the most powerful lord in the coalition meant to protect Hideyoshi's young heir, began absorbing allies and isolating rivals — Mitsunari chief among them. Mitsunari was resented by many of his fellow generals, disliked for his arrogance and his closeness to a dead master. As Ieyasu's ambitions grew unmistakable, it was Mitsunari who moved first to raise an army against him. And it was Sakon, the veteran of a hundred campaigns, who understood exactly how dangerous that decision truly was.",
+      "image_prompt": "Ishida Mitsunari standing alone in a vast dim audience hall beneath Toyotomi Hideyoshi's empty seat of power, isolated among distant unfriendly generals whispering at the hall's far end, somber funeral banners visible, mood of political abandonment and rising tension.",
+      "ken_burns": "zoom_out",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.39,
+        "y": 0.41
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Sakon read the coming war with a soldier's clarity that Mitsunari, for all his brilliance, did not possess. Their western coalition was larger on paper, but scattered, mistrustful, held together by paperwork and promises rather than loyalty. Ieyasu's smaller force was seasoned, unified, and moving fast. Sakon, by some accounts, argued for striking first — ambushing Ieyasu's army as it marched, before it could link with reinforcements and before wavering allies could defect. It was a soldier's solution to a politician's war. Mitsunari, ever the administrator, hesitated, trusting instead in numbers, alliances, and the strength of his prepared positions.",
+      "image_prompt": "Shima Sakon leaning over an unlabeled hand-drawn war map with no writing on it, spread across a low table, pointing urgently at a marked route while Ishida Mitsunari sits opposite with a doubtful, hesitant expression, flickering lamplight, other advisors seated silently around them, tension between soldierly instinct and cautious politics. All topknots (chonmage) must be tied traditionally: hair gathered at the crown and folded FORWARD and DOWN flat against the top of the head, NOT tied into an upright vertical loop, bun, or brush shape sticking straight up.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The preemptive strike never came. Mitsunari's western army settled instead into position near a small crossroads valley called Sekigahara, confident that superior numbers and the high ground would decide the day. But numbers meant little when loyalty was for sale. Several of the generals arrayed beside Mitsunari had already exchanged secret letters with Ieyasu, quietly agreeing to betray the army from within at the moment of battle. Sakon suspected as much. He had spent a lifetime reading men, and the men flanking their position did not look like allies preparing to fight — they looked like men waiting.",
+      "image_prompt": "Vast aerial view of the misty Sekigahara valley at twilight, thousands of banner-topped campfires from two opposing armies stretching across the crossroads terrain, mountains looming on either side, an atmosphere of tense anticipation before the storm.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "On the night before the battle, mist settled over the valley, and by most accounts neither side slept easily. Sakon, well past his fiftieth year, had every reason to doubt the coming day — the shaky alliances, the untested western commanders, the enemy's discipline. He said nothing of retreat. He had chosen Mitsunari once, deliberately, when he could have chosen any lord in Japan or none at all. Whatever tomorrow held, he would not be the one to break that choice. At dawn, October 21st, 1600, the fog lifted, and the armies faced each other across the valley floor.",
+      "image_prompt": "Shima Sakon sitting alone by a dim campfire the night before battle, armor half-fastened, sword resting across his knees, staring resolutely into the flames with a calm, unshaken expression, mist drifting through the camp behind him, sense of quiet acceptance before dawn. Only period-correct Japanese lighting is visible: paper chochin lanterns on wooden poles and the campfire itself. Absolutely no Western-style candlesticks, candelabra, or wax pillar candles anywhere in the scene.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The battle opened with Sakon commanding the vanguard in front of Mitsunari's position, directly facing the forces of Kuroda Nagamasa — one of the sharpest commanders in Ieyasu's camp. Sakon's line held, then pushed forward, driving the attackers back with a ferocity that stunned observers on both sides. Kuroda's own soldiers, it was later said, remembered his roaring battle cry for years afterward — proof, if any were needed, of exactly why Mitsunari had paid so dearly to have this man at his side. For a brief morning, the western army's center was, improbably, holding its own.",
+      "image_prompt": "Shima Sakon at the head of a charging vanguard, sword raised high, wearing a kabuto helmet with a tall tentsuki crest, dark lacquered okegawa-do armor and a pale blue (asagi) cotton jinbaori, all spattered with mud, driving enemy ranks backward across a smoke-filled battlefield, arrows and spear tips visible around him, dynamic motion, dawn light breaking through drifting battle smoke.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.52,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Then a volley of matchlock fire — Kuroda musketeers striking from the flank — tore through the vanguard, and Sakon went down, badly wounded. His retainers carried him back through the lines, certain the wound was fatal. It was not enough to stop him. According to some accounts, Sakon rose again, bandaged and bleeding, and returned to lead his men rather than retreat to safety behind the lines. He had spent his whole life refusing to serve where he did not believe. He was not about to spend his last hours hiding from a battle he had chosen to fight.",
+      "image_prompt": "Shima Sakon, wounded and bandaged with blood soaking through his dark lacquered okegawa-do armor and torn pale blue (asagi) cotton jinbaori, being helped to his feet by two retainers as he pushes forward back toward the fighting rather than retreating, gritted teeth and fierce determination, chaos of battle and gun smoke surrounding him. All topknots (chonmage) must be tied traditionally: hair gathered at the crown and folded FORWARD and DOWN flat against the top of the head, NOT tied into an upright vertical loop, bun, or brush shape sticking straight up.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Then, around midday by the traditional account, the betrayal came. Kobayakawa Hideaki, stationed on Mount Matsuo with some fifteen thousand men, turned his army against the very side he had pledged to fight for. The western line, already strained by hours of hard fighting, collapsed by early afternoon. In the chaos of the rout, Shima Sakon vanished from the historical record. No confirmed body was ever recovered bearing his name. Some chronicles say he died where he fell; others whisper he escaped and lived on in hiding. What is certain is that he was never seen again under his own name.",
+      "image_prompt": "Wide chaotic battlefield scene at midday, a large army pouring down from a wooded hillside and charging into their former allies' flank, plain banners without any writing or crests, smoke, fleeing soldiers, and toppled banners across the valley floor, sense of total collapse and confusion, no single figure in focus.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Mitsunari fled the collapsing battlefield without the one man who might have saved him, hiding for days in the mountains around Mount Ibuki, sick and starving, until eastern search parties found him. He was paraded through Osaka, Sakai, and Kyoto, then executed just over two weeks after the battle — the brilliant administrator undone by the very allegiances his own rigidity had failed to secure. Sawayama Castle, the castle the old saying had called 'too fine for him,' fell within days, Mitsunari's own father and brother dying in its defense. The partnership that had once terrified a generation of Sengoku Japan ended, within a single season, in ruin.",
+      "image_prompt": "Ishida Mitsunari, gaunt and disheveled in a torn, dirt-stained plain kimono, bound with ropes and paraded through a crowded Kyoto street by armored guards, onlookers watching in silence, grey overcast sky, atmosphere of humiliation and finality.",
+      "ken_burns": "pan_left",
+      "character_ref": "mitsunari",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Yet Shima Sakon's story did not end where the battlefield accounts trail off. Within a generation, folk tales placed him as a wandering monk in the mountains of Yamato, an anonymous farmer in a distant province, even a secret advisor living under a false name decades after Sekigahara was supposed to have killed him. None of these stories can be verified. But their sheer persistence says something the official records cannot: people did not want to believe a man like Sakon simply vanished. They wanted to believe loyalty and skill so complete could not simply be erased by one lost afternoon.",
+      "image_prompt": "A weathered, hooded traveler resembling an aged Shima Sakon walking alone along a misty mountain path in Yamato province, face partly obscured by shadow beneath a wide straw hat, ambiguous identity, distant temple rooftops visible through the fog, quiet mysterious atmosphere.",
+      "ken_burns": "static",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Compare Sakon's choice to the men who turned their coats that same October day. Kobayakawa Hideaki, whose betrayal decided the battle, died barely two years later — reportedly haunted, drinking heavily, said by some to have been driven half-mad by guilt. Sakon, by contrast, kept a promise that cost him everything, to a lord half of Japan considered unworthy of loyalty at all. In an age when allegiance was bought and sold as casually as rice, one retainer's decision to simply keep his word became, in the retelling, more remarkable than any victory.",
+      "image_prompt": "A solitary, unnamed young daimyo in his early twenties slumped alone in a dim candlelit hall, an untouched cup of sake before him, haunted distant expression, empty banners of his clan hanging behind him, atmosphere of guilt and decline rather than triumph.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "In the centuries that followed, Sakon's name outgrew the battle that supposedly killed him. Edo-period chroniclers and storytellers, and later novelists and television dramas, returned to him again and again — often not as a supporting figure in Mitsunari's tragedy, but as its true hero. The saying that once mocked Mitsunari's inadequacy became, over time, something closer to reverence for the retainer himself: proof that a warrior's worth could exceed his lord's own rank, wealth, and title combined. Few figures in Sengoku history are remembered so vividly through a phrase that was never really about them at all.",
+      "image_prompt": "A photorealistic cinematic scene inside a lantern-lit Edo-period storytelling hall: a kodan storyteller in a plain kimono sits behind a low wooden desk, striking it with a folding fan as he dramatically recounts the tale of a legendary samurai, an enraptured audience of townspeople seated on tatami in the shadowed foreground, warm lantern glow, no visible writing or signs.",
+      "ken_burns": "pan_right",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.59,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "So why would a warrior with his pick of Japan's most powerful lords choose the least popular man among them? Perhaps Sakon saw in Mitsunari something his critics never could — a rigid, difficult man, yes, but one whose convictions never bent for convenience, in an age when everyone else's did. Loyalty bought with gold rarely survives the first crisis; the historical record is littered with allies who sold theirs at Sekigahara to whichever side offered more. Sakon's loyalty was not bought. It was recognized, tested, and chosen — which may be exactly why it became legend.",
+      "image_prompt": "A quiet symbolic still-life composition with absolutely no living human figures present: an old weathered suit of samurai armor displayed empty on a wooden stand (faceless helmet, no person inside), and a lord's ceremonial scroll displayed side by side on a shrine altar, soft warm light from paper andon lanterns and glowing incense embers only, drifting incense smoke, a contemplative and reverent mood reflecting on loyalty and legacy. Absolutely no Western-style wax pillar candles or standing candlestick holders anywhere in the frame.",
+      "ken_burns": "static",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Sakon left behind no diary, no portrait confirmed to be authentic, not even a verified grave. He is, in the truest sense, a man defined entirely by the choice he made and the fight he refused to abandon. In an era remembered for its betrayals — brothers turning on brothers, vassals selling out lords for a better offer — his story endures precisely because it is the exception. Not the general who won. Not the lord who ruled. The retainer who simply would not break his word, even when breaking it would have cost him nothing at all.",
+      "image_prompt": "Close-up of a small, moss-covered, uninscribed weathered stone grave marker half-hidden among ferns in a quiet mountain temple graveyard, a single thin line of incense smoke rising in soft morning light, fallen leaves at its base, contemplative and ambiguous mood symbolizing an unverified resting place.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Shima Sakon's body was never found, his birth year is still disputed, and even his final words are pure invention layered onto silence. And yet, four centuries later, his name still survives the man he died defending. Ishida Mitsunari is remembered as the general who lost everything at Sekigahara. Shima Sakon is remembered as the one thing about him that history agreed was never in doubt. If stories like his — loyalty tested against impossible odds — are the ones that stay with you, there are more of them waiting for you here.",
+      "image_prompt": "A final serene wide shot of the Sekigahara valley in golden late-afternoon light, mist long since cleared, tall grass swaying where the battle once raged, a single distant memorial stone barely visible, peaceful and elegiac atmosphere closing the story.",
+      "ken_burns": "zoom_in",
+      "character_ref": "shima_sakon",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.55
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep104-BGM-intro.mp3",
+    "main": "BGM/ep083-BGM-main.mp3",
+    "outro": "BGM/ep059-BGM.mp3"
+  },
+  "youtube_url": "https://youtu.be/Xtcjn6J5H8U",
+  "shorts_url": "https://youtu.be/gKM47gqPPQQ",
+  "scheduled_at": "2026-10-13 03:00"
+}

@@ -1082,14 +1082,14 @@
     },
     {
       "episode_id": "ep104",
-      "status": "pending",
+      "status": "published",
       "title": "The Retainer Worth More Than His Lord's Entire Domain: Shima Sakon's Final Stand at Sekigahara",
       "era": "Sengoku",
       "priority": "A",
       "person": "shima_sakon",
       "angle": "character",
       "notes": "Never featured before. Test case for the 'hidden strategist' hypothesis — built as a loyalty/sacrifice human-drama arc (not event listing), following the Kuroda Kanbee construction pattern rather than Yamamoto Kansuke's.",
-      "last_updated": "2026-09-06"
+      "last_updated": "2026-09-28"
     },
     {
       "episode_id": "ep106",
@@ -1206,6 +1206,6 @@
       "last_updated": "2026-09-06"
     }
   ],
-  "last_updated": "2026-09-27",
+  "last_updated": "2026-09-28",
   "total_topics": 110
 }
