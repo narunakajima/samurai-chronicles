@@ -1167,6 +1167,11 @@ BGM・サムネイル・完成動画をまとめて確認したいとの要望�
 ユーザーの最終OK後まで遅らせるように変更した。STEP 4完了時点ではDriveへの登録（画像・BGM）のみ
 行い、Desktopの残骸（BGM候補ファイル・サムネイル・制作確認書の元ファイル等）はそのまま残す。
 
+**最終OK後の削除は `~/Desktop/SC/` フォルダごと行う（2026-09-29追加）:** ep107で、最終OK後に中身
+（`ep107`・`ep107_output`・BGM等）だけを個別に `rm -rf` し、空の `~/Desktop/SC/` 本体を残す
+削除漏れが発生した。削除前にDrive側の原本（`output/`の3点・サムネイル・制作確認書）を確認したうえで
+`rm -rf "$HOME/Desktop/SC"` を実行し、`ls ~/Desktop` で `SC` が残っていないことまで確認する。
+
 credit.txt が存在した場合（CC BY）は、制作確認書の BGM 欄を更新する：
 - BGM タイトル・作者名
 - Freesound URL（`https://freesound.org/s/{SOUND_ID}/`、SOUND_ID はファイル名から取得）
