@@ -790,6 +790,10 @@ BGM           : ❌ 未選択
   {日本語訳}
 
 ----------------------------------------
+
+**書式厳守:** `【EN】` `【JA】` は単独の行にし、本文は必ず次の行に書く（同じ行に続けると
+`sc_scene_review.py` のパーサーが3シーンに1つしか拾えず「訳文が見つかりません」が多発する。ep107で発生）。
+STEP 3AのOpusへのプロンプトにもこの書式を明記すること。
 ... （全シーン繰り返し）
 
 ================================================================
@@ -829,7 +833,8 @@ BGM           : ❌ 未選択
 Bold text overlay at the top in large white block letters with dark drop shadow: "{EPISODE_TITLE_SHORT}".
 Smaller text at the bottom in white: "{SUBTITLE}".
 Text must be clearly legible, sharp, and properly spelled.
-Modern cinematic concept art style, dramatic lighting, film production illustration quality. 16:9 aspect ratio, 1280x720.
+Photorealistic live-action cinematic film still, 35mm anamorphic lens, real skin texture, natural film grain, realistic lighting. NOT illustration, NOT anime, NOT cartoon, NOT concept art, NOT comic style. 16:9 aspect ratio, 1280x720.
+（2026-09-29〜: 旧指定の "concept art / illustration quality" は漫画調になるため廃止。ep107で実証）
 ```
 
 - `EPISODE_TITLE_SHORT`: エピソードの**肩書き・ドラマチックな形容**を大文字で（例: "THE GOD OF WAR" / "THE EXILE" / "THE WRONG SIDE"）
@@ -1259,6 +1264,14 @@ STEP 5A/5B 完了後、zoom_anchor 判定の**前**に実施する。画像の�
 - このステップで修正できる手段は**画像の再生成のみ**（`image_prompt` フィールドの修正含む）。
   ナレーション本文・その他のJSONフィールドの修正は一切提案しない（＝TTS再生成は絶対に発生させない）。
   ナレーションの品質はSTEP 3Aで保証済みとみなす。
+- **目視の対象は `character_ref` の有無ではなく「主人公が写るシーン」で決める（2026-09-29 ep107で追加）。**
+  `character_ref: null` でも主人公の幼少期などを描くシーン（ep107 S04: 9歳の武蔵に月代が入っていた）
+  があるため、ナレーションと `image_prompt` から主人公が写るシーンを洗い出し、全シーンを確認する。
+  一覧は縮小しすぎず、髪型は頭部を切り出して確認する。`character_ref: null` の人物シーンも
+  `--ref-scene` の参照対象にし、必要なら `character_ref` を設定して再生成する。
+- **画像バッチを複数同時に走らせない。** `image_qa_result.json` は実行ごとに上書きされ、最後に
+  終わったバッチ分しか残らない（ep107で他バッチのQA結果が消えた）。バッチは順番に実行する。
+- Opusによるクロスシーン整合チェックは、コンタクトシートで問題が見えなくても省略しない。
 - QAの自動チェック（`all_ok`）が通っても、それだけでは STEP 4・5D・6 には進まない。
   下記の「統合確認」で、サムネイル・BGMとまとめてユーザーが実際に画像を見て確認した上で
   OKを得る（2026-07-28〜、2026-08-04〜サムネイル・BGMと統合）。

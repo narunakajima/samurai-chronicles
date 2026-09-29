@@ -1,0 +1,290 @@
+{
+  "episode_id": "ep107",
+  "episode_title": "The Boy Who Killed a Grown Man at 13: Musashi's Violent, Rootless Youth",
+  "youtube_title": "The Boy Who Killed a Grown Man at 13: Musashi's Violent, Rootless Youth",
+  "youtube_description": "At 13, he killed a grown swordsman in a duel. By 29, according to his own account, he had fought more than sixty. Before Miyamoto Musashi became Japan's most famous swordsman, he was a rootless boy with a fierce father, a scattered family, and no lord to call his own. This is the story of how that boy became Musashi.\n\n⏱️ Chapters:\n0:00 Introduction\n0:05 At thirteen, he killed a grown\n0:17 Miyamoto Musashi was born...\n1:09 Later accounts say his father...\n1:52 The picture of his childhood is\n2:35 Some later stories describe a...\n3:23 Then, around 1596 or 1597, a\n4:05 The two met to settle it,\n4:44 It was over in moments....\n5:21 What came next was not glory.\n6:05 By his own account, the fight\n6:48 Whatever happened at...\n7:34 This was the life of the\n8:19 By twenty-one, Musashi had...\n9:11 Later stories add drama to those\n9:55 Decades later, when Musashi...\n10:38 That admission matters. It...\n11:21 It is also worth noting what\n12:02 Consider how unusual that...\n12:45 Historians still debate how...\n13:33 A child who kills before he\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. William Scott Wilson, The Lone Samurai: The Life of Miyamoto Musashi (Kodansha International)\n2. Miyamoto Musashi, The Book of Five Rings (various English translations)\n3. Kenji Tokitsu, Miyamoto Musashi: His Life and Writings (Weatherhill)\n\n#MiyamotoMusashi #Musashi #SamuraiHistory #JapaneseHistory #Swordsman #Ronin #BookOfFiveRings #EdoPeriod #SamuraiDuel #SamuraiChronicles",
+  "youtube_tags": [
+    "Miyamoto Musashi",
+    "Musashi youth",
+    "Musashi first duel",
+    "Arima Kihei",
+    "Shinmen Munisai",
+    "Book of Five Rings",
+    "Samurai history",
+    "Japanese history",
+    "Ronin",
+    "Swordsman documentary",
+    "Sekigahara",
+    "Edo period"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 7,
+  "teaser_narration": "",
+  "shorts_narration": "Thirteen years old. One grown swordsman, dead. Miyamoto Musashi's first duel brought him no lord and no fame — only a boy with nowhere to go. What did that day turn him into?",
+  "shorts_hook_lines": [
+    "AGE 13.",
+    "ONE DEAD ADULT.",
+    "WHAT DID HE BECOME NEXT?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of the face of a thirteen-year-old Japanese boy, the young Miyamoto Musashi, thin sunburnt face with sharp angular features and a heavy brow, a full, unshaved head of unkempt black hair roughly tied back with a strip of cloth and loose strands across his forehead, dark eyes staring directly and unblinkingly into the camera with a hard, far-too-old gaze, faint dust and a small scrape on one cheek, cold blue dawn light on one side of the face and deep shadow on the other, vertical portrait composition, no modern or European elements.",
+  "thumbnail_prompt": "Dramatic portrait of the young Miyamoto Musashi at thirteen years old, a thin sunburnt Japanese boy with sharp angular features and a hard unblinking stare, a full, unshaved head of unkempt black hair roughly tied back, wearing a worn patched dark hemp kimono, gripping a plain wooden staff across his body, standing on a dusty village road at dusk, the shape of an adult swordsman's silhouette lying motionless far behind him, low golden sunset side lighting on his face against a darkening sky, cinematic documentary composition.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "At thirteen, he killed a grown man. No army, no rank, no famous name. So what made this boy different?",
+      "image_prompt": "Low-angle close shot of the young Miyamoto Musashi at thirteen years old, a thin, wiry, sunburnt boy with a hard unblinking stare, unkempt black hair roughly tied back with a strip of cloth, wearing a worn patched dark hemp kimono, gripping a plain wooden staff in both hands, standing alone on a dusty village road at dawn with cold pale light behind him and a long shadow stretching toward the camera.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi_boy",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Miyamoto Musashi was born around 1584, in an age when Japan had been at war with itself for over a century. Even his birthplace is disputed. Musashi himself named Harima Province, but later local records claim a village in neighboring Mimasaka, and the exact place has never been settled. What is clear is the world he entered: warlords rose and fell within a single lifetime, and a boy with no family power behind him had few paths open. For a child of a fighting household, the sword was less a career than a condition of survival.",
+      "image_prompt": "Wide panoramic view of a late sixteenth-century Japanese farming valley in Harima or Mimasaka, thatched farmhouses beside terraced rice paddies, thin smoke rising from cooking fires, a column of armed foot soldiers in simple armor marching along a distant dirt road, mountains fading into morning haze, a sense of uneasy calm in wartime, no castle in the frame.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 62,
+      "narration": "Later accounts say his father was Shinmen Munisai, a fighting man skilled with the jitte, a short iron truncheon used to catch and break a blade. Tradition says Munisai was proud, exacting, and quick to test his skill against others. In one account, he even defeated a master of the Yoshioka house before the Ashikaga shogun in Kyoto. How much of this is fact and how much is family legend is uncertain. But the portrait that emerges is of a household where combat was a daily language, and where a son would be judged by it.",
+      "image_prompt": "Interior of a modest samurai household in late sixteenth-century Japan: a stern middle-aged fighting man with a weathered face and shaved pate and a tied topknot, an anonymous figure, sits on the tatami floor turning a short iron jitte truncheon in his hands, a rack of wooden practice weapons on the wall behind him, narrow shafts of afternoon light through paper screens, a small child's silhouette watching from the doorway, no armor.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 63,
+      "narration": "The picture of his childhood is fragile. Some traditions say his mother died when he was very young. Others hold that his parents separated, and that the boy was sent to be raised by a relative, a priest in a village temple. The details vary from source to source, and none was written down until long after the fact. Yet nearly every version agrees on one thing: Musashi grew up without a settled family around him. Whatever he learned about trust, he learned it early, and he learned it alone.",
+      "image_prompt": "The young Musashi as a small thin boy of about nine years old, with a full head of unkempt black hair roughly tied back with a strip of cloth, forehead NOT shaved and no shaved crown (a child, not a samurai adult), plain dark hemp kimono, sitting alone on the wooden veranda of a small rural Buddhist temple at dusk, staring out at an empty courtyard with an unreadable, guarded expression, an old priest's robe hanging on a line in the background, long shadows, muted blue-gray evening light, stillness and isolation, no other identifiable figure.",
+      "ken_burns": "zoom_out",
+      "character_ref": "musashi_boy",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 62,
+      "narration": "Some later stories describe a difficult, violent child, hard to discipline, quick to fight, and increasingly at odds with the father who was supposed to shape him. One tradition even claims that the two came to a final break. These accounts were written generations later, when Musashi was already a legend, and legends tend to explain the man by inventing his childhood. Still, the pattern feels consistent. A boy raised among weapons, with little affection and little supervision, was becoming exactly what his world required: someone who would not back down.",
+      "image_prompt": "Thirteen-year-old Musashi seen from behind and to the side, a thin wiry boy with unkempt black hair tied back with a strip of cloth, in a worn dark hemp kimono, striking a thick wooden post again and again with a wooden staff in a bare dirt yard behind a farmhouse, wood chips flying, an older man's blurred silhouette turning away in the doorway in the far background, harsh late-afternoon light.",
+      "ken_burns": "pan_left",
+      "character_ref": "musashi_boy",
+      "zoom_anchor": {
+        "x": 0.49,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 64,
+      "narration": "Then, around 1596 or 1597, a traveling warrior named Arima Kihei arrived in the district. According to Musashi himself, Kihei belonged to a school called Shinto-ryu. He did what wandering swordsmen of the era often did: he posted a public challenge and waited for someone to answer. In the traditional telling, the one who answered was not a seasoned local fighter but a thirteen-year-old boy, who accepted the match, whether from courage, pride, or something harder to name.",
+      "image_prompt": "A village crossroads on a bright, dry morning in the 1590s: a broad-shouldered travelling swordsman in a plain faded traveling kimono and straw hat, hand resting on the hilt of his long sword, faces a small crowd of curious villagers, farmers and women with baskets, anonymous, while at the edge of the crowd a thin thirteen-year-old boy with unkempt hair tied back with cloth stares steadily at him, a wooden notice board without any writing standing to one side.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi_boy",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.34
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The two met to settle it, the boy against a trained adult who carried real steel. A later account says Musashi was armed only with a wooden staff. Nothing in it suggests that the boy planned to lose. Around them, tension held the onlookers silent. In his own writing, Musashi mentions only the result, never the fear that must have come before it. Kihei drew his weapon, and the thirteen-year-old stepped forward without any teacher standing behind him.",
+      "image_prompt": "Tense standoff on a dusty patch of open ground at the edge of a village: the travelling swordsman in a plain traveling kimono draws his long sword, blade half out of the scabbard, while facing him at a distance of a few paces a thin thirteen-year-old boy with unkempt hair tied with cloth grips a plain wooden staff low and steady, a silent semicircle of anonymous villagers watching, low harsh sunlight casting long shadows across the ground.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi_boy",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "It was over in moments. According to the traditional story, Musashi threw the older man to the ground and struck him as he tried to rise. Kihei did not get up. In the Book of Five Rings, Musashi says only that at thirteen he fought his first match and defeated Kihei. There is no boast and no description. A boy with no school and no formal rank had defeated a trained professional. And no one in that village could have known what the moment had set in motion.",
+      "image_prompt": "Dynamic wide shot of the moment after a duel on a dusty village ground: the thirteen-year-old boy, thin, unkempt hair tied back, dark hemp kimono, stands over the fallen anonymous swordsman lying on his back beside a dropped sword, the boy's wooden staff still raised in one hand, chest heaving, face impassive, dust hanging in the air, villagers frozen in stunned silence in the background, stark side lighting.",
+      "ken_burns": "zoom_out",
+      "character_ref": "musashi_boy",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.28
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "falling_action",
+      "duration_seconds": 62,
+      "narration": "What came next was not glory. A samurai's victory usually meant recognition: a lord's notice, a stipend, a place in a retinue. Musashi had none of those. He belonged to no clan and served no lord, and killing a professional swordsman in front of a crowd may have made him less a hero than a problem. The sources say little about how the villagers reacted. But it is easy to imagine that a child who could do this was someone adults would keep at a careful distance.",
+      "image_prompt": "Dusk over a small Japanese village: the thirteen-year-old boy, thin, unkempt hair tied with cloth, worn dark hemp kimono, walks alone along a narrow dirt lane past closed wooden doors while a few anonymous villagers watch warily from doorways and turn their faces away, his wooden staff resting on his shoulder, blue evening light and the glow of a single lantern in the distance.",
+      "ken_burns": "pan_right",
+      "character_ref": "musashi_boy",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "falling_action",
+      "duration_seconds": 62,
+      "narration": "By his own account, the fight with Kihei was not an ending but a beginning. A few years later, in 1600, Japan's warlords met at Sekigahara in the decisive battle of the age. A long tradition places Musashi, then sixteen or seventeen, with the losing Western army. Other records suggest he was instead in Kyushu, fighting alongside his father for the Kuroda on the victorious Eastern side. Historians still debate it. Either way, he came of age in a war that destroyed the livelihoods of thousands of samurai.",
+      "image_prompt": "Wide view of a misty battlefield in the mountain basin of Sekigahara at dawn in October 1600: long lines of ashigaru infantry with spears and banners emerging from fog, mounted samurai in armor on the ridges, drifting gunsmoke over the valley floor, and in the foreground a lone, thin teenager of sixteen with unkempt tied-back hair, in simple unarmored dark clothes with a short sword, peering from the edge of a treeline, no clear crest on the banners.",
+      "ken_burns": "pan_left",
+      "character_ref": "musashi_boy",
+      "zoom_anchor": {
+        "x": 0.74,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "falling_action",
+      "duration_seconds": 63,
+      "narration": "Whatever happened at Sekigahara, the aftermath was certain. Thousands of defeated warriors were suddenly masterless, and roads across Japan filled with ronin looking for work, food, or a fight. Even before the battle, at sixteen by his own count, Musashi had fought a powerful swordsman named Akiyama from Tajima Province, and he says he won that too. He offers no detail. What the line reveals is a rhythm: a young man moving from place to place, meeting men who fought for a living, and staking his life again.",
+      "image_prompt": "A crowded mountain road in early seventeenth-century Japan filled with anonymous ronin, ragged defeated warriors in torn armor pieces and faded kimono carrying spears and swords, moving in scattered groups under a gray autumn sky, and among them a thin sixteen-year-old boy with unkempt tied-back hair, in a worn dark kimono and straw sandals with a short sword at his belt, walking apart from everyone else.",
+      "ken_burns": "pan_right",
+      "character_ref": "musashi_boy",
+      "zoom_anchor": {
+        "x": 0.73,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 61,
+      "narration": "This was the life of the wandering warrior, or musha shugyo, and Musashi seems to have lived it in a rough, unpolished form. Later chroniclers claim he neglected his appearance, cared little for comfort, and slept wherever he could. Such stories reflect what his admirers wanted him to be, but they fit the rootless life his own words describe. He carried no lord's name, no school's authority, and no home to return to. For years, the road was his only address, and the next opponent his only prospect.",
+      "image_prompt": "A young man of about twenty years old, Musashi, lean and weathered with unkempt black hair roughly tied back, wearing a threadbare dark kimono and straw sandals, sleeping sitting upright against the trunk of a large cedar tree beside a mountain path in cold pre-dawn light, two swords resting against his shoulder, a small dying campfire at his feet, frost on the grass, solitary and self-contained.",
+      "ken_burns": "zoom_out",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.63,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 64,
+      "narration": "By twenty-one, Musashi had reached Kyoto, then the center of sword schools and fencing houses. By his own telling, he met the finest swordsmen in the land there, fought several matches, and never lost. A memorial raised by his adopted son names them: the Yoshioka, a house that had taught the sword to the Ashikaga shoguns. It was a large step. In the provinces, Musashi had fought lone travelers. In Kyoto, he was challenging established institutions, with reputations, students, and influence to protect, and every match risked becoming a public matter.",
+      "image_prompt": "A young man of twenty-one years old, Musashi, lean, angular face, unkempt black hair roughly tied back, worn dark kimono with two swords at his belt, walking calmly down a busy street in Kyoto in the early 1600s lined with wooden townhouses, merchants and townspeople parting around him, a large plain wooden fencing school gate with no signboard or writing, anonymous students visible in the courtyard beyond, warm afternoon light.",
+      "ken_burns": "pan_right",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Later stories add drama to those Kyoto duels, and some are more vivid than reliable. Whether the details are true, they share a theme: Musashi tended to shape the fight before it began. He is said to have arrived late, chosen his ground, or unsettled his opponent's confidence. These tales may say more about later admirers than about him. Yet they echo a pattern seen even in the boy's first duel: a young fighter who treated combat as something to be thought through, not simply endured.",
+      "image_prompt": "A misty pine-covered hillside outside Kyoto at dawn, a lean twenty-one-year-old Musashi with unkempt tied-back hair and a plain dark kimono standing calmly on a slope with a long wooden sword resting on his shoulder, looking down at a group of anonymous fencers in formal dark clothing waiting tensely below him, pale golden sunrise, long shadows, composed and watchful.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.25
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 63,
+      "narration": "Decades later, when Musashi wrote his Book of Five Rings, he reflected on those early years with unusual honesty. He says that by about the age of twenty-eight or twenty-nine, he had fought more than sixty times and never lost. And then comes the turn. He says those victories did not come because he had truly mastered strategy. Perhaps, he writes, it was natural talent, or perhaps heaven's principles had not been contradicted. The greatest swordsman of his age was refusing to take full credit.",
+      "image_prompt": "An older Musashi of about sixty, weathered, lean and tall, with long graying unkempt hair falling loose to his shoulders and an unshaven crown, wearing a plain dark kimono, sitting alone in a bare, dim room at a low writing desk with a brush in hand, looking up toward a small window with contemplative, unsparing eyes, a single shaft of pale light falling across the paper, quiet and austere, no decorations.",
+      "ken_burns": "zoom_in",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.44
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 61,
+      "narration": "That admission matters. It suggests that Musashi saw his young self clearly: fast, fearless, and, at that stage, not yet wise. Talent had carried him further than understanding. In the same passage, he says he spent years afterward trying to grasp the deeper principles he had missed. This is a striking reversal. The boy who had won by instinct became a man who distrusted instinct alone, and began the long study that would eventually produce a different kind of victory.",
+      "image_prompt": "A weathered Musashi in his early thirties, lean and angular, unkempt black hair tied back, kneeling inside a bare mountain hut at night in a plain dark kimono with a wooden sword laid across his knees, eyes closed in stillness, a single oil lamp casting warm low light on rough plank walls, snow visible through an open doorway, a sense of quiet turning inward after years of fighting.",
+      "ken_burns": "zoom_out",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.34
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 62,
+      "narration": "It is also worth noting what Musashi did not have. In his writing, he declares that in all things he had no teacher. Whether fully accurate or not, that claim shaped how he understood himself, as a man who learned from experience, from opponents, and from failure. The lack of a master, and the lack of a home, may have pushed him toward independence. But independence in the age of the sword also meant vulnerability. Every fight had to be won by him alone.",
+      "image_prompt": "A lean twenty-five-year-old Musashi with unkempt black hair loosely tied, worn dark kimono, practicing alone on an empty pebbled shoreline at dawn, swinging a long wooden sword through the air against crashing gray waves, his footprints trailing behind him in wet sand, pale cold light, no one else in the frame, sparse driftwood in the foreground.",
+      "ken_burns": "pan_left",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.36,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Consider how unusual that path was. Most samurai of the time were formed by lord and clan: raised in a household, trained in a school, and bound by loyalty to a master. Musashi was formed by the opposite, by absence, danger, and repetition. That may explain the fierce independence in his later writing. It may also explain the solitary streak that runs through nearly every story told about him. The boy who fought alone at thirteen never really stopped doing so.",
+      "image_prompt": "Split-composition visual in a dim wooden hall: on one side a row of anonymous samurai retainers in matching formal dark hakama and crested jackets kneeling in disciplined lines facing a raised dais; on the other, apart in the shadowed corner and lit by a single beam of light, a lean young Musashi in his twenties, in a plain worn dark kimono with unkempt tied-back hair, sitting alone with crossed arms and a sword beside him.",
+      "ken_burns": "pan_right",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.23,
+        "y": 0.52
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 61,
+      "narration": "Historians still debate how many of these stories are strictly true. The first duel appears mainly in Musashi's own words and in later biographies. The father, the temple, the battlefield: each has its doubters. But taken together, they tell a coherent story about how a person is made. Not by birth or by fortune, but by a hard childhood, by early violence, and by a sustained effort to understand what that violence had taught him. Musashi's legend begins with a boy, but it does not end with one.",
+      "image_prompt": "A layered dissolve composition: in the foreground a lean adult Musashi in his thirties, unkempt black hair tied back, dark kimono, seen in three-quarter profile standing on a rocky headland at sunset looking out to sea, and faintly superimposed in the sky and clouds above him the translucent silhouette of a small thirteen-year-old boy holding a wooden staff, warm golden-orange light, calm and reflective.",
+      "ken_burns": "zoom_out",
+      "character_ref": "musashi",
+      "zoom_anchor": {
+        "x": 0.33,
+        "y": 0.29
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "A child who kills before he is grown, and then spends a lifetime learning why: it is a story both disturbing and oddly human. Musashi never claimed his early wins as a triumph of skill. He credited natural aptitude, heaven's principles, or the weakness of rival schools, and then set about earning what he had been given. If you want to follow that long road from the boy to the master, you know where to find us.",
+      "image_prompt": "A quiet dusk scene of a lone dirt road winding through empty rice fields toward distant mountains, a single small figure of a thin traveler with a wooden staff walking away from the camera, seen from far behind, long shadow behind him, soft indigo sky with the first stars appearing, tranquil and open, no visible face.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep088-BGM-intro.mp3",
+    "main": "BGM/ep091-BGM-main.mp3",
+    "outro": "BGM/ep085-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/Eokft_hOZr8",
+  "shorts_url": "https://youtu.be/Ne84zCinRhI",
+  "scheduled_at": "2026-10-15 03:00"
+}

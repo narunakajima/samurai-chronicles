@@ -18,6 +18,10 @@
       {
         "episode_id": "ep022",
         "video_id": "w2CFUIda7qM"
+      },
+      {
+        "episode_id": "ep107",
+        "video_id": "Eokft_hOZr8"
       }
     ]
   },
@@ -1064,6 +1068,16 @@
       {
         "episode_id": "ep104",
         "video_id": "Xtcjn6J5H8U"
+      }
+    ]
+  },
+  "musashi_boy": {
+    "display_name": "Musashi Boy",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep107",
+        "video_id": "Eokft_hOZr8"
       }
     ]
   }
