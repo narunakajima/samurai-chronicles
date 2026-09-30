@@ -1,0 +1,224 @@
+{
+  "episode_id": "ep110",
+  "episode_title": "The Women Who Became Japan's Deadliest Spies: The Real History of the Kunoichi",
+  "youtube_title": "The Women Who Became Japan's Deadliest Spies: The Real History of the Kunoichi",
+  "youtube_description": "No poisoned needles. No skin-tight black suits. The real history of Japan's female spies is quieter: maids, household attendants, and wandering shrine maidens whose access made them useful in Sengoku Japan — and whose story very nearly vanished from history.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 They carried no swords, no...\n0:47 By the mid-1500s, Japan's...\n1:34 The word 'kunoichi' is...\n2:17 One often-cited channel ran...\n2:58 Tradition credits one woman,...\n3:42 Strip away the legend, and...\n4:26 This is where the popular image\n5:03 Inside a daimyo's household,...\n5:43 But access cut both ways. A\n6:22 Picture one such moment — an\n7:04 Multiply that single moment...\n7:40 When the Tokugawa shogunate...\n8:19 This wasn't unique to spies....\n8:57 The transformation came later...\n9:36 Films, manga, and later anime...\n10:12 Modern historians are working...\n10:51 There's something worth...\n11:23 So the real kunoichi were not\n11:57 Today, that near-erasure is...\n12:30 The real kunoichi left almost no\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Cummins, Antony, and Minami, Yoshie. \"The Book of Ninja: The Bansenshukai – Japan's Premier Ninja Manual\" (Watkins Publishing, 2013)\n2. Turnbull, Stephen. \"Ninja: Unmasking the Myth\" (Frontline Books, 2017)\n3. Turnbull, Stephen. \"Ninja AD 1460–1650\" (Osprey Publishing, 2003)\n\n\n🎵 Music: The Leading Edge (orchestral climax anthem) by SondreDrakensson (freesound.org) — CC BY 4.0\n\n🎵 Music: sad movie.mp3 by klavo1985 (freesound.org) — CC BY 4.0\n#Kunoichi #Ninja #OnnaShinobi #SengokuPeriod #JapaneseHistory #Samurai #Japan #SamuraiChronicles #FeudalJapan #MedievalJapan",
+  "youtube_tags": [
+    "Kunoichi",
+    "Ninja",
+    "Onna Shinobi",
+    "Sengoku Period",
+    "Japanese History",
+    "Samurai",
+    "Takeda Shingen",
+    "Mochizuki Chiyome",
+    "Female Spies",
+    "Japan",
+    "Samurai Chronicles",
+    "Feudal Japan",
+    "Medieval Japan"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 9,
+  "teaser_narration": "A maid kneels beside a paper screen, memorizing every word from the other side. If she's recognized, there will be no trial, no ransom — only silence. This was the world of Japan's real kunoichi. Who were they, really?",
+  "shorts_narration": "Sengoku Japan. Warlords built spy networks not from soldiers, but from maids, midwives, and wandering priestesses. No swords. No poison rings. Just patience, disguise, and information. Meet the real kunoichi.",
+  "shorts_hook_lines": [
+    "NO SWORDS.",
+    "JUST DISGUISE.",
+    "WHO WERE THEY REALLY?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of an anonymous woman's face, partially veiled by a plain traveling cloth or shrine maiden's headscarf, calm but watchful eyes holding direct eye contact, soft dawn light casting sharp shadow across half the face. Vertical portrait composition, dramatic and intense.",
+  "thumbnail_prompt": "Dramatic close portrait of a disguised Sengoku-era woman — plain travel robes or shrine maiden's attire rather than any fictional ninja costume, face partially concealed by a traveling scarf, sharp watchful eyes, positioned as if blending unnoticed into a crowd. Cinematic scale, moody atmospheric lighting, historically grounded tone.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "They carried no swords, no poison needles, no black bodysuits. Yet warlords built entire spy networks around women no soldier thought to search. Who were Japan's real kunoichi — and why did history nearly erase them?",
+      "image_prompt": "Extreme close-up of a woman's watchful eyes above a plain traveling scarf wrapped across the lower face, muted earth-toned clothing, no exotic weapons or theatrical costume visible. Somber, quiet, cinematic tension, deep shadow.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "By the mid-1500s, Japan's warring domains ran on information as much as steel. Lords paid handsomely for eyes inside a rival's walls — troop counts, grain stores, a marriage being arranged in secret. Most of that work fell to men trained as scouts and infiltrators. But certain places a man could never reach: a lord's private household, the women's quarters, a convent closed to men. For those spaces, some domains turned to women instead — the women later remembered, loosely, as kunoichi.",
+      "image_prompt": "Wide cinematic shot of a Sengoku-era castle town at dusk, merchants and travelers moving through a gate, a plainly dressed woman in traveling clothes passing unnoticed among the crowd toward a distant shrine gate. Muted tones, historical establishing atmosphere.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 10,
+      "narration": "The word 'kunoichi' is usually explained as a code — the character for 'woman,' broken into three strokes read 'ku,' 'no,' and 'ichi.' It does appear in the Bansenshukai, a ninja manual compiled in 1676, but there it names a technique — sending a woman where a man could not go — not a class of female warriors. No Sengoku-era document is known to use it for a female ninja. That meaning was cemented much later, by twentieth-century fiction.",
+      "image_prompt": "Close-up of an aged wooden writing desk with an ink stone, brush, and blank paper scroll, soft candlelight, no legible text visible, evoking quiet historical record-keeping. Contemplative documentary still-life.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "One often-cited channel ran through religion. So-called 'aruki miko' — walking shrine maidens — traveled between villages and castle towns performing blessings, selling charms, and telling fortunes. Their itinerant status let them cross domain borders that would stop most travelers cold. Some warlords, most notably the Takeda clan of Kai, are said to have organized these networks deliberately, using the women's freedom of movement to carry messages and observations back from territory they didn't control.",
+      "image_prompt": "A lone traveling shrine maiden in plain white and red robes walking a dusty mountain road at dawn, a wooden staff and small charm pouch at her side, distant castle silhouette on the horizon. Cinematic wide establishing shot, warm early light.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Tradition credits one woman, Mochizuki Chiyome, with turning this into something closer to an intelligence service — gathering orphaned and widowed women, training them as miko, and sending them out to gather information for the Takeda. It's a compelling story, but the evidence is thin. Her name surfaced in a 1930 study of Japanese shrine maidens, which cited a Takeda document appointing a woman named Chiyo head of the miko of Kai and Shinano. The spy-mistress legend itself has no firm source at all.",
+      "image_prompt": "A mysterious cloaked matron overseeing a group of young women in plain shrine-maiden attire practicing quiet, disciplined movements in a secluded temple courtyard at dusk. Muted, atmospheric, historically grounded composition, no faces clearly visible.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Strip away the legend, and what's left is still remarkable. Women in domestic roles — maids, entertainers, midwives, herbalists — had routine access to spaces male infiltrators could never enter: a lord's sickroom, a lady's private chamber, the kitchen where every meal passed through. Knowledge of medicinal plants doubled easily as knowledge of poisons. None of this required special training in stealth. It required only patience, memory, and a role no one thought to question.",
+      "image_prompt": "A woman in plain household servant's clothing grinding herbs with a mortar and pestle in a dim castle kitchen, jars of dried plants lined on a wooden shelf nearby, focused and unremarkable expression. Documentary, grounded, warm interior lighting.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "This is where the popular image goes furthest wrong. The 'kunoichi' of modern fiction — a seductive assassin killing with a hidden blade or a poisoned kiss — has almost no basis in the surviving historical record. The Bansenshukai's brief section on the subject is about access — placing a woman inside a household a man could not enter — not about combat. The real weapon was information, gathered quietly and carried out alive.",
+      "image_prompt": "Split visual composition: on one side an exaggerated theatrical fictional ninja figure in flashy costume mid-leap, on the other a plainly dressed maid quietly carrying a tray past a doorway, calm and unnoticed. Cinematic contrast, warm and cool tones.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "Inside a daimyo's household, the 'oku' — the women's inner quarters — operated almost as a separate world, a space most outside men never entered. A trusted attendant placed there could hear plans discussed nowhere else: alliances being negotiated through marriage, a wife's family maneuvering for advantage, a lord's private doubts spoken only to his household. For an enemy domain, a single well-placed woman in the oku could be worth more than a dozen soldiers at the gate.",
+      "image_prompt": "Long polished wooden corridor of a Sengoku-era daimyo residence's inner quarters, sliding fusuma doors on both sides, a few ladies-in-waiting in layered kosode walking in single file carrying lacquered trays, seen from behind, soft lamplight. Intimate, restrained, cinematic wide composition, no text visible.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 10,
+      "narration": "But access cut both ways. A woman inside an enemy household lived every day one careless word from discovery — and discovery meant no ransom, no honorable death by the sword, only quiet disposal far from any battlefield record. Unlike a captured male shinobi, whose fate might at least be noted by a chronicler, a servant woman who simply vanished raised no questions. That silence was the price of the access she'd been given.",
+      "image_prompt": "A female attendant kneeling motionless beside a paper screen door, head tilted slightly toward it, eyes sharp with concentration, faint silhouettes of two men talking visible through the screen behind her. Tense, quiet, cinematic nighttime composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Picture one such moment — an imagined composite, not a documented case: a maid in a rival lord's household, memorizing troop numbers overheard through a paper screen, waiting for the one night a messenger could slip past the gate unnoticed. One mistake — a question answered too quickly, a face recognized from the wrong province — and the mission, and the woman, disappeared from history entirely. Most did. What little we know rests on a handful of scattered references and later traditions.",
+      "image_prompt": "A cloaked figure slipping through a narrow castle side gate at night, torchlight flickering on stone walls, a guard's silhouette turning just a moment too late. Tense, dramatic nighttime cinematic composition, high stakes atmosphere.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 10,
+      "narration": "Multiply that single moment by dozens of domains, over a century of near-constant war, and a picture emerges of intelligence that could flow through people the era considered unremarkable. It worked precisely because no one imagined a fortune-teller, a maid, or a wandering priestess as a threat. Their invisibility to contemporaries became their only real protection — and, later, the very reason so little was written down about them.",
+      "image_prompt": "Wide symbolic composition: several distant, plainly dressed women — a maid, a peddler, a shrine maiden — each walking alone along different roads across a war-torn Sengoku landscape at dusk, unseen by soldiers passing nearby. Reflective, cinematic wide shot.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 12,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "When the Tokugawa shogunate finally imposed lasting peace at the start of the 1600s, the wartime demand for this kind of intelligence fell away. The male shinobi lineages of Iga and Koga found new roles as castle guards and retainers, their names and services at least partially documented. The women's networks, built on informal, decentralized, and deliberately unofficial arrangements, simply dissolved — leaving behind rumor and almost no institutional trace.",
+      "image_prompt": "Quiet dawn scene of a peaceful castle town under early Edo-period rule, plainly dressed guards standing watch at the gate, while a distant shrine maiden folds away her traveling charms, her role fading into ordinary life. Calm, transitional cinematic tone.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 10,
+      "narration": "This wasn't unique to spies. Across nearly all of pre-modern Japanese record-keeping, women's activities outside the household were rarely considered worth writing down, especially when the household itself depended on those activities staying secret. What survives about the kunoichi comes disproportionately from later storytellers and writers, who had their own reasons — mostly entertainment — for reshaping fragments of real practice into something far more theatrical.",
+      "image_prompt": "Dusty temple archive shelves stacked with aged bound scrolls and ledgers, a single shaft of light falling across a half-open document case, no legible text visible. Contemplative, historical documentary still-life, muted lighting.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "The transformation came later than most people think. Edo-period theater and fiction loved ninja heroes with magical powers, but female ninja played little part there. The seductive 'kunoichi' — poisoned hairpins, acrobatic escapes, seduction as a weapon — was largely a twentieth-century creation, popularized above all by Yamada Futarō's ninja novels of the late 1950s and 1960s. It was entertainment first, history a distant second.",
+      "image_prompt": "An Edo-period kabuki stage mid-performance, a male kabuki actor in an exaggerated ninja-sorcerer costume striking a dramatic mie pose amid theatrical smoke, holding a rolled scroll, audience silhouettes in the foreground, warm lantern light. Rich theatrical cinematic lighting, no signage or text visible.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Films, manga, and later anime pushed the image further still, adding skin-tight costumes and overtly stylized combat that has essentially nothing to do with any Sengoku-era practice. Exported worldwide, this version became so dominant that for many people outside Japan, it's the only 'kunoichi' they've ever encountered — a costume and a fight scene, built almost entirely from twentieth-century imagination.",
+      "image_prompt": "Symbolic montage-style image: a vintage film projector light beam cutting through darkness, the silhouette of an exaggerated fictional female ninja figure dissolving into flickering cinema light. Nostalgic, cinematic concept composition.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Modern historians are working from thinner material than they'd like: temple registries, household diaries, medicinal texts, and scattered references in domain records that were never meant to explain themselves to later readers. Piecing together even a partial, defensible picture of how these women actually operated takes patient cross-referencing — and for every detail confirmed, several more legendary claims have to be set carefully aside as unproven.",
+      "image_prompt": "A researcher's gloved hands carefully turning the pages of a fragile bound diary manuscript on a wooden desk, soft daylight from a nearby window, magnifying glass resting beside scattered notes. Documentary, grounded, contemplative composition.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "There's something worth sitting with in what does hold up. In a society that gave women few paths to influence, a small number found one anyway — inside the very roles that were supposed to keep them powerless. Being underestimated wasn't just a disadvantage they worked around. For a brief, dangerous window in Japanese history, it was the sharpest tool they had.",
+      "image_prompt": "A lone plainly dressed woman standing at dawn on a quiet hillside overlooking a peaceful valley, no weapons visible, calm and composed. Reflective, minimalist, cinematic contemplative composition.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "So the real kunoichi were not assassins in silk and shadow. They were maids, midwives, fortune-tellers, and wandering pilgrims who turned an era's blindness toward women into a working source of intelligence — one so quiet, so deliberately unremarkable, that it very nearly vanished from history altogether. Perhaps that was always the point.",
+      "image_prompt": "A row of silhouettes in different plain everyday disguises — maid, midwife, fortune-teller, shrine maiden — subtly overlapping to suggest one hidden role shifting identity. Symbolic, muted, cinematic concept composition.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 10,
+      "narration": "Today, that near-erasure is itself part of the story. Historians studying the kunoichi aren't just reconstructing a network of spies — they're recovering evidence of women's agency in an era whose written records assumed male actors by default. Every confirmed detail chips away at a myth built to entertain, and reveals something quieter, and in its own way, far more significant.",
+      "image_prompt": "Close-up of a single worn straw sandal and a small wooden charm resting at the base of a moss-covered roadside stone marker (no inscription visible) in early morning mist, suggesting a traveler who vanished without record. Quiet, symbolic, cinematic shallow depth of field.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 10,
+      "narration": "The real kunoichi left almost no trace — and maybe that's a measure of how well they did their work. If uncovering the histories hiding behind Japan's biggest legends is your kind of story, you know where to keep looking.",
+      "image_prompt": "Calm wide shot of misty Japanese mountain valleys at sunrise, peaceful farmland and a distant shrine gate where a hidden history once unfolded, no figures visible. Peaceful, reflective closing tone.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep095-BGM-intro.mp3",
+    "main": "BGM/ep064-BGM-main.mp3",
+    "outro": "BGM/ep103-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/fbpmNMiAIrI",
+  "shorts_url": "https://youtu.be/XFz9WXOpJwA",
+  "scheduled_at": "2026-10-17 03:00"
+}
