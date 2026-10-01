@@ -1,0 +1,271 @@
+{
+  "episode_id": "ep111",
+  "episode_title": "The Tiny Lord Who Beat Tokugawa Twice: Sanada Masayuki's Impossible Defense",
+  "youtube_title": "The Tiny Lord Who Stopped Tokugawa Twice: Sanada Masayuki's Impossible Defense",
+  "youtube_description": "Twice, Tokugawa armies marched on one small mountain castle. Twice, they marched away without it. Sanada Masayuki, a minor lord squeezed between the greatest powers in Japan, survived by switching sides, bending the truth, and turning narrow streets and swollen rivers into weapons. This is the story of how he did it, and what it cost him.\n\n⏱️ Chapters:\n0:00 Introduction\n0:25 Twice, Tokugawa armies...\n0:41 Shinano Province, central...\n1:32 At seven, he was sent to\n2:16 In 1575, at Nagashino,...\n3:06 Then, in June 1582, Oda Nobunaga\n3:53 By 1583, Masayuki had cast his\n4:39 Masayuki refused. Then he...\n5:21 Ueda castle was no great...\n6:04 In the early autumn of 1585,\n6:48 At that moment, Sanada...\n7:33 Ieyasu soon had greater...\n8:20 Fifteen years passed....\n9:07 In the autumn of 1600, Tokugawa\n9:54 The message was a refusal....\n10:31 Accounts also tell of the...\n11:17 The Western army lost....\n12:05 At Kudoyama, the old lord lived\n12:45 So how did he do it?\n13:25 But the cunning cannot be...\n14:07 Two victories over the...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Hirayama Yu, Sanada Sandai (PHP Shinsho, 2011)\n2. Marushima Kazuhiro, Sanada Yondai to Nobushige (Heibonsha Shinsho, 2015)\n3. Stephen Turnbull, The Samurai Sourcebook (Cassell, 1998)\n\n\n🎵 Music: Epic Trailer Background Music by Migfus20 (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional Dramatic Theme by tyops (freesound.org) — CC BY 4.0\n#SanadaMasayuki #Sanada #Ueda #Tokugawa #SengokuPeriod #SamuraiHistory #JapaneseHistory #Sekigahara #TokugawaHidetada #SamuraiChronicles",
+  "youtube_tags": [
+    "Sanada Masayuki",
+    "Siege of Ueda",
+    "Battle of Ueda 1585",
+    "Battle of Ueda 1600",
+    "Tokugawa Hidetada",
+    "Torii Mototada",
+    "Sanada clan",
+    "Sengoku period",
+    "Samurai history",
+    "Japanese history",
+    "Sekigahara",
+    "Tokugawa Ieyasu"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 13,
+  "teaser_narration": "A swollen river, a castle that would not fall, and the Tokugawa heir stuck outside while the greatest battle in Japanese history was fought without him. The man behind it had spent days politely negotiating. The answer lies here.",
+  "shorts_narration": "Thirty-eight thousand men marched on a castle held by two thousand. The lord, Sanada Masayuki, politely asked for time to think. That delay helped keep Tokugawa's heir from the decisive battle. What was he really doing?",
+  "shorts_hook_lines": [
+    "38,000 MEN.",
+    "STOPPED BY 2,000.",
+    "WHAT DID HE PROMISE THEM?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up vertical portrait of Sanada Masayuki, a lean Japanese lord in his early fifties, narrow shrewd face with narrow watchful eyes staring directly into the camera with a calm, calculating half-smile, thin greying moustache, sakayaki shaved forehead and crown with a small oiled greying topknot, sun-browned weathered skin, dark lacquered armor collar with a small six-coin crest emblem visible at the edge of the frame, cold grey rain-light on one side of the face and deep shadow on the other, blurred misty castle gate behind him, face filling the center and upper part of the frame, no modern or European elements.",
+  "thumbnail_prompt": "Cinematic close portrait of Sanada Masayuki at fifty-three, a lean sun-browned Japanese lord with narrow shrewd eyes and a thin greying moustache, sakayaki shaved crown with a small topknot, a faint knowing half-smile, holding a closed iron war fan against his chin, dark lacquered armor with a small six-coin crest on the helmet front, standing on a castle rampart in the rain, behind him a vast blurred army of Tokugawa banners with the three-leaf hollyhock crest sinking into grey mist and a swollen brown river below, cold overcast side lighting, tense and calculating mood, documentary composition., no writing, no text, no European elements",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Twice, Tokugawa armies marched on one small castle. Twice, they marched away without it. How did one lord with barely two thousand men pull it off?",
+      "image_prompt": "Low-angle dramatic shot of Sanada Masayuki, a lean Japanese lord in his early fifties with a narrow shrewd face, narrow watchful eyes, thin greying moustache, sakayaki shaved forehead and crown with a small oiled topknot, in plain dark lacquered armor with a small six-coin crest on the helmet front, standing calmly on the stone-based wall of a modest mountain castle above a misty valley at dawn, a vast Tokugawa army with three-leaf hollyhock crest banners spreading across the plain far below him, quiet half-smile, a closed iron war fan in his hand.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.34
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Shinano Province, central Japan, 1547. A land of narrow valleys, steep ridges, and very little farmland. In such a country the Sanada were not a great house but a small family of mountain warriors, driven from their home valley by war only a few years earlier and now serving whichever power stood nearest. That year, a third son was born to Sanada Yukitaka and named Masayuki. As a third son, he was meant for a quiet life as a spare. Nothing about his birth suggested a man who would one day stop a Tokugawa army in its tracks.",
+      "image_prompt": "Wide panoramic view of a steep mountain valley in sixteenth-century Shinano Province, Japan, terraced fields on narrow valley floors, a small timber hill fortress on a ridge with thatched farm hamlets below, thin morning mist in the pine forests, a modest column of local warriors with a plain banner bearing a six-coin crest emblem walking a mountain path, no European elements, no writing.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "At seven, he was sent to the court of Takeda Shingen, the most feared warlord in eastern Japan. The post looked like an honor, but it was also a hostage's role: a boy kept close to guarantee his family's loyalty. Masayuki used the years well. He served among Shingen's young attendants, and a later tradition says he absorbed the master's habits of scouting, patience, and deception. Whatever the truth, he learned to read powerful men from a safe distance, and to survive by being useful to them.",
+      "image_prompt": "Interior of a large warlord's hall in sixteenth-century Japan, a seven-year-old boy, the young Sanada Masayuki, thin with a narrow watchful face and an unshaved head with a forelock and hair tied back (no shaved pate, a child page), in a small formal dark kimono with a small six-coin crest, kneeling very straight at the edge of a row of attendants, looking up with careful, observant eyes at a distant, shadowed figure of a stern warlord in armor seated on a raised dais, anonymous, warm lamplight on tatami, quiet tension.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1575, at Nagashino, Takeda's cavalry charged into Oda and Tokugawa gunfire and fell in rows. Among the dead were Masayuki's two elder brothers. The spare son suddenly became head of the Sanada. Seven years later, in 1582, the Takeda house itself was destroyed, and the house he had served since boyhood was gone. Masayuki, then about thirty-five, was a minor lord with no patron, no protection, and a handful of mountain castles surrounded by hungry neighbors. He could serve someone, or he could vanish.",
+      "image_prompt": "Sanada Masayuki in his mid-thirties, a lean Japanese lord with a narrow shrewd face, narrow eyes, thin black moustache, sakayaki shaved forehead and crown with a small oiled topknot, in plain dark lacquered armor, standing alone at the edge of a smoky mountain pass at dusk, looking down at a burning valley where scattered banners of a defeated army lie on the ground, charred pine trees, his face tight and thoughtful, cold orange afterglow behind him.",
+      "ken_burns": "zoom_out",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Then, in June 1582, Oda Nobunaga died at Honnoji, and the order of central Japan came apart overnight. The old Takeda lands were suddenly up for grabs, and three great neighbors moved in: Tokugawa, Hojo, and Uesugi. Masayuki, caught in the middle, did something that would define his reputation. He changed sides, and then changed again. Uesugi, then Hojo, then Tokugawa, all within a few months. In a country with no safe master, loyalty was a luxury he could not afford.",
+      "image_prompt": "Photorealistic cinematic film still. A tense night council in a mountain castle hall in 1582, seen at an angle from the side: Sanada Masayuki, a lean man in his mid-thirties with the same narrow shrewd face, narrow eyes and thin moustache as in the reference image, shown in three-quarter profile, kneeling at the head of a low table in a plain dark kimono and hakama with a small six-coin crest (six small round coins in two rows of three: three across on top, three across below). His forehead and crown are shaved bare; his black side and back hair is oiled and gathered into a thin chonmage queue that lies flat along the top of the shaved crown, pointing forward, exactly as in the reference image. Three anonymous samurai envoys sit around the table facing him: one on the near left side, one on the far right side, and one directly across the table with his back half-turned to the camera, each with a shaved forehead and crown and the same small flat-lying topknot, in different formal robes marked only with a plain circle crest or a simple single-bar circle crest. One traditional Japanese paper-shaded andon lamp with a small oil-dish flame inside flickers on the table; his half-lidded eyes weigh each of them, long shadows across the tatami. No writing, letters or characters anywhere on the robes or walls.",
+      "ken_burns": "pan_left",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By 1583, Masayuki had cast his lot with Tokugawa Ieyasu and built a new castle at Ueda. It seemed a settled arrangement. But when Ieyasu made peace with the Hojo, he had promised them the district of Numata, land that Masayuki held. In 1585, Ieyasu ordered him to hand it over. It was not Ieyasu's to give; Masayuki had taken it by his own sword. Masayuki now had a choice: obey and lose his strength, or refuse one of the strongest men in eastern Japan.",
+      "image_prompt": "Sanada Masayuki, thirty-eight years old, lean with narrow shrewd eyes, thin black moustache, sakayaki shaved forehead and crown with a small oiled topknot, in a plain dark kimono, sitting alone on the veranda of a small hilltop castle at dusk, a rolled paper scroll with no visible writing lying unopened on the boards in front of him, staring at it without touching it, the dark silhouette of mountains behind, a single paper lantern, stillness before a decision.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Masayuki refused. Then he turned to Tokugawa's rival, the Uesugi, and offered his loyalty in return for protection. As a pledge, he sent a hostage, his younger son, the young man who would later be known as Yukimura. It was a gamble. Help from the Uesugi would be limited and slow, and Masayuki knew it. He had just picked a fight with a far larger army, and given up his own son to do it. All that remained was to prepare the ground.",
+      "image_prompt": "A cold courtyard at dawn at a mountain castle: Sanada Masayuki, thirty-eight years old, lean, narrow shrewd face, thin black moustache, sakayaki shaved forehead and crown with a small topknot, in dark kimono with six-coin crest, standing rigid and silent as his second son, a slim young man of about eighteen with sakayaki shaved crown and a small black topknot, on a small horse, is led out of the gate by anonymous riders carrying a plain banner of another clan, the young man glancing back once, the father's face unreadable and tight, breath visible in the chill air.",
+      "ken_burns": "pan_right",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.33
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Ueda castle was no great fortress. It was a modest stronghold on a river terrace, its flank guarded by a steep cliff above the Chikuma River, with the Kanzaki River close by. Against it, Ieyasu sent a force of about seven thousand under commanders including Torii Mototada. Masayuki had perhaps two thousand. Ieyasu himself stayed far away. In the narrow lanes of the town below the castle, Sanada men were quietly building barricades. The mountain lord was not planning a defense so much as a trap.",
+      "image_prompt": "Aerial-style wide view of a small Japanese hirayama castle with timber turrets and white plaster walls on a river terrace above a steep cliff, a narrow winding castle town of low wooden houses below it, a river curving beneath the cliff, thousands of Tokugawa soldiers with three-leaf hollyhock crest banners spreading across the fields in the distance, and in the foreground anonymous Sanada soldiers with six-coin crest banners stacking wooden barricades across a lane, early autumn morning light, no European elements, no writing.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In the early autumn of 1585, the Tokugawa troops pushed into the town, and the Sanada defenders fell back, almost too easily. The attackers, believing the castle was about to break, crowded into the narrow streets and reached the second enclosure. Then the gates shut. Barricades dropped behind them. From the walls and rooftops, arrows and gunfire poured into men who could no longer advance or turn around. An army had walked into a space far too narrow for an army.",
+      "image_prompt": "Dramatic high-angle view into a narrow castle-town lane packed with anonymous Tokugawa soldiers in dark armor with three-leaf hollyhock crest banners, crushed together in confusion between wooden barricades, spearpoints jammed upward, while Sanada archers and matchlock gunners with six-coin crest banners fire down from rooftops and the castle wall, white gunsmoke drifting through the lane, dust and chaos, harsh midday light.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "At that moment, Sanada horsemen waiting in the hills struck the flank. Hit from several sides, the attackers broke, and the retreat turned to panic. At the Kanzaki River, later accounts say, water Masayuki's men had dammed was released onto the fleeing soldiers. Many drowned. Estimates of Tokugawa dead run from several hundred to well over a thousand, while Sanada losses were slight. Commanders, among them Torii Mototada, pulled back. A mountain lord had defeated an army of Tokugawa Ieyasu.",
+      "image_prompt": "Wide landscape shot in a standard 16:9 frame of a chaotic rout at a flooded river under grey afternoon rain, one continuous realistic scene. Foreground and middle ground: anonymous Tokugawa soldiers in dark armor and iron helmets scrambling and drowning in a surging brown flood, horses panicking, fallen white banners each bearing a bold black three-leaf hollyhock (aoi) crest: three heart-shaped leaves joined at the center inside a circle, never a flower or petals. From the treeline on one flank, Sanada cavalry charge in under red banners with the six-coin crest (two rows of three round coins). Far in the background, on a low wooded ridge above the riverbank, the Sanada commander stands on foot on solid ground beside his horse with a few retainers, watching calmly: a lean man in plain dark armor whose helmet bears a small six-coin crest, a tiny distant figure no taller than the retainers beside him, drawn at the same natural human scale as everyone else in the landscape. Spray and mud.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Ieyasu soon had greater troubles. Within months, his own senior vassal Ishikawa Kazumasa defected to Hideyoshi, and Ieyasu in time submitted to the new ruler. Masayuki, by now a veteran of switching sides, did the same. He became Hideyoshi's vassal and kept Ueda, but was placed under Ieyasu's command. The man who had beaten the Tokugawa now had to work beside them. In a letter of 1586, Hideyoshi called him a two-faced schemer, words later readers have taken as half insult, half grudging respect.",
+      "image_prompt": "Side view across a grand audience hall: in the left foreground Sanada Masayuki, about forty years old, lean, in formal dark kimono and hakama with a small six-coin crest on the sleeve, kneels alone in a deep formal prostration bow — his back bent fully forward and low, both palms flat on the polished wooden floor, his head lowered well below his shoulders toward the floor, the top of his head turned toward the far dais. From this side angle his shaved crown is visible, with his remaining hair oiled into a small thin chonmage lying flat along the top of the shaved crown. Nobody else is near him; the open polished floor around him is empty. Far away at the end of the hall a raised dais holds only a golden folding screen and the dark, indistinct shadow of a seated ruler. Along the right side wall, at a distance, a single row of anonymous retainers in formal kimono kneel upright in profile, each a complete figure with head, shaved crown and small topknot clearly visible. Soft golden light, reflections on the polished floor, solemn stillness and quiet submission.",
+      "ken_burns": "zoom_out",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.6
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Fifteen years passed. Hideyoshi died, and in 1600 Japan split again, this time between Ieyasu and Ishida Mitsunari. At Inubushi, in Shimotsuke, the Sanada held a family council. Masayuki's elder son Nobuyuki, married into the Tokugawa camp, chose the East. Masayuki and his younger son Yukimura chose the West. Some historians see a hedge, a way to ensure the Sanada name survived whichever side won. Others see real conviction. Masayuki never explained.",
+      "image_prompt": "Night scene at a roadside inn in Shimotsuke Province: Sanada Masayuki, in his early fifties, lean, narrow shrewd face, thin greying moustache, sakayaki shaved forehead and crown with a small greying topknot, in a plain dark kimono with a six-coin crest, sitting between his two sons, men in their early thirties with sakayaki shaved crowns and small black topknots, in similar dark formal dress, one turning his shoulder away toward the door, one looking steadily at the father, a single oil lamp casting three long shadows on the wall, an unfinished meal on the low table, heavy silence.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.44
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In the autumn of 1600, Tokugawa Hidetada, Ieyasu's heir, marched along the Nakasendo toward the decisive confrontation, commanding about thirty-eight thousand men by common estimate. In his path sat Ueda. He sent a messenger asking Masayuki to surrender. Masayuki replied that he was willing to hand over the castle, but needed time to put his affairs in order. Then he asked for another day. Hidetada waited, sure the old man was nearly beaten. The next message from the castle was not what he expected.",
+      "image_prompt": "Photorealistic cinematic film still, natural skin texture. Medium shot inside the gate courtyard of a small mountain castle at dusk: Sanada Masayuki, in his early fifties, lean, with the same narrow shrewd face, narrow watchful eyes, thin greying moustache and faint greying goatee as in the reference image, seen in three-quarter view, seated upright on a folding camp stool, in a plain dark kimono and hakama with a small six-coin crest (six small round coins in two rows of three: three across on top, three across below). His forehead and crown are shaved bare; his greying side and back hair is oiled and gathered into a thin chonmage queue that lies flat along the top of the shaved crown, pointing forward, exactly as in the reference image. Before him an anonymous Tokugawa envoy in formal dress kneels and bows low with both hands on the ground, his robe bearing a small three-leaf hollyhock crest (three heart-shaped leaves meeting at the center inside a thin circle). Masayuki inclines his head slightly with a restrained, unreadable faint half-smile, lips closed. Behind them his own soldiers quietly carry bundles of arrows and powder kegs into a storehouse, torches being lit, plain unmarked paper lanterns, tension hidden under politeness, no writing anywhere.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.71,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The message was a refusal. Masayuki had spent the days stocking his defenses and preparing his men. Furious, Hidetada ordered an assault. According to later chronicles, the Sanada fell back, drew the attackers close, and struck from the sides, with gunfire pouring from the castle walls, until Hidetada's troops fled in disorder. Some historians think the fighting was smaller than the legend. Either way, the castle stood, and the heir of the Tokugawa was stalled in front of it.",
+      "image_prompt": "Wide establishing shot of a battle at a small Japanese mountain castle in cold autumn rain, seen from the muddy slope below its walls, one continuous realistic scene. Foreground: anonymous Tokugawa foot soldiers, every one wearing an iron helmet, carrying white banners with a black three-leaf hollyhock (aoi) crest in a circle, recoiling and breaking in confusion in the mud. Middle ground: the low stone-and-timber castle wall, lined with Sanada matchlock gunners firing in clouds of white smoke beneath red banners with the six-coin crest (two rows of three round coins). On the right flank, mounted Sanada warriors charge out of a treeline into the Tokugawa ranks. Among the gunners on the wall stands their commander, Sanada Masayuki, exactly the same size as the gunners beside him and occupying only a small part of the frame, seen from a distance so that no facial detail is visible: a lean man in plain dark armor with a small six-coin crest on his helmet, standing still, holding a short iron war fan folded shut like a closed black baton, lowered at his side. All people are drawn at natural, consistent human proportions relative to the walls and to each other. Mud, rain, smoke, grey stormy light.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.11,
+        "y": 0.78
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Accounts also tell of the Kanzaki River, swollen by rain, cutting the Tokugawa lines apart. After about a week, Hidetada gave up and marched west, never taking the castle. Flooded rivers had also slowed his father's orders, and he caught up with Ieyasu five days after Sekigahara had been fought. Ieyasu had won the war without his heir, and is said to have refused to see his son for days. Masayuki had not won a single great battle. But he had helped make the heir of the Tokugawa late for the most important morning in Japanese history.",
+      "image_prompt": "A swollen, muddy river in heavy rain at dusk, a broken wooden bridge half-submerged, anonymous Tokugawa foot soldiers in lacquered armor, every one of them wearing a helmet or a conical jingasa war hat, struggling in lines at the water's edge under hollyhock crest banners, pushing open two-wheeled wooden Japanese handcarts loaded with straw rice bales stuck in the mud, the carts completely open with no canopy, roof or cloth cover, and pack horses with straw-wrapped loads; no tents. On a distant ridge above the flooded plain stands a small Japanese mountain castle with a faint red six-coin crest banner under a dark storm sky, untouched and watching over the river, desolate, exhausted, grey-blue light.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The Western army lost. Ieyasu's victory left Masayuki and Yukimura facing execution. It was Nobuyuki who saved them. He pleaded with his father-in-law Honda Tadakatsu, one of Ieyasu's finest generals, and with Ieyasu himself. The sentence was commuted to exile. Late in 1600, Masayuki and Yukimura were sent to Mount Koya, and soon settled at Kudoyama, a village at its foot in Kii Province, far from home. The little castle that had humiliated the Tokugawa twice was taken from him.",
+      "image_prompt": "A cold winter road at dawn: Sanada Masayuki, in his early fifties, lean, with the same narrow shrewd face, narrow watchful eyes, thin greying moustache and faint greying goatee as in the reference image, in a plain dark traveling kimono with a small six-coin crest on the sleeve (six small round coins in two rows of three, exactly as in the reference image: three across on top, three across below, wider than tall), a straw hat hanging on his back, walking along a snowy mountain road beside his son, a man in his early thirties. Both have the forehead and crown shaved bare, with the remaining hair oiled and tied into a short, compact chonmage that is folded forward and rests flat on top of the shaved crown, its tip pointing toward the forehead, exactly as in the reference image (Masayuki's greying, his son's black). A few anonymous Tokugawa escorts with hollyhock crest banners guard them. Masayuki turns his head and looks back over his shoulder once at a distant small castle on a hill fading in the mist, quiet dignity, pale cold light.",
+      "ken_burns": "pan_left",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.61,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "At Kudoyama, the old lord lived under watch, short of money, writing letters home to ask for supplies and news. Surviving letters suggest a long, humbling wait. He hoped for a pardon, and it never came. Masayuki died there in 1611, at about sixty-four, without seeing Ueda again. The mountain lord had outwitted the Tokugawa twice, and still ended his life in exile.",
+      "image_prompt": "Sanada Masayuki at sixty-four, gaunt and weathered, narrow shrewd face with deep lines, thin white moustache and beard, sakayaki shaved forehead and crown with thin white hair in a small topknot, in a plain faded kimono, sitting alone on the worn wooden veranda of a small rough house in a mountain village, writing a letter with a brush at a low desk, looking up toward the distant hills with a faint, tired half-smile, autumn leaves, soft low evening light.",
+      "ken_burns": "zoom_out",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "So how did he do it? Not with numbers. Both times, Masayuki's strength lay in what the attackers failed to understand: the ground, the weather, the pace of the day, and their own impatience. He did not fight a larger army. He made it fight itself, in lanes too narrow to move and on rivers too swollen to cross. His real weapon was the ability to make a strong enemy believe something false, and then wait for the moment they acted on it.",
+      "image_prompt": "A realistic cinematic high aerial view at dusk of a small Japanese castle town, narrow lanes shaped like a funnel, a river curving around it, and tiny figures of a large army in dark armor with hollyhock crest banners flowing into the lanes while a small number of defenders with six-coin crest banners wait on the walls and hills, photorealistic documentary style, no writing, no labels, muted slate and amber tones.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "But the cunning cannot be separated from its cost. Masayuki spent his life changing lords, bargaining, hedging, and dividing his own family so that the name might survive. To his enemies it looked like treachery. To a small lord with strong neighbors, it was the only logic that worked. And it worked: Nobuyuki's line ruled Matsushiro until the nineteenth century. Meanwhile, the old fox's younger son carried his father's lessons all the way to Osaka.",
+      "image_prompt": "Sanada Masayuki in his early fifties, lean, narrow shrewd face, thin greying moustache, sakayaki shaved forehead and crown with a small greying topknot, in dark kimono with six-coin crest, seen in three-quarter profile standing at the edge of a mountain cliff at sunset, looking across a valley toward a distant small castle, a faint translucent double-image of two men in their thirties in armor with sakayaki shaved crowns and small topknots standing behind his shoulders, golden-orange light, reflective and quiet.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sanada_masayuki",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 60,
+      "narration": "Two victories over the Tokugawa, and a death in exile. Perhaps the real question about Masayuki is not how he won, but what it takes to survive when you are small, and everyone else is not. His answer was never loyalty, never pride, and never a fair fight. If you like questions without easy answers, you know where to find us.",
+      "image_prompt": "A quiet misty dawn over a small Japanese mountain castle on a river terrace, thin smoke from the town, a single six-coin crest banner hanging still on the main gate, terraced fields and a calm winding river below, the distant ridges fading to soft blue, empty and tranquil, no people, no writing.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep071-BGM-intro.mp3",
+    "main": "BGM/ep111-BGM-main.mp3",
+    "outro": "BGM/ep073-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/NvoR6XLae5g",
+  "shorts_url": "https://youtu.be/X1n4LnBCfDs",
+  "scheduled_at": "2026-10-20 03:00"
+}

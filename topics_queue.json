@@ -1115,14 +1115,14 @@
     },
     {
       "episode_id": "ep111",
-      "status": "pending",
+      "status": "published",
       "title": "The Tiny Lord Who Beat Tokugawa Twice: Sanada Masayuki's Impossible Defense",
       "era": "Sengoku",
       "priority": "A",
       "person": "sanada_masayuki",
       "angle": "overview",
       "notes": "真田幸村(ep009/ep020)の父。上田合戦(1585/1600)で徳川軍を二度退けた知略に絞る。幸村エピソードとは別人物・別視点。hidden_strategist仮説のn増強用（overview/謎解き寄りで構成）。 → 2026-09-29: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-09-29"
+      "last_updated": "2026-10-01"
     },
     {
       "episode_id": "ep112",
@@ -1265,6 +1265,6 @@
       "notes_2026-09-28": "Opus月次分析で誤り発覚・修正: evidence_episodesにera=Edoのep090（島原の乱、Bakumatsuではない）とera=Bakumatsu/Meiji（混在）のep084が誤って含まれていたため除外し、純粋なBakumatsu7本に修正した。n≥5の判定条件は満たした（n=7）が、CTRが同月中央値以上だったのは1/7（そのep076はリタイトルの影響を受けており除外すると0/6）。並べ替え検定でp≈0.09（複数区分を走査した中の1つであり「明確」とは言えない）。維持率は中央値20.4% vs 他era17.9%で劣っていない。proven/rejectedどちらにも判定せず、testingのまま据え置く。pendingキューにBakumatsuは0本のため当面の実害なし。"
     }
   ],
-  "last_updated": "2026-09-30",
+  "last_updated": "2026-10-01",
   "total_topics": 115
 }

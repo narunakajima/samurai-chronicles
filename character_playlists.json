@@ -1080,5 +1080,15 @@
         "video_id": "Eokft_hOZr8"
       }
     ]
+  },
+  "sanada_masayuki": {
+    "display_name": "Sanada Masayuki",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep111",
+        "video_id": "NvoR6XLae5g"
+      }
+    ]
   }
 }
