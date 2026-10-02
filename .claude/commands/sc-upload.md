@@ -84,6 +84,84 @@ python3 $HOME/samurai-chronicles/sc_sns_up.py --episode ep{NNN} --publish-at "20
   ※ 指定日時まで非公開状態です。YouTube Studio で確認できます。
 ```
 
+## STEP 3.5 — Shortsの「関連動画」を設定する（Chromeを自動操作、2026-10-02追加）
+
+Shortsの「関連動画」に本編を設定しておくと、Shortsの視聴者を本編へ誘導できる。
+`sc_sns_up.py` からは設定していない（YouTube Data APIで設定できるかは未確認）ため、
+Claude in Chrome（ユーザーのログイン済みChrome。内蔵ブラウザはログインが必要で使えない）で
+操作する。kagaku-life の `/kl-upload` STEP 3.5 と同じ仕組み。
+
+**重要な制約: Studioの関連動画の選択画面には「公開済みの動画」しか出ない。**
+STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べないので、今回アップロードした回は
+この時点では設定できない。そこで「公開日時を過ぎていて、まだ設定していないエピソード」を
+全てまとめて対象にする（前回までに予約した回が、公開された後の `/sc-upload` で拾われる）。
+完了の記録は `episodes/ep{NNN}.json` の `related_video_set: true`。
+
+### 手順
+
+1. 対象を出す:
+   ```bash
+   python3 sc_related_targets.py
+   ```
+   「設定が必要なShortsはありません」なら、このSTEPは終了（今回の回は公開後の
+   `/sc-upload` で設定される、と完了報告に一言添える）。Chromeは開かない。
+   検索語は、他のエピソードのタイトルに含まれない最短の先頭部分が自動で選ばれる
+   （SCのタイトルは英語で先頭が似たものが多いため）。
+
+2. Chromeを用意する。**起動時点でChromeが動いていたかを必ず記録する**:
+   ```bash
+   pgrep -x "Google Chrome" >/dev/null && echo running || echo not-running
+   ```
+   `not-running` なら `open -a "Google Chrome"` で起動する（この場合は最後に終了する）。
+   `list_connected_browsers` でClaude in Chrome拡張の接続を確認する（起動直後は数十秒かかる
+   ことがある）。接続できなければ、このSTEPは諦めて完了報告にその旨を書く（Chromeは
+   自分で起動していた場合のみ終了する）。ツールが未読込なら `ToolSearch` で
+   `mcp__claude-in-chrome__*`（`browser_batch`・`computer`・`navigate`・`tabs_context_mcp` 等）を
+   まとめて読み込む。
+
+3. チャンネルを切り替える。Chromeは通常、別チャンネル（ランプのひとりごと等）でログインして
+   いる。アバター → 「アカウントを切り替える」で **「Samurai Chronicles」
+   （@Samurai-Chronicles-JP、チャンネルID `UCN1-TUxX_2UumGm3OKpmncg`）** を選ぶ。切り替え前に
+   表示されていたチャンネルを覚えておき、**最後に必ず元に戻す**。切り替え後、
+   `studio.youtube.com/channel/` のURLが上記のIDになっていることを確認する。
+   **他チャンネルの動画は絶対に編集しない。**
+
+4. 対象のShortsごとに（`sc_related_targets.py` が出した shorts ID・検索語を使う）:
+   1. `studio.youtube.com/video/{SHORTS_ID}/edit` を開き（未保存の変更があると
+      「Leave site?」が出るので `force: true`）、約4秒待ち、**下へ10ティックスクロール**する。
+   2. 「視聴者」欄で「この動画は子ども向けですか？」が**未選択**の場合は、
+      「いいえ、子ども向けではありません」を選ぶ（`sc_sns_up.py` が2026-09-08から
+      `selfDeclaredMadeForKids: False` を宣言しているのと同じ設定で、他の動画とも揃う。
+      kagaku-life で同じ未選択の状態が見つかり、ユーザーが「他の動画の設定に合わせる」と
+      指示した前例あり、2026-10-02。未選択のままだと保存できない）。既に選択済みなら触らない。
+   3. 右の「関連動画」の鉛筆アイコン（スクロール後、座標 約(1151, 380)）→ 選択画面の検索欄
+      （約(400, 167)）に検索語を入力 → 結果は**本編1件のみ**（対象のShorts自身は一覧から
+      除かれる）。結果が1件でない・本編のタイトルでない場合は、その回をスキップする。
+   4. 先頭のタイル（約(236, 290)）を選び、「保存」（約(1105, 98)）を押す。
+   5. **画面で確認する**: 「変更を保存しました」の表示と、関連動画欄に本編のタイトルが
+      出ていること。確認できたら `python3 sc_related_targets.py --mark ep{NNN}`。
+      確認できなかった回は記録せず、完了報告に理由と一緒に載せる（次回の実行でまた対象になる）。
+   - 座標は画面サイズで変わる。**最初の1本は座標クリックの前に画面を見て位置を確かめる**。
+     想定と違うUI（要素が見つからない・見慣れないダイアログ）が出たら、無理に操作せず
+     そのSTEPを中断して報告する。
+   - 複数本は `browser_batch` にまとめると速い（1本ずつ最後に画面を撮る）。
+   - 関連動画以外の設定（公開日時・タイトル・説明・字幕など）は変更しない。
+   - 件数が多い回（初回の遡及など）は、10本ほどずつバッチにして途中経過を報告する。
+
+5. 後片付け（**必ずこの順**）:
+   1. アカウントを**元のチャンネルに戻す**（手順3で覚えたもの）。
+   2. 自分で開いたタブ（MCPのタブグループ内）を閉じる。
+   3. **手順2で自分がChromeを起動した場合のみ**、Chromeを終了する:
+      ```bash
+      osascript -e 'quit app "Google Chrome"'
+      ```
+      **すでにChromeが動いていた場合は終了しない**（ユーザーが他のタブ・作業を開いている
+      ため）。自分が開いたタブを閉じるだけにして、完了報告に「Chromeは元から開いて
+      いたので終了していません」と書く。
+
+6. 完了報告に、設定した件数・スキップした回（理由つき）・Chromeを終了したかを書く。
+   `episodes/ep*.json` に `related_video_set` の変更が出るので、STEP 4で一緒にコミットする。
+
 ## STEP 4 — コミット・プッシュ確認（2026-07-29〜: 自動化済み）
 
 `sc_sns_up.py` は `run()` の末尾（サイト再ビルド後）で `commit_remaining_changes()` を実行し、
@@ -103,6 +181,7 @@ git status --short
 
 ```bash
 git add episodes/ep{NNN}.json characters/*.txt bgm_library.json topics_queue.json
+git add -u episodes/   # STEP 3.5 の related_video_set の更新分（追跡済みのファイルのみ。制作中の未追跡エピソードは含めない）
 git commit -m "$(cat <<'EOF'
 feat: ep{NNN}（{person}）を制作・アップロード
 
