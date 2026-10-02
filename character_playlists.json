@@ -1090,5 +1090,15 @@
         "video_id": "NvoR6XLae5g"
       }
     ]
+  },
+  "hojo_tokimune": {
+    "display_name": "Hojo Tokimune",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep112",
+        "video_id": "RR37BSfqJI4"
+      }
+    ]
   }
 }

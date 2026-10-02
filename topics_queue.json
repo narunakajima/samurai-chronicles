@@ -1126,14 +1126,14 @@
     },
     {
       "episode_id": "ep112",
-      "status": "pending",
+      "status": "published",
       "title": "The Regent Who Defeated the Mongol Empire Twice: Hojo Tokimune",
       "era": "Kamakura",
       "priority": "A",
       "person": "hojo_tokimune",
       "angle": "overview",
       "notes": "元寇(1274/1281)を迎え撃った北条時宗。未実績の時代(Kamakura)の検証と海外視聴者向け訴求。神風だけに頼らない防衛戦略・使者斬首など決断に焦点。 → 2026-09-29: 補充提案(ユーザー承認済)。 → 2026-09-30: キュー健全性チェック（era連続）でpending先頭3件（ep110/ep111/ep106）がSengoku連続だったため、ep106と順序を入れ替え前倒し。",
-      "last_updated": "2026-09-30"
+      "last_updated": "2026-10-02"
     },
     {
       "episode_id": "ep106",
@@ -1265,6 +1265,6 @@
       "notes_2026-09-28": "Opus月次分析で誤り発覚・修正: evidence_episodesにera=Edoのep090（島原の乱、Bakumatsuではない）とera=Bakumatsu/Meiji（混在）のep084が誤って含まれていたため除外し、純粋なBakumatsu7本に修正した。n≥5の判定条件は満たした（n=7）が、CTRが同月中央値以上だったのは1/7（そのep076はリタイトルの影響を受けており除外すると0/6）。並べ替え検定でp≈0.09（複数区分を走査した中の1つであり「明確」とは言えない）。維持率は中央値20.4% vs 他era17.9%で劣っていない。proven/rejectedどちらにも判定せず、testingのまま据え置く。pendingキューにBakumatsuは0本のため当面の実害なし。"
     }
   ],
-  "last_updated": "2026-10-01",
+  "last_updated": "2026-10-02",
   "total_topics": 115
 }
