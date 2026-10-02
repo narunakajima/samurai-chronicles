@@ -261,5 +261,6 @@
   ],
   "youtube_url": "https://youtu.be/mvHZ4WXgf9o",
   "shorts_url": "https://youtu.be/HULWgGjoZFk",
-  "scheduled_at": "2026-07-14 03:00"
+  "scheduled_at": "2026-07-14 03:00",
+  "related_video_set": true
 }

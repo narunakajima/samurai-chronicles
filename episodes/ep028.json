@@ -235,5 +235,6 @@
   "bgm_source": "BGM/ep006-BGM.mp3",
   "youtube_url": "https://youtu.be/bp7x3ohwOEE",
   "shorts_url": "https://youtu.be/Bx_X-Bqk13w",
-  "scheduled_at": "2026-06-13 03:00"
+  "scheduled_at": "2026-06-13 03:00",
+  "related_video_set": true
 }

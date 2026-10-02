@@ -254,5 +254,6 @@
   ],
   "youtube_url": "https://youtu.be/9QX356I_dvc",
   "shorts_url": "https://youtu.be/PPHxxkvNmsY",
-  "scheduled_at": "2026-07-10 03:00"
+  "scheduled_at": "2026-07-10 03:00",
+  "related_video_set": true
 }

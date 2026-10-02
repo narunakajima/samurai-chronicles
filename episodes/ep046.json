@@ -252,5 +252,6 @@
   "bgm_source": "BGM/ep009-BGM.mp3",
   "youtube_url": "https://youtu.be/P-tDWD21RAI",
   "shorts_url": "https://youtu.be/aor-HGDfLf4",
-  "scheduled_at": "2026-07-09 03:00"
+  "scheduled_at": "2026-07-09 03:00",
+  "related_video_set": true
 }

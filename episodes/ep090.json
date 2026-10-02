@@ -253,5 +253,6 @@
   },
   "youtube_url": "https://youtu.be/kEEm50lpcgU",
   "shorts_url": "https://youtu.be/POTU6Cbp91g",
-  "scheduled_at": "2026-09-09 03:00"
+  "scheduled_at": "2026-09-09 03:00",
+  "related_video_set": true
 }

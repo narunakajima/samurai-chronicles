@@ -240,5 +240,6 @@
   ],
   "youtube_url": "https://youtu.be/iBT1K5SYzOQ",
   "shorts_url": "https://youtu.be/71pXeYI9WR4",
-  "scheduled_at": "2026-07-29 03:00"
+  "scheduled_at": "2026-07-29 03:00",
+  "related_video_set": true
 }

@@ -257,5 +257,6 @@
   "bgm_source": "BGM/ep024-BGM.mp3",
   "youtube_url": "https://youtu.be/RnVEGYGwYlo",
   "shorts_url": "https://youtu.be/lkOOz8L76fQ",
-  "scheduled_at": "2026-06-27 03:00"
+  "scheduled_at": "2026-06-27 03:00",
+  "related_video_set": true
 }

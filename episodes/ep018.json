@@ -256,5 +256,6 @@
   ],
   "youtube_url": "https://youtu.be/d2Mf5Vgy2jM",
   "shorts_url": "https://youtu.be/mah_V3uucKQ",
-  "scheduled_at": "2026-06-02 03:00"
+  "scheduled_at": "2026-06-02 03:00",
+  "related_video_set": true
 }

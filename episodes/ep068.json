@@ -275,5 +275,6 @@
   },
   "youtube_url": "https://youtu.be/Dkr9Ed3mNFQ",
   "shorts_url": "https://youtu.be/QYXfLvwg_K8",
-  "scheduled_at": "2026-08-08 03:00"
+  "scheduled_at": "2026-08-08 03:00",
+  "related_video_set": true
 }

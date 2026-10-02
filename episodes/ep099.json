@@ -272,5 +272,6 @@
   },
   "youtube_url": "https://youtu.be/NPxUsikZN0Y",
   "shorts_url": "https://youtu.be/rCpMBq1poxk",
-  "scheduled_at": "2026-09-29 03:00"
+  "scheduled_at": "2026-09-29 03:00",
+  "related_video_set": true
 }

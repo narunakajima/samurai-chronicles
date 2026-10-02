@@ -268,5 +268,6 @@
   ],
   "youtube_url": "https://youtu.be/LTmal6JExhE",
   "shorts_url": "https://youtu.be/MH0oqevwCh0",
-  "scheduled_at": "2026-07-01 03:00"
+  "scheduled_at": "2026-07-01 03:00",
+  "related_video_set": true
 }

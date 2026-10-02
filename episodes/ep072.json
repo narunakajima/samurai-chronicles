@@ -256,5 +256,6 @@
   },
   "youtube_url": "https://youtu.be/GR6-eUYU-I0",
   "shorts_url": "https://youtu.be/FxIZ2mUuuy0",
-  "scheduled_at": "2026-08-14 03:00"
+  "scheduled_at": "2026-08-14 03:00",
+  "related_video_set": true
 }

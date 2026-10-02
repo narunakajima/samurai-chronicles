@@ -242,5 +242,6 @@
   ],
   "youtube_url": "https://youtu.be/bMS2kP4LwDA",
   "shorts_url": "https://youtu.be/HpcaQ2Cz_ec",
-  "scheduled_at": "2026-06-25 03:00"
+  "scheduled_at": "2026-06-25 03:00",
+  "related_video_set": true
 }

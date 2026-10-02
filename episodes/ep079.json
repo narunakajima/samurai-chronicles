@@ -285,5 +285,6 @@
   },
   "youtube_url": "https://youtu.be/BwcpqgxPC6Q",
   "shorts_url": "https://youtu.be/BT_nvVvUpjg",
-  "scheduled_at": "2026-08-25 03:00"
+  "scheduled_at": "2026-08-25 03:00",
+  "related_video_set": true
 }
