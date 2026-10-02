@@ -108,6 +108,57 @@ BASE_CONTEXT = (
     "hurricane lamp, or metal lamp with a wick-adjustment knob."
 )
 
+# ── 時代モード（--era / 環境変数 SC_ERA、2026-10-02〜、オプトイン） ─────────
+# デフォルト（"edo"）は従来どおり月代+ちょんまげ前提（BASE_CONTEXT・QA・リトライ指示とも不変）。
+# "kamakura" を指定した場合のみ、鎌倉期以前の髪型（月代なし・髷を烏帽子/兜で覆う）に
+# 3箇所（生成プロンプト・QAのHAIRSTYLE基準・HAIRSTYLE再生成指示）を切り替える。
+# ep112（北条時宗）で、BASE_CONTEXTの月代デフォルトとQAの「月代なし＝NG」判定が
+# image_promptの否定指示を打ち消し、群衆の武士に月代が残り続けた問題への対処。
+ERA = "edo"
+ERA_CHOICES = ("edo", "kamakura")
+
+_EDO_HAIR_SENTENCE = (
+    "Period-accurate Edo/Sengoku era attire: kimono, samurai armor, period weapons only. "
+    "Unless a character reference specifies otherwise (e.g. a monk's shaved head, "
+    "a woman's hair, a ninja's covered hair, a ronin's unbound hair), default male "
+    "hairstyles to a period-accurate chonmage (topknot with shaved pate) — never a "
+    "modern haircut. "
+)
+_KAMAKURA_HAIR_SENTENCE = (
+    "Period-accurate Kamakura-era (13th century) attire: hitatare, suikan, o-yoroi box armor "
+    "with large square shoulder plates, tachi swords, period weapons only. "
+    "HAIR RULE FOR THIS ERA (applies to EVERY adult man in the image, including background "
+    "crowds, soldiers and laborers): the sakayaki shaved pate did NOT exist yet. No man has a "
+    "shaved forehead or shaved crown. Every adult man's scalp is fully covered by hair, which "
+    "is gathered into a small topknot (motodori) that is hidden under a soft black eboshi "
+    "cap or under a helmet (kabuto); a bare topknot with exposed scalp is never shown. "
+    "Exceptions only: Buddhist monks (fully shaved head), women, young boys. Never a modern "
+    "haircut. "
+)
+
+
+def base_context() -> str:
+    if ERA == "kamakura":
+        return BASE_CONTEXT.replace(_EDO_HAIR_SENTENCE, _KAMAKURA_HAIR_SENTENCE)
+    return BASE_CONTEXT
+
+
+_KAMAKURA_QA_HAIRSTYLE = (
+    "- HAIRSTYLE: this episode is set in Kamakura-period Japan (13th century), BEFORE the "
+    "sakayaki existed. Flag any adult male warrior/laborer/official (including background "
+    "figures) who shows a shaved forehead or shaved crown/pate (Edo-style sakayaki + chonmage). "
+    "The correct look is a full head of hair gathered into a small topknot covered by a black "
+    "eboshi cap or a helmet. Also flag clearly modern haircuts. Do NOT flag unshaved hair under "
+    "an eboshi or helmet — that is correct for this era. Valid exceptions: monks' fully shaved "
+    "heads, women, young boys.\n\n"
+)
+_KAMAKURA_HAIR_CORRECTION = (
+    "Fix the hairstyle for the Kamakura period: no man may have a shaved forehead or shaved "
+    "crown (no sakayaki, no Edo-style chonmage). Every adult man's hair fully covers his scalp, "
+    "gathered into a small topknot hidden under a soft black eboshi cap or under a helmet. "
+    "Put an eboshi or helmet on every man whose head is visible."
+)
+
 # ── キャラクター参照定義 ──────────────────────────────────
 # characters/ フォルダに {name}.txt があればそこから読む。なければここのデフォルトを使用。
 CHARACTER_DEFAULTS = {
@@ -192,7 +243,7 @@ def generate_one_image_portrait(client, scene_prompt: str, character_ref: str, o
     parts = [
         "Cinematic vertical short film still, 9:16 format. "
         "Subject centered and prominent in frame. Composed for portrait mobile viewing. "
-        + BASE_CONTEXT,
+        + base_context(),
     ]
     if character_ref:
         parts.append(f"Character reference: {character_ref}")
@@ -210,7 +261,7 @@ def generate_one_image(client, scene_prompt: str, character_ref: str, output_pat
     指示はBASE_CONTEXTのデフォルト髪型指示（月代のちょんまげ）等と競合し、標準から
     外れる容姿（本エピソードの蘭丸の若衆髷等）が度々巻き戻る問題が繰り返し発生したため
     （ep099で実証済みの対処。2026-09-10〜）。"""
-    parts = [BASE_CONTEXT]
+    parts = [base_context()]
     if character_ref:
         parts.append(f"Character reference: {character_ref}")
     parts.append(f"Scene: {scene_prompt}")
@@ -249,6 +300,8 @@ def _correction_note(issues: list) -> str:
                 "document must use a red vermillion ink stamp (shuin) or paper cord tie "
                 "(mizuhiki) — never a Western-style wax seal with ribbon."
             )
+        elif prefix == "HAIRSTYLE" and prefix not in seen and ERA == "kamakura":
+            notes.append(_KAMAKURA_HAIR_CORRECTION)
         elif prefix == "HAIRSTYLE" and prefix not in seen:
             notes.append(
                 "Fix the hairstyle: unless the character is explicitly a monk, woman, ninja, "
@@ -404,6 +457,12 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "or\n"
             '{"ok": false, "issues": ["ISSUE_TYPE: brief description", ...]}'
         )
+        if ERA == "kamakura":
+            qa_prompt = qa_prompt.replace(
+                "for Edo/Sengoku Japan.", "for Kamakura-period (13th century) Japan.", 1)
+            start = qa_prompt.index("- HAIRSTYLE:")
+            end = qa_prompt.index("Scene description:")
+            qa_prompt = qa_prompt[:start] + _KAMAKURA_QA_HAIRSTYLE + qa_prompt[end:]
 
         response = client.models.generate_content(
             model=QA_MODEL,
@@ -723,7 +782,30 @@ def cli():
                              "（character_refの一致は問わない）。--scenesと組み合わせ、クロスシーン"
                              "一貫性チェックで見つかった不一致シーンを個別に直す用途。--ref-sceneとは併用不可。"
                              "本編(16:9)生成のみ対応（--shorts時は無視）。")
+    parser.add_argument("--era", choices=ERA_CHOICES, default=None,
+                        help="時代モード。kamakura を指定すると月代なし（髷を烏帽子/兜で覆う）を前提に、"
+                             "生成プロンプト・QAのHAIRSTYLE基準・再生成指示を切り替える。"
+                             "省略時は環境変数 SC_ERA、episode JSON の image_era、それもなければ"
+                             "従来の edo（月代+ちょんまげ）。")
     args = parser.parse_args()
+
+    global ERA
+    # 優先順位: --era > 環境変数 SC_ERA > episode JSON の image_era > edo
+    era = args.era or os.environ.get("SC_ERA")
+    if not era:
+        ep_json = BASE_DIR / "episodes" / f"{args.episode}.json"
+        if ep_json.exists():
+            with open(ep_json, encoding="utf-8") as f:
+                era = json.load(f).get("image_era")
+    era = era or "edo"
+    if era not in ERA_CHOICES:
+        parser.error(f"--era / SC_ERA / image_era の値が不正です: {era}（{', '.join(ERA_CHOICES)}）")
+    ERA = era
+    if ERA == "kamakura" and _EDO_HAIR_SENTENCE not in BASE_CONTEXT:
+        print("❌ BASE_CONTEXT の髪型文が _EDO_HAIR_SENTENCE と一致しません（--era kamakura が効きません）")
+        sys.exit(1)
+    if ERA != "edo":
+        print(f"  時代モード: {ERA}")
 
     if args.ref_image and args.ref_scene is not None:
         parser.error("--ref-image と --ref-scene は併用できません")
