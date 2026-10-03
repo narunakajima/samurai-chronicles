@@ -1137,14 +1137,14 @@
     },
     {
       "episode_id": "ep106",
-      "status": "pending",
+      "status": "published",
       "title": "The Demon King's Body Was Never Found: The Mystery of Nobunaga's Final Moments",
       "era": "Sengoku",
       "priority": "A",
       "person": "nobunaga",
       "angle": "death",
       "notes": "信長5回目の登場。ep002（本能寺の変・事件そのもの）、ep011（生涯overview）、ep014（長篠・軍事）、ep041（比叡山焼き討ち）、ep099（森蘭丸との主従）とは異なり、遺体が見つからなかったという未解決の謎に焦点を当てる death 角度は初出。 → 2026-09-28: Opus月次分析の指摘（ep108とdeath角度が1本おきに連続、Sengoku偏重、有名人物再登場への偏り）を踏まえキュー3番目に配置。 → 2026-09-30: キュー健全性チェック（era連続）でep112と順序を入れ替え、キュー4番目に後退。",
-      "last_updated": "2026-09-30"
+      "last_updated": "2026-10-04"
     },
     {
       "episode_id": "ep109",
@@ -1265,6 +1265,6 @@
       "notes_2026-09-28": "Opus月次分析で誤り発覚・修正: evidence_episodesにera=Edoのep090（島原の乱、Bakumatsuではない）とera=Bakumatsu/Meiji（混在）のep084が誤って含まれていたため除外し、純粋なBakumatsu7本に修正した。n≥5の判定条件は満たした（n=7）が、CTRが同月中央値以上だったのは1/7（そのep076はリタイトルの影響を受けており除外すると0/6）。並べ替え検定でp≈0.09（複数区分を走査した中の1つであり「明確」とは言えない）。維持率は中央値20.4% vs 他era17.9%で劣っていない。proven/rejectedどちらにも判定せず、testingのまま据え置く。pendingキューにBakumatsuは0本のため当面の実害なし。"
     }
   ],
-  "last_updated": "2026-10-02",
+  "last_updated": "2026-10-03",
   "total_topics": 115
 }

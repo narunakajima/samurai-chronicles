@@ -448,7 +448,7 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "The only valid exceptions are: a monk's fully shaved head, a woman's hair, a ninja's "
             "covered/hidden hair, an explicitly masterless ronin or low-status character whose "
             "scene description calls for deliberately unkempt/unbound hair as a character choice, "
-            "young children (forelock/maegami styles), or non-Japanese/Western characters. If the "
+            "young children (forelock/maegami styles), a chasen-mage (upright tea-whisk topknot tied at the back of the crown, Oda Nobunaga's signature style) when the scene description explicitly calls for it, or non-Japanese/Western characters. If the "
             "scene description does not explicitly call for one of these exceptions, the sakayaki+chonmage "
             "look is required.\n\n"
             f"Scene description: {image_prompt}\n\n"
