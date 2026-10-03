@@ -280,5 +280,6 @@
   },
   "youtube_url": "https://youtu.be/tPTFDRktp-E",
   "shorts_url": "https://youtu.be/12k6oTNZxog",
-  "scheduled_at": "2026-10-03 03:00"
+  "scheduled_at": "2026-10-03 03:00",
+  "related_video_set": true
 }
