@@ -12,8 +12,11 @@
 python3 sc_yt_download_reports.py
 ```
 
-**注意:** `analytics/raw/` は `.gitignore` 対象のため、他端末からの `git pull` 後は
-ローカルのCSVが消えていることがある。分析前は必ず実行して最新化すること。
+**保存先はGoogle Driveの同期フォルダ（`~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/analytics/raw/`、2026-10-04〜）。**
+以前はリポジトリ内の `analytics/raw/`（`.gitignore` 対象）に置いていたため、MacBookとiMacで
+取得済みのCSVがばらばらになっていた。Driveに移したことで両端末から同じデータを読める。
+Reporting APIは古いレポートを一定期間で消すため、取得済みの過去分を残す意味もある。
+`sc_yt_analyze.py` もDriveを直接読む。新しいレポートは毎日作られるので、分析前は必ず実行して最新化すること。
 
 ## STEP 2 — 基本集計
 
@@ -112,7 +115,7 @@ Agentプロンプト:
 以下を行ってください（日本語で）：
 1. 各指標について、サンプルサイズ・外れ値の影響を踏まえて統計的に妥当な解釈かを検証する
    （小さいnでの早合点、外れ値1本への依存、同一動画・同一トピックの重複カウント等がないか。
-   必要ならこの集計結果だけでなく `analytics/raw/` の生CSVを直接読んで検算してよい）
+   必要ならこの集計結果だけでなく Drive `samurai-chronicles/analytics/raw/` の生CSVを直接読んで検算してよい）
 2. 複数指標を横断した傾向を統合的に解釈する（個別指標では見えないトピック単位の
    シグナルがないか等）
 3. 具体的なアクション提言（優先度つき）— タイトル型・登場人物数・トピック角度・

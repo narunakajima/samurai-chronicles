@@ -6,8 +6,8 @@ sc_yt_download_reports.py — YouTube Reporting API の全レポートを一括�
   python3 sc_yt_download_reports.py            # 全ジョブの未取得レポートを差分DL
   python3 sc_yt_download_reports.py --force    # 既存ファイルも上書き再DL
 
-保存先: analytics/raw/{job_name}/{date}.csv
-  例: analytics/raw/channel_reach_basic_a1/2026-06-24.csv
+保存先: Google Drive samurai-chronicles/analytics/raw/{job_name}/{date}.csv
+  例: samurai-chronicles/analytics/raw/channel_reach_basic_a1/2026-06-24.csv
 """
 
 import argparse
@@ -30,7 +30,18 @@ SCOPES = [
     "https://www.googleapis.com/auth/yt-analytics.readonly",
 ]
 
-OUTPUT_DIR = Path(__file__).parent / "analytics" / "raw"
+# 2026-10-04: 保存先をGoogle Driveの同期フォルダに移した（MacBook・iMacで共有するため。
+# Reporting APIは古いレポートを一定期間で消すので、どちらの端末で取得した分も1か所に残す。
+# くらしを変える科学（kagaku-life）と同じ構成）
+GDRIVE_ROOT = (
+    Path.home()
+    / "Library"
+    / "CloudStorage"
+    / "GoogleDrive-naru.nakajima@gmail.com"
+    / "マイドライブ"
+    / "samurai-chronicles"
+)
+OUTPUT_DIR = GDRIVE_ROOT / "analytics" / "raw"
 
 JOBS = {
     "093d614d-0cbd-4cbb-a798-4a60b4cdae8c": "channel_reach_basic_a1",
@@ -105,6 +116,10 @@ def download_all(force: bool):
 
 
 def main():
+    if not GDRIVE_ROOT.exists():
+        print(f"❌ Google Driveの同期フォルダが見つかりません: {GDRIVE_ROOT}")
+        print("   Google Drive for desktopが起動・ログイン済みか確認してください。")
+        sys.exit(1)
     parser = argparse.ArgumentParser(description="YouTube Reporting API 全レポート一括DL")
     parser.add_argument("--force", action="store_true", help="既存ファイルも上書き再DL")
     args = parser.parse_args()

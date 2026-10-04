@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-sc_yt_analyze.py — analytics/raw/ のCSVを動画別に集計し、相対パフォーマンスを分析する
+sc_yt_analyze.py — Google Drive samurai-chronicles/analytics/raw/ のCSVを動画別に集計し、相対パフォーマンスを分析する
 
 使い方:
   python3 sc_yt_analyze.py                      # 全動画の集計表を表示
@@ -15,12 +15,24 @@ import csv
 import glob
 import json
 import re
+import sys
 from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
-ANALYTICS_DIR = BASE_DIR / "analytics" / "raw"
+# 2026-10-04: 保存先をGoogle Driveの同期フォルダに移した（MacBook・iMacで共有するため。
+# Reporting APIは古いレポートを一定期間で消すので、どちらの端末で取得した分も1か所に残す。
+# くらしを変える科学（kagaku-life）と同じ構成）
+GDRIVE_ROOT = (
+    Path.home()
+    / "Library"
+    / "CloudStorage"
+    / "GoogleDrive-naru.nakajima@gmail.com"
+    / "マイドライブ"
+    / "samurai-chronicles"
+)
+ANALYTICS_DIR = GDRIVE_ROOT / "analytics" / "raw"
 
 # 2026-08-04改訂（Opusによる分析監査を受けての修正）:
 # n<=5の区分は95%CIが全体平均と区別できないほど広く、数値を出すと誤読を誘発するため
@@ -589,6 +601,10 @@ def print_relative_category_breakdown(results: list):
 
 
 def cli():
+    if not GDRIVE_ROOT.exists():
+        print(f"❌ Google Driveの同期フォルダが見つかりません: {GDRIVE_ROOT}")
+        print("   Google Drive for desktopが起動・ログイン済みか確認してください。")
+        sys.exit(1)
     parser = argparse.ArgumentParser(description="Samurai Chronicles YouTube アナリティクス集計")
     parser.add_argument("--top", type=int, default=10, help="上位/下位表示件数（デフォルト10）")
     parser.add_argument("--min-impressions", type=int, default=1500,
