@@ -374,7 +374,17 @@ def compute_age_adjusted_rows(results: list, window_days: int = 14) -> tuple:
     84本中76本で実際の初回インプレッションが「前日」に記録されていた
     （公開初日を毎回窓から取りこぼす体系的バグ）。実際に記録された最初の
     インプレッション日（`build_first_impression_dates`）を起点にする。
-    戻り値: (rows, skipped_no_date, skipped_too_new)
+
+    2026-10-05修正（Opus月次分析で発覚）: Reporting APIのレポートは取得が漏れた日は
+    二度と取り戻せず、7/11〜8/3（combined）・7/12,7/16〜8/6（reach）の約3.5週間が欠損している。
+    従来は「窓の最終日以降のデータがあるか」だけで窓完了と判定していたため、窓の途中が
+    欠けた動画（ep039〜050）や、初回インプレッションがデータ再開日の8/4になっている動画
+    （ep051〜064、公開3〜19日目を測っていた）が「14日CTR」として集計され、ep052の8.82%等の
+    無効な値が出ていた。次の2条件を満たす動画だけを有効な窓として扱う:
+      (a) 窓の14日すべてについて、チャンネル全体のreachデータにその日付が存在する
+      (b) 初回インプレッション日が公開予定日（scheduled_atのJST日付）の1日以内
+          （Pacific時間基準の前日ずれを許容。データ再開日に切り詰められた動画を除外する）
+    戻り値: (rows, skipped_no_date, skipped_too_new, skipped_gap)
     """
     ep_map = build_episode_map()
     vid_by_ep = {v["episode_id"]: k for k, v in ep_map.items()}
@@ -386,10 +396,13 @@ def compute_age_adjusted_rows(results: list, window_days: int = 14) -> tuple:
     for (vid, d) in daily.keys():
         if d > vids_last_date[vid]:
             vids_last_date[vid] = d
+    # チャンネル全体でreachデータが存在する日付（欠損日の判定用）
+    present_dates = {d for (_v, d) in daily.keys()}
 
     rows = []
     skipped_no_date = 0
     skipped_too_new = 0
+    skipped_gap = 0
     for r in results:
         ep_id = r["episode_id"]
         vid = vid_by_ep.get(ep_id)
@@ -403,6 +416,11 @@ def compute_age_adjusted_rows(results: list, window_days: int = 14) -> tuple:
         if vids_last_date.get(vid, "") < window_end.strftime("%Y%m%d"):
             skipped_too_new += 1
             continue
+        pub_d = date(int(pub[:4]), int(pub[4:6]), int(pub[6:8]))
+        window_days_list = [(start + timedelta(days=i)).strftime("%Y%m%d") for i in range(window_days)]
+        if abs((start - pub_d).days) > 1 or any(dd not in present_dates for dd in window_days_list):
+            skipped_gap += 1
+            continue
         impr_sum, click_sum = 0, 0.0
         for i in range(window_days):
             day_str = (start + timedelta(days=i)).strftime("%Y%m%d")
@@ -415,17 +433,18 @@ def compute_age_adjusted_rows(results: list, window_days: int = 14) -> tuple:
             "episode_id": ep_id, "impr": impr_sum, "clicks": click_sum,
             "ctr": round(ctr14, 2), "month": pub[:6],
         })
-    return rows, skipped_no_date, skipped_too_new
+    return rows, skipped_no_date, skipped_too_new, skipped_gap
 
 
 def print_age_adjusted(results: list, window_days: int = 14):
     """公開後window_days日間の累計インプレッション・CTR（年齢を揃えた比較）。
     累計値による比較は「新しい動画ほど不利/有利」というバイアスが混ざるため、
     こちらを優先して使うこと（2026-08-04追加）。"""
-    rows, skipped_no_date, skipped_too_new = compute_age_adjusted_rows(results, window_days)
+    rows, skipped_no_date, skipped_too_new, skipped_gap = compute_age_adjusted_rows(results, window_days)
 
     print(f"\n=== 公開後{window_days}日 年齢調整済みインプレ・CTR ===")
-    print(f"（公開日不明のため除外: {skipped_no_date}件／{window_days}日分のデータがまだ揃っていないため除外: {skipped_too_new}件）")
+    print(f"（公開日不明のため除外: {skipped_no_date}件／{window_days}日分のデータがまだ揃っていないため除外: {skipped_too_new}件／"
+          f"データ欠損（7/11〜8/6）・初回インプレ日のずれで窓が無効のため除外: {skipped_gap}件）")
     if not rows:
         print("  算出できる動画がありませんでした")
         return
@@ -446,7 +465,10 @@ def print_monthly_channel_summary():
     """
     ep_map = build_episode_map()
     shorts_map = build_shorts_map()
-    monthly_impr = defaultdict(int)
+    monthly_impr = defaultdict(int)          # 本編のみのインプレッション
+    monthly_impr_other = defaultdict(int)    # 本編以外（Shorts・未登録動画）のインプレッション
+    reach_days = defaultdict(set)            # 月ごとにreachデータが存在する日付
+    combined_days = defaultdict(set)         # 月ごとにcombinedデータが存在する日付
     monthly = defaultdict(lambda: {
         "main_views": 0, "main_engaged": 0,
         "shorts_views": 0, "shorts_engaged": 0,
@@ -455,12 +477,20 @@ def print_monthly_channel_summary():
     for f in glob.glob(str(ANALYTICS_DIR / "channel_reach_basic_a1" / "*.csv")):
         with open(f, encoding="utf-8") as fh:
             for row in csv.DictReader(fh):
-                monthly_impr[row["date"][:6]] += int(row["video_thumbnail_impressions"])
+                ym = row["date"][:6]
+                reach_days[ym].add(row["date"])
+                impr = int(row["video_thumbnail_impressions"])
+                # 2026-10-05修正: 従来は本編以外の動画（Shorts等）のインプレッションが混ざっていた
+                if row["video_id"] in ep_map:
+                    monthly_impr[ym] += impr
+                else:
+                    monthly_impr_other[ym] += impr
     for f in glob.glob(str(ANALYTICS_DIR / "channel_combined_a3" / "*.csv")):
         with open(f, encoding="utf-8") as fh:
             for row in csv.DictReader(fh):
                 vid = row["video_id"]
                 ym = row["date"][:6]
+                combined_days[ym].add(row["date"])
                 views = int(row["views"])
                 engaged = int(row["engaged_views"])
                 if vid in ep_map:
@@ -473,14 +503,21 @@ def print_monthly_channel_summary():
                     monthly[ym]["other_views"] += views
                     monthly[ym]["other_engaged"] += engaged
 
-    print("\n=== チャンネル全体 月次露出トレンド（インプレは本編のみ／視聴は本編・Shorts・未登録を分割表示） ===")
+    print("\n=== チャンネル全体 月次露出トレンド（本編のみ・1日あたりに正規化。Shorts/未登録は別掲） ===")
+    print("  ⚠️ 2026-10-05: 7/11〜8/6にReporting APIのレポート欠損あり（combined 24日・reach 22日）。")
+    print("     月の合計は日数が違うため比較に使わず、「日数」と「1日あたり」を見ること。")
     for ym in sorted(set(monthly_impr) | set(monthly)):
         impr = monthly_impr.get(ym, 0)
         m = monthly.get(ym, {})
-        print(f"  {ym[:4]}-{ym[4:]}: 本編インプレ={impr:,}  "
-              f"本編視聴={m.get('main_views',0):,}(engaged={m.get('main_engaged',0):,})  "
+        rd, cd = len(reach_days.get(ym, ())), len(combined_days.get(ym, ()))
+        per_day_impr = impr / rd if rd else 0
+        per_day_eng = m.get("main_engaged", 0) / cd if cd else 0
+        print(f"  {ym[:4]}-{ym[4:]}: [reach{rd}日/combined{cd}日] "
+              f"本編インプレ/日={per_day_impr:,.0f}(合計{impr:,})  "
+              f"本編engaged視聴/日={per_day_eng:,.0f}(views={m.get('main_views',0):,}/engaged={m.get('main_engaged',0):,})  "
               f"Shorts視聴={m.get('shorts_views',0):,}(engaged={m.get('shorts_engaged',0):,})  "
-              f"未登録視聴={m.get('other_views',0):,}(engaged={m.get('other_engaged',0):,})")
+              f"未登録視聴={m.get('other_views',0):,}  本編以外インプレ={monthly_impr_other.get(ym,0):,}")
+    print("  ※ viewsはホームのインライン自動再生を含み視聴の質を表さない。判断にはengagedを使うこと（2026-10-05 Opus検証）。")
 
 
 def print_acquisition_breakdown(min_engaged: int):
@@ -547,7 +584,7 @@ def print_relative_category_breakdown(results: list):
     中央値」との比較で評価する（コホート境界は公開月で固定し、事後的に動かさない）。
     **意思決定にはこちらを優先し、上記の累計値ベース集計は参考値として扱うこと。**
     """
-    rows, _, _ = compute_age_adjusted_rows(results)
+    rows, _, _, _ = compute_age_adjusted_rows(results)
     if not rows:
         print("\n=== 月内相対CTR比較 ===\n  データ不足のため算出できません")
         return
