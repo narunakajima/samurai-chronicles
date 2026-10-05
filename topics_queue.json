@@ -1147,6 +1147,17 @@
       "last_updated": "2026-10-04"
     },
     {
+      "episode_id": "ep113",
+      "status": "published",
+      "title": "He Started a Revolution With 80 Men and Died at 27: Takasugi Shinsaku",
+      "era": "Bakumatsu",
+      "priority": "A",
+      "person": "takasugi_shinsaku",
+      "angle": "overview",
+      "notes": "奇兵隊(身分を問わない軍)と27歳での早世。pending内で唯一のBakumatsu。ep100(井伊直弼)以来。 → 2026-09-29: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-10-05"
+    },
+    {
       "episode_id": "ep109",
       "status": "pending",
       "title": "The Warlord Who Never Married, Drank Alone, and Called Himself a God of War: Uesugi Kenshin's Private War",
@@ -1154,19 +1165,8 @@
       "priority": "A",
       "person": "kenshin",
       "angle": "character",
-      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。",
+      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。 → 2026-10-05: 重複チェックで、不犯・毘沙門天信仰・酒がep021/025/046で既出と判明。新角度が弱いため後回し（再開するなら継承問題など未使用の切り口に書き換えること）。",
       "last_updated": "2026-09-28"
-    },
-    {
-      "episode_id": "ep113",
-      "status": "pending",
-      "title": "He Toppled a Shogunate With a Peasant Army and Died at 27: Takasugi Shinsaku",
-      "era": "Bakumatsu",
-      "priority": "A",
-      "person": "takasugi_shinsaku",
-      "angle": "overview",
-      "notes": "奇兵隊(身分を問わない軍)と27歳での早世。pending内で唯一のBakumatsu。ep100(井伊直弼)以来。 → 2026-09-29: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-09-29"
     },
     {
       "episode_id": "ep108",
@@ -1200,6 +1200,61 @@
       "angle": "overview",
       "notes": "未登場の有名人物。享保の改革（倹約・目安箱・上米の制）で財政破綻寸前の幕府を立て直した8代将軍。Edo中期は実績データがなく、時代の検証も兼ねる。 → 2026-09-29: 補充提案。当初案の千利休はep060で既出のため差し替え(ユーザー承認範囲内の同趣旨の有名人物枠)。",
       "last_updated": "2026-09-29"
+    },
+    {
+      "episode_id": "ep116",
+      "status": "pending",
+      "title": "The Man Who Built a 100-Year Clan From Nothing — and Started the Sengoku Age: Hojo Soun",
+      "era": "Muromachi/Sengoku",
+      "priority": "A",
+      "person": "hojo_soun",
+      "angle": "overview",
+      "notes": "未登場。Muromachi末期の実績を作る枠。「無名の浪人から」という通説は近年見直されているため、STEP 3Aで史実（伊勢氏出身説・生年）の線引きを厳格に検証すること。 → 2026-10-05: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-10-05"
+    },
+    {
+      "episode_id": "ep117",
+      "status": "pending",
+      "title": "He Crushed His Best Friend's Rebellion — Then Was Assassinated for It: Okubo Toshimichi",
+      "era": "Meiji",
+      "priority": "A",
+      "person": "okubo_toshimichi",
+      "angle": "overview",
+      "notes": "未登場。ep008（西郷・西南戦争）と対になる人物で、Meijiの実績を作る枠。 → 2026-10-05: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-10-05"
+    },
+    {
+      "episode_id": "ep118",
+      "status": "pending",
+      "title": "The Thief Boiled Alive in Front of Kyoto's Crowds: The Real Ishikawa Goemon",
+      "era": "Sengoku",
+      "priority": "B",
+      "person": "ishikawa_goemon",
+      "angle": "thematic",
+      "notes": "未登場の有名人物。伝説と史実の線引きが軸。忍者・間諜系の目安枠。 → 2026-10-05: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-10-05"
+    },
+    {
+      "episode_id": "ep119",
+      "status": "pending",
+      "title": "The One Man Ieyasu Called His Friend: Honda Masanobu's Quiet Plan to Rule Japan",
+      "era": "Sengoku/Edo",
+      "priority": "A",
+      "person": "honda_masanobu",
+      "angle": "overview",
+      "notes": "未登場。知られざる軍師・参謀型（hidden_strategist検証枠）。ep003/016/096の家康回とは別人物視点。overview・謎解き寄りで構成する。 → 2026-10-05: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-10-05"
+    },
+    {
+      "episode_id": "ep120",
+      "status": "pending",
+      "title": "The Shogun Who Sealed Japan for 200 Years: Tokugawa Iemitsu",
+      "era": "Edo",
+      "priority": "A",
+      "person": "tokugawa_iemitsu",
+      "angle": "overview",
+      "notes": "未登場。鎖国体制の確立と将軍権力の確定に焦点。 → 2026-10-05: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-10-05"
     }
   ],
   "hypotheses": [
@@ -1269,6 +1324,6 @@
       "notes_2026-10-05": "Opus月次分析(2026-10-05): 有効な14日窓を持つ純粋なBakumatsu7本(ep068/072/076/081/085/088/089)で、公開月で層別した並べ替え検定の結果、相対CTR −0.29pt(p=0.41)、リタイトルの影響を受けたep076を除いても −0.35pt(p=0.37)、相対維持率 +2.1pt(p=0.60)。プールCTR 2.07%(158/7649) 対 他era 2.26%(610/26972)、比0.92(粗い95%CI 0.77〜1.09)。基準「明確な差がなければeraの問題ではない」に該当するため『Bakumatsuが時代として弱い』仮説を棄却し、sc-new.mdの注意書きを解除。検出力は低く、25%未満の小さな不利は否定できない。前回(2026-09-28)のp≈0.09は、データ欠損で壊れた窓を含む8月中央値との比較が原因と考えられる。ep100(Bakumatsu)の窓は10/13頃に完了するので追加の確認材料にする。"
     }
   ],
-  "last_updated": "2026-10-03",
-  "total_topics": 115
+  "last_updated": "2026-10-05",
+  "total_topics": 120
 }

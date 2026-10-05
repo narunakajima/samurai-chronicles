@@ -977,7 +977,8 @@
     "used_in": [
       "ep085",
       "ep093",
-      "ep107"
+      "ep107",
+      "ep113"
     ]
   },
   {
@@ -1120,7 +1121,8 @@
     "used_in": [
       "ep091",
       "ep093",
-      "ep107"
+      "ep107",
+      "ep113"
     ]
   },
   {
@@ -1274,6 +1276,19 @@
     ],
     "used_in": [
       "ep111"
+    ]
+  },
+  {
+    "id": "ep113-BGM-intro",
+    "path": "BGM/ep113-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Cinematic Music-06 by Michael-DB (freesound.org) — CC BY 4.0",
+    "tags": [
+      "cinematic"
+    ],
+    "used_in": [
+      "ep113"
     ]
   }
 ]

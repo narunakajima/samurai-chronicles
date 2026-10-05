@@ -88,7 +88,7 @@ BGM_ROLES = ["intro", "main", "outro"]  # 3曲構成の役割（序盤・中盤�
 # ── イントロ・アウトロ設定 ──────────────────────────────────
 LOGO_PATH = BASE_DIR / "LOGO_dark.PNG"  # 背景黒・クロップ済み版
 FONT_PATH = Path("/System/Library/Fonts/Supplemental/Futura.ttc")
-INTRO_DURATION = 5.0        # イントロ尺（秒）
+INTRO_DURATION = 0.0        # 冒頭ロゴイントロ尺（秒）。2026-10-05〜: 冒頭ロゴは廃止（ロゴは末尾アウトロのみ）。0なら生成・結合しない
 OUTRO_MAIN_DURATION = 8.0   # 本編アウトロ尺（秒）
 OUTRO_SHORTS_DURATION = 5.0 # Shortsアウトロ尺（秒）
 OFFICIAL_SITE = "samurai-chronicles.com"
@@ -1277,7 +1277,8 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
         print(f"\n--- Step 2: チャンネルイントロ / アウトロ生成 ---")
         intro_clip = tmp / "intro.mp4"
         outro_clip = tmp / "outro.mp4"
-        make_intro_clip(intro_clip, landscape=True)
+        if INTRO_DURATION > 0:
+            make_intro_clip(intro_clip, landscape=True)
         make_outro_clip(outro_clip, landscape=True, shorts=False)
 
         # ── Step 2.5: 素材ファイル一括確認 ──────────────────
@@ -1372,7 +1373,9 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
         video_parts = []
         if teaser_video_path:
             video_parts.append(teaser_video_path)
-        video_parts += [intro_clip, scenes_video, outro_clip]
+        if INTRO_DURATION > 0:
+            video_parts.append(intro_clip)
+        video_parts += [scenes_video, outro_clip]
         concat_video_clips(video_parts, full_video)
 
         # ── Step 6: 音声ミックス ──────────────────────────

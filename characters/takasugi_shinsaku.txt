@@ -1,0 +1,32 @@
+Takasugi Shinsaku: Photorealistic, live-action film still — not a painting, not digital
+illustration, not anime. A slight, slender Japanese samurai of the Choshu domain, aged 17 to 27
+(youthful and restless in early scenes, visibly thinner and more gaunt in the final scenes of his
+illness). Individual features based on his two surviving studio photographs (taken by Ueno Hikoma
+in Nagasaki, 1865 and 1866) and contemporary accounts: a noticeably LONG, NARROW face (a well-known
+Japanese quip says even the horse he rode had a rounder face than he did), narrow sharp eyes,
+strong thin eyebrows, faint smallpox pockmarks on his cheeks (he survived smallpox at about ten),
+slight, not imposing build, and an intense, defiant gaze. Clean-shaven — no mustache, no beard, no
+stubble — consistent in every scene.
+
+HAIRSTYLE CHANGES DURING HIS LIFE — match each scene's date:
+- Before spring 1863 (Hagi youth, Shanghai 1862, the legation burning of January 1863): standard
+  samurai sakayaki shaved crown with a folded chonmage topknot.
+- Spring to late 1863: he shaved his head in a Buddhist tonsure (taking the name Toko) — head
+  close-shaven, only short dark stubble regrowing, no topknot.
+- From 1864 to his death in 1867 (Kozan-ji uprising, Kiheitai, 1866 war, deathbed): NO topknot and
+  NO shaved crown. Short dark cropped hair (zangiri) about ear length, combed and loosely parted to
+  one side, fully covering his scalp, exactly as in his 1866 photograph. This was extremely unusual
+  for a samurai of the time and is deliberately NOT the sakayaki-and-chonmage look of the other
+  samurai around him. Every image_prompt for these scenes must restate this explicitly.
+- At the September 1864 peace talks aboard the British flagship he wore a formal daimon robe of
+  yellow cloth with large light-blue crests and a black silk eboshi court cap (per Ernest Satow).
+
+Dark haori and hakama with a daisho (katana and wakizashi) worn correctly through the sash; in the
+Kiheitai and 1866 war scenes he may wear a practical dark jacket over hakama, but never a Western
+military uniform and never Western boots (straw sandals or tabi only). Carries himself with
+reckless, theatrical confidence; in the last scenes he is pale and thin, coughing into a cloth,
+yet his gaze is unchanged.
+
+Evidence note: the face and 1866 hairstyle come from genuine photographs of Takasugi himself (not
+posthumous imagined portraits). Accounts of his height conflict (some call him small and slight,
+Miura Goro recalled him as tall and slim), so keep the build simply slender and wiry.

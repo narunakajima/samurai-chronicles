@@ -27,7 +27,7 @@ DRIVE_BASE = (
     / "samurai-chronicles"
 )
 
-INTRO_DURATION = 5.0
+INTRO_DURATION = 0.0  # 2026-10-05〜: 冒頭ロゴイントロ廃止（sc_video_gen.py と一致させる）
 NARR_DELAY = 0.5
 NARR_TAIL = 1.0
 MIN_CLIP_FLOOR = 5.0

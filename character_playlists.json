@@ -867,11 +867,15 @@
   },
   "yoshida_shoin": {
     "display_name": "Yoshida Shoin",
-    "playlist_id": null,
+    "playlist_id": "PLN0uTJbG4JoI",
     "episodes": [
       {
         "episode_id": "ep081",
         "video_id": "D0qC8_aP_vs"
+      },
+      {
+        "episode_id": "ep113",
+        "video_id": "56uNucCd-kA"
       }
     ]
   },
@@ -1106,6 +1110,16 @@
       {
         "episode_id": "ep112",
         "video_id": "RR37BSfqJI4"
+      }
+    ]
+  },
+  "takasugi_shinsaku": {
+    "display_name": "Takasugi Shinsaku",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep113",
+        "video_id": "56uNucCd-kA"
       }
     ]
   }

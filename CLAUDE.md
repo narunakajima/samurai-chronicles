@@ -75,7 +75,7 @@ Shorts は3曲構成でも中盤（main）の1曲のみ使用。
 | `NARR_TAIL` | 1.0s | ナレーション終了後余白 |
 | `MIN_CLIP_FLOOR` | 5.0s | 音声ありシーンの最低クリップ尺 |
 | `CROSSFADE_DURATION` | 0.8s | シーン間クロスフェード |
-| `INTRO_DURATION` | 5.0s | チャンネルイントロ尺 |
+| `INTRO_DURATION` | 0.0s | 冒頭ロゴイントロ尺（2026-10-05〜廃止。ロゴは末尾アウトロ8秒のみ。`sc_subtitle_gen.py` と同値にすること） |
 | `BGM_VOLUME` | 0.12 | BGM音量 |
 | `BGM_CROSSFADE` | 4.0s | 3曲構成時の曲間クロスフェード |
 
