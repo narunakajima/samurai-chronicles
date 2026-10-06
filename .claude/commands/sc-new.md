@@ -896,7 +896,7 @@ from google.genai import types
 api_key = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
 client = genai.Client(api_key=api_key)
 response = client.models.generate_content(
-    model="gemini-3.1-flash-image",  # sc_image_gen.pyのMODELと統一（"-preview"サフィックスは廃止済み）
+    model="gemini-3.1-flash-image",  # sc_image_gen.pyのMODELと統一（旧gemini-3.1-flash-imageは2026-10-29提供終了）
     contents=full_prompt,
     config=types.GenerateContentConfig(response_modalities=["IMAGE"]),
 )

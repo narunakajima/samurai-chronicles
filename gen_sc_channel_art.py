@@ -37,7 +37,7 @@ prompt = (
 
 print("生成中...")
 response = client.models.generate_content(
-    model="gemini-3.1-flash-image-preview",
+    model="gemini-nano-banana-2.1",
     contents=prompt,
     config=types.GenerateContentConfig(response_modalities=["IMAGE"]),
 )
