@@ -284,5 +284,6 @@
   },
   "youtube_url": "https://youtu.be/Cb9JDFpvtJM",
   "shorts_url": "https://youtu.be/7JwbZ-xwnxA",
-  "scheduled_at": "2026-10-06 03:00"
+  "scheduled_at": "2026-10-06 03:00",
+  "related_video_set": true
 }
