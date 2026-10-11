@@ -1158,17 +1158,6 @@
       "last_updated": "2026-10-05"
     },
     {
-      "episode_id": "ep109",
-      "status": "pending",
-      "title": "The Warlord Who Never Married, Drank Alone, and Called Himself a God of War: Uesugi Kenshin's Private War",
-      "era": "Sengoku",
-      "priority": "A",
-      "person": "kenshin",
-      "angle": "character",
-      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。 → 2026-10-05: 重複チェックで、不犯・毘沙門天信仰・酒がep021/025/046で既出と判明。新角度が弱いため後回し（再開するなら継承問題など未使用の切り口に書き換えること）。",
-      "last_updated": "2026-09-28"
-    },
-    {
       "episode_id": "ep108",
       "status": "pending",
       "title": "The Ruler Who Executed His Own Family to Save His Son's Throne: Hideyoshi's Final, Darkest Years",
@@ -1181,14 +1170,14 @@
     },
     {
       "episode_id": "ep114",
-      "status": "pending",
+      "status": "published",
       "title": "The Sorcerer the Emperor Trusted With Japan's Fate: Abe no Seimei",
       "era": "Heian",
       "priority": "A",
       "person": "abe_no_seimei",
       "angle": "overview",
       "notes": "国際的知名度のある有名人物でHeianの実績を作る。伝説が非常に多いため、史実(陰陽寮の官人)と後世伝承の線引きをSTEP 3Aで厳格に検証すること。 → 2026-09-29: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-09-29"
+      "last_updated": "2026-10-11"
     },
     {
       "episode_id": "ep115",
@@ -1255,6 +1244,17 @@
       "angle": "overview",
       "notes": "未登場。鎖国体制の確立と将軍権力の確定に焦点。 → 2026-10-05: 補充提案(ユーザー承認済)。",
       "last_updated": "2026-10-05"
+    },
+    {
+      "episode_id": "ep109",
+      "status": "pending",
+      "title": "The Warlord Who Never Married, Drank Alone, and Called Himself a God of War: Uesugi Kenshin's Private War",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "kenshin",
+      "angle": "character",
+      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。 → 2026-10-05: 重複チェックで、不犯・毘沙門天信仰・酒がep021/025/046で既出と判明。新角度が弱いため後回し（再開するなら継承問題など未使用の切り口に書き換えること）。",
+      "last_updated": "2026-09-28"
     }
   ],
   "hypotheses": [
@@ -1324,6 +1324,6 @@
       "notes_2026-10-05": "Opus月次分析(2026-10-05): 有効な14日窓を持つ純粋なBakumatsu7本(ep068/072/076/081/085/088/089)で、公開月で層別した並べ替え検定の結果、相対CTR −0.29pt(p=0.41)、リタイトルの影響を受けたep076を除いても −0.35pt(p=0.37)、相対維持率 +2.1pt(p=0.60)。プールCTR 2.07%(158/7649) 対 他era 2.26%(610/26972)、比0.92(粗い95%CI 0.77〜1.09)。基準「明確な差がなければeraの問題ではない」に該当するため『Bakumatsuが時代として弱い』仮説を棄却し、sc-new.mdの注意書きを解除。検出力は低く、25%未満の小さな不利は否定できない。前回(2026-09-28)のp≈0.09は、データ欠損で壊れた窓を含む8月中央値との比較が原因と考えられる。ep100(Bakumatsu)の窓は10/13頃に完了するので追加の確認材料にする。"
     }
   ],
-  "last_updated": "2026-10-05",
+  "last_updated": "2026-10-11",
   "total_topics": 120
 }

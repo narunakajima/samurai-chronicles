@@ -1122,5 +1122,25 @@
         "video_id": "56uNucCd-kA"
       }
     ]
+  },
+  "abe_no_seimei": {
+    "display_name": "Abe No Seimei",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep114",
+        "video_id": "ExBloWXP8_Q"
+      }
+    ]
+  },
+  "fujiwara_michinaga": {
+    "display_name": "Fujiwara Michinaga",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep114",
+        "video_id": "ExBloWXP8_Q"
+      }
+    ]
   }
 }
