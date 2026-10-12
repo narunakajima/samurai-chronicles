@@ -1159,14 +1159,14 @@
     },
     {
       "episode_id": "ep108",
-      "status": "pending",
+      "status": "published",
       "title": "The Ruler Who Executed His Own Family to Save His Son's Throne: Hideyoshi's Final, Darkest Years",
       "era": "Sengoku",
       "priority": "A",
       "person": "hideyoshi",
       "angle": "death",
       "notes": "秀吉4回目の登場。ep005（生い立ちからのoverview）、ep012（本能寺後13日間）、ep042（朝鮮出兵・軍事）とは異なり、甥・秀次とその一族を粛清してまで我が子秀頼の後継を守った晩年の闇に焦点を当てるdeath角度は初出。ep091（秀頼の最期）の前日譚として機能する。 → 2026-09-28: Opus月次分析の提言によりキュー最後尾に配置（death角度・Sengoku・有名人物再登場が重なるため、最も分散させたい位置）。",
-      "last_updated": "2026-09-28"
+      "last_updated": "2026-10-12"
     },
     {
       "episode_id": "ep114",
@@ -1324,6 +1324,6 @@
       "notes_2026-10-05": "Opus月次分析(2026-10-05): 有効な14日窓を持つ純粋なBakumatsu7本(ep068/072/076/081/085/088/089)で、公開月で層別した並べ替え検定の結果、相対CTR −0.29pt(p=0.41)、リタイトルの影響を受けたep076を除いても −0.35pt(p=0.37)、相対維持率 +2.1pt(p=0.60)。プールCTR 2.07%(158/7649) 対 他era 2.26%(610/26972)、比0.92(粗い95%CI 0.77〜1.09)。基準「明確な差がなければeraの問題ではない」に該当するため『Bakumatsuが時代として弱い』仮説を棄却し、sc-new.mdの注意書きを解除。検出力は低く、25%未満の小さな不利は否定できない。前回(2026-09-28)のp≈0.09は、データ欠損で壊れた窓を含む8月中央値との比較が原因と考えられる。ep100(Bakumatsu)の窓は10/13頃に完了するので追加の確認材料にする。"
     }
   ],
-  "last_updated": "2026-10-11",
+  "last_updated": "2026-10-12",
   "total_topics": 120
 }
