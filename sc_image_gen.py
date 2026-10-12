@@ -279,6 +279,32 @@ def generate_one_image(client, scene_prompt: str, character_ref: str, output_pat
     return _generate_with_retry(client, full_prompt, output_path)
 
 
+def generate_face_with_appearance_ref(client, scene_prompt: str, character_ref: str,
+                                       output_path: Path, ref_image: types.Part = None) -> bool:
+    """Shorts冒頭の顔アップ(9:16)を生成する。ref_image があれば外見の参照として渡す。
+
+    generate_one_image_portrait の ref_image は「本編画像を9:16に再構成する」意味なので、
+    顔アップには使えない（構図が別物）。こちらは参照を髪型・髪色・顔立ちの基準としてだけ
+    使い、構図は scene_prompt に従う（--face の --ref-scene/--ref-image 用。ep108で追加）。"""
+    if ref_image is None:
+        return generate_one_image_portrait(client, scene_prompt, character_ref, output_path)
+    parts = [
+        "Cinematic vertical short film still, 9:16 format. Subject centered and prominent in frame. "
+        "Composed for portrait mobile viewing. " + base_context(),
+    ]
+    if character_ref:
+        parts.append(f"Character reference: {character_ref}")
+    parts.append(f"Scene: {scene_prompt}")
+    parts.append(
+        "ATTACHED REFERENCE IMAGE — CRITICAL APPEARANCE OVERRIDE: the attached image shows this "
+        "character's exact, already-approved appearance from another scene of this episode. Match "
+        "its hair colour, the exact shape of the topknot (how it rises, where it folds, the binding), "
+        "the shaved-crown boundary, and the facial features and age precisely. Do NOT copy its "
+        "composition: follow the Scene description above for framing, angle and expression."
+    )
+    return _generate_with_retry(client, ["\n\n".join(parts), ref_image], output_path)
+
+
 def _correction_note(issues: list) -> str:
     """QAで見つかった issue の種類ごとに、プロンプトへ追記する修正指示を組み立てる。"""
     notes = []
@@ -308,8 +334,9 @@ def _correction_note(issues: list) -> str:
                 "masterless ronin written as deliberately unkempt, young child, or non-Japanese "
                 "character, render a proper sakayaki — the front and top of the scalp shaved "
                 "completely bare and smooth — with the remaining hair oiled flat and folded "
-                "forward into a small, compact, tightly-bound chonmage topknot resting flat "
-                "against the crown. Do NOT render a full unshaved head of hair merely tied back "
+                "forward into a small, compact, tightly-bound chonmage topknot, either lying flat on the crown "
+                "or rising slim from the back of the crown and bending forward at the tip, tied with a dark "
+                "cord (never a thick vertical brush or stump). Do NOT render a full unshaved head of hair merely tied back "
                 "into a ponytail or bun (no shaved forehead is still wrong even if it looks "
                 "old-fashioned), and do NOT render a modern buzz cut, undercut, or styled haircut. "
                 "The topknot must read as a deliberate groomed knot, not a loose sprouting tuft."
@@ -436,15 +463,20 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "- HAIRSTYLE: any male adult samurai/warrior character whose hair is not period-correct "
             "for Edo/Sengoku Japan. The historically correct default is a sakayaki (the front and top "
             "of the scalp shaved bare) with the remaining hair oiled and tied into a compact chonmage "
-            "topknot folded flat against the crown. Flag ALL of the following as issues, not only "
+            "topknot folded forward over the crown (it may lie flat on the crown, or rise from the back "
+            "of the crown and bend forward at the tip, tied with a dark cord — both are correct). "
+            "Flag ALL of the following as issues, not only "
             "obviously modern cuts:\n"
             "  (a) a clearly modern haircut (undercut, short back and sides, styled/gelled hair, "
             "contemporary fade, buzz cut/crew cut covering the whole scalp with no shave line)\n"
             "  (b) a full, unshaved head of hair merely swept back or tied into a ponytail/bun with "
             "NO shaved forehead/pate visible — this is just as incorrect as a modern cut and must "
             "be flagged even though it may look 'old-fashioned'\n"
-            "  (c) the topknot itself rendered wrong — sprouting straight up as a loose tuft, "
-            "frizzy/unbound, or otherwise not reading as a deliberate folded, tied knot\n"
+            "  (c) the topknot itself rendered wrong — a thick brush/plume or stump standing straight up "
+            "from the top of the crown with no forward fold, a loose sprouting tuft, "
+            "frizzy/unbound, or otherwise not reading as a deliberate folded, tied knot. "
+            "Do NOT flag a slim topknot that rises from the back of the crown and bends forward at "
+            "the tip with a dark cord/binding — that is the correct folded chonmage\n"
             "The only valid exceptions are: a monk's fully shaved head, a woman's hair, a ninja's "
             "covered/hidden hair, an explicitly masterless ronin or low-status character whose "
             "scene description calls for deliberately unkempt/unbound hair as a character choice, "
@@ -701,7 +733,7 @@ def run(episode_id: str, scene_filter: list = None, shorts: bool = False, force:
     return saved
 
 
-def run_face(episode_id: str):
+def run_face(episode_id: str, ref_scene: int = None, ref_image_path: str = None):
     """Shorts冒頭用の顔アップ画像を生成 → images_shorts/S00_face.png"""
     if not API_KEY:
         print("❌ GEMINI_API_KEY が設定されていません")
@@ -733,14 +765,31 @@ def run_face(episode_id: str):
 
     client = genai.Client(api_key=API_KEY)
 
+    # 外見の参照画像（--ref-image 優先。--ref-scene は本編の承認済みシーン画像を使う）。
+    # 髷の形のずれは頭部だけ切り出した画像を --ref-image に渡すと安定する。
+    ref_part = None
+    ref_file = None
+    if ref_image_path is not None:
+        ref_file = Path(ref_image_path).expanduser()
+    elif ref_scene is not None:
+        ref_file = DESKTOP_BASE / episode_id / "images" / f"S{ref_scene:02d}.png"
+    if ref_file is not None:
+        if not ref_file.exists():
+            print(f"❌ 参照画像が見つかりません: {ref_file}")
+            sys.exit(1)
+        ref_part = image_part_from_path(ref_file)
+
     print(f"\n{'━'*60}")
     print(f"  {episode_id} — Shorts顔アップ画像生成")
+    if ref_file is not None:
+        print(f"  参照画像: {ref_file}")
     print(f"  出力先: {out_file}")
     print(f"{'━'*60}\n")
 
     print(f"  S00_face ", end="", flush=True)
     qa_result = _generate_and_qa(
-        client, generate_one_image_portrait, face_prompt, char_ref, out_file, 0
+        client, generate_face_with_appearance_ref, face_prompt, char_ref, out_file, 0,
+        ref_image=ref_part
     )
 
     # QA結果をJSONに保存（STEP 5D で読み込まれる）
@@ -811,7 +860,7 @@ def cli():
         parser.error("--ref-image と --ref-scene は併用できません")
 
     if args.face:
-        run_face(args.episode)
+        run_face(args.episode, ref_scene=args.ref_scene, ref_image_path=args.ref_image)
         return
 
     scene_filter = None
