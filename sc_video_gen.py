@@ -107,7 +107,10 @@ TEASER_XFADE    = 0.3     # 速めのクロスフェード（映画的テンポ�
 
 # ── Ken Burns パラメータ ─────────────────────────────────
 KB_ZOOM_FACTOR = 1.40   # zoom_in/out の最大倍率（上限キャップ）
-KB_ZOOM_SPEED  = 0.0006 # 固定ズーム速度 [倍率/frame]（25fps で約9%/15s）
+KB_ZOOM_FWD_SEC = 8.0   # ズームの順方向の尺[秒]
+KB_PAN_FWD_MAX = 8.0    # パン系の順方向の最大尺[秒]。超過分は逆再生で往復
+KB_HOLD_SEC    = 2.5    # 折り返し地点で静止する秒数（往復動作）
+KB_ZOOM_SPEED  = 0.0015 # 固定ズーム速度 [倍率/frame]（25fps で約3.75%/s。2026-10-14に0.0006から加速）
                          # → 短シーンも長シーンも同じ速度感、長シーンはキャップで止まる
 
 # ── キャラクター表示名マッピング ──────────────────────────
@@ -360,6 +363,22 @@ def infer_zoom_anchor(image_prompt: str, character_ref: str = None,
     return (0.5, 0.5, "zoom_out")
 
 
+def _kb_cycle_u(fwd_frames: int, hold_frames: int) -> str:
+    """往復動作の進行フレーム u(on) を返す ffmpeg 式（0→F→(静止)→0→(静止)の繰り返し）。
+
+    順方向F → 静止H → 逆方向F → 静止H の周期。折り返しで止まらず急反転する
+    のを避け、各端で数秒静止してから反転させる（2026-10-14）。
+    """
+    F, H = fwd_frames, hold_frames
+    c = f"mod(on\\,{2 * (F + H)})"
+    return f"({F}*(clip({c}/{F}\\,0\\,1)-clip(({c}-{F + H})/{F}\\,0\\,1)))"
+
+
+def _smooth(x: str) -> str:
+    """smoothstep(3x^2-2x^3)の ffmpeg 式。折り返し端で速度ゼロになる。"""
+    return f"(3*pow({x}\\,2)-2*pow({x}\\,3))"
+
+
 def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape: bool = True,
                    overlay_vf: str = "", anchor: tuple = (0.5, 0.5)):
     """画像に Ken Burns エフェクトを適用して動画クリップを生成する。
@@ -368,6 +387,8 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
     landscape: True=1920x1080, False=1080x1920 (Shorts)
     anchor: (px, py) ズーム焦点（0.0〜1.0）。zoom_in/zoom_out で有効。
     """
+    if effect == "static":   # 完全静止は使わない（2026-10-14〜 zoom_in に読み替え）
+        effect = "zoom_in"
     w, h = (OUTPUT_W, OUTPUT_H) if landscape else (SHORTS_W, SHORTS_H)
     res = f"{w}:{h}"
     total_frames = int(duration * FPS)
@@ -385,24 +406,19 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
 
     px, py = anchor
 
-    # zoom_in速度: 固定速度(KB_ZOOM_SPEED)だと、クリップが約28秒を超える長さの
-    # 場合に最大倍率(KB_ZOOM_FACTOR)へ途中到達し、残り時間ズームが完全静止して
-    # しまう（kagaku-life kl004で発覚、2026-08-25）。zoom_outは元々クリップ全長に
-    # 応じた可変速度（z_step_dn）で最後まで動き続ける設計のため、zoom_inも同様に
-    # 「固定速度」と「クリップ全長で割った可変速度」の遅い方を採用する。min()に
-    # より必ずどちらか遅い方の上限に収まるため、KB_ZOOM_FACTORを超過することは
-    # ない（短いクリップは従来通りの控えめな速度、長いクリップは最後まで途切れず
-    # 動きKB_ZOOM_FACTORちょうどで終わる）。
-    zoom_step = min(KB_ZOOM_SPEED, (z - 1.0) / max(total_frames, 1))
-    z_end = round(1.0 + zoom_step * total_frames, 6)   # zoom_in の到達倍率
-
-    # zoom_out: 常に KB_ZOOM_FACTOR(1.40x)スタート → クリップ尺内に1.0xまで完全に戻す
-    z_step_dn = round((z - 1.0) / max(total_frames, 1), 8)     # zoom_out の速度（比例）
+    # 往復動作: 順方向の動きが上限に達したら止まらず逆再生で戻る（三角波で折り返し）。
+    # ズーム系は KB_ZOOM_SPEED の一定速度で最大倍率まで進み、到達したら逆に戻る。
+    hold = int(KB_HOLD_SEC * FPS)
+    zL = max(min(total_frames, int(KB_ZOOM_FWD_SEC * FPS)), 2)
+    zA = round(min(z - 1.0, KB_ZOOM_SPEED * zL), 6)   # ズーム量（短いクリップは控えめ）
+    zp = _smooth(f"({_kb_cycle_u(zL, hold)}/{zL})")
+    pL = max(min(total_frames, int(KB_PAN_FWD_MAX * FPS)), 2)
+    pp = _smooth(f"({_kb_cycle_u(pL, hold)}/{pL})")
 
     if effect == "zoom_in":
         vf = (
             f"{prescale},"
-            f"zoompan=z='min(1+{zoom_step}*on,{z_end})'"
+            f"zoompan=z='1+{zA}*{zp}'"
             f":x='{px}*(iw-iw/zoom)':y='{py}*(ih-ih/zoom)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
@@ -410,7 +426,7 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
     elif effect == "zoom_out":
         vf = (
             f"{prescale},"
-            f"zoompan=z='max({z}-{z_step_dn}*on,1)'"
+            f"zoompan=z='{z}-{zA}*{zp}'"
             f":x='{px}*(iw-iw/zoom)':y='{py}*(ih-ih/zoom)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
@@ -419,7 +435,7 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
         vf = (
             f"{prescale},"
             f"zoompan=z='{z}'"
-            f":x='iw/2-(iw/zoom/2)+({buf_w}-{buf_w}/{z})/2*on/{total_frames}'"
+            f":x='iw/2-(iw/zoom/2)+({buf_w}-{buf_w}/{z})/2*{pp}'"
             f":y='ih/2-(ih/zoom/2)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
@@ -428,7 +444,7 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
         vf = (
             f"{prescale},"
             f"zoompan=z='{z}'"
-            f":x='iw/2-(iw/zoom/2)+({buf_w}-{buf_w}/{z})/2*(1-on/{total_frames})'"
+            f":x='iw/2-(iw/zoom/2)+({buf_w}-{buf_w}/{z})/2*(1-{pp})'"
             f":y='ih/2-(ih/zoom/2)'"
             f":d={total_frames}:s={w}x{h}:fps={FPS},"
             f"setsar=1,format=yuv420p"
@@ -441,23 +457,29 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
         # 不連続にジャンプしカクついて見えたため（2026-08-25、テスト動画で確認）。
         # smoothstepはt=0/t=1で速度がゼロになるため、フェーズ1の終端とフェーズ2の
         # 始端がどちらも速度ゼロで滑らかにつながる。
-        pf = int(total_frames * 0.6)           # パン終了フレーム
-        zf = max(total_frames - pf, 1)         # ズームアウトフレーム数
+        # 往復動作: 順方向の動き（パン→ズームアウト）がKB_PAN_FWD_MAX秒で終わった時点で
+        # 止まらず、同じ軌道を逆再生して動き続ける（三角波で折り返し）。
+        # 短いクリップは従来通り1回の順方向で完結する（L=total_frames）。
+        hold = int(KB_HOLD_SEC * FPS)
+        L = max(min(total_frames, int(KB_PAN_FWD_MAX * FPS)), 2)
+        u = _kb_cycle_u(L, hold)                # 0→L→(静止)→0→(静止) の折り返しフレーム
+        pf = int(L * 0.6)                      # パン終了フレーム
+        zf = max(L - pf, 1)                    # ズームアウトフレーム数
         pan_range = round(buf_w * (1 - 1 / z), 4)  # z倍時の最大パン量
 
-        t1 = f"(on/{pf})"
+        t1 = f"({u}/{pf})"
         ease1 = f"(3*pow({t1}\\,2)-2*pow({t1}\\,3))"
-        t2 = f"((on-{pf})/{zf})"
+        t2 = f"(({u}-{pf})/{zf})"
         ease2 = f"(3*pow({t2}\\,2)-2*pow({t2}\\,3))"
 
         # z: パン中は固定(z)、ズームアウト中は smoothstep で減少→1.0
-        z_expr = f"if(lt(on\\,{pf})\\,{z}\\,({z}-({z}-1)*{ease2}))"
+        z_expr = f"if(lt({u}\\,{pf})\\,{z}\\,({z}-({z}-1)*{ease2}))"
         if effect == "pan_zoom_out_lr":
             # 左側スタート → 右側パン → 右端固定でズームアウト
-            x_expr = f"if(lt(on\\,{pf})\\,{pan_range}*{ease1}\\,iw-iw/zoom)"
+            x_expr = f"if(lt({u}\\,{pf})\\,{pan_range}*{ease1}\\,iw-iw/zoom)"
         else:
             # 右側スタート → 左側パン → 左端固定でズームアウト
-            x_expr = f"if(lt(on\\,{pf})\\,{pan_range}*(1-{ease1})\\,0)"
+            x_expr = f"if(lt({u}\\,{pf})\\,{pan_range}*(1-{ease1})\\,0)"
         vf = (
             f"{prescale},"
             f"zoompan=z='{z_expr}'"
@@ -663,6 +685,10 @@ def shorts_caption_for_clip(narration: str, audio_dur: float, clip_idx: int, max
 
 def make_shorts_clip(img: Path, dst: Path, effect: str, overlay_vf: str = ""):
     """Shorts用クリップ生成（Ken Burns + テキストオーバーレイ）"""
+    if effect == "static":   # 完全静止は使わない（2026-10-14〜 zoom_in に読み替え）
+        effect = "zoom_in"
+    elif effect.startswith("pan_zoom_out"):   # Shorts未対応の複合エフェクトは zoom_out に読み替え
+        effect = "zoom_out"
     tf = int(SHORTS_CLIP_DURATION * FPS)
     bw, bh = SHORTS_W * 2, SHORTS_H * 2
     z = KB_ZOOM_FACTOR
