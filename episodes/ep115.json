@@ -1,0 +1,264 @@
+{
+  "episode_id": "ep115",
+  "episode_title": "Tokugawa Yoshimune: The Shogun Who Ate Simple Meals to Save a Near-Bankrupt Shogunate",
+  "youtube_title": "The Shogun Who Ate Simple Meals to Save a Near-Bankrupt Shogunate",
+  "youtube_description": "Japan's most powerful ruler was said to wear plain cotton and eat simple meals, while his government slid into deficit. In 1722, Tokugawa Yoshimune took an extraordinary step: he asked the lords of Japan for their rice. This is the story of the eighth shogun and the Kyoho Reforms, and of how far thrift, a complaint box and a new tax system could carry a government that was running out of money.\n\n⏱️ Chapters:\n0:00 Introduction\n0:20 Why did Japan's shogun ask his\n0:36 By 1700, Japan had known nearly\n1:28 The strain showed first at the\n2:18 Far from Edo, in the castle\n3:06 In 1716, the child shogun...\n3:55 He began by example....\n4:39 He also wanted capable men, not\n5:24 Yoshimune also wanted to hear...\n6:08 The shogunate's income came...\n6:48 By 1722, even these measures...\n7:28 The agemai edict of 1722 asked\n8:13 Then came a test no reform\n8:59 A scholar named Aoki Konyo wrote\n9:48 Yet one problem refused to go\n10:33 By the 1740s, the numbers looked\n11:17 Yoshimune died in 1751, in his\n11:57 So what actually saved the...\n12:40 But the Kyoho Reforms also show\n13:27 Today, Yoshimune lives on in...\n14:13 Tokugawa Yoshimune never won...\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Hall, John Whitney (ed.) — \"The Cambridge History of Japan, Vol. 4: Early Modern Japan\" (Cambridge University Press, 1991)\n2. Totman, Conrad — \"Early Modern Japan\" (University of California Press, 1993)\n3. Vaporis, Constantine Nomikos — \"Tour of Duty: Samurai, Military Service in Edo, and the Culture of Early Modern Japan\" (University of Hawai'i Press, 2008)\n\n#TokugawaYoshimune #KyohoReforms #EdoPeriod #TokugawaShogunate #Shogun #JapaneseHistory #SamuraiHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Tokugawa Yoshimune",
+    "Kyoho Reforms",
+    "Edo period",
+    "Tokugawa shogunate",
+    "eighth shogun",
+    "Rice Shogun",
+    "Meyasubako",
+    "Agemai",
+    "Ooka Tadasuke",
+    "sankin-kotai",
+    "Japanese history",
+    "samurai history",
+    "Edo Japan",
+    "Japan history documentary",
+    "Japanese history channel",
+    "Tokugawa shogun"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Edo Castle, 1722. The shogun of Japan summons the lords he commands, and asks them for rice. His treasury is nearly empty. Why would the most powerful man in Japan have to ask? The answer lies here.",
+  "shorts_narration": "1722. The shogun of Japan asks his lords for rice. Tradition says he lived on simple meals. His treasury is almost empty. One edict bends the whole system. Tokugawa Yoshimune. Did thrift save Japan?",
+  "shorts_hook_lines": [
+    "BROKE SHOGUN.",
+    "HE ASKED FOR RICE.",
+    "COULD THRIFT SAVE JAPAN?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Tokugawa Yoshimune's face in his late thirties, a broad strong-jawed face with a dark, weathered sun-tanned complexion and a firm closed mouth and steady, watchful eyes looking straight into the camera with calm, unyielding resolve, shaved forehead and crown with a small oiled dark topknot, a plain dark cotton collar visible at the frame edge, dramatic single lantern light from one side, deep shadows on the other, a blurred gold-leaf screen glowing faintly behind him. Vertical portrait composition, face filling the center and upper part of the frame. No text, no European elements.",
+  "thumbnail_prompt": "Cinematic medium shot of Tokugawa Yoshimune in his early forties seated cross-legged in a vast, dim audience hall of Edo Castle, a tall, imposing, heavily built man with a stern, resolute broad face, a strong jaw and a dark sun-tanned complexion, shaved forehead and crown with a small dark topknot, wearing a plain undyed cotton kimono, a single low tray before him holding only a small bowl of rice, a bowl of soup and one tiny dish, behind him towering gold-leaf folding screens and rows of silent lords in dark ceremonial dress kneeling in the shadows, a faint three-leaf hollyhock crest on the screens, his eyes fixed straight at the camera. High-contrast dramatic lighting, warm glow on his face against deep shadows, clear space above his head. No text in the image itself (the title text overlay is added separately), no European elements.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "Why did Japan's shogun ask his lords for rice? He was said to wear plain cotton and eat simple meals, yet his treasury was running dry. Could thrift really save a government?",
+      "image_prompt": "Tokugawa Yoshimune in his late thirties, a tall, heavily built man with a broad strong-jawed face and a dark sun-tanned complexion, firm mouth, steady watchful eyes, shaved forehead and crown with a small dark oiled topknot (chonmage), wearing a plain undyed cotton kimono, sitting alone and upright in a vast hall of Edo Castle before a single low tray holding only a bowl of rice, a bowl of soup and one tiny side dish, chopsticks in hand, glancing up at the viewer, behind him enormous gold-leaf folding screens painted with pine trees gleaming unused in the shadows, low-angle view, warm lamplight against deep shadow, quiet defiance. No text, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.49,
+        "y": 0.44
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "By 1700, Japan had known nearly a century of peace under the Tokugawa. Edo, the shogun's capital, had grown to perhaps a million people. The whole system rested on rice. Samurai were paid in rice, farmers paid their taxes in rice, and the shogunate drew its income from roughly four million koku of its own land. But the economy was changing. Merchants in Osaka and Edo dealt in money, not grain, and prices kept shifting. A government built on rice was trying to live in a world of gold and silver. And its bills kept rising.",
+      "image_prompt": "Wide establishing view of Edo around 1700 from above Nihonbashi bridge in bright morning light: a crowded arched wooden bridge full of townspeople in cotton kimono, porters with shoulder poles, samurai with two swords, canals packed with flat cargo boats loaded with straw rice bales, long rows of white-walled storehouses along the water, the white-plastered walls and corner turrets of Edo Castle on a hill in the far distance (no main keep tower), distant Mount Fuji faint on the horizon. Busy, prosperous, epic documentary scale. No text, no signs, no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "The strain showed first at the top. The long reign of the fifth shogun, Tsunayoshi, was a time of splendor, with costly temples and ceremonies. Then, in 1707, Mount Fuji erupted, dropping ash across Edo and adding the burden of relief. Officials had already tried to raise money by reducing the gold in the coinage, which pushed prices up. By the 1710s, the shogunate was running deficits, and its leading adviser, the scholar Arai Hakuseki, struggled to repair the damage. Then, in 1716, a death changed everything.",
+      "image_prompt": "Dusk in Edo during the 1707 eruption of Mount Fuji: a dark ash-grey sky, a huge dark plume rising behind a distant ridge on the horizon, fine grey ash drifting down onto tiled rooftops and a crowded street, townspeople in cotton kimono covering their heads with cloth and hurrying with their hands over their mouths, a few samurai officials in dark clothing looking anxiously toward the sky, eerie dim orange light on the ash, a sense of a capital under strain. No text, no signs, no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Far from Edo, in the castle town of Wakayama, lived the man who would inherit the crisis. Tokugawa Yoshimune, born in 1684, was the fourth son of the lord of Kii, one of the three branch families of the Tokugawa. A younger son, he was never meant to rule. Then, in 1705, a series of deaths in the family left him lord of Kii at just twenty. He took over a domain in financial trouble, and tradition credits him with restoring it through strict thrift, which he practiced himself.",
+      "image_prompt": "Tokugawa Yoshimune at twenty, a young, tall and strong-built Japanese lord with a broad firm face and a dark sun-tanned complexion, steady eyes and black hair, shaved forehead and crown with a small black topknot, wearing a plain dark cotton haori and hakama with a small three-leaf hollyhock crest in a circle on the chest, standing on a stone rampart of the white-walled Wakayama castle on a hill, looking out over the roofs of a modest castle town and the sea beyond, two older retainers in dark formal dress kneeling a respectful distance behind him, bright clear morning light, a sense of a young man taking on a heavy inheritance. No text, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1716, the child shogun Ietsugu died. He left no heir, and the senior line of the Tokugawa ended with him. The family turned to its branch houses, and chose Yoshimune of Kii. He became the eighth shogun, an outsider from a collateral house in his early thirties, and he moved quickly. The powerful advisers of the old regime, Manabe Akifusa and Arai Hakuseki, soon left office. Yoshimune meant to govern himself, and his reforms would take the name of the new era: Kyoho. Now came the question of money.",
+      "image_prompt": "Dawn at the great stone-walled main gate of Edo Castle in 1716: Tokugawa Yoshimune in his early thirties, a tall, heavily built man with a broad strong-jawed face, a dark sun-tanned complexion and steady eyes, shaved forehead and crown with a small black topknot, in dark formal kamishimo with the three-leaf hollyhock crest in a circle on the shoulders, striding up the broad stone steps through the massive wooden gate, guards and officials in dark robes kneeling on both sides, and in the background two older officials in dark formal dress walking away down the far side of the courtyard, heads lowered, the old regime departing, white-plastered walls and tiled gate roofs catching the first light, mist on the moat. No text, no banners with writing, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.36,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "He began by example. Yoshimune ordered strict economy across the government, cutting expenses at Edo Castle and urging samurai and townspeople alike to give up luxury. Tradition says he wore plain cotton and kept his own meals to a simple soup and a few dishes. Whether every detail is true, the message was deliberate: the shogun would not waste what the state did not have. But thrift alone could not close the gap, and Yoshimune knew it. The real problem lay in how the shogunate earned and spent.",
+      "image_prompt": "A long wooden corridor inside Edo Castle in cool morning light: Tokugawa Yoshimune in his mid-thirties, broad strong-jawed face, shaved forehead and crown with a small black topknot, wearing a plain undyed cotton kimono, walking briskly past court attendants in dark robes who are carrying away bundles of brightly colored silk robes and gilded lacquer boxes in both arms to a storeroom, Yoshimune looking straight ahead with a stern, composed expression, shot from the side in a long tracking composition. No text, no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.71,
+        "y": 0.29
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "He also wanted capable men, not just well-born ones. In 1717, he appointed Ooka Tadasuke as a magistrate of Edo, responsible for policing and justice in the city. Later, in 1723, he introduced the system of tashidaka. A promising official from a family of modest stipend could hold a high post, and the government would make up the difference only while he served. It was a quiet breakthrough in a rigid, hereditary system. Talent could now rise, without permanently raising anyone's pay.",
+      "image_prompt": "Open courtyard of an Edo magistrate's court in clear daylight: a stern magistrate in dark formal kamishimo with shaved crown and small topknot (anonymous, seen from a respectful distance) seated on the raised wooden veranda, a commoner in a plain cotton kimono kneeling on the white gravel court below with head bowed, two court officials with shaved crowns and small topknots standing on either side and a clerk kneeling beside a low desk with a brush, white gravel raked smooth, thick wooden pillars and tiled eaves framing the scene, grave and orderly mood. No text, no signs, no European elements.",
+      "ken_burns": "static",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Yoshimune also wanted to hear from below. In 1721, he had a petition box set up outside Edo Castle, the meyasubako. Anyone, including commoners, could drop in a suggestion or a complaint. Tradition holds that only the shogun held the key. One petition, from a physician, led to the free clinic at Koishikawa in 1722, a hospital for the poor of Edo. The box did not turn Japan into a democracy. But it gave a government of rank and ritual a rare channel to the people it ruled.",
+      "image_prompt": "A plain wooden box with a narrow slot and iron bands, hung on a thick wooden post beside a stone-based gate of Edo Castle in soft morning light, a commoner in a worn cotton kimono pushing a small folded sheet of blank paper through the slot while an elderly townswoman and a shaven-headed physician in a dark haori wait behind him with respectful, hopeful faces, a gate guard in dark robes watching impassively from the side, tiled gatehouse roof and white castle walls behind them. The box and paper carry no writing at all. No text, no signs, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The shogunate's income came mainly from the rice tax on villages, so Yoshimune turned to the countryside. He pushed the opening of new rice fields, even inviting merchants to finance them. He also moved toward fixed tax rates, set over several years instead of measured each autumn, so the treasury could count on its income. In time, the share of the harvest taken in tax rose. It worked for the government. But the people paying it were farmers, and their patience would not be endless.",
+      "image_prompt": "Golden autumn harvest in a Japanese village at late afternoon: farmers in worn blue-grey cotton kimono with towels on their heads carrying heavy straw rice bales along an earthen path between golden rice terraces, a village headman kneeling beside a low table where a tax official in dark formal dress sits upright in clear side-profile view, his forehead and crown shaved smooth with a thin topknot folded forward over the shaved crown, with a closed ledger, officials' assistants counting bales, bundles of rice stalks hung drying on wooden racks, mountains behind, weary dignity on the farmers' faces. No text, no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "By 1722, even these measures were not enough. The treasury still could not meet its costs, and so Yoshimune did something extraordinary. He gathered the daimyo, the lords who owed the Tokugawa obedience, and asked them for help. The shogun, who commanded their loyalty, would now ask for their rice. It was a request that admitted weakness, and it risked their resentment. He had to offer something in return. What he offered struck at the heart of the system.",
+      "image_prompt": "Viewed over the shoulders of kneeling daimyo in the great hall of Edo Castle in 1722: rows of lords in stiff wide-shouldered dark kamishimo with family crests kneeling in tense silence in the foreground (backs and profiles, shaved crowns with small topknots), and at the far end on the raised dais Tokugawa Yoshimune in his late thirties, broad strong-jawed face, shaved crown with a small black topknot, in dark ceremonial kamishimo with the three-leaf hollyhock crest in a circle, seated cross-legged in the formal Japanese manner at the center of the raised tatami dais, both knees resting on the dais floor (not perched on its edge, no legs hanging down, feet not touching the lower floor), in silent authority holding a closed folding fan on his knee, taller and more heavily built than the men around him, gold-leaf screens behind him, shafts of cold light across the polished floor, a held breath of tension. No text, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 70,
+      "narration": "The agemai edict of 1722 asked each daimyo to give the shogunate one hundred koku of rice for every ten thousand koku of his domain. In return, the lords' duty of sankin-kotai, the alternate attendance that kept them in Edo, was cut: instead of a full year in the capital, they would stay only six months. It was a bargain with a real price. The shogunate gave up some of the control that the old rule provided, and the lords saved heavily on the cost of living in Edo. The treasury gained rice. The measure lasted until 1730.",
+      "image_prompt": "Dawn at a great gate of Edo: on the left a long daimyo procession streaming out of the city, spearmen with feathered spear covers, a lacquered palanquin carried by bearers, retainers in formal dark clothing marching in step, relaxed eagerness to go home; on the right a line of porters carrying straw rice bales through the gate toward the castle storehouses. Above, on a stone rampart walkway, Tokugawa Yoshimune in his late thirties, strong-jawed face, shaved crown with a small black topknot, in dark ceremonial haori with the three-leaf hollyhock crest, watching in silence, small in the frame but clearly visible, golden low sun, mist rising from the moat. No text, no banners with writing, no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.79,
+        "y": 0.16
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Then came a test no reform could prevent. In 1732, swarms of insects devastated rice crops across western Japan, and the Kyoho famine began. Rice prices rose, hunger spread, and in the following year, townspeople in Edo smashed the premises of a rice dealer they blamed for hoarding. The very rice economy Yoshimune was trying to repair now showed how fragile it was. The shogun ordered relief and a search for crops that could survive bad harvests. One was already known in Japan, but rarely grown in the east: the sweet potato.",
+      "image_prompt": "Desolate rice paddies at dusk in western Japan, rice stalks pale, bent and eaten away, a faint dark swarm of tiny insects drifting low over the water, thin exhausted farmers in ragged cotton kimono crouching in the field holding handfuls of ruined stalks, a woman holding a child, a bare farmhouse with a sagging thatched roof in the background, dim orange and grey sky, a sense of looming famine. No text, no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "A scholar named Aoki Konyo wrote a study of the sweet potato, and in 1735, with the shogunate's backing, trial fields were planted in the Edo region. Konyo also studied Dutch. That was part of another of Yoshimune's choices. In 1720, he had relaxed the ban on imported books, so long as they had nothing to do with Christianity. Western knowledge of astronomy, medicine and farming could now enter Japan through Nagasaki, and a generation of Dutch learning began. A strict ruler had opened a window to the outside world.",
+      "image_prompt": "A neat experimental vegetable field in the Edo countryside in clear afternoon light: a thin scholar in a dark haori with shaved crown and small topknot kneeling among rows of sweet potato vines, lifting a freshly dug purple-skinned sweet potato toward the sun, several curious villagers in cotton kimono and an official in dark formal dress crowding around him in wonder, a closed plain bound book with a blank, completely unmarked brown leather cover and blank spine, resting on a straw mat beside the furrows; no tools in anyone's hands, the scholar holds the sweet potato up in his bare right hand, green leaves and brown earth, calm curiosity. No text, no European buildings, no European clothing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Yet one problem refused to go away. The price of rice, in which every samurai's salary was paid, kept falling relative to other goods, so the warrior class grew poorer while merchants grew richer. Yoshimune tried to manage prices. In 1730, he gave official approval to the rice exchange at Dojima in Osaka, hoping to steady the market. His struggles earned him the nickname the Rice Shogun. But a state cannot order a market to obey, and the old economy kept slipping away.",
+      "image_prompt": "Busy rice exchange at Dojima in Osaka on a canal-side street, merchants in cotton kimono and short coats, every man with a shaved crown and a small topknot folded forward over it, shouting and bargaining with fast hand signals in an animated crowd, clerks with brushes and tightly rolled sheets of paper (no visible writing), towering stacks of straw rice bales along the canal, flat cargo boats unloading, white-walled warehouses with dark tile roofs, a few anxious lower-ranking samurai in plain faded hakama standing at the edge of the crowd, bright morning light, energetic bustle. No text, no signs, no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "By the 1740s, the numbers looked better. The shogunate's tax income reached a high point, and the deficits of the early years were no longer the threat they had been. In 1745, Yoshimune stepped down in favor of his eldest son, Ieshige, though he kept an influential voice in government. He had also prepared for the future by founding two new branch families from his younger sons, the Tayasu and the Hitotsubashi, to give the shogunate a ready source of heirs. A later shogun came from the Hitotsubashi line.",
+      "image_prompt": "Tokugawa Yoshimune in his early sixties, a broad strong-jawed face now lined, greying hair, shaved forehead and crown with a small thin grey topknot, in a plain dark haori over a cotton kimono, sitting calmly on the veranda of a quiet Edo Castle residence beside a raked gravel garden, his son in his early thirties in formal dark robes kneeling before him in a deep bow and two younger men in formal dress kneeling behind the son, soft afternoon light through pine branches, a handing-over of responsibility, serene and dignified. No text, no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Yoshimune died in 1751, in his mid-sixties. He came to be remembered as one of the great rulers of the Edo period, and over time he became a model of the wise lord, the subject of countless stories. Many of those stories grew in the telling. The real man was harder and more complicated. He was a strict ruler who raised the burden on farmers, but also one who listened to petitions, read foreign books and trusted talent over birth. Both pictures are true.",
+      "image_prompt": "Tokugawa Yoshimune in his mid-sixties, strong-jawed lined face, thin white-grey hair, shaved forehead and crown with a small thin white topknot, in a plain dark cotton haori, sitting alone on a wooden veranda at sunset with a falconer's leather glove on his left fist and a hawk perched on it, gazing at an autumn garden of red maples and a still pond, long golden shadows, peaceful and reflective, the end of a long reign. No text, no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.44,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "So what actually saved the shogunate? Not the cotton clothes alone. Thrift gave the government credibility, a sign that the shogun would share the sacrifice he demanded. The real gains came from steadier taxes, new fields, the lords' rice and capable officials. In other words, the symbolism opened the door, and the institutions walked through. A leader who preaches sacrifice and lives in comfort is ignored. A leader who lives plainly can ask for more than anyone expected.",
+      "image_prompt": "A modest, sparsely furnished study inside Edo Castle at night: Tokugawa Yoshimune in his forties, broad strong-jawed face with a dark complexion, shaved crown with a small black topknot, in a plain undyed cotton kimono, seated at a low wooden desk with a wooden abacus (soroban) and a thick closed account ledger, two senior officials in dark kamishimo kneeling opposite him and presenting neatly bundled, closed rice-tax registers, beside him a single plain tray with a bowl of rice and a bowl of soup pushed to one side, a single oil lamp casting warm light and deep shadows, focused, businesslike mood. No visible writing on any paper, no text, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.27,
+        "y": 0.42
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "But the Kyoho Reforms also show the limits of repairing a system without changing it. Yoshimune's tools were old ones: more rice, more tax, tighter spending and firmer control of the countryside. They bought time. Peasant protests became more frequent in the decades that followed, the warrior class stayed in debt to merchants, and the economy kept moving toward money. Later, the official Tanuma Okitsugu would try the opposite and embrace commerce. The Kyoho Reforms are counted as the first of the three great reforms of the Edo period.",
+      "image_prompt": "Interior of a wealthy Edo merchant's shop at dusk: a prosperous merchant in a fine striped silk kimono sitting upright and composed behind a counter with a wooden abacus (soroban) and a stack of ledgers, weighing a small pile of gold coins in his palm, while across from him a threadbare samurai with a shaved crown and small topknot, in faded and patched hakama with a single sword, kneels with a bowed head and an empty purse in his hands, rice storehouses visible through a window behind, warm lantern light, quiet reversal of fortunes. No text, no signs, no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Today, Yoshimune lives on in popular culture. Long-running television dramas show a roaming, righteous shogun who disguises himself to put wrongs right, and the magistrate Ooka Tadasuke as a fair-minded judge. Those stories are fiction. What is documented is subtler: a ruler who inherited a financial crisis, made himself the first example, and then rebuilt the machinery of government around it. Here is the paradox. The most powerful man in Japan changed the country not through splendor, but by refusing it.",
+      "image_prompt": "Dusk over the stone walls and wide moat of Edo Castle, tall massive stone embankments with white-plastered wall segments and a corner turret above, still dark water reflecting a deep blue and gold sky, a stone bridge across the moat, a few glowing lanterns beginning to light inside the gate, no people in the frame, long shadows and a hush of time passing, grand and reflective. No text, no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "Tokugawa Yoshimune never won a great battle, and he never led an army. He fought the quietest war a ruler can fight, against a deficit. He did not win it for good, but he gave his government a new lease on life. That kind of leadership rarely makes the headlines, yet it shapes nations. There are more figures like him in the shadows of Japanese history. If you want to meet them, you know where to find us.",
+      "image_prompt": "Seen from behind and slightly to the side, Tokugawa Yoshimune in his forties, tall and powerfully built, shaved crown with a small black topknot, in a plain cotton kimono and simple haori, standing alone with his hands folded in his sleeves on a raised earthen path between harvested rice fields on the edge of Edo at first light, rows of rice sheaves drying on wooden racks around him, the distant white walls of Edo Castle and a faint Mount Fuji on the horizon, thin morning mist over the fields, the sky shifting from deep blue to gold, calm and resolute, a closing shot of quiet determination. No text, no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "tokugawa_yoshimune",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.3
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep053-BGM.mp3",
+    "main": "BGM/ep036-BGM.mp3",
+    "outro": "BGM/ep090-BGM-outro.mp3"
+  }
+}
