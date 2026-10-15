@@ -84,6 +84,9 @@ python3 $HOME/samurai-chronicles/sc_sns_up.py --episode ep{NNN} --publish-at "20
   ※ 指定日時まで非公開状態です。YouTube Studio で確認できます。
 ```
 
+**完了報告の最後に、次の制作の前に `/clear` で会話を整理し、`/sc-new`（STEP 0 の `git pull` から始まる）を実行することを
+ユーザーに一言勧める**（2026-10-16〜。長い会話のままだと古い経緯を引きずるため）。
+
 ## STEP 3.5 — Shortsの「関連動画」を設定する（Chromeを自動操作、2026-10-02追加）
 
 Shortsの「関連動画」に本編を設定しておくと、Shortsの視聴者を本編へ誘導できる。

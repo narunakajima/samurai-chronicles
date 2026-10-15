@@ -13,6 +13,7 @@ topics_queue.json から次のトピックを選び、動画生成まで一気�
 
 | ステップ | 内容 | 所要時間 |
 |---|---|---|
+| STEP 0  | 最新の状態にする（git pull、`/clear` の案内） | 即時 |
 | STEP 1  | 次のトピック確認（人物重複チェック） | 約5分 |
 | STEP 2A | エピソードJSON生成（20シーン） | 約5〜10分 |
 | STEP 2B | JSONファイル保存 + キュー更新 | 即時 |
@@ -69,6 +70,26 @@ STEP 3A/3B/3C はすべて完了してから一括で完了報告する（個別
 - エピソードJSON: `$HOME/samurai-chronicles/episodes/`
 - トピックキュー: `$HOME/samurai-chronicles/topics_queue.json`
 - Google Drive: `~/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/`
+
+---
+
+## STEP 0 — 最新の状態にする（2026-10-16〜、毎回最初に実行）
+
+他のマシン（MacBook・iMac）での変更や、直近のアップロードによる自動コミット（`topics_queue.json`・`episodes/*.json` など）を
+取り込んでから始める。会話が長くなっているときは、先にユーザーに **`/clear` を勧める**（`/clear` はコマンドの中から
+実行できない。会話の経緯は `CLAUDE.md`・この手順書・`MEMORY.md`・`topics_queue.json`・エピソードのJSONにあるので、消しても
+制作は続けられる）。
+
+```bash
+hostname                      # マシン判定（CLAUDE.md「マシン判定ルール」）
+cd $HOME/samurai-chronicles
+git status --short            # 未コミットの変更が残っていないか確認（あれば内容を見てから進める）
+git pull --rebase             # 他のマシン・直近の自動コミットを取り込む
+git log --oneline -5          # 直近の変更を確認
+```
+
+- 競合したら、無理に解消せずユーザーに状況を報告する
+- 取り込んだあとで、STEP 1 の次のトピック確認に進む
 
 ---
 
