@@ -296,8 +296,23 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 
 ### 生成方法（2026-08-04〜: 生成はSonnet・チェックはOpusの二段構成に変更）
 
-このSTEPの生成（エピソードJSON全体の作成）は `Agent` ツールで **model指定なし**
-（デフォルト＝Sonnet相当）のサブエージェントに任せる。
+このSTEPの生成（エピソードJSON全体の作成）は `Agent` ツールで **`model: "sonnet"` を明示した**
+サブエージェントに任せる。
+
+**model指定は省略しない（2026-10-15〜）:** 指定を省くとサブエージェントはメインと同じモデルを引き継ぐ。
+Sonnetメインなら結果は同じだが、設計・改修目的でOpusメインのセッションから `/sc-new` を回すと、
+この生成もOpusになり、下記「経緯」で避けたはずの利用上限の消費が起きる。メインのモデルに関係なく
+Sonnetで生成するために、必ず `model: "sonnet"` を付ける。
+
+```
+Agent({
+  subagent_type: "general-purpose",
+  model: "sonnet",
+  description: "ep{NNN} エピソードJSON生成",
+  run_in_background: false,
+  prompt: "（下記『サブエージェントは会話履歴を持たないため…』に挙げた内容をすべて含める）"
+})
+```
 
 **経緯:** 2026-07-28、ep068制作中にSonnetの史実知識不足に起因する複数の誤り（龍馬の髪型・
 ブーツの着用時期・実在人物の甲冑有無等）が発覚し、一時は生成・チェック両方をOpusに委任していた。
