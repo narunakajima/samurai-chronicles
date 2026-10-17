@@ -1192,14 +1192,14 @@
     },
     {
       "episode_id": "ep116",
-      "status": "in_production",
+      "status": "published",
       "title": "The Man Who Built a 100-Year Clan From Nothing — and Started the Sengoku Age: Hojo Soun",
       "era": "Muromachi/Sengoku",
       "priority": "A",
       "person": "hojo_soun",
       "angle": "overview",
       "notes": "未登場。Muromachi末期の実績を作る枠。「無名の浪人から」という通説は近年見直されているため、STEP 3Aで史実（伊勢氏出身説・生年）の線引きを厳格に検証すること。 → 2026-10-05: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-10-16"
+      "last_updated": "2026-10-17"
     },
     {
       "episode_id": "ep117",

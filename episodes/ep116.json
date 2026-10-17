@@ -291,5 +291,8 @@
     "main": "BGM/ep009-BGM.mp3",
     "outro": "BGM/ep055-BGM.mp3"
   },
-  "tokio_talk": true
+  "tokio_talk": true,
+  "youtube_url": "https://youtu.be/4rsbDXtRrsY",
+  "shorts_url": "https://youtu.be/G9OEH5Zv1MA",
+  "scheduled_at": "2026-11-05 03:00"
 }

@@ -1156,5 +1156,15 @@
         "video_id": "32IdnPM4vNI"
       }
     ]
+  },
+  "hojo_soun": {
+    "display_name": "Hojo Soun",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep116",
+        "video_id": "4rsbDXtRrsY"
+      }
+    ]
   }
 }
