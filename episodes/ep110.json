@@ -220,5 +220,6 @@
   },
   "youtube_url": "https://youtu.be/fbpmNMiAIrI",
   "shorts_url": "https://youtu.be/XFz9WXOpJwA",
-  "scheduled_at": "2026-10-17 03:00"
+  "scheduled_at": "2026-10-17 03:00",
+  "related_video_set": true
 }
