@@ -29,6 +29,8 @@ samurai-chronicles/
 ├── sc_image_gen.py     シーン画像生成（Gemini）
 ├── sc_inject_bgm_credit.py  CC BY クレジット自動注入
 ├── sc_bgm_library.py   BGMライブラリ管理（登録・紐付け）
+├── sc_tokio_assets.py  語り手 Tokio の素材づくり（話すループ生成・背景抜き・サムネ合成）
+├── narrator/           語り手 Tokio（tokio.json=設定の正本、clips/=背景透過の動画、sfx/=効果音）
 ├── bgm_library.json    BGMライブラリ台帳（パス・ライセンス・タグ・used_in）
 └── topics_queue.json   制作キュー
 ```
@@ -142,6 +144,23 @@ Opusサブエージェントへの引き継ぎまでとし、メインの切り�
 
 ---
 
+## 語り手 Tokio（2026-10-17〜・パイロット中）
+
+量産型と見られないよう、語り手に人格と固定の型を持たせる試み。**時を駆ける記者 Tokio Kamiya**（元・特派員。祖父の懐中時計で
+過去へ一日ずつ行き、現地から報告する。見るだけで変えられない）。ep116（北条早雲）が初適用。
+
+- **適用は、ユーザーが「Tokio で」と指示した回のみ。** 指示がなければ従来方式（Charon・三人称）。既存の公開回は変えない。
+- 設定・声（Alnilam）・素材の作り方・Veo の注意点の正本は `narrator/tokio.json`。手順は `/sc-new` の「Tokio モード」節。
+- エピソード JSON に `"narrator": "tokio"`、`tokio_scenes`（画面に出すシーン）、`tokio_expression`（表情）、`tokio_talk: true`（口パク）。
+  フラグがなければ `sc_tts_gen.py` / `sc_video_gen.py` は従来どおり動く。
+- 画面に出すのは「語りと絵が結びつく場面」（S01・自己紹介・取材・クライマックス・Reporter's Note・締め）の約半分。**全編には出さない**（ユーザー判断）。
+- 表情は neutral / thinking / moved / writing / surprised の5種（wry は笑いが出て安定せず廃止）。待機ループと話すループがある。
+- 口パクは「話すループ」を重ねるだけで、音声とは同期しない（ユーザー確認済みで許容）。
+- 登場・退場は転送風エフェクト（geq）と合成した効果音。サムネイルには小さく合成し、名札を付ける。
+- 画像のプロンプトに Tokio を描かせない（後から合成する）。`character_ref` の枠も使わない。
+
+---
+
 ## BGM ルール
 
 - **必ず重厚なオーケストラ調**に限定する
@@ -170,3 +189,9 @@ iPhone等のリモート接続からの操作でも、Claude Codeが動いてい
 - FFmpeg フィルターは文字列結合で組み立て（f-string）
 - エラー時は `sys.exit(1)` で即終了
 - 定数はファイル上部にまとめる
+- **シェルで ffmpeg を呼ぶときは、オプションを変数に入れない。** zsh では変数が1つの引数になり、ffmpeg が失敗する。
+  しかもバックグラウンド実行では失敗が見えず、古い素材のまま次の工程へ進んだ（2026-10-17・Tokio の素材）。
+  Python の `subprocess`（リスト渡し）で呼び、`returncode` を確認して失敗時は標準エラーを表示して止める
+  （`sc_tokio_assets.py` の `run()` が実例）。作った素材は、次の工程に使う前に、必ず中身を目で確認する
+- 長い処理の完了通知（`task-notification`）は、起動用の `nohup sh -c` が終わった合図であって、処理の完了ではないことがある。
+  完了フラグのファイルで判断する
