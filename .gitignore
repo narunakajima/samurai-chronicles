@@ -2,3 +2,10 @@
 analytics/raw/
 backups/
 __pycache__/
+
+# Tokio（語り手）の素材: 再生成できるものはコミットしない（2026-10-17）
+narrator/raw/*
+!narrator/raw/tokio_neutral_base_half_v2.png
+narrator/voice_samples/
+narrator/clips/*_pp.webm
+narrator/clips/*_in.webm

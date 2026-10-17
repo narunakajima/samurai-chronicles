@@ -191,6 +191,45 @@ def qa_narration_with_gemini(client, audio_data: bytes, script_text: str) -> dic
         return {"ok": False, "issues": [f"QA_ERROR: {e}"]}
 
 
+# ── 語り手プロファイル切り替え（2026-10-16〜・Tokio パイロット） ─────────────
+# episode JSON に "narrator": "tokio" があるときだけ、narrator/tokio.json の声（tts.voice）と
+# 記者口調に切り替える。ない場合は従来の Charon・ドキュメンタリー調のまま。
+TOKIO_JSON = BASE_DIR / "narrator" / "tokio.json"
+TOKIO_STYLE = (
+    "You are Tokio Kamiya, a veteran field correspondent filing a calm, precise report from the scene. "
+    "Speak in a composed, grounded, intimate reporter's tone: present tense, short sentences, "
+    "quietly authoritative with a dry edge. Same measured pace as a premium BBC documentary narrator; "
+    "do not slow down and do not over-dramatize."
+)
+TOKIO_SCENE_ADDENDUM = {
+    "hook": " For this opening dispatch: crisp and intriguing, like the first line of a field report. No warm-up.",
+    "climax": " For this climax: tighten and quicken slightly, controlled urgency, still a reporter on the scene, not an actor.",
+    "falling_action": " For this scene: a little more quiet and grave, the dust settling. Brief pauses.",
+    "rising_action": " For this scene: steady, building tension. Each sentence raises the stakes.",
+    "insight": (" For this Reporter's Note: step out of the scene and speak as yourself, thoughtful and personal. "
+                "Add a brief pause and a touch of softness at moments of respect or emotion; do not sound cold."),
+    "teaser": " For this teaser: cinematic trailer pacing, fast and punchy, in your own reporter's voice.",
+    "outro": " For this sign-off: calm and warm, a quiet closing line. Pause before the final two sentences.",
+}
+
+
+def apply_narrator_profile(episode_id: str):
+    """episode JSON が narrator=tokio なら、グローバルの声・口調を Tokio 用に差し替える。"""
+    global VOICE_NAME, NARRATOR_STYLE, SCENE_TYPE_ADDENDUM
+    ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
+    if not ep_json.exists():
+        return
+    with open(ep_json, encoding="utf-8") as f:
+        ep = json.load(f)
+    if ep.get("narrator") != "tokio":
+        return
+    with open(TOKIO_JSON, encoding="utf-8") as f:
+        VOICE_NAME = json.load(f)["tts"]["voice"]
+    NARRATOR_STYLE = TOKIO_STYLE
+    SCENE_TYPE_ADDENDUM = TOKIO_SCENE_ADDENDUM
+    print(f"🎙️  語り手プロファイル: Tokio（声: {VOICE_NAME}）")
+
+
 def style_for_scene(scene_type: str = "") -> str:
     """シーンタイプに応じたスタイル指示（speech_metadata.style用）を返す。"""
     style = NARRATOR_STYLE
@@ -257,7 +296,7 @@ def generate_take(client, narration_text: str, max_retries: int = 5,
     last_fail_reason = ""
     for attempt in range(1, max_retries + 1):
         try:
-            audio_data = _tts_rest_call(narration_text, style)
+            audio_data = _tts_rest_call(narration_text, style, voice_name=VOICE_NAME)
             actual_dur = audio_duration_sec(audio_data)
             if actual_dur > max_dur:
                 print(f"  ⚠️ 繰り返しの疑い（{actual_dur:.1f}s > 想定上限{max_dur:.1f}s） ", end="", flush=True)
@@ -498,6 +537,7 @@ def cli():
     parser.add_argument("--force", action="store_true",
                         help="--scenes未指定のフル実行で、既存ファイルがあっても全シーン再生成する（デフォルトは既存ファイルをスキップ）")
     args = parser.parse_args()
+    apply_narrator_profile(args.episode)
 
     if args.teaser:
         run_teaser(args.episode)

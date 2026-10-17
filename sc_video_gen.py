@@ -496,6 +496,149 @@ def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape
 
 
 
+# ── 語り手 Tokio の合成（2026-10-16〜・パイロット） ──────────────────────
+# episode JSON が "narrator": "tokio" のとき、"tokio_scenes" のシーンの Ken Burns クリップに
+# narrator/clips/tokio_{expression}.webm（背景透過のループ動画）を重ねる。
+# 6秒の動画を往復（前進＋逆再生）の12秒ループにしてから使い、継ぎ目のジャンプを避ける。
+TOKIO_CLIP_DIR = BASE_DIR / "narrator" / "clips"
+TOKIO_H_RATIO = 0.62        # 画面の高さに対する Tokio の高さ
+TOKIO_MARGIN = 40           # 画面端からの余白(px)
+TOKIO_TAG_SEC = (0.8, 5.0)  # 名札の表示区間（秒）。S01 のみ
+
+
+def _tokio_loop_clip(expression: str) -> Path:
+    """往復ループ版（_pp.webm）を返す。なければ生成する。"""
+    src = TOKIO_CLIP_DIR / f"tokio_{expression}.webm"
+    if not src.exists():
+        print(f"❌ Tokio の動画が見つかりません: {src}")
+        sys.exit(1)
+    dst = TOKIO_CLIP_DIR / f"tokio_{expression}_pp.webm"
+    if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
+        return dst
+    run_cmd(
+        [FFMPEG, "-y", "-c:v", "libvpx-vp9", "-i", str(src),
+         "-filter_complex",
+         "[0:v]split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1:a=0[o]",
+         "-map", "[o]", "-an", "-c:v", "libvpx-vp9", "-pix_fmt", "yuva420p",
+         "-b:v", "0", "-crf", "24", "-auto-alt-ref", "0", str(dst)],
+        f"Tokio 往復ループ生成 ({expression})",
+    )
+    return dst
+
+
+TOKIO_MATERIALIZE = True    # 登場・退場の転送風エフェクト（走査線が上下し、光の粒子で体が現れる／消える）
+TOKIO_MAT_START = 0.7       # 登場エフェクト開始（秒）。シーン切り替えのクロスフェード(0.8s)が終わる頃
+TOKIO_MAT_DUR = 2.2         # 登場エフェクトの長さ（秒）
+TOKIO_IN_LEN = 4.0          # 登場アセットの長さ（秒）。以降は通常のループに切り替える
+TOKIO_OUT_DUR = 1.6         # 退場エフェクトの長さ（秒）
+TOKIO_SFX_DIR = BASE_DIR / "narrator" / "sfx"   # 効果音（FFmpegで自作合成。外部素材なし）
+TOKIO_SFX_VOL = 0.45
+
+
+def _tokio_effect_vf(mode: str, th: int) -> str:
+    """転送風エフェクトの geq フィルター。mode: 'in'（現れる）| 'out'（消える）。
+    走査線は H から -130 まで上がる（最後に頭頂まで完全に現れる／消えるように、画面外まで進める）。
+    背景抜き後の透明部分には元の背景色（マゼンタ）が残っているため、光の粒子は金色に置き換える。"""
+    if mode == "in":
+        p = f"clip((T-{TOKIO_MAT_START})/{TOKIO_MAT_DUR},0,1)"
+    else:
+        p = f"clip(T/{TOKIO_OUT_DUR},0,1)"
+    d = f"(Y-H+{p}*(H+220))"            # 走査線より下が正。最後は画面の上端より十分外まで進める
+    act = f"gt({p},0)*lt({p},1)"
+    gone = f"gt(clip({d}/170,0,1),random(0))"   # 走査線の下側が粒状に（現れる／消える）
+    # 完了後は完全に現れる（in）／完全に消える（out）。粒の欠けを残さない
+    vis = f"if(gte({p},1),1,{gone})" if mode == "in" else f"if(gte({p},1),0,1-{gone})"
+    ew = f"(exp(-abs({d})/38)*{act})"
+    spark = f"(gt(random(0),0.955)*lt(abs({d}),130)*lt(abs(X-W/2),W*0.5)*{act})"
+    line = f"(lt(abs({d}),2)*lt(abs(X-W/2),W*0.48)*{act})"
+    inside = "gt(alpha(X,Y),8)"
+
+    def ch(name, gold):
+        return (f"clip(if({inside},{name}(X,Y),{gold})+{gold}*0.85*{ew}*{inside}"
+                f"+{gold}*{spark}+{gold}*0.55*{line},0,255)")
+
+    a = f"clip(max(alpha(X,Y)*{vis},max(255*{spark},120*{line})),0,255)"
+    return (f"format=gbrap,geq=r='{ch('r', 235)}':g='{ch('g', 205)}':b='{ch('b', 130)}':a='{a}',"
+            f"format=yuva420p")
+
+
+def _tokio_sfx(kind: str) -> Path:
+    """転送風の効果音（kind: 'in'|'out'）。なければ FFmpeg で合成する（外部素材は使わない）。"""
+    TOKIO_SFX_DIR.mkdir(parents=True, exist_ok=True)
+    wav_in = TOKIO_SFX_DIR / "tokio_materialize.wav"
+    wav_out = TOKIO_SFX_DIR / "tokio_dematerialize.wav"
+    if not wav_in.exists():
+        env = "sin(PI*t/2.4)"
+        expr = (f"0.30*sin(2*PI*(500*t+700*t*t))*{env}"
+                f"+0.12*sin(2*PI*(2400+800*sin(2*PI*5*t))*t)*{env}"
+                f"+0.07*(random(0)*2-1)*{env}")
+        run_cmd(
+            [FFMPEG, "-y", "-f", "lavfi", "-i", f"aevalsrc='{expr}':s=44100:d=2.4",
+             "-af", "highpass=f=300,aecho=0.8:0.6:60|120:0.3|0.2,afade=t=in:d=0.2,afade=t=out:st=1.8:d=0.6,volume=0.9",
+             "-ac", "2", str(wav_in)],
+            "転送SE(登場)合成",
+        )
+    if not wav_out.exists():
+        run_cmd(
+            [FFMPEG, "-y", "-i", str(wav_in), "-af",
+             f"areverse,atrim=0:{TOKIO_OUT_DUR + 0.4},afade=t=out:st={TOKIO_OUT_DUR - 0.2}:d=0.6", str(wav_out)],
+            "転送SE(退場)合成",
+        )
+    return wav_in if kind == "in" else wav_out
+
+
+def add_tokio_overlay(clip: Path, expression: str, side: str, name_tag: bool = False, dur: float = None):
+    """Ken Burns クリップ(1920x1080)に Tokio を重ねて上書きする。side: 'left'|'right'。
+    TOKIO_MATERIALIZE のときは、登場（冒頭）と退場（クロスフェード前）に転送風エフェクトを付ける。"""
+    loop = _tokio_loop_clip(expression)
+    th = int(OUTPUT_H * TOKIO_H_RATIO)
+    tw = int(th * 720 / 960)
+    x = TOKIO_MARGIN if side == "left" else f"W-w-{TOKIO_MARGIN}"
+    if TOKIO_MATERIALIZE:
+        if dur is None:
+            dur = probe_video_duration(clip)
+        te = max(TOKIO_IN_LEN + 1.0, dur - CROSSFADE_DURATION - TOKIO_OUT_DUR - 0.2)   # 退場の開始
+        # 登場・通常・退場を同じ [1:v] から切り出し、同じ色変換（gbrap往復）を通す。
+        # 別素材に切り替えると切り替え点で色や縁がずれて一瞬チラつくため。
+        rt = "format=gbrap,format=yuva420p"
+        OV = 0.2   # 切り替え点の重なり（秒）。端のコマが抜けて Tokio が一瞬消えるのを防ぐ
+        chain = (
+            f"[1:v]scale=-2:{th},split=3[ti][tp][tq];"
+            f"[ti]trim=end={TOKIO_IN_LEN},{_tokio_effect_vf('in', th)}[ent];"
+            f"[tp]trim=start={TOKIO_IN_LEN - OV}:end={te + OV:.3f},{rt}[plain];"
+            f"[tq]trim=start={te:.3f}:end={te + TOKIO_OUT_DUR + OV:.3f},setpts=PTS-STARTPTS,"
+            f"{_tokio_effect_vf('out', th)},setpts=PTS+{te:.3f}/TB[exit];"
+            f"[0:v][ent]overlay=x={x}:y=H-h:enable='lt(t,{TOKIO_IN_LEN})':eof_action=pass[v1];"
+            f"[v1][plain]overlay=x={x}:y=H-h:enable='between(t,{TOKIO_IN_LEN - OV},{te:.3f})':eof_action=pass[v2];"
+            f"[v2][exit]overlay=x={x}:y=H-h:enable='between(t,{te:.3f},{te + TOKIO_OUT_DUR + OV})':eof_action=pass"
+        )
+    else:
+        chain = f"[1:v]scale=-2:{th}[t];[0:v][t]overlay=x={x}:y=H-h:shortest=1"
+    if name_tag:
+        cx = (TOKIO_MARGIN + tw // 2) if side == "left" else (OUTPUT_W - TOKIO_MARGIN - tw // 2)
+        t0, t1 = TOKIO_TAG_SEC
+        en = f"enable='between(t,{t0},{t1})'"
+        alpha = f"alpha='if(lt(t,{t0 + 0.4}),(t-{t0})/0.4,if(gt(t,{t1 - 0.4}),({t1}-t)/0.4,1))'"
+        ty = OUTPUT_H - th - 110
+        chain += (
+            f",drawtext=fontfile={DIN_FONT}:text='TOKIO KAMIYA':fontsize=64:fontcolor=white"
+            f":x={cx}-text_w/2:y={ty}:shadowcolor=black@0.8:shadowx=3:shadowy=3:{en}:{alpha}"
+            f",drawtext=fontfile={DIN_FONT}:text='TIME-TRAVEL REPORTER':fontsize=40:fontcolor=0xF0C86E"
+            f":x={cx}-text_w/2:y={ty + 66}:shadowcolor=black@0.8:shadowx=2:shadowy=2:{en}:{alpha}"
+        )
+    chain += ",format=yuv420p[o]"
+    tmp_out = clip.with_name(clip.stem + "_tokio.mp4")
+    run_cmd(
+        [FFMPEG, "-y", "-i", str(clip),
+         "-stream_loop", "-1", "-c:v", "libvpx-vp9", "-i", str(loop)]
+        + ["-filter_complex", chain, "-map", "[o]", "-an",
+         "-r", str(FPS), "-c:v", "libx264", "-crf", "18", "-preset", "slow",
+         "-pix_fmt", "yuv420p", str(tmp_out)],
+        f"Tokio 合成 {clip.stem} ({expression}, {side})",
+    )
+    tmp_out.replace(clip)
+
+
 # ── Shorts v4 ヘルパー ──────────────────────────────────
 
 def _safe_word(w: str) -> str:
@@ -959,8 +1102,9 @@ def _bgm_segment_filter(in_idx: int, start: float, end: float, is_first: bool,
 
 def build_audio_track(scenes: list, audio_dir: Path, total_video_dur: float,
                       bgm_segments: list, dst: Path, scene_offsets: list,
-                      intro_dur: float = 0.0, teaser_wav: Path = None):
+                      intro_dur: float = 0.0, teaser_wav: Path = None, extra_sfx: list = None):
     """全シーンのナレーションを配置し BGM とミックスしたオーディオトラックを生成する。
+    extra_sfx: [(開始秒, wavパス), ...] 効果音（Tokio の登場・退場など）。ナレーションと同じ扱いで配置する。
 
     bgm_segments: [(bgm_path, start_sec, end_sec), ...] — 1曲方式は1要素、3曲構成は3要素。
     teaser_wav: テイザーナレーション（S00_teaser.wav）を指定すると offset=NARR_DELAY で配置。
@@ -988,6 +1132,15 @@ def build_audio_track(scenes: list, audio_dir: Path, total_video_dur: float,
         narr_inputs.append(wav)
         lbl = f"n{i}"
         narr_filters.append(f"[{idx}:a]adelay={offset_ms}:all=1[{lbl}]")
+        all_labels.append(f"[{lbl}]")
+
+    # ── 効果音（Tokio の転送SEなど） ─────────────────────
+    for k, (t_sec, sfx_wav) in enumerate(extra_sfx or []):
+        idx = len(narr_inputs)
+        narr_inputs.append(sfx_wav)
+        lbl = f"sx{k}"
+        narr_filters.append(
+            f"[{idx}:a]volume={TOKIO_SFX_VOL},adelay={int(t_sec * 1000)}:all=1[{lbl}]")
         all_labels.append(f"[{lbl}]")
 
     n_narr = len(narr_inputs)
@@ -1359,6 +1512,16 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
             actual_effect = effect_override if effect_override else effect
             make_ken_burns(img, out_clip, dur, actual_effect,
                            landscape=True, overlay_vf=overlay_vf, anchor=(px, py))
+            if ep.get("narrator") == "tokio" and sid in ep.get("tokio_scenes", []):
+                # 被写体（zoom_anchor）が右寄りなら Tokio は左、それ以外は右に置く
+                side = "left" if (zoom_anchor and zoom_anchor.get("x", 0.5) > 0.5) else "right"
+                expr = scene.get("tokio_expression", "neutral")
+                # 口パク: ep に "tokio_talk": true があれば、話すループ（{expr}_talk.webm）を優先する。
+                # Tokio は語り手本人なので、画面に出ている間は話している。無い表情は待機ループにフォールバック
+                if ep.get("tokio_talk") and (TOKIO_CLIP_DIR / f"tokio_{expr}_talk.webm").exists():
+                    expr = f"{expr}_talk"
+                add_tokio_overlay(out_clip, expr, side,
+                                  name_tag=(sid == min(ep["tokio_scenes"])), dur=dur)
             clip_paths.append((out_clip, dur))
 
         if not clip_paths:
@@ -1393,11 +1556,21 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
         bgm_segments = compute_bgm_segments(
             bgm_paths, scenes, scene_offsets, effective_intro_dur, total_full_dur
         )
+        tokio_sfx_events = []
+        if TOKIO_MATERIALIZE and ep.get("narrator") == "tokio":
+            for i, scene in enumerate(scenes):
+                if scene["scene_id"] in ep.get("tokio_scenes", []):
+                    t0 = scene_offsets[i] + effective_intro_dur
+                    te = max(TOKIO_IN_LEN + 1.0,
+                             scene_durations[i] - CROSSFADE_DURATION - TOKIO_OUT_DUR - 0.2)
+                    tokio_sfx_events.append((t0 + TOKIO_MAT_START, _tokio_sfx("in")))
+                    tokio_sfx_events.append((t0 + te, _tokio_sfx("out")))
         build_audio_track(
             scenes, audio_dir, total_full_dur, bgm_segments,
             audio_only, scene_offsets,
             intro_dur=effective_intro_dur,
             teaser_wav=teaser_wav if (teaser_video_path and teaser_wav.exists()) else None,
+            extra_sfx=tokio_sfx_events,
         )
 
         # ── Step 7: 最終合成 ────────────────────────────

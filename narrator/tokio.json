@@ -1,0 +1,85 @@
+{
+  "_comment": "語り手 Tokio のキャラクターシート（案・なるさん確認待ち）。HANDOFF_narrator_tokio.md §2〜§5 を具体化したもの。台本生成プロンプトには character_sheet_en を常に読み込ませる。AI関連の文言・画像内の文字（刻印・手帳）は含めない。",
+  "status": "draft_pending_confirmation",
+  "name": "Tokio",
+  "full_name": "Tokio Kamiya",
+  "full_name_ja": "神谷 時生",
+  "age": 42,
+  "role_label": "Time-travelling dispatch reporter",
+  "character_sheet_en": {
+    "background": "Former Tokyo newspaper foreign correspondent. Inherited a brass pocket watch from his grandfather, a Kyoto clockmaker. The engraving on the back reads: 'Witness, but do not touch.' (Spoken in scripts only; never drawn.)",
+    "rules": [
+      "He can only observe history; any attempt to change it fails. No contradiction with the historical record.",
+      "The watch returns him to the present after one day (one episode = one day).",
+      "People of the past can see and speak to him. He sometimes poses as a travelling merchant to interview foot soldiers and townsfolk."
+    ],
+    "personality": "Calm, precise, with a dry sense of humour. Respects everyone he meets and is occasionally moved. Says plainly what surprises him as a modern person. A trustworthy correspondent, never a comic guide.",
+    "voice_style": "First person, present tense, short reporting sentences. Same speaking pace as the current narration (do not slow down).",
+    "catchphrases": {
+      "opening": "This is Tokio Kamiya, with a dispatch from {place}, {year}.",
+      "closing": "The watch is ticking. Until the next report."
+    },
+    "running_mystery": "A page in his grandfather's notebook, in Tokio's own handwriting, reads only '1868'. Hinted at occasionally in closings.",
+    "reporters_note": "S17-S19 insight scenes are framed as 'Reporter's Note': how the event connects to modern Japanese culture and values, in Tokio's own opinion.",
+    "interview_rule": "One interview with a nameless person per episode (rising_action), relayed as hearsay: 'An old foot soldier told me...'. Single TTS voice.",
+    "intro_rule": "Every episode must introduce Tokio in the first setup scene (S02) in about 3 sentences: he is (or was) a correspondent; his grandfather's brass watch carries him to any moment in Japan's past for one day at a time; he may watch and speak but not change anything. Viewers can arrive at any episode, so never assume they know the premise. S01 hook stays within 40 words."
+  },
+  "appearance": "Rugged, commanding Japanese man in his early forties: deep-set sharp almond eyes with a calm slightly melancholic gaze, defined cheekbones, strong angular jaw, crease lines at eyes and mouth, a few silver strands at the temples, short neat modern black hair, short stubble, broad shoulders. Long blue-grey charcoal wool coat over a dark shirt, brass pocket watch chain, worn leather notebook. Painterly cinematic concept-art style matching SC scene images. No text, engravings or writing anywhere. Do not describe him as resembling any real person.",
+  "expressions": {
+    "neutral": "calm, composed reporting face, looking slightly off-camera",
+    "surprised": "eyebrows raised, eyes wide, taken aback by what he sees",
+    "thinking": "chin lowered, gaze distant, weighing what he has witnessed",
+    "moved": "quiet emotion, eyes softened and slightly glistening, restrained",
+    "writing": "head bowed, writing in the leather notebook with a pencil",
+    "_note": "wry（皮肉っぽい笑み）は Veo で笑いが出て安定しなかったため 2026-10-16 に廃止。"
+  },
+  "tts": {
+    "voice": "Alnilam",
+    "model": "gemini-3.8-flash-tts",
+    "style_note": "Reporter tone: composed, grounded, present tense, short sentences, quiet authority with a dry edge. Same pace as the channel's current narration. For moved/respect moments, explicitly add a brief pause and softness (Alnilam can sound cold otherwise).",
+    "voice_selection": "2026-10-16: 8候補→Claudeが3候補(Alnilam/Rasalgethi/Iapetus)に絞り、実音声と人物設定をGeminiに聴かせて推薦（KLのkl_voice_recommend方式）。1位Alnilam、2位Rasalgethi(Charonに近い)、3位Iapetus(重く遅い)。旧Charonからの変更。"
+  },
+  "image": {
+    "pipeline": "Base standing image (waist-up, magenta #FF00FF background) -> Veo 3.1 fast image-to-video 6s 9:16 idle loops per expression -> crop 720x960 (Veo adds black bars to a 3:4 input) -> colorkey + 2x erosion (no despill: it tints the coat) -> VP9 alpha webm in narrator/clips/. Composited over scene images by FFmpeg overlay. Never drawn in scene image prompts; no character_ref slot.",
+    "base_image": "narrator/raw/tokio_neutral_base_half_v2.png",
+    "clips": {
+      "neutral": "narrator/clips/tokio_neutral.webm",
+      "surprised": "narrator/clips/tokio_surprised.webm",
+      "thinking": "narrator/clips/tokio_thinking.webm",
+      "moved": "narrator/clips/tokio_moved.webm",
+      "writing": "narrator/clips/tokio_writing.webm"
+    },
+    "veo_notes": "Veo's audio is filtered by safety; do not write 'No sound'. Use 'Ambient audio: soft distant wind only.' and strip audio with ffmpeg -an. generate_audio is unsupported on Gemini API. Add 'both hands stay gripping the notebook' or the arms drop. Smiling expressions trigger laughing; avoid.",
+    "scenes": [
+      "S01",
+      "S17",
+      "S18",
+      "S19",
+      "S20"
+    ],
+    "placement": "bottom-right corner, height ~760px on 1080p (tested over ep115 S05); 9:16 Shorts position TBD at pilot",
+    "clips_talk": {
+      "neutral": "narrator/clips/tokio_neutral_talk.webm",
+      "thinking": "narrator/clips/tokio_thinking_talk.webm",
+      "moved": "narrator/clips/tokio_moved_talk.webm",
+      "writing": "narrator/clips/tokio_writing_talk.webm",
+      "surprised": "narrator/clips/tokio_surprised_talk.webm"
+    },
+    "talk_notes": "口パク（2026-10-17・ep116で採用）: Veo で『話している間のループ』を作り、出ている間は待機ではなく話すループを使う（episode JSON の tokio_talk:true）。音声と口形は同期しない（それらしく動くだけ。違和感は小さいとユーザー確認済み）。Veo の6秒のうち3秒以降は頭が傾いて崩れるので前半3.2秒だけを往復ループにする。プロンプトは『穏やかに話す・口が自然に開閉・うなずき・まばたき1回』に、表情とポーズ（両手で手帳を持つ）を保つ指示と、笑う・記号・文字の禁止、『Ambient audio: soft distant wind only.』を付ける。KL の kl_cast_video.py（未コミットの --kind talk）の方式を参考にした。 2026-10-17 改訂: 『表情とポーズを正確に保つ』を強く書くと表情の違いが消えて全部 neutral に見える（ep116で指摘）。表情ごとに CLEARLY を付けた具体的な動き（thinking=首を傾け視線を横に外す／moved=うつむき目が潤む／writing=手帳を開き鉛筆で書く／surprised=眉を大きく上げ目を見開く）を指示し、手帳を持つ指示は writing では外す。使う区間は表情ごとに異なる（上の talk_windows_sec）。 surprised は『眉が上がりっぱなし』で不自然（ep116でユーザー指摘）。眉を持ち上げ続ける指示（eyebrows shoot up／very wide）は避け、『普通の高さの眉が、話す強調に合わせて少し・短く上がる。目を見開いた凝視はしない』と書いた版（B）を採用。窓は0.4-3.6秒。旧版（目を見開き続ける）は narrator/raw/talk_v1/tokio_surprised_talk_wide_eyes.mp4。",
+    "expressions_in_use": "neutral, thinking, moved, writing, surprised（wry は廃止）",
+    "talk_windows_sec": {
+      "neutral": "0.0-3.2",
+      "thinking": "0.0-3.6",
+      "moved": "0.9-3.1",
+      "writing": "1.8-5.0",
+      "surprised": "0.4-3.6"
+    }
+  },
+  "sfx": "Pocket-watch ticking (CC0 / CC BY only) mixed over opening and closing via FFmpeg.",
+  "thumbnail": "サムネイルは主役を大きく描き、Tokio はキー抜きの立ち絵（neutral）を右下に高さ約40%で合成し、頭上に名札（TOKIO KAMIYA / TIME-TRAVEL REPORTER、DIN Condensed Bold、白と金）を入れる（2026-10-16 ep116で決定）。主役より大きくしない。Tokio なしの原画は narrator/raw/ep116_thumbnail_no_tokio.png。",
+  "introduction_places": [
+    "S02 のナレーション（記者・祖父の懐中時計・一日ずつ・見るだけ）",
+    "YouTube説明欄の『Your reporter』段落",
+    "S01 で初めて画面に出るとき名札（TOKIO KAMIYA / Time Dispatch Reporter）を数秒表示（動画合成の実装時に追加）"
+  ]
+}
