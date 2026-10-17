@@ -8,4 +8,3 @@ narrator/raw/*
 !narrator/raw/tokio_neutral_base_half_v2.png
 narrator/voice_samples/
 narrator/clips/*_pp.webm
-narrator/clips/*_in.webm

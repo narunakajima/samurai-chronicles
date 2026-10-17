@@ -1,6 +1,6 @@
 {
-  "_comment": "語り手 Tokio のキャラクターシート（案・なるさん確認待ち）。HANDOFF_narrator_tokio.md §2〜§5 を具体化したもの。台本生成プロンプトには character_sheet_en を常に読み込ませる。AI関連の文言・画像内の文字（刻印・手帳）は含めない。",
-  "status": "draft_pending_confirmation",
+  "_comment": "語り手 Tokio のキャラクターシート（2026-10-17、ep116 で本番採用）。台本生成プロンプトには character_sheet_en を常に読み込ませる。AI関連の文言・画像内の文字（刻印・手帳）は含めない。適用は、ユーザーが『Tokio で』と指示した回のみ（手順は /sc-new の『Tokio モード』節）。",
+  "status": "adopted_pilot_ep116",
   "name": "Tokio",
   "full_name": "Tokio Kamiya",
   "full_name_ja": "神谷 時生",
@@ -50,14 +50,7 @@
       "writing": "narrator/clips/tokio_writing.webm"
     },
     "veo_notes": "Veo's audio is filtered by safety; do not write 'No sound'. Use 'Ambient audio: soft distant wind only.' and strip audio with ffmpeg -an. generate_audio is unsupported on Gemini API. Add 'both hands stay gripping the notebook' or the arms drop. Smiling expressions trigger laughing; avoid.",
-    "scenes": [
-      "S01",
-      "S17",
-      "S18",
-      "S19",
-      "S20"
-    ],
-    "placement": "bottom-right corner, height ~760px on 1080p (tested over ep115 S05); 9:16 Shorts position TBD at pilot",
+    "placement": "画面の隅（被写体と反対側。同じ場所・時期の連続シーンは同じ側に統一）。高さは画面の62%（1080pで約669px）、端から40px。Shorts には重ねない（パイロットでは本編のみ）",
     "clips_talk": {
       "neutral": "narrator/clips/tokio_neutral_talk.webm",
       "thinking": "narrator/clips/tokio_thinking_talk.webm",
@@ -73,13 +66,14 @@
       "moved": "0.9-3.1",
       "writing": "1.8-5.0",
       "surprised": "0.4-3.6"
-    }
+    },
+    "tokio_scenes_note": "画面に出すシーンは、episode JSON の tokio_scenes（scene_id の整数の配列。例 [1, 2, 7]。'S01' のような文字列は不可）で指定する。ep116 は [1,2,7,11,16,17,18,19,20]。各シーンの tokio_place（場所と時期のラベル）が前後と同じなら転送なし、変わるときだけ転送する"
   },
-  "sfx": "Pocket-watch ticking (CC0 / CC BY only) mixed over opening and closing via FFmpeg.",
-  "thumbnail": "サムネイルは主役を大きく描き、Tokio はキー抜きの立ち絵（neutral）を右下に高さ約40%で合成し、頭上に名札（TOKIO KAMIYA / TIME-TRAVEL REPORTER、DIN Condensed Bold、白と金）を入れる（2026-10-16 ep116で決定）。主役より大きくしない。Tokio なしの原画は narrator/raw/ep116_thumbnail_no_tokio.png。",
+  "sfx": "転送の効果音は FFmpeg で自作合成（narrator/sfx/、外部素材は使わないのでクレジット不要）。登場時と、その逆再生の退場時に、音量0.45で重ねる。ナレーションの冒頭・末尾に重なるが許容（ユーザー確認済み）",
+  "thumbnail": "サムネイルは主役を大きく描き、Tokio はキー抜きの立ち絵（neutral）を右下に高さ約40%で合成し、頭上に名札（TOKIO KAMIYA / TIME-TRAVEL REPORTER、DIN Condensed Bold、白と金）を入れる。`python3 sc_tokio_assets.py thumb --image <サムネイル>`。Tokio なしの原画は同じフォルダの {名前}_no_tokio.png に退避され、合成済みかどうかはハッシュで判定するので何度実行しても二重に重ならない",
   "introduction_places": [
     "S02 のナレーション（記者・祖父の懐中時計・一日ずつ・見るだけ）",
     "YouTube説明欄の『Your reporter』段落",
-    "S01 で初めて画面に出るとき名札（TOKIO KAMIYA / Time Dispatch Reporter）を数秒表示（動画合成の実装時に追加）"
+    "S01 で初めて画面に出るとき名札（TOKIO KAMIYA / TIME-TRAVEL REPORTER）を数秒表示（sc_video_gen.py が自動で入れる）"
   ]
 }

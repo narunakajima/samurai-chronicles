@@ -10,7 +10,8 @@ narrator/tokio.json、動画への重ね方は sc_video_gen.py（add_tokio_overl
   key       : raw の動画から使う区間を切り出し、マゼンタ背景を抜いて透過 webm にする
               → narrator/clips/tokio_{expr}_talk.webm（往復ループ _pp.webm は動画生成時に自動で作り直される）
   thumb     : サムネイルの右下に Tokio（neutral の立ち絵）と名札を合成する
-              → 元画像は {名前}_no_tokio.png に退避して上書き
+              → 元画像は {名前}_no_tokio.png に退避して上書き。合成済みかどうかはハッシュで判定するので、
+                何度実行しても二重に重ならず、サムネイルを作り直したあとは新しい原画から合成する
   check     : narrator/clips の各 webm の中身を、灰色の背景に重ねたコンタクトシートにする（目視確認用）
 
 使い方:
@@ -44,6 +45,7 @@ FFPROBE = shutil.which("ffprobe") or "ffprobe"
 DIN_FONT = "/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf"
 
 VEO_MODEL = "veo-3.1-fast-generate-preview"
+OP_TIMEOUT_SEC = 600   # Veo の完了待ちの上限（秒）
 EXPRESSIONS = ["neutral", "thinking", "moved", "writing", "surprised"]   # wry は廃止（笑いが出て安定しない）
 
 # 使う区間（秒）。Veo の6秒のうち、ポーズと表情が保たれている部分。3秒以降は頭が傾いて崩れやすい
@@ -110,10 +112,15 @@ def cmd_gen_talk(args):
     if not BASE_IMAGE.exists():
         print(f"❌ 基準画像がありません: {BASE_IMAGE}")
         sys.exit(1)
-    todo = [e for e in args.expr if args.force or not raw_path(e).exists()]
-    for e in args.expr:
+    if args.force and not args.expr:
+        # --force だけだと全5表情（約$4.5）を作り直してしまう。作り直す表情を明示させる
+        print("❌ --force は、作り直す表情を --expr で指定してください（例: --expr thinking）。全表情の再生成は約$4.5かかります")
+        sys.exit(1)
+    exprs = args.expr or EXPRESSIONS
+    todo = [e for e in exprs if args.force or not raw_path(e).exists()]
+    for e in exprs:
         if e not in todo:
-            print(f"  スキップ（生成済み）: {raw_path(e).name}（作り直すなら --force）")
+            print(f"  スキップ（生成済み）: {raw_path(e).name}（作り直すなら --force --expr {e}）")
     print(f"  生成予定: {len(todo)}本（{', '.join(todo) or 'なし'}） — 費用の目安 約${len(todo) * 0.9:.1f}")
     if args.dry_run or not todo:
         return
@@ -121,23 +128,44 @@ def cmd_gen_talk(args):
     img = types.Image(image_bytes=BASE_IMAGE.read_bytes(), mime_type="image/png")
 
     def one(expr):
-        for _ in range(2):   # 動画が返らないとき（安全フィルタ・APIエラー）だけ1回取り直す。失敗分は課金されない
+        # 生成（ここで課金）と、ダウンロード・保存を分ける。動画が返った後に失敗しても、生成し直さない（二重課金を避ける）
+        video = None
+        reason = ""
+        for _ in range(2):   # 動画が返らないとき（安全フィルタ・APIエラー）だけ1回取り直す。返らなかった分は課金されない
             try:
                 op = client.models.generate_videos(
                     model=VEO_MODEL, prompt=HEAD + MID[expr] + TAIL, image=img,
                     config=types.GenerateVideosConfig(aspect_ratio="9:16", duration_seconds=6, number_of_videos=1))
-                while not op.done:
+                waited = 0
+                while not op.done and waited < OP_TIMEOUT_SEC:
                     time.sleep(10)
+                    waited += 10
                     op = client.operations.get(op)
+                if not op.done:
+                    reason = f"{OP_TIMEOUT_SEC}秒待っても完了しません（途中で打ち切り）"
+                    continue
+                if getattr(op, "error", None):
+                    reason = f"API エラー: {op.error}"
+                    continue
                 resp = op.response
                 if resp and resp.generated_videos:
-                    v = resp.generated_videos[0]
-                    client.files.download(file=v.video)
-                    v.video.save(str(raw_path(expr)))
-                    return expr, "ok"
+                    video = resp.generated_videos[0]
+                    break
+                reason = (f"動画が返りませんでした（安全フィルタの可能性。"
+                          f"rai_media_filtered_reasons={getattr(resp, 'rai_media_filtered_reasons', None)}）")
             except Exception as e:  # noqa: BLE001
-                last = str(e)[:150]
-        return expr, "FAILED"
+                reason = f"生成の呼び出しで例外: {str(e)[:200]}"
+        if video is None:
+            return expr, f"FAILED（{reason}）"
+        for attempt in range(3):   # 生成済みの動画のダウンロードだけを再試行する
+            try:
+                client.files.download(file=video.video)
+                video.video.save(str(raw_path(expr)))
+                return expr, "ok"
+            except Exception as e:  # noqa: BLE001
+                reason = f"ダウンロード・保存で例外: {str(e)[:200]}"
+                time.sleep(5)
+        return expr, f"FAILED（生成は成功・課金済み。{reason}）"
 
     with ThreadPoolExecutor(max(1, len(todo))) as ex:
         for expr, res in ex.map(one, todo):
@@ -208,6 +236,11 @@ def cmd_check(args):
 
 # ── thumb ─────────────────────────────────────────────────────────────
 
+def _sha256(path: Path) -> str:
+    import hashlib
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 def cmd_thumb(args):
     from PIL import Image, ImageDraw, ImageFilter, ImageFont
     img_path = Path(args.image).expanduser()
@@ -215,9 +248,18 @@ def cmd_thumb(args):
         print(f"❌ サムネイルがありません: {img_path}")
         sys.exit(1)
     backup = img_path.with_name(img_path.stem + "_no_tokio.png")
-    if not backup.exists():
-        shutil.copy(img_path, backup)       # Tokio なしの原画を残す（作り直しに使う）
-    src_img = backup if args.from_backup else img_path
+    marker = img_path.with_name(img_path.stem + ".tokio_done")   # 合成後の画像のハッシュ。二重合成の判定に使う
+    already = marker.exists() and marker.read_text().strip() == _sha256(img_path)
+    if already:
+        # いま img_path は合成済み → 退避した原画から合成し直す（二重に重ねない）
+        if not backup.exists():
+            print(f"❌ 合成済みですが、退避した原画がありません: {backup}")
+            sys.exit(1)
+        src_img = backup
+    else:
+        # 合成前の画像（初回、またはサムネイルを作り直した後）→ 原画として退避し、そこから合成する
+        shutil.copy(img_path, backup)
+        src_img = backup
     still = Path("/tmp/sc_tokio_still.png")
     run([FFMPEG, "-y", "-v", "error", "-c:v", "libvpx-vp9", "-ss", 1, "-i", CLIP_DIR / "tokio_neutral.webm",
          "-frames:v", "1", "-pix_fmt", "rgba", still], "Tokio の立ち絵の抽出")
@@ -252,14 +294,15 @@ def cmd_thumb(args):
     out = Image.alpha_composite(out, sh2.filter(ImageFilter.GaussianBlur(3)))
     out = Image.alpha_composite(out, layer)
     out.convert("RGB").save(img_path)
-    print(f"  ✓ Tokio を合成しました: {img_path}（原画: {backup.name}）")
+    marker.write_text(_sha256(img_path))
+    print(f"  ✓ Tokio を合成しました: {img_path}（原画: {backup.name}。もう一度実行しても二重には重ならない）")
 
 
 def main():
     ap = argparse.ArgumentParser(description="語り手 Tokio の素材づくり")
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("gen-talk", help="話すループを Veo で生成（課金）")
-    p.add_argument("--expr", nargs="+", choices=EXPRESSIONS, default=EXPRESSIONS)
+    p.add_argument("--expr", nargs="+", choices=EXPRESSIONS, default=None, help="省略時は全表情（--force のときは必須）")
     p.add_argument("--force", action="store_true")
     p.add_argument("--dry-run", action="store_true")
     p.set_defaults(fn=cmd_gen_talk)
@@ -274,7 +317,6 @@ def main():
     p.set_defaults(fn=cmd_check)
     p = sub.add_parser("thumb", help="サムネイルに Tokio と名札を合成")
     p.add_argument("--image", required=True)
-    p.add_argument("--from-backup", action="store_true", help="退避済みの原画（_no_tokio）から合成し直す")
     p.set_defaults(fn=cmd_thumb)
     args = ap.parse_args()
     args.fn(args)

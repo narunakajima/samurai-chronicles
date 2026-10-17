@@ -587,7 +587,107 @@ def _tokio_sfx(kind: str) -> Path:
     return wav_in if kind == "in" else wav_out
 
 
-def add_tokio_overlay(clip: Path, expression: str, side: str, name_tag: bool = False, dur: float = None):
+TOKIO_EXPRESSIONS = ("neutral", "thinking", "moved", "writing", "surprised")
+TOKIO_MIN_SCENE_SEC = TOKIO_IN_LEN + 1.0 + TOKIO_OUT_DUR + CROSSFADE_DURATION   # 退場がクロスフェード前に終わる最短の尺（7.4秒）
+
+
+def tokio_fx_flags(ep: dict, scenes: list, i: int):
+    """シーン i（scenes の添字）の (登場エフェクトを付けるか, 退場エフェクトを付けるか)。
+    設定は「Tokio は、ある場所・ある時期に一日だけ行く」ので、場所・時期が変わるときだけ転送する。
+    各シーンの "tokio_place"（場所と時期のラベル。例: "Kyoto 1467"）で判定する:
+      前のシーンも Tokio のシーンで、ラベルが同じなら登場なし／次のシーンも Tokio のシーンで、ラベルが同じなら退場なし。
+    ラベルがないシーンは、毎回転送する（従来どおり）。"""
+    sc = scenes[i]
+    place = sc.get("tokio_place")
+    if not place:
+        return True, True
+    ids = set(ep.get("tokio_scenes", []))
+
+    def same(k):
+        return 0 <= k < len(scenes) and scenes[k]["scene_id"] in ids and scenes[k].get("tokio_place") == place
+
+    return (not same(i - 1)), (not same(i + 1))
+
+
+def _tokio_bad_side(sc: dict):
+    """被写体（zoom_anchor）がある側。Tokio はその反対側に置く。被写体の位置が不明なら None。"""
+    za = sc.get("zoom_anchor")
+    if isinstance(za, dict) and "x" in za:
+        return "right" if za["x"] > 0.5 else "left"
+    return None
+
+
+def tokio_sides(ep: dict, scenes: list) -> dict:
+    """tokio_scenes の各シーンの Tokio の位置（'left'|'right'）を決める。
+    単独のシーンは、被写体と反対側（被写体の位置が不明なら右）。同じ場所・時期の連続シーンは、
+    Tokio が左右に飛ばないよう、全シーンの被写体と重ならない側に統一する（統一できなければシーンごと）。"""
+    ids = set(ep.get("tokio_scenes", []))
+    sides = {}
+    i = 0
+    while i < len(scenes):
+        if scenes[i]["scene_id"] not in ids:
+            i += 1
+            continue
+        place = scenes[i].get("tokio_place")
+        j = i
+        while (place and j + 1 < len(scenes) and scenes[j + 1]["scene_id"] in ids
+               and scenes[j + 1].get("tokio_place") == place):
+            j += 1
+        run = scenes[i:j + 1]
+        bad = {_tokio_bad_side(sc) for sc in run} - {None}
+        choice = None
+        if not bad:
+            choice = "right"
+        elif len(bad) == 1:
+            choice = "left" if "right" in bad else "right"
+        for sc in run:
+            sides[sc["scene_id"]] = choice or ("left" if _tokio_bad_side(sc) == "right" else "right")
+        i = j + 1
+    return sides
+
+
+def validate_tokio(ep: dict, scenes: list, scene_durations: list) -> list:
+    """Tokio モードの episode JSON と素材を、動画生成の前に検証する。問題の一覧（空なら問題なし）を返す。
+    間違った値は黙って Tokio が出ない動画になる（40〜50分かけて作ってから気づく）ため、ここで止める。"""
+    problems = []
+    has_ids = "tokio_scenes" in ep
+    if ep.get("narrator") != "tokio":
+        if has_ids:
+            problems.append('"tokio_scenes" があるのに "narrator": "tokio" がありません（Tokio は出ません）')
+        return problems
+    ids = ep.get("tokio_scenes")
+    if not isinstance(ids, list) or not ids:
+        problems.append('"tokio_scenes" が空、またはリストではありません（scene_id の整数の配列。例: [1, 2, 7]）')
+        return problems
+    if not all(isinstance(x, int) and not isinstance(x, bool) for x in ids):
+        problems.append(f'"tokio_scenes" は scene_id の整数の配列にしてください（"S01" のような文字列は不可）: {ids}')
+        return problems
+    by_id = {sc["scene_id"]: (sc, scene_durations[k]) for k, sc in enumerate(scenes)}
+    for sid in ids:
+        if sid not in by_id:
+            problems.append(f"tokio_scenes の {sid} は、このエピソードに存在しない scene_id です")
+            continue
+        sc, dur = by_id[sid]
+        expr = sc.get("tokio_expression", "neutral")
+        if expr not in TOKIO_EXPRESSIONS:
+            problems.append(f"S{sid:02d}: tokio_expression「{expr}」は未対応です（{', '.join(TOKIO_EXPRESSIONS)}）")
+            continue
+        if not (TOKIO_CLIP_DIR / f"tokio_{expr}.webm").exists():
+            problems.append(f"S{sid:02d}: 素材がありません: narrator/clips/tokio_{expr}.webm")
+        if ep.get("tokio_talk") and not (TOKIO_CLIP_DIR / f"tokio_{expr}_talk.webm").exists():
+            problems.append(f"S{sid:02d}: tokio_talk が有効ですが、話すループがありません: narrator/clips/tokio_{expr}_talk.webm"
+                            "（sc_tokio_assets.py gen-talk → key で作る）")
+        if TOKIO_MATERIALIZE and dur < TOKIO_MIN_SCENE_SEC:
+            problems.append(f"S{sid:02d}: シーンの尺が {dur:.1f} 秒で、登場・退場のエフェクトには短すぎます"
+                            f"（{TOKIO_MIN_SCENE_SEC:.1f} 秒以上が必要。tokio_scenes から外してください）")
+    for sid in ids:
+        if sid in by_id and "tokio_place" in by_id[sid][0] and not isinstance(by_id[sid][0]["tokio_place"], str):
+            problems.append(f"S{sid:02d}: tokio_place は文字列（場所と時期のラベル。例: \"Kyoto 1467\"）にしてください")
+    return problems
+
+
+def add_tokio_overlay(clip: Path, expression: str, side: str, name_tag: bool = False, dur: float = None,
+                      fx_in: bool = True, fx_out: bool = True):
     """Ken Burns クリップ(1920x1080)に Tokio を重ねて上書きする。side: 'left'|'right'。
     TOKIO_MATERIALIZE のときは、登場（冒頭）と退場（クロスフェード前）に転送風エフェクトを付ける。"""
     loop = _tokio_loop_clip(expression)
@@ -602,16 +702,30 @@ def add_tokio_overlay(clip: Path, expression: str, side: str, name_tag: bool = F
         # 別素材に切り替えると切り替え点で色や縁がずれて一瞬チラつくため。
         rt = "format=gbrap,format=yuva420p"
         OV = 0.2   # 切り替え点の重なり（秒）。端のコマが抜けて Tokio が一瞬消えるのを防ぐ
-        chain = (
-            f"[1:v]scale=-2:{th},split=3[ti][tp][tq];"
-            f"[ti]trim=end={TOKIO_IN_LEN},{_tokio_effect_vf('in', th)}[ent];"
-            f"[tp]trim=start={TOKIO_IN_LEN - OV}:end={te + OV:.3f},{rt}[plain];"
-            f"[tq]trim=start={te:.3f}:end={te + TOKIO_OUT_DUR + OV:.3f},setpts=PTS-STARTPTS,"
-            f"{_tokio_effect_vf('out', th)},setpts=PTS+{te:.3f}/TB[exit];"
-            f"[0:v][ent]overlay=x={x}:y=H-h:enable='lt(t,{TOKIO_IN_LEN})':eof_action=pass[v1];"
-            f"[v1][plain]overlay=x={x}:y=H-h:enable='between(t,{TOKIO_IN_LEN - OV},{te:.3f})':eof_action=pass[v2];"
-            f"[v2][exit]overlay=x={x}:y=H-h:enable='between(t,{te:.3f},{te + TOKIO_OUT_DUR + OV})':eof_action=pass"
-        )
+        # fx_in / fx_out が False のときは、その側のエフェクトを付けない（連続シーンで、前後の Tokio とつなぐ）
+        # 既定（両方 True）の組み立ては、ep116 を作ったときと同じ文字列になるようにしてある
+        labels = (["ti"] if fx_in else []) + ["tp"] + (["tq"] if fx_out else [])
+        ps = (TOKIO_IN_LEN - OV) if fx_in else 0.0           # 通常ループの開始
+        pe = (te + OV) if fx_out else (dur + 1.0)             # 通常ループの終了（trim。端のコマが抜けないよう余裕を持たせる）
+        pen = te if fx_out else (dur + 1.0)                   # 通常ループを重ねる区間の終わり（退場と重ならない）
+        chain = f"[1:v]scale=-2:{th},split={len(labels)}" + "".join(f"[{l}]" for l in labels) + ";"
+        if fx_in:
+            chain += f"[ti]trim=end={TOKIO_IN_LEN},{_tokio_effect_vf('in', th)}[ent];"
+        chain += f"[tp]trim=start={ps}:end={pe:.3f},{rt}[plain];"
+        if fx_out:
+            chain += (f"[tq]trim=start={te:.3f}:end={te + TOKIO_OUT_DUR + OV:.3f},setpts=PTS-STARTPTS,"
+                      f"{_tokio_effect_vf('out', th)},setpts=PTS+{te:.3f}/TB[exit];")
+        base = "[0:v]"
+        if fx_in:
+            chain += f"{base}[ent]overlay=x={x}:y=H-h:enable='lt(t,{TOKIO_IN_LEN})':eof_action=pass[v1];"
+            base = "[v1]"
+        plain_ov = f"{base}[plain]overlay=x={x}:y=H-h:enable='between(t,{ps},{pen:.3f})':eof_action=pass"
+        if fx_out:
+            chain += plain_ov + "[v2];"
+            chain += (f"[v2][exit]overlay=x={x}:y=H-h:"
+                      f"enable='between(t,{te:.3f},{te + TOKIO_OUT_DUR + OV})':eof_action=pass")
+        else:
+            chain += plain_ov
     else:
         chain = f"[1:v]scale=-2:{th}[t];[0:v][t]overlay=x={x}:y=H-h:shortest=1"
     if name_tag:
@@ -1444,6 +1558,14 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
         print(f"\n--- Step 2.5: 素材ファイル確認 ---")
         missing = []
 
+        # Tokio モード: JSON の値と素材を検証（誤りは黙って Tokio が出ない動画になるため、ここで止める）
+        tokio_problems = validate_tokio(ep, scenes, scene_durations)
+        if tokio_problems:
+            print("❌ Tokio モードの設定に問題があります:")
+            for pr in tokio_problems:
+                print(f"   - {pr}")
+            sys.exit(1)
+
         # 画像ファイル（16:9）
         for scene in scenes:
             sid = scene["scene_id"]
@@ -1486,6 +1608,7 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
 
         # ── Step 3: 各シーン Ken Burns クリップ生成 ────────
         print(f"\n--- Step 3: Ken Burns クリップ生成 ({len(scenes)}シーン) ---")
+        tokio_sides_map = tokio_sides(ep, scenes) if ep.get("narrator") == "tokio" else {}
         clip_paths = []
         seen_chars: set = set()   # キャラクター初登場トラッキング
         for i, scene in enumerate(scenes):
@@ -1513,15 +1636,17 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
             make_ken_burns(img, out_clip, dur, actual_effect,
                            landscape=True, overlay_vf=overlay_vf, anchor=(px, py))
             if ep.get("narrator") == "tokio" and sid in ep.get("tokio_scenes", []):
-                # 被写体（zoom_anchor）が右寄りなら Tokio は左、それ以外は右に置く
-                side = "left" if (zoom_anchor and zoom_anchor.get("x", 0.5) > 0.5) else "right"
+                # 被写体と反対側に置く。同じ場所・時期の連続シーンは同じ側に統一する（tokio_sides）
+                side = tokio_sides_map[sid]
                 expr = scene.get("tokio_expression", "neutral")
                 # 口パク: ep に "tokio_talk": true があれば、話すループ（{expr}_talk.webm）を優先する。
                 # Tokio は語り手本人なので、画面に出ている間は話している。無い表情は待機ループにフォールバック
                 if ep.get("tokio_talk") and (TOKIO_CLIP_DIR / f"tokio_{expr}_talk.webm").exists():
                     expr = f"{expr}_talk"
+                fx_in, fx_out = tokio_fx_flags(ep, scenes, i)
                 add_tokio_overlay(out_clip, expr, side,
-                                  name_tag=(sid == min(ep["tokio_scenes"])), dur=dur)
+                                  name_tag=(sid == min(ep["tokio_scenes"])), dur=dur,
+                                  fx_in=fx_in, fx_out=fx_out)
             clip_paths.append((out_clip, dur))
 
         if not clip_paths:
@@ -1563,8 +1688,11 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                     t0 = scene_offsets[i] + effective_intro_dur
                     te = max(TOKIO_IN_LEN + 1.0,
                              scene_durations[i] - CROSSFADE_DURATION - TOKIO_OUT_DUR - 0.2)
-                    tokio_sfx_events.append((t0 + TOKIO_MAT_START, _tokio_sfx("in")))
-                    tokio_sfx_events.append((t0 + te, _tokio_sfx("out")))
+                    fx_in, fx_out = tokio_fx_flags(ep, scenes, i)
+                    if fx_in:
+                        tokio_sfx_events.append((t0 + TOKIO_MAT_START, _tokio_sfx("in")))
+                    if fx_out:
+                        tokio_sfx_events.append((t0 + te, _tokio_sfx("out")))
         build_audio_track(
             scenes, audio_dir, total_full_dur, bgm_segments,
             audio_only, scene_offsets,

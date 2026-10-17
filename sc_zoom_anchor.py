@@ -122,7 +122,11 @@ def determine_zoom_anchor(client, image_path: Path) -> dict:
     result = json.loads(text)
     if result.get("multi_person"):
         return {"multi_person": True}
-    return {"x": round(float(result["x"]), 2), "y": round(float(result["y"]), 2)}
+    x, y = float(result["x"]), float(result["y"])
+    if not (0.0 <= x <= 1.0 and 0.0 <= y <= 1.0):
+        # Gemini がピクセル値（例: y=307）を返すことがある。範囲外はそのまま書き込まない（呼び出し側で判定失敗として扱う）
+        raise ValueError(f"座標が 0〜1 の範囲外です: x={x}, y={y}")
+    return {"x": round(x, 2), "y": round(y, 2)}
 
 
 def run(episode_id: str, scene_filter: list = None):

@@ -77,15 +77,24 @@ STEP 3A/3B/3C はすべて完了してから一括で完了報告する（個別
 
 指示がなければ、この節は読み飛ばして従来どおり進める。設定・声・素材・Veo の注意点の正本は `narrator/tokio.json`。
 
+**優先順位:** Tokio モードでは、STEP 2A の Hook の1文目（10語以内の衝撃・問いかけ）、Outro の最後の1文（登録CTA）、語り口（BBC/Netflix 調の三人称）の既存ルールより、本節を優先する（Hook は決め台詞で始める。Outro は最後の2文を固定し、CTA はその直前に置く。語りは一人称・現在形）。
+
 **ステップごとの違い**
 
 | STEP | Tokio モードでの違い |
 |---|---|
-| 2A（Sonnet生成） | プロンプトに `narrator/tokio.json` の `character_sheet_en` と `intro_rule` を必ず読ませる。S01 hook は決め台詞 "This is Tokio Kamiya, with a dispatch from {場所}, {年}." ＋謎＋問い（40語以内）。S02 の冒頭で3文の自己紹介（元記者・祖父の懐中時計・一日ずつ・見るだけで変えられない）。S02〜S16 は**一人称・現在形の現地報告で、全シーンに「I」を入れる**（climax・falling_action を三人称の解説に戻さない。ep116 で S11・S16 が三人称寄りになり書き直した）。取材を1シーン（伝聞。"An old farmer told me…"）。S17〜S19 は "Reporter's note."（現代日本とのつながり。意見は "I think"）。S20 は最後の2文を "The watch is ticking. Until the next report." に固定し、その直前に婉曲な登録CTA。JSON に `"narrator": "tokio"`、`tokio_scenes`、各シーンの `tokio_expression`、`"tokio_talk": true` を足す。`youtube_description` に「Your reporter: Tokio Kamiya…」の段落を足す。image_prompt に Tokio を描かせない |
+| 2A（Sonnet生成） | プロンプトに `narrator/tokio.json` の `character_sheet_en` と `intro_rule` を必ず読ませる。S01 hook は決め台詞 "This is Tokio Kamiya, with a dispatch from {場所}, {年}." ＋謎＋問い（40語以内）。S02 の冒頭で3文の自己紹介（元記者・祖父の懐中時計・一日ずつ・見るだけで変えられない）。S02〜S16 は**一人称・現在形の現地報告で、全シーンに「I」を入れる**（climax・falling_action を三人称の解説に戻さない。ep116 で S11・S16 が三人称寄りになり書き直した）。取材を1シーン（伝聞。"An old farmer told me…"）。`insight` タイプの各シーン（S17〜S19 とは限らない。構成によってずれる）は "Reporter's note."（現代日本とのつながり。意見は "I think"）。S20 は最後の2文を "The watch is ticking. Until the next report." に固定し、その直前に婉曲な登録CTA。JSON に `"narrator": "tokio"`、`tokio_scenes`（**scene_id の整数の配列**。例 `[1, 2, 7]`。`"S01"` のような文字列は不可）、各 Tokio シーンの `tokio_expression`（neutral / thinking / moved / writing / surprised）と `tokio_place`（Tokio がいる場所と時期のラベル。例 `"Kyoto 1467"`、Reporter's note は `"Present"`）、`"tokio_talk": true` を足す。`tokio_place` が前後の Tokio シーンと同じなら転送エフェクトなし、変わるときだけ転送する（設定は『一日だけ、ある場所・時期に行く』ため。ラベルがなければ毎回転送）。`youtube_description` に「Your reporter: Tokio Kamiya…」の段落を足す。image_prompt に Tokio を描かせない |
 | 3A（Opus） | 時間旅行のルール違反（史実への介入、「一日しかいられない」設定に反する長期滞在の描写）を確認する。Tokio の設定自体は史実チェックの対象外。S02 の自己紹介は変えない |
 | 3B | サムネイルを生成したら `python3 sc_tokio_assets.py thumb --image ~/Desktop/SC/ep{NNN}_thumbnail.png`（右下に小さく Tokio と名札。Tokio なしの原画は `_no_tokio.png` に退避される） |
 | 5A | `sc_tts_gen.py` が JSON の `narrator` を見て声（Alnilam）と記者口調に自動で切り替える。Alnilam は放っておくと冷たい印象になりやすいので、moved・Reporter's note は間と柔らかさを指示済み |
-| 6 | `sc_video_gen.py` が `tokio_scenes` に Tokio を重ねる（登場・退場の転送エフェクト、効果音、話すループ）。Shorts には重ねない。約40〜50分。完成したら 480p の確認用を作り、**表情ごとのコマを動画から抜き出して実際に目で確認してから**ユーザーに送る |
+| 6 | 最初に Step 2.5 が Tokio の設定を検証する（`tokio_scenes` が整数の配列か、実在する scene_id か、表情名・素材があるか、シーンの尺が7.4秒以上か。違反は止まる）。そのうえで `sc_video_gen.py` が `tokio_scenes` に Tokio を重ねる（登場・退場の転送エフェクト、効果音、話すループ）。Shorts には重ねない。約40〜50分。完成したら 480p の確認用を作り、**表情ごとのコマを動画から抜き出して実際に目で確認してから**ユーザーに送る |
+
+**`tokio_place` の付け方（2026-10-17、ユーザー決定: 同じ場所・時期なら転送なし）:** Tokio は「ある場所・ある時期に一日だけ」行くので、
+場所か時期が変わるときだけ転送し、同じなら転送しない。各 Tokio シーンに「Tokio がいる場所と時期」を短い英語で付け、同じ場所・時期のシーンには
+**一字一句同じ文字列**を使う（例: S02 `"Kyoto 1467"`、S06〜S08 `"Izu 1490s"`、S11 `"Arai 1516"`）。時期だけ違う（同じ場所の1493年と1516年）なら別のラベルにする。
+Reporter's note は、Tokio が自分の世紀から語るので、`insight` の連続シーン全部に `"Present"`、S20 の締めも `"Present"`（絵が歴史の場面でも、Tokio は現代にいる）。
+転送は、ラベルが変わる境目だけ（前のシーンの退場＋次のシーンの登場）。ラベルを付けないシーンは毎回転送するので、必ず付ける。
+連続する同じラベルのシーンは Tokio が同じ側に統一され、被写体と重ならない側が選ばれる。
 
 **画面に出すシーンの目安（約半分）:** S01（名札つき）・S02（自己紹介）・取材・クライマックス・falling_action の締め・S17〜S20。全編には出さない。
 **表情の割り当て:** 導入と締めは neutral、取材は surprised（控えめ）、考える場面は thinking、哀悼・敬意は moved、Reporter's note の観察は writing。S02・S07・S20 のように同じ表情が続いてよい。
