@@ -1,6 +1,6 @@
 {
-  "_comment": "語り手 Tokio のキャラクターシート（2026-10-17、ep116 で本番採用）。台本生成プロンプトには character_sheet_en を常に読み込ませる。AI関連の文言・画像内の文字（刻印・手帳）は含めない。適用は、ユーザーが『Tokio で』と指示した回のみ（手順は /sc-new の『Tokio モード』節）。",
-  "status": "adopted_pilot_ep116",
+  "_comment": "語り手 Tokio のキャラクターシート（2026-10-17、ep116 で本番採用）。台本生成プロンプトには character_sheet_en を常に読み込ませる。AI関連の文言・画像内の文字（刻印・手帳）は含めない。新規エピソードは既定で Tokio モード（2026-10-17、ユーザー決定。『従来方式で』と指示された回のみ従来方式）。手順は /sc-new の『Tokio モード』節。",
+  "status": "default_for_new_episodes",
   "name": "Tokio",
   "full_name": "Tokio Kamiya",
   "full_name_ja": "神谷 時生",
