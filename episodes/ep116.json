@@ -1,0 +1,295 @@
+{
+  "episode_id": "ep116",
+  "episode_title": "Hojo Soun: The 'Nobody' Who Built a 100-Year Clan and Opened the Sengoku Age",
+  "youtube_title": "The 'Nobody' Who Built a 100-Year Clan — Except He Was Never a Nobody",
+  "youtube_description": "He is remembered as a masterless samurai who rose from nothing. The records tell a different story. Hojo Soun took two provinces without ever being appointed their governor, and his family ruled the Kanto for nearly a century. Even his birth year is still argued: 1432 or 1456, with most scholars now favouring 1456. Follow time-travelling reporter Tokio Kamiya as he files dispatches from Kyoto, Izu, Odawara and the walls of Arai Castle.\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. Every episode is his dispatch from the scene.\n\n⏱️ Chapters:\n0:00 Introduction\n0:15 This is Tokio Kamiya, with a\n0:29 I should explain. I am a\n1:09 Now the man himself. The story\n1:49 My watch brings me east to\n2:26 Next I cross the Hakone ridge\n3:01 Around 1493, though...\n3:35 At a roadside in Izu, I\n4:08 Odawara comes next, around...\n4:47 Taking land is one thing....\n5:21 Now he faces the last obstacle,\n5:53 1516. I am on the cliff\n6:33 1519. I arrive in Izu, where\n7:07 I jump forward to Odawara, 1523.\n7:44 1546, Kawagoe. I crouch at the\n8:22 1561, Odawara. I climb a...\n9:10 1590, Odawara again. I stand...\n9:50 Reporter's note. Back in my own\n10:21 Reporter's note. I think...\n10:55 Reporter's note. Odawara...\n11:25 Hojo Soun did not invent the\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Sansom, George — \"A History of Japan, 1334–1615\" (Stanford University Press, 1961)\n2. Hall, John Whitney; Nagahara Keiji; Yamamura Kozo (eds.) — \"Japan before Tokugawa: Political Consolidation and Economic Growth, 1500 to 1650\" (Princeton University Press, 1981)\n3. Yamamura, Kozo (ed.) — \"The Cambridge History of Japan, Vol. 3: Medieval Japan\" (Cambridge University Press, 1990)\n\n\n🎵 Music: Viking/Medieval Theme (Instrumental Version) by Mark_Murray (freesound.org) — CC BY 4.0\n\n🎵 Music: Emotional/Sad/Tragic String Orchestral BGM Background Music by EvanBoyerman (freesound.org) — CC BY 4.0\n#HojoSoun #SengokuPeriod #LaterHojo #OdawaraCastle #SamuraiHistory #JapaneseHistory #Muromachi #SamuraiChronicles",
+  "youtube_tags": [
+    "Hojo Soun",
+    "Ise Soun",
+    "Ise Shinkuro",
+    "Later Hojo",
+    "Go-Hojo clan",
+    "Odawara Castle",
+    "Sengoku period",
+    "Muromachi period",
+    "Onin War",
+    "gekokujo",
+    "Arai Castle",
+    "Hojo Ujitsuna",
+    "Japanese history",
+    "samurai history",
+    "Japan history documentary",
+    "Japanese history channel"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "narrator": "tokio",
+  "tokio_scenes": [
+    1,
+    2,
+    7,
+    11,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Sagami Bay, 1516. I watch a castle fall to a man some say is sixty, others eighty-four. The legend of where he came from is wrong, too. He took two provinces without ever being named their governor. Who was he really? The answer lies here.",
+  "shorts_narration": "1516. I watch a castle fall to a man of sixty, or eighty-four. Nobody agrees which. He took two provinces with no title to either. Nearly a century of power followed. This is Hojo Soun.",
+  "shorts_hook_lines": [
+    "2 PROVINCES.",
+    "NO TITLE.",
+    "WHO WAS HE REALLY?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Hojo Soun's face as an elderly warlord who has taken Buddhist vows, a lean, deeply lined, weathered face with a smoothly shaved head, narrow, alert eyes looking straight into the camera with a calm, calculating patience, a firm closed mouth, the collar of a plain dark lay-monk's robe visible at the frame edge, dramatic single torch light from one side, deep shadows on the other, a blurred stone castle wall and faint sea mist behind him. Vertical portrait composition, face filling the center and upper part of the frame. No text, no European elements.",
+  "thumbnail_prompt": "Cinematic medium shot of the elderly warlord Hojo Soun standing on a rocky headland above a misty sea bay at dawn, a lean, weathered man with a shaved head and deeply lined face, narrow, watchful eyes fixed straight at the camera, wearing a plain dark lay-monk's robe over a dark kimono, his hands folded in his sleeves, behind him a small hilltop castle with a wooden palisade and thin smoke rising, and ships on the grey water below, the sky shifting from deep blue to gold. High-contrast dramatic lighting, warm glow on his face against cool shadows, clear space above his head. No text in the image itself (the title text overlay is added separately), no European elements.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "This is Tokio Kamiya, with a dispatch from Sagami Bay, 1516. The warlord ahead of me is either sixty years old or eighty-four. Why can't anyone agree on who he is?",
+      "image_prompt": "Hojo Soun in 1516 as an elderly warlord who has ALREADY taken Buddhist vows (at this point in his life he is already a tonsured lay monk), a lean, deeply lined, weathered man with a smoothly shaved head and narrow, watchful eyes, wearing a plain dark lay-monk's robe over a dark kimono, standing slightly left of center on a pine-covered headland in cold dawn light, hands folded in his sleeves, glancing toward the viewer with calm, calculating patience, below him a small seaside hill castle with a wooden palisade on a promontory surrounded by grey water on three sides, a few small ships on the bay, smoke thinning in the morning mist, leaving the lower right of the frame as open empty ground. Low-angle view, restrained palette of grey, blue and gold. No text, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.39,
+        "y": 0.32
+      },
+      "tokio_expression": "neutral"
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I should explain. I am a correspondent, or I was, until my grandfather's brass watch passed to me. It carries me to any moment in Japan's past, for one day at a time. I may watch. I may speak. I may not change a thing. Today it takes me to Kyoto, 1467. Smoke reaches me first. The Onin War has begun, and the shogun, Ashikaga Yoshimasa, cannot stop it. Noble houses empty. Temples burn. Out of this ruin, men with no patience for rank will rise. One of them is about to come into view.",
+      "image_prompt": "Kyoto in 1467 during the opening of the Onin War, a wide view from a hillside over a city partly in flames, thick black smoke rising over burning wooden mansions and temple roofs, dark-clad warriors with long spears and light foot-soldier armor running through a broad street, fleeing townspeople carrying bundles, a wide gate half collapsed, red-orange glow against a heavy grey sky. All men have their hair gathered into a small topknot tied under or beside a small black eboshi cap or a plain cloth wrap, foreheads and crowns NOT shaved, no sakayaki shaved pates at all, as this is before shaved crowns became common. Dramatic documentary scale, ash drifting in the air. No text, no signs, no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "neutral"
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Now the man himself. The story I grew up with says he was a masterless samurai from Ise, a nobody who arrived with six companions and a dream. I follow the records instead, and they point elsewhere. Most scholars now think he came from a branch of the Ise family, hereditary officials who served the Ashikaga shogun. Not a prince, but hardly a beggar. Even his birth year is argued: 1432 or 1456, with most now favouring the later date. I tell you only what I see. And I see a man who has learned to wait.",
+      "image_prompt": "Hojo Soun as a shogunate official in Kyoto in the 1480s, before taking Buddhist vows (at this point in his life he has NOT yet taken vows), a lean, composed man in his prime with a weathered face and narrow, alert eyes, his full head of hair gathered into a small topknot hidden under a soft black eboshi cap, forehead and crown NOT shaved (no sakayaki, as shaved crowns were not yet usual in his time), wearing a dark formal hitatare robe of a Muromachi shogunate official, sitting upright and quiet on the tatami of a plain official room in muted afternoon light, two other officials in dark hitatare and black eboshi caps kneeling at some distance conversing in low voices, a low writing desk with closed bound registers beside him (no visible writing), paper sliding doors with soft light behind, he listens without speaking, patient and watchful. No text, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.36,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "My watch brings me east to Suruga, on the Pacific coast, in 1487. The Imagawa, the ruling house here, has a tie to Soun. Lady Kitagawa, now thought to be his elder sister, married its lord, Yoshitada. In 1476, Yoshitada was killed in battle, and the clan split over who should succeed. Her son Ujichika was a small child. Old accounts say Soun stepped in as a go-between; many scholars doubt it. What is firm is what I see now. The rival claimant is dead, the boy is lord, and Soun holds a castle.",
+      "image_prompt": "Suruga in 1487, Hojo Soun before taking Buddhist vows (at this point in his life he has NOT yet taken vows), a lean, composed man in his prime with a weathered face and narrow, alert eyes, his full head of hair gathered into a small topknot hidden under a soft black eboshi cap, forehead and crown NOT shaved (no sakayaki, as shaved crowns were not yet usual in his time), in a dark hitatare with a short sword at his waist, standing in the courtyard of the Imagawa residence in clear afternoon light at the head of a few armed retainers in dark armor and helmets, facing a group of tense Imagawa retainers in dark hitatare and black eboshi caps, a dignified widow in her late thirties with glossy black hair worn long down her back, her face smooth and youthful for her age, in a layered formal kimono and a youth of about fifteen in a formal robe standing behind him on the veranda, Mount Fuji faint and snow-capped above the tiled roofs behind them, Soun with an open, steadying hand raised, calm authority after a decisive move. No text, no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.34,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Next I cross the Hakone ridge into Izu. On paper, this land belongs to the Horigoe Kubo, a branch of the Ashikaga set up to govern eastern Japan. But the household is rotting from within. A quarrel over the succession has turned to blood, and the farmers of Izu are paying for it. I climb a hill above the palace, and I find Soun already there, watching quietly with a few of his men. It is not a great army. He has not come to fight a war. He has come to finish one.",
+      "image_prompt": "A wooded hillside above a lowland palace compound in Izu at late afternoon, the long tiled roofs and gate of the Horigoe palace below among rice fields and a river, Hojo Soun as a vigorous man in his early fifties who has ALREADY taken Buddhist vows (at this point in his life he is already a tonsured lay monk), a lean, firm man with a lightly lined, only mildly weathered face, narrow, watchful eyes and a freshly, smoothly shaved head with no topknot, in a dark lay-monk's robe with light protective armor pieces over the chest, standing at the front of the group among the pines, looking down at the palace with calm intent, a small group of about a dozen armed retainers in plain dark armor crouched behind him in the trees, long evening shadows, a held breath of tension. No text, no banners with writing, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.64,
+        "y": 0.36
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Around 1493, though historians still argue over the exact year, Soun strikes. I watch him take the Horigoe Palace. Its young master, Chachamaru, has murdered the mother and brother of the new shogun in Kyoto. Now he escapes into the hills, to be hunted down within five years. Soun holds no governor's title here, though Kyoto may quietly approve. There is no heroic charge, only a silent change of master. I put my pencil down. This is what the coming age will be named for.",
+      "image_prompt": "Dawn at the open gate of the Horigoe palace in Izu, Hojo Soun as a vigorous man in his early fifties who has ALREADY taken Buddhist vows (at this point in his life he is already a tonsured lay monk), a lean, firm man with a lightly lined, only mildly weathered face, narrow, alert eyes and a freshly, smoothly shaved head with no topknot, in a dark lay-monk's robe with light armor over it, walking calmly through the gate into the courtyard at the head of a few armed retainers in helmets, a small number of the palace's household staff kneeling aside on both sides with heads lowered: the kneeling men all wear a tall soft black lacquered-gauze eboshi cap that completely covers the top and back of the head down to the hairline, no bare topknots and no exposed scalp on any kneeling man, and the kneeling women have long black hair tied low at the nape, an empty seat of authority visible on the veranda behind, pale morning mist on the gravel, tiled roofs catching the first light, a quiet, decisive change of power. No text, no banners with writing, no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.44
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "At a roadside in Izu, I stop an old farmer. He studies my coat as if I were a travelling merchant, which is what I tell him I am. I ask about the new lord. He tells me the previous household took taxes the way a thief takes coins, and this one at least counts honestly. He has heard that the lord walks the fields himself. He has also heard the lord is not to be trusted. Both, he says, can be true. This is one man's opinion, and I treat it as exactly that.",
+      "image_prompt": "A dirt road beside terraced rice fields in Izu in soft late-morning light, an elderly farmer in a worn blue-grey cotton kimono with a straw hat pushed back and a towel around his neck, leaning on a hoe, speaking with a raised eyebrow and a wry half-smile to an unseen listener at the edge of the frame, a couple of villagers working in the paddies behind him, green hills and a thin river in the distance, a modest farmhouse with a thatched roof, relaxed, honest, weathered faces, an ordinary day in an uncertain time. No text, no signs, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "surprised"
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Odawara comes next, around 1495 by the common account, though recent research puts it a few years later. The castle belongs to the Omori family, vassals of the powerful Uesugi. The story, and I stress that it is only a story, says Soun asked leave to send beaters into the Hakone hills after stray deer. The beaters were soldiers. By night, the castle was his. I cannot confirm it. What I can confirm is the position. Odawara sits between mountains and sea, on the road to the whole Kanto plain.",
+      "image_prompt": "The forested Hakone hills above Odawara at dusk in the late 1490s, a band of men dressed as hunting beaters in plain dark hunting clothes moving through the pines with torches, driving a few startled deer ahead of them, short spears and swords half-hidden under their clothes, far below a hill castle of wooden palisades, earthen ramparts and tiled gate roofs (no main keep tower) overlooking a coastal plain and a dark sea, Hojo Soun as a mature man who has ALREADY taken Buddhist vows (at this point in his life he is already a tonsured lay monk), a lean man with a smoothly shaved head and no topknot, in a dark lay-monk's robe over a hunting kimono, standing calmly at the edge of the group watching the castle, long shadows, torchlight on tree trunks. No text, no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Taking land is one thing. Holding it is another. In the records I read, Soun's rule looks orderly: field surveys, set tax rates, firm control of his retainers. A set of twenty-one articles attributed to him tells his men to rise early, to keep their gear in order, and to be honest. Scholars debate whether he wrote them. But the spirit fits what I see: a man who thinks in years, not days. In a time of plunder, order is a weapon. I note it carefully, in pencil.",
+      "image_prompt": "A village in Sagami in clear afternoon light, Hojo Soun in 1506 as an older man who has ALREADY taken Buddhist vows (at this point in his life he is already a tonsured lay monk), a lean, lined man with a smoothly shaved head, narrow, watchful eyes, in a dark lay-monk's robe over a plain dark kimono, standing at the edge of a rice paddy with two officials in dark formal dress with shaved crowns and small topknots, who measure the field with a long knotted rope held between two assistants, farmers in worn cotton kimono standing at a respectful distance watching, a village headman kneeling with a closed bound register on his lap (no visible writing), calm, orderly, practical mood, green fields and low hills. No text, no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.32
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Now he faces the last obstacle, the Miura family, who hold the Miura Peninsula in Sagami. Their castle, Arai, sits on a promontory above the sea, with water on three sides. The siege has dragged on for years. I watch the supply boats thin out. I watch hungry men on the walls. Soun himself, I am told, is somewhere in his sixties or his eighties, and he is still in the field. The wind is cold and salty. Something is about to break.",
+      "image_prompt": "Arai Castle on a rocky promontory above the sea at cold dusk in the 1510s, a small hill castle of wooden palisades and watchtowers on a headland with grey water on three sides, a besieging army of dark-clad soldiers with long spears and simple armor camped along the narrow neck of land in the foreground with small campfires, a few supply boats drifting on the dark water with the besiegers' boats cutting them off, thin figures of the defenders on the walls, Hojo Soun as an elderly man who has ALREADY taken Buddhist vows (at this point in his life he is already a tonsured lay monk), a lean, lined figure with a shaved head in a dark lay-monk's robe, standing small in the foreground among the pines watching the castle with folded hands, cold wind, heavy cloud, a tense stillness before the end. No text, no banners with writing, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.73,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 70,
+      "narration": "1516. I am on the cliff at Arai when the castle falls. The Miura lord, Yoshiatsu, known as Dosun, fights to the end, and with him his house dies. I listen to the silence after the noise. The defenders are gone. The flags are down. Soun does not cheer. He studies the shoreline as if he were measuring it, and I find I cannot read his face. With the Miura gone, he is master of Sagami as well as Izu, with the Kanto plain open before him. A man who once held a single small castle now holds two provinces.",
+      "image_prompt": "Arai Castle just after its fall at sunset in 1516, the wooden palisade broken and smoking, scattered spears and broken ladders on the rocky headland, a few exhausted victorious soldiers in simple dark armor sitting on the ground, the sea turned to bronze and red under the low sun, Hojo Soun as an elderly man who has ALREADY taken Buddhist vows (at this point in his life he is already a tonsured lay monk), a lean, lined figure with a shaved head in a dark lay-monk's robe, standing alone on the edge of the cliff in the center of the frame with his back partly turned, looking out at the water and the coastline, solemn, silent aftermath, drifting smoke across the bay. No text, no banners with writing, no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.57,
+        "y": 0.36
+      },
+      "tokio_expression": "thinking"
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "1519. I arrive in Izu, where Soun spends his last days. The records say he dies at Nirayama Castle in the eighth month of that year. I find a quiet room, a lamp, and monks reciting softly. I stay at the edge of the room and ask no questions. My watch ticks in my pocket. Whatever he was, a nobleman's relative or a nobody, he leaves behind two provinces and an heir, Ujitsuna, ready to hold them. The domain he built will outlast him by more than seventy years.",
+      "image_prompt": "A quiet room in Nirayama Castle in Izu at night in 1519, a single paper andon lantern casting warm light and deep shadows, an elderly Hojo Soun who has ALREADY taken Buddhist vows (at this point in his life he is already a tonsured lay monk), a lean, deeply lined man with a smoothly shaved head and no topknot, in a plain white sleeping robe lying peacefully on futons with his eyes closed, three Buddhist monks in dark robes kneeling at his side with prayer beads, a figure in a dark formal kimono kneeling at the far edge of the room with head bowed, sliding paper doors half open to a night garden with a pine and moonlight, hushed, solemn, dignified farewell. No text, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.26,
+        "y": 0.66
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "I jump forward to Odawara, 1523. I watch Ujitsuna, the son, make a quiet but clever choice. He takes the surname Hojo, borrowed from the old regent family of Kamakura. In his father's lifetime, no one called the man Hojo. The change is a claim to legitimacy, a new power wrapping itself in an old and respected name. Historians call this family the Later Hojo, to keep them apart from the earlier regents. I write the new name in my notebook and underline it. They share a name, not a bloodline.",
+      "image_prompt": "A formal audience room in Odawara Castle in 1523, a lord in his thirties in a dark ceremonial hitatare robe seated on the raised dais, seen from a respectful distance and anonymous, shaved crown and small topknot, speaking to rows of retainers in dark hitatare kneeling in two lines facing each other, a plain wooden stand in front of him holding a rolled blank sheet of paper (no writing at all), sliding doors painted with pine trees behind him, soft light from a garden outside, the stillness of a significant announcement. No text, no crest with writing, no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "1546, Kawagoe. I crouch at the edge of a dark field as Soun's grandson Ujiyasu faces a vast coalition of Uesugi and Ashikaga forces, far larger than his own. By every account, he is outnumbered. At night, he strikes. Torches flare. Men shout in the confusion. By morning, the great army has broken, and I walk the field at dawn. The Hojo, who began with a single small castle, now command much of the Kanto. The family is no longer an upstart. It is a power.",
+      "image_prompt": "A night battle on the plain near Kawagoe castle in 1546, small bands of Hojo warriors in dark armor with spears surging across a dark field among scattered flickering torches and campfires, a great enemy camp in disarray in the background, tents toppling and soldiers fleeing in confusion, rising smoke and sparks against the black sky, a commander in dark lacquered armor on horseback at the center with a lowered spear, rain-damp earth reflecting orange light, chaotic and dramatic. No text, no banners with writing, no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "1561, Odawara. I climb a hillside as Uesugi Kenshin arrives with a huge army and surrounds the castle. I watch the siege lines tighten around the walls. The defenders do not panic. From up here, they look like men who expect to be believed. The walls hold, the stores last, and after weeks Kenshin withdraws. Takeda Shingen tries his luck in 1569, and he, too, leaves without victory. Odawara becomes a byword for a fortress that cannot be forced. Soun chose this place for its position. His descendants made it a legend.",
+      "image_prompt": "Odawara Castle in 1561 seen from a wooded hillside in clear early-spring light, a vast encircling army of dark-clad soldiers in ordered ranks spread across the plain around a fortified hill castle with thick earthen ramparts, white-plastered walls and tiled gate roofs, the defenders standing calmly on the walls, long lines of spearmen and archers outside the moat, the sea shining beyond, an air of a siege that goes nowhere, ordered and tense. No text, no banners with writing, no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "1590, Odawara again. I stand outside the walls as the army of Toyotomi Hideyoshi fills the plain. The siege has dragged on for months. Inside, the lords of the Hojo have argued over what to do. Today the great castle opens its gates. The fourth head of the clan, Ujimasa, is ordered to take his own life. I take my hat off. Five generations from Soun, the main line is finished, though a branch of the family survives quietly. A century of Hojo power is over.",
+      "image_prompt": "Odawara Castle in summer 1590, a great encircling army of tens of thousands filling the plain around the castle in the mist of early morning, rows of low campaign tents and soldiers' huts with smoke rising from cooking fires, a newly built hilltop fortress of the besiegers on a distant ridge, the castle's gates opening slowly in the foreground as a small procession of Hojo retainers in plain dark formal dress walks out with heads bowed, sorrowful, quiet, the end of an era, soft grey light. No text, no banners with writing, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved"
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Back in my own century, I think the first thing Soun teaches us is how much Japan loves a rise from nothing. We tell the story of the lone masterless samurai because we want it to be true. The records say he had real connections. I think that makes him more interesting, not less. His talent was to turn connections into something that outlasted favours. Modern Japan still struggles with that balance, between who you know and what you can do.",
+      "image_prompt": "Hojo Soun around 1490 at his first castle in Suruga, before taking Buddhist vows (at this point in his life he has NOT yet taken vows), a lean, composed man in his prime with a weathered face and narrow, alert eyes, his full head of hair gathered into a small topknot hidden under a soft black eboshi cap, forehead and crown NOT shaved (no sakayaki, as shaved crowns were not yet usual in his time), in a plain dark hitatare, standing alone on a wooden veranda at dusk, one hand resting on the rail, looking out over a small castle town and a pine-covered hillside, thoughtful, restrained expression, soft blue evening light and a faint warm glow from lanterns below, a sense of someone quietly weighing his place in the world. No text, no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.67,
+        "y": 0.38
+      },
+      "tokio_expression": "thinking"
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. I think Soun's real innovation was the boring kind: surveys, tax rates, rules for retainers. We remember generals. We should also remember the clerks. In my view, modern Japan's quiet faith in procedure, in the well-run office and the punctual timetable, has long roots, and some of them run through men like him. What I saw is only partly documented. What I conclude is my own opinion. A state that keeps its small promises earns the right to ask for big ones.",
+      "image_prompt": "A bright, orderly village office in an early Sengoku domain, two clerks in dark formal dress with hair gathered in small topknots under black eboshi caps, crowns not shaved kneeling at low desks with brushes, ink stones and tightly rolled and bound registers (no visible writing on any page), a village headman bowing politely as he hands over a neat stack of closed bundles, tidy straw mats and shelves of stacked bound books behind them, warm afternoon light through paper screens, calm, patient, careful bureaucracy. No text, no signs, no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "writing"
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Odawara still remembers the Hojo. Every spring, the city holds a festival with a parade of costumed warriors in their honour. The castle keep you can visit today is a twentieth-century rebuild. I think that is a very Japanese way to hold memory: rebuild, retell, and pass the story to the next generation. But I would add one caution. Stories grow. The tale of the nobody seemed too good to question, until historians checked it.",
+      "image_prompt": "Late afternoon over the reconstructed white main keep of Odawara Castle with dark grey tiled roofs on a wooded hill above a modern coastal city, fresh green early-May foliage in the foreground, a long procession of people in historical warrior costumes with spears and plain cloth banners (no writing) crossing a bridge over the moat toward the castle gate, spectators along the path, a deep blue and gold sky, warm, celebratory yet reflective mood, no single person in focus. No text, no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "tokio_expression": "moved"
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "Hojo Soun did not invent the age of warring states, but he showed what it rewarded: patience, planning, and the nerve to act when the old order stopped answering. His origins are still argued over, and perhaps always will be. A page in my grandfather's notebook, in my own handwriting, reads only 1868. If you would like the next dispatch to find you, you know where to leave your address. The watch is ticking. Until the next report.",
+      "image_prompt": "Seen from behind and slightly to the side, Hojo Soun as an elderly man who has ALREADY taken Buddhist vows (at this point in his life he is already a tonsured lay monk), a lean figure with a shaved head, in a plain dark lay-monk's robe, standing alone with his hands folded in his sleeves on a grassy earthen rampart of Nirayama Castle in the late afternoon, looking out over a wide misty coastal plain with rice fields, a distant bay and faint snow-capped Mount Fuji on the horizon, long low sunlight, the sky turning amber and violet toward sunset, calm and resolute, a closing shot of quiet determination. No text, no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "hojo_soun",
+      "zoom_anchor": {
+        "x": 0.69,
+        "y": 0.3
+      },
+      "tokio_expression": "neutral"
+    }
+  ],
+  "image_era": "kamakura",
+  "bgm_sources": {
+    "intro": "BGM/ep077-BGM-intro.mp3",
+    "main": "BGM/ep009-BGM.mp3",
+    "outro": "BGM/ep055-BGM.mp3"
+  },
+  "tokio_talk": true
+}
