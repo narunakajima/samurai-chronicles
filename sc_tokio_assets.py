@@ -52,7 +52,7 @@ EXPRESSIONS = ["neutral", "thinking", "moved", "writing", "surprised"]   # wry �
 WINDOWS = {
     "neutral": (0.0, 3.2),
     "thinking": (0.0, 3.6),
-    "moved": (0.9, 2.2),
+    "moved": (1.5, 3.2),     # 冒頭は手帳がまだ閉じている（開くのは1.5秒まで）
     "writing": (1.8, 3.2),     # 冒頭は手帳がまだ閉じている
     "surprised": (0.4, 3.2),
 }
@@ -72,9 +72,11 @@ MID = {
     "thinking": ("CLEARLY thoughtful and searching: his eyes are open and look up and to the side, away from the viewer, "
                  "as if recalling something, his brow is furrowed and his lips purse between words, his head tilts slightly "
                  "and his chin lifts a little. He does not look at the viewer." + HOLD),
-    "moved": ("CLEARLY moved and tender, speaking softly: his eyes are glossy and slightly wet, the inner ends of his eyebrows "
-              "are raised in a gentle sorrowful look, his head is slightly bowed and his gaze lowers, then lifts again; "
-              "his lips tremble a little between words." + HOLD),
+    "moved": ("CLEARLY moved and tender, speaking softly. He holds the leather notebook OPEN in his left hand at chest height, "
+              "its pages turned toward him (within the first second he opens the cover; the notebook is open for the rest of the clip), "
+              "and his glossy, slightly wet eyes look down and read the open pages as he speaks; near the end he lifts his eyes "
+              "gently toward the distance. The inner ends of his eyebrows are raised in a gentle sorrowful look and his lips tremble "
+              "a little between words. His right hand rests lightly on the edge of the notebook; he does not write."),
     "writing": ("He is writing: his head is bowed and his eyes look down at the open leather notebook in his left hand; "
                 "his right hand holds a pencil and writes in the notebook with small clear pencil strokes the whole time "
                 "while he keeps speaking quietly; he glances up toward the viewer once near the end."),

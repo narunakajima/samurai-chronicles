@@ -59,11 +59,12 @@
       "surprised": "narrator/clips/tokio_surprised_talk.webm"
     },
     "talk_notes": "口パク（2026-10-17・ep116で採用）: Veo で『話している間のループ』を作り、出ている間は待機ではなく話すループを使う（episode JSON の tokio_talk:true）。音声と口形は同期しない（それらしく動くだけ。違和感は小さいとユーザー確認済み）。Veo の6秒のうち3秒以降は頭が傾いて崩れるので前半3.2秒だけを往復ループにする。プロンプトは『穏やかに話す・口が自然に開閉・うなずき・まばたき1回』に、表情とポーズ（両手で手帳を持つ）を保つ指示と、笑う・記号・文字の禁止、『Ambient audio: soft distant wind only.』を付ける。KL の kl_cast_video.py（未コミットの --kind talk）の方式を参考にした。 2026-10-17 改訂: 『表情とポーズを正確に保つ』を強く書くと表情の違いが消えて全部 neutral に見える（ep116で指摘）。表情ごとに CLEARLY を付けた具体的な動き（thinking=首を傾け視線を横に外す／moved=うつむき目が潤む／writing=手帳を開き鉛筆で書く／surprised=眉を大きく上げ目を見開く）を指示し、手帳を持つ指示は writing では外す。使う区間は表情ごとに異なる（上の talk_windows_sec）。 surprised は『眉が上がりっぱなし』で不自然（ep116でユーザー指摘）。眉を持ち上げ続ける指示（eyebrows shoot up／very wide）は避け、『普通の高さの眉が、話す強調に合わせて少し・短く上がる。目を見開いた凝視はしない』と書いた版（B）を採用。窓は0.4-3.6秒。旧版（目を見開き続ける）は narrator/raw/talk_v1/tokio_surprised_talk_wide_eyes.mp4。",
+    "moved_note": "2026-10-18: moved は手帳を開いて読みながら話す素材に作り直した（旧: 閉じた手帳を持ったままうつむく → 読んでいないのに視線だけ手帳に落ちて違和感、ユーザー指摘）。冒頭1.5秒で手帳を開くので使う区間は1.5-4.7秒。旧素材は narrator/raw/moved_closed_v1/。thinking/neutral/surprised は視線を手帳に落とさないので閉じた手帳のまま。",
     "expressions_in_use": "neutral, thinking, moved, writing, surprised（wry は廃止）",
     "talk_windows_sec": {
       "neutral": "0.0-3.2",
       "thinking": "0.0-3.6",
-      "moved": "0.9-3.1",
+      "moved": "1.5-4.7",
       "writing": "1.8-5.0",
       "surprised": "0.4-3.6"
     },
