@@ -1203,14 +1203,14 @@
     },
     {
       "episode_id": "ep117",
-      "status": "pending",
+      "status": "published",
       "title": "He Crushed His Best Friend's Rebellion — Then Was Assassinated for It: Okubo Toshimichi",
       "era": "Meiji",
       "priority": "A",
       "person": "okubo_toshimichi",
       "angle": "overview",
       "notes": "未登場。ep008（西郷・西南戦争）と対になる人物で、Meijiの実績を作る枠。 → 2026-10-05: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-10-05"
+      "last_updated": "2026-10-18"
     },
     {
       "episode_id": "ep118",
@@ -1329,6 +1329,6 @@
       "notes_2026-10-05": "Opus月次分析(2026-10-05): 有効な14日窓を持つ純粋なBakumatsu7本(ep068/072/076/081/085/088/089)で、公開月で層別した並べ替え検定の結果、相対CTR −0.29pt(p=0.41)、リタイトルの影響を受けたep076を除いても −0.35pt(p=0.37)、相対維持率 +2.1pt(p=0.60)。プールCTR 2.07%(158/7649) 対 他era 2.26%(610/26972)、比0.92(粗い95%CI 0.77〜1.09)。基準「明確な差がなければeraの問題ではない」に該当するため『Bakumatsuが時代として弱い』仮説を棄却し、sc-new.mdの注意書きを解除。検出力は低く、25%未満の小さな不利は否定できない。前回(2026-09-28)のp≈0.09は、データ欠損で壊れた窓を含む8月中央値との比較が原因と考えられる。ep100(Bakumatsu)の窓は10/13頃に完了するので追加の確認材料にする。"
     }
   ],
-  "last_updated": "2026-10-16",
+  "last_updated": "2026-10-18",
   "total_topics": 120
 }

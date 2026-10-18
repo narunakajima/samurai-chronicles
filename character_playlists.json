@@ -1166,5 +1166,15 @@
         "video_id": "4rsbDXtRrsY"
       }
     ]
+  },
+  "okubo_toshimichi": {
+    "display_name": "Okubo Toshimichi",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep117",
+        "video_id": "aQA1mUldTn0"
+      }
+    ]
   }
 }
