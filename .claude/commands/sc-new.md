@@ -18,6 +18,7 @@ topics_queue.json から次のトピックを選び、動画生成まで一気�
 | STEP 2A | エピソードJSON生成（20シーン） | 約5〜10分 |
 | STEP 2B | JSONファイル保存 + キュー更新 | 即時 |
 | STEP 3A/3B/3C | 制作確認書・サムネイル・BGM選定（並行、確認待ちなし） | 約30〜40分 |
+| STEP 5-0 | 主人公の風体リサーチ（Opus・画像生成の前に毎回必須） | 約4〜5分 |
 | STEP 5A/5B | TTS生成 + 画像生成 16:9（並行） | 約10分 |
 | STEP 5A/5B | TTS（teaser・shorts）+ 画像生成 9:16（並行） | 約3分 |
 | STEP 5C | 画像QA（＋再生成時 +3〜5分） | 約3〜5分 |
@@ -79,13 +80,13 @@ STEP 3A/3B/3C はすべて完了してから一括で完了報告する（個別
 
 **新規エピソードは、既定でこの節に従って Tokio モードで作る**（2026-10-17、ユーザー決定）。ユーザーが「従来方式で」「Tokio なしで」と指示した回だけ、この節を読み飛ばして従来どおり（Charon・三人称・Tokio なし）進める。既存の公開済み回は変えない。設定・声・素材・Veo の注意点の正本は `narrator/tokio.json`。
 
-**優先順位:** Tokio モードでは、STEP 2A の Hook の1文目（10語以内の衝撃・問いかけ）、Outro の最後の1文（登録CTA）、語り口（BBC/Netflix 調の三人称）の既存ルールより、本節を優先する（Hook は決め台詞で始める。Outro は最後の2文を固定し、CTA はその直前に置く。語りは一人称・現在形）。
+**優先順位:** Tokio モードでは、STEP 2A の Hook の1文目（10語以内の衝撃・問いかけ）、Outro の最後の1文（登録CTA）、語り口（BBC/Netflix 調の三人称）の既存ルールより、本節を優先する（Hook は決め台詞で始める。Outro は最後の3文を固定し、CTA はその直前に置く。語りは一人称・現在形）。
 
 **ステップごとの違い**
 
 | STEP | Tokio モードでの違い |
 |---|---|
-| 2A（Sonnet生成） | プロンプトに `narrator/tokio.json` の `character_sheet_en` と `intro_rule` を必ず読ませる。S01 hook は決め台詞 "This is Tokio Kamiya, with a dispatch from {場所}, {年}." ＋謎＋問い（40語以内）。S02 の冒頭で3文の自己紹介（元記者・祖父の懐中時計・一日ずつ・見るだけで変えられない）。S02〜S16 は**一人称・現在形の現地報告で、全シーンに「I」を入れる**（climax・falling_action を三人称の解説に戻さない。ep116 で S11・S16 が三人称寄りになり書き直した）。取材を1シーン（伝聞。"An old farmer told me…"）。`insight` タイプの各シーン（S17〜S19 とは限らない。構成によってずれる）は "Reporter's note."（現代日本とのつながり。意見は "I think"）。S20 は最後の2文を "The watch is ticking. Until the next report." に固定し、その直前に婉曲な登録CTA。JSON に `"narrator": "tokio"`、`tokio_scenes`（**scene_id の整数の配列**。例 `[1, 2, 7]`。`"S01"` のような文字列は不可）、各 Tokio シーンの `tokio_expression`（neutral / thinking / moved / writing / surprised）と `tokio_place`（Tokio がいる場所と時期のラベル。例 `"Kyoto 1467"`、Reporter's note は `"Present"`）、`"tokio_talk": true` を足す。`tokio_place` が前後の Tokio シーンと同じなら転送エフェクトなし、変わるときだけ転送する（設定は『一日だけ、ある場所・時期に行く』ため。ラベルがなければ毎回転送）。`youtube_description` に「Your reporter: Tokio Kamiya…」の段落を足す。image_prompt に Tokio を描かせない |
+| 2A（Sonnet生成） | プロンプトに `narrator/tokio.json` の `character_sheet_en` と `intro_rule` を必ず読ませる。S01 hook は決め台詞 "This is Tokio Kamiya, with a dispatch from {場所}, {年}." ＋謎＋問い（40語以内）。S02 の冒頭で3文の自己紹介（元記者・祖父の懐中時計・一日ずつ・見るだけで変えられない）。S02〜S16 は**一人称・現在形の現地報告で、全シーンに「I」を入れる**（climax・falling_action を三人称の解説に戻さない。ep116 で S11・S16 が三人称寄りになり書き直した）。取材を1シーン（伝聞。"An old farmer told me…"）。`insight` タイプの各シーン（S17〜S19 とは限らない。構成によってずれる）は "Reporter's note."（現代日本とのつながり。意見は "I think"）。S20 は最後の3文を "The watch is ticking. Until the next report. Tokio Kamiya, reporting." に固定し（2026-10-19〜、ep118から。ユーザー提案: 冒頭の "This is Tokio Kamiya, with a dispatch from…" と対になる名乗りの締め）、その直前に婉曲な登録CTA。JSON に `"narrator": "tokio"`、`tokio_scenes`（**scene_id の整数の配列**。例 `[1, 2, 7]`。`"S01"` のような文字列は不可）、各 Tokio シーンの `tokio_expression`（neutral / thinking / moved / writing / surprised）と `tokio_place`（Tokio がいる場所と時期のラベル。例 `"Kyoto 1467"`、Reporter's note は `"Present"`）、`"tokio_talk": true` を足す。`tokio_place` が前後の Tokio シーンと同じなら転送エフェクトなし、変わるときだけ転送する（設定は『一日だけ、ある場所・時期に行く』ため。ラベルがなければ毎回転送）。`youtube_description` に「Your reporter: Tokio Kamiya…」の段落を足す。image_prompt に Tokio を描かせない |
 | 3A（Opus） | 時間旅行のルール違反（史実への介入、「一日しかいられない」設定に反する長期滞在の描写）を確認する。Tokio の設定自体は史実チェックの対象外。S02 の自己紹介は変えない |
 | 3B | サムネイルを生成したら `python3 sc_tokio_assets.py thumb --image ~/Desktop/SC/ep{NNN}_thumbnail.png`（右下に小さく Tokio と名札。Tokio なしの原画は `_no_tokio.png` に退避される） |
 | 5A | `sc_tts_gen.py` が JSON の `narrator` を見て声（Alnilam）と記者口調に自動で切り替える。Alnilam は放っておくと冷たい印象になりやすいので、moved・Reporter's note は間と柔らかさを指示済み |
@@ -854,6 +855,8 @@ BGM           : ❌ 未選択
   それ以前の時代設定で誤って指定していないか）
 - **甲冑の有無が人物・場面設定と合っているか**（実在武将でも平時・私的な場面では甲冑なしが
   正しい場合がある。逆に合戦場面で甲冑なしを指定していないか）
+- **（2026-10-19〜: 本格的な風体リサーチは「STEP 5-0」で画像生成の前に毎回行う。ここでは肖像・写真の有無と、
+  明らかな時代考証違反の確認までで足りるが、以下の検索を行ってもよい。）**
 - **一般に知られる容貌イメージとの整合（2026-08-25〜追加。2026-09-27改訂・ep105足利義政で
   対応漏れが判明）**: ⚠️「資料が残っている人物の場合」という事前判断で検索自体を省略しない。
   実在する主人公（`character_ref`が設定される人物）については**必ず**`WebSearch`で
@@ -1321,7 +1324,53 @@ Freesound の SOUND_ID は BGM ファイル名（`BGM_candidate_XX_{SOUND_ID}_..
 
 ---
 
+## STEP 5-0 — 主人公の風体リサーチ（Opus・画像生成の前に毎回必ず実行。2026-10-19〜）
+
+**画像を1枚でも生成する前に、毎回、主人公（`character_ref` に設定した人物と、主人公として写る人物）の風体を
+Opusが検索で調べ、決める。省略しない。** STEP 5A/5B（TTS・画像生成）は、このステップの決定を
+ファイルに反映し終えてから始める（TTSは影響を受けないので、画像と別に先に走らせてよい）。
+
+**経緯（ep118石川五右衛門）:** 容貌の資料が無い人物は、プロジェクトの既定（全男性が月代＋ちょんまげ。
+`sc_image_gen.py` がBASE_CONTEXT・QA・再生成指示の3か所で強制）のまま描かれる。ep118では3Aのチェックも
+「肖像が現存しない」ことの確認で終わり、「1594年なら月代が標準」という時代の一般論で通してしまった。
+五右衛門は歌舞伎・浮世絵・映画で月代でない姿（大百日鬘＝剃らずに伸ばした頭）のイメージが定着しており、
+**ユーザーに「画像検索しても月代の姿は全く見られない」と指摘された（本編・Shorts・サムネイルを作り直した）。**
+**最優先は「視聴者が持つイメージとかけ離れないこと」。** 時代考証上の既定より優先する。
+
+**進め方:** メイン会話が人物名・エピソードJSON・`characters/{name}.txt` のパスを渡し、Agent
+（`model: "opus"`、`subagent_type: "general-purpose"`、`run_in_background: false`）に次を行わせる。
+サブエージェントは会話の経緯を持たないので、下の内容をプロンプトに書く。
+
+1. WebSearch/WebFetch で、視聴者（海外の歴史好き＋日本の人）が人物名から思い浮かべる姿を調べる。
+   日本語（画像・イメージ・髪型・浮世絵・肖像・映画・大河・歌舞伎等）と英語（appearance・hairstyle・portrait・
+   ukiyo-e・portrayal 等）の両方。肖像が現存する人物は、その肖像・写真を第一にする（想像画であれば
+   そのことを明記）。肖像が無い人物は、後世に定着した典型像（浮世絵・舞台・映像作品）を集める。
+2. **「史料・肖像に根拠のある部分」と「後世のイメージ」と「創作」を分けて整理**し、視聴者のイメージから
+   かけ離れず、史実と矛盾せず、本編の写実シネマティック調に落とし込める風体（髪型・体格・顔・服装・
+   持ち物）を**Opus自身が決める**。舞台由来の誇張（隈取・巨大な鬘・派手な衣装など）は写実に抑える。
+   時代考証上の既定（月代など）と食い違うときは、視聴者のイメージを優先して決め、理由を書く。
+3. 決定を `characters/{name}.txt`、人物が写る全シーンの `image_prompt`（`character_ref` が別人のシーンで
+   脇役として写る場合や、`character_ref: null` でも主人公が写るシーンを含む）、`thumbnail_prompt`、
+   `shorts_face_image_prompt` に反映する。標準（月代）から外れる点は、対比で明記する
+   （"his hair is NOT shaved at the forehead or crown … unlike the other men"）。ナレーション本文は変更しない。
+4. 髪型が既定（月代）から外れる場合、`--era kamakura` は群衆まで巻き込むので使わない。キャラの個別例外
+   （プロンプトに明記＋`sc_image_gen.py` のQA例外・再生成指示の例外）と、STEP 5B の参照画像方式
+   （`--ref-scene`）を併用する。コード変更が必要なときは、最小限にし、差分の要点を報告させる。
+5. 最終報告: 検索で分かった視聴者イメージ（出典の種類）、決めた風体と理由（根拠と創作の区別）、
+   変更したファイル、再生成が必要な画像の一覧とアンカー推奨。
+
+**このステップの結果は、統合確認メッセージに「主人公の風体: {決定内容}（根拠: …／創作: …）」として
+事後報告する**（ユーザーの確認待ちにはしない。ただし判断に迷う点・視聴者イメージが割れる点はOpusが
+選択肢つきで報告し、統合確認で諮る）。複数の主要人物がいるときは、人物ごとに行う。
+STEP 3A の【一般に知られる容貌イメージとの整合】は、ここで本格的に行うため、3Aでは
+「肖像・写真の有無」の確認までで足りる。
+
+---
+
 ## STEP 5A/5B — 素材を自動生成する
+
+**前提: STEP 5-0（主人公の風体リサーチ）が完了し、決定内容が `characters/` と `episodes/ep{NNN}.json` に
+反映済みであること。** 未実施のまま画像生成（STEP 5B）を始めない。
 
 STEP 5A（TTS）と STEP 5B（画像）を並行して実行する。
 

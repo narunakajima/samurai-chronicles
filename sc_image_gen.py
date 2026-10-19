@@ -298,8 +298,9 @@ def generate_face_with_appearance_ref(client, scene_prompt: str, character_ref: 
     parts.append(
         "ATTACHED REFERENCE IMAGE — CRITICAL APPEARANCE OVERRIDE: the attached image shows this "
         "character's exact, already-approved appearance from another scene of this episode. Match "
-        "its hair colour, the exact shape of the topknot (how it rises, where it folds, the binding), "
-        "the shaved-crown boundary, and the facial features and age precisely. Do NOT copy its "
+        "its hair colour, the exact shape of the topknot or tied hair (how it rises, where it folds, the binding), "
+        "the shaved-crown boundary (or its absence, if the hair covers the whole scalp), and the facial "
+        "features and age precisely. Do NOT copy its "
         "composition: follow the Scene description above for framing, angle and expression."
     )
     return _generate_with_retry(client, ["\n\n".join(parts), ref_image], output_path)
@@ -339,7 +340,10 @@ def _correction_note(issues: list) -> str:
                 "cord (never a thick vertical brush or stump). Do NOT render a full unshaved head of hair merely tied back "
                 "into a ponytail or bun (no shaved forehead is still wrong even if it looks "
                 "old-fashioned), and do NOT render a modern buzz cut, undercut, or styled haircut. "
-                "The topknot must read as a deliberate groomed knot, not a loose sprouting tuft."
+                "The topknot must read as a deliberate groomed knot, not a loose sprouting tuft. "
+                "Exception: if the scene description explicitly states that a specific character's "
+                "forehead and crown are NOT shaved, keep that character's unshaved hair exactly as "
+                "described and apply this fix only to the other men."
             )
         elif prefix == "DISTORTION" and prefix not in seen:
             notes.append(
@@ -480,7 +484,11 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "The only valid exceptions are: a monk's fully shaved head, a woman's hair, a ninja's "
             "covered/hidden hair, an explicitly masterless ronin or low-status character whose "
             "scene description calls for deliberately unkempt/unbound hair as a character choice, "
-            "young children (forelock/maegami styles), a chasen-mage (upright tea-whisk topknot tied at the back of the crown, Oda Nobunaga's signature style) when the scene description explicitly calls for it, a short cropped zangiri-style cut with no topknot and no shaved pate (Takasugi Shinsaku after 1863, per his surviving 1866 photograph) when the scene description explicitly calls for it, or non-Japanese/Western characters. If the "
+            "young children (forelock/maegami styles), a chasen-mage (upright tea-whisk topknot tied at the back of the crown, Oda Nobunaga's signature style) when the scene description explicitly calls for it, a short cropped zangiri-style cut with no topknot and no shaved pate (Takasugi Shinsaku after 1863, per his surviving 1866 photograph) when the scene description explicitly calls for it, "
+            "a specific character whose scene description explicitly states that his forehead and crown are NOT shaved "
+            "(a deliberate per-character exception, e.g. Ishikawa Goemon's grown-out shaggy hair tied at the nape, or a "
+            "Kabuki actor's bushy stage wig) — this exception covers only that character, and every other man in the "
+            "same image still needs the default, or non-Japanese/Western characters. If the "
             "scene description does not explicitly call for one of these exceptions, the sakayaki+chonmage "
             "look is required.\n\n"
             f"Scene description: {image_prompt}\n\n"

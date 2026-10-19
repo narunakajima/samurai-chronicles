@@ -1176,5 +1176,15 @@
         "video_id": "aQA1mUldTn0"
       }
     ]
+  },
+  "ishikawa_goemon": {
+    "display_name": "Ishikawa Goemon",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep118",
+        "video_id": "jx9uQN_Mcu8"
+      }
+    ]
   }
 }
