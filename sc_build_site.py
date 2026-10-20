@@ -287,6 +287,7 @@ def footer_html() -> str:
       <a class="footer-link" href="{CHANNEL_URL}" target="_blank" rel="noopener">YouTube</a>
       <a class="footer-link" href="/episodes">Episodes</a>
       <a class="footer-link" href="/playlists">Playlists</a>
+      <a class="footer-link" href="/privacy">Privacy</a>
     </div>
     <p class="footer-copy">&copy; 2026 Samurai Chronicles. All rights reserved.</p>
   </footer>"""
