@@ -270,7 +270,7 @@ def cmd_thumb(args):
     bb = tk.getchannel("A").point(lambda a: 255 if a > 20 else 0).getbbox()
     tk = tk.crop(bb)
     W, H = th.size
-    h = int(H * 0.40)                       # 主役より小さく（高さ約40%）
+    h = int(H * args.scale)                 # 主役より小さく（既定は高さ約40%。サブコピーと重なる回は --scale で小さくする）
     w = int(tk.width * h / tk.height)
     tk = tk.resize((w, h), Image.LANCZOS)
     shadow_a = tk.getchannel("A").filter(ImageFilter.GaussianBlur(10)).point(lambda v: int(v * 0.65))
@@ -291,8 +291,9 @@ def cmd_thumb(args):
     d, ds = ImageDraw.Draw(layer), ImageDraw.Draw(sh2)
     for text, font, ty, col in lines:
         tw = font.getbbox(text)[2] - font.getbbox(text)[0]
-        d.text((cx - tw // 2, ty), text, font=font, fill=col)
-        ds.text((cx - tw // 2 + 2, ty + 3), text, font=font, fill=(0, 0, 0, 255))
+        tx = min(cx - tw // 2, W - tw - 12)   # 小さく合成したとき名札が右端で切れないように
+        d.text((tx, ty), text, font=font, fill=col)
+        ds.text((tx + 2, ty + 3), text, font=font, fill=(0, 0, 0, 255))
     out = Image.alpha_composite(out, sh2.filter(ImageFilter.GaussianBlur(3)))
     out = Image.alpha_composite(out, layer)
     out.convert("RGB").save(img_path)
@@ -319,6 +320,7 @@ def main():
     p.set_defaults(fn=cmd_check)
     p = sub.add_parser("thumb", help="サムネイルに Tokio と名札を合成")
     p.add_argument("--image", required=True)
+    p.add_argument("--scale", type=float, default=0.40, help="Tokio の高さ（サムネイル高さに対する比。既定 0.40）")
     p.set_defaults(fn=cmd_thumb)
     args = ap.parse_args()
     args.fn(args)
