@@ -8,3 +8,8 @@ narrator/raw/*
 !narrator/raw/tokio_neutral_base_half_v2.png
 narrator/voice_samples/
 narrator/clips/*_pp.webm
+
+# 学習版（learning/）: 再生成できるものはコミットしない（2026-10-22）
+learning/cache/
+learning/build/
+learning/*.log
