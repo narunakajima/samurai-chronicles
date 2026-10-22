@@ -114,7 +114,7 @@ cd learning && python3 build_video.py ep106 --preview 3:50 4:04   # 字幕の見
 cd learning && rm -f build/ep106.video.done && nohup sh -c 'python3 -u build_video.py ep106 > build_video_ep106.log 2>&1; echo $? > build/ep106.video.done' >/dev/null 2>&1 &
 ```
 
-全編は約10分。出力は Drive の `ep{NNN}/learning/ep{NNN} {日本語タイトル}.mp4`。
+全編は約30分（背景のケンバーンズを含む。作ったケンバーンズは `build/ep{NNN}/kb/` に残り、字幕だけ直したときは使い回すので約13分）。出力は Drive の `ep{NNN}/learning/ep{NNN} {日本語タイトル}.mp4`。
 確認: 長さが音声と同じこと（`ffprobe`）、いくつかの時刻のフレームを切り出して、字幕が帯からはみ出していないか・時刻どおりの場面かを目で見る。
 
 ## STEP 4: ユーザーの確認

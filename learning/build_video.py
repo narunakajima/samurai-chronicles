@@ -19,6 +19,7 @@ import re
 import shutil
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))  # sc_video_gen（Tokio の合成）を使う
@@ -54,6 +55,7 @@ TOKIO_STAY_AFTER = 0.6       # 自己紹介の段落が終わってから、退�
 TOKIO_TEXT_ML = 70           # Tokio がいる間の字幕の左右の余白（右側を Tokio に空ける）
 TOKIO_TEXT_MR = 600
 SFX_VOL = 0.45
+KB_WORKERS = 4  # ケンバーンズの動画を並列で作る数
 # ONE POINT のカード（画面上部の、半透明の黒い板）
 CARD_Y = 90
 CARD_H = 380
@@ -215,6 +217,26 @@ def split_timed(text: str, start: float, end: float) -> list[tuple[str, float, f
         out.append((p, t, t + d))
         t += d
     return out
+
+
+REVERSE = {"zoom_in": "zoom_out", "zoom_out": "zoom_in", "pan_left": "pan_right", "pan_right": "pan_left",
+           "pan_zoom_out_lr": "pan_zoom_out_rl", "pan_zoom_out_rl": "pan_zoom_out_lr"}
+
+
+def kb_plan(episode: dict, scene_id: int, second: bool):
+    """シーンのケンバーンズの動き（effect）と注目点（px, py）を、本編の動画と同じ決め方で返す。
+    infer_zoom_anchor は複数人の画像で左右のパンをランダムに選ぶので、シーン番号で乱数を固定する（作り直しても同じ動き）。"""
+    import random
+    import sc_video_gen as vg
+    sc = next(x for x in episode["scenes"] if x["scene_id"] == scene_id)
+    random.seed(scene_id)
+    px, py, override = vg.infer_zoom_anchor(sc.get("image_prompt", ""), sc.get("character_ref"), sc.get("zoom_anchor"))
+    effect = override or sc.get("ken_burns", "zoom_in")
+    if effect == "static":
+        effect = "zoom_in"
+    if second:
+        effect = REVERSE.get(effect, effect)
+    return effect, (px, py)
 
 
 def build_ass(tl: dict, window=None, tokio_until: float = 0.0) -> tuple[str, list[tuple[float, float, str]]]:
@@ -387,32 +409,66 @@ def main():
     t0, t1 = preview or (0.0, tl["total"])
     ass_text, _ = build_ass(tl, preview, tokio_until=tokio_len if with_tokio else 0.0)
     (work / "subs.ass").write_text(ass_text, encoding="utf-8")
-    # 画像の表: Tokio の区間は別に作るので、その後ろから
-    img_from = tokio_len if with_tokio else t0
-    _, segs = build_ass(tl, (img_from, t1))
+    # 画像の表（全体の時刻）。同じ画像が続く区間は1つにまとめ、つながった1本の動きにする
+    # （区間ごとに動きを作ると、同じ画像なのに境目で拡大率が飛ぶ。冒頭の Tokio →導入→シーン1、通しの案内→通しのシーン1 など）
+    _, segs = build_ass(tl, (t0, t1))
+    runs: list = []
+    for s, e, name in segs:
+        a, b = s + t0, e + t0
+        if runs and runs[-1][0] == name and abs(runs[-1][2] - a) < 0.01:
+            runs[-1][2] = b
+        else:
+            runs.append([name, a, b])
 
     # 画像を 1920x1080 にそろえる（元は 1408x768 など。中央を基準に切り出す）
     frames = work / "frames"
     frames.mkdir(exist_ok=True)
-    names = {name for _, _, name in segs} | {"S01"}
-    for name in names:
+    for name in {r[0] for r in runs}:
         run(["ffmpeg", "-y", "-i", str(ep_dir / "images" / f"{name}.png"), "-vf",
              f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}", "-q:v", "2", str(frames / f"{name}.jpg")])
 
+    # 背景: 各まとまりを、本編と同じケンバーンズ（ゆっくりした拡大・移動）の動画にする（4本並列。作ったものは使い回す）
+    episode = json.loads((BASE_DIR.parent / "episodes" / f"{ep_id}.json").read_text(encoding="utf-8"))
+    kb_dir = work / "kb"
+    kb_dir.mkdir(exist_ok=True)
+    seen: dict = {}
+    jobs = []
+    for name, a, b in runs:
+        n_frames = round(b * FPS) - round(a * FPS)  # 境目を全体の時刻でコマにそろえる（ずれが積み重ならない）
+        second = seen.get(name, 0) > 0  # 同じ画像の2回目（通し）は、逆向きの動きにする
+        seen[name] = seen.get(name, 0) + 1
+        jobs.append((name, n_frames, *kb_plan(episode, int(name[1:]), second)))
+
+    def make_kb(job):
+        name, n_frames, effect, (px, py) = job
+        dst = kb_dir / f"{name}_{effect}_{n_frames}_{px:.2f}_{py:.2f}.mp4"
+        if not dst.exists():
+            vg.make_ken_burns(frames / f"{name}.jpg", dst, n_frames / FPS + 0.001, effect, anchor=(px, py))
+        return dst
+
+    with ThreadPoolExecutor(KB_WORKERS) as ex:
+        kb_clips = list(ex.map(make_kb, jobs))
+
+    if with_tokio:
+        # 冒頭のまとまり（シーン1の画像）の先頭を、Tokio を重ねる区間として切り出し、残りを本体につなぐ
+        tf = round(tokio_len * FPS)
+        first = kb_clips[0]
+        tokio_base = kb_dir / f"{first.stem}_head{tf}.mp4"
+        rest_first = kb_dir / f"{first.stem}_tail{tf}.mp4"
+        for out_p, trim in ((tokio_base, f"trim=end_frame={tf}"), (rest_first, f"trim=start_frame={tf}")):
+            if not out_p.exists():
+                run(["ffmpeg", "-y", "-i", str(first), "-vf", f"{trim},setpts=PTS-STARTPTS", "-c:v", "libx264",
+                     "-crf", "18", "-preset", "veryfast", "-pix_fmt", "yuv420p", str(out_p)])
+        kb_clips[0] = rest_first
     concat = work / "images.txt"
-    rows = []
-    for s, e, name in segs:
-        rows += [f"file '{frames / (name + '.jpg')}'", f"duration {e - s:.3f}"]
-    rows.append(f"file '{frames / (segs[-1][2] + '.jpg')}'")  # concat の仕様で、最後のファイルは繰り返す
-    concat.write_text("\n".join(rows) + "\n", encoding="utf-8")
+    concat.write_text("".join(f"file '{c}'\n" for c in kb_clips), encoding="utf-8")
 
     band = f"drawbox=x=0:y={H - BAND_H}:w={W}:h={BAND_H}:color=black@0.62:t=fill"
     if with_tokio:
-        # 冒頭の区間: シーン1の画像＋帯の上に、Tokio（話すループ・転送エフェクト・名札）を重ねたクリップを作る
+        # 冒頭の区間: シーン1のケンバーンズ＋帯の上に、Tokio（話すループ・転送エフェクト・名札）を重ねたクリップを作る
         tokio_clip = work / "tokio_intro.mp4"
-        run(["ffmpeg", "-y", "-loop", "1", "-i", str(frames / "S01.jpg"), "-t", f"{tokio_len:.3f}",
-             "-vf", f"fps={FPS},format=yuv420p,{band}", "-c:v", "libx264", "-crf", "18", "-preset", "veryfast",
-             "-pix_fmt", "yuv420p", str(tokio_clip)])
+        run(["ffmpeg", "-y", "-i", str(tokio_base), "-vf", f"format=yuv420p,{band}", "-c:v", "libx264", "-crf", "18",
+             "-preset", "veryfast", "-pix_fmt", "yuv420p", str(tokio_clip)])
         vg.TOKIO_MAT_START = TOKIO_MAT_START
         vg.add_tokio_overlay(tokio_clip, TOKIO_EXPR, TOKIO_SIDE, name_tag=True, dur=tokio_len)
 

@@ -43,6 +43,7 @@ GAP_BEFORE_OP = 0.8  # シーンの最後の文から、ワンポイントまで
 GAP_OP_TO_EN = 0.6   # ワンポイントの解説から、その英文をもう一度流すまでの間
 GAP_OPENING = 3.0  # 冒頭の間。動画で Tokio が転送エフェクトで現れ終わってから話し始めるため
 FADE_SAMPLES = 240  # 10ms
+JA_TEMPO = 1.1  # 日本語の話す速さ（音の高さは変えずに速める）。英語に比べて遅く感じるとの指摘で 1.0→1.1（2026-10-22）
 LOUDNESS = "loudnorm=I=-16:TP=-1.5:LRA=11"
 
 
@@ -63,6 +64,17 @@ def fade_edges(pcm: bytes, n: int = FADE_SAMPLES) -> bytes:
         a[i] = int(a[i] * g)
         a[len(a) - 1 - i] = int(a[len(a) - 1 - i] * g)
     return a.tobytes()
+
+
+def ja_tempo(path: Path) -> Path:
+    """日本語の音声を JA_TEMPO 倍の速さにした版を返す（cache に保存して使い回す）。"""
+    if JA_TEMPO == 1.0:
+        return path
+    out = path.with_name(f"{path.stem}_t{int(round(JA_TEMPO * 100))}.wav")
+    if not out.exists():
+        run(["ffmpeg", "-y", "-i", str(path), "-af", f"atempo={JA_TEMPO}",
+             "-ar", str(SAMPLE_RATE), "-ac", "1", "-c:a", "pcm_s16le", str(out)])
+    return out
 
 
 def wav_seconds(path: Path) -> float:
@@ -126,6 +138,7 @@ def main():
     print(f"🎙️  日本語 {len(ja_texts)} 本・英語の文 {sum(len(v) for v in sentences.values())} 文を準備します")
     with ThreadPoolExecutor(WORKERS) as ex:
         ja = dict(zip(ja_texts, ex.map(ja_audio, ja_texts)))
+        ja = dict(zip(ja, ex.map(ja_tempo, ja.values())))
     print("✅ 日本語の音声ができました")
     with ThreadPoolExecutor(WORKERS) as ex:
         clip_list = list(ex.map(lambda n: cut_scene_sentences(scene_wav[n], narration[n]), sorted(scene_wav)))
