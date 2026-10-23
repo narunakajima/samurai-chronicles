@@ -54,7 +54,7 @@ TOKIO_TEXT_ML = 70           # Tokio がいる間の字幕の余白。Tokio と�
 TOKIO_TEXT_MR = 600
 SFX_VOL = 0.45
 OUTRO_DUR = 8.0  # 最後のロゴ（本編のアウトロと同じ尺・見せ方。学習版はロゴのみで、英語の投稿予定の文は入れない）
-LOGO_W = 330
+LOGO_W = 495  # 330 では小さいとの指摘で1.5倍（2026-10-23）
 KB_WORKERS = 4  # ケンバーンズの動画を並列で作る数
 # ONE POINT のカード（画面上部の、半透明の黒い板）
 CARD_Y = 90
@@ -525,7 +525,7 @@ def main():
             done.add(wi)
     with_outro = t1 >= total - 0.01  # 最後まで含むときは、ロゴのアウトロを付ける
     if with_outro:
-        outro = work / "outro.mp4"
+        outro = work / f"outro_{LOGO_W}.mp4"
         if not outro.exists():
             run(["ffmpeg", "-y", "-f", "lavfi", "-i", f"color=c=0x0a0a0a:size={W}x{H}:rate={FPS}:d={OUTRO_DUR}",
                  "-i", str(vg.LOGO_PATH), "-filter_complex",

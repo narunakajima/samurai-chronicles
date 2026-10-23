@@ -17,7 +17,9 @@
     "voice_style": "First person, present tense, short reporting sentences. Same speaking pace as the current narration (do not slow down).",
     "catchphrases": {
       "opening": "This is Tokio Kamiya, with a dispatch from {place}, {year}.",
-      "closing": "The watch is ticking. Until the next report. Tokio Kamiya, reporting."
+      "subscribe_cta": "Subscribe, and the next dispatch will find you.",
+      "closing": "The watch is ticking. Until the next report. Tokio Kamiya, reporting.",
+      "_cta_note": "S20 は subscribe_cta → closing の順に、どちらも毎回そのまま使う（2026-10-23〜、ep119から。ユーザー決定。旧 'you know where to leave your address' は伝わりにくく廃止）"
     },
     "running_mystery": "A page in his grandfather's notebook, in Tokio's own handwriting, reads only '1868'. Hinted at occasionally in closings.",
     "reporters_note": "S17-S19 insight scenes are framed as 'Reporter's Note': how the event connects to modern Japanese culture and values, in Tokio's own opinion.",

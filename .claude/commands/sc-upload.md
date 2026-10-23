@@ -197,6 +197,55 @@ STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べ�
 
 ---
 
+## STEP 3.7 — 学習版（英語で聴く日本史）の公開・関連動画・コメント返信（2026-10-23追加）
+
+SC の本編が**公開された回と同じ EP 番号**の学習版を、STEP 3.5 の関連動画の設定と**同じタイミング**で公開する。
+学習版は別チャンネル「英語で聴く日本史」（`UCWOFhTRNmbVeVWgwF9DfoNA`、`@eigo-de-nihonshi`）。制作は `/sc-learn`（SC 制作の直後）。
+公開してよいのは、**ユーザーが事前に OK を出した回だけ**（`learn_targets.py --approve`）。手順書: `learning/YOUTUBE_SETUP.md`。
+
+### 手順
+
+1. 対象を出す:
+   ```bash
+   python3 learning/learn_targets.py
+   ```
+   - 「アップロード対象」: SC が公開済みで、学習版の公開 OK があり、まだ上げていない回
+   - 「関連動画の設定対象」: 上げ済みで、ショートの関連動画が未設定の回
+   - 「待ち」: 学習版はあるが、SC が未公開か、公開 OK がない回（参考。ユーザーに伝えるだけ。勝手に公開しない）
+   どちらも 0 件なら、このSTEPは終了（Chrome は開かない）。
+
+2. アップロード（**即時公開**。本編・サムネイル・ショートを一緒に上げる）。対象の回ごとに:
+   ```bash
+   cd learning && python3 learn_upload.py ep{NNN} --now
+   ```
+   認証したチャンネルが学習版でなければ止まる。成功すると `learning/uploads/ep{NNN}.json` に動画 ID が残り、関連動画の設定対象になる。
+   失敗（認証・容量など）した回は、理由を完了報告に書いて次へ進む（SC のアップロードには影響しない）。
+
+3. ショートの関連動画（Chrome の操作。**STEP 3.5 と同じ方法**。`studio_related_video.js`）:
+   - STEP 3.5 の手順2（Chrome を用意）・手順5（後片付け）は共通。STEP 3.5 で Chrome を開いていれば、そのまま続けて使う
+   - チャンネルを切り替える: アバター →「アカウントを切り替える」で **「英語で聴く日本史」（`UCWOFhTRNmbVeVWgwF9DfoNA`）** を選ぶ。
+     切り替え後、`studio.youtube.com/channel/` の URL が上記の ID になっていることを確認する。**他チャンネルの動画は絶対に編集しない**
+   - 手順1で出た「関連動画の設定対象」のショートごとに、STEP 3.5 の手順4と同じく `studio.youtube.com/video/{SHORTS_ID}/edit` を開き、
+     スクリプトを実行する。**検索語（KW）は、`learn_targets.py` が出した日本語の題名**（例: `織田信長 — 消えた遺体の謎`。
+     スクリプトは検索欄に値を直接入れるので、日本語でも使える）。`#Shorts` の付かない本編が選ばれる
+   - 結果を確認し（`before`／`rel` が、その回の学習版の本編のタイトルと一致するか）、確認できた回だけ記録する:
+     ```bash
+     python3 learning/learn_targets.py --mark-related ep{NNN}
+     ```
+   - 想定と違う画面で `err` が続く場合は、無理に操作せず中断して報告する（SC・LW・KL と同じ）
+
+4. 学習版チャンネルの未返信コメントに**日本語で**返信する（**確認なしで**。STEP 3.6 と同じ進め方）:
+   ```bash
+   python3 learning/learn_comment_reply.py list                     # 未返信コメントを JSON で出力
+   python3 learning/learn_comment_reply.py post <JSONパス>           # {"thread_id": "返信文"} を投稿
+   ```
+   返信の方針は STEP 3.6 の「無難第一」と同じ（日本語、1〜2文、丁寧で温かく。視聴・コメントへの感謝＋内容に軽く触れる程度。
+   書かないこと・見送るものも STEP 3.6 のとおり。英語の表現や発音についての質問で、無難に答えられないものは見送る）。
+   返信済みは `data/learn_comment_replies.json` に残る。
+
+5. 完了報告に、アップロードした回（URL）・関連動画を設定した回・返信した件数・見送ったコメント・待ちの回（理由つき）を書く。
+   `learning/uploads/ep*.json` と `data/learn_comment_replies.json` に変更が出るので、STEP 4 で一緒にコミットする。
+
 ## STEP 4 — コミット・プッシュ確認（2026-07-29〜: 自動化済み）
 
 `sc_sns_up.py` は `run()` の末尾（サイト再ビルド後）で `commit_remaining_changes()` を実行し、

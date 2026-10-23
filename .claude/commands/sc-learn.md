@@ -7,7 +7,10 @@ SC の英語エピソードから、日本人学習者向けの教材音声（�
 
 **対象:** 当面は Tokio モード（`"narrator": "tokio"`）のエピソード。訳が一人称（僕）の記者口調なので、従来方式（三人称）の回には合わない。
 
-**公開はしない。** このコマンドは音声を作って、ユーザーの確認を待つところまで。
+**実行のタイミング:** SC 本編の制作（動画生成・字幕生成）が終わったら、**続けて**実行する（2026-10-23 ユーザー決定）。
+流れは `/sc-new → … → 字幕生成 → /sc-learn（台本・音声・動画・サムネイル・ショート）→ /sc-upload（SC を予約）`。
+
+**公開はしない。** このコマンドは作って、ユーザーの確認を待つところまで。公開は、SC の本編が公開されたタイミングで行う（STEP 5）。
 
 ---
 
@@ -117,10 +120,63 @@ cd learning && rm -f build/ep106.video.done && nohup sh -c 'python3 -u build_vid
 全編は約30分（背景のケンバーンズを含む。作ったケンバーンズは `build/ep{NNN}/kb/` に残り、字幕だけ直したときは使い回すので約13分）。出力は Drive の `ep{NNN}/learning/ep{NNN} {日本語タイトル}.mp4`。
 確認: 長さが音声と同じこと（`ffprobe`）、いくつかの時刻のフレームを切り出して、字幕が帯からはみ出していないか・時刻どおりの場面かを目で見る。
 
+## STEP 3.6: サムネイルとショート動画（毎回必ず作る）
+
+目的は**学習版の本編に誘導すること**だけ。コンセプトは毎回共通（2026-10-23 ユーザー決定）:
+「日本史を聴くだけで、英語が聞き取れるようになる（英語耳に）」をはっきり伝える。
+共通の文言・レイアウト・流れは `learning/build_promo.py` に固定してあり、回ごとに変わる内容だけを台本の `promo` 欄に書く。
+
+```json
+"promo": {
+  "thumb_scene": 1,                       // サムネイルの背景にするシーン（主役が大きく写る印象的な画像）
+  "thumb_en": "Honnoji is burning.",      // サムネイルに見せる本編の英文（短い一文）
+  "short": {
+    "scene": 5, "idx": 4,                 // クイズの答えにする本編の英文（シーン番号と、文の番号 0始まり）
+    "image_scene": 1,                     // 背景にする縦型の画像（images_shorts/ にあるもの）
+    "quiz_title": "信長の「是非に及ばず」", // 画面の問い（字幕。漢字でよい）
+    "quiz_ja": "信長の最後の言葉、ぜひにおよばず。英語で言えますか？",  // Tokio が読む問い（読みが揺れる語はかな）
+    "phrase": "nothing could be done about it",  // 答えの英文の中の表現（英文に含まれていること）
+    "phrase_ja": "是非に及ばず（どうしようもない）",
+    "explain_ja": "どうしようもない、という意味の決まった言い方です。…"  // Tokio の一言解説（40〜60字）
+  }
+}
+```
+
+- クイズは「その回の有名な言葉・場面を、英語で言える？」の形にする（つかみ）。答えは本編の英文そのもの
+- かな書きにした語は `display_map` にも登録する（字幕は漢字）
+
+```bash
+cd learning && python3 build_promo.py thumb ep106    # サムネイル（1280x720）
+cd learning && python3 build_promo.py short ep106    # ショート（縦型、約40秒。2分ほどで出る）
+```
+
+出力は Drive の `ep{NNN}/learning/ep{NNN}_learning_thumbnail.png` と `ep{NNN}_learning_short.mp4`。
+確認: サムネイルは主役の顔がコピーや Tokio に隠れていないか。ショートは場面ごとのフレームを切り出して、字幕・名札の位置を見る。
+
 ## STEP 4: ユーザーの確認
 
 - 完成した mp3 のパスと、`chapters.txt` の内容（各パートの開始時刻）を報告する
 - **ユーザーが聴いて OK を出すまで、公開に進まない。** 直しの依頼は、台本（`lessons/`）を直して STEP 2 をやり直す（変えた部分だけが作り直される）
+
+## STEP 5: 公開（`/sc-upload` の STEP 3.7 で行う）
+
+**公開の仕組み（ユーザー決定 2026-10-23）:** 学習版は、SC の本編が公開されたあとの `/sc-upload` の中で、**同じ EP 番号**の回を
+「アップロード（即時公開）→ ショートの関連動画（Chrome）→ コメント返信（日本語）」まで一気に行う。常駐のジョブは使わない。
+`/sc-upload` は SC の関連動画の設定（STEP 3.5）と同じタイミングで、公開済みの SC の回に対応する学習版を拾う。
+
+**この `/sc-learn` の終わりに、次をする:**
+1. ユーザーが動画・サムネイル・ショートを確認して **OK を出した**ら、公開 OK を記録する（OK がなければ、記録しない＝公開されない）:
+   ```bash
+   cd learning && python3 learn_targets.py --approve ep106
+   ```
+2. 内容だけ確認したいときは（通信しない）: `cd learning && python3 learn_upload.py ep106 --dry-run`
+3. 初回の認証と Google Cloud の準備は `learning/YOUTUBE_SETUP.md`。
+
+**関連動画は API では設定できない**（Studio のパソコン版のみ。同じチャンネルの動画にしか設定できない）ので、Chrome で行う。
+ショートの説明欄の URL は、クリックできないことがあるので、本編への誘導は関連動画で行う。
+
+確認用に、非公開でアップロードして Studio で見ることもできる（公開 OK は不要）: `cd learning && python3 learn_upload.py ep106`
+動画 ID は `learning/uploads/ep{NNN}.json` に残る。
 
 ## 参考: ファイルの役割
 
@@ -129,6 +185,9 @@ cd learning && rm -f build/ep106.video.done && nohup sh -c 'python3 -u build_vid
 | `learning/lessons/ep{NNN}.json` | 台本 |
 | `learning/build_lesson.py` | 日本語音声の生成、英文の切り出し、並べて1本にする（動画用の timeline.json も出す） |
 | `learning/build_video.py` | シーン画像に英文と日本語訳の字幕を載せて、動画にする（冒頭に Tokio を登場させ、英単語をハイライト） |
+| `learning/learn_upload.py` | 学習版チャンネルへのアップロード（本編・サムネイル・ショート） |
+| `learning/learn_targets.py` | 公開 OK の記録、公開・関連動画の対象の洗い出し |
+| `learning/learn_comment_reply.py` | 学習版チャンネルの未返信コメントの取得・日本語での返信 |
 | `learning/words.py` | 英語の各文の単語ごとの時刻を、手元の Whisper で取る（台本の単語に当てはめる） |
 | `learning/tts_ja.py` | 日本語の音声生成（Tokio の声。PCM にそろえて保存） |
 | `learning/clips.py` | 本編の音声から、1文ずつ切り出す（書き起こしで照合） |
