@@ -62,6 +62,10 @@ def _numwords(s: str) -> str:
         s = re.sub(rf"\b{_TENS[t]}\b", str(t * 10), s)
     for n in range(19, -1, -1):
         s = re.sub(rf"\b{_ONES[n]}\b", str(n), s)
+    s = re.sub(r"\b(twent|thirt|fort|fift|sixt|sevent|eight|ninet)ies\b",
+               lambda m: {"twent": "20", "thirt": "30", "fort": "40", "fift": "50", "sixt": "60", "sevent": "70", "eight": "80", "ninet": "90"}[m.group(1)] + "s", s)
+    s = re.sub(r"\b(\w+teenth)\b", lambda m: {"thirteenth": "13th", "fourteenth": "14th", "fifteenth": "15th", "sixteenth": "16th",
+                                                "seventeenth": "17th", "eighteenth": "18th", "nineteenth": "19th"}.get(m.group(1), m.group(1)), s)
     return s
 
 
@@ -81,6 +85,27 @@ def _match_score(target: str, heard: str) -> float:
     if not t or not h:
         return 0.0
     return difflib.SequenceMatcher(None, t, h, autojunk=False).ratio()
+
+
+def _score_ignoring_names(target: str, heard: str) -> float:
+    """書き起こしが固有名詞を聞き違えた箇所（Seimei's → Same as など）だけを無視した一致度。
+    狙った文の大文字始まりの語が、書き起こしの別の語（3語まで）に置き換わっているところだけを、両方から外して比べる。"""
+    T, H = target.split(), heard.split()
+    nT, nH = [_norm(w) for w in T], [_norm(w) for w in H]
+    kt, kh = [], []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, nT, nH, autojunk=False).get_opcodes():
+        if tag == "replace" and (j2 - j1) <= 3 and all(T[k][:1].isupper() for k in range(i1, i2)):
+            continue
+        kt += nT[i1:i2]
+        kh += nH[j1:j2]
+    a, b = "".join(kt), "".join(kh)
+    if len(a) < 0.6 * len(_norm(target)) or not a or not b:   # 外し過ぎ（文の大半が一致していない）なら、この方法は使わない
+        return 0.0
+    return difflib.SequenceMatcher(None, a, b, autojunk=False).ratio()
+
+
+def _score(target: str, heard: str) -> float:
+    return max(_match_score(target, heard), _score_ignoring_names(target, heard))
 
 
 def _edge_ok(target: str, heard: str) -> bool:
@@ -144,8 +169,21 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
 
     tiers = [candidates(sil), candidates(silences(scene_wav, SENSITIVE_DB, SENSITIVE_MIN))]
 
+    def prev_tail_in_head(prev: str, heard: str) -> bool:
+        """次の文の書き起こしの冒頭に、前の文の最後の語が混じっているか（前の文の終わりが早すぎた印）。"""
+        pw = _words(prev)[-3:]
+        pt, hn = "".join(pw), _norm(heard)
+        if len(pt) < 8:
+            return False
+        head = hn[:len(pt) + 8]
+        return difflib.SequenceMatcher(None, pt, head, autojunk=False).find_longest_match(0, len(pt), 0, len(head)).size >= 0.7 * len(pt)
+
+    starts = []
     start = speech_start
-    for i, sent in enumerate(sents):
+    i = 0
+    extended = set()
+    while i < len(sents):
+        sent = sents[i]
         tmp = CACHE_DIR / f"tmp_{paths[i].stem}.wav"
         best = None
         tried = []
@@ -165,7 +203,7 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
                 tried.append(e)
                 _cut(scene_wav, start, e, tmp)
                 heard = _transcribe(tmp)
-                score = _match_score(sent, heard)
+                score = _score(sent, heard)
                 if not _edge_ok(sent, heard):
                     score -= EDGE_PENALTY
                 if best is None or score > best[0]:
@@ -179,19 +217,38 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
                 # 書き起こしが途中で切れた可能性があるので、いちばん良かった候補だけ、念押しでやり直す
                 _cut(scene_wav, start, best[1], tmp)
                 heard = _transcribe(tmp, strong=True)
-                score = _match_score(sent, heard)
+                score = _score(sent, heard)
                 if not _edge_ok(sent, heard):
                     score -= EDGE_PENALTY
                 if score > best[0]:
                     best = (score, best[1], heard)
             if best is not None and best[0] >= ACCEPT:
                 break
+        if best is not None and best[0] < ACCEPT:
+            # 書き起こしが途中で切れただけ（文の前半は合っていて、音声の長さも文に見合う）なら採用する
+            tn, hn = _norm(sent), _norm(best[2])
+            exp_dur = span * (len(sent) + 1) / len(narration)
+            if (len(hn) >= 20 and difflib.SequenceMatcher(None, tn[:len(hn)], hn, autojunk=False).ratio() >= 0.9
+                    and best[1] - start >= 0.85 * exp_dur):
+                best = (ACCEPT, best[1], best[2])
         tmp.unlink(missing_ok=True)
         if best is None or best[0] < ACCEPT:
+            # 前の文の終わりが早すぎて、その最後の語が、この文の冒頭に混じって聞こえている（ep114: 「Seimei among them.」）。
+            # 前の文の終わりを、次の切れ目まで後ろにずらして、この文をやり直す
+            if i > 0 and i not in extended and best is not None and prev_tail_in_head(sents[i - 1], best[2]):
+                later = sorted({c for cs in tiers for c in cs if c > start + 0.2})
+                if later:
+                    extended.add(i)
+                    start = later[0]
+                    _cut(scene_wav, starts[i - 1], start, paths[i - 1])
+                    print(f"  （前の文の終わりを {start:.1f}s に延ばしました）")
+                    continue
             print(f"切り出しが一致しません（一致度 {best[0] if best else 0:.2f}）: {sent}\n  聞こえた文: {best[2] if best else ''}")
             sys.exit(1)
         _cut(scene_wav, start, best[1], paths[i])
+        starts.append(start)
         start = best[1]
+        i += 1
     return paths
 
 
