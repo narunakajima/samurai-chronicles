@@ -48,9 +48,26 @@ def silences(path: Path, db: str = SILENCE_DB, min_len: float = SILENCE_MIN) -> 
     return list(zip(st, en))
 
 
+_ONES = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
+         "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+
+
+def _numwords(s: str) -> str:
+    """0〜99 の英単語（twenty-nine など）を数字にそろえる。書き起こしが「29」と書くことがあるため（ep113）。"""
+    for t in range(2, 10):
+        for o in range(1, 10):
+            s = re.sub(rf"\b{_TENS[t]}[- ]{_ONES[o]}\b", str(t * 10 + o), s)
+    for t in range(2, 10):
+        s = re.sub(rf"\b{_TENS[t]}\b", str(t * 10), s)
+    for n in range(19, -1, -1):
+        s = re.sub(rf"\b{_ONES[n]}\b", str(n), s)
+    return s
+
+
 def _norm(s: str) -> str:
     """英字と数字だけにそろえる（大文字小文字・長音符・ハイフン・句読点の揺れを無視する）。"""
-    s = unicodedata.normalize("NFKD", s.lower())
+    s = unicodedata.normalize("NFKD", _numwords(s.lower()))
     return re.sub(r"[^a-z0-9]", "", s)
 
 

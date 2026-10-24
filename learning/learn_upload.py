@@ -83,6 +83,7 @@ def build_metadata(ep_id: str) -> dict:
         "・最後に、英語だけの通し聴き\n\n"
         f"▼ チャプター\n{ch}\n\n"
         + (f"▼ 元の英語版（歴史ドキュメンタリー）\n{en_url}\n\n" if en_url else "")
+        + ("\n".join(tl["bgm_credits"]) + "（BGM は「通しで聴く」の区間）\n\n" if tl.get("bgm_credits") else "")
         + "語り手: Tokio Kamiya（過去の日本から現地報告を送る時空リポーター）\n"
         "チャンネル: 英語で聴く日本史（英語版: Samurai Chronicles）"
     )
@@ -159,7 +160,7 @@ def upload_video(youtube, path: Path, title: str, description: str, tags: list, 
     return resp["id"]
 
 
-def schedule_existing(youtube, ep_id: str):
+def schedule_existing(youtube, ep_id: str, publish_at=None):
     """アップロード済みの本編・ショートを、SC 本編の公開日時（scheduled_at）に公開予定にする。過ぎていれば即公開。"""
     from datetime import datetime, timedelta, timezone
     from learn_targets import load_rec
@@ -170,7 +171,7 @@ def schedule_existing(youtube, ep_id: str):
     if not (rec.get("main_id") and rec.get("short_id")):
         sys.exit(f"❌ {ep_id}: アップロード済みの記録がありません")
     sc = json.loads((SC_DIR / "episodes" / f"{ep_id}.json").read_text(encoding="utf-8"))
-    sched = sc.get("scheduled_at")
+    sched = publish_at or sc.get("scheduled_at")   # --publish-at があればそれを使う（学習版は SC の4時間後の 07:00 にする運用）
     if not sched:
         sys.exit(f"❌ {ep_id}: SC 本編の scheduled_at がありません")
     jst = timezone(timedelta(hours=9))
@@ -215,7 +216,7 @@ def main():
         ap.error("エピソード番号（例: ep106）が必要です")
     ep_id = a.episode
     if a.schedule_existing:
-        schedule_existing(get_youtube_client(), ep_id)
+        schedule_existing(get_youtube_client(), ep_id, a.publish_at)
         return
     meta = build_metadata(ep_id)
     out_dir = DRIVE / ep_id / "learning"

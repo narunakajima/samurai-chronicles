@@ -102,6 +102,42 @@ def ja_audio(text: str) -> Path:
     return path
 
 
+def mix_full_bgm(narr_wav: Path, out_wav: Path, episode: dict, ep_id: str, events: list) -> list:
+    """「通し」（英語だけの区間）に、SC 本編と同じ BGM を重ねる（2026-10-24 ユーザー指示）。
+    曲の構成・音量・曲間のクロスフェードは sc_video_gen と同じ。通しの外（導入・各シーン・締め）には入れない。
+    BGM が見つからないときは、ナレーションだけの音声をそのまま使う。戻り値は、説明欄に載せる CC BY のクレジット行。"""
+    sys.path.insert(0, str(SC_EPISODES.parent))
+    import sc_video_gen as vg
+    full = [e for e in events if e["kind"] == "full_scene"]
+    paths = vg.resolve_bgm_paths(episode, ep_id)
+    files = [p for p in paths.values()]
+    if not full or not files or not all(Path(p).exists() for p in files):
+        print("  ⚠️ BGM が見つからないので、通しは BGM なしになります")
+        shutil.copyfile(narr_wav, out_wav)
+        return []
+    t0 = full[0]["start"]
+    t1 = full[-1]["end"] + GAP_FULL_SCENE            # 最後のシーンのあとの間でフェードアウトを終える
+    start_of = {e["scene"]: e["start"] for e in full}
+    offsets = [start_of[s["scene_id"]] - t0 for s in episode["scenes"]]
+    segs = vg.compute_bgm_segments(paths, episode["scenes"], offsets, 0.0, t1 - t0)
+    segs = [(p, a + t0, b + t0) for p, a, b in segs]
+    filters = [f"[0:a]aformat=sample_rates={SAMPLE_RATE}:channel_layouts=mono[n]"]
+    labels = []
+    for i, (p, a, b) in enumerate(segs):
+        filters.append(vg._bgm_segment_filter(1 + i, a, b, i == 0, i == len(segs) - 1, f"b{i}"))
+        labels.append(f"[b{i}]")
+    filters.append(f"[n]{''.join(labels)}amix=inputs={1 + len(segs)}:duration=first:normalize=0,"
+                   f"aformat=sample_rates={SAMPLE_RATE}:channel_layouts=mono[out]")
+    cmd = ["ffmpeg", "-y", "-i", str(narr_wav)]
+    for p, _, _ in segs:
+        cmd += ["-i", str(p)]
+    run(cmd + ["-filter_complex", ";".join(filters), "-map", "[out]", "-c:a", "pcm_s16le", str(out_wav)])
+    print(f"  🎵 通し（{t0:.0f}s〜{t1:.0f}s）に BGM を重ねました（{len(segs)}曲）")
+    used = {str(Path(p).relative_to(vg.DRIVE_BASE)) for p, _, _ in segs}
+    lib = json.loads((SC_EPISODES.parent / "bgm_library.json").read_text(encoding="utf-8"))
+    return [x["credit"] for x in lib if x.get("path") in used and x.get("credit")]
+
+
 def main():
     if len(sys.argv) != 2:
         print("使い方: python3 build_lesson.py ep106")
@@ -206,10 +242,11 @@ def main():
     work = BASE_DIR / "build" / ep_id
     work.mkdir(parents=True, exist_ok=True)
     full_wav = work / "lesson.wav"
+    narr_wav = work / "lesson_narr.wav"   # BGM を入れる前のナレーションだけの音声（作り直しのたびに、ここから BGM を重ねる）
     times = []
     events = []  # 動画用のタイムライン
     t = 0.0
-    with wave.open(str(full_wav), "wb") as out:
+    with wave.open(str(narr_wav), "wb") as out:
         out.setnchannels(1)
         out.setsampwidth(2)
         out.setframerate(SAMPLE_RATE)
@@ -233,8 +270,9 @@ def main():
                         sen["end"] = round(t + sen["end"], 3)
                 events.append(ev)
                 t += dur
+    bgm_credits = mix_full_bgm(narr_wav, full_wav, episode, ep_id, events)
     (work / "timeline.json").write_text(
-        json.dumps({"episode_id": ep_id, "title_ja": lesson["title_ja"], "total": round(t, 3),
+        json.dumps({"episode_id": ep_id, "title_ja": lesson["title_ja"], "total": round(t, 3), "bgm_credits": bgm_credits,
                     "chapters": [{"name": n, "start": round(times[i], 3)} for n, i in chapters],
                     "events": events}, ensure_ascii=False, indent=1), encoding="utf-8")
 

@@ -14,6 +14,7 @@
   python3 build_promo.py short ep106
 """
 import json
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -361,14 +362,20 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     vg.TOKIO_H_RATIO = SHORT_TOKIO_H
     sides_expr = sc.get("tokio_expression", "neutral")
     expr = f"{sides_expr}_talk" if (vg.TOKIO_CLIP_DIR / f"tokio_{sides_expr}_talk.webm").exists() else sides_expr
+    bg_idle = work / "bg_idle.mp4"
+    shutil.copyfile(bg, bg_idle)          # 重ねる前の背景を取っておく（カウントダウンの間だけ、黙っている Tokio に差し替える）
     vg.add_tokio_overlay(bg, expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False)
+    vg.add_tokio_overlay(bg_idle, sides_expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False)
+    # 1・2・3 の合図の間は、Tokio は話さない（口パクが不自然との指摘。2026-10-24）。問いを言い終えてから、答えの英文が流れるまで
+    mute_a, mute_b = events["quiz"][1] + 0.05, events["answer"][0]
 
     out_local = work / f"{ep_id}_learning_short.mp4"
     sfx_ms = int(vg.TOKIO_MAT_START * 1000)
-    run(["ffmpeg", "-y", "-i", bg, "-i", wav, "-i", vg._tokio_sfx("in"),
+    run(["ffmpeg", "-y", "-i", bg, "-i", bg_idle, "-i", wav, "-i", vg._tokio_sfx("in"),
          "-filter_complex",
-         f"[0:v]format=yuv420p,ass=short.ass[v];[1:a]aformat=sample_rates=44100:channel_layouts=stereo,"
-         f"loudnorm=I=-14:TP=-1.5:LRA=11[m];[2:a]aformat=sample_rates=44100:channel_layouts=stereo,"
+         f"[0:v][1:v]overlay=enable='between(t,{mute_a:.3f},{mute_b:.3f})'[w];"
+         f"[w]format=yuv420p,ass=short.ass[v];[2:a]aformat=sample_rates=44100:channel_layouts=stereo,"
+         f"loudnorm=I=-14:TP=-1.5:LRA=11[m];[3:a]aformat=sample_rates=44100:channel_layouts=stereo,"
          f"adelay={sfx_ms}|{sfx_ms},volume=0.45[s];[m][s]amix=inputs=2:normalize=0:duration=first[a]",
          "-map", "[v]", "-map", "[a]", "-t", f"{total:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
          "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "44100",  # loudnorm は内部でレートを上げるので、必ず 44.1kHz に戻す（96kHz のままだとスマホで鳴らないことがある）

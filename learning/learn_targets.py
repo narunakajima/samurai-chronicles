@@ -59,7 +59,9 @@ def targets(now: datetime) -> dict:
         rec = load_rec(eid)
         published = is_public(ep, now)
         if rec.get("main_id") and rec.get("short_id"):
-            if not rec.get("related_video_set") and published:
+            when = rec.get("publish_at")   # 学習版自身の公開予定（SC の4時間後など）。過ぎるまで関連動画は選べない
+            live = datetime.strptime(when, "%Y-%m-%d %H:%M").replace(tzinfo=JST) <= now if when else published
+            if not rec.get("related_video_set") and live:
                 related.append({"episode_id": eid, "main_id": rec["main_id"], "shorts_id": rec["short_id"],
                                 "search": title_ja(eid)})
             continue

@@ -214,12 +214,12 @@ SC の本編が**公開された回と同じ EP 番号**の学習版を、STEP 3
    - 「待ち」: 学習版はあるが、SC が未公開か、公開 OK がない回（参考。ユーザーに伝えるだけ。勝手に公開しない）
    どちらも 0 件なら、このSTEPは終了（Chrome は開かない）。
 
-2. アップロード（**SC 本編と同じ日時に公開予定**。本編・サムネイル・ショートを一緒に上げる）。対象の回ごとに、`scheduled_at`（`learn_targets.py` が表示）を指定する:
+2. アップロード（**SC の公開日の 07:00 JST に公開予定**。本編・サムネイル・ショートを一緒に上げる）。対象の回ごとに、公開日時は **SC の公開日の 07:00 JST**（SC の `scheduled_at` の4時間後。`learn_targets.py` が `scheduled_at` を表示する）:
    ```bash
-   cd learning && python3 learn_upload.py ep{NNN} --publish-at "{SC の scheduled_at}"
+   cd learning && python3 learn_upload.py ep{NNN} --publish-at "{SC の公開日} 07:00"
    ```
    認証したチャンネルが学習版でなければ止まる。成功すると `learning/uploads/ep{NNN}.json` に動画 ID が残り、関連動画の設定対象になる。
-   ユーザーが動画を確認して OK を出したあとなので、予約公開にしてよい。すでに非公開でアップ済みの回は `python3 learn_upload.py ep{NNN} --schedule-existing`（SC の公開日時に予約。過ぎていればその場で公開）。
+   ユーザーが動画を確認して OK を出したあとなので、予約公開にしてよい。すでにアップ済みの回の公開日時を変えるときは `python3 learn_upload.py ep{NNN} --schedule-existing --publish-at "{日付} 07:00"`（過ぎていればその場で公開）。
    失敗（認証・容量など）した回は、理由を完了報告に書いて次へ進む（SC のアップロードには影響しない）。
 
 3. ショートの関連動画（Chrome の操作。**STEP 3.5 と同じ方法**。`studio_related_video.js`）:
