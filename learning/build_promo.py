@@ -360,21 +360,25 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     # add_tokio_overlay は横型（1920x1080）の画面の大きさで Tokio の高さと名札の位置を計算するので、縦型の大きさに差し替える
     vg.OUTPUT_W, vg.OUTPUT_H = SW, SH
     vg.TOKIO_H_RATIO = SHORT_TOKIO_H
-    sides_expr = sc.get("tokio_expression", "neutral")
+    sides_expr = "neutral"   # ショートは常に neutral。moved などは「話す」と「待機」で姿勢が大きく違い、切り替えで二重に見える（2026-10-24）
     expr = f"{sides_expr}_talk" if (vg.TOKIO_CLIP_DIR / f"tokio_{sides_expr}_talk.webm").exists() else sides_expr
     bg_idle = work / "bg_idle.mp4"
-    shutil.copyfile(bg, bg_idle)          # 重ねる前の背景を取っておく（カウントダウンの間だけ、黙っている Tokio に差し替える）
+    shutil.copyfile(bg, bg_idle)          # 重ねる前の背景を取っておく（日本語のセリフ以外は、黙っている Tokio に切り替える）
     vg.add_tokio_overlay(bg, expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False)
     vg.add_tokio_overlay(bg_idle, sides_expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False)
     # 1・2・3 の合図の間は、Tokio は話さない（口パクが不自然との指摘。2026-10-24）。問いを言い終えてから、答えの英文が流れるまで
-    mute_a, mute_b = events["quiz"][1] + 0.05, events["answer"][0]
+    # さらに、Tokio が話すのは日本語のセリフ（問い・解説・案内）の間だけにする。英文の答えやもう一度の間は待機の動きに戻す（2026-10-24）。
+    # 切り替えは、話す映像と待機の映像を 0.25 秒かけて混ぜる（ぱっと入れ替えると不自然なため）。最初は登場の効果があるので、話す映像から始める
+    talk = [(-1.0, events["quiz"][1])] + [events[k] for k in ("explain", "cta")]
+    tw = "+".join(f"clip((T-{a - 0.1:.3f})/0.25,0,1)*clip(({b + 0.15:.3f}-T)/0.25,0,1)" for a, b in talk)
+    mix_expr = f"A*({tw})+B*(1-({tw}))"
 
     out_local = work / f"{ep_id}_learning_short.mp4"
     sfx_ms = int(vg.TOKIO_MAT_START * 1000)
     run(["ffmpeg", "-y", "-i", bg, "-i", bg_idle, "-i", wav, "-i", vg._tokio_sfx("in"),
          "-filter_complex",
-         f"[0:v][1:v]overlay=enable='between(t,{mute_a:.3f},{mute_b:.3f})'[w];"
-         f"[w]format=yuv420p,ass=short.ass[v];[2:a]aformat=sample_rates=44100:channel_layouts=stereo,"
+         f"[0:v]format=yuv420p[ta];[1:v]format=yuv420p[ti];[ta][ti]blend=all_expr='{mix_expr}'[w];"
+         f"[w]ass=short.ass[v];[2:a]aformat=sample_rates=44100:channel_layouts=stereo,"
          f"loudnorm=I=-14:TP=-1.5:LRA=11[m];[3:a]aformat=sample_rates=44100:channel_layouts=stereo,"
          f"adelay={sfx_ms}|{sfx_ms},volume=0.45[s];[m][s]amix=inputs=2:normalize=0:duration=first[a]",
          "-map", "[v]", "-map", "[a]", "-t", f"{total:.3f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",

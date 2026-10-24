@@ -160,6 +160,39 @@ def upload_video(youtube, path: Path, title: str, description: str, tags: list, 
     return resp["id"]
 
 
+def short_description(meta: dict, main_id: str) -> str:
+    return (f"日本史を聴くだけで、英語耳に。\n▶ 本編（約{meta['minutes']}分）: https://youtu.be/{main_id}\n\n"
+            f"{meta['title_ja']}を、英語で聴いて、日本語の訳と解説で確かめる英語リスニング教材です。")
+
+
+def replace_short(youtube, ep_id: str):
+    """作り直したショートを、同じ公開日時で上げ直す（動画ファイルは差し替えられないため）。古いショートは、公開予定を解除して非公開に戻す。
+    **動画の完全な削除はしない**（取り決め。古いほうの削除は、ユーザーが Studio で行う）。本編には触らない。"""
+    from learn_targets import load_rec, save_rec
+    rec = load_rec(ep_id)
+    if not (rec.get("approved") and rec.get("main_id") and rec.get("short_id")):
+        sys.exit(f"❌ {ep_id}: 公開 OK とアップロード済みの記録が必要です")
+    meta = build_metadata(ep_id)
+    short_mp4 = DRIVE / ep_id / "learning" / f"{ep_id}_learning_short.mp4"
+    if not short_mp4.exists():
+        sys.exit(f"❌ ショートがありません: {short_mp4}")
+    old = rec["short_id"]
+    info = youtube.videos().list(part="snippet,status", id=old).execute()["items"]
+    if not info or info[0]["snippet"]["channelId"] != CHANNEL_ID:
+        sys.exit(f"❌ {old} は学習版チャンネルの動画として確認できません。削除しません")
+    publish_at = rec.get("publish_at")
+    new_id = upload_video(youtube, short_mp4, meta["short_title"], short_description(meta, rec["main_id"]),
+                          meta["tags"] + ["Shorts"], publish_at, now=not publish_at)
+    st = info[0]["status"]
+    youtube.videos().update(part="status", body={"id": old, "status": {
+        "privacyStatus": "private", "selfDeclaredMadeForKids": False,
+        "containsSyntheticMedia": st.get("containsSyntheticMedia", SYNTHETIC)}}).execute()   # publishAt を付けない＝公開予定の解除
+    rec.update({"short_id": new_id, "related_video_set": False})
+    save_rec(ep_id, rec)
+    print(f"  ✓ ショートを上げ直しました: https://youtu.be/{new_id}（公開予定 {publish_at or '即時'}）\n"
+          f"  古いショート https://youtu.be/{old} は、公開予定を解除して非公開にしました。不要なら Studio で削除してください")
+
+
 def schedule_existing(youtube, ep_id: str, publish_at=None):
     """アップロード済みの本編・ショートを、SC 本編の公開日時（scheduled_at）に公開予定にする。過ぎていれば即公開。"""
     from datetime import datetime, timedelta, timezone
@@ -204,6 +237,7 @@ def main():
     ap.add_argument("--publish-at", help='予約公開の日時（JST）。例: "2026-10-28 20:00"')
     ap.add_argument("--now", action="store_true", help="即時公開")
     ap.add_argument("--schedule-existing", action="store_true", help="アップロード済みの2本を、SC 本編の公開日時に公開予定にする")
+    ap.add_argument("--replace-short", action="store_true", help="アップロード済みのショートを削除して、作り直したものを上げ直す")
     ap.add_argument("--dry-run", action="store_true", help="通信せず、内容と素材の確認だけ")
     ap.add_argument("--auth-only", action="store_true", help="認証とチャンネルの確認だけ")
     a = ap.parse_args()
@@ -215,6 +249,9 @@ def main():
     if not a.episode:
         ap.error("エピソード番号（例: ep106）が必要です")
     ep_id = a.episode
+    if a.replace_short:
+        replace_short(get_youtube_client(), ep_id)
+        return
     if a.schedule_existing:
         schedule_existing(get_youtube_client(), ep_id, a.publish_at)
         return
@@ -261,8 +298,7 @@ def main():
         upload_thumbnail(youtube, main_id, thumb)   # 電話番号の確認前は 403 になる（本編の記録は残る）
         rec["thumb_set"] = True
         save_rec(ep_id, rec)
-    short_desc = (f"日本史を聴くだけで、英語耳に。\n▶ 本編（約{meta['minutes']}分）: https://youtu.be/{main_id}\n\n"
-                  f"{meta['title_ja']}を、英語で聴いて、日本語の訳と解説で確かめる英語リスニング教材です。")
+    short_desc = short_description(meta, main_id)
     short_id = upload_video(youtube, short_mp4, meta["short_title"], short_desc, meta["tags"] + ["Shorts"], a.publish_at, a.now)
     rec.update({"short_id": short_id, "publish_at": a.publish_at, "now": a.now, "related_video_set": False})
     save_rec(ep_id, rec)
