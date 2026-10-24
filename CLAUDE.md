@@ -219,7 +219,8 @@ SC の英語エピソードを、日本人学習者が英語耳を育てる教�
 - **チャンネルのアイコンは確定**（2026-10-23）: `learning/channel/icon.png`（800×800。SC のロゴ＋上の縁に「SAMURAI CHRONICLES」を円弧、
   下の帯に「英語で聴く／日本史」。`python3 learning/build_channel_art.py icon-logo "英語で聴く|日本史@SAMURAI CHRONICLES"` で再生成）。
   **バナーも作成済み**: `learning/channel/banner.jpg`（SC のバナー `sc_banner_original.jpg` の侍の兜の真上に、チャンネル名「英語で聴く日本史」を重ねたもの。`python3 learning/build_channel_art.py banner-sc` で再生成）
-- 公開前に決めること（未決）: AI による合成音声であることの表示方法、YouTube の規約（合成音声・量産コンテンツ）の確認
+- **AI 表示の方針（2026-10-24 ユーザー決定）:** アップロード時の合成メディアの申告（`containsSyntheticMedia=True`）のみ。説明欄への AI の注記は入れない。
+  YouTube の規約（改変・合成コンテンツの申告、2025-07 の非独創的コンテンツ）は調査済み。収益化を申請する時期に、最新の規約を読み直す
 - 学習版のチャンネルには、SC の英語チャンネル向けのルール（英語字幕、画像に文字を描かせない、AI関連の文言を含めない 等）を
   そのまま適用しない。学習版固有のルールはこの節に書く
 
