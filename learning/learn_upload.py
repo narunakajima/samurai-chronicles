@@ -15,6 +15,8 @@
   python3 learn_upload.py ep106                                    非公開でアップロード（確認用）
   python3 learn_upload.py ep106 --publish-at "2026-10-28 20:00"    予約公開（JST）
   python3 learn_upload.py ep106 --now                              即時公開
+  python3 learn_upload.py ep106 --schedule-existing                アップロード済み（非公開）の2本を、SC 本編の公開日時に公開予定にする
+                                                                   （SC がすでに公開済みなら、その場で公開）
 
 記録: アップロードした動画の ID は learning/uploads/ep{NNN}.json に残す（learn_targets.py と共通）。
 公開（--now / --publish-at）は、learn_targets.py --approve で「公開 OK」が記録された回だけ。
@@ -157,6 +159,37 @@ def upload_video(youtube, path: Path, title: str, description: str, tags: list, 
     return resp["id"]
 
 
+def schedule_existing(youtube, ep_id: str):
+    """アップロード済みの本編・ショートを、SC 本編の公開日時（scheduled_at）に公開予定にする。過ぎていれば即公開。"""
+    from datetime import datetime, timedelta, timezone
+    from learn_targets import load_rec
+    from sc_sns_up import parse_publish_at
+    rec = load_rec(ep_id)
+    if not rec.get("approved"):
+        sys.exit(f"❌ 公開の OK が記録されていません。`python3 learn_targets.py --approve {ep_id}` のあとに実行してください")
+    if not (rec.get("main_id") and rec.get("short_id")):
+        sys.exit(f"❌ {ep_id}: アップロード済みの記録がありません")
+    sc = json.loads((SC_DIR / "episodes" / f"{ep_id}.json").read_text(encoding="utf-8"))
+    sched = sc.get("scheduled_at")
+    if not sched:
+        sys.exit(f"❌ {ep_id}: SC 本編の scheduled_at がありません")
+    jst = timezone(timedelta(hours=9))
+    future = datetime.strptime(sched, "%Y-%m-%d %H:%M").replace(tzinfo=jst) > datetime.now(jst)
+    status = {"selfDeclaredMadeForKids": False, "containsSyntheticMedia": SYNTHETIC}
+    if future:
+        status.update({"privacyStatus": "private", "publishAt": parse_publish_at(sched)})
+        mode = f"予約公開 {sched} JST"
+    else:
+        status["privacyStatus"] = "public"
+        mode = f"即時公開（SC の公開時刻 {sched} を過ぎている）"
+    for label, vid in (("本編", rec["main_id"]), ("ショート", rec["short_id"])):
+        youtube.videos().update(part="status", body={"id": vid, "status": status}).execute()
+        print(f"  ✓ {label} https://youtu.be/{vid} → {mode}")
+    rec.update({"publish_at": sched, "now": not future})
+    from learn_targets import save_rec
+    save_rec(ep_id, rec)
+
+
 def upload_thumbnail(youtube, video_id: str, path: Path):
     from googleapiclient.http import MediaFileUpload
     print(f"  サムネイル: {path.name} ...")
@@ -169,6 +202,7 @@ def main():
     ap.add_argument("episode", nargs="?", help="例: ep106")
     ap.add_argument("--publish-at", help='予約公開の日時（JST）。例: "2026-10-28 20:00"')
     ap.add_argument("--now", action="store_true", help="即時公開")
+    ap.add_argument("--schedule-existing", action="store_true", help="アップロード済みの2本を、SC 本編の公開日時に公開予定にする")
     ap.add_argument("--dry-run", action="store_true", help="通信せず、内容と素材の確認だけ")
     ap.add_argument("--auth-only", action="store_true", help="認証とチャンネルの確認だけ")
     a = ap.parse_args()
@@ -180,6 +214,9 @@ def main():
     if not a.episode:
         ap.error("エピソード番号（例: ep106）が必要です")
     ep_id = a.episode
+    if a.schedule_existing:
+        schedule_existing(get_youtube_client(), ep_id)
+        return
     meta = build_metadata(ep_id)
     out_dir = DRIVE / ep_id / "learning"
     main_mp4 = out_dir / f"{ep_id} {meta['title_ja']}.mp4"

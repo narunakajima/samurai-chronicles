@@ -48,7 +48,7 @@ def title_ja(ep_id: str) -> str:
 
 
 def targets(now: datetime) -> dict:
-    """upload: SC が公開済みで、学習版の公開 OK があり、まだアップロードしていない回
+    """upload: 学習版の公開 OK があり、まだアップロードしていない回（公開日時は SC 本編に合わせる）
        related: アップロード済み（本編・ショートとも公開）で、関連動画が未設定の回
        waiting: 学習版はあるが、SC がまだ公開されていない／OK が出ていない回（参考）"""
     upload, related, waiting = [], [], []
@@ -59,16 +59,15 @@ def targets(now: datetime) -> dict:
         rec = load_rec(eid)
         published = is_public(ep, now)
         if rec.get("main_id") and rec.get("short_id"):
-            if not rec.get("related_video_set"):
+            if not rec.get("related_video_set") and published:
                 related.append({"episode_id": eid, "main_id": rec["main_id"], "shorts_id": rec["short_id"],
                                 "search": title_ja(eid)})
             continue
-        if published and rec.get("approved"):
-            upload.append({"episode_id": eid, "title_ja": title_ja(eid), "sc_url": ep.get("youtube_url", "")})
+        if rec.get("approved"):
+            upload.append({"episode_id": eid, "title_ja": title_ja(eid), "sc_url": ep.get("youtube_url", ""),
+                           "scheduled_at": ep.get("scheduled_at", "")})
         else:
             why = []
-            if not published:
-                why.append(f"SC が未公開（{ep.get('scheduled_at', '予約なし')}）")
             if not rec.get("approved"):
                 why.append("公開 OK 未記録")
             waiting.append({"episode_id": eid, "reason": "、".join(why)})
@@ -88,7 +87,7 @@ def main():
             rec = load_rec(eid)
             rec["approved"] = True
             save_rec(eid, rec)
-            print(f"  ✓ {eid}: 公開 OK を記録しました（SC の公開後の /sc-upload で、学習版が公開されます）")
+            print(f"  ✓ {eid}: 公開 OK を記録しました（次の /sc-upload で、SC 本編と同じ日時に公開予定でアップロードされます）")
         return
     if a.mark_related:
         for eid in a.mark_related:
@@ -103,7 +102,7 @@ def main():
     if a.json:
         print(json.dumps(t, ensure_ascii=False, indent=2))
         return
-    print(f"アップロード対象（SC が公開済み・公開 OK あり）: {len(t['upload'])}件")
+    print(f"アップロード対象（公開 OK あり・未アップロード）: {len(t['upload'])}件")
     for r in t["upload"]:
         print(f"  {r['episode_id']}  {r['title_ja']}")
     print(f"関連動画の設定対象: {len(t['related'])}件")
