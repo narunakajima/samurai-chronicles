@@ -83,6 +83,24 @@ def tokio_still(work: Path) -> Image.Image:
     return tk.crop(tk.getchannel("A").point(lambda a: 255 if a > 20 else 0).getbbox())
 
 
+def lift_dark(im: Image.Image) -> Image.Image:
+    """暗部を持ち上げる（動画の TOKIO_LIFT_CURVE 0/0.06 0.35/0.42 1/1 と同じ折れ線）。"""
+    lut = [int(round(255 * (0.06 + v / 255 / 0.35 * 0.36 if v / 255 <= 0.35 else 0.42 + (v / 255 - 0.35) / 0.65 * 0.58))) for v in range(256)]
+    r, g, b, a = im.split()
+    return Image.merge("RGBA", (r.point(lut), g.point(lut), b.point(lut), a))
+
+
+def gold_glow(tk: Image.Image, radius: int, gain: float = 2.0) -> Image.Image:
+    """Tokio の形をぼかして金色に塗った光のレイヤー（tk と同じ大きさ。はみ出す分は余白を足してある）。"""
+    pad = radius * 3
+    a = Image.new("L", (tk.width + 2 * pad, tk.height + pad), 0)
+    a.paste(tk.getchannel("A"), (pad, pad))
+    a = a.filter(ImageFilter.GaussianBlur(radius)).point(lambda v: min(255, int(v * gain)))
+    g = Image.new("RGBA", a.size, (240, 200, 110, 255))
+    g.putalpha(a)
+    return g, pad
+
+
 def text_layer(size, items):
     """太い縁取り＋影つきの文字を描いたレイヤーを返す。items = [(x, y, 文字, フォント, 色, 縁の太さ)]"""
     layer = Image.new("RGBA", size, (0, 0, 0, 0))
@@ -127,11 +145,16 @@ def cmd_thumb(ep_id: str):
     tk = tokio_still(work)
     h = int(TH * 0.66)
     tk = tk.resize((int(tk.width * h / tk.height), h), Image.LANCZOS)
-    sh_a = tk.getchannel("A").filter(ImageFilter.GaussianBlur(12)).point(lambda v: int(v * 0.7))
-    sh = Image.new("RGBA", tk.size, (0, 0, 0, 255))
-    sh.putalpha(sh_a)
     x_t = TW - tk.width - 10
-    img.alpha_composite(sh, (x_t + 6, TH - h + 4))
+    if json.loads((SC_DIR / "episodes" / f"{ep_id}.json").read_text(encoding="utf-8")).get("tokio_glow"):
+        gl, pad = gold_glow(tk, 14)     # 暗い背景でも埋もれないよう、黒い影の代わりに金色の光（ep119〜）
+        img.alpha_composite(gl, (x_t - pad, TH - h - pad))
+        tk = lift_dark(tk)
+    else:
+        sh_a = tk.getchannel("A").filter(ImageFilter.GaussianBlur(12)).point(lambda v: int(v * 0.7))
+        sh = Image.new("RGBA", tk.size, (0, 0, 0, 255))
+        sh.putalpha(sh_a)
+        img.alpha_composite(sh, (x_t + 6, TH - h + 4))
     img.alpha_composite(tk, (x_t, TH - h))
     # 名札（頭の上。本編のサムネイル・動画と同じ書体と色）
     ft1, ft2 = ImageFont.truetype(FONT_TAG, 46), ImageFont.truetype(FONT_TAG, 30)
@@ -229,7 +252,11 @@ def cmd_short(ep_id: str):
         print(f"英文の切り出しがありません（先に build_lesson.py を実行）: {clip}")
         sys.exit(1)
     words = word_times(clip, en_text)
-    ja_tr = next(s for s in lesson["scenes"] if s["scene"] == sp["scene"])["sentences"][sp["idx"]]
+    _trs = next(s for s in lesson["scenes"] if s["scene"] == sp["scene"])["sentences"]
+    _k = sp["idx"]
+    while _k > 0 and _trs[_k] is None:   # 訳が null の文は、まとまりの先頭の訳を使う
+        _k -= 1
+    ja_tr = _trs[_k]
     total_min = round(json.loads((BASE_DIR / "build" / ep_id / "timeline.json").read_text())["total"] / 60)
     cta_ja = f"この続きは、{total_min}分の本編で。日本史を聴くだけで、英語耳になります。本編は、関連動画からどうぞ。"
 
@@ -364,8 +391,9 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     expr = f"{sides_expr}_talk" if (vg.TOKIO_CLIP_DIR / f"tokio_{sides_expr}_talk.webm").exists() else sides_expr
     bg_idle = work / "bg_idle.mp4"
     shutil.copyfile(bg, bg_idle)          # 重ねる前の背景を取っておく（日本語のセリフ以外は、黙っている Tokio に切り替える）
-    vg.add_tokio_overlay(bg, expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False)
-    vg.add_tokio_overlay(bg_idle, sides_expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False)
+    glow = bool(episode.get("tokio_glow"))
+    vg.add_tokio_overlay(bg, expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False, glow=glow)
+    vg.add_tokio_overlay(bg_idle, sides_expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False, glow=glow)
     # 1・2・3 の合図の間は、Tokio は話さない（口パクが不自然との指摘。2026-10-24）。問いを言い終えてから、答えの英文が流れるまで
     # さらに、Tokio が話すのは日本語のセリフ（問い・解説・案内）の間だけにする。英文の答えやもう一度の間は待機の動きに戻す（2026-10-24）。
     # 切り替えは、話す映像と待機の映像を 0.25 秒かけて混ぜる（ぱっと入れ替えると不自然なため）。最初は登場の効果があるので、話す映像から始める

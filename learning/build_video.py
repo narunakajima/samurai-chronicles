@@ -324,21 +324,32 @@ def build_ass(tl: dict, window=None, tokio_windows=()) -> tuple[str, list[tuple[
         for e in evs:
             by_idx.setdefault(e["idx"], {})[e["kind"]] = e
         idxs = sorted(by_idx)
+        # 訳が null でまとめた文（"joined"）は、前の組に続けて1枚の字幕にする
+        units: list[dict] = []
+        for i in idxs:
+            g = by_idx[i]
+            if g["en"].get("joined") and units:
+                units[-1]["ens"].append(g["en"])
+            else:
+                units.append(dict(g, ens=[g["en"]]))
         op = next((e for e in ev if e["kind"] == "op" and e["scene"] == n), None)
         op_en = next((e for e in ev if e["kind"] == "op_en" and e["scene"] == n), None)
         pairs_end = op["start"] if op else scene_end[n]
-        for k, i in enumerate(idxs):
-            g = by_idx[i]
-            nxt = by_idx[idxs[k + 1]] if k + 1 < len(idxs) else None
+        for k, g in enumerate(units):
+            nxt = units[k + 1] if k + 1 < len(units) else None
             # 次の組が始まる時刻（合図の音があればその開始、なければ英語の開始）で、この組を消す
-            until = (nxt["chime"]["start"] if nxt and "chime" in nxt else nxt["en"]["start"]) if nxt else pairs_end
+            until = (nxt["chime"]["start"] if nxt and "chime" in nxt else nxt["ens"][0]["start"]) if nxt else pairs_end
             ja_txt = esc(disp(g["ja"]["text"])) if "ja" in g else None
-            en_txt = esc(g["en"]["text"])
+            ens = g["ens"]
+            en_txt = " ".join(esc(x["text"]) for x in ens)
+            # まとめた文の単語の時刻は、最初の文の開始からの秒に直してつなぐ
+            en_words = [dict(w, s=w["s"] + x["start"] - ens[0]["start"], e=w["e"] + x["start"] - ens[0]["start"])
+                        for x in ens for w in x.get("words", [])] if len(ens) > 1 else ens[0].get("words")
             if ja_txt:
                 # 合図の音と同時に、訳を帯の上側に出す。英語が始まったら、その下に英文を足す（訳は動かさない）
-                pair_text(g["chime"]["start"], g["en"]["start"], until, en_txt, ja_txt, g["en"].get("words"))
+                pair_text(g["chime"]["start"], ens[0]["start"], until, en_txt, ja_txt, en_words)
             else:
-                text(g["en"]["start"], until, en_txt, None, words=g["en"].get("words"))
+                text(ens[0]["start"], until, en_txt, None, words=en_words)
 
         if op:
             # ONE POINT のカード（画面の上部）: 見出し・表現・意味。解説とその英文が終わるまで出しておく
@@ -542,7 +553,8 @@ def main():
         run(["ffmpeg", "-y", *src, "-vf", f"format=yuv420p,{band}", "-c:v", "libx264", "-crf", "18",
              "-preset", "veryfast", "-pix_fmt", "yuv420p", str(base)])
         w["dur"] = (F(w["b"]) - F(w["a"])) / FPS
-        vg.add_tokio_overlay(base, w["expr"], w["side"], name_tag=w["tag"], dur=w["dur"])
+        vg.add_tokio_overlay(base, w["expr"], w["side"], name_tag=w["tag"], dur=w["dur"],
+                             glow=bool(episode.get("tokio_glow")))
         w["clip"] = base
     done = set()
     for c, wi in pieces:

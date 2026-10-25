@@ -35,6 +35,7 @@ GAP_JA_TO_CLIP = 0.4
 GAP_CHIME = 0.25  # 合図の音のあと、日本語の訳が始まるまでの間
 CHIME = BASE_DIR / "chime.wav"  # 日本語の訳の前に鳴らす合図の音
 GAP_AFTER_CLIP = 1.0
+GAP_IN_GROUP = 0.5  # まとめた文（訳が null の文）どうしの間。短い文が続くときのテンポのため（2026-10-25 ユーザー決定。ep119〜）
 GAP_SCENE_END = 1.5
 GAP_INTRO_PARA = 0.8
 GAP_FULL_SCENE = 1.0
@@ -166,6 +167,9 @@ def main():
         if len(sentences[n]) != len(sc["sentences"]):
             print(f"シーン{n}: 英語 {len(sentences[n])} 文に対して、訳が {len(sc['sentences'])} 本です")
             sys.exit(1)
+        if sc["sentences"] and sc["sentences"][0] is None:
+            print(f"シーン{n}: 最初の文の訳を null にはできません（null は「前の文と一緒に訳す」という意味）")
+            sys.exit(1)
         ja_texts.append(sc["cue"])
         ja_texts += [t for t in sc["sentences"] if t]
         if sc.get("one_point"):
@@ -205,14 +209,17 @@ def main():
         chapters.append((f"シーン{n}", len(seq)))
         audio(ja[sc["cue"]], kind="cue", scene=n, text=sc["cue"])
         gap(GAP_AFTER_CUE)
-        for k, (text, clip, en_text) in enumerate(zip(sc["sentences"], clips[n], sentences[n])):
+        trs = sc["sentences"]
+        for k, (text, clip, en_text) in enumerate(zip(trs, clips[n], sentences[n])):
+            # 訳が null の文は、前の文と1つのまとまり（訳は前の文の1本が、まとまり全体を訳す）。
+            # まとまりは「合図 → 日本語 → 英語（続けて）」の順に流す
             if text:
                 audio(CHIME, kind="chime", scene=n, idx=k)
                 gap(GAP_CHIME)
                 audio(ja[text], kind="ja", scene=n, idx=k, text=text)
                 gap(GAP_JA_TO_CLIP)
-            audio(clip, kind="en", scene=n, idx=k, text=en_text, words=words[n][k])
-            gap(GAP_AFTER_CLIP)
+            audio(clip, kind="en", scene=n, idx=k, text=en_text, words=words[n][k], **({"joined": True} if text is None else {}))
+            gap(GAP_IN_GROUP if (k + 1 < len(trs) and trs[k + 1] is None) else GAP_AFTER_CLIP)
         op = sc.get("one_point")
         if op:  # ワンポイント: 使える英語表現の解説 → その表現を含む英文をもう一度
             k = op["idx"]

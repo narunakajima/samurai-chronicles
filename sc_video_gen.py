@@ -533,6 +533,13 @@ TOKIO_IN_LEN = 4.0          # 登場アセットの長さ（秒）。以降は�
 TOKIO_OUT_DUR = 1.6         # 退場エフェクトの長さ（秒）
 TOKIO_SFX_DIR = BASE_DIR / "narrator" / "sfx"   # 効果音（FFmpegで自作合成。外部素材なし）
 TOKIO_SFX_VOL = 0.45
+# 暗い画面でも Tokio（青灰色のコート）が埋もれないよう、背後に淡い金色の光を足す（2026-10-25〜。ep119 から）。
+# 既定はオフ（公開済みの回を作り直しても見た目が変わらない）。episode JSON の "tokio_glow": true で回ごとにオンにする
+TOKIO_GLOW = False
+TOKIO_GLOW_PAD = 36         # 光の広がり（px）。素材の外側にこの幅だけ透明の余白を足してから光らせる
+TOKIO_GLOW_SIGMA = 15       # 光のぼかし
+TOKIO_GLOW_GAIN = 2.0       # 光の強さ（ぼかした透明度に掛ける。輪郭の近くが濃くなる）
+TOKIO_LIFT_CURVE = "0/0.06 0.35/0.42 1/1"   # Tokio にだけかける暗部の持ち上げ（強すぎると顔がぼやける）
 
 
 def _tokio_effect_vf(mode: str, th: int) -> str:
@@ -560,6 +567,15 @@ def _tokio_effect_vf(mode: str, th: int) -> str:
     a = f"clip(max(alpha(X,Y)*{vis},max(255*{spark},120*{line})),0,255)"
     return (f"format=gbrap,geq=r='{ch('r', 235)}':g='{ch('g', 205)}':b='{ch('b', 130)}':a='{a}',"
             f"format=yuva420p")
+
+
+def _tokio_glow_vf(src: str, out: str) -> str:
+    """[src] の Tokio の形（透明度）を広げてぼかし、金色の光のレイヤー [out] にするフィルター。
+    素材の外側に透明の余白（TOKIO_GLOW_PAD）を足すので、レイヤーは Tokio より左右・上に PAD ずつ大きい。"""
+    g = TOKIO_GLOW_PAD
+    return (f"[{src}]alphaextract,pad=iw+{2 * g}:ih+{g}:{g}:{g}:color=black,gblur=sigma={TOKIO_GLOW_SIGMA},"
+            f"format=gbrap,geq=r=240:g=200:b=110:a='clip(r(X,Y)*{TOKIO_GLOW_GAIN},0,255)',"
+            f"format=yuva420p[{out}];")
 
 
 def _tokio_sfx(kind: str) -> Path:
@@ -687,9 +703,10 @@ def validate_tokio(ep: dict, scenes: list, scene_durations: list) -> list:
 
 
 def add_tokio_overlay(clip: Path, expression: str, side: str, name_tag: bool = False, dur: float = None,
-                      fx_in: bool = True, fx_out: bool = True):
+                      fx_in: bool = True, fx_out: bool = True, glow: bool = None):
     """Ken Burns クリップ(1920x1080)に Tokio を重ねて上書きする。side: 'left'|'right'。
-    TOKIO_MATERIALIZE のときは、登場（冒頭）と退場（クロスフェード前）に転送風エフェクトを付ける。"""
+    TOKIO_MATERIALIZE のときは、登場（冒頭）と退場（クロスフェード前）に転送風エフェクトを付ける。
+    glow: 背後に金色の光を足し、Tokio の暗部を持ち上げる（None なら TOKIO_GLOW。episode JSON の "tokio_glow"）。"""
     loop = _tokio_loop_clip(expression)
     th = int(OUTPUT_H * TOKIO_H_RATIO)
     tw = int(th * 720 / 960)
@@ -708,24 +725,40 @@ def add_tokio_overlay(clip: Path, expression: str, side: str, name_tag: bool = F
         ps = (TOKIO_IN_LEN - OV) if fx_in else 0.0           # 通常ループの開始
         pe = (te + OV) if fx_out else (dur + 1.0)             # 通常ループの終了（trim。端のコマが抜けないよう余裕を持たせる）
         pen = te if fx_out else (dur + 1.0)                   # 通常ループを重ねる区間の終わり（退場と重ならない）
-        chain = f"[1:v]scale=-2:{th},split={len(labels)}" + "".join(f"[{l}]" for l in labels) + ";"
+        glow = TOKIO_GLOW if glow is None else glow           # オフのときの文字列は、従来と同じ
+        gx = (TOKIO_MARGIN - TOKIO_GLOW_PAD) if side == "left" else f"W-w-{TOKIO_MARGIN - TOKIO_GLOW_PAD}"   # 光のレイヤーは左右に PAD ずつ大きい
+        lift = f",format=gbrap,curves=all='{TOKIO_LIFT_CURVE}',format=yuva420p" if glow else ""
+
+        def seg_end(name):
+            """区間 name の出力。glow のときは、Tokio 本体と光のレイヤー（{name}g）に分ける。"""
+            if not glow:
+                return f"[{name}];"
+            return f"[{name}r];[{name}r]split[{name}][{name}x];" + _tokio_glow_vf(f"{name}x", f"{name}g")
+
+        def ov(base, seg, en, out):
+            pre = ""
+            if glow:   # 光を先に重ねてから Tokio を重ねる
+                pre = f"{base}[{seg}g]overlay=x={gx}:y=H-h:enable='{en}':eof_action=pass[{seg}b];"
+                base = f"[{seg}b]"
+            return pre + f"{base}[{seg}]overlay=x={x}:y=H-h:enable='{en}':eof_action=pass{out}"
+
+        chain = f"[1:v]scale=-2:{th}{lift},split={len(labels)}" + "".join(f"[{l}]" for l in labels) + ";"
         if fx_in:
-            chain += f"[ti]trim=end={TOKIO_IN_LEN},{_tokio_effect_vf('in', th)}[ent];"
-        chain += f"[tp]trim=start={ps}:end={pe:.3f},{rt}[plain];"
+            chain += f"[ti]trim=end={TOKIO_IN_LEN},{_tokio_effect_vf('in', th)}" + seg_end("ent")
+        chain += f"[tp]trim=start={ps}:end={pe:.3f},{rt}" + seg_end("plain")
         if fx_out:
             chain += (f"[tq]trim=start={te:.3f}:end={te + TOKIO_OUT_DUR + OV:.3f},setpts=PTS-STARTPTS,"
-                      f"{_tokio_effect_vf('out', th)},setpts=PTS+{te:.3f}/TB[exit];")
+                      f"{_tokio_effect_vf('out', th)},setpts=PTS+{te:.3f}/TB" + seg_end("exit"))
         base = "[0:v]"
         if fx_in:
-            chain += f"{base}[ent]overlay=x={x}:y=H-h:enable='lt(t,{TOKIO_IN_LEN})':eof_action=pass[v1];"
+            chain += ov(base, "ent", f"lt(t,{TOKIO_IN_LEN})", "[v1];")
             base = "[v1]"
-        plain_ov = f"{base}[plain]overlay=x={x}:y=H-h:enable='between(t,{ps},{pen:.3f})':eof_action=pass"
+        plain_en = f"between(t,{ps},{pen:.3f})"
         if fx_out:
-            chain += plain_ov + "[v2];"
-            chain += (f"[v2][exit]overlay=x={x}:y=H-h:"
-                      f"enable='between(t,{te:.3f},{te + TOKIO_OUT_DUR + OV})':eof_action=pass")
+            chain += ov(base, "plain", plain_en, "[v2];")
+            chain += ov("[v2]", "exit", f"between(t,{te:.3f},{te + TOKIO_OUT_DUR + OV})", "")
         else:
-            chain += plain_ov
+            chain += ov(base, "plain", plain_en, "")
     else:
         chain = f"[1:v]scale=-2:{th}[t];[0:v][t]overlay=x={x}:y=H-h:shortest=1"
     if name_tag:
@@ -1646,7 +1679,7 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 fx_in, fx_out = tokio_fx_flags(ep, scenes, i)
                 add_tokio_overlay(out_clip, expr, side,
                                   name_tag=(sid == min(ep["tokio_scenes"])), dur=dur,
-                                  fx_in=fx_in, fx_out=fx_out)
+                                  fx_in=fx_in, fx_out=fx_out, glow=bool(ep.get("tokio_glow")))
             clip_paths.append((out_clip, dur))
 
         if not clip_paths:

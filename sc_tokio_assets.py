@@ -273,12 +273,25 @@ def cmd_thumb(args):
     h = int(H * args.scale)                 # 主役より小さく（既定は高さ約40%。サブコピーと重なる回は --scale で小さくする）
     w = int(tk.width * h / tk.height)
     tk = tk.resize((w, h), Image.LANCZOS)
-    shadow_a = tk.getchannel("A").filter(ImageFilter.GaussianBlur(10)).point(lambda v: int(v * 0.65))
-    blk = Image.new("RGBA", tk.size, (0, 0, 0, 255))
-    blk.putalpha(shadow_a)
     x, y = W - w - 14, H - h
     sh = Image.new("RGBA", th.size, (0, 0, 0, 0))
-    sh.alpha_composite(blk, (x + 4, y + 3))
+    if args.glow:
+        # 暗い背景でも埋もれないよう、黒い影の代わりに金色の光を敷き、暗部を持ち上げる（動画の tokio_glow と同じ。ep119〜）
+        pad = 42
+        ga = Image.new("L", (tk.width + 2 * pad, tk.height + pad), 0)
+        ga.paste(tk.getchannel("A"), (pad, pad))
+        ga = ga.filter(ImageFilter.GaussianBlur(10)).point(lambda v: min(255, int(v * 2.0)))
+        gl = Image.new("RGBA", ga.size, (240, 200, 110, 255))
+        gl.putalpha(ga)
+        sh.alpha_composite(gl, (x - pad, y - pad))
+        lut = [int(round(255 * (0.06 + v / 255 / 0.35 * 0.36 if v / 255 <= 0.35 else 0.42 + (v / 255 - 0.35) / 0.65 * 0.58))) for v in range(256)]
+        r_, g_, b_, a_ = tk.split()
+        tk = Image.merge("RGBA", (r_.point(lut), g_.point(lut), b_.point(lut), a_))
+    else:
+        shadow_a = tk.getchannel("A").filter(ImageFilter.GaussianBlur(10)).point(lambda v: int(v * 0.65))
+        blk = Image.new("RGBA", tk.size, (0, 0, 0, 255))
+        blk.putalpha(shadow_a)
+        sh.alpha_composite(blk, (x + 4, y + 3))
     out = Image.alpha_composite(th, sh)
     out.alpha_composite(tk, (x, y))
     # 名札（頭の上）
@@ -321,6 +334,7 @@ def main():
     p = sub.add_parser("thumb", help="サムネイルに Tokio と名札を合成")
     p.add_argument("--image", required=True)
     p.add_argument("--scale", type=float, default=0.40, help="Tokio の高さ（サムネイル高さに対する比。既定 0.40）")
+    p.add_argument("--glow", action="store_true", help="黒い影の代わりに金色の光を敷く（episode JSON が tokio_glow のとき。ep119〜）")
     p.set_defaults(fn=cmd_thumb)
     args = ap.parse_args()
     args.fn(args)
