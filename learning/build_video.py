@@ -439,8 +439,10 @@ def main():
     cues = sorted((e for e in ev if e["kind"] == "cue"), key=lambda e: e["start"])
     to_full = next(e for e in ev if e["kind"] == "to_full")
     fulls = sorted((e for e in ev if e["kind"] == "full_scene"), key=lambda e: e["start"])
+    # 冒頭の Tokio は、導入とシーン1の見どころの説明が終わるまで、出たまま話す（2026-10-25 ユーザー指示。ep117 から。それ以前は最初の段落で退場）。
+    # 導入の終わりで退場し、すぐシーン1で登場し直すと、転送の効果が短い間に2回出て忙しいため。退場は、見どころの説明が終わった直後に始める
     windows = [
-        dict(a=0.0, b=intro0["end"] + TOKIO_STAY_AFTER + out_pad, sid=cues[0]["scene"], tag=True),
+        dict(a=0.0, b=cues[0]["end"] + 0.3 + out_pad, sid=cues[0]["scene"], tag=True),
         dict(a=cues[-1]["start"], b=to_full["start"], sid=cues[-1]["scene"], tag=False),
         dict(a=fulls[0]["start"], b=fulls[1]["start"], sid=fulls[0]["scene"], tag=False),
         dict(a=fulls[-1]["start"], b=total, sid=fulls[-1]["scene"], tag=False),
