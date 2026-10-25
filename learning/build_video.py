@@ -267,6 +267,27 @@ def build_ass(tl: dict, window=None, tokio_windows=()) -> tuple[str, list[tuple[
         ml, mr = {"right": (TOKIO_TEXT_ML, TOKIO_TEXT_MR), "left": (TOKIO_TEXT_MR, TOKIO_TEXT_ML)}.get(sd, (0, 0))
         add(start, end, fit(en, ja, translation, width=(W - ml - mr) if sd else None, words=words), ml=ml, mr=mr)
 
+    def pair_text(t_ja, t_en, until, en, ja, words=None):
+        """日本語の訳と英文を、帯の中の決まった位置に置く（2026-10-24 ユーザー指示）。
+        日本語は帯の上側に固定し、英語が始まったら、その下に出す（日本語の位置・大きさは変えない）。
+        英語が出る前から、組み合わせたときの大きさで日本語を出すので、英語が出ても日本語は動かない。"""
+        sd = side_at(t_ja)
+        ml, mr = {"right": (TOKIO_TEXT_ML, TOKIO_TEXT_MR), "left": (TOKIO_TEXT_MR, TOKIO_TEXT_ML)}.get(sd, (0, 0))
+        width = (W - ml - mr) if sd else TEXT_W
+        cx = (ml + W - mr) // 2
+        for se, sj in TIERS_PAIR:
+            le = ewrap(en, int(width / (se * EN_CHAR_W)))
+            lj = jwrap(ja, int(width / (sj * JA_CHAR_W)))
+            gap = int(se * 0.3)
+            if len(lj) * sj * LINE_H + gap + len(le) * se * LINE_H <= TEXT_H:
+                break
+        y0 = H - BAND_H + (BAND_H - TEXT_H) // 2                    # 帯の上端から少し下
+        y1 = y0 + int(len(lj) * sj * LINE_H) + gap                  # 日本語の下
+        add(t_ja, until, f"{{\\an8\\pos({cx},{y0})\\fn{FONT_JA}\\fs{sj}\\b0\\c{COLOR_JA}}}" + "\\N".join(lj), ml=ml, mr=mr)
+        base = f"\\fn{FONT_EN}\\fs{se}\\b1\\c{COLOR_EN}"
+        body = "\\N".join(le) if not words else highlight(le, words, base)
+        add(t_en, until, f"{{\\an8\\pos({cx},{y1}){base}}}" + body, ml=ml, mr=mr, layer=1)
+
     scenes = sorted({e["scene"] for e in ev if "scene" in e})
     n_scenes = len(scenes)
 
@@ -308,9 +329,8 @@ def build_ass(tl: dict, window=None, tokio_windows=()) -> tuple[str, list[tuple[
             ja_txt = esc(disp(g["ja"]["text"])) if "ja" in g else None
             en_txt = esc(g["en"]["text"])
             if ja_txt:
-                # 合図の音と同時に訳を出す。英語が始まったら、その上に英文を足す
-                text(g["chime"]["start"], g["en"]["start"], None, ja_txt, translation=True)
-                text(g["en"]["start"], until, en_txt, ja_txt, words=g["en"].get("words"))
+                # 合図の音と同時に、訳を帯の上側に出す。英語が始まったら、その下に英文を足す（訳は動かさない）
+                pair_text(g["chime"]["start"], g["en"]["start"], until, en_txt, ja_txt, g["en"].get("words"))
             else:
                 text(g["en"]["start"], until, en_txt, None, words=g["en"].get("words"))
 
