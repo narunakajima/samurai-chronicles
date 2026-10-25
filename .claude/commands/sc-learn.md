@@ -7,8 +7,8 @@ SC の英語エピソードから、日本人学習者向けの教材音声（�
 
 **対象:** 当面は Tokio モード（`"narrator": "tokio"`）のエピソード。訳が一人称（僕）の記者口調なので、従来方式（三人称）の回には合わない。
 
-**実行のタイミング:** SC 本編の制作（動画生成・字幕生成）が終わったら、**続けて**実行する（2026-10-23 ユーザー決定）。
-流れは `/sc-new → … → 字幕生成 → /sc-learn（台本・音声・動画・サムネイル・ショート）→ /sc-upload（SC を予約）`。
+**実行のタイミング:** SC 本編の動画と字幕ができ、**ユーザーが本編の動画を見て OK を出したあと**に、Claude が自動で起動する（`/sc-new` STEP 6 の終わり。コマンドの入力は不要。手動で `/sc-learn ep{NNN}` と打ってもよい。2026-10-25 変更。本編が直しになると、学習版の作り直しが無駄になるため）。
+流れは `/sc-new → … → 動画・字幕生成 → 【ユーザーが本編の動画を確認して OK】→ /sc-learn（台本・音声・動画・サムネイル・ショート）→ 【ユーザーが学習版を確認して OK】→ /sc-upload`。
 
 **公開はしない。** このコマンドは作って、ユーザーの確認を待つところまで。確認・OK のあと、`/sc-upload` の STEP 3.7 で、SC の公開日の 07:00 JST に公開予定でアップロードする（STEP 5）。
 
@@ -161,6 +161,12 @@ cd learning && python3 build_promo.py short ep106    # ショート（縦型、�
 
 ## STEP 4: ユーザーの確認
 
+- **確認用に、学習版の出力を Desktop にコピーする（2026-10-25 追加）。** Drive の `ep{NNN}/learning/` にある3点（mp4・`_learning_thumbnail.png`・`_learning_short.mp4`。mp3 は不要なのでコピーしない）を `~/Desktop/SC/ep{NNN}_learning/` へ。
+  ```bash
+  DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/learning"
+  mkdir -p "$HOME/Desktop/SC/ep{NNN}_learning" && cp "$DRIVE"/*.mp4 "$DRIVE"/*.png "$HOME/Desktop/SC/ep{NNN}_learning/" && ls -la "$HOME/Desktop/SC/ep{NNN}_learning"
+  ```
+  Finder は自動で開かない。削除は本編と同じく `/sc-upload` STEP 1 の `rm -rf "$HOME/Desktop/SC"` でまとめて行う（Drive が原本）。
 - 完成した mp3 のパスと、`chapters.txt` の内容（各パートの開始時刻）を報告する
 - **ユーザーが聴いて OK を出すまで、公開に進まない。** 直しの依頼は、台本（`lessons/`）を直して STEP 2 をやり直す（変えた部分だけが作り直される）
 

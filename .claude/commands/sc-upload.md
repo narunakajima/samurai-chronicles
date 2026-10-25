@@ -34,6 +34,7 @@ ls "$DRIVE/images_shorts" | wc -l   # Shorts画像
 ls "$DRIVE/audio" | wc -l           # 音声（シーン数+teaser+shorts）
 ls "$DRIVE/output"                  # 本編mp4・shortsmp4・srtの3点
 ls "$DRIVE" | grep -E "thumbnail|制作確認書"
+ls "$DRIVE/learning"                 # 学習版（Tokio モードの回）: mp3・mp4・thumbnail・short の4点
 ```
 件数がSTEP5C統合確認時点の想定と大きく食い違う、またはファイルが見当たらない場合は
 削除を中止し、先にDriveへの登録・コピー漏れを解消してからクリーンアップする。
@@ -199,8 +200,16 @@ STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べ�
 
 ## STEP 3.7 — 学習版（英語で聴く日本史）の公開・関連動画・コメント返信（2026-10-23追加）
 
-SC の本編が**公開された回と同じ EP 番号**の学習版を、STEP 3.5 の関連動画の設定と**同じタイミング**で公開する。
-学習版は別チャンネル「英語で聴く日本史」（`UCWOFhTRNmbVeVWgwF9DfoNA`、`@eigo-de-nihonshi`）。制作は `/sc-learn`（SC 制作の直後）。
+**この STEP でやることは3つ。タイミングが別々なので注意（2026-10-25 整理）:**
+
+| やること | 対象の回 | タイミング |
+|---|---|---|
+| ① 学習版のアップロード（公開予定） | 今回の回（公開 OK 済みのもの） | STEP 2 の直後。SC が未公開でもよい。SC の公開日の **07:00 JST** に公開予定 |
+| ② ショートの関連動画の設定 | 公開日時を過ぎた**前回までの回** | 公開済みの動画しか選べないので、今回上げた回は次回の `/sc-upload` で設定される |
+| ③ コメント返信（日本語） | 学習版チャンネルの未返信コメント | 毎回 |
+
+学習版そのもの（音声・動画・サムネイル・ショート）は `/sc-learn` で、本編の動画の確認 OK のあとに作り済み。この STEP では作らない。
+学習版は別チャンネル「英語で聴く日本史」（`UCWOFhTRNmbVeVWgwF9DfoNA`、`@eigo-de-nihonshi`）。制作は `/sc-learn`（本編の動画の確認 OK のあと）。
 公開してよいのは、**ユーザーが事前に OK を出した回だけ**（`learn_targets.py --approve`）。手順書: `learning/YOUTUBE_SETUP.md`。
 
 ### 手順
