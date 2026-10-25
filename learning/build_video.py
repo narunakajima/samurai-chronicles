@@ -141,7 +141,13 @@ def jwrap(text: str, limit: int) -> list:
             cur = ch
     if cur:
         lines.append(cur)
-    return lines
+    # 行頭禁則: 句読点・閉じかっこが行の先頭に来ない（「。」だけの行ができない。2026-10-25 ユーザー指摘）。
+    # 前の行の最後に1文字ぶら下げる（limit には余裕を持たせてあるので、1文字ならはみ出さない）
+    for i in range(1, len(lines)):
+        while lines[i] and lines[i][0] in "。、」』）":
+            lines[i - 1] += lines[i][0]
+            lines[i] = lines[i][1:]
+    return [x for x in lines if x]
 
 
 def highlight(lines: list[str], words: list[dict], base: str) -> str:
