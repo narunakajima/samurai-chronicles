@@ -89,13 +89,15 @@ def _match_score(target: str, heard: str) -> float:
 
 def _score_ignoring_names(target: str, heard: str) -> float:
     """書き起こしが固有名詞を聞き違えた箇所（Seimei's → Same as など）だけを無視した一致度。
-    狙った文の大文字始まりの語が、書き起こしの別の語（3語まで）に置き換わっているところだけを、両方から外して比べる。"""
+    狙った文の大文字始まりの語が、書き起こしの別の語（3語まで）に置き換わっている・まるごと落ちている（2語まで）ところだけを、外して比べる。"""
     T, H = target.split(), heard.split()
     nT, nH = [_norm(w) for w in T], [_norm(w) for w in H]
     kt, kh = [], []
     for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, nT, nH, autojunk=False).get_opcodes():
         if tag == "replace" and (j2 - j1) <= 3 and all(T[k][:1].isupper() for k in range(i1, i2)):
             continue
+        if tag == "delete" and (i2 - i1) <= 2 and all(T[k][:1].isupper() for k in range(i1, i2)):
+            continue   # 書き起こしが固有名詞をまるごと落とした（ep115: Sankin-kotai）
         kt += nT[i1:i2]
         kh += nH[j1:j2]
     a, b = "".join(kt), "".join(kh)
@@ -121,6 +123,66 @@ def _edge_ok(target: str, heard: str) -> bool:
         return m.size >= 0.6 * len(word)
 
     return has(t[-1], h[-(len(t[-1]) + 3):]) and has(t[0], h[:len(t[0]) + 3])
+
+
+_WHISPER = None
+_WHISPER_LOCK = __import__("threading").Lock()   # ビルドは複数シーンを並列に処理するので、Whisper のモデルは1つずつ使う
+
+
+def whisper_tail_ok(clip: Path, sent: str) -> bool:
+    """切り出した音声を手元の Whisper で書き起こし、文の最後の語が、書き起こしの末尾に聞こえているか確かめる。
+    Gemini は欠けた文末（短い語・数字）を補って書き起こすことがあるため、別の方式で確かめる（ep115: 「Edo Castle, 1722.」の 1722 が欠けた）。"""
+    global _WHISPER
+    import whisper
+    with _WHISPER_LOCK:
+        if _WHISPER is None:
+            _WHISPER = whisper.load_model("small")
+        text = _WHISPER.transcribe(str(clip), language="en", fp16=False)["text"]
+    heard = [w for w in (_norm(x) for x in text.split()) if w]
+    target = _words(sent)
+    if not target or not heard:
+        return False
+    last = target[-1]
+    return any(difflib.SequenceMatcher(None, last, h, autojunk=False).ratio() >= 0.7 for h in heard[-2:])
+
+
+def whisper_boundaries(scene_wav: Path, sents: list):
+    """シーン全体を Whisper で単語ごとの時刻にし、狙った文の単語と照らし合わせて、文と文の切れ目（秒）を返す。
+    文の最後の語の終わりと、次の文の最初の語の始まりの、ちょうど中間。照合できなければ None（従来の方式にもどる）。
+    Gemini の書き起こしだけでは、文末の年号や短い語の欠け・次の文の頭の混入を見逃した（ep115）ため。"""
+    global _WHISPER
+    import whisper
+    with _WHISPER_LOCK:
+        if _WHISPER is None:
+            _WHISPER = whisper.load_model("small")
+        r = _WHISPER.transcribe(str(scene_wav), language="en", word_timestamps=True, fp16=False)
+    W = [(_norm(w["word"]), float(w["start"]), float(w["end"])) for seg in r["segments"] for w in seg["words"] if _norm(w["word"])]
+    T, owner = [], []
+    for i, sent in enumerate(sents):
+        for w in _words(sent):
+            T.append(w)
+            owner.append(i)
+    if not W or not T:
+        return None
+    mp = [None] * len(T)
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, T, [w[0] for w in W], autojunk=False).get_opcodes():
+        if tag == "equal":
+            for d in range(i2 - i1):
+                mp[i1 + d] = j1 + d
+        elif tag == "replace":
+            for d in range(i1, i2):
+                mp[d] = j1 + min(j2 - j1 - 1, int((d - i1) * (j2 - j1) / (i2 - i1)))
+    bounds = []
+    for i in range(len(sents) - 1):
+        last = max(k for k, o in enumerate(owner) if o == i)
+        nxt = last + 1
+        a, b = mp[last], mp[nxt]
+        if a is None or b is None or b <= a:
+            return None
+        bounds.append((W[a][2] + W[b][1]) / 2 if W[b][1] > W[a][2] else (W[a][2] + W[b][1]) / 2)
+    if any(y <= x for x, y in zip(bounds, bounds[1:])):
+        return None
+    return bounds
 
 
 def _transcribe(path: Path, strong: bool = False) -> str:
@@ -167,7 +229,12 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
     def candidates(sl):
         return [(a + b) / 2 for a, b in sl if speech_start < a and b < speech_end]
 
-    tiers = [candidates(sil), candidates(silences(scene_wav, SENSITIVE_DB, SENSITIVE_MIN))]
+    try:
+        wb = whisper_boundaries(scene_wav, sents)
+    except Exception as ex:  # noqa: BLE001  Whisper が使えなくても、従来の方式で切り出せる
+        print(f"  （Whisper の切れ目が使えません: {ex}）")
+        wb = None
+    tiers = ([None] if wb else []) + [candidates(sil), candidates(silences(scene_wav, SENSITIVE_DB, SENSITIVE_MIN))]
 
     def prev_tail_in_head(prev: str, heard: str) -> bool:
         """次の文の書き起こしの冒頭に、前の文の最後の語が混じっているか（前の文の終わりが早すぎた印）。"""
@@ -190,6 +257,8 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
         for cands in tiers:
             if i == len(sents) - 1:
                 ends = [speech_end]
+            elif cands is None:   # Whisper の単語の時刻から決めた切れ目
+                ends = [wb[i]] if wb[i] > start + 0.3 else []
             else:
                 done_chars = sum(len(x) + 1 for x in sents[:i + 1])
                 exp_e = speech_start + span * done_chars / len(narration)
@@ -206,6 +275,8 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
                 score = _score(sent, heard)
                 if not _edge_ok(sent, heard):
                     score -= EDGE_PENALTY
+                if cands is None and score >= ACCEPT and not whisper_tail_ok(tmp, sent):
+                    score = 0.0   # Whisper の切れ目なのに、文末が聞こえない。従来の方式の候補にゆずる
                 if best is None or score > best[0]:
                     best = (score, e, heard)
                 if score >= GOOD:

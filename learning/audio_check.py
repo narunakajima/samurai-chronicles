@@ -19,9 +19,14 @@ def ask(audio_path: Path, question: str) -> str:
     ]}]}
     req = urllib.request.Request(URL.format(model=MODEL, key=API_KEY), data=json.dumps(body).encode(),
                                  headers={"Content-Type": "application/json"}, method="POST")
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        out = json.loads(resp.read())
-    return out["candidates"][0]["content"]["parts"][0]["text"]
+    for attempt in range(3):   # まれに候補なしの空の応答が返る（ep115）。数回やり直し、それでも空なら空文字にする
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            out = json.loads(resp.read())
+        try:
+            return out["candidates"][0]["content"]["parts"][0]["text"]
+        except (KeyError, IndexError):
+            continue
+    return ""
 
 
 def check_japanese(audio_path: Path, script: str) -> dict:
