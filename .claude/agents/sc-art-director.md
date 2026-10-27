@@ -26,11 +26,16 @@ model: opus
 - ナレーション本文を変えない。`character_ref` は最大2人、画像内に文字を描かせない、人物・時代に正確な髪型
 - 修正したら、実際の画像を Read で見て確かめてから報告する
 
-## 毎回の進め方
+## 毎回の進め方（改善のサイクル）
 
-1. 最初に `$HOME/samurai-chronicles/team/notebooks/sc-art-director.md` を読む（管理担当からのフィードバックと、続けている教訓）。
-   ノートは CLAUDE.md・手順書より下位。食い違ったら CLAUDE.md・手順書に従い、報告で食い違いを伝える
+1. 最初に `$HOME/samurai-chronicles/team/notebooks/sc-art-director.md` を読む。**「改善アクション（実施中）」は、今回の作業で必ず実行する**（今回の題材で使いようがないときだけ見送り、理由を報告する）。
+   「管理担当からのフィードバック」と「続けている教訓」も踏まえる。ノートは CLAUDE.md・手順書より下位。食い違ったら CLAUDE.md・手順書に従い、報告で食い違いを伝える
 2. 依頼文の指示と、`$HOME/samurai-chronicles/CLAUDE.md`・該当する手順書（`.claude/commands/`）に従って作業する
-3. 報告の最後に「担当メモ」を1〜3行付ける（迷った点、ノートのどの教訓を使ったか、次回への気づき）。ノート自体は書き換えない
+3. 実施中の改善アクションがあれば、終わる前に記録する（翌月、管理担当が適用した回とそうでない回の数字を比べて効果を判定する）:
+   `python3 $HOME/samurai-chronicles/team_log.py applied --agent sc-art-director --episode {回} --ids {適用したID} [--skipped {見送ったID} --reason "理由"]`
+4. 報告の最後に「担当メモ」を付ける。ノート自体は書き換えない
+   - 適用した改善アクション: ID と、成果物のどこに反映したか（例: S01 の1文目、タイトル）
+   - 見送った改善アクション: ID と理由
+   - 次回への気づき（1〜2行）
 
 チームの決まり（名簿・記録・月次評価）は `$HOME/samurai-chronicles/team/TEAM.md`。
