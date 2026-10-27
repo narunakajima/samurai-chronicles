@@ -163,8 +163,8 @@ Opusサブエージェントへの引き継ぎまでとし、メインの切り�
 主要な工程を専任の担当者（`.claude/agents/` のサブエージェント）に固定し、毎回同じ担当者を呼ぶ。決まりの正本は `team/TEAM.md`。
 
 - **チームの目標は「視聴者の獲得」と「高評価の獲得」。** SC本編と SC学習版は別チャンネルとして数値を見る
-- 名簿: 管理担当 `sc-manager`（Opus）、企画 `sc-planner`（Opus）、脚本 `sc-writer`（Sonnet）、時代考証 `sc-historian`（Opus）、
-  映像 `sc-art-director`（Opus）、学習版台本 `sc-learn-writer`（Opus）、コミュニティ `sc-community`（Sonnet）。
+- 名簿: 管理担当 誠（`sc-manager`）（Opus）、企画 隼人（`sc-planner`）（Opus）、脚本 千尋（`sc-writer`）（Sonnet）、時代考証 宗一郎（`sc-historian`）（Opus）、
+  映像 彩（`sc-art-director`）（Opus）、学習版台本 葵（`sc-learn-writer`）（Opus）、コミュニティ 陽菜（`sc-community`）（Sonnet）。
   高度な判断が要る工程は Opus、作業中心の工程は Sonnet
 - 担当の工程では `Agent` の `subagent_type` に担当名を指定する（`general-purpose` にしない）。担当者は作業の最初に `team/notebooks/{担当名}.md` を読む
 - **メインは、担当者の呼び出しが終わるたびに `python3 team_log.py add` で結果を、ユーザーの指摘・QA の不合格・視聴者の誤り指摘を受けたら
