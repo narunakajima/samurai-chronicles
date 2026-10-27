@@ -163,8 +163,9 @@ Opusサブエージェントへの引き継ぎまでとし、メインの切り�
 主要な工程を専任の担当者（`.claude/agents/` のサブエージェント）に固定し、毎回同じ担当者を呼ぶ。決まりの正本は `team/TEAM.md`。
 
 - **チームの目標は「視聴者の獲得」と「高評価の獲得」。** SC本編と SC学習版は別チャンネルとして数値を見る
-- 名簿（呼び方は「SCチーム ○○担当 名前」）: SCチーム 管理担当 マーカス（`sc-manager`・Opus）、SCチーム 企画担当 ヘンリー（`sc-planner`・Opus）、SCチーム 脚本担当 クレア（`sc-writer`・Sonnet）、SCチーム 時代考証担当 エドワード（`sc-historian`・Opus）、SCチーム 映像担当 アイリス（`sc-art-director`・Opus）、SCチーム 学習版台本担当 リリー（`sc-learn-writer`・Opus）、SCチーム コミュニティ担当 ソフィー（`sc-community`・Sonnet）。
+- 名簿（呼び方は「SCチーム ○○担当 名前」）: SCチーム 管理担当 マーカス（`sc-manager`・Opus）、SCチーム 企画担当 ヘンリー（`sc-planner`・Opus）、SCチーム 脚本担当 クレア（`sc-writer`・Sonnet）、SCチーム 時代考証担当 エドワード（`sc-historian`・Opus）、SCチーム 映像担当 アイリス（`sc-art-director`・Opus）、SCチーム 学習版台本担当 リリー（`sc-learn-writer`・Opus）、SCチーム コミュニティ担当 ソフィー（`sc-community`・Sonnet）、SCチーム 進行担当 トーマス（`sc-coordinator`・メインの会話）。
   高度な判断が要る工程は Opus、作業中心の工程は Sonnet
+- **制作コマンドを実行するメインの会話は SCチーム 進行担当 トーマス（進行担当）。** STEP 0 で `team/notebooks/sc-coordinator.md` を読み、改善アクションを実行し、制作の最後に自分の進行を記録する（定義は `team/coordinator.md`。サブエージェントではない）
 - 担当の工程では `Agent` の `subagent_type` に担当名を指定する（`general-purpose` にしない）。担当者は作業の最初に `team/notebooks/{担当名}.md` を読む
 - **メインは、担当者の呼び出しが終わるたびに `python3 team_log.py add` で結果を、ユーザーの指摘・QA の不合格・視聴者の誤り指摘を受けたら
   `python3 team_log.py feedback` で指摘の原文を記録する**（月次評価の材料。記録しないと評価できない）
