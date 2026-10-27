@@ -96,10 +96,10 @@ CLAUDE.md「モデルの使い分けとOpusへのエスカレーション」の�
 
 ## 月次評価（管理担当）
 
-**毎月1回、`/sc-analytics` の STEP 4 で行う**（同じ月に `/learn-analytics` も実行し、学習版の集計を渡す）。
+**毎月、前月分を評価する。第2月曜に `/sc-analytics`（SC本編の担当）、第4月曜に `/learn-analytics`（SC学習版の担当）。** 日程の正本は `team/schedule.json`。
 
 材料:
-- アナリティクスの集計（`sc_yt_analyze.py --full`、`learning/learn_yt_analyze.py --json`）
+- アナリティクスの集計（SC本編は `sc_yt_analyze.py --full`、SC学習版は `learning/learn_yt_analyze.py --json`）
 - 高評価・コメント数（`/usr/bin/python3 team_stats.py --since {前月1日}`）
 - 作業記録の集計（`python3 team_log.py summary --month YYYY-MM`）と、前月の評価・各担当のノート
 

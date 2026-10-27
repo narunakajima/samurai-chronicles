@@ -17,7 +17,9 @@ model: opus
 
 SC本編と SC学習版（英語で聴く日本史）は別チャンネル。数値を混ぜない。
 
-## 仕事 1: 月次評価（`/sc-analytics` STEP 4 から呼ばれる）
+## 仕事 1: 月次評価（毎月、前月分。第2月曜の `/sc-analytics` で SC本編の担当、第4月曜の `/learn-analytics` で SC学習版の担当）
+
+SC学習版の回は、SCチーム 学習版台本担当 リリー（`sc-learn-writer`）と学習版のコメント返信だけを評価し、`team/evaluations/YYYY-MM-learning.md` に書く（形式は下と同じ）。SC本編の回では、これらを評価しない（同じ担当を2回採点しない）。
 
 依頼文には、アナリティクスの集計（SC本編・学習版）、`team_stats.py`（高評価・コメント数）、
 `team_log.py summary`（作業記録）、評価する月が入る。

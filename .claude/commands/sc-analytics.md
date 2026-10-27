@@ -4,9 +4,9 @@
 制作ルール（タイトル型・登場人物数・トピック角度・人物選定等）に反映するコマンド。
 月1回程度の低頻度想定（毎エピソードではない）。
 
-**2026-10-27〜、担当者制の月次評価もこのコマンドで行う（毎月1回）。** STEP 4 の解釈はSCチーム 管理担当 マーカス（`sc-manager`） が行い、
-あわせて各担当（`team/TEAM.md` の名簿）の貢献を評価してフィードバックを返す。同じ月に `/learn-analytics` の STEP 1〜2 も実行し、
-学習版の集計を STEP 4 に渡す（学習版の担当 SCチーム 学習版台本担当 リリー（`sc-learn-writer`） の評価に使う）。
+**2026-10-27〜、担当者制の月次評価もこのコマンドで行う（毎月第2月曜に前月分。`team/schedule.json`）。** STEP 4 の解釈はSCチーム 管理担当 マーカス（`sc-manager`） が行い、
+あわせて各担当（`team/TEAM.md` の名簿）の貢献を評価してフィードバックを返す。SC学習版の分（SCチーム 学習版台本担当 リリー（`sc-learn-writer`）と、
+学習版のコメント返信）は、第4月曜の `/learn-analytics` で評価する。
 
 ---
 
@@ -127,7 +127,6 @@ CTR/維持率のトップ・ボトム、タイトル型別、登場人物数別�
 ```bash
 /usr/bin/python3 team_stats.py --since {前月1日} > {scratchpad}/team_stats.md     # 高評価・コメント数（Reporting には無い）
 python3 team_log.py summary --month {評価する月 YYYY-MM} > {scratchpad}/team_log.md
-cd learning && python3 learn_yt_analyze.py --json > {scratchpad}/learn_analytics.json   # 学習版（/learn-analytics STEP 1 の取得を先に）
 ```
 
 `team_stats.py` はコメント返信用のトークン（`yt_token_sc.json`・`yt_token_learn.json`）を使う。失効していたらブラウザの再認証が出る。
@@ -151,7 +150,7 @@ STEP 1-3で計算した**集計結果**（生CSVではなく集計済みの数�
   提言に出てこないため）
 - `topics_queue.json` の `hypotheses` セクション（各仮説の`status`・`success_criteria`・
   `evidence_episodes`）。今回のデータで各仮説が成功基準を満たしたかも合わせて検証を依頼する
-- **チーム評価の材料（STEP 3.5）:** `team_stats.md`・`team_log.md`・`learn_analytics.json` のパスと、評価する月
+- **チーム評価の材料（STEP 3.5）:** `team_stats.md`・`team_log.md` のパスと、評価する月（前月）。学習版の担当は今回の評価から外すこと（第4月曜の `/learn-analytics` で評価する）
 
 Agentプロンプト:
 ```
@@ -202,7 +201,6 @@ Agentプロンプト:
 続けて、{YYYY-MM} のチーム評価を行ってください（手順と書き出す物は、あなたの定義の「仕事 1: 月次評価」と team/TEAM.md）:
 - 高評価・コメント数: {team_stats.md のパス}
 - 作業記録の集計: {team_log.md のパス}
-- 学習版の集計: {learn_analytics.json のパス}
 報告は「アナリティクスの提言」「チーム評価の要約」「ユーザーの承認が要る提案」に分けてください。
 ```
 
