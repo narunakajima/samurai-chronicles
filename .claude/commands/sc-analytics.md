@@ -32,8 +32,9 @@ APIが無効で未検証（有効化は設定変更のため、行う場合は�
 `sc_yt_analyze.py` もDriveを直接読む。新しいレポートは毎日作られるので、分析前は必ず実行して最新化すること。
 
 **`invalid_grant: Token has been expired or revoked` が出たら（2026-10-14）:** Reporting用トークン
-（`~/.claude/secrets/yt_token_sc_reporting.json`）が失効している。OAuth同意画面が「テスト」状態の
-プロジェクトでは更新トークンが約7日で失効するため、月1回の実行では毎回起きうる。
+（`~/.claude/secrets/yt_token_sc_reporting.json`）が失効している。以前は OAuth 同意画面が「テスト」状態で
+更新トークンが約7日で失効していたが、ユーザーが長期間有効なトークンに切り替え済み（2026-10 下旬）なので、
+通常は起きない。出た場合は、パスワード変更・アクセスの取り消し・長く使っていない等で失効したもの。
 `python3 sc_yt_reporting_auth.py` を実行して再認証し（ブラウザで許可）、STEP 1をやり直す。
 Homebrewの `python3`（3.14）にはGoogle系ライブラリが入っていない場合があり、その場合は
 `/usr/bin/python3`（3.9、ライブラリ導入済み）で実行する。
