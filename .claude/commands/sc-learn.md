@@ -23,7 +23,9 @@ SC の英語エピソードから、日本人学習者向けの教材音声（�
 
 ## STEP 1: 台本（lessons/ep{NNN}.json）を書く
 
-**Opus のサブエージェント**（`model: "opus"`、`subagent_type: "general-purpose"`）に任せる。
+**学習版台本担当 `sc-learn-writer`**（`subagent_type: "sc-learn-writer"`、`model: "opus"`）に任せる（2026-10-27〜、担当者制。`team/TEAM.md`）。
+終わったら `python3 team_log.py add --agent sc-learn-writer --episode ep{NNN} --step 1 --result ok` で記録する。
+STEP 2 の検査（訳の数の不一致など）やユーザーの確認で直しが出たら、同じ担当に直させ、`team_log.py feedback --agent sc-learn-writer` で指摘を残す。
 台本は、史実と英文の内容を正確に訳すものなので、SC の STEP 2A と同じく Opus に書かせる。
 
 サブエージェントに渡すもの:
@@ -101,7 +103,7 @@ cd learning && rm -f build/ep106.done && nohup sh -c 'python3 -u build_lesson.py
 
 **止まったとき（`一致しません` が出た場合）:** 英文の切り出しの照合が合わなかった文。`learning/clips.py` の方式を変える前に、
 まず文と書き起こしを見比べて、本当に切れ目が違うのか、書き起こしの聞き違いなのかを区別する。
-CLAUDE.md の「Opus へのエスカレーション」の条件（同じ失敗が2回続く）に当たったら、Opus のサブエージェントに引き継ぐ。
+CLAUDE.md の「Opus へのエスカレーション」の条件（同じ失敗が2回続く）に当たったら、SCチーム 管理担当 マーカス（`sc-manager`）（`model: "opus"`）に引き継ぐ（台本の問題なら SCチーム 学習版台本担当 リリー（`sc-learn-writer`））。
 
 ## STEP 3: 確認（完成後に必ず行う）
 
