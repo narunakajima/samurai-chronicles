@@ -4,6 +4,10 @@
 制作ルール（タイトル型・登場人物数・トピック角度・人物選定等）に反映するコマンド。
 月1回程度の低頻度想定（毎エピソードではない）。
 
+**2026-10-27〜、担当者制の月次評価もこのコマンドで行う（毎月1回）。** STEP 4 の解釈は管理担当 `sc-manager` が行い、
+あわせて各担当（`team/TEAM.md` の名簿）の貢献を評価してフィードバックを返す。同じ月に `/learn-analytics` の STEP 1〜2 も実行し、
+学習版の集計を STEP 4 に渡す（学習版の担当 `sc-learn-writer` の評価に使う）。
+
 ---
 
 ## STEP 1 — データ最新化
@@ -118,7 +122,17 @@ CTR/維持率のトップ・ボトム、タイトル型別、登場人物数別�
 - リタイトル等、過去に打った施策のBefore/After効果検証（**必ず日次窓ベースで。
   累計値は使わない**）
 
-## STEP 4 — 解釈・提言をOpusサブエージェントに委任（2026-08-04〜）
+## STEP 3.5 — チーム評価の材料をそろえる（2026-10-27〜）
+
+```bash
+/usr/bin/python3 team_stats.py --since {前月1日} > {scratchpad}/team_stats.md     # 高評価・コメント数（Reporting には無い）
+python3 team_log.py summary --month {評価する月 YYYY-MM} > {scratchpad}/team_log.md
+cd learning && python3 learn_yt_analyze.py --json > {scratchpad}/learn_analytics.json   # 学習版（/learn-analytics STEP 1 の取得を先に）
+```
+
+`team_stats.py` はコメント返信用のトークン（`yt_token_sc.json`・`yt_token_learn.json`）を使う。失効していたらブラウザの再認証が出る。
+
+## STEP 4 — 解釈・提言とチーム評価を管理担当に委任（2026-08-04〜、2026-10-27〜 管理担当）
 
 **理由:** STEP 1-3（集計の実行自体）はスクリプトでモデル非依存。Opusが効くのは
 「その結果をどう解釈し、次のアクションにどうつなげるか」の部分のみ。統計的有意性の
@@ -126,7 +140,7 @@ CTR/維持率のトップ・ボトム、タイトル型別、登場人物数別�
 かつ本コマンドは数週間に1回程度の低頻度なのでOpus利用によるコスト増もほぼ無視できる。
 
 STEP 1-3で計算した**集計結果**（生CSVではなく集計済みの数値・比較表）を `Agent` ツールで
-`model: "opus"` のサブエージェントに渡す。サブエージェントは会話履歴を持たないため、
+管理担当（`subagent_type: "sc-manager"`、`model: "opus"`）に渡す。管理担当は会話履歴を持たないため、
 以下を明示的に含めること：
 
 - STEP 1-3で得た集計結果（数値・比較表）全文
@@ -137,6 +151,7 @@ STEP 1-3で計算した**集計結果**（生CSVではなく集計済みの数�
   提言に出てこないため）
 - `topics_queue.json` の `hypotheses` セクション（各仮説の`status`・`success_criteria`・
   `evidence_episodes`）。今回のデータで各仮説が成功基準を満たしたかも合わせて検証を依頼する
+- **チーム評価の材料（STEP 3.5）:** `team_stats.md`・`team_log.md`・`learn_analytics.json` のパスと、評価する月
 
 Agentプロンプト:
 ```
@@ -183,14 +198,22 @@ Agentプロンプト:
 三重カウント、さらに2026-09-06のFable監査では14日測定窓未完了のまま算出した
 コホート比較・コホート境界の事後選択といった方法論上の誤りが見つかり訂正した
 経緯がある。同種の誤りを繰り返さないよう、特に統計的妥当性の検証は厳密に行ってください。
+
+続けて、{YYYY-MM} のチーム評価を行ってください（手順と書き出す物は、あなたの定義の「仕事 1: 月次評価」と team/TEAM.md）:
+- 高評価・コメント数: {team_stats.md のパス}
+- 作業記録の集計: {team_log.md のパス}
+- 学習版の集計: {learn_analytics.json のパス}
+報告は「アナリティクスの提言」「チーム評価の要約」「ユーザーの承認が要る提案」に分けてください。
 ```
 
 `run_in_background: false` で結果を待つ。
 
 ## STEP 5 — ユーザーへ提示・承認
 
-Opusの提言をそのままユーザーに提示し、`.claude/commands/sc-new.md` 等への反映可否を確認する。
-ここで自動確定はしない。
+管理担当の提言とチーム評価の要約（担当ごとの総合評価と一言）をユーザーに提示し、
+`.claude/commands/sc-new.md` 等への反映可否を確認する。ここで自動確定はしない。
+ノート（`team/notebooks/`）と評価の記録（`team/evaluations/`・`team/scorecards.jsonl`）は管理担当がすでに書いているので、
+ユーザーが内容に異論を出した場合だけ直す。
 
 ## STEP 6 — 承認内容の反映
 
@@ -198,3 +221,5 @@ Opusの提言をそのままユーザーに提示し、`.claude/commands/sc-new.
 - `.claude/commands/sc-new.md` の該当ルールを更新
 - 必要なら `topics_queue.json` の pending トピックの `notes` を更新
 - 分析結果と意思決定の経緯を project memory に記録（数値・根拠・Why・How to applyを含める）
+- 担当の定義（`.claude/agents/`）・名簿の変更が承認されたら反映し、`team/TEAM.md` の名簿の表もそろえる
+- `team/` の変更（評価・ノート・作業記録）をコミット・プッシュする

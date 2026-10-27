@@ -37,6 +37,10 @@ samurai-chronicles/
 ├── narrator/           語り手 Tokio（tokio.json=設定の正本、clips/=背景透過の動画、sfx/=効果音）
 ├── learning/           学習版（日本語の英語耳トレーニング音声・動画。lessons/=台本、build_lesson.py=組み立て）
 ├── bgm_library.json    BGMライブラリ台帳（パス・ライセンス・タグ・used_in）
+├── .claude/agents/     制作チームの担当者（サブエージェント）の定義。名簿の正本
+├── team/               担当者制の運用（TEAM.md=決まり、notebooks/=担当ごとのノート、evaluations/=月次評価、work_log.jsonl=作業記録）
+├── team_log.py         担当者の作業記録・月次集計・評価の記録
+├── team_stats.py       動画ごとの再生・高評価・コメント数（月次評価用）
 └── topics_queue.json   制作キュー
 ```
 
@@ -130,8 +134,9 @@ ep105（足利義政の出家前後の容姿で10回近く再調整）では、O
 - ユーザーから**同じ箇所について2回目の指摘**が来た、または自分の原因の見立てが外れた
 - 原因の切り分けや再調整に**同種の試行を5回以上**重ねている
 
-止めたら、**ユーザーに確認せず**、Agent ツール（`model: "opus"`、`subagent_type: "general-purpose"`）で
-Opusサブエージェントに問題を丸ごと引き継ぐ。分析だけでなく修正の実行（再生成・JSONの`image_prompt`修正・
+止めたら、**ユーザーに確認せず**、Agent ツール（`model: "opus"`）で
+Opusの担当者に問題を丸ごと引き継ぐ。引き継ぎ先は `team/TEAM.md` の「エスカレーション」（画像→`sc-art-director`、
+史実・容姿→`sc-historian`、それ以外→`sc-manager`。2026-10-27〜。以前は `general-purpose` のOpusサブエージェント）。分析だけでなく修正の実行（再生成・JSONの`image_prompt`修正・
 スクリプトの試行など）まで任せてよい。ユーザーには「Opusに引き継ぎます」と一言伝えるだけにし、可否は聞かない。
 引き継ぎのプロンプトには必ず次を書く:
 - 目的（何ができれば完了か）
@@ -150,6 +155,22 @@ Opusサブエージェントに問題を丸ごと引き継ぐ。分析だけで�
 **メインモデル自体の切り替えは機械的にはできない:** デスクトップアプリは、セッションが自分自身のモデルを
 変更することを拒否する（課金が変わる操作のため、ユーザーがモデルメニューで選ぶ必要がある）。自動で行うのは
 Opusサブエージェントへの引き継ぎまでとし、メインの切り替えは提案もしない。
+
+---
+
+## 制作チーム（担当者制。2026-10-27〜、ユーザー決定）
+
+主要な工程を専任の担当者（`.claude/agents/` のサブエージェント）に固定し、毎回同じ担当者を呼ぶ。決まりの正本は `team/TEAM.md`。
+
+- **チームの目標は「視聴者の獲得」と「高評価の獲得」。** SC本編と SC学習版は別チャンネルとして数値を見る
+- 名簿: 管理担当 `sc-manager`（Opus）、企画 `sc-planner`（Opus）、脚本 `sc-writer`（Sonnet）、時代考証 `sc-historian`（Opus）、
+  映像 `sc-art-director`（Opus）、学習版台本 `sc-learn-writer`（Opus）、コミュニティ `sc-community`（Sonnet）。
+  高度な判断が要る工程は Opus、作業中心の工程は Sonnet
+- 担当の工程では `Agent` の `subagent_type` に担当名を指定する（`general-purpose` にしない）。担当者は作業の最初に `team/notebooks/{担当名}.md` を読む
+- **メインは、担当者の呼び出しが終わるたびに `python3 team_log.py add` で結果を、ユーザーの指摘・QA の不合格・視聴者の誤り指摘を受けたら
+  `python3 team_log.py feedback` で指摘の原文を記録する**（月次評価の材料。記録しないと評価できない）
+- **毎月1回、`/sc-analytics` で管理担当がアナリティクスを解釈し、各担当の貢献を評価して（`team/evaluations/YYYY-MM.md`）、
+  ノートにフィードバックを書く。** 管理担当が自分で変えるのはノートと評価の記録だけで、CLAUDE.md・手順書・担当の定義の変更は提案し、ユーザーが決める
 
 ---
 

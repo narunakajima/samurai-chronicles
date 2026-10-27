@@ -180,7 +180,9 @@ STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べ�
 **確認なしで英語で**返信する。定型ではなく、コメント内容に合わせて Claude が1件ずつ書く。
 
 1. 取得: `python3 sc_comment_reply.py list`（JSON。`thread_id`・動画タイトル・投稿者・本文）。空なら終了。
-2. 返信文を書き、`{"thread_id": "reply text"}` のJSONをスクラッチパッドに保存する。
+2. 返信文はコミュニティ担当 `sc-community`（`subagent_type: "sc-community"`、`model: "sonnet"`）に書かせる（2026-10-27〜、担当者制）。
+   依頼文には、`list` の出力JSONのパス、保存先（スクラッチパッドの `{"thread_id": "reply text"}` のJSON）、下の「返信の方針」全文を書く。
+   終わったら `python3 team_log.py add --agent sc-community --episode ep{NNN} --step 3.6 --result ok --note "返信N件・見送りN件"` で記録する。
 3. 投稿: `python3 sc_comment_reply.py post <JSONパス>`（返信済みIDは `data/comment_replies.json` に記録。STEP 4 のコミットに含まれる）。
 
 **返信の方針（無難第一）:**
@@ -249,6 +251,7 @@ STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べ�
    python3 learning/learn_comment_reply.py list                     # 未返信コメントを JSON で出力
    python3 learning/learn_comment_reply.py post <JSONパス>           # {"thread_id": "返信文"} を投稿
    ```
+   返信文は STEP 3.6 と同じく `sc-community` に書かせる（依頼文に「日本語で」と、この手順の方針を書く。記録は `--step 3.7`）。
    返信の方針は STEP 3.6 の「無難第一」と同じ（日本語、1〜2文、丁寧で温かく。視聴・コメントへの感謝＋内容に軽く触れる程度。
    書かないこと・見送るものも STEP 3.6 のとおり。英語の表現や発音についての質問で、無難に答えられないものは見送る）。
    返信済みは `data/learn_comment_replies.json` に残る。

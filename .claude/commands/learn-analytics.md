@@ -42,7 +42,8 @@ cd learning && python3 learn_yt_analyze.py --json      # 解釈用（STEP 3 で 
 ## STEP 3 — 解釈と提案は Opus に任せる
 
 `--json` の出力と、`CLAUDE.md` の「学習版」の節、`learning/lessons/` の台本（導入・構成）を渡して、
-**Opus のサブエージェント**（`model: "opus"`、`subagent_type: "general-purpose"`）に、解釈と提案を書かせる。
+**管理担当 `sc-manager`**（`subagent_type: "sc-manager"`、`model: "opus"`）に、解釈と提案を書かせる（2026-10-27〜、担当者制）。
+毎月の定例では、このSTEPは単独で行わず、`/sc-analytics` の STEP 4（チーム評価）に学習版の集計を渡して一緒に行う。
 依頼に必ず書くこと: ①データの遅れ（2〜3日）と、回数の少なさ ②「少数の差は結論にしない」 ③提案は、台本・導入・公開時刻・サムネイル・ショートの
 どれを、どう変えるかまで具体的に ④変えるべきでない決定事項（学習版の構成、字幕のレイアウト、7時公開などは、ユーザー決定）。
 

@@ -136,6 +136,25 @@ git log --oneline -5          # 直近の変更を確認
 
 新しいトピックを5件提案し、ユーザーに確認してもらう。
 
+**5件の案は企画担当 `sc-planner` が作る（2026-10-27〜、担当者制。`team/TEAM.md`）。** メインは次の形で呼び、
+返ってきた案を下の「提案フォーマット」でユーザーに見せる（提示・確認・`topics_queue.json` への追記はメインが行う）。
+
+```
+Agent({
+  subagent_type: "sc-planner",
+  model: "opus",
+  description: "トピック補充 5件の提案",
+  run_in_background: false,
+  prompt: "（この『残り5件以下の場合』節の全文（再登場ルール〜提案フォーマット）、topics_queue.json のパス、
+           次の episode_id、最新の team/evaluations/*.md があればそのパスを含める。
+           返してほしいもの: 5件の queue エントリ案（title/era/priority/person/angle/notes）と、
+           それぞれ新しい視聴者が見つける理由1文）"
+})
+```
+
+終わったら記録する: `python3 team_log.py add --agent sc-planner --episode ep{次のNNN} --step 1 --result ok`
+（ユーザーが案を差し戻して作り直させたら `--result retry`、差し戻しの理由を `team_log.py feedback --source user` で残す）。
+
 **再登場ルール（必須）：**
 - すでに登場済みの人物を提案する場合は、`notes` に**前回との違い（新角度）を必ず明記**する
   - 例：`"notes": "ep002で本能寺を扱ったが、今回は比叡山焼き討ちに特化。残虐性vs合理性の議論"` 
@@ -353,7 +372,7 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 ### 生成方法（2026-08-04〜: 生成はSonnet・チェックはOpusの二段構成に変更）
 
 このSTEPの生成（エピソードJSON全体の作成）は `Agent` ツールで **`model: "sonnet"` を明示した**
-サブエージェントに任せる。
+脚本担当 `sc-writer` に任せる（2026-10-27〜、担当者制。`team/TEAM.md`）。
 
 **model指定は省略しない（2026-10-15〜）:** 指定を省くとサブエージェントはメインと同じモデルを引き継ぐ。
 Sonnetメインなら結果は同じだが、設計・改修目的でOpusメインのセッションから `/sc-new` を回すと、
@@ -362,7 +381,7 @@ Sonnetで生成するために、必ず `model: "sonnet"` を付ける。
 
 ```
 Agent({
-  subagent_type: "general-purpose",
+  subagent_type: "sc-writer",
   model: "sonnet",
   description: "ep{NNN} エピソードJSON生成",
   run_in_background: false,
@@ -398,7 +417,10 @@ Claude一次判断でも時代考証ミスを拾える多層構成になって�
 Agent呼び出しは `run_in_background: false`（結果を待ってから STEP 2B に進む必要があるため）。
 Agentの最終報告はユーザーには表示しない（画面に出力しないという方針は変わらない）。
 オーケストレーター（この会話のモデル）は完了後、保存されたJSONのシーン数・フォーマットの
-妥当性のみを検証し、STEP 2Bへ進む。
+妥当性のみを検証し、STEP 2Bへ進む。検証の結果を記録する:
+`python3 team_log.py add --agent sc-writer --episode ep{NNN} --step 2A --result ok`
+（フォーマット不備でやり直させたら `retry`。STEP 3A で ❌ が見つかった箇所は、STEP 3A の後に
+`team_log.py feedback --agent sc-writer --source qa` で残す）。
 
 ### 生成ルール
 
@@ -717,8 +739,9 @@ Commanding presence. Carries a European arquebus as well as a katana.
 
 **制作確認書の内容は画面に一切出力しない。**
 
-このSTEPのファクトチェック・翻訳・確認書生成も `Agent` ツールで `model: "opus"` の
-サブエージェントに任せる（史実知識の精度のため）。Agentプロンプトには
+このSTEPのファクトチェック・翻訳・確認書生成も `Agent` ツールで時代考証担当 `sc-historian`
+（`subagent_type: "sc-historian"`、`model: "opus"`）に任せる（史実知識の精度のため。2026-10-27〜、担当者制）。
+終わったら `python3 team_log.py add --agent sc-historian --episode ep{NNN} --step 3A --result ok` で記録する。Agentプロンプトには
 `episodes/ep{NNN}.json` のパスと、以下の手順・フォーマット全文を含める。
 **加えて、次の文脈も必ず渡す（2026-09-29〜）:** サブエージェントは会話の経緯を持たないため、
 JSONだけでは「なぜこの切り口なのか」「過去回と何が違うべきか」が判断できない。
@@ -1338,8 +1361,9 @@ Opusが検索で調べ、決める。省略しない。** STEP 5A/5B（TTS・画
 **ユーザーに「画像検索しても月代の姿は全く見られない」と指摘された（本編・Shorts・サムネイルを作り直した）。**
 **最優先は「視聴者が持つイメージとかけ離れないこと」。** 時代考証上の既定より優先する。
 
-**進め方:** メイン会話が人物名・エピソードJSON・`characters/{name}.txt` のパスを渡し、Agent
-（`model: "opus"`、`subagent_type: "general-purpose"`、`run_in_background: false`）に次を行わせる。
+**進め方:** メイン会話が人物名・エピソードJSON・`characters/{name}.txt` のパスを渡し、時代考証担当
+（`subagent_type: "sc-historian"`、`model: "opus"`、`run_in_background: false`）に次を行わせる。
+終わったら `python3 team_log.py add --agent sc-historian --episode ep{NNN} --step 5-0 --result ok` で記録する。
 サブエージェントは会話の経緯を持たないので、下の内容をプロンプトに書く。
 
 1. WebSearch/WebFetch で、視聴者（海外の歴史好き＋日本の人）が人物名から思い浮かべる姿を調べる。
@@ -1530,8 +1554,10 @@ S01・S05・S12は`all_ok: true`扱いで見逃されていた。「常に標準
 画像は1枚ずつ独立に生成・QAされるため、Gemini自動QAとClaudeの1枚ずつの確認では「そのシーン単体として
 正しいか」しか見られず、**同じ人物の容姿がシーン間で食い違っていても検出できない**（lamp-whisper LW088で、
 同じ玄関ドアの形状・金具が5枚でバラバラだったのに、1枚ずつの確認では見落とした実例がある）。
-そこで上記の確認のあと、Agent ツール（`model: "opus"`、`subagent_type: "general-purpose"`）で
-横断チェックを1回行う。
+そこで上記の確認のあと、映像担当 `sc-art-director`（`subagent_type: "sc-art-director"`、`model: "opus"`）で
+横断チェックを1回行う（2026-10-27〜、担当者制）。終わったら
+`python3 team_log.py add --agent sc-art-director --episode ep{NNN} --step 5C --result ok` で記録し、
+CRITICAL があれば `--note "CRITICAL N件"` を添える。
 
 **対象の絞り込み（利用枠の圧迫を避けるため）:** SCの20シーンは場所も年代もまたがるので、背景・建物を
 揃えるのは誤り。見るのは次の2つだけにする。
@@ -1561,7 +1587,7 @@ S07: 脇役として足利義政が登場（主役はcharacter_ref=hino_tomiko�
 
 ```
 Agent({
-  subagent_type: "general-purpose",
+  subagent_type: "sc-art-director",
   model: "opus",
   description: "ep{NNN} 画像クロスシーン一貫性レビュー",
   run_in_background: false,
@@ -1596,7 +1622,7 @@ Agent({
 python3 sc_image_gen.py --episode ep{NNN} --scenes 12 --ref-image ~/Desktop/SC/ep{NNN}/images/S14.png
 ```
 参照にするのは**同じ容姿の段階**のシーンにする（剃髪後の画像を出家前のシーンの参照にしない）。
-2回実行しても直らない場合は、下記WARNINGへの一次対応と同じくOpusサブエージェントに引き継ぐ。
+2回実行しても直らない場合は、下記WARNINGへの一次対応と同じく映像担当 `sc-art-director` に引き継ぐ。
 **要相談は新しい確認ステップにせず、後述の統合確認メッセージに選択肢付きで含める。**
 いずれの場合もナレーション本文や他のJSONフィールドは変更しない（TTS再生成を発生させない）。
 
@@ -1621,7 +1647,7 @@ python3 sc_image_gen.py --episode ep{NNN} --scenes 12 --ref-image ~/Desktop/SC/e
    ```
    再生成後の `image_qa_result*.json` を再度確認する：
    - 合格 → 解決済み扱い（ユーザーには諮らない）
-   - 不合格 → **ユーザーに確認せず、このシーンをOpusサブエージェントに引き継ぐ**（2026-09-29〜。
+   - 不合格 → **ユーザーに確認せず、このシーンを映像担当 `sc-art-director`（`model: "opus"`）に引き継ぐ**（2026-09-29〜。2026-10-27〜は担当者制で引き継ぎ先を固定。
      自動リトライ2回＋Claude修正1回で直らないのは「同じ工程の2連続失敗」に当たるため。
      CLAUDE.md「モデルの使い分けとOpusへのエスカレーション」参照）。引き継ぎには、シーンの
      `narration`・元の `image_prompt` と修正後の `image_prompt`・QAのissue・画像のパス・該当人物の
