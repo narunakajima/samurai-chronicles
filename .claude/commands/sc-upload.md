@@ -251,7 +251,7 @@ STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べ�
    python3 learning/learn_comment_reply.py list                     # 未返信コメントを JSON で出力
    python3 learning/learn_comment_reply.py post <JSONパス>           # {"thread_id": "返信文"} を投稿
    ```
-   返信文は STEP 3.6 と同じく `sc-community` に書かせる（依頼文に「日本語で」と、この手順の方針を書く。記録は `--step 3.7`）。
+   返信文は STEP 3.6 と同じく SCチーム コミュニティ担当 ソフィー（`sc-community`） に書かせる（依頼文に「日本語で」と、この手順の方針を書く。記録は `--step 3.7`）。
    返信の方針は STEP 3.6 の「無難第一」と同じ（日本語、1〜2文、丁寧で温かく。視聴・コメントへの感謝＋内容に軽く触れる程度。
    書かないこと・見送るものも STEP 3.6 のとおり。英語の表現や発音についての質問で、無難に答えられないものは見送る）。
    返信済みは `data/learn_comment_replies.json` に残る。

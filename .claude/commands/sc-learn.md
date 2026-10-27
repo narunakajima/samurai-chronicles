@@ -103,7 +103,7 @@ cd learning && rm -f build/ep106.done && nohup sh -c 'python3 -u build_lesson.py
 
 **止まったとき（`一致しません` が出た場合）:** 英文の切り出しの照合が合わなかった文。`learning/clips.py` の方式を変える前に、
 まず文と書き起こしを見比べて、本当に切れ目が違うのか、書き起こしの聞き違いなのかを区別する。
-CLAUDE.md の「Opus へのエスカレーション」の条件（同じ失敗が2回続く）に当たったら、管理担当 `sc-manager`（`model: "opus"`）に引き継ぐ（台本の問題なら `sc-learn-writer`）。
+CLAUDE.md の「Opus へのエスカレーション」の条件（同じ失敗が2回続く）に当たったら、SCチーム 管理担当 マーカス（`sc-manager`）（`model: "opus"`）に引き継ぐ（台本の問題なら SCチーム 学習版台本担当 リリー（`sc-learn-writer`））。
 
 ## STEP 3: 確認（完成後に必ず行う）
 

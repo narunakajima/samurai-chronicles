@@ -1,4 +1,4 @@
-# Samurai Chronicles 制作チーム — 担当者制（2026-10-27〜）
+# SCチーム（Samurai Chronicles 制作チーム）— 担当者制（2026-10-27〜）
 
 主要な工程を**専任の担当者（サブエージェント）**に固定し、毎回同じ担当者を呼ぶ。担当者は自分のノートで
 前回までの教訓と管理担当のフィードバックを引き継ぐ。毎月、管理担当がアナリティクスと作業記録から
@@ -15,19 +15,19 @@ SC本編（英語チャンネル）と SC学習版（英語で聴く日本史）
 
 ## 名簿
 
-名簿の正本は `.claude/agents/*.md`（`python3 team_log.py roster` で一覧）。担当者には名前がある（frontmatter の `display_name`）。
-会話・報告・評価では名前で呼んでよい。`Agent` の `subagent_type` と作業記録には呼び出し名（`sc-writer` など）を使うが、
-`team_log.py` の `--agent` には名前も書ける。
+名簿の正本は `.claude/agents/*.md`（`python3 team_log.py roster` で一覧）。
+**担当者は「SCチーム ○○担当 名前（カタカナ）」の形で呼ぶ**（例: 「SCチーム 脚本担当 クレア」）。会話・報告・評価・記録の表示はこの形にそろえる。
+`Agent` の `subagent_type` と作業記録には呼び出し名（`sc-writer` など）を使う。`team_log.py` の `--agent` には名前（カタカナ）も書ける。
 
-| 名前 | 担当（呼び出し名） | 役職 | モデル | 担当する工程 | 主に責任を持つ指標 |
-|---|---|---|---|---|---|
-| Marcus | `sc-manager` | 管理担当 | Opus | 月次のアナリティクスと評価・フィードバック（`/sc-analytics`・`/learn-analytics`）、チームの取りまとめ、エスカレーションの受け手（下記） | チーム全体の2目標 |
-| Henry | `sc-planner` | 企画担当 | Opus | `/sc-new` STEP 1 のトピック補充（人物・角度の提案） | 14日インプレッション・CTR・新規視聴者 |
-| Claire | `sc-writer` | 脚本担当 | Sonnet | `/sc-new` STEP 2A のエピソードJSON（ナレーション・タイトル・画像プロンプト・説明欄） | 非登録者の維持率・高評価率・CTR（タイトル） |
-| Edward | `sc-historian` | 時代考証担当 | Opus | STEP 3A の制作確認書・ファクトチェック、STEP 5-0 の主人公の風体リサーチ | 史実・容姿の指摘ゼロ（ユーザー・視聴者） |
-| Iris | `sc-art-director` | 映像担当 | Opus | STEP 5C のクロスシーン一貫性チェック、画像のエスカレーション（WARNING が直らないシーン） | 画像の作り直し・画像の指摘ゼロ、維持率 |
-| Lily | `sc-learn-writer` | 学習版台本担当 | Opus | `/sc-learn` STEP 1 の台本 | 学習版の維持率の曲線・高評価率 |
-| Sophie | `sc-community` | コミュニティ担当 | Sonnet | `/sc-upload` STEP 3.6・3.7 のコメント返信の文面 | コメント数・返信率・高評価率 |
+| チーム 担当 名前 | 呼び出し名 | モデル | 担当する工程 | 主に責任を持つ指標 |
+|---|---|---|---|---|
+| SCチーム 管理担当 マーカス | `sc-manager` | Opus | 月次のアナリティクスと評価・フィードバック（`/sc-analytics`・`/learn-analytics`）、チームの取りまとめ、エスカレーションの受け手（下記） | チーム全体の2目標 |
+| SCチーム 企画担当 ヘンリー | `sc-planner` | Opus | `/sc-new` STEP 1 のトピック補充（人物・角度の提案） | 14日インプレッション・CTR・新規視聴者 |
+| SCチーム 脚本担当 クレア | `sc-writer` | Sonnet | `/sc-new` STEP 2A のエピソードJSON（ナレーション・タイトル・画像プロンプト・説明欄） | 非登録者の維持率・高評価率・CTR（タイトル） |
+| SCチーム 時代考証担当 エドワード | `sc-historian` | Opus | STEP 3A の制作確認書・ファクトチェック、STEP 5-0 の主人公の風体リサーチ | 史実・容姿の指摘ゼロ（ユーザー・視聴者） |
+| SCチーム 映像担当 アイリス | `sc-art-director` | Opus | STEP 5C のクロスシーン一貫性チェック、画像のエスカレーション（WARNING が直らないシーン） | 画像の作り直し・画像の指摘ゼロ、維持率 |
+| SCチーム 学習版台本担当 リリー | `sc-learn-writer` | Opus | `/sc-learn` STEP 1 の台本 | 学習版の維持率の曲線・高評価率 |
+| SCチーム コミュニティ担当 ソフィー | `sc-community` | Sonnet | `/sc-upload` STEP 3.6・3.7 のコメント返信の文面 | コメント数・返信率・高評価率 |
 
 担当のいない工程（サムネイル STEP 3B、BGM 選定 STEP 3C、TTS・動画生成などのスクリプト実行）は、これまでどおりメインが行う。
 担当を新設・統合したいときは、管理担当が月次評価で提案し、ユーザーが決める。
@@ -60,15 +60,15 @@ python3 team_log.py feedback --agent sc-historian --episode ep{NNN} --source use
 #   --source: user / qa / viewer / manager、--severity: major（作り直しが要る）/ minor
 ```
 
-どの担当の成果物か迷ったら、その指摘を防げた最初の工程の担当に付ける（例: 容姿の誤り → `sc-historian` の風体リサーチ、
-シーン間の髪型の不一致 → `sc-art-director`）。担当のいない工程（メイン）の指摘は記録しない。
+どの担当の成果物か迷ったら、その指摘を防げた最初の工程の担当に付ける（例: 容姿の誤り → SCチーム 時代考証担当 エドワード（`sc-historian`） の風体リサーチ、
+シーン間の髪型の不一致 → SCチーム 映像担当 アイリス（`sc-art-director`））。担当のいない工程（メイン）の指摘は記録しない。
 
 ## エスカレーション
 
 CLAUDE.md「モデルの使い分けとOpusへのエスカレーション」の条件に当たったときの引き継ぎ先:
-- 画像（同じシーンが直らない・容姿の問題）→ `sc-art-director`
-- 史実・容姿の判断 → `sc-historian`
-- それ以外（スクリプトの失敗、原因の分からない不具合、担当をまたぐ問題）→ `sc-manager`
+- 画像（同じシーンが直らない・容姿の問題）→ SCチーム 映像担当 アイリス（`sc-art-director`）
+- 史実・容姿の判断 → SCチーム 時代考証担当 エドワード（`sc-historian`）
+- それ以外（スクリプトの失敗、原因の分からない不具合、担当をまたぐ問題）→ SCチーム 管理担当 マーカス（`sc-manager`）
 
 引き継いだら、元の担当の記録を `--result escalated` にする。
 

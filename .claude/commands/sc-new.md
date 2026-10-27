@@ -136,7 +136,7 @@ git log --oneline -5          # 直近の変更を確認
 
 新しいトピックを5件提案し、ユーザーに確認してもらう。
 
-**5件の案は企画担当 `sc-planner` が作る（2026-10-27〜、担当者制。`team/TEAM.md`）。** メインは次の形で呼び、
+**5件の案はSCチーム 企画担当 ヘンリー（`sc-planner`） が作る（2026-10-27〜、担当者制。`team/TEAM.md`）。** メインは次の形で呼び、
 返ってきた案を下の「提案フォーマット」でユーザーに見せる（提示・確認・`topics_queue.json` への追記はメインが行う）。
 
 ```
@@ -372,7 +372,7 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 ### 生成方法（2026-08-04〜: 生成はSonnet・チェックはOpusの二段構成に変更）
 
 このSTEPの生成（エピソードJSON全体の作成）は `Agent` ツールで **`model: "sonnet"` を明示した**
-脚本担当 `sc-writer` に任せる（2026-10-27〜、担当者制。`team/TEAM.md`）。
+SCチーム 脚本担当 クレア（`sc-writer`） に任せる（2026-10-27〜、担当者制。`team/TEAM.md`）。
 
 **model指定は省略しない（2026-10-15〜）:** 指定を省くとサブエージェントはメインと同じモデルを引き継ぐ。
 Sonnetメインなら結果は同じだが、設計・改修目的でOpusメインのセッションから `/sc-new` を回すと、
@@ -739,7 +739,7 @@ Commanding presence. Carries a European arquebus as well as a katana.
 
 **制作確認書の内容は画面に一切出力しない。**
 
-このSTEPのファクトチェック・翻訳・確認書生成も `Agent` ツールで時代考証担当 `sc-historian`
+このSTEPのファクトチェック・翻訳・確認書生成も `Agent` ツールでSCチーム 時代考証担当 エドワード（`sc-historian`）
 （`subagent_type: "sc-historian"`、`model: "opus"`）に任せる（史実知識の精度のため。2026-10-27〜、担当者制）。
 終わったら `python3 team_log.py add --agent sc-historian --episode ep{NNN} --step 3A --result ok` で記録する。Agentプロンプトには
 `episodes/ep{NNN}.json` のパスと、以下の手順・フォーマット全文を含める。
@@ -1622,7 +1622,7 @@ Agent({
 python3 sc_image_gen.py --episode ep{NNN} --scenes 12 --ref-image ~/Desktop/SC/ep{NNN}/images/S14.png
 ```
 参照にするのは**同じ容姿の段階**のシーンにする（剃髪後の画像を出家前のシーンの参照にしない）。
-2回実行しても直らない場合は、下記WARNINGへの一次対応と同じく映像担当 `sc-art-director` に引き継ぐ。
+2回実行しても直らない場合は、下記WARNINGへの一次対応と同じくSCチーム 映像担当 アイリス（`sc-art-director`） に引き継ぐ。
 **要相談は新しい確認ステップにせず、後述の統合確認メッセージに選択肢付きで含める。**
 いずれの場合もナレーション本文や他のJSONフィールドは変更しない（TTS再生成を発生させない）。
 
@@ -1647,7 +1647,7 @@ python3 sc_image_gen.py --episode ep{NNN} --scenes 12 --ref-image ~/Desktop/SC/e
    ```
    再生成後の `image_qa_result*.json` を再度確認する：
    - 合格 → 解決済み扱い（ユーザーには諮らない）
-   - 不合格 → **ユーザーに確認せず、このシーンを映像担当 `sc-art-director`（`model: "opus"`）に引き継ぐ**（2026-09-29〜。2026-10-27〜は担当者制で引き継ぎ先を固定。
+   - 不合格 → **ユーザーに確認せず、このシーンをSCチーム 映像担当 アイリス（`sc-art-director`）（`model: "opus"`）に引き継ぐ**（2026-09-29〜。2026-10-27〜は担当者制で引き継ぎ先を固定。
      自動リトライ2回＋Claude修正1回で直らないのは「同じ工程の2連続失敗」に当たるため。
      CLAUDE.md「モデルの使い分けとOpusへのエスカレーション」参照）。引き継ぎには、シーンの
      `narration`・元の `image_prompt` と修正後の `image_prompt`・QAのissue・画像のパス・該当人物の
