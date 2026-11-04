@@ -72,6 +72,8 @@ def _numwords(s: str) -> str:
 def _norm(s: str) -> str:
     """英字と数字だけにそろえる（大文字小文字・長音符・ハイフン・句読点の揺れを無視する）。"""
     s = unicodedata.normalize("NFKD", _numwords(s.lower()))
+    # 同じ音で綴りだけ違う語（書き起こしの綴りの揺れ）をそろえる（ep119: councillors / counselors）
+    s = re.sub(r"\bcoun(?:cill|sell)ors?\b", lambda m: "counselor" + ("s" if m.group(0).endswith("s") else ""), s)
     return re.sub(r"[^a-z0-9]", "", s)
 
 

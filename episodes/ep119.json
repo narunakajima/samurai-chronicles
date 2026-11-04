@@ -1,0 +1,340 @@
+{
+  "episode_id": "ep119",
+  "episode_title": "The One Man Ieyasu Called His Friend: Honda Masanobu's Quiet Plan to Rule Japan",
+  "youtube_title": "He Took Up Arms Against Ieyasu — Then Became the Friend Who Helped Him Rule Japan",
+  "youtube_description": "In the summer of 1616, the most trusted adviser in Japan lay dying in a plain mansion, owning less land than men who had never advised anyone. Decades earlier, he had taken up arms against his own lord, Tokugawa Ieyasu, and been forgiven. Ieyasu, they say, called him friend. What was Honda Masanobu really after? Follow time-travelling reporter Tokio Kamiya as he files a dispatch from Edo, 1616.\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. Every episode is his dispatch from the scene.\n\n⏱️ Chapters:\n0:00 Introduction\n0:17 This is Tokio Kamiya, with a\n0:32 I should explain. I am a\n1:06 Let me start with what is\n1:38 Then comes the part that makes\n2:10 The rebellion fails. Ieyasu...\n2:41 Then, by 1582 at the latest,\n3:13 Years pass, and Ieyasu's...\n3:48 In 1600, Ieyasu marches to...\n4:29 Edo, a lane beside the Honda\n5:03 In 1605, Ieyasu hands the...\n5:39 Edo, a summer night, 1616. I\n6:12 I step back and check my\n6:40 The watch hums in my coat.\n7:09 I know what comes after, and\n7:47 Dawn over Edo. The lanterns are\n8:21 The watch grows warm against my\n8:52 Reporter's note. Back in my own\n9:26 Reporter's note. Japan has a...\n9:55 Reporter's note. Here is my...\n10:27 That is all I can carry\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Totman, Conrad — \"Tokugawa Ieyasu: Shogun\" (Heian International, 1983)\n2. Okubo Hikozaemon Tadataka — \"Mikawa Monogatari\" (early 17th-century memoir of the Tokugawa retainers)\n3. \"Tokugawa Jikki\" (official chronicle of the Tokugawa shogunate, compiled in the 19th century)\n4. \"Honsa-roku\" (treatise on government traditionally attributed to Honda Masanobu; authorship disputed)\n\n#HondaMasanobu #TokugawaIeyasu #Edo #SengokuPeriod #EdoPeriod #SamuraiHistory #JapaneseHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Honda Masanobu",
+    "Tokugawa Ieyasu",
+    "Ieyasu",
+    "Honda Sado-no-kami",
+    "Tokugawa shogunate",
+    "Edo period",
+    "Sengoku period",
+    "Mikawa Ikko-ikki",
+    "Hidetada",
+    "Honda Masazumi",
+    "Edo Castle",
+    "Sunpu",
+    "Japanese history",
+    "samurai history",
+    "Japan history documentary",
+    "Japanese history channel"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "narrator": "tokio",
+  "tokio_scenes": [
+    1,
+    2,
+    9,
+    11,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "tokio_talk": true,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Edo, 1616. I stand outside a plain gate as lanterns are lit, and the most trusted adviser in Japan lies dying. He once took up arms against Ieyasu. Ieyasu called him a friend. What was he really after? And why did he own so little?",
+  "shorts_narration": "1563. He raises arms against Ieyasu. Years later, Ieyasu calls him friend. No great battle. No great fief. Just a quiet plan to rule Japan. This is Honda Masanobu.",
+  "shorts_hook_lines": [
+    "A TRAITOR.",
+    "IEYASU'S FRIEND.",
+    "WHAT DID HE WANT?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of the face of Honda Masanobu in Edo, 1616, a lean, narrow-faced Japanese man in his late seventies with a high forehead, deeply wrinkled skin, slightly sunken cheeks, heavy drooping eyelids over sharp eyes that stare straight into the camera with a calm, unreadable, faintly weary gaze, a thin composed mouth under a thin white drooping moustache with a small white wisp of beard on the chin, his forehead and crown shaved in the sakayaki style with thin white side hair and a thin white topknot; a plain dark kosode collar at the frame edge, warm amber lamplight from one side and deep shadow on the other, a blurred paper screen behind him. Vertical portrait composition, face filling the center and upper part of the frame. No text, Japanese setting only.",
+  "thumbnail_prompt": "Cinematic close-to-medium portrait of Honda Masanobu in his fifties, a lean, narrow-faced Japanese man with a high forehead, slightly sunken cheeks, hair just greying at the temples, heavy-lidded sharp eyes fixed straight at the camera with a calm, calculating, slightly knowing gaze and the faintest trace of a smile, a thin composed mouth under a thin, neat, slightly drooping moustache with only a small sparse tuft of beard on the chin, his forehead and crown shaved in the sakayaki style with a small topknot, in a plain dark kamishimo, his face and shoulders placed in the left and center of the frame, lit by warm amber light from the side against deep shadow; behind him, soft and out of focus, a vast dim audience hall with the huge dark silhouette of Tokugawa Ieyasu seated on a raised dais in black lacquered armour. The lower right quarter of the frame is kept dark and empty. High-contrast dramatic lighting. No text in the image itself (the title text overlay is added separately), Japanese setting only.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "This is Tokio Kamiya, with a dispatch from Edo, 1616. Ieyasu is dead, and the man he called his friend is dying. Why does Japan's most powerful adviser own so little?",
+      "image_prompt": "A modest samurai mansion gate in Edo at dusk in the summer of 1616, a plain wooden gate under a small tiled roof set in a long white plaster wall, a single pine leaning over the wall, two retainers in dark kamishimo standing quietly beside it as a paper lantern is lit, a physician carrying a medicine chest hurrying toward the gate, and far beyond the rooftops the pale tiers of the great keep of Edo Castle against an orange evening sky. The gate is at the left of the frame; the right side is an open dusty street. Hushed, heavy, an important man is dying behind a plain wall. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Edo 1616",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I should explain. I am a correspondent, or I was, until my grandfather's brass watch passed to me. It carries me to any moment in Japan's past, for one day at a time. I may watch. I may speak. I may not change a thing. Today it sets me down in Edo, in the summer of 1616. The old shogun Ieyasu died only weeks ago. In a modest mansion, his closest adviser, Honda Masanobu, is nearly eighty, and gravely ill.",
+      "image_prompt": "The sickroom of a modest samurai mansion in Edo at night in 1616. Honda Masanobu, a lean, narrow-faced Japanese man with a high forehead, slightly sunken cheeks, heavy-lidded sharp eyes and a thin, composed mouth under a thin, neat, slightly drooping moustache with only a small sparse tuft of beard on the chin, his forehead and crown shaved in the sakayaki style with a small thin topknot, nearly eighty, deeply wrinkled lean face, heavy drooping eyelids, thin white side hair and a thin white topknot, the moustache and chin wisp white, frail, in a plain dark sleeping robe, lies propped on cushions under a plain quilt at the left of the frame, his sharp heavy-lidded eyes still open and alert, a physician kneeling beside him. One paper andon lantern glows amber, bare paper screens, a low desk with only an ink stone, no ornaments or luxury anywhere. The right side of the frame is an open shoji onto a dark garden. Quiet, plain, dignified. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "honda_masanobu",
+      "tokio_expression": "neutral",
+      "tokio_place": "Edo 1616",
+      "zoom_anchor": {
+        "x": 0.22,
+        "y": 0.52
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Let me start with what is solid. I carry the records in my notebook. Masanobu is no general. He is not famous for a great victory, and the old accounts list hardly any. He is born in Mikawa to a family of modest retainers, and a tradition says he begins as a falconer in the household of the young Ieyasu. What he has is a mind. Many of his contemporaries call him cunning, and they do not always mean it kindly.",
+      "image_prompt": "A grassy hunting field in Mikawa province in the 1560s on a bright morning. At the left stands a young Honda Masanobu, a lean, narrow-faced Japanese man with a high forehead, slightly sunken cheeks, heavy-lidded sharp eyes and a thin, composed mouth under a thin, neat, slightly drooping moustache with only a small sparse tuft of beard on the chin, his forehead and crown shaved in the sakayaki style with a small thin topknot, in his twenties, dark hair, dark thin moustache, smooth face, in plain working hakama and a plain jacket with no armour, a hawk perched on a leather glove on his raised fist, his clever watchful face turned toward the sky. In the background a group of mounted retainers in armour with plain dark banners gallop past, making him look small and quiet beside them. Clear light, green hills, a sense of a man who watches rather than fights. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "honda_masanobu",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Then comes the part that makes me stop. In 1563, armed followers of the True Pure Land sect rise against Ieyasu in his own province of Mikawa, and many of his own retainers take their faith's side. Masanobu is one of them. He picks up a weapon against the lord he served. I find it hard to picture, the man who will be called Ieyasu's friend standing among the rebels. But that is what the records say. It is the first knot in this story.",
+      "image_prompt": "A fortified True Pure Land temple compound in Mikawa in 1563, a heavy timber gate and an earth rampart, armed farmers and monks with spears and plain white banners with no markings crowded behind the wall. In the foreground a young Honda Masanobu, a lean, narrow-faced Japanese man with a high forehead, slightly sunken cheeks, heavy-lidded sharp eyes and a thin, composed mouth under a thin, neat, slightly drooping moustache with only a small sparse tuft of beard on the chin, his forehead and crown shaved in the sakayaki style with a small thin topknot, in his twenties, dark hair, dark thin moustache, in plain light armour with a spear, his jaw set, looks out across the open field toward a distant line of the lord's army with plain black banners. Drifting smoke, grey early light, tense, torn loyalty on his face. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_masanobu",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "The rebellion fails. Ieyasu forgives many who surrender, but Masanobu does not wait to learn his own fate. He leaves Mikawa. For years I lose him in the records. He is said to have travelled to Kaga, and to have served the warlord Matsunaga Hisahide in the Kinai. I cannot follow every step. What I can say is that he spends long years as a man with no lord, watching other masters rise and fall. I think that is where he learns what makes power last.",
+      "image_prompt": "A lone traveller on a snowy mountain road in the Hokuriku region, in the late 1560s: Honda Masanobu, a lean, narrow-faced Japanese man with a high forehead, slightly sunken cheeks, heavy-lidded sharp eyes and a thin, composed mouth under a thin, neat, slightly drooping moustache with only a small sparse tuft of beard on the chin, his forehead and crown shaved in the sakayaki style with a small thin topknot, in his thirties, weathered tanned skin, the moustache and chin tuft a little untrimmed, in worn plain travelling clothes with a straw hat pushed back, a staff in his hand, no armour and no crest, stops at a fork in the road and looks back down the valley with a calm, lonely, thoughtful face. Pale winter light, bare trees and drifting snow, the feeling of a man with no lord and no home. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": "honda_masanobu",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.3
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Then, by 1582 at the latest, he is home again. A senior retainer speaks for him, and Ieyasu takes back the man who once raised arms against him. I would give a great deal to hear that conversation. No record gives it. What I do know is what follows. Masanobu is never again far from Ieyasu's side. They say Ieyasu speaks to him as an equal, and calls him friend. Not servant. Friend. Ieyasu, who trusts almost no one, trusts this man.",
+      "image_prompt": "A reception hall in Hamamatsu Castle about 1582, a raised dais with plain gold-leaf screens. On the dais, Tokugawa Ieyasu, a stocky, round-faced man with deep-set watchful eyes, shaved forehead and crown with a small topknot, about forty, with a short dark beard, in formal dark robes, looks down with an unreadable, faintly warm half-smile. Kneeling before him, bowing low with his forehead almost to the tatami, is Honda Masanobu, a lean, narrow-faced Japanese man with a high forehead, slightly sunken cheeks, heavy-lidded sharp eyes and a thin, composed mouth under a thin, neat, slightly drooping moustache with only a small sparse tuft of beard on the chin, his forehead and crown shaved in the sakayaki style with a small thin topknot, in his mid-forties, hair just greying at the temples, in plain dark kamishimo, a senior retainer kneeling beside him. Soft amber light through paper screens, quiet, heavy with forgiveness. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_masanobu",
+      "zoom_anchor": {
+        "x": 0.76,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Years pass, and Ieyasu's world changes. Hideyoshi sends him east, to the Kanto, to a marshy little port called Edo. His men grumble. Masanobu does not. I think he sees what the others miss: that an empty land belongs to whoever arrives first with a plan. The records place him among the circle that draws up the new administration, the rules, the taxes, the roads. For himself, he takes only a modest domain. I notice that, and I make a note.",
+      "image_prompt": "The marshy plain of Edo in the early 1590s, reed beds beside the bay, a small port town of thatched houses and fishing boats, and an old, run-down timber castle on a low hill, surveyors with ropes and poles, labourers with baskets. In the foreground Honda Masanobu, a lean, narrow-faced Japanese man with a high forehead, slightly sunken cheeks, heavy-lidded sharp eyes and a thin, composed mouth under a thin, neat, slightly drooping moustache with only a small sparse tuft of beard on the chin, his forehead and crown shaved in the sakayaki style with a small thin topknot, in his fifties, hair greying at the temples, first lines around the eyes, in a plain dark jacket, studies a blank rolled map with two officials and points across the plain with one hand, as if already seeing a great city. Morning haze, soft golden light, quiet ambition. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_masanobu",
+      "zoom_anchor": {
+        "x": 0.49,
+        "y": 0.52
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1600, Ieyasu marches to settle who will rule Japan. His son Hidetada leads a second army down the mountain road, with Masanobu beside him. A small castle at Ueda delays them, and they miss Sekigahara. Ieyasu wins anyway. Then, a well-known story says, he asks his senior men who should follow him. Masanobu names the elder son, Hideyasu. Another veteran argues for Hidetada, because peace needs a steady hand. Ieyasu chooses Hidetada, and keeps Masanobu at his side. I cannot prove the story. But I note who won.",
+      "image_prompt": "A rain-soaked mountain road in autumn 1600, a long column of Tokugawa troops with plain dark banners halted before a small hill castle wreathed in smoke. In the foreground, under a rough canvas shelter, Honda Masanobu, a lean, narrow-faced Japanese man with a high forehead, slightly sunken cheeks, heavy-lidded sharp eyes and a thin, composed mouth under a thin, neat, slightly drooping moustache with only a small sparse tuft of beard on the chin, his forehead and crown shaved in the sakayaki style with a small thin topknot, aged sixty-two, grey-streaked hair and grey moustache, lined face, in plain half-armour under a plain jinbaori, sits on a camp stool studying a blank map beside a serious, pale, round-faced young heir in his twenties in armour, who looks anxious. Grey, wet light, tension and frustration, no violence shown. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "honda_masanobu",
+      "zoom_anchor": {
+        "multi_person": true
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Edo, a lane beside the Honda mansion wall. I sit with an old Mikawa retainer, and I tell him I am a travelling merchant. He tells me what the house still whispers: after Sekigahara, Ieyasu offered Masanobu a great reward, more land than he had ever held, and he refused. 'A man who holds too much,' the old man says, 'is a man others begin to count.' I record this as hearsay. But his eyes are wet when he says it.",
+      "image_prompt": "A narrow lane beside the long white plaster wall of a modest samurai mansion in Edo, late afternoon, summer 1616. An old white-haired retainer, weathered and thin, in faded dark kamishimo, sits on a stone step at the left of the frame talking with one hand raised, his eyes wet and his mouth set. Behind him a plain wooden gate and the branches of a pine. The right side of the frame is the open dusty lane. Warm low light, honest tired face. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "surprised",
+      "tokio_place": "Edo 1616",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "In 1605, Ieyasu hands the shogun's title to his son while he is still alive. The message is plain: the title now belongs to his family. Two years later he moves to Sunpu. Now there are two courts. At Sunpu, Ieyasu keeps his power. At Edo, Hidetada rules, and beside him stands Masanobu, while Masanobu's son Masazumi serves Ieyasu. I think that is the quiet plan: one house at both ends of the road. Whether he designed it, I cannot say.",
+      "image_prompt": "The Tokaido highway between Sunpu and Edo at dawn in the 1610s, a pine-lined road running toward the horizon, a courier on horseback galloping with a sealed document box carried on a pole across his shoulder, huge snow-capped Mount Fuji glowing pink in the sky beyond rice fields and a distant castle keep. Open, vast, a thread of messages linking two seats of power. Cool clear morning light. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Edo, a summer night, 1616. I stand at the Honda gate as lanterns are lit. Inside, the old man is dying. The retainer from this afternoon is at the gate again, and he lowers his voice. He tells me what the family says Masanobu told his son: never take a great domain, whatever the shogun offers. 'Rice makes enemies,' the old man says. 'A small house lives long.' I cannot confirm those were his words. I only know the servant repeats them to a stranger, and bows.",
+      "image_prompt": "Close medium shot at night, summer 1616: an old white-haired retainer, weathered and thin, in faded dark kamishimo, stands at the left of the frame beside a single glowing paper lantern, his face lit warmly from below, head slightly lowered, eyes wet, lips parted as he speaks softly. Behind him, out of focus, the edge of a plain wooden gate and, above the plaster wall, one dimly lit paper window with the faint silhouette of a frail figure lying down. Fireflies drift in the dark. The right side of the frame is deep night shadow. Intimate, solemn, heavy with farewell. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Edo 1616",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "I step back and check my notebook, because I was not there for Osaka. The summer before, in 1615, Hideyori and the last great fortress of the Toyotomi fell. Some accounts place Masanobu among the voices urging Ieyasu to finish it for good. At his death, no rival to the Tokugawa remains. The quiet plan, if it was a plan, has succeeded. I think the cost weighs heavier on the old man than he shows.",
+      "image_prompt": "Osaka Castle at night in the summer of 1615, the great white keep on its towering stone walls wrapped in flames and thick black smoke, the moat reflecting an orange glow, a vast field of Tokugawa troops with plain dark banners at the foot of the walls, sparks drifting up into the sky. Epic, grim, the end of an age, no gore, no bodies shown. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The watch hums in my coat. I leaf through my notebook, because I know how this night ends. Ieyasu died at Sunpu only weeks ago, and now Masanobu follows him. They had known each other for half a century, through rebellion, exile and war. The lord left first. I think of the friend who stays behind in a quiet room, listening to a country go on without his oldest companion.",
+      "image_prompt": "A sickroom in Sunpu Castle in the early summer of 1616. Tokugawa Ieyasu, a stocky, round-faced man with deep-set watchful eyes, shaved forehead and crown with a small topknot, in his seventies, gaunt, with a thin white topknot and sparse white beard, lies in a plain white sleeping robe on a futon at the left of the frame, his eyes closed, peaceful; a physician and a retainer kneel beside him in dark formal dress. Through an open shoji, the fresh green leaves of early summer fill the garden. The right side of the frame is soft morning light and the garden. Quiet, tender, an age ending. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "ieyasu",
+      "zoom_anchor": {
+        "x": 0.18,
+        "y": 0.75
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "I know what comes after, and I do not enjoy it. Masazumi rises. In the years that follow he receives a far larger domain, and he sits among the shogun's senior councillors. Then in 1622, six years after his father's death, he is stripped of it and sent into confinement. The official charges are plain: castle repairs without leave and breaches of rule. A famous tale says he rigged a ceiling at Utsunomiya to fall on the shogun. I find no record of that. But the old man's warning looks like prophecy.",
+      "image_prompt": "A grey rainy autumn day at a castle gate in northern Japan in 1622, a lord in his late fifties in plain dark clothes with no armour kneels with his head bowed on wet gravel in front of a waiting palanquin, rows of retainers kneeling silent behind him and stern officials in formal kamishimo standing at the left of the frame. A line of dark pine trees and the castle's white walls behind. Cold, solemn, no violence shown. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Dawn over Edo. The lanterns are out, and the street outside the Honda gate is quiet. Word comes out in low voices: the Lord of Sado is gone. A few retainers stand in the road without speaking. I see no crowds. I think that is how he would have wanted it. I look at the plain gate, the low wall, the single pine, and I think of all the castles Ieyasu raised. The friend of the man who built them leaves nothing so grand. I write nothing.",
+      "image_prompt": "Dawn in Edo in the summer of 1616, white mist lying in the street outside the plain gate of the Honda mansion, the paper lanterns burned out, a plain strip of white mourning cloth hanging at the gate, a few retainers in dark kamishimo standing silent and still in the road. A single pine leans over the long white plaster wall. The gate is at the left of the frame; the right is the empty misty street. Hushed, grey-pink light. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Edo 1616",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The watch grows warm against my chest. My day is almost over. I take one last walk along the road toward the castle. A young clerk hurries past with a bundle of papers under his arm, and he does not know whose habits he is following. I think that is the plainest monument Masanobu will ever have: a government that works so well nobody asks who built it. I bow toward the gate behind me, and the light changes.",
+      "image_prompt": "A busy road leading toward Edo Castle in the early morning in 1616, a young clerk in a plain kimono hurrying along the left of the frame with a bundle of bound blank papers under his arm, porters with loads, a few merchants and samurai passing, the great keep catching the pale gold morning sun far ahead. The right of the frame is the open road and sky. Fresh, clear morning light, a quiet working city beginning its day. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Edo 1616",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Back in my own century, I walk beside the moat of the Imperial Palace in Tokyo, where Edo Castle once stood. Visitors stroll the lawns in the afternoon sun, and nobody I ask can name Masanobu. The great stone walls are still here. The man who helped plan the order inside them has no monument I can find. I think that is the most Japanese part of this story: the work that lasts is the work no one signs.",
+      "image_prompt": "The stone walls and moat of the former Edo Castle in Tokyo today in late afternoon golden light, the wide grassy lawn of the East Garden with visitors in modern clothes strolling in small groups, the stone base of the old keep with broad steps at the left and center of the frame, a few pines along the moat. The right of the frame is open sky and the quiet water. Calm, warm, the weight of history on an ordinary afternoon. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.6
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Japan has a long respect for the adviser at the elbow, the number two who steers. The best-known writing under Masanobu's name is a treatise on government, the Honsa-roku. Scholars doubt that he wrote it. I find that almost perfect: a man who avoided credit in life stays uncertain about his own authorship in death. I think he would have been content with that. I note it with a straight face.",
+      "image_prompt": "A quiet second-hand bookshop in the Kanda district of Tokyo in the evening, wooden shelves crammed with old bound volumes whose spines are blank, a warm lamp glowing over a worn wooden table where one old bound book lies open to pale blank pages, a stool and a small stack of other books. The table is at the left of the frame; the right is a plain shelf-lined wall and a small window onto a dark street. Cosy, quiet, faintly ironic. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "writing",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.25,
+        "y": 0.65
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Here is my opinion, for what it is worth. Ieyasu, they say, called him friend. I cannot tell you whether a ruler can truly have a friend. But I can tell you what I saw: a man who once took up arms against his lord, who was forgiven, and who spent his life making sure the family that forgave him would last. I think loyalty after betrayal is the hardest kind. And I think the quiet plan was never to rule Japan himself.",
+      "image_prompt": "Two old friends at dusk in the 1610s: on the wooden veranda (engawa) of a quiet residence in Sunpu Castle, two elderly Japanese men sit side by side on the bare floorboards, seen mostly from behind, their faces turned away or only partly visible in profile, their shoulders almost touching, looking out together over a still garden pond and dark pine trees as the last warm light fades from a deep blue sky. One is stocky and broad-backed, the other lean, slender and a little frail; both wear plain dark haori over grey kosode. Both have white hair with a shaved crown and a thin white topknot. The pair sits in the left half of the frame; the right half is the open garden and the pond fading into soft evening mist. Gentle, intimate, quiet; warm gold rim light on their shoulders against the deep blue of evening. No lanterns, no signs, no banners, no scrolls, no crests; plain wooden pillars and plain sliding paper doors only. No text, no writing, no marks of any kind anywhere in the image.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.25,
+        "y": 0.6
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "That is all I can carry from the records: a rebel, a forgiveness, a modest house, and a government that outlived them all. The rest is a friendship that nobody wrote down. In my grandfather's notebook, the page in my own handwriting still reads only 1868. Subscribe, and the next dispatch will find you. The watch is ticking. Until the next report. Tokio Kamiya, reporting.",
+      "image_prompt": "A closing shot at dusk beside the moat of Edo Castle in his last years, about 1615: Honda Masanobu, a lean, narrow-faced Japanese man with a high forehead, slightly sunken cheeks, heavy-lidded sharp eyes and a thin, composed mouth under a thin, neat, slightly drooping moustache with only a small sparse tuft of beard on the chin, his forehead and crown shaved in the sakayaki style with a small thin topknot, nearly eighty, thin white side hair and thin white topknot, thin white moustache, seen from behind and slightly to the side, in a plain dark haori beside a leaning pine, stands small at the left of the frame looking across the still water toward the great keep glowing in an orange-violet sky. The right of the frame is open sky and water. Quiet, mythic, solitary. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "honda_masanobu",
+      "tokio_expression": "neutral",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.46
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep083-BGM-intro.mp3",
+    "main": "BGM/ep083-BGM-main.mp3",
+    "outro": "BGM/ep079-BGM-outro.mp3"
+  },
+  "youtube_url": "https://youtu.be/M1PCYK1VMB8",
+  "shorts_url": "https://youtu.be/_KhLPwkjAD0",
+  "scheduled_at": "2026-11-12 03:00"
+}

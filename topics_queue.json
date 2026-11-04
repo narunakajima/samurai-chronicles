@@ -1225,14 +1225,14 @@
     },
     {
       "episode_id": "ep119",
-      "status": "pending",
+      "status": "published",
       "title": "The One Man Ieyasu Called His Friend: Honda Masanobu's Quiet Plan to Rule Japan",
       "era": "Sengoku/Edo",
       "priority": "A",
       "person": "honda_masanobu",
       "angle": "overview",
       "notes": "未登場。知られざる軍師・参謀型の人物（hidden_strategist仮説は2026-10-14にrejected。検証枠ではなく通常の題材として扱う）。ep003/016/096の家康回とは別人物視点。overview・謎解き寄りで構成する。 → 2026-10-05: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-10-14"
+      "last_updated": "2026-11-04"
     },
     {
       "episode_id": "ep120",
@@ -1246,6 +1246,61 @@
       "last_updated": "2026-10-05"
     },
     {
+      "episode_id": "ep121",
+      "status": "pending",
+      "title": "The Monk Who Collected 999 Swords and Died Standing: The Real Benkei",
+      "era": "Heian",
+      "priority": "A",
+      "person": "benkei",
+      "angle": "overview",
+      "notes": "主役としては初登場（ep006/017/049/071 では義経回の脇役。characters/benkei.txt あり）。前回までとの違い: 義経の悲劇ではなく、弁慶本人の生涯（五条大橋・999本の刀・安宅の関・衣川の立ち往生）を、『義経記』の伝説と『吾妻鏡』に名前が出るだけという記録の差で読み解く。伝説と史実の線引きが軸。image_era: kamakura の対象（月代の普及前）。弁慶は僧兵で裹頭・剃髪なので月代の問題は起きにくいが、義経たち武士側は kamakura の髪型制約の影響を受ける。Heian の実績を作る枠（ep114 晴明以来）。 → 2026-11-04: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-11-04"
+    },
+    {
+      "episode_id": "ep122",
+      "status": "pending",
+      "title": "He Exiled His Own Father at 19 — and the Old Man Outlived Him: Takeda Shingen's Coldest Choice",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "shingen",
+      "angle": "key_event",
+      "notes": "信玄は5回目の登場（ep025 謙信との対決 / ep047 死の謎 / ep048 騎馬隊 / ep102 風林火山）。新角度: 1541年に父・信虎を駿河へ追放した選択を軸にする。信虎の名前は全エピソードで一度も出ていない。追放された父が流浪の末に、息子の死（1573年）の翌年まで生きたという逆説で締める。事件の顛末ではなく『なぜ若い信玄は父を切ったか、その選択が信玄という人間をどう決めたか』を軸にする。年齢は満19歳（1521年12月生まれ、1541年7月）。数え年では21歳になるので、エドワードに表記の確認を依頼すること。有名人物枠。 → 2026-11-04: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-11-04"
+    },
+    {
+      "episode_id": "ep123",
+      "status": "pending",
+      "title": "He Lost His Flag in 1877 and Waited 35 Years to Die for It: General Nogi Maresuke",
+      "era": "Meiji",
+      "priority": "A",
+      "person": "nogi_maresuke",
+      "angle": "overview",
+      "notes": "未登場（ep067 切腹回に名前が出るだけ）。1877年の西南戦争で連隊旗を奪われる → 死を願い出るが明治天皇が許さない → 旅順攻囲戦で多大な損害を出し、2人の息子も戦死 → 1912年、大喪の日に妻・静子と殉死、という35年の生涯を一本の選択でつなぐ overview。ep008 西郷・ep117 大久保と関連動画でつながる。戦死者数などの数字はエドワードが一次資料で確定すること。軍国主義の美化にならないよう中立に描く。 → 2026-11-04: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-11-04"
+    },
+    {
+      "episode_id": "ep124",
+      "status": "pending",
+      "title": "Nobunaga's African Retainer Served Him Just 15 Months — Then Vanished: The Real Yasuke",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "yasuke",
+      "angle": "overview",
+      "notes": "未登場。全エピソードで言及ゼロ。1581年に宣教師ヴァリニャーノの従者として来日 → 信長に召し抱えられる → 1582年の本能寺の変で捕らえられ、南蛮寺へ送られたあと消息不明、までの約15か月。『信長公記』・『家忠日記』・イエズス会の書簡にある記述だけで構成し、『侍だったか』は確定させずに論点として示す。題名でも Samurai と断定しない。英語圏で論争になっている題材なので、コメント欄の荒れにソフィーが備えること。肖像はないので、容貌は家忠日記の記述に基づいて新しく作る（characters/yasuke.txt）。月代の問題はない。公開後は CTR だけでなく高評価率も分けて見ること。 → 2026-11-04: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-11-04"
+    },
+    {
+      "episode_id": "ep125",
+      "status": "pending",
+      "title": "The Shogun Who Let China Call Him 'King of Japan' — and Built a Pavilion of Gold: Ashikaga Yoshimitsu",
+      "era": "Muromachi",
+      "priority": "B",
+      "person": "ashikaga_yoshimitsu",
+      "angle": "overview",
+      "notes": "未登場（ep077 尊氏の孫、ep105 義政の祖父）。南北朝の合一（1392年）→ 北山殿・金閣（1397年〜）→ 明から『日本国王』として冊封される、という生涯で、『将軍が自ら王を名乗った選択』を軸にする。ep105（銀閣の義政）と金閣・銀閣の対で関連動画に並ぶ。image_era: kamakura の対象になり得る（室町前期）。1395年に出家して剃髪するので、生涯で容姿が変わる人物として STEP 5-0 で全シーンを年代と照合すること。Muromachi の実績を作る枠。 → 2026-11-04: 補充提案(ユーザー承認済)。",
+      "last_updated": "2026-11-04"
+    },
+    {
       "episode_id": "ep109",
       "status": "pending",
       "title": "The Warlord Who Never Married, Drank Alone, and Called Himself a God of War: Uesugi Kenshin's Private War",
@@ -1253,8 +1308,8 @@
       "priority": "A",
       "person": "kenshin",
       "angle": "character",
-      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。 → 2026-10-05: 重複チェックで、不犯・毘沙門天信仰・酒がep021/025/046で既出と判明。新角度が弱いため後回し（再開するなら継承問題など未使用の切り口に書き換えること）。",
-      "last_updated": "2026-09-28"
+      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。 → 2026-10-05: 重複チェックで、不犯・毘沙門天信仰・酒がep021/025/046で既出と判明。新角度が弱いため後回し（再開するなら継承問題など未使用の切り口に書き換えること）。 → 2026-11-04: 配列末尾へ移動（ユーザー決定。ep121〜125 の補充追加に伴い後回し）。",
+      "last_updated": "2026-11-04"
     }
   ],
   "hypotheses": [
@@ -1329,6 +1384,6 @@
       "notes_2026-10-05": "Opus月次分析(2026-10-05): 有効な14日窓を持つ純粋なBakumatsu7本(ep068/072/076/081/085/088/089)で、公開月で層別した並べ替え検定の結果、相対CTR −0.29pt(p=0.41)、リタイトルの影響を受けたep076を除いても −0.35pt(p=0.37)、相対維持率 +2.1pt(p=0.60)。プールCTR 2.07%(158/7649) 対 他era 2.26%(610/26972)、比0.92(粗い95%CI 0.77〜1.09)。基準「明確な差がなければeraの問題ではない」に該当するため『Bakumatsuが時代として弱い』仮説を棄却し、sc-new.mdの注意書きを解除。検出力は低く、25%未満の小さな不利は否定できない。前回(2026-09-28)のp≈0.09は、データ欠損で壊れた窓を含む8月中央値との比較が原因と考えられる。ep100(Bakumatsu)の窓は10/13頃に完了するので追加の確認材料にする。"
     }
   ],
-  "last_updated": "2026-10-19",
-  "total_topics": 120
+  "last_updated": "2026-11-04",
+  "total_topics": 125
 }

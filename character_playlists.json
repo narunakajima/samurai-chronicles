@@ -178,6 +178,10 @@
       {
         "episode_id": "ep096",
         "video_id": "Ja3ez2KMMmU"
+      },
+      {
+        "episode_id": "ep119",
+        "video_id": "M1PCYK1VMB8"
       }
     ]
   },
@@ -1184,6 +1188,16 @@
       {
         "episode_id": "ep118",
         "video_id": "jx9uQN_Mcu8"
+      }
+    ]
+  },
+  "honda_masanobu": {
+    "display_name": "Honda Masanobu",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep119",
+        "video_id": "M1PCYK1VMB8"
       }
     ]
   }
