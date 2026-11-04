@@ -17,3 +17,6 @@
 {"ts": "2026-11-04T09:11:46+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "5f9f970c-59bf-47fa-9cf8-bf922e1c8d64"}
 {"ts": "2026-11-04T09:11:52+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep119", "step": "1", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-04T09:35:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep119", "step": "learn-audio", "result": "ok", "retries": 0, "note": "clips.py 綴り揺れ(councillors)を1件修正"}
+{"ts": "2026-11-04T14:20:27+09:00", "kind": "call", "agent": "sc-community", "session": "5f9f970c-59bf-47fa-9cf8-bf922e1c8d64"}
+{"ts": "2026-11-04T14:20:35+09:00", "kind": "work", "agent": "sc-community", "episode": "ep119", "step": "3.6", "result": "ok", "retries": 0, "note": "返信2件・見送り5件"}
+{"ts": "2026-11-04T14:26:44+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep119", "step": "進行", "result": "ok", "retries": 0, "note": "YouTube認証トークン失効→Chrome操作で再認証(yt_token_sc)。SC/学習版アップロード・関連動画11件・コメント返信完了"}

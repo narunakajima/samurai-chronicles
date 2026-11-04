@@ -307,5 +307,6 @@
   ],
   "youtube_url": "https://youtu.be/1efE93lEVls",
   "shorts_url": "https://youtu.be/OjSfFC_6L4Q",
-  "scheduled_at": "2026-11-03 03:00"
+  "scheduled_at": "2026-11-03 03:00",
+  "related_video_set": true
 }

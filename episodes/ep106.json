@@ -298,5 +298,6 @@
   ],
   "youtube_url": "https://youtu.be/SMRQFtEUeLk",
   "shorts_url": "https://youtu.be/-WRLUjm29Cw",
-  "scheduled_at": "2026-10-24 03:00"
+  "scheduled_at": "2026-10-24 03:00",
+  "related_video_set": true
 }

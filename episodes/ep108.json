@@ -301,5 +301,6 @@
   ],
   "youtube_url": "https://youtu.be/sLicpp3FFZ8",
   "shorts_url": "https://youtu.be/s-0fuMBn2B4",
-  "scheduled_at": "2026-10-31 03:00"
+  "scheduled_at": "2026-10-31 03:00",
+  "related_video_set": true
 }

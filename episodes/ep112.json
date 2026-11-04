@@ -250,5 +250,6 @@
   "image_era": "kamakura",
   "youtube_url": "https://youtu.be/RR37BSfqJI4",
   "shorts_url": "https://youtu.be/C6haqicLFTA",
-  "scheduled_at": "2026-10-22 03:00"
+  "scheduled_at": "2026-10-22 03:00",
+  "related_video_set": true
 }
