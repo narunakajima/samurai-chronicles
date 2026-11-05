@@ -129,6 +129,8 @@ def restore(backup_file: Path):
 
 
 def main():
+    from sc_unattended_guard import forbid_unattended
+    forbid_unattended("既存動画のメタデータの一括書き換え")
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="対象一覧を表示するだけで更新しない")
     parser.add_argument("--episode", help="特定のエピソードIDのみ処理（例: ep050）")

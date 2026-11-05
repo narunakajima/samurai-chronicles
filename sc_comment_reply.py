@@ -81,6 +81,11 @@ def unreplied(yt, max_pages=5):
 def main():
     if len(sys.argv) < 2 or sys.argv[1] not in ("list", "post"):
         sys.exit(__doc__)
+    if sys.argv[1] == "post":
+        # 無人実行の安全装置: コメント返信の投稿は、メモに「アップロード指示: ep{NNN}」がある実行の中だけ（list は読み取りのみ）
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from sc_unattended_guard import require_upload_permission
+        require_upload_permission(None, "コメント返信の投稿")
     yt = youtube()
     if sys.argv[1] == "list":
         print(json.dumps(unreplied(yt), ensure_ascii=False, indent=1))

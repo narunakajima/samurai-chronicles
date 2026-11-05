@@ -249,6 +249,10 @@ def main():
         forbid_unattended("--now（即時公開）")
     if a.replace_short:
         forbid_unattended("--replace-short（動画の削除と上げ直し）")
+    if a.schedule_existing:
+        forbid_unattended("--schedule-existing（アップロード済みの動画の公開日時の変更）")
+    from sc_unattended_guard import require_future_publish_at
+    require_future_publish_at(a.publish_at)
     if not a.dry_run:
         require_upload_permission(a.episode if not a.auth_only else None, "学習版チャンネルへのアップロード")
 

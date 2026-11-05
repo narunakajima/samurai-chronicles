@@ -118,6 +118,9 @@ def main():
     ap.add_argument("--mark-all-published", action="store_true")
     args = ap.parse_args()
     now = datetime.now(JST)
+    if args.mark or args.mark_all_published:
+        from sc_unattended_guard import forbid_unattended
+        forbid_unattended("--mark（関連動画の設定済みの記録。Chrome の工程は無人では行わない）")
 
     if args.mark:
         mark(set(args.mark))

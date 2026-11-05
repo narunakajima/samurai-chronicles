@@ -17,6 +17,8 @@ CHAR_PLAYLISTS_JSON = BASE_DIR / "character_playlists.json"
 
 
 def main():
+    from sc_unattended_guard import forbid_unattended
+    forbid_unattended("再生リストの一括補完")
     parser = argparse.ArgumentParser()
     parser.add_argument("--char", help="特定キャラのみ処理（省略で全件）")
     args = parser.parse_args()

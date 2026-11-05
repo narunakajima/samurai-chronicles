@@ -264,6 +264,11 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     with open(ep_json, encoding="utf-8") as f:
         ep = json.load(f)
 
+    # 無人実行の安全装置: 既にアップロード済みの回の再アップロード（重複・差し替え）と、直近・過去の予約日時（即時公開になる）を拒否
+    from sc_unattended_guard import forbid_reupload, require_future_publish_at
+    forbid_reupload(ep, "youtube_url")
+    require_future_publish_at(publish_at)
+
     out_dir = DRIVE_BASE / episode_id / "output"
     main_video = out_dir / f"Samurai Chronicles {episode_id}.mp4"
     shorts_video = out_dir / f"{episode_id}_shorts.mp4"
@@ -480,8 +485,8 @@ def commit_remaining_changes(episode_id: str):
 
 
 def fix_shorts_description(episode_id: str, shorts_id: str):
-    from sc_unattended_guard import require_upload_permission
-    require_upload_permission(episode_id, "YouTube の説明文の更新")
+    from sc_unattended_guard import forbid_unattended
+    forbid_unattended("--fix-shorts（既存の Shorts の説明文の書き換え）")
     """既存ShortsのURLを新フォーマットの説明文に更新する（本編IDは自動取得）"""
     import re
 

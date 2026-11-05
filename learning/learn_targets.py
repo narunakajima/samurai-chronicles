@@ -82,6 +82,13 @@ def main():
     ap.add_argument("--approve", nargs="+", metavar="EPISODE")
     ap.add_argument("--mark-related", nargs="+", metavar="EPISODE")
     a = ap.parse_args()
+    # 無人実行の安全装置: 公開 OK の記録は、メモに「アップロード指示: ep{NNN}」がある回だけ。関連動画の設定済みの記録は、Chrome の工程が無人では行われないため常に拒否
+    from sc_unattended_guard import require_upload_permission, forbid_unattended
+    if a.approve:
+        for eid in a.approve:
+            require_upload_permission(eid, "学習版の公開 OK の記録（--approve）")
+    if a.mark_related:
+        forbid_unattended("--mark-related（関連動画の設定済みの記録。Chrome の工程は無人では行わない）")
     if a.approve:
         for eid in a.approve:
             if not (BASE_DIR / "lessons" / f"{eid}.json").exists():

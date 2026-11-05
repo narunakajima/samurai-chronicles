@@ -89,6 +89,8 @@ def _inject(ep: dict, credit_lines: list) -> dict:
 
 
 def main():
+    from sc_unattended_guard import forbid_unattended
+    forbid_unattended("BGM クレジットの監査・書き換え")
     parser = argparse.ArgumentParser()
     parser.add_argument("--fix", action="store_true", help="ローカルのepisode JSONに追記する")
     parser.add_argument("--push", action="store_true",

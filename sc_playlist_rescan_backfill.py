@@ -122,6 +122,8 @@ def undo(log_file: Path):
 
 
 def main():
+    from sc_unattended_guard import forbid_unattended
+    forbid_unattended("再生リストの再走査・一括補完")
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--dry-run", action="store_true",
