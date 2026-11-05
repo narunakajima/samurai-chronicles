@@ -998,24 +998,15 @@ Photorealistic live-action cinematic film still, 35mm anamorphic lens, real skin
   - ✅ 良い例: "THE GOD OF WAR"（上杉謙信）/ "THE EXILE"（西郷隆盛）/ "THE WRONG SIDE"（石田三成）
 - `SUBTITLE`: サブコピー（例: "Japan's Greatest Betrayal"）
 
-**生成コード:**
-```python
-import os
-from google import genai
-from google.genai import types
-# SC専用キーを優先（sc_image_gen.py等と同じ、2026-09-04修正 —
-# 以前はos.environ["GEMINI_API_KEY"]直読みで汎用キーに課金されており、
-# SC Projectの請求に計上されていなかった）
-api_key = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
-client = genai.Client(api_key=api_key)
-response = client.models.generate_content(
-    model="gemini-3.1-flash-image",  # sc_image_gen.pyのMODELと統一（旧gemini-3.1-flash-imageは2026-10-29提供終了）
-    contents=full_prompt,
-    config=types.GenerateContentConfig(response_modalities=["IMAGE"]),
-)
-# inline_data から PNG をデスクトップに保存
-# 保存先: ~/Desktop/SC/ep{NNN}_thumbnail.png
+**生成コマンド（2026-11-05〜: インラインの Python をやめ、スクリプト呼び出しにした。無人実行でも動く）:**
+```bash
+python3 sc_thumbnail_gen.py --episode ep{NNN} --title "THE GOD OF WAR" --subtitle "Japan's Greatest Betrayal"
 ```
+- `thumbnail_prompt` に上記のテキストオーバーレイ指示を足して生成し、`~/Desktop/SC/ep{NNN}_thumbnail.png`（1280x720）に保存する。
+  モデルは `sc_image_gen.py` の `MODEL` に統一、キーは `GEMINI_API_KEY_SC` 優先（2026-09-04修正と同じ）、失敗時は内部で3回まで再試行
+- **タイトル重複チェックはスクリプトが行う**（他エピソードの `thumbnail_prompt` に同じ大文字タイトルがあれば止まる。別のタイトルにする）
+- 既存のサムネイルは `--force` なしでは上書きしない（課金の二重払い防止。作り直すときだけ `--force`）
+- 生成後は Read で画像を開き、文字の綴り・顔・髪型を目視する（Tokio モードの回は、そのあと `sc_tokio_assets.py thumb`）
 
 **Google Drive への保存はこの時点では行わない。**
 

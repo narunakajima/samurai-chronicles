@@ -251,6 +251,11 @@ def upload_caption(youtube, video_id: str, srt_path: Path):
 
 
 def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = False):
+    # 無人実行（handoff-poller）の安全装置: メモに「アップロード指示: ep{NNN}」が明記された回だけ実行できる。--now は常に拒否
+    from sc_unattended_guard import require_upload_permission, forbid_unattended
+    if publish_now:
+        forbid_unattended("--now（即時公開）")
+    require_upload_permission(episode_id, "YouTube へのアップロード（本編・Shorts）")
     ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
     if not ep_json.exists():
         print(f"❌ エピソードJSONが見つかりません: {ep_json}")
@@ -475,6 +480,8 @@ def commit_remaining_changes(episode_id: str):
 
 
 def fix_shorts_description(episode_id: str, shorts_id: str):
+    from sc_unattended_guard import require_upload_permission
+    require_upload_permission(episode_id, "YouTube の説明文の更新")
     """既存ShortsのURLを新フォーマットの説明文に更新する（本編IDは自動取得）"""
     import re
 

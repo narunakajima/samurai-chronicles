@@ -574,4 +574,6 @@ def build():
 
 
 if __name__ == "__main__":
+    from sc_unattended_guard import require_upload_permission
+    require_upload_permission(None, "サイトの生成（公開用）")
     build()

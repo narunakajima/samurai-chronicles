@@ -242,6 +242,16 @@ def main():
     ap.add_argument("--auth-only", action="store_true", help="認証とチャンネルの確認だけ")
     a = ap.parse_args()
 
+    # 無人実行（handoff-poller）の安全装置: メモに「アップロード指示: ep{NNN}」が明記された回だけ実行できる。--now・--replace-short は常に拒否
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    from sc_unattended_guard import require_upload_permission, forbid_unattended
+    if a.now:
+        forbid_unattended("--now（即時公開）")
+    if a.replace_short:
+        forbid_unattended("--replace-short（動画の削除と上げ直し）")
+    if not a.dry_run:
+        require_upload_permission(a.episode if not a.auth_only else None, "学習版チャンネルへのアップロード")
+
     if a.auth_only:
         get_youtube_client()
         print("✅ 認証できました")

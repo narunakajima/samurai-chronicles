@@ -267,6 +267,8 @@ def cli():
     parser.add_argument("--episode", required=True, help="エピソードID（例: ep006）")
     parser.add_argument("--video-id", required=True, help="YouTube 動画ID")
     args = parser.parse_args()
+    from sc_unattended_guard import require_upload_permission
+    require_upload_permission(args.episode, "YouTube の再生リスト操作")
 
     # 認証は sc_sns_up.py と同じ方法で取得
     from sc_sns_up import get_youtube_client
