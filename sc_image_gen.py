@@ -396,6 +396,42 @@ def build_retry_prompt(base_prompt: str, issues: list, level: int) -> str:
     return prompt
 
 
+# 出力サイズ検査（2026-11-06〜）。ep120 の S15 で 1600x672（比率2.38）が QA を通過し、
+# 手作業で切り出した。縦横比が期待値から外れたら、再生成し、最後の試行でも直らなければ中央で切り出す。
+PORTRAIT_GEN_FUNCS = {"generate_one_image_portrait", "generate_face_with_appearance_ref"}
+ASPECT_TOLERANCE = 0.03          # 期待比率からの許容ずれ（3%）
+OUT_SIZE_LANDSCAPE = (1376, 768)  # 16:9
+OUT_SIZE_PORTRAIT = (768, 1376)   # 9:16
+
+
+def _expected_size(gen_func) -> tuple:
+    return OUT_SIZE_PORTRAIT if gen_func.__name__ in PORTRAIT_GEN_FUNCS else OUT_SIZE_LANDSCAPE
+
+
+def _aspect_ok(path: Path, expected: tuple) -> tuple:
+    """(比率が許容内か, 実サイズ) を返す。"""
+    from PIL import Image
+    with Image.open(path) as im:
+        w, h = im.size
+    return abs((w / h) / (expected[0] / expected[1]) - 1) <= ASPECT_TOLERANCE, (w, h)
+
+
+def _crop_to_aspect(path: Path, expected: tuple) -> None:
+    """中央で期待比率に切り出し、期待サイズへそろえる（上書き）。"""
+    from PIL import Image
+    with Image.open(path) as im:
+        im = im.convert("RGB")
+        w, h = im.size
+        target = expected[0] / expected[1]
+        if w / h > target:
+            nw = int(round(h * target)); x0 = (w - nw) // 2
+            box = (x0, 0, x0 + nw, h)
+        else:
+            nh = int(round(w / target)); y0 = (h - nh) // 2
+            box = (0, y0, w, y0 + nh)
+        im.crop(box).resize(expected, Image.LANCZOS).save(path)
+
+
 def _generate_and_qa(client, gen_func, base_prompt: str, char_ref: str,
                       out_file: Path, scene_id: int, max_attempts: int = 2,
                       ref_image: types.Part = None) -> dict:
@@ -427,7 +463,26 @@ def _generate_and_qa(client, gen_func, base_prompt: str, char_ref: str,
             qa_result["attempts"] = attempt
             return qa_result
         print(f"✓ {out_file.name}", end="", flush=True)
+        expected = _expected_size(gen_func)
+        size_ok, actual = _aspect_ok(out_file, expected)
+        size_note = None
+        if not size_ok:
+            print(f"  [サイズ: ⚠️ {actual[0]}x{actual[1]} は {expected[0]}x{expected[1]} の比率ではない]", end="", flush=True)
+            if attempt < max_attempts:
+                print("\n     → 再生成します")
+                qa_result = {"scene_id": scene_id, "ok": False, "attempts": attempt,
+                             "issues": [f"SIZE: 出力が {actual[0]}x{actual[1]}（期待 {expected[0]}x{expected[1]}）"]}
+                prompt = base_prompt
+                continue
+            _crop_to_aspect(out_file, expected)
+            size_note = f"SIZE: {actual[0]}x{actual[1]} を中央で切り出し {expected[0]}x{expected[1]} にそろえた（被写体の見切れを目視確認すること）"
+            print(f"  [中央で切り出して {expected[0]}x{expected[1]} にそろえた]", end="", flush=True)
+        elif actual != expected:
+            _crop_to_aspect(out_file, expected)   # 比率は合っているが画素数が違う場合はそろえるだけ
         qa_result = qa_image_with_gemini(client, out_file, base_prompt, scene_id)
+        if size_note:
+            qa_result.setdefault("issues", []).append(size_note)
+            qa_result["size_fixed"] = True
         qa_result["attempts"] = attempt
         if qa_result["ok"]:
             print("  [QA: OK]")
