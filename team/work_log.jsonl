@@ -39,3 +39,4 @@
 {"ts": "2026-11-06T16:19:34+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep120", "step": "1", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-06T18:11:15+09:00", "kind": "call", "agent": "sc-manager", "session": "91d163a4-6557-47d8-9890-be4beb1fb83e"}
 {"ts": "2026-11-06T18:11:20+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep120", "step": "学習版判断", "result": "ok", "retries": 0, "note": "S20 cueで補う(訳は不変)"}
+{"ts": "2026-11-07T00:12:28+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep120", "step": "進行", "result": "ok", "retries": 0, "note": "アップロード完了。関連動画は Chrome 権限なしで未設定"}
