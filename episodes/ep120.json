@@ -57,7 +57,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "neutral",
-      "tokio_place": "Edo 1639"
+      "tokio_place": "Edo 1639",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.5
+      }
     },
     {
       "scene_id": 2,
@@ -68,7 +72,11 @@
       "ken_burns": "pan_right",
       "character_ref": "tokugawa_iemitsu",
       "tokio_expression": "neutral",
-      "tokio_place": "Edo 1639"
+      "tokio_place": "Edo 1639",
+      "zoom_anchor": {
+        "x": 0.79,
+        "y": 0.38
+      }
     },
     {
       "scene_id": 3,
@@ -95,7 +103,11 @@
       "narration": "In 1623, at nineteen, Iemitsu is made shogun. His father Hidetada steps aside in name, yet keeps the reins until his death in 1632. Later accounts say that Iemitsu tells the assembled lords that, unlike his grandfather and father, he was born to rule, and that anyone who disagrees may go home and ready an army. I cannot give you the date or the exact words. In the story, no lord goes home. Obedience, not affection, becomes the currency of his reign.",
       "image_prompt": "A vast hall of Edo Castle in 1623, daimyo in rows of formal dark kamishimo kneeling with their foreheads to the tatami, and on the high dais, Tokugawa Iemitsu, a young Japanese man of nineteen with a smooth, broad, serious face, heavy-lidded watchful eyes, clean-shaven with no moustache or beard, his forehead and crown shaved in the standard sakayaki style with a small neat topknot, in formal dark kamishimo with the Tokugawa three-leaf hollyhock crest, sitting very straight and looking down on them with a hard, unsmiling gaze, while at the edge of the dais, half in shadow, an older man in his forties with greying temples, in dark formal dress, watches silently. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
       "ken_burns": "zoom_in",
-      "character_ref": "tokugawa_iemitsu"
+      "character_ref": "tokugawa_iemitsu",
+      "zoom_anchor": {
+        "x": 0.76,
+        "y": 0.4
+      }
     },
     {
       "scene_id": 6,
@@ -133,7 +145,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "surprised",
-      "tokio_place": "Nagasaki 1639"
+      "tokio_place": "Nagasaki 1639",
+      "zoom_anchor": {
+        "x": 0.2,
+        "y": 0.4
+      }
     },
     {
       "scene_id": 10,
@@ -153,7 +169,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Edo 1639"
+      "tokio_place": "Edo 1639",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.5
+      }
     },
     {
       "scene_id": 12,
@@ -191,7 +211,11 @@
       "ken_burns": "zoom_out",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Edo 1639"
+      "tokio_place": "Edo 1639",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.55
+      }
     },
     {
       "scene_id": 16,
@@ -202,7 +226,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "moved",
-      "tokio_place": "Edo 1639"
+      "tokio_place": "Edo 1639",
+      "zoom_anchor": {
+        "x": 0.75,
+        "y": 0.6
+      }
     },
     {
       "scene_id": 17,
@@ -213,7 +241,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.55
+      }
     },
     {
       "scene_id": 18,
@@ -224,7 +256,11 @@
       "ken_burns": "pan_right",
       "character_ref": null,
       "tokio_expression": "writing",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.4
+      }
     },
     {
       "scene_id": 19,
@@ -235,7 +271,11 @@
       "ken_burns": "pan_left",
       "character_ref": "tokugawa_iemitsu",
       "tokio_expression": "moved",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.61,
+        "y": 0.35
+      }
     },
     {
       "scene_id": 20,
@@ -246,7 +286,11 @@
       "ken_burns": "zoom_out",
       "character_ref": null,
       "tokio_expression": "neutral",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.65
+      }
     }
   ],
   "bgm_sources": {
