@@ -122,6 +122,11 @@ STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べ�
    自分で起動していた場合のみ終了する）。ツールが未読込なら `ToolSearch` で
    `mcp__claude-in-chrome__*`（`browser_batch`・`computer`・`navigate`・`tabs_context_mcp` 等）を
    まとめて読み込む。
+   **接続中の Chrome が複数あるとき（2026-11-07 追加、ep120）:** 最初の Chrome（`inUse`）で
+   `studio.youtube.com/channel/UCN1-TUxX_2UumGm3OKpmncg` を開き、「このページを表示する権限がありません」が出たら、
+   そこで諦めず、`select_browser` で次の Chrome に切り替えて同じ確認をする（ブラウザの選択は副作用がない）。
+   SC・学習版の両チャンネルを持つアカウントの Chrome を使う。全部の Chrome で権限がなければ、そこで初めて諦めて報告する。
+   （ep120 では1つ目で権限エラー → 報告して止まり、ユーザーの指摘で2つ目を試して成功した）
 
 3. チャンネルを切り替える。Chromeは通常、別チャンネル（ランプのひとりごと等）でログインして
    いる。アバター → 「アカウントを切り替える」で **「Samurai Chronicles」
