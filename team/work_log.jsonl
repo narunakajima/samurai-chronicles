@@ -30,3 +30,5 @@
 {"ts": "2026-11-06T10:52:29+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep120", "step": "5-0", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-06T13:27:54+09:00", "kind": "call", "agent": "sc-art-director", "session": "91d163a4-6557-47d8-9890-be4beb1fb83e"}
 {"ts": "2026-11-06T13:28:17+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep120", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL2件(S04乳母の年齢・画風, S02大名の髷)を再生成で解消。MINOR: S12原城, S15煙"}
+{"ts": "2026-11-06T15:12:13+09:00", "kind": "call", "agent": "sc-manager", "session": "91d163a4-6557-47d8-9890-be4beb1fb83e"}
+{"ts": "2026-11-06T15:12:24+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep120", "step": "5C", "result": "ok", "retries": 0, "note": "進行可。S12原城(天守・白い崖)とS15(火事に見える煙)を再生成"}
