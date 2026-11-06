@@ -20,3 +20,11 @@
 {"ts": "2026-11-04T14:20:27+09:00", "kind": "call", "agent": "sc-community", "session": "5f9f970c-59bf-47fa-9cf8-bf922e1c8d64"}
 {"ts": "2026-11-04T14:20:35+09:00", "kind": "work", "agent": "sc-community", "episode": "ep119", "step": "3.6", "result": "ok", "retries": 0, "note": "返信2件・見送り5件"}
 {"ts": "2026-11-04T14:26:44+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep119", "step": "進行", "result": "ok", "retries": 0, "note": "YouTube認証トークン失効→Chrome操作で再認証(yt_token_sc)。SC/学習版アップロード・関連動画11件・コメント返信完了"}
+{"ts": "2026-11-06T10:42:29+09:00", "kind": "call", "agent": "sc-writer", "session": "91d163a4-6557-47d8-9890-be4beb1fb83e"}
+{"ts": "2026-11-06T10:42:33+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep120", "step": "2A", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-06T10:42:33+09:00", "kind": "work", "agent": "sc-planner", "episode": "ep120", "step": "1", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-06T10:47:34+09:00", "kind": "call", "agent": "sc-historian", "session": "91d163a4-6557-47d8-9890-be4beb1fb83e"}
+{"ts": "2026-11-06T10:47:40+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep120", "step": "3A", "result": "ok", "retries": 0, "note": "❌1件(S03)・⚠️要修正8件 自動修正済み"}
+{"ts": "2026-11-06T10:49:13+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep120", "step": "3B", "result": "ok", "retries": 0, "note": "サムネ1回再生成(タイトルが頭に隠れた)"}
+{"ts": "2026-11-06T10:52:24+09:00", "kind": "call", "agent": "sc-historian", "session": "91d163a4-6557-47d8-9890-be4beb1fb83e"}
+{"ts": "2026-11-06T10:52:29+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep120", "step": "5-0", "result": "ok", "retries": 0, "note": ""}

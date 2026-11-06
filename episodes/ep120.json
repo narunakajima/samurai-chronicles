@@ -1,0 +1,252 @@
+{
+  "episode_id": "ep120",
+  "episode_title": "The Shogun Who Sealed Japan for 200 Years: Tokugawa Iemitsu",
+  "youtube_title": "One Shogun Sealed Japan for 200 Years — But He Left One Door Open",
+  "youtube_description": "This summer, in 1639, a shogun in his thirties will shut Japan's ports to a whole European nation — and yet leave one narrow door open. He was an heir nobody was sure of, a man who outlasted his own brother. Why would Tokugawa Iemitsu seal a country for more than 200 years? Follow time-travelling reporter Tokio Kamiya as he files a dispatch from Edo, 1639.\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. Every episode is his dispatch from the scene.\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Toby, Ronald P. — \"State and Diplomacy in Early Modern Japan: Asia in the Development of the Tokugawa Bakufu\" (Princeton University Press, 1984)\n2. Totman, Conrad — \"Early Modern Japan\" (University of California Press, 1993)\n3. Boxer, C. R. — \"The Christian Century in Japan, 1549–1650\" (University of California Press, 1951)\n4. Hall, John Whitney (ed.) — \"The Cambridge History of Japan, Vol. 4: Early Modern Japan\" (Cambridge University Press, 1991)\n\n#TokugawaIemitsu #Sakoku #Shogun #EdoPeriod #Shimabara #Dejima #SamuraiHistory #JapaneseHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Tokugawa Iemitsu",
+    "Iemitsu",
+    "Sakoku",
+    "Japan isolation",
+    "closed country",
+    "Shimabara Rebellion",
+    "Dejima",
+    "Edo period",
+    "Tokugawa shogunate",
+    "sankin-kotai",
+    "Kasuga no Tsubone",
+    "Japanese history",
+    "samurai history",
+    "Japan history documentary",
+    "Japanese history channel"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "narrator": "tokio",
+  "tokio_scenes": [
+    1,
+    2,
+    9,
+    11,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "tokio_talk": true,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Edo, 1639. I stand in a corridor as councillors carry out a sealed order. The Portuguese are to be shut out of Japan for good. The man who signed it was once an heir in doubt. Why close a country, and leave one door open?",
+  "shorts_narration": "1635. No Japanese may sail abroad. 1639. No Portuguese may land. One shogun, one signature, and a country shut for over two centuries. But he left one door open. This is Tokugawa Iemitsu.",
+  "shorts_hook_lines": [
+    "200 YEARS.",
+    "ONE DOOR OPEN.",
+    "WHY CLOSE JAPAN?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of the face of Tokugawa Iemitsu in Edo Castle in 1639, a Japanese man in his mid-thirties with a broad, firm, slightly rounded face, heavy-lidded watchful eyes staring straight into the camera with a cold, unreadable, heavy gaze, a neat, trimmed moustache of moderate thickness above the lip, chin and cheeks clean-shaven, no full beard, his forehead and crown shaved in the sakayaki style with a small neat topknot, the collar of a dark formal kamishimo with a hint of the Tokugawa three-leaf hollyhock crest at the frame edge, warm amber lamplight from one side and deep shadow on the other, a blurred gold-leaf screen behind him. Vertical portrait composition, face filling the centre and upper half of the frame.",
+  "thumbnail_prompt": "Cinematic close-to-medium portrait of Tokugawa Iemitsu, the third shogun, a Japanese man in his mid-thirties with a broad, firm, slightly rounded face, heavy-lidded watchful eyes, a neat, trimmed moustache of moderate thickness above the lip, chin and cheeks clean-shaven, no full beard, his forehead and crown shaved in the standard sakayaki style with a small neat topknot, in formal dark kamishimo, his face and shoulders placed in the left and centre of the frame, heavy-lidded eyes fixed straight at the camera with a cold, heavy, unreadable gaze, lit by warm amber light from the side against deep shadow; behind him, soft and out of focus, a colossal dark timber gate of a harbour almost completely closed, leaving only one narrow vertical gap of pale light through which the faint silhouette of a distant sailing ship can be seen on a grey sea. The lower right quarter of the frame is kept dark and empty. High-contrast dramatic lighting. No text in the image itself (the title text overlay is added separately), Japanese setting only.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "This is Tokio Kamiya, with a dispatch from Edo, 1639. This summer a shogun shuts Japan's ports to a whole European nation, yet leaves one door open. Why lock a country, and keep a crack in it?",
+      "image_prompt": "The massive stone-walled approach to Edo Castle at dusk in the summer of 1639, a towering gate tower of dark timber and white plaster above a wide moat, a line of senior retainers in formal dark kamishimo crossing the stone bridge toward the gate, one carrying a plain lacquered box, the last orange light on the walls and deep shadow below, calm and heavy with expectation. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Edo 1639"
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I should explain. I am a correspondent, or I was, until my grandfather's brass watch passed to me. It carries me to any moment in Japan's past, for one day at a time. I may watch. I may speak. I may not change a thing. Today it sets me down in Edo, in the summer of 1639. In the great castle, the third Tokugawa shogun, Iemitsu, still in his thirties, is deciding who may sail into Japan. I have one day to learn why.",
+      "image_prompt": "The great audience hall of Edo Castle in the summer of 1639, rows of kneeling lords in formal dark kamishimo bowing low on tatami, and on the raised dais at the far end sits Tokugawa Iemitsu, the third shogun, a Japanese man in his mid-thirties with a broad, firm, slightly rounded face, heavy-lidded watchful eyes, a neat, trimmed moustache of moderate thickness above the lip, chin and cheeks clean-shaven, no full beard, his forehead and crown shaved in the standard sakayaki style with a small neat topknot, in formal dark kamishimo with the Tokugawa three-leaf hollyhock crest, a stern, still, heavy figure with his hands resting on his knees, gold-leaf screens behind him, soft shafts of light from high windows. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "tokugawa_iemitsu",
+      "tokio_expression": "neutral",
+      "tokio_place": "Edo 1639"
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Let me start with what is solid. I carry the records in my notebook. Iemitsu is born in 1604, the grandson of Ieyasu and the eldest surviving son of Hidetada, the future shogun. But the story goes that his mother favours his younger brother Kunimatsu, a quick, charming boy. The servants begin to take sides. Every meal, every gift, every bow becomes a small measurement of favour. The child who will rule Japan grows up knowing one thing: even his own family may not choose him.",
+      "image_prompt": "Inside the women's quarters of Edo Castle in the 1610s, a dim room of tatami and painted screens: on the left a pale, solemn boy of about eight in a plain dark robe, with uncut childhood hair (a forelock over the brow and the rest tied back, no shaved pate), sits stiffly beside a stern nurse in simple dark clothes, while across the room a bright, smiling younger boy of about six in a rich robe, also with uncut childhood hair and a forelock, is fussed over by a cluster of finely dressed attendants, warm light falling on the younger boy and shadow on the elder. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "His nurse, a woman called Kasuga, refuses to accept it. The tale says she slips away to Sunpu to plead with the retired Ieyasu himself. I cannot confirm the journey. What is clear is that the elder boy is treated as heir, and later accounts credit the old shogun's wishes for it. Kasuga is the first person I read about in this story who understands that a succession is a political act, and she may have changed the course of a country.",
+      "image_prompt": "Photorealistic cinematic film still. The same stern nurse as in the reference image, a Japanese woman of about fifty with a lined, resolute face and grey-streaked black hair pulled back plainly and tied low at the nape, walks quickly along the pine-lined Tokaido highway at dusk in the 1610s, wearing a plain dark kosode tucked up for travel over dark leggings, straw sandals, a wide woven travelling hat tied under the chin, a small paper lantern in one hand and a walking staff in the other, an ordinary Edo-period woman traveller, not a warrior, the snow-capped cone of Mount Fuji rising pale against a violet sky behind her, a few distant travellers and a roadside teahouse glowing in the haze, natural film lighting, realistic skin and fabric texture. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "In 1623, at nineteen, Iemitsu is made shogun. His father Hidetada steps aside in name, yet keeps the reins until his death in 1632. Later accounts say that Iemitsu tells the assembled lords that, unlike his grandfather and father, he was born to rule, and that anyone who disagrees may go home and ready an army. I cannot give you the date or the exact words. In the story, no lord goes home. Obedience, not affection, becomes the currency of his reign.",
+      "image_prompt": "A vast hall of Edo Castle in 1623, daimyo in rows of formal dark kamishimo kneeling with their foreheads to the tatami, and on the high dais, Tokugawa Iemitsu, a young Japanese man of nineteen with a smooth, broad, serious face, heavy-lidded watchful eyes, clean-shaven with no moustache or beard, his forehead and crown shaved in the standard sakayaki style with a small neat topknot, in formal dark kamishimo with the Tokugawa three-leaf hollyhock crest, sitting very straight and looking down on them with a hard, unsmiling gaze, while at the edge of the dais, half in shadow, an older man in his forties with greying temples, in dark formal dress, watches silently. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tokugawa_iemitsu"
+    },
+    {
+      "scene_id": 6,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Then the family question is closed. In 1632 Hidetada dies. Not long after, Kunimatsu, now called Tadanaga, is stripped of his domain and confined, and in the winter of 1633 he dies by his own hand. Iemitsu has no father above him and no rival beside him. I write the dates down twice, because they sit so close together. Whatever he is about to do to Japan, he now does alone. I think a man in that position stops fearing his family, and starts fearing everyone else.",
+      "image_prompt": "A bare, cold room in a small castle in the snow at Takasaki in the winter of 1633: a young lord in plain undyed robes sits alone on the tatami with his back to us, looking out through a wooden lattice at falling snow, a single brazier giving a faint glow, the silhouette of a guard standing outside the paper door, grey blue winter light, quiet and heavy. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Now he builds his throne. In 1632 a great lord of Kyushu, Kato Tadahiro, loses his domain, and every lord learns that even famous names can be removed. In 1634 the shogun rides to Kyoto at the head of an enormous train. In 1635 the rules for the lords are rewritten: the great outside lords must spend alternate years in Edo. I watch a country learn to obey by the calendar. Nobody needs to fight. The shogun does not defeat the lords. He schedules them.",
+      "image_prompt": "A vast procession of the shogun's army and retainers on the road into Kyoto in 1634, a long column of mounted samurai, spearmen and lacquered palanquins with plain dark banners winding between pine-covered hills toward a distant five-storey pagoda, townspeople kneeling in rows along the roadside, summer light and dust in the air, an immense, orderly show of power. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Now to the door, and I read the orders one by one. Ieyasu's government has already banned the Christian faith. Under Iemitsu, the orders come one after another. In 1633, ships may sail abroad only with a special permit. In 1635, no Japanese may go overseas, and anyone who comes back from abroad faces death. In 1636, the Portuguese traders are confined to a small man-made island in Nagasaki harbour called Dejima. Each order is short. Together they are a wall. To a ship's captain it may read as paperwork. To a family on the quay, it is a goodbye.",
+      "image_prompt": "A harbour checkpoint at Nagasaki in the mid-1630s, a Japanese official in formal dark kamishimo inspecting blank sealed documents handed up by a ship's captain, guards with spears at the wooden quay, sailors waiting in rows on the deck of a moored trading ship, in the background the fan shape of a newly built island with warehouses on the water, grey morning light, tense and orderly. No text, no signs, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Another turn of the watch, another single day. Nagasaki, that autumn, a stone quay at dawn. I sit with an old boatman, and I tell him I am a travelling merchant. His brother sailed to Siam years ago to trade. He cannot come home now, the boatman says. The order says anyone who returns will be put to death, so the brother stays, and the letters have stopped. He watches a Portuguese ship being sent away under the new order. I do not know about gods, he says. I know about my brother.",
+      "image_prompt": "A stone quay in Nagasaki harbour at dawn in the autumn of 1639, a weathered old boatman in a faded indigo jacket sits on a mooring post at the left of the frame with his hands hanging between his knees, looking out over the misty bay where a distant square-sailed trading ship is slowly turning back toward the open sea, small fishing boats at rest, pale pink and grey morning light. No text, no signs, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "surprised",
+      "tokio_place": "Nagasaki 1639"
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "To see why the shogun hardens, I turn to the winter of 1637. In Shimabara and on the Amakusa islands, farmers crushed by taxes and persecution of their faith rise in revolt, with a youth named Amakusa Shiro as their figurehead. They hold the old Hara Castle for months, and the first commander sent against them dies there. In the spring of 1638 it falls, and almost everyone inside is killed. I think Edo sees not a hunger revolt, but a faith it cannot control.",
+      "image_prompt": "Hara Castle on a sea cliff on the Shimabara peninsula in the winter of 1638, a ruined stone fortress on a headland above grey water, besieged by a vast encircling army with plain dark banners and rows of tents on the muddy fields, thin smoke rising from within the walls, cold low cloud and a pale sun, bleak and ominous, no violence shown. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Edo, summer 1639. I wait in a corridor of the castle as the senior councillors file out with a sealed order. The shogun has decided. From now on, Portuguese ships may not come to Japan at all. These are the people who brought the guns, the silk, and the priests. Nobody argues. By the afternoon the order will be on the road to Nagasaki. A guard looks at me, then looks away. It is not a war. It is a signature, and I watch a door close.",
+      "image_prompt": "A long dim wooden corridor inside Edo Castle in the summer of 1639, senior councillors in formal dark kamishimo walking in single file toward the camera, the first carrying a plain lacquered box with both hands, polished floorboards reflecting the light from paper screens, and at the far end through half-open sliding doors the dark silhouette of the shogun seated on a raised dais, tense, silent, heavy atmosphere. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Edo 1639"
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "But there is a catch, and it is why I keep writing in my notebook. In 1638 a Dutch ship, at the commander's request, fires its guns on Hara from the sea. The Dutch are Protestants who trade and do not preach, and they are allowed to stay, under watch. I check the notebook again. The shogun is not closing Japan to the world. He is closing it to anyone he cannot control, and keeping one narrow window that he can.",
+      "image_prompt": "A Dutch merchant ship at anchor in the bay below Hara Castle in the early spring of 1638, flame and white smoke bursting from its cannon toward the pale cliff walls, grey sea, besieging soldiers watching from the shore with plain dark banners, a Japanese commander in half-armour on a camp stool at the edge of the frame turning to watch, hazy morning light, no gore. No text, no signs, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The watch hums in my coat. I leaf through my notebook, because I know what follows. In 1640 a Portuguese delegation sails from Macao to beg for the trade back. Edo will not listen. Most of the delegation is executed, and a few are sent home to carry the message. I do not enjoy writing it down. After that, nobody can say the order is a bluff, in Nagasaki or in Lisbon. The shogun has made his point to every sea captain at once.",
+      "image_prompt": "The shore at Nagasaki in 1640 under a heavy overcast sky, a group of dark-clad European envoys kneeling in a line on the stone quay under Japanese guards with spears, a Portuguese-style carrack anchored behind them, stern officials in formal kamishimo standing above on the steps, the mood bleak and silent, cold grey light, no violence shown. No text, no signs, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The next page in my notebook surprises me. In 1641 the Dutch are moved to Dejima, the same island, under guard. They must send in a report of the world's news. Chinese merchants trade at Nagasaki, and other contacts survive through Korea, the Ryukyu islands and the Ainu lands. So Japan is never truly sealed. It is a house with four narrow doors, and the shogun holds every key. I think of it less as a wall than as a valve.",
+      "image_prompt": "Dejima, the fan-shaped artificial island in Nagasaki Bay in the 1640s, wooden warehouses and a modest merchants' house with white plaster walls, a single Dutch ship at anchor beside it, a narrow causeway to the mainland with a Japanese guardhouse at the gate, small boats on the water and the green hills of Nagasaki behind, soft afternoon light, an orderly, watchful, enclosed place. No text, no signs, no legible writing.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Dusk in Edo. Along the main road, a lord's long procession trudges out of the city, heading home to his domain after his year in attendance. I walk beside the spearmen for a while and count them, then stop, because the count is not the point. They say a lord who pays for such journeys has little left to pay for rebellion. I think this is the other half of the closed country: a Japan held shut from the inside.",
+      "image_prompt": "Dusk in Edo in 1639, a long procession of a daimyo's retainers leaving the city by a wooden bridge: ranks of spearmen, packhorses with lacquered chests, a closed palanquin carried by bearers, paper lanterns being lit along the road, the smoky blue-orange sky above the rooftops of the city, the line of men stretching toward the horizon, orderly, tired and enormous. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Edo 1639"
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The watch grows warm against my chest. My day is almost over. I read the last page of Iemitsu's records. In 1651 he falls ill and dies, still in his forties. He is buried at Nikko, beside his grandfather Ieyasu, whose shrine he had rebuilt in splendour. The man who closed the sea is said to have spent his last wish on staying close to the one who built his house. I wonder whom he thought of, at the end. I close the notebook gently.",
+      "image_prompt": "An avenue of immense ancient cedars at Nikko in early morning mist, a stone-paved path leading up to a lavishly carved and gilded mausoleum gateway at the far end, shafts of pale sunlight through the trees, a few attendants in dark robes walking in single file, quiet, reverent and still, soft green and gold tones. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Edo 1639"
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Back in my own century, I stand in Nagasaki, where Dejima has been rebuilt from old records beside a city that has swallowed the water around it. The word sakoku, which every Japanese schoolchild learns, is not the shogun's word. It was coined in 1801, translating a German doctor's account of Japan written a century earlier. I think the word is younger than the thing, and those who lived inside it never used it. Names arrive late. The walls arrive first.",
+      "image_prompt": "The reconstructed Dejima in Nagasaki today in the golden light of late afternoon, restored white and wooden Dutch-era merchants' buildings with their dark-tiled roofs, a modern city of apartment blocks and a tram line rising behind, a few visitors in casual modern clothes strolling the paved lanes, warm light on the old plaster, gentle and reflective. No text, no signs, no legible writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. A sealed country does not stop thinking. Through that small window, books on medicine and astronomy come into Japan, and scholars learn Dutch to read them. They call it Dutch learning. When American ships arrive in 1853, the country that opens is not ignorant of the world. It has been reading about it for more than a century. I think of that whenever I hear that Japan woke up in 1853. Closed, yes. Blind, never. History is rarely as sealed as its labels.",
+      "image_prompt": "A lamp-lit study of an Edo-period scholar and interpreter in Nagasaki in the 1700s, a Japanese man in plain dark robes, his crown shaved in the Edo-period sakayaki style with a small topknot, bent over a large European anatomical book showing illustrations of the human body, a brass telescope, a small globe and a bundle of brushes on the low desk, warm lamplight against deep shadow, paper screens, quiet absorption. No text, no signs, no legible writing, books show only drawings.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "writing",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Here is my opinion, for what it is worth. The records give Iemitsu fear, faith and politics. I would add a boy who learned in a nursery that nobody keeps your place for you. A man like that closes doors. I cannot tell you whether it was wisdom or fear. I think it was both, and I think the boatman's brother paid for it. Two centuries of peace, and a bill that history never itemised. The boatman's voice stays with me.",
+      "image_prompt": "A quiet late-afternoon scene in the inner garden of Edo Castle in about 1645: Tokugawa Iemitsu, a Japanese man in his early forties with a broad, firm, slightly heavier face, heavy-lidded watchful eyes, a neat, trimmed moustache of moderate thickness above the lip, chin and cheeks clean-shaven, no full beard, his forehead and crown shaved in the standard sakayaki style with a small neat topknot, in plain dark formal clothes, sits alone on the wooden veranda looking out at a raked stone garden and a single pine, an empty dais visible behind him in the shadows of the room, his hands resting on his knees, a heavy, unreadable, weary gaze, warm amber light of sunset on one side of his face. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": "tokugawa_iemitsu",
+      "tokio_expression": "moved",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "That is all I can carry from the records: a grandson, a rival, a decree, and one door that stayed firmly shut for more than two centuries. The rest is a silence that Edo kept on purpose, and a harbour that still holds the shape of it. In my grandfather's notebook, the page in my own handwriting still reads only 1868. Subscribe, and the next dispatch will find you. The watch is ticking. Until the next report. Tokio Kamiya, reporting.",
+      "image_prompt": "A closing shot of Nagasaki harbour at dusk in the 1640s, the fan-shaped island of Dejima with a single small Dutch ship at anchor, the vast empty grey-gold sea beyond with no other sail on the horizon, the last red light on the water and the first lanterns lit on the shore, calm, solitary and slightly melancholy. No text, no signs, no legible writing.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Present"
+    }
+  ]
+}
