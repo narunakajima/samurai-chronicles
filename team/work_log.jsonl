@@ -32,3 +32,5 @@
 {"ts": "2026-11-06T13:28:17+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep120", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL2件(S04乳母の年齢・画風, S02大名の髷)を再生成で解消。MINOR: S12原城, S15煙"}
 {"ts": "2026-11-06T15:12:13+09:00", "kind": "call", "agent": "sc-manager", "session": "91d163a4-6557-47d8-9890-be4beb1fb83e"}
 {"ts": "2026-11-06T15:12:24+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep120", "step": "5C", "result": "ok", "retries": 0, "note": "進行可。S12原城(天守・白い崖)とS15(火事に見える煙)を再生成"}
+{"ts": "2026-11-06T15:12:36+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep120", "source": "manager", "severity": "minor", "text": "S12 image_promptの'pale cliff walls'で白い崖と天守、S15の'smoky'で火事に見える煙が出た"}
+{"ts": "2026-11-06T15:12:36+09:00", "kind": "feedback", "agent": "sc-art-director", "episode": "ep120", "source": "manager", "severity": "minor", "text": "S12・S15をMINORとして許容したが、管理担当が史実誤り・場面矛盾として再生成した(判定が甘い)"}
