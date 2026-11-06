@@ -35,3 +35,5 @@
 {"ts": "2026-11-06T15:12:36+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep120", "source": "manager", "severity": "minor", "text": "S12 image_promptの'pale cliff walls'で白い崖と天守、S15の'smoky'で火事に見える煙が出た"}
 {"ts": "2026-11-06T15:12:36+09:00", "kind": "feedback", "agent": "sc-art-director", "episode": "ep120", "source": "manager", "severity": "minor", "text": "S12・S15をMINORとして許容したが、管理担当が史実誤り・場面矛盾として再生成した(判定が甘い)"}
 {"ts": "2026-11-06T15:43:35+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep120", "step": "進行", "result": "ok", "retries": 0, "note": "管理担当の呼び出し漏れで一時停止（ユーザー指摘後に実行）"}
+{"ts": "2026-11-06T16:19:25+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "91d163a4-6557-47d8-9890-be4beb1fb83e"}
+{"ts": "2026-11-06T16:19:34+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep120", "step": "1", "result": "ok", "retries": 0, "note": ""}
