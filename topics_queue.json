@@ -1236,14 +1236,14 @@
     },
     {
       "episode_id": "ep120",
-      "status": "in_production",
+      "status": "published",
       "title": "The Shogun Who Sealed Japan for 200 Years: Tokugawa Iemitsu",
       "era": "Edo",
       "priority": "A",
       "person": "tokugawa_iemitsu",
       "angle": "overview",
       "notes": "未登場。鎖国体制の確立と将軍権力の確定に焦点。 → 2026-10-05: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-11-06"
+      "last_updated": "2026-11-07"
     },
     {
       "episode_id": "ep121",
