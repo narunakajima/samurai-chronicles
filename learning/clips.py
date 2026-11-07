@@ -129,6 +129,7 @@ def _edge_ok(target: str, heard: str) -> bool:
 
 _WHISPER = None
 _WHISPER_LOCK = __import__("threading").Lock()   # ビルドは複数シーンを並列に処理するので、Whisper のモデルは1つずつ使う
+_SCENE_WORDS: dict = {}   # シーン全体を Whisper で書き起こした単語と時刻（短い文の聞き違いの確かめに使う）
 
 
 def whisper_tail_ok(clip: Path, sent: str) -> bool:
@@ -159,6 +160,7 @@ def whisper_boundaries(scene_wav: Path, sents: list):
             _WHISPER = whisper.load_model("small")
         r = _WHISPER.transcribe(str(scene_wav), language="en", word_timestamps=True, fp16=False)
     W = [(_norm(w["word"]), float(w["start"]), float(w["end"])) for seg in r["segments"] for w in seg["words"] if _norm(w["word"])]
+    _SCENE_WORDS[str(scene_wav)] = [(w["word"], float(w["start"]), float(w["end"])) for seg in r["segments"] for w in seg["words"]]
     T, owner = [], []
     for i, sent in enumerate(sents):
         for w in _words(sent):
@@ -247,6 +249,23 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
         head = hn[:len(pt) + 8]
         return difflib.SequenceMatcher(None, pt, head, autojunk=False).find_longest_match(0, len(pt), 0, len(head)).size >= 0.7 * len(pt)
 
+    def prev_fragment_in_head(prev: str, sent: str, heard: str) -> bool:
+        """書き起こしの最初の語が、前の文の最後の語の後ろ半分（report → port）で、この文の最初の語ではない。
+        Whisper の単語の時刻が語の途中に切れ目を置き、前の文の語尾がこの文の冒頭に入った印（ep121: 「Until the next report. / Tokio Kamiya, reporting.」）。"""
+        pw, hw, tw = _words(prev), _words(heard), _words(sent)
+        if not pw or not hw or not tw:
+            return False
+        frag = hw[0]
+        return len(frag) >= 3 and frag != tw[0] and len(frag) < len(pw[-1]) and pw[-1].endswith(frag)
+
+    def whisper_text(clip: Path) -> str:
+        global _WHISPER
+        import whisper
+        with _WHISPER_LOCK:
+            if _WHISPER is None:
+                _WHISPER = whisper.load_model("small")
+            return _WHISPER.transcribe(str(clip), language="en", fp16=False)["text"]
+
     starts = []
     start = speech_start
     i = 0
@@ -304,12 +323,43 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
             if (len(hn) >= 20 and difflib.SequenceMatcher(None, tn[:len(hn)], hn, autojunk=False).ratio() >= 0.9
                     and best[1] - start >= 0.85 * exp_dur):
                 best = (ACCEPT, best[1], best[2])
+        if best is not None and best[0] < ACCEPT and len(_words(sent)) <= 3 and not (
+                i > 0 and i not in extended and (prev_tail_in_head(sents[i - 1], best[2])
+                                                 or prev_fragment_in_head(sents[i - 1], sent, best[2]))):
+            # 3語以下の短い文は、Gemini が聞き違えやすい（ep121: I may speak. → I misspeak / Only grass. → On the grass.）。
+            # 同じ切り出しを手元の Whisper でも書き起こし、そちらで一致すれば採用する（切れ目の誤りは前の文の語尾の検査で別に拾う）
+            # 聞き方は3つ: シーン全体の Whisper の、この区間の単語（前後の文脈つきで聞いたもの）／切り出しの Whisper ／ Gemini をもう2回
+            _cut(scene_wav, start, best[1], tmp)
+            alts = []
+            sw = _SCENE_WORDS.get(str(scene_wav))
+            if sw:
+                alts.append(("Whisper（シーン全体）", "".join(w for w, a, b in sw if a >= start - 0.1 and b <= best[1] + 0.1)))
+            try:
+                alts.append(("Whisper（切り出し）", whisper_text(tmp)))
+            except Exception as ex:  # noqa: BLE001
+                print(f"  （Whisper で確かめられません: {ex}）")
+            for _ in range(2):
+                alts.append(("Gemini（再）", _transcribe(tmp)))
+            for name, wh in alts:
+                if not wh.strip() or (i > 0 and prev_fragment_in_head(sents[i - 1], sent, wh)):
+                    continue
+                ws = _score(sent, wh)
+                if not _edge_ok(sent, wh):
+                    ws -= EDGE_PENALTY
+                if ws >= ACCEPT:
+                    print(f"  （短い文を {name} で確かめて採用: {sent} ／ Gemini: {best[2]} ／ {name}: {wh.strip()}）")
+                    best = (ws, best[1], wh)
+                    break
         tmp.unlink(missing_ok=True)
+        if (best is not None and best[0] >= ACCEPT and i > 0 and i not in extended
+                and prev_fragment_in_head(sents[i - 1], sent, best[2])):
+            best = (0.0, best[1], best[2])   # 一致度は足りても、前の文の語尾（ticking → king）が冒頭に入っている。下で前の文を延ばしてやり直す
         if best is None or best[0] < ACCEPT:
             # 前の文の終わりが早すぎて、その最後の語が、この文の冒頭に混じって聞こえている（ep114: 「Seimei among them.」）。
             # 前の文の終わりを、次の切れ目まで後ろにずらして、この文をやり直す
-            if i > 0 and i not in extended and best is not None and prev_tail_in_head(sents[i - 1], best[2]):
-                later = sorted({c for cs in tiers for c in cs if c > start + 0.2})
+            if i > 0 and i not in extended and best is not None and (
+                    prev_tail_in_head(sents[i - 1], best[2]) or prev_fragment_in_head(sents[i - 1], sent, best[2])):
+                later = sorted({c for cs in tiers if cs is not None for c in cs if c > start + 0.2})
                 if later:
                     extended.add(i)
                     start = later[0]

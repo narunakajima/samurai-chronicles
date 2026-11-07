@@ -51,3 +51,8 @@
 {"ts": "2026-11-07T16:05:45+09:00", "kind": "call", "agent": "sc-manager", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
 {"ts": "2026-11-07T16:05:50+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep121", "step": "5C", "result": "ok", "retries": 0, "note": "S12門を鳥居→堂の戸に作り直し"}
 {"ts": "2026-11-07T16:36:41+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep121", "step": "進行", "result": "ok", "retries": 0, "note": "Freesound適合なし→ライブラリのみ、サムネ1回再生成、S12門を管理担当が作り直し"}
+{"ts": "2026-11-07T16:50:19+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
+{"ts": "2026-11-07T16:50:24+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep121", "step": "1", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-07T17:21:37+09:00", "kind": "call", "agent": "sc-manager", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
+{"ts": "2026-11-07T17:24:53+09:00", "kind": "call", "agent": "sc-manager", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
+{"ts": "2026-11-07T18:16:37+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep121", "step": "learn-build", "result": "ok", "retries": 0, "note": "学習版の英文切り出し失敗をエスカレーションで解消(clips.py 短い文の救済)"}
