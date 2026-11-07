@@ -1,4 +1,10 @@
-Musashibo Benkei: enormous warrior monk, towering over other men by a full head.
-Broad shouldered, barrel-chested, with a shaved head and fierce commanding face. In adult scenes (the 1180s, about 30-35 years old) his shaved head is wrapped in a plain white monk's headcloth (zukin) that frames a heavy-browed, weathered face with a strong jaw; no hair, no topknot, no eboshi cap.
-Wears black-lacquered haramaki armour over a dark monk's robe (saffron only in the young novice scenes). Carries a massive naginata and a bundle of tools and weapons on his back.
-Fierce loyal presence — fearsome to enemies, utterly devoted to Yoshitsune. Wild warrior's eyes, but a calm, quiet gaze at rest.
+Musashibo Benkei (adult, the 1180s, about 30-35 years old): an enormous warrior monk, towering over other men by a full head. Broad shouldered, barrel-chested, thick neck and big hands.
+HEAD (his signature look, the image every viewer knows): his head is fully wrapped in a white cloth hood (kato, a warrior monk's cowl) — the white cloth covers the whole top, sides and back of his head and wraps under the chin and around the neck, so that only the face is framed in an oval of white cloth. NONE of his scalp is visible. It is NOT a headband, NOT a hachimaki, NOT a turban, NOT an eboshi cap. Underneath he is a shaved-head monk with no topknot.
+FACE: broad, heavy-browed, weathered face with large fierce eyes, a wide flat nose and a strong square jaw; clean-shaven or with only a faint shadow of stubble, no beard, no kabuki face paint. Wild warrior's eyes in battle, but a calm, quiet gaze at rest.
+CLOTHES: a black monk's robe (sumizome) with black-lacquered haramaki armour over it (dark lacing, no gold, no bright colours), simple dark gaiters and straw sandals.
+GEAR: a massive naginata with a long curved blade (his signature weapon), a long tachi at the hip, and on his back a bundle of long-handled tools and weapons — an iron rake, a large saw, a big wooden mallet, a forked pole — the legendary "seven tools".
+Fierce loyal presence — fearsome to enemies, utterly devoted to Yoshitsune.
+
+SCENE-SPECIFIC OVERRIDES (the scene description wins over this file when it says so):
+- Mountain-priest disguise (the Ataka barrier): NO white hood, NO armour, NO weapons. His shaved head is bare, with a small black twelve-pleated pillbox cap (tokin) tied on his forehead; a checked hemp over-robe (suzukake) over a plain white robe, a sash hung with large round white pompom tassels, prayer beads, a wooden priest's staff. Same giant body and same face.
+- Youth on Mount Hiei (the temple boy Oniwaka, before he becomes a monk): NOT the adult look. A tall, raw-boned teenager of about fifteen, a full head taller than the grown monks, with long, thick, unshaved black hair tied back in a single tail at the nape, a plain pale temple-boy's robe, no hood, no armour, no weapons, a smooth young face with heavy brows.

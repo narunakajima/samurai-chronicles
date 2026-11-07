@@ -44,3 +44,9 @@
 {"ts": "2026-11-07T15:27:13+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep121", "step": "2A", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-07T15:33:47+09:00", "kind": "call", "agent": "sc-historian", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
 {"ts": "2026-11-07T15:33:53+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep121", "step": "3A", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-07T15:38:11+09:00", "kind": "call", "agent": "sc-historian", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
+{"ts": "2026-11-07T16:00:28+09:00", "kind": "call", "agent": "sc-art-director", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
+{"ts": "2026-11-07T16:00:33+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep121", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL 1件(Shorts S12 眼鏡状の線→再生成)"}
+{"ts": "2026-11-07T16:00:33+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep121", "step": "5-0", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-07T16:05:45+09:00", "kind": "call", "agent": "sc-manager", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
+{"ts": "2026-11-07T16:05:50+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep121", "step": "5C", "result": "ok", "retries": 0, "note": "S12門を鳥居→堂の戸に作り直し"}
