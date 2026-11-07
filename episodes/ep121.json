@@ -1,0 +1,255 @@
+{
+  "episode_id": "ep121",
+  "episode_title": "The Monk Who Collected 999 Swords and Died Standing: The Real Benkei",
+  "youtube_title": "He Took 999 Swords and Died Standing — But the Records Barely Mention Benkei",
+  "youtube_description": "Legend says that on a June day in 1189, a giant monk stood before his master's hall at Koromogawa, pierced by arrows, and died on his feet. He is said to have taken 999 swords before a boy defeated him. Yet the Kamakura chronicle names him barely at all. Where does the real Benkei end and the legend begin? Follow time-travelling reporter Tokio Kamiya as he files a dispatch from Koromogawa, 1189.\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. Every episode is his dispatch from the scene.\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. McCullough, Helen Craig — \"Yoshitsune: A Fifteenth-Century Japanese Chronicle\" (Stanford University Press, 1966)\n2. Sansom, George — \"A History of Japan to 1334\" (Stanford University Press, 1958)\n3. Friday, Karl F. — \"Samurai, Warfare and the State in Early Medieval Japan\" (Routledge, 2004)\n4. Mass, Jeffrey P. — \"The Development of Kamakura Rule, 1180–1250: A History with Documents\" (Stanford University Press, 1979)\n\n#Benkei #Yoshitsune #WarriorMonk #Koromogawa #Gikeiki #Hiraizumi #SamuraiHistory #JapaneseHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Benkei",
+    "Musashibo Benkei",
+    "Minamoto no Yoshitsune",
+    "warrior monk",
+    "sohei",
+    "Gojo Bridge",
+    "999 swords",
+    "Ataka barrier",
+    "Kanjincho",
+    "Koromogawa",
+    "Hiraizumi",
+    "Gikeiki",
+    "Azuma Kagami",
+    "Japanese history",
+    "samurai history",
+    "Japan history documentary",
+    "Japanese history channel"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "image_era": "kamakura",
+  "narrator": "tokio",
+  "tokio_scenes": [
+    1,
+    2,
+    9,
+    11,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "tokio_talk": true,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 5,
+  "teaser_narration": "Koromogawa, 1189. I watch from a riverbank as hundreds of riders climb a hill toward a handful of men. The story says a giant monk stands in their way and refuses to fall. The chronicle says nothing. Which Benkei is real?",
+  "shorts_narration": "999 swords. One bridge. One boy who beat him. A hill in 1189, and a monk who died on his feet. Or did he? This is Benkei.",
+  "shorts_hook_lines": [
+    "999 SWORDS.",
+    "DIED STANDING.",
+    "WHICH PART IS REAL?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of the face of Musashibo Benkei, an enormous warrior monk in his mid-thirties at dusk in 1189, a broad, heavy-browed, weathered face with a strong jaw, fierce unblinking eyes staring straight into the camera with a calm, unbreakable gaze, his shaved head wrapped in a plain white monk's headcloth that frames the face, the collar of a dark monk's robe and the edge of black lacquered armour at the frame edge, a low red sun behind him and smoke in soft focus. Vertical portrait composition, face filling the centre and upper half of the frame.",
+  "thumbnail_prompt": "Cinematic low-angle portrait of Musashibo Benkei, an enormous warrior monk in his mid-thirties, a broad, heavy-browed, weathered face with a strong jaw and fierce eyes fixed straight at the camera, his shaved head wrapped in a plain white monk's headcloth, black-lacquered armour over a dark monk's robe, a massive naginata planted upright beside him, his face and shoulders placed in the left and centre of the frame; behind him, soft and out of focus, a wide field at dusk bristling with hundreds of swords driven point-down into the earth like a grim forest of steel, a smoky red sky and a low sun behind a ridge. The lower right quarter of the frame is kept dark and empty. High-contrast dramatic lighting. No text in the image itself (the title text overlay is added separately), Japanese setting only.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "This is Tokio Kamiya, with a dispatch from Koromogawa, 1189. Legend says a monk died standing here, pierced by arrows, yet the official chronicle never mentions it. Which parts of Benkei are real?",
+      "image_prompt": "A grassy hilltop fort of plain timber halls and a palisade above a wide, fast river in northern Japan on an early summer evening in 1189, thin smoke drifting up behind the ridge, the water glinting copper in the low sun, tense, quiet and ominous, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Koromogawa 1189"
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I should explain. I am a correspondent, or I was, until my grandfather's brass watch passed to me. It carries me to any moment in Japan's past, for one day at a time. I may watch. I may speak. I may not change a thing. Today it sets me down on a grassy bank above the Koromogawa river, in the far north, in the early summer of 1189. Across the water, a modest hilltop stronghold. Inside, they say, is the most famous bodyguard in Japanese history. I have one day to find the man behind the legend.",
+      "image_prompt": "Wide 16:9 view across a broad river in the far north of Japan on an early summer morning in 1189, a grassy riverbank in the foreground, and on the far side a steep hill crowned by a modest stronghold of plain timber halls inside a wooden palisade, mist lifting off the water, a few Fujiwara-era horsemen tiny on a distant track, fresh green fields and low cloud, calm before a storm. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Koromogawa 1189"
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Let me start with what is solid, and I warn you, it is thin. The Kamakura shogunate keeps its own chronicle, the Azuma Kagami, compiled about a century later. I find it names a monk, Benkei, among the men who follow Yoshitsune when he flees Kyoto in 1185. That is nearly all. No birth date, no family, no battle in which he fights. I turn the pages of my notebook twice, in case I missed him. I think history seldom bothers to write down a bodyguard. It writes down the man he guards.",
+      "image_prompt": "A lamplit chancery room of the Kamakura shogunate in about 1300, a scribe in a black eboshi cap and plain dark robe kneeling at a low desk, unrolling a long blank paper scroll beside stacks of rolled scrolls, warm lamplight against deep shadow, paper screens, patient and quiet, painterly concept art, the scroll shows no writing at all. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Now the story, and I mark it as a story. The Gikeiki, a tale written down long after these events, says he is born in Kumano, son of the head priest of the Kumano shrines, after his mother carries him longer than any child. He is born with long hair and teeth, they say, and the village calls him a demon child. He is sent to the monastery on Mount Hiei, grows taller than every monk, and learns to read. I cannot confirm one line of it. I note it down anyway, because it is the version Japan will keep.",
+      "image_prompt": "The great monastery on Mount Hiei in a twelfth-century dawn, rows of dark-roofed timber halls among ancient cedars and mist, a line of monks in grey robes with shaved heads crossing a stone court, and among them one adolescent novice a full head taller than all the rest, broad-shouldered, shaved head, looking up at the mountain, soft cold light, quiet and monumental. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "benkei"
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Now the famous night, again as the story tells it. A towering monk guards a bridge in Kyoto, taking the sword of every swordsman who dares to cross. He has 999. He wants a thousand. Then a slender youth in a hooded cloak, almost a boy, steps onto the bridge, leaps along the rail, and beats him. The monk kneels. I should be honest. The earliest telling I can find sets this duel at a temple, and the bridge only arrives later. No one can show me a single sword. I think a good legend needs a number.",
+      "image_prompt": "A moonlit wooden bridge over a river in Heian-period Kyoto at night, Musashibo Benkei, an enormous warrior monk a full head taller than every other man, broad-shouldered and barrel-chested, his shaved head wrapped in a plain white monk's headcloth leaving only the fierce, heavy-browed face showing, black-lacquered haramaki armour over a dark monk's robe, a massive naginata in his hands and a bundle of tools and weapons on his back, standing at the centre of the bridge with the naginata raised and a heap of sheathed swords piled at his feet, while a slender youth of about fifteen in a long pale cloak drawn over his head, face half in shadow, balances lightly on the bridge rail above him, silver moonlight on the water, tense and theatrical, the youth is not armoured. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "benkei"
+    },
+    {
+      "scene_id": 6,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Back to what is solid. The war between the Minamoto and the Taira is real, and it is huge. In 1184 and 1185, Yoshitsune, the younger half-brother of Yoritomo, wins at Ichi-no-tani, at Yashima, and at Dan-no-ura, where the Taira fleet goes under the waves. I read the chronicle's account of these battles and I look for Benkei. He is not in it. The war tales name him in passing, nothing more. I think that matters. The legend places him at his master's side in every battle. The record does not.",
+      "image_prompt": "The sea battle of Dan-no-ura in 1185 seen from a high cliff over the Shimonoseki strait, dozens of Heian-era warships with high plain red and white banners locked together on a rushing grey-green tide, archers on the decks as tiny figures, mist and spray, a vast, chaotic and sombre panorama, no gore shown. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Then comes the winter of 1185. Yoritomo turns on his brother, and Yoshitsune has to run. I read that he leaves by ship, the sea rises, the vessels break up, and the party scatters. A short list of followers survives, and among them I find the monk once more, now with a name and a title: Musashibo Benkei. Then the trail goes cold. For more than a year Yoshitsune hides in temples and mountains, until in 1187 he reaches Hiraizumi in the north, under the protection of Fujiwara no Hidehira. The legend says the monk never leaves his side.",
+      "image_prompt": "A small Heian-era sailing ship breaking up in a storm off the coast of Settsu in the winter of 1185, huge black waves, a torn sail, tiny figures clinging to the deck and a lone vessel's lantern in the dark, driving rain and white spray, bleak and violent, no gore, no faces visible. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Here is the story I most want to check. The Noh play Ataka, written some three centuries later, sends them north in disguise, as travelling mountain priests, to a barrier gate. The guard demands to see the scroll of their temple fund. The monk has none, so he unrolls a blank scroll and reads as if it were full. He even strikes his own master with a staff, to fool the guard. The older Gikeiki sets that beating at a river ferry, with a fan. I have no record of any of it. I put a question mark beside it.",
+      "image_prompt": "A barrier gate of rough timber and a plain palisade near the Japan Sea coast of Kaga in the 1180s, a barrier-keeper in a black eboshi cap and plain robe with armed guards standing at the gate, facing Musashibo Benkei, an enormous warrior monk a full head taller than every other man, broad-shouldered and barrel-chested, his shaved head wrapped in a plain white monk's headcloth leaving only the fierce, heavy-browed face showing, disguised as a travelling mountain priest in a checked hemp over-robe with round pompom tassels over a plain white robe, no armour, no weapons, a mountain priest's wooden box on his back, who holds a long blank paper scroll open in both hands and reads aloud with a calm face, behind him a small group of men in mountain priests' robes and wide hats, one carrying a heavy pack and keeping his head bowed, early spring light, patches of old snow and cold air, tense and quiet. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "benkei"
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Back on the riverbank, the same day. I tell an old groom from the nearby stables that I am a travelling merchant. He watches the hill as he talks. The monk, he says, sits up every night with his prayer beads while his master sleeps. He eats little and says less. The men call him the quiet one. I ask whether he really once dragged a temple bell up a mountain. The groom laughs, and says he has only ever seen the man lift a bucket for the horses. I did not expect that. I write it down.",
+      "image_prompt": "A weathered old groom in a faded indigo jacket and a worn straw hat sits on an upturned bucket at the right of the frame beside a pair of tethered horses, looking up at a distant hill with a modest stronghold on it, a green riverbank and a shallow ford, soft early-summer morning light, quiet and humane. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "surprised",
+      "tokio_place": "Koromogawa 1189"
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Now to why they are here. In 1187 Hidehira dies, the lord who sheltered Yoshitsune. His dying wish, a Kyoto courtier writes, is that his sons serve Yoshitsune as their general. His son Yasuhira inherits, and Yoritomo's letters begin to arrive, demanding the fugitive. I read that Kamakura threatens to march on the north unless he is handed over. Yasuhira weighs his father's last wish against his own survival. I think he is a frightened man doing arithmetic. By the early summer of 1189, the arithmetic is done.",
+      "image_prompt": "Hiraizumi in the late 1180s, a splendid northern Fujiwara temple town of gilded timber halls among cedars, a mounted courier in plain dark riding clothes and a black eboshi cap galloping out across a white-gravel court carrying a flat lacquered letter box, a lord in his thirties in formal court robes and a black eboshi watching from a veranda with a heavy, uneasy face, late afternoon light, tense. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Koromogawa, the fifteenth of June, 1189. By the old calendar it is the last day of the leap fourth month. Yasuhira sends an army against the hill, several hundred riders by the chronicle's count, against a handful of men. I watch from the opposite bank, as I am allowed to. The dust rises along the ridge. The river is loud. Somewhere on that hill, a man is about to prove something, or be made into proof. I check my watch. It does not move.",
+      "image_prompt": "A force of several hundred mounted Fujiwara warriors in Heian-era armour with plain dark banners surging across a river ford toward a steep hill and stronghold on an early summer afternoon in 1189, spray and dust and a pale sun through haze, helmets and black eboshi caps only, the stronghold small and exposed on the ridge, a heavy, ominous mood, no gore shown. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Koromogawa 1189"
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Now I try to find the monk. The Gikeiki says Benkei plants himself before the hall and holds the door while his master meets his end inside. Arrows strike him until he looks like a man wearing a straw rain cape. He does not fall. The riders hang back, thinking him alive, until a horse brushes past and he topples. I stare through the smoke, and I cannot see a doorway, or a monk. Only dust. I write that down too. An honest reporter admits when the best story is out of sight.",
+      "image_prompt": "Before the gate of a burning timber hall on a hilltop at sunset in 1189, Musashibo Benkei, an enormous warrior monk a full head taller than every other man, broad-shouldered and barrel-chested, his shaved head wrapped in a plain white monk's headcloth leaving only the fierce, heavy-browed face showing, black-lacquered haramaki armour over a dark monk's robe, a massive naginata in his hands and a bundle of tools and weapons on his back, standing upright and alone in front of the gate facing the camera, planted like a rock with the naginata braced against the ground, a dark silhouette against a smoky red sky, in the far foreground a loose arc of mounted warriors in armour hanging back and not daring to approach, stylised and heroic, no gore, no blood visible, no arrows shown in detail. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "benkei"
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The watch hums in my coat. I leaf ahead in my notebook, because I know what follows. The chronicle says Yoshitsune dies that day, at about thirty. His head travels to Kamakura for Yoritomo's men to confirm it. Yasuhira expects thanks. In the autumn Yoritomo marches north anyway, and the Northern Fujiwara are finished. Yasuhira himself is killed, by one of his own retainers. I do not enjoy writing it down. The betrayal bought him nothing.",
+      "image_prompt": "A long column of Kamakura-period warriors with plain dark banners marching north along a mountain road under a grey autumn sky in 1189, helmets and black eboshi caps, packhorses and spearmen winding between brown hills toward a distant river valley, steady, relentless and sombre, no gore. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Another page, and the monk gets no entry of his own at all. The Gikeiki, written long after, makes him grow. By the age of the Noh plays, he is the quiet strength behind the doomed prince. In 1840 the kabuki stage turns that play into Kanjincho, still one of its best-loved scenes. I think Japan did not invent him from nothing. It took a name and a title, and gave it the one thing a chronicle rarely offers: a face, a voice, and a loyalty with no limit.",
+      "image_prompt": "A traditional Noh stage lit by lanterns and torches, seen from the audience, a plain polished cypress stage with a painted pine on the back wall and a covered bridge-way, a tall unmasked performer with a calm, stern face in a heavy robe and a long white headcloth standing at the centre holding a staff in a commanding pose, rows of kneeling spectators in dark robes at the edge of the frame, warm amber lantern light, reverent and theatrical, no text on the pine or the backdrop. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Dusk at Koromogawa. The smoke over the hill has thinned, and the horsemen are gone. I climb the slope where the story says the monk made his stand. There is a ridge, a smouldering post, and the river below. I find no mark I can swear to, and no figure standing in the grass. A farm boy hurries past, glances at me, and gives the hill a wide berth. I stand a while, and I think the same thing twice. Absence is not an answer.",
+      "image_prompt": "A burned, smouldering hilltop stronghold at dusk in 1189, blackened posts and a collapsed palisade with thin smoke curling into a violet and orange sky, the river glinting below, tall summer grass bending in the wind on the slope in the foreground, empty of people, quiet and desolate, no bodies, no gore. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Koromogawa 1189"
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The watch grows warm against my chest. My day is almost over. I stay a moment longer on the slope. Whatever happened on this hill, a man chose to stay when he could have left, and that choosing is the part I can believe. Whether he stood upright, or fell, or fought to the end, I cannot say. I close the notebook gently. The watch pulls at me, and I do not look back, because I know what I would see. Only grass.",
+      "image_prompt": "Moonrise over a grassy hill beside a river in northern Japan in the summer of 1189, a pale full moon low above the ridge, wild grass and small white flowers moving in the night wind, the river a thread of silver below, a single charred wooden post at the crest in silhouette, still, mournful and tender, no people. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Koromogawa 1189"
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Back in my own century, I climb Takadachi hill, now a quiet grassy ridge above the river in Hiraizumi. In 1689 the poet Matsuo Basho stood near here and wrote that the summer grass is all that remains of warriors' dreams. He wept. I think it is the most honest sentence ever written about this place. A small hall on the summit holds a wooden statue of Yoshitsune. The monk gets no statue of his own up here, just grass.",
+      "image_prompt": "A quiet grassy ridge above a river in Hiraizumi in northern Japan today, late afternoon golden light, tall summer grass moving in the wind, a small wooden hall with a dark tiled roof at the top of the hill, a few visitors in casual modern clothes standing far off at the edge of the frame, serene and reflective, no signs. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "writing",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Japan still uses the monk in everyday speech. When a line of lorries is stuck in a blizzard, unable to go forward or back, the news calls it tachi-ojo, a standing death, a word many say was born from the monk on his hill. Another phrase names a man's shin as Benkei's crying place, because even Benkei, the saying goes, would weep if struck there. I think this is the real measure of a legend. Nobody needs a record for a monk who has become a word for a snowstorm and a bruise.",
+      "image_prompt": "A mountain highway in heavy snow at dawn in modern Japan, a long line of trucks and cars stopped bumper to bumper under a grey, swirling blizzard, drivers standing beside their vehicles in winter coats looking ahead, headlights glowing amber in the white, quiet and stuck, no readable signs or plates. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Here is my opinion, for what it is worth. The records give me a name, a title, and a short list. The legend gives me a bridge, 999 swords, and a man who dies on his feet. I do not think the swords matter. I think Japan keeps Benkei because he is loyal to someone who can give him nothing back, and a country that is told so much about power wants one story about devotion. I leave the thousand swords uncounted. I keep the monk.",
+      "image_prompt": "A small roadside shrine in the northern Japanese countryside at sunset today, a weathered stone statue of a large standing monk with a headcloth and a long pole, wrapped in faded red cloth and surrounded by small offerings of flowers and a cup of tea, soft golden light, a quiet village road behind, reverent and tender, no inscriptions. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "That is all I can carry from the records: a name, a title, and a hill of grass. The rest is a story that Japan needed, and told so well that it became part of the language. In my grandfather's notebook, the page in my own handwriting still reads only 1868. Subscribe, and the next dispatch will find you. The watch is ticking. Until the next report. Tokio Kamiya, reporting.",
+      "image_prompt": "A closing shot of the Koromogawa river at dusk in the far north of Japan, the grassy hill and a lone small timber hall in silhouette against a deep violet and amber sky, the river catching the last light, mist rising from the water, calm, solitary and slightly melancholy, no people. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Present"
+    }
+  ]
+}

@@ -40,3 +40,7 @@
 {"ts": "2026-11-06T18:11:15+09:00", "kind": "call", "agent": "sc-manager", "session": "91d163a4-6557-47d8-9890-be4beb1fb83e"}
 {"ts": "2026-11-06T18:11:20+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep120", "step": "学習版判断", "result": "ok", "retries": 0, "note": "S20 cueで補う(訳は不変)"}
 {"ts": "2026-11-07T00:12:28+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep120", "step": "進行", "result": "ok", "retries": 0, "note": "アップロード完了。関連動画は Chrome 権限なしで未設定"}
+{"ts": "2026-11-07T15:27:08+09:00", "kind": "call", "agent": "sc-writer", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
+{"ts": "2026-11-07T15:27:13+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep121", "step": "2A", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-07T15:33:47+09:00", "kind": "call", "agent": "sc-historian", "session": "39c22df3-3bf1-4127-aade-89bea7ad3722"}
+{"ts": "2026-11-07T15:33:53+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep121", "step": "3A", "result": "ok", "retries": 0, "note": ""}
