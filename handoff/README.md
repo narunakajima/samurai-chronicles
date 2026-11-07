@@ -1,15 +1,13 @@
-# handoff — Muse からの引き継ぎメモ置き場
+# handoff — Muse との受け渡し置き場
 
-Muse（パーソナルAIエージェント）とのチャットで決まったこと・相談した内容を、Claude Code へ引き継ぐためのメモ置き場です。
+Muse（パーソナルAIエージェント）と Claude Code の受け渡し。2026-11-07 から、Muse の承認を減らすため経路を分けた（正は `.claude/commands/sc-new.md`「進捗の報告と指示の受け取り」）。
 
-## 使い方
+## 経路
 
-- Muse が会話の内容をメモにまとめ、このフォルダにコミットします。
-- Claude Code 側は `git pull` して、新しいメモを読んで作業に反映してください。
-- 逆方向（Claude Code → Muse）の引き継ぎも、このフォルダにファイルを置けば Muse が読みます。
+- **Muse → Claude Code（指示）:** GitHub に書くだけ（Muse は読まない）。`handoff/inbox.md`（Muse の追記専用。Claude Code は編集しない）。1件1目的、件ごとに ID・目的・完了条件・触ってよい範囲。結果は `handoff/results/{ID}.md`（1行目は「結果：完了／失敗／要確認」）。ポーラー（lamp-whisper/tools/handoff-poller.sh）は、`## [YYYY-MM-DD-NNN]` 見出しの件のうち `results/{ID}.md` が無いものを1件ずつ処理する（既存の `handoff/*.md` メモが無いときだけ見る。`inbox.md` を最後にコミットした作者が `author_ok` のときだけ処理）。
+- **Claude Code → Muse（報告）:** Slack「cc-reports」（非公開、ID: C0CFNQ50DUN）に投稿。形式は `sc-new.md` の「進捗の報告と指示の受け取り」。
+- `handoff/progress/` の進捗メモは、補助（履歴・再開用）。Muse は読まない前提。
 
-## ファイル名の規則
+## 従来のメモ（`handoff/YYYY-MM-DD_テーマ.md`）
 
-`YYYY-MM-DD_テーマ.md`（例：`2026-11-02_handoff-setup.md`）
-
-新しいメモは新しいファイルで追加し、既存のメモは書き換えないでください。
+これまでの受け渡し（Muse がメモを新規ファイルで追加し、Claude Code が `git pull` して読む）は、inbox 方式への切り替えまで有効。新しいメモは新しいファイルで追加し、既存のメモは書き換えない。
