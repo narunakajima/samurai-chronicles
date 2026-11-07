@@ -77,10 +77,11 @@ STEP 3A/3B/3C はすべて完了してから一括で完了報告する（個別
 - **報告は Slack の「cc-reports」（非公開、ID: C0CFNQ50DUN）に投稿する。** Muse が読んで、なるさんに中継する（なるさんはこのチャンネルを見ない）。
   **ステップの区切り、完成、判断待ち、停止のたびに、確認なしで投稿する**（投稿先と種類は、なるさんが指定した範囲。ほかのチャンネル・用途には使わない）。
   案件（`ep{NNN}`）ごとに1スレッド（最初の投稿を親に、続報は返信）。
-- **形式（1行、項目は「 / 」区切り）:** `from=claude-code / project=SC / case=ep123 / event=step_done / step=STEP 3 / state=ok / next=画像生成 / eta=40分 / needs_user=なし / ref=handoff/progress/ep123.md`
+- **形式（1行、項目は「 / 」区切り）:** `from=claude-code / project=SC / case=ep123 / event=step_done / step=STEP 3 / by=<担当者名> / state=ok / next=画像生成 / eta=40分 / needs_user=なし / ref=handoff/progress/ep123.md`
   - `event` は4種類: `step_done`（工程の区切り）／`done`（案件の完成）／`needs_decision`（なるさんの判断待ち。`needs_user` に内容を1行）／`blocked`（停止。`state` に理由、`needs_user` に必要な判断）
   - **区切り:** STEP 2B、STEP 3（3A/3B/3C 完了後）、STEP 5-0、STEP 5A/5B、STEP 5C（統合確認・管理担当の判断後）、STEP 4、STEP 5D、STEP 6（動画・字幕の完了後）。完成動画の確認待ちは `needs_decision`。
   - `eta` は次の工程の見込み時間。長時間工程（画像生成・動画生成等）では必ず書く（Muse の停滞判定に使う）
+  - `by` はその工程の担当者（日本語名。Muse が顔画像を付けて中継するために必ず書く）。進行担当が直接行った工程は進行担当名。複数の担当者の作業をまとめて報告する場合は `by=クレア,エドワード` のように全員を列挙する
   - 長い内容は投稿せず、`ref=` でファイルのパスを示す。書かないもの: APIキー・トークン・個人情報などの機密（事実だけを書く）
 - **従来の GitHub の進捗メモ（`handoff/progress/ep{NNN}.md`、エピソード単位で1ファイル）は補助（履歴・再開用）。** Muse は読まない前提。
   区切りごとに追記し、成果物（`episodes/ep{NNN}.json`、`characters/*.txt`、`topics_queue.json`、`team/work_log.jsonl`、`bgm_library.json` など）とあわせて
