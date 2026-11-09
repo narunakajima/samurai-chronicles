@@ -331,7 +331,7 @@ def _correction_note(issues: list) -> str:
             notes.append(_KAMAKURA_HAIR_CORRECTION)
         elif prefix == "HAIRSTYLE" and prefix not in seen:
             notes.append(
-                "Fix the hairstyle: unless the character is explicitly a monk, woman, ninja, "
+                "Fix the hairstyle: unless the character is explicitly a monk (including a samurai lay monk who has taken Buddhist vows, drawn with a fully shaved head), woman, ninja, "
                 "masterless ronin written as deliberately unkempt, young child, or non-Japanese "
                 "character, render a proper sakayaki — the front and top of the scalp shaved "
                 "completely bare and smooth — with the remaining hair oiled flat and folded "
@@ -539,7 +539,7 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "The only valid exceptions are: a monk's fully shaved head, a woman's hair, a ninja's "
             "covered/hidden hair, an explicitly masterless ronin or low-status character whose "
             "scene description calls for deliberately unkempt/unbound hair as a character choice, "
-            "young children (forelock/maegami styles), a chasen-mage (upright tea-whisk topknot tied at the back of the crown, Oda Nobunaga's signature style) when the scene description explicitly calls for it, a short cropped zangiri-style cut with no topknot and no shaved pate (Takasugi Shinsaku after 1863, per his surviving 1866 photograph) when the scene description explicitly calls for it, "
+            "young children (forelock/maegami styles), a warlord or samurai who has taken Buddhist vows (a nyudo lay monk such as the older Takeda Nobutora or Takeda Shingen) shown with a fully shaved head and no topknot when the scene description explicitly calls for it, a chasen-mage (upright tea-whisk topknot tied at the back of the crown, Oda Nobunaga's signature style) when the scene description explicitly calls for it, a short cropped zangiri-style cut with no topknot and no shaved pate (Takasugi Shinsaku after 1863, per his surviving 1866 photograph) when the scene description explicitly calls for it, "
             "a specific character whose scene description explicitly states that his forehead and crown are NOT shaved "
             "(a deliberate per-character exception, e.g. Ishikawa Goemon's grown-out shaggy hair tied at the nape, or a "
             "Kabuki actor's bushy stage wig) — this exception covers only that character, and every other man in the "

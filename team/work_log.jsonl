@@ -77,3 +77,6 @@
 {"ts": "2026-11-09T14:40:16+09:00", "kind": "call", "agent": "sc-manager", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-09T14:40:29+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep122", "step": "3C", "result": "retry", "retries": 0, "note": "Freesound seen_ids除外で3回空振り→Opus引き継ぎ。intro/outroはライブラリ3曲目で補完"}
 {"ts": "2026-11-09T14:40:29+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "3B", "result": "ok", "retries": 0, "note": "サムネイル THE LOCKED ROAD + Tokio合成"}
+{"ts": "2026-11-09T14:45:13+09:00", "kind": "call", "agent": "sc-historian", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-09T14:45:22+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep122", "step": "5-0", "result": "ok", "retries": 0, "note": "信虎=大泉寺肖像に合わせ修正、19歳晴信=月代髷・髭なし、QA例外(出家武将の剃髪)追加"}
+{"ts": "2026-11-09T15:06:49+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "5B", "result": "ok", "retries": 0, "note": "画像20+Shorts9+face。S14は文字混入で1回再生成。アンカー S05/S13/S16"}
