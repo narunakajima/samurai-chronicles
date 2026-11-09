@@ -30,6 +30,8 @@ from pathlib import Path
 from google import genai
 from google.genai import types
 
+import sc_gemini_model as gm
+
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
 
 # 2026-09-28: gemini-3.1-flash-tts-preview → gemini-3.8-flash-tts（正式版）に移行。
@@ -46,7 +48,7 @@ API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY"
 # client.models.generate_content に戻してよい。
 TTS_MODEL = "gemini-3.8-flash-tts"
 TTS_REST_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
-QA_MODEL = "gemini-3.8-flash"  # ナレーション音声が台本通りか判定する用（sc_image_gen.pyのQA_MODELと同じ考え方）
+# ナレーション音声のQA用モデルは sc_gemini_model.py に集約（2026-11-09-025）
 VOICE_NAME = "Charon"   # 重厚・ドラマチックな男性英語ボイス
 TEMPERATURE = 1.0
 SAMPLE_RATE = 24000
@@ -169,9 +171,9 @@ def qa_narration_with_gemini(client, audio_data: bytes, script_text: str) -> dic
             "or\n"
             '{"ok": false, "issues": ["ISSUE_TYPE: brief description", ...]}'
         )
-        response = client.models.generate_content(
-            model=QA_MODEL,
-            contents=[
+        response = gm.generate_content(
+            client,
+            [
                 qa_prompt,
                 types.Part.from_bytes(data=wav_bytes, mime_type="audio/wav"),
             ],

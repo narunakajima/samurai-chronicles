@@ -20,10 +20,12 @@ from pathlib import Path
 
 from google import genai
 
+import sc_gemini_model as gm
+
 import os
 
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
-QA_MODEL = "gemini-3.8-flash"
+# モデル名は sc_gemini_model.py に集約（2026-11-09-025）
 
 # ボーカル混入は大抵冒頭〜中盤で判別できるため、全尺ではなく先頭 QA_CLIP_SECONDS 秒
 # のみをQAに送る（Gemini音声入力トークンを大幅削減する）。
@@ -64,9 +66,9 @@ def qa_audio_with_gemini(client, audio_path: Path) -> dict:
     try:
         data = _clip_audio_bytes(audio_path)
         mime_type = "audio/mpeg" if audio_path.suffix.lower() == ".mp3" else "audio/wav"
-        response = client.models.generate_content(
-            model=QA_MODEL,
-            contents=[
+        response = gm.generate_content(
+            client,
+            [
                 QA_PROMPT,
                 genai.types.Part.from_bytes(data=data, mime_type=mime_type),
             ],
@@ -93,6 +95,12 @@ def run(paths: list) -> list:
         print("❌ GEMINI_API_KEY が設定されていません")
         sys.exit(1)
     client = genai.Client(api_key=API_KEY)
+    # QA判定より前段でモデルを解決する（モデル不存在がQAの例外処理に飲まれて「合格」扱いにならないように）
+    try:
+        print(f"  使用モデル: {gm.resolve_model(client)}")
+    except gm.ModelUnavailable as e:
+        print(f"❌ {e}")
+        sys.exit(1)
 
     results = []
     for p in paths:

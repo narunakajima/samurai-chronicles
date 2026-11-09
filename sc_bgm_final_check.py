@@ -15,7 +15,7 @@ from pathlib import Path
 from google import genai
 
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
-MODEL = "gemini-3.8-flash"
+import sc_gemini_model as gm  # モデル名は sc_gemini_model.py に集約（2026-11-09-025）
 
 DESKTOP_SC = Path(os.path.expanduser("~/Desktop/SC"))
 
@@ -83,10 +83,7 @@ def main():
         parts.append(f"\n--- 以下は「{role}」用の音声（{path.name}）です ---\n")
         parts.append(genai.types.Part.from_bytes(data=data, mime_type="audio/mpeg"))
 
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=parts,
-    )
+    response = gm.generate_content(client, parts)
     print(response.text)
 
 

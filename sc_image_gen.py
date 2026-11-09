@@ -77,7 +77,7 @@ def image_part_from_path(path: Path) -> types.Part:
     return types.Part.from_bytes(data=data, mime_type=sniff_image_mime(data))
 
 MODEL = "gemini-nano-banana-2.1"
-QA_MODEL = "gemini-3.8-flash"
+import sc_gemini_model as gm  # QA用モデルは sc_gemini_model.py に集約（2026-11-09-025）
 
 BASE_DIR = Path(__file__).parent  # スクリプト・エピソードJSONの場所
 
@@ -559,9 +559,9 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             end = qa_prompt.index("Scene description:")
             qa_prompt = qa_prompt[:start] + _KAMAKURA_QA_HAIRSTYLE + qa_prompt[end:]
 
-        response = client.models.generate_content(
-            model=QA_MODEL,
-            contents=[qa_prompt, image],
+        response = gm.generate_content(
+            client,
+            [qa_prompt, image],
             config=types.GenerateContentConfig(
                 thinking_config=types.ThinkingConfig(thinking_budget=0)
             ),

@@ -59,7 +59,7 @@ def image_part_from_path(path: Path) -> types.Part:
     （Fable 5.1監査の指摘、sc_image_gen.pyと同じ対応）。"""
     data = path.read_bytes()
     return types.Part.from_bytes(data=data, mime_type=sniff_image_mime(data))
-MODEL = "gemini-3.8-flash"
+import sc_gemini_model as gm  # モデル名は sc_gemini_model.py に集約（2026-11-09-025）
 
 BASE_DIR = Path(__file__).parent
 DRIVE_BASE = (
@@ -108,9 +108,9 @@ def determine_zoom_anchor(client, image_path: Path) -> dict:
         "(x: 0.0=left edge, 1.0=right edge; y: 0.0=top edge, 1.0=bottom edge)\n\n"
         "Respond with ONLY the JSON object, no other text."
     )
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=[prompt, image],
+    response = gm.generate_content(
+        client,
+        [prompt, image],
         config=types.GenerateContentConfig(
             thinking_config=types.ThinkingConfig(thinking_budget=0)
         ),

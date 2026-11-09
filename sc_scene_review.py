@@ -35,7 +35,7 @@ from google import genai
 BASE_DIR = Path(__file__).parent
 
 TRANSLATE_API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
-TRANSLATE_MODEL = "gemini-3.8-flash"
+import sc_gemini_model as gm  # モデル名は sc_gemini_model.py に集約（2026-11-09-025）
 
 
 def translate_to_japanese(text: str) -> str:
@@ -53,7 +53,7 @@ def translate_to_japanese(text: str) -> str:
             "Respond with ONLY the Japanese translation, no quotes, no explanation.\n\n"
             f"{text}"
         )
-        response = client.models.generate_content(model=TRANSLATE_MODEL, contents=prompt)
+        response = gm.generate_content(client, prompt)
         return (response.text or "").strip()
     except Exception as e:
         print(f"⚠️  日本語訳の生成に失敗しました: {e}", file=sys.stderr)

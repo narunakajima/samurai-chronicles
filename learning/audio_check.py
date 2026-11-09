@@ -7,7 +7,9 @@ from pathlib import Path
 
 from tts_ja import API_KEY
 
-MODEL = "gemini-3.8-flash"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import sc_gemini_model as gm  # モデル名は sc_gemini_model.py に集約（2026-11-09-025）
+
 URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
 
@@ -17,11 +19,14 @@ def ask(audio_path: Path, question: str) -> str:
         {"inlineData": {"mimeType": "audio/wav", "data": data}},
         {"text": question},
     ]}]}
-    req = urllib.request.Request(URL.format(model=MODEL, key=API_KEY), data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"}, method="POST")
-    for attempt in range(3):   # まれに候補なしの空の応答が返る（ep115）。数回やり直し、それでも空なら空文字にする
+    def _post(model):
+        req = urllib.request.Request(URL.format(model=model, key=API_KEY), data=json.dumps(body).encode(),
+                                     headers={"Content-Type": "application/json"}, method="POST")
         with urllib.request.urlopen(req, timeout=120) as resp:
-            out = json.loads(resp.read())
+            return json.loads(resp.read())
+
+    for attempt in range(3):   # まれに候補なしの空の応答が返る（ep115）。数回やり直し、それでも空なら空文字にする
+        out = gm.run_with_fallback(_post)   # モデル不存在(404)のときだけ次の候補へ
         try:
             return out["candidates"][0]["content"]["parts"][0]["text"]
         except (KeyError, IndexError):
