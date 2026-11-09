@@ -316,5 +316,6 @@
   },
   "youtube_url": "https://youtu.be/jx9uQN_Mcu8",
   "shorts_url": "https://youtu.be/bqLp5PTiiyQ",
-  "scheduled_at": "2026-11-10 03:00"
+  "scheduled_at": "2026-11-10 03:00",
+  "related_video_set": true
 }

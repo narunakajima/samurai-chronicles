@@ -19,8 +19,13 @@ YouTube Studio で、ショートの「関連動画」に同じ回の本編を�
   python3 sc_related_timer.py dry-run      # 対象の抽出だけ（Studio 操作・記録・報告なし）
   python3 sc_related_timer.py run          # launchd が呼ぶ本番
   python3 sc_related_timer.py plist        # launchd 用 plist を標準出力に出す（登録はユーザーが行う）
+制作専用 Chrome（2026-11-10 確定。LW の tools/lw-related-timer.sh と同じ方式）:
+  ユーザーデータ ~/.lw-chrome-production（環境変数 HANDOFF_CHROME_UDD で変更可）で起動した Chrome の拡張（Claude in Chrome）だけを使う。
+  deviceId は ~/.config/handoff-poller/repos.json の production_chrome.device_id。無ければ blocked（何も操作しない）。
+  tools/handoff-chrome-guard.py（PreToolUse/PostToolUse フック）が、その deviceId を選べるまで他の操作を拒否し、navigate は
+  studio.youtube.com・www.youtube.com に、javascript_tool は studio_related_video.js の実行だけに限る。
+  Chrome は起動済みなら再起動も終了もしない。拡張は「ウィンドウが1つも無い」と接続しないため、無ければ背景に空ウィンドウを1つ開く。
 環境変数:
-  SC_RELATED_CHROME_APP  制作専用 Chrome のアプリ名（既定 "Google Chrome"）
   SC_RELATED_CLAUDE      claude コマンドのパス（既定 "claude"）
 """
 import argparse
@@ -29,6 +34,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -45,6 +51,13 @@ STATE = LOG_DIR / "sc-related-timer-state.json"   # リポジトリ外（未コ�
 LOCK = Path("/tmp/sc_related_timer.lock")
 CHANNEL_SC = "UCN1-TUxX_2UumGm3OKpmncg"
 RUN_TIMEOUT = 20 * 60
+CHROME_UDD = Path(os.environ.get("HANDOFF_CHROME_UDD", str(Path.home() / ".lw-chrome-production")))
+CHROME_HOSTS = "studio.youtube.com,www.youtube.com"
+REPOS_JSON = Path.home() / ".config" / "handoff-poller" / "repos.json"
+GUARD = ROOT / "tools" / "handoff-chrome-guard.py"
+CHROME_STATE = LOG_DIR / "chrome-state"
+CH_NAMES = {"sc": "Samurai Chronicles（@Samurai-Chronicles-JP、UCN1-TUxX_2UumGm3OKpmncg）",
+            "learn": "英語で聴く日本史 / Samurai…（@eigo-de-nihonshi、UCWOFhTRNmbVeVWgwF9DfoNA）"}
 
 
 def collect(now: datetime) -> list:
@@ -107,14 +120,20 @@ def report(text: str):
 PROMPT = """これは無人の定期実行です。次の作業だけを行ってください。それ以外の操作はしません。
 
 目的: YouTube Studio で、各ショートの「関連動画」に、同じ回の本編を設定する。
-- 使うのは Claude in Chrome（制作専用 Chrome）だけ。リポジトリの `studio_related_video.js` と
-  `.claude/commands/sc-upload.md` の STEP 3.5 手順4・5（スクリプトを localStorage に保存→各ショートの
-  `studio.youtube.com/video/{{SHORTS_ID}}/edit` で実行→読み込み直して確認→片付け）に従う。
-- 種別 sc は SC チャンネル（{ch}）、種別 learn は学習版チャンネルで操作する。チャンネルが違えば
-  その回はスキップして報告する。他チャンネルの動画は編集しない。
+- ブラウザは制作専用 Chrome の1台だけ。最初に list_connected_browsers を呼び、deviceId {device} を select_browser で選ぶ。
+  選んだあと list_connected_browsers で、そのブラウザが inUse になっていることを確かめる。選べない・inUse にならないときは
+  何も操作せず RESULT {{"blocked":true,"note":"理由"}} で終える（普段使いのブラウザは選べない。ガードが拒否する）。
+- 手順は `Read` で `.claude/commands/sc-upload.md` の STEP 3.5 手順4・5 と `studio_related_video.js` を読んで従う
+  （スクリプトを localStorage に保存→各ショートの `studio.youtube.com/video/{{SHORTS_ID}}/edit` を開いて実行→読み込み直して確認→片付け）。
+  操作は1つずつ（browser_batch は使えない）。座標クリックはチャンネル切替のメニュー操作だけに使う。
+- チャンネルの切り替え: 対象の種別ごとに、先に正しいチャンネルへ切り替える。**URL を直接開いても切り替わらない**（権限エラーになる）。
+  `studio.youtube.com/` を開き、右上のアバター → 「アカウントを切り替える」 → 一覧から次のチャンネルを選ぶ。切り替えたら
+  アバターのメニューの先頭に表示されるチャンネル名で確かめる。違えばその回はスキップして報告する。
+{chans}
+  他チャンネルの動画は編集しない。種別が複数あるときは、1種別を終えてから次の種別へ切り替える。
 - アップロード・公開・予約公開・タイトル・説明・字幕・コメントなど、関連動画以外は一切変更しない。
 - リンク先は「ショート → 同じ回の本編」固定。検索語は下の表のものをそのまま使う。判断で変えない。
-- 保存後に読み込み直し、関連動画欄が本編のタイトルになっていることを確かめた回だけ verified:true とする。
+- 保存後に読み込み直し、関連動画欄が本編のタイトルになっていることを確かめた回だけ verified:true とする。完了の記録（--mark）はこのスクリプト側が行うので、あなたは書かない。
 - 画面ロック・ログイン切れ・権限なし・拡張未接続などで進めないときは、無理せず blocked:true で終える。
 
 対象:
@@ -145,20 +164,76 @@ def parse_results(text: str) -> tuple:
     return done, fail, blocked
 
 
-def run_claude(rows: list) -> tuple:
+def prod_device_id() -> str:
+    try:
+        return str(json.loads(REPOS_JSON.read_text(encoding="utf-8")).get("production_chrome", {}).get("device_id", "") or "")
+    except Exception:
+        return ""
+
+
+def chrome_pid() -> int:
+    try:
+        pid = int(os.readlink(CHROME_UDD / "SingletonLock").rsplit("-", 1)[1])
+        os.kill(pid, 0)
+        return pid
+    except Exception:
+        return 0
+
+
+def chrome_ext_up() -> bool:
+    pid = chrome_pid()
+    if not pid:
+        return False
+    out = subprocess.run(["ps", "-eo", "ppid=,command="], capture_output=True, text=True).stdout
+    return any(l.split(None, 1)[0] == str(pid) and "--chrome-native-host" in l for l in out.splitlines() if l.strip())
+
+
+def ensure_chrome() -> str:
+    """制作専用 Chrome を操作できる状態にする。できなければ理由（blocked 用）を返す。起動済みなら再起動も終了もしない。"""
+    base = ["open", "-g", "-na", "Google Chrome", "--args", f"--user-data-dir={CHROME_UDD}",
+            "--no-first-run", "--no-default-browser-check"]
+    if not chrome_pid():
+        subprocess.run(base + ["about:blank"], check=False)
+        time.sleep(5)
+    elif not chrome_ext_up():
+        subprocess.run(base + ["about:blank"], check=False)   # ウィンドウが無いと拡張が接続しない（2026-11-10 実機確認）
+    for _ in range(30):
+        if chrome_ext_up():
+            return ""
+        time.sleep(3)
+    return "制作専用 Chrome の拡張機能（Claude in Chrome）が90秒待っても接続しない"
+
+
+def run_claude(rows: list, device_id: str) -> tuple:
     claude = os.environ.get("SC_RELATED_CLAUDE", "claude")
-    app = os.environ.get("SC_RELATED_CHROME_APP", "Google Chrome")
-    subprocess.run(["open", "-a", app], check=False)
     table = "\n".join(f"- {r['kind']} {r['episode_id']} shorts={r['shorts_id']} 本編={r['main_id']} 検索語「{r['search']}」"
                       for r in rows)
-    prompt = PROMPT.format(ch=CHANNEL_SC, rows=table)
-    cmd = [claude, "-p", prompt, "--model", "sonnet",
-           "--allowedTools", "mcp__claude-in-chrome__*,Read,ToolSearch"]
+    chans = "\n".join(f"  - {k}: {CH_NAMES[k]}" for k in sorted({r["kind"] for r in rows}))
+    prompt = PROMPT.format(chans=chans, rows=table, device=device_id)
+    CHROME_STATE.mkdir(parents=True, exist_ok=True)
+    cm = "mcp__claude-in-chrome__"
+    settings = CHROME_STATE / "settings-sc-related.json"
+    hook = f"python3 -I {GUARD}"
+    settings.write_text(json.dumps({"hooks": {
+        "PreToolUse": [{"matcher": cm + ".*", "hooks": [{"type": "command", "command": hook, "timeout": 10}]}],
+        "PostToolUse": [{"matcher": cm + "(select_browser|list_connected_browsers)",
+                         "hooks": [{"type": "command", "command": hook + " post", "timeout": 10}]}]}}), encoding="utf-8")
+    allowed = ["Read"] + [cm + t for t in ("list_connected_browsers", "select_browser", "tabs_context_mcp", "tabs_create_mcp",
+                                           "navigate", "computer", "read_page", "find", "get_page_text", "javascript_tool")]
+    denied = ["Bash", "Write", "Edit", "Agent", "WebFetch", "WebSearch"] + [cm + t for t in (
+        "read_network_requests", "read_console_messages", "browser_batch", "switch_browser", "gif_creator",
+        "upload_image", "resize_window", "file_upload", "form_input", "tabs_close_mcp")]
+    env = dict(os.environ, HANDOFF_CHROME_DEVICE_ID=device_id, HANDOFF_CHROME_HOSTS=CHROME_HOSTS,
+               HANDOFF_CHROME_STATE_DIR=str(CHROME_STATE), HANDOFF_UNATTENDED="1")
+    cmd = [claude, "-p", prompt, "--model", "sonnet", "--permission-mode", "default",
+           "--setting-sources", "", "--strict-mcp-config", "--disable-slash-commands",
+           "--tools", "Read", "--chrome", "--settings", str(settings),
+           "--allowedTools", *allowed, "--disallowedTools", *denied]
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
     try:
-        p = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=RUN_TIMEOUT)
+        p = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=RUN_TIMEOUT, env=env, stdin=subprocess.DEVNULL)
     except subprocess.TimeoutExpired:
         return set(), {}, "タイムアウト"
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
     (LOG_DIR / f"sc-related-timer-{datetime.now(JST):%Y%m%d-%H%M}.log").write_text(p.stdout + "\n" + p.stderr, encoding="utf-8")
     return parse_results(p.stdout)
 
@@ -186,8 +261,14 @@ def cmd_run():
         blocked_now = ""
         if screen_locked():
             blocked_now = "画面ロック中のため Studio を操作できません"
+        elif not prod_device_id():
+            blocked_now = f"制作専用ブラウザの device_id が設定に無い（{REPOS_JSON} の production_chrome.device_id）"
+        elif (why := ensure_chrome()):
+            blocked_now = why
+        elif screen_locked():
+            blocked_now = "画面ロック中のため Studio を操作できません"
         else:
-            done, fail, blocked_now = run_claude(rows)
+            done, fail, blocked_now = run_claude(rows, prod_device_id())
             ok = [r for r in rows if key(r) in done]
             for r in ok:
                 mark_done(r)
