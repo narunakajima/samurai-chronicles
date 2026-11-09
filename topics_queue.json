@@ -1258,14 +1258,15 @@
     },
     {
       "episode_id": "ep122",
-      "status": "pending",
+      "status": "in_production",
       "title": "He Exiled His Own Father at 19 — and the Old Man Outlived Him: Takeda Shingen's Coldest Choice",
       "era": "Sengoku",
       "priority": "A",
       "person": "shingen",
       "angle": "key_event",
       "notes": "信玄は5回目の登場（ep025 謙信との対決 / ep047 死の謎 / ep048 騎馬隊 / ep102 風林火山）。新角度: 1541年に父・信虎を駿河へ追放した選択を軸にする。信虎の名前は全エピソードで一度も出ていない。追放された父が流浪の末に、息子の死（1573年）の翌年まで生きたという逆説で締める。事件の顛末ではなく『なぜ若い信玄は父を切ったか、その選択が信玄という人間をどう決めたか』を軸にする。年齢は満19歳（1521年12月生まれ、1541年7月）。数え年では21歳になるので、エドワードに表記の確認を依頼すること。有名人物枠。 → 2026-11-04: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-11-04"
+      "last_updated": "2026-11-09",
+      "question": "19歳の信玄は本当に追放の「主犯」だったのか。それとも甲斐という国そのものが当主を捨て、息子は扉を閉める役を引き受けただけだったのか。（案A。締めに案Cの結末）"
     },
     {
       "episode_id": "ep123",

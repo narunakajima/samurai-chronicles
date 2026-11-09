@@ -1,0 +1,298 @@
+{
+  "episode_id": "ep122",
+  "episode_title": "He Exiled His Own Father at 19 — and the Old Man Outlived Him: Takeda Shingen's Coldest Choice",
+  "youtube_title": "He Exiled His Own Father at 19 — and the Old Man Outlived Him: Takeda Shingen's Coldest Choice",
+  "youtube_description": "In the summer of 1541, a nineteen-year-old closed the road home to his own father, and the old man lived to outlast him. The chronicles name the son, but the valley behind him was struggling through hungry years. Would you have shut that road, or held it open?\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. Every episode is his dispatch from the scene.\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Sansom, George — \"A History of Japan, 1334–1615\" (Stanford University Press, 1961)\n2. Yamamura, Kozo (ed.) — \"The Cambridge History of Japan, Vol. 3: Medieval Japan\" (Cambridge University Press, 1990)\n3. Turnbull, Stephen — \"Samurai Commanders (1): 940–1576\" (Osprey Publishing, 2005)\n4. Myōhōji-ki (Katsuyama-ki) and Enzan Kōgakuan shōnendaiki — Kai provincial chronicles (primary sources, consulted in modern editions)\n\n#TakedaShingen #TakedaNobutora #Sengoku #Kai #Samurai #SamuraiHistory #JapaneseHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Takeda Shingen",
+    "Takeda Nobutora",
+    "Takeda Harunobu",
+    "Kai province",
+    "Sengoku period",
+    "Imagawa Yoshimoto",
+    "Itagaki Nobukata",
+    "Amari Torayasu",
+    "Koyo Gunkan",
+    "Myohoji ki",
+    "Takeda clan",
+    "samurai exile",
+    "father and son",
+    "Japanese history",
+    "samurai history",
+    "Japan history documentary",
+    "Japanese history channel"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "narrator": "tokio",
+  "tokio_scenes": [
+    1,
+    2,
+    9,
+    11,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "tokio_talk": true,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "The Kai-Suruga border, summer 1541. I watch soldiers drag a barrier across the road, shutting a lord out of his own country. The records say the order came from his nineteen-year-old son. But a whole valley stood behind that gate. Whose decision was it?",
+  "shorts_narration": "19 years old. One road closed. His own father, locked out of Kai for good. The chronicles name the son, but who really shut the gate? And the old man outlived him anyway. This is Takeda Shingen.",
+  "shorts_hook_lines": [
+    "19 YEARS OLD.",
+    "FATHER LOCKED OUT.",
+    "WHOSE DECISION WAS IT?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of the face of Takeda Harunobu, a nineteen-year-old samurai heir in the summer of 1541, a firm square jaw, clean-shaven, heavy straight brows and steady dark eyes staring straight into the camera with a guarded, unreadable calm, shaved pate and small topknot, the collar of a plain dark haori at the frame edge, behind him out of focus a rope-and-stake barrier on a mountain road and a low red sun. Vertical portrait composition, face filling the centre and upper half of the frame.",
+  "thumbnail_prompt": "Cinematic low-angle portrait of Takeda Harunobu, a nineteen-year-old samurai heir with a firm square jaw, clean-shaven, heavy straight brows and steady dark eyes fixed straight at the camera with a cold, guarded calm, shaved pate and small topknot, a plain dark haori with a small diamond crest, his face and shoulders placed in the left and centre of the frame; behind him, soft and out of focus, a rope-and-stake barrier and timber gate across a narrow mountain road, and far along the road a lone older samurai on horseback riding away south toward a hazy valley, a red sun low behind a cedar ridge. The lower right quarter of the frame is kept dark and empty. High-contrast dramatic lighting. No text in the image itself (the title text overlay is added separately), Japanese setting only.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "This is Tokio Kamiya, with a dispatch from the Kai-Suruga border, 1541. Records say a nineteen-year-old has just closed this road to his own father. Did the son choose it, or did a whole valley choose it for him?",
+      "image_prompt": "A rope-and-stake barrier and a rough timber gate across a narrow mountain road at a pass between steep cedar-covered ridges on a summer evening in 1541, four soldiers in plain dark armour and straw jingasa hats standing at the barrier holding spears, the dirt road beyond curving away south into blue haze, low orange sun over the ridge, tense, quiet and ominous, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Kai-Suruga border 1541",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I should explain. I am a correspondent, or I was, until my grandfather's brass watch passed to me. It carries me to any moment in Japan's past, for one day at a time. I may watch. I may speak. I may not change a thing. Today it sets me down on a dirt road in the mountains of Kai, in the summer of 1541. A timber gate stands across it. By the end of this day, a father will lose a country. I have one day to learn who took it.",
+      "image_prompt": "Wide 16:9 view of a dirt road winding through a high mountain valley in Kai province on a summer morning in 1541, green terraced rice paddies and rows of cedars on the slopes, a plain timber gate with a small shingled roof across the road in the middle distance, morning mist lying in the valley floor, a peasant with a loaded pack horse walking far along the road, calm and expectant, painterly concept art. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Kai-Suruga border 1541",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Let me start with the father, because the story usually skips him. Takeda Nobutora is forty-seven. Kai has been torn by rival families for generations, and I read that around 1519 he is the man who finally ends it. He builds a new headquarters in the valley, the Tsutsujigasaki mansion, and a town grows around it, the one we now call Kofu. In 1537 he marries his daughter to Imagawa Yoshimoto, the young lord of Suruga. I think this is no weak man. He built what his son is about to take.",
+      "image_prompt": "A moated samurai residence of plain timber halls with shingled roofs behind a high earthen embankment and a wide water-filled ditch, a timber gatehouse with a wooden bridge, in the foreground Takeda Nobutora, a stocky stern man in his late forties in dark kosode and haori, standing on a raised wooden veranda looking out over a young town of small wooden houses spreading toward green mountains, early morning light, confident and imposing, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "takeda_nobutora"
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Now the year. The records of a Kai temple tell me the harvests are bad in these seasons, and the valley is struggling. All the while Nobutora keeps marching his men north into Shinano. I read that in May of 1541 he fights at Unno-daira, only weeks before this day. The rice is thin, and the young men are away. I cannot give you a number for the hunger, and I will not invent one. I only note that a lord at war in a hungry valley is a lord people begin to count.",
+      "image_prompt": "A Kai valley farm in 1541, thin yellow-green rice stalks standing in shallow flooded paddies, farmers in worn indigo jackets and straw hats bending in the water, a woman and two small children watching from the paddy bank, heavy storm clouds gathering over the ridge, and on the dirt road beside the fields a small column of spearmen with plain dark banners marching north out of the valley, grim and weary, painterly concept art. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "And the son. Takeda Harunobu, who will one day take the name Shingen, is nineteen by the count a modern reader would use. By the count of his own day, which gives a baby a year at birth and another every New Year, he is twenty-one. I read that he was born in the last weeks of 1521. I have no portrait of him at this age, so I build him from the records: the heir of the house, trusted by senior men, and watchful. I look for him on this road, and I do not find him. I write that down.",
+      "image_prompt": "Takeda Harunobu, a nineteen-year-old samurai heir with a firm square jaw and watchful steady eyes, shaved pate and small topknot, clean-shaven, in a plain dark kosode and haori with a small diamond crest, standing alone on a raised wooden veranda of a timber hall at dusk, looking out at dark mountain ridges, lantern light warming one side of his face, serious and guarded, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "takeda_harunobu",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "I walk back to Kofu, to the Tsutsujigasaki mansion, on the morning the old lord leaves. Nobutora rides out with a modest escort, bound south for Suruga, to visit his daughter and her husband Yoshimoto. I stand at the roadside among the merchants. The household bows. He looks at no one. If anyone in that courtyard knows what the road ahead holds, no one says so. I think it looks like a plain family visit, and that is exactly what troubles me. I watch him go.",
+      "image_prompt": "Takeda Nobutora on horseback leaving the timber gatehouse of a moated samurai residence at dawn with a modest escort of about ten riders in plain dark travelling clothes, servants kneeling and bowing along the dirt road, a small town of wooden houses and a few merchants with packs at the roadside, low mist, quiet and formal, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "takeda_nobutora"
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Behind him, the mansion changes hands without a word. The records name the senior retainers who side with the heir: Itagaki Nobukata and Amari Torayasu, two of the most senior men of the house. Here I must be careful. I can give you the names. I cannot give you the conversation. No one wrote down who said it first, who said it again, or who simply nodded. I stand in the corridors and hear only footsteps and the creak of old floors. I think they sound like men who have already decided.",
+      "image_prompt": "A dim timber corridor of a samurai residence at dusk, two elder retainers in dark formal robes kneeling close together in low conversation in the foreground, and at the far end of the corridor a young heir, Takeda Harunobu, shaved pate and small topknot, in a dark haori, standing in silhouette against an open sliding door with warm lantern light, tense and hushed, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "takeda_harunobu",
+      "zoom_anchor": {
+        "x": 0.75,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "So who is behind this? I weigh three readings. One: the heir plots alone, an ambitious young man. That is how a later military book, the Koyo Gunkan, likes to tell it. Two: the senior retainers, worn down by war and hunger, choose a new lord, and the heir is their banner. Some modern historians lean this way. Three: Imagawa Yoshimoto agrees to take the old man in, perhaps even beforehand. He may have. No letter I can find says so. I cannot make these three fight to a single winner. They may all be partly true.",
+      "image_prompt": "A lamplit room in a mountain temple in Kai at night, three rolled paper scrolls laid side by side on a low wooden desk with a brush resting across the first, a single oil lamp throwing warm light on the scrolls, a shaved-headed monk in grey robes kneeling at the side with his back to the viewer, moonlight through a paper screen, quiet and thoughtful, painterly concept art. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "zoom_anchor": {
+        "x": 0.45,
+        "y": 0.6
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Later the same day, an old rice porter at the edge of town told me, once I said I was a travelling merchant, that the old lord took the village's young men to Shinano twice, and the rice has been thin. He sets down his sack and rubs his shoulder. I ask who is lord now. He thinks for a long time, then shrugs. Whoever fills the granary, he says. He says nothing of hatred, and nothing of joy. I did not expect the quiet. I write it down.",
+      "image_prompt": "A weathered old rice porter in a faded indigo jacket and a worn straw hat sits on a bale of rice at the right of the frame beside a heavy straw sack, rubbing his shoulder, looking up toward a dirt road leading out of a small town of wooden houses in Kai, late afternoon light, quiet and humane, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "surprised",
+      "tokio_place": "Kofu 1541",
+      "zoom_anchor": {
+        "x": 0.8,
+        "y": 0.5
+      }
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Far down that road, the old lord crosses into Suruga with his escort. The records say he is going to see his son-in-law, and his daughter, Lady Jokein. Then I read that the border is sealed behind him. A barrier goes up, and the way home is shut. Not by an enemy army, but by men of his own house, acting in his son's name. A father rides away calm. Behind him, a road becomes a wall. I have pictured this scene a hundred times, and it is never as quiet as this.",
+      "image_prompt": "Takeda Nobutora in dark travelling clothes riding calmly at the front of a small escort down a narrow mountain pass toward a distant blue plain in Suruga on a summer afternoon, seen from slightly behind, and far behind them at the top of the pass tiny figures dragging a timber barrier across the road, hazy golden light, tense and ironic, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": "takeda_nobutora"
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "I am back at the barrier now. Timber stakes, a rope, and a few armed men who will not meet my eyes. The old lord is already beyond them in Suruga, and these men have orders. The date the sources give is the fourteenth day of the sixth month, in the tenth year of Tenbun. Whose name is on the orders? The chronicles put the young heir's name on them. I wait for the gate to open. I wait a long time. It does not open. A father is a stranger in his own country. I check my watch. It does not move.",
+      "image_prompt": "A rope-and-stake barrier and a plain timber gate across a narrow mountain road at dusk, four soldiers in plain dark armour and straw jingasa hats holding spears with their eyes lowered, the empty dirt road beyond them curving south between steep cedar ridges, low red sun on the ridge, tense and heavy, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Kai-Suruga border 1541",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Now I read what the nearest writers say. A temple chronicle in Kai records the change of lord and says, in words to that effect, that the whole province rejoiced. It was written inside Kai, after the change, and a new lord is always glad of a record that says his people were glad. The Koyo Gunkan, a military book from the next century, paints the old man as a monster, and I set it aside. The records speak in the son's name. Behind him stand tired retainers and a neighbour who may have agreed. I will not pick one.",
+      "image_prompt": "A temple scriptorium in Kai in the 1540s at dusk, a shaved-headed monk in plain grey robes kneeling at a low desk writing in a bound notebook seen from behind, a stone lantern and a carved wooden Buddha statue in soft focus at the back, rain on the veranda outside, a quiet and watchful atmosphere, painterly concept art. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "I leaf ahead in my notebook, because I know what comes next. Nobutora does not go back to Kai. Imagawa Yoshimoto takes his father-in-law in, and some records say Kai sends money for his keep. No one kills him. In the chronicles, the old man simply stops being a lord and becomes a guest. The next year, Harunobu is marching north into Shinano, and in time his name will frighten his neighbours. A son shuts one door, and a great many open.",
+      "image_prompt": "Takeda Nobutora seated in a plain guest room of a Suruga samurai residence facing a young refined lord of the Imagawa house in court-style robes, a garden of pines and raked gravel visible through open sliding doors, a servant placing a small lacquered tray between them, soft afternoon light, calm and wary, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": "takeda_nobutora"
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Then the trail thins. I read that the old lord leaves Suruga and goes to Kyoto, where he is said to move near the shogun's circle. More than that, I do not have. No diary of his survives that I can find. I will not fill the years with feelings for him. I only note the shape. A man who made a province lives out his days in other men's houses, and for more than thirty years I cannot quote a single line he wrote.",
+      "image_prompt": "Takeda Nobutora in his later years, thinner, grey-haired, in a plain dark robe and a travelling hat, walking away from the viewer along a Kyoto street of wooden townhouses at dusk among ordinary townsfolk, a tall temple pagoda far in the hazy distance, lantern glow, lonely and dignified, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": "takeda_nobutora"
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Dusk at the barrier. The men have gone, and the stakes still stand. In the notebook I turn to the spring of 1573. Shingen, the son's name now, is fifty-one by the modern count, and on the road home from a long campaign, he dies. The army turns for home. I look at the empty road south and think of an old man hearing that news. How does a father learn that his exiled son is dead? I find no record of the words.",
+      "image_prompt": "A long column of soldiers in dark armour with plain dark banners marching home along a mountain road in spring rain at dusk, in the centre a closed black-lacquered palanquin carried by bearers, cherry blossom petals on the wet road, grey-blue valley below, solemn and quiet, no gore, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Kai-Suruga border 1541"
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The watch grows warm against my chest. I read the last entry. In 1573, with his son dead, an old man of about eighty is said to reach Takato, a mountain stronghold in Shinano tied to his grandson Katsuyori. By the spring of 1574 he is dead. The accounts of his journey differ, and I do not know which to trust. But the arithmetic is plain. The man shut out of Kai at forty-seven outlived the son who shut him out. I close the notebook gently.",
+      "image_prompt": "A hill stronghold of plain timber halls, earthen embankments and a timber gate in the mountains of Shinano on a cold late winter evening in 1574, an old frail grey-haired Takeda Nobutora in a plain dark robe standing at the gate leaning on a staff, a younger warrior in red lacquered armour bowing slightly before him, patches of snow on the ground and a red sky behind the ridge, mournful and tender, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": "takeda_nobutora",
+      "tokio_expression": "moved",
+      "tokio_place": "Kai-Suruga border 1541",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.5
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Back in my own century, I walk through Kofu, a city of nearly two hundred thousand people. It stands where the father put it. In its heart, the Takeda shrine occupies the ground of the old mansion, and it honours the son, not the father. A statue of Shingen greets travellers at the railway station. I stand in the grounds and think how few visitors know the founder's name. I think it is the quietest way to be exiled: a city that exists because of you, with someone else's statue at its door.",
+      "image_prompt": "The Takeda Shrine in Kofu today, a broad stone-paved approach crossing a stone bridge over a water-filled ditch to a shrine hall with a shingled roof, a bronze statue of a seated warlord with a shaved head and a war fan beside the path, a few visitors in modern casual clothing far off at the edge of the frame, late afternoon golden light, serene and reflective, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "writing",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Japan has an old, odd word for what may have happened here: oshikome. In later centuries, when a lord ruined his domain, his own retainers could quietly confine him and install his heir. It was not written in law, but it was often tolerated, because it kept the house alive. I think that is worth sitting with. The nineteen-year-old and the old men around him may have thought they were saving a house. Or they may not. And Shingen's own eldest son, Yoshinobu, was confined in 1567 and died that year. The causes are still argued.",
+      "image_prompt": "A formal room in an Edo-period domain residence, a lord in rich dark robes seated with his eyes lowered while four senior retainers in formal kamishimo kneel in a line before him, one of them bowing deeply with hands flat on the tatami, paper screens and a single lamp, calm and courteous but heavy, painterly concept art. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Here is my opinion, for what it is worth. I came to find the villain of a family drama, and I found three overlapping stories and one empty road. I do not think anyone can honestly say whether Shingen was the author or the instrument. Both may be true. A nineteen-year-old can carry out a decision that a valley has already made, and still be the one whose name goes on it. Japan remembers a tiger. I remember a young man at a rope, and an old man who lived to outlast him.",
+      "image_prompt": "A moss-covered stone grave marker with no inscription visible in a quiet mountain temple graveyard in the Japanese countryside in autumn, a few red maple leaves on the ground and on the stone, a small cup of tea and a single white flower as offerings, mountains in soft focus behind, golden dusk light, still, mournful and tender, no people, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "That is all I can carry from the records: a gate, a name, and an old man's long wait. The rest is the question a nineteen-year-old left behind, and I will not answer it for him. In my grandfather's notebook, the page in my own handwriting still reads only 1868. Subscribe, and the next dispatch will find you. The watch is ticking. Until the next report. Tokio Kamiya, reporting.",
+      "image_prompt": "A closing shot of the empty dirt road beyond a timber gate in the mountains of Kai at dusk, cedar ridges in silhouette against a deep violet and amber sky, mist rising in the valley below, the last light on the road, calm, solitary and slightly melancholy, no people. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.6
+      }
+    }
+  ]
+}
