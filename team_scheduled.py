@@ -9,7 +9,7 @@ samurai-chronicles / kagaku-life / lamp-whisper の3リポジトリで同じフ�
   python3 team_scheduled.py install     # iMac で1回だけ。launchd に毎週月曜 08:07 の起動を登録する
   python3 team_scheduled.py uninstall   # 登録を外す
   python3 team_scheduled.py check       # 前提（claude・ドライブ・トークン）を確かめる
-  python3 team_scheduled.py run [--force] [--dry-run]   # launchd が呼ぶ。--force は日付に関係なく今月の評価を実行
+  python3 team_scheduled.py run [--force] [--dry-run]   # launchd が呼ぶ。--force は、評価日（第N月曜）が当日または過ぎていて前月分が未実施の評価だけ実行（評価日前は実行しない）
   python3 team_scheduled.py slack-test  # Slack への投稿を試す
 
 ログ: ~/Library/Logs/claude-team/{リポジトリ名}-{日時}-{コマンド}.log
@@ -280,7 +280,14 @@ def due_evaluations(force: bool) -> list:
     for e in json.loads(SCHEDULE.read_text(encoding="utf-8")).get("evaluations", []):
         if (EVALUATIONS / e["file"].format(month=prev)).exists():
             continue
-        if force or today == nth_monday(today.year, today.month, int(e["nth_monday"])):
+        due_day = nth_monday(today.year, today.month, int(e["nth_monday"]))
+        if force:
+            # --force でも、第N月曜がまだ来ていない評価は実行しない（当日・過ぎた分のみ）
+            if today < due_day:
+                print(f"{e['name']}は第{e['nth_monday']}月曜（{due_day.month}/{due_day.day}）のため対象外")
+                continue
+            out.append({**e, "month": prev})
+        elif today == due_day:
             out.append({**e, "month": prev})
     return out
 
@@ -404,7 +411,7 @@ def main() -> None:
     p = argparse.ArgumentParser(description="月次評価の自動実行（毎週月曜、iMac）")
     sub = p.add_subparsers(dest="cmd", required=True)
     r = sub.add_parser("run")
-    r.add_argument("--force", action="store_true", help="日付に関係なく、前月分が未実施の評価を実行する")
+    r.add_argument("--force", action="store_true", help="評価日（第N月曜）が当日または過ぎていて、前月分が未実施の評価を実行する（評価日前は対象外）")
     r.add_argument("--dry-run", action="store_true")
     r.add_argument("--any-host", action="store_true")
     r.set_defaults(func=cmd_run)
