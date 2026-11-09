@@ -99,3 +99,5 @@
 {"ts": "2026-11-09T18:08:54+09:00", "kind": "call", "agent": "sc-manager", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-09T18:10:02+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep122", "step": "学習版2", "result": "retry", "retries": 0, "note": "build_lesson 2回失敗(I weigh→Highway、two hundred thousand→200,000)でOpus引き継ぎ→clips.py修正"}
 {"ts": "2026-11-09T18:58:23+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep122", "step": "学習版3.6", "result": "ok", "retries": 0, "note": "学習版 mp3/mp4/サムネ/ショート完成、確認待ち"}
+{"ts": "2026-11-09T19:35:14+09:00", "kind": "feedback", "agent": "sc-learn-writer", "episode": "ep122", "source": "user", "severity": "major", "text": "字幕で漢字であるべき所がひらがな（のちのたけだ・しんげん、そのあと、いつもどおり、町はずれ、長いあいだ、いちばん等＝display_map の登録漏れ）。Tokioの自己紹介が毎回同じでイラッとする→日本語の自己紹介を一気に、英語も一気に流す"}
+{"ts": "2026-11-09T19:35:14+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep122", "source": "user", "severity": "minor", "text": "学習版の確認前に、字幕のひらがな残り（display_map漏れ）を目視・機械で洗い出していなかった"}

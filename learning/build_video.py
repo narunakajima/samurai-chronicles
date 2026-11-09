@@ -345,7 +345,14 @@ def build_ass(tl: dict, window=None, tokio_windows=()) -> tuple[str, list[tuple[
             # まとめた文の単語の時刻は、最初の文の開始からの秒に直してつなぐ
             en_words = [dict(w, s=w["s"] + x["start"] - ens[0]["start"], e=w["e"] + x["start"] - ens[0]["start"])
                         for x in ens for w in x.get("words", [])] if len(ens) > 1 else ens[0].get("words")
-            if ja_txt:
+            if ja_txt and len(ens) > 3:
+                # 長いまとまり（Tokio の自己紹介など。ep122〜）: 日本語（全体の訳）→ 英語を1文ずつ。
+                # 全部を1枚に入れると文字が小さすぎて読めないため、日本語は聞いている間だけ出し、英語は今の文だけを大きく出す
+                text(g["chime"]["start"], ens[0]["start"], None, ja_txt, translation=True)
+                for m, x in enumerate(ens):
+                    end_x = ens[m + 1]["start"] if m + 1 < len(ens) else until
+                    text(x["start"], end_x, esc(x["text"]), None, words=x.get("words"))
+            elif ja_txt:
                 # 合図の音と同時に、訳を帯の上側に出す。英語が始まったら、その下に英文を足す（訳は動かさない）
                 pair_text(g["chime"]["start"], ens[0]["start"], until, en_txt, ja_txt, en_words)
             else:
