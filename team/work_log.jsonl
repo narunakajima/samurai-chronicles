@@ -58,3 +58,5 @@
 {"ts": "2026-11-07T18:16:37+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep121", "step": "learn-build", "result": "ok", "retries": 0, "note": "学習版の英文切り出し失敗をエスカレーションで解消(clips.py 短い文の救済)"}
 {"ts": "2026-11-07T18:37:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep121", "step": "upload", "result": "ok", "retries": 0, "note": "SC予約11-17 03:00/学習版07:00。ep117関連動画(SC・学習版)設定。コメント5件は罵倒等のため見送り"}
 {"ts": "2026-11-09T08:13:33+09:00", "kind": "call", "agent": "sc-manager", "session": "11cfe5cf-fafb-4e62-9ede-f5786fd75c5e"}
+{"ts": "2026-11-09T09:39:52+09:00", "kind": "call", "agent": "sc-manager", "session": "f7ad8c3d-09fb-40dd-ba65-07c268267e2b"}
+{"ts": "2026-11-09T09:39:56+09:00", "kind": "work", "agent": "sc-manager", "episode": "learning-2026-10", "step": "learn-analytics", "result": "ok", "retries": 0, "note": "SC学習版 2026-10 月次評価"}
