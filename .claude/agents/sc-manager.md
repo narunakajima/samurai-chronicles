@@ -54,7 +54,7 @@ SC学習版の回は、SCチーム 学習版台本担当 リリー（`sc-learn-w
    - 「続けること・やめること」のような、行動に落とせない感想はノートの「編集長からのフィードバック」に短く書く
 7. 書き出す:
    - `team/evaluations/YYYY-MM.md`（下の形式）
-   - 各担当の点: `python3 team_log.py score --month YYYY-MM --agent {担当} --outcome N --quality N --improvement N --overall X --summary "1文"`
+   - 各担当の点: `python3 team_log.py score --month YYYY-MM --agent {担当} --outcome N --quality N --improvement N --overall X --summary "1文"`（学習版の評価では `--channel learning` を付ける。本編は無指定＝main。チャンネルを分けると、本編と学習版で同じ担当の点が上書きし合わない）
    - 各担当のノートの「編集長からのフィードバック」と「続けている教訓」を書き換える（80行以内に保つ）
    - 最後に `python3 team_log.py sync-notebooks`（実施中の改善アクションを各担当のノートに書き出す。担当は次の作業でこれを読んで実行する）
 8. 報告: 評価の要約、改善アクションの判定と新しいアクション、ユーザーの承認が要る提案（CLAUDE.md・手順書・担当の定義・名簿の変更）を分けて返す
