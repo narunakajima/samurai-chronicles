@@ -101,3 +101,4 @@
 {"ts": "2026-11-09T18:58:23+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep122", "step": "学習版3.6", "result": "ok", "retries": 0, "note": "学習版 mp3/mp4/サムネ/ショート完成、確認待ち"}
 {"ts": "2026-11-09T19:35:14+09:00", "kind": "feedback", "agent": "sc-learn-writer", "episode": "ep122", "source": "user", "severity": "major", "text": "字幕で漢字であるべき所がひらがな（のちのたけだ・しんげん、そのあと、いつもどおり、町はずれ、長いあいだ、いちばん等＝display_map の登録漏れ）。Tokioの自己紹介が毎回同じでイラッとする→日本語の自己紹介を一気に、英語も一気に流す"}
 {"ts": "2026-11-09T19:35:14+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep122", "source": "user", "severity": "minor", "text": "学習版の確認前に、字幕のひらがな残り（display_map漏れ）を目視・機械で洗い出していなかった"}
+{"ts": "2026-11-09T20:06:09+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "学習版4", "result": "ok", "retries": 0, "note": "学習版 ユーザーOK(再確認後。公開OK記録)"}
