@@ -89,3 +89,4 @@
 {"ts": "2026-11-09T15:46:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "6", "result": "ok", "retries": 0, "note": "動画12:13+Shorts+字幕。Tokioコマ目視確認済み"}
 {"ts": "2026-11-09T15:46:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "進行", "result": "ok", "retries": 0, "note": "SC2611-05/06適用。Freesound3回失敗でOpus引き継ぎ(条件通り)"}
 {"ts": "2026-11-09T15:46:31+09:00", "kind": "applied", "agent": "sc-coordinator", "episode": "ep122", "ids": ["SC2611-05", "SC2611-06"], "skipped": [], "reason": ""}
+{"ts": "2026-11-09T16:14:44+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep122", "source": "user", "severity": "minor", "text": "Tokioと背景の境目の光が強すぎる。もっと抑えて作り直して（tokio_glow を任意提案どおり有効にしたが強さを確認していなかった）"}

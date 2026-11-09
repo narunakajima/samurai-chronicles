@@ -569,12 +569,13 @@ def _tokio_effect_vf(mode: str, th: int) -> str:
             f"format=yuva420p")
 
 
-def _tokio_glow_vf(src: str, out: str) -> str:
+def _tokio_glow_vf(src: str, out: str, gain: float = None) -> str:
     """[src] の Tokio の形（透明度）を広げてぼかし、金色の光のレイヤー [out] にするフィルター。
     素材の外側に透明の余白（TOKIO_GLOW_PAD）を足すので、レイヤーは Tokio より左右・上に PAD ずつ大きい。"""
     g = TOKIO_GLOW_PAD
+    gain = TOKIO_GLOW_GAIN if gain is None else gain   # episode JSON の "tokio_glow_gain" で回ごとに弱められる（既定 2.0）
     return (f"[{src}]alphaextract,pad=iw+{2 * g}:ih+{g}:{g}:{g}:color=black,gblur=sigma={TOKIO_GLOW_SIGMA},"
-            f"format=gbrap,geq=r=240:g=200:b=110:a='clip(r(X,Y)*{TOKIO_GLOW_GAIN},0,255)',"
+            f"format=gbrap,geq=r=240:g=200:b=110:a='clip(r(X,Y)*{gain},0,255)',"
             f"format=yuva420p[{out}];")
 
 
@@ -703,7 +704,7 @@ def validate_tokio(ep: dict, scenes: list, scene_durations: list) -> list:
 
 
 def add_tokio_overlay(clip: Path, expression: str, side: str, name_tag: bool = False, dur: float = None,
-                      fx_in: bool = True, fx_out: bool = True, glow: bool = None):
+                      fx_in: bool = True, fx_out: bool = True, glow: bool = None, glow_gain: float = None):
     """Ken Burns クリップ(1920x1080)に Tokio を重ねて上書きする。side: 'left'|'right'。
     TOKIO_MATERIALIZE のときは、登場（冒頭）と退場（クロスフェード前）に転送風エフェクトを付ける。
     glow: 背後に金色の光を足し、Tokio の暗部を持ち上げる（None なら TOKIO_GLOW。episode JSON の "tokio_glow"）。"""
@@ -733,7 +734,7 @@ def add_tokio_overlay(clip: Path, expression: str, side: str, name_tag: bool = F
             """区間 name の出力。glow のときは、Tokio 本体と光のレイヤー（{name}g）に分ける。"""
             if not glow:
                 return f"[{name}];"
-            return f"[{name}r];[{name}r]split[{name}][{name}x];" + _tokio_glow_vf(f"{name}x", f"{name}g")
+            return f"[{name}r];[{name}r]split[{name}][{name}x];" + _tokio_glow_vf(f"{name}x", f"{name}g", glow_gain)
 
         def ov(base, seg, en, out):
             pre = ""
@@ -1679,7 +1680,7 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 fx_in, fx_out = tokio_fx_flags(ep, scenes, i)
                 add_tokio_overlay(out_clip, expr, side,
                                   name_tag=(sid == min(ep["tokio_scenes"])), dur=dur,
-                                  fx_in=fx_in, fx_out=fx_out, glow=bool(ep.get("tokio_glow")))
+                                  fx_in=fx_in, fx_out=fx_out, glow=bool(ep.get("tokio_glow")), glow_gain=ep.get("tokio_glow_gain"))
             clip_paths.append((out_clip, dur))
 
         if not clip_paths:

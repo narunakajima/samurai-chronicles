@@ -327,5 +327,6 @@
     "main": "BGM/ep122-BGM-main.mp3",
     "outro": "BGM/ep085-BGM-outro.mp3"
   },
-  "tokio_glow": true
+  "tokio_glow": true,
+  "tokio_glow_gain": 0.4
 }
