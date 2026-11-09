@@ -81,13 +81,20 @@ def qa_audio_with_gemini(client, audio_path: Path) -> dict:
             text = re.sub(r"^```(?:json)?\s*", "", text)
             text = re.sub(r"\s*```$", "", text)
         result = json.loads(text)
+        # 応答が解釈できない場合（dictでない・has_vocalsが真偽値でない）は「合格」にしない（フェイルクローズ）
+        if not isinstance(result, dict) or not isinstance(result.get("has_vocals"), bool):
+            raise ValueError(f"応答を解釈できません: {text[:200]!r}")
         return {
             "file": audio_path.name,
-            "has_vocals": bool(result.get("has_vocals", False)),
+            "status": "checked",
+            "has_vocals": result["has_vocals"],
             "details": result.get("details", ""),
         }
     except Exception as e:
-        return {"file": audio_path.name, "has_vocals": None, "details": f"QA失敗: {e}"}
+        # status="check_failed"（has_vocals=None）は「チェックできなかった」。
+        # 「チェック済みでボーカルなし」(status=checked, has_vocals=False) とは別物で、合格扱いにしない。
+        return {"file": audio_path.name, "status": "check_failed", "has_vocals": None,
+                "details": f"QA失敗: {e}"}
 
 
 def run(paths: list) -> list:
@@ -108,7 +115,7 @@ def run(paths: list) -> list:
         result = qa_audio_with_gemini(client, p)
         results.append(result)
         if result["has_vocals"] is None:
-            print(f"⚠️  {result['details']}")
+            print(f"❌ チェック不能（合格扱いにしません） — {result['details']}")
         elif result["has_vocals"]:
             print(f"❌ ボーカル/台詞あり — {result['details']}")
         else:
@@ -134,11 +141,19 @@ def main():
         return
 
     results = run(paths)
-    flagged = [r for r in results if r["has_vocals"]]
+    flagged = [r for r in results if r["has_vocals"] is True]
+    failed = [r for r in results if r["has_vocals"] is None]
     if flagged:
         print(f"\n⚠️  ボーカル/台詞混入の疑いがある候補: {len(flagged)}件")
         for r in flagged:
             print(f"  - {r['file']}: {r['details']}")
+    if failed:
+        print(f"\n❌ QAを実行できなかった候補（未チェック・合格ではない）: {len(failed)}件")
+        for r in failed:
+            print(f"  - {r['file']}: {r['details']}")
+    if failed:
+        sys.exit(2)  # 2 = チェック不能（1 = ボーカル検出）
+    if flagged:
         sys.exit(1)
     print("\n✓ 全候補インストゥルメンタル確認済み")
 
