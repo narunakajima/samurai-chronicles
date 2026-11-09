@@ -106,11 +106,55 @@ def collect(since: str) -> list:
     return sorted(out, key=lambda r: r["published"], reverse=True)
 
 
+def thread_counts(yt, video_id: str) -> dict:
+    """commentThreads.list で数える（保留中・スパム判定も含む）。commentCount との比較用。
+    threads=トップレベルのコメント数、replies=返信数。"""
+    out = {"published": 0, "heldForReview": 0, "likelySpam": 0, "replies": 0}
+    for status in ("published", "heldForReview", "likelySpam"):
+        token = None
+        while True:
+            try:
+                r = yt.commentThreads().list(part="snippet", videoId=video_id, maxResults=100,
+                                             moderationStatus=status, pageToken=token).execute()
+            except Exception as e:  # コメント無効の動画など
+                out[status] = f"ERR:{str(e)[:40]}"
+                break
+            items = r.get("items", [])
+            out[status] += len(items)
+            if status == "published":
+                out["replies"] += sum(i["snippet"].get("totalReplyCount", 0) for i in items)
+            token = r.get("nextPageToken")
+            if not token:
+                break
+    return out
+
+
+def compare_comments(since: str) -> None:
+    """commentCount（videos.list）と commentThreads.list の件数を並べる（2026-10 評価の提案6）。"""
+    print("| チャンネル | 回 | 種類 | 公開日 | commentCount | 公開スレッド | 返信 | 保留 | スパム判定 |")
+    print("|---|---|---|---|---|---|---|---|---|")
+    for label, service, _m in CHANNELS:
+        try:
+            yt = service()
+        except Exception as e:
+            print(f"警告: {label} の認証に失敗したため飛ばします: {e}", file=sys.stderr)
+            continue
+        for r in [x for x in collect(since) if x["channel"] == label]:
+            c = thread_counts(yt, r["video_id"])
+            print(f"| {label} | {r['episode'] or '-'} | {r['kind'] or '-'} | {r['published']} | {r['comments']} | "
+                  f"{c['published']} | {c['replies']} | {c['heldForReview']} | {c['likelySpam']} |")
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description="動画ごとの再生・高評価・コメント数")
     p.add_argument("--since", default="", help="公開日 YYYY-MM-DD 以降に絞る")
     p.add_argument("--json", action="store_true")
+    p.add_argument("--compare-comments", action="store_true",
+                   help="commentCount と commentThreads.list（保留・スパム含む）の件数を並べて比べる")
     args = p.parse_args()
+    if args.compare_comments:
+        compare_comments(args.since)
+        return
     rows = collect(args.since)
     if args.json:
         print(json.dumps(rows, ensure_ascii=False, indent=2))

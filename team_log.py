@@ -350,6 +350,11 @@ def nth_monday(year: int, month: int, n: int):
 
 
 def cmd_due(_args) -> None:
+    reporting_freshness()
+    _due_evaluations()
+
+
+def _due_evaluations() -> None:
     """月次評価の日を過ぎても前月分の評価が無ければ知らせる。評価の日の当日も知らせる（制作コマンドの STEP 0 で呼ぶ）。
     日程は team/schedule.json（毎月の第N月曜に前月分）。無ければ、前月分の {month}.md の有無だけを見る。"""
     today = datetime.now(JST).date()
@@ -367,6 +372,30 @@ def cmd_due(_args) -> None:
         when = "今日は" if today == day else f"{day.month}/{day.day}（月）は"
         print(f"お知らせ: {when}{e['name']}の月次評価（{prev} 分）の予定日ですが、まだ済んでいません。"
               f"制作の後でよいので {e['command']} を実行してください。")
+
+
+def reporting_freshness() -> None:
+    """Reporting API の最新CSV（ファイル名の日付）が7日以上前なら知らせる。
+    Drive 上のファイルは読まず、ディレクトリの一覧（ファイル名）だけを見る（読み込みは Resource deadlock で失敗することがあるため）。"""
+    try:
+        import glob
+        base = glob.glob(str(Path.home() / "Library/CloudStorage/GoogleDrive-*/マイドライブ/samurai-chronicles/analytics/raw"))
+        if not base:
+            return
+        latest = None
+        for f in Path(base[0]).glob("*/*.csv"):
+            m = re.fullmatch(r"(\d{4}-\d{2}-\d{2})\.csv", f.name)
+            if m and (latest is None or m.group(1) > latest):
+                latest = m.group(1)
+        if latest is None:
+            return
+        age = (datetime.now(JST).date() - datetime.strptime(latest, "%Y-%m-%d").date()).days
+        if age >= 7:
+            print(f"お知らせ: Reporting API の最新レポートが {latest}（{age}日前）です。取得が止まっている可能性があります。"
+                  f"sc_yt_reporting_auth.py で再認証し、sc_yt_download_reports.py を実行してください"
+                  f"（約60日で古いレポートが消えます）。")
+    except OSError:
+        pass
 
 
 def cmd_score(args) -> None:
