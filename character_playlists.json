@@ -1214,5 +1214,25 @@
         "video_id": "hDrDmsXorEA"
       }
     ]
+  },
+  "takeda_harunobu": {
+    "display_name": "Takeda Harunobu",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep122",
+        "video_id": "Viq4geDseoE"
+      }
+    ]
+  },
+  "takeda_nobutora": {
+    "display_name": "Takeda Nobutora",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep122",
+        "video_id": "Viq4geDseoE"
+      }
+    ]
   }
 }

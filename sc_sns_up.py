@@ -250,7 +250,7 @@ def upload_caption(youtube, video_id: str, srt_path: Path):
     print(f"  ✓ 字幕完了")
 
 
-def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = False):
+def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = False, resume_main_id: Optional[str] = None):
     # 無人実行（handoff-poller）の安全装置: メモに「アップロード指示: ep{NNN}」が明記された回だけ実行できる。--now は常に拒否
     from sc_unattended_guard import require_upload_permission, forbid_unattended
     if publish_now:
@@ -301,19 +301,24 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     youtube = get_youtube_client()
 
     # 本編
-    print("【本編】")
-    main_id = upload_video(youtube, main_video, title, description, tags, publish_at)
-    if srt_file.exists():
-        upload_caption(youtube, main_id, srt_file)
+    if resume_main_id:
+        # 本編のアップロード（字幕・サムネイル含む）は済んでいて、Shorts 以降で失敗したときの続き（2026-11-09 ep122: Shorts のタイトルが100文字超）
+        main_id = resume_main_id
+        print(f"【本編】アップロード済みの {main_id} を使います（本編・字幕・サムネイルはスキップ）")
     else:
-        print(f"  ⚠️  字幕ファイルなし（スキップ）")
-    if thumbnail_file.exists():
-        try:
-            upload_thumbnail(youtube, main_id, thumbnail_file)
-        except Exception as e:
-            print(f"  ⚠️  サムネイルスキップ（YouTube Studioで手動設定してください）: {e}")
-    else:
-        print(f"  ⚠️  サムネイルなし（スキップ）: {thumbnail_file.name}")
+        print("【本編】")
+        main_id = upload_video(youtube, main_video, title, description, tags, publish_at)
+        if srt_file.exists():
+            upload_caption(youtube, main_id, srt_file)
+        else:
+            print(f"  ⚠️  字幕ファイルなし（スキップ）")
+        if thumbnail_file.exists():
+            try:
+                upload_thumbnail(youtube, main_id, thumbnail_file)
+            except Exception as e:
+                print(f"  ⚠️  サムネイルスキップ（YouTube Studioで手動設定してください）: {e}")
+        else:
+            print(f"  ⚠️  サムネイルなし（スキップ）: {thumbnail_file.name}")
 
     time.sleep(2)
 
@@ -327,8 +332,15 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
         f"** Subscribe for new episodes 3 times a week:\n"
         f"https://www.youtube.com/@Samurai-Chronicles-JP"
     )
+    # YouTube のタイトルは100文字まで。本編のタイトルが長いと " #Shorts" を足して超えるので、本文を縮める
+    _suffix = " #Shorts"
+    if len(title) + len(_suffix) <= 100:
+        _st = title
+    else:
+        _cut = title[:100 - len(_suffix) - 1]
+        _st = (_cut.rsplit(" ", 1)[0] if " " in _cut else _cut).rstrip(" ,:;—-") + "…"
     shorts_id = upload_video(youtube, shorts_video,
-                             f"{title} #Shorts", shorts_description, tags + ["shorts"],
+                             f"{_st}{_suffix}", shorts_description, tags + ["shorts"],
                              publish_at)
 
     # youtube_url / shorts_url / scheduled_at を ep.json に書き戻す
@@ -547,6 +559,7 @@ def cli():
                         help="予約公開日時（JST）例: '2026-06-01 20:00' / 省略時は翌 03:00 JST に自動予約")
     parser.add_argument("--now", action="store_true",
                         help="即時公開（03:00 JST 自動予約をスキップ）")
+    parser.add_argument("--resume-main-id", metavar="VIDEO_ID", help="本編をアップロード済みのとき、そのIDを指定して Shorts 以降を続ける（本編・字幕・サムネイルは再送しない。--publish-at は本編と同じ日時を指定する）")
     parser.add_argument("--fix-shorts", metavar="SHORTS_ID", help="既存ShortsのIDを指定して説明文を修正（本編IDは自動取得）")
     args = parser.parse_args()
 
@@ -555,7 +568,7 @@ def cli():
             parser.error("--fix-shorts には --episode も必要です")
         fix_shorts_description(args.episode, args.fix_shorts)
     elif args.episode:
-        run(args.episode, publish_at=args.publish_at, publish_now=args.now)
+        run(args.episode, publish_at=args.publish_at, publish_now=args.now, resume_main_id=args.resume_main_id)
     else:
         parser.error("--episode または --fix-shorts を指定してください")
 

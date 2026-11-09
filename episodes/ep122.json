@@ -328,5 +328,8 @@
     "outro": "BGM/ep085-BGM-outro.mp3"
   },
   "tokio_glow": true,
-  "tokio_glow_gain": 0.4
+  "tokio_glow_gain": 0.4,
+  "youtube_url": "https://youtu.be/Viq4geDseoE",
+  "shorts_url": "https://youtu.be/5eZjCx5v_M8",
+  "scheduled_at": "2026-11-19 03:00"
 }
