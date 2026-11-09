@@ -21,6 +21,7 @@ SENSITIVE_DB = "-30dB"  # 1回目で一致しない文だけ、短い間も切�
 SENSITIVE_MIN = 0.05
 PAD = 0.08  # 切り口の前後に残す余白（秒）
 ACCEPT = 0.85  # これ以上の一致度なら、その切り出しを採用する
+SHORT_CHECK_WORDS = 4  # この語数以下の文は、別の書き起こし（Whisper・Gemini再）でも確かめて採用する（旧3。ep122: I weigh → Highway で4語の文が止まった）
 GOOD = 0.95  # これ以上なら、ほかの候補を試さずに確定する
 EDGE_PENALTY = 0.15  # 文の最初か最後の単語が聞こえていないときの減点
 
@@ -54,7 +55,7 @@ _TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eigh
 
 
 def _numwords(s: str) -> str:
-    """0〜99 の英単語（twenty-nine など）を数字にそろえる。書き起こしが「29」と書くことがあるため（ep113）。"""
+    """0〜99 の英単語（twenty-nine など）と、百・千・百万の位を数字にそろえる。書き起こしが「29」と書くことがあるため（ep113）。"""
     for t in range(2, 10):
         for o in range(1, 10):
             s = re.sub(rf"\b{_TENS[t]}[- ]{_ONES[o]}\b", str(t * 10 + o), s)
@@ -66,6 +67,13 @@ def _numwords(s: str) -> str:
                lambda m: {"twent": "20", "thirt": "30", "fort": "40", "fift": "50", "sixt": "60", "sevent": "70", "eight": "80", "ninet": "90"}[m.group(1)] + "s", s)
     s = re.sub(r"\b(\w+teenth)\b", lambda m: {"thirteenth": "13th", "fourteenth": "14th", "fifteenth": "15th", "sixteenth": "16th",
                                                 "seventeenth": "17th", "eighteenth": "18th", "nineteenth": "19th"}.get(m.group(1), m.group(1)), s)
+    # 百・千・百万の位（two hundred thousand → 200000）。書き起こしが「200,000」と書くことがあるため（ep122）。
+    # 数字のあとに続く hundred / thousand / million だけをまとめる（a hundred などはそのまま）
+    s = re.sub(r"\b(\d+)[- ]hundred(?:(?: and)? (\d{1,2})\b)?",
+               lambda m: str(int(m.group(1)) * 100 + int(m.group(2) or 0)), s)
+    for word, mul in (("thousand", 1000), ("million", 1000000)):
+        s = re.sub(rf"\b(\d+)[- ]{word}(?:(?: and)? (\d{{1,3}})\b)?",
+                   lambda m, mul=mul: str(int(m.group(1)) * mul + int(m.group(2) or 0)), s)
     return s
 
 
@@ -323,7 +331,7 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
             if (len(hn) >= 20 and difflib.SequenceMatcher(None, tn[:len(hn)], hn, autojunk=False).ratio() >= 0.9
                     and best[1] - start >= 0.85 * exp_dur):
                 best = (ACCEPT, best[1], best[2])
-        if best is not None and best[0] < ACCEPT and len(_words(sent)) <= 3 and not (
+        if best is not None and best[0] < ACCEPT and len(_words(sent)) <= SHORT_CHECK_WORDS and not (
                 i > 0 and i not in extended and (prev_tail_in_head(sents[i - 1], best[2])
                                                  or prev_fragment_in_head(sents[i - 1], sent, best[2]))):
             # 3語以下の短い文は、Gemini が聞き違えやすい（ep121: I may speak. → I misspeak / Only grass. → On the grass.）。
