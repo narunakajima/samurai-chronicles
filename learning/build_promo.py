@@ -146,8 +146,9 @@ def cmd_thumb(ep_id: str):
     h = int(TH * 0.66)
     tk = tk.resize((int(tk.width * h / tk.height), h), Image.LANCZOS)
     x_t = TW - tk.width - 10
-    if json.loads((SC_DIR / "episodes" / f"{ep_id}.json").read_text(encoding="utf-8")).get("tokio_glow"):
-        gl, pad = gold_glow(tk, 14)     # 暗い背景でも埋もれないよう、黒い影の代わりに金色の光（ep119〜）
+    _ep = json.loads((SC_DIR / "episodes" / f"{ep_id}.json").read_text(encoding="utf-8"))
+    if _ep.get("tokio_glow"):
+        gl, pad = gold_glow(tk, 14, _ep.get("tokio_glow_gain", 2.0))   # tokio_glow_gain: 回ごとに光を弱められる（既定2.0）     # 暗い背景でも埋もれないよう、黒い影の代わりに金色の光（ep119〜）
         img.alpha_composite(gl, (x_t - pad, TH - h - pad))
         tk = lift_dark(tk)
     else:
@@ -392,8 +393,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     bg_idle = work / "bg_idle.mp4"
     shutil.copyfile(bg, bg_idle)          # 重ねる前の背景を取っておく（日本語のセリフ以外は、黙っている Tokio に切り替える）
     glow = bool(episode.get("tokio_glow"))
-    vg.add_tokio_overlay(bg, expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False, glow=glow)
-    vg.add_tokio_overlay(bg_idle, sides_expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False, glow=glow)
+    vg.add_tokio_overlay(bg, expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False, glow=glow, glow_gain=episode.get("tokio_glow_gain"))
+    vg.add_tokio_overlay(bg_idle, sides_expr, "left", name_tag=True, dur=total, fx_in=True, fx_out=False, glow=glow, glow_gain=episode.get("tokio_glow_gain"))
     # 1・2・3 の合図の間は、Tokio は話さない（口パクが不自然との指摘。2026-10-24）。問いを言い終えてから、答えの英文が流れるまで
     # さらに、Tokio が話すのは日本語のセリフ（問い・解説・案内）の間だけにする。英文の答えやもう一度の間は待機の動きに戻す（2026-10-24）。
     # 切り替えは、話す映像と待機の映像を 0.25 秒かけて混ぜる（ぱっと入れ替えると不自然なため）。最初は登場の効果があるので、話す映像から始める

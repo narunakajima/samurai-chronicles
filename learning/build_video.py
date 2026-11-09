@@ -554,7 +554,7 @@ def main():
              "-preset", "veryfast", "-pix_fmt", "yuv420p", str(base)])
         w["dur"] = (F(w["b"]) - F(w["a"])) / FPS
         vg.add_tokio_overlay(base, w["expr"], w["side"], name_tag=w["tag"], dur=w["dur"],
-                             glow=bool(episode.get("tokio_glow")))
+                             glow=bool(episode.get("tokio_glow")), glow_gain=episode.get("tokio_glow_gain"))
         w["clip"] = base
     done = set()
     for c, wi in pieces:

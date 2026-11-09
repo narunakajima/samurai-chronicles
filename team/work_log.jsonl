@@ -90,3 +90,8 @@
 {"ts": "2026-11-09T15:46:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "進行", "result": "ok", "retries": 0, "note": "SC2611-05/06適用。Freesound3回失敗でOpus引き継ぎ(条件通り)"}
 {"ts": "2026-11-09T15:46:31+09:00", "kind": "applied", "agent": "sc-coordinator", "episode": "ep122", "ids": ["SC2611-05", "SC2611-06"], "skipped": [], "reason": ""}
 {"ts": "2026-11-09T16:14:44+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep122", "source": "user", "severity": "minor", "text": "Tokioと背景の境目の光が強すぎる。もっと抑えて作り直して（tokio_glow を任意提案どおり有効にしたが強さを確認していなかった）"}
+{"ts": "2026-11-09T16:58:22+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "6", "result": "ok", "retries": 0, "note": "本編動画 ユーザーOK(Tokio光を抑えた再生成後)"}
+{"ts": "2026-11-09T17:03:55+09:00", "kind": "applied", "agent": "sc-learn-writer", "episode": "ep122", "ids": ["SC2611-08", "SC2611-09"], "skipped": [], "reason": ""}
+{"ts": "2026-11-09T17:04:15+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-09T17:04:26+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep122", "step": "1", "result": "ok", "retries": 0, "note": "台本・promo作成。S15英文の exiled son 揺れを報告"}
+{"ts": "2026-11-09T17:06:27+09:00", "kind": "feedback", "agent": "sc-historian", "episode": "ep122", "source": "qa", "severity": "major", "text": "本編S15の英文『his exiled son is dead』は追放されたのが父なので史実と逆に読める。STEP 3Aで見逃し、学習版台本担当が発見。ユーザー承認のうえ『the son who exiled him』に修正、S15音声と動画を再生成"}
