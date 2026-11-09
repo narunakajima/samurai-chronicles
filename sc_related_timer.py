@@ -107,12 +107,42 @@ def save_state(s: dict):
     STATE.write_text(json.dumps(s, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+SLACK_JSON_CANDIDATES = [Path.home() / ".config" / "handoff-poller" / "slack.json"]
+
+
+def cc_reports_webhook() -> str:
+    """slack.json の cc_reports_webhook_url（KL と同じ）。環境変数 SC_CC_REPORTS_WEBHOOK_URL があれば優先。"""
+    if os.environ.get("SC_CC_REPORTS_WEBHOOK_URL"):
+        return os.environ["SC_CC_REPORTS_WEBHOOK_URL"].strip()
+    for p in [Path(os.environ["SC_SLACK_JSON"])] if os.environ.get("SC_SLACK_JSON") else SLACK_JSON_CANDIDATES:
+        try:
+            url = json.loads(p.read_text(encoding="utf-8")).get("cc_reports_webhook_url", "")
+            if url:
+                return str(url).strip()
+        except Exception:
+            continue
+    return ""
+
+
+def report_line(event: str, state: str, next_: str, needs_user: str) -> str:
+    """常設監視が拾う1行形式（from=claude-code で始まる）。"""
+    return (f"from=claude-code project=SC case=関連動画タイマー event={event} state={state} "
+            f"next={next_} needs_user={needs_user}")
+
+
 def report(text: str):
-    """#cc-reports への報告（既存の team_scheduled.post_slack = Incoming Webhook を共用）。"""
+    """#cc-reports への報告（slack.json の cc_reports_webhook_url へ Incoming Webhook で投稿）。"""
+    import urllib.request
+    url = cc_reports_webhook()
+    if not url:
+        print("Slack 未投稿（cc_reports_webhook_url なし）:", text, file=sys.stderr)
+        return
+    body = json.dumps({"text": text}, ensure_ascii=False).encode("utf-8")
+    req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
     try:
-        import team_scheduled
-        if not team_scheduled.post_slack(text):
-            print("Slack 未投稿（Webhook なし／失敗）:", text, file=sys.stderr)
+        with urllib.request.urlopen(req, timeout=30) as res:
+            if res.status != 200:
+                print(f"Slack 投稿が status={res.status}: {text}", file=sys.stderr)
     except Exception as exc:
         print(f"報告に失敗: {exc}: {text}", file=sys.stderr)
 
@@ -273,13 +303,22 @@ def cmd_run():
             for r in ok:
                 mark_done(r)
             if ok:
-                report("【SC関連動画の自動設定】完了: " + "、".join(f"{r['episode_id']}({'学習版' if r['kind']=='learn' else '本編'})" for r in ok))
+                names = "、".join(f"{r['episode_id']}({'学習版' if r['kind']=='learn' else '本編'})" for r in ok)
+                report(report_line(f"関連動画を設定: {names}", "done", "なし", "no"))
                 st.pop("blocked_reported", None)
             if fail:
                 print("未完了（次回再試行）:", fail, file=sys.stderr)
+                fk = ",".join(sorted(fail))
+                if st.get("fail_reported") != fk:   # 同じ失敗の組は1回だけ報告
+                    report(report_line("関連動画の設定に失敗: " + "; ".join(f"{k}={v}"[:80] for k, v in fail.items()),
+                                       "failed", "15分ごとに自動再試行", "no（続く場合は要確認）"))
+                    st["fail_reported"] = fk
+            else:
+                st.pop("fail_reported", None)
         if blocked_now:
             if not st.get("blocked_reported"):   # blocked は連続中1回だけ報告（再試行は続ける）
-                report(f"【SC関連動画の自動設定】blocked: {blocked_now}（対象 {len(rows)}件は未設定のまま、15分ごとに再試行します）")
+                report(report_line(f"blocked: {blocked_now}（対象{len(rows)}件は未設定）", "blocked",
+                                   "15分ごとに自動再試行", "no（続く場合は制作専用Chromeの状態を確認）"))
                 st["blocked_reported"] = now.isoformat()
         save_state(st)
 
