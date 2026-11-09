@@ -86,3 +86,5 @@
 {"ts": "2026-11-09T15:13:27+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep122", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可。サムネ・画像20+Shorts・BGM3曲を実物で確認、差し戻しなし。S13/S16のzoom_anchor注意、tokio_glow任意"}
 {"ts": "2026-11-09T15:13:27+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep122", "source": "manager", "severity": "minor", "text": "S02 の image_prompt が関所の門を『小さな屋根付きの木の門』と指定し、柱と横木だけの鳥居状に描かれた(アイリスがCRITICALとして検出、再生成で解決)。関所の門は格子の開き戸など鳥居と見分けられる形で書く"}
 {"ts": "2026-11-09T15:15:18+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor手動補正(S05等)、tokio_glow有効"}
+{"ts": "2026-11-09T15:46:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "6", "result": "ok", "retries": 0, "note": "動画12:13+Shorts+字幕。Tokioコマ目視確認済み"}
+{"ts": "2026-11-09T15:46:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "進行", "result": "ok", "retries": 0, "note": "SC2611-05/06適用。Freesound3回失敗でOpus引き継ぎ(条件通り)"}
