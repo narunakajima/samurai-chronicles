@@ -95,3 +95,6 @@
 {"ts": "2026-11-09T17:04:15+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-09T17:04:26+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep122", "step": "1", "result": "ok", "retries": 0, "note": "台本・promo作成。S15英文の exiled son 揺れを報告"}
 {"ts": "2026-11-09T17:06:27+09:00", "kind": "feedback", "agent": "sc-historian", "episode": "ep122", "source": "qa", "severity": "major", "text": "本編S15の英文『his exiled son is dead』は追放されたのが父なので史実と逆に読める。STEP 3Aで見逃し、学習版台本担当が発見。ユーザー承認のうえ『the son who exiled him』に修正、S15音声と動画を再生成"}
+{"ts": "2026-11-09T18:02:24+09:00", "kind": "call", "agent": "sc-manager", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-09T18:08:54+09:00", "kind": "call", "agent": "sc-manager", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-09T18:10:02+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep122", "step": "学習版2", "result": "retry", "retries": 0, "note": "build_lesson 2回失敗(I weigh→Highway、two hundred thousand→200,000)でOpus引き継ぎ→clips.py修正"}
