@@ -59,7 +59,7 @@ def image_part_from_path(path: Path) -> types.Part:
     （Fable 5.1監査の指摘、sc_image_gen.pyと同じ対応）。"""
     data = path.read_bytes()
     return types.Part.from_bytes(data=data, mime_type=sniff_image_mime(data))
-MODEL = "gemini-flash-latest"
+MODEL = "gemini-3.8-flash"
 
 BASE_DIR = Path(__file__).parent
 DRIVE_BASE = (

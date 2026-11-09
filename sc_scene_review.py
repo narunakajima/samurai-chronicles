@@ -35,7 +35,7 @@ from google import genai
 BASE_DIR = Path(__file__).parent
 
 TRANSLATE_API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
-TRANSLATE_MODEL = "gemini-flash-latest"
+TRANSLATE_MODEL = "gemini-3.8-flash"
 
 
 def translate_to_japanese(text: str) -> str:

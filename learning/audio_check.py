@@ -7,7 +7,7 @@ from pathlib import Path
 
 from tts_ja import API_KEY
 
-MODEL = "gemini-flash-latest"
+MODEL = "gemini-3.8-flash"
 URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 
 

@@ -77,7 +77,7 @@ def image_part_from_path(path: Path) -> types.Part:
     return types.Part.from_bytes(data=data, mime_type=sniff_image_mime(data))
 
 MODEL = "gemini-nano-banana-2.1"
-QA_MODEL = "gemini-flash-latest"
+QA_MODEL = "gemini-3.8-flash"
 
 BASE_DIR = Path(__file__).parent  # スクリプト・エピソードJSONの場所
 

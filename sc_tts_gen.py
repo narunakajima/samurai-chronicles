@@ -46,7 +46,7 @@ API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY"
 # client.models.generate_content に戻してよい。
 TTS_MODEL = "gemini-3.8-flash-tts"
 TTS_REST_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
-QA_MODEL = "gemini-flash-latest"  # ナレーション音声が台本通りか判定する用（sc_image_gen.pyのQA_MODELと同じ考え方）
+QA_MODEL = "gemini-3.8-flash"  # ナレーション音声が台本通りか判定する用（sc_image_gen.pyのQA_MODELと同じ考え方）
 VOICE_NAME = "Charon"   # 重厚・ドラマチックな男性英語ボイス
 TEMPERATURE = 1.0
 SAMPLE_RATE = 24000
