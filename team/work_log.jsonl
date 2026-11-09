@@ -88,3 +88,4 @@
 {"ts": "2026-11-09T15:15:18+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor手動補正(S05等)、tokio_glow有効"}
 {"ts": "2026-11-09T15:46:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "6", "result": "ok", "retries": 0, "note": "動画12:13+Shorts+字幕。Tokioコマ目視確認済み"}
 {"ts": "2026-11-09T15:46:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "進行", "result": "ok", "retries": 0, "note": "SC2611-05/06適用。Freesound3回失敗でOpus引き継ぎ(条件通り)"}
+{"ts": "2026-11-09T15:46:31+09:00", "kind": "applied", "agent": "sc-coordinator", "episode": "ep122", "ids": ["SC2611-05", "SC2611-06"], "skipped": [], "reason": ""}
