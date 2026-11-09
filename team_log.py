@@ -155,7 +155,15 @@ def month_rows(month: str) -> list:
     return [r for r in read_jsonl(WORK_LOG) if str(r.get("ts", "")).startswith(month)]
 
 
-def build_summary(month: str) -> dict:
+CHANNELS = ("main", "learning")
+
+
+def row_channel(r) -> str:
+    """channel の無い既存行は main として扱う（過去データは書き換えない）。"""
+    return r.get("channel") or "main"
+
+
+def build_summary(month: str, channel: str = "main") -> dict:
     roster = load_roster()
     stats = {name: {"model": info["model"], "display_name": info["display_name"], "calls_auto": 0, "records": 0, "ok": 0, "retry": 0, "fail": 0,
                     "escalated": 0, "retries": 0, "episodes": set(), "feedback_major": 0, "feedback_minor": 0,
@@ -187,7 +195,7 @@ def build_summary(month: str) -> dict:
     for s in stats.values():
         s["episodes"] = sorted(s["episodes"])
         s["first_pass_rate"] = round(s["ok"] / s["records"], 2) if s["records"] else None
-    prev = [r for r in read_jsonl(SCORECARDS) if r.get("month", "") < month]
+    prev = [r for r in read_jsonl(SCORECARDS) if r.get("month", "") < month and row_channel(r) == channel]
     last_scores = {}
     for r in sorted(prev, key=lambda x: x.get("month", "")):
         last_scores[r.get("agent")] = r
@@ -196,7 +204,7 @@ def build_summary(month: str) -> dict:
 
 def cmd_summary(args) -> None:
     roster = load_roster()
-    summary = build_summary(args.month)
+    summary = build_summary(args.month, args.channel)
     if args.json:
         print(json.dumps(summary, ensure_ascii=False, indent=2))
         return
@@ -404,13 +412,16 @@ def cmd_score(args) -> None:
     if not re.fullmatch(r"\d{4}-\d{2}", args.month):
         print("エラー: --month は YYYY-MM", file=sys.stderr)
         sys.exit(1)
-    rows = [r for r in read_jsonl(SCORECARDS) if not (r.get("month") == args.month and r.get("agent") == args.agent)]
-    rows.append({"month": args.month, "agent": args.agent, "outcome": args.outcome, "quality": args.quality,
+    # 同一担当・同一月・同一チャンネルの行だけを置き換える（channel の無い既存行は main 扱い）
+    rows = [r for r in read_jsonl(SCORECARDS)
+            if not (r.get("month") == args.month and r.get("agent") == args.agent
+                    and row_channel(r) == args.channel)]
+    rows.append({"month": args.month, "agent": args.agent, "channel": args.channel, "outcome": args.outcome, "quality": args.quality,
                  "improvement": args.improvement, "overall": args.overall, "summary": args.summary,
                  "recorded_at": now_jst()})
     SCORECARDS.parent.mkdir(parents=True, exist_ok=True)
     SCORECARDS.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), encoding="utf-8")
-    print(f"評価を記録しました: {args.month} {args.agent} 総合 {args.overall}")
+    print(f"評価を記録しました: {args.month} {args.agent} [{args.channel}] 総合 {args.overall}")
 
 
 def cmd_scores(args) -> None:
@@ -419,16 +430,18 @@ def cmd_scores(args) -> None:
     if args.agent:
         agent = resolve_agent(args.agent, roster)
         rows = [r for r in rows if r.get("agent") == agent]
+    if args.channel != "all":
+        rows = [r for r in rows if row_channel(r) == args.channel]
     if not rows:
         print("評価の記録はまだありません。")
         return
-    print("| 月 | 担当 | 成果 | 品質 | 改善 | 総合 | 要約 |")
-    print("|---|---|---|---|---|---|---|")
+    print("| 月 | チャンネル | 担当 | 成果 | 品質 | 改善 | 総合 | 要約 |")
+    print("|---|---|---|---|---|---|---|---|")
     def show(v):
         return "-" if v is None else v
 
     for r in rows:
-        print(f"| {r.get('month')} | {label(r.get('agent'), roster)} | {show(r.get('outcome'))} | {show(r.get('quality'))} | "
+        print(f"| {r.get('month')} | {row_channel(r)} | {label(r.get('agent'), roster)} | {show(r.get('outcome'))} | {show(r.get('quality'))} | "
               f"{show(r.get('improvement'))} | {r.get('overall')} | {r.get('summary', '')} |")
 
 
@@ -475,6 +488,8 @@ def main() -> None:
     s = sub.add_parser("summary", help="月ごとの集計")
     s.add_argument("--month", default=datetime.now(JST).strftime("%Y-%m"))
     s.add_argument("--json", action="store_true")
+    s.add_argument("--channel", choices=CHANNELS, default="main",
+                   help="「前回の評価」に出すチャンネル（無指定は main）")
     s.set_defaults(func=cmd_summary)
 
     sc = sub.add_parser("score", help="編集長の月次評価を記録する")
@@ -485,10 +500,14 @@ def main() -> None:
     sc.add_argument("--improvement", required=True, type=score_value)
     sc.add_argument("--overall", required=True, choices=GRADES)
     sc.add_argument("--summary", required=True)
+    sc.add_argument("--channel", choices=CHANNELS, default="main",
+                    help="評価の対象チャンネル（無指定は main。本編と学習版は別行で記録される）")
     sc.set_defaults(func=cmd_score)
 
     ss = sub.add_parser("scores", help="評価の履歴")
     ss.add_argument("--agent")
+    ss.add_argument("--channel", choices=CHANNELS + ("all",), default="main",
+                    help="無指定は main。all で全チャンネル")
     ss.set_defaults(func=cmd_scores)
 
     r = sub.add_parser("roster", help="名簿")
