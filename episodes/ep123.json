@@ -1,0 +1,254 @@
+{
+  "episode_id": "ep123",
+  "episode_title": "Did Japan's \"Last Ninja\" Really Board Perry's Black Ships? Two Scraps of Paper, 1853",
+  "youtube_title": "Did Japan's \"Last Ninja\" Really Board Perry's Black Ships? Two Scraps of Paper, 1853",
+  "youtube_description": "In July 1853, four foreign warships anchored off Uraga, and a man from Iga is said to have boarded one of them. The only trace is two sheets of paper kept by his family, and one account says the paper carries a watermark from 1856. Do two scraps of paper prove he boarded, or only that he wanted to?\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. Every episode is his dispatch from the scene.\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Iga-ryū Ninja Museum (Iga, Mie Prefecture) — exhibition and guide materials on the Sawamura family and its household records\n2. Hawks, Francis L. (ed.) — \"Narrative of the Expedition of an American Squadron to the China Seas and Japan, Performed in the Years 1852, 1853, and 1854 under the Command of Commodore M. C. Perry\" (1856)\n3. Beasley, W. G. — \"The Meiji Restoration\" (Stanford University Press, 1972)\n4. Turnbull, Stephen — \"Ninja: Unmasking the Myth\" (Frontline Books, 2003)\n5. Waraku Web (Shogakukan) — feature article on the Iga ninja Sawamura Jinzaburo and his 1853 mission\n\n#Ninja #SawamuraJinzaburo #CommodorePerry #BlackShips #Bakumatsu #Iga #SamuraiHistory #JapaneseHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Sawamura Jinzaburo",
+    "Sawamura Yasusuke",
+    "last ninja",
+    "Iga ninja",
+    "ninja history",
+    "Commodore Perry",
+    "Black Ships",
+    "Uraga",
+    "Tsu domain",
+    "Bakumatsu",
+    "Edo period",
+    "Japanese history",
+    "samurai history",
+    "Samurai Chronicles",
+    "Japan history documentary",
+    "Japanese history channel"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "narrator": "tokio",
+  "tokio_scenes": [
+    1,
+    2,
+    8,
+    11,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "tokio_talk": true,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Uraga, July 1853. I stand on the shore at night, four foreign warships glowing out in the mist. The story says a man from Iga rowed out and climbed aboard. The records won't let me follow him. So did he ever reach that deck?",
+  "shorts_narration": "1853. Four black ships, and a ninja said to have climbed aboard one. The trace he left: two scraps of paper. One account dates the paper to 1856. Did he board at all? Sawamura Jinzaburo.",
+  "shorts_hook_lines": [
+    "1853.",
+    "2 SCRAPS OF PAPER.",
+    "DID HE EVER BOARD?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of the face of a lean, weathered Japanese man from the Iga mountains standing on a shingle beach at night in July 1853, the upper half of his face in the shadow of the brim of a plain woven straw hat, his dark eyes lit by a warm orange glow from a watch fire and staring straight into the camera with a calm, watchful intensity, a plain dark indigo collar at the frame edge, behind him out of focus in the mist the small yellow lanterns of foreign ships on black water. Vertical portrait composition, face filling the centre and upper half of the frame, no mask, no black costume, no text.",
+  "thumbnail_prompt": "Cinematic night scene at Uraga in July 1853: a lean man in plain dark indigo travelling clothes and a woven straw hat stands on the shingle in the left and centre of the frame, seen from three-quarters behind with his face in deep shadow, holding two thin folded sheets of pale paper that glow faintly in the light of an iron-basket watch fire beside him; out in the mist behind him, four black American warships at anchor, two large wooden steam frigates with side paddle-wheel housings trailing thin coal smoke and two square-rigged sailing sloops, their yellow lanterns reflecting on black water. No mask, no black ninja costume, no weapons drawn. The lower right quarter of the frame is kept dark and empty. High-contrast dramatic lighting, orange fire against steel blue. No text in the image itself (the title text overlay is added separately), no writing on the paper.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "This is Tokio Kamiya, with a dispatch from Uraga, 1853. Four warships sit in the dark, and the man they call Japan's last ninja is said to have boarded one. I'm here to see if he did.",
+      "image_prompt": "Ultra-wide cinematic night view from a low camera angle at the waterline of a shingle beach at Uraga, at the mouth of Edo Bay, in July 1853, looking out across black water. In the left foreground a small plain Japanese wooden rowing boat is just pushing off from the shingle, with one lone figure seen strictly from behind, in dark indigo travelling clothes and a plain woven straw hat, face completely hidden, both hands on a long wooden oar at the first strong pull, the oar blade lifting out of the water with streaming drops and widening ripples, a dark wake behind the stern. On the shore behind the boat, two iron-basket watch fires burn orange and throw sparks, and thin mist flows across the bay at water level. Far out in the mist, four black American warships at anchor in a loose line: two large wooden steam frigates with big side paddle-wheel housings on their flanks, black hulls and tall single funnels trailing thin dark coal smoke, and two square-rigged wooden sailing sloops, with no lettering or names on the hulls, their small warm yellow lanterns hanging on the hulls and rigging and reflected as long glittering streaks across the water. A moonless night with a pale glow low behind the fleet; strong depth from the dark foreground to the glowing distant ships; a large open dark sky above kept empty for camera movement. Painterly cinematic film still, high contrast, orange fire against steel blue. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_in",
+      "character_ref": "sawamura_jinzaburo",
+      "tokio_expression": "neutral",
+      "tokio_place": "Uraga 1853"
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I should explain. I am a correspondent, or I was, until my grandfather's brass watch passed to me. It carries me to any moment in Japan's past, for one day at a time. I may watch. I may speak. I may not change a thing. Today it sets me down on the shore at Uraga, at the mouth of Edo Bay, on the evening of July 8th, 1853. Out on the water sit four black American warships, two with paddle wheels, two under sail. I have one day to learn whether a man from Iga ever climbed aboard.",
+      "image_prompt": "Wide view at dusk from a shingle beach at Uraga at the mouth of Edo Bay on July 8th, 1853: wooden fishing boats pulled up on the stones, a few villagers and anonymous coast guards in dark kimono standing in a tight group on the left and staring out to sea, the last violet-orange light fading on the water. Out in the bay, four black American warships at anchor in a loose line: two large wooden steam frigates with big side paddle-wheel housings on their flanks, black hulls and tall single funnels trailing thin dark coal smoke, and two square-rigged wooden sailing sloops, with no lettering or names on the hulls, their first lanterns just being lit. The right third of the frame stays quiet and open: dark shingle and sea. Calm, tense, expectant, painterly film still. Japanese setting only for the shore and onlookers. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Uraga 1853"
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Let me give you the story first, the way everyone tells it. Japan's last ninja, Sawamura Jinzaburo, is sent to spy on the black ships. He climbs aboard in the dark, and comes home with bread, tobacco, candles and two sheets of paper. He is a hero of comics now, and a character in a video game. A word on Iga: it is the mountain country of central Japan where the ninja clans lived. It is a wonderful story. I came to find out how much of it is written down, and how much is only told.",
+      "image_prompt": "Close view of a plain dark lacquer tray on a low wooden table in warm lantern light, holding the objects of the tale: two small round bread rolls, two dried brown tobacco leaves, two thick white candles, and two thin folded sheets of pale paper with no marks on them. Behind the tray a soft out-of-focus wall of dark wood and the faint glow of a paper lantern. Intimate, mysterious, painterly cinematic still life. No text, no writing, no marks on the paper, no labels.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "First, what is solid. The Sawamura were a family of Iga, and they served the Tsu domain, ruled by the Todo lords. They were not the shogun's Iga guards at Edo Castle; that is a different story. Their rank was muzunin: men with almost no stipend, but allowed a surname and a sword. One account says their duty was to light beacon fires. His name is Yasusuke. I cannot find the dates of his life, and I will not guess them.",
+      "image_prompt": "Misty dawn view of a green mountain valley in Iga province in the mid nineteenth century: in the foreground a modest thatched wooden farmhouse of a low-ranking country samurai family behind a plain stone-walled yard, a low-pitched roof, no castle and no tower anywhere; on the hill above, an unlit pyre of stacked bundled brushwood and logs for a signal fire, with one anonymous man in plain dark indigo clothes standing beside it, looking out over the valley. Soft cool light, drifting mist between wooded ridges, quiet and watchful, painterly film still. Japanese setting only for the shore and onlookers. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Who sent him? Two accounts, and they do not agree. One says the order came from the lord of Tsu, Todo Takayuki. The Iga museum says it came from the shogun's senior councillors. Both could be true, if the lord passed on a request from Edo. I cannot tell. The chief councillor then was Abe Masahiro, but I find no record that he named Sawamura. And on the water, I watch the American sailors wave the small guard boats away. Nobody is getting close to those ships tonight.",
+      "image_prompt": "Dusk over the bay at Uraga in July 1853: about a dozen small Japanese guard boats with lit paper lanterns clustered in the water near the nearest black steam frigate, which has a side paddle-wheel housing, a black hull and a tall funnel with thin dark coal smoke; blue-jacketed American sailors lining its rail and waving their arms to keep the little boats away. Beyond it the other three ships of the squadron (a second steam frigate and two square-rigged sailing sloops) sit at anchor in the haze. Tense, crowded, hazy evening light, painterly film still. No lettering or names on any hull. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Now the family's own papers. The museum names two documents the household kept. One is a record whose title means something like Notes on Secret Duties Performed. The other sets out the family's standing and descent. These are the family's words about itself, not an outsider's. I would give a great deal to read the first. I do not know whether the original survives, who holds it, or when it was written. Until someone shows me, I treat it as the family's account of itself.",
+      "image_prompt": "A dim storehouse room in an old rural samurai house: a low wooden chest open on a tatami floor, lit only by one paper lantern; an anonymous pair of weathered hands unwrapping a bundle of old paper records tied with a cord. The pages show only faint blurred brush strokes that form no readable characters. Warm amber light, deep shadow, dust in the air, quiet and reverent, painterly cinematic still. Japanese setting only for the shore and onlookers. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Here is what none of the accounts tell me: how he got aboard. Not one gives a boat, a rope, a disguise, or the name of a ship. The tale skips from the beach straight to the deck, as if the crossing did not matter. I stand at the water's edge with my notebook and I think the crossing is the whole story. The Americans keep boats away, I read. I think a lone rowing boat has a hard night ahead of it. So the story needs a gap, and I mark it.",
+      "image_prompt": "Wide night view from the edge of a shingle beach at Uraga across a broad stretch of black water: in the foreground an empty plain wooden rowing boat pulled halfway up the wet stones and a single line of footprints leading from the dry shingle toward the surf. Far out across the water, low drifting mist and, in the distance, four black American warships at anchor in a loose line: two large wooden steam frigates with big side paddle-wheel housings on their flanks, black hulls and tall single funnels trailing thin dark coal smoke, and two square-rigged wooden sailing sloops, with no lettering or names on the hulls with small yellow lantern lights. The wide dark gap of water between shore and ships fills the middle of the frame. Quiet, ominous, painterly film still. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Later that night, a fisherman mending a net beside his beached boat told me, once I said I was a travelling merchant, that the foreign ships are as big as hills and smoke without any wind. He rowed out with the guard boats at dusk, and a foreign sailor waved him off. I asked about a man from Iga. He laughed. Nobody here asks where a man comes from tonight, he said, only what he saw. He went back to his net. I wrote down the laugh.",
+      "image_prompt": "Close medium view at night of an old Japanese fisherman in a worn dark indigo work jacket sitting on the stones beside his beached wooden boat and mending a net by the light of a hanging paper lantern, his weathered face half lit, glancing up with a dry half smile. Far behind him out of focus in the dark, the small warm lights of the anchored foreign ships glow on the water. The fisherman sits in the left half of the frame, the right half open and dark. Warm lantern light, painterly cinematic film still. Japanese setting only for the shore and onlookers. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "surprised",
+      "tokio_place": "Uraga 1853"
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Now I turn the pages of my notebook to the spring of 1854. Perry has come back, and during the treaty talks he gives a banquet aboard his flagship for Japanese officials. One account says about sixty Japanese went aboard that day, and suggests that Sawamura may have been one of them. Notice the word: may. If so, he did not creep aboard. He was invited, with a cup in his hand. That is a smaller story, and perhaps a likelier one. But it is only an idea, and I have seen no list with his name.",
+      "image_prompt": "Night view of the broad open main deck of a large American steam frigate in March 1854 under a canvas awning hung with lanterns: long tables with white cloths, glasses and decanters, American naval officers in dark blue coats with gold buttons seated among about a dozen Japanese officials in formal wide-shouldered dark kamishimo. At the very edge of the lantern light, one anonymous attendant in plain dark clothes stands apart, face in shadow. Warm golden lantern light, convivial but watchful, painterly cinematic film still. No text, no writing, no flags with writing.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "What do the Americans say? I read what I can find. Commodore Perry's own account of the expedition describes the banquet, the guests, the toasts. It does not mention a Japanese spy, or anyone creeping aboard, and I have found no sailor's diary that does. But I want to be fair to him. A servant, a bearer, an attendant: such men go unnamed in every navy's journals. Silence in the American record does not prove he stayed ashore. It only means the tale rests on Japanese paper alone.",
+      "image_prompt": "Interior of a ship's wooden cabin in the 1850s: a leather-bound journal lying open on a dark wooden table beside a brass oil lantern, the pages covered only in faint blurred pen lines that form no readable words; a pen resting across the page. Through a small round window behind the table, the hazy shape of a black ship's lantern light on dark water. Warm lamp light, deep shadow, silent and unrevealing, painterly cinematic still. No text, no readable writing.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Midnight at Uraga. Mist now. The lanterns of the black ships hang low and yellow over the water, and somewhere beyond the shore fires I hear the slow creak of oars. I cannot tell you whose boat it is. This is where the story says he goes. I wish I could follow. But no record puts anyone on that deck, and I will not invent one. I stay on the stones and I listen. Then the oars stop, the mist closes over the water, and I am left with a question I cannot answer.",
+      "image_prompt": "Midnight at Uraga: thick white mist rolling over the bay, an empty dark shingle beach in the foreground with two iron-basket watch fires glowing orange on the left, and out on the water four black American warships at anchor in a loose line: two large wooden steam frigates with big side paddle-wheel housings on their flanks, black hulls and tall single funnels trailing thin dark coal smoke, and two square-rigged wooden sailing sloops, with no lettering or names on the hulls, their lanterns hanging low and yellow inside the mist with long dim reflections. On the far dark water, only the tiniest hint of a distant boat shape, nearly swallowed by mist. The right third of the frame is dark and quiet. Tense, atmospheric, painterly film still, deep blue and amber. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Uraga 1853"
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Now the detail that unsettles me most. I turn to my notebook. One account says the two sheets of paper carry a watermark, and the year in it is 1856. If that is right, the paper was made after both of Perry's visits. 1853, 1854, then 1856: the year an American consul, Townsend Harris, reached Shimoda. So the paper may belong to a later meeting, or a later gift. I have only that one account, and I have not seen the watermark myself.",
+      "image_prompt": "Extreme close view of a pair of weathered hands holding up two thin sheets of pale paper against the flame of a single small oil lamp in a dark room, the light glowing through the sheets and revealing only faint fine parallel lines of the paper's own texture, no marks, letters or numbers. Deep shadow around, a warm orange glow on the fingers, suspenseful, painterly cinematic close-up. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "What do the papers say? Here, too, I rely on what is told. It is said the sheets are in Dutch, the one Western language Japan had studied, through the trading post at Dejima in Nagasaki. On one: a crude sailors' joke ranking the women of three nations. On the other: a proverb close to still waters run deep. That is the whole secret. A man may have risked his life for a sailor's joke and a saying about quiet rivers. I do not know who translated them, or when.",
+      "image_prompt": "Wide view of Dejima, the small fan-shaped man-made island in Nagasaki harbor in the mid nineteenth century, joined to the shore by one short stone bridge, with two-storey white-plastered warehouses with grey tiled roofs, a few small ships at anchor beside it, a calm grey-blue sea and a soft overcast morning sky. Quiet, closed-off, a little melancholy, painterly film still. No text, no signs, no legible writing, no flags with writing.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Who first read those papers, and when? I cannot find out, and I will not guess. Here is what I can say. A year before this night, I read, the Dutch had warned the shogunate's upper ranks that American ships were coming. Edo's officials were told, in translation, and the towns were not. I find no record that anything in Sawamura's papers changed a decision in Edo. I do not claim the two are linked. I only notice the contrast.",
+      "image_prompt": "Interior of a shogunate council room at night: bare tatami floor, sliding paper doors, one paper lantern. Two senior officials in formal dark kamishimo kneel facing each other over a single sheet of paper laid between them, their faces grave; the other cushions in the room are empty. Through a half-open door, the dim moonlit tiled rooftops of a sleeping city under a pale night sky, no castle tower visible. Quiet, heavy, painterly cinematic film still. Japanese setting only for the shore and onlookers. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Before dawn, I write my conclusion in pencil. Can I say he boarded? No. Can I say he did not? Also no. What I can say is this. A family of Iga kept two papers. A family record says its man served in secret. And the black ships were here. The papers do not read like a break-in. They read like a brush with a world he could not read, perhaps something he was handed rather than something he took. That is only my reading, and I mark it in my notebook as a guess.",
+      "image_prompt": "Pre-dawn view across the bay at Uraga: the mist thinning, the first pale blue-grey light on a flat sea, four black American warships at anchor in a loose line: two large wooden steam frigates with big side paddle-wheel housings on their flanks, black hulls and tall single funnels trailing thin dark coal smoke, and two square-rigged wooden sailing sloops, with no lettering or names on the hulls as dark silhouettes with a few last dim lanterns, thin smoke rising straight up. In the foreground an empty plain wooden rowing boat on the shingle beside the grey ash of burnt-out watch fires. The left side of the frame holds the beached boat and ash; the right side is open sea and sky. Calm, quiet, undecided, painterly film still. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "tokio_expression": "writing",
+      "tokio_place": "Uraga 1853"
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The watch grows warm against my ribs. My day is ending. One thing still troubles me. The papers were useless as secrets. A sailors' joke cannot defend a coast. Yet the family kept them for more than 170 years, and the museum says they survive. Why? I think, perhaps, because they proved something other than a secret: that a man from a hill family once stood close enough to the new world to carry a piece of it home. I close my notebook. I look once more at the lanterns.",
+      "image_prompt": "A small plain wooden lidded box on a shelf inside a dim plaster-walled storehouse (kura) of an old Japanese house, a single shaft of pale morning light falling through a high window and catching floating dust; the lid slightly open to show two folded pale sheets of paper inside, nothing written on them. Hushed, tender, nostalgic, painterly cinematic still life. Japanese setting only for the shore and onlookers. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Uraga 1853"
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Back in my own century, I walk through Iga, in Mie Prefecture, where the ninja museum draws visitors from many countries. I read that the Sawamura house is not open to the public. I stand outside the museum and think how much of what I know about ninja came from stages, comics and games. The one trace of a real mission that survived on paper turns out to be a joke and a proverb. I think that is the most honest ninja story I have ever been told.",
+      "image_prompt": "A traditional thatched-roof wooden house in the hills of Iga today, in bright clear summer light, with a stone path leading to it, a few visitors in modern casual clothing far off at the edge of the frame, green wooded hills behind, calm and welcoming, painterly film still. No text, no signs, no legible writing, Japanese architecture only. no European elements.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "writing",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. The last ninja is a label, and I think labels are the least reliable part of any story. The museum calls him the last Iga ninja. A Japanese magazine says he is known as the last to do a ninja's secret work. I would put it more carefully: one of the last secret missions on record. Ninja were trained to leave nothing written down. This family left two scraps of paper and a record of its own service. Perhaps that is why we know him.",
+      "image_prompt": "A dim museum gallery in Japan with one glass display case under soft focused light, holding an old coil of rope, a plain folded indigo cotton coat, and a few iron tools, with no labels or text on or around the case; a lone visitor in modern clothes stands far off in the shadow, back turned. Quiet, reflective, painterly film still. No text, no signs, no legible writing, no labels.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. In Japanese museums, a small word sits before the name on an object that is traditionally attributed to someone but cannot be proved. The word is den. It means handed down as. I have been thinking about den all day. A ninja handed down as the last. Papers handed down as proof. A ship handed down as boarded. I think it is an honest word, and one we could use more often, for what we love but cannot yet prove.",
+      "image_prompt": "A quiet museum gallery at closing time: a glass case under a single warm spotlight holding two thin folded sheets of pale paper on a dark cloth, the rest of the room in soft shadow, one visitor silhouette far away in modern clothing, serene and moving, painterly cinematic still. No text, no signs, no legible writing, no labels or plaques.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "That is all I can carry from the records: a family, two scraps of paper, and a ship nobody can place him on. The rest I leave open, because the rest is not written down. In my grandfather's notebook, the page in my own handwriting still reads only 1868. Subscribe, and the next dispatch will find you. The watch is ticking. Until the next report. Tokio Kamiya, reporting.",
+      "image_prompt": "A closing shot of the shingle beach at Uraga at sunrise: calm water gleaming gold and pale rose, an empty plain wooden rowing boat on the stones with a long oar lying across it, wet footprints fading in the shingle, and far out on the horizon small and distant four black American warships at anchor in a loose line: two large wooden steam frigates with big side paddle-wheel housings on their flanks, black hulls and tall single funnels trailing thin dark coal smoke, and two square-rigged wooden sailing sloops, with no lettering or names on the hulls in soft haze. Peaceful, open-ended, a little melancholy, painterly film still, no people. No text, no signs, no legible writing anywhere, no logos or patterns on sails or flags.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Present"
+    }
+  ],
+  "tokio_glow": true
+}

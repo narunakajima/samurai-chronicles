@@ -116,3 +116,6 @@
 {"ts": "2026-11-10T22:08:23+09:00", "kind": "work", "agent": "sc-community", "episode": "ep123", "step": "1.5", "result": "ok", "retries": 0, "note": "初見判定: A>B>C。Aに案Bのオチを結末へ、後述の引っかかり(1856透かし・Iga=ninja・出島)を説明せよ"}
 {"ts": "2026-11-10T22:09:42+09:00", "kind": "call", "agent": "sc-manager", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-10T22:10:03+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep123", "step": "1.5", "result": "ok", "retries": 0, "note": "案A推奨（Bの落ちを結末に）。次点B。作り直しなし"}
+{"ts": "2026-11-10T22:15:44+09:00", "kind": "applied", "agent": "sc-writer", "episode": "ep123", "ids": ["SC2611-01", "SC2611-02"], "skipped": [], "reason": ""}
+{"ts": "2026-11-10T22:16:17+09:00", "kind": "call", "agent": "sc-writer", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T22:16:31+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep123", "step": "2A", "result": "ok", "retries": 0, "note": "20シーン・Tokioモード・検証OK"}

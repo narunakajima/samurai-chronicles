@@ -1270,14 +1270,15 @@
     },
     {
       "episode_id": "ep123",
-      "status": "pending",
-      "title": "Did Japan's Last Ninja Really Board Perry's Black Ships? Sawamura Jinzaburo, 1853",
+      "status": "in_production",
+      "title": "Did Japan's \"Last Ninja\" Really Board Perry's Black Ships? Two Scraps of Paper, 1853",
       "era": "Bakumatsu",
       "priority": "A",
       "person": "sawamura_jinzaburo",
       "angle": "key_event",
       "notes": "仮題（マーカス: 乗り込んだと断定せず疑問形か留保付きに。最終文言はクレアとエドワードの考証で決める）。伊賀者の澤村甚三郎（保祐）1人。1853年の黒船来航で浦賀の黒船偵察を命じられ、乗り込んだとされる選択を軸に、持ち帰ったとされる品（パン・煙草・蝋燭・オランダ語の紙片）を「乗ったのか」の謎解きで描く。確かな部分=澤村家文書（オランダ語の紙片2枚）と伊賀の家系。揺れる部分=本当に乗ったか（1854年の条約交渉で招かれた約60人の一人説、紙片の透かしの年代）。断定しない。ep063・064・065は戦国中心、ep089は幕府側視点で重ならない。Muse冒頭動画の第1作（夜の浦賀・霧・舷灯・小舟の影）。全身黒の忍び装束は史実と言えず、暗い色の旅装の影で描く。エドワード事前確認: 澤村家文書の原本/写し/聞き書きの区別と所蔵、年（1853/1854）、米側記録の有無、持ち帰り品の裏付け、「最後の忍び」呼称の出所、幕末伊賀者の身分と服装髪型、ep089との黒船記述の整合。英語圏の根拠: Rise of the Ronin（Yasusuke Sawamura）、SoraNews24・和樂web英語版、伊賀流忍者博物館の英語ページ。次点: 島原の乱の甲賀者、加藤段蔵。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
-      "last_updated": "2026-11-10"
+      "last_updated": "2026-11-10",
+      "question": "Did Japan's last ninja really board Perry's black ships? Do the two paper scraps in his family's records prove it, or tell a different story? (案A・編集長推奨 2026-11-10)"
     },
     {
       "episode_id": "ep124",
