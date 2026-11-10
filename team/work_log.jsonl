@@ -123,3 +123,8 @@
 {"ts": "2026-11-10T22:27:01+09:00", "kind": "call", "agent": "sc-historian", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-10T22:27:09+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep123", "step": "3A", "result": "ok", "retries": 0, "note": "❌2・要修正⚠️9を自動修正、許容7。1856透かしは和樂web1本のため one account のまま"}
 {"ts": "2026-11-10T22:27:09+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep123", "source": "qa", "severity": "minor", "text": "3A: ❌2件（musokunin表記・Turnbull刊行年）、要修正⚠️9件（S02帆の表現、S07/S15の手渡し解釈、S13オランダ語、日本の小舟は櫓でこぐ等の画像時代錯誤）"}
+{"ts": "2026-11-10T22:31:09+09:00", "kind": "call", "agent": "sc-historian", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T22:31:16+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep123", "step": "5-0", "result": "ok", "retries": 0, "note": "風体決定: 40代・月代丁髷・暗い藍の旅装＋編み笠・羽織なし・顔は見せない。サムネ作り直し不要"}
+{"ts": "2026-11-10T22:36:52+09:00", "kind": "applied", "agent": "sc-art-director", "episode": "ep123", "ids": ["SC2611-03"], "skipped": [], "reason": ""}
+{"ts": "2026-11-10T22:37:26+09:00", "kind": "call", "agent": "sc-art-director", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T22:37:32+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep123", "step": "5B-S01", "result": "ok", "retries": 0, "note": "S01 2回連続QA不合格→エスカレーション。櫓→棹に変更、縦型専用S01、Museプロンプト2本"}

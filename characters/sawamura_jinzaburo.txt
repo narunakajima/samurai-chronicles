@@ -1,10 +1,19 @@
-Sawamura Jinzaburo (Yasusuke): a low-ranking Iga retainer of the Tsu domain (Todo house), shown in 1853, a man in his
-thirties or forties. No portrait or photograph of him is known, so keep invented details to a minimum and never show
-his face clearly: in boat and shore scenes he is seen from behind or with his face in the shadow of a plain woven straw hat.
-Lean, wiry, medium build; quiet, watchful bearing, economical movements. Hair in the standard Edo fashion for a man of his
-station: shaved pate (sakayaki) with a small topknot (chonmage) tied with plain cord; no beard.
-Clothing: dark indigo cotton travelling clothes (kosode, short hakama or leggings, straw sandals) and a plain woven straw hat;
-at most one short sword at the waist if the scene needs it. NEVER a full black "ninja" costume: that is a stage invention
-(see ep063 S05). No mask, no hood, no crest, no stage ninja props (no shuriken, no ninja-to).
+Sawamura Jinzaburo (Yasusuke): a low-ranking Iga retainer (musokunin, allowed a surname and a sword) of the Tsu domain
+(Todo house), shown in 1853. His birth and death years are unknown and no portrait or photograph of him is known, so keep
+invented details to a minimum and never show his face clearly: in boat and shore scenes he is seen from behind or with his
+face in the shadow of a plain woven straw hat.
+Age: shown as a mature, weathered man in his forties (an invented middle ground: the records give no age; the manga Shinobino
+and the game Rise of the Ronin both present him as a veteran, older shinobi).
+Build: lean, wiry, medium height; quiet, watchful bearing, economical movements; clean-shaven.
+Hair: the standard Edo fashion for a man of his station: shaved pate (sakayaki) with a small topknot (chonmage) tied with
+plain cord. This follows the project default; no special hair exception is needed. Under the straw hat the head is hidden.
+Clothing: plain dark indigo cotton travelling clothes (kosode, short hakama or tied leggings, straw sandals) and a plain woven
+straw hat; no haori (a working, discreet errand, not a formal occasion); no crest. At most one short sword at the waist and
+only if the scene needs it; in the boat (sculling at the stern) no sword is visible. Dark indigo is chosen because it stays
+close to the dark-clothed "ninja" image viewers expect while being ordinary period workwear.
+NEVER a full black "ninja" costume: that is a stage invention (see ep063 S05). No mask, no hood, no head wrap covering the face,
+no stage ninja props (no shuriken, no ninja-to, no grappling hook).
+At the 1854 banquet (only as a possibility, ep123 S09): plain dark indigo kosode and hakama, bare head with sakayaki and
+topknot, face turned away.
 He is NOT a Tokugawa shogunate Iga doushin of Edo castle (that is a different office, see ep063 S12 and ep065 S16): he serves
-the Tsu domain. Provisional file: STEP 5-0 appearance research will confirm hairstyle and dress.
+the Tsu domain. Appearance confirmed in ep123 STEP 5-0 (2026-11-10).
