@@ -109,3 +109,10 @@
 {"ts": "2026-11-10T20:24:58+09:00", "kind": "work", "agent": "sc-planner", "episode": "ep123", "step": "1", "result": "ok", "retries": 0, "note": "トピック補充5件（ep123忍者・ep127-130）"}
 {"ts": "2026-11-10T22:02:14+09:00", "kind": "call", "agent": "sc-manager", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-10T22:02:19+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep123", "step": "1", "result": "ok", "retries": 0, "note": "トピック補充の採否: ep123澤村甚三郎を選定、ep127-130の4件採用、並びはヘンリー案のまま"}
+{"ts": "2026-11-10T22:06:53+09:00", "kind": "applied", "agent": "sc-planner", "episode": "ep123", "ids": ["SC2611-04"], "skipped": [], "reason": ""}
+{"ts": "2026-11-10T22:07:22+09:00", "kind": "call", "agent": "sc-planner", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T22:07:35+09:00", "kind": "work", "agent": "sc-planner", "episode": "ep123", "step": "1.5", "result": "ok", "retries": 0, "note": "問いゲート 問い3案（推奨A）"}
+{"ts": "2026-11-10T22:08:09+09:00", "kind": "call", "agent": "sc-community", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T22:08:23+09:00", "kind": "work", "agent": "sc-community", "episode": "ep123", "step": "1.5", "result": "ok", "retries": 0, "note": "初見判定: A>B>C。Aに案Bのオチを結末へ、後述の引っかかり(1856透かし・Iga=ninja・出島)を説明せよ"}
+{"ts": "2026-11-10T22:09:42+09:00", "kind": "call", "agent": "sc-manager", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T22:10:03+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep123", "step": "1.5", "result": "ok", "retries": 0, "note": "案A推奨（Bの落ちを結末に）。次点B。作り直しなし"}
