@@ -25,6 +25,14 @@ SC の英語エピソードから、日本人学習者向けの教材音声（�
 
 ---
 
+## 進捗の報告（Slack #cc-reports。2026-11-11 追加・必須）
+
+`/sc-new` と同じ形式・同じスレッドで、**工程が終わるたびに、その都度1件ずつ**投稿する（まとめて後から報告しない。ep123 で抜けたため明記）。
+形式・投稿先（`C0CFNQ50DUN`）・スレッドの扱いは `/sc-new` の「進捗の報告と指示の受け取り」節のとおり。本編の `ep{NNN}` スレッドの返信に続ける。
+投稿する区切り: 学習版の開始（`event=start`）／STEP 1 台本／STEP 2 音声ビルド／STEP 3 読みの確認／STEP 3.5 動画／STEP 3.6 サムネイル／STEP 3.6 ショート／
+ユーザーの確認待ち（`event=needs_decision`、`needs_user` に確認の内容）／確認 OK と公開 OK の記録。`step=` は「学習版 STEP 2 音声ビルド」のように「学習版」を付ける。
+`by=` は担当者（台本はリリー、それ以外は進行担当トーマス）。長工程（音声・動画）は `eta=` を書く。
+
 ## STEP 0: 前提の確認
 
 次がそろっているか確認する（欠けていれば、何が足りないかを報告して止める）。
@@ -114,6 +122,10 @@ cd learning && rm -f build/ep106.done && nohup sh -c 'python3 -u build_lesson.py
 `learning/cache/` に保存されるので、台本の一部だけを直したときは、変えた部分だけが作り直される。
 完了すると、Drive の `ep{NNN}/learning/` に mp3 が出力され、`learning/build/ep{NNN}/chapters.txt` に各パートの開始時刻が出る。
 
+**短い文の聞き違いで止まったとき（2026-11-11 追加）:** `一致しません` の文が2〜3語で、聞こえた文が近い音（I mark it. → my market）のときは、
+Whisper の単語時刻（`whisper.transcribe(..., word_timestamps=True)`）で、その文が前後を無音で区切られた単独の1文か確かめる。切れ目が正しければ、台本の `clip_accept` にその文を書いて再開する
+（照合の基準は緩めない。完成後にその文の音を聞き直す。詳しくは CLAUDE.md「学習版」の節）。切れ目が違うときは、下のとおり。
+
 **止まったとき（`一致しません` が出た場合）:** 英文の切り出しの照合が合わなかった文。`learning/clips.py` の方式を変える前に、
 まず文と書き起こしを見比べて、本当に切れ目が違うのか、書き起こしの聞き違いなのかを区別する。
 CLAUDE.md の「Opus へのエスカレーション」の条件（同じ失敗が2回続く）に当たったら、SCチーム 編集長 マーカス（`sc-manager`）（`model: "opus"`）に引き継ぐ（台本の問題なら SCチーム 学習版台本担当 リリー（`sc-learn-writer`））。
@@ -137,6 +149,10 @@ cd learning && python3 audio_check.py <音声ファイル> "日本語部分と�
 cd learning && python3 build_video.py ep106 --preview 3:50 4:04   # 字幕の見た目だけ先に確かめる（数秒で出る）
 cd learning && rm -f build/ep106.video.done && nohup sh -c 'python3 -u build_video.py ep106 > build_video_ep106.log 2>&1; echo $? > build/ep106.video.done' >/dev/null 2>&1 &
 ```
+
+**冒頭動画（Muse 生成）がある回（episode JSON に `opening_video.main`。ep123〜）:** 出力の最後に、完成した動画の先頭へ冒頭動画を 0.8 秒のクロスフェードでつなぐ（`prepend_opening`）。
+ログに「冒頭動画を差し込みました」が出る。長さは「音声 ＋ 冒頭の尺 − 0.8 ＋ ロゴ 8 秒」になる。確認は、0〜14 秒（冒頭動画→導入のつなぎ・Tokio の登場）のコマも見る。
+仕様の詳細は CLAUDE.md「学習版」の節。`--preview` には差し込まない。
 
 全編は約30分（背景のケンバーンズを含む。作ったケンバーンズは `build/ep{NNN}/kb/` に残り、字幕だけ直したときは使い回すので約13分）。出力は Drive の `ep{NNN}/learning/ep{NNN} {日本語タイトル}.mp4`。
 確認: 長さが音声と同じこと（`ffprobe`）、いくつかの時刻のフレームを切り出して、字幕が帯からはみ出していないか・時刻どおりの場面かを目で見る。
