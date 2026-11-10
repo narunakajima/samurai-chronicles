@@ -550,7 +550,7 @@ TOKIO_SFX_VOL = 0.45
 TOKIO_GLOW = False
 TOKIO_GLOW_PAD = 36         # 光の広がり（px）。素材の外側にこの幅だけ透明の余白を足してから光らせる
 TOKIO_GLOW_SIGMA = 15       # 光のぼかし
-TOKIO_GLOW_GAIN = 2.0       # 光の強さ（ぼかした透明度に掛ける。輪郭の近くが濃くなる）
+TOKIO_GLOW_GAIN = 0.4       # 光の強さ（ぼかした透明度に掛ける。2026-11-09 ユーザー指示で弱める。ep122〜の既定。episode JSON の tokio_glow_gain で回ごとに変更可）
 TOKIO_LIFT_CURVE = "0/0.06 0.35/0.42 1/1"   # Tokio にだけかける暗部の持ち上げ（強すぎると顔がぼやける）
 
 
@@ -585,7 +585,7 @@ def _tokio_glow_vf(src: str, out: str, gain: float = None) -> str:
     """[src] の Tokio の形（透明度）を広げてぼかし、金色の光のレイヤー [out] にするフィルター。
     素材の外側に透明の余白（TOKIO_GLOW_PAD）を足すので、レイヤーは Tokio より左右・上に PAD ずつ大きい。"""
     g = TOKIO_GLOW_PAD
-    gain = TOKIO_GLOW_GAIN if gain is None else gain   # episode JSON の "tokio_glow_gain" で回ごとに弱められる（既定 2.0）
+    gain = TOKIO_GLOW_GAIN if gain is None else gain   # episode JSON の "tokio_glow_gain" で回ごとに弱められる（既定は TOKIO_GLOW_GAIN）
     return (f"[{src}]alphaextract,pad=iw+{2 * g}:ih+{g}:{g}:{g}:color=black,gblur=sigma={TOKIO_GLOW_SIGMA},"
             f"format=gbrap,geq=r=240:g=200:b=110:a='clip(r(X,Y)*{gain},0,255)',"
             f"format=yuva420p[{out}];")

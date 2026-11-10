@@ -142,3 +142,4 @@
 {"ts": "2026-11-10T23:19:52+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep123", "step": "6-impl", "result": "ok", "retries": 0, "note": "sc_video_gen opening_video実装(Opus)・既存回の挙動不変を5回で確認"}
 {"ts": "2026-11-10T23:49:50+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep123", "step": "6", "result": "ok", "retries": 0, "note": "本編11:39・Shorts19.5秒・字幕。冒頭動画はテイザーの頭(案D)。ユーザー確認待ち"}
 {"ts": "2026-11-10T23:49:50+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep123", "step": "進行", "result": "ok", "retries": 0, "note": "Muse指示020の見落としとS01エスカレーション1回、characters作成漏れの代行あり。Slack報告は各区切りで投稿"}
+{"ts": "2026-11-11T04:58:31+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep123", "source": "user", "severity": "major", "text": "前回、Tokioの周りの光を弱くしてもらったはずだけど、またもどってない？（ep123で tokio_glow_gain が未設定のため既定2.0に戻っていた。サムネイル合成も2.0固定だった）"}

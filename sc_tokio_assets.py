@@ -280,7 +280,7 @@ def cmd_thumb(args):
         pad = 42
         ga = Image.new("L", (tk.width + 2 * pad, tk.height + pad), 0)
         ga.paste(tk.getchannel("A"), (pad, pad))
-        ga = ga.filter(ImageFilter.GaussianBlur(10)).point(lambda v: min(255, int(v * 2.0)))
+        ga = ga.filter(ImageFilter.GaussianBlur(10)).point(lambda v: min(255, int(v * args.glow_gain)))
         gl = Image.new("RGBA", ga.size, (240, 200, 110, 255))
         gl.putalpha(ga)
         sh.alpha_composite(gl, (x - pad, y - pad))
@@ -334,6 +334,7 @@ def main():
     p = sub.add_parser("thumb", help="サムネイルに Tokio と名札を合成")
     p.add_argument("--image", required=True)
     p.add_argument("--scale", type=float, default=0.40, help="Tokio の高さ（サムネイル高さに対する比。既定 0.40）")
+    p.add_argument("--glow-gain", type=float, default=0.4, help="光の強さ（episode JSON の tokio_glow_gain と同じ。既定0.4）")
     p.add_argument("--glow", action="store_true", help="黒い影の代わりに金色の光を敷く（episode JSON が tokio_glow のとき。ep119〜）")
     p.set_defaults(fn=cmd_thumb)
     args = ap.parse_args()

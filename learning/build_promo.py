@@ -90,7 +90,7 @@ def lift_dark(im: Image.Image) -> Image.Image:
     return Image.merge("RGBA", (r.point(lut), g.point(lut), b.point(lut), a))
 
 
-def gold_glow(tk: Image.Image, radius: int, gain: float = 2.0) -> Image.Image:
+def gold_glow(tk: Image.Image, radius: int, gain: float = 0.4) -> Image.Image:
     """Tokio の形をぼかして金色に塗った光のレイヤー（tk と同じ大きさ。はみ出す分は余白を足してある）。"""
     pad = radius * 3
     a = Image.new("L", (tk.width + 2 * pad, tk.height + pad), 0)
@@ -148,7 +148,7 @@ def cmd_thumb(ep_id: str):
     x_t = TW - tk.width - 10
     _ep = json.loads((SC_DIR / "episodes" / f"{ep_id}.json").read_text(encoding="utf-8"))
     if _ep.get("tokio_glow"):
-        gl, pad = gold_glow(tk, 14, _ep.get("tokio_glow_gain", 2.0))   # tokio_glow_gain: 回ごとに光を弱められる（既定2.0）     # 暗い背景でも埋もれないよう、黒い影の代わりに金色の光（ep119〜）
+        gl, pad = gold_glow(tk, 14, _ep.get("tokio_glow_gain", 0.4))   # tokio_glow_gain: 回ごとに光を弱められる（既定0.4）     # 暗い背景でも埋もれないよう、黒い影の代わりに金色の光（ep119〜）
         img.alpha_composite(gl, (x_t - pad, TH - h - pad))
         tk = lift_dark(tk)
     else:
