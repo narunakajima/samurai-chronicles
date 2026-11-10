@@ -1271,13 +1271,13 @@
     {
       "episode_id": "ep123",
       "status": "pending",
-      "title": "He Lost His Flag in 1877 and Waited 35 Years to Die for It: General Nogi Maresuke",
-      "era": "Meiji",
+      "title": "Did Japan's Last Ninja Really Board Perry's Black Ships? Sawamura Jinzaburo, 1853",
+      "era": "Bakumatsu",
       "priority": "A",
-      "person": "nogi_maresuke",
-      "angle": "overview",
-      "notes": "未登場（ep067 切腹回に名前が出るだけ）。1877年の西南戦争で連隊旗を奪われる → 死を願い出るが明治天皇が許さない → 旅順攻囲戦で多大な損害を出し、2人の息子も戦死 → 1912年、大喪の日に妻・静子と殉死、という35年の生涯を一本の選択でつなぐ overview。ep008 西郷・ep117 大久保と関連動画でつながる。戦死者数などの数字はエドワードが一次資料で確定すること。軍国主義の美化にならないよう中立に描く。 → 2026-11-04: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-11-04"
+      "person": "sawamura_jinzaburo",
+      "angle": "key_event",
+      "notes": "仮題（マーカス: 乗り込んだと断定せず疑問形か留保付きに。最終文言はクレアとエドワードの考証で決める）。伊賀者の澤村甚三郎（保祐）1人。1853年の黒船来航で浦賀の黒船偵察を命じられ、乗り込んだとされる選択を軸に、持ち帰ったとされる品（パン・煙草・蝋燭・オランダ語の紙片）を「乗ったのか」の謎解きで描く。確かな部分=澤村家文書（オランダ語の紙片2枚）と伊賀の家系。揺れる部分=本当に乗ったか（1854年の条約交渉で招かれた約60人の一人説、紙片の透かしの年代）。断定しない。ep063・064・065は戦国中心、ep089は幕府側視点で重ならない。Muse冒頭動画の第1作（夜の浦賀・霧・舷灯・小舟の影）。全身黒の忍び装束は史実と言えず、暗い色の旅装の影で描く。エドワード事前確認: 澤村家文書の原本/写し/聞き書きの区別と所蔵、年（1853/1854）、米側記録の有無、持ち帰り品の裏付け、「最後の忍び」呼称の出所、幕末伊賀者の身分と服装髪型、ep089との黒船記述の整合。英語圏の根拠: Rise of the Ronin（Yasusuke Sawamura）、SoraNews24・和樂web英語版、伊賀流忍者博物館の英語ページ。次点: 島原の乱の甲賀者、加藤段蔵。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
+      "last_updated": "2026-11-10"
     },
     {
       "episode_id": "ep124",
@@ -1311,6 +1311,61 @@
       "angle": "character",
       "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。 → 2026-10-05: 重複チェックで、不犯・毘沙門天信仰・酒がep021/025/046で既出と判明。新角度が弱いため後回し（再開するなら継承問題など未使用の切り口に書き換えること）。 → 2026-11-04: 配列末尾へ移動（ユーザー決定。ep121〜125 の補充追加に伴い後回し）。",
       "last_updated": "2026-11-04"
+    },
+    {
+      "episode_id": "ep126",
+      "status": "pending",
+      "title": "He Lost His Flag in 1877 and Waited 35 Years to Die for It: General Nogi Maresuke",
+      "era": "Meiji",
+      "priority": "A",
+      "person": "nogi_maresuke",
+      "angle": "overview",
+      "notes": "未登場（ep067 切腹回に名前が出るだけ）。1877年の西南戦争で連隊旗を奪われる → 死を願い出るが明治天皇が許さない → 旅順攻囲戦で多大な損害を出し、2人の息子も戦死 → 1912年、大喪の日に妻・静子と殉死、という35年の生涯を一本の選択でつなぐ overview。ep008 西郷・ep117 大久保と関連動画でつながる。戦死者数などの数字はエドワードが一次資料で確定すること。軍国主義の美化にならないよう中立に描く。 → 2026-11-04: 補充提案(ユーザー承認済)。 → 2026-11-10: ep123を忍者に差し替えたため ep126 へ後ろ倒し（ユーザー決定）。",
+      "last_updated": "2026-11-10"
+    },
+    {
+      "episode_id": "ep127",
+      "status": "pending",
+      "title": "Who Killed Sakamoto Ryoma? The Unsolved Murder at the Omiya Inn, 1867",
+      "era": "Bakumatsu",
+      "priority": "A",
+      "person": "sakamoto_ryoma",
+      "angle": "death",
+      "notes": "龍馬2回目。ep068は近江屋の暗殺を最後の1段落で触れただけ。犯人の謎（見廻組の自白、薩摩黒幕説など諸説の根拠の強さの比較）に絞るdeath角度。ep076の「見廻組説が多い」記述と食い違わない結論にする（エドワード確認）。誕生日に殺された点は事実として使える。英語圏の根拠: 英語版Wikipedia、Like a Dragon: Ishin!、Rise of the Ronin。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
+      "last_updated": "2026-11-10"
+    },
+    {
+      "episode_id": "ep128",
+      "status": "pending",
+      "title": "The Shogun Who Made Hurting a Dog a Crime: Tokugawa Tsunayoshi, the 'Dog Shogun'",
+      "era": "Edo",
+      "priority": "B",
+      "person": "tokugawa_tsunayoshi",
+      "angle": "character",
+      "notes": "未登場（ep062赤穂浪士の背景で名前が出る程度）。生類憐れみの令を軸に、暴君の奇行か武断の世を変えた政策かの逆説で描く。戌年生まれの俗説・跡継ぎ問題は確度を区別。ep115吉宗・ep120家光に続く将軍シリーズ。英語圏の根拠: 英語版Wikipedia、別名「Dog Shogun」。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
+      "last_updated": "2026-11-10"
+    },
+    {
+      "episode_id": "ep129",
+      "status": "pending",
+      "title": "The Woman Who Ruled a Clan Under a Man's Name: Ii Naotora",
+      "era": "Sengoku",
+      "priority": "B",
+      "person": "ii_naotora",
+      "angle": "overview",
+      "notes": "未登場（ep034井伊直政は直政本人の回）。2016年の史料から男性説も出ているため「女城主」と断定せず論点として扱う（編集長推奨: この論争を謎の軸の一つに）。男の名で家督を継いだ選択を軸に。ep028巴御前・ep039立花誾千代と並ぶ。英語圏の根拠: 英語版Wikipedia、Samurai Warriors 4-II ほか。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
+      "last_updated": "2026-11-10"
+    },
+    {
+      "episode_id": "ep130",
+      "status": "pending",
+      "title": "The Shogun Who Ordered a Ship to Escape Japan — It Never Floated: Minamoto no Sanetomo",
+      "era": "Kamakura",
+      "priority": "B",
+      "person": "minamoto_no_sanetomo",
+      "angle": "death",
+      "notes": "未登場。ep069（北条政子）の暗殺の記述は数文。宋へ渡る巨船（1217年・浮かばなかった）と歌人の将軍に重心を置き、1219年の暗殺は締めに留める。ep069と史実の記述をそろえる。image_era: kamakura。英語圏の根拠: 英語版Wikipedia、百人一首第93番の英訳。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
+      "last_updated": "2026-11-10"
     }
   ],
   "hypotheses": [
@@ -1405,6 +1460,6 @@
       "notes_2026-11-09": "2026-10 月次評価（管理担当）の提案3を、ユーザー承認（2026-11-09）のうえ登録。判定対象の8本と比較対象を上記のとおり事前固定。Reporting API の欠損（10/12以降の再認証待ち）で14日窓が復元できない回があり、判定は再認証後。"
     }
   ],
-  "last_updated": "2026-11-09",
-  "total_topics": 125
+  "last_updated": "2026-11-10",
+  "total_topics": 130
 }

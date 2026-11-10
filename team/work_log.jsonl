@@ -104,3 +104,8 @@
 {"ts": "2026-11-09T20:06:09+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "学習版4", "result": "ok", "retries": 0, "note": "学習版 ユーザーOK(再確認後。公開OK記録)"}
 {"ts": "2026-11-09T20:12:04+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep122", "step": "upload", "result": "ok", "retries": 0, "note": "本編・Shorts予約(11/19 03:00)・学習版予約(07:00)。Shortsタイトル100字超で1回失敗→sc_sns_up修正し続きから実行。コメント5件は見送り"}
 {"ts": "2026-11-09T20:12:04+09:00", "kind": "work", "agent": "sc-community", "episode": "ep122", "step": "3.6", "result": "ok", "retries": 0, "note": "返信0件・見送り5件(罵倒・攻撃・AI批判・冗談。返信文の作成は不要と判断)"}
+{"ts": "2026-11-10T20:24:08+09:00", "kind": "applied", "agent": "sc-planner", "episode": "ep123", "ids": ["SC2611-04"], "skipped": [], "reason": ""}
+{"ts": "2026-11-10T20:24:53+09:00", "kind": "call", "agent": "sc-planner", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T20:24:58+09:00", "kind": "work", "agent": "sc-planner", "episode": "ep123", "step": "1", "result": "ok", "retries": 0, "note": "トピック補充5件（ep123忍者・ep127-130）"}
+{"ts": "2026-11-10T22:02:14+09:00", "kind": "call", "agent": "sc-manager", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T22:02:19+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep123", "step": "1", "result": "ok", "retries": 0, "note": "トピック補充の採否: ep123澤村甚三郎を選定、ep127-130の4件採用、並びはヘンリー案のまま"}
