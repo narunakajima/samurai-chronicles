@@ -295,5 +295,9 @@
     "intro": "BGM/ep095-BGM-intro.mp3",
     "main": "BGM/ep098-BGM-main.mp3",
     "outro": "BGM/ep084-BGM-outro.mp3"
+  },
+  "opening_video": {
+    "main": "ep123_opening_main.mp4",
+    "shorts": "ep123_opening_shorts_alt.mp4"
   }
 }

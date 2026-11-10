@@ -105,6 +105,18 @@ DIN_FONT = str(Path("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf")
 TEASER_CLIP_DUR = 2.5     # テイザー1クリップ秒数
 TEASER_XFADE    = 0.3     # 速めのクロスフェード（映画的テンポ感）
 
+# ── 冒頭動画（Muse 生成。2026-11-10〜・ep123 から） ─────────────
+# エピソード JSON に "opening_video": {"main": ..., "shorts": ...}（DRIVE_BASE/{episode_id}/ からの相対）
+# がある回だけ、本編テイザーの頭と Shorts の頭に差し込む。キーがない回は従来どおり。
+# 仕様: 編集長マーカス決定（根拠は team/muse_opening_procedure.md）
+OPENING_MIN_SEC = 9.0             # 想定尺の下限（範囲外は切り詰めずに止めてユーザーに相談）
+OPENING_MAX_SEC = 11.0            # 想定尺の上限
+OPENING_SHARPEN = "unsharp=5:5:0.3:5:5:0.0"   # 1216x672 からの拡大で甘くなる分を軽く締める
+TEASER_OPENING_STILL = 2.2        # 冒頭動画のあとに続ける静止画1枚の目安尺（秒）
+TEASER_OPENING_CAPTION_SIZE = 96  # 冒頭動画があるときのテイザー単語字幕の大きさ（通常は110）
+TEASER_OPENING_CAPTION_Y = "h*0.80-text_h/2"  # 同・表示位置（画面下寄り。通常は中央）
+SHORTS_OPENING_HOOK_SEC = 2.0     # Shorts の冒頭動画に hook の文字を重ねる秒数
+
 # ── Ken Burns パラメータ ─────────────────────────────────
 KB_ZOOM_FACTOR = 1.40   # zoom_in/out の最大倍率（上限キャップ）
 KB_ZOOM_SPEED  = 0.0015 # 固定ズーム速度 [倍率/frame]（25fps で約3.75%/s。2026-10-14に0.0006から加速）
@@ -819,8 +831,14 @@ def _char_name_overlay(char_ref: str, visible_dur: float = 4.0) -> str:
     )
 
 
-def teaser_caption_for_clip(narration: str, audio_dur: float, clip_idx: int) -> str:
-    """テイザー用: グローバルタイムライン位置を考慮した1ワード字幕フィルターを返す（横長）。"""
+def teaser_caption_for_clip(narration: str, audio_dur: float, clip_idx: int,
+                            clip_start: float = None, clip_dur: float = None,
+                            fontsize: int = 110, y_expr: str = "(h-text_h)/2") -> str:
+    """テイザー用: グローバルタイムライン位置を考慮した1ワード字幕フィルターを返す（横長）。
+
+    clip_start / clip_dur を省略すると従来どおり「clip_idx × (TEASER_CLIP_DUR − TEASER_XFADE)」から
+    TEASER_CLIP_DUR 秒の区間とみなす。冒頭動画のある回は、区間の開始時刻と尺を渡す。
+    """
     import re as _re
     raw_words = [w for w in _re.split(r'\s+', narration.replace("—", "-")) if w]
     words = [_safe_word(w) for w in raw_words if _safe_word(w)]
@@ -828,8 +846,12 @@ def teaser_caption_for_clip(narration: str, audio_dur: float, clip_idx: int) -> 
         return ""
 
     word_dur = audio_dur / len(words)
-    clip_start_g = clip_idx * (TEASER_CLIP_DUR - TEASER_XFADE)
-    clip_end_g   = clip_start_g + TEASER_CLIP_DUR
+    seg_dur = TEASER_CLIP_DUR if clip_dur is None else clip_dur
+    if clip_start is None:
+        clip_start_g = clip_idx * (TEASER_CLIP_DUR - TEASER_XFADE)
+    else:
+        clip_start_g = clip_start
+    clip_end_g   = clip_start_g + seg_dur
 
     parts = []
     for i, word in enumerate(words):
@@ -838,13 +860,13 @@ def teaser_caption_for_clip(narration: str, audio_dur: float, clip_idx: int) -> 
         if g_end <= clip_start_g or g_start >= clip_end_g:
             continue
         local_start = round(max(0.0, g_start - clip_start_g), 3)
-        local_end   = round(min(TEASER_CLIP_DUR, g_end - clip_start_g), 3)
+        local_end   = round(min(seg_dur, g_end - clip_start_g), 3)
         parts.append(
             f"drawtext=fontfile={DIN_FONT}"
             f":text='{word}'"
-            f":fontsize=110:fontcolor=white"
+            f":fontsize={fontsize}:fontcolor=white"
             f":borderw=7:bordercolor=black"
-            f":x=(w-text_w)/2:y=(h-text_h)/2"
+            f":x=(w-text_w)/2:y={y_expr}"
             f":enable='between(t,{local_start},{local_end})'"
         )
     return ",".join(parts)
@@ -882,11 +904,12 @@ def _auto_hook_lines(narration: str) -> list:
     return lines or [narration[:11].upper()]
 
 
-def shorts_hook_text_filter(lines: list) -> str:
+def shorts_hook_text_filter(lines: list, enable_until: float = None) -> str:
     """1クリップ目専用: DIN Condensed Bold 白・黒縁取り（最大3行）。
     lines: エピソードJSONの shorts_hook_lines フィールドから渡す。
     行数に応じてフォントサイズ・Y位置を自動調整。
     テキスト幅が SHORTS_W の90%を超える場合は fontsize を自動縮小する。
+    enable_until: 指定すると 0〜enable_until 秒だけ表示する（冒頭動画用。省略時は従来どおり常時表示）。
     """
     # 行ごとのフォントサイズ・Y位置設定（最大3行）
     configs = [
@@ -908,20 +931,26 @@ def shorts_hook_text_filter(lines: list) -> str:
         safe = text.replace("'", "").replace('"', "").replace(":", "\\:")
         bw = 9 if i == 0 else (7 if i == 1 else 4)
         sh = 6 if i == 0 else (5 if i == 1 else 3)
-        parts.append(
+        part = (
             f"drawtext=fontfile={DIN_FONT}:text='{safe}'"
             f":fontsize={fs}:fontcolor=white:borderw={bw}:bordercolor=black"
             f":shadowx={sh}:shadowy={sh}:shadowcolor=black@0.75"
             f":x=(w-text_w)/2:y={y}"
         )
+        if enable_until is not None:
+            part += f":enable='between(t,0,{enable_until})'"
+        parts.append(part)
     return ",".join(parts)
 
 
-def shorts_caption_for_clip(narration: str, audio_dur: float, clip_idx: int, max_clip_idx: int) -> str:
+def shorts_caption_for_clip(narration: str, audio_dur: float, clip_idx: int, max_clip_idx: int,
+                            clip_starts: list = None, clip_dur: float = None) -> str:
     """グローバルタイムライン位置を考慮した1ワード字幕フィルターを返す。
 
     各ワードは「中心時刻が属するクリップ」にのみ1回だけ表示する
     （クリップ間のクロスフェード重複区間で同じワードが2回表示されるのを防ぐ）。
+    clip_starts（全クリップの開始時刻）と clip_dur（このクリップの尺）を渡すと、尺の異なる
+    クリップが混ざる構成（冒頭動画あり）に対応する。省略時は従来どおり等間隔とみなす。
     """
     raw_words = [w for w in narration.replace("—", "-").split() if w]
     words = [_safe_word(w) for w in raw_words if _safe_word(w)]
@@ -930,18 +959,30 @@ def shorts_caption_for_clip(narration: str, audio_dur: float, clip_idx: int, max
 
     word_dur = audio_dur / len(words)
     stride = SHORTS_CLIP_DURATION - SHORTS_XFADE
-    clip_start_g = clip_idx * stride
+    if clip_starts is None:
+        clip_start_g = clip_idx * stride
+        seg_dur = SHORTS_CLIP_DURATION
+    else:
+        clip_start_g = clip_starts[clip_idx]
+        seg_dur = SHORTS_CLIP_DURATION if clip_dur is None else clip_dur
 
     parts = []
     for i, word in enumerate(words):
         g_start = i * word_dur
         g_end   = g_start + word_dur
         g_mid   = (g_start + g_end) / 2
-        owner_clip = min(int(g_mid // stride), max_clip_idx)
+        if clip_starts is None:
+            owner_clip = min(int(g_mid // stride), max_clip_idx)
+        else:
+            owner_clip = 0
+            for k, st in enumerate(clip_starts):
+                if st <= g_mid:
+                    owner_clip = k
+            owner_clip = min(owner_clip, max_clip_idx)
         if owner_clip != clip_idx:
             continue
         local_start = round(max(0.0, g_start - clip_start_g), 3)
-        local_end   = round(min(SHORTS_CLIP_DURATION, g_end - clip_start_g), 3)
+        local_end   = round(min(seg_dur, g_end - clip_start_g), 3)
         parts.append(
             f"drawtext=fontfile={DIN_FONT}"
             f":text='{word}'"
@@ -1005,12 +1046,14 @@ def make_shorts_clip(img: Path, dst: Path, effect: str, overlay_vf: str = ""):
     ], f"s-clip {img.stem}")
 
 
-def shorts_crossfade_concat(clips: list, dst: Path):
-    """Shorts用クロスフェード結合（SHORTS_XFADE使用）"""
+def shorts_crossfade_concat(clips: list, dst: Path, durations: list = None):
+    """Shorts用クロスフェード結合（SHORTS_XFADE使用）
+    durations: クリップごとの尺。省略時は全クリップ SHORTS_CLIP_DURATION（従来どおり）。
+    """
     n = len(clips)
     cum, offsets = 0.0, []
     for i in range(n - 1):
-        cum += SHORTS_CLIP_DURATION - SHORTS_XFADE
+        cum += (SHORTS_CLIP_DURATION if durations is None else durations[i]) - SHORTS_XFADE
         offsets.append(round(cum, 3))
     inputs = []
     for c in clips:
@@ -1029,17 +1072,180 @@ def shorts_crossfade_concat(clips: list, dst: Path):
     ], f"s-crossfade {n}clips")
 
 
+# ── 冒頭動画（Muse 生成） ─────────────────────────────────
+
+def resolve_opening_video(ep: dict, episode_id: str, override: dict = None) -> dict:
+    """エピソード JSON の opening_video を解決し、素材を検査する。
+
+    戻り値: None（キーなし＝従来の処理）または {"main": (Path, 尺), "shorts": (Path, 尺)}
+    （片方だけ書かれた回はその役割だけ入る）。ファイルがない・尺が想定外なら sys.exit(1)。
+    override: テスト用の上書き（{"main": 相対パス, "shorts": 相対パス}）。本番 JSON は変えない。
+    """
+    spec = override if override is not None else ep.get("opening_video")
+    if not spec:
+        return None
+    if not isinstance(spec, dict) or not any(spec.get(k) for k in ("main", "shorts")):
+        print(f"❌ opening_video の書式が不正です: {spec!r}（{{\"main\": ..., \"shorts\": ...}} の形にする）")
+        sys.exit(1)
+    result = {}
+    problems = []
+    for role in ("main", "shorts"):
+        rel = spec.get(role)
+        if not rel:
+            continue
+        p = DRIVE_BASE / episode_id / rel
+        if not p.exists():
+            problems.append(f"{role}: ファイルがありません: {p}")
+            continue
+        d = probe_video_duration(p)
+        if not (OPENING_MIN_SEC <= d <= OPENING_MAX_SEC):
+            problems.append(f"{role}: 想定外の尺 {d:.2f}s（{OPENING_MIN_SEC}〜{OPENING_MAX_SEC}s の範囲外）: {p.name}"
+                            f" — 切り詰めず、ユーザーに相談してください")
+            continue
+        result[role] = (p, d)
+    if problems:
+        print("❌ 冒頭動画（opening_video）の素材に問題があります:")
+        for pr in problems:
+            print(f"   - {pr}")
+        sys.exit(1)
+    return result
+
+
+def make_opening_clip(src: Path, dst: Path, landscape: bool = True, overlay_vf: str = "") -> float:
+    """冒頭動画を出力解像度・FPS に整形する（音声は捨てる）。戻り値: 整形後の尺（秒）。"""
+    w, h = (OUTPUT_W, OUTPUT_H) if landscape else (SHORTS_W, SHORTS_H)
+    vf = (f"scale={w}:{h}:flags=lanczos:force_original_aspect_ratio=increase,crop={w}:{h},"
+          f"{OPENING_SHARPEN},fps={FPS},setsar=1,format=yuv420p")
+    if overlay_vf:
+        vf += "," + overlay_vf
+    run_cmd([
+        FFMPEG, "-y",
+        "-i", str(src),
+        "-vf", vf,
+        "-an",
+        "-r", str(FPS),
+        "-c:v", "libx264", "-crf", "18", "-preset", "slow",
+        "-pix_fmt", "yuv420p",
+        str(dst),
+    ], f"冒頭動画 整形 {src.name} → {w}x{h}")
+    return probe_video_duration(dst)
+
+
+def _check_opening_dur(src_dur: float, out_dur: float, label: str):
+    """整形の前後で尺が1コマを超えてずれたら止める（字幕・つなぎの時刻が狂うため）。"""
+    if abs(out_dur - src_dur) > 1.0 / FPS + 1e-3:
+        print(f"❌ {label}: 整形後の尺 {out_dur:.3f}s が元の尺 {src_dur:.3f}s と1コマ以上ずれました")
+        sys.exit(1)
+
+
+def _select_opening_stills(scenes: list, img_dir: Path, priority: list, count: int,
+                           first_ids: list = None, fallback_dir: Path = None) -> list:
+    """冒頭動画のあとに続ける静止画を選ぶ（S01 は冒頭動画と同じ場面なので除外）。
+    戻り値: [(scene, img_path)]。画像のないシーンは飛ばす。"""
+    def _img(sid):
+        p = img_dir / f"S{sid:02d}.png"
+        if not p.exists() and fallback_dir is not None:
+            p = fallback_dir / f"S{sid:02d}.png"
+        return p if p.exists() else None
+
+    picked = []
+    def _add(s):
+        sid = s["scene_id"]
+        if sid == 1 or sid in [x["scene_id"] for x, _ in picked]:
+            return
+        img = _img(sid)
+        if img is not None:
+            picked.append((s, img))
+
+    for sid in (first_ids or []):
+        s = next((x for x in scenes if x["scene_id"] == sid), None)
+        if s and len(picked) < count:
+            _add(s)
+    for ptype in priority:
+        for s in scenes:
+            if len(picked) >= count:
+                break
+            if s["type"] == ptype:
+                _add(s)
+    for s in scenes:   # 不足分は先頭側から補う
+        if len(picked) >= count:
+            break
+        _add(s)
+    return picked
+
+
+def _make_teaser_with_opening(scenes: list, img_dir: Path, tmp: Path, narr_dur: float,
+                              teaser_narration: str, opening: tuple) -> tuple:
+    """冒頭動画あり: [冒頭動画 D 秒][静止画 n_m 枚] を TEASER_XFADE でつなぐ。総尺 T は従来と同じ式。"""
+    import math as _math
+    src, src_dur = opening
+
+    n_clips = max(_math.ceil((narr_dur - TEASER_XFADE) / (TEASER_CLIP_DUR - TEASER_XFADE)), 3)
+    T = (TEASER_CLIP_DUR - TEASER_XFADE) * (n_clips - 1) + TEASER_CLIP_DUR
+    if T < src_dur + 1.0:
+        print(f"❌ テイザーの総尺 {T:.2f}s が冒頭動画 {src_dur:.2f}s + 1.0s より短く、静止画を置けません"
+              f" — ユーザーに相談してください")
+        sys.exit(1)
+
+    cap_kw = dict(fontsize=TEASER_OPENING_CAPTION_SIZE, y_expr=TEASER_OPENING_CAPTION_Y)
+
+    # 冒頭動画（字幕つきで整形）
+    op_clip = tmp / "teaser_opening.mp4"
+    cap = (teaser_caption_for_clip(teaser_narration, narr_dur, 0, clip_start=0.0, clip_dur=src_dur, **cap_kw)
+           if teaser_narration else "")
+    D = make_opening_clip(src, op_clip, landscape=True, overlay_vf=cap)
+    _check_opening_dur(src_dur, D, "本編の冒頭動画")
+
+    M = T - D + TEASER_XFADE
+    n_m = max(1, round((M - TEASER_XFADE) / TEASER_OPENING_STILL))
+    per = (M + (n_m - 1) * TEASER_XFADE) / n_m
+
+    stills = _select_opening_stills(
+        scenes, img_dir, ["climax", "falling_action", "rising_action", "setup", "hook"], n_m)
+    if len(stills) < n_m:
+        print(f"❌ テイザーの静止画が {n_m} 枚必要ですが {len(stills)} 枚しか用意できません")
+        sys.exit(1)
+
+    t_clips, durs = [op_clip], [D]
+    start = D - TEASER_XFADE
+    for i, (scene, img) in enumerate(stills):
+        effect = scene.get("ken_burns", "zoom_in")
+        dst_clip = tmp / f"teaser_{i:02d}.mp4"
+        cap = (teaser_caption_for_clip(teaser_narration, narr_dur, i + 1,
+                                       clip_start=start, clip_dur=per, **cap_kw)
+               if teaser_narration else "")
+        make_ken_burns(img, dst_clip, per, effect, landscape=True, overlay_vf=cap)
+        t_clips.append(dst_clip)
+        durs.append(per)
+        start += per - TEASER_XFADE
+
+    teaser_video = tmp / "teaser_video.mp4"
+    crossfade_concat_n(t_clips, durs, teaser_video, xfade_dur=TEASER_XFADE)
+
+    actual = probe_video_duration(teaser_video)
+    if abs(actual - T) > 1.0 / FPS + 1e-3:
+        print(f"❌ テイザーの尺 {actual:.3f}s が想定 {T:.3f}s と1コマ以上ずれました（字幕・音声の時刻が狂うため停止）")
+        sys.exit(1)
+    print(f"  テイザー: 冒頭動画 {D:.2f}s + 静止画 {n_m}枚"
+          f"（{', '.join('S%02d' % s['scene_id'] for s, _ in stills)}）× {per:.2f}s = {actual:.2f}s（想定 {T:.2f}s）")
+    return teaser_video, T
+
+
 # ── 本編 Teaser イントロ ──────────────────────────────────
 
 def make_teaser_clip(scenes: list, img_dir: Path, tmp: Path, narr_dur: float,
-                     teaser_narration: str = "") -> tuple:
+                     teaser_narration: str = "", opening: tuple = None) -> tuple:
     """
     クライマックス周辺のシーンで映画トレイラー風ダイジェストを生成する。
     戻り値: (teaser_video_path, teaser_dur)  ※映像のみ（音声なし）
     narr_dur: S00_teaser.wav の尺（クリップ数の計算に使用）
     teaser_narration: ナレーションテキスト（指定するとキネティック字幕を付与）
+    opening: (冒頭動画のパス, 尺)。指定すると冒頭動画を頭に置く（総尺は変えない）
     """
     import math as _math
+
+    if opening is not None:
+        return _make_teaser_with_opening(scenes, img_dir, tmp, narr_dur, teaser_narration, opening)
 
     # クリップ数 = ナレーション尺に合わせて動的計算
     n_clips = _math.ceil((narr_dur - TEASER_XFADE) / (TEASER_CLIP_DUR - TEASER_XFADE))
@@ -1366,7 +1572,112 @@ def build_audio_track(scenes: list, audio_dir: Path, total_video_dur: float,
     )
 
 
-def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
+def _build_shorts_main_with_opening(ep: dict, scenes: list, img_dir: Path, img_dir_shorts: Path,
+                                    tmp: Path, narr_dur: float, shorts_narration: str,
+                                    shorts_scene_id, opening: tuple) -> tuple:
+    """冒頭動画ありの Shorts 本体を作る。戻り値: (s_main のパス, 本体の尺)。
+
+    構成: [冒頭動画 D 秒（hook の文字を 0〜2秒）][静止画 SHORTS_CLIP_DURATION 秒 × n_rest]
+    を SHORTS_XFADE でつなぐ。S00_face の冒頭クリップは使わない。
+    """
+    import math as _math
+    src, src_dur = opening
+    stride = SHORTS_CLIP_DURATION - SHORTS_XFADE
+    n_rest = max(2, _math.ceil((narr_dur + SHORTS_NARR_DELAY_MS / 1000 + 0.8 - src_dur) / stride))
+
+    first = [shorts_scene_id] if shorts_scene_id else []
+    stills = _select_opening_stills(
+        scenes, img_dir_shorts,
+        ["hook", "climax", "insight", "falling_action", "rising_action", "setup"],
+        n_rest, first_ids=first, fallback_dir=img_dir)
+    stills.sort(key=lambda x: x[0]["scene_id"])   # 従来と同じくシーン順に並べる
+    if not stills:
+        print("❌ Shorts: 冒頭動画のあとに続ける静止画がありません")
+        sys.exit(1)
+
+    hook_lines = ep.get("shorts_hook_lines")
+    if not hook_lines:
+        src_txt = ep.get("shorts_narration") or ""
+        if not src_txt:
+            hook_scene = next((s for s in scenes if s.get("type") == "hook"), None)
+            src_txt = hook_scene["narration"] if hook_scene else ""
+        hook_lines = _auto_hook_lines(src_txt) if src_txt else ["SAMURAI CHRONICLES"]
+
+    # 各クリップの開始時刻（全体の時刻）。冒頭動画は 0〜D、静止画は D−XFADE から stride 刻み
+    starts = [0.0] + [src_dur - SHORTS_XFADE + k * stride for k in range(len(stills))]
+    max_idx = len(starts) - 1
+    print(f"\n--- Shorts 冒頭動画つき（冒頭 {src_dur:.2f}s + 静止画 {len(stills)}枚×{SHORTS_CLIP_DURATION}s） ---")
+    print(f"  ナレーション尺: {narr_dur:.1f}s  使用シーン: {[s['scene_id'] for s, _ in stills]}")
+
+    op_clip = tmp / "s_clip_00_opening.mp4"
+    hook_part = shorts_hook_text_filter(hook_lines, enable_until=SHORTS_OPENING_HOOK_SEC)
+    cap_part = shorts_caption_for_clip(shorts_narration, narr_dur, 0, max_idx,
+                                       clip_starts=starts, clip_dur=src_dur)
+    D = make_opening_clip(src, op_clip, landscape=False,
+                          overlay_vf=",".join(p for p in [hook_part, cap_part] if p))
+    _check_opening_dur(src_dur, D, "Shorts の冒頭動画")
+
+    s_clips, durs = [op_clip], [D]
+    for k, (scene, img) in enumerate(stills, start=1):
+        overlay = shorts_caption_for_clip(shorts_narration, narr_dur, k, max_idx,
+                                          clip_starts=starts, clip_dur=SHORTS_CLIP_DURATION)
+        out_clip = tmp / f"s_clip_{scene['scene_id']:02d}.mp4"
+        make_shorts_clip(img, out_clip, scene.get("ken_burns", "zoom_in"), overlay)
+        s_clips.append(out_clip)
+        durs.append(SHORTS_CLIP_DURATION)
+
+    s_main = tmp / "s_main.mp4"
+    shorts_crossfade_concat(s_clips, s_main, durations=durs)
+    s_main_dur = D + len(stills) * stride
+    actual = probe_video_duration(s_main)
+    if abs(actual - s_main_dur) > 1.0 / FPS + 1e-3:
+        print(f"❌ Shorts 本体の尺 {actual:.3f}s が想定 {s_main_dur:.3f}s と1コマ以上ずれました")
+        sys.exit(1)
+    print(f"  Shorts 本体: {actual:.2f}s（想定 {s_main_dur:.2f}s）")
+    return s_main, s_main_dur
+
+
+def _finish_shorts(episode_id: str, out_dir: Path, tmp: Path, s_main: Path, s_main_dur: float,
+                   shorts_wav: Path, bgm_path: Path):
+    """Shorts の本体（s_main）にアウトロを付け、語り＋BGM を合成して出力する。"""
+    s_outro = tmp / "s_outro.mp4"
+    make_outro_clip(s_outro, landscape=False, shorts=True)
+    s_video = tmp / "s_video.mp4"
+    concat_video_clips([s_main, s_outro], s_video)
+    s_total_dur = s_main_dur + OUTRO_SHORTS_DURATION
+    fade_start = max(0.0, s_total_dur - 5)
+    shorts_audio = tmp / "s_audio.aac"
+    run_cmd([
+        FFMPEG, "-y",
+        "-i", str(shorts_wav),
+        "-i", str(bgm_path),
+        "-filter_complex",
+        (
+            f"[0:a]adelay={SHORTS_NARR_DELAY_MS}:all=1"
+            f",apad=whole_dur={s_total_dur}[narr];"
+            f"[1:a]aloop=loop=-1:size=2000000000"
+            f",atrim=duration={s_total_dur}"
+            f",volume={SHORTS_BGM_VOL}"
+            f",afade=t=in:st=0:d=3"
+            f",afade=t=out:st={fade_start:.1f}:d=5[bgm];"
+            f"[narr][bgm]amix=inputs=2:duration=first:normalize=0[aout]"
+        ),
+        "-map", "[aout]", "-c:a", "aac", "-b:a", "192k",
+        str(shorts_audio),
+    ], "s-audio mix")
+    shorts_output = out_dir / f"{episode_id}_shorts.mp4"
+    run_cmd([
+        FFMPEG, "-y",
+        "-i", str(s_video), "-i", str(shorts_audio),
+        "-map", "0:v", "-map", "1:a",
+        "-c:v", "copy", "-c:a", "copy", "-shortest",
+        str(shorts_output),
+    ], f"Shorts 合成 → {shorts_output.name}")
+    print(f"  ✓ Shorts: {shorts_output}")
+
+
+def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False,
+              opening_override: dict = None):
     ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
     if not ep_json.exists():
         print(f"❌ エピソードJSONが見つかりません: {ep_json}")
@@ -1422,6 +1733,12 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
     total_dur = scene_offsets[-1] + scene_durations[-1]
     print(f"\n  合計尺: {total_dur:.1f}s ({total_dur/60:.1f}分)")
 
+    # 冒頭動画（opening_video）の素材検査。Shorts の生成が Step 2.5 より前に走るため、ここで先に行う
+    opening = resolve_opening_video(ep, episode_id, opening_override)
+    if opening:
+        for role, (p, d) in opening.items():
+            print(f"  冒頭動画（{role}）: {p.name} {d:.2f}s")
+
     with tempfile.TemporaryDirectory() as tmp_str:
         tmp = Path(tmp_str)
 
@@ -1435,6 +1752,13 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
         elif not shorts_wav.exists():
             print(f"\n  ⚠️  {shorts_wav.name} が見つかりません")
             print(f"      先に: python3 sc_tts_gen.py --episode {episode_id} --shorts")
+        elif opening and "shorts" in opening:
+            # 冒頭動画あり: [冒頭動画 D 秒][静止画 2秒 × n_rest] を SHORTS_XFADE でつなぐ（S00_face は使わない）
+            narr_dur = probe_audio_duration(shorts_wav)
+            s_main, s_main_dur = _build_shorts_main_with_opening(
+                ep, scenes, img_dir, img_dir_shorts, tmp, narr_dur, shorts_narration,
+                shorts_scene_id, opening["shorts"])
+            _finish_shorts(episode_id, out_dir, tmp, s_main, s_main_dur, shorts_wav, bgm_path)
         else:
             narr_dur = probe_audio_duration(shorts_wav)
             # ナレーション尺からシーン数を動的計算
@@ -1517,46 +1841,9 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
                 s_main = tmp / "s_main.mp4"
                 shorts_crossfade_concat(s_clips, s_main)
 
-                s_outro = tmp / "s_outro.mp4"
-                make_outro_clip(s_outro, landscape=False, shorts=True)
-
-                s_video = tmp / "s_video.mp4"
-                concat_video_clips([s_main, s_outro], s_video)
-
                 n_clips = len(s_clips)
                 s_main_dur = (SHORTS_CLIP_DURATION - SHORTS_XFADE) * (n_clips - 1) + SHORTS_CLIP_DURATION
-                s_total_dur = s_main_dur + OUTRO_SHORTS_DURATION
-                fade_start = max(0.0, s_total_dur - 5)
-
-                shorts_audio = tmp / "s_audio.aac"
-                run_cmd([
-                    FFMPEG, "-y",
-                    "-i", str(shorts_wav),
-                    "-i", str(bgm_path),
-                    "-filter_complex",
-                    (
-                        f"[0:a]adelay={SHORTS_NARR_DELAY_MS}:all=1"
-                        f",apad=whole_dur={s_total_dur}[narr];"
-                        f"[1:a]aloop=loop=-1:size=2000000000"
-                        f",atrim=duration={s_total_dur}"
-                        f",volume={SHORTS_BGM_VOL}"
-                        f",afade=t=in:st=0:d=3"
-                        f",afade=t=out:st={fade_start:.1f}:d=5[bgm];"
-                        f"[narr][bgm]amix=inputs=2:duration=first:normalize=0[aout]"
-                    ),
-                    "-map", "[aout]", "-c:a", "aac", "-b:a", "192k",
-                    str(shorts_audio),
-                ], "s-audio mix")
-
-                shorts_output = out_dir / f"{episode_id}_shorts.mp4"
-                run_cmd([
-                    FFMPEG, "-y",
-                    "-i", str(s_video), "-i", str(shorts_audio),
-                    "-map", "0:v", "-map", "1:a",
-                    "-c:v", "copy", "-c:a", "copy", "-shortest",
-                    str(shorts_output),
-                ], f"Shorts 合成 → {shorts_output.name}")
-                print(f"  ✓ Shorts: {shorts_output}")
+                _finish_shorts(episode_id, out_dir, tmp, s_main, s_main_dur, shorts_wav, bgm_path)
 
         if shorts_only:
             print("\n  --shorts オプション: 本編生成をスキップします")
@@ -1571,9 +1858,15 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
         if teaser_narration and teaser_wav.exists():
             print(f"\n--- Step 1: テイザーイントロ生成 ---")
             teaser_narr_dur = probe_audio_duration(teaser_wav)
-            teaser_video_path, teaser_dur = make_teaser_clip(
-                scenes, img_dir, tmp, teaser_narr_dur, teaser_narration=teaser_narration
-            )
+            if opening and "main" in opening:
+                teaser_video_path, teaser_dur = make_teaser_clip(
+                    scenes, img_dir, tmp, teaser_narr_dur, teaser_narration=teaser_narration,
+                    opening=opening["main"],
+                )
+            else:
+                teaser_video_path, teaser_dur = make_teaser_clip(
+                    scenes, img_dir, tmp, teaser_narr_dur, teaser_narration=teaser_narration
+                )
         else:
             if teaser_narration and not teaser_wav.exists():
                 print(f"\n  ⚠️  S00_teaser.wav が見つかりません")
@@ -1630,6 +1923,13 @@ def gen_video(episode_id: str, out_dir: Path = None, shorts_only: bool = False):
         shorts_wav_path = audio_dir / "S00_shorts.wav"
         if shorts_narration_check and not shorts_wav_path.exists():
             missing.append(("audio/S00_shorts.wav", "sc_tts_gen.py --episode " + episode_id + " --shorts"))
+
+        # 冒頭動画（opening_video）: 存在と尺は resolve_opening_video で検査済み（Shorts より前に実行）。
+        # 本編の冒頭動画はテイザーの頭に置くため、テイザーがない回は差し込めない
+        if opening and "main" in opening and not (teaser_narration and teaser_wav_path.exists()):
+            print("❌ opening_video.main はテイザー（teaser_narration と S00_teaser.wav）の頭に置く仕様です。"
+                  "テイザーがない回には差し込めません — ユーザーに相談してください")
+            sys.exit(1)
 
         if missing:
             print(f"❌ 以下の素材ファイルが見つかりません（{len(missing)}件）:")
@@ -1814,10 +2114,16 @@ def cli():
     parser.add_argument("--episode", required=True, help="エピソードID（例: ep001）")
     parser.add_argument("--output", default=None, help="出力ディレクトリ（デフォルト: output/{episode_id}/）")
     parser.add_argument("--shorts", action="store_true", help="Shortsクリップのみ生成")
+    parser.add_argument("--opening-video", nargs=2, metavar=("MAIN", "SHORTS"), default=None,
+                        help="テスト用: JSON の opening_video を上書き（DRIVE_BASE/{episode}/ からの相対パス。"
+                             "使わない側は - を指定）")
     args = parser.parse_args()
 
     out_dir = Path(args.output).expanduser().resolve() if args.output else None
-    gen_video(args.episode, out_dir=out_dir, shorts_only=args.shorts)
+    override = None
+    if args.opening_video:
+        override = {k: v for k, v in zip(("main", "shorts"), args.opening_video) if v != "-"}
+    gen_video(args.episode, out_dir=out_dir, shorts_only=args.shorts, opening_override=override)
 
 
 if __name__ == "__main__":
