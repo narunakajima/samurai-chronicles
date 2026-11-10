@@ -27,14 +27,20 @@ import os
 API_KEY = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
 # モデル名は sc_gemini_model.py に集約（2026-11-09-025）
 
-# ボーカル混入は大抵冒頭〜中盤で判別できるため、全尺ではなく先頭 QA_CLIP_SECONDS 秒
-# のみをQAに送る（Gemini音声入力トークンを大幅削減する）。
-QA_CLIP_SECONDS = 60
+# 全尺を送るとトークンが大きいので、曲の先頭・中盤・終盤から QA_SEGMENT_SECONDS 秒ずつ抜き出してつなぐ
+# （2026-11-11: 先頭60秒だけでは、冒頭はオーケストラでも全尺ではシンセが大半という曲を見逃した。
+#  ボーカルも終盤にだけ入る曲がありうる）。曲が QA_FULL_MAX_SECONDS 秒以下なら全尺をそのまま送る。
+QA_SEGMENT_SECONDS = 30
+QA_SEGMENT_STARTS = (0.0, 0.45, 0.9)   # 各区間の開始位置（曲の長さに対する割合。終盤は曲の終わりを超えないよう切り詰める）
+QA_FULL_MAX_SECONDS = 100
+QA_ATTEMPTS = 3   # 応答を JSON として読めないときの試行回数（1回目は思考なし、2回目以降は思考あり。2026-11-11）
 
 QA_PROMPT = (
     "Listen to this audio track. It will be used as instrumental background music (BGM) "
     "underneath a documentary narrator's voice, so any human voice in the track would "
     "clash with the narration.\n\n"
+    "The audio may be several excerpts joined together (start, middle and end of one track); judge the track as a whole, "
+    "and in the details also note whether the instrumentation (orchestral / synthesizer / other) is consistent across the excerpts.\n\n"
     "Determine whether the track contains ANY human vocals — sung lyrics, spoken dialogue, "
     "narration, whispering, chanting with words, or a vocal sample of any kind. "
     "Purely instrumental music (orchestral, strings, percussion, drones, wordless choir "
@@ -46,14 +52,31 @@ QA_PROMPT = (
 )
 
 
-def _clip_audio_bytes(audio_path: Path, seconds: int = QA_CLIP_SECONDS) -> bytes:
-    """先頭 seconds 秒だけを切り出したバイト列を返す。切り出しに失敗したら全尺を返す。"""
-    suffix = audio_path.suffix or ".mp3"
-    with tempfile.NamedTemporaryFile(suffix=suffix) as tmp:
-        result = subprocess.run(
-            ["ffmpeg", "-y", "-i", str(audio_path), "-t", str(seconds), "-c", "copy", tmp.name],
-            capture_output=True,
-        )
+def _duration(audio_path: Path) -> float:
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(audio_path)],
+                       capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip())
+    except ValueError:
+        return 0.0
+
+
+def _clip_audio_bytes(audio_path: Path) -> bytes:
+    """QA に送る音声のバイト列を返す。短い曲は全尺、長い曲は先頭・中盤・終盤の各区間をつないだもの。
+    切り出しに失敗したら全尺を返す（トークンは増えるが、見逃さない側に倒す）。"""
+    dur = _duration(audio_path)
+    if dur <= QA_FULL_MAX_SECONDS:
+        return audio_path.read_bytes()
+    segs = []
+    for r in QA_SEGMENT_STARTS:
+        st = min(dur * r, max(0.0, dur - QA_SEGMENT_SECONDS))
+        segs.append(st)
+    parts = "".join(f"[0:a]atrim=start={st:.2f}:duration={QA_SEGMENT_SECONDS},asetpts=PTS-STARTPTS[a{i}];"
+                    for i, st in enumerate(segs))
+    fc = parts + "".join(f"[a{i}]" for i in range(len(segs))) + f"concat=n={len(segs)}:v=0:a=1[out]"
+    with tempfile.NamedTemporaryFile(suffix=".mp3") as tmp:
+        result = subprocess.run(["ffmpeg", "-y", "-i", str(audio_path), "-filter_complex", fc, "-map", "[out]",
+                                 "-c:a", "libmp3lame", "-b:a", "128k", tmp.name], capture_output=True)
         if result.returncode == 0:
             clipped = Path(tmp.name).read_bytes()
             if clipped:
@@ -61,35 +84,44 @@ def _clip_audio_bytes(audio_path: Path, seconds: int = QA_CLIP_SECONDS) -> bytes
     return audio_path.read_bytes()
 
 
+def _parse_qa(text: str) -> dict:
+    text = text.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+    result = json.loads(text)
+    # 応答が解釈できない場合（dictでない・has_vocalsが真偽値でない）は「合格」にしない（フェイルクローズ）
+    if not isinstance(result, dict) or not isinstance(result.get("has_vocals"), bool):
+        raise ValueError(f"応答を解釈できません: {text[:200]!r}")
+    return result
+
+
 def qa_audio_with_gemini(client, audio_path: Path) -> dict:
-    """音声ファイルをGemini に渡し、ボーカル・台詞混入の有無を判定する。"""
+    """音声ファイルをGemini に渡し、ボーカル・台詞混入の有無を判定する。
+    応答を読めなければ再試行する（thinking_budget=0 だと JSON を返さないことが多いため、2回目以降は思考を有効にする）。"""
+    last_err = None
     try:
         data = _clip_audio_bytes(audio_path)
         mime_type = "audio/mpeg" if audio_path.suffix.lower() == ".mp3" else "audio/wav"
-        response = gm.generate_content(
-            client,
-            [
-                QA_PROMPT,
-                genai.types.Part.from_bytes(data=data, mime_type=mime_type),
-            ],
-            config=genai.types.GenerateContentConfig(
-                thinking_config=genai.types.ThinkingConfig(thinking_budget=0)
-            ),
-        )
-        text = response.text.strip()
-        if text.startswith("```"):
-            text = re.sub(r"^```(?:json)?\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
-        result = json.loads(text)
-        # 応答が解釈できない場合（dictでない・has_vocalsが真偽値でない）は「合格」にしない（フェイルクローズ）
-        if not isinstance(result, dict) or not isinstance(result.get("has_vocals"), bool):
-            raise ValueError(f"応答を解釈できません: {text[:200]!r}")
-        return {
-            "file": audio_path.name,
-            "status": "checked",
-            "has_vocals": result["has_vocals"],
-            "details": result.get("details", ""),
-        }
+        for attempt in range(QA_ATTEMPTS):
+            try:
+                cfg = (genai.types.GenerateContentConfig(thinking_config=genai.types.ThinkingConfig(thinking_budget=0))
+                       if attempt == 0 else genai.types.GenerateContentConfig())
+                response = gm.generate_content(
+                    client,
+                    [QA_PROMPT, genai.types.Part.from_bytes(data=data, mime_type=mime_type)],
+                    config=cfg,
+                )
+                result = _parse_qa(response.text)
+                return {
+                    "file": audio_path.name,
+                    "status": "checked",
+                    "has_vocals": result["has_vocals"],
+                    "details": result.get("details", ""),
+                }
+            except (json.JSONDecodeError, ValueError, AttributeError) as e:   # 応答が読めない → 再試行
+                last_err = e
+        raise last_err
     except Exception as e:
         # status="check_failed"（has_vocals=None）は「チェックできなかった」。
         # 「チェック済みでボーカルなし」(status=checked, has_vocals=False) とは別物で、合格扱いにしない。
