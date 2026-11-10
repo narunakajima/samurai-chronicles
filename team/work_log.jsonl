@@ -128,3 +128,11 @@
 {"ts": "2026-11-10T22:36:52+09:00", "kind": "applied", "agent": "sc-art-director", "episode": "ep123", "ids": ["SC2611-03"], "skipped": [], "reason": ""}
 {"ts": "2026-11-10T22:37:26+09:00", "kind": "call", "agent": "sc-art-director", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-10T22:37:32+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep123", "step": "5B-S01", "result": "ok", "retries": 0, "note": "S01 2回連続QA不合格→エスカレーション。櫓→棹に変更、縦型専用S01、Museプロンプト2本"}
+{"ts": "2026-11-10T22:48:05+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep123", "step": "5B", "result": "ok", "retries": 0, "note": "S02-20生成、S05/S09再生成。S05の艦の数のみ許容(軽微)。Shorts/face生成中"}
+{"ts": "2026-11-10T22:59:34+09:00", "kind": "applied", "agent": "sc-art-director", "episode": "ep123", "ids": ["SC2611-03"], "skipped": [], "reason": ""}
+{"ts": "2026-11-10T23:00:14+09:00", "kind": "call", "agent": "sc-art-director", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T23:00:23+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep123", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL2件(西洋式ボート S07/15/20・S09付き人の顔)を再生成で解決"}
+{"ts": "2026-11-10T23:00:23+09:00", "kind": "feedback", "agent": "sc-historian", "episode": "ep123", "source": "qa", "severity": "minor", "text": "5C: 3Aで直した S07/S15/S20 の小舟が『櫓つき』のままで、画像が西洋式ボートになり再生成した。確定判断（櫓→棹）を image_prompt 全体で一括置換する工程が要る"}
+{"ts": "2026-11-10T23:02:08+09:00", "kind": "call", "agent": "sc-manager", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T23:02:21+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep123", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可。S12の紙質感は任意・直さない"}
+{"ts": "2026-11-10T23:02:21+09:00", "kind": "feedback", "agent": "sc-art-director", "episode": "ep123", "source": "manager", "severity": "minor", "text": "S07/S15/S20で、プロンプト修正後も西洋式ボートが生成され、自動QAを通過した（5Cのクロスシーン確認で検出）"}
