@@ -300,5 +300,8 @@
   "opening_video": {
     "main": "ep123_opening_main.mp4",
     "shorts": "ep123_opening_shorts_alt.mp4"
-  }
+  },
+  "youtube_url": "https://youtu.be/2NSUdyAMYjE",
+  "shorts_url": "https://youtu.be/rNwzvisyLaA",
+  "scheduled_at": "2026-11-21 03:00"
 }
