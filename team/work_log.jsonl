@@ -147,3 +147,4 @@
 {"ts": "2026-11-11T05:42:36+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-11T05:42:40+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep123", "step": "1", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-11T06:48:41+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep123", "source": "user", "severity": "major", "text": "ep123の学習版制作について、#cc-reports へ開始と工程の報告が来ていません。本編確認OKから学習版の現在工程までを、まとめてではなく工程ごとに投稿してください。（/sc-learn には Slack 報告の手順がなく、工程ごとの投稿を怠った。毎回、工程完了のたびに投稿する）"}
+{"ts": "2026-11-11T07:11:23+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep123", "step": "学習版", "result": "ok", "retries": 0, "note": "学習版完成。通信エラー1回・照合失敗1回（clip_accept で対応）"}
