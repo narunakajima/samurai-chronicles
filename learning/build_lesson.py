@@ -16,6 +16,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from audio_check import check_japanese
+import clips as clips_mod
 from clips import PAD, cut_scene_sentences, sentence_spans, split_sentences
 from words import word_times
 from tts_ja import tts
@@ -145,6 +146,7 @@ def main():
         sys.exit(1)
     ep_id = sys.argv[1]
     lesson = json.loads((BASE_DIR / "lessons" / f"{ep_id}.json").read_text(encoding="utf-8"))
+    clips_mod.MANUAL_ACCEPT.update(lesson.get("clip_accept", []))   # 人が切れ目を確かめた短い文（聞き違いで照合に通らないもの）
     episode = json.loads((SC_EPISODES / f"{ep_id}.json").read_text(encoding="utf-8"))
     audio_dir = SC_DRIVE / ep_id / "audio"
     narration = {i: s["narration"] for i, s in enumerate(episode["scenes"], 1)}

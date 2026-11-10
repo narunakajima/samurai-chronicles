@@ -143,3 +143,7 @@
 {"ts": "2026-11-10T23:49:50+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep123", "step": "6", "result": "ok", "retries": 0, "note": "本編11:39・Shorts19.5秒・字幕。冒頭動画はテイザーの頭(案D)。ユーザー確認待ち"}
 {"ts": "2026-11-10T23:49:50+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep123", "step": "進行", "result": "ok", "retries": 0, "note": "Muse指示020の見落としとS01エスカレーション1回、characters作成漏れの代行あり。Slack報告は各区切りで投稿"}
 {"ts": "2026-11-11T04:58:31+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep123", "source": "user", "severity": "major", "text": "前回、Tokioの周りの光を弱くしてもらったはずだけど、またもどってない？（ep123で tokio_glow_gain が未設定のため既定2.0に戻っていた。サムネイル合成も2.0固定だった）"}
+{"ts": "2026-11-11T05:42:14+09:00", "kind": "applied", "agent": "sc-learn-writer", "episode": "ep123", "ids": ["SC2611-08", "SC2611-09"], "skipped": [], "reason": ""}
+{"ts": "2026-11-11T05:42:36+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-11T05:42:40+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep123", "step": "1", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-11T06:48:41+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep123", "source": "user", "severity": "major", "text": "ep123の学習版制作について、#cc-reports へ開始と工程の報告が来ていません。本編確認OKから学習版の現在工程までを、まとめてではなく工程ごとに投稿してください。（/sc-learn には Slack 報告の手順がなく、工程ごとの投稿を怠った。毎回、工程完了のたびに投稿する）"}

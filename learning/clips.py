@@ -20,6 +20,7 @@ SILENCE_MIN = 0.12
 SENSITIVE_DB = "-30dB"  # 1回目で一致しない文だけ、短い間も切れ目の候補にして探し直す
 SENSITIVE_MIN = 0.05
 PAD = 0.08  # 切り口の前後に残す余白（秒）
+MANUAL_ACCEPT: set = set()  # 台本の clip_accept。人が切れ目を確かめた短い文（3語以下）だけ、聞き違いで照合に通らなくても採用する（ep123: I mark it. → My market.）
 ACCEPT = 0.85  # これ以上の一致度なら、その切り出しを採用する
 SHORT_CHECK_WORDS = 4  # この語数以下の文は、別の書き起こし（Whisper・Gemini再）でも確かめて採用する（旧3。ep122: I weigh → Highway で4語の文が止まった）
 GOOD = 0.95  # これ以上なら、ほかの候補を試さずに確定する
@@ -374,8 +375,11 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
                     _cut(scene_wav, starts[i - 1], start, paths[i - 1])
                     print(f"  （前の文の終わりを {start:.1f}s に延ばしました）")
                     continue
-            print(f"切り出しが一致しません（一致度 {best[0] if best else 0:.2f}）: {sent}\n  聞こえた文: {best[2] if best else ''}")
-            sys.exit(1)
+            if best is not None and sent in MANUAL_ACCEPT and len(sent.split()) <= 3:
+                print(f"  （台本の clip_accept で採用: {sent} ／ 聞こえた文: {best[2].strip()} ／ 一致度 {best[0]:.2f}）")
+            else:
+                print(f"切り出しが一致しません（一致度 {best[0] if best else 0:.2f}）: {sent}\n  聞こえた文: {best[2] if best else ''}")
+                sys.exit(1)
         _cut(scene_wav, start, best[1], paths[i])
         starts.append(start)
         start = best[1]
