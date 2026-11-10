@@ -58,7 +58,11 @@
       "ken_burns": "zoom_in",
       "character_ref": "sawamura_jinzaburo",
       "tokio_expression": "neutral",
-      "tokio_place": "Uraga 1853"
+      "tokio_place": "Uraga 1853",
+      "zoom_anchor": {
+        "x": 0.36,
+        "y": 0.5
+      }
     },
     {
       "scene_id": 2,
@@ -69,7 +73,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "neutral",
-      "tokio_place": "Uraga 1853"
+      "tokio_place": "Uraga 1853",
+      "zoom_anchor": {
+        "x": 0.2,
+        "y": 0.6
+      }
     },
     {
       "scene_id": 3,
@@ -125,7 +133,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "surprised",
-      "tokio_place": "Uraga 1853"
+      "tokio_place": "Uraga 1853",
+      "zoom_anchor": {
+        "x": 0.25,
+        "y": 0.45
+      }
     },
     {
       "scene_id": 9,
@@ -154,7 +166,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Uraga 1853"
+      "tokio_place": "Uraga 1853",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.4
+      }
     },
     {
       "scene_id": 12,
@@ -192,7 +208,11 @@
       "ken_burns": "pan_left",
       "character_ref": null,
       "tokio_expression": "writing",
-      "tokio_place": "Uraga 1853"
+      "tokio_place": "Uraga 1853",
+      "zoom_anchor": {
+        "x": 0.2,
+        "y": 0.7
+      }
     },
     {
       "scene_id": 16,
@@ -203,7 +223,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "moved",
-      "tokio_place": "Uraga 1853"
+      "tokio_place": "Uraga 1853",
+      "zoom_anchor": {
+        "x": 0.42,
+        "y": 0.65
+      }
     },
     {
       "scene_id": 17,
@@ -214,7 +238,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "writing",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.6,
+        "y": 0.5
+      }
     },
     {
       "scene_id": 18,
@@ -225,7 +253,11 @@
       "ken_burns": "pan_right",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.25,
+        "y": 0.65
+      }
     },
     {
       "scene_id": 19,
@@ -236,7 +268,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "moved",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.65
+      }
     },
     {
       "scene_id": 20,
@@ -247,7 +283,11 @@
       "ken_burns": "zoom_out",
       "character_ref": null,
       "tokio_expression": "neutral",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.7
+      }
     }
   ],
   "tokio_glow": true,
