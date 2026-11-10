@@ -161,6 +161,8 @@ PROMPT = """これは無人の定期実行です。次の作業だけを行っ�
   アバターのメニューの先頭に表示されるチャンネル名で確かめる。違えばその回はスキップして報告する。
 {chans}
   他チャンネルの動画は編集しない。種別が複数あるときは、1種別を終えてから次の種別へ切り替える。
+- 終わったら（結果がどうでも）、この実行で自分が開いた Studio のタブを tabs_close_mcp で閉じる。他のタブ・about:blank は閉じない。
+  （実行が終わるとタブが残り、次の実行からは閉じられないため。2026-11-11）
 - アップロード・公開・予約公開・タイトル・説明・字幕・コメントなど、関連動画以外は一切変更しない。
 - リンク先は「ショート → 同じ回の本編」固定。検索語は下の表のものをそのまま使う。判断で変えない。
 - 保存後に読み込み直し、関連動画欄が本編のタイトルになっていることを確かめた回だけ verified:true とする。完了の記録（--mark）はこのスクリプト側が行うので、あなたは書かない。
@@ -249,10 +251,10 @@ def run_claude(rows: list, device_id: str) -> tuple:
         "PostToolUse": [{"matcher": cm + "(select_browser|list_connected_browsers)",
                          "hooks": [{"type": "command", "command": hook + " post", "timeout": 10}]}]}}), encoding="utf-8")
     allowed = ["Read"] + [cm + t for t in ("list_connected_browsers", "select_browser", "tabs_context_mcp", "tabs_create_mcp",
-                                           "navigate", "computer", "read_page", "find", "get_page_text", "javascript_tool")]
+                                           "navigate", "computer", "read_page", "find", "get_page_text", "javascript_tool", "tabs_close_mcp")]
     denied = ["Bash", "Write", "Edit", "Agent", "WebFetch", "WebSearch"] + [cm + t for t in (
         "read_network_requests", "read_console_messages", "browser_batch", "switch_browser", "gif_creator",
-        "upload_image", "resize_window", "file_upload", "form_input", "tabs_close_mcp")]
+        "upload_image", "resize_window", "file_upload", "form_input")]
     env = dict(os.environ, HANDOFF_CHROME_DEVICE_ID=device_id, HANDOFF_CHROME_HOSTS=CHROME_HOSTS,
                HANDOFF_CHROME_STATE_DIR=str(CHROME_STATE), HANDOFF_UNATTENDED="1")
     cmd = [claude, "-p", prompt, "--model", "sonnet", "--permission-mode", "default",
