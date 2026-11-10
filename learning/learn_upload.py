@@ -54,13 +54,17 @@ def mmss(sec: float) -> str:
 def chapters(tl: dict) -> list:
     """タイムラインから、YouTube のチャプター（先頭は 00:00、各10秒以上、3つ以上）を作る。"""
     ev = tl["events"]
+    off = 0.0   # 冒頭動画を付けた回は、本編の側が後ろへずれる（build_video.py が video_offset.json に書く）
+    vo = BASE_DIR / "build" / tl.get("episode_id", "") / "video_offset.json"
+    if vo.exists():
+        off = float(json.loads(vo.read_text(encoding="utf-8")).get("opening_offset", 0.0))
     out = [(0, "導入")]
     for e in sorted((x for x in ev if x["kind"] == "cue"), key=lambda x: x["start"]):
         body = e["text"].split("。", 1)[1] if "。" in e["text"] else ""
         first = body.split("。")[0].strip() if body else ""   # 「シーンN。」の次の1文（見どころ）。途中で切らない
-        out.append((e["start"], f"シーン{e['scene']}" + (f"：{first}" if first else "")))
-    out.append((next(x for x in ev if x["kind"] == "to_full")["start"], "通しで聴く（英語のみ）"))
-    out.append((next(x for x in ev if x["kind"] == "closing")["start"], "締め"))
+        out.append((e["start"] + off, f"シーン{e['scene']}" + (f"：{first}" if first else "")))
+    out.append((next(x for x in ev if x["kind"] == "to_full")["start"] + off, "通しで聴く（英語のみ）"))
+    out.append((next(x for x in ev if x["kind"] == "closing")["start"] + off, "締め"))
     return out
 
 

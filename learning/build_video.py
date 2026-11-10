@@ -425,6 +425,42 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     return header + "\n".join(lines) + "\n", segs
 
 
+OPENING_XFADE = 0.8       # 冒頭動画から本編（導入）へのクロスフェード（秒）
+OPENING_AUDIO_VOL = 0.5   # 冒頭動画の環境音の音量（音楽は入らない。通しの外にBGMを入れない決まりのため、環境音だけを小さく）
+OPENING_AUDIO_FADE = 1.5  # 環境音を絞る長さ（秒）
+
+
+def prepend_opening(episode: dict, ep_id: str, out: Path, work: Path) -> float:
+    """Muse の冒頭動画（episode JSON の opening_video.main。本編と共用）を、完成した動画の先頭に付ける。
+
+    動画は 0.8 秒のクロスフェードで導入につなぐ。字幕・Tokio・章の時刻は、本編の側を (冒頭の尺 - 0.8) 秒だけ後ろへずらす
+    （字幕と Tokio は本編の動画に焼き込み済みなので、動画は触らない。章は learn_upload が video_offset.json を読んでずらす）。
+    音声は、冒頭動画の環境音を半分の音量で流して最後に絞る（音楽・ナレーションは入っていない）。
+    戻り値: 本編の側をずらした秒数（キーなしなら 0.0）。
+    """
+    import sc_video_gen as vg
+    spec = vg.resolve_opening_video(episode, ep_id)
+    if not spec or "main" not in spec:
+        return 0.0
+    src, d = spec["main"]
+    shaped = work / "opening_main_shaped.mp4"
+    d = vg.make_opening_clip(src, shaped, landscape=True)   # 解像度・FPS を本編にそろえる（音声は捨てる）
+    off = d - OPENING_XFADE
+    joined = work / (out.stem + "_with_opening.mp4")
+    fc = (f"[0:v]fps={FPS},format=yuv420p[o];[1:v]fps={FPS},format=yuv420p[m];"
+          f"[o][m]xfade=transition=fade:duration={OPENING_XFADE}:offset={off:.3f}[v];"
+          f"[2:a]aformat=sample_rates=44100:channel_layouts=stereo,atrim=0:{d:.3f},volume={OPENING_AUDIO_VOL},"
+          f"afade=t=out:st={d - OPENING_AUDIO_FADE:.3f}:d={OPENING_AUDIO_FADE}[oa];"
+          f"[1:a]aformat=sample_rates=44100:channel_layouts=stereo,adelay={int(off * 1000)}|{int(off * 1000)}[ma];"
+          f"[oa][ma]amix=inputs=2:normalize=0:duration=longest[a]")
+    run(["ffmpeg", "-y", "-i", str(shaped), "-i", str(out), "-i", str(src), "-filter_complex", fc,
+         "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", str(CRF), "-pix_fmt", "yuv420p",
+         "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-movflags", "+faststart", str(joined)])
+    shutil.move(str(joined), str(out))
+    print(f"  冒頭動画を差し込みました（{d:.2f}秒。本編の側を {off:.2f} 秒後ろへ）")
+    return off
+
+
 def main():
     args = sys.argv[1:]
     if not args:
@@ -620,6 +656,8 @@ def main():
     if preview:
         print(f"✅ プレビュー（手元）: {out}  （{t0:.0f}〜{t1:.0f}秒）")
     else:
+        offset = prepend_opening(episode, ep_id, out, work)   # Muse の冒頭動画を先頭に差し込む（キーがなければ何もしない）
+        (work / "video_offset.json").write_text(json.dumps({"opening_offset": offset}), encoding="utf-8")
         shutil.copyfile(out, out_dir / out_name)
         print(f"✅ 完成: {out_dir / out_name}")
 
