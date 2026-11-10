@@ -71,6 +71,11 @@
 | プロンプト名 | `main_opening_prompt.txt`／`short_opening_prompt.txt` | `epXXX_opening_prompt_main.txt`／`epXXX_opening_prompt_shorts.txt`（`epXXX_制作確認書.txt` と並べる） |
 | 完成動画名 | `main_opening.mp4`／`short_opening.mp4` | `epXXX_opening_main.mp4`／`epXXX_opening_shorts.mp4` |
 
+## 運用上の追記（2026-11-11 ユーザー承認。ep123 の実績から）
+
+- **テイザーがある回は、「最初のシーン」をテイザーの頭として読む。** 冒頭動画は本編のテイザーの頭に置かれる（尺は変えない）ため、Muse 用の動画プロンプトは、テイザーのナレーション冒頭の約10秒の内容に合わせて書く（S01 の内容ではなく）。
+- **数や状況が史実で決まっている被写体は、プロンプトに数を明記し、不要な場面は禁止する。** 例: 黒船は「4隻」と指定し、「到着・入港の場面は見せない（すでに停泊している）」を必須条件に入れる（ep123 の Shorts 冒頭動画で艦が5隻以上に見え、ナレーションの "Four black ships" と食い違ったため）。
+
 ## 注記
 
 - 差し込みを行う動画生成側（`sc_video_gen.py`、学習版は `learning/build_video.py`）の対応は本メモの範囲外。差し込み時に必要なら別途仕様を決める。学習版は導入の前に約10秒が加わるため、Tokio の登場（冒頭の自己紹介）との順序もそのとき決める。
