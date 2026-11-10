@@ -120,3 +120,6 @@
 {"ts": "2026-11-10T22:16:17+09:00", "kind": "call", "agent": "sc-writer", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-10T22:16:31+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep123", "step": "2A", "result": "ok", "retries": 0, "note": "20シーン・Tokioモード・検証OK"}
 {"ts": "2026-11-10T22:17:22+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep123", "source": "qa", "severity": "minor", "text": "characters/sawamura_jinzaburo.txt を作成済みと報告したが実際はファイルが無かった（S01の character_ref が参照）。メインが暫定版を作成。報告前に ls で確認すること"}
+{"ts": "2026-11-10T22:27:01+09:00", "kind": "call", "agent": "sc-historian", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
+{"ts": "2026-11-10T22:27:09+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep123", "step": "3A", "result": "ok", "retries": 0, "note": "❌2・要修正⚠️9を自動修正、許容7。1856透かしは和樂web1本のため one account のまま"}
+{"ts": "2026-11-10T22:27:09+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep123", "source": "qa", "severity": "minor", "text": "3A: ❌2件（musokunin表記・Turnbull刊行年）、要修正⚠️9件（S02帆の表現、S07/S15の手渡し解釈、S13オランダ語、日本の小舟は櫓でこぐ等の画像時代錯誤）"}
