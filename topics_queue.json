@@ -1292,6 +1292,18 @@
       "last_updated": "2026-11-04"
     },
     {
+      "episode_id": "ep131",
+      "status": "pending",
+      "title": "The Real Reason Sasaki Kojiro Had to Lose to Miyamoto Musashi",
+      "era": "Edo",
+      "priority": "B",
+      "person": "kojiro",
+      "angle": "remake",
+      "remake_of": "ep022",
+      "notes": "EP022（佐々木小次郎）の Tokioモード・リメイク（ユーザー決定 2026-11-12）。旧ep022は残す（削除・差し替えしない）。学習版も作る。タイトルは両名（Sasaki Kojiro / Miyamoto Musashi）と「The Real Reason」の核を残す。問いは /sc-new STEP 1.5 で組み直す（旧ep022の問いを踏襲しない）。ep010（武蔵 vs 小次郎）との内容重複に注意。 → 2026-11-12: 編集長判定で ep124 の後ろ（2番目）へ前倒し。EP022 が推薦の波（9月中旬〜、ブラウズ72%・関連24%）の最中のうちに同じクラスタへ出すためで、公開直前に EP022 の日別再生を確かめ、波が終わっていれば（目安: 7日続けて1日30回未満）ep126 の後ろへ戻してよい。重複は ep010 に加えて ep001（武蔵 vs 小次郎の決闘回）に特に注意し、決闘の経過をなぞらず、小次郎の側から負けの理由を史料の差で解く角度にする（STEP 1.5 で ep001・ep010・ep022 の3本の台本と照合）。公開後14日に EP022 の再生の変化と ep131 の関連動画流入を並べ、食い合いを判定する。",
+      "last_updated": "2026-11-12"
+    },
+    {
       "episode_id": "ep125",
       "status": "pending",
       "title": "The Shogun Who Let China Call Him 'King of Japan' — and Built a Pavilion of Gold: Ashikaga Yoshimitsu",
@@ -1367,18 +1379,6 @@
       "angle": "death",
       "notes": "未登場。ep069（北条政子）の暗殺の記述は数文。宋へ渡る巨船（1217年・浮かばなかった）と歌人の将軍に重心を置き、1219年の暗殺は締めに留める。ep069と史実の記述をそろえる。image_era: kamakura。英語圏の根拠: 英語版Wikipedia、百人一首第93番の英訳。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
       "last_updated": "2026-11-10"
-    },
-    {
-      "episode_id": "ep131",
-      "status": "pending",
-      "title": "The Real Reason Sasaki Kojiro Had to Lose to Miyamoto Musashi",
-      "era": "Edo",
-      "priority": "B",
-      "person": "kojiro",
-      "angle": "remake",
-      "remake_of": "ep022",
-      "notes": "EP022（佐々木小次郎）の Tokioモード・リメイク（ユーザー決定 2026-11-12）。旧ep022は残す（削除・差し替えしない）。学習版も作る。タイトルは両名（Sasaki Kojiro / Miyamoto Musashi）と「The Real Reason」の核を残す。問いは /sc-new STEP 1.5 で組み直す（旧ep022の問いを踏襲しない）。ep010（武蔵 vs 小次郎）との内容重複に注意。キュー内の順番は編集長マーカスの判定で決める（現在は末尾に仮置き）。",
-      "last_updated": "2026-11-12"
     }
   ],
   "hypotheses": [
