@@ -336,5 +336,6 @@
   },
   "youtube_url": "https://youtu.be/M1PCYK1VMB8",
   "shorts_url": "https://youtu.be/_KhLPwkjAD0",
-  "scheduled_at": "2026-11-12 03:00"
+  "scheduled_at": "2026-11-12 03:00",
+  "related_video_set": true
 }
