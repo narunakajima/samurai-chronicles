@@ -91,7 +91,8 @@ def mark_done(r: dict):
 
 
 def screen_locked() -> bool:
-    out = subprocess.run(["ioreg", "-n", "Root", "-d1"], capture_output=True, text=True).stdout
+    # launchd の PATH に /usr/sbin が無くても動くようフルパスで呼ぶ
+    out = subprocess.run(["/usr/sbin/ioreg", "-n", "Root", "-d1"], capture_output=True, text=True).stdout
     return '"CGSSessionScreenIsLocked"=Yes' in out.replace(" ", "")
 
 
@@ -279,6 +280,26 @@ def cmd_dry_run():
 
 
 def cmd_run():
+    """_run_inner を実行し、報告コードに届く前の例外でも #cc-reports に1行出す（同一原因は抑制）。"""
+    try:
+        _run_inner()
+    except Exception as exc:
+        import traceback
+        traceback.print_exc()
+        sig = f"{type(exc).__name__}: {exc}"[:120]
+        st = load_state()
+        if st.get("crash_reported") != sig:   # 同じ原因は初回のみ。原因が変われば再報告
+            report(report_line(f"例外終了: {sig}", "failed", "15分ごとに自動再試行",
+                               "yes（同じ例外が続く場合は調査が必要）"))
+            st["crash_reported"] = sig
+            save_state(st)
+        sys.exit(1)
+    st = load_state()
+    if st.pop("crash_reported", None):   # 正常終了に戻ったら解除（次の例外は再報告）
+        save_state(st)
+
+
+def _run_inner():
     LOCK.touch()
     with open(LOCK, "w") as lf:
         try:
@@ -330,7 +351,7 @@ def cmd_plist():
     d = {"Label": LABEL, "ProgramArguments": ["/usr/bin/python3", str(ROOT / "sc_related_timer.py"), "run"],
          "WorkingDirectory": str(ROOT), "StartInterval": 900, "RunAtLoad": False,
          "StandardOutPath": str(LOG_DIR / "sc-related-timer.out"), "StandardErrorPath": str(LOG_DIR / "sc-related-timer.err"),
-         "EnvironmentVariables": {"PATH": "/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin"}}
+         "EnvironmentVariables": {"PATH": "/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"}}
     sys.stdout.write(plistlib.dumps(d).decode())
 
 
