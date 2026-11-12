@@ -300,5 +300,6 @@
   },
   "youtube_url": "https://youtu.be/hDrDmsXorEA",
   "shorts_url": "https://youtu.be/H0SfvUrbXWo",
-  "scheduled_at": "2026-11-14 03:00"
+  "scheduled_at": "2026-11-14 03:00",
+  "related_links": {"channel": "SC", "main_id": "hDrDmsXorEA", "main_publish_at": "2026-11-14 03:00", "short_id": "H0SfvUrbXWo", "short_publish_at": "2026-11-14 03:00", "attach_main_id_to_short": "hDrDmsXorEA"}
 }

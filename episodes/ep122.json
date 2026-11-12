@@ -331,5 +331,6 @@
   "tokio_glow_gain": 0.4,
   "youtube_url": "https://youtu.be/Viq4geDseoE",
   "shorts_url": "https://youtu.be/5eZjCx5v_M8",
-  "scheduled_at": "2026-11-19 03:00"
+  "scheduled_at": "2026-11-19 03:00",
+  "related_links": {"channel": "SC", "main_id": "Viq4geDseoE", "main_publish_at": "2026-11-19 03:00", "short_id": "5eZjCx5v_M8", "short_publish_at": "2026-11-19 03:00", "attach_main_id_to_short": "Viq4geDseoE"}
 }

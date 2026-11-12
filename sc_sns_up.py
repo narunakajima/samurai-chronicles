@@ -347,6 +347,15 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     ep["youtube_url"] = f"https://youtu.be/{main_id}"
     ep["shorts_url"] = f"https://youtu.be/{shorts_id}"
     ep["scheduled_at"] = publish_at if publish_at else ""
+    # Muse（クラウド）が関連動画を設定するための対応表（どのショートにどの本編を付けるか）
+    ep["related_links"] = {
+        "channel": "SC",
+        "main_id": main_id,
+        "main_publish_at": ep["scheduled_at"],
+        "short_id": shorts_id,
+        "short_publish_at": ep["scheduled_at"],
+        "attach_main_id_to_short": main_id,
+    }
     with open(ep_json, "w", encoding="utf-8") as f:
         json.dump(ep, f, ensure_ascii=False, indent=2)
     print(f"  ✓ ep.json に youtube_url / shorts_url / scheduled_at を保存しました")

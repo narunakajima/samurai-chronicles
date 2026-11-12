@@ -39,6 +39,16 @@ def load_rec(ep_id: str) -> dict:
 
 def save_rec(ep_id: str, rec: dict):
     UPLOADS.mkdir(exist_ok=True)
+    if rec.get("main_id") and rec.get("short_id"):
+        # Muse（クラウド）が関連動画を設定するための対応表。保存のたびに main_id / short_id / publish_at から作り直す
+        rec["related_links"] = {
+            "channel": "learning",
+            "main_id": rec["main_id"],
+            "main_publish_at": rec.get("publish_at") or "",
+            "short_id": rec["short_id"],
+            "short_publish_at": rec.get("publish_at") or "",
+            "attach_main_id_to_short": rec["main_id"],
+        }
     rec_path(ep_id).write_text(json.dumps(rec, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
