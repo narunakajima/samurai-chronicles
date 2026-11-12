@@ -1367,6 +1367,18 @@
       "angle": "death",
       "notes": "未登場。ep069（北条政子）の暗殺の記述は数文。宋へ渡る巨船（1217年・浮かばなかった）と歌人の将軍に重心を置き、1219年の暗殺は締めに留める。ep069と史実の記述をそろえる。image_era: kamakura。英語圏の根拠: 英語版Wikipedia、百人一首第93番の英訳。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
       "last_updated": "2026-11-10"
+    },
+    {
+      "episode_id": "ep131",
+      "status": "pending",
+      "title": "The Real Reason Sasaki Kojiro Had to Lose to Miyamoto Musashi",
+      "era": "Edo",
+      "priority": "B",
+      "person": "kojiro",
+      "angle": "remake",
+      "remake_of": "ep022",
+      "notes": "EP022（佐々木小次郎）の Tokioモード・リメイク（ユーザー決定 2026-11-12）。旧ep022は残す（削除・差し替えしない）。学習版も作る。タイトルは両名（Sasaki Kojiro / Miyamoto Musashi）と「The Real Reason」の核を残す。問いは /sc-new STEP 1.5 で組み直す（旧ep022の問いを踏襲しない）。ep010（武蔵 vs 小次郎）との内容重複に注意。キュー内の順番は編集長マーカスの判定で決める（現在は末尾に仮置き）。",
+      "last_updated": "2026-11-12"
     }
   ],
   "hypotheses": [
@@ -1461,6 +1473,6 @@
       "notes_2026-11-09": "2026-10 月次評価（管理担当）の提案3を、ユーザー承認（2026-11-09）のうえ登録。判定対象の8本と比較対象を上記のとおり事前固定。Reporting API の欠損（10/12以降の再認証待ち）で14日窓が復元できない回があり、判定は再認証後。"
     }
   ],
-  "last_updated": "2026-11-10",
-  "total_topics": 130
+  "last_updated": "2026-11-12",
+  "total_topics": 131
 }
