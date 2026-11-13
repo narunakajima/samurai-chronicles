@@ -88,96 +88,16 @@ python3 $HOME/samurai-chronicles/sc_sns_up.py --episode ep{NNN} --publish-at "20
 **完了報告の最後に、次の制作の前に `/clear` で会話を整理し、`/sc-new`（STEP 0 の `git pull` から始まる）を実行することを
 ユーザーに一言勧める**（2026-10-16〜。長い会話のままだと古い経緯を引きずるため）。
 
-## STEP 3.5 — Shortsの「関連動画」を設定する（Chromeを自動操作、2026-10-02追加）
+## STEP 3.5 — Shortsの「関連動画」（2026-11-14〜: クラウド自動設定に移行。手動設定は廃止）
 
-Shortsの「関連動画」に本編を設定しておくと、Shortsの視聴者を本編へ誘導できる。
-`sc_sns_up.py` からは設定していない（YouTube Data APIで設定できるかは未確認）ため、
-Claude in Chrome（ユーザーのログイン済みChrome。内蔵ブラウザはログインが必要で使えない）で
-操作する。kagaku-life の `/kl-upload` STEP 3.5 と同じ仕組み。
+Shortsの「関連動画」（本編への誘導）は、**公開後に Muse（クラウド）が公開10分後に自動で設定する**。
+`/sc-upload` の中では設定しない（Chrome も開かない・チャンネル切り替えもしない）。
+Muse 側の自動設定が ep120（本編・学習版）で2回成功し、停止条件を満たしたため、
+手動の保険工程と iMac のタイマー（`com.naru.sc-related-timer`）は撤去した
+（plist は `~/Library/LaunchAgents/com.naru.sc-related-timer.plist.disabled-20261114` に改名して保管。戻すときは改名を戻して `launchctl bootstrap`）。
 
-**重要な制約: Studioの関連動画の選択画面には「公開済みの動画」しか出ない。**
-STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べないので、今回アップロードした回は
-この時点では設定できない。そこで「公開日時を過ぎていて、まだ設定していないエピソード」を
-全てまとめて対象にする（前回までに予約した回が、公開された後の `/sc-upload` で拾われる）。
-完了の記録は `episodes/ep{NNN}.json` の `related_video_set: true`。
-
-### 手順
-
-1. 対象を出す:
-   ```bash
-   python3 sc_related_targets.py
-   ```
-   「設定が必要なShortsはありません」なら、このSTEPは終了（今回の回は公開後の
-   `/sc-upload` で設定される、と完了報告に一言添える）。Chromeは開かない。
-   検索語は、他のエピソードのタイトルに含まれない最短の先頭部分が自動で選ばれる
-   （SCのタイトルは英語で先頭が似たものが多いため）。
-
-2. Chromeを用意する。**起動時点でChromeが動いていたかを必ず記録する**:
-   ```bash
-   pgrep -x "Google Chrome" >/dev/null && echo running || echo not-running
-   ```
-   `not-running` なら `open -a "Google Chrome"` で起動する（この場合は最後に終了する）。
-   `list_connected_browsers` でClaude in Chrome拡張の接続を確認する（起動直後は数十秒かかる
-   ことがある）。接続できなければ、このSTEPは諦めて完了報告にその旨を書く（Chromeは
-   自分で起動していた場合のみ終了する）。ツールが未読込なら `ToolSearch` で
-   `mcp__claude-in-chrome__*`（`browser_batch`・`computer`・`navigate`・`tabs_context_mcp` 等）を
-   まとめて読み込む。
-   **接続中の Chrome が複数あるとき（2026-11-07 追加、ep120）:** 最初の Chrome（`inUse`）で
-   `studio.youtube.com/channel/UCN1-TUxX_2UumGm3OKpmncg` を開き、「このページを表示する権限がありません」が出たら、
-   そこで諦めず、`select_browser` で次の Chrome に切り替えて同じ確認をする（ブラウザの選択は副作用がない）。
-   SC・学習版の両チャンネルを持つアカウントの Chrome を使う。全部の Chrome で権限がなければ、そこで初めて諦めて報告する。
-   （ep120 では1つ目で権限エラー → 報告して止まり、ユーザーの指摘で2つ目を試して成功した）
-
-3. チャンネルを切り替える。Chromeは通常、別チャンネル（ランプのひとりごと等）でログインして
-   いる。アバター → 「アカウントを切り替える」で **「Samurai Chronicles」
-   （@Samurai-Chronicles-JP、チャンネルID `UCN1-TUxX_2UumGm3OKpmncg`）** を選ぶ。**作業後に
-   元のチャンネルへ戻す必要はない**（2026-10-04、ユーザー指示）。切り替え後、
-   `studio.youtube.com/channel/` のURLが上記のIDになっていることを確認する。
-   **他チャンネルの動画は絶対に編集しない。**
-
-4. 対象のShortsごとに（`sc_related_targets.py` が出した shorts ID・検索語を使う）。
-   **座標クリックは使わない**（ウィンドウサイズが操作ごとに変わり、2026-10-02にクリックが外れた）。
-   ページ内のスクリプト `studio_related_video.js` を `javascript_tool` で実行する:
-   1. 最初に1回だけ、スクリプトの「関数本体」（`return (async()=>{ ... })()` の部分）を
-      StudioのページのlocalStorageに保存する:
-      `localStorage.setItem('rel_fn', `<関数本体>`)`
-   2. 1本ごとに `studio.youtube.com/video/{SHORTS_ID}/edit` を開き（未保存の変更があると
-      「Leave site?」が出るので `navigate` は `force: true`）、3秒待ってから実行する:
-      `await (new Function('KW','FORCE',localStorage.getItem('rel_fn')))("検索語", false)`
-      複数本は `browser_batch` に「navigate → wait 3 → javascript_tool」を並べると速い
-      （1バッチ6〜8本。接続が切れて途中で止まることがあるが、実行は何度やっても安全な
-      作りで、設定済みなら `skip:'already'` で飛ばす）。
-   3. スクリプトがやること: 現在の関連動画が「なし」でなければ何もしない（`skip:'already'`、
-      `before` が現在値）／「子ども向けか」が**未選択のときだけ**「いいえ、子ども向けでは
-      ありません」を選ぶ（選択済みの値は書き換えない）／関連動画の選択画面で検索語に合う
-      **本編**（`#Shorts` が付かない方）を選ぶ／「保存」を押す。
-      結果は `{id, kid, before, label, rel, saved}` のJSONで返る。
-   4. **確認する**: `skip` だった回は `before` が**その回の本編のタイトルと一致するか**見る。
-      一致しなければ取り違えなので、`FORCE=true` で再実行して上書きする（SCのep016で
-      別の回の本編が設定されていた実例がある）。`err:'no-option'` の回（検索語に合う本編が
-      ない）はスキップして報告する。保存後は読み込み直して、関連動画欄が本編のタイトルで
-      あることを確かめる（`saved` の値だけに頼らない。`saved:false` でも保存されていた例がある）。
-      確認できた回だけ `python3 sc_related_targets.py --mark ep{NNN}`。
-   5. 全部終わったら `localStorage.removeItem('rel_fn')` で片付ける。
-   - 関連動画以外の設定（公開日時・タイトル・説明・字幕など）は変更しない。
-   - 想定と違うUI（要素が見つからない等）で `err` が続く場合は、無理に操作せずそのSTEPを
-     中断して報告する。
-   - 件数が多い回（初回の遡及など）は、10本ほどずつバッチにして途中経過を報告する。
-
-
-5. 後片付け（**必ずこの順**。チャンネルは元に戻さなくてよい）:
-   1. `localStorage.removeItem('rel_fn')` で保存したスクリプトを片付ける（手順4-5）。
-   2. 自分で開いたタブ（MCPのタブグループ内）を閉じる。
-   3. **手順2で自分がChromeを起動した場合のみ**、Chromeを終了する:
-      ```bash
-      osascript -e 'quit app "Google Chrome"'
-      ```
-      **すでにChromeが動いていた場合は終了しない**（ユーザーが他のタブ・作業を開いている
-      ため）。自分が開いたタブを閉じるだけにして、完了報告に「Chromeは元から開いて
-      いたので終了していません」と書く。
-
-6. 完了報告に、設定した件数・スキップした回（理由つき）・Chromeを終了したかを書く。
-   `episodes/ep*.json` に `related_video_set` の変更が出るので、STEP 4で一緒にコミットする。
+- 設定の記録（`episodes/ep{NNN}.json` の `related_video_set`）は自動処理側が更新する。
+- 公開後に Muse の設定が失敗していた場合だけ、完了報告に書いてユーザーに伝える（その場で手動設定はしない）。
 
 ## STEP 3.6 — 未返信コメントに英語で返信する（2026-10-20追加）
 
@@ -212,7 +132,7 @@ STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べ�
 | やること | 対象の回 | タイミング |
 |---|---|---|
 | ① 学習版のアップロード（公開予定） | 今回の回（公開 OK 済みのもの） | STEP 2 の直後。SC が未公開でもよい。SC の公開日の **07:00 JST** に公開予定 |
-| ② ショートの関連動画の設定 | 公開日時を過ぎた**前回までの回** | 公開済みの動画しか選べないので、今回上げた回は次回の `/sc-upload` で設定される |
+| ② ショートの関連動画の設定 | （手動では行わない） | 公開後に Muse（クラウド）が公開10分後に自動設定する（2026-11-14〜） |
 | ③ コメント返信（日本語） | 学習版チャンネルの未返信コメント | 毎回 |
 
 学習版そのもの（音声・動画・サムネイル・ショート）は `/sc-learn` で、本編の動画の確認 OK のあとに作り済み。この STEP では作らない。
@@ -226,30 +146,18 @@ STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べ�
    python3 learning/learn_targets.py
    ```
    - 「アップロード対象」: 学習版の公開 OK があり、まだ上げていない回（SC が未公開でもよい。公開日時は SC 本編に合わせる）
-   - 「関連動画の設定対象」: 上げ済みで、ショートの関連動画が未設定の回
    - 「待ち」: 学習版はあるが、SC が未公開か、公開 OK がない回（参考。ユーザーに伝えるだけ。勝手に公開しない）
-   どちらも 0 件なら、このSTEPは終了（Chrome は開かない）。
+   「アップロード対象」が 0 件でも、手順4（コメント返信）は行う。
 
 2. アップロード（**SC の公開日の 07:00 JST に公開予定**。本編・サムネイル・ショートを一緒に上げる）。対象の回ごとに、公開日時は **SC の公開日の 07:00 JST**（SC の `scheduled_at` の4時間後。`learn_targets.py` が `scheduled_at` を表示する）:
    ```bash
    cd learning && python3 learn_upload.py ep{NNN} --publish-at "{SC の公開日} 07:00"
    ```
-   認証したチャンネルが学習版でなければ止まる。成功すると `learning/uploads/ep{NNN}.json` に動画 ID が残り、関連動画の設定対象になる。
+   認証したチャンネルが学習版でなければ止まる。成功すると `learning/uploads/ep{NNN}.json` に動画 ID が残る。
    ユーザーが動画を確認して OK を出したあとなので、予約公開にしてよい。すでにアップ済みの回の公開日時を変えるときは `python3 learn_upload.py ep{NNN} --schedule-existing --publish-at "{日付} 07:00"`（過ぎていればその場で公開）。
    失敗（認証・容量など）した回は、理由を完了報告に書いて次へ進む（SC のアップロードには影響しない）。
 
-3. ショートの関連動画（Chrome の操作。**STEP 3.5 と同じ方法**。`studio_related_video.js`）:
-   - STEP 3.5 の手順2（Chrome を用意）・手順5（後片付け）は共通。STEP 3.5 で Chrome を開いていれば、そのまま続けて使う
-   - チャンネルを切り替える: アバター →「アカウントを切り替える」で **「英語で聴く日本史」（`UCWOFhTRNmbVeVWgwF9DfoNA`）** を選ぶ。
-     切り替え後、`studio.youtube.com/channel/` の URL が上記の ID になっていることを確認する。**他チャンネルの動画は絶対に編集しない**
-   - 手順1で出た「関連動画の設定対象」のショートごとに、STEP 3.5 の手順4と同じく `studio.youtube.com/video/{SHORTS_ID}/edit` を開き、
-     スクリプトを実行する。**検索語（KW）は、`learn_targets.py` が出した日本語の題名**（例: `織田信長 — 消えた遺体の謎`。
-     スクリプトは検索欄に値を直接入れるので、日本語でも使える）。`#Shorts` の付かない本編が選ばれる
-   - 結果を確認し（`before`／`rel` が、その回の学習版の本編のタイトルと一致するか）、確認できた回だけ記録する:
-     ```bash
-     python3 learning/learn_targets.py --mark-related ep{NNN}
-     ```
-   - 想定と違う画面で `err` が続く場合は、無理に操作せず中断して報告する（SC・LW・KL と同じ）
+3. ショートの関連動画: **この STEP では設定しない**。公開後に Muse（クラウド）が公開10分後に自動で設定する（STEP 3.5 の注記のとおり。2026-11-14〜）。
 
 4. 学習版チャンネルの未返信コメントに**日本語で**返信する（**確認なしで**。STEP 3.6 と同じ進め方）:
    ```bash
@@ -261,7 +169,7 @@ STEP 2で予約したばかりの本編は公開日（03:00 JST）まで選べ�
    書かないこと・見送るものも STEP 3.6 のとおり。英語の表現や発音についての質問で、無難に答えられないものは見送る）。
    返信済みは `data/learn_comment_replies.json` に残る。
 
-5. 完了報告に、アップロードした回（URL）・関連動画を設定した回・返信した件数・見送ったコメント・待ちの回（理由つき）を書く。
+5. 完了報告に、アップロードした回（URL）・返信した件数・見送ったコメント・待ちの回（理由つき）を書く。
    `learning/uploads/ep*.json` と `data/learn_comment_replies.json` に変更が出るので、STEP 4 で一緒にコミットする。
 
 ## STEP 4 — コミット・プッシュ確認（2026-07-29〜: 自動化済み）
