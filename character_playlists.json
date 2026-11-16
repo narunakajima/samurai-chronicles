@@ -94,6 +94,10 @@
       {
         "episode_id": "ep106",
         "video_id": "SMRQFtEUeLk"
+      },
+      {
+        "episode_id": "ep124",
+        "video_id": "tQc0iSczitE"
       }
     ]
   },
@@ -1242,6 +1246,16 @@
       {
         "episode_id": "ep123",
         "video_id": "2NSUdyAMYjE"
+      }
+    ]
+  },
+  "yasuke": {
+    "display_name": "Yasuke",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep124",
+        "video_id": "tQc0iSczitE"
       }
     ]
   }

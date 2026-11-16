@@ -1282,14 +1282,14 @@
     },
     {
       "episode_id": "ep124",
-      "status": "in_production",
+      "status": "published",
       "title": "Nobunaga's African Retainer Served Him Just 15 Months — Then Vanished: The Real Yasuke",
       "era": "Sengoku",
       "priority": "A",
       "person": "yasuke",
       "angle": "overview",
       "notes": "未登場。全エピソードで言及ゼロ。1581年に宣教師ヴァリニャーノの従者として来日 → 信長に召し抱えられる → 1582年の本能寺の変で捕らえられ、南蛮寺へ送られたあと消息不明、までの約15か月。『信長公記』・『家忠日記』・イエズス会の書簡にある記述だけで構成し、『侍だったか』は確定させずに論点として示す。題名でも Samurai と断定しない。英語圏で論争になっている題材なので、コメント欄の荒れにソフィーが備えること。肖像はないので、容貌は家忠日記の記述に基づいて新しく作る（characters/yasuke.txt）。月代の問題はない。公開後は CTR だけでなく高評価率も分けて見ること。 → 2026-11-04: 補充提案(ユーザー承認済)。",
-      "last_updated": "2026-11-04",
+      "last_updated": "2026-11-16",
       "question": "1582年6月、信長の死後、なぜ弥助は逃げずに二条へ向かい、光秀はなぜ彼を殺さなかったのか（案B。中盤に案A、結末に案C）"
     },
     {

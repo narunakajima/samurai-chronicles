@@ -310,5 +310,16 @@
   },
   "opening_video": {
     "shorts": "ep124_opening_shorts.mp4"
+  },
+  "youtube_url": "https://youtu.be/tQc0iSczitE",
+  "shorts_url": "https://youtu.be/HMH0NLN5ACw",
+  "scheduled_at": "2026-11-24 03:00",
+  "related_links": {
+    "channel": "SC",
+    "main_id": "tQc0iSczitE",
+    "main_publish_at": "2026-11-24 03:00",
+    "short_id": "HMH0NLN5ACw",
+    "short_publish_at": "2026-11-24 03:00",
+    "attach_main_id_to_short": "tQc0iSczitE"
   }
 }
