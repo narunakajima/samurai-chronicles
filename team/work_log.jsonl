@@ -166,3 +166,11 @@
 {"ts": "2026-11-16T14:41:50+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep124", "step": "3C", "result": "ok", "retries": 0, "note": "Freesound新規は3回空振り（1件はドラムループで不採用）。ライブラリ3曲構成"}
 {"ts": "2026-11-16T14:45:57+09:00", "kind": "call", "agent": "sc-historian", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
 {"ts": "2026-11-16T14:46:07+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep124", "step": "5-0", "result": "ok", "retries": 0, "note": "弥助の風体決定（短い地毛・月代なし・熨斑付の短刀・鎧なし）。sc_image_gen.py に非日本人の例外を追加"}
+{"ts": "2026-11-16T15:13:58+09:00", "kind": "applied", "agent": "sc-art-director", "episode": "ep124", "ids": ["SC2611-03"], "skipped": [], "reason": ""}
+{"ts": "2026-11-16T15:14:29+09:00", "kind": "call", "agent": "sc-art-director", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
+{"ts": "2026-11-16T15:14:37+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep124", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL 4件（S04/S05 下賜前の刀、S08/S19 刀の形）を再生成"}
+{"ts": "2026-11-16T15:14:37+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep124", "source": "qa", "severity": "minor", "text": "5C CRITICAL: S04/S05 は信長から刀を下賜される前の場面なのに image_prompt が刀を差した弥助を指定していた。象徴物が贈られる回は、贈与前シーンのプロンプトに『刀なし』を書くこと"}
+{"ts": "2026-11-16T15:17:13+09:00", "kind": "applied", "agent": "sc-manager", "episode": "ep124", "ids": ["SC2611-07"], "skipped": [], "reason": ""}
+{"ts": "2026-11-16T15:17:51+09:00", "kind": "call", "agent": "sc-manager", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
+{"ts": "2026-11-16T15:18:04+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep124", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: S04/S05 を写実で作り直し指示。他は採用。Muse本編版は未着、STEP6は仮組みのみ"}
+{"ts": "2026-11-16T15:18:04+09:00", "kind": "feedback", "agent": "sc-art-director", "episode": "ep124", "source": "manager", "severity": "major", "text": "5C で作り直した S04・S05 がイラスト調（ペインタリー）になり、S01 など写実のシーンと画調がそろっていないのに、QA もクロスシーン確認も通していた（編集長の統合確認で作り直し）"}
