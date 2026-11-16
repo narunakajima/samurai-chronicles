@@ -150,3 +150,10 @@
 {"ts": "2026-11-11T07:11:23+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep123", "step": "学習版", "result": "ok", "retries": 0, "note": "学習版完成。通信エラー1回・照合失敗1回（clip_accept で対応）"}
 {"ts": "2026-11-11T07:35:55+09:00", "kind": "call", "agent": "sc-community", "session": "f551d174-0514-42b5-bfbc-ad2f90d291cc"}
 {"ts": "2026-11-11T07:36:09+09:00", "kind": "work", "agent": "sc-community", "episode": "ep123", "step": "3.6", "result": "ok", "retries": 0, "note": "返信0件・見送り5件"}
+{"ts": "2026-11-16T14:24:38+09:00", "kind": "applied", "agent": "sc-planner", "episode": "ep124", "ids": [], "skipped": ["SC2611-04"], "reason": "今回はSTEP1.5（問いゲート）のみでSTEP1の補充が無い。ep124は2026-11-04の補充（アクション開始前）由来なので適用回に数えると判定を汚す。英語圏の根拠1行は ep124_question.md の①に参考として記載"}
+{"ts": "2026-11-16T14:25:01+09:00", "kind": "call", "agent": "sc-planner", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
+{"ts": "2026-11-16T14:25:45+09:00", "kind": "call", "agent": "sc-community", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
+{"ts": "2026-11-16T14:27:32+09:00", "kind": "call", "agent": "sc-manager", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
+{"ts": "2026-11-16T14:27:41+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep124", "step": "1.5", "result": "ok", "retries": 0, "note": "案B推奨（中盤にA・結末にC）。題名の骨格との一致・冒頭動画・Tokioの1日で採用。次点A。ソフィーの懸念を申し送りに反映"}
+{"ts": "2026-11-16T14:27:41+09:00", "kind": "work", "agent": "sc-planner", "episode": "ep124", "step": "1.5", "result": "ok", "retries": 0, "note": "選ばれた案B"}
+{"ts": "2026-11-16T14:27:41+09:00", "kind": "work", "agent": "sc-community", "episode": "ep124", "step": "1.5", "result": "ok", "retries": 0, "note": "初見判定 A>B>C"}
