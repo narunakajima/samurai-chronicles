@@ -157,3 +157,6 @@
 {"ts": "2026-11-16T14:27:41+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep124", "step": "1.5", "result": "ok", "retries": 0, "note": "案B推奨（中盤にA・結末にC）。題名の骨格との一致・冒頭動画・Tokioの1日で採用。次点A。ソフィーの懸念を申し送りに反映"}
 {"ts": "2026-11-16T14:27:41+09:00", "kind": "work", "agent": "sc-planner", "episode": "ep124", "step": "1.5", "result": "ok", "retries": 0, "note": "選ばれた案B"}
 {"ts": "2026-11-16T14:27:41+09:00", "kind": "work", "agent": "sc-community", "episode": "ep124", "step": "1.5", "result": "ok", "retries": 0, "note": "初見判定 A>B>C"}
+{"ts": "2026-11-16T14:33:28+09:00", "kind": "applied", "agent": "sc-writer", "episode": "ep124", "ids": ["SC2611-01", "SC2611-02"], "skipped": [], "reason": ""}
+{"ts": "2026-11-16T14:33:55+09:00", "kind": "call", "agent": "sc-writer", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
+{"ts": "2026-11-16T14:34:02+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep124", "step": "2A", "result": "ok", "retries": 0, "note": ""}
