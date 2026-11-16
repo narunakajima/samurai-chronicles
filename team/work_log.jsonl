@@ -181,3 +181,5 @@
 {"ts": "2026-11-16T17:19:12+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
 {"ts": "2026-11-16T17:19:19+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep124", "step": "1", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-16T18:23:34+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep124", "step": "学習版進行", "result": "ok", "retries": 0, "note": "学習版: 冒頭動画なし。台本→音声→動画→サムネ→ショート一発で完了"}
+{"ts": "2026-11-16T19:05:00+09:00", "kind": "call", "agent": "sc-community", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
+{"ts": "2026-11-16T19:05:10+09:00", "kind": "work", "agent": "sc-community", "episode": "ep124", "step": "3.6", "result": "ok", "retries": 0, "note": "返信SC1件・学習版1件、見送り5件"}
