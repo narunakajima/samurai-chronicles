@@ -93,7 +93,10 @@ BASE_CONTEXT = (
     "Atmospheric depth: foreground sharp, background softened by mist or distance. "
     "Mood: epic, weighty, emotionally resonant, historically grounded. "
     "No text, no watermarks, no modern elements, no anachronisms. "
-    "All human figures are East Asian / Japanese in appearance. "
+    "All human figures are East Asian / Japanese in appearance, except a person whom the "
+    "scene description or character reference explicitly describes as non-Japanese (e.g. "
+    "Yasuke, the Black African man in Oda Nobunaga's service): draw that person exactly as "
+    "described, and keep everyone else East Asian / Japanese. "
     "Period-accurate Edo/Sengoku era attire: kimono, samurai armor, period weapons only. "
     "Unless a character reference specifies otherwise (e.g. a monk's shaved head, "
     "a woman's hair, a ninja's covered hair, a ronin's unbound hair), default male "
@@ -343,7 +346,9 @@ def _correction_note(issues: list) -> str:
                 "The topknot must read as a deliberate groomed knot, not a loose sprouting tuft. "
                 "Exception: if the scene description explicitly states that a specific character's "
                 "forehead and crown are NOT shaved, keep that character's unshaved hair exactly as "
-                "described and apply this fix only to the other men."
+                "described and apply this fix only to the other men (for example, Yasuke, the Black "
+                "African man in Oda Nobunaga's service, keeps his short close-cropped natural hair "
+                "with no shaved pate and no topknot)."
             )
         elif prefix == "DISTORTION" and prefix not in seen:
             notes.append(
@@ -541,7 +546,7 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             "scene description calls for deliberately unkempt/unbound hair as a character choice, "
             "young children (forelock/maegami styles), a warlord or samurai who has taken Buddhist vows (a nyudo lay monk such as the older Takeda Nobutora or Takeda Shingen) shown with a fully shaved head and no topknot when the scene description explicitly calls for it, a chasen-mage (upright tea-whisk topknot tied at the back of the crown, Oda Nobunaga's signature style) when the scene description explicitly calls for it, a short cropped zangiri-style cut with no topknot and no shaved pate (Takasugi Shinsaku after 1863, per his surviving 1866 photograph) when the scene description explicitly calls for it, "
             "a specific character whose scene description explicitly states that his forehead and crown are NOT shaved "
-            "(a deliberate per-character exception, e.g. Ishikawa Goemon's grown-out shaggy hair tied at the nape, or a "
+            "(a deliberate per-character exception, e.g. Ishikawa Goemon's grown-out shaggy hair tied at the nape, Yasuke's (the Black African man in Oda Nobunaga's service) short close-cropped tightly coiled natural hair with no shaved pate and no topknot, or a "
             "Kabuki actor's bushy stage wig) — this exception covers only that character, and every other man in the "
             "same image still needs the default, or non-Japanese/Western characters. If the "
             "scene description does not explicitly call for one of these exceptions, the sakayaki+chonmage "

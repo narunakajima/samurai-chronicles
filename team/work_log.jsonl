@@ -160,3 +160,9 @@
 {"ts": "2026-11-16T14:33:28+09:00", "kind": "applied", "agent": "sc-writer", "episode": "ep124", "ids": ["SC2611-01", "SC2611-02"], "skipped": [], "reason": ""}
 {"ts": "2026-11-16T14:33:55+09:00", "kind": "call", "agent": "sc-writer", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
 {"ts": "2026-11-16T14:34:02+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep124", "step": "2A", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-16T14:41:32+09:00", "kind": "call", "agent": "sc-historian", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
+{"ts": "2026-11-16T14:41:37+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep124", "step": "3A", "result": "ok", "retries": 0, "note": "❌なし。⚠️要修正8件を TTS前に修正（S05/S07/S08/S10/S12/S13/teaser/shorts）"}
+{"ts": "2026-11-16T14:41:50+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep124", "source": "qa", "severity": "minor", "text": "STEP3A 要修正8件: S10 信忠の二条移動の省略と『数時間後に死ぬ』がS01と矛盾／S12 刀を渡す場面を報告にない『兵が扱いに困った』と補った／S08 servant of Visitor→報告は連れてきた・贈った／S07 創作台詞を『最も正直な一行』と史実化／S13 S05 teaser shorts の言い過ぎ。単一資料の場面は報告の文の順序で書くこと"}
+{"ts": "2026-11-16T14:41:50+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep124", "step": "3C", "result": "ok", "retries": 0, "note": "Freesound新規は3回空振り（1件はドラムループで不採用）。ライブラリ3曲構成"}
+{"ts": "2026-11-16T14:45:57+09:00", "kind": "call", "agent": "sc-historian", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
+{"ts": "2026-11-16T14:46:07+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep124", "step": "5-0", "result": "ok", "retries": 0, "note": "弥助の風体決定（短い地毛・月代なし・熨斑付の短刀・鎧なし）。sc_image_gen.py に非日本人の例外を追加"}
