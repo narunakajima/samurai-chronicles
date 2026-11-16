@@ -32,6 +32,7 @@ SC の英語エピソードから、日本人学習者向けの教材音声（�
 投稿する区切り: 学習版の開始（`event=start`）／STEP 1 台本／STEP 2 音声ビルド／STEP 3 読みの確認／STEP 3.5 動画／STEP 3.6 サムネイル／STEP 3.6 ショート／
 ユーザーの確認待ち（`event=needs_decision`、`needs_user` に確認の内容）／確認 OK と公開 OK の記録。`step=` は「学習版 STEP 2 音声ビルド」のように「学習版」を付ける。
 `by=` は担当者（台本はリリー、それ以外は進行担当トーマス）。長工程（音声・動画）は `eta=` を書く。
+学習版の `needs_decision`（確認待ち・公開OK）への返答も、`/sc-new` の「Muse 経由の承認」（`event=user_approval`、2026-11-16〜）で受け取ってよい。条件・書式・承認の範囲は `/sc-new` のとおりで、`case` は本編と同じ `ep{NNN}`、`re=` は学習版の `needs_decision` 投稿を指す。
 
 ## STEP 0: 前提の確認
 
