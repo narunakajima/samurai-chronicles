@@ -2,7 +2,7 @@
   "episode_id": "ep124",
   "episode_title": "Nobunaga's African Retainer Served Him Just 15 Months — Then Vanished: The Real Yasuke",
   "youtube_title": "Nobunaga's African Retainer Served Him Just 15 Months — Then Vanished: The Real Yasuke",
-  "youtube_description": "In 1581 a Black man brought to Kyoto by the Jesuits was presented to Oda Nobunaga. Fifteen months later, the one Jesuit report that follows him places him at the second battle of the day Nobunaga died, then at the mercy of the general who had just killed his lord, and after that the records go quiet. If your lord had just been killed and a church stood nearby, would you have run for it, or walked toward the fighting?\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. This time he files his dispatch from Kyoto on June 21, 1582, the morning the Nijo residence fell.\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Ōta Gyūichi — \"Shinchō-kōki\" (The Chronicle of Oda Nobunaga), entry for the 23rd day of the 2nd month, Tenshō 9, and the Maeda Family Sonkeikaku Bunko manuscript\n2. Matsudaira Ietada — \"Ietada Nikki\" (diary), entry for the 19th day of the 4th month, Tenshō 10\n3. Luís Fróis and Lourenço Mexia — Jesuit letters and reports from Japan, 1581–1582 (incl. Fróis's report of 5 November 1582 on Nobunaga's death), and Fróis, \"Historia de Japam\"\n4. Lamers, Jeroen — \"Japonius Tyrannus: The Japanese Warlord, Oda Nobunaga Reconsidered\" (Hotei Publishing, 2000)\n5. Lockley, Thomas & Girard, Geoffrey — \"African Samurai: The True Story of Yasuke, a Legend of Feudal Japan\" (Hanover Square Press, 2019), the book at the centre of the modern debate\n\n#Yasuke #Nobunaga #Honnoji #AkechiMitsuhide #Sengoku #JapaneseHistory #SamuraiChronicles",
+  "youtube_description": "In 1581 a Black man brought to Kyoto by the Jesuits was presented to Oda Nobunaga. Fifteen months later, the one Jesuit report that follows him places him at the second battle of the day Nobunaga died, then at the mercy of the general who had just killed his lord, and after that the records go quiet. If your lord had just been killed and a church stood nearby, would you have run for it, or walked toward the fighting?\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. This time he files his dispatch from Kyoto on June 21, 1582, the morning the Nijo residence fell.\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Ōta Gyūichi — \"Shinchō-kōki\" (The Chronicle of Oda Nobunaga), entry for the 23rd day of the 2nd month, Tenshō 9, and the Maeda Family Sonkeikaku Bunko manuscript\n2. Matsudaira Ietada — \"Ietada Nikki\" (diary), entry for the 19th day of the 4th month, Tenshō 10\n3. Luís Fróis and Lourenço Mexia — Jesuit letters and reports from Japan, 1581–1582 (incl. Fróis's report of 5 November 1582 on Nobunaga's death), and Fróis, \"Historia de Japam\"\n4. Lamers, Jeroen — \"Japonius Tyrannus: The Japanese Warlord, Oda Nobunaga Reconsidered\" (Hotei Publishing, 2000)\n5. Lockley, Thomas & Girard, Geoffrey — \"African Samurai: The True Story of Yasuke, a Legend of Feudal Japan\" (Hanover Square Press, 2019), the book at the centre of the modern debate\n\n\n🎵 Music: symphony_background.wav by X3nus (freesound.org) — CC BY 4.0\n\n🎵 Music: Violintro by Clay-Blood (freesound.org) — CC BY 4.0\n\n🎵 Music: Sad Serenade by ViraMiller (freesound.org) — CC BY 4.0\n#Yasuke #Nobunaga #Honnoji #AkechiMitsuhide #Sengoku #JapaneseHistory #SamuraiChronicles",
   "youtube_tags": [
     "Yasuke",
     "Yasuke history",
@@ -60,7 +60,11 @@
       "ken_burns": "zoom_in",
       "character_ref": "yasuke",
       "tokio_expression": "neutral",
-      "tokio_place": "Kyoto 1582"
+      "tokio_place": "Kyoto 1582",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.25
+      }
     },
     {
       "scene_id": 2,
@@ -71,7 +75,11 @@
       "ken_burns": "pan_right",
       "character_ref": null,
       "tokio_expression": "neutral",
-      "tokio_place": "Kyoto 1582"
+      "tokio_place": "Kyoto 1582",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.45
+      }
     },
     {
       "scene_id": 3,
@@ -87,18 +95,25 @@
       "type": "setup",
       "duration_seconds": 60,
       "narration": "I sit on a step and open my notebook to the oldest line. March, 1581. The chronicle of Oda Nobunaga records a black man from a land of Christians, brought to Kyoto by the Jesuits. He looks twenty-six or twenty-seven. His skin is black as an ox, and his strength is that of ten men. A Jesuit letter says the crowds that came to see him were so thick that the door of the priests' house was broken. Where he was born, no record of his own time says. I mark that blank.",
-      "image_prompt": "Daylight view of the wooden gate and front wall of a Japanese-style Jesuit residence in Kyoto in March 1581: a dense crowd of ordinary townspeople in plain kosode, merchants, women and children, pressing against the gate from the street, one gate door leaf cracked and hanging off its hinge, people on tiptoe craning their necks. Standing above the crowd at the back, a very tall Black African man (not Japanese) seen only from behind, a full head taller than everyone around him, broad-shouldered, very deep dark brown-black skin on his neck, short, close-cropped, tightly coiled natural black hair covering his whole scalp evenly (his forehead and crown are NOT shaved and he has NO topknot, NO dreadlocks, NO bun, unlike every Japanese man of the time), in a plain dark indigo kosode and hakama, carrying NO sword and NO weapon of any kind (empty sash, empty hands; this is March 1581, before any lord has armed him), his face turned away from the camera toward the house. In the far background only low one- and two-storey wooden townhouses with tiled roofs and soft hills in haze: no tall buildings, no towers, no flat-roofed blocks, nothing modern. Bright cool spring light, a sense of astonishment and noise, the camera at street level. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "image_prompt": "Daylight view of the wooden gate and front wall of a Japanese-style Jesuit residence in Kyoto in March 1581: a dense crowd of ordinary townspeople in plain kosode, merchants, women and children, pressing against the gate from the street, one gate door leaf cracked and hanging off its hinge, people on tiptoe craning their necks. Standing above the crowd at the back, a very tall Black African man (not Japanese) seen only from behind, a full head taller than everyone around him, broad-shouldered, very deep dark brown-black skin on his neck, short, close-cropped, tightly coiled natural black hair covering his whole scalp evenly (his forehead and crown are NOT shaved and he has NO topknot, NO dreadlocks, NO bun, unlike every Japanese man of the time), in a plain dark indigo kosode and hakama, carrying NO sword and NO weapon of any kind (empty sash, empty hands; this is March 1581, before any lord has armed him), his face turned away from the camera toward the house. In the far background only low one- and two-storey wooden townhouses with tiled roofs and soft hills in haze: no tall buildings, no towers, no flat-roofed blocks, nothing modern. Bright cool spring light, a sense of astonishment and noise, the camera at street level. Photorealistic live-action cinematic film still, shot on a cinema camera, natural skin texture and fabric detail, real daylight; NOT a digital painting, NOT an illustration. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
       "ken_burns": "pan_left",
-      "character_ref": "yasuke"
+      "character_ref": "yasuke",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.44
+      }
     },
     {
       "scene_id": 5,
       "type": "rising_action",
       "duration_seconds": 60,
       "narration": "Nobunaga is curious. The Jesuit writers say he doubted the colour was real, and had the man scrubbed to see whether ink would come off. It did not. One Jesuit wrote that year that the man spoke a little Japanese, and that Nobunaga liked to talk with him. That is almost all the record says about the two of them. As I read it, a powerful man was entertained, and a stranger was looked at. What the stranger thought of being looked at, no one wrote down.",
-      "image_prompt": "Interior of a large audience hall in a Kyoto temple in 1581, warm daylight through paper screens falling across tatami: Oda Nobunaga, a slender medium-built Japanese warlord in his late forties with a long oval face, prominent nose, sharp intense eyes, a light sparse moustache and small chin beard, a shaved sakayaki forehead and a short compact chasen-mage tuft tied at the rear of the crown, only a few centimetres long and leaning backward about 45 degrees, barely visible above his head (NOT an upright bun or spike on top of the head), in a plain pale kosode with no armor, sits on a raised platform on the right side of the frame, leaning forward with open, intense curiosity, eyes fixed on a very tall man standing in the left foreground seen mostly from behind and slightly from the side, a full head taller than Nobunaga's retainers kneeling along the wall, a Black African man (not Japanese) in his late twenties with very deep dark brown-black skin, broad shoulders, short, close-cropped, tightly coiled natural black hair covering his whole scalp evenly (his forehead and crown are NOT shaved and he has NO topknot, NO dreadlocks, NO bun, unlike every Japanese man of the time), a short neatly trimmed beard just visible at the edge of his jaw, plain dark indigo kosode and hakama, carrying NO sword and NO weapon of any kind (empty plain sash, empty hands; Nobunaga has not yet given him anything). Nobunaga is not small or weak: his authority shows in his gaze and his posture. The tall man's face is turned away, only the edge of his cheek visible. Solemn, charged, painterly film still. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "image_prompt": "Interior of a large audience hall in a Kyoto temple in 1581, warm daylight through paper screens falling across tatami: Oda Nobunaga, a slender medium-built Japanese warlord in his late forties with a long oval face, prominent nose, sharp intense eyes, a light sparse moustache and small chin beard, a shaved sakayaki forehead and a short compact chasen-mage tuft tied at the rear of the crown, only a few centimetres long and leaning backward about 45 degrees, barely visible above his head (NOT an upright bun or spike on top of the head), in a plain pale kosode with no armor, sits on a raised platform on the right side of the frame, leaning forward with open, intense curiosity, eyes fixed on a very tall man standing in the left foreground seen mostly from behind and slightly from the side, a full head taller than Nobunaga's retainers kneeling along the wall, a Black African man (not Japanese) in his late twenties with very deep dark brown-black skin, broad shoulders, short, close-cropped, tightly coiled natural black hair covering his whole scalp evenly (his forehead and crown are NOT shaved and he has NO topknot, NO dreadlocks, NO bun, unlike every Japanese man of the time), a short neatly trimmed beard just visible at the edge of his jaw, plain dark indigo kosode and hakama, carrying NO sword and NO weapon of any kind (empty plain sash, empty hands; Nobunaga has not yet given him anything). Nobunaga is not small or weak: his authority shows in his gaze and his posture. The tall man's face is turned away, only the edge of his cheek visible. Solemn, charged. Photorealistic live-action cinematic film still, shot on a cinema camera, natural skin texture and fabric detail, real daylight; NOT a digital painting, NOT an illustration. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
       "ken_burns": "zoom_in",
-      "character_ref": "nobunaga"
+      "character_ref": "nobunaga",
+      "zoom_anchor": {
+        "multi_person": true
+      }
     },
     {
       "scene_id": 6,
@@ -118,7 +133,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "surprised",
-      "tokio_place": "Kyoto 1582"
+      "tokio_place": "Kyoto 1582",
+      "zoom_anchor": {
+        "x": 0.22,
+        "y": 0.6
+      }
     },
     {
       "scene_id": 8,
@@ -136,7 +155,11 @@
       "narration": "Next I read a diary entry by a man who writes as an eyewitness. Matsudaira Ietada, a retainer of Tokugawa Ieyasu, notes that in the spring of 1582, as Nobunaga rides home from destroying the Takeda, a black man is in his train, a gift from the missionaries. His body is black as ink. He stands six shaku and two bu, about six feet, or 182 centimetres, though some read the figure as slightly taller. And Ietada gives his name: Yasuke. It is the clearest source for the name that we have.",
       "image_prompt": "A country road in central Japan on the march home from the Takeda campaign in May 1582, wide late-afternoon view: green forested hills, a pale dust-covered dirt road winding through them, and a small column of about a dozen riders and baggage porters seen from far away moving along it, with one very tall man walking among the porters, a full head taller than the men next to him, seen tiny and from behind, a Black African man (not Japanese) with very deep dark brown-black skin and short close-cropped natural black hair (no shaved forehead, no topknot, unlike the Japanese men around him), plain dark indigo kosode and hakama, a short gold-sheathed hip sword at his waist. Soft golden light, a thin haze of road dust, calm, travelling, painterly film still. No castle, no tower, no banners. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
       "ken_burns": "pan_left",
-      "character_ref": "yasuke"
+      "character_ref": "yasuke",
+      "zoom_anchor": {
+        "x": 0.51,
+        "y": 0.75
+      }
     },
     {
       "scene_id": 10,
@@ -156,7 +179,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Kyoto 1582"
+      "tokio_place": "Kyoto 1582",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.55
+      }
     },
     {
       "scene_id": 12,
@@ -185,7 +212,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "moved",
-      "tokio_place": "Kyoto 1582"
+      "tokio_place": "Kyoto 1582",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.45
+      }
     },
     {
       "scene_id": 15,
@@ -205,7 +236,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "moved",
-      "tokio_place": "Kyoto 1582"
+      "tokio_place": "Kyoto 1582",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.5
+      }
     },
     {
       "scene_id": 17,
@@ -216,7 +251,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "writing",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.8,
+        "y": 0.62
+      }
     },
     {
       "scene_id": 18,
@@ -227,7 +266,11 @@
       "ken_burns": "pan_right",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.6
+      }
     },
     {
       "scene_id": 19,
@@ -238,7 +281,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "moved",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.55,
+        "y": 0.62
+      }
     },
     {
       "scene_id": 20,
@@ -249,7 +296,16 @@
       "ken_burns": "zoom_out",
       "character_ref": null,
       "tokio_expression": "neutral",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.6
+      }
     }
-  ]
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep090-BGM-intro.mp3",
+    "main": "BGM/ep069-BGM-main.mp3",
+    "outro": "BGM/ep091-BGM-outro.mp3"
+  }
 }
