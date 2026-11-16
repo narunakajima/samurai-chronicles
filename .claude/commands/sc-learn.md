@@ -214,6 +214,7 @@ SC 本編の `scheduled_at` に**公開予定**でアップロードする。シ
    ```
 2. 内容だけ確認したいときは（通信しない）: `cd learning && python3 learn_upload.py ep106 --dry-run`
 3. 初回の認証と Google Cloud の準備は `learning/YOUTUBE_SETUP.md`。
+4. **Muse 経由の承認に `upload=yes` が付いているとき**（`/sc-new` の「アップロードの起動」。`re` がこの STEP 4 の `needs_decision`（`step=学習版 完了`）を指すとき）は、1 の公開 OK の記録を終えたあと、`sc-upload` を Skill ツールで呼ぶ（なるさんが `/sc-upload` を呼ぶ必要はない）。
 
 **関連動画は API では設定できない**（Studio のパソコン版のみ。同じチャンネルの動画にしか設定できない）ので、Chrome で行う。
 ショートの説明欄の URL は、クリックできないことがあるので、本編への誘導は関連動画で行う。
