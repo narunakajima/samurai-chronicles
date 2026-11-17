@@ -215,3 +215,4 @@
 {"ts": "2026-11-17T13:20:16+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep131", "step": "1", "result": "ok", "retries": 0, "note": "暦の段落を日本の暦用に変更（英文が日本の暦のため）"}
 {"ts": "2026-11-17T16:53:41+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "学習版", "result": "ok", "retries": 0, "note": "ショートのimage_sceneがimages_shortsに無く1回やり直し"}
 {"ts": "2026-11-17T18:10:55+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "学習版確認OK", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-17T18:13:34+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "upload", "result": "ok", "retries": 0, "note": "SC本編・学習版を予約"}
