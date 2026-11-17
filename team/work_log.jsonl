@@ -198,3 +198,5 @@
 {"ts": "2026-11-17T10:46:14+09:00", "kind": "call", "agent": "sc-historian", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
 {"ts": "2026-11-17T10:46:19+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep131", "step": "3A", "result": "ok", "retries": 0, "note": "❌1(boots)・⚠️要修正多数(S06/S07/S11/S12/S13/S14)を自動修正"}
 {"ts": "2026-11-17T10:46:44+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep131", "source": "qa", "severity": "major", "text": "3A: S11 boots(❌)、沼田家記の記述を断定/Tokio目撃で裏づけ(S06/S11/S12)、S13 across to Bungo・that afternoon、S14 granite、S07 only を修正"}
+{"ts": "2026-11-17T10:49:54+09:00", "kind": "call", "agent": "sc-historian", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
+{"ts": "2026-11-17T10:50:01+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep131", "step": "5-0", "result": "ok", "retries": 0, "note": "小次郎・武蔵とも月代なし総髪、顔は年齢不詳。S01/S07/S11/face反映"}
