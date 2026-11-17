@@ -1,0 +1,254 @@
+{
+  "episode_id": "ep131",
+  "episode_title": "The Real Reason Sasaki Kojiro Had to Lose to Miyamoto Musashi — What the Winner's Records Left Out",
+  "youtube_title": "The Real Reason Sasaki Kojiro Had to Lose to Miyamoto Musashi — What the Winner's Records Left Out",
+  "youtube_description": "The duel at Funashima is usually told as a late arrival, a carved oar and a single blow, in records kept by the winner's family and the winner's school. A rival record, kept by the family that held Moji Castle across the strait, tells it differently, and does not agree on how Sasaki Kojiro died. If you stood on that castle wall, which record would you trust: the stone's, or the castle's?\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. This time he files his dispatch from Moji Castle in 1612, on the day a later biography gives for the duel across the strait.\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. The Kokura monument inscription for Miyamoto Musashi, raised by his adopted son Miyamoto Iori, 1654\n2. \"Numata-ke-ki\" (the Numata family record), compiled around 1672, the account kept by the family of the Moji Castle warden Numata Nobumoto\n3. \"Bukoden\" (1755) and \"Niten-ki\" (1776), biographies of Musashi from the Niten Ichi-ryu school in Kumamoto\n4. Miyamoto Musashi — \"Gorin no Sho\" (The Book of Five Rings), 1645\n5. Kumamoto University Library bulletin \"Tokobara\" no. 34 — \"Isetsu 'Ganryujima'\" (an alternative account of Ganryujima)\n\n#SasakiKojiro #MiyamotoMusashi #Ganryujima #Samurai #EdoPeriod #JapaneseHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Sasaki Kojiro",
+    "Miyamoto Musashi",
+    "Ganryujima",
+    "Funashima",
+    "Musashi vs Kojiro",
+    "Real reason Kojiro lost",
+    "Samurai duel",
+    "Numata family record",
+    "Moji Castle",
+    "Edo period",
+    "Japanese history",
+    "Samurai Chronicles",
+    "Japan history documentary",
+    "Japanese history channel"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "narrator": "tokio",
+  "tokio_scenes": [
+    1,
+    2,
+    6,
+    11,
+    13,
+    15,
+    17,
+    18,
+    19,
+    20
+  ],
+  "tokio_talk": true,
+  "tokio_glow": true,
+  "tokio_glow_gain": 0.4,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 10,
+  "teaser_narration": "Out in the strait, a small island sits dark in the haze. Below the castle wall, a man runs for the gate without looking back. One record says he has just won Japan's greatest duel. Why is he running?",
+  "shorts_narration": "1612. One record says the winner of Japan's greatest duel fled to a castle, chased by the loser's students. Other records say one blow ended it. Which ending survived? Sasaki Kojiro.",
+  "shorts_hook_lines": [
+    "ONE BLOW?",
+    "TWO ENDINGS.",
+    "WHOSE RECORD SURVIVED?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of the face of a lean Japanese swordsman, the man the earliest records name only as Ganryu, his age impossible to read, strong composed features, a steady dark gaze looking straight into the camera, his hair drawn up into a plain topknot with the crown shaved, his face half in shadow with a thin rim of cold silver light from the sea strait along one cheek and his brow, a plain dark blue kimono collar at the frame edge, a pale hazy sea and one small dark island blurred behind him in a grey dawn. Calm, proud, unreadable, no weapon in view. Vertical portrait composition, face filling the centre and upper half of the frame, no text.",
+  "thumbnail_prompt": "Cinematic dusk scene on a hillside above a strait: in the left foreground a tall upright slab of grey stone with a completely blank polished face, sharply lit by low warm orange sun from the right, a few old pines around its base; across a wide stretch of grey-blue water in the right-centre, one small dark island silhouette in haze under a vast red-orange and slate sky. No people, no swords, no boats. The lower right quarter of the frame is kept dark and empty. High-contrast dramatic lighting, deep red and amber against steel blue. No text in the image itself (the title text overlay is added separately), no writing anywhere.",
+  "remake_of": "ep022",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "This is Tokio Kamiya, with a dispatch from Moji Castle, 1612, facing a small island across the strait. A duel is fought there today; I cannot see it. The winner's side ends it in one blow; another record does not.",
+      "image_prompt": "Ultra-wide cinematic view from the top of a weathered grey stone castle wall at dusk, looking out over a wide grey-blue sea strait toward one small dark low island sitting in the haze far across the water, thin warm orange light on the horizon behind it, a low band of mist on the water. In the lower left foreground the plain wooden gate of a hilltop fortress with a tiled roof, and a single lone man seen strictly from behind, in a worn dark kimono with his untidy hair loosely tied, caught mid-stride as his front foot lifts to run in through the open gate, his face never visible, one or two blurred figures in the dark gateway ahead of him. The right half of the frame is open sea and sky, left open for slow camera movement. Cool steel-blue shadow against warm amber, strong depth, tense and quiet. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Moji 1612"
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I am a correspondent, or I was, until my grandfather's brass watch passed to me. It carries me to one day of Japan's past at a time. I may watch, I may speak, I may not change a thing. Today is the thirteenth day of the fourth month, Keicho 17, the date a biography written some 160 years later gives for the duel. I stand on the wall of Moji Castle, a Hosokawa clan lookout on the strait. Its warden is Numata Nobumoto. Remember that name; his family kept a record of this day.",
+      "image_prompt": "Mid-height view along the top of a hilltop fortress wall on the northern shore of Kyushu in the morning: a stone-walled terrace with a low plastered parapet, a plain wooden gatehouse with a grey tiled roof beside it, long single-storey storehouses behind, and one castle guard in plain dark kosode with a short sword at his waist standing at the parapet seen from behind and to the left. Beyond the parapet the wide strait glitters pale grey-blue, with a small dark island far off in morning haze and the low green hills of the far shore. Calm, expectant, early light, cool blue shadows. The right third of the frame stays empty and quiet. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Moji 1612"
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "The island is called Funashima, Ship Island. From the wall I see a low dark shape in the haze, in the strait between the Kyushu shore, where Kokura lies, and the main island of Honshu. One day it will carry another name, Ganryujima, after the loser, whom the oldest record calls only Ganryu. Nothing is built on it. Nobody lives there. I have a problem, and I want to say it plainly: everything I know about today comes from people who were not here, writing at very different times.",
+      "image_prompt": "Wide calm view across a grey-blue sea strait at mid-morning: one small low uninhabited island with a few wind-bent pines and a pale sandy fringe, sitting alone in thin haze about a mile off, a single small wooden fishing boat with one man standing at the stern far out on the water, the distant blue hills of the far shore, a pale sky. No buildings on the island, no people on the island. Quiet, distant, slightly eerie, with soft light and wide empty water. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I open my notebook to the oldest record. It is a stone monument, carved in 1654 in Kokura, forty-two years from now. Miyamoto Iori raised it, as Musashi's adopted son. It says the two men met at the same moment, that Musashi struck with a wooden blade, and that the man it names only as Ganryu fell. No late arrival. No carved oar. No shouting across the water. I note who paid for the stone, and I note what it leaves out.",
+      "image_prompt": "Morning light on a hillside above a castle town: a tall upright slab of grey stone on a low stone base, its polished front face completely blank and smooth with only faint weathering and soft shadows, standing among old pines, a freshly swept gravel path leading to it, and one man in formal dark hakama seen strictly from behind standing before it with his head slightly bowed. The distant town roofs and the sea strait in pale haze far below. Solemn, quiet, warm low sun from the left, long shadows. Low plastered roofs only, nothing modern. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The second record is younger, from around 1672. It was kept in the Numata family, the family of this castle's warden. I think it matters who they were. They were not Musashi's heirs, and they were not Kojiro's. They served the Hosokawa, and in their own telling this castle has a part in the day. That gives them no reason to flatter Musashi, and every reason to remember their own part. I weigh both. And their story does not start on the island. It starts in Kokura, with an argument between students.",
+      "image_prompt": "Interior of a small samurai-household study in warm lantern light at night: a low dark wooden desk with a brush resting across an inkstone, a thick stitched bundle of folded handwritten pages tied with cord, a second thinner bundle beside it, and a sliding paper screen behind glowing softly. The pages show only faint blurred brush strokes that form no readable characters. Intimate, scholarly, quiet, painterly still life with deep amber and shadow. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "A sentry on the wall sees my notebook and takes me for a travelling merchant. I let him. He says the talk in Kokura town these weeks is about two fencing teachers. Their students cannot stop arguing over whose master is stronger, and now the masters must settle it. He grins. Students, he says, always start the fights their teachers must finish. I ask who will win. He shrugs and points at the island. I note that he is repeating talk, not news. It is also how the Numata record begins.",
+      "image_prompt": "Medium view of a middle-aged castle sentry in a plain dark kosode with a short sword at his waist, leaning one forearm on the plastered parapet of a hilltop fortress wall in bright late-morning light, grinning with a slight shrug and pointing out toward a small dark island in the haze across the strait, shown in three-quarter profile on the left side of the frame. Behind him a wooden gatehouse with a grey tiled roof. Warm, human, wry, with the wide sea behind. The right third of the frame stays empty and bright. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "surprised",
+      "tokio_place": "Moji 1612"
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Now a problem with the loser himself. The oldest record gives only the name Ganryu. The Numata record gives only Kojiro. The surname Sasaki first joins Kojiro in a biography of 1776, and some scholars wonder whether it came from a stage play of 1737. As for age, that same biography says eighteen. It also names his teacher as a master of the mid-1500s, which would make him an old man, perhaps near seventy. So the beautiful young genius may be a later picture. I mark both readings. I do not choose.",
+      "image_prompt": "A lone swordsman with a very long sword slung at his back, seen from far away and strictly from behind, walking along a narrow path through dense pale morning mist beside a still pond, his silhouette soft and half dissolved, his age impossible to tell, his face never visible, a few bare pine trunks fading into the white mist. Almost monochrome grey and cool white with only a faint warm gold in the sky. Mysterious, hushed, painterly cinematic film still. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Here is a silence I find hard to ignore. Near the end of his life Musashi wrote the Book of Five Rings, in 1645. In it he says he won more than sixty contests and never lost. As far as I can find, it names neither Ganryu nor this island. He left no account of the most famous fight of his life. The people who did write it were his adopted son, and later the schools that carried his name. I read no motive into that. I only note where the story's first pages came from.",
+      "image_prompt": "Close view of a quiet plain tatami room in soft grey window light: a single plain wooden practice sword lying across a closed bound book with a blank cloth cover, a flat inkstone and an unused brush beside them on a low wooden stand, one paper screen partly open on a bare garden of raked gravel. No people. Austere, silent, contemplative, cool light with a faint warm glow on the wood. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Hours pass on the wall, and nothing happens that I can report. Sentries change. The tide turns in the strait. A boy brings water, and an officer tells him to keep his voice down. Everyone looks toward the island, and no one can see more than I can. I begin to understand the job. It is not seeing the thing itself. It is seeing the people waiting for it. Whatever is decided out there will reach this wall, if it reaches it at all, by sound and by rumour.",
+      "image_prompt": "Bright midday view along a hilltop fortress parapet: five castle guards and attendants in plain dark kosode seen from behind and in profile, standing in a loose row at the plastered parapet, one shading his eyes with a flat hand, one holding a wooden water bucket, all looking out across the glittering open strait toward one small dark island in the haze. Hard noon light, short shadows, tense stillness, long wall receding into depth. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "I want to be exact about the story you probably know. A late arrival. A carved oar. A scabbard thrown into the sea. The words, Kojiro, you have lost. None of it is in the stone of 1654, and none of it is in the Numata record. It appears in the biographies written by Musashi's own school, the fullest in 1776, about 160 years after today. I am not saying it is false. I am saying nobody here wrote it down. I close the notebook, because behind me something is happening at the gate.",
+      "image_prompt": "A quiet empty tatami room at dusk with three objects laid out on the bare floor in a pool of warm lamplight: a long plain wooden oar carved to a rough blade at one end lying on its side, a black lacquered sword scabbard lying beside it, and a stack of three thick stitched old books with blank covers, the rest of the room in deep soft shadow, a paper screen with the last blue light behind. No people. Still, symbolic, restrained, warm lamp glow against cool blue. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Then a commotion starts at the gate. I turn. Men hurry through, boots in the dust, voices low and fast. I see backs and turned heads. I do not see a face I can name. This is the hour the Numata record has been waiting for, and I must be careful. The record says one of these men is Musashi. I did not see his face, and I will not say it was he. I did not see the island, and I did not see the fight. I saw that someone is in a hurry to be inside these walls.",
+      "image_prompt": "Interior view from just inside the plain wooden gate of a hilltop castle in hard afternoon light: a small knot of five men in dusty travel kimono hurrying in through the open gate in a swirl of dust, their backs and turned heads to the camera, faces hidden, one with long untidy hair loosely tied, two castle guards with staffs stepping aside at the gate posts, a strip of bright sea visible through the gateway behind them, sense of motion and urgency. Dramatic side light, long shadows. The right third of the frame stays empty. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "surprised",
+      "tokio_place": "Moji 1612"
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "So here is what the Numata record says happened out on the island, and I repeat it only as its claim. Musashi had promised to come alone, and brought his students. Kojiro came alone. He fell, and then, says the record, he drew breath again. At that moment Musashi's students beat him to death. The stone and the later biographies have none of this; for them it ends with one blow. I did not see it. The wall did not see it either. Weigh it for yourself.",
+      "image_prompt": "The small dark uninhabited island seen from far across the strait under a heavy low bruised sky of slate grey and deep violet, a single narrow shaft of cold pale light breaking through the cloud and falling on the grey water in front of it, the island a black silhouette with a few bent pines, dark choppy water. No figures, no boats, no buildings. Ominous, distant, mournful, painterly cinematic film still. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The record goes on. Kojiro's students go after Musashi, and he runs into this castle. Nobumoto shelters him, then has him escorted across to Bungo. If it is true, the man who won Japan's most famous duel spent that afternoon behind this gate, in someone else's care. I look at the gate now. It is shut. A guard leans against it. I cannot see inside, and I cannot tell you what happened behind it. I can tell you the Numata family had every reason to remember it, and every reason to be proud of it.",
+      "image_prompt": "Close view of the heavy closed double doors of a castle gatehouse, dark weathered wood with plain iron bands and a thick iron bar, a lone castle guard in plain dark kosode leaning on a staff beside the closed doors in warm low afternoon light, a long soft shadow of the gatehouse roof falling across a dusty packed-earth courtyard, a stone wall in the left background. Quiet, secretive, watchful, warm amber and deep shadow. The right third of the frame stays empty and dark. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Moji 1612"
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Let me weigh the stone. Iori owed his father honour, and a monument is not a courtroom. It is carved to praise. A flight to a castle gate is not what a family chooses to cut into granite. I do not say the stone lies. I say it was made to honour one man, and what honours him is what it keeps. The Numata record has its own purpose, a family wanting its castle in the story. Neither writer was here. Neither can be asked. Each kept what served the people they wrote for.",
+      "image_prompt": "Close view of a stone mason's iron chisel and wooden mallet resting at the foot of a tall freshly cut upright slab of pale grey stone, fine pale stone dust and small chips scattered on the ground, the smooth blank face of the slab catching warm low evening sun, a neat stack of unused rough stone blocks beside it, soft out-of-focus pine trees behind. No people. Quiet, solemn, craftsmanlike, golden hour light. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "By evening the strait turns the colour of pewter and the island is only a shadow again. I find I am thinking about the one thing every record agrees on. A man died on that island today. Whether it took one blow or something more, he did not come home. I carry no record of how he was mourned. I stand on the wall until the light goes. I may watch, and I may not touch. For once, I am glad I could not see it.",
+      "image_prompt": "Dusk on the empty fortress wall: the plastered parapet and stone terrace deserted, one small iron lantern just lit and glowing amber on a post at the left, beyond it the wide strait the colour of pewter with a thin line of orange light low on the horizon and the small dark island a faint shadow in the mist. No people. Quiet, mournful, restrained, cool blue-grey with one warm point of light. The right third of the frame stays dark and empty. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Moji 1612"
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "So the island is named for the loser, and the story for the winner. In time sailors will call the little island Ganryu, and travellers will cross to stand where he fell. But the details everyone carries in their heads were written by the winner's school. I find that odd, and a little fair. The loser kept the island. The winner kept the telling. I walk down from the wall with that thought, and I do not know who got the better part.",
+      "image_prompt": "First light on a small uninhabited island at low tide: a pale sandy shore with a wet shining tidal flat, a few wind-bent pines, low grey rocks, calm sea of soft pink and silver, one small distant wooden fishing boat leaving a thin wake, the pale hills of the far shore in haze. No buildings, no people on the island. Peaceful, open, quietly moving, painterly cinematic film still. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Back in my own century, I try to say how a record becomes the standard story. A stone is carved, and stones last. A school copies its master's biography, and copies survive. A stage play in 1737 may have lent the loser a surname, and a novelist in 1935 gave him a face. I think Kojiro remains the genius who lost in a single stroke because the records from the winner's side were the ones kept, copied and retold until they became the standard.",
+      "image_prompt": "A present-day waterfront promenade on the Kyushu shore of the Kanmon Strait at dusk: a smooth stone embankment with a plain railing, a few distant strollers seen small and from behind, the wide strait with one long dark cargo ship far out, a small dark island silhouette on the horizon under a soft pink and grey sky, a glimpse of a distant suspension bridge. No signs, no text. Reflective, calm, painterly film still. The right third of the frame stays empty. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "tokio_expression": "writing",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. I should be fair to the winner's side. A later biography is not worthless because it came late; it may hold memories that no stone could carry. And the Numata record may be coloured by pride. Historians cannot rule either story out. So I will not tell you that Kojiro survived the first blow. I will tell you that one record says he rose again, and that the others are silent on it. I think a fair account lets both stand, and says whose voice is whose.",
+      "image_prompt": "A present-day quiet study table in soft window light: two old reproduction bound books lying open side by side, their pages showing only blurred lines that form no readable characters, a small desk lamp, a cup of green tea, and a pair of reading glasses resting between the books, a window with soft grey evening light behind. No people. Thoughtful, balanced, warm lamp light against cool window light. The right third of the frame stays empty. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. I think the lesson here is not about Kojiro alone. In any dispute, the story that gets carved, printed and taught is the story of the people who could afford to carve, print and teach it. Kojiro left no writing in any record I carry. So when you meet a famous loser, ask who wrote the ending, and who was never asked. I will ask that question at every dispatch, and I hope it lasts longer than any monument.",
+      "image_prompt": "Interior of a present-day quiet school classroom in the late afternoon: a wooden desk by a window with an open history textbook whose pages show only blurred abstract illustrations and no readable writing, a blackboard at the back wiped clean, golden sun streaming across the floor, empty chairs. No people. Gentle, reflective, hopeful, warm golden light. The right third of the frame stays empty. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Present"
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "I do not know who Kojiro was, how old he was, or how his day ended. I know whose records tell it one way, and whose tell it another. I think the real reason he had to lose is that he left no record of his own. Subscribe, and the next dispatch will find you. The watch is ticking. Until the next report. Tokio Kamiya, reporting.",
+      "image_prompt": "A closing view of the small island and the strait at sunset from a present-day hillside: the calm water lit with a long path of gold and rose light leading to the dark island, a single small boat far out, the soft glow of the sky, warm and peaceful, nobody in view. Open, quiet, quietly moving, painterly cinematic film still. The right third of the frame stays empty. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos or patterns on flags or banners.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Present"
+    }
+  ]
+}
