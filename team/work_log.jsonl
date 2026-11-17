@@ -193,3 +193,8 @@
 {"ts": "2026-11-17T10:36:57+09:00", "kind": "applied", "agent": "sc-writer", "episode": "ep131", "ids": ["SC2611-01", "SC2611-02"], "skipped": [], "reason": ""}
 {"ts": "2026-11-17T10:37:37+09:00", "kind": "call", "agent": "sc-writer", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
 {"ts": "2026-11-17T10:37:43+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep131", "step": "2A", "result": "ok", "retries": 0, "note": "20シーン・フォーマットOK"}
+{"ts": "2026-11-17T10:42:30+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "3C", "result": "ok", "retries": 0, "note": "BGM: Freesound新規は終盤1曲のみ取得(合成/ambient寄りで不採用)、ライブラリ9候補から intro=ep103 main=ep077 outro=ep076 選定; QA: ep095-mainに歌声疑い除外"}
+{"ts": "2026-11-17T10:42:30+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "3B", "result": "ok", "retries": 0, "note": "サムネ THE OTHER RECORD + Tokio合成"}
+{"ts": "2026-11-17T10:46:14+09:00", "kind": "call", "agent": "sc-historian", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
+{"ts": "2026-11-17T10:46:19+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep131", "step": "3A", "result": "ok", "retries": 0, "note": "❌1(boots)・⚠️要修正多数(S06/S07/S11/S12/S13/S14)を自動修正"}
+{"ts": "2026-11-17T10:46:44+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep131", "source": "qa", "severity": "major", "text": "3A: S11 boots(❌)、沼田家記の記述を断定/Tokio目撃で裏づけ(S06/S11/S12)、S13 across to Bungo・that afternoon、S14 granite、S07 only を修正"}
