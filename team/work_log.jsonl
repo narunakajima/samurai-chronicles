@@ -200,3 +200,10 @@
 {"ts": "2026-11-17T10:46:44+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep131", "source": "qa", "severity": "major", "text": "3A: S11 boots(❌)、沼田家記の記述を断定/Tokio目撃で裏づけ(S06/S11/S12)、S13 across to Bungo・that afternoon、S14 granite、S07 only を修正"}
 {"ts": "2026-11-17T10:49:54+09:00", "kind": "call", "agent": "sc-historian", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
 {"ts": "2026-11-17T10:50:01+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep131", "step": "5-0", "result": "ok", "retries": 0, "note": "小次郎・武蔵とも月代なし総髪、顔は年齢不詳。S01/S07/S11/face反映"}
+{"ts": "2026-11-17T11:17:13+09:00", "kind": "applied", "agent": "sc-art-director", "episode": "ep131", "ids": ["SC2611-03"], "skipped": [], "reason": ""}
+{"ts": "2026-11-17T11:17:39+09:00", "kind": "call", "agent": "sc-art-director", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
+{"ts": "2026-11-17T11:17:55+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep131", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL0。S11(本編・Shorts)の向きの食い違いを1回ずつ再生成"}
+{"ts": "2026-11-17T11:17:55+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep131", "source": "qa", "severity": "minor", "text": "5C: S11 image_prompt が『城内から見て入ってくる』と『背中を向ける』で矛盾し、男たちが海へ走る絵になった(アイリスが作り直し)"}
+{"ts": "2026-11-17T11:19:51+09:00", "kind": "call", "agent": "sc-manager", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
+{"ts": "2026-11-17T11:19:59+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep131", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可（サムネ・画像・BGM・風体とも問題なし）"}
+{"ts": "2026-11-17T11:20:35+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor を Tokio 10シーン分手書き（character_ref全null）"}
