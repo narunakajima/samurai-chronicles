@@ -299,5 +299,16 @@
   "opening_video": {
     "main": "ep131_opening_main.mp4",
     "shorts": "ep131_opening_shorts.mp4"
+  },
+  "youtube_url": "https://youtu.be/LR4R59zxuT4",
+  "shorts_url": "https://youtu.be/V6ZfVUvsjt0",
+  "scheduled_at": "2026-11-26 03:00",
+  "related_links": {
+    "channel": "SC",
+    "main_id": "LR4R59zxuT4",
+    "main_publish_at": "2026-11-26 03:00",
+    "short_id": "V6ZfVUvsjt0",
+    "short_publish_at": "2026-11-26 03:00",
+    "attach_main_id_to_short": "LR4R59zxuT4"
   }
 }
