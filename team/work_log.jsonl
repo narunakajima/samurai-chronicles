@@ -209,3 +209,8 @@
 {"ts": "2026-11-17T11:20:35+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor を Tokio 10シーン分手書き（character_ref全null）"}
 {"ts": "2026-11-17T11:25:45+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "muse", "result": "ok", "retries": 0, "note": "Muse冒頭動画(本編・Shorts各10秒)納品を取り込み、opening_video 設定"}
 {"ts": "2026-11-17T12:06:03+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "進行", "result": "ok", "retries": 0, "note": "STEP6動画生成に約40分。冒頭素材の暗転を報告"}
+{"ts": "2026-11-17T13:16:11+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "本編確認OK", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-17T13:19:47+09:00", "kind": "applied", "agent": "sc-learn-writer", "episode": "ep131", "ids": ["SC2611-08", "SC2611-09"], "skipped": [], "reason": ""}
+{"ts": "2026-11-17T13:20:10+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
+{"ts": "2026-11-17T13:20:16+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep131", "step": "1", "result": "ok", "retries": 0, "note": "暦の段落を日本の暦用に変更（英文が日本の暦のため）"}
+{"ts": "2026-11-17T16:53:41+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "学習版", "result": "ok", "retries": 0, "note": "ショートのimage_sceneがimages_shortsに無く1回やり直し"}
