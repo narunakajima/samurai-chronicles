@@ -183,3 +183,10 @@
 {"ts": "2026-11-16T18:23:34+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep124", "step": "学習版進行", "result": "ok", "retries": 0, "note": "学習版: 冒頭動画なし。台本→音声→動画→サムネ→ショート一発で完了"}
 {"ts": "2026-11-16T19:05:00+09:00", "kind": "call", "agent": "sc-community", "session": "d8740ff1-daa1-4e88-afac-e693b3ee41f9"}
 {"ts": "2026-11-16T19:05:10+09:00", "kind": "work", "agent": "sc-community", "episode": "ep124", "step": "3.6", "result": "ok", "retries": 0, "note": "返信SC1件・学習版1件、見送り5件"}
+{"ts": "2026-11-17T10:28:47+09:00", "kind": "applied", "agent": "sc-planner", "episode": "ep131", "ids": [], "skipped": ["SC2611-04"], "reason": "STEP 1.5（問いゲート）のみで STEP 1 の補充候補がないため対象外。英語圏の根拠（英語版Wikipedia単独記事・Vagabond・Fate・ポケモンの日本名）は各案の『なぜ新しい視聴者が見つけるか』に記載"}
+{"ts": "2026-11-17T10:29:08+09:00", "kind": "call", "agent": "sc-planner", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
+{"ts": "2026-11-17T10:29:12+09:00", "kind": "work", "agent": "sc-planner", "episode": "ep131", "step": "1.5", "result": "ok", "retries": 0, "note": "問い3案作成（A/B/C、推しB）"}
+{"ts": "2026-11-17T10:29:51+09:00", "kind": "call", "agent": "sc-community", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
+{"ts": "2026-11-17T10:30:02+09:00", "kind": "work", "agent": "sc-community", "episode": "ep131", "step": "1.5", "result": "ok", "retries": 0, "note": "初見判定 B>C>A"}
+{"ts": "2026-11-17T10:31:04+09:00", "kind": "call", "agent": "sc-manager", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
+{"ts": "2026-11-17T10:31:22+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep131", "step": "1.5", "result": "ok", "retries": 0, "note": "推奨B（条件つき）、次点C。Tokioの目撃は争いのない事実に限り沼田家記は帰属つき"}
