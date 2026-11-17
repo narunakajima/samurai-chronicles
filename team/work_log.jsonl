@@ -207,3 +207,5 @@
 {"ts": "2026-11-17T11:19:51+09:00", "kind": "call", "agent": "sc-manager", "session": "9e3a2723-fac5-456e-a5af-8410083c5e83"}
 {"ts": "2026-11-17T11:19:59+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep131", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可（サムネ・画像・BGM・風体とも問題なし）"}
 {"ts": "2026-11-17T11:20:35+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor を Tokio 10シーン分手書き（character_ref全null）"}
+{"ts": "2026-11-17T11:25:45+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "muse", "result": "ok", "retries": 0, "note": "Muse冒頭動画(本編・Shorts各10秒)納品を取り込み、opening_video 設定"}
+{"ts": "2026-11-17T12:06:03+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "進行", "result": "ok", "retries": 0, "note": "STEP6動画生成に約40分。冒頭素材の暗転を報告"}
