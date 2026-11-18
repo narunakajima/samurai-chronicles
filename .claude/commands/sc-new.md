@@ -41,6 +41,14 @@ topics_queue.json から次のトピックを選び、動画生成まで一気�
 3. 回答は、Muse がチャットで選択肢を示してユーザーから受け、Slack に投稿する `from=muse / to=session / event=user_approval` の投稿だけを正規の回答として扱う（「Muse 経由の承認」参照）。セッションはステップ報告時と作業再開時に #cc-inbox と cc-reports の自スレッドを確認し、回答があれば取り込んで進める
 4. 完成動画の確認では、選択肢として「OK」「OK、続けてアップロードまで」「直したい点がある」を `needs_user` に含めること。アップロードまで進めてよいのは、承認に `upload=yes` が付いているときだけ
 
+**承認待ちポーリング待機（2026-11-18〜、ユーザー決定。LW・SC・KL共通）:**
+1. `needs_decision` を投稿したら、止まる前に承認待ちポーリングをバックグラウンドで起動し、その終了を待つ（セッションが自分で承認を見に行けない問題の対策。2026-11-18 に KL kl059 の STEP 1.5 で実機テスト成功: 判断待ち→承認→約2分で検知・自動再開）:
+   `python3 -I /Users/claude/lamp-whisper/tools/approval-watch.py watch --project SC --case <案件ID> --re <needs_decision投稿のts> --thread-ts <start投稿のts>`
+2. 監視は180秒間隔・上限3時間（スクリプトの既定値）。対象は #cc-inbox のトップレベル投稿と #cc-reports の自スレッド（スレッド側は iMac の slack.json に cc_reports_channel_id がある場合のみ働く。本線は #cc-inbox）
+3. プロセスが exit 0 で終わったら、結果ファイル `/tmp/lw-approval/<案件ID>-<re>.json` を読み、`answer`（`upload=yes` の有無を含む）を従来の「Muse 経由の承認」として取り込んで再開し、受領を #cc-reports に投稿する
+4. exit 3（タイムアウト）になったら、判断待ちのまま停止する（従来どおり、ユーザーの入力やステップ報告時の確認で取り込む）
+5. 承認カードは引き続き使わない。この待機は「ステップ報告時と作業再開時に確認する」取り込みの置き換えではなく、追加の経路である
+
 **合計目安: 約100〜130分**（確認待ち・再生成除く）
 **2026-08-04〜: 確認ポイントを3箇所→実質1箇所に統合。**
 STEP4（Google Driveへの移動・BGM本登録）はSTEP3完了直後ではなく、STEP5C後の統合確認で
