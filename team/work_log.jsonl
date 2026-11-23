@@ -255,3 +255,4 @@
 {"ts": "2026-11-23T10:01:08+09:00", "kind": "call", "agent": "sc-manager", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
 {"ts": "2026-11-23T10:09:02+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep125", "step": "学習版エスカレーション", "result": "ok", "retries": 0, "note": "切り出し照合の聞き違い(emperors→Empress)は防げない聞き違い。SHORT_CHECK_WORDS 4→5に拡大(道具側の修正)"}
 {"ts": "2026-11-23T11:34:57+09:00", "kind": "feedback", "agent": "sc-learn-writer", "episode": "ep125", "source": "qa", "severity": "minor", "text": "導入で「金色に輝く建物」が3回とも「金箔に」等と誤読され残った。きんいろ表記に変更(進行が修正)"}
+{"ts": "2026-11-23T15:19:29+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep125", "step": "進行", "result": "retry", "retries": 0, "note": "動画生成を冒頭動画の到着前に実行(45分の無駄)、承認・進捗催促の取り込み遅れ、学習版ビルドの重複起動と停止の見落とし、区切りごとのコミット漏れ。いずれも手順書・Stopフック・記憶で対策済み"}
