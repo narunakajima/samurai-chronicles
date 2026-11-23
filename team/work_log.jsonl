@@ -216,3 +216,36 @@
 {"ts": "2026-11-17T16:53:41+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "学習版", "result": "ok", "retries": 0, "note": "ショートのimage_sceneがimages_shortsに無く1回やり直し"}
 {"ts": "2026-11-17T18:10:55+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "学習版確認OK", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-17T18:13:34+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep131", "step": "upload", "result": "ok", "retries": 0, "note": "SC本編・学習版を予約"}
+{"ts": "2026-11-23T04:45:34+09:00", "kind": "applied", "agent": "sc-planner", "episode": "ep125", "ids": [], "skipped": ["SC2611-04"], "reason": "STEP 1 補充の改善アクション。今回は STEP 1.5 のみで、ep125 は 2026-11-04 の補充（適用前）から来た回のため、適用と数えると効果判定が混ざる。英語圏の根拠は question file の①に参考として記載"}
+{"ts": "2026-11-23T04:45:54+09:00", "kind": "call", "agent": "sc-planner", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T04:46:03+09:00", "kind": "work", "agent": "sc-planner", "episode": "ep125", "step": "1.5", "result": "ok", "retries": 0, "note": "3案作成(推しB)"}
+{"ts": "2026-11-23T04:46:17+09:00", "kind": "call", "agent": "sc-community", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T04:46:27+09:00", "kind": "work", "agent": "sc-community", "episode": "ep125", "step": "1.5", "result": "ok", "retries": 0, "note": "初見判定 B>A>C"}
+{"ts": "2026-11-23T04:47:14+09:00", "kind": "call", "agent": "sc-manager", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T04:47:27+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep125", "step": "1.5", "result": "ok", "retries": 0, "note": "推奨B（問いを国内官職を捨て海外の称号を選んだのはなぜかに言い直し、答えを日本国王に一本化）。次点A。准三后は保持のため全ての肩書表現は禁止"}
+{"ts": "2026-11-23T04:52:15+09:00", "kind": "applied", "agent": "sc-writer", "episode": "ep125", "ids": ["SC2611-01", "SC2611-02"], "skipped": [], "reason": ""}
+{"ts": "2026-11-23T04:52:40+09:00", "kind": "call", "agent": "sc-writer", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T04:52:46+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep125", "step": "2A", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-23T04:56:44+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep125", "step": "3B", "result": "ok", "retries": 0, "note": "サムネイル生成+Tokio合成"}
+{"ts": "2026-11-23T04:56:44+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep125", "step": "3C", "result": "ok", "retries": 0, "note": "Freesound候補枯渇(既出除外)のためライブラリ3曲(ep071 intro/ep073 main/ep067 outro)"}
+{"ts": "2026-11-23T05:00:09+09:00", "kind": "call", "agent": "sc-historian", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T05:00:17+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep125", "step": "3A", "result": "ok", "retries": 0, "note": "❌2件・要修正⚠️多数を自動修正"}
+{"ts": "2026-11-23T05:01:00+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep125", "source": "qa", "severity": "minor", "text": "3A❌2件(S06年齢 数え37→満36、S18 six→five centuries)と要修正⚠️多数(S05年齢、S13牛車→輿、S19秀吉俗説、S17名の継承、題の非文)。年齢は満年齢に統一を"}
+{"ts": "2026-11-23T05:07:14+09:00", "kind": "call", "agent": "sc-historian", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T05:07:21+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep125", "step": "5-0", "result": "ok", "retries": 0, "note": "鹿苑寺肖像に基づき風体確定(ひげ・茶の法衣等)"}
+{"ts": "2026-11-23T05:21:15+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep125", "step": "5A", "result": "ok", "retries": 0, "note": "TTS 本編/teaser/shorts 完了"}
+{"ts": "2026-11-23T05:29:13+09:00", "kind": "call", "agent": "sc-art-director", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T05:31:34+09:00", "kind": "applied", "agent": "sc-art-director", "episode": "ep125", "ids": ["SC2611-03"], "skipped": [], "reason": ""}
+{"ts": "2026-11-23T05:32:09+09:00", "kind": "call", "agent": "sc-art-director", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T05:32:16+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep125", "step": "5C", "result": "retry", "retries": 0, "note": "S05絵画調→写実化、S02/S13鳥居・S12煙・S16金閣・S07二棟を再生成"}
+{"ts": "2026-11-23T05:41:31+09:00", "kind": "call", "agent": "sc-manager", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T05:43:52+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep125", "source": "manager", "severity": "major", "text": "STEP 2A: image_prompt 12シーンの末尾が 'Painterly cinematic film still.' で写真調の定型文になっておらず、S09・S10・S17 がイラスト調で生成され作り直しになった"}
+{"ts": "2026-11-23T05:43:52+09:00", "kind": "feedback", "agent": "sc-art-director", "episode": "ep125", "source": "manager", "severity": "minor", "text": "STEP 5C: Tokioシーンのzoom_anchorメモで同じtokio_placeの連続シーン(S01-02, S17-20)の左右がそろわず、S18の被写体位置もずれていた。イラスト調のS09・S10・S17も見逃した"}
+{"ts": "2026-11-23T05:43:52+09:00", "kind": "feedback", "agent": "sc-historian", "episode": "ep125", "source": "manager", "severity": "minor", "text": "STEP 3A: 画像プロンプトQAで 'Painterly' の文言を見逃した（副次的）"}
+{"ts": "2026-11-23T05:43:52+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep125", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 条件付き進行可(S09/S10/S17作り直し)"}
+{"ts": "2026-11-23T05:44:12+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep125", "step": "4", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-23T08:57:01+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep125", "step": "承認取り込み", "result": "retry", "retries": 0, "note": "Muse承認(re=step名)を監視が検知せず、ユーザーのスラック確認指示で発見。冒頭動画差し込みへ"}
+{"ts": "2026-11-23T09:29:04+09:00", "kind": "applied", "agent": "sc-learn-writer", "episode": "ep125", "ids": ["SC2611-08", "SC2611-09"], "skipped": [], "reason": ""}
+{"ts": "2026-11-23T09:29:26+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "f74523f8-a603-4775-be91-d9ef51fefd60"}
+{"ts": "2026-11-23T09:29:32+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep125", "step": "1", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-23T09:39:44+09:00", "kind": "applied", "agent": "sc-coordinator", "episode": "ep125", "ids": ["SC2611-05"], "skipped": [], "reason": ""}
