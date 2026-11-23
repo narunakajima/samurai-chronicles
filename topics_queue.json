@@ -1330,14 +1330,15 @@
     },
     {
       "episode_id": "ep126",
-      "status": "pending",
+      "status": "in_production",
       "title": "He Lost His Flag in 1877 and Waited 35 Years to Die for It: General Nogi Maresuke",
       "era": "Meiji",
       "priority": "A",
       "person": "nogi_maresuke",
       "angle": "overview",
       "notes": "未登場（ep067 切腹回に名前が出るだけ）。1877年の西南戦争で連隊旗を奪われる → 死を願い出るが明治天皇が許さない → 旅順攻囲戦で多大な損害を出し、2人の息子も戦死 → 1912年、大喪の日に妻・静子と殉死、という35年の生涯を一本の選択でつなぐ overview。ep008 西郷・ep117 大久保と関連動画でつながる。戦死者数などの数字はエドワードが一次資料で確定すること。軍国主義の美化にならないよう中立に描く。 → 2026-11-04: 補充提案(ユーザー承認済)。 → 2026-11-10: ep123を忍者に差し替えたため ep126 へ後ろ倒し（ユーザー決定）。",
-      "last_updated": "2026-11-10"
+      "last_updated": "2026-11-24",
+      "question": "天皇から授かった一本の旗を失った27歳の将校は、なぜそのとき死なず、35年後の天皇の葬列の夜に、その旗のために死んだのか。その35年で、旗に何が上乗せされたのか。（案B・編集長採用 2026-11-24）"
     },
     {
       "episode_id": "ep127",
