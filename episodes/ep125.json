@@ -317,5 +317,16 @@
   "opening_video": {
     "main": "ep125_opening_main.mp4",
     "shorts": "ep125_opening_shorts.mp4"
+  },
+  "youtube_url": "https://youtu.be/MH_vIHE9o0g",
+  "shorts_url": "https://youtu.be/ghEW5yKKe0k",
+  "scheduled_at": "2026-11-28 03:00",
+  "related_links": {
+    "channel": "SC",
+    "main_id": "MH_vIHE9o0g",
+    "main_publish_at": "2026-11-28 03:00",
+    "short_id": "ghEW5yKKe0k",
+    "short_publish_at": "2026-11-28 03:00",
+    "attach_main_id_to_short": "MH_vIHE9o0g"
   }
 }

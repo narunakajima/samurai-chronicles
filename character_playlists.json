@@ -1258,5 +1258,15 @@
         "video_id": "tQc0iSczitE"
       }
     ]
+  },
+  "ashikaga_yoshimitsu": {
+    "display_name": "Ashikaga Yoshimitsu",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep125",
+        "video_id": "MH_vIHE9o0g"
+      }
+    ]
   }
 }
