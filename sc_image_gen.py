@@ -117,8 +117,13 @@ BASE_CONTEXT = (
 # 3箇所（生成プロンプト・QAのHAIRSTYLE基準・HAIRSTYLE再生成指示）を切り替える。
 # ep112（北条時宗）で、BASE_CONTEXTの月代デフォルトとQAの「月代なし＝NG」判定が
 # image_promptの否定指示を打ち消し、群衆の武士に月代が残り続けた問題への対処。
+#
+# "meiji"（2026-11-24〜・ep126 乃木希典で追加）: 明治の男性は散髪（短髪）で、月代・髷・烏帽子はない。
+# 既定の edo のままだと、BASE_CONTEXT・QA・再生成指示の3か所が全男性に月代+髷を強制し、
+# 正しい短髪の軍人をQAが落とす。meiji では3か所の髪型に加え、灯り（洋式ランプ・石油ランプも可）と
+# 服装（洋式軍服・洋装も可）の基準も明治向けに切り替える。edo / kamakura の文字列は一切変えない。
 ERA = "edo"
-ERA_CHOICES = ("edo", "kamakura")
+ERA_CHOICES = ("edo", "kamakura", "meiji")
 
 _EDO_HAIR_SENTENCE = (
     "Period-accurate Edo/Sengoku era attire: kimono, samurai armor, period weapons only. "
@@ -140,9 +145,38 @@ _KAMAKURA_HAIR_SENTENCE = (
 )
 
 
+_MEIJI_HAIR_SENTENCE = (
+    "Period-accurate Meiji-era (1868-1912) Japan: Imperial Japanese Army men wear Western-style "
+    "military uniforms of the period (dark blue wool tunics with black braid, kepi or peaked "
+    "military caps, sabres, greatcoats and capes); civilians wear kimono and hakama or "
+    "Western suits of the period. "
+    "HAIR RULE FOR THIS ERA (applies to EVERY adult man in the image, including background "
+    "crowds, soldiers and laborers): men have short-cropped Western-style hair (zangiri) that "
+    "fully covers the scalp, often with a moustache or a beard. No man has a topknot, a shaved "
+    "forehead or a shaved crown (no sakayaki, no chonmage) and no man wears an eboshi; military "
+    "caps, peaked caps and Western hats are correct. Exceptions only: Buddhist monks (fully "
+    "shaved head), women (traditional Japanese hair), young boys. Never a 21st-century styled "
+    "haircut (undercut, fade, gelled hair). "
+)
+_EDO_LAMP_SENTENCE = (
+    "When a scene requires lighting from a lamp or lantern, use a traditional Japanese "
+    "light source — a paper andon lantern, a chochin paper lantern, or a simple wax "
+    "candle (rousoku) on a plain stand — never a Western-style glass oil lamp, "
+    "hurricane lamp, or metal lamp with a wick-adjustment knob."
+)
+_MEIJI_LAMP_SENTENCE = (
+    "When a scene requires lighting from a lamp or lantern, a paper andon lantern, a chochin "
+    "paper lantern, a candle, or a period kerosene/oil lamp with a glass chimney (common in "
+    "Meiji Japan) are all correct — never electric-style modern light fixtures."
+)
+
+
 def base_context() -> str:
     if ERA == "kamakura":
         return BASE_CONTEXT.replace(_EDO_HAIR_SENTENCE, _KAMAKURA_HAIR_SENTENCE)
+    if ERA == "meiji":
+        return (BASE_CONTEXT.replace(_EDO_HAIR_SENTENCE, _MEIJI_HAIR_SENTENCE)
+                .replace(_EDO_LAMP_SENTENCE, _MEIJI_LAMP_SENTENCE))
     return BASE_CONTEXT
 
 
@@ -160,6 +194,37 @@ _KAMAKURA_HAIR_CORRECTION = (
     "crown (no sakayaki, no Edo-style chonmage). Every adult man's hair fully covers his scalp, "
     "gathered into a small topknot hidden under a soft black eboshi cap or under a helmet. "
     "Put an eboshi or helmet on every man whose head is visible."
+)
+
+_MEIJI_QA_ARCHITECTURE = (
+    "- ARCHITECTURE: anachronistic or era-incorrect architecture, objects, or clothing for "
+    "Meiji-era Japan (1868-1912). Western-style military uniforms, kepi and peaked caps, "
+    "sabres, rifles, Western suits, brick or wooden Western-style buildings, and kerosene/oil "
+    "lamps with glass chimneys are all CORRECT for this era and must NOT be flagged. Flag "
+    "Edo-period samurai armor or swords worn as everyday dress by soldiers, and clearly "
+    "20th/21st-century objects (electric fixtures, modern vehicles, modern camouflage).\n"
+)
+_MEIJI_QA_HAIRSTYLE = (
+    "- HAIRSTYLE: this episode is set in Meiji-era Japan (1868-1912), AFTER the topknot was "
+    "abandoned. Flag any adult man (including background figures) who shows a topknot, a "
+    "shaved forehead or shaved crown/pate (Edo-style sakayaki + chonmage), or an eboshi. The "
+    "correct look is short-cropped Western-style hair fully covering the scalp, often with a "
+    "moustache or beard, or a military cap / peaked cap / Western hat. Also flag clearly "
+    "21st-century styled haircuts (undercut, fade, gelled hair). Do NOT flag short-cropped "
+    "hair, moustaches or beards — that is correct for this era. Valid exceptions: monks' fully "
+    "shaved heads, women, young boys.\n\n"
+)
+_MEIJI_HAIR_CORRECTION = (
+    "Fix the hairstyle for the Meiji era: no man may have a topknot, a shaved forehead or a "
+    "shaved crown (no sakayaki, no chonmage, no eboshi). Every adult man has short-cropped "
+    "Western-style hair fully covering his scalp (a military cap or peaked cap is fine), and "
+    "no 21st-century styled haircut."
+)
+_MEIJI_ARCHITECTURE_CORRECTION = (
+    "Ensure all clothing, objects and architecture are strictly authentic to Meiji-era Japan "
+    "as described — Western-style army uniforms, caps and sabres of the period, period "
+    "buildings, and andon, chochin, candles or glass-chimney oil lamps for light — with no "
+    "Edo-period samurai armor on soldiers and no 20th/21st-century objects."
 )
 
 # ── キャラクター参照定義 ──────────────────────────────────
@@ -320,6 +385,8 @@ def _correction_note(issues: list) -> str:
                 "Absolutely no readable text, letters, calligraphy, signage, "
                 "banners with writing, or watermarks anywhere in the image."
             )
+        elif prefix == "ARCHITECTURE" and prefix not in seen and ERA == "meiji":
+            notes.append(_MEIJI_ARCHITECTURE_CORRECTION)
         elif prefix == "ARCHITECTURE" and prefix not in seen:
             notes.append(
                 "Ensure all armor, clothing, and architecture are strictly "
@@ -332,6 +399,8 @@ def _correction_note(issues: list) -> str:
             )
         elif prefix == "HAIRSTYLE" and prefix not in seen and ERA == "kamakura":
             notes.append(_KAMAKURA_HAIR_CORRECTION)
+        elif prefix == "HAIRSTYLE" and prefix not in seen and ERA == "meiji":
+            notes.append(_MEIJI_HAIR_CORRECTION)
         elif prefix == "HAIRSTYLE" and prefix not in seen:
             notes.append(
                 "Fix the hairstyle: unless the character is explicitly a monk (including a samurai lay monk who has taken Buddhist vows, drawn with a fully shaved head), woman, ninja, "
@@ -563,6 +632,11 @@ def qa_image_with_gemini(client, image_path: str, image_prompt: str, scene_id: i
             start = qa_prompt.index("- HAIRSTYLE:")
             end = qa_prompt.index("Scene description:")
             qa_prompt = qa_prompt[:start] + _KAMAKURA_QA_HAIRSTYLE + qa_prompt[end:]
+        elif ERA == "meiji":
+            a = qa_prompt.index("- ARCHITECTURE:")
+            end = qa_prompt.index("Scene description:")
+            qa_prompt = (qa_prompt[:a] + _MEIJI_QA_ARCHITECTURE + _MEIJI_QA_HAIRSTYLE
+                         + qa_prompt[end:])
 
         response = gm.generate_content(
             client,
@@ -902,6 +976,8 @@ def cli():
     parser.add_argument("--era", choices=ERA_CHOICES, default=None,
                         help="時代モード。kamakura を指定すると月代なし（髷を烏帽子/兜で覆う）を前提に、"
                              "生成プロンプト・QAのHAIRSTYLE基準・再生成指示を切り替える。"
+                             "meiji は明治の散髪（短髪・髷なし・軍帽可）を前提に、髪型に加えて"
+                             "服装・灯りの基準（洋式軍服・石油ランプ可）も切り替える。"
                              "省略時は環境変数 SC_ERA、episode JSON の image_era、それもなければ"
                              "従来の edo（月代+ちょんまげ）。")
     args = parser.parse_args()
@@ -920,6 +996,10 @@ def cli():
     ERA = era
     if ERA == "kamakura" and _EDO_HAIR_SENTENCE not in BASE_CONTEXT:
         print("❌ BASE_CONTEXT の髪型文が _EDO_HAIR_SENTENCE と一致しません（--era kamakura が効きません）")
+        sys.exit(1)
+    if ERA == "meiji" and (_EDO_HAIR_SENTENCE not in BASE_CONTEXT
+                           or _EDO_LAMP_SENTENCE not in BASE_CONTEXT):
+        print("❌ BASE_CONTEXT の髪型文・灯りの文が _EDO_HAIR_SENTENCE / _EDO_LAMP_SENTENCE と一致しません（--era meiji が効きません）")
         sys.exit(1)
     if ERA != "edo":
         print(f"  時代モード: {ERA}")

@@ -266,3 +266,20 @@
 {"ts": "2026-11-24T07:57:18+09:00", "kind": "call", "agent": "sc-writer", "session": "9c28b249-2dff-4e29-a5d1-593de0783e98"}
 {"ts": "2026-11-24T07:57:26+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep126", "step": "2A", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-24T07:57:26+09:00", "kind": "applied", "agent": "sc-writer", "episode": "ep126", "ids": ["SC2611-01", "SC2611-02"], "skipped": [], "reason": ""}
+{"ts": "2026-11-24T07:58:34+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "3B", "result": "ok", "retries": 0, "note": "サムネイル生成・目視OK"}
+{"ts": "2026-11-24T08:03:51+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "3C", "result": "ok", "retries": 0, "note": "Freesound新規候補は過去回で枯渇（使用済みで空振り、取れたのは低品質）→編集長判断相当でライブラリ既存のみ3曲選定"}
+{"ts": "2026-11-24T08:04:46+09:00", "kind": "call", "agent": "sc-historian", "session": "9c28b249-2dff-4e29-a5d1-593de0783e98"}
+{"ts": "2026-11-24T08:04:52+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep126", "step": "3A", "result": "ok", "retries": 0, "note": "要修正8件・❌0"}
+{"ts": "2026-11-24T08:04:56+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep126", "source": "qa", "severity": "minor", "text": "3Aで要修正8件: S16/S17/説明欄=遺言の旗を『冒頭』と言い過ぎ、S09=1894旅順虐殺に無言、S05=植木を薩摩兵の地元と記述、S19=S13の伝聞を事実化、shorts=勝典の戦死を旅順と誤記、S10=大将昇進を that summer（正しくは6月）"}
+{"ts": "2026-11-24T08:11:50+09:00", "kind": "call", "agent": "sc-historian", "session": "9c28b249-2dff-4e29-a5d1-593de0783e98"}
+{"ts": "2026-11-24T08:12:01+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep126", "step": "5-0", "result": "ok", "retries": 0, "note": "風体決定・meiji時代モード新設（sc_image_gen.py +82行）"}
+{"ts": "2026-11-24T08:27:41+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "5A/5B", "result": "ok", "retries": 0, "note": "TTS・画像（本編20/ショート9/顔）完了。meijiモード初使用。アンカー2系統(S03/S10)"}
+{"ts": "2026-11-24T08:29:27+09:00", "kind": "applied", "agent": "sc-art-director", "episode": "ep126", "ids": ["SC2611-03"], "skipped": [], "reason": ""}
+{"ts": "2026-11-24T08:29:56+09:00", "kind": "call", "agent": "sc-art-director", "session": "9c28b249-2dff-4e29-a5d1-593de0783e98"}
+{"ts": "2026-11-24T08:30:02+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep126", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL 1件(S14帽子・上着)"}
+{"ts": "2026-11-24T08:31:27+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL(S14帽子)・S02天守を修正再生成。要相談(S03帽子の鉢巻)は進める判断"}
+{"ts": "2026-11-24T08:33:24+09:00", "kind": "call", "agent": "sc-manager", "session": "9c28b249-2dff-4e29-a5d1-593de0783e98"}
+{"ts": "2026-11-24T08:33:53+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep126", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可。S03帽子=進める、旗無地=維持、tokio_glow追加"}
+{"ts": "2026-11-24T08:33:53+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep126", "source": "manager", "severity": "minor", "text": "サムネイルをglow有無で合成する際、episode JSONの tokio_glow との照合をしていなかった（本編・学習版で光がそろわなくなるところだった）"}
+{"ts": "2026-11-24T08:34:11+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "4", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-24T08:35:16+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor判定＋Tokioシーン手書き補完"}
