@@ -1,3 +1,17 @@
 {
- "approved": true
+ "approved": true,
+ "main_id": "nyzWbremfFg",
+ "thumb_set": true,
+ "short_id": "Xh-Qh3fXlS8",
+ "publish_at": "2026-11-28 07:00",
+ "now": false,
+ "related_video_set": false,
+ "related_links": {
+  "channel": "learning",
+  "main_id": "nyzWbremfFg",
+  "main_publish_at": "2026-11-28 07:00",
+  "short_id": "Xh-Qh3fXlS8",
+  "short_publish_at": "2026-11-28 07:00",
+  "attach_main_id_to_short": "nyzWbremfFg"
+ }
 }
