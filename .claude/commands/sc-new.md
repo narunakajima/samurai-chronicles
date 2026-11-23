@@ -201,6 +201,7 @@ cat team/notebooks/sc-coordinator.md   # 進行担当（この会話）のノー
 - **この会話は SCチーム 進行担当 トーマス（進行担当、定義は `team/coordinator.md`）。** 制作の最後に `python3 team_log.py add --agent sc-coordinator --episode {回} --step 進行 --result ok`（手順の飛ばし・やり直しがあれば `retry` と `--note`）で自分の進行を記録する。進行への指摘は `team_log.py feedback --agent sc-coordinator` で記録する
 - `due` が「月次評価がまだ」と出したら、ユーザーに一言伝える（制作は止めない。評価は制作の後に月次のアナリティクスのコマンドで行う）
 - 競合したら、無理に解消せずユーザーに状況を報告する
+- **Stop フックの登録を確認する（2026-11-23〜）**：`.claude/settings.json` の `hooks.Stop` に `sc_stop_check.py` が登録されているか確認する。無ければ #cc-reports に報告する（制作は止めない。登録自体は、settings.json にAPIキーが含まれるためセッションでは行わず、Muse／無人実行側で行う）。背景：ep125 で登録漏れのまま制作が進み、「次は〇〇」と報告だけ書いて次の工程を起動せずに応答を終える停止が2回起きた
 - 取り込んだあとで、STEP 1 の次のトピック確認に進む
 
 ---

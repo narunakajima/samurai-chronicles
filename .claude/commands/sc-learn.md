@@ -42,6 +42,7 @@ SC の英語エピソードから、日本人学習者向けの教材音声（�
 - `episodes/ep{NNN}.json`（`narrator` が `tokio`）
 - Drive の `ep{NNN}/audio/S01.wav〜`（シーン数ぶん。S00 は使わない）
 - 環境変数 `GEMINI_API_KEY_SC` または `GEMINI_API_KEY`
+- `.claude/settings.json` の `hooks.Stop` に `sc_stop_check.py` が登録されていること（2026-11-23〜。無ければ #cc-reports に報告する。登録自体はセッションでは行わない。/sc-new STEP 0 と同じ確認）
 
 ## STEP 1: 台本（lessons/ep{NNN}.json）を書く
 
