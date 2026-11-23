@@ -13,3 +13,6 @@ narrator/clips/*_pp.webm
 learning/cache/
 learning/build/
 learning/*.log
+
+# 制作中の実行時状態（sc_report.py が書く。コミットしない。KL と同じ）
+team/session_state.json
