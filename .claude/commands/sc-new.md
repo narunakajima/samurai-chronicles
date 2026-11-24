@@ -463,6 +463,10 @@ ep002「The Honnoji Incident」（Sengoku / Priority A）
 
 **重い生成は冒頭動画の到着後に1回だけ（2026-11-23 ユーザー決定。ep125 で未着のまま STEP 6 を走らせ、到着後に約45分の作り直しになったため）:** STEP 6 の動画生成は、冒頭動画（`ep{NNN}_opening_main.mp4`／`_shorts.mp4`）が Drive に届き、episode JSON に `opening_video` を書いてから実行する。STEP 5D までは到着を待たずに進めてよい。5D 完了時点で未着なら、`needs_decision` で「到着を待つ／冒頭動画なしで進める」を聞いて止まる（承認待ちポーリングを使う）。Muse が「生成できなかった」と報告した場合のみ、聞かずに冒頭動画なしで STEP 6 へ進む（2026-11-16 ルール）。Drive 上のファイル名が `ep{NNN}_opening_main (1).mp4` のように変わっていたら、正しい名前でコピーしてから使う。
 
+**到着の見張りを併走させる（2026-11-24 ユーザー決定。ep126 で、08:38 に冒頭動画が届き 08:39 に Muse が #cc-inbox へ `event=muse_opening_done` を投稿していたのに、ユーザーに指摘される 09:16 まで約38分気づかなかったため）:** 承認待ちポーリング（approval-watch）は `event=user_approval` しか拾わず、Muse の到着通知も Drive のファイルも見ない。冒頭動画を待って止まるときは、approval-watch と並べて、Drive の到着を見張るループを `run_in_background: true` で必ず起動する:
+`D="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}"; until ls "$D"/ep{NNN}_opening_main*.mp4 >/dev/null 2>&1 && ls "$D"/ep{NNN}_opening_shorts*.mp4 >/dev/null 2>&1; do sleep 60; done; echo OPENING_ARRIVED`
+完了通知が来たら、他の作業より先にファイルの中身（尺・縦横・数コマ）を確かめ、`opening_video` を JSON に書き、#cc-reports に受領を投稿して、承認待ちポーリングを止めてから STEP 6 を始める（先の `needs_decision` は「到着を待つ」で解決したものとして報告する）。片方だけ届いた場合は、もう片方の扱いを Muse の報告で確かめる（生成失敗の報告があれば、届いた方だけ使う。2026-11-16 ルール）。待っている間も、ステップ報告・作業再開のたびに #cc-inbox を自分で読み、`event=muse_opening_done` を見落とさない。
+
 ---
 
 ## STEP 2A — エピソード内容を生成する
