@@ -286,3 +286,10 @@
 {"ts": "2026-11-24T09:16:46+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "冒頭動画", "result": "ok", "retries": 0, "note": "Muse冒頭動画2本到着（ユーザーのチャットで受領）・目視OK"}
 {"ts": "2026-11-24T09:18:15+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep126", "source": "user", "severity": "major", "text": "動画届いてるのに長いことわからなかった？（冒頭動画は08:38にDrive着・08:39にMuseがcc-inboxへmuse_opening_done投稿。承認待ち監視はuser_approvalしか拾わず、Driveも見ていなかったため、09:16のユーザー指摘まで約38分気づかなかった）"}
 {"ts": "2026-11-24T09:50:54+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "6", "result": "ok", "retries": 0, "note": "本編748.5s・Shorts22.5s・字幕181。Tokioコマ目視OK"}
+{"ts": "2026-11-24T10:12:49+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "本編確認", "result": "ok", "retries": 0, "note": "Muse経由の承認 answer=1（OK）、upload=yesなし→/sc-learn開始"}
+{"ts": "2026-11-24T10:18:12+09:00", "kind": "applied", "agent": "sc-learn-writer", "episode": "ep126", "ids": ["SC2611-08", "SC2611-09"], "skipped": [], "reason": ""}
+{"ts": "2026-11-24T10:18:38+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "9c28b249-2dff-4e29-a5d1-593de0783e98"}
+{"ts": "2026-11-24T10:18:44+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep126", "step": "1", "result": "ok", "retries": 0, "note": "台本・display_map44件・暦の注記は明治6年以降のため省略"}
+{"ts": "2026-11-24T10:36:15+09:00", "kind": "feedback", "agent": "sc-learn-writer", "episode": "ep126", "source": "qa", "severity": "minor", "text": "かな「はぎで」が3回とも「ハイチで」と読まれた（S04）。「はぎの町で」に変更して再ビルド"}
+{"ts": "2026-11-24T10:41:05+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "学習版2-3", "result": "retry", "retries": 0, "note": "はぎで→ハイチで、はぎの町で→ちょう。はぎのまちでで解決。読み確認OK"}
+{"ts": "2026-11-24T11:32:59+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "学習版3.5-3.6", "result": "ok", "retries": 0, "note": "動画56:29（冒頭動画差し込み）・サムネ・ショート45.7s 目視OK"}
