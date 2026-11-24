@@ -219,6 +219,8 @@ SC 本編の `scheduled_at` に**公開予定**でアップロードする。シ
 3. 初回の認証と Google Cloud の準備は `learning/YOUTUBE_SETUP.md`。
 4. **Muse 経由の承認に `upload=yes` が付いているとき**（`/sc-new` の「アップロードの起動」。`re` がこの STEP 4 の `needs_decision`（`step=学習版 完了`）を指すとき）は、1 の公開 OK の記録を終えたあと、`sc-upload` を Skill ツールで呼ぶ（なるさんが `/sc-upload` を呼ぶ必要はない）。
 
+学習版の確認の `needs_decision` にも、Drive 上の学習版動画へのリンク（フォルダ URL で可）を必ず含める（`/sc-new` の「最終動画のリンク」と同じ）。
+
 **関連動画は API では設定できない**（Studio のパソコン版のみ。同じチャンネルの動画にしか設定できない）ので、Chrome で行う（**制作専用 Chrome** を使う。接続先とチャンネルの確認は CLAUDE.md「Chrome 作業の前の接続先の確認」に従う）。
 ショートの説明欄の URL は、クリックできないことがあるので、本編への誘導は関連動画で行う。
 
