@@ -293,3 +293,4 @@
 {"ts": "2026-11-24T10:36:15+09:00", "kind": "feedback", "agent": "sc-learn-writer", "episode": "ep126", "source": "qa", "severity": "minor", "text": "かな「はぎで」が3回とも「ハイチで」と読まれた（S04）。「はぎの町で」に変更して再ビルド"}
 {"ts": "2026-11-24T10:41:05+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "学習版2-3", "result": "retry", "retries": 0, "note": "はぎで→ハイチで、はぎの町で→ちょう。はぎのまちでで解決。読み確認OK"}
 {"ts": "2026-11-24T11:32:59+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "学習版3.5-3.6", "result": "ok", "retries": 0, "note": "動画56:29（冒頭動画差し込み）・サムネ・ショート45.7s 目視OK"}
+{"ts": "2026-11-24T11:58:02+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "学習版確認", "result": "ok", "retries": 0, "note": "Muse経由 answer=2・upload=yes → 公開OK記録・/sc-upload起動"}

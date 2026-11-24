@@ -1268,5 +1268,15 @@
         "video_id": "MH_vIHE9o0g"
       }
     ]
+  },
+  "nogi": {
+    "display_name": "Nogi",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep126",
+        "video_id": "aOSFnyLA7JY"
+      }
+    ]
   }
 }

@@ -320,5 +320,16 @@
   "opening_video": {
     "main": "ep126_opening_main.mp4",
     "shorts": "ep126_opening_shorts.mp4"
+  },
+  "youtube_url": "https://youtu.be/aOSFnyLA7JY",
+  "shorts_url": "https://youtu.be/6hg_oFTdI00",
+  "scheduled_at": "2026-12-01 03:00",
+  "related_links": {
+    "channel": "SC",
+    "main_id": "aOSFnyLA7JY",
+    "main_publish_at": "2026-12-01 03:00",
+    "short_id": "6hg_oFTdI00",
+    "short_publish_at": "2026-12-01 03:00",
+    "attach_main_id_to_short": "aOSFnyLA7JY"
   }
 }
