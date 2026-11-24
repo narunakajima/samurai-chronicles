@@ -294,3 +294,8 @@
 {"ts": "2026-11-24T10:41:05+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "学習版2-3", "result": "retry", "retries": 0, "note": "はぎで→ハイチで、はぎの町で→ちょう。はぎのまちでで解決。読み確認OK"}
 {"ts": "2026-11-24T11:32:59+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "学習版3.5-3.6", "result": "ok", "retries": 0, "note": "動画56:29（冒頭動画差し込み）・サムネ・ショート45.7s 目視OK"}
 {"ts": "2026-11-24T11:58:02+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "学習版確認", "result": "ok", "retries": 0, "note": "Muse経由 answer=2・upload=yes → 公開OK記録・/sc-upload起動"}
+{"ts": "2026-11-24T12:01:29+09:00", "kind": "call", "agent": "sc-community", "session": "9c28b249-2dff-4e29-a5d1-593de0783e98"}
+{"ts": "2026-11-24T12:01:41+09:00", "kind": "work", "agent": "sc-community", "episode": "ep126", "step": "3.6", "result": "ok", "retries": 0, "note": "返信1件・見送り4件"}
+{"ts": "2026-11-24T12:02:15+09:00", "kind": "call", "agent": "sc-community", "session": "9c28b249-2dff-4e29-a5d1-593de0783e98"}
+{"ts": "2026-11-24T12:02:20+09:00", "kind": "work", "agent": "sc-community", "episode": "ep126", "step": "3.7", "result": "ok", "retries": 0, "note": "返信0件・見送り1件（ep124弥助回の暦の指摘）"}
+{"ts": "2026-11-24T12:02:42+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "進行", "result": "retry", "retries": 0, "note": "冒頭動画の到着を約38分見落とし（ユーザー指摘・手順書に見張りループを追記）。ほかは手順どおり"}

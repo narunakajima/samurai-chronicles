@@ -1,3 +1,17 @@
 {
- "approved": true
+ "approved": true,
+ "main_id": "bdcmWwlzYw4",
+ "thumb_set": true,
+ "short_id": "3kmiKlaxs8A",
+ "publish_at": "2026-12-01 07:00",
+ "now": false,
+ "related_video_set": false,
+ "related_links": {
+  "channel": "learning",
+  "main_id": "bdcmWwlzYw4",
+  "main_publish_at": "2026-12-01 07:00",
+  "short_id": "3kmiKlaxs8A",
+  "short_publish_at": "2026-12-01 07:00",
+  "attach_main_id_to_short": "bdcmWwlzYw4"
+ }
 }
