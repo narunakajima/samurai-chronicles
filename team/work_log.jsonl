@@ -283,3 +283,5 @@
 {"ts": "2026-11-24T08:33:53+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep126", "source": "manager", "severity": "minor", "text": "サムネイルをglow有無で合成する際、episode JSONの tokio_glow との照合をしていなかった（本編・学習版で光がそろわなくなるところだった）"}
 {"ts": "2026-11-24T08:34:11+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "4", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-24T08:35:16+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor判定＋Tokioシーン手書き補完"}
+{"ts": "2026-11-24T09:16:46+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "冒頭動画", "result": "ok", "retries": 0, "note": "Muse冒頭動画2本到着（ユーザーのチャットで受領）・目視OK"}
+{"ts": "2026-11-24T09:18:15+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep126", "source": "user", "severity": "major", "text": "動画届いてるのに長いことわからなかった？（冒頭動画は08:38にDrive着・08:39にMuseがcc-inboxへmuse_opening_done投稿。承認待ち監視はuser_approvalしか拾わず、Driveも見ていなかったため、09:16のユーザー指摘まで約38分気づかなかった）"}
