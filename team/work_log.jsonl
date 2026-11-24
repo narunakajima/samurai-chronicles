@@ -285,3 +285,4 @@
 {"ts": "2026-11-24T08:35:16+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor判定＋Tokioシーン手書き補完"}
 {"ts": "2026-11-24T09:16:46+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "冒頭動画", "result": "ok", "retries": 0, "note": "Muse冒頭動画2本到着（ユーザーのチャットで受領）・目視OK"}
 {"ts": "2026-11-24T09:18:15+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep126", "source": "user", "severity": "major", "text": "動画届いてるのに長いことわからなかった？（冒頭動画は08:38にDrive着・08:39にMuseがcc-inboxへmuse_opening_done投稿。承認待ち監視はuser_approvalしか拾わず、Driveも見ていなかったため、09:16のユーザー指摘まで約38分気づかなかった）"}
+{"ts": "2026-11-24T09:50:54+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep126", "step": "6", "result": "ok", "retries": 0, "note": "本編748.5s・Shorts22.5s・字幕181。Tokioコマ目視OK"}
