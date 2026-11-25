@@ -709,7 +709,8 @@
       "ep082",
       "ep100",
       "ep111",
-      "ep108"
+      "ep108",
+      "ep127"
     ]
   },
   {
@@ -1158,7 +1159,8 @@
       "ep093",
       "ep107",
       "ep113",
-      "ep108"
+      "ep108",
+      "ep127"
     ]
   },
   {
@@ -1346,6 +1348,19 @@
     ],
     "used_in": [
       "ep122"
+    ]
+  },
+  {
+    "id": "ep127-BGM-intro",
+    "path": "BGM/ep127-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC0",
+    "credit": null,
+    "tags": [
+      "dark"
+    ],
+    "used_in": [
+      "ep127"
     ]
   }
 ]

@@ -313,3 +313,19 @@
 {"ts": "2026-11-25T09:27:19+09:00", "kind": "applied", "agent": "sc-writer", "episode": "ep127", "ids": ["SC2611-01", "SC2611-02"], "skipped": [], "reason": ""}
 {"ts": "2026-11-25T09:27:44+09:00", "kind": "call", "agent": "sc-writer", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
 {"ts": "2026-11-25T09:27:58+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep127", "step": "2A", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-25T09:34:39+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "3C", "result": "retry", "retries": 0, "note": "Freesound空振り多数。intro=新規Lost Valley(CC0)、main/outroはライブラリ（ep091-main, ep073-outro）"}
+{"ts": "2026-11-25T09:35:12+09:00", "kind": "call", "agent": "sc-historian", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
+{"ts": "2026-11-25T09:35:17+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep127", "step": "3A", "result": "ok", "retries": 0, "note": "❌2件・要修正10項目を自動修正、thumbnail_prompt修正"}
+{"ts": "2026-11-25T09:35:22+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep127", "source": "qa", "severity": "minor", "text": "3A❌: S12 佐々木只三郎の死を 'January 1868'（旧暦月名）→ 'early in 1868'。説明欄の参考文献の出版社誤り（Tuttle→Ridgeback Press 1999）。旧暦月名と新暦の混在（S08 April）"}
+{"ts": "2026-11-25T09:35:55+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "3B", "result": "ok", "retries": 0, "note": "THE WRONG MEN / Tokio合成(glow)"}
+{"ts": "2026-11-25T09:38:45+09:00", "kind": "call", "agent": "sc-historian", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
+{"ts": "2026-11-25T09:38:53+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep127", "step": "5-0", "result": "ok", "retries": 0, "note": "龍馬=総髪・波打つ髪を低く結ぶ（長崎写真）、近藤=総髪、今井=1870月代/明治散切り。image_promptのみ6か所修正"}
+{"ts": "2026-11-25T09:55:29+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "5B", "result": "ok", "retries": 0, "note": "TTS22本・画像20+shorts9（S03アンカー）、Shorts S13黒帯切り取り、冒頭動画素材をMuseへ"}
+{"ts": "2026-11-25T10:02:51+09:00", "kind": "applied", "agent": "sc-art-director", "episode": "ep127", "ids": ["SC2611-03"], "skipped": [], "reason": ""}
+{"ts": "2026-11-25T10:03:22+09:00", "kind": "call", "agent": "sc-art-director", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
+{"ts": "2026-11-25T10:03:35+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep127", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL 2件（S01鞘・下駄の不一致と文字状の印、S09背景の洋装背広）を再生成で修正。要相談2件"}
+{"ts": "2026-11-25T10:03:35+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep127", "source": "qa", "severity": "minor", "text": "5C CRITICAL: 進行担当が書き直したS01のimage_promptで鞘が銀灰色・下駄に漢字状の印。アイリスが再生成（S01・Shorts S01）"}
+{"ts": "2026-11-25T10:03:36+09:00", "kind": "feedback", "agent": "sc-historian", "episode": "ep127", "source": "qa", "severity": "minor", "text": "5C CRITICAL: 5-0で足したS09背景の『洋式軍服の兵』が、1868年板橋に背広・フロックコート・明治後期の軍帽として描かれた。アイリスが背景を陣笠の兵・袴の役人に修正し再生成"}
+{"ts": "2026-11-25T10:06:09+09:00", "kind": "call", "agent": "sc-manager", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
+{"ts": "2026-11-25T10:06:18+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep127", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可。要相談①サムネ顔=このまま ②S19男性=このまま"}
+{"ts": "2026-11-25T10:06:18+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep127", "source": "qa", "severity": "major", "text": "S01 の image_prompt が下駄に焼き印を描かせ、漢字状の印と銀灰色の鞘が出た（5C で再生成）／S09 の背景人物の服装が時代未指定で、背広・フロックコート・明治後期の軍帽が出た（5C で再生成）"}
