@@ -351,3 +351,6 @@
 {"ts": "2026-11-25T13:20:29+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版3.6", "result": "ok", "retries": 0, "note": "サムネ・ショート44.3秒（ほたえなクイズ）"}
 {"ts": "2026-11-25T13:39:28+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版3.5", "result": "ok", "retries": 0, "note": "学習版動画59:59（冒頭動画つき）、コマ確認OK"}
 {"ts": "2026-11-25T15:55:16+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版確認", "result": "ok", "retries": 0, "note": "学習版OK・upload=yes（Muse経由 answer=2）"}
+{"ts": "2026-11-25T15:58:29+09:00", "kind": "call", "agent": "sc-community", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
+{"ts": "2026-11-25T15:58:34+09:00", "kind": "work", "agent": "sc-community", "episode": "ep127", "step": "3.6", "result": "ok", "retries": 0, "note": "返信0件・見送り4件（攻撃的・政治的）"}
+{"ts": "2026-11-25T15:58:34+09:00", "kind": "work", "agent": "sc-community", "episode": "ep127", "step": "3.7", "result": "ok", "retries": 0, "note": "返信0件・見送り1件（ユリウス暦の指摘）"}
