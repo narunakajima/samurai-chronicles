@@ -348,3 +348,5 @@
 {"ts": "2026-11-25T12:45:57+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep127", "step": "学習版2", "result": "ok", "retries": 0, "note": "切り出し失敗を解決: clips.py に NEAR_MISS=0.75（Gemini一致度0.75〜0.85の文も別の書き起こしで確認）。ACCEPTは不変"}
 {"ts": "2026-11-25T12:45:57+09:00", "kind": "feedback", "agent": "sc-learn-writer", "episode": "ep127", "source": "qa", "severity": "minor", "text": "学習版台本で「鞘」「一足」を漢字のまま書き、TTSが「さわ」「ひとはし」と誤読（3テイクとも指摘残り）。進行担当がかな（さや・いっそく）＋display_mapに直してビルドし直し"}
 {"ts": "2026-11-25T12:49:56+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版3", "result": "ok", "retries": 0, "note": "読み確認: ときお・さや・いっそく・人名OK、S12最後の文OK"}
+{"ts": "2026-11-25T13:20:29+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版3.6", "result": "ok", "retries": 0, "note": "サムネ・ショート44.3秒（ほたえなクイズ）"}
+{"ts": "2026-11-25T13:39:28+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版3.5", "result": "ok", "retries": 0, "note": "学習版動画59:59（冒頭動画つき）、コマ確認OK"}
