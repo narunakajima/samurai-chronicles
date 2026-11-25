@@ -196,12 +196,7 @@ cd learning && python3 build_promo.py short ep106    # ショート（縦型、�
 
 ## STEP 4: ユーザーの確認
 
-- **確認用に、学習版の出力を Desktop にコピーする（2026-10-25 追加）。** Drive の `ep{NNN}/learning/` にある3点（mp4・`_learning_thumbnail.png`・`_learning_short.mp4`。mp3 は不要なのでコピーしない）を `~/Desktop/SC/ep{NNN}_learning/` へ。
-  ```bash
-  DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/learning"
-  mkdir -p "$HOME/Desktop/SC/ep{NNN}_learning" && cp "$DRIVE"/*.mp4 "$DRIVE"/*.png "$HOME/Desktop/SC/ep{NNN}_learning/" && ls -la "$HOME/Desktop/SC/ep{NNN}_learning"
-  ```
-  Finder は自動で開かない。削除は本編と同じく `/sc-upload` STEP 1 の `rm -rf "$HOME/Desktop/SC"` でまとめて行う（Drive が原本）。
+- **確認用に、学習版の出力を Desktop へはコピーしない（2026-11-26〜、ユーザー決定。旧・2026-10-25追加のコピー工程は廃止）。** 確認は Drive の `ep{NNN}/learning/` にあるファイル（本編・`_learning_thumbnail.png`・`_learning_short.mp4`）へのリンクで行う。
 - 完成した mp3 のパスと、`chapters.txt` の内容（各パートの開始時刻）を報告する
 - **ユーザーが聴いて OK を出すまで、公開に進まない。** 直しの依頼は、台本（`lessons/`）を直して STEP 2 をやり直す（変えた部分だけが作り直される）
 

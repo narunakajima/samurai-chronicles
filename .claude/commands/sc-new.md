@@ -1421,11 +1421,12 @@ done
 rm -f /tmp/sc_bgm_credits/*.credit.txt
 ```
 
-**⚠️ 2026-08-24〜変更: `~/Desktop/SC/` フォルダはこの時点では削除しない。**
-以前はここで `rm -rf "$HOME/Desktop/SC"` していたが、ユーザーが動画完成後もDesktopフォルダ上で
-BGM・サムネイル・完成動画をまとめて確認したいとの要望により、削除タイミングをSTEP 6完了後・
-ユーザーの最終OK後まで遅らせるように変更した。STEP 4完了時点ではDriveへの登録（画像・BGM）のみ
-行い、Desktopの残骸（BGM候補ファイル・サムネイル・制作確認書の元ファイル等）はそのまま残す。
+**⚠️ `~/Desktop/SC/` フォルダはこの時点では削除しない。**
+削除タイミングはSTEP 6完了後・ユーザーの最終OK後（実体は `/sc-upload` STEP 1）。
+STEP 4完了時点ではDriveへの登録（画像・BGM）のみ行い、Desktopの残骸（BGM候補ファイル・
+サムネイル・制作確認書の元ファイル等）はそのまま残す。
+（2026-11-26更新：完成動画の確認はDriveのファイルリンクで行い、確認用にDesktopへ
+コピーする工程は廃止した。Desktopに残るのは作業ファイルのみ。）
 
 **最終OK後の削除は `~/Desktop/SC/` フォルダごと行う（2026-09-29追加）:** ep107で、最終OK後に中身
 （`ep107`・`ep107_output`・BGM等）だけを個別に `rm -rf` し、空の `~/Desktop/SC/` 本体を残す
@@ -1932,22 +1933,15 @@ python3 sc_video_gen.py --episode ep{NNN}      # 動画生成（本編 + Shorts�
 python3 sc_subtitle_gen.py --episode ep{NNN}   # 字幕生成
 ```
 
-出力は Google Drive の `ep{NNN}/output/` に生成される。完了後、ユーザーが Desktop 上で
-サムネイル・BGM・完成動画をまとめて確認できるよう、Drive の出力を `~/Desktop/SC/` へコピーする
-（2026-08-24〜。move ではなく copy — Drive 側が正本のまま）：
-
-```bash
-DRIVE="$HOME/Library/CloudStorage/GoogleDrive-naru.nakajima@gmail.com/マイドライブ/samurai-chronicles/ep{NNN}/output"
-cp "$DRIVE/Samurai Chronicles ep{NNN}.mp4" "$HOME/Desktop/SC/"
-cp "$DRIVE/ep{NNN}_shorts.mp4" "$HOME/Desktop/SC/"
-cp "$DRIVE/ep{NNN}.srt" "$HOME/Desktop/SC/"
-```
+出力は Google Drive の `ep{NNN}/output/` に生成される。**確認用に Desktop へはコピーしない
+（2026-11-26〜、ユーザー決定）。** 完成動画の確認は、needs_decision に含める Drive の
+ファイルリンクで行う（「最終動画のリンク」のルール参照）。
 
 完了後：
 ```
 ep{NNN} の制作が完了しました。
 
-出力ファイル（~/Desktop/SC/ に確認用コピーを用意しました）:
+出力ファイル（Google Drive の ep{NNN}/output/）:
   - Samurai Chronicles ep{NNN}.mp4
   - ep{NNN}_shorts.mp4
   - ep{NNN}.srt
@@ -1966,10 +1960,9 @@ OK は「OK」「問題なし」など、動画の確認が済んだという意
 **Desktopフォルダの削除（2026-08-25〜変更）:** ここでは個別の「OK」待ちを行わない。
 `/sc-upload` の起動自体が「動画を確認し問題なしと判断した」という意思表示とみなすため、
 `rm -rf "$HOME/Desktop/SC"` によるDesktop作業フォルダの削除は `/sc-upload` 側
-（STEP 1）で行う（詳細は `sc-upload.md` 参照）。Drive側にはSTEP4・STEP6でそれぞれ
-登録・コピー済みのため、削除しても実データは失われない。ユーザーが動画に問題を指摘した
-場合は、該当箇所を修正してSTEP6を再実行し、Desktopへの再コピー→再確認のループを
-繰り返す（`/sc-upload` が実行されるまでDesktopフォルダは自然に残り続ける）。
+（STEP 1）で行う（詳細は `sc-upload.md` 参照）。Drive側にはSTEP4で登録済みで、STEP6の出力もDrive側にあるため、削除しても実データは
+失われない。ユーザーが動画に問題を指摘した場合は、該当箇所を修正してSTEP6を再実行し、
+Driveへの再出力→リンクでの再確認のループを繰り返す（`/sc-upload` が実行されるまでDesktopフォルダは自然に残り続ける）。
 
 
 **【締め（必須。2026-11-19、kl059 の作業漏れの再発防止。3プロジェクト共通化をなるさんが承認）】** このステップが終わったら、同じ応答の中で続けて行う: (1) `python3 sc_report.py step --case ep{NNN} --step "6 動画・字幕生成" --by <担当者名> --next "完成動画の確認（判断待ち。sc_report.py decision で投稿）" [--eta …] [--note "結果: …"]` で報告の文面を作り（状態も記録される）、#cc-reports の案件スレッドに投稿して、#cc-inbox を読む。(2) 次の工程（完成動画の確認（判断待ち。sc_report.py decision で投稿））の実行・担当者の呼び出しを、その場で行う。「次は〇〇」と書いて応答を終えない。待ってよいのは、完了通知が来るバックグラウンド作業か、呼び出し中の担当者があるときだけ（そのときは `--waiting bg|agent` を付ける）。(3) 待機から戻ったら、最初に #cc-inbox と結果ファイルを確かめる。
