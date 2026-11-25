@@ -22,6 +22,7 @@ SENSITIVE_MIN = 0.05
 PAD = 0.08  # 切り口の前後に残す余白（秒）
 MANUAL_ACCEPT: set = set()  # 台本の clip_accept。人が切れ目を確かめた短い文（3語以下）だけ、聞き違いで照合に通らなくても採用する（ep123: I mark it. → My market.）
 ACCEPT = 0.85  # これ以上の一致度なら、その切り出しを採用する
+NEAR_MISS = 0.75  # SHORT_CHECK_WORDS より長い文でも、Gemini の一致度がこれ以上 ACCEPT 未満の「惜しい」ときは、同じ別の書き起こしで確かめる（ep127: They do not agree on the hands. → Did you not agree on the hands? 0.83。Whisper は正しく聞き、切れ目も正しかった）。採用には別の書き起こしが ACCEPT 以上であることが要る（基準は緩めない）
 SHORT_CHECK_WORDS = 5  # この語数以下の文は、別の書き起こし（Whisper・Gemini再）でも確かめて採用する（旧3→4 ep122: I weigh → Highway、→5 ep125: It was not the emperors. → the Empress）。照合の基準 ACCEPT は変えない
 GOOD = 0.95  # これ以上なら、ほかの候補を試さずに確定する
 EDGE_PENALTY = 0.15  # 文の最初か最後の単語が聞こえていないときの減点
@@ -332,11 +333,12 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
             if (len(hn) >= 20 and difflib.SequenceMatcher(None, tn[:len(hn)], hn, autojunk=False).ratio() >= 0.9
                     and best[1] - start >= 0.85 * exp_dur):
                 best = (ACCEPT, best[1], best[2])
-        if best is not None and best[0] < ACCEPT and len(_words(sent)) <= SHORT_CHECK_WORDS and not (
+        if best is not None and best[0] < ACCEPT and (len(_words(sent)) <= SHORT_CHECK_WORDS or best[0] >= NEAR_MISS) and not (
                 i > 0 and i not in extended and (prev_tail_in_head(sents[i - 1], best[2])
                                                  or prev_fragment_in_head(sents[i - 1], sent, best[2]))):
             # SHORT_CHECK_WORDS 以下の短い文は、Gemini が聞き違えやすい（ep121: I may speak. → I misspeak / Only grass. → On the grass.）。
             # 同じ切り出しを手元の Whisper でも書き起こし、そちらで一致すれば採用する（切れ目の誤りは前の文の語尾の検査で別に拾う）
+            # ep127〜: 長い文でも、Gemini の一致度が NEAR_MISS 以上（1〜2語の聞き違い）なら同じ確かめを行う（They do → Did you）
             # 聞き方は3つ: シーン全体の Whisper の、この区間の単語（前後の文脈つきで聞いたもの）／切り出しの Whisper ／ Gemini をもう2回
             _cut(scene_wav, start, best[1], tmp)
             alts = []
@@ -356,7 +358,8 @@ def cut_scene_sentences(scene_wav: Path, narration: str) -> list[Path]:
                 if not _edge_ok(sent, wh):
                     ws -= EDGE_PENALTY
                 if ws >= ACCEPT:
-                    print(f"  （短い文を {name} で確かめて採用: {sent} ／ Gemini: {best[2]} ／ {name}: {wh.strip()}）")
+                    kind = "短い文" if len(_words(sent)) <= SHORT_CHECK_WORDS else f"惜しい文（Gemini 一致度 {best[0]:.2f}）"
+                    print(f"  （{kind}を {name} で確かめて採用: {sent} ／ Gemini: {best[2]} ／ {name}: {wh.strip()}）")
                     best = (ws, best[1], wh)
                     break
         tmp.unlink(missing_ok=True)

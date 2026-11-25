@@ -333,3 +333,18 @@
 {"ts": "2026-11-25T10:53:26+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "6", "result": "ok", "retries": 0, "note": "冒頭動画未着の判断: ユーザー回答A（到着を待つ）をMuse経由で受領"}
 {"ts": "2026-11-25T10:54:04+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "6", "result": "ok", "retries": 0, "note": "冒頭動画2本受領（10秒、差し替え後の静止画から）→ep127フォルダへ移動、opening_video設定"}
 {"ts": "2026-11-25T11:27:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "6", "result": "ok", "retries": 0, "note": "動画13:05・Shorts21秒・字幕201。Tokio表情5種と冒頭のつなぎを目視確認"}
+{"ts": "2026-11-25T12:07:14+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "進行", "result": "ok", "retries": 0, "note": "本編の完成動画: ユーザーOK（Muse経由、answer=1）。STEP1でep109見送り、BGMはFreesound空振りでライブラリ補完、S01の書き直しが5CでCRITICAL（自分のfeedback記録済み）"}
+{"ts": "2026-11-25T12:12:27+09:00", "kind": "applied", "agent": "sc-learn-writer", "episode": "ep127", "ids": ["SC2611-08", "SC2611-09"], "skipped": [], "reason": ""}
+{"ts": "2026-11-25T12:12:47+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
+{"ts": "2026-11-25T12:12:56+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep127", "step": "1", "result": "ok", "retries": 0, "note": "148文・nullまとめ2か所・promo（ほたえな）"}
+{"ts": "2026-11-25T12:14:41+09:00", "kind": "call", "agent": "sc-manager", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
+{"ts": "2026-11-25T12:14:52+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep127", "step": "学習版1", "result": "ok", "retries": 0, "note": "本編S12・S14人名誤り→A直す（Teshirogi、姓のみ）"}
+{"ts": "2026-11-25T12:14:52+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep127", "step": "1", "result": "ok", "retries": 0, "note": "本編の人名の誤り（Tedaki Naoemon → Teshirogi）を学習版ビルド前に発見"}
+{"ts": "2026-11-25T12:14:52+09:00", "kind": "feedback", "agent": "sc-historian", "episode": "ep127", "source": "qa", "severity": "major", "text": "ep127 STEP 3A: S12・S14 の人名「手代木直右衛門」が \"Tedaki Naoemon\"（正: Teshirogi、てしろぎ・すぐえもん）と、姓も名も誤読のままファクトチェックを通過。本編の確認 OK のあとに学習版台本担当リリーが発見し、S12・S14 の TTS と本編動画・字幕を作り直した。全固有名詞のローマ字表記を辞典や Wikipedia で照合すること。"}
+{"ts": "2026-11-25T12:14:52+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep127", "source": "qa", "severity": "minor", "text": "ep127 STEP 2A: 手代木直右衛門を \"Tedaki Naoemon\" と誤読して英語化。読みに自信のない日本語の人名は、英語化の前に読みを確かめ、確かめられないものは確認書で時代考証担当に申し送ること。"}
+{"ts": "2026-11-25T12:33:20+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版2", "result": "retry", "retries": 0, "note": "切り出し不一致2回→編集長へエスカレーション"}
+{"ts": "2026-11-25T12:45:30+09:00", "kind": "call", "agent": "sc-manager", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
+{"ts": "2026-11-25T12:45:36+09:00", "kind": "call", "agent": "sc-manager", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
+{"ts": "2026-11-25T12:45:57+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep127", "step": "学習版2", "result": "ok", "retries": 0, "note": "切り出し失敗を解決: clips.py に NEAR_MISS=0.75（Gemini一致度0.75〜0.85の文も別の書き起こしで確認）。ACCEPTは不変"}
+{"ts": "2026-11-25T12:45:57+09:00", "kind": "feedback", "agent": "sc-learn-writer", "episode": "ep127", "source": "qa", "severity": "minor", "text": "学習版台本で「鞘」「一足」を漢字のまま書き、TTSが「さわ」「ひとはし」と誤読（3テイクとも指摘残り）。進行担当がかな（さや・いっそく）＋display_mapに直してビルドし直し"}
+{"ts": "2026-11-25T12:49:56+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版3", "result": "ok", "retries": 0, "note": "読み確認: ときお・さや・いっそく・人名OK、S12最後の文OK"}
