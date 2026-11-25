@@ -329,3 +329,4 @@
 {"ts": "2026-11-25T10:06:09+09:00", "kind": "call", "agent": "sc-manager", "session": "0a9395bb-d08d-48a8-8aea-340bec4a4bc1"}
 {"ts": "2026-11-25T10:06:18+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep127", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可。要相談①サムネ顔=このまま ②S19男性=このまま"}
 {"ts": "2026-11-25T10:06:18+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep127", "source": "qa", "severity": "major", "text": "S01 の image_prompt が下駄に焼き印を描かせ、漢字状の印と銀灰色の鞘が出た（5C で再生成）／S09 の背景人物の服装が時代未指定で、背広・フロックコート・明治後期の軍帽が出た（5C で再生成）"}
+{"ts": "2026-11-25T10:07:40+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor S03/S09自動、Tokio10シーンは手動で記入、左右確認済み"}

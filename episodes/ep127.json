@@ -60,7 +60,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "neutral",
-      "tokio_place": "Kyoto 1867"
+      "tokio_place": "Kyoto 1867",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.45
+      }
     },
     {
       "scene_id": 2,
@@ -71,7 +75,11 @@
       "ken_burns": "pan_right",
       "character_ref": null,
       "tokio_expression": "neutral",
-      "tokio_place": "Kyoto 1867"
+      "tokio_place": "Kyoto 1867",
+      "zoom_anchor": {
+        "x": 0.62,
+        "y": 0.5
+      }
     },
     {
       "scene_id": 3,
@@ -80,7 +88,11 @@
       "narration": "I stand in the doorway with my notebook. The dead man is Sakamoto Ryoma, a man of Tosa. He helped build the road that ends the shogun's rule: he helped bring Satsuma and Choshu together, and he helped shape the plan by which the shogun would hand back his power. A month ago the shogun did. Last night was the fifteenth of the month, which by the old calendar is Ryoma's birthday. Upstairs, I am told, his friend Nakaoka Shintaro is badly hurt but alive. In the back of the house, a servant is fighting to stay alive.",
       "image_prompt": "Sakamoto Ryoma in his early thirties, standing on a hillside above the harbour of Nagasaki on a bright clear day in 1867, one hand tucked into the front of his dark kimono, wearing a dark kimono with a haori and hakama and Western-style leather boots, tall and lean for his time, his forehead and crown are NOT shaved (no sakayaki, no chonmage), unlike the shaved-pate men of his day — a full head of slightly wavy, a little unruly dark hair combed back and gathered into a low tied knot at the nape of his neck with a few loose strands at the front, as in his 1866-67 Nagasaki photographs, a strong jaw, faint sideburns, calm confident gaze looking out toward the sea, daisho at his hip. Behind him small ships at anchor and tiled roofs stepping down the hill, a wide sky. Heroic but relaxed, sunlit. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people in view.",
       "ken_burns": "zoom_in",
-      "character_ref": "sakamoto_ryoma"
+      "character_ref": "sakamoto_ryoma",
+      "zoom_anchor": {
+        "x": 0.35,
+        "y": 0.2
+      }
     },
     {
       "scene_id": 4,
@@ -109,7 +121,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "surprised",
-      "tokio_place": "Kyoto 1867"
+      "tokio_place": "Kyoto 1867",
+      "zoom_anchor": {
+        "x": 0.66,
+        "y": 0.4
+      }
     },
     {
       "scene_id": 7,
@@ -129,7 +145,11 @@
       "ken_burns": "zoom_out",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Kyoto 1867"
+      "tokio_place": "Kyoto 1867",
+      "zoom_anchor": {
+        "x": 0.72,
+        "y": 0.55
+      }
     },
     {
       "scene_id": 9,
@@ -138,7 +158,11 @@
       "narration": "I read next of the spring of 1868. In April, Kondo Isami, commander of the Shinsengumi, surrenders to the new government's army. Among the officers deciding his fate are men of Tosa, and Tosa believes his men killed Ryoma. They refuse him the blade. On the seventeenth of May he is beheaded in public as a common criminal. Most historians now believe the Shinsengumi were not the men on that staircase. I would call that a judgment about evidence, not a certificate of innocence, and Kondo did not live to hear it.",
       "image_prompt": "Medium-wide shot, the whole seated figure in frame with clear space above his head so his entire hair and topknot knot are visible: Kondo Isami in the spring of 1868 seated upright in seiza on a clearly visible woven straw mat on a bare execution ground at Itabashi on the edge of Edo at a pale grey dawn, hands bound in front of him, his forehead and crown are NOT shaved — a sohatsu: his ENTIRE forehead and crown are covered in his own full head of hair swept straight back with an unbroken hairline and gathered in a simple knot at the back of the head, with NO shaved or bald patch anywhere on the front or top of his head (not a chonmage), unlike the other men, wearing a plain dark kimono, his right arm hanging stiffly, thickset with a broad squarish face and heavy jaw, calm immovable gaze directed at officials just out of frame; in the soft background a low wooden fence and, standing very far away with faces indistinct, a distant line of new-government officers of 1868 in Japanese dress (dark kimono, hakama and sleeveless jinbaori, swords at the hip, every one of them with a shaved pate and topknot) and a few foot soldiers in plain dark Western-cut jackets and trousers wearing flat black conical jingasa hats — NO frock coats, NO Western civilian suits, NO neckties or shirt collars, NO peaked military caps, NO gold braid, trees in fresh late-spring leaf. No blade, no blood, no violence shown. Solemn, still, dignified. Painterly cinematic film still. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people in view.",
       "ken_burns": "zoom_in",
-      "character_ref": "kondo_isami"
+      "character_ref": "kondo_isami",
+      "zoom_anchor": {
+        "x": 0.53,
+        "y": 0.35
+      }
     },
     {
       "scene_id": 10,
@@ -176,7 +200,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Kyoto 1867"
+      "tokio_place": "Kyoto 1867",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.5
+      }
     },
     {
       "scene_id": 14,
@@ -205,7 +233,11 @@
       "ken_burns": "zoom_out",
       "character_ref": null,
       "tokio_expression": "moved",
-      "tokio_place": "Kyoto 1867"
+      "tokio_place": "Kyoto 1867",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.5
+      }
     },
     {
       "scene_id": 17,
@@ -216,7 +248,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "writing",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.65
+      }
     },
     {
       "scene_id": 18,
@@ -227,7 +263,11 @@
       "ken_burns": "zoom_in",
       "character_ref": null,
       "tokio_expression": "thinking",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.58,
+        "y": 0.5
+      }
     },
     {
       "scene_id": 19,
@@ -238,7 +278,11 @@
       "ken_burns": "pan_left",
       "character_ref": null,
       "tokio_expression": "writing",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.38,
+        "y": 0.45
+      }
     },
     {
       "scene_id": 20,
@@ -249,7 +293,11 @@
       "ken_burns": "zoom_out",
       "character_ref": null,
       "tokio_expression": "neutral",
-      "tokio_place": "Present"
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.5
+      }
     }
   ],
   "bgm_sources": {
