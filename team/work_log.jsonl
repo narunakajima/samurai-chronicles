@@ -350,3 +350,4 @@
 {"ts": "2026-11-25T12:49:56+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版3", "result": "ok", "retries": 0, "note": "読み確認: ときお・さや・いっそく・人名OK、S12最後の文OK"}
 {"ts": "2026-11-25T13:20:29+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版3.6", "result": "ok", "retries": 0, "note": "サムネ・ショート44.3秒（ほたえなクイズ）"}
 {"ts": "2026-11-25T13:39:28+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版3.5", "result": "ok", "retries": 0, "note": "学習版動画59:59（冒頭動画つき）、コマ確認OK"}
+{"ts": "2026-11-25T15:55:16+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "学習版確認", "result": "ok", "retries": 0, "note": "学習版OK・upload=yes（Muse経由 answer=2）"}

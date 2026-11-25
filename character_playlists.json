@@ -783,11 +783,15 @@
   },
   "sakamoto_ryoma": {
     "display_name": "Sakamoto Ryoma",
-    "playlist_id": null,
+    "playlist_id": "PLVYTTiy2rCqU",
     "episodes": [
       {
         "episode_id": "ep068",
         "video_id": "Dkr9Ed3mNFQ"
+      },
+      {
+        "episode_id": "ep127",
+        "video_id": "FNTjLG2ZcWY"
       }
     ]
   },
@@ -843,11 +847,15 @@
   },
   "kondo_isami": {
     "display_name": "Kondo Isami",
-    "playlist_id": null,
+    "playlist_id": "PLXYJebW4Xzno",
     "episodes": [
       {
         "episode_id": "ep076",
         "video_id": "Pe2ut8ZE90s"
+      },
+      {
+        "episode_id": "ep127",
+        "video_id": "FNTjLG2ZcWY"
       }
     ]
   },
