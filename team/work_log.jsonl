@@ -330,3 +330,6 @@
 {"ts": "2026-11-25T10:06:18+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep127", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可。要相談①サムネ顔=このまま ②S19男性=このまま"}
 {"ts": "2026-11-25T10:06:18+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep127", "source": "qa", "severity": "major", "text": "S01 の image_prompt が下駄に焼き印を描かせ、漢字状の印と銀灰色の鞘が出た（5C で再生成）／S09 の背景人物の服装が時代未指定で、背広・フロックコート・明治後期の軍帽が出た（5C で再生成）"}
 {"ts": "2026-11-25T10:07:40+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "5D", "result": "ok", "retries": 0, "note": "zoom_anchor S03/S09自動、Tokio10シーンは手動で記入、左右確認済み"}
+{"ts": "2026-11-25T10:53:26+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "6", "result": "ok", "retries": 0, "note": "冒頭動画未着の判断: ユーザー回答A（到着を待つ）をMuse経由で受領"}
+{"ts": "2026-11-25T10:54:04+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "6", "result": "ok", "retries": 0, "note": "冒頭動画2本受領（10秒、差し替え後の静止画から）→ep127フォルダへ移動、opening_video設定"}
+{"ts": "2026-11-25T11:27:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "6", "result": "ok", "retries": 0, "note": "動画13:05・Shorts21秒・字幕201。Tokio表情5種と冒頭のつなぎを目視確認"}
