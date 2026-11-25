@@ -1318,17 +1318,6 @@
       "question": "1394年に将軍職、翌年に太政大臣を辞して出家した義満は、なぜ国内の官職を捨て、海外（明）の『日本国王』の称号を選んだのか（案B）"
     },
     {
-      "episode_id": "ep109",
-      "status": "pending",
-      "title": "The Warlord Who Never Married, Drank Alone, and Called Himself a God of War: Uesugi Kenshin's Private War",
-      "era": "Sengoku",
-      "priority": "A",
-      "person": "kenshin",
-      "angle": "character",
-      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。 → 2026-10-05: 重複チェックで、不犯・毘沙門天信仰・酒がep021/025/046で既出と判明。新角度が弱いため後回し（再開するなら継承問題など未使用の切り口に書き換えること）。 → 2026-11-04: 配列末尾へ移動（ユーザー決定。ep121〜125 の補充追加に伴い後回し）。",
-      "last_updated": "2026-11-04"
-    },
-    {
       "episode_id": "ep126",
       "status": "published",
       "title": "He Lost His Flag in 1877 and Waited 35 Years to Die for It: General Nogi Maresuke",
@@ -1342,14 +1331,15 @@
     },
     {
       "episode_id": "ep127",
-      "status": "pending",
+      "status": "in_production",
       "title": "Who Killed Sakamoto Ryoma? The Unsolved Murder at the Omiya Inn, 1867",
       "era": "Bakumatsu",
       "priority": "A",
       "person": "sakamoto_ryoma",
       "angle": "death",
       "notes": "龍馬2回目。ep068は近江屋の暗殺を最後の1段落で触れただけ。犯人の謎（見廻組の自白、薩摩黒幕説など諸説の根拠の強さの比較）に絞るdeath角度。ep076の「見廻組説が多い」記述と食い違わない結論にする（エドワード確認）。誕生日に殺された点は事実として使える。英語圏の根拠: 英語版Wikipedia、Like a Dragon: Ishin!、Rise of the Ronin。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
-      "last_updated": "2026-11-10"
+      "last_updated": "2026-11-25",
+      "question": "現場の鞘と下駄は新選組を指し、局長の近藤は斬首された。だが3年後、別の部隊の男が自白する。証拠はなぜ間違った男たちを指したのか。"
     },
     {
       "episode_id": "ep128",
@@ -1383,6 +1373,57 @@
       "angle": "death",
       "notes": "未登場。ep069（北条政子）の暗殺の記述は数文。宋へ渡る巨船（1217年・浮かばなかった）と歌人の将軍に重心を置き、1219年の暗殺は締めに留める。ep069と史実の記述をそろえる。image_era: kamakura。英語圏の根拠: 英語版Wikipedia、百人一首第93番の英訳。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
       "last_updated": "2026-11-10"
+    },
+    {
+      "episode_id": "ep132",
+      "status": "pending",
+      "title": "The Shinsengumi Swordsman Who Became a Tokyo Policeman — and Fought Saigo Takamori: Saito Hajime",
+      "era": "Bakumatsu/Meiji",
+      "priority": "A",
+      "person": "saito_hajime",
+      "angle": "overview",
+      "notes": "未登場。新選組三番隊組長→戊辰戦争で会津に残る→斗南→警視庁→1877年西南戦争で警視隊として西郷軍と戦う→1915年まで生きる逆説の生涯。ep072（土方）・ep076（近藤）と関連動画で並ぶ。英語圏の入口は『るろうに剣心』『薄桜鬼』『銀魂』、英語版Wikipedia単独記事。西南戦争での警視隊としての従軍と負傷、改名（藤田五郎）、会津戦争後の斗南行きは、エドワードが一次資料で確認すること。創作作品の人物像（左片手突き＝牙突など）を史実として言わない。 → 2026-11-25: 補充提案（ヘンリー）を編集長マーカスが採用（制作途中の判断は編集長、2026-11-23ルール）。"
+    },
+    {
+      "episode_id": "ep133",
+      "status": "pending",
+      "title": "Was Japan's Greatest Poet Secretly a Shogunate Spy? Matsuo Basho's Narrow Road",
+      "era": "Edo",
+      "priority": "B",
+      "person": "matsuo_basho",
+      "angle": "thematic",
+      "notes": "未登場（ep121 に名前のみ）。忍者・間諜系の目安枠。結論は『隠密説に直接の証拠はない。伊賀の出身・旅程の速さ・仙台藩領での行動などの状況証拠と、その反論』を根拠の強さで比べる形にする（ep123 と同型）。『1日に何十キロも歩いた＝忍者』という俗説は、反論とセットで扱う。説を事実のように語らない。主眼は『なぜこの説が生まれたか』と『おくのほそ道』の旅そのもの。英語圏の根拠: 英語版Wikipedia（Matsuo Bashō / The Narrow Road to the Deep North）、学校教育の俳句。 → 2026-11-25: 補充提案（ヘンリー）を編集長マーカスが採用（制作途中の判断は編集長、2026-11-23ルール）。"
+    },
+    {
+      "episode_id": "ep134",
+      "status": "pending",
+      "title": "She Escaped Two Falling Castles as a Girl — and Died in the Third: Yodo-dono, the Woman Blamed for the Fall of the Toyotomi",
+      "era": "Sengoku/Edo",
+      "priority": "A",
+      "person": "yodo_dono",
+      "angle": "character",
+      "notes": "主役では初。ep091（秀頼）・ep015・ep097 と場面が重なるため、軸は『豊臣を滅ぼした悪女』という評価が江戸期の記述でどう作られたかと、本人の選択（小谷・北ノ庄からの脱出、秀頼の母としての大坂での判断）にする。小谷城の落城時に城が焼けたかどうかはエドワードが確認し、題名・本文で断定しない。容姿は ep091 の Yodo-dono と照合する。英語圏の根拠: 英語版Wikipedia、FX『Shōgun』(2024) の Ochiba のモデル、Samurai Warriors。 → 2026-11-25: 補充提案（ヘンリー）を編集長マーカスが採用（制作途中の判断は編集長、2026-11-23ルール）。"
+    },
+    {
+      "episode_id": "ep135",
+      "status": "pending",
+      "title": "He Killed a Teenage Flute Player at Ichi-no-Tani — Then Gave Up the Sword: Kumagai Naozane and Atsumori",
+      "era": "Heian",
+      "priority": "B",
+      "person": "kumagai_naozane",
+      "angle": "key_event",
+      "notes": "未登場（敦盛は副）。ep058・ep059（源平）と時期は重なるが、一騎打ちと出家に絞る。『平家物語』の、敦盛を討った悔いから出家したという筋と、『吾妻鏡』の、所領の訴えに敗れて出家したという記述を比べ、どちらか一方を事実として語らない。敦盛の笛（小枝・青葉の笛）は伝承として扱う。若い平家の公達の髪型・装束は image_era=kamakura 相当で確認する。英語圏の根拠: 英語版Wikipedia（Taira no Atsumori / Kumagai Naozane）、The Tale of the Heike 英訳、能 Atsumori。 → 2026-11-25: 補充提案（ヘンリー）を編集長マーカスが採用（制作途中の判断は編集長、2026-11-23ルール）。"
+    },
+    {
+      "episode_id": "ep109",
+      "status": "pending",
+      "title": "The Warlord Who Never Married, Drank Alone, and Called Himself a God of War: Uesugi Kenshin's Private War",
+      "era": "Sengoku",
+      "priority": "A",
+      "person": "kenshin",
+      "angle": "character",
+      "notes": "謙信3回目の登場。ep021（生涯overview）、ep046（暗殺されたのかという死の謎）とは異なり、生涯不犯・独り酒・毘沙門天信仰という私的な精神生活に絞るcharacter角度は初出。 → 2026-09-28: Opus月次分析の提言によりキュー4番目に配置（death角度2本(ep106/ep108)の間に挟んで連続を分断）。 → 2026-10-05: 重複チェックで、不犯・毘沙門天信仰・酒がep021/025/046で既出と判明。新角度が弱いため後回し（再開するなら継承問題など未使用の切り口に書き換えること）。 → 2026-11-04: 配列末尾へ移動（ユーザー決定。ep121〜125 の補充追加に伴い後回し）。 → 2026-11-25: 継承・御館の乱は ep046 S06/S12/S13、塩は ep025・ep021、関東管領は ep021 で既出。新角度なしのため今回も見送り、末尾へ（編集長マーカス）。",
+      "last_updated": "2026-11-25"
     }
   ],
   "hypotheses": [
@@ -1477,6 +1518,6 @@
       "notes_2026-11-09": "2026-10 月次評価（管理担当）の提案3を、ユーザー承認（2026-11-09）のうえ登録。判定対象の8本と比較対象を上記のとおり事前固定。Reporting API の欠損（10/12以降の再認証待ち）で14日窓が復元できない回があり、判定は再認証後。"
     }
   ],
-  "last_updated": "2026-11-12",
-  "total_topics": 131
+  "last_updated": "2026-11-25",
+  "total_topics": 135
 }
