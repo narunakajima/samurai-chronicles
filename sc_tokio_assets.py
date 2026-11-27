@@ -108,6 +108,10 @@ def clip_path(expr: str) -> Path:
 # ── gen-talk ──────────────────────────────────────────────────────────
 
 def cmd_gen_talk(args):
+    if not args.dry_run:
+        # 無人実行（HANDOFF_UNATTENDED=1）では --dry-run 以外を拒否（課金を伴う Veo 生成。対話実行は影響なし）
+        from sc_unattended_guard import forbid_unattended
+        forbid_unattended("Veo による Tokio 素材の生成（gen-talk）")
     from google import genai
     from google.genai import types
     key = os.environ.get("GEMINI_API_KEY_SC") or os.environ.get("GEMINI_API_KEY", "")
