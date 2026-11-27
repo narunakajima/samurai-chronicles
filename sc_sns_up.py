@@ -250,6 +250,28 @@ def upload_caption(youtube, video_id: str, srt_path: Path):
     print(f"  ✓ 字幕完了")
 
 
+def check_publish_at_future(publish_at: str, min_minutes: int = 10):
+    """予約日時（JST "YYYY-MM-DD HH:MM"）が今から min_minutes 分より先であることを検査する。違えば終了。"""
+    t = datetime.strptime(parse_publish_at(publish_at), "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    if t < datetime.now(timezone.utc) + timedelta(minutes=min_minutes):
+        print(f"❌ 予約日時 {publish_at} は、今から{min_minutes}分以内か過去です（即時公開になるため中止）", file=sys.stderr)
+        sys.exit(1)
+
+
+def _save_main_upload(ep_json: Path, ep: dict, main_id: str, publish_at, **flags):
+    """本編アップロード成功の記録を episodes/ep{NNN}.json に書く（再実行時に Shorts 以降だけ続けるため）。
+    scheduled_at も同時に書き、他の回が同じ日のスロットを取らないようにする。youtube_url は Shorts まで完了してから書く。"""
+    mu = ep.get("main_upload") if isinstance(ep.get("main_upload"), dict) else {}
+    mu.update({"video_id": main_id, "publish_at": publish_at or "",
+               "uploaded_at": mu.get("uploaded_at") or datetime.now(JST).strftime("%Y-%m-%d %H:%M")})
+    mu.update(flags)
+    ep["main_upload"] = mu
+    if publish_at:
+        ep["scheduled_at"] = publish_at
+    with open(ep_json, "w", encoding="utf-8") as f:
+        json.dump(ep, f, ensure_ascii=False, indent=2)
+
+
 def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = False, resume_main_id: Optional[str] = None):
     # 無人実行（handoff-poller）の安全装置: メモに「アップロード指示: ep{NNN}」が明記された回だけ実行できる。--now は常に拒否
     from sc_unattended_guard import require_upload_permission, forbid_unattended
@@ -279,6 +301,16 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     description = ep["youtube_description"]
     tags = ep.get("youtube_tags", [])
 
+    # 本編アップロード済みの記録（前回、本編の成功後に Shorts 以降で失敗した場合）。手動の --resume-main-id は不要
+    saved = ep.get("main_upload") if isinstance(ep.get("main_upload"), dict) else {}
+    if saved.get("video_id") and not resume_main_id:
+        resume_main_id = saved["video_id"]
+        print(f"ℹ️  episodes/{episode_id}.json に本編アップロード済みの記録があります（{resume_main_id}）。Shorts 以降を続けます")
+        if not publish_at and not publish_now:
+            publish_at = saved.get("publish_at") or None
+    elif resume_main_id:
+        saved = {}  # 手動指定: 従来どおり字幕・サムネイルもスキップ
+
     # 公開日時の決定
     if publish_now:
         publish_at = None  # 即時公開
@@ -288,6 +320,11 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     else:
         publish_at = find_next_publish_slot()
         publish_label = f"予約公開: {publish_at} JST（自動）"
+        # 自動で決めた日時も、未来であることを検査する（過去だと即時公開になる）
+        check_publish_at_future(publish_at)
+    if saved.get("video_id") and publish_at and not publish_now:
+        # 記録から再開する場合、保存した予約日時が過ぎていたら Shorts が即時公開になるので止める
+        check_publish_at_future(publish_at)
 
     print(f"\n{'━'*60}")
     print(f"  {episode_id} — YouTube アップロード（{publish_label}）")
@@ -304,17 +341,30 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     if resume_main_id:
         # 本編のアップロード（字幕・サムネイル含む）は済んでいて、Shorts 以降で失敗したときの続き（2026-11-09 ep122: Shorts のタイトルが100文字超）
         main_id = resume_main_id
-        print(f"【本編】アップロード済みの {main_id} を使います（本編・字幕・サムネイルはスキップ）")
+        print(f"【本編】アップロード済みの {main_id} を使います（本編は再送しない）")
+        if saved.get("video_id") and not saved.get("caption_done") and srt_file.exists():
+            upload_caption(youtube, main_id, srt_file)
+            _save_main_upload(ep_json, ep, main_id, publish_at, caption_done=True)
+        if saved.get("video_id") and not saved.get("thumbnail_done") and thumbnail_file.exists():
+            try:
+                upload_thumbnail(youtube, main_id, thumbnail_file)
+                _save_main_upload(ep_json, ep, main_id, publish_at, thumbnail_done=True)
+            except Exception as e:
+                print(f"  ⚠️  サムネイルスキップ（YouTube Studioで手動設定してください）: {e}")
     else:
         print("【本編】")
         main_id = upload_video(youtube, main_video, title, description, tags, publish_at)
+        # 成功した瞬間に動画IDを記録する（以降の失敗で本編を二重に上げないため）
+        _save_main_upload(ep_json, ep, main_id, publish_at)
         if srt_file.exists():
             upload_caption(youtube, main_id, srt_file)
+            _save_main_upload(ep_json, ep, main_id, publish_at, caption_done=True)
         else:
             print(f"  ⚠️  字幕ファイルなし（スキップ）")
         if thumbnail_file.exists():
             try:
                 upload_thumbnail(youtube, main_id, thumbnail_file)
+                _save_main_upload(ep_json, ep, main_id, publish_at, thumbnail_done=True)
             except Exception as e:
                 print(f"  ⚠️  サムネイルスキップ（YouTube Studioで手動設定してください）: {e}")
         else:
@@ -347,6 +397,7 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
     ep["youtube_url"] = f"https://youtu.be/{main_id}"
     ep["shorts_url"] = f"https://youtu.be/{shorts_id}"
     ep["scheduled_at"] = publish_at if publish_at else ""
+    ep.pop("main_upload", None)  # 途中再開用の記録は、Shorts まで完了したので不要
     # Muse（クラウド）が関連動画を設定するための対応表（どのショートにどの本編を付けるか）
     ep["related_links"] = {
         "channel": "SC",
