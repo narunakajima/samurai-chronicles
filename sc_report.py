@@ -58,6 +58,63 @@ def line(case, event, step, by, state, nxt, eta, needs_user, ref):
             f"state={state} / next={nxt} / eta={eta} / needs_user={needs_user} / ref={ref}")
 
 
+SLACK_WEBHOOK_FILES = ["~/.claude/secrets/slack_webhook_team_reports_samurai-chronicles.txt",
+                       "~/.claude/secrets/slack_webhook_team_reports.txt"]
+ALERT_LOG_DIR = ROOT / "team" / "upload_alerts"
+
+
+def _slack_webhook() -> str:
+    import os
+    if os.environ.get("TEAM_SLACK_WEBHOOK"):
+        return os.environ["TEAM_SLACK_WEBHOOK"].strip()
+    for f in SLACK_WEBHOOK_FILES:
+        p = Path(os.path.expanduser(f))
+        if p.exists():
+            return p.read_text(encoding="utf-8").strip()
+    return ""
+
+
+def build_alert(case, failures, warnings):
+    """失敗・警告の一覧を、#cc-reports 向けの文面にする。"""
+    head = "❌" if failures else "⚠️"
+    msg = f"{head} *SC アップロード {case}*: 失敗 {len(failures)} 件・警告 {len(warnings)} 件"
+    if failures:
+        msg += "\n*失敗*\n" + "\n".join(f"• {x}" for x in failures)
+    if warnings:
+        msg += "\n*警告（処理は続行）*\n" + "\n".join(f"• {x}" for x in warnings)
+    return msg
+
+
+def post_alert(case, failures, warnings, dry_run=False):
+    """失敗・警告があれば #cc-reports へ送る（Incoming Webhook）。何もなければ送らない。
+    Webhook 未設定・送信失敗でも例外は出さず、team/upload_alerts/{case}.txt に必ず残す。戻り値は 送信できたか。"""
+    if not failures and not warnings:
+        return False
+    msg = build_alert(case, failures, warnings)
+    if dry_run:
+        print("[dry-run] 送信予定の文面:\n" + msg)
+        return False
+    try:
+        ALERT_LOG_DIR.mkdir(parents=True, exist_ok=True)
+        with open(ALERT_LOG_DIR / f"{case}.txt", "a", encoding="utf-8") as f:
+            f.write(time.strftime("%Y-%m-%d %H:%M:%S") + "\n" + msg + "\n\n")
+    except Exception as e:
+        print(f"⚠ 失敗・警告の記録ファイルを書けません: {e}", file=sys.stderr)
+    url = _slack_webhook()
+    if not url:
+        print("⚠ Slack の Webhook が未設定のため通知できません（記録ファイルのみ）", file=sys.stderr)
+        return False
+    try:
+        import urllib.request
+        body = json.dumps({"text": msg[:39000]}, ensure_ascii=False).encode("utf-8")
+        req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=30) as res:
+            return res.status == 200
+    except Exception as e:
+        print(f"⚠ Slack への通知に失敗: {e}", file=sys.stderr)
+        return False
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -77,7 +134,14 @@ def main():
     p = sub.add_parser("consumed"); p.add_argument("--case", required=True)
     p = sub.add_parser("done"); p.add_argument("--case", required=True)
     sub.add_parser("show")
+    p = sub.add_parser("alert")  # 動作確認用: 失敗・警告の通知文面を表示（--dry-run）または送信
+    p.add_argument("--case", required=True)
+    p.add_argument("--fail", action="append", default=[]); p.add_argument("--warn", action="append", default=[])
+    p.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
+
+    if a.cmd == "alert":
+        return 0 if post_alert(a.case, a.fail, a.warn, dry_run=a.dry_run) or a.dry_run else 1
 
     if a.cmd == "show":
         print(json.dumps(load(), ensure_ascii=False, indent=2))

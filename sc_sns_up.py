@@ -272,7 +272,39 @@ def _save_main_upload(ep_json: Path, ep: dict, main_id: str, publish_at, **flags
         json.dump(ep, f, ensure_ascii=False, indent=2)
 
 
+# 失敗・警告の記録（2026-11-27 handoff 2026-11-27-004）。終了時に sc_report.post_alert が #cc-reports へ送る
+FAILURES: list = []
+WARNINGS: list = []
+
+
+def record_warning(msg: str):
+    WARNINGS.append(msg)
+
+
+def record_failure(msg: str):
+    FAILURES.append(msg)
+
+
 def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = False, resume_main_id: Optional[str] = None):
+    """_run を実行し、終了時に失敗・警告の一覧を #cc-reports へ送る（失敗・警告が無ければ送らない）。"""
+    try:
+        _run(episode_id, publish_at, publish_now, resume_main_id)
+    except SystemExit as e:
+        if e.code not in (None, 0):
+            record_failure(f"処理が中断しました（終了コード {e.code}）")
+        raise
+    except BaseException as e:
+        record_failure(f"未処理の例外で中断: {type(e).__name__}: {e}")
+        raise
+    finally:
+        try:
+            from sc_report import post_alert
+            post_alert(episode_id, FAILURES, WARNINGS)
+        except Exception as e:
+            print(f"⚠ 失敗・警告の通知処理でエラー: {e}", file=sys.stderr)
+
+
+def _run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = False, resume_main_id: Optional[str] = None):
     # 無人実行（handoff-poller）の安全装置: メモに「アップロード指示: ep{NNN}」が明記された回だけ実行できる。--now は常に拒否
     from sc_unattended_guard import require_upload_permission, forbid_unattended
     if publish_now:
@@ -354,6 +386,7 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
                 _save_main_upload(ep_json, ep, main_id, publish_at, thumbnail_done=True)
             except Exception as e:
                 print(f"  ⚠️  サムネイルスキップ（YouTube Studioで手動設定してください）: {e}")
+                record_warning(f"サムネイル設定に失敗（YouTube Studio で手動設定が必要）: {e}")
     else:
         print("【本編】")
         main_id = upload_video(youtube, main_video, title, description, tags, publish_at)
@@ -364,13 +397,16 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
             _save_main_upload(ep_json, ep, main_id, publish_at, caption_done=True)
         else:
             print(f"  ⚠️  字幕ファイルなし（スキップ）")
+            record_warning(f"字幕ファイルなし（字幕未アップロード）: {srt_file.name}")
         if thumbnail_file.exists():
             try:
                 upload_thumbnail(youtube, main_id, thumbnail_file)
                 _save_main_upload(ep_json, ep, main_id, publish_at, thumbnail_done=True)
             except Exception as e:
                 print(f"  ⚠️  サムネイルスキップ（YouTube Studioで手動設定してください）: {e}")
+                record_warning(f"サムネイル設定に失敗（YouTube Studio で手動設定が必要）: {e}")
         else:
+            record_warning(f"サムネイルファイルなし（未設定）: {thumbnail_file.name}")
             print(f"  ⚠️  サムネイルなし（スキップ）: {thumbnail_file.name}")
 
     time.sleep(2)
@@ -431,6 +467,7 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
         update_playlists(youtube, episode_id, main_id, ep)
     except Exception as e:
         print(f"  ⚠️  プレイリスト処理でエラー（アップロード自体は成功）: {e}")
+        record_warning(f"プレイリスト処理でエラー: {e}")
 
     # プレイリストID整合性検証＋自動修正
     # （手動削除・再作成やマシン間マージで playlist_id が実態とズレるのを防ぐ）
@@ -442,6 +479,7 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
         verify_and_fix(youtube, auto_fix=True, verbose=True)
     except Exception as e:
         print(f"  ⚠️  整合性検証でエラー（アップロード自体は成功）: {e}")
+        record_warning(f"プレイリストID整合性検証でエラー: {e}")
 
     # プレイリスト整合チェック＋自動補完
     # （非公開スキップ済みの動画を公開後に自動追加）
@@ -461,8 +499,11 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
                 resp = youtube.playlistItems().list(
                     part="snippet", playlistId=pid, maxResults=50
                 ).execute()
-            except Exception:
-                continue  # 整合性検証で修正できなかった不正なIDはスキップ
+            except Exception as e:
+                # 整合性検証で修正できなかった不正なIDはスキップするが、黙殺せず記録する
+                print(f"  ⚠️  {char_key}: プレイリスト内容の取得に失敗（スキップ）: {e}")
+                record_warning(f"プレイリスト内容の取得に失敗（{char_key} / {pid}）: {e}")
+                continue
             actual_vids = {
                 item["snippet"]["resourceId"]["videoId"]
                 for item in resp.get("items", [])
@@ -475,14 +516,17 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
                         _add_to_playlist(youtube, pid, vid)
                         print(f"  🔧 {char_key} / {entry['episode_id']}: プレイリストに補完追加")
                         added_count += 1
-                    except Exception:
-                        pass  # まだ非公開なら次回に持ち越し
+                    except Exception as e:
+                        # まだ非公開なら次回に持ち越し。ただし失敗は黙殺せず記録する
+                        print(f"  ⚠️  {char_key} / {entry['episode_id']}: プレイリスト補完追加に失敗: {e}")
+                        record_warning(f"プレイリスト補完追加に失敗（{char_key} / {entry['episode_id']} / {vid}。非公開なら次回に持ち越し）: {e}")
         if added_count == 0:
             print(f"  ✅ 全プレイリスト整合済み（補完なし）")
         else:
             print(f"  ✅ {added_count}件を補完追加")
     except Exception as e:
         print(f"  ⚠️  整合チェックでエラー（アップロード自体は成功）: {e}")
+        record_warning(f"プレイリスト整合チェックでエラー: {e}")
 
     # index.html 再ビルド
     print(f"{'━'*60}")
@@ -493,6 +537,7 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
         build_site()
     except Exception as e:
         print(f"  ⚠️  サイトビルドでエラー（アップロード自体は成功）: {e}")
+        record_warning(f"サイトビルドでエラー: {e}")
 
     print(f"{'━'*60}")
     print(f"  残りの変更をコミット")
@@ -547,6 +592,7 @@ def commit_remaining_changes(episode_id: str):
     )
     if result.returncode != 0:
         print(f"  警告: git commit 失敗: {result.stderr.strip()}")
+        record_warning(f"git commit 失敗: {result.stderr.strip() or result.stdout.strip()}")
         return
 
     result = subprocess.run(
@@ -557,6 +603,7 @@ def commit_remaining_changes(episode_id: str):
         print(f"  ✓ 残りの変更を git push しました")
     else:
         print(f"  警告: git push 失敗: {result.stderr.strip()}")
+        record_warning(f"git push 失敗: {result.stderr.strip()}")
 
 
 def fix_shorts_description(episode_id: str, shorts_id: str):
