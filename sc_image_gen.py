@@ -78,6 +78,9 @@ def image_part_from_path(path: Path) -> types.Part:
 
 MODEL = "gemini-nano-banana-2.1"
 import sc_gemini_model as gm  # QA用モデルは sc_gemini_model.py に集約（2026-11-09-025）
+from sc_qa_limits import qa_limit  # 再生成・再試行の上限は team/qa_limits.json が正本（2026-11-27）
+QA_MAX_ATTEMPTS = qa_limit("image_qa_attempts", 2)
+API_MAX_RETRIES = qa_limit("api_call_retries", 3)
 
 BASE_DIR = Path(__file__).parent  # スクリプト・エピソードJSONの場所
 
@@ -254,7 +257,7 @@ def load_character_ref(name: str) -> str:
     return CHARACTER_DEFAULTS.get(name, "")
 
 
-def _generate_with_retry(client, contents, output_path: Path, max_retries: int = 3) -> bool:
+def _generate_with_retry(client, contents, output_path: Path, max_retries: int = API_MAX_RETRIES) -> bool:
     """generate_content を最大 max_retries 回リトライする（指数バックオフ）。
     contents は文字列プロンプト、または [プロンプト, PIL.Image] のような
     マルチモーダル入力（画像編集・再構成用）のどちらも受け付ける。"""
@@ -507,7 +510,7 @@ def _crop_to_aspect(path: Path, expected: tuple) -> None:
 
 
 def _generate_and_qa(client, gen_func, base_prompt: str, char_ref: str,
-                      out_file: Path, scene_id: int, max_attempts: int = 2,
+                      out_file: Path, scene_id: int, max_attempts: int = QA_MAX_ATTEMPTS,
                       ref_image: types.Part = None) -> dict:
     """
     生成 → QA を行い、クリティカル（QA失敗）なら自動的にプロンプトを修正して

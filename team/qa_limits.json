@@ -1,0 +1,23 @@
+{
+  "_doc": "SC の再生成・再試行の上限の正本（2026-11-27、handoff 2026-11-27-006）。スクリプトはここを読む（読めなければ各スクリプト内の既定値＝同じ値を使う）。値を変えるときはここだけを直す。細部の値は編集長マーカスの判断で決めた（_decided_by を参照）。",
+  "_decided_by": {
+    "image_qa_attempts": "既存値（2026-08-02 に3→2へ削減済み）を維持",
+    "api_call_retries": "既存値を維持",
+    "tts_takes": "既存値を維持",
+    "gen_talk_*": "既存値を維持。課金が出るため増やさない。無人は不可",
+    "thumbnail_auto_regenerate": "sc-new.md STEP5B の既存記述（1回だけ）を数値化",
+    "claude_fix_after_auto_retry": "sc-new.md の既存記述（自動2回＋Claude修正1回）を数値化",
+    "question_gate_rebuild": "sc-new.md STEP1.5 の既存記述（1回まで）を数値化",
+    "bgm_partial_retry": "失敗スロットだけを --start-slot で補完。補完は最大2回、それでも残れば人に報告（マーカスの判断）",
+    "escalate_to": "上限に達したら sc-art-director（画像）／sc-manager（それ以外）へ引き継ぐ。上限を超えて同じ工程を繰り返さない"
+  },
+  "image_qa_attempts": 2,
+  "api_call_retries": 3,
+  "tts_takes": 5,
+  "gen_talk_generate_tries": 2,
+  "gen_talk_download_tries": 3,
+  "thumbnail_auto_regenerate": 1,
+  "claude_fix_after_auto_retry": 1,
+  "question_gate_rebuild": 1,
+  "bgm_partial_retry": 2
+}

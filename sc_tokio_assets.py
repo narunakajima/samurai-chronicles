@@ -36,6 +36,9 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
+from sc_qa_limits import qa_limit  # 上限の正本: team/qa_limits.json（2026-11-27）
+GEN_TRIES = qa_limit("gen_talk_generate_tries", 2)
+DL_TRIES = qa_limit("gen_talk_download_tries", 3)
 NARR_DIR = BASE_DIR / "narrator"
 RAW_DIR = NARR_DIR / "raw"
 CLIP_DIR = NARR_DIR / "clips"
@@ -133,7 +136,7 @@ def cmd_gen_talk(args):
         # 生成（ここで課金）と、ダウンロード・保存を分ける。動画が返った後に失敗しても、生成し直さない（二重課金を避ける）
         video = None
         reason = ""
-        for _ in range(2):   # 動画が返らないとき（安全フィルタ・APIエラー）だけ1回取り直す。返らなかった分は課金されない
+        for _ in range(GEN_TRIES):   # 動画が返らないとき（安全フィルタ・APIエラー）だけ1回取り直す。返らなかった分は課金されない
             try:
                 op = client.models.generate_videos(
                     model=VEO_MODEL, prompt=HEAD + MID[expr] + TAIL, image=img,
@@ -159,7 +162,7 @@ def cmd_gen_talk(args):
                 reason = f"生成の呼び出しで例外: {str(e)[:200]}"
         if video is None:
             return expr, f"FAILED（{reason}）"
-        for attempt in range(3):   # 生成済みの動画のダウンロードだけを再試行する
+        for attempt in range(DL_TRIES):   # 生成済みの動画のダウンロードだけを再試行する
             try:
                 client.files.download(file=video.video)
                 video.video.save(str(raw_path(expr)))

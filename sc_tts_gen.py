@@ -63,6 +63,7 @@ TRAILER_EXPECTED_WPM = 90.0   # teaser / shorts（実測: Gemini TTS は ~80-90 
 import subprocess  # noqa: E402（silenceremove用）
 
 BASE_DIR = Path(__file__).parent  # スクリプト・エピソードJSONの場所
+from sc_qa_limits import qa_limit  # 上限の正本: team/qa_limits.json（2026-11-27）
 
 # 生成素材の保存先（Google Drive）
 DRIVE_BASE = (
@@ -283,7 +284,7 @@ def _tts_rest_call(narration_text: str, style: str, voice_name: str = VOICE_NAME
     raise RuntimeError(f"レスポンスに音声データがありません: {data}")
 
 
-def generate_take(client, narration_text: str, max_retries: int = 5,
+def generate_take(client, narration_text: str, max_retries: int = qa_limit("tts_takes", 5),
                   scene_type: str = "", expected_wpm: float = MAIN_EXPECTED_WPM,
                   dup_check_text: str = None) -> bytes:
     """1テイク生成して音声バイト列を返す（指数バックオフリトライ付き）。
