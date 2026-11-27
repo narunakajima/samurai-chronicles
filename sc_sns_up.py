@@ -293,6 +293,9 @@ def run(episode_id: str, publish_at: Optional[str] = None, publish_now: bool = F
 
     out_dir = DRIVE_BASE / episode_id / "output"
     main_video = out_dir / f"Samurai Chronicles {episode_id}.mp4"
+    # 層B: 無人実行は本人の承認（対象回・動画の指紋・有効期限）がある回だけ、1回に限り許可（2026-11-27）
+    from sc_unattended_guard import require_user_approval
+    require_user_approval(episode_id, main_video, ep)
     shorts_video = out_dir / f"{episode_id}_shorts.mp4"
     srt_file = out_dir / f"{episode_id}.srt"
     thumbnail_file = DRIVE_BASE / episode_id / f"{episode_id}_thumbnail.png"
