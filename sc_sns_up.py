@@ -607,9 +607,9 @@ def commit_remaining_changes(episode_id: str):
 
 
 def fix_shorts_description(episode_id: str, shorts_id: str):
+    """既存ShortsのURLを新フォーマットの説明文に更新する（本編IDは自動取得）"""
     from sc_unattended_guard import forbid_unattended
     forbid_unattended("--fix-shorts（既存の Shorts の説明文の書き換え）")
-    """既存ShortsのURLを新フォーマットの説明文に更新する（本編IDは自動取得）"""
     import re
 
     ep_json = BASE_DIR / "episodes" / f"{episode_id}.json"
@@ -666,9 +666,9 @@ def cli():
     parser = argparse.ArgumentParser(description="Samurai Chronicles YouTube アップロード")
     parser.add_argument("--episode", required=False, help="エピソードID（例: ep001）")
     parser.add_argument("--publish-at", metavar="DATETIME",
-                        help="予約公開日時（JST）例: '2026-06-01 20:00' / 省略時は翌 03:00 JST に自動予約")
+                        help="予約公開日時（JST）例: '2026-06-01 20:00' / 省略時は次の空き枠（火・木・土 03:00 JST）に自動予約")
     parser.add_argument("--now", action="store_true",
-                        help="即時公開（03:00 JST 自動予約をスキップ）")
+                        help="即時公開（火・木・土 03:00 JST の自動予約をスキップ。無人実行では常に拒否される）")
     parser.add_argument("--resume-main-id", metavar="VIDEO_ID", help="本編をアップロード済みのとき、そのIDを指定して Shorts 以降を続ける（本編・字幕・サムネイルは再送しない。--publish-at は本編と同じ日時を指定する）")
     parser.add_argument("--fix-shorts", metavar="SHORTS_ID", help="既存ShortsのIDを指定して説明文を修正（本編IDは自動取得）")
     args = parser.parse_args()
