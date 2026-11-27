@@ -58,19 +58,28 @@ def line(case, event, step, by, state, nxt, eta, needs_user, ref):
             f"state={state} / next={nxt} / eta={eta} / needs_user={needs_user} / ref={ref}")
 
 
-SLACK_WEBHOOK_FILES = ["~/.claude/secrets/slack_webhook_team_reports_samurai-chronicles.txt",
-                       "~/.claude/secrets/slack_webhook_team_reports.txt"]
+# アップロードの失敗・警告は #cc-reports へ送る（2026-11-28、案件 2026-11-27-004。ユーザー承認）。
+# team_scheduled.py の slack_webhook_team_reports_*.txt（月次評価の向き先）とは分ける。
+# 専用ファイルが無ければ、ポーラーが #cc-reports への投稿に使う Webhook を使う。
+SLACK_WEBHOOK_FILE = "~/.claude/secrets/slack_webhook_upload_failure_samurai-chronicles.txt"
+POLLER_SLACK_JSON = "~/.config/handoff-poller/slack.json"
 ALERT_LOG_DIR = ROOT / "team" / "upload_alerts"
 
 
 def _slack_webhook() -> str:
+    """失敗・警告の報告用（#cc-reports 向け）の Incoming Webhook URL。無ければ空文字（記録ファイルのみ）。"""
     import os
     if os.environ.get("TEAM_SLACK_WEBHOOK"):
         return os.environ["TEAM_SLACK_WEBHOOK"].strip()
-    for f in SLACK_WEBHOOK_FILES:
-        p = Path(os.path.expanduser(f))
-        if p.exists():
-            return p.read_text(encoding="utf-8").strip()
+    p = Path(os.path.expanduser(SLACK_WEBHOOK_FILE))
+    if p.exists():
+        return p.read_text(encoding="utf-8").strip()
+    poller = Path(os.path.expanduser(POLLER_SLACK_JSON))
+    if poller.exists():
+        try:
+            return str(json.loads(poller.read_text(encoding="utf-8")).get("cc_reports_webhook_url", "")).strip()
+        except (OSError, ValueError):
+            pass
     return ""
 
 
