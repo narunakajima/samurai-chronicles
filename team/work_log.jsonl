@@ -402,3 +402,7 @@
 {"ts": "2026-11-28T11:23:00+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "学習版 STEP 3.6 ショート", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-28T11:41:19+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "学習版 STEP 3.5 動画", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-28T11:41:20+09:00", "kind": "applied", "agent": "sc-coordinator", "episode": "ep128", "ids": ["SC2611-05", "SC2611-06"], "skipped": [], "reason": ""}
+{"ts": "2026-11-28T14:38:14+09:00", "kind": "call", "agent": "sc-community", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T14:38:24+09:00", "kind": "work", "agent": "sc-community", "episode": "ep128", "step": "3.6", "result": "ok", "retries": 0, "note": "返信0件・見送り4件"}
+{"ts": "2026-11-28T14:38:24+09:00", "kind": "work", "agent": "sc-community", "episode": "ep128", "step": "3.7", "result": "ok", "retries": 0, "note": "返信1件・見送り0件"}
+{"ts": "2026-11-28T14:38:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "進行", "result": "ok", "retries": 0, "note": "制作からアップロード予約まで完了。同じリポジトリの無人実行の終了を待ってからアップロード"}
