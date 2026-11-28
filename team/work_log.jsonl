@@ -391,3 +391,14 @@
 {"ts": "2026-11-28T10:17:15+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "進行", "result": "ok", "retries": 0, "note": "STEP順: 3Bは5-0の後に実施（画像は風体リサーチ後の決まり）。他は手順どおり"}
 {"ts": "2026-11-28T10:17:29+09:00", "kind": "applied", "agent": "sc-manager", "episode": "ep128", "ids": ["SC2611-07"], "skipped": [], "reason": ""}
 {"ts": "2026-11-28T10:29:53+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "本編確認", "result": "ok", "retries": 0, "note": "ユーザーOK（Muse経由 answer=B）。学習版を起動"}
+{"ts": "2026-11-28T10:34:56+09:00", "kind": "applied", "agent": "sc-learn-writer", "episode": "ep128", "ids": ["SC2611-08", "SC2611-09"], "skipped": [], "reason": ""}
+{"ts": "2026-11-28T10:35:16+09:00", "kind": "call", "agent": "sc-learn-writer", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T10:35:23+09:00", "kind": "work", "agent": "sc-learn-writer", "episode": "ep128", "step": "1", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T10:52:08+09:00", "kind": "feedback", "agent": "sc-learn-writer", "episode": "ep128", "source": "qa", "severity": "minor", "text": "学習版 STEP 2: S4 ワンポイントの『使えます』が3回とも『使います』と読まれた。文末を言い換えて再ビルド"}
+{"ts": "2026-11-28T10:53:17+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "学習版 STEP 2 音声ビルド", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T10:55:24+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "学習版 STEP 3 読みの確認", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T11:06:05+09:00", "kind": "feedback", "agent": "sc-learn-writer", "episode": "ep128", "source": "qa", "severity": "minor", "text": "学習版サムネイル: thumb_scene 13 は主役の顔がコピーに隠れた。4に変更"}
+{"ts": "2026-11-28T11:06:11+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "学習版 STEP 3.6 サムネイル", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T11:23:00+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "学習版 STEP 3.6 ショート", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T11:41:19+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "学習版 STEP 3.5 動画", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T11:41:20+09:00", "kind": "applied", "agent": "sc-coordinator", "episode": "ep128", "ids": ["SC2611-05", "SC2611-06"], "skipped": [], "reason": ""}
