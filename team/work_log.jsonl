@@ -390,3 +390,4 @@
 {"ts": "2026-11-28T10:17:15+09:00", "kind": "applied", "agent": "sc-coordinator", "episode": "ep128", "ids": ["SC2611-05", "SC2611-06"], "skipped": [], "reason": ""}
 {"ts": "2026-11-28T10:17:15+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "進行", "result": "ok", "retries": 0, "note": "STEP順: 3Bは5-0の後に実施（画像は風体リサーチ後の決まり）。他は手順どおり"}
 {"ts": "2026-11-28T10:17:29+09:00", "kind": "applied", "agent": "sc-manager", "episode": "ep128", "ids": ["SC2611-07"], "skipped": [], "reason": ""}
+{"ts": "2026-11-28T10:29:53+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "本編確認", "result": "ok", "retries": 0, "note": "ユーザーOK（Muse経由 answer=B）。学習版を起動"}
