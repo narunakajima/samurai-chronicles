@@ -1866,6 +1866,8 @@ y: 0.0=上端〜1.0=下端）で、TWO_SHOTなら`{"multi_person": true}`を
 `sc_video_gen.py`はmulti_personの場合、1点ズームではなく両者を収める
 pan_zoom_outに切り替える。
 
+**座標優先（2026-11-28・ep128 S13頭切れ）:** zoom_anchor に x・y の座標があるシーンは、image_prompt の「左・右」等の語より座標を優先する（語による pan_zoom_out への切替は座標が無いときだけ）。ティーザーの静止画にも同じ座標を渡す。
+
 **⚠️ 判定精度に不安がある場合:** `sc_video_gen.py`で生成した動画のズーム構図
 （顔が変に切れていないか等）を確認し、目立ったズレがあれば `--scenes N` で
 該当シーンのみ再判定するか、`episodes/ep{NNN}.json` の `zoom_anchor` を手動で
