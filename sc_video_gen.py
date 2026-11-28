@@ -349,6 +349,13 @@ def infer_zoom_anchor(image_prompt: str, character_ref: str = None,
 
     # Gemini Vision が2人以上の構図と判定済み、またはテキストから両端2人と判明
     # → パン＋ズームアウト（方向はランダム）
+    # 座標優先（2026-11-28 ep128 S13頭切れ）: x/y の座標があり multi_person でなければ、
+    # image_prompt の「左・右」語は無視して座標を使う
+    has_coord = bool(zoom_anchor) and not zoom_anchor.get("multi_person") \
+        and zoom_anchor.get("x") is not None and zoom_anchor.get("y") is not None
+    if has_coord:
+        left_hits = right_hits = False
+
     if (zoom_anchor and zoom_anchor.get("multi_person")) or (left_hits and right_hits):
         import random
         effect = random.choice(["pan_zoom_out_lr", "pan_zoom_out_rl"])
@@ -370,6 +377,14 @@ def infer_zoom_anchor(image_prompt: str, character_ref: str = None,
 
     # 人物なし・3人以上 → 中央からズームアウト
     return (0.5, 0.5, "zoom_out")
+
+
+def _teaser_anchor(scene) -> tuple:
+    """ティーザー静止画にも本編と同じ zoom_anchor 座標を渡す。座標が無ければ中央。"""
+    za = (scene or {}).get("zoom_anchor")
+    if za and not za.get("multi_person") and za.get("x") is not None and za.get("y") is not None:
+        return (float(za["x"]), float(za["y"]))
+    return (0.5, 0.5)
 
 
 def make_ken_burns(src: Path, dst: Path, duration: float, effect: str, landscape: bool = True,
@@ -1214,7 +1229,9 @@ def _make_teaser_with_opening(scenes: list, img_dir: Path, tmp: Path, narr_dur: 
         cap = (teaser_caption_for_clip(teaser_narration, narr_dur, i + 1,
                                        clip_start=start, clip_dur=per, **cap_kw)
                if teaser_narration else "")
-        make_ken_burns(img, dst_clip, per, effect, landscape=True, overlay_vf=cap)
+        t_px, t_py = _teaser_anchor(scene)
+        make_ken_burns(img, dst_clip, per, effect, landscape=True, overlay_vf=cap,
+                       anchor=(t_px, t_py))
         t_clips.append(dst_clip)
         durs.append(per)
         start += per - TEASER_XFADE
@@ -1280,7 +1297,9 @@ def make_teaser_clip(scenes: list, img_dir: Path, tmp: Path, narr_dur: float,
         effect = scene.get("ken_burns", "zoom_in") if scene else "zoom_in"
         dst_clip = tmp / f"teaser_{i:02d}.mp4"
         caption_vf = teaser_caption_for_clip(teaser_narration, narr_dur, i) if teaser_narration else ""
-        make_ken_burns(img, dst_clip, TEASER_CLIP_DUR, effect, landscape=True, overlay_vf=caption_vf)
+        t_px, t_py = _teaser_anchor(scene)
+        make_ken_burns(img, dst_clip, TEASER_CLIP_DUR, effect, landscape=True,
+                       overlay_vf=caption_vf, anchor=(t_px, t_py))
         t_clips.append(dst_clip)
 
     if not t_clips:
