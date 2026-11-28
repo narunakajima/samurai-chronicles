@@ -1286,5 +1286,15 @@
         "video_id": "aOSFnyLA7JY"
       }
     ]
+  },
+  "tsunayoshi": {
+    "display_name": "Tsunayoshi",
+    "playlist_id": null,
+    "episodes": [
+      {
+        "episode_id": "ep128",
+        "video_id": "KFhE18X1xVM"
+      }
+    ]
   }
 }
