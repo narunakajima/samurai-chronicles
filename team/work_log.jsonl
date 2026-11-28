@@ -383,3 +383,9 @@
 {"ts": "2026-11-28T09:07:04+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep128", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可。要相談2件はこのまま"}
 {"ts": "2026-11-28T09:07:21+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "4", "result": "ok", "retries": 0, "note": ""}
 {"ts": "2026-11-28T09:08:22+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "5D", "result": "ok", "retries": 0, "note": "Tokio場面のzoom_anchorを手で設定"}
+{"ts": "2026-11-28T09:47:49+09:00", "kind": "call", "agent": "sc-manager", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T09:47:54+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep128", "step": "6", "result": "ok", "retries": 0, "note": "S13の頭切れ: 直して再生成と判断（文言の左右語削除・zoom_anchor y=0.15・zoom_in）"}
+{"ts": "2026-11-28T09:48:05+09:00", "kind": "feedback", "agent": "sc-coordinator", "episode": "ep128", "source": "qa", "severity": "minor", "text": "動画生成（仕組み）: S13の image_prompt の left/right 両語でパン扱いになり zoom_anchor が無視されて頭が切れた。編集長判断で再生成"}
+{"ts": "2026-11-28T10:17:15+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "6", "result": "retry", "retries": 1, "note": "S13の頭切れで1回作り直し"}
+{"ts": "2026-11-28T10:17:15+09:00", "kind": "applied", "agent": "sc-coordinator", "episode": "ep128", "ids": ["SC2611-05", "SC2611-06"], "skipped": [], "reason": ""}
+{"ts": "2026-11-28T10:17:15+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "進行", "result": "ok", "retries": 0, "note": "STEP順: 3Bは5-0の後に実施（画像は風体リサーチ後の決まり）。他は手順どおり"}
