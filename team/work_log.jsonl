@@ -355,3 +355,31 @@
 {"ts": "2026-11-25T15:58:34+09:00", "kind": "work", "agent": "sc-community", "episode": "ep127", "step": "3.6", "result": "ok", "retries": 0, "note": "返信0件・見送り4件（攻撃的・政治的）"}
 {"ts": "2026-11-25T15:58:34+09:00", "kind": "work", "agent": "sc-community", "episode": "ep127", "step": "3.7", "result": "ok", "retries": 0, "note": "返信0件・見送り1件（ユリウス暦の指摘）"}
 {"ts": "2026-11-25T15:58:45+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep127", "step": "進行", "result": "retry", "retries": 0, "note": "本編OK後の人名修正で再レンダリング、学習版の切り出しで1回エスカレーション"}
+{"ts": "2026-11-28T08:17:20+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "1 次のトピック確認", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T08:21:32+09:00", "kind": "applied", "agent": "sc-planner", "episode": "ep128", "ids": [], "skipped": ["SC2611-04"], "reason": "STEP 1 補充の改善アクションで、今回は STEP 1.5 のみ。ep128 は 2026-11-10 の補充（キューの notes に英語圏の根拠『英語版Wikipedia・別名Dog Shogun』あり＝補充時に適用済み）から来た回なので、効果判定では適用回として数えてよい。question file ①に英語圏の根拠（Wikipedia単独記事・Bodart-Bailey『The Dog Shogun』・ケンペル・ep062との関連）を追記"}
+{"ts": "2026-11-28T08:22:00+09:00", "kind": "call", "agent": "sc-planner", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T08:22:10+09:00", "kind": "work", "agent": "sc-planner", "episode": "ep128", "step": "1.5", "result": "ok", "retries": 0, "note": "問い3案を作成"}
+{"ts": "2026-11-28T08:22:40+09:00", "kind": "call", "agent": "sc-community", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T08:22:47+09:00", "kind": "work", "agent": "sc-community", "episode": "ep128", "step": "1.5", "result": "ok", "retries": 0, "note": "初見判定: A>C>B"}
+{"ts": "2026-11-28T08:23:41+09:00", "kind": "call", "agent": "sc-manager", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T08:23:49+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep128", "step": "1.5", "result": "ok", "retries": 0, "note": "推奨A（捨て子も守った法がなぜ犬の法としてだけ覚えられたか）。史実の足場が最も固くソフィー1位。Cはケンペル評の原文未確認で次点。問いを修正して確定"}
+{"ts": "2026-11-28T08:28:17+09:00", "kind": "applied", "agent": "sc-writer", "episode": "ep128", "ids": ["SC2611-01", "SC2611-02"], "skipped": [], "reason": ""}
+{"ts": "2026-11-28T08:28:42+09:00", "kind": "call", "agent": "sc-writer", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T08:28:53+09:00", "kind": "work", "agent": "sc-writer", "episode": "ep128", "step": "2A", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T08:33:41+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "3C", "result": "ok", "retries": 0, "note": "intro=Freesound 866660(CC BY 4.0)/main=ep006-BGM/outro=ep085-BGM-outro。Freesoundは空振りが多くクエリ差し替え、ライブラリ候補はQAで1件ボーカル混入を除外"}
+{"ts": "2026-11-28T08:34:36+09:00", "kind": "call", "agent": "sc-historian", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T08:34:40+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep128", "step": "3A", "result": "ok", "retries": 0, "note": "❌0件、要修正の⚠4件・画像年齢2件・タイトル1件を修正"}
+{"ts": "2026-11-28T08:36:03+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "進行", "result": "ok", "retries": 0, "note": "案件2026-11-27-004(Webhook)をuser_approvalで実施・ep999ダミー到着確認"}
+{"ts": "2026-11-28T08:39:28+09:00", "kind": "call", "agent": "sc-historian", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T08:39:38+09:00", "kind": "work", "agent": "sc-historian", "episode": "ep128", "step": "5-0", "result": "ok", "retries": 0, "note": "綱吉の風体を肖像(伝土佐光起)に合わせて確定。月代の既定どおり、アンカーS13"}
+{"ts": "2026-11-28T08:40:51+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "3B", "result": "retry", "retries": 1, "note": "右に黒い人影・顔が小さく1回作り直し"}
+{"ts": "2026-11-28T09:00:05+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "5A/5B 素材生成", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T09:04:11+09:00", "kind": "applied", "agent": "sc-art-director", "episode": "ep128", "ids": ["SC2611-03"], "skipped": [], "reason": ""}
+{"ts": "2026-11-28T09:04:40+09:00", "kind": "call", "agent": "sc-art-director", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T09:04:47+09:00", "kind": "work", "agent": "sc-art-director", "episode": "ep128", "step": "5C", "result": "ok", "retries": 0, "note": "CRITICAL 3件（S03/S08/S15）を再生成"}
+{"ts": "2026-11-28T09:04:47+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep128", "source": "qa", "severity": "minor", "text": "5C: S03の御簾の影が丸坊主に見える、S08の犬が西洋犬寄り（プロンプトのscruffy）、S15の犬小屋がS07と別の建物。映像担当が作り直した"}
+{"ts": "2026-11-28T09:04:47+09:00", "kind": "feedback", "agent": "sc-writer", "episode": "ep128", "source": "qa", "severity": "minor", "text": "5C: S09の役人・S16の学者の月代欠落、S18の西洋風ろうそく。image_promptを直して再生成した"}
+{"ts": "2026-11-28T09:06:54+09:00", "kind": "call", "agent": "sc-manager", "session": "629a931f-21e2-40dd-83c9-53f87e7f997c"}
+{"ts": "2026-11-28T09:07:04+09:00", "kind": "work", "agent": "sc-manager", "episode": "ep128", "step": "5C", "result": "ok", "retries": 0, "note": "統合確認: 進行可。要相談2件はこのまま"}
+{"ts": "2026-11-28T09:07:21+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "4", "result": "ok", "retries": 0, "note": ""}
+{"ts": "2026-11-28T09:08:22+09:00", "kind": "work", "agent": "sc-coordinator", "episode": "ep128", "step": "5D", "result": "ok", "retries": 0, "note": "Tokio場面のzoom_anchorを手で設定"}

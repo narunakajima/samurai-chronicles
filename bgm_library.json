@@ -104,7 +104,8 @@
       "ep041",
       "ep045",
       "ep065",
-      "ep096"
+      "ep096",
+      "ep128"
     ]
   },
   {
@@ -1005,7 +1006,8 @@
       "ep093",
       "ep107",
       "ep113",
-      "ep122"
+      "ep122",
+      "ep128"
     ]
   },
   {
@@ -1361,6 +1363,20 @@
     ],
     "used_in": [
       "ep127"
+    ]
+  },
+  {
+    "id": "ep128-BGM-intro",
+    "path": "BGM/ep128-BGM-intro.mp3",
+    "duration": 0,
+    "license": "CC BY",
+    "credit": "🎵 Music: Suspenseful Music for Film and Television - 119 BPM by Tomentum+ (freesound.org) — CC BY 4.0",
+    "tags": [
+      "orchestral",
+      "cinematic"
+    ],
+    "used_in": [
+      "ep128"
     ]
   }
 ]

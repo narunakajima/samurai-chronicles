@@ -1,0 +1,318 @@
+{
+  "episode_id": "ep128",
+  "episode_title": "The Shogun Who Made Hurting a Dog a Crime: Tokugawa Tsunayoshi, the 'Dog Shogun'",
+  "youtube_title": "Japan's 'Dog Shogun' Made Hurting a Dog a Crime. The Dogs Were Only Half the Story",
+  "youtube_description": "Edo, 1695: kennels for thousands of dogs are rising outside the city, and the shogun behind them will be mocked as the \"Dog Shogun.\" His orders also reached much further than dogs, a part of the story the joke usually leaves out. If you had been charged to feed those dogs, would you have called him cruel or kind?\n\n📰 Your reporter: Tokio Kamiya, a former Tokyo foreign correspondent. His grandfather's brass pocket watch carries him to one day of Japan's past at a time. He can watch and he can speak, but he can never change what happens. This time he files his dispatch from a ward gate in Edo and the dog enclosures at Nakano, late in 1695. What happened before and after that day he reads from the record.\n\n🎌 Subscribe for new episodes 3 times a week:\nhttps://www.youtube.com/@Samurai-Chronicles-JP\n\n🌐 Official site: https://samurai-chronicles.com\n\n🇯🇵 A Japanese perspective on Japanese history — created by a Japanese history enthusiast.\n\n📚 References:\n1. Beatrice M. Bodart-Bailey, The Dog Shogun: The Personality and Policies of Tokugawa Tsunayoshi (University of Hawai'i Press, 2006)\n2. Engelbert Kaempfer, Kaempfer's Japan: Tokugawa Culture Observed, edited and translated by Beatrice M. Bodart-Bailey (University of Hawai'i Press, 1999)\n3. Tsukamoto Manabu, Shorui wo Meguru Seiji (The Politics of Living Things) (Heibonsha, 1983)\n\n\n🎵 Music: Suspenseful Music for Film and Television - 119 BPM by Tomentum+ (freesound.org) — CC BY 4.0\n\n🎵 Music: A Piano and Choir Journey by Matio888 (freesound.org) — CC BY 4.0\n\n🎵 Music: Smooth Emotional Dramatic Intro by tyops (freesound.org) — CC BY 4.0\n#TokugawaTsunayoshi #DogShogun #EdoPeriod #TokugawaShogunate #JapaneseHistory #SamuraiChronicles",
+  "youtube_tags": [
+    "Tokugawa Tsunayoshi",
+    "Dog Shogun",
+    "Laws of Compassion",
+    "Edicts on Compassion for Living Things",
+    "fifth Tokugawa shogun",
+    "Edo period",
+    "Edo 1695",
+    "Nakano dog kennels",
+    "Tokugawa shogunate",
+    "47 Ronin",
+    "strange laws in history",
+    "Japanese history",
+    "Samurai Chronicles",
+    "Japan history documentary",
+    "Japanese history channel"
+  ],
+  "series_name": null,
+  "series_number": null,
+  "narrator": "tokio",
+  "tokio_scenes": [
+    1,
+    2,
+    7,
+    8,
+    11,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "tokio_talk": true,
+  "tokio_glow": true,
+  "tokio_glow_gain": 0.4,
+  "total_scenes": 20,
+  "shorts_highlight_scene": 11,
+  "teaser_narration": "Edo, 1695. At a frozen dawn, a thin dog curls beside a small bundle at a town gate, and a lantern comes through the mist. The Dog Shogun's laws cover more than the dog. So why do we remember only the dog?",
+  "shorts_narration": "Edo, 1695. A thin dog, a small bundle, a lantern in the mist. Japan's Dog Shogun made hurting dogs a crime. His orders guarded something else too. Why do we forget it?",
+  "shorts_hook_lines": [
+    "HURT A DOG?",
+    "YOU BROKE THE LAW.",
+    "WHAT ELSE DID IT PROTECT?"
+  ],
+  "shorts_face_image_prompt": "Extreme close-up of Tokugawa Tsunayoshi, the fifth shogun, a man of about fifty, with a full, fleshy, pale face with heavy rounded cheeks and jaw and a soft double chin, a long straight high-bridged nose, thin high-arched eyebrows set well above narrow heavy-lidded eyes, a small mouth with full lips and faintly downturned corners, clean-shaven with no beard and no moustache, a cool aloof scholarly expression, not tall and not muscular, a soft compact build, forehead and crown shaved bare (Edo-period sakayaki) with a small neat oiled chonmage topknot, faint lines at his eyes and mouth, wearing a kamishimo of fine pale grey silk with stiff wide shoulders and matching hakama over a white silk kimono, plain, with no crest, emblem or pattern, his face filling the upper centre of the frame, looking straight into the camera with a quiet, troubled, unreadable gaze, lit from one side by warm candlelight with the other half in deep shadow, a bamboo blind softly out of focus behind him. Vertical portrait composition. Photorealistic live-action cinematic film still, real skin texture, natural film grain. No text, no writing anywhere.",
+  "thumbnail_prompt": "Tight cinematic waist-up close composition in a dim hall of Edo Castle, camera near the subject, exactly one man and one dog in the whole frame: Tokugawa Tsunayoshi, the fifth shogun, a man of about fifty, with a full, fleshy, pale face with heavy rounded cheeks and jaw and a soft double chin, a long straight high-bridged nose, thin high-arched eyebrows set well above narrow heavy-lidded eyes, a small mouth with full lips and faintly downturned corners, clean-shaven with no beard and no moustache, a cool aloof scholarly expression, not tall and not muscular, a soft compact build, forehead and crown shaved bare (Edo-period sakayaki) with a small neat oiled chonmage topknot, faint lines at his eyes and mouth, wearing a kamishimo of fine pale grey silk with stiff wide shoulders and matching hakama over a white silk kimono, plain, with no crest, emblem or pattern, seated on the left half of the frame, face large and clearly lit, fixing the viewer with a calm intense gaze, and in the left foreground beside him an alert white-and-tan medium-sized Japanese native dog with pricked ears and a curled tail (not a Western breed) also looking straight at the viewer, resting on a rich crimson silk cushion; behind them a half-raised bamboo blind and warm gold sliding doors falling into shadow. The man's head is large, filling about a third of the frame height. There is no other person, no foreground figure, no silhouette and no shoulder anywhere; the right side shows only the softly lit gold sliding doors receding into shadow. High-contrast dramatic lighting, warm gold against deep blue shadow. Photorealistic live-action cinematic film still. No text in the image itself (the title text overlay is added separately), no writing anywhere.",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "type": "hook",
+      "duration_seconds": 10,
+      "narration": "This is Tokio Kamiya, with a dispatch from Edo, 1695. Kennels are rising for thousands of dogs, but what the shogun's laws shelter at this gate is not a dog. Why do we remember only dogs?",
+      "image_prompt": "Low-angle view along a narrow Edo back street at a freezing dawn in late 1695: a heavy timber ward gate with its wicket half open, and at the foot of the gatepost a shallow woven straw basket holding a bundle wrapped in a faded indigo cotton quilt, completely covered, nothing of what is inside visible. A single thin tan short-haired Japanese native village dog with pricked ears and a curled tail lies curled against the basket, head raised. From the pale knee-high river mist beyond the gate a town ward officer in a dark kimono with a shaved pate and topknot approaches carrying a round plain white paper lantern, his face in shadow. The right third of the frame is quiet shadowed wooden wall. All dogs are Japanese native village dogs of the period, no Western breeds. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Edo 1695",
+      "zoom_anchor": {
+        "x": 0.3,
+        "y": 0.65
+      }
+    },
+    {
+      "scene_id": 2,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I am a correspondent, or I was, until my grandfather's brass watch passed to me. It carries me to one day of Japan's past at a time. I may watch, I may speak, I may not change a thing. Today it sets me down at a ward gate in Edo, on a bitter morning late in 1695. A town officer kneels with his lantern over a straw basket by the gatepost, and a thin dog watches him. Before I tell you what he finds, you need the story everyone already knows.",
+      "image_prompt": "Medium-wide view of an Edo ward gate in cold early light in 1695: a town officer in a dark padded kimono with a shaved pate and topknot kneeling beside a shallow woven straw basket at the gatepost, holding a round plain paper lantern low, his back partly turned so the inside of the basket is hidden; a thin tan Japanese native dog with pricked ears and a curled tail sits a pace away watching him. Two-storey wooden townhouses with latticed fronts and shingled roofs line the street, breath mist in the air, a first line of pale gold on the roofs. The left third of the frame is empty street. All dogs are Japanese native village dogs of the period, no Western breeds. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Edo 1695",
+      "zoom_anchor": {
+        "x": 0.75,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 3,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "Say Dog Shogun and the story arrives fast: a ruler who put dogs above people. A later story claims that a priest named Ryuko told him he had no heir because of killing in a former life, and that a man born in the year of the dog should protect dogs. I can confirm one detail: 1646, the year of his birth, is a dog year. The rest I treat with real caution. The tale seems to come from a satire written after his death, and historians doubt it. I set it aside.",
+      "image_prompt": "A dim temple hall in Edo lit by two tall candle stands: an elderly Buddhist priest with a fully shaved head in a dark plum robe and gold-brown surplice kneeling and speaking with one raised hand toward a seated nobleman (the young lord Tsunayoshi) who is seen only as a dark, compact, wide-robed silhouette behind a half-lowered bamboo blind, his face not visible, but his head shape clearly readable against the pale paper screen behind him: an Edo-period samurai head with the shaved crown and a small oiled chonmage topknot standing out on top of the head in clear profile outline (not a round shaved monk's head, not a full head of hair); on the polished wooden floor between them a small carved wooden figure of a dog catches the candlelight. Thin pale incense smoke rising in a single line from a bronze burner. Shadowy, whispered, uncertain mood. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 4,
+      "type": "setup",
+      "duration_seconds": 60,
+      "narration": "I check my notes. Tsunayoshi is the fourth son of the third shogun, Iemitsu, born in 1646 and made lord of Tatebayashi. In 1680 his elder brother, the fourth shogun, dies without a child, and the office comes to him. He devotes himself to Confucian learning and lectures his own lords on the classics. He loves Noh and performs it. A few years before my visit, a German doctor travelling with the Dutch was told to sing and dance while the shogun watched from behind a blind. I add no judgment to that.",
+      "image_prompt": "Interior of a formal audience hall in Edo Castle: Tokugawa Tsunayoshi, the fifth shogun, a man in his late forties, with a full, fleshy, pale face with heavy rounded cheeks and jaw and a soft double chin, a long straight high-bridged nose, thin high-arched eyebrows set well above narrow heavy-lidded eyes, a small mouth with full lips and faintly downturned corners, clean-shaven with no beard and no moustache, a cool aloof scholarly expression, not tall and not muscular, a soft compact build, forehead and crown shaved bare (Edo-period sakayaki) with a small neat oiled chonmage topknot, his hair still dark, wearing a kamishimo of fine pale grey silk with stiff wide shoulders and matching hakama over a white silk kimono, plain, with no crest, emblem or pattern, lighter and finer than the dark kamishimo of the lords, seated upright on a raised tatami dais with an open bound book on a low black lacquered stand before him, one hand raised as he lectures, while several senior lords in dark kamishimo with shaved pates and topknots kneel in two rows facing him, heads slightly bowed. Gold-leaf sliding doors painted with pine trees behind him, soft daylight from paper screens. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tsunayoshi",
+      "zoom_anchor": {
+        "x": 0.76,
+        "y": 0.38
+      }
+    },
+    {
+      "scene_id": 5,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "I open the code every warrior lord lives under. Its first line, set down under the early Tokugawa, told them to devote themselves to letters and arms, the way of the bow and the horse. In 1683 Tsunayoshi has it rewritten to press learning, arms, loyalty, filial duty and proper manners. The bow and horse are gone from that line. The ban on retainers following a lord into death, announced under his brother, now sits in the code. The same year his young son Tokumatsu dies. I will return to that.",
+      "image_prompt": "A quiet study in Edo Castle in 1683: Tokugawa Tsunayoshi, the fifth shogun, a man in his late thirties, with a full, fleshy, pale face with heavy rounded cheeks and jaw and a soft double chin, a long straight high-bridged nose, thin high-arched eyebrows set well above narrow heavy-lidded eyes, a small mouth with full lips and faintly downturned corners, clean-shaven with no beard and no moustache, a cool aloof scholarly expression, not tall and not muscular, a soft compact build, forehead and crown shaved bare (Edo-period sakayaki) with a small neat oiled chonmage topknot, his face smooth and his hair fully dark, wearing a kamishimo of fine pale grey silk with stiff wide shoulders and matching hakama over a white silk kimono, plain, with no crest, emblem or pattern, kneeling at a low black lacquered writing table and looking down at a blank unrolled paper scroll while a scribe in plain dark kamishimo with a shaved pate waits with a brush beside an inkstone. In the shadowed background an unstrung long bow and a lacquered saddle rest on a wooden stand against the wall, falling into darkness, while lamplight falls on the writing table. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "pan_left",
+      "character_ref": "tsunayoshi",
+      "zoom_anchor": {
+        "x": 0.41,
+        "y": 0.37
+      }
+    },
+    {
+      "scene_id": 6,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "From the middle of the 1680s, orders about living things keep arriving in the wards. I find historians disagreeing about which one comes first, because this is not one law but a long run of notices. Dogs are not to be beaten. Even strays are to be fed. Wards must keep track of their dogs, down to the colour of the coat. If one is hurt, someone may have to answer for it. I watch a woman at a well meet a sleeping dog in her path. She does not shoo it. She waits.",
+      "image_prompt": "Daytime in a crowded Edo back-alley with a stone-rimmed communal well: a townswoman in a plain striped cotton kimono with her hair in a modest late-seventeenth-century Genroku style, gathered in a simple low knot at the back with only one plain comb, no ornate hairpins stands holding a wooden water pail, waiting patiently, while a white Japanese native village dog with brown patches, pricked ears and a curled tail sleeps stretched across the narrow plank walkway in front of her. Behind her a ward clerk with a shaved pate and topknot crouches beside another, reddish-tan dog of the same native type, holding a closed bound ledger under his arm. Washing poles, wooden tubs, weathered plank walls. All dogs are Japanese native village dogs of the period, no Western breeds. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 7,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "I walk west of the city to Nakano, where carpenters are raising long fenced yards and roofed sheds on open farmland. This year the government starts moving stray dogs off Edo's streets into these enclosures, and I hear of others nearer town. Later accounts put the number here in the tens of thousands. I cannot count them. I do see sacks of rice and baskets of dried fish going in. Townspeople will be made to help pay for the dogs' upkeep, and they can hardly miss it.",
+      "image_prompt": "Wide view over the flat farmland of Nakano outside Edo in late 1695 under a pale winter sky: long rows of low wooden dog sheds with plank roofs inside tall fences of timber posts and split bamboo, some frames still bare where carpenters in short work coats and headcloths hammer beams; porters carry straw rice sacks on their shoulders and baskets of small dried fish through a plain wooden gate; many medium-sized Japanese native village dogs with pricked ears and curled tails, in tan, white, black and brindle coats, lie and trot inside the fenced yards. Harvested brown fields and dark zelkova groves stretch to the horizon, thin cooking-fire smoke rising from the roof vent of a feed-boiling shed. All dogs are Japanese native village dogs of the period, no Western breeds. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Nakano 1695",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 8,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Back in town, an old rice dealer tells me his complaint in a low voice. He says his ward pays for dogs it will never see again, while food keeps getting dearer. A dog howls at his door half the night, and he will not even raise a broom, because he has heard what happened to a man two wards over. So he feeds it, he says, and he smiles. I ask whether he saw that punishment himself. He shakes his head. I write it down as hearsay.",
+      "image_prompt": "Inside the shadowed front of a small Edo rice shop at dusk: an old shopkeeper with a thin grey topknot and shaved pate, deep lines in his face, sitting on the raised floor among straw rice bales and wooden measuring boxes, leaning forward to speak quietly, one hand half raised, a straw broom leaning untouched against the doorframe; outside the open doorway a thin, smooth short-coated Japanese native village dog (Shiba or Kishu type) with a dusty dull tan coat, a fox-like wedge-shaped face with a clean short-haired muzzle, small pricked triangular ears and a tightly curled tail (no long, shaggy or wiry fur, no bearded muzzle) sits facing into the shop in the last grey-blue light. All dogs are Japanese native village dogs of the period, no Western breeds. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "surprised",
+      "tokio_place": "Edo 1695",
+      "zoom_anchor": {
+        "x": 0.28,
+        "y": 0.45
+      }
+    },
+    {
+      "scene_id": 9,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "I go looking for what hearsay cannot give me, and the record holds real punishments. One often-cited case from 1687 sends villagers into island exile for abandoning a sick horse. Another tells of a samurai retainer put to death for shooting a swallow with a blowpipe. I also find historians who argue that the picture of crowds executed over dogs is overblown. I cannot settle the toll from this street. I can understand why a neighbour who hears one such story lowers his broom.",
+      "image_prompt": "A grey morning on a windswept stone landing at the edge of Edo Bay in the 1680s: a few villagers in plain patched cotton with bound hands hidden in their sleeves walk down toward a small wooden sailing boat, escorted by two officials in dark kimono with swords, every adult man in the picture including both officials and the prisoners having the Edo-period sakayaki hairstyle: the whole front and crown of the head shaved bare as visible pale scalp, with a small oiled chonmage topknot folded forward, clearly readable even from behind and from the side (no man with a full head of hair); family members in straw sandals stand back at a distance with bowed heads. Cold choppy water, a low overcast sky, distant dim islands on the horizon. Restrained and somber, no violence. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "pan_left",
+      "character_ref": null
+    },
+    {
+      "scene_id": 10,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "The cost does not stop at dog food. Temple building, some of it tied to the shogun's mother, Keishoin, and grand ceremonies strain the treasury. This very year, 1695, the official Ogiwara Shigehide reissues the coinage with less gold in it. I watch a money changer weigh a new coin against an old one and frown. Prices will climb. Whatever else I find today, I will not call this government cheap or gentle. The townsman's grievance is real, and I put it on the page first.",
+      "image_prompt": "Close view inside an Edo money changer's shop in 1695: a money changer with a shaved pate and topknot holding two plain oval gold coins side by side in his open palm under the lamp, comparing their colour, the coins smooth without any marks, his brow furrowed, a small brass balance scale with irregular lumps of silver on the counter before him; wooden drawers and a paper andon lamp behind him; beyond the open shopfront, soft and out of focus, the great tiled roof of a newly built temple hall with fresh vermilion pillars. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_in",
+      "character_ref": null
+    },
+    {
+      "scene_id": 11,
+      "type": "rising_action",
+      "duration_seconds": 60,
+      "narration": "Now I return to the gate. The officer folds back the quilt: a baby, alive, left in the night. He calls the neighbours, and the ward takes charge. As I read the orders of these years, those who find an abandoned child must look after it, and a household willing to raise it may take it in. Abandoning a child is forbidden, and parents who cannot manage are told to seek help from officials. A boy runs for a woman who can nurse. I stand aside and change nothing.",
+      "image_prompt": "An Edo ward gate in clear early morning light in 1695: the town officer in a dark padded kimono with a shaved pate and topknot rises cradling a bundle wrapped in a faded indigo cotton quilt, seen from behind his shoulder so that only folds of cloth are visible; two neighbours, a woman in a striped kimono and an older man with a topknot, hurry toward him from open doorways, a young boy in a short cotton jacket runs away down the street, the empty straw basket and the thin tan prick-eared dog beside the gatepost. Practical, busy, calm; steam from a morning hearth drifting from one doorway. All dogs are Japanese native village dogs of the period, no Western breeds. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Edo 1695",
+      "zoom_anchor": {
+        "x": 0.68,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 12,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "The child is not alone in these orders. As I read them, inns and villages must tend a traveller who falls ill, and must not simply pass him on to the next place. Sick horses and cattle may not be abandoned, and even the treatment of prisoners draws attention. Historians differ over which orders belong under one name, so I count them with caution. Still, the same stream of rules that shelters the dog at the gatepost reaches the baby beside it. The joke I carried here has no room for both.",
+      "image_prompt": "A warm lamplit room of a roadside inn on a rainy night in Edo-period Japan: an innkeeper's wife in a plain dark kimono kneeling to offer a steaming bowl to an exhausted traveller lying under a thick quilt with his straw hat and walking staff by the wall, the innkeeper with a topknot holding a paper lamp at the sliding door; through the open door a rain-soaked yard where a thin old horse stands under a thatched shelter being given hay. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "pan_right",
+      "character_ref": null
+    },
+    {
+      "scene_id": 13,
+      "type": "climax",
+      "duration_seconds": 60,
+      "narration": "Why does he issue them? I weigh the answers. Buddhist teaching against taking life. The Confucian duty of a kindly ruler. His mother's faith. Hope for an heir after Tokumatsu's death, a link some draw and others doubt. And a harder aim: some historians argue he is breaking a warrior habit in which cutting down a stray, or worse, could still pass for nerve. I cannot settle which weighs most. I think no single answer is enough, and I am wary of anyone who offers one.",
+      "image_prompt": "Tokugawa Tsunayoshi, the fifth shogun, a man of about fifty, with a full, fleshy, pale face with heavy rounded cheeks and jaw and a soft double chin, a long straight high-bridged nose, thin high-arched eyebrows set well above narrow heavy-lidded eyes, a small mouth with full lips and faintly downturned corners, clean-shaven with no beard and no moustache, a cool aloof scholarly expression, not tall and not muscular, a soft compact build, forehead and crown shaved bare (Edo-period sakayaki) with a small neat oiled chonmage topknot, faint lines at his eyes and mouth, wearing a plain dark brown silk kimono and hakama, with no crest, emblem or pattern, standing alone on a wooden veranda of Edo Castle at twilight, hands folded in his sleeves, his face turned in three-quarter view toward the camera and clearly lit by the last warm light, gazing thoughtfully past the viewer over a wide moat; beyond it low white plaster walls and tiled gatehouses on stone embankments topped with pine trees, and the dim rooftops of the city with scattered lantern lights. The figure is placed on the left, the right side open sky. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_out",
+      "character_ref": "tsunayoshi",
+      "tokio_expression": "thinking",
+      "tokio_place": "Edo 1695",
+      "zoom_anchor": {
+        "x": 0.32,
+        "y": 0.35
+      }
+    },
+    {
+      "scene_id": 14,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "The same man can be severe, and I carry the record of what comes later. In 1701 Lord Asano draws his sword inside Edo Castle and wounds the official Kira. Tsunayoshi orders Asano to take his own life that very day, and Kira goes unpunished. In 1703 the shogunate orders the ronin who avenge Asano to die the same way. I do not call this mercy. Nor do I call it madness. I read a ruler who wants blades sheathed, though that reading is mine.",
+      "image_prompt": "A long polished wooden corridor inside Edo Castle lined with painted sliding doors: Tokugawa Tsunayoshi, the fifth shogun, a man in his mid-fifties, with a full, fleshy, pale face with heavy rounded cheeks and jaw and a soft double chin, a long straight high-bridged nose, thin high-arched eyebrows set well above narrow heavy-lidded eyes, a small mouth with full lips and faintly downturned corners, clean-shaven with no beard and no moustache, a cool aloof scholarly expression, not tall and not muscular, a soft compact build, forehead and crown shaved bare (Edo-period sakayaki) with a small neat oiled chonmage topknot, his cheeks slightly sagging with deeper lines and a little grey at the temples, wearing a kamishimo of fine pale grey silk with stiff wide shoulders and matching hakama over a white silk kimono, plain, with no crest, emblem or pattern, seated stern and motionless in the shadowed room at the far end, and in the foreground a short sword in a plain black scabbard lying on a white cloth upon a low wooden stand, lit by a cold shaft of light; two attendants in dark kamishimo with long trailing hakama and shaved pates kneel with lowered heads. Tense silence, no one drawing a weapon. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_in",
+      "character_ref": "tsunayoshi",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.39
+      }
+    },
+    {
+      "scene_id": 15,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "My notes turn to the first month of 1709. Tsunayoshi dies at sixty-four by the Japanese count, reportedly of measles. His successor Ienobu, the nephew he adopted as heir in 1704, moves quickly. Most of the rules about dogs are lifted, and the great kennels are wound down. Yet as far as I can tell, the duty to protect abandoned children and sick travellers does not leave with the dogs. Parts of it carry on. I underline that line, because the usual joke stops one sentence earlier.",
+      "image_prompt": "A deserted, silent view of the Nakano dog enclosures in the winter of 1709: the same compound as when it was built: long rows of low single-storey wooden dog sheds with open fronts and plank roofs, set inside tall fences of timber posts and split bamboo (not tall barns, not stables, not warehouses with doors), the fenced yards empty and their plain wooden gates standing open, a section of timber-and-bamboo fence taken down and stacked in neat bundles, two workmen with topknots carrying a plank away, a few fallen leaves and old straw on the bare ground, a single empty wooden feed trough in the foreground; flat farmland and bare zelkova trees beyond under a white overcast sky. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_out",
+      "character_ref": null
+    },
+    {
+      "scene_id": 16,
+      "type": "falling_action",
+      "duration_seconds": 60,
+      "narration": "Who holds the brush afterwards matters. I note that Arai Hakuseki, the scholar who advises the next shogun, writes harshly about the harm these rules caused, and the harm was real. Later, an anonymous satire, the Sanno Gaiki, adds colour, including the priest and the dog year. Over time I see the surviving portrait close in around the animals. At the gate, the officer carries the child indoors. I know how this reign will be told, and I cannot tell him. I only close my notebook.",
+      "image_prompt": "Night in a scholar's study in early eighteenth-century Edo: a lean scholar of samurai rank in his late fifties with a narrow face, the whole forehead and crown of his head shaved completely bare as pale scalp (Edo-period sakayaki), only the greying side and back hair gathered into a thin chonmage tied and folded forward flat on top of the bare scalp (never a full head of hair, never an upright bun), in a sober dark kimono kneeling at a low desk under a single oil lamp, writing with a brush on a sheet tilted away from the viewer so that its surface cannot be seen, stacks of thread-bound books beside him with plain unlabelled covers; on the paper screen behind him the lamp casts a large soft shadow. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "moved",
+      "tokio_place": "Edo 1695",
+      "zoom_anchor": {
+        "x": 0.7,
+        "y": 0.4
+      }
+    },
+    {
+      "scene_id": 17,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. So why do we remember only the dog? My answer has three parts, and none works alone. First, the dog rules are the ones people pay for and see: yards outside the city, rice for strays, a broom you dare not raise. A child taken in at a ward gate is a quiet event, remembered perhaps by one street. The burden is direct and visible. I think a grievance travels further than a kindness, especially when the grievance has four legs and barks all night.",
+      "image_prompt": "A single scruffy tan Japanese native village dog with pricked ears and a curled tail, standing in the middle of an empty Edo street at dusk, looking straight toward the viewer, its long shadow stretching across the packed earth; behind it, small and soft in the background, a lit ward gate with a paper lantern and the dim doorway of a townhouse where a warm light glows. All dogs are Japanese native village dogs of the period, no Western breeds. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_in",
+      "character_ref": null,
+      "tokio_expression": "writing",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.5,
+        "y": 0.55
+      }
+    },
+    {
+      "scene_id": 18,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Second, consider who draws the portrait. The next government's adviser writes about what went wrong in the last reign, and he has real harm to point to. Later satire sharpens the picture into one easy image: a shogun who prized dogs above people. I would not call it a plot, and I see no proof that anyone set out to erase the rest. I think one vivid image is simply easier to carry than a long list of orders about strangers in need.",
+      "image_prompt": "A still life on a low black lacquered desk by a paper window: several old thread-bound books with plain unlabelled covers, one open to a double page bearing only a single ink-brush painting of a dog on bare paper, an inkstone, a worn brush, and a lit Edo-period andon, a square Japanese floor lamp of white paper on a slim wooden frame, glowing beside the desk (no candle, no candlestick of any kind); warm side light and deep shadow. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "pan_left",
+      "character_ref": null,
+      "tokio_expression": "thinking",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.4,
+        "y": 0.6
+      }
+    },
+    {
+      "scene_id": 19,
+      "type": "insight",
+      "duration_seconds": 60,
+      "narration": "Reporter's note. Third, the protections for children and the sick, as I understand it, do not simply vanish with the kennels. What survives appears to survive without his name on it, folded into the ordinary duties of towns and villages, where it is easy to forget who first pressed for it. Historians today are reopening his case, some defending him, others warning against excusing the cost. I think a fair verdict holds both: a heavy, sometimes harsh policy that also reached people with nobody else to guard them.",
+      "image_prompt": "A present-day Japanese city street at early evening: a small neighbourhood police box with a softly glowing round red lamp and a blank unmarked front, an adult walking hand in hand with a young child seen from behind along the pavement, a person nearby walking a small Shiba dog on a leash, shop windows glowing without any visible lettering, gentle blue dusk. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "pan_right",
+      "character_ref": null,
+      "tokio_expression": "writing",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.65,
+        "y": 0.65
+      }
+    },
+    {
+      "scene_id": 20,
+      "type": "outro",
+      "duration_seconds": 45,
+      "narration": "At a ward gate in Edo, a thin dog and an abandoned child fall under the same ruler's orders. The dog stayed in the story because its burden was loud and later writers framed the reign around it, while care for children like this one seems to have gone on quietly, without his name. Which half would you have remembered? Subscribe, and the next dispatch will find you. The watch is ticking. Until the next report. Tokio Kamiya, reporting.",
+      "image_prompt": "A closing wide shot of an Edo ward gate at deep blue dusk in the winter of 1695: the heavy timber gate closing, one round plain paper lantern glowing beside it, the empty straw basket gone, the thin tan prick-eared dog lying peacefully by the gatepost, and beyond the shingled roofs a thin band of orange light and the first stars. All dogs are Japanese native village dogs of the period, no Western breeds. Photorealistic live-action cinematic film still, 35mm, natural film grain. No text, no signs, no legible writing anywhere, no logos, crests or patterns on any banner, curtain or flag. No blood, no injured or dead people or animals in view.",
+      "ken_burns": "zoom_out",
+      "character_ref": null,
+      "tokio_expression": "neutral",
+      "tokio_place": "Present",
+      "zoom_anchor": {
+        "x": 0.22,
+        "y": 0.6
+      }
+    }
+  ],
+  "bgm_sources": {
+    "intro": "BGM/ep128-BGM-intro.mp3",
+    "main": "BGM/ep006-BGM.mp3",
+    "outro": "BGM/ep085-BGM-outro.mp3"
+  }
+}

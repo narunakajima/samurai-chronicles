@@ -1343,14 +1343,15 @@
     },
     {
       "episode_id": "ep128",
-      "status": "pending",
+      "status": "in_production",
       "title": "The Shogun Who Made Hurting a Dog a Crime: Tokugawa Tsunayoshi, the 'Dog Shogun'",
       "era": "Edo",
       "priority": "B",
       "person": "tokugawa_tsunayoshi",
       "angle": "character",
       "notes": "未登場（ep062赤穂浪士の背景で名前が出る程度）。生類憐れみの令を軸に、暴君の奇行か武断の世を変えた政策かの逆説で描く。戌年生まれの俗説・跡継ぎ問題は確度を区別。ep115吉宗・ep120家光に続く将軍シリーズ。英語圏の根拠: 英語版Wikipedia、別名「Dog Shogun」。 → 2026-11-10: 補充提案(編集長マーカス採用。ユーザーが判断を委任)。",
-      "last_updated": "2026-11-10"
+      "last_updated": "2026-11-28",
+      "question": "犬を傷つけることを罪にした『犬公方』の法は、赤ん坊を捨てることや、病人・行き倒れの旅人を見捨てることも禁じていた。なぜ私たちは、その法を『犬の法』としてだけ覚えているのか。"
     },
     {
       "episode_id": "ep129",
@@ -1518,6 +1519,6 @@
       "notes_2026-11-09": "2026-10 月次評価（管理担当）の提案3を、ユーザー承認（2026-11-09）のうえ登録。判定対象の8本と比較対象を上記のとおり事前固定。Reporting API の欠損（10/12以降の再認証待ち）で14日窓が復元できない回があり、判定は再認証後。"
     }
   ],
-  "last_updated": "2026-11-25",
+  "last_updated": "2026-11-28",
   "total_topics": 135
 }
